@@ -1,3 +1,3 @@
 # notes
 
-Whatever I learn.
+Whatever I study.
