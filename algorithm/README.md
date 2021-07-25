@@ -1,4 +1,4 @@
-# algorithm
+# Algorithm
 
 Book notes & Problem writeups
 
