@@ -1,3 +1,3 @@
-# notes
+# Notes
 
-Whatever I study.
+Notes & Thoughts
