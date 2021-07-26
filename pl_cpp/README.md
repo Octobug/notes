@@ -1,3 +1,3 @@
 # C++
 
-Note of study C++.
+Note of studying C++.
