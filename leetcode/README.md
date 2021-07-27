@@ -4,7 +4,7 @@
 
 [lc_enhancer]: https://chrome.google.com/webstore/detail/leetcode-enhancer/gcmncppaaebldbkgkcbojghpmpjkdlmp
 
-* [Leetcode Enhancer][lc_enhancer]: to hide locked problems
+* [Leetcode Enhancer for Chrome][lc_enhancer]: to hide locked problems
 
 ## Pages
 
