@@ -1,14 +1,14 @@
 {
-  "name": "testing-async-code",
+  "name": "notes",
   "version": "1.0.0",
-  "description": "testing async code",
+  "description": "js env",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Octobug/notes.git"
+    "url": "git+https://github.com/Octobug/notes.git"
   },
   "author": "Octobug",
   "license": "ISC",
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/Octobug/notes#readme",
   "devDependencies": {
-    "chai": "^4.3.4",
-    "mocha": "^9.0.3",
-    "sinon": "^11.1.1"
+    "@babel/core": "^7.14.8",
+    "@babel/eslint-parser": "^7.14.7",
+    "eslint": "^7.31.0"
   }
 }
