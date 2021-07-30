@@ -1,6 +1,6 @@
-# Testing in JavaScript
+# Software Testing
 
-## Spies, Stubs, Mocks
+## Utils
 
 ### Spies
 
@@ -30,7 +30,7 @@ to test multiple scenarios.
 > They are fake methods, that have pre-programmed behavior and pre-programmed
 expectations.
 
-## References
+### References
 
 [mocha_chai_sino_2]: <https://blog.logrocket.com/unit-testing-node-js-applications-using-mocha-chai-and-sinon/>
 
