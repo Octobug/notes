@@ -5,7 +5,7 @@
 ### Spies
 
 > Creates fake functions which we can use to track executions. This means we can
-tell/find out whether the function has been executed/how many times its been
+tell/ find out whether the function has been executed/ how many times its been
 called etc. We can also use spies on existing functions and get the same
 capability, to track those functions executions.
 >
