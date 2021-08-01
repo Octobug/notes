@@ -1,0 +1,17 @@
+[Unit]
+Description=Gunicorn server for {{ host }}
+
+[Service]
+Restart=on-failure
+User={{ ansible_ssh_user }}
+WorkingDirectory=/home/{{ ansible_ssh_user }}/app/{{ host }}/source
+Environment=EMAIL_PASSWORD=qftuzrbdixqdbgch
+ExecStart=/home/{{ ansible_ssh_user }}/app/{{ host }}/venv/bin/gunicorn \
+         --bind unix:/tmp/{{ host }}.socket \
+         --capture-output \
+         --access-logfile ../access.log \
+         --error-logfile ../error.log \
+         superlists.wsgi:application
+
+[Install]
+WantedBy=multi-user.target

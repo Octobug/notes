@@ -1,0 +1,17 @@
+[Unit]
+Description=Gunicorn server for suplists-staging.tdd.com
+
+[Service]
+Restart=on-failure
+User=orca
+WorkingDirectory=/home/orca/app/staging.tdd.com/source
+ExecStart=/home/orca/app/staging.tdd.com/venv/bin/gunicorn \
+         --bind unix:/tmp/staging.tdd.com.socket \
+         --capture-output \
+         --access-logfile ../access.log \
+         --error-logfile ../error.log \
+         superlists.wsgi:application
+Environment=EMAIL_PASSWORD=123qweasd
+
+[Install]
+WantedBy=multi-user.target
