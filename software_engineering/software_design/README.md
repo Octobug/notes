@@ -1,7 +1,5 @@
-# Architectural Design
+# Software Design
 
-## The OpenAPI Specification
+[sd]: <https://en.wikipedia.org/wiki/Software_design>
 
-[openapi]: <https://github.com/OAI/OpenAPI-Specification>
-
-[OAI / OpenAPI-Specification][openapi]
+> [Software Design][sd]
