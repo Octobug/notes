@@ -1,4 +1,4 @@
-# Software Testing
+# Testing Fundamentals
 
 ## Utils
 

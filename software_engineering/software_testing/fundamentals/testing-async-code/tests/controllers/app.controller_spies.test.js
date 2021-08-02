@@ -32,6 +32,7 @@ describe('AppController', () => {
   describe('User', function () {
     describe('addUser', function () {
       it('should add a user', function () {
+        // user.addUser()
         sinon.spy(user, 'addUser');
         user.addUser('John Doe');
 

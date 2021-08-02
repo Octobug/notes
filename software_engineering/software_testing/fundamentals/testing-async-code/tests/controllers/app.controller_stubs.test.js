@@ -44,9 +44,7 @@ describe('AppController', () => {
       const isLoggedInStub = sinon.stub(user, 'isLoggedIn').returns(false);
 
       // pass user into the req object
-      let req = {
-        user: user
-      };
+      let req = { user };
 
       // Have `res` have a send key with a function value coz we use 
       //  `res.send()` in our func
