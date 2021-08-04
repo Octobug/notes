@@ -20,4 +20,17 @@ tuner or a tuner App.
 
 ### Tuning Your Guitar by Matching
 
-<https://www.coursera.org/learn/guitar/lecture/hyFxh/tuning-your-guitar-by-matching>
+* E.5 => A
+* A.5 => D
+* D.5 => G
+* G.4 => B
+* B.5 => E
+
+#### With a Tuning Fork
+
+Make it vibrate then place its end on the bridge of the guitar. By doing so we
+could get a starting pitch of an A.
+
+### Tuning Your Guitar with Harmonics
+
+https://www.coursera.org/learn/guitar/lecture/o6wnI/tuning-your-guitar-with-harmonics
