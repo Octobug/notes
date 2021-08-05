@@ -20,11 +20,13 @@ tuner or a tuner App.
 
 ### Tuning Your Guitar by Matching
 
-* E.5 => A
-* A.5 => D
-* D.5 => G
-* G.4 => B
-* B.5 => E
+| SRC | DST |
+| --- | --- |
+| E.5 | A |
+| A.5 | D |
+| D.5 | G |
+| G.4 | B |
+| B.5 | E |
 
 #### With a Tuning Fork
 
@@ -33,4 +35,33 @@ could get a starting pitch of an A.
 
 ### Tuning Your Guitar with Harmonics
 
-https://www.coursera.org/learn/guitar/lecture/o6wnI/tuning-your-guitar-with-harmonics
+| SRC | DST |
+| --- | --- |
+| E.5 | A.7 |
+| A.5 | D.7 |
+| A.12 | G.2 |
+| A.7 | B.5 |
+| A.7 | E |
+
+## Picking
+### Picking Technique
+
+#### Single Downstrokes
+
+![1 Stroke](images/week2_1_downstroke.jpg)
+
+#### Two-Stroke Alternate Picking
+
+![2 Stroke](images/week2_2_stroke_alternate_picking.jpg)
+
+#### Three-Stroke Alternate Picking
+
+![3 Stroke](images/week2_3_stroke_alternate_picking.jpg)
+
+#### Four-Stroke Alternate Picking
+
+![4 Stroke](images/week2_4_stroke_alternate_picking.jpg)
+
+### Finger Picking
+
+https://www.coursera.org/learn/guitar/lecture/bJvAp/finger-picking
