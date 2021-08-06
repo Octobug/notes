@@ -44,6 +44,7 @@ could get a starting pitch of an A.
 | A.7 | E |
 
 ## Picking
+
 ### Picking Technique
 
 #### Single Downstrokes
@@ -64,4 +65,16 @@ could get a starting pitch of an A.
 
 ### Finger Picking
 
-https://www.coursera.org/learn/guitar/lecture/bJvAp/finger-picking
+#### Finger Picking A Minor (Play Twice)
+
+![A Minor](./images/week2_a_minor.jpg)
+
+#### Finger Picking E Major (Play Twice)
+
+![E Major](./images/week2_e_major.jpg)
+
+## Strumming
+
+### Strumming the Guitar
+
+https://www.coursera.org/learn/guitar/lecture/y7nM7/strumming-the-guitar
