@@ -17,4 +17,5 @@ disciplines according to [Outline of academic disciplines, Wikipedia][
 4. [Formal Sciences](https://en.wikipedia.org/wiki/Formal_science)
    1. [Computer Science](https://en.wikipedia.org/wiki/Computer_science)
 5. [Applied Sciences](https://en.wikipedia.org/wiki/Applied_science)
-   1. [Medicine and Health](https://en.wikipedia.org/wiki/Medicine)
+   1. [Business](https://en.wikipedia.org/wiki/Business)
+   2. [Medicine and Health](https://en.wikipedia.org/wiki/Medicine)
