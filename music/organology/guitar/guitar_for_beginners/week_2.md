@@ -77,4 +77,10 @@ could get a starting pitch of an A.
 
 ### Strumming the Guitar
 
-https://www.coursera.org/learn/guitar/lecture/y7nM7/strumming-the-guitar
+#### Strumming Exercise
+
+![Strumming](./images/week2_strumming_1.jpg)
+
+#### Strumming Exercise (Optional)
+
+![Strumming](./images/week2_strumming_2.jpg)
