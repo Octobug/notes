@@ -67,3 +67,8 @@ go mod edit -replace example.com/greetings=../greetings
 
 > In Go, you initialize a map with the following syntax:
 > `make(map[key-type]value-type)`.
+
+## Testing
+
+- file naming convention: `*_test.go`
+- case naming convention: `func TestName(t *testing.T)`
