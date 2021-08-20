@@ -16,13 +16,6 @@ func main() {
 
 	// Get a greeting message and print it.
 	message, err := greetings.Hello("Gladys")
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(message)
-
-	// Request a greeting message.
-	message, err = greetings.Hello("")
 	// If an error was returned, print it to the console and
 	// exit the program.
 	if err != nil {

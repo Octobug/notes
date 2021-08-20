@@ -1,8 +1,8 @@
 # Tutorial: Create a Go module
 
-> * [Tutorial: Create a Go module](https://golang.org/doc/tutorial/create-module)
-> * [Call your code from another module](https://golang.org/doc/tutorial/call-module-code)
-> * [Return and handle an error](https://golang.org/doc/tutorial/handle-errors)
+> - [Tutorial: Create a Go module](https://golang.org/doc/tutorial/create-module)
+> - [Call your code from another module](https://golang.org/doc/tutorial/call-module-code)
+> - [Return and handle an error](https://golang.org/doc/tutorial/handle-errors)
 
 ## Function
 
@@ -13,7 +13,7 @@
 func Hello(name string) string {}
      -----      ------  ------
    Function   Parameter Return
-   name      type      type
+   name       type      type
 ```
 
 ## Package
@@ -42,3 +42,23 @@ replacing module path.
 # e.g.
 go mod edit -replace example.com/greetings=../greetings
 ```
+
+## Slice
+
+> A slice is like an array, except that its size changes dynamically as you
+> add and remove items.
+
+```go
+[]string{
+  "a",
+  "b"
+}
+```
+
+- `[]`: slice, omiting its size in the brackets tells Go that the size of the
+  array underlying the slice can be dynamically changed
+
+## `init()`
+
+> Go executes init functions automatically at program startup, after global
+> variables have been initialized.
