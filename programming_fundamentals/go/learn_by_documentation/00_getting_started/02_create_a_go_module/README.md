@@ -62,3 +62,8 @@ go mod edit -replace example.com/greetings=../greetings
 
 > Go executes init functions automatically at program startup, after global
 > variables have been initialized.
+
+## map
+
+> In Go, you initialize a map with the following syntax:
+> `make(map[key-type]value-type)`.
