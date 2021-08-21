@@ -2,7 +2,7 @@
 
 ## 科普文
 
-- [周彼得 - 最先买啥保险](https://mp.weixin.qq.com/s/2QmMa9wUAdbm6JklgtwWdQ)
+- [最先买啥保险](which_to_buy_first.md)
 
 ## 保险种类
 
