@@ -72,3 +72,12 @@ go mod edit -replace example.com/greetings=../greetings
 
 - file naming convention: `*_test.go`
 - case naming convention: `func TestName(t *testing.T)`
+
+## Compile and install
+
+- `go build`: compiles the packages, along with their dependencies, generate an
+  executable
+- `go list -f '{{.Target}}'`: find out where the go command will install the
+  current package
+- `go env -w GOBIN=/path/to/your/bin`: custom go installation target
+- `go install`: install the executable
