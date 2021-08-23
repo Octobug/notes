@@ -8,7 +8,7 @@ These notes are categorized into directories named in academic
 disciplines according to [Outline of academic disciplines, Wikipedia][
     wiki_disciplines].
 
-1. [Human Science](https://en.wikipedia.org/wiki/Human_science)
+1. [Humanities](https://en.wikipedia.org/wiki/Humanities)
    1. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
       1. [Music](music)
 2. [Social Science](https://en.wikipedia.org/wiki/Social_science)
