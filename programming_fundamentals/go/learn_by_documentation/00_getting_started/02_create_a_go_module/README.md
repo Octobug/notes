@@ -30,8 +30,31 @@ That means `module` > `package`.
 ### Installing Module
 
 ```shell
+go get .
+go mod download
 go mod tidy
 ```
+
+> <https://stackoverflow.com/a/66584699/7267801>
+>
+> Your module's `go.mod` file records which versions of dependencies it
+> requires. The source code for those dependencies is stored in a local cache.
+>
+> `go get` updates the requirements listed in your `go.mod` file. It also
+> ensures that those requirements are self-consistent, and adds new
+> requirements as needed so that every package imported by the packages you
+> named on the command line is provided by some module in your requirements.
+>
+> As a *side-effect of updating and adding requirements*, go get also downloads
+> the modules containing the named packages (and their dependencies) to the
+> local module cache.
+>
+> In contrast, `go mod download` *does not* add new requirements or update
+> existing requirements. (At most, it will ensure that the existing
+> requirements are self-consistent, which can occur if you have hand-edited the
+> `go.mod` file.) It only downloads either the specific module versions you've
+> requested (if you requested specific versions), or the versions of modules
+> that appear in your requirements.
 
 ### Local Module
 
