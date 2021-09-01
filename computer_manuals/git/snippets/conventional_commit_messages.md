@@ -42,94 +42,94 @@ This reverts commit <b>&lt;commit hash&gt;</b>.
 
 ### Types
 
-* API relevant changes
-  * `feat` Commits, that adds a new feature
-  * `fix` Commits, that fixes a bug
-* `refactor` Commits, that rewrite/restructure your code, however does not
+- API relevant changes
+  - `feat` Commits, that adds a new feature
+  - `fix` Commits, that fixes a bug
+- `refactor` Commits, that rewrite/restructure your code, however does not
   change any behaviour
-  * `perf` Commits are special `refactor` commits, that improves performance
-* `style` Commits, that do not affect the meaning (white-space, formatting,
+  - `perf` Commits are special `refactor` commits, that improves performance
+- `style` Commits, that do not affect the meaning (white-space, formatting,
   missing semi-colons, etc)
-* `test` Commits, that add missing tests or correcting existing tests
-* `docs` Commits, that affect documentation only
-* `build` Commits, that affect build components like build tool, ci pipeline,
+- `test` Commits, that add missing tests or correcting existing tests
+- `docs` Commits, that affect documentation only
+- `build` Commits, that affect build components like build tool, ci pipeline,
   dependencies, project version, ...
-* `ops` Commits, that affect operational components like infrastructure,
+- `ops` Commits, that affect operational components like infrastructure,
   deployment, backup, recovery, ...
-* `chore` Miscellaneous commits e.g. modifying `.gitignore`
+- `chore` Miscellaneous commits e.g. modifying `.gitignore`
 
 ### Scopes
 
 The `scope` provides additional contextual information.
 
-* Is an **optional** part of the format
-* Allowed Scopes depends on the specific project
-* Don't use issue identifiers as scopes
+- Is an **optional** part of the format
+- Allowed Scopes depends on the specific project
+- Don't use issue identifiers as scopes
 
 ### Subject
 
 The `subject` contains a succinct description of the change.
 
-* Is a **mandatory** part of the format
-* Use the imperative, present tense: "change" not "changed" nor "changes"
-* Don't capitalize the first letter
-* No dot (.) at the end
+- Is a **mandatory** part of the format
+- Use the imperative, present tense: "change" not "changed" nor "changes"
+- Don't capitalize the first letter
+- No dot (.) at the end
 
 ### Body
 
 The `body` should include the motivation for the change and contrast this with
 previous behavior.
 
-* Is an **optional** part of the format
-* Use the imperative, present tense: "change" not "changed" nor "changes"
-* This is the place to mention issue identifiers and their relations
+- Is an **optional** part of the format
+- Use the imperative, present tense: "change" not "changed" nor "changes"
+- This is the place to mention issue identifiers and their relations
 
 ### Footer
 
 The `footer` should contain any information about **Breaking Changes** and is
 also the place to **reference Issues** that this commit refers to.
 
-* Is an **optional** part of the format
-* **optionally** reference an issue by its id.
-* **Breaking Changes** should start with the word `BREAKING CHANGES:` followed
+- Is an **optional** part of the format
+- **optionally** reference an issue by its id.
+- **Breaking Changes** should start with the word `BREAKING CHANGES:` followed
   by space or two newlines. The rest of the commit message is then used for this.
 
 ### Examples
 
-* ```text
+- ```text
   feat(shopping cart): add the amazing button
   ```
 
-* ```text
+- ```text
   feat: remove ticket list endpoint
   
   refers to JIRA-1337
   BREAKING CHANGES: ticket enpoints no longer supports list all entites.
   ```
 
-* ```text
+- ```text
   fix: add missing parameter to service call
   
   The error occurred because of <reasons>.
   ```
 
-* ```text
+- ```text
   build(release): bump version to 1.0.0
   ```
 
-* ```text
+- ```text
   build: update dependencies
   ```
 
-* ```text
+- ```text
   refactor: implement calculation method as recursion
   ```
 
-* ```text
+- ```text
   style: remove empty line
   ```
 
-* ```text
+- ```text
   revert: refactor: implement calculation method as recursion
   
   This reverts commit 221d3ec6ffeead67cee8c730c4a15cf8dc84897a.
@@ -139,7 +139,7 @@ also the place to **reference Issues** that this commit refers to.
 
 ### commit-msg Hook (local)
 
-* create following file in your local repository folder`.git-hooks/commit-msg`
+- create following file in your local repository folder`.git-hooks/commit-msg`
   
   ```shell
   #!/usr/bin/env sh
@@ -155,14 +155,14 @@ also the place to **reference Issues** that this commit refers to.
   
   ```
 
-* ⚠ make `.git-hooks/commit-msg` executable (unix: `chmod +x '.git-hooks/commit-msg'`)
-* set git hook directory to `.githooks`  `git config core.hooksPath '.git-hooks'`
-* commit `.git-hooks` directory if you want to share them with your team, they
+- ⚠ make `.git-hooks/commit-msg` executable (unix: `chmod +x '.git-hooks/commit-msg'`)
+- set git hook directory to `.githooks`  `git config core.hooksPath '.git-hooks'`
+- commit `.git-hooks` directory if you want to share them with your team, they
   only need to call the git config command once after cloning the repository
 
 ### pre-receive Hook (server side)
 
-* create following file in your repository folder `.git/hooks/pre-receive`
+- create following file in your repository folder `.git/hooks/pre-receive`
 
   ```shell
   #!/usr/bin/env sh
@@ -173,7 +173,8 @@ also the place to **reference Issues** that this commit refers to.
   commit_msg_type_regex='feat|fix|refactor|style|test|docs|build'
   commit_msg_scope_regex='.{1,20}'
   commit_msg_subject_regex='.{1,100}'
-  commit_msg_regex="^(${commit_msg_type_regex})(\(${commit_msg_scope_regex}\))?: (${commit_msg_subject_regex})\$"
+  commit_msg_regex="^(${commit_msg_type_regex}) \
+    (\(${commit_msg_scope_regex}\))?: (${commit_msg_subject_regex})\$"
   merge_msg_regex="^Merge branch '.+'\$"
   revert_msg_regex="^Revert \".+\"\$"
 
@@ -198,7 +199,8 @@ also the place to **reference Issues** that this commit refers to.
 
     for commit in $rev_span; do
       commit_msg_header=$(git show -s --format=%s $commit)
-      if ! [[ "$commit_msg_header" =~ (${commit_msg_regex})|(${merge_msg_regex})|(${revert_msg_regex}) ]]; then
+      if ! [[ "$commit_msg_header" =~ (${commit_msg_regex})| \
+        (${merge_msg_regex})|(${revert_msg_regex}) ]]; then
         echo "$commit" >&2
         echo "ERROR: Invalid commit message format" >&2
         echo "$commit_msg_header" >&2
@@ -212,12 +214,12 @@ also the place to **reference Issues** that this commit refers to.
   fi
   ```
 
-* ⚠ make `.git/hooks/pre-receive` executable (unix: `chmod +x '.git/hooks/pre-receive'`)
+- ⚠ make `.git/hooks/pre-receive` executable (unix: `chmod +x '.git/hooks/pre-receive'`)
 
 ## References
 
-* <https://www.conventionalcommits.org/>
-* <https://github.com/angular/angular/blob/master/CONTRIBUTING.md>
-* <http://karma-runner.github.io/1.0/dev/git-commit-msg.html>
-* <https://github.com/github/platform-samples/tree/master/pre-receive-hooks>
-* <https://github.community/t5/GitHub-Enterprise-Best-Practices/Using-pre-receive-hooks-in-GitHub-Enterprise/ba-p/13863>
+- <https://www.conventionalcommits.org/>
+- <https://github.com/angular/angular/blob/master/CONTRIBUTING.md>
+- <http://karma-runner.github.io/1.0/dev/git-commit-msg.html>
+- <https://github.com/github/platform-samples/tree/master/pre-receive-hooks>
+- <https://github.community/t5/GitHub-Enterprise-Best-Practices/Using-pre-receive-hooks-in-GitHub-Enterprise/ba-p/13863>
