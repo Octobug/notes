@@ -47,6 +47,7 @@ disciplines according to [Outline of academic disciplines, Wikipedia][
       2. [Software Development](software_engineering/software_development)
       3. [Software Maintenance](software_engineering/software_maintenance)
       4. [Software Testing](software_engineering/software_testing)
+   7. [Theory of Computation](theory_of_computation)
 
 ### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)
 
