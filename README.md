@@ -8,21 +8,60 @@ These notes are categorized into directories named in academic
 disciplines according to [Outline of academic disciplines, Wikipedia][
     wiki_disciplines].
 
-1. [Humanities](https://en.wikipedia.org/wiki/Humanities)
-   1. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
-      1. [Music](music)
-2. [Social Science](https://en.wikipedia.org/wiki/Social_science)
-3. [Natural Science](https://en.wikipedia.org/wiki/Natural_science)
-4. [Formal Science](https://en.wikipedia.org/wiki/Formal_science)
-   1. [Computer Science](https://en.wikipedia.org/wiki/Computer_science)
-      1. [Algorithms](algorithms)
-      2. [Computer Manuals](computer_manuals)
-      3. [Computer Network](computer_network)
-      4. [DevOps](devops)
-      5. [Programming Languages](programming_languages)
-      6. [Software Engineering](software_engineering)
-5. [Applied Science](https://en.wikipedia.org/wiki/Applied_science)
-   1. [Business](https://en.wikipedia.org/wiki/Business)
-      1. [Finance](finance)
-   2. [Medicine and Health](https://en.wikipedia.org/wiki/Medicine)
-      1. [Primary Care](primary_care)
+### Ⅰ. [Humanities](https://en.wikipedia.org/wiki/Humanities)
+
+1. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
+   1. [Music](music)
+      1. [Music Theory](music/music_theory)
+      2. [Organology](music/organology)
+
+### Ⅱ. [Social Science](https://en.wikipedia.org/wiki/Social_science)
+
+### Ⅲ. [Natural Science](https://en.wikipedia.org/wiki/Natural_science)
+
+### Ⅳ. [Formal Science](https://en.wikipedia.org/wiki/Formal_science)
+
+1. [Computer Science](https://en.wikipedia.org/wiki/Computer_science)
+   1. [Algorithms](algorithms)
+      1. [Algorithms the book](algorithms/algorithms)
+      2. [LeetCode](algorithms/leetcode)
+   2. [Computer Manuals](computer_manuals)
+      1. [coreutils](computer_manuals/coreutils)
+      2. [git](computer_manuals/git)
+      3. [macOS](computer_manuals/macos)
+      4. [Markdown](computer_manuals/markdown)
+      5. [Mirrors](computer_manuals/mirrors)
+      6. [Unix](computer_manuals/unix)
+   3. [Computer Network](computer_network)
+   4. [DevOps](devops)
+      1. [Ansible](devops/ansible)
+      2. [Docker](devops/docker)
+   5. [Programming Languages](programming_languages)
+      1. [Compiler](programming_languages/compiler)
+      2. [C++](programming_languages/cpp)
+      3. [Go](programming_languages/go)
+      4. [JavaScript](programming_languages/javascript)
+      5. [Rust](programming_languages/rust)
+   6. [Software Engineering](software_engineering)
+      1. [Software Design](software_engineering/software_design)
+      2. [Software Development](software_engineering/software_development)
+      3. [Software Maintenance](software_engineering/software_maintenance)
+      4. [Software Testing](software_engineering/software_testing)
+
+### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)
+
+1. [Business](https://en.wikipedia.org/wiki/Business)
+   1. [Finance](finance)
+      1. [Personal Finance](finance/personal_finance)
+2. [Medicine and Health](https://en.wikipedia.org/wiki/Medicine)
+   1. [Primary Care](primary_care)
+      1. [Health Administration](primary_care/health_administration)
+
+## Blogs
+
+Blogs that I've been reading, listed in alphabetical order.
+
+- [ ] [当然我在扯淡](http://www.yinwang.org/)
+- [ ] [酷壳](https://coolshell.cn/)
+- [ ] [Randy's Blog](https://lutaonan.com/)
+- [ ] [The GitHub Blog](https://github.blog/)
