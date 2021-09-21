@@ -1,7 +1,10 @@
 {
-  "readme": "https://github.com/DavidAnson/vscode-markdownlint",
+  "readme": {
+    "official": "https://github.com/DavidAnson/vscode-markdownlint"
+  },
   "MD004": {
     "style": "dash"
   },
+  "MD026": false,
   "MD033": false
 }
