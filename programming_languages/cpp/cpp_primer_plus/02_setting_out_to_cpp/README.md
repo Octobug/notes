@@ -98,3 +98,23 @@ it ocnsiders input to be a stream of characters flowing into the program.
 The `iostream` file defined `cin` as an object that represents this stream.
 
 ### `cin` and `cout`: A Touch of Class
+
+## Functions
+
+### Function Prototype
+
+A function prototype does for functions what a variable declaration does for
+variables.
+
+The prorotype only describes the function interface.
+
+The definition includes the code for the function's workings.
+
+C and C++ divide these two features -- prototype and definition -- for library
+functions. The library files contain the compiled code for the functions,
+whereas the header files contain the prototypes.
+
+You should place a function prototype ahead of where you first use the function.
+
+The usual practice is to place prototypes just before the definition of the
+`main()` function.
