@@ -1,4 +1,4 @@
-# c10k
+# The C10K problem
 
 The C10k (ten thousand clients) problem.
 
