@@ -44,6 +44,7 @@ disciplines according to [Outline of academic disciplines, Wikipedia][
    6. [Operating System](operating_system)
       1. [Operating Systems](operating_system/operating_system)
       2. [Systems Programming](operating_system/systems_programming)
+      3. [The C10K problem](operating_system/the_c10k_problem)
    7. [Programming Languages](programming_languages)
       1. [Compiler](programming_languages/compiler)
       2. [C++](programming_languages/cpp)
