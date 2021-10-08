@@ -1,6 +1,6 @@
-# The C10K problem
+# The C10K Problem
 
-The C10k (ten thousand clients) problem.
+The C10K (ten thousand clients) problem.
 
 ## References
 
