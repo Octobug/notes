@@ -1,4 +1,14 @@
-# Questions
+# The C10K problem
+
+## syscall
+
+### poll
+
+#### `poll` can achieve O(1)
+
+[Benchmarking BSD and Linux - The connect latency benchmark](benchmarking_bsd_and_linux.md#the-connect-latency-benchmark)
+
+## Questions
 
 ## Differences between handling connections and requests?
 
