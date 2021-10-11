@@ -35,6 +35,7 @@ disciplines according to [Outline of academic disciplines, Wikipedia][
    3. [Computer Network](computer_network)
       1. [IETF](computer_network/ietf)
       2. [Internet Protocol Suite](computer_network/internet_protocol_suite)
+      3. [Network Programming](computer_network/network_programming)
    4. [Databases](databases)
       1. [MySQL](databases/mysql)
       2. [PostgreSQL](databases/postgresql)
