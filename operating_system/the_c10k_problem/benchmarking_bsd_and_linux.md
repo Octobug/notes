@@ -4,7 +4,7 @@
 >
 > Author: Felix von Leitner
 >
-> Snapshot on 2021-10-10 by [Octobug](https://github.com/Octobug)
+> Snapshotted on 2021-10-10 by [Octobug](https://github.com/Octobug)
 
 To contact me, send an email to *felix-benchmark at fefe.de*.
 
