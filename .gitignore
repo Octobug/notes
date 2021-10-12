@@ -1,3 +1,6 @@
+# os generated files
+.DS_Store
+
 # temporary files
 /bin/
 node_modules/

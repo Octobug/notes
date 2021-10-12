@@ -2,11 +2,9 @@
 
 ## Categories
 
-[wiki_disciplines]: <https://en.wikipedia.org/wiki/Outline_of_academic_disciplines>
-
 These notes are categorized into directories named in academic
-disciplines according to [Outline of academic disciplines, Wikipedia][
-    wiki_disciplines].
+disciplines according to the
+[Outline of academic disciplines, Wikipedia](https://en.wikipedia.org/wiki/Outline_of_academic_disciplines).
 
 ### Ⅰ. [Humanities](https://en.wikipedia.org/wiki/Humanities)
 
@@ -14,6 +12,10 @@ disciplines according to [Outline of academic disciplines, Wikipedia][
    1. [Music](music)
       1. [Music Theory](music/music_theory)
       2. [Organology](music/organology)
+2. [Languages](https://en.wikipedia.org/wiki/Language)
+   and [Literature](https://en.wikipedia.org/wiki/Literature)
+   1. [Linguistics](linguistics)
+      1. [Applied Linguistics](linguistics/applied_linguistics)
 
 ### Ⅱ. [Social Science](https://en.wikipedia.org/wiki/Social_science)
 
