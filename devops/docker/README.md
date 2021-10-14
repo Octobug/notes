@@ -2,6 +2,6 @@
 
 > <https://www.docker.com/>
 
-## Resources
+## Learning Materials
 
 - [Docker Curriculum](docker_curriculum)
