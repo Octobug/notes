@@ -7,3 +7,7 @@
 ## Table of Contents
 
 - [Preface](0_preface)
+- Part 1: Introduction and TCP/IP
+  - [Chapter 1. Introduction](chap_01_introduction)
+- Part 2: Elemetary Sockets
+- Part 3: Advanced Sockets
