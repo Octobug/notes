@@ -8,14 +8,14 @@ disciplines according to the
 
 ### Ⅰ. [Humanities](https://en.wikipedia.org/wiki/Humanities)
 
-1. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
-   1. [Music](music)
-      1. [Music Theory](music/music_theory)
-      2. [Organology](music/organology)
-2. [Languages](https://en.wikipedia.org/wiki/Language)
+1. [Languages](https://en.wikipedia.org/wiki/Language)
    and [Literature](https://en.wikipedia.org/wiki/Literature)
    1. [Linguistics](linguistics)
       1. [Applied Linguistics](linguistics/applied_linguistics)
+2. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
+   1. [Music](music)
+      1. [Music Theory](music/music_theory)
+      2. [Organology](music/organology)
 
 ### Ⅱ. [Social Science](https://en.wikipedia.org/wiki/Social_science)
 
