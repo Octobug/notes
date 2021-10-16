@@ -6,4 +6,5 @@
 
 ## Table of Contents
 
-- [Preface](preface)
+- [x] [Preface and Introduction](0_preface_and_introduction)
+- [ ] [Chapter 1 - A Tutorial Introduction](chap1_a_tutorial_introduction)
