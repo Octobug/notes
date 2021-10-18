@@ -1,4 +1,6 @@
-# Mirrors for Chinese
+# Mirrors
+
+> I'm Chinese!
 
 - [USTC Mirror Help](https://mirrors.ustc.edu.cn/help/)
 

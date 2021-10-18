@@ -2,7 +2,7 @@
 
 > <https://en.wikipedia.org/wiki/Unix-like>
 
-## Documentations
+## Learning Materials
 
 - [ArchWiki](https://wiki.archlinux.org/)
 - [The Linux Documentation Project](https://tldp.org/)
