@@ -2,7 +2,8 @@
 
 > I'm Chinese!
 
-- [USTC Mirror Help](https://mirrors.ustc.edu.cn/help/)
+- [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
+- [USTC open source software mirror](https://mirrors.ustc.edu.cn/)
 
 ## References
 
