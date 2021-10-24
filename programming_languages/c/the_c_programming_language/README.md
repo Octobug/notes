@@ -7,4 +7,6 @@
 ## Table of Contents
 
 - [x] [Preface and Introduction](0_preface_and_introduction)
-- [ ] [Chapter 1 - A Tutorial Introduction](chap1_a_tutorial_introduction)
+- [x] [Chapter 1 - A Tutorial Introduction](chap1_a_tutorial_introduction)
+- [x] [Chapter 2: Types, Operators, and Expressions](chap2_types_operators_and_expressions)
+- [ ] [Chapter 3: Control Flow](chap3_control_flow)
