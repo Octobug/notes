@@ -34,3 +34,14 @@ int binsearch(int x, in v[], int n)
 ```
 
 ## 3.4 Switch
+
+`cases` serve just as **lables**, so execution falls through to the next case.
+
+```c
+switch (expression) {
+    case const-expr: statements
+    case const-expr: statements
+    default: statements
+}
+
+## 3.5 Loops -- While and For
