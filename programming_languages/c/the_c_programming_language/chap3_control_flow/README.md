@@ -45,3 +45,68 @@ switch (expression) {
 }
 
 ## 3.5 Loops -- While and For
+
+The for statement
+
+```c
+for (expr1; expr2; expr3)
+    statement
+```
+
+is equivalent to
+
+```c
+expr1;
+while (expr2)
+{
+    statement
+    expr3;
+}
+```
+
+The three components of a `for` loop are expressions. Any of them can be
+omitted, although the semicolons must remain.
+
+The standard library provides a more elaborate function `strtol` for conversion
+of strings to long integers.
+
+### Shell Sort
+
+In early stages, far-apart elements are compared, rather than adjacent ones as
+in simpler interchange sorts. This tends to eliminate large amounts of disorder
+quickly, so later stages have less work to do.
+
+### The comma operator
+
+Most often finds use in the `for` statement. A pair of expressions separated by
+a comma is evaluated left to right, and the type and value of the result are the
+type and value of the right operand.
+
+The commas that separate function arguments, variables in declarations, etc.,
+are **not** comma operators.
+
+```c
+for (i = 0, j = strlen(s) - 1; i < j; i++, j--)
+    c = s[i], s[i] = s[j], s[j] = c;
+```
+
+## 3.6 Loops -- Do-while
+
+## 3.7 Break and Continue
+
+## 3.8 Goto and Labels
+
+```c
+for (...)
+    for (...)
+    {
+        if (disaster)
+            goto error;
+    }
+
+error:
+    // clean up the mess
+```
+
+`lable` can be attached to any statement in the same function as the `goto`. The
+scope of a label is the entire function.
