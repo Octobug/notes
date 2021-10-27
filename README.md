@@ -85,4 +85,4 @@ Blogs that I've been reading, listed in alphabetical order.
 
 ## Miscellaneous
 
-- [Inverview](interview) for Software Engineer
+- [Interview](interview) for Software Engineer
