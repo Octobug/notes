@@ -293,3 +293,5 @@ arguments.
 
 By convention, `argv[0]` is the name by which the program was invoked, so `argc`
 is at least 1. The standard requires that argv[argc] be a null pointer.
+
+## 5.11 Pointers to Functions

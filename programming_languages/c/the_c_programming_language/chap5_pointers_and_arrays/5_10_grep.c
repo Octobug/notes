@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
         {
             // strstr(s, t) returns a pointer to the first occurrence of the
             // string t in the string s
-            if (strstr(line, argv[1] != NULL))
+            if (strstr(line, argv[1]) != NULL)
             {
                 printf("%s", line);
                 found++;
