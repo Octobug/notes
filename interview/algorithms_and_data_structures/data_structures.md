@@ -7,8 +7,8 @@
 ```pcode
 Node l1;
 Node nextNode;
+nextNode->next = l1->next;
 l1->next = nextNode;
-nextNode->next = NULL;
 ```
 
 ### 给定一个单链表结点，将一个新结点插入到该结点之前。
@@ -18,7 +18,8 @@ Node l1;
 Node preNode;
 Val tmp = l1->val;
 l1->val = preNode->val;
-l1->next = preNode;
 preNode->val = tmp;
-preNode->next = NULL;
+
+preNode->next = l1->next;
+l1->next = preNode;
 ```
