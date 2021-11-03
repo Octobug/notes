@@ -15,6 +15,7 @@
     "iostream": "cpp",
     "ostream": "cpp",
     "__locale": "cpp",
-    "iosfwd": "cpp"
+    "iosfwd": "cpp",
+    "locale": "c"
   }
 }

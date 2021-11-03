@@ -295,3 +295,33 @@ By convention, `argv[0]` is the name by which the program was invoked, so `argc`
 is at least 1. The standard requires that argv[argc] be a null pointer.
 
 ## 5.11 Pointers to Functions
+
+In C, a function itself is not a variable, but it is possible to define pointers
+to functions, which can be assignedm placed in arrays, passed to functions,
+returned by functions.
+
+Functions to be passed to other functions need not to use the `&` operator.
+
+The generic pointer type `void *` is used for the pointer arguments. Any pointer
+can be cast to `void *` and back again without loss of information.
+
+e.g.
+
+```c
+void qsort(void *v[], int left, int right,
+           int (*comp)(void *, void *));
+```
+
+The fourth parameter of `qsort` is `int (*comp)(void *, void *)`, which says
+that `comp` is a pointer to a function that has two `void *` arguments and
+returns an int.
+
+The use of `comp` in the line `if ((*comp)(v[i], v[left]) < 0)` is consistent
+with the declaration: `comp` is a pointer to a function, `*comp` is the
+function, and `(*comp)(v[i], v[left])` is the call to it.
+
+The parentheses are needed so the components are correctly associated; without
+them, `int *comp(void *, void *)` says that `comp` is a function returning a
+pointer to an int, which is very different.
+
+## 5.12 Complicated Declarations
