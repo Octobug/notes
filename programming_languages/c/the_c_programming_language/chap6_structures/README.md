@@ -59,3 +59,74 @@ screen.pt1.x;
 ```
 
 ## 6.2 Structures and Functions
+
+structure parameters are passed by value like any others. Structure pointers are
+just like pointers to ordinary variables.
+
+```c
+// pp is a pointer to a structure of type struct point.
+struct point *pp;
+
+// to use pp, we might write
+struct point origin, *pp;
+
+pp = &origin;
+printf("origin is (%d, %d)\n", (*pp).x, (*pp).y);
+printf("origin is (%d, %d)\n, pp->x, pp->y);
+```
+
+The parentheses are necessary in `(*pp).x` because the precedence of the
+structure member operator `.` is higher than `*`. `*pp.x` means `x` is a
+pointer. `(*pp).x` is equivalent to `pp->x`;
+
+```c
+struct
+{
+    int len;
+    char *str;
+} *p;
+
+++p->len
+// increments len, not p
+
+*p->str++ // == *p->(str++)
+// increments str after accessing whatever it points to
+
+(*p->str)++
+// increments whatever str points to
+
+*p++->str
+// increments p after accessing whatever str points to
+```
+
+## 6.3 Arrays of Structures
+
+```c
+struct key
+{
+    char *word;
+    int count;
+} keytab[NKEYS];
+
+// is equivalent to
+
+struct key
+{
+    char *word;
+    int count;
+};
+
+struct key keytab[NKEYS];
+```
+
+C provides a compile-time unary operator called `sizeof` that can be used to
+compute the size of any object. The expressions `sizeof object` and
+`sizeof(type name)` yield an unsigned integer whose type is `size_t`, defined
+in the header `<stddef.h>`, equal to the size of the specified object
+or type **in bytes**.
+
+A `sizeof` can not be used in a `#if` line, because the preprocessor does not
+parse type names. But the expression in the `#define` is not evaluated by the
+preprocessor, so `sizeof` in `#define` is OK.
+
+## 6.4 Pointers to Structures
