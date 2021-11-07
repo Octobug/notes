@@ -130,3 +130,52 @@ parse type names. But the expression in the `#define` is not evaluated by the
 preprocessor, so `sizeof` in `#define` is OK.
 
 ## 6.4 Pointers to Structures
+
+There may be unnamed "holes" in a structure because of alignment requirements
+for different objects. If a `char` is one byte and an `int` four bytes, the
+structure
+
+```c
+sturct
+{
+    char c;
+    int i;
+};
+```
+
+might well require eight bytes, **not** five. The `sizeof` operator returns the
+proper value.
+
+## 6.5 Self-referential Structures
+
+e.g. Use a `binary tree` to store words. The tree contains one "node" per
+distinct word; each node contains
+
+- a pointer to the next of the word
+- a count of the number of occurrences
+- a pointer to the left child node
+- a pointer to the right child node
+
+It is illegal for a structure to contain an instance of itself, but
+
+```c
+struct tnode *left;
+```
+
+declaras `left` to be a pointer to a `tnode`, not a `tnode` itself.
+
+One needs a variation of self-referential structures: two structures that refer
+to each other:
+
+```c
+struct t
+{
+    ...
+    struct s *p;    // p points to an s
+};
+struct s
+{
+    ...
+    struct t *q;    // q points to a t
+};
+```
