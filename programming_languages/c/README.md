@@ -4,4 +4,5 @@
 
 ## Learning Materials
 
-- [The C Programming Language by Brian W. Kernighan, Dennis M. Ritchie](the_c_programming_language)
+- [The C Programming Language](the_c_programming_language)
+  by Brian W. Kernighan, Dennis M. Ritchie

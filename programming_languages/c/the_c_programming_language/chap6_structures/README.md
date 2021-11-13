@@ -179,3 +179,7 @@ struct s
     struct t *q;    // q points to a t
 };
 ```
+
+`malloc` returns `NULL` if no space is available.
+
+## 6.6 Table Lookup
