@@ -12,4 +12,5 @@
 - [x] [Chapter 3: Control Flow](chap3_control_flow)
 - [x] [Chapter 4: Functions and Program Structure](chap4_functions_and_program_structure)
 - [x] [Chapter 5: Pointers and Arrays](chap5_pointers_and_arrays)
-- [ ] [Chapter 6: Structures](chap6_structures)
+- [x] [Chapter 6: Structures](chap6_structures)
+- [ ] [Chapter 7: Input and Output](chap7_input_and_output)

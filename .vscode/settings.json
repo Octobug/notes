@@ -17,6 +17,7 @@
     "__locale": "cpp",
     "iosfwd": "cpp",
     "locale": "c",
-    "algorithm": "c"
+    "algorithm": "c",
+    "string.h": "c"
   }
 }
