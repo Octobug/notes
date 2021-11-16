@@ -4,6 +4,6 @@
 
 ## Specifications
 
-- [Conventional Changelog](conventional_changelog.md)
-- [Conventional Commits](conventional_commits.md)
-- [Semantic Versioning](semantic_versioning.md)
+1. [Semantic Versioning](semantic_versioning.md)
+2. [Conventional Commits](conventional_commits.md)
+3. [Conventional Changelog](conventional_changelog.md)
