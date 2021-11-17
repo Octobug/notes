@@ -1,5 +1,9 @@
 # Software Development
 
-[sd]: <https://en.wikipedia.org/wiki/Software_development>
+> <https://en.wikipedia.org/wiki/Software_development>
 
-> [Software Development][sd]
+## Aspects
+
+- [Git](git)
+- [Open Source](open_source)
+- [Software Versioning](software_versioning)
