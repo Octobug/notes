@@ -35,12 +35,49 @@ TCP and IP protocols are normally part of the protocol stack within the kernel.
 
 ### Create TCP socket
 
+```c
+#include "unp.h"
+
+int main(int argc, char **argv)
+{
+    int sockfd, n;
+    char recvline[MAXLINE + 1];
+    struct sockaddr_in servaddr;
+
+    if (argc != 2)
+        err_quit("usage: a.out <IPaddress>");
+
+    if ((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
+        err_sys("socket error");
+
+    bzero(&servaddr, sizeof(servaddr));
+    servaddr.sin_family = AF_INET;
+    servaddr.sin_port = htons(13); /* daytime server */
+    if (inet_pton(AF_INET, argv[1], &servaddr.sin_addr) <= 0)
+        err_quit("inet_pton error for %s", argv[1]);
+
+    if (connect(sockfd, (SA *)&servaddr, sizeof(servaddr)) < 0)
+        err_sys("connect error");
+
+    while ((n = read(sockfd, recvline, MAXLINE)) > 0)
+    {
+        recvline[n] = 0; /* null terminate */
+        if (fputs(recvline, stdout) == EOF)
+            err_sys("fputs error");
+    }
+    if (n < 0)
+        err_sys("read error");
+
+    exit(0);
+}
+```
+
 ### Specify server's IP address and port
 
+- `bzero`: initialize memory to zero
 - `htons`: host to network short
 - `inet_pton`: presentation to numeric of internet
 - `inet_addr`: to convert an ASCII dotted-decimal string into the correct format
-- `bzero`: initialize memory to zero
 
 ### Establish connect with server
 
@@ -66,3 +103,46 @@ there are a few common ways to accomplish this.
 Unix always closes all open descriptors when a process terminates.
 
 ## 1.3 Protocol Independence
+
+## 1.4 Error Handling: Wrapper Functions
+
+In any real-world program, it is essential to check *every* function call for
+error return.
+
+Capilize the name of the error handling wrapper function:
+
+```c
+sockfd = Socket(AF_INET, SOCK_STREAM, 0);
+
+int Socket(int family, int type, int protocol)
+{
+    int n;
+
+    if ((n = socket(family, type, protocol)) < 0)
+        err_sys("socket error");
+
+    return (n);
+}
+```
+
+To avoid cluttering the code with braces:
+
+```c
+int n;
+
+if ((n = pthread_mutex_lock(&ndone_mutex)) != 0)
+    errno = n, err_sys("pthread_mutex_lock error");
+
+// better way
+Pthread_mutex_lock(&ndone_mutex);
+
+void Pthread_mutex_lock(pthread_mutex_t *mptr)
+{
+    int n;
+
+    if ((n = pthread_mutet_lock(mptr)) == 0)
+        return;
+    errno = n;
+    err_sys("pthread_mutex_lock error");
+}
+```
