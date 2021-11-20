@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-- [ ] 1 Introduction to Microservices
+- [x] [1 Introduction to Microservices](1_introduction_to_microservices)
 - [ ] 2 Using an API Gateway
 - [ ] 3 Inter-Process Communication
 - [ ] 4 Service Discovery
