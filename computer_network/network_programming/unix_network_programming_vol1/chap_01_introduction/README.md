@@ -29,12 +29,6 @@ TCP and IP protocols are normally part of the protocol stack within the kernel.
 
 `intro/daytimetcpcli`: should make & run `intro/daytimetcpsrv` first.
 
-### Include our own header
-
-### Command-line arguments
-
-### Create TCP socket
-
 ```c
 #include "unp.h"
 
@@ -72,35 +66,39 @@ int main(int argc, char **argv)
 }
 ```
 
-### Specify server's IP address and port
+1. Include our own header
+2. Command-line arguments
+3. Create TCP socket
+4. Specify server's IP address and port
 
-- `bzero`: initialize memory to zero
-- `htons`: host to network short
-- `inet_pton`: presentation to numeric of internet
-- `inet_addr`: to convert an ASCII dotted-decimal string into the correct format
+    - `bzero`: initialize memory to zero
+    - `htons`: host to network short
+    - `inet_pton`: presentation to numeric of internet
+    - `inet_addr`: to convert an ASCII dotted-decimal string into the correct
+        format
 
-### Establish connect with server
+5. Establish connect with server
 
-The `connect` function, when applied to a TCP socket, establishes a TCP
-connection with the server specified by the socket address structure pointed to
-by the second argument.
+    The `connect` function, when applied to a TCP socket, establishes a TCP
+    connection with the server specified by the socket address structure
+    pointed to by the second argument.
 
-### Read and display server's reply
+6. Read and display server's reply
 
-TCP is a *byte-stream* protocol with no record boundaries. With that, data can
-be returned in numerous ways. With larger data sizes, we cannot assume that the
-server's reply will be returned by s single `read`. Therefore, when reading from
-a TCP socket, we *always* need to code the `read` in a loop and terminate the
-loop when either `read` returns 0 (i.e., the other end closed the connection) or
-a value less than 0 (an error).
+    TCP is a *byte-stream* protocol with no record boundaries. With that, data
+    can be returned in numerous ways. With larger data sizes, we cannot assume
+    that the server's reply will be returned by s single `read`. Therefore,
+    when reading from a TCP socket, we *always* need to code the `read` in a
+    loop and terminate the loop when either `read` returns 0 (i.e., the other
+    end closed the connection) or a value less than 0 (an error).
 
-The important concept here is that TCP itself provides no record markers: If an
-application wants to delineate the ends of records, it must do so itself and
-there are a few common ways to accomplish this.
+    The important concept here is that TCP itself provides no record markers:
+    If an application wants to delineate the ends of records, it must do so
+    itself and there are a few common ways to accomplish this.
 
-### Terminate program
+7. Terminate program
 
-Unix always closes all open descriptors when a process terminates.
+    Unix always closes all open descriptors when a process terminates.
 
 ## 1.3 Protocol Independence
 
@@ -164,3 +162,48 @@ Storing `errno` in a global variable does not work with multiple threads that
 share all global variables.
 
 ## 1.5 A Simple Daytime Server
+
+```c
+#include "unp.h"
+#include <time.h>
+
+int main(int argc, char **argv)
+{
+    int listenfd, connfd;
+    struct sockaddr_in servaddr;
+    char buff[MAXLINE];
+    time_t ticks;
+
+    listenfd = Socket(AF_INET, SOCK_STREAM, 0);
+
+    bzero(&servaddr, sizeof(servaddr));
+    servaddr.sin_family = AF_INET;
+    servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
+    servaddr.sin_port = htons(13); /* daytime server */
+
+    Bind(listenfd, (SA *)&servaddr, sizeof(servaddr));
+
+    Listen(listenfd, LISTENQ);
+
+    for (;;)
+    {
+        connfd = Accept(listenfd, (SA *)NULL, NULL);
+
+        ticks = time(NULL);
+        snprintf(buff, sizeof(buff), "%.24s\r\n", ctime(&ticks));
+        Write(connfd, buff, strlen(buff));
+
+        Close(connfd);
+    }
+}
+```
+
+1. Create a TCP socket
+2. Bind server's well-known port to socket
+
+    The server's well-known port (13 for the daytime service) is bound to the
+    socket by filling in an Internet socket address struture and calling `bind`.
+    `INADDR_ANY` allows the server to accept a client connection on any
+    interface.
+
+3. Convert socket to listening socket
