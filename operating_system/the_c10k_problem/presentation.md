@@ -1,25 +1,19 @@
 # The C10K problem
 
-## syscall
+## 什么是 c10k 问题
 
-### poll
+### 相关问题
 
-#### `poll` can achieve O(1)
+### 处理连接与请求的区别
 
-[Benchmarking BSD and Linux - The connect latency benchmark](benchmarking_bsd_and_linux.md#the-connect-latency-benchmark)
-
-## Questions
-
-## Differences between handling connections and requests?
-
-### Handling many requests
+#### 并行处理多各连接
 
 - Handling many requests per second requires high throughput (processing them
   quickly.
 - Handling many requests per second is concerned with the speed of handling
   requests.
 
-### Handling many concurrent connections
+#### 并行/并发处理多个请求
 
 - A high number of concurrent connections requires efficient scheduling of
 connections.
@@ -28,24 +22,28 @@ connections.
   deterministically return a response within a (not necessarily fixed) finite
   amount of time.
 
-## What is it?
+## 是什么造成了这个问题
 
-## Why is it a problem?
-
-### Operating system layer
+### 操作系统层
 
 - Multi-processing capabilities
 - Memory management
 - I/O management
 
-### Application layer
+- poll
+  - `poll` can achieve O(1)
 
-## Status quo?
+    [Benchmarking BSD and Linux - The connect latency benchmark](benchmarking_bsd_and_linux.md#the-connect-latency-benchmark)
+- Nodejs 的事件循环
+
+### 应用层
+
+## 现状
 
 c10m became reality in 2010s.
 
-## How was it solved?
+## 解决方案
 
-### How did the industrial solved it?
+### 业界是如何解决的
 
-### How to solve it in Python?
+### 如何写一个高性能服务器
