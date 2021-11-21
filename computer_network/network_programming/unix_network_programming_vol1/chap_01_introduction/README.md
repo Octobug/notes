@@ -146,3 +146,21 @@ void Pthread_mutex_lock(pthread_mutex_t *mptr)
     err_sys("pthread_mutex_lock error");
 }
 ```
+
+Using `C` macros instead of functions providing a little runtime efficiency, but
+these wrapper functions are rarely the performance bottleneck of a program.
+
+### Unix `errno` Value
+
+When an error occurs in a Unix function (such as one of the socket functions),
+the global variable `errno` is set to a positive value indicating the type of
+error and the function normally returns -1.
+
+All of the positive error values are constants with all-uppercase names
+beginning with "E", and are normally defined in the `<sys/errno.h>` header. No
+error has a value of 0.
+
+Storing `errno` in a global variable does not work with multiple threads that
+share all global variables.
+
+## 1.5 A Simple Daytime Server
