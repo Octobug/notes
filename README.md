@@ -45,7 +45,7 @@ disciplines according to the
       1. [Ansible](devops/ansible)
       2. [CI/CD/CD](devops/ci_cd_cd)
       3. [Containers](devops/containers)
-      4. [Process Management](process_management)
+      4. [Process Management](devops/process_management)
       5. [Site Reliability Engineering](devops/site_reliability_engineering)
       6. [Unix-like](devops/unix-like)
    6. [Operating System](operating_system)
