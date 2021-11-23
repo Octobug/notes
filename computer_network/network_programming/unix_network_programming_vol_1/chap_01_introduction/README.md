@@ -198,6 +198,25 @@ int main(int argc, char **argv)
 }
 ```
 
+The style used throughout the book for an infinite loop is
+
+```c
+for (;;)
+{
+    //...
+}
+```
+
+`snprintf` is better than `sprintf` because it checks for overflow by requiring
+the 2nd argument be the size of the destination buffer.
+
+### Functions that should be carefully dealt with, and better functions
+
+- `sprintf`: `snprintf`
+- `gets`: `fgets`
+- `strcat`: `strncat`: `strlcat`
+- `strcpy`: `strncpy`: `strlcpy`
+
 1. Create a TCP socket
 2. Bind server's well-known port to socket
 
@@ -207,3 +226,39 @@ int main(int argc, char **argv)
     interface.
 
 3. Convert socket to listening socket
+
+    By calling `listen`, the socket is converted into a listening socket, on
+    which incoming connections from clients will be accepted by the kernel.
+    These three steps, `socket`, `bind`, and `listen`, are the normal steps for
+    any TCP server to prepare what we call the *listening descriptor*
+    (`listenfd` in this example).
+
+    The constant `LISTENQ` is from our `unp.h` header. It specifies the maximum
+    number of client connections that the kernel will queue for this listening
+    descriptor.
+
+4. Accept client connection, send reply
+
+    Normally, the server process is put to **sleep** in the call to `accept`,
+    waiting for a client connection to arrive and be accepted. A TCP connection
+    uses what is called a *three-way handshake* to establish a connection. When
+    this handshake completes, `accept` returns, and the return value from the
+    function is a new descriptor (`connfd`) that is called the *connected
+    descriptor*. This new descriptor is used for communication with the new
+    client. A new descriptor is returned by `accept` for each client that
+    connects to our server.
+
+5. Terminate connection
+
+    The server closes its connection with the client by calling `close`. This
+    initiates the normal TCP connection termination sequence: a FIN is sent in
+    each direction and each FIN is acknowledged by the other end.
+
+This server is called an *iterative server* because it iterates through each
+client, one at a time. There are numerous techniques for writing a *concurrent
+server*, one that handles multiple clients at the same time. The simplest
+technique for a concurrent server is to call the Unix `fork` function, creating
+one child process for each client. Other techniques are to use threads instead
+of `fork`, or to pre-fork a fixed number of children when the server starts.
+
+## 1.6 Roadmap to Client/Server Examples in the Text

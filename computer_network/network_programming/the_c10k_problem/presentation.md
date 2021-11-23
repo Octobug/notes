@@ -47,3 +47,9 @@ c10m became reality in 2010s.
 ### 业界是如何解决的
 
 ### 如何写一个高性能服务器
+
+REF: UNP
+
+- 迭代式（iterative）服务器: 基于循环一次一个
+- multi-process: 按需开启多子进程/预设子进程
+- multi-thread: 按需开启多线程/预设子线程
