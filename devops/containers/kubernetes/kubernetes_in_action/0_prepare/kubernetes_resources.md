@@ -39,5 +39,5 @@
   - `StorageClass* (sc) [storage.k8s.io/v1]`: Defines the type of
     dynamically-provisioned storage claimable in a PersistentVolumeClaim
 
-> `*`: Cluster-level resource (not namespaced)
+> `*`: Cluster-level resource (not namespaced)  
 > `**`: Also in other API versions; listed version is the one used in this book
