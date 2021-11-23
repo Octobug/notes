@@ -51,7 +51,6 @@ disciplines according to the
    6. [Operating System](operating_system)
       1. [Operating Systems](operating_system/operating_systems)
       2. [Systems Programming](operating_system/systems_programming)
-      3. [The C10K Problem](operating_system/the_c10k_problem)
    7. [Programming Languages](programming_languages)
       1. [C](programming_languages/c)
       2. [Compiler](programming_languages/compiler)
