@@ -409,7 +409,7 @@ resolve the same conflicts. Sometimes you can reuse recorded resolutions
 once. Atlassian has a more thorough explanation of the tradeoffs between
 merging and rebasing [on their blog](https://www.atlassian.com/blog/git/git-team-workflows-merge-or-rebase).
 
-A good way to prevent creating many merge commits is to not frequently merge
+A good way to prevent creating many merge commits is to **not** frequently merge
 `main` into the feature branch. There are three reasons to merge in `main`:
 utilizing new code, resolving merge conflicts, and updating long-running
 branches.
