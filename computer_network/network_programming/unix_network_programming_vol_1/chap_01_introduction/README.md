@@ -262,3 +262,53 @@ one child process for each client. Other techniques are to use threads instead
 of `fork`, or to pre-fork a fixed number of children when the server starts.
 
 ## 1.6 Roadmap to Client/Server Examples in the Text
+
+- A daytime client/server
+- An echo client/server
+
+## 1.7 OSI Model
+
+OSI: Open Systems Interconnection.
+
+### Layers in OSI model and Internet protocol suite
+
+```diagram
+7   application
+----------------                                            application details
+6   presentation    application
+----------------                               user process
+5   session
+--------------------------------<-sockets XTI  ---------------------------------
+4   transport       TCP|  ↕  |UDP
+----------------    -------------
+3   network         IPv4, IPv6                 kernel
+----------------    -------------
+2   datalink        device driver                        communications details
+----------------    and
+1   physical        hardware
+----------------    -------------
+OSI model           Internet protocol
+                    suite
+```
+
+It is possible for an application to bypass the transport layer and use IPv4 and
+IPv6 directly. This is called *raw socket*.
+
+Why do sockets provide the interface from the upper three layers of the OSI
+model into the transport layer? There are two reasons for this design:
+
+1. The upper three layers handle all the details of the application (FTP,
+    Telnet, HTTP, etc.) and know little about the communication details.
+
+    The lower four layers know little about the application, but handle all the
+    communication details: sending data, waiting for ackowledgment, sequencing
+    data that arrives out of order, calculating and verifying checksums, and so
+    on.
+
+2. The upper three layers often form what is called a *user process* while the
+    lower four layers are normally provided as part of the operating system
+    kernel. Unix provides this separation between the user process and the
+    kernel, as do many other contemporary operating systems. Therefore, the
+    interface between layers 4 and 5 is the natural place to build the API.
+
+## 1.8 BSD Networking History
