@@ -76,7 +76,7 @@ is in a league of its own in this regard.
 
 ## Queueing Theory
 
-- "[Introduction to Queueing](http://staff.um.edu.mt/jskl1/simweb/intro.htm"
+- "[Introduction to Queueing](http://staff.um.edu.mt/jskl1/simweb/intro.htm)"
 - [Little's Law](http://en.wikipedia.org/wiki/Little's_law) (L = λW)
 - Leonard Kleinrock's peerless *Queueing Systems*
   (Volume 1: [Theory](http://www.amazon.com/Queueing-Systems-Theory-Leonard-Kleinrock/dp/0471491101),
