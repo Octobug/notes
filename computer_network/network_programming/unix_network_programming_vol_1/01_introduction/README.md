@@ -4,11 +4,19 @@
 
 ### Network application: client and server.
 
-![Network application: client and server](images/1_1.png)
+```diagram
+[client] <-- application protocol --> [server]
+```
 
 ### Server handling multiple clients at the same time.
 
-![Server handling multiple clients at the same time](images/1_2.png)
+```diagram
+[client]    ↖
+...             ↘
+[client]    ←---→   [server]
+...             ↗
+[client]    ↙
+```
 
 ### Client and server on the same Ethernet communicating using TCP.
 
@@ -312,3 +320,99 @@ model into the transport layer? There are two reasons for this design:
     interface between layers 4 and 5 is the natural place to build the API.
 
 ## 1.8 BSD Networking History
+
+```diagram
+4.2BSD (1983)
+first widely available
+release of TCP/IP
+and sockets API
+↓
+4.3BSD (1986)
+TCP performance improvements
+↓
+4.3BSD Tahoe (1988)
+slow start,
+congestion avoidance,                   →   BSD Networking Software
+fast restransmit                            Release 1.0 (1989): Net/1
+↓
+4.3BSD Reno (1990)
+fast recovery,
+TCP header prediction,
+routing table changes;
+length field added to `socketaddr{}`;   →   BSD Networking Software
+control infomation added to `msghdr{}`      Release 2.0 (1991): Net/2
+↓
+4.4BSD (1993)
+multicasting,
+long fat pipe modifications             →   4.4BSD-Lite (1994)
+                                            referred to in text as Net/3
+                                            ↓
+                                            4.4BSD-Lite2 (1995)
+                                            (
+                                                BSD/OS
+                                                FreeBSD
+                                                NetBSD
+                                                OpenBSD
+                                            )
+```
+
+## 1.9 Test Networks and Hosts
+
+### Discovering Network Topology
+
+1. `netstat`
+    1. `-n`: print numeric addresses instead of trying to find names for the
+    networks.
+    2. `netstat -i`: provides information on the interfaces.
+    3. `netstat -r`: shows the routing table.
+2. `ifconfig`
+   1. `ifconfig eth0`: show details for specific interface
+3. `ping`
+   1. `ping -b <broadcast address>`
+
+## 1.10 Unix Standards
+
+*The POSIX Specification*, which is identical to `ISO/IEC 9945:2002`,
+`IEEE Std 1003.1-2001`, and the `Single Unix Specification Version 3`, has
+roughly 4,000 pages of specifications covering over 1,700 programming
+interfaces.
+
+### Background on POSIX
+
+POSIX (Portable Operating System Interface) is not a single standard, but a
+family of standards being developed by the IEEE (Institute for Electical and
+Electronics Engineers).
+
+### Background on The Open Group
+
+### Unification of Standards
+
+### Internet Engineering Task Force (IETF)
+
+## 1.11 64-Bit Architectures
+
+The common programming model for existing 32-bit Unix syetems is called the
+*ILP32* model, denoting that integers (I), long integers (L), and pointers (P)
+occupy 32 bits.
+
+The model that is becoming most prevalent for 64-bit Unix systems is called the
+*LP64* model, meaning only long integers (L) and pointers (P) require 64 bits.
+
+### Comparison of number of bits to hold various datatypes for the ILP32 and LP64 models
+
+| Datatype | ILP32 model | LP64 model |
+| - | - | - |
+| char | 8 | 8 |
+| short | 16 | 16 |
+| int | 32 | 32 |
+| long | 32 | 64 |
+| pointer | 32 | 64 |
+
+The LP64 model means we cannot assume that a pointer can be stored in an
+integer. We must also consider the effect
+
+ANSI C invented the `size_t` datatype. On a 32-bit system, `size_t` is a 32-bit
+value, but on a 64-bit system, it must be a 64-bit value, to take advantage of
+the larger addressing model.
+
+## 1.12 Summary

@@ -8,8 +8,9 @@
 
 ## Table of Contents
 
-- [x] [Preface](0_preface)
+- [x] [Preface](00_preface)
 - Part 1: Introduction and TCP/IP
-  - [ ] [Chapter 1. Introduction](chap_01_introduction)
+  - [x] [Chapter 1. Introduction](01_introduction)
+  - [ ] [Chapter 2. The Transport Layer: TCP, UDP, and SCTP](02_the_tranport_layer)
 - Part 2: Elemetary Sockets
 - Part 3: Advanced Sockets
