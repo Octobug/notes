@@ -25,6 +25,8 @@ disciplines according to the
 ### Ⅲ. [Natural Science](https://en.wikipedia.org/wiki/Natural_science)
 
 1. [Physics](https://en.wikipedia.org/wiki/Physics)
+    1. [Miscellaneous](phys_miscellaneous)
+        1. [Six Easy Pieces: Essentials of Physics](phys_miscellaneous/six_easy_pieces_essentials_of_physics)
 
 ### Ⅳ. [Formal Science](https://en.wikipedia.org/wiki/Formal_science)
 
