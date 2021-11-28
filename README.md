@@ -28,8 +28,9 @@ disciplines according to the
 
 1. [Computer Science](https://en.wikipedia.org/wiki/Computer_science)
     1. [Algorithms and Data Structures](algorithms_and_data_structures)
-        1. [Algorithms the Book](algorithms_and_data_structures/algorithms)
-        2. [LeetCode](algorithms_and_data_structures/leetcode)
+        1. [Algorithms](algorithms_and_data_structures/algorithms)
+        2. [Data Structures](algorithms_and_data_structures/data_structures)
+        3. [LeetCode](algorithms_and_data_structures/leetcode)
     2. [Computer Network](computer_network)
         1. [IETF](computer_network/ietf)
         2. [Internet Protocol Suite](computer_network/internet_protocol_suite)

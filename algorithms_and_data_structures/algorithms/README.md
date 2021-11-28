@@ -1,5 +1,7 @@
-# Algorithms by Robert Sedgewick, Kevin Wayne
+# Algorithms
 
-[algo]: <https://www.goodreads.com/book/show/10803540-algorithms>
+> <https://en.wikipedia.org/wiki/Algorithm>
 
-> [Algorithms by Robert Sedgewick, Kevin Wayne, goodreads][algo]
+## List of Algorithms
+
+<https://en.wikipedia.org/wiki/List_of_algorithms>
