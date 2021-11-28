@@ -46,9 +46,16 @@ UNP: 1.7
 
 c10m became reality in 2010s.
 
-## 解决方案
+## 如何解决
 
-### 业界是如何解决的
+### 业界哪些做得好
+
+### 如何设计
+
+Fast UNIX Servers - 核心设计原则
+
+- 水平触发 (level-triggered)
+- 边缘触发 (edge-triggered)
 
 ### 如何写一个高性能服务器
 

@@ -84,8 +84,6 @@ is in a league of its own in this regard.
 
 ## Event Cores
 
->>>>> progress
-
 - as of Linux 5, [`io_uring`](https://nick-black.com/dankwiki/index.php?title=Io_uring&action=edit&redlink=1)
   is the only game in town on Linux
 - [epoll](https://nick-black.com/dankwiki/index.php?title=Epoll) on
@@ -99,7 +97,8 @@ is in a league of its own in this regard.
 - [liboop](http://liboop.ofb.net/),
   [libev](http://software.schmorp.de/pkg/libev.html) and
   [libevent](http://www.monkey.org/~provos/libevent/)
-- Ulrich Drepper's "[The Need for Aynchronous, ZeroCopy Network I/O](http://people.redhat.com/drepper/newni-slides.pdf)"
+- Ulrich Drepper's "[The Need for Asynchronous, ZeroCopy Network I/O](http://people.redhat.com/drepper/newni-slides.pdf)"
+  (Accessible [link](https://landley.net/kdocs/ols/2006/ols2006v1-pages-247-260.pdf))
   - If nothing else, Drepper's plans tend to
     [become sudden and crushing realities](http://sources.redhat.com/ml/libc-alpha/2002-01/msg00367.html)
     in the [glibc](https://nick-black.com/dankwiki/index.php?title=Glibc) world
@@ -110,6 +109,263 @@ is in a league of its own in this regard.
     of mine
 
 ### Edge and Level Triggering
+
+>>>>> Progress
+
+- Historic interfaces like POSIX.1g/POSIX.1-2001's `select(2)` and POSIX.
+  1-2001's `poll(2)` were level-triggered
+- [Asynchronous I/O](https://nick-black.com/dankwiki/index.php?title=Asynchronous_I/O)
+  is pretty much by definition edge-triggered.
+- `epoll` (via `EPOLLET`) and `kqueue` (via `EV_CLEAR`) provide edge-triggered
+  semantics
+- see the `mteventqueue` [document from libtorque's documentation](https://raw.github.com/dankamongmen/libtorque/master/doc/mteventqueues):
+
+```text
+Event Queues and Threads
+
+This document primarily described Linux's epoll(7) I/O event notification
+facility as of the 2.6 kernel series. It is believed to largely apply also to
+FreeBSD's kqueue(7) mechanism. The information within has been extracted from
+documentation, mailing lists, reading source and extensive experimentation.
+Little, however, makes up published, official API, and thus some of these
+details might change without warning.
+
+1. Details of the Linux epoll(7) implementation
+2. Details of the FreeBSD kqueue(7) implementation
+3. Functional semantics
+4. Performance semantics
+5. Deductions
+6. Signals
+
+
+
+-----------------------------------------------------------------------------
+1. Details of the Linux epoll(7) implementation (taken from 2.6.32.2):
+-----------------------------------------------------------------------------
+A struct eventpoll contains, among other things:
+
+ - a spinlock_t, "lock"
+ - a struct mutex, "mtx"
+ - two wait_queue_head_t's, "wq" and "poll_wait"
+
+sys_epoll_wait() validates input and calls ep_poll() (fs/eventpoll.c). Its
+core loop:
+
+ - acquires "lock"
+ - if there are no events ready or signals pending:
+ -- release "lock", sleep on "wq"
+ --- ep_poll_callback() is in charge of waking up "wq"
+ --- a timeout is also used (LONG_MAX if we passed timeout < 0)
+ -- reacquire "lock", loop to event/signal check
+ - release "lock"
+ - call ep_send_events()->ep_scan_ready_list() (see below)
+ - if we have events ready, pending signals, or the timeout has expired, return
+ - otherwise, loop
+
+ep_send_events()->ep_scan_ready_list() is largely linear code:
+
+ - acquires "mtx"
+ - acquires "lock"
+ - steals the ready list "rdllist" to "txlist"
+ - releases "lock"
+ - calls ep_send_events_proc() with "txlist"
+ - acquires "lock"
+ - appends "ovflist" to "rdllist", resets "ovflist"
+ - appends "txlist" to "rdllist"
+ - if "rdllist" is non-empty, wake up "wq"
+ - release "lock"
+ - release "mtx" 
+ - if "rdllist" is non-empty, wake up "poll_wait"
+
+ep_send_events_proc() iterates over a list of struct epitem objects:
+
+ - if the revent mask matches that requested:
+ -- copy the event
+ -- if EPOLLONESHOT is set, events &= (EPOLLONESHOT|EPOLLET)
+ -- else if EPOLLET is *not* set, add it back to the ready list
+
+"mtx" is held across ep_scan_ready_list() and thus ep_send_events_proc(), even
+if EPOLLET is in use (and thus we needn't add events back to the ready list).
+See the comment in ep_send_events_proc() about locking out epoll_ctl() callers,
+which are directed to "ovflist".
+
+sys_epoll_ctl() validates input, and:
+
+ - acquires "mtx"
+ - searches for the fd using ep_find()
+ -- EPOLL_CTL_ADD with a present fd generates EEXIST
+ -- EPOLL_CTL_DEL and EPOLL_CTL_MOD with a non-present fd generates ENOENT
+ - call the appropriate one of ep_insert(), ep_remove(), ep_modify()
+ - releases "mtx"
+
+The sys_epoll_pwait() extension is implemented in terms of sys_epoll_wait(),
+wrapping the latter in appropriate sigprocmask() calls.
+
+-----------------------------------------------------------------------------
+2. Details of the FreeBSD kqueue(7) implementation:
+-----------------------------------------------------------------------------
+
+ FIXME
+
+-----------------------------------------------------------------------------
+3. Functional semantics
+-----------------------------------------------------------------------------
+Multiple threads can safely call into event retrieval -- the event queue will
+not be corrupted.
+
+Events are retrieved greedily. A thread will grab as many as it indicates
+room for.
+
+Multiple threads can safely modify an event queue, event if threads are
+retrieving from it -- the event queue will not be corrupted, and threads
+sleeping in retrieval will be woken up for new ready events.
+
+Level-triggered events cannot be safely processed by multiple threads
+without some kind of extra locking, except in circumstances so rare
+(and likely trivial) that they're barely worth accounting for:
+
+ - LT event 1 becomes ready
+ - Thread A retrieves LT event 1 instance 1
+ - Thread B retrieves LT event 1 instance 2
+ - Thread A enters LT event 1 handler
+ - Thread B enters LT event 1 handler
+ - either contention or race follows
+
+Edge-triggered, auto-renewed events cannot be safely processed by multiple
+threads without some kind of extra locking, except when file descriptor
+availability suffices to synchronize the event handling. An example of this
+would be a callback which simply loops on accept(2) until EAGAIN/EWOULDBLOCK,
+possibly performing some MT-safe processing on each new file descriptor (adding
+the new fd to the event queue would be fine, since we've already shown event
+queue operations to be MT-safe). Otherwise, for instance if reading data from
+the fd into an associated buffer:
+
+ - ET event 1 becomes ready
+ - Thread A retrieves ET event 1 instance 1
+ - Thread B sleeps
+ - Thread A enters ET event 1 handler, read(2)ing all available data
+ - ET event 1 is automatically rearmed
+ - Thread B wakes up, retrieves ET event 1 instance 2
+ - Thread B enters ET event 1 handler, read(2)ing all available data
+ - ET event 1 is automatically rearmed
+ - Thread A enters ET event 1 critical section
+ - Thread B enters ET event 1 critical section
+ - either contention or race follows
+
+Edge-triggered, one-shot events can be safely processed by multiple threads
+so long as they're rearmed only at the end of the handler. They require
+more event queue modifications than other solutions (assuming that we always
+handle as much data as is provided in any callback -- the edge-triggering
+requirement. Callbacks which depend on level-triggered semantics might
+perform explicit disabling calls from time to time).
+
+The choice of queue-sharing schemes affects the mechanics of library cleanup
+and termination. See the document doc/termination for more details.
+
+-----------------------------------------------------------------------------
+4. Performance semantics
+-----------------------------------------------------------------------------
+Edge-triggered semantics allow a more efficient internal implementation than
+level-triggered semantics.
+
+Modifications and (running) retrievals are serialized by the kernel for
+each event queue. As the number of threads per event queue rises, the
+expected volume of waiting also increases. A complex feedback system is
+likely to emerge if modification wait time ever becomes non-negligible.
+This does not apply to retrieval wait time; if events are being handled more
+quickly than they take to retrieve, we are bounded by retrieval time (by
+the pigeonhole principle: in the large, a thread will always be
+actively retrieving though we will sometimes empty the work queue).
+
+System calls are, as ever, to be avoided when prudent. Using larger event
+receipt buffers minimizes system calls into the event queueing framework,
+but can lead to a poor short-term distribution of work and poor parallelism.
+
+Batching of changes cannot be accomplished with the current Linux epoll_ctl()
+implementation, despite our internal kevent() emulation affecting such an API
+(it actually iterates over the list, invoking epoll_ctl() in turn). Until this
+is changed, batching of changes is a non-starter on Linux. FreeBSD does provide
+the interface; it remains to be determined whether this is worth the latency
+penalties. Multithreading makes this less of an issue, but also leads to more
+possible contention on change registration.
+
+-----------------------------------------------------------------------------
+5. Deductions
+-----------------------------------------------------------------------------
+Single-threaded retrieval of events into a userspace queue shared among
+multiple threads doesn't solve any correctness problems, or meaningfully
+reduce locking (unless, possibly, when threads are retrieving less events at
+one time than is optimal based on load). The actual work of retrieval (as
+opposed to sleeping) is still serialized by the kernel, and must be
+performed.
+
+Exclusive event queues per thread are the simplest solution, eliminating
+all contention and even synchronization concerns at the event engine level.
+This might not scale (it's doubtful that anyone's seriously used thousands
+of event queues in a single app), and more importantly it leads to a lack of
+balance; threads will only be as balanced as can be predicted during event
+source distribution.
+
+It is of course feasible to serve many threads using a scheme where only
+one actually receives events for a given event queue at any time (ie, we
+don't rely on epoll_wait() being safe for multiple callers), dumping them
+into a common userspace buffer managed via mutexes and condition variables.
+We'd not be exploiting the kernel locking to provide our own synchronization
+anymore, but only a contention-free mutex acquisition and release have been
+"added". Furthermore, this removes the event queue system call from each
+thread; they now only need perform userspace locking (with, of course, a
+system call to waitqueues should the lock be contended, but we presumed
+that this was rare). What we want to avoid is a queue *modification*,
+generated during the event loop, blocking against a retrieval operation
+(preferably without adding a batching step ala the kqueue() API, since this
+can add latency. Remember, retrievals contending means either that load is
+negligible, or that we're not retrieving nearly enough events at a time. Using
+TCP-like windows would solve that problem for multiple event threads).
+
+-----------------------------------------------------------------------------
+6. Signals
+-----------------------------------------------------------------------------
+All other threads in the application must have libtorque-registered signals
+masked, or else libtorque might not be able to receive relevant signals. Upon
+creation, libtorque threads mask all signals. When a signal is registered with
+libtorque, a common handler is installed for that signal, demultiplexing into
+the signal event table. Note that since handlers are process-wide, failure to
+mask appropriate signals in application threads might result in libtorque
+signals being handled in their contexts.
+
+Signals and POSIX threads have a historically complicated relationship (see
+the document doc/termination for more details about threads). When
+EVFILT_SIGNAL (FreeBSD) or signalfd's (Linux) are used, they can be cleanly
+handled within our standard event semantics. On older Linux kernels, however,
+signalfds are not available. There, we must handle signals via the standard
+POSIX signal delivery mechanism, adding a new complexity to the event queues.
+Note from {2} that delivery of a signal results in immediate exit from
+epoll_wait() and release of associated locks, thus the multiple threads of an
+event queue will automatically enjoy distribution of events (this is
+independent of any sa_mask value or SA_NODEFER flag provided to sigaction(2),
+since each thread has its own signal mask).
+
+If libtorque threads unblocked its signals throughout their lifetimes, those
+signals could be delivered during event handling callbacks. Synchronization
+requires that only one thread be handling a given event source at a time, so
+repeated delivery of a signal during such a callback would both block the
+event source's progress in that thread (it's busy handling the signal) and
+preclude (without major contortions) any other thread handling the event.
+
+POSIX signal handlers' action is heavily restricted. pthread_mutex_lock() is
+not safe to call within a signal handler, nor is the C library's dynamic
+allocation interface. We certainly cannot directly invoke registered callbacks
+from the signal handler. The standard signal-handling idioms are:
+
+--event: post to a global semaphore having type sig_atomic_t
+--exception: clean up transprocess resources (files, etc), re-raise signal
+
+Note that progress under the event idiom requires some thread to examine the
+semaphore, and handle the event in its context. GNUlibc specifies that handling
+a signal interrupts all event multiplexing interfaces with EINTR, regardless of
+the use of SA_RESTART, so the semaphore check must live no further away from
+the epoll_wait() call than whatever scope is defined by the loop on EINTR.
+```
 
 ## A Garden of Interfaces
 
