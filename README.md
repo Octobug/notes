@@ -24,6 +24,8 @@ disciplines according to the
 
 ### Ⅲ. [Natural Science](https://en.wikipedia.org/wiki/Natural_science)
 
+1. [Physics](https://en.wikipedia.org/wiki/Physics)
+
 ### Ⅳ. [Formal Science](https://en.wikipedia.org/wiki/Formal_science)
 
 1. [Computer Science](https://en.wikipedia.org/wiki/Computer_science)
