@@ -6,4 +6,4 @@
 
 1. [x] [Semantic Versioning](semantic_versioning.md)
 2. [x] [Conventional Commits](conventional_commits.md)
-3. [ ] [Conventional Changelog](conventional_changelog.md)
+3. [x] [Conventional Changelog](conventional_changelog.md)
