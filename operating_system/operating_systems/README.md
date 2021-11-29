@@ -1,5 +1,5 @@
 # Operating Systems
 
-> <https://www.cs.cornell.edu/courses/cs4410/>
+## Learning Materials
 
-CS4410 by Cornell University
+- [Operating Systems CS4410](cs4410) by Cornell University
