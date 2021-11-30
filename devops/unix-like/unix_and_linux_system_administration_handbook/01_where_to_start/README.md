@@ -5,15 +5,17 @@
 Below duties need not necessarily be carried out by a single person, and at many
 sites the work is distributed among a team.
 
-### Account provisioning
+### Controlling access
 
-### Adding and removing hardware
+### Adding hardware
 
-### Performing backups
+### Automating tasks
+
+### Overseeing backups
 
 ### Installing and upgrading software
 
-### Monitoring the system
+### Monitoring
 
 ### Troubleshooting
 
@@ -21,22 +23,24 @@ sites the work is distributed among a team.
 
 ### Vigilantly monitoring security
 
+### Tuning performance
+
+### Developing site policies
+
+### Working with vendors
+
 ### Fire fighting
 
 ## 1.2 Suggested background
 
 > untouched
 
-## 1.6 System-specific administration tools
-
-Administrators should have an acurate understanding of how their systems work.
-
-## 1.9 Man pages and other on-line documentation
+## 1.7 Man pages and other on-line documentation
 
 All systems divide the man pages into sections, but there are minor variations
 in the way some sections are defined.
 
-### Sections of the man pages
+### Organization of the man pages
 
 | Linux | Contents |
 | - | - |
@@ -53,24 +57,24 @@ in the way some sections are defined.
 Some commands may appear in multiple sections. For example, `passwd` has entries
 in both section 1 and section 4 or 5.
 
-`man 5 passwd` or `man -s 5 passwd`.
-
 ### man: read man pages
 
 `$PAGER` specifies program that man uses.
 
+`man 5 passwd` or `man -s 5 passwd`.
+
 `man -k keyword` or `apropos keyword` prints a list of man pages that have
 *keyword* in their one-line synopses.
 
-To rebuild the keywords database, use `mandb` (Ubuntu, SUSE) or makewhatis
-(Red Hat).
+To rebuild the keywords database, use `mandb` (Ubuntu, SUSE) or `makewhatis`
+(Red Hat and FreeBSD).
 
 ### Storage of man pages
 
 `manpath`: find out the current default search path. To change it, set the env
 var: `$MANPATH`.
 
-### GNU Texinfo
+### GNU Texinfo (Deprecated)
 
 `info | less` to evade info's builtin navigation system
 `info info` to start.
