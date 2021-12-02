@@ -75,6 +75,7 @@ disciplines according to the
         1. [macOS](cs_miscellaneous/macos)
         2. [Markdown](cs_miscellaneous/markdown)
         3. [TeXs](cs_miscellaneous/texs)
+        4. [Virtual Machines](cs_miscellaneous/virtual_machines)
 
 ### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)
 
