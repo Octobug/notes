@@ -28,12 +28,11 @@ by Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley
 
 - SECTION ONE: BASIC ADMINISTRATION
   - [ ] [1 Where to Start](01_where_to_start)
-  - [ ] [2 Scripting and the Shell](02_scripting_and_the_shell)
-  - [ ] 3 Booting and Shutting Down
-  - [ ] [4 Access Control and Rootly Powers](04_access_control_and_rootly_powers)
+  - 2 Booting and Shutting Down
+  - [x] [3 Access Control and Rootly Powers](03_access_control_and_rootly_powers)
 - SECTION TWO: NETWORKING
   - 13
 - SECTION THREE: STORAGE
   - 20
 - SECTION FOUR: OPERATIONS
-  - [ ] [27 Security](22_security)
+  - [ ] 27 Security
