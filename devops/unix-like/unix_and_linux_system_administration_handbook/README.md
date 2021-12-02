@@ -30,6 +30,8 @@ by Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley
   - [ ] [1 Where to Start](01_where_to_start)
   - 2 Booting and Shutting Down
   - [x] [3 Access Control and Rootly Powers](03_access_control_and_rootly_powers)
+  - 4
+  - [ ] [5 The Filesystem](05_the_filesystem)
 - SECTION TWO: NETWORKING
   - 13
 - SECTION THREE: STORAGE
