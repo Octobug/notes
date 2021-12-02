@@ -32,8 +32,12 @@ by Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley
   - [x] [3 Access Control and Rootly Powers](03_access_control_and_rootly_powers)
   - 4
   - [ ] [5 The Filesystem](05_the_filesystem)
+  - 6
+  - 7
+  - [ ] [8 User Management](08_user_management)
 - SECTION TWO: NETWORKING
   - 13
+  - [ ] 17
 - SECTION THREE: STORAGE
   - 20
 - SECTION FOUR: OPERATIONS
