@@ -73,9 +73,10 @@ disciplines according to the
     9. [Theory of Computation](theory_of_computation)
     10. [Miscellaneous](cs_miscellaneous)
         1. [macOS](cs_miscellaneous/macos)
-        2. [Markdown](cs_miscellaneous/markdown)
-        3. [TeXs](cs_miscellaneous/texs)
-        4. [Virtual Machines](cs_miscellaneous/virtual_machines)
+        2. [Make](cs_miscellaneous/make)
+        3. [Markdown](cs_miscellaneous/markdown)
+        4. [TeXs](cs_miscellaneous/texs)
+        5. [Virtual Machines](cs_miscellaneous/virtual_machines)
 
 ### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)
 
