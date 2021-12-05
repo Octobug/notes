@@ -12,3 +12,5 @@ Andrea C. Arpaci-Dusseau (University of Wisconsin-Madison)
 - [x] [2. Introduction to Operating Systems](02_introduction_to_operating_systems)
 - Part I: Virtualization
 - Part II: Concurrency
+  - [x] 25. A Dialogue on Concurrency
+  - [ ] [26. Concurrency: An Introduction](26_concurrency_an_introduction)

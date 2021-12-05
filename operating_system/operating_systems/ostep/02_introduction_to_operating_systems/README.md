@@ -89,7 +89,7 @@ resource, managed by the operating system.
 Crux: HOW TO BUILD CORRECT CONCURRENT PROGRAMS
 
 - concurrency: 并发, in a period of time
-- parallellism: 并行, at the same time
+- parallelism: 并行, at the same time
 
 You can think of a thread as a function running within the same memory space as
 other functions, with more than one of them active at a time. In this example,
