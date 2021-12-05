@@ -18,6 +18,10 @@
     "iosfwd": "cpp",
     "locale": "c",
     "algorithm": "c",
-    "string.h": "c"
+    "string.h": "c",
+    "stdio.h": "c",
+    "common.h": "c",
+    "stdlib.h": "c",
+    "complex": "cpp"
   }
 }

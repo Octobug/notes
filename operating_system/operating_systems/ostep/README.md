@@ -9,4 +9,6 @@ Andrea C. Arpaci-Dusseau (University of Wisconsin-Madison)
 ## Table of Contents
 
 - [x] [1. A Dialogue on the Book](01_a_dialogue_on_the_book)
-- [ ] [2. Introduction to Operating Systems](02_introduction_to_operating_systems)
+- [x] [2. Introduction to Operating Systems](02_introduction_to_operating_systems)
+- Part I: Virtualization
+- Part II: Concurrency
