@@ -51,8 +51,10 @@ There are at least two major reasons you should use threads.
   management systems, and the like) make use of threads in their
   implementations.
 
-Of course, in either of the cases mentioned above, you could use multiple
-*processes* instead of threads. However, threads share an address space and thus
-make it easy to share data, and hence are a natural choice when constructing
-these types of programs. Processes are a more sound choice for logically
-separate tasks where little sharing of data structures in memory is needed.
+Threads share an address space and thus make it easy to share data, and hence
+are a natural choice when constructing these types of programs.
+
+Processes are a more sound choice for logically separate tasks where little
+sharing of data structures in memory is needed.
+
+## 26.2 An Example: Thread Creation
