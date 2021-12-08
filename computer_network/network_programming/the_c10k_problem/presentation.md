@@ -2,8 +2,6 @@
 
 ## 什么是 c10k 问题
 
-### 相关问题
-
 ### 处理连接与请求的区别
 
 #### 并行处理多各连接
@@ -30,6 +28,7 @@ UNP: 1.7
 
 ### 操作系统层
 
+- 并发问题 (ostep concurrency)
 - Multi-processing capabilities
 - Memory management
 - I/O management
@@ -59,8 +58,8 @@ Fast UNIX Servers - 核心设计原则
 
 ### 如何写一个高性能服务器
 
-REF: UNP
-
-- 迭代式（iterative）服务器: 基于循环一次一个
-- multi-process: 按需开启多子进程/预设子进程
-- multi-thread: 按需开启多线程/预设子线程
+- UNP Introduction
+  - 迭代式（iterative）服务器: 基于循环一次一个
+  - multi-process: 按需开启多子进程/预设子进程
+  - multi-thread: 按需开启多线程/预设子线程
+- 不同系统调用性能差异 `poll`, `select`, `kqueue`, `epoll`
