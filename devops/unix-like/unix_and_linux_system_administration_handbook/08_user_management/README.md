@@ -560,3 +560,127 @@ FreeBSD’s `rmuser` script does a good job of removing instances of the user’
 files and processes, a task that other vendors’ `userdel` programs do not even attempt.
 
 ## 8.9 User login lockout
+
+A straightforward way to disable a user's login is to put a star or some other
+character in front of the user’s encrypted password in the `/etc/shadow` or
+`/etc/master.passwd` file. This measure prevents most types of
+password-regulated access because the password no longer decrypts to anything
+sensible.
+
+FreeBSD: `sudo pw lock someuser`, `sudo pw unlock someuser`, `lock` puts the
+string `*LOCKED*` at the start of the password hash, making the account
+unusable.
+
+Linux: `usermod -L user` and `usermod -U user`, the `-L` puts an `!` in front
+of the encrypted password in the `/etc/shadow` file, and the `-U` removes it.
+
+Commands such as `ssh` that do not necessarily check the system password may
+continue to function.
+
+An alternative way to disable logins is to replace the user’s shell with a
+program that prints an explanatory message and supplies instructions for
+rectifying the situation.
+
+This approach has both advantages and disadvantages. Any forms of access that
+check the password but do not pay attention to the shell will not be disabled.
+To facilitate the “disabled shell” trick, many daemons that afford nonlogin
+access to the system (e.g., ftpd) check to see if a user’s login shell is
+listed in `/etc/shells` and deny access if it is not.
+
+## 8.10 Risk reduction with PAM
+
+`Pluggable Authentication Modules (PAM)` centralizes the management of the
+system’s authentication facilities through standard library routines. That way,
+programs like `login`, `sudo`, `passwd`, and `su` need not supply their own
+tricky authentication code. PAM reduces the risk inherent in writing secured
+software, allows administrators to set site-wide security policies, and defines
+an easy way to add new authentication methods to the system.
+
+Adding and removing users doesn’t involve tweaking the PAM configuration, but
+the tools involved operate under PAM’s rules and constraints. In addition, many
+of the PAM configuration parameters are similar to those used by `useradd` or
+`usermod`. If you change a parameter as described in this chapter and `useradd`
+doesn’t seem to be paying attention to it, check to be sure the system’s PAM
+configuration isn’t overriding your new value.
+
+## 8.11 Centralized account management
+
+### LDAP and Active Directory
+
+LDAP (Lightweight Directory Access Protocol) is a generalized, database-like
+repository that can store user management data as well as other types of data.
+It uses a hierarchical client/server model that supports multiple servers as
+well as multiple simultaneous clients. One of LDAP’s big advantages as a
+site-wide repository for login data is that it can enforce unique UIDs and GIDs
+across systems.
+
+### Application-level single sign-on systems
+
+Application-level single sign-on systems lets a user sign on once and be
+authenticated at that time. The user then obtains authentication credentials
+which can be used to access other applications. The user only has to remember
+one login and password sequence instead of many. The impact of a compromised
+account is greater because one login gives an attacker access to multiple
+applications. In addition, the authentication server becomes a critical
+bottleneck. If it’s down, all useful work grinds to a halt across the
+enterprise.
+
+Although application-level SSO is a simple idea, it implies a lot of back-end
+complexity because the various applications and machines that a user might want
+to access must understand the authentication process and SSO credentials.
+
+Several open source SSO systems exist:
+
+- JOSSO, an open source SSO server written in Java
+- CAS, the Central Authentication Service, from Yale (also Java)
+- Shibboleth, an open source SSO distributed under the Apache 2 license
+
+### Identity management systems
+
+“Identity management” (or IAM for “identity and access management”) means
+identifying the users of your systems, authenticating their identities, and
+granting privileges according to those authenticated identities. The
+standardization efforts in this realm are led by the World Wide Web Consortium
+and by The Open Group.
+
+Commercial identity management systems combine several key UNIX concepts into a
+warm and fuzzy GUI replete with marketing jargon. Fundamental to all such
+systems is a database of user authentication and authorization data, often
+stored in LDAP format. Control is achieved with concepts such as UNIX groups,
+and limited administrative privileges are enforced through tools such as
+`sudo`.
+
+There are many commercial systems in this space: **Oracle’s Identity
+Management**, **Courion**, **Avatier Identity Management Suite (AIMS)**,
+**VMware Identity Manager**, and **SailPoint’s IdentityIQ**.
+
+Evaluating identity management systems:
+
+Oversight:
+
+- Implement a secure web interface for management that’s accessible both inside
+  and outside the enterprise.
+- Support an interface through which hiring managers can request that accounts
+  be provisioned according to role.
+- Coordinate with a personnel database to automatically remove access for
+  employees who are terminated or laid off.
+
+Account management:
+
+- Generate globally unique user IDs.
+- Create, change, and delete user accounts across the enterprise, on all types
+  of hardware and operating systems.
+- Support a workflow engine; for example, tiered approvals before a user is
+  given certain privileges.
+- Make it easy to display all users who have a certain set of privileges. Ditto
+  for the privileges granted to a particular user.
+- Support role-based access control, including user account provisioning by
+  role. Allow exceptions to role-based provisioning, including a workflow for
+  the approval of exceptions.
+- Configure logging of all changes and administrative actions.
+
+Ease of use:
+
+- Let users change (and reset) their own passwords, with enforcement of rules
+  for picking strong passwords.
+- Enable users to change their passwords globally in one operation.

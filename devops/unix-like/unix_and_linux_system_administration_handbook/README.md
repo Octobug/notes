@@ -34,10 +34,9 @@ by Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley
   - [ ] [5 The Filesystem](05_the_filesystem)
   - 6
   - 7
-  - [ ] [8 User Management](08_user_management)
+  - [x] [8 User Management](08_user_management)
 - SECTION TWO: NETWORKING
   - 13
-  - [ ] 17
 - SECTION THREE: STORAGE
   - 20
 - SECTION FOUR: OPERATIONS
