@@ -369,3 +369,8 @@ minicomputer ran in the 1970s than what a PC ran in the 1980s (thank goodness).
 - virtualization of the CPU and memory
 - concurrency
 - persistence via devices and file systems
+
+## Homework
+
+- simulation
+- real-world code: <https://github.com/remzi-arpacidusseau/ostep-projects>
