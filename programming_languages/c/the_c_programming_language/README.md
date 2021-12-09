@@ -16,3 +16,4 @@
 - [ ] [Chapter 7: Input and Output](7_input_and_output)
 - 8
 - [ ] [Appendix A - Reference Manual](a_reference_manual)
+- [ ] [Appendix B - Standard Library](b_standard_library)
