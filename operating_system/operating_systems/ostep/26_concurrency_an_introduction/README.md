@@ -58,3 +58,135 @@ Processes are a more sound choice for logically separate tasks where little
 sharing of data structures in memory is needed.
 
 ## 26.2 An Example: Thread Creation
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+#include "common.h"
+#include "common_threads.h"
+
+void *mythread(void *arg)
+{
+    printf("%s\n", (char *)arg);
+    return NULL;
+}
+
+int main(int argc, char *argv[])
+{
+    if (argc != 1)
+    {
+        fprintf(stderr, "usage: main\n");
+        exit(1);
+    }
+
+    pthread_t p1, p2;
+    printf("main: begin\n");
+    Pthread_create(&p1, NULL, mythread, "A");
+    Pthread_create(&p2, NULL, mythread, "B");
+    // join waits for the threads to finish
+    Pthread_join(p1, NULL);
+    Pthread_join(p2, NULL);
+    printf("main: end\n");
+    return 0;
+}
+```
+
+Once a thread is created, it may start running right away (depending on the
+whims of the scheduler); alternately, it may be put in a “ready” but not
+“running” state and thus not run yet. Of course, on a multiprocessor, the
+threads could even be running at the same time.
+
+After creating the two threads (let’s call them T1 and T2), the main thread
+calls `pthread_join()`, which waits for a particular thread to complete. It
+does so twice, thus ensuring T1 and T2 will run and complete before finally
+allowing the main thread to run again; when it does, it will print “main: end”
+and exit. Overall, three threads were employed during this run:
+`the main thread`, `T1`, and `T2`.
+
+In fact, given a sequence of instructions, there are quite a few, depending on
+which thread the scheduler decides to run at a given point. Once a thread is
+created, it may run immediately.
+
+*Thread Trace (1)*.
+
+```trace
+main                                Thread 1        Thread 2
+----                                --------        --------
+starts running
+prints "main: begin"
+creates Thread 1
+creates Thread 2
+waits for T1
+                                    runs
+                                    prints "A"
+                                    returns
+waits for T2
+                                                    runs
+                                                    prints "B"
+                                                    returns
+prints "main: end"
+```
+
+*Thread Trace (2)*.
+
+```trace
+main                                Thread 1        Thread 2
+----                                --------        --------
+starts running
+prints "main: begin"
+creates Thread 1
+                                    runs
+                                    prints "A"
+                                    returns
+creates Thread 2
+                                                    runs
+                                                    prints "B"
+                                                    returns
+waits for T1
+  returns imdmdiately; T1 is done
+waits for T2
+  returns imdmdiately; T2 is done
+prints "main: end"
+```
+
+*Thread Trace (3)*.
+
+```trace
+main                                Thread 1        Thread 2
+----                                --------        --------
+starts running
+prints "main: begin"
+creates Thread 1
+creates Thread 2
+                                                    runs
+                                                    prints "B"
+                                                    returns
+waits for T1
+                                    runs
+                                    prints "A"
+                                    returns
+waits for T2
+  returns imdmdiately; T2 is done
+prints "main: end"
+```
+
+We also could even see “B” printed before “A” if the scheduler decided to run
+Thread 2 first even though Thread 1 was created earlier; there is no reason to
+assume that a thread that is created first will run first.
+
+As you might be able to see, one way to think about thread creation is that it
+is a bit like making a function call; however, instead of first executing the
+function and then returning to the caller, the system instead creates a new
+thread of execution for the routine that is being called, and it runs
+independently of the caller, perhaps before returning from the create, but
+perhaps much later. What runs next is determined by the OS **scheduler**, and
+although the scheduler likely implements some sensible algorithm, it is hard to
+know what will run at any given moment in time.
+
+Threads make life complicated: it is already hard to tell what will run when!
+Computers are hard enough to understand without concurrency. Unfortunately,
+with concurrency, it simply gets worse.
+
+## 26.3 Why It Gets Worse: Shared Data
