@@ -100,7 +100,7 @@ int strlen(char *s)
 {
     char *p = s;
 
-    while (*p != '\0)
+    while (*p != '\0')
     {
         p++;
     }
@@ -136,14 +136,14 @@ void strcpy(char *s, char *t)
     int i;
 
     i = 0;
-    while ((s[i] = t[i]) != '\0)
+    while ((s[i] = t[i]) != '\0')
         i++;
 }
 
 // pointer version 1
 void strcpy(char *s, char *t)
 {
-    while ((*s = *t) != '\0)
+    while ((*s = *t) != '\0')
     {
         s++;
         t++;
@@ -153,7 +153,7 @@ void strcpy(char *s, char *t)
 // pointer version 2
 void strcpy(char *s, char *t)
 {
-    while ((*s++ = *t++) != '\0)
+    while ((*s++ = *t++) != '\0')
         ;
 }
 

@@ -25,4 +25,5 @@ Andrea C. Arpaci-Dusseau (University of Wisconsin-Madison)
 - Part II: Concurrency
   - [x] 25. A Dialogue on Concurrency
   - [x] [26. Concurrency: An Introduction](26_concurrency_an_introduction)
-  - [ ] [27. Interlude: Thread API](27_interlude_thread_api)
+  - [x] [27. Interlude: Thread API](27_interlude_thread_api)
+  - [ ] [28. Locks](28_locks)

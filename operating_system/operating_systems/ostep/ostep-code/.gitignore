@@ -3,5 +3,9 @@ io
 mem
 t0
 t1
+thread_create
+thread_create.o
+thread_create_with_return_args
+thread_create_with_return_args.o
 threads
 va
