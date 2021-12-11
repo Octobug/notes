@@ -2,5 +2,6 @@ cpu
 io
 mem
 t0
+t1
 threads
 va

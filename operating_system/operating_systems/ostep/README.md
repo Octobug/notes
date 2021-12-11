@@ -24,4 +24,5 @@ Andrea C. Arpaci-Dusseau (University of Wisconsin-Madison)
   - [x] [13. The Abstraction: Address Spaces](13_the_abstraction_address_spaces)
 - Part II: Concurrency
   - [x] 25. A Dialogue on Concurrency
-  - [ ] [26. Concurrency: An Introduction](26_concurrency_an_introduction)
+  - [x] [26. Concurrency: An Introduction](26_concurrency_an_introduction)
+  - [ ] [27. Interlude: Thread API](27_interlude_thread_api)
