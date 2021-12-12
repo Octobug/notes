@@ -1,26 +1,53 @@
-# The C10K problem
+# 从 C10K 问题到高并发服务器开发
 
-## 什么是 c10k 问题
+## 目录
 
-### 处理连接与请求的区别
+- [从 C10K 问题到高并发服务器开发](#从-c10k-问题到高并发服务器开发)
+  - [目录](#目录)
+  - [C10K 问题](#c10k-问题)
+    - [C10K 的意思](#c10k-的意思)
+    - [背景](#背景)
+    - [处理请求与连接的区别](#处理请求与连接的区别)
+    - [非阻塞 I/O 与异步 I/O](#非阻塞-io-与异步-io)
+    - [网络模型层次的划分设计](#网络模型层次的划分设计)
+    - [操作系统层](#操作系统层)
+    - [应用层](#应用层)
+  - [现状](#现状)
+  - [如何解决](#如何解决)
+    - [业界哪些做得好](#业界哪些做得好)
+    - [如何设计](#如何设计)
+    - [如何写一个高性能服务器](#如何写一个高性能服务器)
 
-#### 并行处理多各连接
+## C10K 问题
 
-- Handling many requests per second requires high throughput (processing them
-  quickly.
-- Handling many requests per second is concerned with the speed of handling
-  requests.
+原文: <http://www.kegel.com/c10k.html>
 
-#### 并行/并发处理多个请求
+### C10K 的意思
 
-- A high number of concurrent connections requires efficient scheduling of
-connections.
-- A system capable of handling a high number of concurrent connections does not
-  necessarily have to be a fast system, only one where each request will
-  deterministically return a response within a (not necessarily fixed) finite
-  amount of time.
+单机并发处理 10,000 (10K) 个客户端（Clients, 有些文章使用 "Connections" 即“连接”一词）。
 
-## 是什么造成了这个问题
+### 背景
+
+[Dan Kegel](http://www.kegel.com/resume.html) (`/dæn 'keɡəl/`) 在 1999 年提出了
+C10K 问题。
+
+![Dan Kegel](./images/dan_kegel0.png)
+
+![Dan Kegel](./images/dan_kegel1.jpg)
+
+那个年代的计算机硬件性能当然无法和当今的相比，问题在于即使硬件性能足够强大，
+当一台服务器同时面对超过 10,000 个客户端时，它依然无法正常提供服务。
+
+### 处理请求与连接的区别
+
+- 大量请求：需要高吞吐率，更关心每个请求的处理速度
+- 大量连接：需要高效的连接调度
+
+### 非阻塞 I/O 与异步 I/O
+
+怎样理解阻塞非阻塞与同步异步的区别？ - 萧萧的回答 - 知乎
+
+<https://www.zhihu.com/question/19732473/answer/241673170>
 
 ### 网络模型层次的划分设计
 
