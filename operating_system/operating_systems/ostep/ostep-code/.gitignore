@@ -1,6 +1,11 @@
 cpu
 io
 mem
+p1
+p2
+p3
+p4
+p4.output
 t0
 t1
 thread_create

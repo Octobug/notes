@@ -13,7 +13,7 @@ Andrea C. Arpaci-Dusseau (University of Wisconsin-Madison)
 - Part I: Virtualization
   - [x] [3. A Dialogue on Virtualization](03_a_dialogue_on_virtualization)
   - [x] [4. The Abstraction: The Process](04_the_abstraction_the_process)
-  - [ ] [5. Interlude: Process API](05_interlude_process_api)
+  - [x] [5. Interlude: Process API](05_interlude_process_api)
   - [ ] [6. Mechanism: Limited Direct Execution](06_mechanism_limited_direct_execution)
   - 7. Scheduling: Introduction
   - 8.
