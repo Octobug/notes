@@ -484,7 +484,7 @@ OS as much as you might hope.
 
 ## 6.5 Summary
 
-*Limited Direct Execution**. The basic idea is straightforward: just run the
+**Limited Direct Execution**. The basic idea is straightforward: just run the
 program you want to run on the CPU, but first make sure to set up the hardware
 so as to limit what the process can do without OS assistance.
 
