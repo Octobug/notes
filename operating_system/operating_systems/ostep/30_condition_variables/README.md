@@ -514,4 +514,239 @@ sleeping. The other consumer thread, Tc1, also goes back to sleep. All three
 threads are left sleeping, a clear bug; see Figure 30.9 for the brutal
 step-by-step of this terrible calamity.
 
-Signaling is clearly needed, but must be more directed. A consumer should not wake other consumers, only producers, and vice-versa.
+Figure 30.9: **Thread Trace: Broken Solution (Version 2)**
+
+![Thread Trace: Broken Solution (Version 2)](images/30_9_thread_trace_broken_solution_v2.png)
+
+Signaling is clearly needed, but must be more directed. A consumer should not
+wake other consumers, only producers, and vice-versa.
+
+### The Single Buffer Producer/Consumer Solution
+
+The solution here is once again a small one: use *two* condition variables,
+instead of one, in order to properly signal which type of thread should wake up
+when the state of the system changes. Figure 30.10 shows the resulting code.
+
+Figure 30.10: **Producer/Consumer: Two CVs And While**
+
+```c
+cond_t empty, fill;
+mutex_t mutex;
+
+void *producer(void *arg)
+{
+    int i;
+    for (i = 0; i < loops; i++)
+    {
+        Pthread_mutex_lock(&mutex);
+        while (count == 1)
+            Pthread_cond_wait(&empty, &mutex);
+        put(i);
+        Pthread_cond_signal(&fill);
+        Pthread_mutex_unlock(&mutex);
+    }
+}
+
+void *consumer(void *arg)
+{
+    int i;
+    for (i = 0; i < loops; i++)
+    {
+        Pthread_mutex_lock(&mutex);
+        while (count == 0)
+            Pthread_cond_wait(&fill, &mutex);
+        int tmp = get();
+        Pthread_cond_signal(&empty);
+        Pthread_mutex_unlock(&mutex);
+        printf("%d\n", tmp);
+    }
+}
+```
+
+In the code above, producer threads wait on the condition **empty**, and
+signals **fill**. Conversely, consumer threads wait on **fill** and signal
+**empty**. By doing so, the second problem above is avoided by design: a
+consumer can never accidentally wake a consumer, and a producer can never
+accidentally wake a producer.
+
+### The Correct Producer/Consumer Solution
+
+We now have a working producer/consumer solution, albeit not a fully general
+one. The last change we make is to enable more concurrency and efficiency;
+specifically, we add more buffer slots, so that multiple values can be produced
+before sleeping, and similarly multiple values can be consumed before sleeping.
+With just a single producer and consumer, this approach is more efficient as it
+reduces context switches; with multiple producers or consumers (or both), it
+even allows concurrent producing or consuming to take place, thus increasing
+concurrency. Fortunately, it is a small change from our current solution.
+
+The first change for this correct solution is within the buffer structure
+itself and the corresponding `put()` and `get()` (Figure 30.11). We also
+slightly change the conditions that producers and consumers check in order to
+determine whether to sleep or not. Figure 30.12 shows the correct waiting and
+signaling logic. A producer only sleeps if all buffers are currently filled
+(p2); similarly, a consumer only sleeps if all buffers are currently empty (c2).
+And thus we solve the producer/consumer problem.
+
+Figure 30.11: **The Correct Put And Get Routines**
+
+```c
+int buffer[MAX];
+
+int fill_ptr = 0;
+int use_ptr = 0;
+int count = 0;
+
+void put(int value)
+{
+    buffer[fill_ptr] = value;
+    fill_ptr = (fill_ptr + 1) % MAX;
+    count++;
+}
+
+int get()
+{
+    int tmp = buffer[use_ptr];
+    use_ptr = (use_ptr + 1) % MAX;
+    count--;
+    return tmp;
+}
+```
+
+Figure 30.12: **The Correct Producer/Consumer Synchronization**
+
+```c
+cond_t empty, fill;
+mutex_t mutex;
+
+void *producer(void *arg)
+{
+    int i;
+    for (i = 0; i < loops; i++)
+    {
+        Pthread_mutex_lock(&mutex);            // p1
+        while (count == MAX)                   // p2
+            Pthread_cond_wait(&empty, &mutex); // p3
+        put(i);                                // p4
+        Pthread_cond_signal(&fill);            // p5
+        Pthread_mutex_unlock(&mutex);          // p6
+    }
+}
+void *consumer(void *arg)
+{
+    int i;
+    for (i = 0; i < loops; i++)
+    {
+        Pthread_mutex_lock(&mutex);
+        while (count == 0)                    // c1
+            Pthread_cond_wait(&fill, &mutex); // c2
+        int tmp = get();                      // c3
+        Pthread_cond_signal(&empty);          // c4
+        Pthread_mutex_unlock(&mutex);         // c5
+        printf("%d\n", tmp);                  // c6
+    }
+}
+```
+
+TIP: **USE WHILE (NOT IF) FOR CONDITIONS**
+
+When checking for a condition in a multi-threaded program, using a `while` loop
+is always correct; using an `if` statement only might be, depending on the
+semantics of signaling. Thus, always use `while` and your code will behave as
+expected.
+
+Using while loops around conditional checks also handles the case where
+**spurious wakeups** occur. In some thread packages, due to details of the
+implementation, it is possible that two threads get woken up though just a
+single signal has taken place]. Spurious wakeups are further reason to re-check
+the condition a thread is waiting on.
+
+## 30.3 Covering Conditions
+
+We’ll now look at one more example of how condition variables can be used. This
+code study is drawn from Lampson and Redell’s paper on Pilot, the same group
+who first implemented the **Mesa semantics** described above (the language they
+used was Mesa, hence the name).
+
+The problem they ran into is best shown via simple example, in this case in a
+simple multi-threaded memory allocation library. Figure 30.13 shows a code
+snippet which demonstrates the issue.
+
+Figure 30.13: **Covering Conditions: An Example**
+
+```c
+// how many bytes of the heap are free?
+int bytesLeft = MAX_HEAP_SIZE;
+
+// need lock and condition too
+cond_t c;
+mutex_t m;
+
+void *allocate(int size)
+{
+    Pthread_mutex_lock(&m);
+    while (bytesLeft < size)
+        Pthread_cond_wait(&c, &m);
+    void *ptr = ...; // get mem from heap
+    bytesLeft -= size;
+    Pthread_mutex_unlock(&m);
+    return ptr;
+}
+
+void free(void *ptr, int size)
+{
+    Pthread_mutex_lock(&m);
+    bytesLeft += size;
+    Pthread_cond_signal(&c); // whom to signal??
+    Pthread_mutex_unlock(&m);
+}
+```
+
+As you might see in the code, when a thread calls into the memory allocation
+code, it might have to wait in order for more memory to become free.
+Conversely, when a thread frees memory, it signals that more memory is free.
+However, our code above has a problem: which waiting thread (there can be more
+than one) should be woken up?
+
+Consider the following scenario. Assume there are zero bytes free; thread *Ta*
+calls `allocate(100)`, followed by thread *Tb* which asks for less memory by
+calling `allocate(10)`. Both *Ta* and *Tb* thus wait on the condition and go to
+sleep; there aren’t enough free bytes to satisfy either of these requests.
+
+At that point, assume a third thread, *Tc*, calls `free(50)`. Unfortunately,
+when it calls signal to wake a waiting thread, it might not wake the correct
+waiting thread, *Tb*, which is waiting for only 10 bytes to be freed; *Ta*
+should remain waiting, as not enough memory is yet free. Thus, the code in the
+figure does not work, as the thread waking other threads does not know which
+thread (or threads) to wake up.
+
+The solution suggested by Lampson and Redell is straightforward: replace the
+`pthread_cond_signal()` call in the code above with a call to
+`pthread_cond_broadcast()`, which wakes up *all* waiting threads. By doing so,
+we guarantee that any threads that should be woken are. The downside, of
+course, can be a negative performance impact, as we might needlessly wake up
+many other waiting threads that shouldn’t (yet) be awake. Those threads will
+simply wake up, re-check the condition, and then go immediately back to sleep.
+
+Lampson and Redell call such a condition a **covering condition**, as it covers
+all the cases where a thread needs to wake up (conservatively); the cost, as
+we’ve discussed, is that too many threads might be woken. The astute reader
+might also have noticed we could have used this approach earlier (see the
+producer/consumer problem with only a single condition variable). However, in
+that case, a better solution was available to us, and thus we used it. In
+general, if you find that your program only works when you change your signals
+to broadcasts (but you don’t think it should need to), you probably have a bug;
+fix it! But in cases like the memory allocator above, broadcast may be the most
+straightforward solution available.
+
+## 30.4 Summary
+
+We have seen the introduction of another important synchronization primitive
+beyond locks: condition variables. By allowing threads to sleep when some
+program state is not as desired, CVs enable us to neatly solve a number of
+important synchronization problems, including the famous (and still important)
+producer/consumer problem, as well as covering conditions.
+
+## Homework (Code)
+
+> untouched
