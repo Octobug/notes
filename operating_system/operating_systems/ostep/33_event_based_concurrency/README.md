@@ -354,3 +354,92 @@ which events are used to process network packets, and a thread pool is used to
 manage outstanding I/Os.
 
 ## 33.7 Another Problem: State Management
+
+Another issue with the event-based approach is that such code is generally more
+complicated to write than traditional thread-based code. The reason is as
+follows: when an event handler issues an asynchronous I/O, it must package up
+some program state for the next event handler to use when the I/O finally
+completes; this additional work is not needed in thread-based programs, as the
+state the program needs is on the stack of the thread. Adya et al. call this
+work **manual stack management**, and it is fundamental to event-based
+programming.
+
+To make this point more concrete, let’s look at a simple example in which a
+thread-based server needs to read from a file descriptor (`fd`) and, once
+complete, write the data that it read from the file to a network socket
+descriptor (`sd`). The code (ignoring error checking) looks like this:
+
+```c
+int rc = read(fd, buffer, size);
+rc = write(sd, buffer, size);
+```
+
+As you can see, in a multi-threaded program, doing this kind of work is
+trivial; when the `read()` finally returns, the code immediately knows which
+socket to write to because that information is on the stack of the thread (in
+the variable `sd`).
+
+In an event-based system, life is not so easy. To perform the same task, we’d
+first issue the read asynchronously, using the AIO calls described above. Let’s
+say we then periodically check for completion of the read using the
+`aio_error()` call; when that call informs us that the read is complete, how
+does the event-based server know what to do?
+
+The solution, as described by Adya et al., is to use an old programming
+language construct known as a **continuation**. Though it sounds complicated,
+the idea is rather simple: basically, record the needed information to finish
+processing this event in some data structure; when the event happens (i.e.,
+when the disk I/O completes), look up the needed information and process the
+event.
+
+In this specific case, the solution would be to record the socket descriptor
+(`sd`) in some kind of data structure (e.g., a hash table), indexed by the file
+descriptor (`fd`). When the disk I/O completes, the event handler would use the
+file descriptor to look up the continuation, which will return the value of the
+socket descriptor to the caller. At this point (finally), the server can then
+do the last bit of work to write the data to the socket.
+
+## 33.8 What Is Still Difficult With Events
+
+1. There are a few other difficulties with the event-based approach that we
+   should mention. For example, when systems moved from a single CPU to multiple
+   CPUs, some of the simplicity of the event-based approach disappeared.
+   Specifically, in order to utilize more than one CPU, the event server has to
+   run multiple event handlers in parallel; when doing so, the usual
+   synchronization problems (e.g., critical sections) arise, and the usual
+   solutions (e.g., locks) must be employed. Thus, on modern multicore systems,
+   simple event handling without locks is no longer possible.
+2. Another problem with the event-based approach is that it does not integrate
+   well with certain kinds of systems activity, such as **paging**. For example,
+   if an event-handler page faults, it will block, and thus the server will not
+   make progress until the page fault completes. Even though the server has been
+   structured to avoid *explicit* blocking, this type of *implicit* blocking due
+   to page faults is hard to avoid and thus can lead to large performance
+   problems when prevalent.
+3. A third issue is that event-based code can be hard to manage over time, as
+   the exact semantics of various routines changes. For example, if a routine
+   changes from non-blocking to blocking, the event handler that calls that
+   routine must also change to accommodate its new nature, by ripping itself
+   into two pieces. Because blocking is so disastrous for event-based servers,
+   a programmer must always be on the lookout for such changes in the semantics
+   of the APIs each event uses.
+4. Finally, though asynchronous disk I/O is now possible on most platforms, it
+   has taken a long time to get there, and it never quite integrates with
+   asynchronous network I/O in as simple and uniform a manner as you might
+   think. For example, while one would simply like to use the `select()`
+   interface to manage all outstanding I/Os, usually some combination of
+   `select()` for networking and the AIO calls for disk I/O are required.
+
+## 33.9 Summary
+
+We’ve presented a bare bones introduction to a different style of concurrency
+based on events. Event-based servers give control of scheduling to the
+application itself, but do so at some cost in complexity and difficulty of
+integration with other aspects of modern systems (e.g., paging). Because of
+these challenges, no single approach has emerged as best; thus, both threads
+and events are likely to persist as two different approaches to the same
+concurrency problem for many years to come.
+
+## Homework (Code)
+
+> untouched

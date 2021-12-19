@@ -32,4 +32,5 @@ Andrea C. Arpaci-Dusseau (University of Wisconsin-Madison)
   - [x] [31. Semaphores](31_semaphores)
   - [ ] [32. Common Concurrency Problems](32_common_concurrency_problems)
   - [x] [33. Event-based Concurrency (Advanced)](33_event_based_concurrency)
-  - [ ] [34. Summary Dialogue on Concurrency](34_summary_dialogue_on_concurrency)
+  - [x] [34. Summary Dialogue on Concurrency](34_summary_dialogue_on_concurrency)
+- Part III: Persistence
