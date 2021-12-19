@@ -17,6 +17,8 @@
     - [如何设计](#如何设计)
     - [水平触发 (level-triggered) 与边缘触发 (edge-triggered)](#水平触发-level-triggered-与边缘触发-edge-triggered)
     - [多进程/多线程/协程](#多进程多线程协程)
+    - [内核级线程 / 用户级线程](#内核级线程--用户级线程)
+    - [1:1 threading vs. M:N threading](#11-threading-vs-mn-threading)
     - [Map-Reduce?](#map-reduce)
     - [应用层](#应用层)
   - [2. 底层机制](#2-底层机制)
@@ -72,8 +74,6 @@ C10K 问题。
 
 ### 每个线程处理多个客户端，并使用非阻塞I/O和水平触发就绪通知
 
->>>>> progress
-
 ### 就绪通知与完成通知
 
 ### 非阻塞 I/O 与异步 I/O
@@ -104,6 +104,10 @@ Fast UNIX Servers - 核心设计原则
 
     [Benchmarking BSD and Linux - The connect latency benchmark](benchmarking_bsd_and_linux.md#the-connect-latency-benchmark)
 - Nodejs 的事件循环
+
+### 内核级线程 / 用户级线程
+
+### 1:1 threading vs. M:N threading
 
 ### Map-Reduce?
 
