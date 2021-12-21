@@ -3,6 +3,8 @@ import multiprocessing
 import select
 import socket
 import sys
+import http.server
+import socketserver
 
 from utils import eprint, logging
 

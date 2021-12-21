@@ -1,51 +1,75 @@
+---
+marp: true
+theme: gaia
+class: invert
+
+---
+
+<!-- class: lead invert -->
+
 # 从 C10K 问题到高并发服务器开发
 
-## 目录
+`2021.12.24`
 
-- [从 C10K 问题到高并发服务器开发](#从-c10k-问题到高并发服务器开发)
-  - [目录](#目录)
-  - [1. C10K 问题](#1-c10k-问题)
-    - [C10K 的意思](#c10k-的意思)
-    - [背景](#背景)
-    - [处理请求与连接的区别](#处理请求与连接的区别)
-    - [I/O 策略](#io-策略)
-      - [非阻塞I/O (`write` with `O_NONBLOCK`) 与异步I/O (`aio_write`) 的区别](#非阻塞io-write-with-o_nonblock-与异步io-aio_write-的区别)
-    - [每个线程处理多个客户端，并使用非阻塞I/O和水平触发就绪通知](#每个线程处理多个客户端并使用非阻塞io和水平触发就绪通知)
-    - [就绪通知与完成通知](#就绪通知与完成通知)
-    - [非阻塞 I/O 与异步 I/O](#非阻塞-io-与异步-io)
-    - [设计模式: 应答者 `Reactor` 与 `Proactor`](#设计模式-应答者-reactor-与-proactor)
-    - [如何设计](#如何设计)
-    - [水平触发 (level-triggered) 与边缘触发 (edge-triggered)](#水平触发-level-triggered-与边缘触发-edge-triggered)
-    - [多进程/多线程/协程](#多进程多线程协程)
-    - [内核级线程 / 用户级线程](#内核级线程--用户级线程)
-    - [1:1 threading vs. M:N threading](#11-threading-vs-mn-threading)
-    - [Map-Reduce?](#map-reduce)
-    - [应用层](#应用层)
-  - [2. 底层机制](#2-底层机制)
-  - [3. 如何写一个高性能服务器](#3-如何写一个高性能服务器)
-    - [网络模型层次的划分设计](#网络模型层次的划分设计)
-  - [4. 现状](#4-现状)
-    - [业界哪些做得好](#业界哪些做得好)
+---
 
-## 1. C10K 问题
+<!-- class: invert -->
 
-原文: <http://www.kegel.com/c10k.html>
+## 1. The C10K Problem
 
-### C10K 的意思
+## 2. 并发策略
 
-单机并发处理 10,000 (10K) 个客户端（Clients, 有些文章使用 "Connections" 即“连接”一词）。
+## 3. Demo: 简易 HTTP Server
 
-### 背景
+## 4. 了解 NGINX 架构
 
-[Dan Kegel](http://www.kegel.com/resume.html) (`/dæn 'keɡəl/`) 在 1999 年提出了
-C10K 问题。
+## 5. 参考资料
 
-![Dan Kegel](./images/dan_kegel0.png)
+---
 
-![Dan Kegel](./images/dan_kegel1.jpg)
+<!-- class: invert lead -->
 
-那个年代的计算机硬件性能远不及今天，但主要的短板不在于硬件。当时的服务器软件在同时面对超过
-10,000 个客户端时，即使硬件性能足够强大也无法正常提供服务。
+## 1. The C10K Problem
+
+---
+
+<!-- class: invert -->
+
+## 1. The C10K Problem
+
+### 1.1 "C10K"?
+
+单机并发处理 10,000 (10K) 个客户端 (C 代表 Clients, 有些文章使用 "Connections" 一词)。
+
+---
+
+<!-- class: invert -->
+
+### 1.2 背景
+
+Dan Kegel (`/dæn 'keɡəl/`) 于 1999 年在其[个人站点](http://www.kegel.com/resume.html)提出了 [C10K 问题](http://www.kegel.com/c10k.html)。
+
+![Dan Kegel](./images/dan_kegel.jpeg)
+
+---
+
+> You can buy a 1000MHz machine with 2 gigabytes of RAM and an 1000Mbit/sec Ethernet card for $1200 or so. Let's see - at 20000 clients, that's 50KHz, 100Kbytes, and 50Kbits/sec per client. It shouldn't take any more horsepower than that to take four kilobytes from the disk and send them to the network once a second for each of twenty thousand clients. (That works out to $0.08 per client, by the way. Those $100/client licensing fees some operating systems charge are starting to look a little heavy!) So `hardware is no longer the bottleneck`.
+
+---
+
+### 1999 年互联网用户数
+
+<!-- class: invert lead -->
+
+![width:720px](images/internet_users.png)
+
+<https://ourworldindata.org/internet>
+
+---
+
+> Here are a few notes on how to **configure operating systems** and **write code** to support thousands of clients
+
+---
 
 ### 处理请求与连接的区别
 
@@ -127,8 +151,38 @@ Fast UNIX Servers - 核心设计原则
 
 UNP: 1.7
 
-## 4. 现状
+---
+
+## 2. 并发策略
+
+---
+
+## 3. Demo: 简易 HTTP Server
+
+---
+
+## 4. 了解 NGINX 架构
+
+---
+
+## 4. 了解 NGINX 架构
 
 c10m became reality in 2010s.
 
-### 业界哪些做得好
+---
+
+## 5. 参考资料
+
+<!-- class: invert -->
+
+### 文章
+
+- [The C10K Problem](http://www.kegel.com/c10k.html) by Dan Kegel
+- [C10K问题系列文章](http://www.52im.net/thread-561-1-1.html) (即时通讯网)
+
+---
+
+### 书籍
+
+- [Operating Systems: Three Easy Pieces](http://www.ostep.org/) by Remzi H. Arpaci-Dusseau Andrea C Arpaci-Dusseau (2018)
+- [UNIX Network Programming](http://www.unpbook.com/), Volume 1: The Sockets Networking API, 3rd Edition by W. Richard Stevens, Bill Fenner, Andrew M. Rudoff (2003)
