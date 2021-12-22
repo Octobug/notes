@@ -19,7 +19,7 @@ class: invert
 
 ## 2. 并发策略
 
-## 3. Demo: 简易 HTTP Server
+## 3. Demo: 简陋 HTTP Server
 
 ## 4. 了解 NGINX 架构
 
@@ -69,6 +69,33 @@ Dan Kegel (`/dæn 'keɡəl/`) 于 1999 年在其 [个人站点](http://www.kegel
 
 <!-- class: invert -->
 
+### 处理“请求”与“连接”的区别
+
+- 大量请求：需要高吞吐率，更关心每个请求的处理速度
+- 大量连接：无论连接上的数据交互繁忙与否都需要高效的网络连接管理
+
+---
+
+<!-- class: lead invert -->
+
+### S0 服务
+
+![height:480px](images/s0.jpg)
+
+---
+
+<!-- class: invert -->
+
+> 早期的腾讯QQ也同样面临 C10K 问题，只不过他们是用了 UDP 这种原始的包交换协议来实现的，绕开了这个难题，当然过程肯定是痛苦的。
+
+在 2000 年前后一段时间，C10K 是实实在在的难题。
+
+Dan Kegel 对这个问题进行系统的归纳和总结，并提出解决方案。
+
+---
+
+<!-- class: invert -->
+
 ### 1.3 主要内容
 
 > Here are a few notes on how to **configure operating systems** and **write code** to support thousands of clients.
@@ -85,10 +112,15 @@ Dan Kegel (`/dæn 'keɡəl/`) 于 1999 年在其 [个人站点](http://www.kegel
 
 ---
 
-### 处理请求与连接的区别
+<!-- class: invert lead -->
 
-- 大量请求：需要高吞吐率，更关心每个请求的处理速度
-- 大量连接：需要高效的连接调度
+## 2. 并发策略 & 3. Demo: 简陋 HTTP Server
+
+---
+
+<https://en.wikipedia.org/wiki/Linux_kernel_version_history>
+
+---
 
 ### I/O 策略
 
@@ -171,7 +203,7 @@ UNP: 1.7
 
 ---
 
-## 3. Demo: 简易 HTTP Server
+## 3. Demo: 简陋 HTTP Server
 
 ---
 
