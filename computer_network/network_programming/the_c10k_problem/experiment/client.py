@@ -29,12 +29,12 @@ def send_request(request_id):
     socket_ = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     socket_.settimeout(TIMEOUT)
     try:
-        msg = NONSENSE[request_id % len(NONSENSE)]
-        data = f'{time.time()} - {msg}'.encode('utf-8')
+        msg = f'{time.time()} - {NONSENSE[request_id % len(NONSENSE)]}'
+        data = str.encode(msg)
 
         socket_.connect((HOST, PORT))
         socket_.sendall(data)
-        reply = socket_.recv(32)
+        reply = socket_.recv(65535)
 
         if reply != data:
             raise Exception('data: %s, reply: %s' % (data, reply))

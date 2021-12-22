@@ -47,13 +47,9 @@ class: invert
 
 ### 1.2 背景
 
-Dan Kegel (`/dæn 'keɡəl/`) 于 1999 年在其[个人站点](http://www.kegel.com/resume.html)提出了 [C10K 问题](http://www.kegel.com/c10k.html)。
+Dan Kegel (`/dæn 'keɡəl/`) 于 1999 年在其 [个人站点](http://www.kegel.com) 提出了 [C10K 问题](http://www.kegel.com/c10k.html)。
 
-![Dan Kegel](./images/dan_kegel.jpeg)
-
----
-
-> You can buy a 1000MHz machine with 2 gigabytes of RAM and an 1000Mbit/sec Ethernet card for $1200 or so. Let's see - at 20000 clients, that's 50KHz, 100Kbytes, and 50Kbits/sec per client. It shouldn't take any more horsepower than that to take four kilobytes from the disk and send them to the network once a second for each of twenty thousand clients. (That works out to $0.08 per client, by the way. Those $100/client licensing fees some operating systems charge are starting to look a little heavy!) So `hardware is no longer the bottleneck`.
+![height:360px](./images/dan_kegel.jpeg)
 
 ---
 
@@ -67,7 +63,25 @@ Dan Kegel (`/dæn 'keɡəl/`) 于 1999 年在其[个人站点](http://www.kegel.
 
 ---
 
-> Here are a few notes on how to **configure operating systems** and **write code** to support thousands of clients
+> You can buy a 1000MHz machine with 2 gigabytes of RAM and an 1000Mbit/sec Ethernet card for $1200 or so. Let's see - at 20000 clients, that's 50KHz, 100Kbytes, and 50Kbits/sec per client. It shouldn't take any more horsepower than that to take four kilobytes from the disk and send them to the network once a second for each of twenty thousand clients. (That works out to $0.08 per client, by the way. Those $100/client licensing fees some operating systems charge are starting to look a little heavy!) So `hardware is no longer the bottleneck`.
+
+---
+
+<!-- class: invert -->
+
+### 1.3 主要内容
+
+> Here are a few notes on how to **configure operating systems** and **write code** to support thousands of clients.
+
+-> *The C10K Problem (pdf)*
+
+---
+
+<!-- class: lead invert -->
+
+# 先体验一下网站不响应的感觉
+
+## Django `runserver`
 
 ---
 
@@ -163,10 +177,6 @@ UNP: 1.7
 
 ## 4. 了解 NGINX 架构
 
----
-
-## 4. 了解 NGINX 架构
-
 c10m became reality in 2010s.
 
 ---
@@ -178,7 +188,8 @@ c10m became reality in 2010s.
 ### 文章
 
 - [The C10K Problem](http://www.kegel.com/c10k.html) by Dan Kegel
-- [C10K问题系列文章](http://www.52im.net/thread-561-1-1.html) (即时通讯网)
+- [C10k problem](https://en.wikipedia.org/wiki/C10k_problem) (Wikipedia)
+- [C10K问题系列文章](http://www.52im.net/thread-561-1-1.html) (JackJiang, 即时通讯网)
 
 ---
 
