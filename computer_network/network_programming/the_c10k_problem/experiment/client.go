@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"encoding/binary"
 	"flag"
 	"fmt"
@@ -61,8 +62,17 @@ func send_request(verbose bool) int64 {
 	start := time.Now().UnixNano()
 
 	epoch := time.Now().Unix()
-	payload := make([]byte, 8)
-	binary.PutVarint(payload, epoch)
+	// payload := make([]byte, 8)
+	payload := []byte(strconv.Itoa(int(epoch)) + ": hello")
+	// binary.PutVarint(payload, epoch)
+
+	buf := new(bytes.Buffer)
+
+	binErr := binary.Write(buf, binary.BigEndian, payload)
+	if binErr != nil {
+		fmt.Println("binary.Write failed:", binErr)
+	}
+
 	_, err = conn.Write(payload)
 	if err != nil {
 		if verbose {

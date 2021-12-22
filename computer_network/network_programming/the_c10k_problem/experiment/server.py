@@ -12,7 +12,7 @@ from utils import eprint, logging
 def handle_conn(conn, addr):
     logging.info(f'handling data from {addr[0]}:{addr[1]}')
     data = conn.recv(65535)
-    logging.debug(data)
+    logging.debug(data.decode())
     conn.sendall(data)
     conn.close()
 

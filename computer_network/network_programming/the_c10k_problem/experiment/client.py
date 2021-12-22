@@ -29,8 +29,8 @@ def send_request(request_id):
     socket_ = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     socket_.settimeout(TIMEOUT)
     try:
-        msg = f'{time.time()} - {NONSENSE[request_id % len(NONSENSE)]}'
-        data = str.encode(msg)
+        msg = f'{time.time()}: {NONSENSE[request_id % len(NONSENSE)]}'
+        data = msg.encode()
 
         socket_.connect((HOST, PORT))
         socket_.sendall(data)
