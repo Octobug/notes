@@ -9,7 +9,7 @@ def server_status():
     mem_in_bytes = process.memory_info().rss
     mem_in_mb = round(mem_in_bytes / 1024 / 1024, 2)
     cpu = process.cpu_percent()
-    clis = len(process.connections()) - 1
+    conns = len(process.connections()) - 1
     threads = process.num_threads()
     children = len(process.children())
     ctx_switchs = process.num_ctx_switches()
@@ -18,7 +18,7 @@ def server_status():
         'pid': pid,
         'cpu': f'{cpu}%',
         'mem': f'{mem_in_mb}MB',
-        'clis': clis,
+        'conns': conns,
         'children': children,
         'threads': threads,
         'ctx_switchs': ctx_switchs

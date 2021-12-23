@@ -8,6 +8,8 @@ from chttp import parse_request
 from views import handle
 
 
+# conn_baks = []
+
 class D2C():
     def __init__(self, modes):
         for key in modes:
@@ -45,6 +47,7 @@ def handle_conn(conn, addr):
 
     http_resp = handle_request(req_str)
     conn.sendall(http_resp.encode())
+    # conn_baks.append(conn)
     conn.close()
 
 
@@ -52,25 +55,6 @@ def queued_handle_conn(queue):
     while True:
         conn, addr = queue.get()
         handle_conn(conn, addr)
-
-
-def single_server(s: socket.socket):
-    while True:
-        conn, addr = s.accept()
-        handle_conn(conn, addr)
-
-
-def process_server(socket_):
-    child = []
-    try:
-        while True:
-            conn, addr = socket_.accept()
-
-            p = multiprocessing.Process(target=handle_conn, args=(conn, addr))
-            p.start()
-            child.append(p)
-    finally:
-        [p.terminate() for p in child if p.is_alive()]
 
 
 def select_server(socket_, timeout=1, use_worker=False):
@@ -223,6 +207,56 @@ def epoll_server(socket_, timeout=1, use_worker=False):
         print(f'Max. number of connections: {max_peers}')
 
 
+def process_server(s: socket.socket):
+    child = []
+    try:
+        while True:
+            conn, addr = s.accept()
+
+            p = multiprocessing.Process(target=handle_conn, args=(conn, addr))
+            p.start()
+            child.append(p)
+    finally:
+        [p.terminate() for p in child if p.is_alive()]
+
+
+def single_server(s: socket.socket):
+    while True:
+        conn, addr = s.accept()
+        handle_conn(conn, addr)
+
+
+def run_server(host, port, args):
+    timeout = args.timeout / 1000
+    # TCP socket
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    if args.mode in (MODE.SELECT, MODE.POLL, MODE.EPOLL):
+        s.setblocking(False)
+
+    try:
+        s.bind((host, port))
+        s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        s.listen(args.backlog)
+        logger.info(f'listening on {host}:{port}')
+        logger.info(f'open in browser: http://{DOMAIN}:{port}')
+
+        if args.mode == MODE.SINGLE:
+            single_server(s)
+        elif args.mode == MODE.PROCESS:
+            process_server(s)
+        elif args.mode == 'select':
+            select_server(s, timeout, use_worker=args.worker)
+        elif args.mode == 'poll':
+            poll_server(s, timeout, use_worker=args.worker)
+        elif args.mode == 'epoll':
+            epoll_server(s, timeout, use_worker=args.worker)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        s.close()
+
+
 def set_args():
     argparser = argparse.ArgumentParser()
     argparser.add_argument('mode', help=('Operating mode of the server: %s'
@@ -245,36 +279,6 @@ def set_args():
                                  'experiment, it does not really help shorten '
                                  'the response time.'))
     return argparser.parse_args()
-
-
-def run_server(host, port, args):
-    timeout = args.timeout / 1000
-    # TCP socket
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    if args.mode in (MODE.SELECT, MODE.POLL, MODE.EPOLL):
-        s.setblocking(False)
-
-    try:
-        s.bind((host, port))
-        s.listen(args.backlog)
-        logger.info(f'listening on {host}:{port}')
-        logger.info(f'open in browser: http://{DOMAIN}:{port}')
-
-        if args.mode == MODE.SINGLE:
-            single_server(s)
-        elif args.mode == MODE.PROCESS:
-            process_server(s)
-        elif args.mode == 'select':
-            select_server(s, timeout, use_worker=args.worker)
-        elif args.mode == 'poll':
-            poll_server(s, timeout, use_worker=args.worker)
-        elif args.mode == 'epoll':
-            epoll_server(s, timeout, use_worker=args.worker)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        s.close()
 
 
 def main():

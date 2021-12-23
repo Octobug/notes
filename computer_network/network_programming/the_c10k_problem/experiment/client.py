@@ -23,18 +23,27 @@ NONSENSE = (
 
 
 def send_request(request_id):
-    HOST, PORT = '127.0.0.1', 8000
+    HOST, PORT = 'c10k.test', 8000
 
     start = time.time()
-    socket_ = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    socket_.settimeout(TIMEOUT)
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.settimeout(TIMEOUT)
     try:
-        msg = f'{time.time()}: {NONSENSE[request_id % len(NONSENSE)]}'
-        data = msg.encode()
+        # msg = f'{time.time()}: {NONSENSE[request_id % len(NONSENSE)]}'
+        http_header_lines = (
+            'GET / HTTP/1.1',
+            f'Host: {HOST}:{PORT}',
+            'Connection: keep-alive',
+            'User-Agent: C10K Client',
+            'Accept: text/html',
+        )
+        http_req = '\r\n'.join(http_header_lines)
 
-        socket_.connect((HOST, PORT))
-        socket_.sendall(data)
-        reply = socket_.recv(65535)
+        data = http_req.encode()
+
+        s.connect((HOST, PORT))
+        s.sendall(data)
+        reply = s.recv(65535)
 
         if reply != data:
             raise Exception('data: %s, reply: %s' % (data, reply))
@@ -47,7 +56,7 @@ def send_request(request_id):
         logging.error(e)
         return FAILED
     finally:
-        socket_.close()
+        s.close()
 
 
 def main():
