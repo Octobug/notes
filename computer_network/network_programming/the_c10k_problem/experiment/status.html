@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>从 C10K 问题到高并发服务器开发</title>
+</head>
+
+<body>
+    <h3>Server Status</h3>
+    <table border="1">
+
+        <tbody>
+            <tr>
+                <th>PID</th>
+                <td>{pid}</td>
+            </tr>
+            <tr>
+                <th>CPU</th>
+                <td>{cpu}</td>
+            </tr>
+            <tr>
+                <th>Memory</th>
+                <td>{mem}</td>
+            </tr>
+            <tr>
+                <th>Clients</th>
+                <td>{clis}</td>
+            </tr>
+            <tr>
+                <th>Children</th>
+                <td>{children}</td>
+            </tr>
+            <tr>
+                <th>threads</th>
+                <td>{threads}</td>
+            </tr>
+            <tr>
+                <th>Context Switches</th>
+                <td>vol: {ctx_switchs.voluntary}, invol: {ctx_switchs.involuntary}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+.
+
+</html>

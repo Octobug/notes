@@ -3,17 +3,48 @@ import multiprocessing
 import select
 import socket
 import sys
-import http.server
-import socketserver
+from utils import eprint, get_logger
+from chttp import parse_request
+from views import handle
 
-from utils import eprint, logging
+
+class D2C():
+    def __init__(self, modes):
+        for key in modes:
+            setattr(self, key, modes[key])
+
+
+MODES = {
+    'SINGLE': 'single',
+    'PROCESS': 'process',
+    'THREAD': 'thread',
+    'SELECT': 'select',
+    'POLL': 'poll',
+    'EPOLL': 'epoll',
+    'SIGNAL': 'signal',
+    'ASYNC': 'async'
+}
+
+
+MODE_LIST = tuple(MODES.values())
+MODE = D2C(MODES)
+DOMAIN = 'c10k.test'
+
+
+def handle_request(req_str):
+    http_req = parse_request(req_str)
+    logger.info(f'{http_req["method"]} {http_req["path"]}')
+    return handle(http_req['path'])
 
 
 def handle_conn(conn, addr):
-    logging.info(f'handling data from {addr[0]}:{addr[1]}')
-    data = conn.recv(65535)
-    logging.debug(data.decode())
-    conn.sendall(data)
+    logger.info(f'new client: {addr[0]}:{addr[1]}')
+    req_bytes = conn.recv(65535)
+    req_str = req_bytes.decode()
+    logger.debug(req_str)
+
+    http_resp = handle_request(req_str)
+    conn.sendall(http_resp.encode())
     conn.close()
 
 
@@ -23,7 +54,13 @@ def queued_handle_conn(queue):
         handle_conn(conn, addr)
 
 
-def basic_server(socket_):
+def single_server(s: socket.socket):
+    while True:
+        conn, addr = s.accept()
+        handle_conn(conn, addr)
+
+
+def process_server(socket_):
     child = []
     try:
         while True:
@@ -186,55 +223,76 @@ def epoll_server(socket_, timeout=1, use_worker=False):
         print(f'Max. number of connections: {max_peers}')
 
 
-def main():
-    HOST, PORT = '127.0.0.1', 8000
-    MODES = ('basic', 'select', 'poll', 'epoll')
-
+def set_args():
     argparser = argparse.ArgumentParser()
     argparser.add_argument('mode', help=('Operating mode of the server: %s'
-                                         % ', '.join(MODES)))
+                                         % ', '.join(MODE_LIST)))
     argparser.add_argument('--backlog', type=int, default=0,
                            help='socket.listen() backlog')
     argparser.add_argument('--timeout', type=int, default=1000,
                            help='select/poll/epoll timeout in ms')
+    argparser.add_argument('--verbose', type=int, default=4,
+                           help=('logger level'
+                                 '1: FATAL'
+                                 '2: ERROR'
+                                 '3: WARNING'
+                                 '4: INFO'
+                                 '5: DEBUG'))
     argparser.add_argument('--worker', action='store_true',
-                           help=('Spawn a worker to process request in '
+                           help=('spawn a worker to process request in '
                                  'select/poll/epoll mode. '
                                  'NOTE: The sole purpose of this option is '
                                  'experiment, it does not really help shorten '
                                  'the response time.'))
-    args = argparser.parse_args()
+    return argparser.parse_args()
 
-    if args.mode not in MODES:
-        msg = 'Availble operating modes: %s' % ', '.join(MODES)
-        eprint(msg)
-        sys.exit(1)
 
-    socket_ = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+def run_server(host, port, args):
+    timeout = args.timeout / 1000
+    # TCP socket
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    if args.mode in (MODE.SELECT, MODE.POLL, MODE.EPOLL):
+        s.setblocking(False)
+
     try:
-        socket_.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        socket_.bind((HOST, PORT))
+        s.bind((host, port))
+        s.listen(args.backlog)
+        logger.info(f'listening on {host}:{port}')
+        logger.info(f'open in browser: http://{DOMAIN}:{port}')
 
-        if args.mode in ('select', 'poll', 'epoll'):
-            socket_.setblocking(0)
-
-        timeout = args.timeout / 1000
-        socket_.listen(args.backlog)
-        logging.info(f'listening on {HOST}:{PORT}')
-        logging.info(f'mode: {args.mode}')
-
-        if args.mode == 'basic':
-            basic_server(socket_)
+        if args.mode == MODE.SINGLE:
+            single_server(s)
+        elif args.mode == MODE.PROCESS:
+            process_server(s)
         elif args.mode == 'select':
-            select_server(socket_, timeout, use_worker=args.worker)
+            select_server(s, timeout, use_worker=args.worker)
         elif args.mode == 'poll':
-            poll_server(socket_, timeout, use_worker=args.worker)
+            poll_server(s, timeout, use_worker=args.worker)
         elif args.mode == 'epoll':
-            epoll_server(socket_, timeout, use_worker=args.worker)
+            epoll_server(s, timeout, use_worker=args.worker)
     except KeyboardInterrupt:
         pass
     finally:
-        socket_.close()
+        s.close()
+
+
+def main():
+    HOST = '0.0.0.0'
+    PORT = 8000
+
+    args = set_args()
+
+    if args.mode not in MODE_LIST:
+        errmsg = 'Availble operating modes: %s' % ', '.join(MODE_LIST)
+        eprint(errmsg)
+        sys.exit(1)
+
+    global logger
+    logger = get_logger(args.verbose)
+
+    logger.info(f'mode: {args.mode}')
+    run_server(HOST, PORT, args)
 
 
 if __name__ == '__main__':

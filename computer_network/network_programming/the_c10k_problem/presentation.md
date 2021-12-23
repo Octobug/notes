@@ -118,6 +118,18 @@ Dan Kegel 对这个问题进行系统的归纳和总结，并提出解决方案�
 
 ---
 
+<!-- class: invert -->
+
+## 2. 并发策略
+
+### 多进程 vs. 多线程
+
+---
+
+## 3. Demo: 简陋 HTTP Server
+
+---
+
 <https://en.wikipedia.org/wiki/Linux_kernel_version_history>
 
 ---
