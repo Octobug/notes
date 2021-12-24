@@ -1,5 +1,6 @@
 import argparse
 import multiprocessing
+import os
 import select
 import socket
 import sys
@@ -8,7 +9,12 @@ from chttp import parse_request
 from views import handle
 
 
-# conn_baks = []
+conn_refs = []
+
+PID = os.getpid()
+HOST = '0.0.0.0'
+PORT = 8000
+
 
 class D2C():
     def __init__(self, modes):
@@ -36,7 +42,11 @@ DOMAIN = 'c10k.test'
 def handle_request(req_str):
     http_req = parse_request(req_str)
     logger.info(f'{http_req["method"]} {http_req["path"]}')
-    return handle(http_req['path'])
+    return handle(http_req['path'], pid=PID, port=PORT)
+
+
+def save_conn_ref(conn):
+    conn_refs.append(conn)
 
 
 def handle_conn(conn: socket.socket, addr):
@@ -49,7 +59,8 @@ def handle_conn(conn: socket.socket, addr):
 
     http_resp = handle_request(req_str)
     conn.sendall(http_resp.encode())
-    # conn_baks.append(conn)
+
+    # save_conn_ref(conn)
     conn.close()
 
 
@@ -285,9 +296,6 @@ def set_args():
 
 
 def main():
-    HOST = '0.0.0.0'
-    PORT = 8000
-
     args = set_args()
 
     if args.mode not in MODE_LIST:
