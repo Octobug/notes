@@ -53,9 +53,14 @@ def index(**_):
     return http_response('Hello, world!')
 
 
+def test(**_):
+    return 'short_str'
+
+
 def handle(url_path: dict, **args):
     handlers = {
         '/': index,
+        '/test': test,
         '/status': server_status,
         '/status/': server_status
     }

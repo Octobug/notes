@@ -31,7 +31,7 @@ def send_request(request_id):
     s.settimeout(TIMEOUT)
     try:
         http_header_lines = (
-            'GET / HTTP/1.1',
+            'GET /test HTTP/1.1',
             f'Host: {HOST}:{PORT}',
             'Connection: keep-alive',
             'User-Agent: C10K Client',

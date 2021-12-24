@@ -45,9 +45,12 @@ def get_s_key(addr):
 
 
 def handle_request(req_str):
-    http_req = parse_request(req_str)
-    logger.info(f'{http_req["method"]} {http_req["path"]}')
-    return handle(http_req['path'], pid=PID, port=PORT)
+    try:
+        http_req = parse_request(req_str)
+        logger.info(f'{http_req["method"]} {http_req["path"]}')
+        return handle(http_req['path'], pid=PID, port=PORT)
+    except Exception:
+        return ''
 
 
 def save_conn_ref(conn):
