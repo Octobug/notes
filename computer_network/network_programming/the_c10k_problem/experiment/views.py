@@ -54,7 +54,7 @@ def index(**_):
 
 
 def test(**_):
-    return 'short_str'
+    return 'short_str\r\n\r\n'
 
 
 def handle(url_path: dict, **args):
