@@ -1,5 +1,6 @@
 import argparse
 import multiprocessing
+import threading
 import os
 import select
 import socket
@@ -220,17 +221,43 @@ def epoll_server(socket_, timeout=1, use_worker=False):
         print(f'Max. number of connections: {max_peers}')
 
 
+def thread_server(s: socket.socket):
+    class TCPThread (threading.Thread):
+        def __init__(self, id, conn, addr):
+            threading.Thread.__init__(self)
+            self.id = id
+            self.conn = conn
+            self.addr = addr
+
+        def run(self):
+            handle_conn(self.conn, self.addr)
+
+    children = []
+    try:
+        tid = 0
+        while True:
+            tid += 1
+            conn, addr = s.accept()
+
+            t = TCPThread(tid, conn, addr)
+            t.start()
+
+            children.append(t)
+    finally:
+        [t.join() for t in children if t.is_alive()]
+
+
 def process_server(s: socket.socket):
-    child = []
+    children = []
     try:
         while True:
             conn, addr = s.accept()
 
             p = multiprocessing.Process(target=handle_conn, args=(conn, addr))
             p.start()
-            child.append(p)
+            children.append(p)
     finally:
-        [p.terminate() for p in child if p.is_alive()]
+        [p.terminate() for p in children if p.is_alive()]
 
 
 def single_server(s: socket.socket):
@@ -259,11 +286,13 @@ def run_server(host, port, args):
             single_server(s)
         elif args.mode == MODE.PROCESS:
             process_server(s)
-        elif args.mode == 'select':
+        elif args.mode == MODE.THREAD:
+            thread_server(s)
+        elif args.mode == MODE.SELECT:
             select_server(s, timeout, use_worker=args.worker)
-        elif args.mode == 'poll':
+        elif args.mode == MODE.POLL:
             poll_server(s, timeout, use_worker=args.worker)
-        elif args.mode == 'epoll':
+        elif args.mode == MODE.EPOLL:
             epoll_server(s, timeout, use_worker=args.worker)
     except KeyboardInterrupt:
         pass
