@@ -41,13 +41,9 @@ def handle_request(req_str):
 
 def handle_conn(conn: socket.socket, addr):
     logger.info(f'new client: {addr[0]}:{addr[1]}')
-    chunk_size = 1024
-    req_str = ''
-    while True:
-        tmp_bytes = conn.recv(chunk_size)
-        req_str += tmp_bytes.decode()
-        if req_str.endswith('\r\n\r\n'):
-            break
+    max_header_size = 65535
+    req_bytes = conn.recv(max_header_size)
+    req_str = req_bytes.decode()
 
     logger.debug(req_str)
 

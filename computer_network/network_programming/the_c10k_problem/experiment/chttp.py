@@ -18,6 +18,11 @@ def parse_request(request: str):
     return headers
 
 
+def parse_response(response: str):
+    _, body = response.split('\r\n\r\n')
+    return body
+
+
 def http_response(body: str):
     header = ('HTTP/1.1 200 OK\r\n'
               'Server: C10K Server\r\n'

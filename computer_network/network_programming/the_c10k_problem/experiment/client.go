@@ -9,8 +9,11 @@ import (
 	"net"
 	"os"
 	"strconv"
+	"strings"
 	"time"
 )
+
+var Host, Port string = "c10k.test", "8000"
 
 func usage() {
 	msg := "Usage: %s [--workers=WORKERS --verbose] REQUESTS"
@@ -43,7 +46,9 @@ func send_request(verbose bool) int64 {
 		SVR_ERR   = -5
 	)
 
-	addr, err := net.ResolveTCPAddr("tcp4", "127.0.0.1:8000")
+	hostaddr := Host + ":" + Port
+
+	addr, err := net.ResolveTCPAddr("tcp4", hostaddr)
 	if err != nil {
 		if verbose {
 			log.Println(err)
@@ -61,14 +66,17 @@ func send_request(verbose bool) int64 {
 
 	start := time.Now().UnixNano()
 
-	epoch := time.Now().Unix()
-	// payload := make([]byte, 8)
-	payload := []byte(strconv.Itoa(int(epoch)) + ": hello")
-	// binary.PutVarint(payload, epoch)
+	http_req := "GET / HTTP/1.1\r\n" +
+		"Host: " + hostaddr + "\r\n" +
+		"Connection: keep-alive\r\n" +
+		"User-Agent: C10K Client\r\n" +
+		"Accept: text/html\r\n" +
+		"\r\n"
+	payload := []byte(http_req)
 
-	buf := new(bytes.Buffer)
+	wbuf := new(bytes.Buffer)
 
-	binErr := binary.Write(buf, binary.BigEndian, payload)
+	binErr := binary.Write(wbuf, binary.BigEndian, payload)
 	if binErr != nil {
 		fmt.Println("binary.Write failed:", binErr)
 	}
@@ -81,8 +89,8 @@ func send_request(verbose bool) int64 {
 		return WRITE_ERR
 	}
 
-	buffer := make([]byte, 8)
-	_, err = conn.Read(buffer)
+	rbuf := make([]byte, 4096)
+	_, err = conn.Read(rbuf)
 	if err != nil {
 		if verbose {
 			log.Println(err)
@@ -90,13 +98,11 @@ func send_request(verbose bool) int64 {
 		return READ_ERR
 	}
 
-	reply, _ := binary.Varint(buffer)
-	if reply != epoch {
-		if verbose {
-			msg := "Integrity error - reply: %d, epoch: %d"
-			log.Printf(msg, reply, epoch)
-		}
-		return SVR_ERR
+	resp := string(rbuf)
+	lines := strings.Split(resp, "\r\n\r\n")
+
+	if verbose {
+		log.Println("reply: ", lines[1])
 	}
 
 	finish := time.Now().UnixNano()
@@ -178,7 +184,7 @@ func main() {
 	time_spent = float32(finish-start) / 1e+9 // in sec.
 	rps = float32(requests) / float32(time_spent)
 
-	fmt.Printf("Errors: %d, Succeeds: %d\n", errors, succeeds)
+	fmt.Printf("\nErrors: %d, Succeeds: %d\n", errors, succeeds)
 	fmt.Printf("DNS: %d, Socket: %d, Write: %d, Read: %d, Server: %d\n",
 		dns_errors, sock_errors, write_errors, read_errors, svr_errors)
 	fmt.Printf("Response time (avg.): %f ms\n", avg)

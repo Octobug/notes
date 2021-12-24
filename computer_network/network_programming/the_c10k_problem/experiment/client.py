@@ -3,6 +3,7 @@ import multiprocessing
 import socket
 import time
 
+from chttp import parse_response
 from utils import logging
 
 
@@ -29,13 +30,13 @@ def send_request(request_id):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.settimeout(TIMEOUT)
     try:
-        # msg = f'{time.time()}: {NONSENSE[request_id % len(NONSENSE)]}'
         http_header_lines = (
             'GET / HTTP/1.1',
             f'Host: {HOST}:{PORT}',
             'Connection: keep-alive',
             'User-Agent: C10K Client',
             'Accept: text/html',
+            '\r\n'
         )
         http_req = '\r\n'.join(http_header_lines)
 
@@ -45,8 +46,7 @@ def send_request(request_id):
         s.sendall(data)
         reply = s.recv(65535)
 
-        if reply != data:
-            raise Exception('data: %s, reply: %s' % (data, reply))
+        print(f'{request_id}: {parse_response(reply.decode())}')
 
         finish = time.time()
         response_time = finish - start
@@ -87,7 +87,7 @@ def main():
     time_spent = finish - start
     rps = args.requests / time_spent
 
-    msg = ('Errors: %s, Succeeds: %s\n'
+    msg = ('\nErrors: %s, Succeeds: %s\n'
            'Response time (avg.): %s ms\n'
            'Requests per second (avg.): %s req/s\n'
            'Time spent: %s s')
