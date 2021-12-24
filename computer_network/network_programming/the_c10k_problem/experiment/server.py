@@ -39,10 +39,16 @@ def handle_request(req_str):
     return handle(http_req['path'])
 
 
-def handle_conn(conn, addr):
+def handle_conn(conn: socket.socket, addr):
     logger.info(f'new client: {addr[0]}:{addr[1]}')
-    req_bytes = conn.recv(65535)
-    req_str = req_bytes.decode()
+    chunk_size = 1024
+    req_str = ''
+    while True:
+        tmp_bytes = conn.recv(chunk_size)
+        req_str += tmp_bytes.decode()
+        if req_str.endswith('\r\n\r\n'):
+            break
+
     logger.debug(req_str)
 
     http_resp = handle_request(req_str)
@@ -230,13 +236,14 @@ def run_server(host, port, args):
     timeout = args.timeout / 1000
     # TCP socket
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # 允许重用被 TIME_WAIT TCP 占用的地址
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
     if args.mode in (MODE.SELECT, MODE.POLL, MODE.EPOLL):
         s.setblocking(False)
 
     try:
         s.bind((host, port))
-        s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         s.listen(args.backlog)
         logger.info(f'listening on {host}:{port}')
         logger.info(f'open in browser: http://{DOMAIN}:{port}')
