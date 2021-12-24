@@ -21,7 +21,7 @@ class: invert
 
 ## 3. Demo: 简陋 HTTP Server
 
-## 4. 了解 NGINX 架构
+~~4. 现在与未来~~
 
 ## 5. 参考资料
 
@@ -353,16 +353,70 @@ POSIX (Portable Operating System Interface) 定义了这两个术语:
 
 ### 2.6 `select` vs. `epoll`
 
-| 区别 |`select` | `epoll` |
-| - | - | - |
-| 时间复杂度 | O(N) | O(1) |
-| 机制 | 遍历注册的 `fd`s | 使用中断 |
+#### 2.6.1 `select()` 调用的内部步骤
+
+1. 从用户空间拷贝 `fd_set` 到内核空间；
+2. 注册回调函数 `__pollwait`；
+3. 遍历所有 fd， 对全部指定设备做一次 poll（这里的 poll 是一个文件操作，它有两个参数，一个是文件 fd 本身，一个是当设备尚未就绪时调用的回调函数 `__pollwait`，这个函数把设备自己特有的等待队列传给内核，让内核把当前的进程挂载到其中）；
 
 ---
 
-<!-- class: lead invert -->
+#### 2.6.1 `select()` 调用的内部步骤
 
-## 4. 了解 NGINX 架构
+4. 当设备就绪时，设备就会唤醒在自己特有等待队列中的所有节点，于是当前进程就获取到了完成的信号，poll 文件操作返回的是一组标准的掩码，其中的各个位指示当前的不同的就绪状态（全0为没有任何事件触发），根据 mask 可对 fd_set 赋值；
+5. 如何所有设备的返回的掩码都没有显示任何的事件触发，就去掉回调函数的函数指针，进入有限时的睡眠状态，再回复和不断做 poll，直到其中一个设备有事件触发为止；
+6. 只要有事件触发，系统调用返回，将 fd_set 从内核空间拷贝到用户空间，回到用户态，用户可以对相关的 fd 作进一步的度或者写操作。
+
+---
+
+#### 2.6.2 `epoll()` 调用的内部步骤
+
+1. 调用 epoll_create 时
+    a. 内核帮我们在 epoll 文件系统里建了个 file 结点；
+    b. 在内核 cache 里建了个红黑树用于存储以后 epoll_ctl 传来的 socket；
+    c. 建立一个 list 链表，用于存储准备就绪的事件；
+
+---
+
+#### 2.6.2 `epoll()` 调用的内部步骤
+
+2. 调用 epoll_ctl 时
+    a. 把 socket 放到 epoll 文件系统里 file 对象对应的红黑树上；
+    b. 给内核中断处理程序注册一个回调函数，告诉内核如果这个 fd 的中断到了，就把它放到准备就绪 list 链表里；
+
+3. 调用 epoll_wait 时
+    a. 观察 list 链表里有没有数据，有数据就返回，没有数据就 sleep，等到 timeout 时间后即使链表没数据也返回。
+
+---
+
+### 2.6 `select` vs. `epoll`
+
+| /          | `select`            | `epoll`                            |
+| ---------- | ------------------- | ---------------------------------- |
+| 机制       | 遍历注册的所有 `fd` | 使用中断回调                       |
+| fd 数量    | 1024                | `sysctl fs.epoll.max_user_watches` |
+| 触发模式   | 水平触发            | 水平/边沿触发                      |
+| 时间复杂度 | O(N)                | O(1)                               |
+
+---
+
+## 3. Demo: 简陋 HTTP Server
+
+### `Demo 4`: 非阻塞 + 水平触发就绪通知 (`epoll`)
+
+---
+
+<!-- class: invert -->
+
+## 4. 现在与未来
+
+### 4.1 了解 NGINX 架构
+
+[The Architecture of Open Source Applications (Volume 2): nginx](https://www.aosabook.org/en/nginx.html)
+
+### 4.2 C10M?
+
+> [下一个10年，是时候考虑C10M并发问题了](http://www.52im.net/thread-568-1-1.html)
 
 ---
 

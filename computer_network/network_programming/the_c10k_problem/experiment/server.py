@@ -40,6 +40,10 @@ MODE = D2C(MODES)
 DOMAIN = 'c10k.test'
 
 
+def get_s_key(addr):
+    return f'{addr[0]}:{addr[1]}'
+
+
 def handle_request(req_str):
     http_req = parse_request(req_str)
     logger.info(f'{http_req["method"]} {http_req["path"]}')
@@ -48,6 +52,29 @@ def handle_request(req_str):
 
 def save_conn_ref(conn):
     conn_refs.append(conn)
+
+
+def handle_read(conn: socket.socket, addr, results: dict):
+    logger.info(f'new client: {get_s_key(addr)}')
+    max_header_size = 65535
+    req_bytes = conn.recv(max_header_size)
+    req_str = req_bytes.decode()
+
+    logger.debug(req_str)
+
+    http_resp = handle_request(req_str)
+    results[get_s_key(addr)] = http_resp
+
+
+def handle_write(conn: socket.socket, addr, results: dict):
+    try:
+        http_resp = results[get_s_key(addr)]
+        conn.sendall(http_resp.encode())
+        del results[get_s_key(addr)]
+        # save_conn_ref(conn)
+        conn.close()
+    except KeyError:
+        pass
 
 
 def handle_conn(conn: socket.socket, addr):
@@ -71,8 +98,10 @@ def queued_handle_conn(queue):
         handle_conn(conn, addr)
 
 
-def select_server(socket_, timeout=1, use_worker=False):
+def select_server(s_main, timeout=1, use_worker=False):
     '''Single process select() with non-blocking accept() and recv().'''
+    inputs = []
+    outputs = []
     peers = []
 
     try:
@@ -86,13 +115,15 @@ def select_server(socket_, timeout=1, use_worker=False):
 
         while True:
             max_peers = max(max_peers, len(peers))
-            readable, w, e = select.select(peers + [socket_], [], [], timeout)
+            reads, _w, _e = select.select(
+                peers + [s_main], [], [], timeout
+            )
 
-            for s in readable:
-                if s is socket_:
+            for s in reads:
+                if s is s_main:
                     while True:
                         try:
-                            conn, addr = socket_.accept()
+                            conn, addr = s_main.accept()
                             conn.setblocking(0)
 
                             peers.append(conn)
@@ -106,6 +137,7 @@ def select_server(socket_, timeout=1, use_worker=False):
                         queue.put((conn, addr))
                     else:
                         handle_conn(conn, addr)
+                        # handle_read(conn, addr, results)
     finally:
         if use_worker and worker.is_alive():
             worker.terminate()
@@ -113,7 +145,7 @@ def select_server(socket_, timeout=1, use_worker=False):
         print(f'Max. number of connections: {max_peers}')
 
 
-def poll_server(socket_, timeout=1, use_worker=False):
+def poll_server(s_main, timeout=1, use_worker=False):
     '''Single process poll() with non-blocking accept() and recv().'''
     peers = {}  # {fileno: socket}
     flag = (select.POLLIN |
@@ -130,16 +162,16 @@ def poll_server(socket_, timeout=1, use_worker=False):
             worker.start()
 
         poll = select.poll()
-        poll.register(socket_, select.POLLIN)
+        poll.register(s_main, select.POLLIN)
         while True:
             max_peers = max(max_peers, len(peers))
             actionable = poll.poll(timeout)
 
             for fd, event in actionable:
-                if fd == socket_.fileno():
+                if fd == s_main.fileno():
                     while True:
                         try:
-                            conn, addr = socket_.accept()
+                            conn, addr = s_main.accept()
                             conn.setblocking(0)
 
                             peers[conn.fileno()] = conn
@@ -166,7 +198,7 @@ def poll_server(socket_, timeout=1, use_worker=False):
         print(f'Max. number of connections: {max_peers}')
 
 
-def epoll_server(socket_, timeout=1, use_worker=False):
+def epoll_server(s_main, timeout=1, use_worker=False):
     '''Single process epoll() with non-blocking accept() and recv().'''
     peers = {}  # {fileno: socket}
     flag = (select.EPOLLIN |
@@ -184,16 +216,16 @@ def epoll_server(socket_, timeout=1, use_worker=False):
             worker.start()
 
         epoll = select.epoll()
-        epoll.register(socket_, select.EPOLLIN | select.EPOLLET)
+        epoll.register(s_main, select.EPOLLIN | select.EPOLLET)
         while True:
             max_peers = max(max_peers, len(peers))
             actionable = epoll.poll(timeout=timeout)
 
             for fd, event in actionable:
-                if fd == socket_.fileno():
+                if fd == s_main.fileno():
                     while True:
                         try:
-                            conn, addr = socket_.accept()
+                            conn, addr = s_main.accept()
                             conn.setblocking(0)
 
                             peers[conn.fileno()] = conn
