@@ -430,6 +430,7 @@ POSIX (Portable Operating System Interface) 定义了这两个术语:
 - [C10k problem](https://en.wikipedia.org/wiki/C10k_problem) (Wikipedia)
 - [Thread (computing)](https://en.wikipedia.org/wiki/Thread_(computing)) (Wikipedia)
 - [C10K问题系列文章](http://www.52im.net/thread-561-1-1.html) (JackJiang, 即时通讯网)
+- [How does asyncio actually work?](https://stackoverflow.com/questions/49005651/how-does-asyncio-actually-work) ()
 
 ---
 
