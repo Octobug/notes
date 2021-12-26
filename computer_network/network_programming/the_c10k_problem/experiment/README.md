@@ -1,5 +1,11 @@
 # C10K Experiment
 
-## 参考资料
+## 服务器
 
-- [mrkschan / c10k-experiment](https://github.com/mrkschan/c10k-experiment)
+## 客户端
+
+使用 `kqueue`/`epoll` + 单线程。
+
+## 测试指标
+
+## 性能比较
