@@ -1,0 +1,2 @@
+class EOFError(Exception):
+    pass

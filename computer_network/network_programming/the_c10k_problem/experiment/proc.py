@@ -31,9 +31,11 @@ def get_process_info():
     threads = process.num_threads()
     children = len(pchildren)
     ctx_switches = process.num_ctx_switches()
+    loadavg = os.getloadavg()
 
     info = {
         'pid': PID,
+        'loadavg': loadavg,
         'cpu': f'{round(cpu, 2)}s',
         'mem': f'{mem_in_mb}MB',
         'conns': conns,

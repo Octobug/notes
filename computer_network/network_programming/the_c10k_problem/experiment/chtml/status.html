@@ -11,12 +11,23 @@
     <table border="1">
         <tbody>
             <tr>
+                <th>Type</th>
+                <td>Current</td>
+                <td>Max</td>
+            </tr>
+            <tr>
                 <th>PID</th>
                 <td>{pid}</td>
+                <td>/</td>
             </tr>
             <tr>
                 <th>CPU</th>
                 <td>{cpu}</td>
+                <td>/</td>
+            </tr>
+            <tr>
+                <th>LoadAvg</th>
+                <td>1min: {loadavg[0]}, 5min: {loadavg[1]}, 15min: {loadavg[2]}</td>
             </tr>
             <tr>
                 <th>Memory</th>
