@@ -1,6 +1,6 @@
 import multiprocessing
 import socket
-from .conn import handle_conn
+from .conn import handle_conn_block
 
 
 def process_server(s: socket.socket):
@@ -8,7 +8,9 @@ def process_server(s: socket.socket):
     try:
         while True:
             conn, addr = s.accept()
-            p = multiprocessing.Process(target=handle_conn, args=(conn, addr))
+            p = multiprocessing.Process(
+                target=handle_conn_block, args=(conn, addr, True)
+            )
             p.start()
             children.append(p)
     finally:

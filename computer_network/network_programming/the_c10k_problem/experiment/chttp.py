@@ -7,7 +7,7 @@ from cerror import EOFError
 
 def parse_req_header(request: str):
     if not len(request):
-        raise EOFError('request is EOF')
+        raise EOFError('request met the EOF')
     first_line, headers = request.split('\r\n', 1)
 
     # construct a message from the request string
@@ -42,19 +42,22 @@ def http_response(body: str):
 
 
 def http_recv(conn: socket.socket):
-    buf_size = 1024
+    buf_size = 65535
     req_str = ''
     while True:
-        req_bytes = conn.recv(buf_size)
-        logging.debug(f'bytes: {len(req_bytes)}')
-        if req_bytes:
-            req_str += req_bytes.decode()
-            if req_str.endswith('\r\n\r\n'):
+        try:
+            req_bytes = conn.recv(buf_size)
+            logging.debug(f'bytes: {len(req_bytes)}')
+            if req_bytes:
+                req_str += req_bytes.decode()
+                if len(req_bytes) < buf_size:
+                    break
+                if req_str.endswith('\r\n\r\n'):
+                    break
+            else:
                 break
-            if len(req_bytes) < buf_size:
-                break
-        else:
-            break
+        except ConnectionResetError as e:
+            logging.error(e)
 
     return req_str
 

@@ -1,7 +1,7 @@
 import multiprocessing
 import select
 
-from conn import handle_conn, queued_handle_conn
+from conn import handle_conn_block, queued_handle_conn
 
 
 def poll_server(s_main, timeout=1, use_worker=False):
@@ -45,7 +45,7 @@ def poll_server(s_main, timeout=1, use_worker=False):
                     if use_worker:
                         queue.put((conn, addr))
                     else:
-                        handle_conn(conn, addr)
+                        handle_conn_block(conn, addr)
 
                 elif event & select.POLLERR or event & select.POLLHUP:
                     poll.unregister(fd)

@@ -7,6 +7,7 @@ import config
 import modes
 from modes.single import single_server
 from modes.process import process_server
+from modes.thread import thread_server
 from utils import eprint, set_logging
 
 
@@ -37,8 +38,8 @@ def run_server(host, port, args):
             single_server(s)
         elif args.mode == modes.PROCESS:
             process_server(s)
-        # elif args.mode == modes.THREAD:
-        #     thread_server(s)
+        elif args.mode == modes.THREAD:
+            thread_server(s)
         # elif args.mode == modes.SELECT:
         #     select_server(s, timeout, use_worker=args.worker)
         # elif args.mode == modes.POLL:

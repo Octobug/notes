@@ -10,7 +10,7 @@ def handle_request(req_str):
     return route(http_path)
 
 
-def handle_conn(conn: socket.socket, addr, multimsg=True):
+def handle_conn_block(conn: socket.socket, addr, multimsg=False):
     def one_round():
         req_str = http_recv(conn)
         logging.debug(req_str)
@@ -19,13 +19,12 @@ def handle_conn(conn: socket.socket, addr, multimsg=True):
 
     logging.debug(f'new client: {addr[0]}:{addr[1]}')
     if multimsg:
-        idx = 0
         while True:
-            idx += 1
             try:
                 one_round()
             except EOFError as e:
                 logging.debug(e)
+                conn.close()
                 break
     else:
         one_round()
@@ -34,4 +33,4 @@ def handle_conn(conn: socket.socket, addr, multimsg=True):
 def queued_handle_conn(queue):
     while True:
         conn, addr = queue.get()
-        handle_conn(conn, addr)
+        handle_conn_block(conn, addr)
