@@ -3,7 +3,7 @@ import multiprocessing
 import socket
 import time
 
-from chttp import parse_response
+from chttp import parse_resp_header
 from utils import logging
 
 
@@ -46,7 +46,7 @@ def send_request(request_id):
         s.sendall(data)
         reply = s.recv(65535)
 
-        print(f'{request_id}: {parse_response(reply.decode())}')
+        print(f'{request_id}: {parse_resp_header(reply.decode())}')
 
         finish = time.time()
         response_time = finish - start

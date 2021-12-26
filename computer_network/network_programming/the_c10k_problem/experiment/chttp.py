@@ -1,8 +1,10 @@
 import email
+import logging
+import socket
 from io import StringIO
 
 
-def parse_request(request: str):
+def parse_req_header(request: str):
     first_line, headers = request.split('\r\n', 1)
 
     # construct a message from the request string
@@ -18,7 +20,7 @@ def parse_request(request: str):
     return headers
 
 
-def parse_response(response: str):
+def parse_resp_header(response: str):
     _, body = response.split('\r\n\r\n')
     return body
 
@@ -36,8 +38,23 @@ def http_response(body: str):
     return header + body
 
 
-def render(tmpl_path, data):
-    with open(tmpl_path, 'r') as f:
-        tmpl = f.read()
+def http_recv(conn: socket.socket):
+    buf_size = 2
+    req_str = ''
+    while True:
+        req_bytes = conn.recv(buf_size)
+        if req_bytes and len(req_bytes) >= buf_size:
+            req_str += req_bytes.decode()
+            if req_str.endswith('\r\n\r\n'):
+                break
+        else:
+            break
 
-    return tmpl.format(**data)
+    return req_str
+
+
+def http_req_path(req_str):
+    req_header = parse_req_header(req_str)
+    logging.info(f'{req_header["method"]} {req_header["path"]}')
+    logging.debug(req_header)
+    return req_header['path']
