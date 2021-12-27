@@ -1,10 +1,12 @@
+import logging
 import multiprocessing
 import select
+import socket
 
-from conn import handle_conn_block, queued_handle_conn
+from .conn import handle_conn_block, queued_handle_conn
 
 
-def select_server(s_main, timeout=1, use_worker=False):
+def select_server(s_main: socket.socket, timeout=0, use_worker=False):
     '''Single process select() with non-blocking accept() and recv().'''
     peers = []
 
@@ -31,7 +33,8 @@ def select_server(s_main, timeout=1, use_worker=False):
                             conn.setblocking(0)
 
                             peers.append(conn)
-                        except Exception:
+                        except Exception as e:
+                            logging.error(e)
                             break
                 else:
                     peers.remove(s)
@@ -41,7 +44,6 @@ def select_server(s_main, timeout=1, use_worker=False):
                         queue.put((conn, addr))
                     else:
                         handle_conn_block(conn, addr)
-                        # handle_read(conn, addr, results)
     finally:
         if use_worker and worker.is_alive():
             worker.terminate()

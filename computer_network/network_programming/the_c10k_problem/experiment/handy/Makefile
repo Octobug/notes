@@ -1,2 +1,2 @@
 client:
-	go build -o ./bin
+	go build -o ../bin

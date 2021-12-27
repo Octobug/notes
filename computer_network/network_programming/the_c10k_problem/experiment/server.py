@@ -8,6 +8,9 @@ import modes
 from modes.single import single_server
 from modes.process import process_server
 from modes.thread import thread_server
+from modes.select import select_server
+from modes.poll import poll_server
+from modes.epoll import epoll_server
 from utils import eprint, set_logging
 
 
@@ -19,7 +22,7 @@ def save_conn_ref(conn):
 
 
 def run_server(host, port, args):
-    # timeout = args.timeout / 1000
+    timeout = args.timeout / 1000
     # TCP socket
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # 允许重用被 TIME_WAIT TCP 占用的地址
@@ -40,12 +43,12 @@ def run_server(host, port, args):
             process_server(s)
         elif args.mode == modes.THREAD:
             thread_server(s)
-        # elif args.mode == modes.SELECT:
-        #     select_server(s, timeout, use_worker=args.worker)
-        # elif args.mode == modes.POLL:
-        #     poll_server(s, timeout, use_worker=args.worker)
-        # elif args.mode == modes.EPOLL:
-        #     epoll_server(s, timeout, use_worker=args.worker)
+        elif args.mode == modes.SELECT:
+            select_server(s, timeout, use_worker=args.worker)
+        elif args.mode == modes.POLL:
+            poll_server(s, timeout, use_worker=args.worker)
+        elif args.mode == modes.EPOLL:
+            epoll_server(s, timeout, use_worker=args.worker)
     except KeyboardInterrupt:
         pass
     finally:
