@@ -19,7 +19,7 @@ def get_process_info():
             conns += len(p.connections())
             mem_in_bytes += p.memory_info().rss
         except Exception as e:
-            logging.error(e)
+            logging.error(f'get_process_info: {e}')
 
     mem_in_mb = round(mem_in_bytes / 1024 / 1024, 2)
     cpu_times = process.cpu_times()

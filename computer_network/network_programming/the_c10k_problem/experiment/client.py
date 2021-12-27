@@ -41,7 +41,7 @@ def send_request(request_id):
 
         return response_time
     except Exception as e:
-        logging.error(e)
+        logging.error(f'send_request: {e}')
         return FAILED
     finally:
         s.close()

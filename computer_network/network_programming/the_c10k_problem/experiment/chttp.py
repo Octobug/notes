@@ -57,7 +57,7 @@ def http_recv(conn: socket.socket):
             else:
                 break
         except ConnectionResetError as e:
-            logging.error(e)
+            logging.error(f'http_recv: {e}')
 
     return req_str
 

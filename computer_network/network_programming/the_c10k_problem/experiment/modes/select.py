@@ -34,7 +34,7 @@ def select_server(s_main: socket.socket, timeout=0, use_worker=False):
 
                             peers.append(conn)
                         except Exception as e:
-                            logging.error(e)
+                            logging.error(f'select_server: {e}')
                             break
                 else:
                     peers.remove(s)

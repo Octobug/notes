@@ -1,7 +1,7 @@
 import multiprocessing
 import select
 
-from conn import handle_conn_block, queued_handle_conn
+from .conn import handle_conn_block, queued_handle_conn
 
 
 def poll_server(s_main, timeout=1, use_worker=False):
