@@ -27,7 +27,7 @@ by Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley
 ## Table of Contents
 
 - SECTION ONE: BASIC ADMINISTRATION
-  - [ ] [1 Where to Start](01_where_to_start)
+  - [x] [1 Where to Start](01_where_to_start)
   - 2 Booting and Shutting Down
   - [x] [3 Access Control and Rootly Powers](03_access_control_and_rootly_powers)
   - 4
