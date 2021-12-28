@@ -12,7 +12,7 @@ def get_process_info():
     process = psutil.Process(PID)
     pchildren = process.children()
     mem_in_bytes = process.memory_info().rss
-    conns = len(process.connections())
+    conns = len(process.connections()) - 1
 
     for p in pchildren:
         try:

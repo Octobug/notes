@@ -2,12 +2,12 @@ import email
 import logging
 import socket
 from io import StringIO
-from cerror import EOFError
+from cerror import SocketClosedError
 
 
 def parse_req_header(request: str):
     if not len(request):
-        raise EOFError('request met the EOF')
+        raise SocketClosedError('socket was closed')
     first_line, headers = request.split('\r\n', 1)
 
     # construct a message from the request string
@@ -51,15 +51,13 @@ def http_recv(conn: socket.socket):
             if req_bytes:
                 req_str += req_bytes.decode()
                 if len(req_bytes) < buf_size:
-                    break
+                    return req_str
                 if req_str.endswith('\r\n\r\n'):
-                    break
+                    return req_str
             else:
-                break
-        except ConnectionResetError as e:
+                return req_str
+        except (ConnectionResetError, BlockingIOError, OSError) as e:
             logging.error(f'http_recv: {e}')
-
-    return req_str
 
 
 def http_req_path(req_str):

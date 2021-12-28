@@ -1,2 +1,2 @@
-class EOFError(Exception):
+class SocketClosedError(Exception):
     pass

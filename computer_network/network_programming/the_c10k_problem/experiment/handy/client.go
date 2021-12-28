@@ -66,7 +66,7 @@ func send_request(verbose bool) int64 {
 
 	start := time.Now().UnixNano()
 
-	http_req := "GET /test HTTP/1.1\r\n" +
+	http_req := "GET / HTTP/1.1\r\n" +
 		"Host: " + hostaddr + "\r\n" +
 		"Connection: keep-alive\r\n" +
 		"User-Agent: C10K Client\r\n" +

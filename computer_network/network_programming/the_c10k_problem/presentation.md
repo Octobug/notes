@@ -146,6 +146,17 @@ Dan Kegel 对这个问题进行系统的归纳和总结，并提出解决方案�
 
 ---
 
+<!-- class: invert -->
+
+#### 操作系统维护的两个 TCP 队列
+
+数量限制 (Linux):
+
+- syns queue: `/proc/sys/net/ipv4/tcp_max_syn_backlog`
+- accept queue: `/proc/sys/net/core/somaxconn`
+
+---
+
 <!-- class: lead invert -->
 
 #### 传输层及以下由操作系统管理

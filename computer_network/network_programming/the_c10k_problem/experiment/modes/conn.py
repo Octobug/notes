@@ -2,7 +2,7 @@ import logging
 import socket
 from chttp import http_recv, http_req_path
 from router import route
-from cerror import EOFError
+from cerror import SocketClosedError
 
 
 def handle_request(req_str):
@@ -18,16 +18,15 @@ def handle_conn_block(conn: socket.socket, addr, multimsg=False):
         conn.sendall(http_resp.encode())
 
     logging.debug(f'new client: {addr[0]}:{addr[1]}')
-    if multimsg:
-        while True:
-            try:
+    try:
+        if multimsg:
+            while True:
                 one_round()
-            except EOFError as e:
-                logging.debug(e)
-                conn.close()
-                break
-    else:
-        one_round()
+
+        else:
+            one_round()
+    except SocketClosedError as e:
+        logging.error(e)
 
 
 def queued_handle_conn(queue):

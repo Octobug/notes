@@ -43,7 +43,7 @@ def select_server(s_main: socket.socket, timeout=0, use_worker=False):
                     if use_worker:
                         queue.put((conn, addr))
                     else:
-                        handle_conn_block(conn, addr)
+                        handle_conn_block(conn, addr, True)
     finally:
         if use_worker and worker.is_alive():
             worker.terminate()

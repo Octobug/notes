@@ -52,6 +52,7 @@ def run_server(host, port, args):
     except KeyboardInterrupt:
         pass
     finally:
+        logging.warn('server exited unexpectedly')
         s.close()
 
 
@@ -64,7 +65,7 @@ def set_args():
         )
     )
     argparser.add_argument(
-        '--backlog', type=int, default=0,
+        '--backlog', type=int, default=100000,
         help='socket.listen() backlog')
     argparser.add_argument(
         '--timeout', type=int, default=1000,
