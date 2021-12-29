@@ -1,0 +1,11 @@
+#  Uncomment the following to test for the vuln.
+# 
+# - shell: "export evil='() { :;}; echo vulnerable'; bash -c echo;"
+#   register: result
+
+# - fail:
+#     msg="Not vulnerable"
+#   when: result.stdout != 'vulnerable'
+
+- command: /usr/bin/yum clean all
+- yum: name=bash state=latest

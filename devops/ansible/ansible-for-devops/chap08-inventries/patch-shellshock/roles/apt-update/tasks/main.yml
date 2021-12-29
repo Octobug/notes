@@ -1,0 +1,13 @@
+- copy: src=debian-6-lts.list dest=/etc/apt/sources.list.d/debian-6-lts.list
+  when: ansible_distribution_major_version == "6"
+
+#  Uncomment the following to test for the vuln.
+#
+# - shell: "export evil='() { :;}; echo vulnerable'; bash -c echo;"
+#  register: result 
+
+# - fail:
+#     msg="Not vulnerable"
+#   when: result.stdout != 'vulnerable'
+
+- apt: name=bash state=latest update_cache=yes
