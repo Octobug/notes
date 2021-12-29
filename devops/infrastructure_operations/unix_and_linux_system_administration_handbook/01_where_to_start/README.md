@@ -260,3 +260,27 @@ especially at large sites that have many interrelated services and teams.
 ### Database administrators
 
 ### Network operations center (NOC) engineers
+
+### Data center technicians
+
+### Architects
+
+## 1.13 Recommended reading
+
+### System administration and DevOps
+
+- The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win.
+- The DevOps Handbook: How to Create World-Class Agility, Reliability, and
+  Security in Technology Organizations.
+- The Practice of System and Network Administration (2nd Edition).
+- The Practice of Cloud System Administration.
+
+### Essential tools
+
+- Linux Command Line and Shell Scripting Bible (3rd Edition).
+- Sed & Awk (2nd Edition).
+- The Hacker Playbook 2: Practical Guide To Penetration Testing.
+- Practical Vim: Edit Text at the Speed of Thought.
+- The Linux Command Line: A Complete Introduction.
+- Automate the Boring Stuff with Python: Practical Programming for Total
+  Beginners.
