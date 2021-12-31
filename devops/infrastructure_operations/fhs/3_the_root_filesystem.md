@@ -18,8 +18,7 @@ and/or repair the system.
 - To restore a system, those utilities needed to restore from system backups
   must be present on the root filesystem.
 
-```txt
-Rationale
+### Rationale (minimum requirements)
 
 The minimum requirements for the root filesystem should be as small as
 reasonably possible, but no smaller. While many users may not want the extra
@@ -46,7 +45,6 @@ preserved for several reasons:
 These considerations must be balanced against the need for a minimally useful
 operating environment, for the sake of the boot process as well as in failure
 recovery situations.
-```
 
 Applications must never create or require special files or subdirectories in
 the root directory. Other locations in the FHS hierarchy provide more than

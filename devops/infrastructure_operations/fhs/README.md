@@ -14,10 +14,10 @@ documentation for these systems.
 
 ## Table of Contents
 
-1. Introduction
-2. The Filesystem
-3. [The Root Filesystem](3_the_root_filesystem.md)
-4. [The `/usr` Hierarchy](4_the_usr_hierarchy.md)
-5. The `/var` Hierarchy
-6. Operating System Specific Annex
-7. Appendix
+- [x] [1. Introduction](1_introduction.md)
+- [x] [2. The Filesystem](2_the_filesystem.md)
+- [ ] [3. The Root Filesystem](3_the_root_filesystem.md)
+- [ ] [4. The `/usr` Hierarchy](4_the_usr_hierarchy.md)
+- [ ] 5. The `/var` Hierarchy
+- [ ] 6. Operating System Specific Annex
+- [ ] 7. Appendix
