@@ -203,6 +203,31 @@ Linux的核心版本编号有点类似如下的样子：
 
 ## 4. 重点回顾
 
+- 计算机主要以二进制作为单位，而目前常用的磁盘容量单位为 bytes，其单位换算为
+  `1Byte = 8bits`，其他的以 1024 为其倍数，如 `1GByte=1024MBytes`等等。
+- 操作系统 (Operation System) 主要在管理与驱动硬件，因此必须要能够管理内存、管理装置、
+  负责行程管理以及系统呼叫等等。因此，只要能够让硬件准备妥当 (Ready) 的情况，
+  就是一个阳春的操作系统了。
+- 最阳春的操作系统仅在驱动与管理硬件，而要使用硬件时，就得需要透过应用软件或者是壳程序 (shell)
+  的功能，来呼叫操作系统操纵硬件工作。因此，目前称为操作系统的，除了上述功能外，
+  通常已经包含了日常工作所需要的应用软件在内了。
+- Unix 的前身是由贝尔实验室 (Bell lab.) 的 Ken Thompson 利用汇编语言写成的，后来在
+  1971-1973 年间由 Dennis Ritchie 以 C 程序语言进行改写，才称为 Unix。
+- 1977 年由 Bill Joy 释出 BSD (Berkeley Software Distribution)，这些称为 Unix-like
+  的操作系统。
+- 1984 年由 Andrew Tanenbaum 制作出 Minix 操作系统，该系统可以提供原始码以及软件；
+- 1984 年由 Richard Stallman 提倡 GNU 计划，倡导自由软件 (Free software)，
+  强调其软件可以『自由的取得、复制、修改与再发行』，并规范出 GPL 授权模式，任何 GPL
+  (General Public License) 软件均不可单纯仅贩卖其软件，也不可修改软件授权。
+- 1991 年由芬兰人 Linus Torvalds 开发出 Linux 操作系统。简而言之，Linux
+  成功的地方主要在于：Minix (Unix), GNU, Internet, POSIX 及虚拟团队的产生。
+- Linux 本身就是个最阳春的操作系统，其开发网站设立在 <http://www.kernel.org>，
+  我们亦称 Linux 操作系统最底层的数据为『核心 (Kernel)』。
+- 目前 Linux 核心的发展分为两种版本，分别是稳定版本的偶数版，如 2.6.X，
+  适合于商业与家用环境使用； 一种是发展中版本的奇数版如 2.5.X 版，适合开发特殊功能的环境。
+- Linux distributions 的组成含有：『Linux Kernel + Free Software + Documentations
+  (Tools) + 可完全安装的程序』所制成的一套完整的系统。
+
 ## 5. 本章习题
 
 1. `uname`
