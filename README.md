@@ -99,3 +99,4 @@ Blogs that I've been reading, listed in alphabetical order.
 ## Miscellaneous
 
 - [Interview](interview) for Software Engineer
+- [Thoughts](thoughts) on everything
