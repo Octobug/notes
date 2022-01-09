@@ -7,7 +7,7 @@
 - 第一部份：Linux 的规划与安装
   - [x] [第零章 计算机概论](00_introduction_to_computer)
   - [x] [第一章 Linux 是什么与如何学习](01_what_is_linux_and_how_to_learn)
-  - [x] [第二章 主机规划与磁盘分区](03_planning_and_partition)
+  - [x] [第二章 主机规划与磁盘分区](02_planning_and_partition)
   - [x] [第三章 安装 CentOS 7.x 与多重开机小技巧](04_install_centos_and_multi_os)
   - [ ] [第四章 首次登陆与在线求助 man page](05_first_login_and_man)
 - 第二部份：Linux文件、目录与磁盘格式
