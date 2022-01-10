@@ -1,10 +1,10 @@
-# 第五章、首次登录与在线求助 man page
+# 第四章 首次登陆与在线求助 man page
 
 > <http://cn.linux.vbird.org/linux_basic/0160startlinux.php>
 
 ## 目录
 
-- [第五章、首次登录与在线求助 man page](#第五章首次登录与在线求助-man-page)
+- [第四章 首次登陆与在线求助 man page](#第四章-首次登陆与在线求助-man-page)
   - [目录](#目录)
   - [1. 首次登录系统](#1-首次登录系统)
     - [1.1 首次登录 CentOS 5.x 图形接口](#11-首次登录-centos-5x-图形接口)
