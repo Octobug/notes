@@ -9,9 +9,9 @@
   - [x] [第一章 Linux 是什么与如何学习](01_what_is_linux_and_how_to_learn)
   - [x] [第二章 主机规划与磁盘分区](02_planning_and_partition)
   - [x] [第三章 安装 CentOS 7.x 与多重开机小技巧](03_install_centos_and_multi_os)
-  - [ ] [第四章 首次登陆与在线求助 man page](04_first_login_and_man)
+  - [x] [第四章 首次登陆与在线求助 man page](04_first_login_and_man)
 - 第二部份：Linux文件、目录与磁盘格式
-  - [ ] 第五章 Linux 文件权限与目录配置
+  - [ ] [第五章 Linux 文件权限与目录配置](05_linux_file_permission)
   - [ ] 第六章 Linux 文件与目录管理
   - [ ] 第七章 Linux 磁盘与文件系统管理
   - [ ] 第八章 文件的压缩与打包
