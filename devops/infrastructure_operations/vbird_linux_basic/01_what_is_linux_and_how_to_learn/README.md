@@ -181,7 +181,8 @@ Linux的核心版本编号有点类似如下的样子：
 
 - 可完全安装的 Linux 发布套件：内核 + 应用软件 + 工具 + 文档
 - 各大 Linux Distributions 的主要异同：支持标准！
-- Linux 在台湾
+  - Linux Standard Base (LSB): <https://wiki.linuxfoundation.org/lsb/start>
+  - Filesystem Hierarchy Standard (FHS): <https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html>
 - 选择适合你的 Linux distribution
 
 ### 1.x Linux 的特色

@@ -28,6 +28,10 @@
 
 ## 4. 服务组件
 
+- Nginx
+- PM2
+- logrotate
+
 ## 参考资料
 
 - [UNIX and Linux System Administration Handbook]([http](https://admin.com/))
