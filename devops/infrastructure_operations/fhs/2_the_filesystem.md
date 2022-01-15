@@ -2,6 +2,12 @@
 
 > <https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch02.html>
 
+## Table of Contents
+
+- [Chapter 2. The Filesystem](#chapter-2-the-filesystem)
+  - [Table of Contents](#table-of-contents)
+  - [Rationale](#rationale)
+
 It is possible to define two independent distinctions among files: **shareable**
 vs. **unshareable** and **variable** vs. **static**. In general, files that
 differ in either of these respects should be located in different directories.
@@ -38,9 +44,9 @@ permitted.
 
 Here is an example of a FHS-compliant system. (Other FHS-compliant layouts are possible.)
 
-| /        | shareable         | unshareable |
+| \        | shareable         | unshareable |
 | -------- | ----------------- | ----------- |
 | static   | `/usr`            | `/etc`      |
-| /        | `/opt`            | `/boot`     |
+| \        | `/opt`            | `/boot`     |
 | variable | `/var/mail`       | `/var/run`  |
-| /        | `/var/spool/news` | `/var/lock` |
+| \        | `/var/spool/news` | `/var/lock` |

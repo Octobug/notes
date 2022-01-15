@@ -2,6 +2,13 @@
 
 > <https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch01.html>
 
+## Table of Contents
+
+- [Chapter 1. Introduction](#chapter-1-introduction)
+  - [Table of Contents](#table-of-contents)
+  - [1.1. Purpose](#11-purpose)
+  - [1.2. Conventions](#12-conventions)
+
 ## 1.1. Purpose
 
 This standard enables:
