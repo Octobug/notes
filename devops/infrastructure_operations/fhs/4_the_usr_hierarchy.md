@@ -35,10 +35,32 @@
   - [4.10. `/usr/sbin`: Non-essential standard system binaries](#410-usrsbin-non-essential-standard-system-binaries)
     - [4.10.1. Purpose](#4101-purpose)
     - [4.10.2. Requirements](#4102-requirements)
-  - [4.11. /usr/share : Architecture-independent data](#411-usrshare--architecture-independent-data)
+  - [4.11. `/usr/share`: Architecture-independent data](#411-usrshare-architecture-independent-data)
     - [4.11.1. Purpose](#4111-purpose)
     - [4.11.2. Requirements](#4112-requirements)
     - [4.11.3. Specific Options](#4113-specific-options)
+    - [4.11.4. `/usr/share/color`: Color management information (optional)](#4114-usrsharecolor-color-management-information-optional)
+      - [4.11.4.1. Purpose](#41141-purpose)
+      - [4.11.4.2. Specific Options](#41142-specific-options)
+    - [4.11.5. `/usr/share/dict`: Word lists (optional)](#4115-usrsharedict-word-lists-optional)
+      - [4.11.5.1. Purpose](#41151-purpose)
+        - [4.11.5.1. Rationale](#41151-rationale)
+      - [4.11.5.2. Specific Options](#41152-specific-options)
+    - [4.11.6. `/usr/share/man`: Manual pages](#4116-usrshareman-manual-pages)
+      - [4.11.6.1. Purpose](#41161-purpose)
+      - [4.11.6.2. Specific Options](#41162-specific-options)
+    - [4.11.7. `/usr/share/misc`: Miscellaneous architecture-independent data](#4117-usrsharemisc-miscellaneous-architecture-independent-data)
+      - [4.11.7.1. Specific Options](#41171-specific-options)
+    - [4.11.8. `/usr/share/ppd`: Printer definitions (optional)](#4118-usrshareppd-printer-definitions-optional)
+      - [4.11.8.1. Purpose](#41181-purpose)
+    - [4.11.9. `/usr/share/sgml`: SGML data (optional)](#4119-usrsharesgml-sgml-data-optional)
+      - [4.11.9.1. Purpose](#41191-purpose)
+      - [4.11.9.2. Specific Options](#41192-specific-options)
+    - [4.11.10. `/usr/share/xml`: XML data (optional)](#41110-usrsharexml-xml-data-optional)
+      - [4.11.10.1. Purpose](#411101-purpose)
+      - [4.11.10.2. Specific Options](#411102-specific-options)
+  - [4.12. `/usr/src`: Source code (optional)](#412-usrsrc-source-code-optional)
+    - [4.12.1. Purpose](#4121-purpose)
 
 ## 4.1. Purpose
 
@@ -311,14 +333,12 @@ There must be no subdirectories in `/usr/sbin`.
 [29] Locally installed system administration programs should be placed in
 `/usr/local/sbin`.
 
-## 4.11. /usr/share : Architecture-independent data
-
->>>>> <https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch04s11.html>
+## 4.11. `/usr/share`: Architecture-independent data
 
 ### 4.11.1. Purpose
 
 The `/usr/share` hierarchy is for all read-only architecture independent data
-files.
+files. [30]
 
 This hierarchy is intended to be shareable among all architecture platforms of
 a given OS; thus, for example, a site with i386, Alpha, and PPC platforms might
@@ -339,7 +359,7 @@ placed in `/var/games`.
 ### 4.11.2. Requirements
 
 The following directories, or symbolic links to directories, must be in
-`/usr/share`.
+`/usr/share`
 
 | Directory | Description                                 |
 | --------- | ------------------------------------------- |
@@ -348,4 +368,339 @@ The following directories, or symbolic links to directories, must be in
 
 ### 4.11.3. Specific Options
 
->>> untouched
+The following directories, or symbolic links to directories, must be in
+`/usr/share`, if the corresponding subsystem is installed:
+
+| Directory | Description                                             |
+| --------- | ------------------------------------------------------- |
+| color     | Color management information (optional)                 |
+| dict      | Word lists (optional)                                   |
+| doc       | Miscellaneous documentation (optional)                  |
+| games     | Static data files for `/usr/games` (optional)           |
+| info      | Primary directory for GNU Info system (optional)        |
+| locale    | Locale information (optional)                           |
+| nls       | Message catalogs for Native language support (optional) |
+| ppd       | Printer definitions (optional)                          |
+| sgml      | SGML data (optional)                                    |
+| terminfo  | Directories for terminfo database (optional)            |
+| tmac      | troff macros not distributed with groff (optional)      |
+| xml       | XML data (optional)                                     |
+| zoneinfo  | Timezone information and configuration (optional)       |
+
+It is recommended that application-specific, architecture-independent
+directories be placed here. Such directories include `groff`, `perl`,
+`ghostscript`, `texmf`, and `kbd` (Linux) or `syscons` (BSD). They may,
+however, be placed in `/usr/lib` for backwards compatibility, at the
+distributor's discretion. Similarly, a `/usr/lib/games` hierarchy may be used
+in addition to the `/usr/share/games` hierarchy if the distributor wishes to
+place some game data there.
+
+### 4.11.4. `/usr/share/color`: Color management information (optional)
+
+#### 4.11.4.1. Purpose
+
+This directory is the home for ICC color management files installed by the
+system.
+
+#### 4.11.4.2. Specific Options
+
+The following directories must be in `/usr/share/color`, if the corresponding
+subsystem is installed:
+
+| Directory | Description                   |
+| --------- | ----------------------------- |
+| icc       | ICC color profiles (optional) |
+
+The top-level directory `/usr/share/color` must not contain any files; all
+files should be in subdirectories of `/usr/share/color`.
+
+### 4.11.5. `/usr/share/dict`: Word lists (optional)
+
+#### 4.11.5.1. Purpose
+
+This directory is the home for word lists on the system; Traditionally this
+directory contains only the English `words` file, which is used by `look(1)` and
+various spelling programs. `words` may use either American or British spelling.
+
+##### 4.11.5.1. Rationale
+
+The reason that only word lists are located here is that they are the only
+files common to all spell checkers.
+
+#### 4.11.5.2. Specific Options
+
+The following files, or symbolic links to files, must be in `/usr/share/dict`,
+if the corresponding subsystem is installed:
+
+| File  | Description                      |
+| ----- | -------------------------------- |
+| words | List of English words (optional) |
+
+Sites that require both American and British spelling may link words to
+`­/usr/share/dict/american-english` or `/usr/share/dict/british-english`.
+
+Word lists for other languages may be added using the English name for that
+language, e.g., `/usr/share/dict/french`, `/usr/share/dict/danish`, etc. These
+should, if possible, use a character set based on Unicode, with the UTF-8
+character set being the preferred option.
+
+Other word lists must be included here, if present.
+
+### 4.11.6. `/usr/share/man`: Manual pages
+
+#### 4.11.6.1. Purpose
+
+This section details the organization for manual pages throughout the system,
+including `/usr/share/man`. Also refer to the section on `/var/cache/man`.
+
+The primary `<mandir>` of the system is `/usr/share/man`. `/usr/share/man`
+contains manual information for commands and data under the `/` and `/usr`
+filesystems. [31]
+
+Manual pages are stored in `<mandir>/<locale>/man<section>/<arch>`. An
+explanation of `<mandir>`, `<locale>`, `<section>`, and `<arch>` is given below.
+
+A description of each section follows:
+
+- `man1`: User programs Manual pages that describe publicly accessible commands
+  are contained in this chapter. Most program documentation that a user will
+  need to use is located here.
+- `man2`: System calls This section describes all of the system calls (requests
+  for the kernel to perform operations).
+- `man3`: Library functions and subroutines Section 3 describes program library
+  routines that are not direct calls to kernel services. This and chapter 2 are
+  only really of interest to programmers.
+- `man4`: Special files Section 4 describes the special files, related driver
+  functions, and networking support available in the system. Typically, this
+  includes the device files found in `/dev` and the kernel interface to
+  networking protocol support.
+- `man5`: File formats The formats for many data files are documented in the
+  section 5. This includes various include files, program output files, and
+  system files.
+- `man6`: Games This chapter documents games, demos, and generally trivial
+  programs. Different people have various notions about how essential this is.
+- `man7`: Miscellaneous Manual pages that are difficult to classify are
+  designated as being section 7. The troff and other text processing macro
+  packages are found here.
+- `man8`: System administration Programs used by system administrators for
+  system operation and maintenance are documented here. Some of these programs
+  are also occasionally useful for normal users.
+
+#### 4.11.6.2. Specific Options
+
+The following directories, or symbolic links to directories, must be in
+`/usr/share/<mandir>/<locale>`, unless they are empty: [32]
+
+| Directory | Description                      |
+| --------- | -------------------------------- |
+| man1      | User programs (optional)         |
+| man2      | System calls (optional)          |
+| man3      | Library calls (optional)         |
+| man4      | Special files (optional)         |
+| man5      | File formats (optional)          |
+| man6      | Games (optional)                 |
+| man7      | Miscellaneous (optional)         |
+| man8      | System administration (optional) |
+
+The component `<section>` describes the manual section.
+
+Provisions must be made in the structure of `/usr/share/man` to support manual
+pages which are written in different (or multiple) languages. These provisions
+must take into account the storage and reference of these manual pages.
+Relevant factors include language (including geographical-based differences),
+and character code set.
+
+This naming of language subdirectories of `/usr/share/man` is based on Appendix
+E of the POSIX 1003.1 standard which describes the locale identification
+string — the most well-accepted method to describe a cultural environment. The
+`<locale>` string is:
+
+```locale
+<language>[_<territory>][.<character-set>][,<version>]
+```
+
+The `<language>` field must be taken from ISO 639 (a code for the
+representation of names of languages). It must be two characters wide and
+specified with lowercase letters only.
+
+The `<territory>` field must be the two-letter code of ISO 3166 (a
+specification of representations of countries), if possible. (Most people are
+familiar with the two-letter codes used for the country codes in email
+addresses.) It must be two characters wide and specified with uppercase letters
+only. [33]
+
+The `<character-set>` field must represent the standard describing the
+character set. If the `<character-set>` field is just a numeric specification,
+the number represents the number of the international standard describing the
+character set. It is recommended that this be a numeric representation if
+possible (ISO standards, especially), not include additional punctuation
+symbols, and that any letters be in lowercase.
+
+A parameter specifying a `<version>` of the profile may be placed after the
+`<character-set>` field, delimited by a comma. This may be used to discriminate
+between different cultural needs; for instance, dictionary order versus a more
+systems-oriented collating order. This standard recommends not using the
+`<version>` field, unless it is necessary.
+
+Systems which use a unique language and code set for all manual pages may omit
+the `<locale>` substring and store all manual pages in `<mandir>`. For example,
+systems which only have English manual pages coded with ASCII, may store manual
+pages (the `man<section>` directories) directly in `/usr/share/man`. (That is
+the traditional circumstance and arrangement, in fact.)
+
+Countries for which there is a well-accepted standard character code set may
+omit the `<character-set>` field, but it is strongly recommended that it be
+included, especially for countries with several competing standards.
+
+Various examples:
+
+| Language | Territory      | Character Set   | Directory                  |
+| -------- | -------------- | --------------- | -------------------------- |
+| English  | —              | ASCII           | /usr/share/man/en          |
+| English  | United Kingdom | Unicode UTF-8   | /usr/share/man/en_GB.10646 |
+| English  | United States  | ASCII           | /usr/share/man/en_US       |
+| French   | Canada         | ISO 8859-1      | /usr/share/man/fr_CA.88591 |
+| French   | France         | ISO 8859-1      | /usr/share/man/fr_FR.88591 |
+| German   | Germany        | ISO 646         | /usr/share/man/de_DE.646   |
+| German   | Germany        | ISO 6937        | /usr/share/man/de_DE.6937  |
+| German   | Germany        | ISO 8859-1      | /usr/share/man/de_DE.88591 |
+| German   | Switzerland    | ISO 646         | /usr/share/man/de_CH.646   |
+| Japanese | Japan          | JIS             | /usr/share/man/ja_JP.jis   |
+| Japanese | Japan          | SJIS            | /usr/share/man/ja_JP.sjis  |
+| Japanese | Japan          | UJIS (or EUC-J) | /usr/share/man/ja_JP.ujis  |
+| Japanese | Japan          | Unicode UTF-16  | /usr/share/man/ja_JP.10646 |
+
+Similarly, provision must be made for manual pages which are
+architecture-dependent, such as documentation on device-drivers or low-level
+system administration commands. These must be placed under an `<arch>`
+directory in the appropriate `man<section>` directory; for example, a man page
+for the i386 `ctrlaltdel(8)` command might be placed in
+`/usr/share/man/<locale>/man8/i386/ctrlaltdel.8`.
+
+Manual pages for commands and data under `/usr/local` are stored in
+`/usr/local/man` or `/usr/local/share/man`. All manual page hierarchies in the
+system must have the same structure as `/usr/share/man`, as this structure is
+expected by commands which consume manual page content. [34]
+
+The cat page sections (`cat<section>`) containing formatted manual page entries
+are also found within subdirectories of `<mandir>/<locale>`, but are not
+required nor may they be distributed in lieu of nroff source manual pages.
+
+The numbered sections "1" through "8" are traditionally defined. In general,
+the file name for manual pages located within a particular section end with
+`.<section>`.
+
+In addition, some large sets of application-specific manual pages have an
+additional suffix appended to the manual page filename. For example, the MH
+mail handling system manual pages must have `mh` appended to all MH manuals.
+All X Window System manual pages must have an `x` appended to the filename.
+
+The practice of placing various language manual pages in appropriate
+subdirectories of `/usr/share/man` also applies to the other manual page
+hierarchies, such as `/usr/local/man`. (This portion of the standard also
+applies later in the section on the optional `/var/cache/man` structure.)
+
+### 4.11.7. `/usr/share/misc`: Miscellaneous architecture-independent data
+
+This directory contains miscellaneous architecture-independent files which
+don't require a separate subdirectory under `/usr/share`.
+
+#### 4.11.7.1. Specific Options
+
+The following files, or symbolic links to files, must be in `/usr/share/misc`,
+if the corresponding subsystem is installed:
+
+| File       | Description                             |
+| ---------- | --------------------------------------- |
+| ascii      | ASCII character set table (optional)    |
+| termcap    | Terminal capability database (optional) |
+| termcap.db | Terminal capability database (optional) |
+
+Other (application-specific) files may appear here, but a distributor may place
+them in `/usr/lib` at their discretion. [35] [36]
+
+### 4.11.8. `/usr/share/ppd`: Printer definitions (optional)
+
+#### 4.11.8.1. Purpose
+
+`/usr/share/ppd` contains PostScript Printer Definition (PPD) files, which are
+used as descriptions of printer drivers by many print systems. PPD files may be
+placed in this directory, or in a subdirectory.
+
+### 4.11.9. `/usr/share/sgml`: SGML data (optional)
+
+#### 4.11.9.1. Purpose
+
+`/usr/share/sgml` contains architecture-independent files used by SGML
+applications, such as ordinary catalogs (not the centralized ones, see
+`/etc/sgml`), DTDs, entities, or style sheets.
+
+#### 4.11.9.2. Specific Options
+
+The following directories, or symbolic links to directories, must be in
+`/usr/share/sgml`, if the corresponding subsystem is installed:
+
+| Directory | Description            |
+| --------- | ---------------------- |
+| docbook   | docbook DTD (optional) |
+| tei       | tei DTD (optional)     |
+| html      | html DTD (optional)    |
+| mathml    | mathml DTD (optional)  |
+
+Other files that are not specific to a given DTD may reside in their own
+subdirectory.
+
+### 4.11.10. `/usr/share/xml`: XML data (optional)
+
+#### 4.11.10.1. Purpose
+
+`/usr/share/xml` contains architecture-independent files used by XML
+applications, such as ordinary catalogs (not the centralized ones, see
+`/etc/sgml`), DTDs, entities, or style sheets.
+
+#### 4.11.10.2. Specific Options
+
+The following directories, or symbolic links to directories, must be in
+`/usr/share/xml`, if the corresponding subsystem is installed:
+
+| Directory | Description                |
+| --------- | -------------------------- |
+| docbook   | docbook XML DTD (optional) |
+| xhtml     | XHTML DTD (optional)       |
+| mathml    | MathML DTD (optional)      |
+
+[30] Much of this data originally lived in `/usr` (man, doc) or `/usr/lib`
+(dict, terminfo, zoneinfo).
+
+[31] Obviously, there are no manual pages in `/` because they are not required
+at boot time nor are they required in emergencies. Really.
+
+[32] For example, if `/usr/share/man` has no manual pages in section 4
+(Devices), then `/usr/share/man/man4` may be omitted.
+
+[33] A major exception to this rule is the United Kingdom, which is \`GB' in
+the ISO 3166, but \`UK' for most email addresses.
+
+[34] `/usr/local/man` is deprecated and may be dropped in a future version of
+this specification.
+
+[35] Some such files include: `airport`, `birthtoken`, `eqnchar`, `getopt`,
+`gprof.callg`, `gprof.flat`, `inter.phone`, `ipfw.samp.filters`,
+`ipfw.samp.scripts`, `keycap.pcvt`, `mail.help`, `mail.tildehelp`,
+`man.template`, `map3270`, `mdoc.template`, `more.help`, `na.phone`,
+`nslookup.help`, `operator`, `scsi_modes`, `sendmail.hf`, `style`, `units.lib`,
+`vgrindefs`, `vgrindefs.db`, `zipcodes`.
+
+[36] Historically, the magic file was placed in `/usr/share/misc`, but modern
+variants of the file command use several files and place them in
+`/usr/share/file`. For compatibility, distribution may create a symlink at
+`/usr/share/misc/magic`, pointing to `/usr/share/file/magic`.
+
+## 4.12. `/usr/src`: Source code (optional)
+
+### 4.12.1. Purpose
+
+Source code may be placed in this subdirectory, only for reference purposes.
+[37]
+
+[37] Generally, source should not be built within this hierarchy.
