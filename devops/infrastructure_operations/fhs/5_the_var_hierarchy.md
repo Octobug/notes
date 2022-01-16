@@ -40,6 +40,34 @@
         - [5.8.6.1. Rationale](#5861-rationale)
     - [5.8.7. `/var/lib/misc`: Miscellaneous variable data](#587-varlibmisc-miscellaneous-variable-data)
       - [5.8.7.1. Purpose](#5871-purpose)
+  - [5.9. `/var/lock`: Lock files](#59-varlock-lock-files)
+    - [5.9.1. Purpose](#591-purpose)
+  - [5.10. `/var/log`: Log files and directories](#510-varlog-log-files-and-directories)
+    - [5.10.1. Purpose](#5101-purpose)
+    - [5.10.2. Specific Options](#5102-specific-options)
+  - [5.11. `/var/mail`: User mailbox files (optional)](#511-varmail-user-mailbox-files-optional)
+    - [5.11.1. Purpose](#5111-purpose)
+      - [5.11.1. Rationale](#5111-rationale)
+  - [5.12. `/var/opt`: Variable data for `/opt`](#512-varopt-variable-data-for-opt)
+    - [5.12.1. Purpose](#5121-purpose)
+      - [5.12.1. Rationale](#5121-rationale)
+  - [5.13. `/var/run`: Run-time variable data](#513-varrun-run-time-variable-data)
+    - [5.13.1. Purpose](#5131-purpose)
+    - [5.13.2. Requirements](#5132-requirements)
+  - [5.14. `/var/spool`: Application spool data](#514-varspool-application-spool-data)
+    - [5.14.1. Purpose](#5141-purpose)
+    - [5.14.2. Specific Options](#5142-specific-options)
+    - [5.14.3. `/var/spool/lpd`: Line-printer daemon print queues (optional)](#5143-varspoollpd-line-printer-daemon-print-queues-optional)
+      - [5.14.3.1. Purpose](#51431-purpose)
+      - [5.14.3.2. Specific Options](#51432-specific-options)
+    - [5.14.4. `/var/spool/rwho`: Rwhod files (optional)](#5144-varspoolrwho-rwhod-files-optional)
+      - [5.14.4.1. Purpose](#51441-purpose)
+        - [5.14.4.1. Rationale](#51441-rationale)
+  - [5.15. `/var/tmp`: Temporary files preserved between system reboots](#515-vartmp-temporary-files-preserved-between-system-reboots)
+    - [5.15.1. Purpose](#5151-purpose)
+  - [5.16. `/var/yp`: Network Information Service (NIS) database files (optional)](#516-varyp-network-information-service-nis-database-files-optional)
+    - [5.16.1. Purpose](#5161-purpose)
+      - [5.16.1. Rationale](#5161-rationale)
 
 ## 5.1. Purpose
 
@@ -345,4 +373,182 @@ ones is that applications are now required to use a subdirectory of `/var/lib`.
 releases. These include `locate.database` and `mountdtab`, and the kernel
 symbol database(s).
 
->>>>> <https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch05s09.html>
+## 5.9. `/var/lock`: Lock files
+
+### 5.9.1. Purpose
+
+Lock files should be stored within the `/var/lock` directory structure.
+
+Lock files for devices and other resources shared by multiple applications,
+such as the serial device lock files that were originally found in either
+`/usr/spool/locks` or `/usr/spool/uucp`, must now be stored in `/var/lock`. The
+naming convention which must be used is "LCK.." followed by the base name of
+the device. For example, to lock `/dev/ttyS0` the file "LCK..ttyS0" would be
+created. [43]
+
+The format used for the contents of such lock files must be the HDB UUCP lock
+file format. The HDB format is to store the process identifier (PID) as a ten
+byte ASCII decimal number, with a trailing newline. For example, if process
+1230 holds a lock file, it would contain the eleven characters: space, space,
+space, space, space, space, one, two, three, zero, and newline.
+
+[43] Then, anything wishing to use `/dev/ttyS0` can read the lock file and act
+accordingly (all locks in `/var/lock` should be world-readable).
+
+## 5.10. `/var/log`: Log files and directories
+
+### 5.10.1. Purpose
+
+This directory contains miscellaneous log files. Most logs must be written to
+this directory or an appropriate subdirectory.
+
+### 5.10.2. Specific Options
+
+The following files, or symbolic links to files, must be in `/var/log`, if the
+corresponding subsystem is installed:
+
+| File     | Description                       |
+| -------- | --------------------------------- |
+| lastlog  | record of last login of each user |
+| messages | system messages from syslogd      |
+| wtmp     | record of all logins and logouts  |
+
+## 5.11. `/var/mail`: User mailbox files (optional)
+
+### 5.11.1. Purpose
+
+The mail spool must be accessible through `/var/mail` and the mail spool files
+must take the form `<username>`. [44]
+
+User mailbox files in this location must be stored in the standard UNIX mailbox
+format.
+
+#### 5.11.1. Rationale
+
+The logical location for this directory was changed from `/var/spool/mail` in
+order to bring FHS in-line with nearly every UNIX distribution. This change is
+important for inter-operability since a single `/var/mail` is often shared
+between multiple hosts and multiple UNIX distribution (despite NFS locking
+issues).
+
+It is important to note that there is no requirement to physically move the
+mail spool to this location. However, programs and header files must be changed
+to use `/var/mail`.
+
+[44] Note that `/var/mail` may be a symbolic link to another directory.
+
+## 5.12. `/var/opt`: Variable data for `/opt`
+
+### 5.12.1. Purpose
+
+Variable data of the packages in `/opt` must be installed in
+`/var/opt/<subdir>`, where `<subdir>` is the name of the subtree in `/opt`
+where the static data from an add-on software package is stored, except where
+superseded by another file in `/etc`. No structure is imposed on the internal
+arrangement of `/var/opt/<subdir>`.
+
+#### 5.12.1. Rationale
+
+Refer to the rationale for `/opt`.
+
+## 5.13. `/var/run`: Run-time variable data
+
+### 5.13.1. Purpose
+
+This directory was once intended for system information data describing the
+system since it was booted. These functions have been moved to `/run`; this
+directory exists to ensure compatibility with systems and software using an
+older version of this specification.
+
+### 5.13.2. Requirements
+
+In general, the requirements for `/run` shall also apply to `/var/run`. It is
+valid to implement `/var/run` as a symlink to `/run`.
+
+The `utmp` file, which stores information about who is currently using the
+system, is located in this directory.
+
+Programs should not access both `/var/run` and `/run` directly, except to
+access `/var/run/utmp`. [45]
+
+[45] This is to prevent confusion about where transient files are located. In
+general, a program should use either `/var/run` or `/run` to access these
+files, not both.
+
+## 5.14. `/var/spool`: Application spool data
+
+### 5.14.1. Purpose
+
+`/var/spool` contains data which is awaiting some kind of later processing.
+Data in `/var/spool` represents work to be done in the future (by a program,
+user, or administrator); often data is deleted after it has been processed. [46]
+
+### 5.14.2. Specific Options
+
+The following directories, or symbolic links to directories, must be in
+`/var/spool`, if the corresponding subsystem is installed:
+
+| Directory | Description                         |
+| --------- | ----------------------------------- |
+| lpd       | Printer spool directory (optional)  |
+| mqueue    | Outgoing mail queue (optional)      |
+| news      | News spool directory (optional)     |
+| rwho      | Rwhod files (optional)              |
+| uucp      | Spool directory for UUCP (optional) |
+
+### 5.14.3. `/var/spool/lpd`: Line-printer daemon print queues (optional)
+
+#### 5.14.3.1. Purpose
+
+The lock file for `lpd`, `lpd.lock`, must be placed in `/var/spool/lpd`. It is
+suggested that the lock file for each printer be placed in the spool directory
+for that specific printer and named `lock`.
+
+#### 5.14.3.2. Specific Options
+
+| Directory | Description                              |
+| --------- | ---------------------------------------- |
+| printer   | Spools for a specific printer (optional) |
+
+### 5.14.4. `/var/spool/rwho`: Rwhod files (optional)
+
+#### 5.14.4.1. Purpose
+
+This directory holds the `rwhod` information for other systems on the local net.
+
+##### 5.14.4.1. Rationale
+
+Some BSD releases use `/var/rwho` for this data; given its historical location
+in `/var/spool` on other systems and its approximate fit to the definition of
+\`spooled' data, this location was deemed more appropriate.
+
+[46] UUCP lock files must be placed in `/var/lock`. See the above section on
+`/var/lock`.
+
+## 5.15. `/var/tmp`: Temporary files preserved between system reboots
+
+### 5.15.1. Purpose
+
+The `/var/tmp` directory is made available for programs that require temporary
+files or directories that are preserved between system reboots. Therefore, data
+stored in `/var/tmp` is more persistent than data in `/tmp`.
+
+Files and directories located in `/var/tmp` must not be deleted when the system
+is booted. Although data stored in `/var/tmp` is typically deleted in a
+site-specific manner, it is recommended that deletions occur at a less frequent
+interval than `/tmp`.
+
+## 5.16. `/var/yp`: Network Information Service (NIS) database files (optional)
+
+### 5.16.1. Purpose
+
+Variable data for the Network Information Service (NIS), formerly known as the
+Sun Yellow Pages (YP), must be placed in this directory.
+
+#### 5.16.1. Rationale
+
+`/var/yp` is the standard directory for NIS (YP) data and is almost exclusively
+used in NIS documentation and systems. [47]
+
+[47] NIS should not be confused with Sun NIS+, which uses a different
+directory, `/var/nis`.
