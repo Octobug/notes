@@ -19,5 +19,5 @@ documentation for these systems.
 - [x] [3. The Root Filesystem](3_the_root_filesystem.md)
 - [x] [4. The `/usr` Hierarchy](4_the_usr_hierarchy.md)
 - [x] [5. The `/var` Hierarchy](5_the_var_hierarchy.md)
-- [ ] [6. Operating System Specific Annex](6_os_specific_annex.md)
-- [ ] 7. Appendix
+- [x] [6. Operating System Specific Annex](6_os_specific_annex.md)
+- [x] [7. Appendix](7_appendix.md)
