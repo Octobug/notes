@@ -27,6 +27,10 @@
     - [7.3.5 文件系统挂载与卸载](#735-文件系统挂载与卸载)
       - [挂载](#挂载)
     - [7.3.6 磁盘/文件系统参数修订](#736-磁盘文件系统参数修订)
+  - [7.4 设置开机挂载](#74-设置开机挂载)
+    - [7.4.1 开机挂载 /etc/fstab 及 /etc/mtab](#741-开机挂载-etcfstab-及-etcmtab)
+    - [7.4.2 特殊设备 loop 挂载（镜像文件不烧录就挂载使用）](#742-特殊设备-loop-挂载镜像文件不烧录就挂载使用)
+  - [7.5 内存交换空间 (swap) 之创建](#75-内存交换空间-swap-之创建)
 
 ## 7.1 认识 Linux 文件系统
 
@@ -417,3 +421,85 @@ CentOS 7 之后默认使用 XFS 文件系统。
   进入挂载点目录内会导致设备忙，退出后才能卸载。
 
 ### 7.3.6 磁盘/文件系统参数修订
+
+```sh
+$ ls -l /dev/sdb
+brw-rw---- 1 root disk 8, 16 Jan 19 13:37 /dev/sdb
+
+# 8 为 major 设备号，16 为 minor 设备号
+```
+
+常见的磁盘文件名 `/dev/sda` 与 `/dev/loop0` 设备号如下：
+
+| 设备文件名 | Major | Minor |
+| ---------- | ----- | ----- |
+| /dev/sda   | 8     | 0-15  |
+| /dev/sdb   | 8     | 16-31 |
+| /dev/loop0 | 7     | 0     |
+| /dev/loop1 | 7     | 1     |
+
+- mknod: 创建设备文件
+  - `mknod 设备文件名 [bcp] [Major] [Minor]`
+  - `b`: 设置设备名为一个块设备
+  - `c`: 设置设备名为一个字符设备
+  - `p`: 设置设备名为一个 FIFO 文件
+
+  例：创建一个  FIFO 文件，名为 /tmp/testpipe
+
+  ```sh
+  mknod /tmp/testpipe p
+  ```
+
+- `xfs_admin`: 修改 XFS 文件系统的 UUID 与 Label name
+  - `xfs_admin [-lu] [-L label] [-U uuid]`
+- `uuidgen`: 产生新的 UUID
+- `tune2fs`: 修改 ext4 的 label name 与 UUID
+
+## 7.4 设置开机挂载
+
+### 7.4.1 开机挂载 /etc/fstab 及 /etc/mtab
+
+系统挂载限制：
+
+- 根目录 `/` 必须先于其他所有挂载点挂载
+- 其他挂载点必须是已创建的目录，且遵守 FHS
+- 所有挂载点只能挂载一次
+- 所有分区只能挂载一次
+- 卸载前必须将工作目录移到挂载点之外
+
+`/etc/fstab` 文件内容的六个字段：
+
+1. 设备文件名/UUID/LABEL name
+2. 挂载点，即目录
+3. 磁盘分区的文件系统格式
+4. 文件系统参数，对应 `mount -o`
+5. 能否被 dump 备份命令作用 (0 为关闭)
+6. 是否在开机时以 fsck 检查扇区
+
+修改后使用 `mount -a` 即可。
+
+`/etc/fstab` 是开机时的配置文件，实际文件系统的挂载是记录在 `/etc/mtab` 与
+`/proc/mounts` 中。
+
+修复模式时需要先将根目录重新挂载为可写：
+
+`mount -n -o remount,rw /`
+
+### 7.4.2 特殊设备 loop 挂载（镜像文件不烧录就挂载使用）
+
+- 挂载光盘/DVD镜像文件: `mount -o loop 文件路径 挂载目录`
+- 创建大文件以制作 loop 设备文件
+  - `dd`: 创建大文件
+    - `dd if=/dev/zero of=/srv/loopdev bs=1M count=512`
+      - if: input file
+      - of: output file
+      - bs: block size
+      - count: bs 数量
+  - `mkfs.xfs -f /srv/loopdev`: 大型文件的格式化
+  - `mount -o loop /srv/loopdev /mnt`, 对应的 fstab 配置:
+
+    ```fstab
+    /srv/loopdev /data/file xfs defaults**,loop** 0 0
+    ```
+
+## 7.5 内存交换空间 (swap) 之创建
