@@ -13,8 +13,8 @@
 - 第二部份：Linux文件、目录与磁盘格式
   - [x] [第五章 Linux 文件权限与目录配置](05_linux_file_permission)
   - [x] [第六章 Linux 文件与目录管理](06_linux_file_and_directory)
-  - [ ] [第七章 Linux 磁盘与文件系统管理](07_linux_filesystem)
-  - [ ] 第八章 文件的压缩与打包
+  - [x] [第七章 Linux 磁盘与文件系统管理](07_linux_filesystem)
+  - [ ] [第八章 文件的压缩与打包](08_file_compressing_packaging)
 - 第三部份：学习 Shell 与 Shell Scripts
   - [ ] 第九章 vim 程序编辑器
   - [ ] 第十章 认识与学习 BASH

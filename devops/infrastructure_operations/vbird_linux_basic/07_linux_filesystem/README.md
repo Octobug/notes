@@ -31,6 +31,14 @@
     - [7.4.1 开机挂载 /etc/fstab 及 /etc/mtab](#741-开机挂载-etcfstab-及-etcmtab)
     - [7.4.2 特殊设备 loop 挂载（镜像文件不烧录就挂载使用）](#742-特殊设备-loop-挂载镜像文件不烧录就挂载使用)
   - [7.5 内存交换空间 (swap) 之创建](#75-内存交换空间-swap-之创建)
+    - [7.5.1 使用实体分区创建 swap](#751-使用实体分区创建-swap)
+    - [7.5.2 使用文件创建 swap](#752-使用文件创建-swap)
+  - [7.6 文件系统的特殊观察与操作](#76-文件系统的特殊观察与操作)
+    - [7.6.1 磁盘空间之浪费问题](#761-磁盘空间之浪费问题)
+    - [7.6.2 利用 GNU 的 parted 进行分区 (Optional)](#762-利用-gnu-的-parted-进行分区-optional)
+  - [7.7 重点回顾](#77-重点回顾)
+  - [7.8 本章习题](#78-本章习题)
+  - [7.9 参考资料与延伸阅读](#79-参考资料与延伸阅读)
 
 ## 7.1 认识 Linux 文件系统
 
@@ -83,6 +91,8 @@ FAT 文件系统没有 inode 存在，每个 block 号都存在前一个 block �
 ### 7.1.3 Linux 的 Ext2 文件系统 (inode)
 
 inode: index node
+
+最开始部分为 `boot sector`
 
 文件系统在格式化时已经规划好 inode 与 block，除非重新格式化或使用 `resize2fs`
 命令才能修改。
@@ -503,3 +513,42 @@ brw-rw---- 1 root disk 8, 16 Jan 19 13:37 /dev/sdb
     ```
 
 ## 7.5 内存交换空间 (swap) 之创建
+
+### 7.5.1 使用实体分区创建 swap
+
+1. 分区: `gdisk`
+2. 格式化: 使用 `mkswap 设备文件名` 格式化
+3. 启用: `swapon 设备文件名`; 关闭: `swapoff 设备文件名`
+4. 观察: 使用 `free` 或 `swapon -s`
+5. 开机挂载: `/etc/fstab`
+
+### 7.5.2 使用文件创建 swap
+
+1. 创建大文件: `dd if=/dev/zero of=/tmp/swap bs=1M count=128`
+2. 格式化: `mkswap /tmp/swap`
+3. 启用: `swapon /tmp/swap`
+4. 观察: 使用 `free` 或 `swapon -s`
+5. 开机挂载: `/etc/fstab`
+
+## 7.6 文件系统的特殊观察与操作
+
+### 7.6.1 磁盘空间之浪费问题
+
+文件系统记录 superblock, inode table, block 等本身会使用一部分空间。
+
+### 7.6.2 利用 GNU 的 parted 进行分区 (Optional)
+
+- `parted [设备] [指令 [参数]]`
+- 指令
+  - `mkpart [primary|logical|extended] [ext4|vfat|xfs]`: 新增分区
+  - `print`: 显示分区
+  - `rm [partition]`: 删除分区
+  - `mklabel [gpt|mbr]`
+
+## 7.7 重点回顾
+
+- 被挂载的不是分区，而是文件系统
+
+## 7.8 本章习题
+
+## 7.9 参考资料与延伸阅读
