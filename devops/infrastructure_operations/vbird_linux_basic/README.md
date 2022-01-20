@@ -16,8 +16,8 @@
   - [x] [第七章 Linux 磁盘与文件系统管理](07_linux_filesystem)
   - [x] [第八章 文件的压缩与打包](08_file_compressing_packaging)
 - 第三部份：学习 Shell 与 Shell Scripts
-  - [ ] [第九章 vim 程序编辑器](09_vim_editor)
-  - [ ] 第十章 认识与学习 BASH
+  - [x] [第九章 vim 程序编辑器](09_vim_editor)
+  - [ ] [第十章 认识与学习 BASH](10_learn_bash)
   - [ ] 第十一章 正则表达式与文件格式化处理
   - [ ] 第十二章 学习 shell scripts
 - 第四部份：Linux 使用者管理
