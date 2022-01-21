@@ -17,8 +17,8 @@
   - [x] [第八章 文件的压缩与打包](08_file_compressing_packaging)
 - 第三部份：学习 Shell 与 Shell Scripts
   - [x] [第九章 vim 程序编辑器](09_vim_editor)
-  - [ ] [第十章 认识与学习 BASH](10_learn_bash)
-  - [ ] 第十一章 正则表达式与文件格式化处理
+  - [x] [第十章 认识与学习 BASH](10_learn_bash)
+  - [ ] [第十一章 正则表达式与文件格式化处理](11_regex_and_format)
   - [ ] 第十二章 学习 shell scripts
 - 第四部份：Linux 使用者管理
   - [ ] 第十三章 Linux 账号管理与 ACL 权限控制
