@@ -36,24 +36,25 @@ disciplines according to the
         1. Algorithms
         2. Data Structures
         3. [LeetCode](algorithms_and_data_structures/leetcode)
-    2. [Computer Network](computer_network)
+    2. Computer Graphics
+    3. [Computer Network](computer_network)
         1. IETF
         2. Internet Protocol Suite
         3. [Network Programming](computer_network/network_programming)
-    3. [Databases](databases)
+    4. [Databases](databases)
         1. MySQL
         2. PostgreSQL
-    4. [DevOps](devops)
+    5. [DevOps](devops)
         1. Ansible
         2. CI/CD/CD
         3. [Containers](devops/containers)
         4. [Infrastructure Operations](devops/infrastructure_operations)
         5. NGINX
         6. Site Reliability Engineering
-    5. [Operating System](operating_system)
+    6. [Operating System](operating_system)
         1. [Operating Systems](operating_system/operating_systems)
         2. Systems Programming
-    6. [Programming Languages](programming_languages)
+    7. [Programming Languages](programming_languages)
         1. [C](programming_languages/c)
         2. Compiler
         3. C++
@@ -62,16 +63,16 @@ disciplines according to the
         6. [Python](programming_languages/python)
         7. Ruby
         8. Rust
-    7. [Software Development](software_development)
+    8. [Software Development](software_development)
         1. [Git](software_development/git)
         2. Open Source
         3. [Software Versioning](software_development/software_versioning)
-    8. [Software Engineering](software_engineering)
+    9. [Software Engineering](software_engineering)
         1. [Software Design](software_engineering/software_design)
         2. Software Maintenance
         3. [Software Testing](software_engineering/software_testing)
-    9. Theory of Computation
-    10. [Miscellaneous](cs_miscellaneous)
+    10. Theory of Computation
+    11. [Miscellaneous](cs_miscellaneous)
         1. macOS
         2. [Markdown](cs_miscellaneous/markdown)
         3. TeXs
