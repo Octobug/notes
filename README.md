@@ -45,8 +45,8 @@ disciplines according to the
         1. MySQL
         2. PostgreSQL
     5. [DevOps](devops)
-        1. Ansible
-        2. CI/CD/CD
+        1. [Ansible](devops/ansible)
+        2. [CI/CD/CD](devops/ci_cd_cd)
         3. [Containers](devops/containers)
         4. [Infrastructure Operations](devops/infrastructure_operations)
         5. NGINX
