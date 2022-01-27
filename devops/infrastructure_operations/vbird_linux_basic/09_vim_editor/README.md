@@ -52,6 +52,8 @@ programmer's text editor.
 
 ### 9.2.3 一个案例练习
 
+>>>>> progress
+
 ### 9.2.4 vim 的暂存盘、救援回复与打开时的警告信息
 
 vim 会在被编辑的文件的目录下创建 `.filename.swp` 文件，用于记录操作
