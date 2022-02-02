@@ -80,6 +80,7 @@ Shell: 用户与操作系统交互的界面（接口）。
 
 bash 自带了很多指令，比如 cd, umask
 
+- `help command`
 - `type [-tpa] name`
 
 ### 10.1.6 命令下达与编辑快捷键
@@ -113,35 +114,41 @@ bash 自带了很多指令，比如 cd, umask
 
 ### 10.2.3 环境变量的功能
 
->>>>> progress
-
 - `env`: 列出当前 shell 下的所有环境变量
-
-- 特殊变量
-  - HOME
-  - SHELL
-  - HISTSIZE
-  - MAIL
-  - PATH
-  - LANG
-  - RANDOM
+  - 特殊变量
+    - HOME
+    - SHELL
+    - HISTSIZE
+    - MAIL
+    - PATH
+    - LANG
+    - RANDOM
 - `set`: 观察所有变量
   - `PS1`: 命令提示字符格式
   - `PS2`: 换行提示符
   - `$`: 本 shell 的 PID
   - `?`: 上一个命令的返回值
   - `OSTYPE, HOSTTYPE, MACHTYPE`: 主机硬件与核心登记
+- `export`: 将自定义变量 (`set`) 转换为环境变量 (`env`), 供子进程访问。
 
 ### 10.2.4 影响显示结果的语系变量 (locale)
 
+- `-a`: 查看所有支持的语言编码
+- 编码设置: `locale`, `$LANG` 和 `$LC_ALL` 作为其他设置的默认设置
+- `/usr/lib/locale`
+- `/etc/locale.conf`
+
 ### 10.2.5 变量的有效范围
+
+- 环境变量等同于全局变量
+- 自定义变量等同于局域变量
 
 ### 10.2.6 从输入读取变量、数组与声明: read, array, declare
 
 - `read [-pt] variable`: 从输入读取变量
   - `-p`: 接提示字符
   - `-t`: 等待秒数
-- `declare [-aixr] variable`: 声明变量类型
+- `declare [-+aixr] variable`/`typeset`: 声明变量类型
   - `-a`: array
   - `-i`: integer
   - `-x`: 导出为环境变量
@@ -153,6 +160,8 @@ bash 自带了很多指令，比如 cd, umask
   - `echo ${arr[index]}`
 
 ### 10.2.7 与文件系统及程序的限制关系: ulimit
+
+- `-a`: 查看所有限制
 
 ### 10.2.8 变量内容的删除、取代与替换 (Optional)
 
@@ -200,6 +209,8 @@ bash 自带了很多指令，比如 cd, umask
   | var=${s:?expr} | expr 输出至 stderr | expr 输出至 stderr | var=$s         |
 
 ## 10.3 命令别名与历史命令
+
+>>>>> progress
 
 ### 10.3.1 命令别名设置: alias, unalias
 
