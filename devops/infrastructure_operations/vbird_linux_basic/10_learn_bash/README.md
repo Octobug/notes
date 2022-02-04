@@ -26,7 +26,7 @@
     - [10.3.1 命令别名设置: alias, unalias](#1031-命令别名设置-alias-unalias)
     - [10.3.2 历史命令: history](#1032-历史命令-history)
   - [10.4 Bash Shell 的操作环境](#104-bash-shell-的操作环境)
-    - [10.4.1 路劲与命令搜索顺序](#1041-路劲与命令搜索顺序)
+    - [10.4.1 路径与命令搜索顺序](#1041-路径与命令搜索顺序)
     - [10.4.2 bash 的登录欢迎信息: /etc/issue, /etc/motd](#1042-bash-的登录欢迎信息-etcissue-etcmotd)
     - [10.4.3 bash 的环境配置文件](#1043-bash-的环境配置文件)
     - [10.4.4 终端机的环境设置: stty, set](#1044-终端机的环境设置-stty-set)
@@ -210,45 +210,43 @@ bash 自带了很多指令，比如 cd, umask
 
 ## 10.3 命令别名与历史命令
 
->>>>> progress
-
 ### 10.3.1 命令别名设置: alias, unalias
 
 - `alias [newname="command"]`
-  - `alias cls="clear"`
+  - 例: `alias cls="clear"`
 - `unalias name`
-  - `unalias cls`
+  - 例: `unalias cls`
 - ⚠️ alias 相当于创建一个新的 "命令"，而不是一个变量
 
 ### 10.3.2 历史命令: history
 
-- `HISTSIZE`: shell history 的长度上限
-- `HISTFILESIZE`: `~/.bash_history` 的长度上限
-- 常用参数
-  - `n`: 列出最近输入的 n 个命令
+- history [n]: 列出最近输入的 n 个命令
   - `-c`: 清除当前 shell 的历史
   - `-a [histfiles]`: 将新输入的命令记录输入到 histfiles 里，没指定 histfiles
     时则则追加到 `~/.bash_history`
   - `-r`: 将 histfiles 内容读到当前 shell 的 history 中
   - `-w [histfiles]`: 将当前 history 写入到 histfiles，exit 时自动执行
+- `HISTSIZE`: shell history 的长度上限
+- `HISTFILESIZE`: `~/.bash_history` 的长度上限
 - `!number`: 执行第 number 个命令
-- `!command`: 执行匹配到的以一个命令记录
+- `!command`: 执行匹配到的第一个命令记录
 - `!!`: 执行最近一条命令
-- `[Ctrl]+r`
+- `[Ctrl]+r`: 搜索 bash history
 
 ## 10.4 Bash Shell 的操作环境
 
-### 10.4.1 路劲与命令搜索顺序
+### 10.4.1 路径与命令搜索顺序
 
 优先级：
 
-1. 绝对路径或相对路径
+1. 绝对路径/相对路径
 2. alias
 3. bash 内置命令
 4. $PATH
 
 ### 10.4.2 bash 的登录欢迎信息: /etc/issue, /etc/motd
 
+- `man issue`, `man agetty`
 - `/etc/issue`: 登录前
   - `\d`: 本地日期
   - `\l`: 终端机接口编号 (tty, TeleTYpewriter)
@@ -262,6 +260,8 @@ bash 自带了很多指令，比如 cd, umask
 - `/etc/motd`: 登录后
 
 ### 10.4.3 bash 的环境配置文件
+
+>>>>> progress
 
 - login 与 non-login shell
   - login shell: 通过完整登录流程获得的 shell
