@@ -33,7 +33,7 @@
     - [10.4.5 万用字符与特殊符号](#1045-万用字符与特殊符号)
   - [10.5 数据流重定向](#105-数据流重定向)
     - [10.5.1 什么是数据流重定向](#1051-什么是数据流重定向)
-    - [10.5.2 命令执行的判断依据: ;, &&, ||](#1052-命令执行的判断依据---)
+    - [10.5.2 命令执行的判断依据: `;`, `&&`, `||`](#1052-命令执行的判断依据---)
   - [10.6 管道命令 (pipe)](#106-管道命令-pipe)
     - [10.6.1 截取命令: cut, grep](#1061-截取命令-cut-grep)
     - [10.6.2 排序命令: sort, wc, uniq](#1062-排序命令-sort-wc-uniq)
@@ -249,7 +249,7 @@ bash 自带了很多指令，比如 cd, umask
 - `man issue`, `man agetty`
 - `/etc/issue`: 登录前
   - `\d`: 本地日期
-  - `\l`: 终端机接口编号 (tty, TeleTYpewriter)
+  - `\l`: 终端机接口编号
   - `\m`: 硬件等级
   - `\n`: 主机名
   - `\O`: 域名
@@ -261,10 +261,8 @@ bash 自带了很多指令，比如 cd, umask
 
 ### 10.4.3 bash 的环境配置文件
 
->>>>> progress
-
 - login 与 non-login shell
-  - login shell: 通过完整登录流程获得的 shell
+  - login shell: 通过登录流程获得的 shell
     - `/etc/profile`
       - 设置环境变量
         - PATH
@@ -272,7 +270,7 @@ bash 自带了很多指令，比如 cd, umask
         - USER
         - HOSTNAME
         - HISTSIZE
-      - umask
+        - umask
       - 调用 /etc/profile.d/*.sh 设置颜色、语言、别名等
     - 按顺序尝试读取 `~/.bash_profile`, `~/.bash_login`, `~/.profile` 其中一个
   - `source` (`.`): 读入环境配置文件
@@ -283,20 +281,25 @@ bash 自带了很多指令，比如 cd, umask
 
 ### 10.4.4 终端机的环境设置: stty, set
 
-- `stty`: 设置终端属性
+tty: TeleTYpewriter
+
+- `stty [-a]`: setting tty, 设置终端属性
+
+  | 按键     | 操作           |
+  | -------- | -------------- |
+  | Ctrl + C | 终止当前的进程 |
+  | Ctrl + D | 输入结束符 EOF |
+  | Ctrl + M | 输入 Enter     |
+  | Ctrl + S | 暂停屏幕输出   |
+  | Ctrl + Q | 恢复屏幕输出   |
+  | Ctrl + U | 删除当前输入   |
+  | Ctrl + Z | 暂停当前进程   |
+
 - `set`: 设置 bash 属性，其中部分设置和 tty 有关
+  - `echo $-`: 显示当前的 set 设置值
+  - `help set`
   - `-OPTION`
   - `+OPTION`
-
-| 按键     | 操作           |
-| -------- | -------------- |
-| Ctrl + C | 终止当前的进程 |
-| Ctrl + D | 输入结束符 EOF |
-| Ctrl + M | 输入 Enter     |
-| Ctrl + S | 暂停屏幕输出   |
-| Ctrl + Q | 恢复屏幕输出   |
-| Ctrl + U | 删除当前输入   |
-| Ctrl + Z | 暂停当前进程   |
 
 ### 10.4.5 万用字符与特殊符号
 
@@ -332,7 +335,7 @@ bash 中的其他特殊符号
 
 ### 10.5.1 什么是数据流重定向
 
-1. 标准输入 (stdin): 代号为 0，使用 `<` 或 `<<`
+1. 标准输入 (stdin): 代号为 0，使用 `0<` 或 `0<<`, `0` 可省略
 2. 标准输出 (stdout): 代号为 1，使用 `1>` 或 `1>>`, `1` 可省略
 3. 标准错误输出 (stderr): 代号为 2，使用 `2>` 或 `2>>`
 
@@ -340,8 +343,8 @@ bash 中的其他特殊符号
 
 - 保存错误输出到文件: `command 2>err.log`
 - 丢弃所有输出: `1>/dev/null 2>&1`
-- 使用标准输入替代键盘输入: `cat > test.txt < somefile`
-- 使用 `<<` 代替键盘 `Ctrl+d`:
+- `<`: 使用标准输入(文件)替代键盘输入, `cat > test.txt < somefile`
+- `<<`: 指定标准输入的“结束”字符，用于代替键盘 `Ctrl+d`
 
   ```sh
   cat << EOF > somefile
@@ -353,7 +356,7 @@ bash 中的其他特殊符号
   EOF
   ```
 
-### 10.5.2 命令执行的判断依据: ;, &&, ||
+### 10.5.2 命令执行的判断依据: `;`, `&&`, `||`
 
 - 退出码: 0 为成功，其他 1-255 为失败
 - `cmd1; cmd2`: 无论 cmd1 执行成功与否，cmd2 都会执行
@@ -363,10 +366,12 @@ bash 中的其他特殊符号
 
 例:
 
-- `ls aaa && echo "exist" || echo "not exist"`
-- `ls aaa || echo "not exist" && echo "exist"`
+- `ls aaa && echo "exist" || echo "not exist"`: 正确
+- `ls aaa || echo "not exist" && echo "exist"`: 错误
 
 ## 10.6 管道命令 (pipe)
+
+>>>>> progress
 
 - `cmd1 | cmd2`: cmd1 的 stdout 作为 cmd2 的 stdin
 - stderr 会被忽略
