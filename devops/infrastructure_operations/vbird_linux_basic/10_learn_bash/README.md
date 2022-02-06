@@ -371,8 +371,6 @@ bash 中的其他特殊符号
 
 ## 10.6 管道命令 (pipe)
 
->>>>> progress
-
 - `cmd1 | cmd2`: cmd1 的 stdout 作为 cmd2 的 stdin
 - stderr 会被忽略
 - cmd 必须支持 stdin，否则会被忽略。`ls`, `cp`, `mv` 等都不是管道命令
@@ -403,7 +401,7 @@ bash 中的其他特殊符号
 
   例: `cat /etc/passwd | sort -t ':' -k 3 -n`
 
-- uniq
+- uniq: 处理连续的重复行
   - `-i`: 忽略大小写
   - `-c`: 计数
 
@@ -420,7 +418,31 @@ bash 中的其他特殊符号
 
 ### 10.6.4 字符转换命令: tr, col, join, paste, expand
 
+- `tr [-d] SET1 ...`
+  - `-d`: 删除输入中的 SET1 字符串
+  - 例: `last | tr [a-z] [A-Z]`, 小写转大写
+- `col [-x]`
+  - `-x`: 将 tab 转为等宽空格
+  - 例: `cat /etc/manpath.config | col -x | cat -A`, 将文件中的 tab 转为等宽的空格
+- `join [-it12] file1 file2`
+  - `-t`: 指定分隔符；join 默认以空格为分隔符，并且比对第一个字段的数据；
+  - `-i`: 忽略大小写
+  - `-1`: 指定第一个文件用来 join 的字段
+  - `-2`: 指定第二个文件用来 join 的字段
+  - 例1：`sudo join -t ':' /etc/passwd /etc/shadow | head -n 3`
+  - 例2: `join -t ':' -1 4 /etc/passwd -2 3 /etc/group | head -n 3`
+- `paste [-d] file1 file2`: 直接拼接两个文件的行
+  - `-d`: 指定分隔符，默认为 tab
+- `expand [-t] file`: 将 tab 转为空格
+  - `-t`: 数字，指定 tab 可以用多少个空格替代
+- `unexpand`: 将空格转为 tab
+
 ### 10.6.5 文件分割命令: split
+
+- `split [-bl] file PREFIX`
+  - `-b`: 指定文件大小，单位为 b, k, m, g 等
+  - `-l`: 以行数分割
+  - PREFIX: 指定保存的文件名前缀
 
 ### 10.6.6 参数替换: xargs
 
@@ -431,12 +453,11 @@ bash 中的其他特殊符号
   - `-e`: EOF, xargs 收到 EOF 时会停止工作
   - `-p`: 执行 command 时询问用户
   - `-n`: 每个 command 使用多少个参数
-
-例: `cut -d ':' -f 1 /etc/passwd | head -n 3 | xargs -n 1 id`
+  - 例: `cut -d ':' -f 1 /etc/passwd | head -n 3 | xargs -n 1 id`
 
 ### 10.6.7 关于减号 - 的用途
 
-在使用管道命令时常常会使用 stdout 作为下一个命令的 stdin，某些命令的输出参数需要用文件名，
+在使用管道命令时常常会使用 stdout 作为下一个命令的 stdin，而某些命令的参数需要指定文件，
 此时可以用减号代替:
 
 ```sh
