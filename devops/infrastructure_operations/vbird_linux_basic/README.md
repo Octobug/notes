@@ -18,8 +18,8 @@
 - 第三部份：学习 Shell 与 Shell Scripts
   - [x] [第九章 vim 程序编辑器](09_vim_editor)
   - [x] [第十章 认识与学习 BASH](10_learn_bash)
-  - [ ] [第十一章 正则表达式与文件格式化处理](11_regex_and_format)
-  - [ ] 第十二章 学习 shell scripts
+  - [x] [第十一章 正则表达式与文件格式化处理](11_regex_and_format)
+  - [ ] [第十二章 学习 shell scripts](12_shell_scripts)
 - 第四部份：Linux 使用者管理
   - [ ] 第十三章 Linux 账号管理与 ACL 权限控制
   - [ ] 第十四章 磁盘配额（Quota）与进阶文件系统管理

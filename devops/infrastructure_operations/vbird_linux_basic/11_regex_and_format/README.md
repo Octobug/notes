@@ -14,6 +14,14 @@
     - [11.2.4 基础正则表达式字符表](#1124-基础正则表达式字符表)
     - [11.2.5 sed 工具](#1125-sed-工具)
   - [11.3 扩展正则表达式](#113-扩展正则表达式)
+  - [11.4 文件的格式化与相关处理](#114-文件的格式化与相关处理)
+    - [11.4.1 格式化打印: printf](#1141-格式化打印-printf)
+    - [11.4.2 数据处理工具: awk](#1142-数据处理工具-awk)
+    - [11.4.3 文件比对工具](#1143-文件比对工具)
+    - [11.4.4 文件打印准备: pr](#1144-文件打印准备-pr)
+  - [11.5 重点回顾](#115-重点回顾)
+  - [11.6 本章习题](#116-本章习题)
+  - [11.7 参考资料与延伸阅读](#117-参考资料与延伸阅读)
 
 RE (Regular Expression): 正则表达式
 
@@ -106,7 +114,7 @@ go! go! Let's go.
 
 ### 11.2.4 基础正则表达式字符表
 
-| RE 字符   | 意义与范例                                   |
+| RE 字符   | 意义                                         |
 | --------- | -------------------------------------------- |
 | `^word`   | 待搜索的字符串 word 在行首                   |
 | `word$`   | 待搜索的字符串 word 在行尾                   |
@@ -120,7 +128,12 @@ go! go! Let's go.
 
 ### 11.2.5 sed 工具
 
-sed: stream editor, 流编辑器
+sed: stream editor, 流编辑器.
+
+> <https://www.gnu.org/software/sed/manual/sed.html#Introduction>
+>
+> A stream editor is used to perform basic text transformations on an input
+> stream (a file or input from a pipeline).
 
 - `sed [-efinr] '[[n1[,n2]]function]'`
   - `-e`: 提供 sed 脚本 (可省略)
@@ -150,4 +163,139 @@ sed: stream editor, 流编辑器
 
 ## 11.3 扩展正则表达式
 
->>>>> progress
+`grep -E` 或 `egrep`
+
+| RE 字符 | 意义                                   |
+| ------- | -------------------------------------- |
+| `+`     | 重复『一个或一个以上』的前一个 RE 字符 |
+| `?`     | 『零个或一个』的前一个 RE 字符         |
+| `\|`    | 条件或 (or) 的方式找出数个字符串       |
+| `(\|)`  | 『群组』字符串                         |
+| `()+`   | 多个重复群组                           |
+
+例子：
+
+- `egrep -n 'go+d' regular_express.txt`
+- `egrep -n 'go?d' regular_express.txt`
+- `egrep -n 'gd|good|dog' regular_express.txt`
+- `egrep -n 'g(la|oo)d' regular_express.txt`
+- `echo 'AxyzxyzxyzxyzC' | egrep 'A(xyz)+C'`
+
+## 11.4 文件的格式化与相关处理
+
+### 11.4.1 格式化打印: printf
+
+练习文本：printf.txt
+
+```txt
+Name     Chinese   English   Math    Average
+DmTsai        80        60     92      77.33
+VBird         75        55     80      70.00
+Ken           60        90     70      73.33
+```
+
+pay.txt
+
+```txt
+Name    1st     2nd     3th
+VBird   23000   24000   25000
+DMTsai  21000   20000   23000
+Bird2   43000   42000   41000
+```
+
+- `printf '格式' 内容`
+  - 格式
+    - `\a`: 输出警告声音
+    - `\b`: backspace 键
+    - `\f`: 清除屏幕
+    - `\n`: 换行
+    - `\r`: enter 键
+    - `\t`: 水平 tab 键
+    - `\v`: 竖直 tab 键
+    - `\xNN`: NN 为两位数字，转换数字为字符
+    - `%ns`: n 为数字，s 代表 string，ns 代表 n 个字符
+    - `%ni`: n 为数字，i 代表 integer，ni 代表 n 位整数
+    - `%N.nf`: N, n 均为数字，f 代表 float, N.nf 代表长度为 N ，且有 n 位小数的浮点数
+- 例子:
+  - `printf '%10s %5i %5i %5i %8.2f \n' $(cat printf.txt | grep -v Name)`
+  - `printf '\x45\n'`
+
+### 11.4.2 数据处理工具: awk
+
+通常行处理使用 sed，列处理使用 awk。
+
+awk 的工作流程：
+
+1. 读入第一行，将数据填入 $0, $1, $2... 等变量中；
+2. 根据 condition 判断是否进行后面的 action；
+3. 完成所有的 action；
+4. 如果还有数据行，则重复步骤 1-3，直到所有数据行被处理完。
+
+- `awk 'condition1{action1} condition2{action2} ...' filename`
+  - 变量
+    - `$0`: 代表完整的一行
+    - `$1`: 代表分割后的第 1 列，以此类推
+    - `NF`: 当前行的字段数
+    - `NR`: 当前行为“第几行”
+    - `FS`: 当前行的分隔符，默认为空格或 tab
+  - 逻辑运算符
+    - `>`: 大于
+    - `<`: 小于
+    - `>=`: 大于等于
+    - `<=`: 小于等于
+    - `==`: 等于
+    - `!=`: 不等于
+  - action: `{}` 中的内容
+    - 多个命令使用 `;` 或 `[Enter]` 隔开
+    - 支持条件语句 `if...else if...else...`
+- 例子:
+  - `last -n 5 | awk '{print $1 "\t" $3}'`
+  - `last -n 5 | awk '{print $1 "\t lines: " NR "\t columns: " NF}'`
+  - `cat /etc/passwd | awk '{FS=":"} $3 < 10 {print $1 "\t " $3}'`
+  - `cat /etc/passwd | awk 'BEGIN {FS=":"} $3 < 10 {print $1 "\t " $3}'`
+
+    ```sh
+    cat pay.txt |\
+      awk 'NR==1{printf "%10s %10s %10s %10s %10s\n",$1,$2,$3,$4,"Total" }
+        NR>=2{total = $2 + $3 + $4
+        printf "%10s %10d %10d %10d %10.2f\n", $1, $2, $3, $4, total}'
+    ```
+
+### 11.4.3 文件比对工具
+
+- `diff [-bBi] from-file to-file`: 以行为单位对比，适用于文本文件
+  - `-b`: 忽略仅有任意个空格差异的行
+  - `-B`: 忽略空行的差异
+  - `-i`: 忽略大小写差异
+- `cmp [-l] from-file to-file`: 以"字节"为单位对比，适用于任意文件
+  - `-l`: 列出所有有差异的字节位置；默认只会列出第一个差异点
+- `patch [-pNR] < patch_file`:
+  - `-pNUM`: p 后面接数字，代表“去掉 patch 文件里 header 包含的文件路径 NUM 层目录前缀”
+  - `-R`: 还原
+  - 例子：
+    - `diff -Naur passwd.old passwd.new > passwd.patch`
+    - `patch -p0 < passwd.patch`
+    - `patch -R -p0 < passwd.patch`
+
+### 11.4.4 文件打印准备: pr
+
+- `pr file`
+
+## 11.5 重点回顾
+
+## 11.6 本章习题
+
+1. 在列出的文件数太多以至于不能作为命令参数时，可以使用 xargs 处理。
+
+    ```sh
+    find /etc -type f 2>/dev/null | xargs -n 10 grep -l '\*'
+    ```
+
+2. 利用 sed 获取当前 IP。
+
+    ```sh
+    alias myip="ifconfig | grep 'inet 192' | sed 's/^.*inet //g' |\
+      cut -d ' ' -f1"
+    ```
+
+## 11.7 参考资料与延伸阅读
