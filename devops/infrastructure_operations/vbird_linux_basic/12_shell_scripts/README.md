@@ -20,6 +20,9 @@
     - [12.3.3 Shell script 的默认变量 ($0, $1...)](#1233-shell-script-的默认变量-0-1)
   - [12.4 条件判断](#124-条件判断)
     - [12.4.1 利用 if...then](#1241-利用-ifthen)
+    - [12.4.2 利用 case ... esac 判断](#1242-利用-case--esac-判断)
+    - [12.4.3 利用 function 功能](#1243-利用-function-功能)
+  - [12.5 循环 (loop)](#125-循环-loop)
 
 ## 12.1 什么是 Shell scripts
 
@@ -38,9 +41,9 @@
 ```sh
 #!/bin/bash
 # Program:
-#       This program shows "Hello World!" in your screen.
+#   This program shows "Hello World!" in your screen.
 # History:
-# 2005/08/23 VBird First release
+# 2015/07/16  VBird First release
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 echo -e "Hello World! \a \n"
@@ -78,7 +81,7 @@ exit 0
     # Program:
     #   User inputs his first name and last name.  Program shows his full name.
     # History:
-    # 2015/07/16 VBird First release
+    # 2015/07/16  VBird First release
     PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
     export PATH
 
@@ -239,7 +242,7 @@ exit 0
     #   User input a filename, program will check the flowing:
     #   1.) exist? 2.) file/directory? 3.) file permissions 
     # History:
-    # 2015/08/25  VBird  First release
+    # 2015/08/25  VBird First release
     PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
     export PATH
 
@@ -385,15 +388,17 @@ echo "Your whole parameter is   ==> '$@'"
 ### 12.4.1 利用 if...then
 
 - 单层、简单条件判断
+  - 语法
 
     ```sh
-    if [ condition expression ]; then
+    if [ condition ]; then
         # do something
     fi
     ```
 
-- `&&`, `||`: `[ "$yn" == "Y" -o "$yn" == "y" ]` 等同
-  `[ "$yn" == "Y" ] || [ "$yn" == "y" ]`
+  - 多条件组合: `&&`, `||`: `[ "$yn" == "Y" -o "$yn" == "y" ]` 等同
+    `[ "$yn" == "Y" ] || [ "$yn" == "y" ]`
+  - 例子
 
     ```sh
     #!/bin/bash
@@ -418,5 +423,282 @@ echo "Your whole parameter is   ==> '$@'"
     ```
 
 - 多重、复杂条件判断
+  - 语法
+
+    ```sh
+    if [ condition1 ]; then
+        # do something
+    elif [ condition2 ]; then
+        # do something
+    else
+        # do something
+    fi
+    ```
+
+- 例子1
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   This program shows the user's choice
+  # History:
+  # 2015/07/16  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  read -p "Please input (Y/N): " yn
+
+  if [ "$yn" == "Y" ] || [ "$yn" == "y" ]; then
+    echo "OK, continue"
+  elif [ "$yn" == "N" ] || [ "$yn" == "n" ]; then
+    echo "Oh, interrupt!"
+  else
+    echo "I don't know what your choice is"
+  fi
+  ```
+
+- 例子2
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   Check $1 is equal to "hello"
+  # History:
+  # 2015/07/16  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  if [ "$1" == "hello" ]; then
+    echo "Hello, how are you ?"
+  elif [ "$1" == "" ]; then
+    echo "You MUST input parameters, ex> {$0 someword}"
+  else
+    echo "The only parameter is 'hello', ex> {$0 hello}"
+  fi
+  ```
+
+- 例子3: `netstat -tuln`
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   Using netstat and grep to detect WWW,SSH,FTP and Mail services.
+  # History:
+  # 2015/07/16  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  # 1. 先作一些告知的动作而已～
+  echo "Now, I will detect your Linux server's services!"
+  echo -e "The www, ftp, ssh, and mail will be detect! \n"
+
+  # 2. 开始进行一些测试的工作，并且也输出一些资讯罗！
+  testing=$(netstat -tuln | grep ":80 ")   # 侦测看 port 80 在否？
+  if [ "$testing" != "" ]; then
+    echo "WWW is running in your system."
+  fi
+  testing=$(netstat -tuln | grep ":22 ")   # 侦测看 port 22 在否？
+  if [ "$testing" != "" ]; then
+    echo "SSH is running in your system."
+  fi
+  testing=$(netstat -tuln | grep ":21 ")   # 侦测看 port 21 在否？
+  if [ "$testing" != "" ]; then
+    echo "FTP is running in your system."
+  fi
+  testing=$(netstat -tuln | grep ":25 ")   # 侦测看 port 25 在否？
+  if [ "$testing" != "" ]; then
+    echo "Mail is running in your system."
+  fi
+  ```
+
+- 例子4
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   You input your demobilization date, I calculate how many days
+  #     before you demobilize.
+  # History:
+  # 2015/07/16  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  # 1. 告知使用者这支程序的用途，并且告知应该如何输入日期格式？
+  echo "This program will try to calculate:"
+  echo "How many days before your demobilization date..."
+  read -p "Please input your demobilization date (YYYYMMDD ex>20090401): " date2
+
+  # 2. 测试一下，这个输入的内容是否正确？利用正规表示法罗～
+  date_d=$(echo $date2 |grep '[0-9]\{8\}')   # 看看是否有八个数字
+  if [ "$date_d" == "" ]; then
+    echo "You input the wrong date format...."
+    exit 1
+  fi
+
+  # 3. 开始计算日期罗～
+  declare -i date_dem=`date --date="$date2" +%s`    # 退伍日期秒数
+  declare -i date_now=`date +%s`                    # 现在日期秒数
+  declare -i date_total_s=$(($date_dem-$date_now))  # 剩余秒数统计
+  declare -i date_d=$(($date_total_s/60/60/24))     # 转为日数
+  if [ "$date_total_s" -lt "0" ]; then              # 判断是否已退伍
+    echo "You had been demobilization before: "$((-1*$date_d))" days ago"
+  else
+    declare -i date_h=$(($(($date_total_s-$date_d*60*60*24))/60/60))
+    echo "You will demobilize after $date_d days and $date_h hours."
+  fi
+  ```
+
+### 12.4.2 利用 case ... esac 判断
+
+- 语法
+
+  ```sh
+  case $var in
+    "value1")
+      # do something
+      ;;
+    "value2")
+      # do something
+      ;;
+    *)
+      # do something
+      ;;
+  esac
+  ```
+
+- 例子1
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   Show "Hello" from $1.... by using case .... esac
+  # History:
+  #   2015/07/16  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  case $1 in
+    "hello")
+      echo "Hello, how are you ?"
+      ;;
+    "")
+      echo "You MUST input parameters, ex> {$0 someword}"
+      ;;
+    *)   # 其实就相当於万用字节，0~无穷多个任意字节之意！
+      echo "Usage $0 {hello}"
+      ;;
+  esac
+  ```
+
+- 例子2
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   This script only accepts the flowing parameter: one, two or three.
+  # History:
+  # 2015/07/17  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  echo "This program will print your selection !"
+  # read -p "Input your choice: " choice # 暂时取消，可以替换！
+  # case $choice in                      # 暂时取消，可以替换！
+  case $1 in                             # 现在使用，可以用上面两行替换！
+    "one")
+      echo "Your choice is ONE"
+      ;;
+    "two")
+      echo "Your choice is TWO"
+      ;;
+    "three")
+      echo "Your choice is THREE"
+      ;;
+    *)
+      echo "Usage $0 {one|two|three}"
+      ;;
+  esac
+  ```
+
+### 12.4.3 利用 function 功能
+
+- 语法
+
+  ```sh
+  function fname() {
+    # do something
+  }
+  ```
+
+  - 函数必须在被使用之前定义
+  - 函数特殊变量
+    - `$0`: 函数名称
+    - `$1`: 函数第 1 个参数
+    - `$2`: 函数第 2 个参数，以此类推
+- 例子1
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   Use function to repeat information.
+  # History:
+  # 2015/07/17  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  function printit(){
+    echo -n "Your choice is "     # 加上 -n 可以不断行继续在同一行显示
+  }
+
+  echo "This program will print your selection !"
+  case $1 in
+    "one")
+      printit; echo $1 | tr 'a-z' 'A-Z'  # 将参数做大小写转换！
+      ;;
+    "two")
+      printit; echo $1 | tr 'a-z' 'A-Z'
+      ;;
+    "three")
+      printit; echo $1 | tr 'a-z' 'A-Z'
+      ;;
+    *)
+      echo "Usage $0 {one|two|three}"
+      ;;
+  esac
+  ```
+
+- 例子2
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   Use function to repeat information.
+  # History:
+  # 2015/07/17  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  function printit(){
+    echo "Your choice is $1"   # 这个 $1 必须要参考底下命令的下达
+  }
+
+  echo "This program will print your selection !"
+  case $1 in
+    "one")
+      printit 1  # 请注意， printit 命令后面还有接参数！
+      ;;
+    "two")
+      printit 2
+      ;;
+    "three")
+      printit 3
+      ;;
+    *)
+      echo "Usage $0 {one|two|three}"
+      ;;
+  esac
+  ```
+
+## 12.5 循环 (loop)
 
 >>>>> progress
