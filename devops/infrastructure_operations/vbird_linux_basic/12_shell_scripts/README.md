@@ -18,6 +18,8 @@
     - [12.3.2 利用判断符号 `[]`](#1232-利用判断符号-)
     - [12.3.x 利用判断符号 `[[]]`](#123x-利用判断符号-)
     - [12.3.3 Shell script 的默认变量 ($0, $1...)](#1233-shell-script-的默认变量-0-1)
+  - [12.4 条件判断](#124-条件判断)
+    - [12.4.1 利用 if...then](#1241-利用-ifthen)
 
 ## 12.1 什么是 Shell scripts
 
@@ -161,6 +163,9 @@ exit 0
 
 ## 12.3 善用判断式
 
+- true: 返回 0
+- false: 返回 1
+
 ### 12.3.1 利用 test 命令的测试功能
 
 1. 关于文件的“文件类型”判断，如 `test -e filename` 表示文件存在否
@@ -294,6 +299,124 @@ exit 0
 
 ### 12.3.x 利用判断符号 `[[]]`
 
+⚠️ 不是 POSIX 标准，只有一部分 Shell (包括 bash) 支持
+
+> 以下内容来自@伍华龙
+
+- `[]` 与 `[[]]` 的区别
+  - 两者都是 test 命令，用于检查表达式的真值性。若表达式为 true，则返回 0，否则返回 1。
+  - `[[]]` 是 bash 对 `[]` 的改进，bash 同时支持两者，而 sh 只支持 `[]`。
+    **bash 脚本中始终使用 `[[]]` 即可**。
+  - 两者都能执行逻辑与、逻辑或运算，但写法不同，`[]` 用 `-a` 和 `-o`，`[[]]` 用 `&&` 和
+    `||`。
+  - `[]` 不支持正则匹配，`[[]]` 支持正则匹配。如 `[[ $name =~ abc* ]]` 或
+    `[[ $name == [Tt]om ]]`。其中 `=~` 为扩展正则表达式。
+  - 在没有加引号并且变量含有空格时，`[]` 会展开为多个字段，`[[]]` 则不会展开。
+- 例子：
+
+    ```sh
+    #!/bin/bash
+    # Program:
+    #   This program shows the user's choice
+    # History:
+    # 2022/01/16  Octobug First release
+    PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+    export PATH
+
+    read -p "Please input (Y/N): " yn
+    [[ "$yn" == "Y" || "$yn" == "y" ]] && echo "OK, continue" && exit 0
+    [[ "$yn" == "N" || "$yn" == "n" ]] && echo "Oh, interrupt!" && exit 0
+    echo "I don't know what your choice is" && exit 1
+    ```
+
 ### 12.3.3 Shell script 的默认变量 ($0, $1...)
+
+- `$0`: 当前脚本文件名
+- `$1`: 运行脚本时提供的第 1 个参数
+- `$2`: 运行脚本时提供的第 2 个参数，以此类推
+- `$#`: 参数个数，即 `$1~$N`
+- `$@`: 代表 `"$1" "$2" ...`
+- `$*`: 代表 `"$1[c]$2[c]$3[c]$4"`，其中 `[c]` 为分隔符，默认为空格
+- `shift NUM`: 参数变量编号偏移, NUM 为从 `$1` 开始移除的参数数目
+
+例子 1：
+
+```sh
+#!/bin/bash
+# Program:
+#   Program shows the script name, parameters...
+# History:
+#   2015/07/16  VBird First release
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+
+echo "The script name is        ==> $0"
+echo "Total parameter number is ==> $#"
+[ "$#" -lt 2 ] && echo "The number of parameter is less than 2.  Stop here." \
+  && exit 0
+echo "Your whole parameter is   ==> '$@'"
+echo "The 1st parameter         ==> $1"
+echo "The 2nd parameter         ==> $2"
+```
+
+例子 2：
+
+```sh
+#!/bin/bash
+# Program:
+#   Program shows the effect of shift function.
+# History:
+#   2009/02/17  VBird First release
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+
+echo "Total parameter number is ==> $#"
+echo "Your whole parameter is   ==> '$@'"
+shift   # 进行第一次『一个变量的 shift 』
+echo "Total parameter number is ==> $#"
+echo "Your whole parameter is   ==> '$@'"
+shift 3 # 进行第二次『三个变量的 shift 』
+echo "Total parameter number is ==> $#"
+echo "Your whole parameter is   ==> '$@'"
+```
+
+## 12.4 条件判断
+
+### 12.4.1 利用 if...then
+
+- 单层、简单条件判断
+
+    ```sh
+    if [ condition expression ]; then
+        # do something
+    fi
+    ```
+
+- `&&`, `||`: `[ "$yn" == "Y" -o "$yn" == "y" ]` 等同
+  `[ "$yn" == "Y" ] || [ "$yn" == "y" ]`
+
+    ```sh
+    #!/bin/bash
+    # Program:
+    #   This program shows the user's choice
+    # History:
+    #   2015/07/16  VBird First release
+    PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+    export PATH
+
+    read -p "Please input (Y/N): " yn
+
+    if [ "$yn" == "Y" ] || [ "$yn" == "y" ]; then
+      echo "OK, continue"
+      exit 0
+    fi
+    if [ "$yn" == "N" ] || [ "$yn" == "n" ]; then
+      echo "Oh, interrupt!"
+      exit 0
+    fi
+    echo "I don't know what your choice is" && exit 0
+    ```
+
+- 多重、复杂条件判断
 
 >>>>> progress
