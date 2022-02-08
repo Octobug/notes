@@ -12,7 +12,12 @@
     - [12.1.3 编写 Shell script 的良好习惯](#1213-编写-shell-script-的良好习惯)
   - [12.2 简单的 Shell script 练习](#122-简单的-shell-script-练习)
     - [12.2.1 简单范例](#1221-简单范例)
-    - [12.2.2 script 的执行方式差异 (source, sh script, ./script)](#1222-script-的执行方式差异-source-sh-script-script)
+    - [12.2.2 script 的执行方式差异 (source script, sh script, ./script)](#1222-script-的执行方式差异-source-script-sh-script-script)
+  - [12.3 善用判断式](#123-善用判断式)
+    - [12.3.1 利用 test 命令的测试功能](#1231-利用-test-命令的测试功能)
+    - [12.3.2 利用判断符号 `[]`](#1232-利用判断符号-)
+    - [12.3.x 利用判断符号 `[[]]`](#123x-利用判断符号-)
+    - [12.3.3 Shell script 的默认变量 ($0, $1...)](#1233-shell-script-的默认变量-0-1)
 
 ## 12.1 什么是 Shell scripts
 
@@ -148,6 +153,147 @@ exit 0
     time echo "scale=${num}; 4*a(1)" | bc -lq     # 4*a(1) 为 bc 计算 pi 的函数
     ```
 
-### 12.2.2 script 的执行方式差异 (source, sh script, ./script)
+### 12.2.2 script 的执行方式差异 (source script, sh script, ./script)
+
+- `sh script` / `./script`: 使用一个新的 bash 环境来执行脚本，即是在子进程 bash
+  中执行。
+- `source script`: 在当前 bash 中执行
+
+## 12.3 善用判断式
+
+### 12.3.1 利用 test 命令的测试功能
+
+1. 关于文件的“文件类型”判断，如 `test -e filename` 表示文件存在否
+
+    | 参数 | 意义                                      |
+    | ---- | ----------------------------------------- |
+    | `-b` | 文件名是否存在且为块设备                  |
+    | `-c` | 文件名是否存在且为字符设备                |
+    | `-d` | 文件名是否存在且为目录 (directory) (常用) |
+    | `-e` | 文件名是否存在 (常用)                     |
+    | `-f` | 文件名是否存在且为文件 (file) (常用)      |
+    | `-p` | 文件名是否存在且为一个 FIFO (pipe) 文件   |
+    | `-L` | 文件名是否存在且为一个链接文件            |
+    | `-S` | 文件名是否存在且为 Socket 文件            |
+
+2. 关于文件的权限判断，如 `test -r filename` 表示是否可读 (但 root 权限常有例外)
+
+    | 参数 | 意义                                   |
+    | ---- | -------------------------------------- |
+    | `-g` | 文件名是否存在且具有 "SGID" 属性       |
+    | `-k` | 文件名是否存在且具有 "Sticky bit" 属性 |
+    | `-r` | 文件名是否存在且具有 "可读" 权限       |
+    | `-s` | 文件名是否存在且为非空白文件           |
+    | `-u` | 文件名是否存在且具有 "SUID" 属性       |
+    | `-w` | 文件名是否存在且具有 "可写" 权限       |
+    | `-x` | 文件名是否存在且具有 "可执行"权限      |
+
+3. 文件之间的比较，如：`test file1 -nt file2`
+
+    | 参数  | 意义                                                             |
+    | ----- | ---------------------------------------------------------------- |
+    | `-ef` | file1 与 file2 是否为同一文件 (判断硬链接，即是否指向同一 inode) |
+    | `-nt` | (newer than) file1 是否比 file2 新                               |
+    | `-ot` | (older than) file1 是否比 file2 旧                               |
+
+4. 整数之间的比较，例如 `test n1 -eq n2`
+
+    | 参数  | 意义                                   |
+    | ----- | -------------------------------------- |
+    | `-eq` | 两数值相等 (equal)                     |
+    | `-ge` | n1 大于等于 n2 (greater than or equal) |
+    | `-gt` | n1 大于 n2 (greater than)              |
+    | `-le` | n1 小于等于 n2 (less than or equal)    |
+    | `-lt` | n1 小于 n2 (less than)                 |
+    | `-ne` | 两数值不等 (not equal)                 |
+
+5. 字符串之间的比较
+
+    | 参数           | 意义                                                    |
+    | -------------- | ------------------------------------------------------- |
+    | `-n string`    | 字符串是否不为空？若 string 为空则返回 false，-n 可省略 |
+    | `-z string`    | 字符串是否为空？若 string 为空则返回 true               |
+    | `str1 == str2` | str1 是否等于 str2，若相等则返回 true，`=` 等同 `==`    |
+    | `str1 != str2` | str1 是否不等于 str2 ，若相等则返回 false               |
+
+6. 多重条件判定，例如：`test -r filename -a -x filename`
+
+    | 参数 | 意义                                   |
+    | ---- | -------------------------------------- |
+    | `-a` | (and) 两个条件同时为 true 则返回 true  |
+    | `-o` | (or) 两个条件有一个为 true 则返回 true |
+    | `!`  | (not) 非，条件不成立时返回 true        |
+
+例子：
+
+- `test -e /filename && echo "exist" || echo "Not exist"`
+  
+    ```sh
+    #!/bin/bash
+    # Program:
+    #   User input a filename, program will check the flowing:
+    #   1.) exist? 2.) file/directory? 3.) file permissions 
+    # History:
+    # 2015/08/25  VBird  First release
+    PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+    export PATH
+
+    # 1. 让使用者输入文件名，并且判断使用者是否真的有输入字串？
+    echo -e "Please input a filename, I will check the filename's type and \
+    permission. \n\n"
+    read -p "Input a filename : " filename
+    test -z $filename && echo "You MUST input a filename." && exit 0
+    # 2. 判断文件是否存在？若不存在则显示信息并结束脚本
+    test ! -e $filename && echo "The filename '$filename' DO NOT exist" && \
+      exit 0
+    # 3. 开始判断文件类型与属性
+    test -f $filename && filetype="regulare file"
+    test -d $filename && filetype="directory"
+    test -r $filename && perm="readable"
+    test -w $filename && perm="$perm writable"
+    test -x $filename && perm="$perm executable"
+    # 4. 开始输出资讯！
+    echo "The filename: $filename is a $filetype"
+    echo "And the permissions are : $perm"
+    ```
+
+### 12.3.2 利用判断符号 `[]`
+
+- 中括号 `[]` 中间两端必须有空格分隔；
+- 中括号中的变量最好用双引号括起来
+
+    ```sh
+    [root@www ~]# name="VBird Tsai"
+    [root@www ~]# [ $name == "VBird" ]
+    bash: [: too many arguments
+    ```
+
+    `[ $name == "VBird" ]` 会被处理成 `[ VBird Tsai == "VBird" ]`，
+    使条件判断变成三个字段。
+
+- 中括号中的常量最好用单/双引号括起来
+
+例子：
+
+- `[ -z "${HOME}" ]; echo $?`
+
+    ```sh
+    #!/bin/bash
+    # Program:
+    #   This program shows the user's choice
+    # History:
+    # 2015/07/16  VBird First release
+    PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+    export PATH
+
+    read -p "Please input (Y/N): " yn
+    [ "$yn" == "Y" -o "$yn" == "y" ] && echo "OK, continue" && exit 0
+    [ "$yn" == "N" -o "$yn" == "n" ] && echo "Oh, interrupt!" && exit 0
+    echo "I don't know what your choice is" && exit 0
+    ```
+
+### 12.3.x 利用判断符号 `[[]]`
+
+### 12.3.3 Shell script 的默认变量 ($0, $1...)
 
 >>>>> progress
