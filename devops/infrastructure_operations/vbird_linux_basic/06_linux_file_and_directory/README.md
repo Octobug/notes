@@ -1,5 +1,7 @@
 # 第六章 Linux 文件与目录管理
 
+> <https://linux.vbird.org/linux_basic/centos7/0220filemanager.php>
+
 ## 目录
 
 - [第六章 Linux 文件与目录管理](#第六章-linux-文件与目录管理)

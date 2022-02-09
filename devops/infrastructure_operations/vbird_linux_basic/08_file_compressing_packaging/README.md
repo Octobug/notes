@@ -1,6 +1,6 @@
 # 第八章 文件的压缩与打包
 
-> <http://cn.linux.vbird.org/linux_basic/0240tarcompress.php>
+> <https://linux.vbird.org/linux_basic/centos7/0240tarcompress.php>
 
 ## 目录
 

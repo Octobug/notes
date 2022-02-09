@@ -1,6 +1,6 @@
 # 第十二章 学习 shell scripts
 
-> <http://cn.linux.vbird.org/linux_basic/0340bashshell-scripts.php>
+> <https://linux.vbird.org/linux_basic/centos7/0340bashshell-scripts.php>
 
 ## 目录
 

@@ -1,6 +1,6 @@
 # 第三章 安装 CentOS 7.x 与多重开机小技巧
 
-> <http://cn.linux.vbird.org/linux_basic/0157installcentos5.php>
+> <https://linux.vbird.org/linux_basic/centos7/0157installcentos7.php>
 
 ## 目录
 

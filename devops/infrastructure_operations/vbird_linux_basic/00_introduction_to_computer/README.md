@@ -1,6 +1,6 @@
 # 第零章 计算机概论
 
-> <http://cn.linux.vbird.org/linux_basic/0105computers.php>
+> <https://linux.vbird.org/linux_basic/centos7/0105computers.php>
 
 ## 目录
 

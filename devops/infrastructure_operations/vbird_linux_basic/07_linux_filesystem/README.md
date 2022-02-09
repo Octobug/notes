@@ -1,6 +1,6 @@
 # 第七章 Linux 磁盘与文件系统管理
 
-> <http://cn.linux.vbird.org/linux_basic/0230filesystem.php>
+> <https://linux.vbird.org/linux_basic/centos7/0230filesystem.php>
 
 ## 目录
 

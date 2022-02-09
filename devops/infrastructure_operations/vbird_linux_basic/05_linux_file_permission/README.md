@@ -1,5 +1,7 @@
 # 第五章 Linux 文件权限与目录配置
 
+> <https://linux.vbird.org/linux_basic/centos7/0210filepermission.php>
+
 ## 目录
 
 - [第五章 Linux 文件权限与目录配置](#第五章-linux-文件权限与目录配置)

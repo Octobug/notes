@@ -1,6 +1,6 @@
 # 第四章 首次登陆与在线求助 man page
 
-> <http://cn.linux.vbird.org/linux_basic/0160startlinux.php>
+> <https://linux.vbird.org/linux_basic/centos7/0160startlinux.php>
 
 ## 目录
 

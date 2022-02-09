@@ -1,6 +1,6 @@
 # 第十章 认识与学习 BASH
 
-> <http://cn.linux.vbird.org/linux_basic/0320bash.php>
+> <https://linux.vbird.org/linux_basic/centos7/0320bash.php>
 
 ## 目录
 

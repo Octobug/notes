@@ -1,8 +1,6 @@
 # 第一章 Linux 是什么与如何学习
 
-> <http://cn.linux.vbird.org/linux_basic/0110whatislinux.php>
->
-> <http://cn.linux.vbird.org/linux_basic/0120howtolinux.php>
+> <https://linux.vbird.org/linux_basic/centos7/0110whatislinux.php>
 
 ## 目录
 

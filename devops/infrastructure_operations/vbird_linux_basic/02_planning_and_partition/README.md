@@ -1,6 +1,6 @@
 # 第二章 主机规划与磁盘分区
 
-> <http://cn.linux.vbird.org/linux_basic/0130designlinux.php>
+> <https://linux.vbird.org/linux_basic/centos7/0130designlinux.php>
 
 ## 目录
 

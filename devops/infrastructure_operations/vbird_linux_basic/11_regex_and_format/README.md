@@ -1,6 +1,6 @@
 # 第十一章 正则表达式与文件格式化处理
 
-> <http://cn.linux.vbird.org/linux_basic/0330regularex.php>
+> <https://linux.vbird.org/linux_basic/centos7/0330regularex.php>
 
 ## 目录
 
