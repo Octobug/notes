@@ -23,6 +23,13 @@
     - [12.4.2 利用 case ... esac 判断](#1242-利用-case--esac-判断)
     - [12.4.3 利用 function 功能](#1243-利用-function-功能)
   - [12.5 循环 (loop)](#125-循环-loop)
+    - [12.5.1 while do done, until do done (不定循环)](#1251-while-do-done-until-do-done-不定循环)
+    - [12.5.2 for...do...done (固定循环)](#1252-fordodone-固定循环)
+    - [12.5.3 for...do...done 的数值处理](#1253-fordodone-的数值处理)
+    - [12.5.4 搭配随机数与数组的实验](#1254-搭配随机数与数组的实验)
+  - [12.6 Shell script 的追踪与 debug](#126-shell-script-的追踪与-debug)
+  - [12.7 重点回顾](#127-重点回顾)
+  - [12.8 本章习题](#128-本章习题)
 
 ## 12.1 什么是 Shell scripts
 
@@ -701,4 +708,370 @@ echo "Your whole parameter is   ==> '$@'"
 
 ## 12.5 循环 (loop)
 
->>>>> progress
+### 12.5.1 while do done, until do done (不定循环)
+
+- 语法
+
+  ```sh
+  # while do
+  while [ condition ]
+  do
+    # do something
+  done
+
+  # until do
+  until [ condition ]
+    # do something
+  done
+  ```
+
+- 例子1
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  # Repeat question until user input correct answer.
+  # History:
+  # 2015/07/17  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  while [ "$yn" != "yes" -a "$yn" != "YES" ]; do
+      read -p "Please input yes/YES to stop this program: " yn
+  done
+  echo "OK! you input the correct answer."
+  ```
+
+- 例子2
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   Repeat question until user input correct answer.
+  # History:
+  # 2015/07/17  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  until [ "$yn" == "yes" -o "$yn" == "YES" ]
+  do
+    read -p "Please input yes/YES to stop this program: " yn
+  done
+  echo "OK! you input the correct answer."
+  ```
+
+- 例子3
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   Use loop to calculate "1+2+3+...+100" result.
+  # History:
+  # 2015/07/17  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  s=0  # 这是加总的数值变量
+  i=0  # 这是累计的数值，亦即是 1, 2, 3....
+  while [ "$i" != "100" ]
+  do
+    i=$(($i+1))   # 每次 i 都会添加 1 
+    s=$(($s+$i))  # 每次都会加总一次！
+  done
+  echo "The result of '1+2+3+...+100' is ==> $s"
+  ```
+
+### 12.5.2 for...do...done (固定循环)
+
+- 语法
+
+  ```sh
+  for var in con1 con2 con3 ...
+  do
+    # do something
+  done
+  ```
+
+- 例子1
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   Using for .... loop to print 3 animals
+  # History:
+  # 2015/07/17  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  for animal in dog cat elephant
+  do
+    echo "There are ${animal}s.... "
+  done
+  ```
+
+- 例子2
+
+  ```sh
+  #!/bin/bash
+  # Program
+  #   Use id command to check system account's information.
+  # History
+  # 2015/07/17  VBird first release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+  users=$(cut -d ':' -f1 /etc/passwd)  # 撷取帐号名称
+  for username in $users               # 开始回圈进行！
+  do
+    id $username
+  done
+  ```
+
+- 例子3
+
+  ```sh
+  #!/bin/bash
+  # Program
+  #   Use ping command to check the network's PC state.
+  # History
+  # 2015/07/17  VBird first release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+  network="192.168.1"             # 先定义一个网域的前面部分！
+  for sitenu in $(seq 1 100)      # seq 为 sequence(连续) 的缩写之意
+                                  # $(seq 1 100) 可以用 {1..100} 代替
+  do
+    # 底下的程序在取得 ping 的回传值是正确的还是失败的！
+    ping -c 1 -w 1 ${network}.${sitenu} &> /dev/null && result=0 || result=1
+    # 开始显示结果是正确的启动 (UP) 还是错误的没有连通 (DOWN)
+    if [ "$result" == 0 ]; then
+      echo "Server ${network}.${sitenu} is UP."
+    else
+      echo "Server ${network}.${sitenu} is DOWN."
+    fi
+  done
+  ```
+
+- 例子4
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   User input dir name, I find the permission of files.
+  # History:
+  # 2015/07/17  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  # 1. 先看看这个目录是否存在啊？
+  read -p "Please input a directory: " dir
+  if [ "$dir" == "" -o ! -d "$dir" ]; then
+    echo "The $dir is NOT exist in your system."
+    exit 1
+  fi
+
+  # 2. 开始测试文件罗～
+  filelist=$(ls $dir)        # 列出所有在该目录下的文件名称
+  for filename in $filelist
+  do
+    perm=""
+    test -r "$dir/$filename" && perm="$perm readable"
+    test -w "$dir/$filename" && perm="$perm writable"
+    test -x "$dir/$filename" && perm="$perm executable"
+    echo "The file $dir/$filename's permission is $perm "
+  done
+  ```
+
+### 12.5.3 for...do...done 的数值处理
+
+- 语法
+
+  ```sh
+  for ((单次表达式; 条件表达式; 末尾循环体))
+  do
+    # do something
+  done
+  ```
+
+- 例子
+
+  ```sh
+  #!/bin/bash
+  # Program:
+  #   Try do calculate 1+2+....+${your_input}
+  # History:
+  # 2015/07/17  VBird First release
+  PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+  export PATH
+
+  read -p "Please input a number, I will count for 1+2+...+your_input: " nu
+
+  s=0
+  for (( i=1; i<=$nu; i=i+1 ))
+  do
+    s=$(($s+$i))
+  done
+  echo "The result of '1+2+3+...+$nu' is ==> $s"
+  ```
+
+### 12.5.4 搭配随机数与数组的实验
+
+例子1
+
+```sh
+#!/bin/bash
+# Program:
+#   Try to tell you what you may eat.
+# History:
+# 2015/07/17  VBird First release
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+
+eat[1]="麦当劳"
+eat[2]="肯德基"
+eat[3]="小女当家"
+eat[4]="大米先生"
+eat[5]="津味源"
+eat[6]="猪脚饭"
+eat[7]="老碗会"
+eat[8]="萨莉亚"
+eat[9]="711"
+eatnum=9      # 可用餐厅数
+
+check=$((${RANDOM} * ${eatnum} / 32767 + 1))
+echo "you may eat ${eat[${check}]}"
+```
+
+例子2
+
+```sh
+#!/bin/bash
+# Program:
+#   Try to tell you what you may eat.
+# History:
+# 2015/07/17  VBird First release
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+
+eat[1]="麦当劳"
+eat[2]="肯德基"
+eat[3]="小女当家"
+eat[4]="大米先生"
+eat[5]="津味源"
+eat[6]="猪脚饭"
+eat[7]="老碗会"
+eat[8]="萨莉亚"
+eat[9]="711"
+eatnum=9 # 可用餐厅数
+
+eated=0
+while [ "${eated}" -lt 3 ]; do
+    check=$((${RANDOM} * ${eatnum} / 32767 + 1))
+    mycheck=0
+    if [ "${eated}" -ge 1 ]; then
+        for i in $(seq 1 ${eated}); do
+            if [ ${eatedcon[$i]} == $check ]; then
+                mycheck=1
+            fi
+        done
+    fi
+    if [ ${mycheck} == 0 ]; then
+        echo "you may eat ${eat[${check}]}"
+        eated=$((${eated} + 1))
+        eatedcon[${eated}]=${check}
+    fi
+done
+```
+
+## 12.6 Shell script 的追踪与 debug
+
+- `sh [-nvx] script.sh`
+  - `-n`: 不执行 script，仅检查语法
+  - `-v`: 在执行 script 前将 script 内容显示到屏幕上
+  - `-x`: 将 script 的执行过程显示到屏幕
+
+## 12.7 重点回顾
+
+## 12.8 本章习题
+
+1.请创建一支 script ，当你运行该 script 的时候，该 script 可以显示： 1. 你目前的身份 (用
+whoami ); 2.你目前所在的目录 (用 pwd).
+
+```sh
+#!/bin/bash
+echo -e "Your name is ==> $(whoami)"
+echo -e "The current directory is ==> $(pwd)"
+```
+
+2.请自行创建一支程序，该程序可以用来计算『你还有几天可以过生日』啊？
+
+```sh
+#!/bin/bash
+read -p "Pleas input your birthday (MMDD, ex> 0709): " bir
+now=$(date +%m%d)
+if [ "$bir" == "$now" ]; then
+    echo "Happy Birthday to you!!!"
+elif [ "$bir" -gt "$now" ]; then
+    year=$(date +%Y)
+    total_d=$(($(($(date --date="$year$bir" +%s) - $(date +%s))) / 60 / 60 / 24))
+    echo "Your birthday will be $total_d later"
+else
+    year=$(($(date +%Y) + 1))
+    total_d=$(($(($(date --date="$year$bir" +%s) - $(date +%s))) / 60 / 60 / 24))
+    echo "Your birthday will be $total_d later"
+fi
+```
+
+3.让使用者输入一个数字，程序可以由 1+2+3... 一直累加到使用者输入的数字为止。
+
+```sh
+#!/bin/bash
+read -p "Please input an integer number: " number
+i=0
+s=0
+while [ "$i" != "$number" ]; do
+    i=$(($i + 1))
+    s=$(($s + $i))
+done
+echo "the result of '1+2+3+...$number' is ==> $s"
+```
+
+4.撰写一支程序，他的作用是:
+1.) 先查看一下 /root/test/logical 这个名称是否存在；
+2.) 若不存在，则创建一个文件，使用 touch 来创建，创建完成后离开；
+3.) 如果存在的话，判断该名称是否为文件，若为文件则将之删除后创建一个目录，档名为 logical
+，之后离开；
+4.) 如果存在的话，而且该名称为目录，则移除此目录！
+
+```sh
+#!/bin/bash
+if [ ! -e logical ]; then
+    touch logical
+    echo "Just make a file logical"
+    exit 1
+elif [ -e logical ] && [ -f logical ]; then
+    rm logical
+    mkdir logical
+    echo "remove file ==> logical"
+    echo "and make directory logical"
+    exit 1
+elif [ -e logical ] && [ -d logical ]; then
+    rm -rf logical
+    echo "remove directory ==> logical"
+    exit 1
+else
+    echo "Does here have anything?"
+fi
+```
+
+5.我们知道 /etc/passwd 里面以 : 来分隔，第一栏为帐号名称。请写一只程序，可以将
+/etc/passwd 的第一栏取出，而且每一栏都以一行字串『The 1 account is "root" 』来显示，
+那个 1 表示行数。
+
+```sh
+#!/bin/bash
+accounts=$(cat /etc/passwd | cut -d':' -f1)
+for account in $accounts; do
+    declare -i i=$i+1
+    echo "The $i account is \"$account\" "
+done
+```

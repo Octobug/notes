@@ -19,9 +19,9 @@
   - [x] [第九章 vim 程序编辑器](09_vim_editor)
   - [x] [第十章 认识与学习 BASH](10_learn_bash)
   - [x] [第十一章 正则表达式与文件格式化处理](11_regex_and_format)
-  - [ ] [第十二章 学习 shell scripts](12_shell_scripts)
+  - [x] [第十二章 学习 Shell scripts](12_shell_scripts)
 - 第四部份：Linux 使用者管理
-  - [ ] 第十三章 Linux 账号管理与 ACL 权限控制
+  - [ ] [第十三章 Linux 账号管理与 ACL 权限控制](13_account_and_acl)
   - [ ] 第十四章 磁盘配额（Quota）与进阶文件系统管理
   - [ ] 第十五章 例行性工作调度（crontab）
   - [ ] 第十六章 程序管理与 SELinux 初探
