@@ -124,7 +124,7 @@ inode/block/superblock 系统。
       - 文件创建或状态改变的时间 (ctime)
       - 文件最近的访问时间 (access)
       - 文件最近的修改时间 (mtime)
-      - 文件特殊属性 (SUID/GUID/SBIT)
+      - 文件特殊属性 (SUID/SGID/SBIT)
       - 文件内容指向 (pointer)
     - inode 的数量与大小在格式化时已固定
       - 每个 inode 大小为 128 Bytes (ext4 与 xfs 支持 256 Bytes)
