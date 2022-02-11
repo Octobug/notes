@@ -84,6 +84,7 @@ disciplines according to the
 1. [Business](https://en.wikipedia.org/wiki/Business)
     1. [Finance](finance)
         1. [Personal Finance](finance/personal_finance)
+        2. Mathematical Finance
 2. [Medicine and Health](https://en.wikipedia.org/wiki/Medicine)
     1. [Primary Care](primary_care)
         1. Health Administration
