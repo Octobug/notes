@@ -5,4 +5,6 @@
 
 ## References
 
+- [lemonitor](https://github.com/lework/lemonitor)
+- [mirrors-china](https://github.com/vra/mirrors-china)
 - [各种各样的镜像加速](https://github.com/hedzr/mirror-list)
