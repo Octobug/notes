@@ -18,6 +18,16 @@
     - [13.2.5 使用外部身份认证系统](#1325-使用外部身份认证系统)
   - [13.3 主机的详细权限规划：ACL 的使用](#133-主机的详细权限规划acl-的使用)
     - [13.3.1 什么是 ACL 与如何支持启动 ACL](#1331-什么是-acl-与如何支持启动-acl)
+    - [13.3.2 ACL 的设置技巧：getfacl, setfacl](#1332-acl-的设置技巧getfacl-setfacl)
+  - [13.4 用户身份切换](#134-用户身份切换)
+    - [13.4.1 su](#1341-su)
+    - [13.4.2 sudo](#1342-sudo)
+    - [13.4.x `su` vs.`sudo`](#134x-su-vssudo)
+  - [13.5 用户的特殊 shell 与 PAM 模块](#135-用户的特殊-shell-与-pam-模块)
+    - [13.5.1 特殊的 shell, /sbin/nologin](#1351-特殊的-shell-sbinnologin)
+    - [13.5.2 PAM 模块简介](#1352-pam-模块简介)
+    - [13.5.3 PAM 模块设置语法](#1353-pam-模块设置语法)
+    - [13.5.4 常用模块简介](#1354-常用模块简介)
 
 ## 13.1 Linux 的账号与群组
 
@@ -204,4 +214,263 @@
 ### 13.3.1 什么是 ACL 与如何支持启动 ACL
 
 ACL (Access Control List): 在传统的 owner, group, others 与 read, write, execute
-之外提供更细致的权限设置。ACL 可以针对单一用户，单一文件或目录进行 r,w,x 的权限规范，
+之外提供更细致的权限设置。ACL 可以针对单一用户，单一文件或目录进行 r,w,x 的权限规范。
+包括以下几个方面：
+
+- 用户 (user)
+- 用户组 (group)
+- 默认属性 (mask): 规范新数据的默认权限
+
+ACL 是 Unix-like 系统的额外支持项目，目前 ACL 几乎被默认加入到所有常见的 Linux
+文件系统的挂载参数中。查看系统是否支持 ACL: `dmesg | grep -i acl`
+
+### 13.3.2 ACL 的设置技巧：getfacl, setfacl
+
+- `getfacl FILENAME`: 获取某个文件/目录的 ACL 规范
+- `setfacl [-bdkR] [{-m|-x} acl参数] FILENAME`: 设置某个文件/目录的 ACL 规范
+  - `-b`: 移除所有 ACL 参数
+  - `-d`: 设置默认 ACL 参数
+  - `-k`: 移除默认 ACL 参数
+  - `-R`: 递归设置子目录
+  - `-m`: 设置指定的 ACL 参数，不可与 `-x` 合用
+  - `-x`: 移除指定的 ACL 参数，不可与 `-m` 合用
+  - 设置单一用户权限：`u:[使用者账号列表]:[rwx-]`
+
+    ```sh
+    # 1. 针对特定使用者的方式：
+    [root@www ~]# touch acl_test1
+    [root@www ~]# ll acl_test1
+    -rw-r--r-- 1 root root 0 Feb 27 13:28 acl_test1
+    [root@www ~]# setfacl -m u:vbird1:rx acl_test1
+    [root@www ~]# ll acl_test1
+    -rw-r-xr--+ 1 root root 0 Feb 27 13:28 acl_test1
+    # 权限部分多了个 + ，且与原本的权限 (644) 看起来差异很大！但要如何查阅呢？
+
+    [root@www ~]# setfacl -m u::rwx acl_test1
+    [root@www ~]# ll acl_test1
+    -rwxr-xr--+ 1 root root 0 Feb 27 13:28 acl_test1
+    # 无使用者列表，代表配置该文件拥有者，所以上面显示 root 的权限成为 rwx 了！
+    ```
+  
+  - 设置单一用户组权限：`g:[用户组列表]:[rwx-]`
+
+    ```sh
+    # 2. 针对特定群组的方式：
+    [root@www ~]# setfacl -m g:mygroup1:rx acl_test1
+    [root@www ~]# getfacl acl_test1
+    # file: acl_test1
+    # owner: root
+    # group: root
+    user::rwx
+    user:vbird1:r-x
+    group::r--
+    group:mygroup1:r-x  <==这里就是新增的部分！多了这个群组的权限配置！
+    mask::r-x
+    other::r--
+    ```
+
+  - 设置有效权限 (mask)：`m:[rwx-]`，用户与用户组的权限必须在 mask 的权限范围内才会生效
+
+    ```sh
+    # 3. 针对有效权限 mask 的配置方式：
+    [root@www ~]# setfacl -m m:r acl_test1
+    [root@www ~]# getfacl acl_test1
+    # file: acl_test1
+    # owner: root
+    # group: root
+    user::rwx
+    user:vbird1:r-x        #effective:r-- <==vbird1+mask均存在者，仅有 r 而已！
+    group::r--
+    group:mygroup1:r-x     #effective:r--
+    mask::r--
+    other::r--
+    ```
+
+  - 使用默认权限设置目录的 ACL 权限继承：`d:[u|g]:[user|group]:[rwx-]`
+
+    ```sh
+    # 4. 针对默认权限的配置方式：
+
+    # 让 myuser1 在 /srv/projecta 底下一直具有 rx 的默认权限！
+    [root@www ~]# setfacl -m d:u:myuser1:rx /srv/projecta
+    [root@www ~]# getfacl /srv/projecta
+    # file: srv/projecta
+    # owner: root
+    # group: projecta
+    user::rwx
+    user:myuser1:r-x
+    group::rwx
+    mask::rwx
+    other::---
+    default:user::rwx
+    default:user:myuser1:r-x
+    default:group::rwx
+    default:mask::rwx
+    default:other::---
+
+    [root@www ~]# cd /srv/projecta
+    [root@www projecta]# touch zzz1
+    [root@www projecta]# mkdir zzz2
+    [root@www projecta]# ll -d zzz*
+    -rw-rw----+ 1 root projecta    0 Feb 27 14:57 zzz1
+    drwxrws---+ 2 root projecta 4096 Feb 27 14:57 zzz2
+    # 看吧！确实有继承喔！然后我们使用 getfacl 再次确认看看！
+
+    [root@www projecta]# getfacl zzz2
+    # file: zzz2
+    # owner: root
+    # group: projecta
+    user::rwx
+    user:myuser1:r-x
+    group::rwx
+    mask::rwx
+    other::---
+    default:user::rwx
+    default:user:myuser1:r-x
+    default:group::rwx
+    default:mask::rwx
+    default:other::---
+    ```
+
+例题：将前一小节任务二中 `/srv/projecta` 这个目录，让 myuser1 可以进入查阅，但 myuser1
+不具有修改的权力。
+
+答：由于 myuser1 是独立的使用者与群组，而 /srv 是附属于 / 之下的，因此 /srv 已经具有 acl 的功能。 透过如下的配置即可搞定：
+
+```sh
+# 1. 先测试看看，使用 myuser1 能否进入该目录？
+[myuser1@www ~]$ cd /srv/projecta
+-bash: cd: /srv/projecta: Permission denied  <==确实不可进入！
+
+# 2. 开始用 root 的身份来配置一下该目录的权限吧！
+[root@www ~]# setfacl -m u:myuser1:rx /srv/projecta
+[root@www ~]# getfacl /srv/projecta
+# file: srv/projecta
+# owner: root
+# group: projecta
+user::rwx
+user:myuser1:r-x  <==还是要看看有没有配置成功喔！
+group::rwx
+mask::rwx
+other::---
+
+# 3. 还是得要使用 myuser1 去测试看看结果！
+[myuser1@www ~]$ cd /srv/projecta
+[myuser1@www projecta]$ ll -a
+drwxrws---+ 2 root projecta 4096 Feb 27 11:29 .  <==确实可以查询档名
+drwxr-xr-x  4 root root     4096 Feb 27 11:29 ..
+
+[myuser1@www projecta]$ touch testing
+touch: cannot touch `testing': Permission denied <==确实不可以写入！
+```
+
+## 13.4 用户身份切换
+
+- 使用一般账号：日常操作尽量避免使用 root
+- 用较低权限启动系统服务
+- 软件本身的限制：如 telnet 本身拒绝 root 登录
+
+### 13.4.1 su
+
+- `su [-lm] [-c CMD] [USERNAME]`: 使用目标用户密码
+  - `-`/`-l`: 使用 login-shell 的变量文件读取方式来登录系统，省略 USERNAME 时代表 root
+  - `-m`/`-p`: 保留使用当前的 Shell 环境
+  - `-c`: 以指定用户身份执行一次命令
+
+### 13.4.2 sudo
+
+- `sudo [-b] [-u USERNAME] [CMD]`: 使用当前用户密码
+  - `-b`: 在后台运行命令
+  - `-u`: 目标用户，省略时代表 root
+- sudo 的大致执行流程
+  1. 用户执行 sudo 时，系统通过 `/etc/sudoers` 文件判断用户是否满足权限
+  2. 用户满足权限时，要求用户输入自己的密码
+  3. 若密码正确，则开始执行 sudo 后指定的命令
+  4. 若目标用户和当前用户一致，则不需要输入密码
+- visudo 与 `/etc/sudoers`
+  - sudoers 配置文件有语法，因此修改配置时应该使用 visudo，visudo 会做语法检查
+  - `man sudoers`
+- `sudo` 的时间间隔问题：5 分钟内不需要再输入密码
+- 配置示例
+
+  ```sudo
+  # 管理员组配置: /etc/sudoers.d/admin
+  %admin ALL=(ALL) ALL
+
+  # 项目用户组配置: /etc/sudoers.d/project0
+  %project0 ALL=(project0:project0) NOPASSWD:ALL
+  ```
+
+  添加了以上两项规则后，把个人用户加入 `admin` 组即可拥有 `root` 权限；把个人用户加入
+  `project0` 组即可免密码维护 `project0` 项目，部署时使用 `sudo -iu project0`
+  进入到对应的用户中操作。
+
+  `%project0 ALL=(project0:project0) NOPASSWD:ALL` 详解：允许 `project0`
+  用户组成员用户在当前系统中以 `project0` 用户的名义免密码执行 `project0`
+  用户可以执行的任意命令。
+
+  ```sudoers
+  #Who       Where       As whom                     Tag          What
+  #User_List Host_List = [(Runas_List1:Runas_List2)] [Tag_Spec:]  Cmnd_Spec
+  %project0  ALL       = (project0     :project0  )  NOPASSWD:    ALL
+  ```
+
+  - `User_Spec`
+    - `User_List`: 匹配执行 `sudo` 命令的用户，使用 `%` 符号时代表用户组。
+    - `Host_List`: 匹配系统 hostname，当所有服务器维护同一份配置时该参数可以写成多个
+      hostname 使不同用户在不同服务器上有不一样的权限，但这样会使规则复杂化，
+      我们不采用这种方式，因此这个参数默认写 ALL。
+  - `Runas_Spec`
+    - `Runas_List1`: user，运行 `sudo` 命令时指向的目标用户。
+    - `Runas_List2`: group，运行 `sudo` 命令时指向的目标用户组。
+  - `Tag_Spec`: `sudo` 命令使用的 `tag`, `NOPASSWD` 表示不需要密码。
+  - `Cmnd_Spec`: 允许 `sudo` 运行的命令。
+
+  ⚠️ 某个用户可能会匹配中多条规则，而生效的是最后一条规则。由于 "项目用户" 的切换一般允许
+  `NOPASSWD`，因此在写 "项目用户" 的 `sudoers` 配置文件时，统一在其配置文件名称前加个
+  `z-` 前缀，确保免密码配置优先生效，如 `/etc/sudoers.d/z-project0`。
+
+### 13.4.x `su` vs.`sudo`
+
+- su 使用目标用户密码，sudo 使用当前用户密码
+- su 无法切换到 `/bin/nologin` 这类用户，sudo 可以
+
+## 13.5 用户的特殊 shell 与 PAM 模块
+
+### 13.5.1 特殊的 shell, /sbin/nologin
+
+- `/sbin/nologin`: shell 为 nologin 的用户无法登录
+  - 定制拒绝登录信息: `/etc/nologin.txt`
+
+### 13.5.2 PAM 模块简介
+
+PAM (Pluggable Authentication Modules): 提供验证机制的一套 API
+
+### 13.5.3 PAM 模块设置语法
+
+- 调用 PAM 的流程，以 passwd 为例
+  1. 用户执行 passwd 命令，并输入密码
+  2. passwd 调用 PAM 模块进行验证
+  3. PAM 模块到 `/etc/pam.d/` 中寻找和 passwd 同名的配置文件
+  4. 根据 `/etc/pam.d/passwd` 的设置，引用相关的 PAM 模块进行验证
+  5. 将验证结果返回给 passwd
+  6. passwd 根据验证结果进行下一步
+- PAM 配置
+  - 第一个字段：Type，验证类型
+    - auth (authentication): 校验用户身份
+    - account: 主要进行 authorization (授权)，校验用户是否有正确的使用权限
+    - session: 管理用户在当前登录会话内，PAM 提供的环境设置。
+      如记录用户的登录登出时的信息。
+    - password: 提供变更密码的校验机制
+  - 第二个字段：Control Flag，控制标志，是验证通过的标准。
+    - required: 验证成功则带有 success 标志，失败则带有 failure 标志。
+      不论成功与否都会进行后续的验证。
+    - requisite: 验证成功则带有 success 标志，并继续后续流程。验证失败则立即返回 failure
+      标志，并终止后续流程。
+    - sufficient: 验证成功则立即返回 success 给原程序，并终止后续流程。验证失败则带有
+      failure 标志并继续后续流程。
+    - optional: 显示讯息，没有验证作用。
+
+### 13.5.4 常用模块简介
+
+>>>>> prorgess
