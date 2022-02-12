@@ -28,6 +28,17 @@
     - [13.5.2 PAM 模块简介](#1352-pam-模块简介)
     - [13.5.3 PAM 模块设置语法](#1353-pam-模块设置语法)
     - [13.5.4 常用模块简介](#1354-常用模块简介)
+    - [13.5.5 其他相关文件](#1355-其他相关文件)
+  - [13.6 Linux 主机上的用户信息传递](#136-linux-主机上的用户信息传递)
+    - [13.6.1 查询使用者: w, who, last, lastlog](#1361-查询使用者-w-who-last-lastlog)
+    - [13.6.2 用户对话: write, mesg, wall](#1362-用户对话-write-mesg-wall)
+    - [13.6.3 使用邮箱: mail](#1363-使用邮箱-mail)
+  - [13.7 CentOS 7 环境下大量创建账号的办法](#137-centos-7-环境下大量创建账号的办法)
+    - [13.7.1 一些账号相关的检查工具](#1371-一些账号相关的检查工具)
+    - [13.7.2 大量创建账号范例（使用 passwd --stdin 选项）](#1372-大量创建账号范例使用-passwd---stdin-选项)
+  - [13.8 重点回顾](#138-重点回顾)
+  - [13.9 本章习题](#139-本章习题)
+  - [13.10 参考资料与延伸阅读](#1310-参考资料与延伸阅读)
 
 ## 13.1 Linux 的账号与群组
 
@@ -149,7 +160,8 @@
 ### 13.2.2 用户功能
 
 - `id`: 查询用户信息
-- `chsh`: 修改用户 shell
+- `chfn`: 用户修改个人信息
+- `chsh`: 用户修改 shell
 
 ### 13.2.3 新增与移除用户组
 
@@ -473,4 +485,173 @@ PAM (Pluggable Authentication Modules): 提供验证机制的一套 API
 
 ### 13.5.4 常用模块简介
 
->>>>> prorgess
+- `/etc/pam.d/*`: 每个程序对应的 PAM 配置文件
+- `/lib64/security/*`: PAM 模块文件的实际放置目录
+- `/etc/seciruty/*`: 其他 PAM 环境的配置文件
+- `/usr/share/doc/pam-*`: 详细的 PAM 说明文档
+
+常用模块：
+
+- `pam_securetty.so`：限制系统管理员 (root) 只能够从安全的 (secure) 终端机登陆；
+  什么是终端机？例如 tty1, tty2 等就是传统的终端机装置名称。而安全的终端机配置就写在
+  `/etc/securetty` 这个文件中。
+- `pam_nologin.so`：这个模块可以限制一般用户是否能够登陆主机。当 `/etc/nologin`
+  这个文件存在时，所有一般使用者均无法再登陆系统了。一般使用者在登陆时，
+  在他们的终端机上会将该文件的内容显示出来！所以，正常的情况下，这个文件应该是不能存在系统中的。但这个模块对 root 以及已经登陆系统中的一般账号并没有影响。
+- `pam_selinux.so`：SELinux 是个针对程序来进行细部管理权限的功能。
+- `pam_console.so`：当系统出现某些问题，或者是某些时刻你需要使用特殊的终端接口 (例如
+  RS232 之类的终端联机设备) 登陆主机时， 这个模块可以帮助处理一些文件权限的问题，
+  让使用者可以透过特殊终端接口 (console) 顺利的登陆系统。
+- `pam_loginuid.so`：系统账号与一般账号的 UID 是不同的！为了验证使用者的 UID
+  真的是我们所需要的数值，可以使用这个模块来进行规范！
+- `pam_env.so`：用来配置环境变量的一个模块，如果你有需要额外的环境变量配置，可以参考
+  `/etc/security/pam_env.conf` 这个文件的详细说明。
+- `pam_unix.so`：这个模块可以用在验证阶段的认证功能，可以用在授权阶段的账号许可证管理，
+  可以用在会议阶段的登录文件记录等，甚至也可以用在口令升级阶段的检验！
+- `pam_pwquality.so`：用于检验密码的强度。包括密码是否在字典中，
+  密码输入几次都失败就断掉此次连线等功能。此模块兼容早期使用的 `pam_cracklib.so` 模块，
+  同时提供了 `/etc/security/pwquality.conf` 这个配置文件提供额外默认值。
+- `pam_limits.so`：ulimit 使用的模块。更多详细配置可以参考
+  `/etc/security/limits.conf`。
+
+login 的 PAM 验证机制流程：
+
+1. 验证阶段 (auth)：
+    1. 先经过 `pam_securetty.so` 判断，如果使用者是 root，则会参考 `/etc/securetty`
+    的配置；
+    2. 经过 `pam_env.so` 配置额外的环境变量；
+    3. 通过 `pam_unix.so` 检验口令，若通过则回报 login 程序；
+    4. 若不通过则继续往下以 `pam_succeed_if.so` 判断 UID 是否大于 500 ，若小于 500
+      则返回失败；
+    5. 否则再往下以 `pam_deny.so` 拒绝联机。
+2. 授权阶段 (account)：
+    1. 先以 `pam_nologin.so` 判断 `/etc/nologin` 是否存在，
+      若存在则不许一般使用者登陆；
+    2. 接下来以 `pam_unix.so` 以及 `pam_localuser.so` 进行账号管理;
+    3. 再以 `pam_succeed_if.so` 判断 UID 是否小于 1000，若小于 1000 则不记录登录信息。
+    4. 最后以 `pam_permit.so` 允许该账号登陆。
+3. 口令阶段 (password)：
+    1. 先以 `pam_cracklib.so` 配置口令仅能尝试错误 3 次；
+    2. 接下来以 `pam_unix.so` 透过 sha512, shadow 等功能进行口令检验，若通过则返回
+      login 程序；
+    3. 若不通过则以 `pam_deny.so` 拒绝登陆。
+4. 会话阶段 (session)：
+    1. 先以 `pam_selinux.so` 暂时关闭 SELinux；
+    2. 使用 `pam_limits.so` 配置好用户能够操作的系统资源；
+    3. 登陆成功后开始记录相关信息在登录文件中；
+    4. 以 `pam_loginuid.so` 规范不同的 UID 权限；
+    5. 开启 `pam_selinux.so` 的功能。
+
+telnet 拒绝 root 登录的原因？
+
+答：telnet 基于 login 的 PAM 模块，telnet 的终端属于 pts/n，并没有写入到
+`/etc/securetty` 中。而 SSH 使用的是 /etc/pam.d/sshd` 模块，它的验证阶段没有使用
+pam_securetty。
+
+### 13.5.5 其他相关文件
+
+- `/etc/security/limits.conf`: ulimit 配置
+- `/var/log/secure`, `/var/log/messages`: 记录 PAM 模块的登录日志
+
+## 13.6 Linux 主机上的用户信息传递
+
+### 13.6.1 查询使用者: w, who, last, lastlog
+
+- `w`/`who`: 查看当前登录用户
+- `last`: 查看系统最近的用户登录记录
+- `lastlog`: 查看所有用户的最近登录记录
+
+### 13.6.2 用户对话: write, mesg, wall
+
+- `write USERNAME TERMIANL`: 发送信息给指定终端的用户
+- `mesg`: 设置是否接收其他用户的信息
+- `wall`: 发送广播消息
+
+### 13.6.3 使用邮箱: mail
+
+- `mail`: 发送邮件给用户
+  - `mail -s "TITLE" USERNAME < FILENAME`
+
+## 13.7 CentOS 7 环境下大量创建账号的办法
+
+### 13.7.1 一些账号相关的检查工具
+
+- `pwck`: 检查 `/etc/passwd` 信息是否正确，与 `/etc/shadow` 是否一致。
+- `grpck`: 检查 `/etc/group` 信息是否正确。
+- `pwconv`: 校验、修改 `/etc/passwd` 与 `/etc/shadow`。
+  - 比对  `/etc/passwd` 与 `/etc/shadow`，如果 passwd 中的账号没有对应的 shadow 密码，
+    pwconv 会去 `/etc/login.defs` 中获取相关密码数据，并创建其 shadow 数据。
+  - 将 passwd 中的密码转移到 shadow 中，passwd 中的密码会被修改为 `x`。
+- `pwunconv`: 将 `/etc/shadow` 中的密码转移回 `/etc/passwd`，且删除掉 `/etc/shadow`
+- `chpasswd`: 读入加密前的密码，并将加密后的密码写入 `/etc/shadow`。可用于大量创建账号。
+
+### 13.7.2 大量创建账号范例（使用 passwd --stdin 选项）
+
+```sh
+#!/bin/bash
+# This shell script will create amount of linux login accounts for you.
+# 1. check the "accountadd.txt" file exist? you must create that file manually.
+#    one account name one line in the "accountadd.txt" file.
+# 2. use openssl to create users password.
+# 3. User must change his password in his first login.
+# 4. more options check the following url:
+# http://linux.vbird.org/linux_basic/0410accountmanager.php#manual_amount
+# 2015/07/22    VBird
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+
+# 0. userinput
+usergroup=""     # if your account need secondary group, add here.
+pwmech="openssl" # "openssl" or "account" is needed.
+homeperm="no"    # if "yes" then I will modify home dir permission to 711
+
+# 1. check the accountadd.txt file
+action="${1}" # "create" is useradd and "delete" is userdel.
+if [ ! -f accountadd.txt ]; then
+    echo "There is no accountadd.txt file, stop here."
+    exit 1
+fi
+
+[ "${usergroup}" != "" ] && groupadd -r ${usergroup}
+rm -f outputpw.txt
+usernames=$(cat accountadd.txt)
+
+for username in ${usernames}; do
+    case ${action} in
+    "create")
+        [ "${usergroup}" != "" ] && usegrp=" -G ${usergroup} " || usegrp=""
+        useradd ${usegrp} ${username} # 新增帳號
+        [ "${pwmech}" == "openssl" ] && usepw=$(openssl rand -base64 6) || usepw=${username}
+        echo ${usepw} | passwd --stdin ${username} # 建立密碼
+        chage -d 0 ${username}                     # 強制登入修改密碼
+        [ "${homeperm}" == "yes" ] && chmod 711 /home/${username}
+        echo "username=${username}, password=${usepw}" >>outputpw.txt
+        ;;
+    "delete")
+        echo "deleting ${username}"
+        userdel -r ${username}
+        ;;
+    *)
+        echo "Usage: $0 [create|delete]"
+        ;;
+    esac
+done
+```
+
+## 13.8 重点回顾
+
+- UID
+  - 0: root
+  - 非0: 一般账号
+    - 系统用户 (1-900)
+    - 可登录用户 (1000+)
+- useradd 相关的配置文件
+  - `/etc/default/useradd`
+  - `/etc/login.defs`
+  - `/etc/skel/*`
+- 用户可自行修改信息的命令
+  - chsh
+  - chfn
+
+## 13.9 本章习题
+
+## 13.10 参考资料与延伸阅读

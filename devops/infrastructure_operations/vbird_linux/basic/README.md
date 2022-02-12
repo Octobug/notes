@@ -21,8 +21,8 @@
   - [x] [第十一章 正则表达式与文件格式化处理](11_regex_and_format)
   - [x] [第十二章 学习 Shell scripts](12_shell_scripts)
 - 第四部份：Linux 使用者管理
-  - [ ] [第十三章 Linux 账号管理与 ACL 权限控制](13_account_and_acl)
-  - [ ] 第十四章 磁盘配额（Quota）与进阶文件系统管理
+  - [x] [第十三章 Linux 账号管理与 ACL 权限控制](13_account_and_acl)
+  - [ ] [第十四章 磁盘配额（Quota）与进阶文件系统管理](14_disk_quota_and_fs_management)
   - [ ] 第十五章 例行性工作调度（crontab）
   - [ ] 第十六章 程序管理与 SELinux 初探
 - 第五部份：Linux 系统管理员
