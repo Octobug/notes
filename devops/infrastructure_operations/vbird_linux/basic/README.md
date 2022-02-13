@@ -23,8 +23,8 @@
 - 第四部份：Linux 使用者管理
   - [x] [第十三章 Linux 账号管理与 ACL 权限控制](13_account_and_acl)
   - [x] [第十四章 磁盘配额（Quota）与进阶文件系统管理](14_disk_quota_and_fs_management)
-  - [ ] [第十五章 例行性工作调度（crontab）](15_crontab)
-  - [ ] 第十六章 程序管理与 SELinux 初探
+  - [x] [第十五章 例行性工作调度（crontab）](15_crontab)
+  - [ ] [第十六章 程序管理与 SELinux 初探](16_process_and_selinux)
 - 第五部份：Linux 系统管理员
   - [ ] 第十七章 认识系统服务（daemon）
   - [ ] 第十八章 认识与分析登录文件
