@@ -32,5 +32,5 @@
   - [ ] 第二十章 网络设置与备份策略
   - [ ] 第二十一章 软件安装：源代码与 Tarball
   - [ ] 第二十二章 软件安装：RPM, SRPM 与 YUM 功能
-  - [ ] 第二十三章 X Window 设置介绍
+  - [ ] [第二十三章 X Window 设置介绍](23_x_window)
   - [x] [第二十四章 核心编译](24_kernel_compiling)
