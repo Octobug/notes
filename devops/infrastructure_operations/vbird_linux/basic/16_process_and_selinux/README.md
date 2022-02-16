@@ -22,6 +22,17 @@
   - [16.4 特殊文件与程序](#164-特殊文件与程序)
     - [16.4.1 具有 SUID/SGID 权限的命令执行状态](#1641-具有-suidsgid-权限的命令执行状态)
     - [16.4.2 /proc/* 代表的意义](#1642-proc-代表的意义)
+    - [16.4.3 查询已打开的文件](#1643-查询已打开的文件)
+  - [16.5 SELinux 初探](#165-selinux-初探)
+    - [16.5.1 什么是 SELinux](#1651-什么是-selinux)
+    - [16.5.2 SELinux 的运行模式](#1652-selinux-的运行模式)
+    - [16.5.3 SELinux 三种模式的启动、关闭与观察](#1653-selinux-三种模式的启动关闭与观察)
+    - [16.5.4 SELinux 政策内的规则管理](#1654-selinux-政策内的规则管理)
+    - [16.5.5 SELinux 安全性上下文的修改](#1655-selinux-安全性上下文的修改)
+    - [16.5.6 一个网络服务案例及登录文件协助](#1656-一个网络服务案例及登录文件协助)
+  - [16.6 重点回顾](#166-重点回顾)
+  - [16.7 本章习题](#167-本章习题)
+  - [16.8 参考资料与延伸阅读](#168-参考资料与延伸阅读)
 
 ## 16.1 什么是进程（process）
 
@@ -315,4 +326,134 @@ procs --------memory--------- ---swap-- -----io---- -system-- ------cpu-----
 
 ### 16.4.2 /proc/* 代表的意义
 
->>>>> progress
+`/proc` 文件系统由内核创建，存在于内存中。`/proc/{PID}` 为每个进程的目录。
+其中有两个值得注意的文件：
+
+- cmdline: 启动进程的命令
+- environ: 进程的环境变量
+
+系统相关信息：
+
+| 文件名              | 内容                               |
+| ------------------- | ---------------------------------- |
+| `/proc/cmdline`     | 加载 kernel 使用的命令与参数       |
+| `/proc/cpuinfo`     | 本机的 CPU 信息                    |
+| `/proc/devices`     | 系统设备名命名与代号信息           |
+| `/proc/filesystems` | 系统已加载的文件系统               |
+| `/proc/interrupts`  | 系统的 IRQ 分配状态                |
+| `/proc/ioports`     | 系统各个设备配置的 I/O 地址        |
+| `/proc/kcore`       | 系统可用内存 (64位系统最大有 128T) |
+| `/proc/loadavg`     | 系统负载信息 (uptime)              |
+| `/proc/meminfo`     | 内存信息 (free)                    |
+| `/proc/modules`     | 系统已加载的模块                   |
+| `/proc/mounts`      | 系统的挂载信息                     |
+| `/proc/swaps`       | 系统虚拟内存使用信息               |
+| `/proc/partitions`  | 系统分区信息 (fdisk -l)            |
+| `/proc/uptime`      | 已开机时间 (uptime)                |
+| `/proc/version`     | 内核版本 (uname -a)                |
+| `/proc/bus/*`       | 一些总线设备                       |
+
+### 16.4.3 查询已打开的文件
+
+- `fuser [-muv] [-k [i] [-signal]] FILE/DIR`: 找出使用指定文件的进程
+  - `-m`: 列出使用某个文件系统或块设备的所有进程
+  - `-u`: 列出进程用户
+  - `-v`: 列出更详细的信息
+  - `-k`: 列出使用指定文件/目录的 PID 并发送 SIGKILL 信号
+  - `-i`: 发送信号前询问用户
+  - `-signal`: 指定具体信号
+- `lsof [-aUu] [+d]`: 列出被进程打开的文件
+  - `-a`: 条件与
+  - `-U`: 列出 Unix domain socket
+  - `-u`: 列出特定用户打开的文件
+  - `+d`: 列出某个目录下已被打开的文件
+- `pidof [-sx] PROGRAM`: 按程序名查找 PID
+
+## 16.5 SELinux 初探
+
+### 16.5.1 什么是 SELinux
+
+SELinux: Security Enhanced Linux
+
+- 最开始的设计目标：避免资源误用。
+- 传统的文件权限与账号关系：DAC (Discretionary Access Control)，自主访问控制，
+  即 ugo + rwx 的访问控制。
+- 以规则限制特定程序访问特定文件：MAC (Mandatory Access Control)，强制访问控制。
+  管控主体为“程序”而不是“用户”。
+
+**DAC 与 MAC 对比**：
+
+![DAC/MAC](images/16_5_1_dac_mac.jpg)
+
+### 16.5.2 SELinux 的运行模式
+
+SELinux 采用 MAC 模式。
+
+- Subject: 主体，SELinux 管控的主体是程序
+- Object: 目标，主体能否访问目标资源（文件系统）
+- Policy: 政策，政策内会细化为规则（Rule）来限制不同服务对不同资源的访问。
+  CentOS 提供的主要三种政策：
+  - targeted: 主要针对网络服务限制，对本地限制较少，是默认政策；
+  - minimum: 仅保护少数选择的程序；
+  - mls: 完整的 SELinux 限制，较为严格。
+- Security Context: 安全上下文，主体访问资源除了满足政策，还要满足上下文。
+  - Identify: 身份识别
+    - unconfined_u: 不受限的用户，该文件来是不受限的程序产生的
+    - system_u: 系统用户，该文件是系统产生的
+  - Role: 角色
+    - object_r: 代表文件或目录等文件资源
+    - system_r: 代表程序
+  - Type: 类型
+    - 在 Subject 上称为域 (domain)
+    - 在 Object 上称为类型 (type)
+
+观察程序的 SELinux 信息：`ps -eZ`，targeted 政策下的身份角色意义：
+
+| 身份识别     | 角色         | 在 targeted 中的意义             |
+| ------------ | ------------ | -------------------------------- |
+| unconfined_u | unconfined_r | 一般登录用户的程序，限制较为宽松 |
+| system_u     | system_r     | 系统账号                         |
+
+### 16.5.3 SELinux 三种模式的启动、关闭与观察
+
+- enforcing: 强制模式，代表 SELinux 运行中，且已经开始限制 domain/type
+- permissive: 宽容模式，代表 SELinux 运行中，但只会有相应的警告
+- disabled: 关闭，SELinux 没有实际运行
+
+相关命令：
+
+- `getenforce`: 获取目前的 SELinux 状态
+- `sestatus`: 获取 SELinux  政策
+  - `/etc/sestatus.conf`: Security Context 配置
+  - `/etc/selinux/config`: SELinux 配置
+- SELinux 的启动与关闭（需要 reboot 生效）
+- enforcing 与 permissive 切换（不需要 reboot）
+  - setenforce 0: permissive
+  - setenforce 1: enforcing
+
+### 16.5.4 SELinux 政策内的规则管理
+
+- SELinux 各个规则的布尔值查询 `getsebool`
+- SELinux 各个规则的主体程序能够读取的文件 SELinux type 查询 seinfo, sesearch
+- 修改 SELinux 规则的布尔值 setsebool
+
+### 16.5.5 SELinux 安全性上下文的修改
+
+- 使用 chcon 手动修改文件的 SELinux type
+- 使用 restorecon 让文件恢复正确的 SELinux type
+- semanage 默认目录的安全性上下文查询与修改
+
+### 16.5.6 一个网络服务案例及登录文件协助
+
+- setrobleshoot --> 错误讯息写入 /var/log/messages
+- 实例说明：通过 vsftpd 这个 FTP 服务器来存取系统上的文件
+- 匿名者无法下载
+- 无法从主文件夹下载文件的问题分析与解决
+- 一般用户从非正规目录上传/下载文件
+- 无法变更 FTP 服务端口问题分析与解决
+
+## 16.6 重点回顾
+
+## 16.7 本章习题
+
+## 16.8 参考资料与延伸阅读
