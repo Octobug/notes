@@ -26,8 +26,8 @@
   - [x] [第十五章 例行性工作调度（crontab）](15_crontab)
   - [x] [第十六章 进程管理与 SELinux 初探](16_process_and_selinux)
 - 第五部份：Linux 系统管理员
-  - [ ] [第十七章 认识系统服务（daemon）](17_system_daemon)
-  - [ ] 第十八章 认识与分析登录文件
+  - [x] [第十七章 认识系统服务（daemon）](17_system_daemon)
+  - [ ] [第十八章 认识与分析日志文件](18_log_file)
   - [ ] 第十九章 开机流程、模块管理与 loader
   - [x] [第二十章 网络设置与备份策略](20_network_and_backup)
   - [x] [第二十一章 软件安装：源代码与 Tarball](21_pkg_source_code_and_tarball)
