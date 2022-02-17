@@ -29,7 +29,7 @@
   - [ ] [第十七章 认识系统服务（daemon）](17_system_daemon)
   - [ ] 第十八章 认识与分析登录文件
   - [ ] 第十九章 开机流程、模块管理与 loader
-  - [ ] 第二十章 网络设置与备份策略
+  - [x] [第二十章 网络设置与备份策略](20_network_and_backup)
   - [x] [第二十一章 软件安装：源代码与 Tarball](21_pkg_source_code_and_tarball)
   - [x] [第二十二章 软件安装：RPM, SRPM 与 YUM 功能](22_pkg_rpm_srpm_and_yum)
   - [x] [第二十三章 X Window 设置介绍](23_x_window)
