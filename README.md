@@ -21,6 +21,8 @@ disciplines according to the
 
 1. [Economics](https://en.wikipedia.org/wiki/Economics)
     1. Microeconomics
+2. [Political Science](https://en.wikipedia.org/wiki/Political_science)
+    1. Political Philosophy
 
 ### Ⅲ. [Natural Science](https://en.wikipedia.org/wiki/Natural_science)
 
