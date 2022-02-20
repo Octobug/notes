@@ -11,7 +11,7 @@ disciplines according to the
 1. [Languages](https://en.wikipedia.org/wiki/Language)
     and [Literature](https://en.wikipedia.org/wiki/Literature)
     1. [Linguistics](linguistics)
-        1. Applied Linguistics
+        1. [Applied Linguistics](linguistics/applied_linguistics)
 2. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
     1. [Music](music)
         1. Music Theory
