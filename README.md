@@ -44,8 +44,8 @@ disciplines according to the
         2. Internet Protocol Suite
         3. [Network Programming](computer_network/network_programming)
     4. [Databases](databases)
-        1. MySQL
-        2. PostgreSQL
+        1. [Database Design](databases/database_design/)
+        2. Relational Database
     5. [DevOps](devops)
         1. [Ansible](devops/ansible)
         2. [CI/CD/CD](devops/ci_cd_cd)
