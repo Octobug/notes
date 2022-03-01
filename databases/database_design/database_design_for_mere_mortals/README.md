@@ -12,4 +12,6 @@ by Michael J. Hernandez (2020)
 
 - [x] [Introduction](00_introduction)
 - Part I: Relational Database Design
-  - [ ] [1 The Relational Database](01_the_relational_database)
+  - [x] [1 The Relational Database](01_the_relational_database)
+  - [x] [2 Design Objectives](02_design_objectives)
+  - [ ] [3 Terminology](03_terminology)
