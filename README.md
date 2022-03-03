@@ -44,8 +44,9 @@ disciplines according to the
         2. Internet Protocol Suite
         3. [Network Programming](computer_network/network_programming)
     4. [Databases](databases)
-        1. [Database Design](databases/database_design/)
-        2. Relational Database
+        1. [Database Design](databases/database_design)
+        2. [NoSQL](databases/nosql)
+        3. Relational Database
     5. [DevOps](devops)
         1. [Ansible](devops/ansible)
         2. [CI/CD/CD](devops/ci_cd_cd)
@@ -75,11 +76,13 @@ disciplines according to the
         3. [Software Testing](software_engineering/software_testing)
     10. Theory of Computation
     11. [Miscellaneous](cs_miscellaneous)
-        1. macOS
-        2. [Markdown](cs_miscellaneous/markdown)
-        3. TeXs
-        4. Unix-like
-        5. Virtual Machines
+        1. Data Management
+        2. macOS
+        3. [Markdown](cs_miscellaneous/markdown)
+        4. TeXs
+        5. Unix-like
+        6. Virtual Machines
+        7. Windows
 
 ### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)
 
