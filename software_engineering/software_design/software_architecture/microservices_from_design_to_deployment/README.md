@@ -1,6 +1,8 @@
 # Microservices, From Design to Deployment
 
-> NGINX: <https://www.nginx.com/resources/library/designing-deploying-microservices/>
+by Chris Richardson, Floyd Smith (2016)
+
+> <https://www.nginx.com/resources/library/designing-deploying-microservices/>
 
 ## Table of Contents
 

@@ -1,8 +1,17 @@
 # 1 Introduction to Microservices
 
+- [1 Introduction to Microservices](#1-introduction-to-microservices)
+  - [Building Monolithic Applications](#building-monolithic-applications)
+  - [Marching Toward Monolithic Hell](#marching-toward-monolithic-hell)
+  - [Microservices - Tackling the Complexity](#microservices---tackling-the-complexity)
+    - [API Gateway](#api-gateway)
+    - [Scalability](#scalability)
+  - [The Benefits of Microservices](#the-benefits-of-microservices)
+  - [The Drawbacks of Microservices](#the-drawbacks-of-microservices)
+
 ## Building Monolithic Applications
 
-*A sample taxi-hailing application*.
+*Figure 1-1. A sample taxi-hailing application*.
 
 ![A sample taxi-hailing application](images/1_1_taxi_hailing_monolithic.png)
 
@@ -17,17 +26,21 @@ deployed as a monolith.
 ## Marching Toward Monolithic Hell
 
 - application becomes large, complex
-- hard to fully understand
-- slows down development
-- long start-up times, low performance
+  - hard to fully understand
+  - slows down development
+  - long start-up times, low performance
 - hinder continuous deployment
-- difficult to push changes into production many times a day
-- have to do extensive manual testing
+  - difficult to push changes into production many times a day
+  - have to do extensive manual testing
 - difficult to scale
+  - cannot choose different hardwares for defferent jobs respectively
 - low reliability
+  - one bug might influence the entire process
 - difficult to adopt new frameworks and languages
 
 ## Microservices - Tackling the Complexity
+
+>>>>> progress
 
 *A monolithic application decomposed into microservices*.
 
