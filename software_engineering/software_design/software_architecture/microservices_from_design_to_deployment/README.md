@@ -7,7 +7,7 @@ by Chris Richardson, Floyd Smith (2016)
 ## Table of Contents
 
 - [x] [1 Introduction to Microservices](1_introduction_to_microservices)
-- [x] [2 Using an API Gateway](2_using_an_api_gateway)
+- [ ] [2 Using an API Gateway](2_using_an_api_gateway)
 - [ ] 3 Inter-Process Communication
 - [ ] 4 Service Discovery
 - [ ] 5 Event-Driven Data Management for Microservices

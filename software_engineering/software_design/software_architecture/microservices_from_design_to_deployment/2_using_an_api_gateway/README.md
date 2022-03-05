@@ -1,5 +1,12 @@
 # 2 Using an API Gateway
 
+- [2 Using an API Gateway](#2-using-an-api-gateway)
+  - [Introduction](#introduction)
+    - [A sample shopping application](#a-sample-shopping-application)
+  - [Direct Client-to-Microservice Communication](#direct-client-to-microservice-communication)
+  - [Using an API Gateway](#using-an-api-gateway)
+  - [Benefits and Drawbacks of an API Gateway](#benefits-and-drawbacks-of-an-api-gateway)
+
 It's a question about how your application's clients interact with the
 microservices.
 
@@ -42,9 +49,15 @@ details page may be owned by multiple microservices:
   from the shipping provider's API
 - Recommendation Service(s) - Suggested items
 
+*Figure 2-2. Mapping a mobile client’s needs to relevant microservices*.
+
+![Mapping a mobile client’s needs to relevant microservices](images/2_2_mapping.png)
+
 So, how the mobile client accesses these services?
 
-### Direct Client-to-Microservice Communication
+## Direct Client-to-Microservice Communication
+
+>>>>> progress
 
 In theory, a client could make requests to each of the microservices directly.
 Each microservice would have a public endpoint:
@@ -61,7 +74,7 @@ Challenges and limitations:
 - It makes refactoring the microservices harder
 - It makes authentication harder
 
-### Using an API Gateway
+## Using an API Gateway
 
 An API Gateway is a server that is the single entry point into the system.
 
@@ -74,11 +87,11 @@ handling.
 
 *Using an API Gateway with microservices*.
 
-![Using an API Gateway with microservices](images/2_3_api_gatway.png)
+![Using an API Gateway with microservices](images/2_3_api_gateway.png)
 
 All requests from clients first go through the API Gateway. It then routes
 requests to the appropriate microservices. And handles the request by invoking
 the various services - product information, reviews, etc. - and combining the
 results.
 
-### Benefits and Drawbacks of an API Gateway
+## Benefits and Drawbacks of an API Gateway
