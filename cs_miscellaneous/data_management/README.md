@@ -11,17 +11,17 @@ Data rebuilding takes too much time.
 
 ## Mobile Disks
 
-- left
-  - movie
-  - tv
-- 2020.02.01 (2TB, HDD, WD)
+- 2022.03.04 (2TB, HDD, WD)
   - book
   - career
   - education
   - life
   - live
+  - movie
   - music
   - photo
+- 2020.02.01 (2TB, HDD, WD)
+  - tv
 - 2019.11.24 (480GB, SSD, Toshiba)
   - career
   - education
