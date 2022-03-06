@@ -58,14 +58,8 @@ disciplines according to the
         1. [Operating Systems](operating_system/operating_systems)
         2. Systems Programming
     7. [Programming Languages](programming_languages)
-        1. [C](programming_languages/c)
-        2. Compiler
-        3. C++
-        4. Go
-        5. [JavaScript](programming_languages/javascript)
-        6. [Python](programming_languages/python)
-        7. Ruby
-        8. Rust
+        1. Compiler
+        2. [Programming Languages](programming_languages/programming_languages)
     8. [Software Development](software_development)
         1. [Git](software_development/git)
         2. Open Source
