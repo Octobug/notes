@@ -60,6 +60,7 @@ disciplines according to the
     7. [Programming Languages](programming_languages)
         1. Compiler
         2. [Programming Languages](programming_languages/programming_languages)
+        3. [Programming Paradigms](programming_languages/programming_paradigms)
     8. [Software Development](software_development)
         1. [Git](software_development/git)
         2. Open Source
