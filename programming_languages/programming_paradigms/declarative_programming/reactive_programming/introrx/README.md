@@ -419,20 +419,28 @@ responseStream.subscribe(function(response) {
 
 ## The refresh button
 
->>>>> prorgess
+I did not yet mention that the JSON in the response is a list with 100 users.
+The API only allows us to specify the page offset, and not the page size, so
+we're using just 3 data objects and wasting 97 others. We can ignore that
+problem for now, since later on we will see how to cache the responses.
 
-I did not yet mention that the JSON in the response is a list with 100 users. The API only allows us to specify the page offset, and not the page size, so we're using just 3 data objects and wasting 97 others. We can ignore that problem for now, since later on we will see how to cache the responses.
+Everytime the refresh button is clicked, the request stream should emit a new
+URL, so that we can get a new response. We need two things: a stream of click
+events on the refresh button (mantra: anything can be a stream), and we need to
+change the request stream to depend on the refresh click stream. Gladly, RxJS
+comes with tools to make Observables from event listeners.
 
-Everytime the refresh button is clicked, the request stream should emit a new URL, so that we can get a new response. We need two things: a stream of click events on the refresh button (mantra: anything can be a stream), and we need to change the request stream to depend on the refresh click stream. Gladly, RxJS comes with tools to make Observables from event listeners.
-
-```javascript
+```js
 var refreshButton = document.querySelector('.refresh');
 var refreshClickStream = Rx.Observable.fromEvent(refreshButton, 'click');
 ```
 
-Since the refresh click event doesn't itself carry any API URL, we need to map each click to an actual URL. Now we change the request stream to be the refresh click stream mapped to the API endpoint with a random offset parameter each time.
+Since the refresh click event doesn't itself carry any API URL, we need to map
+each click to an actual URL. Now we change the request stream to be the refresh
+click stream mapped to the API endpoint with a random offset parameter each
+time.
 
-```javascript
+```js
 var requestStream = refreshClickStream
   .map(function() {
     var randomOffset = Math.floor(Math.random()*500);
@@ -440,11 +448,14 @@ var requestStream = refreshClickStream
   });
 ```
 
-Because I'm dumb and I don't have automated tests, I just broke one of our previously built features. A request doesn't happen anymore on startup, it happens only when the refresh is clicked. Urgh. I need both behaviors: a request when _either_ a refresh is clicked _or_ the webpage was just opened.
+Because I'm dumb and I don't have automated tests, I just broke one of our
+previously built features. A request doesn't happen anymore on startup, it
+happens only when the refresh is clicked. Urgh. I need both behaviors: a
+request when *either* a refresh is clicked *or* the webpage was just opened.
 
 We know how to make a separate stream for each one of those cases:
 
-```javascript
+```js
 var requestOnRefreshStream = refreshClickStream
   .map(function() {
     var randomOffset = Math.floor(Math.random()*500);
@@ -454,9 +465,10 @@ var requestOnRefreshStream = refreshClickStream
 var startupRequestStream = Rx.Observable.just('https://api.github.com/users');
 ```
 
-But how can we "merge" these two into one? Well, there's [`merge()`](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/observable.md#rxobservableprototypemergemaxconcurrent--other). Explained in the diagram dialect, this is what it does:
+But how can we "merge" these two into one? Well, there's [`merge()`](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/observable.md#rxobservableprototypemergemaxconcurrent--other).
+Explained in the diagram dialect, this is what it does:
 
-```
+```diagram
 stream A: ---a--------e-----o----->
 stream B: -----B---C-----D-------->
           vvvvvvvvv merge vvvvvvvvv
@@ -465,7 +477,7 @@ stream B: -----B---C-----D-------->
 
 It should be easy now:
 
-```javascript
+```js
 var requestOnRefreshStream = refreshClickStream
   .map(function() {
     var randomOffset = Math.floor(Math.random()*500);
@@ -479,9 +491,10 @@ var requestStream = Rx.Observable.merge(
 );
 ```
 
-There is an alternative and cleaner way of writing that, without the intermediate streams.
+There is an alternative and cleaner way of writing that, without the
+intermediate streams.
 
-```javascript
+```js
 var requestStream = refreshClickStream
   .map(function() {
     var randomOffset = Math.floor(Math.random()*500);
@@ -491,7 +504,8 @@ var requestStream = refreshClickStream
 ```
 
 Even shorter, even more readable:
-```javascript
+
+```js
 var requestStream = refreshClickStream
   .map(function() {
     var randomOffset = Math.floor(Math.random()*500);
@@ -500,9 +514,15 @@ var requestStream = refreshClickStream
   .startWith('https://api.github.com/users');
 ```
 
-The [`startWith()`](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/observable.md#rxobservableprototypestartwithscheduler-args) function does exactly what you think it does. No matter how your input stream looks like, the output stream resulting of `startWith(x)` will have `x` at the beginning. But I'm not [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself) enough, I'm repeating the API endpoint string. One way to fix this is by moving the `startWith()` close to the `refreshClickStream`, to essentially "emulate" a refresh click on startup.  
+The [`startWith()`](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/observable.md#rxobservableprototypestartwithscheduler-args)
+function does exactly what you think it does. No matter how your input stream
+looks like, the output stream resulting of `startWith(x)` will have `x` at the
+beginning. But I'm not [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself)
+enough, I'm repeating the API endpoint string. One way to fix this is by moving
+the `startWith()` close to the `refreshClickStream`, to essentially "emulate" a
+refresh click on startup.
 
-```javascript
+```js
 var requestStream = refreshClickStream.startWith('startup click')
   .map(function() {
     var randomOffset = Math.floor(Math.random()*500);
@@ -510,30 +530,38 @@ var requestStream = refreshClickStream.startWith('startup click')
   });
 ```
 
-Nice. If you go back to the point where I "broke the automated tests", you should see that the only difference with this last approach is that I added the `startWith()`.
+Nice. If you go back to the point where I "broke the automated tests", you
+should see that the only difference with this last approach is that I added the
+`startWith()`.
 
 ## Modelling the 3 suggestions with streams
 
-Until now, we have only touched a _suggestion_ UI element on the rendering step that happens in the responseStream's `subscribe()`. Now with the refresh button, we have a problem: as soon as you click 'refresh', the current 3 suggestions are not cleared. New suggestions come in only after a response has arrived, but to make the UI look nice, we need to clean out the current suggestions when clicks happen on the refresh.
+Until now, we have only touched a *suggestion* UI element on the rendering step
+that happens in the responseStream's `subscribe()`. Now with the refresh
+button, we have a problem: as soon as you click 'refresh', the current 3
+suggestions are not cleared. New suggestions come in only after a response has
+arrived, but to make the UI look nice, we need to clean out the current
+suggestions when clicks happen on the refresh.
 
-```javascript
+```js
 refreshClickStream.subscribe(function() {
   // clear the 3 suggestion DOM elements 
 });
 ```
 
-No, not so fast, pal. This is bad, because we now have **two** subscribers that affect the suggestion DOM elements (the other one being `responseStream.subscribe()`), and that doesn't really sound like [Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns). Remember the Reactive mantra? 
+No, not so fast, pal. This is bad, because we now have **two** subscribers that
+affect the suggestion DOM elements (the other one being
+`responseStream.subscribe()`), and that doesn't really sound like
+[Separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns).
+Remember the Reactive mantra?
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+![Mantra](images/mantra.jpg)
 
-![Mantra](http://i.imgur.com/AIimQ8C.jpg)
+So let's model a suggestion as a stream, where each emitted value is the JSON
+object containing the suggestion data. We will do this separately for each of
+the 3 suggestions. This is how the stream for suggestion #1 could look like:
 
-So let's model a suggestion as a stream, where each emitted value is the JSON object containing the suggestion data. We will do this separately for each of the 3 suggestions. This is how the stream for suggestion #1 could look like:
-
-```javascript
+```js
 var suggestion1Stream = responseStream
   .map(function(listUsers) {
     // get one random user from the list
@@ -541,19 +569,25 @@ var suggestion1Stream = responseStream
   });
 ```
 
-The others, `suggestion2Stream` and `suggestion3Stream` can be simply copy pasted from `suggestion1Stream`. This is not DRY, but it will keep our example simple for this tutorial, plus I think it's a good exercise to think how to avoid repetition in this case.
+The others, `suggestion2Stream` and `suggestion3Stream` can be simply copy
+pasted from `suggestion1Stream`. This is not DRY, but it will keep our example
+simple for this tutorial, plus I think it's a good exercise to think how to
+avoid repetition in this case.
 
-Instead of having the rendering happen in responseStream's subscribe(), we do that here:
+Instead of having the rendering happen in responseStream's subscribe(), we do
+that here:
 
-```javascript
+```js
 suggestion1Stream.subscribe(function(suggestion) {
   // render the 1st suggestion to the DOM
 });
 ```
 
-Back to the "on refresh, clear the suggestions", we can simply map refresh clicks to `null` suggestion data, and include that in the `suggestion1Stream`, as such:
+Back to the "on refresh, clear the suggestions", we can simply map refresh
+clicks to `null` suggestion data, and include that in the `suggestion1Stream`,
+as such:
 
-```javascript
+```js
 var suggestion1Stream = responseStream
   .map(function(listUsers) {
     // get one random user from the list
@@ -564,9 +598,10 @@ var suggestion1Stream = responseStream
   );
 ```
 
-And when rendering, we interpret `null` as "no data", hence hiding its UI element.
+And when rendering, we interpret `null` as "no data", hence hiding its UI
+element.
 
-```javascript
+```js
 suggestion1Stream.subscribe(function(suggestion) {
   if (suggestion === null) {
     // hide the first suggestion DOM element
@@ -580,7 +615,7 @@ suggestion1Stream.subscribe(function(suggestion) {
 
 The big picture is now:
 
-```
+```diagram
 refreshClickStream: ----------o--------o---->
      requestStream: -r--------r--------r---->
     responseStream: ----R---------R------R-->   
@@ -591,9 +626,10 @@ refreshClickStream: ----------o--------o---->
 
 Where `N` stands for `null`.
 
-As a bonus, we can also render "empty" suggestions on startup. That is done by adding `startWith(null)` to the suggestion streams:
+As a bonus, we can also render "empty" suggestions on startup. That is done by
+adding `startWith(null)` to the suggestion streams:
 
-```javascript
+```js
 var suggestion1Stream = responseStream
   .map(function(listUsers) {
     // get one random user from the list
@@ -607,7 +643,7 @@ var suggestion1Stream = responseStream
 
 Which results in:
 
-```
+```diagram
 refreshClickStream: ----------o---------o---->
      requestStream: -r--------r---------r---->
     responseStream: ----R----------R------R-->   
@@ -618,9 +654,12 @@ refreshClickStream: ----------o---------o---->
 
 ## Closing a suggestion and using cached responses
 
-There is one feature remaining to implement. Each suggestion should have its own 'x' button for closing it, and loading another in its place. At first thought, you could say it's enough to make a new request when any close button is clicked:
+There is one feature remaining to implement. Each suggestion should have its
+own 'x' button for closing it, and loading another in its place. At first
+thought, you could say it's enough to make a new request when any close button
+is clicked:
 
-```javascript
+```js
 var close1Button = document.querySelector('.close1');
 var close1ClickStream = Rx.Observable.fromEvent(close1Button, 'click');
 // and the same for close2Button and close3Button
@@ -633,20 +672,31 @@ var requestStream = refreshClickStream.startWith('startup click')
   });
 ```
 
-That does not work. It will close and reload _all_ suggestions, rather than just only the one we clicked on. There are a couple of different ways of solving this, and to keep it interesting, we will solve it by reusing previous responses. The API's response page size is 100 users while we were using just 3 of those, so there is plenty of fresh data available. No need to request more.
+That does not work. It will close and reload *all* suggestions, rather than
+just only the one we clicked on. There are a couple of different ways of
+solving this, and to keep it interesting, we will solve it by reusing previous
+responses. The API's response page size is 100 users while we were using just 3
+of those, so there is plenty of fresh data available. No need to request more.
 
-Again, let's think in streams. When a 'close1' click event happens, we want to use the _most recently emitted_ response on `responseStream` to get one random user from the list in the response. As such:
+Again, let's think in streams. When a 'close1' click event happens, we want to
+use the *most recently emitted* response on `responseStream` to get one random
+user from the list in the response. As such:
 
-```
+```diagram
     requestStream: --r--------------->
    responseStream: ------R----------->
 close1ClickStream: ------------c----->
 suggestion1Stream: ------s-----s----->
 ```
 
-In Rx* there is a combinator function called [`combineLatest`](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/observable.md#rxobservableprototypecombinelatestargs-resultselector) that seems to do what we need. It takes two streams A and B as inputs, and whenever either stream emits a value, `combineLatest` joins the two most recently emitted values `a` and `b` from both streams and outputs a value `c = f(x,y)`, where `f` is a function you define. It is better explained with a diagram:
+In `Rx*` there is a combinator function called [`combineLatest`](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/observable.md#rxobservableprototypecombinelatestargs-resultselector)
+that seems to do what we need. It takes two streams A and B as inputs, and
+whenever either stream emits a value, `combineLatest` joins the two most
+recently emitted values `a` and `b` from both streams and outputs a value
+`c = f(x,y)`, where `f` is a function you define. It is better explained with a
+diagram:
 
-```
+```diagram
 stream A: --a-----------e--------i-------->
 stream B: -----b----c--------d-------q---->
           vvvvvvvv combineLatest(f) vvvvvvv
@@ -655,9 +705,15 @@ stream B: -----b----c--------d-------q---->
 where f is the uppercase function
 ```
 
-We can apply combineLatest() on `close1ClickStream` and `responseStream`, so that whenever the close 1 button is clicked, we get the latest response emitted and produce a new value on `suggestion1Stream`. On the other hand, combineLatest() is symmetric: whenever a new response is emitted on `responseStream`, it will combine with the latest 'close 1' click to produce a new suggestion. That is interesting, because it allows us to simplify our previous code for `suggestion1Stream`, like this:
+We can apply combineLatest() on `close1ClickStream` and `responseStream`, so
+that whenever the close 1 button is clicked, we get the latest response emitted
+and produce a new value on `suggestion1Stream`. On the other hand,
+combineLatest() is symmetric: whenever a new response is emitted on
+`responseStream`, it will combine with the latest 'close 1' click to produce a
+new suggestion. That is interesting, because it allows us to simplify our
+previous code for `suggestion1Stream`, like this:
 
-```javascript
+```js
 var suggestion1Stream = close1ClickStream
   .combineLatest(responseStream,             
     function(click, listUsers) {
@@ -670,14 +726,21 @@ var suggestion1Stream = close1ClickStream
   .startWith(null);
 ```
 
-One piece is still missing in the puzzle. The combineLatest() uses the most recent of the two sources, but if one of those sources hasn't emitted anything yet, combineLatest() cannot produce a data event on the output stream. If you look at the ASCII diagram above, you will see that the output has nothing when the first stream emitted value `a`. Only when the second stream emitted value `b` could it produce an output value.
+One piece is still missing in the puzzle. The combineLatest() uses the most
+recent of the two sources, but if one of those sources hasn't emitted anything
+yet, combineLatest() cannot produce a data event on the output stream. If you
+look at the ASCII diagram above, you will see that the output has nothing when
+the first stream emitted value `a`. Only when the second stream emitted value
+`b` could it produce an output value.
 
-There are different ways of solving this, and we will stay with the simplest one, which is simulating a click to the 'close 1' button on startup:
+There are different ways of solving this, and we will stay with the simplest
+one, which is simulating a click to the 'close 1' button on startup:
 
-```javascript
-var suggestion1Stream = close1ClickStream.startWith('startup click') // we added this
+```js
+var suggestion1Stream = close1ClickStream.startWith('startup click')
+  // we added this
   .combineLatest(responseStream,             
-    function(click, listUsers) {l
+    function(click, listUsers) {
       return listUsers[Math.floor(Math.random()*listUsers.length)];
     }
   )
@@ -691,7 +754,7 @@ var suggestion1Stream = close1ClickStream.startWith('startup click') // we added
 
 And we're done. The complete code for all this was:
 
-```javascript
+```js
 var refreshButton = document.querySelector('.refresh');
 var refreshClickStream = Rx.Observable.fromEvent(refreshButton, 'click');
 
@@ -733,26 +796,72 @@ suggestion1Stream.subscribe(function(suggestion) {
 });
 ```
 
-**You can see this working example at http://jsfiddle.net/staltz/8jFJH/48/**
+**You can see this working example at** <http://jsfiddle.net/staltz/8jFJH/48/>
 
-That piece of code is small but dense: it features management of multiple events with proper separation of concerns, and even caching of responses. The functional style made the code look more declarative than imperative: we are not giving a sequence of instructions to execute, we are just **telling what something is** by defining relationships between streams. For instance, with Rx we told the computer that _`suggestion1Stream` **is** the 'close 1' stream combined with one user from the latest response, besides being `null` when a refresh happens or program startup happened_.
+That piece of code is small but dense: it features management of multiple
+events with proper separation of concerns, and even caching of responses. The
+functional style made the code look more declarative than imperative: we are
+not giving a sequence of instructions to execute, we are just **telling what
+something is** by defining relationships between streams. For instance, with Rx
+we told the computer that *`suggestion1Stream` **is** the 'close 1' stream
+combined with one user from the latest response, besides being `null` when a
+refresh happens or program startup happened*.
 
-Notice also the impressive absence of control flow elements such as `if`, `for`, `while`, and the typical callback-based control flow that you expect from a JavaScript application. You can even get rid of the `if` and `else` in the `subscribe()` above by using `filter()` if you want (I'll leave the implementation details to you as an exercise). In Rx, we have stream functions such as `map`, `filter`, `scan`, `merge`, `combineLatest`, `startWith`, and many more to control the flow of an event-driven program. This toolset of functions gives you more power in less code.
+Notice also the impressive absence of control flow elements such as `if`,
+`for`, `while`, and the typical callback-based control flow that you expect
+from a JavaScript application. You can even get rid of the `if` and `else` in
+the `subscribe()` above by using `filter()` if you want (I'll leave the
+implementation details to you as an exercise). In Rx, we have stream functions
+such as `map`, `filter`, `scan`, `merge`, `combineLatest`, `startWith`, and
+many more to control the flow of an event-driven program. This toolset of
+functions gives you more power in less code.
 
 ## What comes next
 
-If you think Rx* will be your preferred library for Reactive Programming, take a while to get acquainted with the [big list of functions](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/observable.md) for transforming, combining, and creating Observables. If you want to understand those functions in diagrams of streams, take a look at [RxJava's very useful documentation with marble diagrams](https://github.com/Netflix/RxJava/wiki/Creating-Observables). Whenever you get stuck trying to do something, draw those diagrams, think on them, look at the long list of functions, and think more. This workflow has been effective in my experience.
+If you think `Rx*` will be your preferred library for Reactive Programming,
+take a while to get acquainted with the [big list of functions](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/observable.md)
+for transforming, combining, and creating Observables. If you want to
+understand those functions in diagrams of streams, take a look at
+[RxJava's very useful documentation with marble diagrams](https://github.com/Netflix/RxJava/wiki/Creating-Observables).
+Whenever you get stuck trying to do something, draw those diagrams, think on
+them, look at the long list of functions, and think more. This workflow has
+been effective in my experience.
 
-Once you start getting the hang of programming with Rx*, it is absolutely required to understand the concept of [Cold vs Hot Observables](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/creating.md#cold-vs-hot-observables). If you ignore this, it will come back and bite you brutally. You have been warned. Sharpen your skills further by learning real functional programming, and getting acquainted with issues such as side effects that affect Rx*.
+Once you start getting the hang of programming with `Rx*`, it is absolutely
+required to understand the concept of [Cold vs Hot Observables](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/creating.md#cold-vs-hot-observables).
+If you ignore this, it will come back and bite you brutally. You have been
+warned. Sharpen your skills further by learning real functional programming,
+and getting acquainted with issues such as side effects that affect `Rx*`.
 
-But Reactive Programming is not just Rx*. There is [Bacon.js](http://baconjs.github.io/) which is intuitive to work with, without the quirks you sometimes encounter in Rx*. The [Elm Language](http://elm-lang.org/) lives in its own category: it's a Functional Reactive Programming **language** that compiles to JavaScript + HTML + CSS, and features a [time travelling debugger](http://debug.elm-lang.org/). Pretty awesome.
+But Reactive Programming is not just `Rx*`. There is [Bacon.js](http://baconjs.github.io/)
+which is intuitive to work with, without the quirks you sometimes encounter in
+`Rx*`. The [Elm Language](http://elm-lang.org/) lives in its own category: it's
+a Functional Reactive Programming **language** that compiles to JavaScript +
+HTML + CSS, and features a [time travelling debugger](http://debug.elm-lang.org/).
+Pretty awesome.
 
-Rx works great for event-heavy frontends and apps. But it is not just a client-side thing, it works great also in the backend and close to databases. In fact, [RxJava is a key component for enabling server-side concurrency in Netflix's API](http://techblog.netflix.com/2013/02/rxjava-netflix-api.html). Rx is not a framework restricted to one specific type of application or language. It really is a paradigm that you can use when programming any event-driven software.
+Rx works great for event-heavy frontends and apps. But it is not just a
+client-side thing, it works great also in the backend and close to databases.
+In fact, [RxJava is a key component for enabling server-side concurrency in
+Netflix's API](http://techblog.netflix.com/2013/02/rxjava-netflix-api.html).
+Rx is not a framework restricted to one specific type of application or
+language. It really is a paradigm that you can use when programming any
+event-driven software.
 
 If this tutorial helped you, [tweet it forward](https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fgist.github.com%2Fstaltz%2F868e7e9bc2a7b8c1f754%2F&amp;text=The%20introduction%20to%20Reactive%20Programming%20you%27ve%20been%20missing&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fgist.github.com%2Fstaltz%2F868e7e9bc2a7b8c1f754&amp;via=andrestaltz).
 
 ## Legal
 
-© Andre Medeiros (alias "Andre Staltz"), 2014. Unauthorized use and/or duplication of this material without express and written permission from this site’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Andre Medeiros and http://andre.staltz.com with appropriate and specific direction to the original content.
+© Andre Medeiros (alias "Andre Staltz"), 2014. Unauthorized use and/or
+duplication of this material without express and written permission from this
+site’s author and/or owner is strictly prohibited. Excerpts and links may be
+used, provided that full and clear credit is given to Andre Medeiros and
+<http://andre.staltz.com> with appropriate and specific direction to the
+original content.
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">"Introduction to Reactive Programming you've been missing"</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://andre.staltz.com" property="cc:attributionName" rel="cc:attributionURL">Andre Staltz</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754" rel="dct:source">https://gist.github.com/staltz/868e7e9bc2a7b8c1f754</a>.
+[![license](https://licensebuttons.net/l/by-nc/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc/4.0/)
+
+"Introduction to Reactive Programming you've been missing" by [Andre Staltz](http://andre.staltz.com)
+is licensed under a [Creative Commons Attribution-NonCommercial 4.0
+International License](http://creativecommons.org/licenses/by-nc/4.0/).  
+Based on a work at <https://gist.github.com/staltz/868e7e9bc2a7b8c1f754>.
