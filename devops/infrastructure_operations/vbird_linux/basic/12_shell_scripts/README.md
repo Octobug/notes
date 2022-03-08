@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0340bashshell-scripts.php>
 
-## 目录
-
 - [第十二章 学习 shell scripts](#第十二章-学习-shell-scripts)
-  - [目录](#目录)
   - [12.1 什么是 Shell scripts](#121-什么是-shell-scripts)
     - [12.1.1 为什么学习 Shell scripts](#1211-为什么学习-shell-scripts)
     - [12.1.2 第一个 script 的编写与执行](#1212-第一个-script-的编写与执行)

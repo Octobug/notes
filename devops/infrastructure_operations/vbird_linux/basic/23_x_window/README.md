@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0590xwindow.php>
 
-## 目录
-
 - [第二十三章 X Window 设置介绍](#第二十三章-x-window-设置介绍)
-  - [目录](#目录)
   - [23.1 什么是 X Window System](#231-什么是-x-window-system)
     - [23.1.1 X Window 的发展简史](#2311-x-window-的发展简史)
     - [23.1.2 主要元件：X Server/X Client/Window Manager/Display Manager](#2312-主要元件x-serverx-clientwindow-managerdisplay-manager)

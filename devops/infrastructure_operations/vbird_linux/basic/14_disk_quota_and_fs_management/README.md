@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0420quota.php>
 
-## 目录
-
 - [第十四章 磁盘配额（Quota）与进阶文件系统管理](#第十四章-磁盘配额quota与进阶文件系统管理)
-  - [目录](#目录)
   - [14.1 磁盘配额（Quota）的应用与实作](#141-磁盘配额quota的应用与实作)
     - [14.1.1 什么是 Quota](#1411-什么是-quota)
     - [14.1.2 一个 XFS 文件系统的 Quota 实践范例](#1412-一个-xfs-文件系统的-quota-实践范例)

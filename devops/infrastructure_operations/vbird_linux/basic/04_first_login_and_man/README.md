@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0160startlinux.php>
 
-## 目录
-
 - [第四章 首次登陆与在线求助 man page](#第四章-首次登陆与在线求助-man-page)
-  - [目录](#目录)
   - [4.1 首次登录系统](#41-首次登录系统)
     - [4.1.1 首次登录 CentOS 7.x 图形接口](#411-首次登录-centos-7x-图形接口)
     - [4.1.2 GNOME 的操作与登出](#412-gnome-的操作与登出)

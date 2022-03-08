@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0440processcontrol.php>
 
-## 目录
-
 - [第十六章 进程管理与 SELinux 初探](#第十六章-进程管理与-selinux-初探)
-  - [目录](#目录)
   - [16.1 什么是进程（process）](#161-什么是进程process)
     - [16.1.1 进程与程序（process & program）](#1611-进程与程序process--program)
     - [16.1.2 Linux 的多用户多任务环境](#1612-linux-的多用户多任务环境)

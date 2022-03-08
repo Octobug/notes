@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0560daemons.php>
 
-## 目录
-
 - [第十七章 认识系统服务（daemon）](#第十七章-认识系统服务daemon)
-  - [目录](#目录)
   - [17.1 什么是 daemon 与服务（service）](#171-什么是-daemon-与服务service)
     - [17.1.1 早期 System V 的 init 管理行为中 daemon 的主要分配（Optional）](#1711-早期-system-v-的-init-管理行为中-daemon-的主要分配optional)
     - [17.1.2 systemd 使用的 unit 分类](#1712-systemd-使用的-unit-分类)

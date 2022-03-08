@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0410accountmanager.php>
 
-## 目录
-
 - [第十三章 Linux 账号管理与 ACL 权限控制](#第十三章-linux-账号管理与-acl-权限控制)
-  - [目录](#目录)
   - [13.1 Linux 的账号与群组](#131-linux-的账号与群组)
     - [13.1.1 用户识别码：UID 与 GID](#1311-用户识别码uid-与-gid)
     - [13.1.2 用户账号](#1312-用户账号)

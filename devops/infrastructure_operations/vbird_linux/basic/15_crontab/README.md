@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0430cron.php>
 
-## 目录
-
 - [第十五章 例行性工作调度（crontab）](#第十五章-例行性工作调度crontab)
-  - [目录](#目录)
   - [15.1 什么是例行性工作调度](#151-什么是例行性工作调度)
     - [15.1.1 Linux 工作调度的种类：at, cron](#1511-linux-工作调度的种类at-cron)
     - [15.1.2 CentOS Linux 系统上常见的例行性工作](#1512-centos-linux-系统上常见的例行性工作)

@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0110whatislinux.php>
 
-## 目录
-
 - [第一章 Linux 是什么与如何学习](#第一章-linux-是什么与如何学习)
-  - [目录](#目录)
   - [1.1 Linux 是什么](#11-linux-是什么)
     - [1.1.1 Linux 是什么？操作系统/应用程序？](#111-linux-是什么操作系统应用程序)
       - [操作系统分层（右内到外）](#操作系统分层右内到外)

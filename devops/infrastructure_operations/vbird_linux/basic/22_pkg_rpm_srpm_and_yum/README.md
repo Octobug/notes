@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0520rpm_and_srpm.php>
 
-## 目录
-
 - [第二十二章 软件安装：RPM, SRPM 与 YUM 功能](#第二十二章-软件安装rpm-srpm-与-yum-功能)
-  - [目录](#目录)
   - [22.1 软件管理器简介](#221-软件管理器简介)
     - [22.1.1 Linux 界的两大主流: RPM 与 DPKG](#2211-linux-界的两大主流-rpm-与-dpkg)
     - [22.1.2 什么是 RPM 与 SRPM](#2212-什么是-rpm-与-srpm)

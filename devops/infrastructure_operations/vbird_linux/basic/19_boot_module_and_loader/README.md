@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0510osloader.php>
 
-## 目录
-
 - [第十九章 开机流程、模块管理与 loader](#第十九章-开机流程模块管理与-loader)
-  - [目录](#目录)
   - [19.1 Linux 的开机流程分析](#191-linux-的开机流程分析)
     - [19.1.1 开机流程一览](#1911-开机流程一览)
     - [19.1.2 BIOS, boot loader 与 kernel 载入](#1912-bios-boot-loader-与-kernel-载入)

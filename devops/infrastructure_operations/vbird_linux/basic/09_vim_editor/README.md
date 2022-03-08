@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0310vi.php>
 
-## 目录
-
 - [第九章 vim 程序编辑器](#第九章-vim-程序编辑器)
-  - [目录](#目录)
   - [9.1 vi 与 vim](#91-vi-与-vim)
     - [9.1.1 为何要学 vim](#911-为何要学-vim)
   - [9.2 vi 的使用](#92-vi-的使用)

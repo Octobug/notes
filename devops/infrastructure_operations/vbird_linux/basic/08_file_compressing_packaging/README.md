@@ -2,10 +2,7 @@
 
 > <https://linux.vbird.org/linux_basic/centos7/0240tarcompress.php>
 
-## 目录
-
 - [第八章 文件的压缩与打包](#第八章-文件的压缩与打包)
-  - [目录](#目录)
   - [8.1 压缩文件的用途与技术](#81-压缩文件的用途与技术)
   - [8.2 Linux 系统常见的压缩指令](#82-linux-系统常见的压缩指令)
     - [8.2.1 gzip, zcat/zmore/zless/zgrep](#821-gzip-zcatzmorezlesszgrep)
