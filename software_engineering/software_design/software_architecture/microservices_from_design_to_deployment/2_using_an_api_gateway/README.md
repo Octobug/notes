@@ -6,6 +6,13 @@
   - [Direct Client-to-Microservice Communication](#direct-client-to-microservice-communication)
   - [Using an API Gateway](#using-an-api-gateway)
   - [Benefits and Drawbacks of an API Gateway](#benefits-and-drawbacks-of-an-api-gateway)
+  - [Implementing an API Gateway](#implementing-an-api-gateway)
+    - [Performance and Scalability](#performance-and-scalability)
+    - [Using a Reactive Programming Model](#using-a-reactive-programming-model)
+    - [Service Invocation](#service-invocation)
+    - [Service Discovery](#service-discovery)
+    - [Handling Partial Failures](#handling-partial-failures)
+    - [开源 API Gateway](#开源-api-gateway)
 
 It's a question about how your application's clients interact with the
 microservices.
@@ -57,8 +64,6 @@ So, how the mobile client accesses these services?
 
 ## Direct Client-to-Microservice Communication
 
->>>>> progress
-
 In theory, a client could make requests to each of the microservices directly.
 Each microservice would have a public endpoint:
 
@@ -79,13 +84,14 @@ Challenges and limitations:
 An API Gateway is a server that is the single entry point into the system.
 
 The API Gateway encapsulates the internal system architecture and provides an
-API that is tailored to each client.
+API that is tailored to each client. It is responsible for request routing,
+composition, and protocol translation.
 
 It might have other responsibilities such as authentication, monitoring, load
 balancing, caching, request shaping and management, and static response
 handling.
 
-*Using an API Gateway with microservices*.
+*Figure 2-3. Using an API Gateway with microservices*.
 
 ![Using an API Gateway with microservices](images/2_3_api_gateway.png)
 
@@ -95,3 +101,61 @@ the various services - product information, reviews, etc. - and combining the
 results.
 
 ## Benefits and Drawbacks of an API Gateway
+
+Benefits:
+
+- It encapsulates the internal structure of the application.
+- It simplifies the client code.
+
+Drawbacks:
+
+- It is a highly available component that must be developed, deployed, and
+  managed.
+- It might become a development bottleneck, developers must update it in order
+  to expose each microservice's endpoints.
+
+## Implementing an API Gateway
+
+### Performance and Scalability
+
+- Asynchronous, non-blocking I/O
+- NIO-based frameworks on JVM
+- Node.js, a popular option, on non-JVM
+- NGINX Plus
+
+### Using a Reactive Programming Model
+
+The API Gateway handles requests by invoking multiple backend services and
+aggregating the results. In order to minimize response time, it should perform
+independent requests concurrentlt. However, there are dependencies between
+requests. Using traditional asynchronous callback approach will lead you to
+callback hell. A better approach is to write API Gateway code in a declarative
+style using a reactive approach.
+
+### Service Invocation
+
+There are two styles of inter-process communication.
+
+- Asynchronous, messaging-based mechanism
+- synchronous mechanism, such as HTTP
+
+### Service Discovery
+
+Application services might have dynamically assigned locations. The set of
+instances of a service changes dynamically because of autoscaling and upgrades.
+The API Gateway should be able to discover these instances either by sever-side
+discovery or client-side discovery.
+
+### Handling Partial Failures
+
+The API Gateway should never block indefinitely waiting for a downstream
+service. How it handles the failure depends on the specific scenario and which
+service is failing.
+
+### 开源 API Gateway
+
+- Tyk
+- Kong
+- Orange
+- Netflix Zuul
+- apiaxle
