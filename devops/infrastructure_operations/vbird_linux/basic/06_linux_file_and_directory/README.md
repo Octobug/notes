@@ -205,7 +205,7 @@ $ echo $PATH
 
   ```sh
   # 快速获取字符 ASCII 码
-  echo abc | od dCc
+  echo abc | od -t dCc
   ```
 
 ### 6.3.5 修改文件时间或创建新文件: touch
