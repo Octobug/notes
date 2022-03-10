@@ -10,6 +10,8 @@
   - [Asynchronous, Message-Based Communication](#asynchronous-message-based-communication)
   - [Synchronous, Request/Response IPC](#synchronous-requestresponse-ipc)
     - [REST](#rest)
+    - [Thrift](#thrift)
+  - [Message Formats](#message-formats)
 
 ## Introduction
 
@@ -167,20 +169,121 @@ for manipulating resources, which are referenced using a URL.
 
 ![A taxi-hailing application uses RESTful interaction](images/3_5_using_restful.png)
 
-Leonard Richardson defines a very usefult maturity model for REST that consists
+*Leonard Richardson* defines a very useful maturity model for REST that consists
 of the following levels:
 
 - **Level 0**: Clients of a level 0 API invoke the service by making HTTP `POST`
   request to its sole URL endpoint. Each request specifies the action to
   perform, the target of the action, and any parameters.
+
+  ```http
+  POST /receive
+
+  {
+    "action": "add_user",
+    "user": {
+      ...
+    }
+  }
+
+  POST /receive
+  {
+    "action": "del_user",
+    "user_id": 1
+  }
+  ```
+
 - **Level 1**: A level 1 API supports the idea of resources. To perform an
   action on a resource, a client makes a `POST` request that specifies the
   action to perform and any parameters.
+
+  ```http
+  POST /users/1
+
+  {
+    "action": "delete"
+  }
+
+  POST /users/2
+  {
+    "action": "update"
+    "user": {
+      "name": "xiaoming",
+      ...
+    }
+  }
+  ```
+
 - **Level 2**: A level 2 API uses HTTP verbs to perform actions: `GET` to
   retrieve, `POST` to create, and `PUT` to update. The request query parameters
   and body specify the action's parameters. This enables services to leverage
   web infrastructure such as caching for `GET` requests.
+
+  ```http
+  GET /users/1
+
+  DELETE /users/2
+
+  PUT /users/2
+  {
+    "name": "xiaoming",
+    ...
+  }
+  ```
+
 - **Level 3**: The design of a level 3 API is based on the terribly named
-  principle, HATEOAS (Hypertext As The Engine Of Application State).
+  principle, HATEOAS (Hypertext As The Engine Of Application State). The basic
+  idea is that the representation of a resource returned by a `GET` request
+  contains links for performing the allowable actions on that resource.
+
+  ```http
+  GET /api/v1/users/1
+  {
+    "actions": {
+      "UPDATE": "https://1.a.com/api/v1/users/2"
+    }
+  }
+
+  GET /api/v1/users/2
+  {
+    "actions": {
+      "UPDATE": "https://1.a.com/api/v1/users/2"
+      "DELETE": "https://1.a.com/api/v2/users/2",
+    }
+  }
+  ```
+
+  Benefits of HATEOAS:
+  
+  - Need not to hardcode many URLs into client.
+  - The client does not have to guess what actions can be performed on a
+    resource.
+
+Benefits to using a protocol that is based on HTTP:
+
+- HTTP is simple and familiar.
+- It is easy to test an HTTP API (postman, curl, ...).
+- It directly supports request/response-style communication.
+- HTTP is firewall-friendly.
+- It doesn't require an intermediate broker, which simplifies the system's
+  architecture.
+
+Drawbacks to using HTTP:
+
+- HTTP only directly supports the request/response style of interaction.
+- The client and service communicate directly without an intermediary to buffer
+  messages.
+- The client must know the location (URL) of each service instance. Clients must
+  use a service discovery mechanism to locate service instances.
+
+There are interface definition languages like **RAML** and **Swagger** for
+RESTful APIs.
+
+### Thrift
+
+Apache Thrift is a framework for writing cross-language RPC clients and servers.
+It provides a C-style IDL for defining APIs.
+
+## Message Formats
 
 >>>>> progress
