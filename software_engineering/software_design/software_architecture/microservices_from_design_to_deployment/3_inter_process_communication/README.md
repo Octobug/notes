@@ -12,6 +12,7 @@
     - [REST](#rest)
     - [Thrift](#thrift)
   - [Message Formats](#message-formats)
+  - [Four-tier Architecture](#four-tier-architecture)
 
 ## Introduction
 
@@ -282,8 +283,32 @@ RESTful APIs.
 ### Thrift
 
 Apache Thrift is a framework for writing cross-language RPC clients and servers.
-It provides a C-style IDL for defining APIs.
+It provides a C-style IDL for defining APIs. Supported message formats:
+
+- JSON
+- binary
+- compact binary
 
 ## Message Formats
 
->>>>> progress
+Two main kinds of message formats:
+
+- text: human-readable, self-describing (enable consumers to pick out what they
+  are interested in)
+  - JSON: JSON schema, IDL such as Swagger
+  - XML: XML schema
+  - ...
+  - Downsides:
+    - verbose
+    - waste of traffic
+    - overhead of parsing text
+- binary
+  - Protocol Buffers
+  - Apache Avro
+
+## Four-tier Architecture
+
+1. Client tier
+2. Delivery tier: load balancing, caching
+3. Aggregation tier: tools for API-based communication
+4. Service tier: management of services instances
