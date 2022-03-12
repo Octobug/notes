@@ -7,6 +7,7 @@
   - [The Service Registry](#the-service-registry)
   - [Service Registration Options](#service-registration-options)
   - [The Self-Registration Pattern](#the-self-registration-pattern)
+  - [The Third-Party Registration Pattern](#the-third-party-registration-pattern)
 
 ## Why Use Service Discovery?
 
@@ -95,4 +96,50 @@ Other examples of service registries:
 
 ## The Self-Registration Pattern
 
->>>>> progress
+In this pattern, services are responsible for registering and unregistering
+itself with the service registry. It might send heartbeat requests to prevent
+its registration expiring.
+
+*Figure 4-4. Services can handle their own registration*.
+
+![Services can handle their own registration](images/4_4_services_handle_their_own.png)
+
+Benefits:
+
+- It is relatively simple and does not require any other system components
+
+Drawbacks:
+
+- It couples the service instances to teh service registry.
+
+## The Third-Party Registration Pattern
+
+In this pattern, services are not responsible for registering themselves with
+the service registry. Instead, another system component known as the
+**service registrar** handles the registration. It tracks changes to the set of
+running instances by either polling the deployment environment or subscribing to
+events.
+
+*Figure 4-5. A separate registrar service can be responsible for registering
+others*.
+
+![A separate registrar service](images/4_5_a_separate_registrar.png)
+
+Examples:
+
+- `Registrator`: Automatically manages services that are deployed as Docker
+  containers.
+- `NetflixOSS Prana`
+- As a built-in component in some deployment environments.
+  - Kubernetes
+  - Amazon ELB
+
+Benefits:
+
+- Services are decoupled from the service registry.
+- Service registration is handled in a centralized manner withn a dedicated
+  service.
+
+Drawbacks:
+
+- It is yet another highly available system component that needed to be managed.
