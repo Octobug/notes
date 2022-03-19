@@ -4,6 +4,9 @@
   - [Overview of Refactoring to Microservices](#overview-of-refactoring-to-microservices)
   - [Strategy 1 - Stop Digging](#strategy-1---stop-digging)
   - [Strategy 2 - Split Frontend and Backend](#strategy-2---split-frontend-and-backend)
+  - [Strategy 3 - Extract Services](#strategy-3---extract-services)
+    - [Prioritizing Which Modules to Convert into Services](#prioritizing-which-modules-to-convert-into-services)
+    - [How to Extract a Module](#how-to-extract-a-module)
 
 ## Overview of Refactoring to Microservices
 
@@ -42,4 +45,49 @@ However, this approach does nothing to address the problems with the monolith.
 
 ## Strategy 2 - Split Frontend and Backend
 
->>>>> progress
+A strategy that shrinks the monolithic application is to split the presentation
+layer from the business logic and data access layers. A typical enterprise
+application consists of at least three different types of components.
+
+- **Presentation layer**: Components that handle HTTP requests and implement
+  either a (REST) API or an HTML-based web UI.
+- **Business logic layer**: Components that are the core of the application and
+  implement the business rules.
+- **DAta-access layer**: Components that access infrastructure components, such
+  as databases and message brokers.
+
+*Figure 7-2. Refactoring an existing app*.
+
+![Refactoring an existing app](images/7_2_refactoring_an_existing_app.png)
+
+Benefits:
+
+- It enables you to develop, deploy, and scale the two applications
+  independently.
+- It exposes a remote API that can be called by the microservices that you
+  develop.
+
+## Strategy 3 - Extract Services
+
+The third refactoring strategy is to turn existing modules within the monolith
+into standalone microservices.
+
+### Prioritizing Which Modules to Convert into Services
+
+- It is usually beneficial to extract modules that change frequently.
+- It is also beneficial to extract modules that have resource requirements
+  significantly different from those of the rest of the monolith. For example,
+  to turn a module that has an in-memory database into a service.
+
+### How to Extract a Module
+
+The first step of extracting a module is to define a coarse-grained interface
+between the module and the monolith. The monolith will need data owned by the
+service and vice versa.
+
+*Figure 7-3. A module from a monolith can become a microservice*.
+
+![A module from a monolith can become a microservice](images/7_3_a_module_become_a_microservice.png)
+
+Once you implement the coarse-grained interface, you then turn the module into
+a freestanding service.
