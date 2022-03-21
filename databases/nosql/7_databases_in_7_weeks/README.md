@@ -6,8 +6,8 @@ by Luc Perkins, Jim Wilson, Eric Redmond
 
 ## Table of Contents
 
-- [1. Introduction](1_introduction)
-- 2. PostgreSQL
+- [x] [1. Introduction](1_introduction)
+- [ ] [2. PostgreSQL](2_postgresql)
 - 3. HBase
 - 4. MongoDB
 - 5. CouchDB
