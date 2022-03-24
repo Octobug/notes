@@ -6,6 +6,8 @@
     - [Starting with SQL](#starting-with-sql)
       - [Mathematical Relations](#mathematical-relations)
     - [Working with Tables](#working-with-tables)
+      - [On CRUD](#on-crud)
+    - [Join Reads](#join-reads)
 
 ## That's Post-greS-Q-L
 
@@ -58,5 +60,33 @@ Relational queries are derived from a branch of mathematics known as
 ![Tuple Relational Calculus](images/2_2_tuple_relational_calculus.png)
 
 ### Working with Tables
+
+#### On CRUD
+
+- Create
+- Read
+- Update
+- Delete
+
+```sql
+CREATE​ ​TABLE​ countries (
+  country_code ​char​(2) ​PRIMARY​ ​KEY​,
+  country_name ​text​ ​UNIQUE​
+);
+```
+
+```sql
+CREATE TABLE cities (
+  name text NOT NULL,
+  postal_code varchar(9) CHECK (postal_code <> ''),
+  country_code char(2) REFERENCES countries NOT NULL,
+  PRIMARY KEY (country_code, postal_code)
+);
+```
+
+The **REFERENCES** keyword constrains fields to another table's primary key.
+This is called *maintaining referential integrity*.
+
+### Join Reads
 
 >>>>> progress
