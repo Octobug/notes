@@ -2,29 +2,20 @@
 
 > <https://github.com/microsoft/api-guidelines>
 
-## Microsoft REST API Guidelines Working Group
-
-Name | Name | Name |
----------------------------- | -------------------------------------- | ----------------------------------------
-Dave Campbell (CTO C+E)      | Rick Rashid (CTO ASG)                  | John Shewchuk (Technical Fellow, TED HQ)
-Mark Russinovich (CTO Azure) | Steve Lucco (Technical Fellow, DevDiv) | Murali Krishnaprasad (Azure App Plat)
-Rob Howard (ASG)             | Peter Torr  (OSG)                      | Chris Mullins (ASG)
-
-<div style="font-size:150%">
-Document editors: John Gossman (C+E), Chris Mullins (ASG), Gareth Jones (ASG), Rob Dolin (C+E), Mark Stafford (C+E)<br/>
-</div>
-
 ## 1. Abstract
-The Microsoft REST API Guidelines, as a design principle, encourages application developers to have resources accessible to them via a RESTful HTTP interface.
-To provide the smoothest possible experience for developers on platforms following the Microsoft REST API Guidelines, REST APIs SHOULD follow consistent design guidelines to make using them easy and intuitive.
 
-This document establishes the guidelines Microsoft REST APIs SHOULD follow so RESTful interfaces are developed consistently.
+The Microsoft REST API Guidelines, as a design principle, encourages
+application developers to have resources accessible to them via a RESTful HTTP
+interface. To provide the smoothest possible experience for developers on
+platforms following the Microsoft REST API Guidelines, REST APIs SHOULD follow
+consistent design guidelines to make using them easy and intuitive.
+
+This document establishes the guidelines Microsoft REST APIs SHOULD follow so
+RESTful interfaces are developed consistently.
 
 ## 2. Table of contents
-<!-- TOC depthFrom:2 depthTo:4 orderedList:false updateOnSave:false withLinks:true -->
 
 - [Microsoft REST API Guidelines](#microsoft-rest-api-guidelines)
-  - [Microsoft REST API Guidelines Working Group](#microsoft-rest-api-guidelines-working-group)
   - [1. Abstract](#1-abstract)
   - [2. Table of contents](#2-table-of-contents)
   - [3. Introduction](#3-introduction)
@@ -175,34 +166,50 @@ This document establishes the guidelines Microsoft REST APIs SHOULD follow so RE
       - [18.1.1. Push notifications, per user flow](#1811-push-notifications-per-user-flow)
       - [18.1.2. Push notifications, firehose flow](#1812-push-notifications-firehose-flow)
 
-<!-- /TOC -->
-
 ## 3. Introduction
-Developers access most Microsoft Cloud Platform resources via HTTP interfaces.
-Although each service typically provides language-specific frameworks to wrap their APIs, all of their operations eventually boil down to HTTP requests.
-Microsoft must support a wide range of clients and services and cannot rely on rich frameworks being available for every development environment.
-Thus, a goal of these guidelines is to ensure Microsoft REST APIs can be easily and consistently consumed by any client with basic HTTP support.
 
-To provide the smoothest possible experience for developers, it's important to have these APIs follow consistent design guidelines, thus making using them easy and intuitive.
-This document establishes the guidelines to be followed by Microsoft REST API developers for developing such APIs consistently.
+Microsoft must support a wide range of clients and services and cannot rely on
+rich frameworks being available for every development environment. Thus, a goal
+of these guidelines is to ensure Microsoft REST APIs can be easily and
+consistently consumed by any client with basic HTTP support.
 
-The benefits of consistency accrue in aggregate as well; consistency allows teams to leverage common code, patterns, documentation and design decisions.
+To provide the smoothest possible experience for developers, it's important to
+have these APIs follow consistent design guidelines, thus making using them
+easy and intuitive. This document establishes the guidelines to be followed by
+Microsoft REST API developers for developing such APIs consistently.
+
+The benefits of consistency accrue in aggregate as well; consistency allows
+teams to leverage common code, patterns, documentation and design decisions.
 
 These guidelines aim to achieve the following:
-- Define consistent practices and patterns for all API endpoints across Microsoft.
-- Adhere as closely as possible to accepted REST/HTTP best practices in the industry at-large. [\*]
-- Make accessing Microsoft Services via REST interfaces easy for all application developers.
-- Allow service developers to leverage the prior work of other services to implement, test and document REST endpoints defined consistently.
-- Allow for partners (e.g., non-Microsoft entities) to use these guidelines for their own REST endpoint design.
 
-[\*] Note: The guidelines are designed to align with building services which comply with the REST architectural style, though they do not address or require building services that follow the REST constraints.
-The term "REST" is used throughout this document to mean services that are in the spirit of REST rather than adhering to REST by the book.*
+- Define consistent practices and patterns for all API endpoints across
+  Microsoft.
+- Adhere as closely as possible to accepted REST/HTTP best practices in the
+  industry at-large. [\*]
+- Make accessing Microsoft Services via REST interfaces easy for all
+  application developers.
+- Allow service developers to leverage the prior work of other services to
+  implement, test and document REST endpoints defined consistently.
+- Allow for partners (e.g., non-Microsoft entities) to use these guidelines for
+  their own REST endpoint design.
+
+[\*] Note: The guidelines are designed to align with building services which
+comply with the REST architectural style, though they do not address or require
+building services that follow the REST constraints. The term "REST" is used
+throughout this document to mean services that are in the spirit of REST rather
+than adhering to REST by the book.*
 
 ### 3.1. Recommended reading
-Understanding the philosophy behind the REST Architectural Style is recommended for developing good HTTP-based services.
-If you are new to RESTful design, here are some good resources:
 
-[REST on Wikipedia][rest-on-wikipedia] -- Overview of common definitions and core ideas behind REST.
+Understanding the philosophy behind the REST Architectural Style is recommended
+for developing good HTTP-based services. If you are new to RESTful design, here
+are some good resources:
+
+[REST on Wikipedia][rest-on-wikipedia] -- Overview of common definitions and
+core ideas behind REST.
+
+>>>>> save progress
 
 [REST Dissertation][fielding] -- The chapter on REST in Roy Fielding's dissertation on Network Architecture, "Architectural Styles and the Design of Network-based Software Architectures"
 
@@ -348,15 +355,15 @@ The terms are synonymous in this context, however the HTTP specification uses th
 Below is a list of methods that Microsoft REST services SHOULD support.
 Not all resources will support all methods, but all resources using the methods below MUST conform to their usage.
 
-Method  | Description                                                                                                                | Is Idempotent
-------- | -------------------------------------------------------------------------------------------------------------------------- | -------------
-GET     | Return the current value of an object                                                                                      | True
-PUT     | Replace an object, or create a named object, when applicable                                                               | True
-DELETE  | Delete an object                                                                                                           | True
-POST    | Create a new object based on the data provided, or submit a command                                                        | False
-HEAD    | Return metadata of an object for a GET response. Resources that support the GET method MAY support the HEAD method as well | True
-PATCH   | Apply a partial update to an object                                                                                        | False
-OPTIONS | Get information about a request; see below for details.                                                                    | True
+| Method  | Description                                                                                                                | Is Idempotent |
+| ------- | -------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| GET     | Return the current value of an object                                                                                      | True          |
+| PUT     | Replace an object, or create a named object, when applicable                                                               | True          |
+| DELETE  | Delete an object                                                                                                           | True          |
+| POST    | Create a new object based on the data provided, or submit a command                                                        | False         |
+| HEAD    | Return metadata of an object for a GET response. Resources that support the GET method MAY support the HEAD method as well | True          |
+| PATCH   | Apply a partial update to an object                                                                                        | False         |
+| OPTIONS | Get information about a request; see below for details.                                                                    | True          |
 
 <small>Table 1</small>
 
@@ -415,28 +422,28 @@ Using these headers is not mandated, but if used they MUST be used consistently.
 All header values MUST follow the syntax rules set forth in the specification where the header field is defined.
 Many HTTP headers are defined in [RFC7231][rfc-7231], however a complete list of approved headers can be found in the [IANA Header Registry][IANA-headers]."
 
-Header                            | Type                                  | Description
---------------------------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Authorization                     | String                                           | Authorization header for the request
-Date                              | Date                                             | Timestamp of the request, based on the client's clock, in [RFC 5322][rfc-5322-3-3] date and time format.  The server SHOULD NOT make any assumptions about the accuracy of the client's clock.  This header MAY be included in the request, but MUST be in this format when supplied.  Greenwich Mean Time (GMT) MUST be used as the time zone reference for this header when it is provided.  For example: `Wed, 24 Aug 2016 18:41:30 GMT`.  Note that GMT is exactly equal to UTC (Coordinated Universal Time) for this purpose.
-Accept                            | Content type                                     | The requested content type for the response such as: <ul><li>application/xml</li><li>text/xml</li><li>application/json</li><li>text/javascript (for JSONP)</li></ul>Per the HTTP guidelines, this is just a hint and responses MAY have a different content type, such as a blob fetch where a successful response will just be the blob stream as the payload. For services following OData, the preference order specified in OData SHOULD be followed.
-Accept-Encoding                   | Gzip, deflate                                    | REST endpoints SHOULD support GZIP and DEFLATE encoding, when applicable. For very large resources, services MAY ignore and return uncompressed data.
-Accept-Language                   | "en", "es", etc.                                 | Specifies the preferred language for the response. Services are not required to support this, but if a service supports localization it MUST do so through the Accept-Language header.
-Accept-Charset                    | Charset type like "UTF-8"                        | Default is UTF-8, but services SHOULD be able to handle ISO-8859-1.
-Content-Type                      | Content type                                     | Mime type of request body (PUT/POST/PATCH)
-Prefer                            | return=minimal, return=representation            | If the return=minimal preference is specified, services SHOULD return an empty body in response to a successful insert or update. If return=representation is specified, services SHOULD return the created or updated resource in the response. Services SHOULD support this header if they have scenarios where clients would sometimes benefit from responses, but sometimes the response would impose too much of a hit on bandwidth.
-If-Match, If-None-Match, If-Range | String                                           | Services that support updates to resources using optimistic concurrency control MUST support the If-Match header to do so. Services MAY also use other headers related to ETags as long as they follow the HTTP specification.
+| Header                            | Type                                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| --------------------------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization                     | String                                | Authorization header for the request                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Date                              | Date                                  | Timestamp of the request, based on the client's clock, in [RFC 5322][rfc-5322-3-3] date and time format.  The server SHOULD NOT make any assumptions about the accuracy of the client's clock.  This header MAY be included in the request, but MUST be in this format when supplied.  Greenwich Mean Time (GMT) MUST be used as the time zone reference for this header when it is provided.  For example: `Wed, 24 Aug 2016 18:41:30 GMT`.  Note that GMT is exactly equal to UTC (Coordinated Universal Time) for this purpose. |
+| Accept                            | Content type                          | The requested content type for the response such as: <ul><li>application/xml</li><li>text/xml</li><li>application/json</li><li>text/javascript (for JSONP)</li></ul>Per the HTTP guidelines, this is just a hint and responses MAY have a different content type, such as a blob fetch where a successful response will just be the blob stream as the payload. For services following OData, the preference order specified in OData SHOULD be followed.                                                                          |
+| Accept-Encoding                   | Gzip, deflate                         | REST endpoints SHOULD support GZIP and DEFLATE encoding, when applicable. For very large resources, services MAY ignore and return uncompressed data.                                                                                                                                                                                                                                                                                                                                                                              |
+| Accept-Language                   | "en", "es", etc.                      | Specifies the preferred language for the response. Services are not required to support this, but if a service supports localization it MUST do so through the Accept-Language header.                                                                                                                                                                                                                                                                                                                                             |
+| Accept-Charset                    | Charset type like "UTF-8"             | Default is UTF-8, but services SHOULD be able to handle ISO-8859-1.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Content-Type                      | Content type                          | Mime type of request body (PUT/POST/PATCH)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Prefer                            | return=minimal, return=representation | If the return=minimal preference is specified, services SHOULD return an empty body in response to a successful insert or update. If return=representation is specified, services SHOULD return the created or updated resource in the response. Services SHOULD support this header if they have scenarios where clients would sometimes benefit from responses, but sometimes the response would impose too much of a hit on bandwidth.                                                                                          |
+| If-Match, If-None-Match, If-Range | String                                | Services that support updates to resources using optimistic concurrency control MUST support the If-Match header to do so. Services MAY also use other headers related to ETags as long as they follow the HTTP specification.                                                                                                                                                                                                                                                                                                     |
 
 ### 7.6. Standard response headers
 Services SHOULD return the following response headers, except where noted in the "required" column.
 
-Response Header    | Required                                      | Description
------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Date               | All responses                                 | Timestamp the response was processed, based on the server's clock, in [RFC 5322][rfc-5322-3-3] date and time format.  This header MUST be included in the response.  Greenwich Mean Time (GMT) MUST be used as the time zone reference for this header.  For example: `Wed, 24 Aug 2016 18:41:30 GMT`. Note that GMT is exactly equal to UTC (Coordinated Universal Time) for this purpose.
-Content-Type       | All responses                                 | The content type
-Content-Encoding   | All responses                                 | GZIP or DEFLATE, as appropriate
-Preference-Applied | When specified in request                     | Whether a preference indicated in the Prefer request header was applied
-ETag               | When the requested resource has an entity tag | The ETag response-header field provides the current value of the entity tag for the requested variant. Used with If-Match, If-None-Match and If-Range to implement optimistic concurrency control.
+| Response Header    | Required                                      | Description                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------ | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Date               | All responses                                 | Timestamp the response was processed, based on the server's clock, in [RFC 5322][rfc-5322-3-3] date and time format.  This header MUST be included in the response.  Greenwich Mean Time (GMT) MUST be used as the time zone reference for this header.  For example: `Wed, 24 Aug 2016 18:41:30 GMT`. Note that GMT is exactly equal to UTC (Coordinated Universal Time) for this purpose. |
+| Content-Type       | All responses                                 | The content type                                                                                                                                                                                                                                                                                                                                                                            |
+| Content-Encoding   | All responses                                 | GZIP or DEFLATE, as appropriate                                                                                                                                                                                                                                                                                                                                                             |
+| Preference-Applied | When specified in request                     | Whether a preference indicated in the Prefer request header was applied                                                                                                                                                                                                                                                                                                                     |
+| ETag               | When the requested resource has an entity tag | The ETag response-header field provides the current value of the entity tag for the requested variant. Used with If-Match, If-None-Match and If-Range to implement optimistic concurrency control.                                                                                                                                                                                          |
 
 ### 7.7. Custom headers
 Custom headers MUST NOT be required for the basic operation of a given API.
@@ -494,9 +501,9 @@ Clients MAY send multiple Accept headers and the service MAY choose one of them.
 
 The default response format (no Accept header provided) SHOULD be application/json, and all services MUST support application/json.
 
-Accept Header    | Response type                      | Notes
----------------- | ---------------------------------- | -------------------------------------------
-application/json | Payload SHOULD be returned as JSON | Also accept text/javascript for JSONP cases
+| Accept Header    | Response type                      | Notes                                       |
+| ---------------- | ---------------------------------- | ------------------------------------------- |
+| application/json | Payload SHOULD be returned as JSON | Also accept text/javascript for JSONP cases |
 
 ```http
 GET https://api.contoso.com/v1.0/products/user
@@ -553,26 +560,26 @@ We recommend that for any transient errors that may be retried, services SHOULD 
 
 ##### ErrorResponse : Object
 
-Property | Type | Required | Description
--------- | ---- | -------- | -----------
-`error` | Error | ✔ | The error object.
+| Property | Type  | Required | Description       |
+| -------- | ----- | -------- | ----------------- |
+| `error`  | Error | ✔        | The error object. |
 
 ##### Error : Object
 
-Property | Type | Required | Description
--------- | ---- | -------- | -----------
-`code` | String | ✔ | One of a server-defined set of error codes.
-`message` | String | ✔ | A human-readable representation of the error.
-`target` | String |  | The target of the error.
-`details` | Error[] |  | An array of details about specific errors that led to this reported error.
-`innererror` | InnerError |  | An object containing more specific information than the current object about the error.
+| Property     | Type       | Required | Description                                                                             |
+| ------------ | ---------- | -------- | --------------------------------------------------------------------------------------- |
+| `code`       | String     | ✔        | One of a server-defined set of error codes.                                             |
+| `message`    | String     | ✔        | A human-readable representation of the error.                                           |
+| `target`     | String     |          | The target of the error.                                                                |
+| `details`    | Error[]    |          | An array of details about specific errors that led to this reported error.              |
+| `innererror` | InnerError |          | An object containing more specific information than the current object about the error. |
 
 ##### InnerError : Object
 
-Property | Type | Required | Description
--------- | ---- | -------- | -----------
-`code` | String |  | A more specific error code than was provided by the containing error.
-`innererror` | InnerError |  | An object containing more specific information than the current object about the error.
+| Property     | Type       | Required | Description                                                                             |
+| ------------ | ---------- | -------- | --------------------------------------------------------------------------------------- |
+| `code`       | String     |          | A more specific error code than was provided by the containing error.                   |
+| `innererror` | InnerError |          | An object containing more specific information than the current object about the error. |
 
 ##### Examples
 
@@ -866,21 +873,21 @@ The value of the _$filter_ option is a Boolean expression.
 #### 9.7.1. Filter operations
 Services that support _$filter_ SHOULD support the following minimal set of operations.
 
-Operator             | Description           | Example
--------------------- | --------------------- | -----------------------------------------------------
-Comparison Operators |                       |
-eq                   | Equal                 | city eq 'Redmond'
-ne                   | Not equal             | city ne 'London'
-gt                   | Greater than          | price gt 20
-ge                   | Greater than or equal | price ge 10
-lt                   | Less than             | price lt 20
-le                   | Less than or equal    | price le 100
-Logical Operators    |                       |
-and                  | Logical and           | price le 200 and price gt 3.5
-or                   | Logical or            | price le 3.5 or price gt 200
-not                  | Logical negation      | not price le 3.5
-Grouping Operators   |                       |
-( )                  | Precedence grouping   | (priority eq 1 or city eq 'Redmond') and price gt 100
+| Operator             | Description           | Example                                               |
+| -------------------- | --------------------- | ----------------------------------------------------- |
+| Comparison Operators |                       |
+| eq                   | Equal                 | city eq 'Redmond'                                     |
+| ne                   | Not equal             | city ne 'London'                                      |
+| gt                   | Greater than          | price gt 20                                           |
+| ge                   | Greater than or equal | price ge 10                                           |
+| lt                   | Less than             | price lt 20                                           |
+| le                   | Less than or equal    | price le 100                                          |
+| Logical Operators    |                       |
+| and                  | Logical and           | price le 200 and price gt 3.5                         |
+| or                   | Logical or            | price le 3.5 or price gt 200                          |
+| not                  | Logical negation      | not price le 3.5                                      |
+| Grouping Operators   |                       |
+| ( )                  | Precedence grouping   | (priority eq 1 or city eq 'Redmond') and price gt 100 |
 
 #### 9.7.2. Operator examples
 The following examples illustrate the use and semantics of each of the logical operators.
@@ -921,7 +928,7 @@ Operators are listed by category in order of precedence from highest to lowest.
 Operators in the same category have equal precedence:
 
 | Group           | Operator | Description           |
-|:----------------|:---------|:----------------------|
+| :-------------- | :------- | :-------------------- |
 | Grouping        | ( )      | Precedence grouping   |
 | Unary           | not      | Logical Negation      |
 | Relational      | gt       | Greater Than          |
@@ -1206,16 +1213,16 @@ Here is an example of an object with a property named `creationDate` that is set
 
 The `StructuredDateLiteral` consists of a `DateKind` and an accompanying `DateValue` whose valid values (and their interpretation) depend on the `DateKind`. The following table describes the valid combinations and their meaning:
 
-DateKind | DateValue       | Colloquial Name & Interpretation                                                                                                                  | More Info
--------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------
-C        | UnsignedInteger | "CLR"; number of milliseconds since midnight January 1, 0001; negative values are not allowed. *See note below.*                                  | [MSDN][clr-time]
-E        | SignedInteger   | "ECMAScript"; number of milliseconds since midnight, January 1, 1970.                                                                             | [ECMA International][ecmascript-time]
-I        | Iso8601Literal  | "ISO 8601"; a string limited to the ECMAScript subset.                                                                                            |
-O        | RealNumber      | "OLE Date"; integral part is the number of days since midnight, December 31, 1899, and fractional part is the time within the day (0.5 = midday). | [MSDN][ole-date]
-T        | SignedInteger   | "Ticks"; number of ticks (100-nanosecond intervals) since midnight January 1, 1601. *See note below.*                                             | [MSDN][ticks-time]
-U        | SignedInteger   | "UNIX"; number of seconds since midnight, January 1, 1970.                                                                                        | [MSDN][unix-time]
-W        | SignedInteger   | "Windows"; number of milliseconds since midnight January 1, 1601. *See note below.*                                                               | [MSDN][windows-time]
-X        | RealNumber      | "Excel"; as for `O` but the year 1900 is incorrectly treated as a leap year, and day 0 is "January 0 (zero)".                                     | [Microsoft Support][excel-time]
+| DateKind | DateValue       | Colloquial Name & Interpretation                                                                                                                  | More Info                             |
+| -------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| C        | UnsignedInteger | "CLR"; number of milliseconds since midnight January 1, 0001; negative values are not allowed. *See note below.*                                  | [MSDN][clr-time]                      |
+| E        | SignedInteger   | "ECMAScript"; number of milliseconds since midnight, January 1, 1970.                                                                             | [ECMA International][ecmascript-time] |
+| I        | Iso8601Literal  | "ISO 8601"; a string limited to the ECMAScript subset.                                                                                            |
+| O        | RealNumber      | "OLE Date"; integral part is the number of days since midnight, December 31, 1899, and fractional part is the time within the day (0.5 = midday). | [MSDN][ole-date]                      |
+| T        | SignedInteger   | "Ticks"; number of ticks (100-nanosecond intervals) since midnight January 1, 1601. *See note below.*                                             | [MSDN][ticks-time]                    |
+| U        | SignedInteger   | "UNIX"; number of seconds since midnight, January 1, 1970.                                                                                        | [MSDN][unix-time]                     |
+| W        | SignedInteger   | "Windows"; number of milliseconds since midnight January 1, 1601. *See note below.*                                                               | [MSDN][windows-time]                  |
+| X        | RealNumber      | "Excel"; as for `O` but the year 1900 is incorrectly treated as a leap year, and day 0 is "January 0 (zero)".                                     | [Microsoft Support][excel-time]       |
 
 **Important note for `C` and `W` kinds:** The native CLR and Windows times are represented by 100-nanosecond "tick" values.
 To interoperate with ECMAScript clients that have limited precision, _these values MUST be converted to and from milliseconds_ when (de)serialized as a `DateLiteral`.
@@ -1305,7 +1312,7 @@ The Group Version format is defined as YYYY-MM-DD, for example 2012-12-07 for De
 ##### Examples of group versioning
 
 | Group      | Major.Minor |
-|:-----------|:------------|
+| :--------- | :---------- |
 | 2012-12-01 | 1.0         |
 |            | 1.1         |
 |            | 1.2         |
@@ -1316,11 +1323,11 @@ The Group Version format is defined as YYYY-MM-DD, for example 2012-12-07 for De
 |            | 3.2         |
 |            | 3.3         |
 
-Version Format                | Example                | Interpretation
------------------------------ | ---------------------- | ------------------------------------------
-{groupVersion}                | 2013-03-21, 2012-12-01 | 3.3, 1.2
-{majorVersion}                | 3                      | 3.0
-{majorVersion}.{minorVersion} | 1.2                    | 1.2
+| Version Format                | Example                | Interpretation |
+| ----------------------------- | ---------------------- | -------------- |
+| {groupVersion}                | 2013-03-21, 2012-12-01 | 3.3, 1.2       |
+| {majorVersion}                | 3                      | 3.0            |
+| {majorVersion}.{minorVersion} | 1.2                    | 1.2            |
 
 Clients can specify either the group version or the Major.Minor version:
 
@@ -1488,11 +1495,11 @@ Services that provide the "/operations" resource MUST provide GET semantics.
 GET MUST enumerate the set of operations, following standard pagination, sorting, and filtering semantics.
 The default sort order for this operation MUST be:
 
-Primary Sort           | Secondary Sort
----------------------- | -----------------------
-Not Started Operations | Operation Creation Time
-Running Operations     | Operation Creation Time
-Completed Operations   | Operation Creation Time
+| Primary Sort           | Secondary Sort          |
+| ---------------------- | ----------------------- |
+| Not Started Operations | Operation Creation Time |
+| Running Operations     | Operation Creation Time |
+| Completed Operations   | Operation Creation Time |
 
 Note that "Completed Operations" is a goal state (see below), and may actually be any of several different states such as "successful", "cancelled", "failed" and so forth.
 
@@ -1957,20 +1964,20 @@ Following is a detailed description of the JSON payload.
 
 A notification item consists a top-level object that contains an array of events, each of which identified the subscription due to which this notification is being sent.
 
-Field | Description
------ | --------------------------------------------------------------------------------------------------
-value | Array of events that have been raised within the subscription’s scope since the last notification.
+| Field | Description                                                                                        |
+| ----- | -------------------------------------------------------------------------------------------------- |
+| value | Array of events that have been raised within the subscription’s scope since the last notification. |
 
 Each item of the events array contains the following properties:
 
-Field              | Description
------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-subscriptionId     | The id of the subscription due to which this notification has been sent.<br/>Services MUST provide the *subscriptionId* field.
-clientState        | Services MUST provide the *clientState* field if it was provided at subscription creation time.
-expirationDateTime | Services MUST provide the *expirationDateTime* field if the subscription has one.
-resource           | Services MUST provide the resource field. This URL MUST be considered opaque by the subscribing application.  In the case of a richer notification it MAY be subsumed by message content that implicitly contains the resource URL to avoid duplication.<br/>If a service is providing this data as part of a more detailed data packet, then it need not be duplicated.
-userId             | Services MUST provide this field for user-scoped resources.  In the case of user-scoped resources, the unique identifier for the user should be used.<br/>In the case of resources shared between a specific set of users, multiple notifications must be sent, passing the unique identifier of each user.<br/>For tenant-scoped resources, the user id of the subscription should be used.
-tenantId           | Services that wish to support cross-tenant requests SHOULD provide this field. Services that provide notifications on tenant-scoped data MUST send this field.
+| Field              | Description                                                                                                                                                                                                                                                                                                                                                                                  |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| subscriptionId     | The id of the subscription due to which this notification has been sent.<br/>Services MUST provide the *subscriptionId* field.                                                                                                                                                                                                                                                               |
+| clientState        | Services MUST provide the *clientState* field if it was provided at subscription creation time.                                                                                                                                                                                                                                                                                              |
+| expirationDateTime | Services MUST provide the *expirationDateTime* field if the subscription has one.                                                                                                                                                                                                                                                                                                            |
+| resource           | Services MUST provide the resource field. This URL MUST be considered opaque by the subscribing application.  In the case of a richer notification it MAY be subsumed by message content that implicitly contains the resource URL to avoid duplication.<br/>If a service is providing this data as part of a more detailed data packet, then it need not be duplicated.                     |
+| userId             | Services MUST provide this field for user-scoped resources.  In the case of user-scoped resources, the unique identifier for the user should be used.<br/>In the case of resources shared between a specific set of users, multiple notifications must be sent, passing the unique identifier of each user.<br/>For tenant-scoped resources, the user id of the subscription should be used. |
+| tenantId           | Services that wish to support cross-tenant requests SHOULD provide this field. Services that provide notifications on tenant-scoped data MUST send this field.                                                                                                                                                                                                                               |
 
 ### 15.7. Managing subscriptions programmatically
 For per-user subscriptions, an API MUST be provided to create and manage subscriptions.
@@ -1987,18 +1994,18 @@ https://api.contoso.com/apiVersion/$subscriptions
 The POST request contains a single subscription object to be created.
 That subscription object has the following properties:
 
-Property Name   | Required | Notes
---------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------
-resource        | Yes      | Resource path to watch.
-notificationUrl | Yes      | The target web hook URL.
-clientState     | No       | Opaque string passed back to the client on all notifications. Callers may choose to use this to provide tagging mechanisms.
+| Property Name   | Required | Notes                                                                                                                       |
+| --------------- | -------- | --------------------------------------------------------------------------------------------------------------------------- |
+| resource        | Yes      | Resource path to watch.                                                                                                     |
+| notificationUrl | Yes      | The target web hook URL.                                                                                                    |
+| clientState     | No       | Opaque string passed back to the client on all notifications. Callers may choose to use this to provide tagging mechanisms. |
 
 If the subscription was successfully created, the service MUST respond with the status code 201 CREATED and a body containing at least the following properties:
 
-Property Name      | Required | Notes
------------------- | -------- | -------------------------------------------------------------------------------------------
-id                 | Yes      | Unique ID of the new subscription that can be used later to update/delete the subscription.
-expirationDateTime | No       | Uses existing Microsoft REST API Guidelines defined time formats.
+| Property Name      | Required | Notes                                                                                       |
+| ------------------ | -------- | ------------------------------------------------------------------------------------------- |
+| id                 | Yes      | Unique ID of the new subscription that can be used later to update/delete the subscription. |
+| expirationDateTime | No       | Uses existing Microsoft REST API Guidelines defined time formats.                           |
 
 Creation of subscriptions SHOULD be idempotent.
 The combination of properties scoped to the auth token, provides a uniqueness constraint.
@@ -2237,42 +2244,42 @@ Where services have a property, whose data matches the names below, the service 
 This table will grow as services add terms that will be more commonly used.
 Service owners adding such terms SHOULD propose additions to this document.
 
-| |
-|------------- |
- attendees     |
- body          |
- createdDateTime |
- childCount    |
- children      |
- contentUrl    |
- country       |
- createdBy     |
- displayName   |
- errorUrl      |
- eTag          |
- event         |
- expirationDateTime |
- givenName     |
- jobTitle      |
- kind          |
- id            |
- lastModifiedDateTime |
- location      |
- memberOf      |
- message       |
- name          |
- owner         |
- people        |
- person        |
- postalCode    |
- photo         |
- preferredLanguage |
- properties    |
- signInName    |
- surname       |
- tags          |
- userPrincipalName |
- webUrl        |
+|                      |
+| -------------------- |
+| attendees            |
+| body                 |
+| createdDateTime      |
+| childCount           |
+| children             |
+| contentUrl           |
+| country              |
+| createdBy            |
+| displayName          |
+| errorUrl             |
+| eTag                 |
+| event                |
+| expirationDateTime   |
+| givenName            |
+| jobTitle             |
+| kind                 |
+| id                   |
+| lastModifiedDateTime |
+| location             |
+| memberOf             |
+| message              |
+| name                 |
+| owner                |
+| people               |
+| person               |
+| postalCode           |
+| photo                |
+| preferredLanguage    |
+| properties           |
+| signInName           |
+| surname              |
+| tags                 |
+| userPrincipalName    |
+| webUrl               |
 
 ## 18. Appendix
 ### 18.1. Sequence diagram notes
