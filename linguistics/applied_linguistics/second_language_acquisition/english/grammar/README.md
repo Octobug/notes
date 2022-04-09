@@ -1,5 +1,18 @@
 # 语法
 
+## 引言
+
+*I have been coming to Beijing for fourteen years*.
+
+过去这 14 年中，我常常来北京。
+
+解析: 用短暂动词 (come) 的完成进行时 (have been coming)
+来表示到目前为止的一段时间内重复发生的动作。
+
+❌ I have been coming to Beijing fourteen times.
+
+解析: 现在完成进行时态在表示重复活动时，不能说明具体的次数。
+
 ## 目录
 
 ### 初级教程：走近语法
