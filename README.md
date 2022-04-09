@@ -88,7 +88,10 @@ disciplines according to the
 2. [Medicine and Health](https://en.wikipedia.org/wiki/Medicine)
     1. [Primary Care](primary_care)
         1. Health Administration
-3. [Journalism, Media Studies and Communication](journalism_media_studies_and_communication)
+3. [Journalism](https://en.wikipedia.org/wiki/Journalism),
+   [Media Studies](https://en.wikipedia.org/wiki/Media_studies) and
+   [Communication](https://en.wikipedia.org/wiki/Communication_studies)
+    1. [Journalism](journalism)
 
 ## Blogs
 
