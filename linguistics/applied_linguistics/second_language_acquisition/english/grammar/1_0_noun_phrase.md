@@ -6,6 +6,7 @@
   - [0.1 引言](#01-引言)
   - [0.2 名词短语](#02-名词短语)
     - [0.2.1 名词短语的功能](#021-名词短语的功能)
+    - [0.2.2 名词短语的构造——“左二右六”的定语规律](#022-名词短语的构造左二右六的定语规律)
 
 ## 0.1 引言
 
@@ -27,3 +28,16 @@
 5. discourse: 篇章
 
 ### 0.2.1 名词短语的功能
+
+名词与它的修饰语一起即构成名词短语。
+
+- **These red roses** are for you.
+- I have **three close friends**.
+- I really need **a new computer**.
+- I can't find **the best answer**.
+- He is **my best friend**.
+- There are **some red roses** on **that small table**.
+
+### 0.2.2 名词短语的构造——“左二右六”的定语规律
+
+>>>>> progress
