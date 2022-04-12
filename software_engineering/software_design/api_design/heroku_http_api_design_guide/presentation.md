@@ -1,11 +1,6 @@
-# HTTP API 设计指南
+# 学习《HTTP API 设计指南》
 
-> 翻译自 `HTTP API Design Guide` [https://github.com/interagent/http-api-design](https://github.com/interagent/http-api-design)
-
-- 更新时间：`2015-10-08` 更新至 [#50bda6](https://github.com/interagent/http-api-design/commit/50bda693252a4f52653d638fd5503b39b88b8470)
-- 欢迎大家问题和共同维护这个文档
-- HTML和PDF通过`MWeb`生成
-- 翻译人员见`CONTRIBUTORS.md`
+> 来源: [ZhangBohan/http-api-design-ZH_CN](https://github.com/ZhangBohan/http-api-design-ZH_CN)
 
 ## 前言
 
@@ -19,46 +14,50 @@
 
 我们欢迎你为这篇指南做[贡献](https://github.com/interagent/http-api-design/blob/master/CONTRIBUTING.md)。
 
-## 目录
+- [学习《HTTP API 设计指南》](#学习http-api-设计指南)
+  - [前言](#前言)
+  - [基础](#基础)
+    - [隔离关注点](#隔离关注点)
+    - [强制使用安全连接（Secure Connections）](#强制使用安全连接secure-connections)
+    - [强制头信息 Accept 中提供版本号](#强制头信息-accept-中提供版本号)
+    - [支持Etag缓存](#支持etag缓存)
+    - [为内省而提供 Request-Id](#为内省而提供-request-id)
+    - [通过请求中的范围（Range）拆分大的响应](#通过请求中的范围range拆分大的响应)
+  - [请求（Requests）](#请求requests)
+    - [在请求的body体使用JSON格式数据](#在请求的body体使用json格式数据)
+    - [资源名（Resource names）](#资源名resource-names)
+    - [行为（Actions）](#行为actions)
+    - [使用统一的资源路径格式](#使用统一的资源路径格式)
+      - [路径和属性要小写](#路径和属性要小写)
+      - [支持方便的无id间接引用](#支持方便的无id间接引用)
+      - [最小化路径嵌套](#最小化路径嵌套)
+  - [响应（Responses）](#响应responses)
+    - [返回合适的状态码](#返回合适的状态码)
+    - [提供全部可用的资源](#提供全部可用的资源)
+    - [提供资源的(UU)ID](#提供资源的uuid)
+    - [提供标准的时间戳](#提供标准的时间戳)
+    - [使用UTC（世界标准时间）时间，用ISO8601进行格式化](#使用utc世界标准时间时间用iso8601进行格式化)
+    - [嵌套外键关系](#嵌套外键关系)
+    - [生成结构化的错误](#生成结构化的错误)
+    - [显示频率限制状态](#显示频率限制状态)
+    - [保证响应JSON最小化](#保证响应json最小化)
+  - [工件（Artifacts）](#工件artifacts)
+    - [提供机器可读的JSON模式](#提供机器可读的json模式)
+    - [提供人类可读的文档](#提供人类可读的文档)
+    - [提供可执行的例子](#提供可执行的例子)
+    - [描述稳定性](#描述稳定性)
+  - [参考资料](#参考资料)
+  - [扩展阅读](#扩展阅读)
 
-* 基础
-  * 强制使用安全连接（Secure Connections）
-  * 强制头信息 Accept 中提供版本号
-  * 支持Etag缓存
-  * 为内省而提供 Request-Id
-  * 通过请求中的范围（Range）拆分大的响应
-* 请求（Requests）
-  * 在请求的body体使用JSON格式数据
-  * 使用统一的资源路径格式
-  * 路径和属性要小写
-  * 支持方便的无id间接引用
-  * 最小化路径嵌套
-* 响应（Responses）
-  * 返回合适的状态码
-  * 提供全部可用的资源
-  * 提供资源的(UU)ID
-  * 提供标准的时间戳
-  * 使用UTC（世界标准时间）时间，用ISO8601进行格式化
-  * 嵌套外键关系
-  * 生成结构化的错误
-  * 显示频率限制状态
-  * 保证响应JSON最小化
-* 工件（Artifacts）
-  * 提供机器可读的JSON模式
-  * 提供人类可读的文档
-  * 提供可执行的例子
-  * 描述稳定性
-* 译者注
+## 基础
 
+### 隔离关注点
 
-### 基础
-
-#### 隔离关注点
 设计时通过将请求和响应之间的不同部分隔离来让事情变得简单。保持简单的规则让我们能更关注在一些更大的更困难的问题上。
 
 请求和响应将解决一个特定的资源或集合。使用路径（path）来表明身份，body来传输内容（content）还有头信息（header）来传递元数据（metadata）。查询参数同样可以用来传递头信息的内容，但头信息是首选，因为他们更灵活、更能传达不同的信息。
 
-#### 强制使用安全连接（Secure Connections）
+### 强制使用安全连接（Secure Connections）
 
 所有的访问API行为，都需要用 TLS 通过安全连接来访问。没有必要搞清或解释什么情况需要 TLS 什么情况不需要 TLS，直接强制任何访问都要通过 TLS。
 
@@ -66,7 +65,7 @@
 
 把非 TLS 的请求重定向(Redirect)至 TLS 连接是不明智的，这种含混/不好的客户端行为不会带来明显好处。依赖于重定向的客户端访问不仅会导致双倍的服务器负载，还会使 TLS 加密失去意义，因为在首次非 TLS 调用时，敏感信息就已经暴露出去了。
 
-#### 强制头信息 Accept 中提供版本号
+### 强制头信息 Accept 中提供版本号
 
 制定版本并在版本之间平缓过渡对于设计和维护一套API是个巨大的挑战。所以，最好在设计之初就使用一些方法来预防可能会遇到的问题。
 
@@ -78,21 +77,21 @@
 Accept: application/vnd.heroku+json; version=3
 ```
 
-#### 支持Etag缓存
+### 支持Etag缓存
 
 在所有返回的响应中包含`ETag`头信息，用来标识资源的版本。这让用户对资源进行缓存处理成为可能，在后续的访问请求中把`If-None-Match`头信息设置为之前得到的`ETag`值，就可以侦测到已缓存的资源是否需要更新。
 
-#### 为内省而提供 Request-Id
+### 为内省而提供 Request-Id
 
 为每一个请求响应包含一个`Request-Id`头，并使用UUID作为该值。通过在客户端、服务器或任何支持服务上记录该值，它能为我们提供一种机制来跟踪、诊断和调试请求。
 
-#### 通过请求中的范围（Range）拆分大的响应
+### 通过请求中的范围（Range）拆分大的响应
 
 一个大的响应应该通过多个请求使用`Range`头信息来拆分，并指定如何取得。详细的请求和响应的头信息（header），状态码(status code)，范围(limit)，排序(ordering)和迭代(iteration)等，参考[Heroku Platform API discussion of Ranges](https://devcenter.heroku.com/articles/platform-api-reference#ranges).
 
-###请求（Requests）
+## 请求（Requests）
 
-#### 在请求的body体使用JSON格式数据
+### 在请求的body体使用JSON格式数据
 
 在 `PUT`/`PATCH`/`POST` 请求的正文（request bodies）中使用JSON格式数据，而不是使用 form 表单形式的数据。这与我们使用JSON格式返回请求相对应，例如:
 
@@ -112,13 +111,11 @@ $ curl -X POST https://service.com/apps \
 }
 ```
 
-#### 使用统一的资源路径格式
-
-##### 资源名（Resource names）
+### 资源名（Resource names）
 
 使用复数形式为资源命名，除非这个资源在系统中是单例的 (例如，在大多数系统中，给定的用户帐户只有一个)。 这种方式保持了特定资源的统一性。
 
-##### 行为（Actions）
+### 行为（Actions）
 
 好的末尾不需要为资源指定特殊的行为，但在特殊情况下，为某些资源指定行为却是必要的。为了描述清楚，在行为前加上一个标准的`actions`：
 
@@ -131,6 +128,8 @@ $ curl -X POST https://service.com/apps \
 ```
 /runs/{run_id}/actions/stop
 ```
+
+### 使用统一的资源路径格式
 
 #### 路径和属性要小写
 
@@ -176,9 +175,9 @@ $ curl https://service.com/apps/www-prod
 /dynos/{dyno_id}
 ```
 
-### 响应（Responses）
+## 响应（Responses）
 
-#### 返回合适的状态码
+### 返回合适的状态码
 
 为每一次的响应返回合适的HTTP状态码。 好的响应应该使用如下的状态码:
 
@@ -200,11 +199,10 @@ $ curl https://service.com/apps/www-prod
 
 对于用户错误和服务器错误情况状态码，参考：  [HTTP response code spec](https://tools.ietf.org/html/rfc7231#section-6)
 
-#### 提供全部可用的资源
+### 提供全部可用的资源
 
 提供全部可显现的资源表述 (例如： 这个对象的所有属性) ，当响应码为200或是201时返回所有可用资源，包含 `PUT`/`PATCH` 和 `DELETE`
 请求，例如:
-
 
 ```json
 $ curl -X DELETE \  
@@ -233,7 +231,7 @@ Content-Type: application/json;charset=utf-8
 {}
 ```
 
-#### 提供资源的(UU)ID
+### 提供资源的(UU)ID
 
 在默认情况给每一个资源一个`id`属性。除非有更好的理由，否则请使用UUID。不要使用那种在服务器上或是资源中不是全局唯一的标识，尤其是自动增长的id。
 
@@ -243,7 +241,7 @@ Content-Type: application/json;charset=utf-8
 "id": "01234567-89ab-cdef-0123-456789abcdef"
 ```
 
-#### 提供标准的时间戳
+### 提供标准的时间戳
 
 为资源提供默认的创建时间 `created_at` 和更新时间 `updated_at`，例如:
 
@@ -258,7 +256,7 @@ Content-Type: application/json;charset=utf-8
 
 有些资源不需要使用时间戳那么就忽略这两个字段。
 
-#### 使用UTC（世界标准时间）时间，用ISO8601进行格式化
+### 使用UTC（世界标准时间）时间，用ISO8601进行格式化
 
 仅接受和返回UTC格式的时间。ISO8601格式的数据，例如:
 
@@ -266,7 +264,7 @@ Content-Type: application/json;charset=utf-8
 "finished_at": "2012-01-01T12:00:00Z"
 ```
 
-#### 嵌套外键关系
+### 嵌套外键关系
 
 使用嵌套对象序列化外键关联，例如:
 
@@ -304,7 +302,7 @@ Content-Type: application/json;charset=utf-8
 }
 ```
 
-#### 生成结构化的错误
+### 生成结构化的错误
 
 响应错误的时，生成统一的、结构化的错误信息。包含一个机器可读的错误 `id`，一个人类可读的错误信息（`message`），根据情况可以添加一个`url`来告诉客户端关于这个错误的更多信息以及如何去解决它，例如:
 
@@ -322,13 +320,13 @@ HTTP/1.1 429 Too Many Requests
 
 文档化错误信息格式，以及客户端可能遇到的错误信息`id`。
 
-#### 显示频率限制状态
+### 显示频率限制状态
 
 客户端的访问速度限制可以维护服务器的良好状态，保证为其他客户端请求提供高性的服务。你可以使用[token bucket algorithm](http://en.wikipedia.org/wiki/Token_bucket)技术量化请求限制。
 
 为每一个带有`RateLimit-Remaining`响应头的请求，返回预留的请求tokens。
 
-#### 保证响应JSON最小化
+### 保证响应JSON最小化
 
 请求中多余的空格会增加响应大小，而且现在很多的HTTP客户端都会自己输出可读格式（"prettify"）的JSON。所以最好保证响应JSON最小化，例如：
 
@@ -351,15 +349,14 @@ HTTP/1.1 429 Too Many Requests
 
 你可以提供可选的方式为客户端提供更详细可读的响应，使用查询参数（例如：`?pretty=true`）或者通过`Accept`头信息参数（例如：`Accept: application/vnd.heroku+json; version=3; indent=4;`）。
 
-### 工件（Artifacts）
+## 工件（Artifacts）
 
-
-#### 提供机器可读的JSON模式
+### 提供机器可读的JSON模式
 
 提供一个机器可读的模式来恰当的表现你的API。使用
 [prmd](https://github.com/interagent/prmd)管理你的模式，并且确保用`prmd verify`验证是有效的。
 
-#### 提供人类可读的文档
+### 提供人类可读的文档
 
 提供人类可读的文档让客户端开发人员可以理解你的API。
 
@@ -373,7 +370,7 @@ HTTP/1.1 429 Too Many Requests
 * 错误的序列化格式。
 * 不同编程语言客户端使用API的例子。
 
-#### 提供可执行的例子
+### 提供可执行的例子
 
 提供可执行的示例让用户可以直接在终端里面看到API的调用情况，最大程度的让这些示例可以简单的使用，以减少用户尝试使用API的工作量。例如:
 
@@ -384,7 +381,7 @@ $ curl -is https://$TOKEN@service.com/users
 
 如果你使用[prmd](https://github.com/interagent/prmd)生成Markdown文档，每个节点都会自动获取一些示例。
 
-#### 描述稳定性
+### 描述稳定性
 
 描述您的API的稳定性或是它在各种各样节点环境中的完备性和稳定性，例如：加上 原型版（prototype）/开发版（development）/产品版（production）等标记。
 
@@ -392,24 +389,20 @@ $ curl -is https://$TOKEN@service.com/users
 
 一旦你的API宣布产品正式版本及稳定版本时，不要在当前API版本中做一些不兼容的改变。如果你需要，请创建一个新的版本的API。
 
+<details>
+  <summary>Click to expand!</summary>
 
-----------
+## 参考资料
 
-好久没同步更新了，这么多朋友关注，最近有时间重启这个项目
+- [HTTP API 设计指南](https://github.com/ZhangBohan/http-api-design-ZH_CN)
+  - 英文原版: [HTTP API Design Guide](https://github.com/interagent/http-api-design)
+- [Microservices: From Design to Deployment, a Free Ebook from NGINX](https://www.nginx.com/blog/microservices-from-design-to-deployment-ebook-nginx/)
 
-进微信交流群加我好友：
+## 扩展阅读
 
-![image](https://user-images.githubusercontent.com/2317407/75836820-07134080-5dfe-11ea-8cc6-d755f32f486d.png)
+- [An Architect's guide to APIs: SOAP, REST, GraphQL, and gRPC](https://www.redhat.com/architect/apis-soap-rest-graphql-grpc)
+- [GraphQL](https://graphql.org/)
+  - [How to GraphQL](https://www.howtographql.com/)
+  - [GitHub GraphQL API](https://docs.github.com/cn/graphql)
 
-> ## 参考资料
->
-> - [HTTP API 设计指南](https://github.com/ZhangBohan/http-api-design-ZH_CN)
->   - 英文原版: [HTTP API Design Guide](https://github.com/interagent/http-api-design)
-> - [Microservices: From Design to Deployment, a Free Ebook from NGINX](https://www.nginx.com/blog/microservices-from-design-to-deployment-ebook-nginx/)
->
-> ## 扩展阅读
->
-> - [An Architect's guide to APIs: SOAP, REST, GraphQL, and gRPC](https://www.redhat.com/architect/apis-soap-rest-graphql-grpc)
-> - [GraphQL](https://graphql.org/)
->   - [How to GraphQL](https://www.howtographql.com/)
->   - [GitHub GraphQL API](https://docs.github.com/cn/graphql)
+</details>
