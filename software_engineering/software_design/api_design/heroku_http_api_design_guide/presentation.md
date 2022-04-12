@@ -33,7 +33,7 @@
       - [支持无 ID 间接引用](#支持无-id-间接引用)
       - [最小化路径嵌套](#最小化路径嵌套)
   - [响应 (Responses)](#响应-responses)
-    - [返回合适的状态码](#返回合适的状态码)
+    - [返回适当的状态码](#返回适当的状态码)
     - [提供全部可用的资源](#提供全部可用的资源)
     - [提供资源的(UU)ID](#提供资源的uuid)
     - [提供标准的时间戳](#提供标准的时间戳)
@@ -335,34 +335,37 @@ curl https://service.com/apps/www-prod
 
 响应部分概述了 API 响应的模式。
 
-### 返回合适的状态码
+### 返回适当的状态码
 
-为每一次的响应返回合适的HTTP状态码。 好的响应应该使用如下的状态码:
+为每一个响应返回适当的 HTTP 状态码。成功的响应应该使用如下的状态码：
 
-* `200`: `GET`请求成功，及`DELETE`或`PATCH`同步请求完成，或者`PUT`同步更新一个已存在的资源
-* `201`: `POST` 同步请求完成，或者`PUT`同步创建一个新的资源
-* `202`: `POST`，`PUT`，`DELETE`，或`PATCH`请求接收，将被异步处理
-* `206`: `GET` 请求成功，但是只返回一部分，参考：[上文中范围分页](#按范围分页)
+- `200`: `GET`, `PUT`, `DELETE` 或 `PATCH` 请求同步地成功完成
+- `201`: `POST` 请求同步地完成一个新资源的创建，
+  在响应中提供指向新创建资源的 `Location` Header 也是最佳实践。这在 `POST`
+  上下文中特别有用，因为新的资源具有与原请求不同的 URL。
+- `202`: `POST`, `PUT`, `DELETE` 或 `PATCH` 请求被接受，且将被异步地处理
+- `206`: `GET` 请求成功，但是只返回一部分，
+  参考上文中的[通过请求中的范围 (Range) 拆分大的响应](#通过请求中的范围-range-拆分大的响应)部分
 
-使用身份认证（authentication）和授权（authorization）错误码时需要注意：
+使用身份认证 (authentication) 和授权 (authorization) 错误码时需要注意：
 
-* `401 Unauthorized`: 用户未认证，请求失败
-* `403 Forbidden`: 用户无权限访问该资源，请求失败
+- `401 Unauthorized`: 用户未认证，请求失败
+- `403 Forbidden`: 用户无权限访问该资源，请求失败
 
-当用户请求错误时，提供合适的状态码可以提供额外的信息：
+返回适当的状态码可以提供额外的错误信息：
 
-* `422 Unprocessable Entity`: 请求被服务器正确解析，但是包含无效字段
-* `429 Too Many Requests`: 因为访问频繁，你已经被限制访问，稍后重试
-* `500 Internal Server Error`: 服务器错误，确认状态并报告问题
+- `422 Unprocessable Entity`: 请求被服务器正确解析，但是包含无效字段
+- `429 Too Many Requests`: 因为访问频繁，已经被限制访问，稍后重试
+- `500 Internal Server Error`: 服务器内部错误，请确认服务状态或反馈该问题
 
-对于用户错误和服务器错误情况状态码，参考：  [HTTP response code spec](https://tools.ietf.org/html/rfc7231#section-6)
+对于用户错误和服务器错误的相关状态码，请参考 [HTTP response code spec](https://tools.ietf.org/html/rfc7231#section-6)
 
 ### 提供全部可用的资源
 
-提供全部可显现的资源表述 (例如： 这个对象的所有属性) ，当响应码为200或是201时返回所有可用资源，包含 `PUT`/`PATCH` 和 `DELETE`
-请求，例如:
+尽可能在响应中提供完整的资源表示 (例如：某个对象的所有属性)。当响应码为 200 或是 201
+时返回对应的完整资源，包括 `PUT`, `PATCH` 和 `DELETE` 请求，例如：
 
-```json
+```sh
 $ curl -X DELETE \  
   https://service.com/apps/1f9b/domains/0fd4
 
@@ -377,9 +380,9 @@ Content-Type: application/json;charset=utf-8
 }
 ```
 
-当请求状态码为202时，不返回所有可用资源，例如：
+当请求状态码为 202 时，不返回完整的资源表示，例如：
 
-```
+```sh
 $ curl -X DELETE \  
   https://service.com/apps/1f9b/dynos/05bd
 
@@ -391,6 +394,8 @@ Content-Type: application/json;charset=utf-8
 
 ### 提供资源的(UU)ID
 
+>>>>> progress
+
 在默认情况给每一个资源一个`id`属性。除非有更好的理由，否则请使用UUID。不要使用那种在服务器上或是资源中不是全局唯一的标识，尤其是自动增长的id。
 
 生成小写的UUID格式 `8-4-4-4-12`，例如：
@@ -398,6 +403,18 @@ Content-Type: application/json;charset=utf-8
 ```json
 "id": "01234567-89ab-cdef-0123-456789abcdef"
 ```
+
+<details>
+  <summary>Has there ever been a UUID collision?</summary>
+
+---
+
+> <https://www.quora.com/Has-there-ever-been-a-UUID-collision>
+
+We are generating about 1M UUID4 a day, and we are getting several hundred
+collisions a day.
+
+</details>
 
 ### 提供标准的时间戳
 
@@ -483,6 +500,15 @@ HTTP/1.1 429 Too Many Requests
 客户端的访问速度限制可以维护服务器的良好状态，保证为其他客户端请求提供高性的服务。你可以使用[token bucket algorithm](http://en.wikipedia.org/wiki/Token_bucket)技术量化请求限制。
 
 为每一个带有`RateLimit-Remaining`响应头的请求，返回预留的请求tokens。
+
+<details>
+  <summary>接口调用频次限制一般如何实现？</summary>
+
+---
+
+>>>>> progress
+
+</details>
 
 ### 保证响应JSON最小化
 
