@@ -24,15 +24,15 @@
     - [支持 Etags 缓存](#支持-etags-缓存)
     - [为内省提供 Request-Id](#为内省提供-request-id)
     - [通过请求中的范围 (Range) 拆分大的响应](#通过请求中的范围-range-拆分大的响应)
-  - [请求（Requests）](#请求requests)
-    - [在请求的body体使用JSON格式数](#在请求的body体使用json格式数)
-    - [资源名（Resource names）](#资源名resource-names)
-    - [行为（Actions）](#行为actions)
+  - [请求 (Requests)](#请求-requests)
+    - [请求体使用 JSON 格式](#请求体使用-json-格式)
+    - [资源名称 (Resource names)](#资源名称-resource-names)
+    - [行为 (Actions)](#行为-actions)
     - [使用统一的资源路径格式](#使用统一的资源路径格式)
-      - [路径和属性要小写](#路径和属性要小写)
-      - [支持方便的无id间接引用](#支持方便的无id间接引用)
+      - [路径与属性名使用小写](#路径与属性名使用小写)
+      - [支持无 ID 间接引用](#支持无-id-间接引用)
       - [最小化路径嵌套](#最小化路径嵌套)
-  - [响应（Responses）](#响应responses)
+  - [响应 (Responses)](#响应-responses)
     - [返回合适的状态码](#返回合适的状态码)
     - [提供全部可用的资源](#提供全部可用的资源)
     - [提供资源的(UU)ID](#提供资源的uuid)
@@ -224,13 +224,16 @@ alphabet, you can do things like:
 
 </details>
 
-## 请求（Requests）
+## 请求 (Requests)
 
-### 在请求的body体使用JSON格式数
+请求部分概述了 API 请求的模式。
 
-在 `PUT`/`PATCH`/`POST` 请求的正文（request bodies）中使用JSON格式数据，而不是使用 form 表单形式的数据。这与我们使用JSON格式返回请求相对应，例如:
+### 请求体使用 JSON 格式
 
-```
+在 `PUT`/`PATCH`/`POST` 请求体 (request bodies) 中使用 JSON 格式数据，
+而非 form 表单形式编码的数据。这与我们使用 JSON 格式返回响应体相对应，例如:
+
+```sh
 $ curl -X POST https://service.com/apps \
     -H "Content-Type: application/json" \
     -d '{"name": "demoapp"}'
@@ -246,63 +249,81 @@ $ curl -X POST https://service.com/apps \
 }
 ```
 
-### 资源名（Resource names）
+### 资源名称 (Resource names)
 
-使用复数形式为资源命名，除非这个资源在系统中是单例的 (例如，在大多数系统中，给定的用户帐户只有一个)。 这种方式保持了特定资源的统一性。
+使用复数形式命名资源，除非这个资源在系统中是单例的
+(例如，一个系统的整体状态可能是 `/status`)。 这种方式使得对资源的引用方式保持统一性。
 
-### 行为（Actions）
+### 行为 (Actions)
 
-好的末尾不需要为资源指定特殊的行为，但在特殊情况下，为某些资源指定行为却是必要的。为了描述清楚，在行为前加上一个标准的`actions`：
+好的端点不应该指定资源的特殊行为，在某些情况下，为资源指定行为却是必要的。
+这时应该在行为前加上一个清晰的 `actions` 前缀：
 
-```
+```path
 /resources/:resource/actions/:action
 ```
 
-例如：
+例如，停止某个运行的资源可以这么表示：
 
-```
+```path
 /runs/{run_id}/actions/stop
+```
+
+对集合的操作也应该尽量减少。在需要时，它们应该使用顶级行为路径来避免命名空间冲突，
+并清楚地显示操作范围：
+
+```path
+/actions/:action/resources
+```
+
+例如，重启所有服务器可以这么表示：
+
+```path
+/actions/restart/servers
 ```
 
 ### 使用统一的资源路径格式
 
-#### 路径和属性要小写
+#### 路径与属性名使用小写
 
-为了和域名命名规则保持一致，使用小写字母并用`-`分割路径名字，例如：
+为了和域名命名规则保持一致，使用小写字母并用 `-` 分割路径名字，例如：
 
-```
+```url
 service-api.com/users
 service-api.com/app-setups
 ```
 
-属性也使用小写字母，但是属性名要用下划线`_`分割，以便在Javascript中省略引号。 例如：
+属性也使用小写字母，但是属性名要用下划线 `_` 分割，以便在 JavaScript 中省略引号，例如：
 
 ```json
 service_class: "first"
 ```
 
-#### 支持方便的无id间接引用
+#### 支持无 ID 间接引用
 
-在某些情况下，让用户提供ID去定位资源是不方便的。例如，一个用户想取得他在Heroku平台app信息，但是这个app的唯一标识是UUID。这种情况下，你应该支持接口通过名字和ID都能访问，例如:
+某些情况下，用户无法方便地提供 ID 去定位资源。例如，一个用户想获取他在 Heroku 平台某个 app
+的信息，但是这个 app 的唯一标识是 UUID。这种情况下就要支持接口通过名称和 ID 都能访问，例如:
 
+```sh
+curl https://service.com/apps/{app_id_or_name}
+curl https://service.com/apps/97addcf0-c182
+curl https://service.com/apps/www-prod
 ```
-$ curl https://service.com/apps/{app_id_or_name}
-$ curl https://service.com/apps/97addcf0-c182
-$ curl https://service.com/apps/www-prod
-```
-不要只接受使用名字而放弃了使用id。
+
+不要只接受名称而不支持 ID。
 
 #### 最小化路径嵌套
 
-在一些有父路径/子路径嵌套关系的资源数据模块中，路径可能有非常深的嵌套关系，例如:
+在一些有父路径/子路径嵌套关系的资源中，路径可能有非常深的嵌套关系，例如：
 
-```
+```path
 /orgs/{org_id}/apps/{app_id}/dynos/{dyno_id}
 ```
 
-推荐在根(root)路径下指定资源来限制路径的嵌套深度。使用嵌套指定范围的资源。在上述例子中，dyno属于app，app属于org可以表示为：
+推荐优先将资源放置在根 (root) 路径下来减少路径的嵌套深度，嵌套用来指定有范围的集合资源。
+在上述例子中，dyno 属于某个 app，app 属于某个 org 可以表示为：
 
-```
+```path
 /orgs/{org_id}
 /orgs/{org_id}/apps
 /apps/{app_id}
@@ -310,7 +331,9 @@ $ curl https://service.com/apps/www-prod
 /dynos/{dyno_id}
 ```
 
-## 响应（Responses）
+## 响应 (Responses)
+
+响应部分概述了 API 响应的模式。
 
 ### 返回合适的状态码
 
