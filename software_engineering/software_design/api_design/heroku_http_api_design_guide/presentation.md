@@ -1,30 +1,31 @@
 # 学习《HTTP API 设计指南》
 
-> 来源: [ZhangBohan/http-api-design-ZH_CN](https://github.com/ZhangBohan/http-api-design-ZH_CN)
+> 《HTTP API 设计指南》: [ZhangBohan/http-api-design-ZH_CN](https://github.com/ZhangBohan/http-api-design-ZH_CN)
 
 ## 前言
 
-这篇指南介绍描述了 HTTP+JSON API 的一种设计模式，最初摘录整理自 Heroku 平台的 API 设计指引 [Heroku 平台 API 指引](https://devcenter.heroku.com/articles/platform-api-reference)。
+这篇指南介绍描述了 `HTTP`+`JSON` API 的一种设计模式，最初摘录整理自 Heroku 平台的 API
+设计指引 [Heroku 平台 API 指引](https://devcenter.heroku.com/articles/platform-api-reference)。
 
-这篇指南除了详细介绍现有的 API 外，Heroku 将来新加入的内部 API 也会符合这种设计模式，我们希望非 Heroku 员工的API设计者也能感兴趣。
+这篇指南除了详细介绍现有的 API 外，Heroku 将来新加入的内部 API 也会符合这种设计模式，
+我们希望非 Heroku 员工的 API 设计者也能感兴趣。
 
-我们的目标是保持一致性，专注业务逻辑同时避免过度设计。我们一直试图找出一种良好的、一致的、显而易见的 API 设计方法，而并不是所谓的"最终/理想模式"。
+我们的目标是保持一致性，专注业务逻辑同时避免过度设计。我们一直试图找出一种**良好的**、
+**一致的**、**有据可查**的 API 设计方法，而并不是所谓的"终极/理想模式"。
 
-我们假设你熟悉基本的 HTTP+JSON API 设计方法，所以本篇指南并不包含所有的 API 设计基础。
-
-我们欢迎你为这篇指南做[贡献](https://github.com/interagent/http-api-design/blob/master/CONTRIBUTING.md)。
+我们假设你熟悉基本的 `HTTP`+`JSON` API 设计方法，所以本篇指南并不包含所有的 API 设计基础。
 
 - [学习《HTTP API 设计指南》](#学习http-api-设计指南)
   - [前言](#前言)
   - [基础](#基础)
     - [隔离关注点](#隔离关注点)
-    - [强制使用安全连接（Secure Connections）](#强制使用安全连接secure-connections)
-    - [强制头信息 Accept 中提供版本号](#强制头信息-accept-中提供版本号)
-    - [支持Etag缓存](#支持etag缓存)
-    - [为内省而提供 Request-Id](#为内省而提供-request-id)
-    - [通过请求中的范围（Range）拆分大的响应](#通过请求中的范围range拆分大的响应)
+    - [要求使用安全连接 (Secure Connections)](#要求使用安全连接-secure-connections)
+    - [要求在头信息 Accept 中提供版本号](#要求在头信息-accept-中提供版本号)
+    - [支持 Etags 缓存](#支持-etags-缓存)
+    - [为内省提供 Request-Id](#为内省提供-request-id)
+    - [通过请求中的范围 (Range) 拆分大的响应](#通过请求中的范围-range-拆分大的响应)
   - [请求（Requests）](#请求requests)
-    - [在请求的body体使用JSON格式数据](#在请求的body体使用json格式数据)
+    - [在请求的body体使用JSON格式数](#在请求的body体使用json格式数)
     - [资源名（Resource names）](#资源名resource-names)
     - [行为（Actions）](#行为actions)
     - [使用统一的资源路径格式](#使用统一的资源路径格式)
@@ -51,47 +52,181 @@
 
 ## 基础
 
+基础部分概述了指南其余部分所依据的设计原则。
+
 ### 隔离关注点
 
-设计时通过将请求和响应之间的不同部分隔离来让事情变得简单。保持简单的规则让我们能更关注在一些更大的更困难的问题上。
+设计时通过将请求和响应之间的不同部分隔离来让事情变得简单。
+保持简单的规则让我们能更关注在一些更大的更困难的问题上。
 
-请求和响应将解决一个特定的资源或集合。使用路径（path）来表明身份，body来传输内容（content）还有头信息（header）来传递元数据（metadata）。查询参数同样可以用来传递头信息的内容，但头信息是首选，因为他们更灵活、更能传达不同的信息。
+请求和响应用于处理特定的资源或集合。使用路径 (path) 来表明身份，body 来传输内容 (content)
+还有头信息 (headers) 来传递元数据（metadata）。查询参数 (URL query params)
+同样可以用来传递头信息的内容，但头信息是首选，因为他们更灵活、更能传达不同的信息。
 
-### 强制使用安全连接（Secure Connections）
+<details>
+  <summary>Heroku API Request/Response Headers Sample</summary>
 
-所有的访问API行为，都需要用 TLS 通过安全连接来访问。没有必要搞清或解释什么情况需要 TLS 什么情况不需要 TLS，直接强制任何访问都要通过 TLS。
+---
 
-理想状态下，通过拒绝所有非 TLS 请求，不响应 http 或80端口的请求以避免任何不安全的数据交换。如果现实情况中无法这样做，可以返回`403 Forbidden`响应。
+Request:
 
-把非 TLS 的请求重定向(Redirect)至 TLS 连接是不明智的，这种含混/不好的客户端行为不会带来明显好处。依赖于重定向的客户端访问不仅会导致双倍的服务器负载，还会使 TLS 加密失去意义，因为在首次非 TLS 调用时，敏感信息就已经暴露出去了。
-
-### 强制头信息 Accept 中提供版本号
-
-制定版本并在版本之间平缓过渡对于设计和维护一套API是个巨大的挑战。所以，最好在设计之初就使用一些方法来预防可能会遇到的问题。
-
-为了避免API的变动导致用户使用中产生意外结果或调用失败，最好强制要求所有访问都需要指定版本号。请避免提供默认版本号，一旦提供，日后想要修改它会相当困难。
-
-最适合放置版本号的位置是头信息(HTTP Headers)，在 `Accept` 段中使用自定义类型(content type)与其他元数据(metadata)一起提交。例如:
-
+```http2
+:authority: api.heroku.com
+:method: GET
+:path: /apps
+:scheme: https
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,
+  image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+accept-encoding: gzip, deflate, br
+accept-language: zh,zh-CN;q=0.9
+cache-control: max-age=0
+cookie: xxx
+sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36
 ```
+
+Response:
+
+```http2
+content-length: 159
+content-type: application/json; charset=utf-8
+date: Tue, 12 Apr 2022 09:20:57 GMT
+request-id: 5407b595-9ea5-481c-b3da-29e4c526ea3e,
+  ae601b96-d4f5-90db-3f51-ef462c71e80a,a4132c45-3694-ebf7-7f04-d313bb6f8eee
+traceparent: 00-5d171ca4bd996ec5bb6c84ac9602864b-96e13818744d65b3-01
+via: 1.1 spaces-router (1ee3716bf5eb), 2.0 spaces-router (1ee3716bf5eb)
+```
+
+</details>
+
+### 要求使用安全连接 (Secure Connections)
+
+所有的 API 访问都要求使用 TLS 安全连接。没有必要去区分或解释什么情况下需要 TLS
+什么情况不需要，直接强制任何访问都要通过 TLS。
+
+理想状态下，通过拒绝所有非 TLS 请求，不响应 HTTP 或 80 端口的请求以避免任何不安全的数据交换。
+如果现实情况中无法这样做，可以返回 `403 Forbidden` 响应。
+
+把非 TLS 的请求重定向 (Redirect) 至 TLS 连接是不明智的，
+这种含混/不好的客户端行为不会带来明显好处。依赖于重定向的客户端访问不仅会导致双倍的服务器负载，
+还会使 TLS 加密失去意义，因为在首次非 TLS 调用时，敏感信息就已经暴露出去了。
+
+### 要求在头信息 Accept 中提供版本号
+
+制定版本并在版本之间平缓过渡对于设计和维护一套 API 是个巨大的挑战。所以，
+最好在设计之初就使用一些方法来预防可能会遇到的问题。
+
+为了避免 API 的变动导致用户使用中产生意外结果或调用失败，最好强制要求所有访问都需要指定版本号。
+请避免提供默认版本号，一旦提供，日后想要修改它会相当困难。
+
+最适合放置版本号的位置是头信息 (HTTP Headers)，在 `Accept` 段中使用自定义类型
+(content type) 与其他元数据 (metadata) 一起提交。例如:
+
+```http
 Accept: application/vnd.heroku+json; version=3
 ```
 
-### 支持Etag缓存
+<details>
+  <summary>How does Heroku require API version in HTTP Accept Header?</summary>
 
-在所有返回的响应中包含`ETag`头信息，用来标识资源的版本。这让用户对资源进行缓存处理成为可能，在后续的访问请求中把`If-None-Match`头信息设置为之前得到的`ETag`值，就可以侦测到已缓存的资源是否需要更新。
+---
 
-### 为内省而提供 Request-Id
+```sh
+$ curl -nX GET https://api.heroku.com/apps/01234567-89ab-cdef-0123-456789abcdef
 
-为每一个请求响应包含一个`Request-Id`头，并使用UUID作为该值。通过在客户端、服务器或任何支持服务上记录该值，它能为我们提供一种机制来跟踪、诊断和调试请求。
+{
+  "id":"missing_version",
+  "error":"Please specify a version along with Heroku's API MIME type.
+    For example, `Accept: application/vnd.heroku+json; version=3`.\n"
+}
 
-### 通过请求中的范围（Range）拆分大的响应
+$ curl -nX GET https://api.heroku.com/apps/01234567-89ab-cdef-0123-456789abcdef \
+-H "Accept: application/vnd.heroku+json; version=3"
 
-一个大的响应应该通过多个请求使用`Range`头信息来拆分，并指定如何取得。详细的请求和响应的头信息（header），状态码(status code)，范围(limit)，排序(ordering)和迭代(iteration)等，参考[Heroku Platform API discussion of Ranges](https://devcenter.heroku.com/articles/platform-api-reference#ranges).
+{
+  "resource": "app",
+  "id": "not_found",
+  "message": "Couldn't find that app."
+}
+```
+
+</details>
+
+<details>
+  <summary>Why have version in headers and not URLs?</summary>
+
+---
+
+> - [Repo Issue](https://github.com/interagent/http-api-design/issues/47)
+> - [mark nottingham - Web API Versioning Smackdown](https://www.mnot.net/blog/2011/10/25/web_api_versioning_smackdown)
+
+URL `http://api.example.com/v1/things/foo`, `http://api.example.com/v2/things/foo`
+
+vs.
+
+HTTP Header `Accept: version=2`, `Accept: version=3`
+
+</details>
+
+### 支持 Etags 缓存
+
+在所有响应中包含 `ETag` 头信息，用来标识资源的版本。这让用户对资源进行缓存处理成为可能，
+在后续的访问请求中把 `If-None-Match` 头信息设置为之前得到的 `ETag` 值，
+就可以侦测到已缓存的资源是否需要更新。
+
+<details>
+  <summary>ETag?</summary>
+
+---
+
+ETag: Entity Tag
+
+</details>
+
+### 为内省提供 Request-Id
+
+为每一个请求响应包含一个 `Request-Id` 头，并使用 UUID 作为该值。通过在客户端、
+服务器或任何支持服务上记录该值，它能为我们提供一种机制来跟踪、诊断和调试请求。
+
+### 通过请求中的范围 (Range) 拆分大的响应
+
+一个大的响应应该通过多个请求使用 `Range` 头信息来拆分，并指出如何获取。
+详细的请求和响应的头信息 (header)，状态码 (status code)，范围 (limit)，排序 (ordering)
+和迭代 (iteration) 等，请参考 [Heroku Platform API discussion of Ranges](https://devcenter.heroku.com/articles/platform-api-reference#ranges).
+
+<details>
+  <summary>Further explanation of the Range header for pagination</summary>
+
+---
+
+> [Repo Issue](https://github.com/interagent/http-api-design/issues/36)
+
+We chose `..` as a delimiter. Byte ranges use `-`
+(`Content-Range: <unit> <range-start>-<range-end>/<size>`), but we didn't feel
+that was unique enough as uuids at least also contain this value, so `..` seems
+less ambiguous and is an established convention elsewhere for use as a
+delimiter. You can supply one or both ends, so if we were ranging over the
+alphabet, you can do things like:
+
+- `a..z` to get everything
+- `a..` to get the default size worth of results greater than or equal to `a`
+- `..z` to get the default size worth of results less than or equal to `z`
+- `]a..` results greater than `a` (not greater than or equal as above)
+- `..z[` results less than z (not less than or equal as above)
+
+</details>
 
 ## 请求（Requests）
 
-### 在请求的body体使用JSON格式数据
+### 在请求的body体使用JSON格式数
 
 在 `PUT`/`PATCH`/`POST` 请求的正文（request bodies）中使用JSON格式数据，而不是使用 form 表单形式的数据。这与我们使用JSON格式返回请求相对应，例如:
 
