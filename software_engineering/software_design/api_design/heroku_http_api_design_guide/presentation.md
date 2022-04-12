@@ -400,3 +400,16 @@ $ curl -is https://$TOKEN@service.com/users
 进微信交流群加我好友：
 
 ![image](https://user-images.githubusercontent.com/2317407/75836820-07134080-5dfe-11ea-8cc6-d755f32f486d.png)
+
+> ## 参考资料
+>
+> - [HTTP API 设计指南](https://github.com/ZhangBohan/http-api-design-ZH_CN)
+>   - 英文原版: [HTTP API Design Guide](https://github.com/interagent/http-api-design)
+> - [Microservices: From Design to Deployment, a Free Ebook from NGINX](https://www.nginx.com/blog/microservices-from-design-to-deployment-ebook-nginx/)
+>
+> ## 扩展阅读
+>
+> - [An Architect's guide to APIs: SOAP, REST, GraphQL, and gRPC](https://www.redhat.com/architect/apis-soap-rest-graphql-grpc)
+> - [GraphQL](https://graphql.org/)
+>   - [How to GraphQL](https://www.howtographql.com/)
+>   - [GitHub GraphQL API](https://docs.github.com/cn/graphql)
