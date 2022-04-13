@@ -35,13 +35,19 @@
   - [响应 (Responses)](#响应-responses)
     - [返回适当的状态码](#返回适当的状态码)
     - [提供全部可用的资源](#提供全部可用的资源)
-    - [提供资源的(UU)ID](#提供资源的uuid)
+    - [为资源提供 (UU)ID](#为资源提供-uuid)
     - [提供标准的时间戳](#提供标准的时间戳)
-    - [使用UTC（世界标准时间）时间，用ISO8601进行格式化](#使用utc世界标准时间时间用iso8601进行格式化)
+    - [提供标准的响应数据类型](#提供标准的响应数据类型)
+      - [String](#string)
+      - [Boolean](#boolean)
+      - [Number](#number)
+      - [Array](#array)
+      - [Object](#object)
+    - [使用 ISO8601 格式的 UTC (Coordinated Universal Time) 时间](#使用-iso8601-格式的-utc-coordinated-universal-time-时间)
     - [嵌套外键关系](#嵌套外键关系)
     - [生成结构化的错误](#生成结构化的错误)
     - [显示频率限制状态](#显示频率限制状态)
-    - [保证响应JSON最小化](#保证响应json最小化)
+    - [保持响应 JSON 最小化](#保持响应-json-最小化)
   - [工件（Artifacts）](#工件artifacts)
     - [提供机器可读的JSON模式](#提供机器可读的json模式)
     - [提供人类可读的文档](#提供人类可读的文档)
@@ -257,26 +263,26 @@ $ curl -X POST https://service.com/apps \
 ### 行为 (Actions)
 
 好的端点不应该指定资源的特殊行为，在某些情况下，为资源指定行为却是必要的。
-这时应该在行为前加上一个清晰的 `actions` 前缀：
+这时应该在行为前加上一个清晰的 `actions` 前缀:
 
 ```path
 /resources/:resource/actions/:action
 ```
 
-例如，停止某个运行的资源可以这么表示：
+例如，停止某个运行的资源可以这么表示:
 
 ```path
 /runs/{run_id}/actions/stop
 ```
 
 对集合的操作也应该尽量减少。在需要时，它们应该使用顶级行为路径来避免命名空间冲突，
-并清楚地显示操作范围：
+并清楚地显示操作范围:
 
 ```path
 /actions/:action/resources
 ```
 
-例如，重启所有服务器可以这么表示：
+例如，重启所有服务器可以这么表示:
 
 ```path
 /actions/restart/servers
@@ -286,14 +292,14 @@ $ curl -X POST https://service.com/apps \
 
 #### 路径与属性名使用小写
 
-为了和域名命名规则保持一致，使用小写字母并用 `-` 分割路径名字，例如：
+为了和域名命名规则保持一致，使用小写字母并用 `-` 分割路径名字，例如:
 
 ```url
 service-api.com/users
 service-api.com/app-setups
 ```
 
-属性也使用小写字母，但是属性名要用下划线 `_` 分割，以便在 JavaScript 中省略引号，例如：
+属性也使用小写字母，但是属性名要用下划线 `_` 分割，以便在 JavaScript 中省略引号，例如:
 
 ```json
 service_class: "first"
@@ -314,14 +320,14 @@ curl https://service.com/apps/www-prod
 
 #### 最小化路径嵌套
 
-在一些有父路径/子路径嵌套关系的资源中，路径可能有非常深的嵌套关系，例如：
+在一些有父路径/子路径嵌套关系的资源中，路径可能有非常深的嵌套关系，例如:
 
 ```path
 /orgs/{org_id}/apps/{app_id}/dynos/{dyno_id}
 ```
 
 推荐优先将资源放置在根 (root) 路径下来减少路径的嵌套深度，嵌套用来指定有范围的集合资源。
-在上述例子中，dyno 属于某个 app，app 属于某个 org 可以表示为：
+在上述例子中，dyno 属于某个 app，app 属于某个 org 可以表示为:
 
 ```path
 /orgs/{org_id}
@@ -337,7 +343,7 @@ curl https://service.com/apps/www-prod
 
 ### 返回适当的状态码
 
-为每一个响应返回适当的 HTTP 状态码。成功的响应应该使用如下的状态码：
+为每一个响应返回适当的 HTTP 状态码。成功的响应应该使用如下的状态码:
 
 - `200`: `GET`, `PUT`, `DELETE` 或 `PATCH` 请求同步地成功完成
 - `201`: `POST` 请求同步地完成一个新资源的创建，
@@ -347,12 +353,12 @@ curl https://service.com/apps/www-prod
 - `206`: `GET` 请求成功，但是只返回一部分，
   参考上文中的[通过请求中的范围 (Range) 拆分大的响应](#通过请求中的范围-range-拆分大的响应)部分
 
-使用身份认证 (authentication) 和授权 (authorization) 错误码时需要注意：
+使用身份认证 (authentication) 和授权 (authorization) 错误码时需要注意:
 
 - `401 Unauthorized`: 用户未认证，请求失败
 - `403 Forbidden`: 用户无权限访问该资源，请求失败
 
-返回适当的状态码可以提供额外的错误信息：
+返回适当的状态码可以提供额外的错误信息:
 
 - `422 Unprocessable Entity`: 请求被服务器正确解析，但是包含无效字段
 - `429 Too Many Requests`: 因为访问频繁，已经被限制访问，稍后重试
@@ -362,8 +368,8 @@ curl https://service.com/apps/www-prod
 
 ### 提供全部可用的资源
 
-尽可能在响应中提供完整的资源表示 (例如：某个对象的所有属性)。当响应码为 200 或是 201
-时返回对应的完整资源，包括 `PUT`, `PATCH` 和 `DELETE` 请求，例如：
+尽可能在响应中提供完整的资源表示 (例如: 某个对象的所有属性)。当响应码为 200 或是 201
+时返回对应的完整资源，包括 `PUT`, `PATCH` 和 `DELETE` 请求，例如:
 
 ```sh
 $ curl -X DELETE \  
@@ -380,7 +386,7 @@ Content-Type: application/json;charset=utf-8
 }
 ```
 
-当请求状态码为 202 时，不返回完整的资源表示，例如：
+当请求状态码为 202 时，不返回完整的资源表示，例如:
 
 ```sh
 $ curl -X DELETE \  
@@ -392,27 +398,49 @@ Content-Type: application/json;charset=utf-8
 {}
 ```
 
-### 提供资源的(UU)ID
+### 为资源提供 (UU)ID
 
->>>>> progress
+默认情况下每个资源都应该有一个 `id` 属性。除非有更好的理由，否则请使用 UUID。
+不要使用那种在不同服务或是资源中不是全局唯一的标识，尤其是自增 ID。
 
-在默认情况给每一个资源一个`id`属性。除非有更好的理由，否则请使用UUID。不要使用那种在服务器上或是资源中不是全局唯一的标识，尤其是自动增长的id。
-
-生成小写的UUID格式 `8-4-4-4-12`，例如：
+使用小写的 UUID 格式 `8-4-4-4-12`，例如:
 
 ```json
 "id": "01234567-89ab-cdef-0123-456789abcdef"
 ```
 
 <details>
-  <summary>Has there ever been a UUID collision?</summary>
+  <summary>UUID?</summary>
 
 ---
 
-> <https://www.quora.com/Has-there-ever-been-a-UUID-collision>
+> - <https://en.wikipedia.org/wiki/Universally_unique_identifier>
+> - <https://www.quora.com/Has-there-ever-been-a-UUID-collision>
 
-We are generating about 1M UUID4 a day, and we are getting several hundred
-collisions a day.
+**Universally Unique IDentifier**.
+
+A **universally unique identifier (UUID)** is a 128-bit label used for
+information in computer systems. The term **globally unique identifier (GUID)**
+is also used.
+
+Q: *Has there ever been a UUID collision*?
+
+A: Yes, see this [account of frequent UUID4 collisions](https://github.com/ramsey/uuid/issues/80).
+> We are generating about 1M UUID4 a day, and we are getting several hundred
+> collisions a day
+
+The collisions occurred due to bugs in the underlying software, not due to
+pure random chance. The problem appears to be with forked threads and OpenSSL.
+
+Q: *UUID4*?
+
+A: **UUID Version 4**, a version 4 UUID is randomly generated.
+
+The number of random version-4 UUIDs which need to be generated in order to
+have a 50% probability of at least one collision is 2.71 quintillion, computed
+as follows:
+
+![50% probability of at least one collision](images/uuid4_collision.svg)
 
 </details>
 
@@ -429,15 +457,130 @@ collisions a day.
 }
 ```
 
-有些资源不需要使用时间戳那么就忽略这两个字段。
+时间戳对于某些资源没有任何意义，此时可以省略。
 
-### 使用UTC（世界标准时间）时间，用ISO8601进行格式化
+### 提供标准的响应数据类型
 
-仅接受和返回UTC格式的时间。ISO8601格式的数据，例如:
+本文档描述了 JSON 基本数据类型的可接受值。
+
+#### String
+
+- 可接受值:
+  - string
+  - `null`
+
+例如:
+
+```json
+[
+  {
+    "description": "very descriptive description."
+  },
+  {
+    "description": null
+  },
+]
+```
+
+#### Boolean
+
+- 可接受值:
+  - `true`
+  - `false`
+
+例如:
+
+```json
+[
+  {
+    "provisioned_licenses": true
+  },
+  {
+    "provisioned_licenses": false
+  },
+]
+```
+
+#### Number
+
+- 可接受值:
+  - number
+  - `null`
+
+注意: 有些 JSON 解析器会把精度超过 15 的小数位作为字符串返回。在需要的精度大于 15 位小数时，
+该字段应始终返回一个字符串。否则，将这些字符串统一转换为数字，使 API 用户始终知道期望的值类型。
+
+例如:
+
+```json
+[
+  {
+    "average": 27.123
+  },
+  {
+    "average": 12.123456789012
+  },
+]
+```
+
+#### Array
+
+- 可接受值:
+  - array
+
+注意: 当数组中没有值时，应返回一个空数组而不是 `null`。
+
+例如:
+
+```json
+[
+  {
+    "child_ids": [1, 2, 3, 4],
+  },
+  {
+    "child_ids": [],
+  }
+]
+```
+
+#### Object
+
+- Acceptable values:
+  - object
+  - null
+
+例如:
+
+```javascript
+[
+  {
+    "name": "service-production",
+    "owner": {
+      "id": "5d8201b0..."
+     }
+  },
+  {
+    "name": "service-staging",
+    "owner": null
+  }
+]
+```
+
+### 使用 ISO8601 格式的 UTC (Coordinated Universal Time) 时间
+
+仅接受和返回 UTC 时间，并以 ISO8601 格式表示，例如:
 
 ```json
 "finished_at": "2012-01-01T12:00:00Z"
 ```
+
+<details>
+  <summary>2012-01-01T12:00:00Z</summary>
+
+- `T`: 分隔符，前面是日期，后面是时间，且时间为 24 小时制
+- `Z`: Offset of Zero，也就是零时区
+
+</details>
 
 ### 嵌套外键关系
 
@@ -453,7 +596,7 @@ collisions a day.
 }
 ```
 
-而不是像这样:
+而不是:
 
 ```json
 {
@@ -463,7 +606,8 @@ collisions a day.
 }
 ```
 
-这种方式尽可能的把相关联的资源信息内联在一起，而不用改变资源的结构，或者引入更多的顶层字段，例如:
+这种方式尽可能地把相关联的资源信息内联在一起，而不用改变资源的结构，或者导致引入更多的顶层字段，
+例如:
 
 ```json
 {
@@ -477,11 +621,21 @@ collisions a day.
 }
 ```
 
+嵌套外键关系时，使用完整记录或仅使用外键。提供字段子集可能会导致意外和混乱，
+使不同操作和端点之间的不一致更有可能发生。
+
+为避免不一致和混淆，请选用其中一种方式序列化:
+
+- 仅**外键**: 可以是 `id`, `slug`, `email` 等唯一标识字段.
+- **完整记录**: 所有字段，也就是一个完整的内嵌记录。
+
 ### 生成结构化的错误
 
-响应错误的时，生成统一的、结构化的错误信息。包含一个机器可读的错误 `id`，一个人类可读的错误信息（`message`），根据情况可以添加一个`url`来告诉客户端关于这个错误的更多信息以及如何去解决它，例如:
+响应错误时，生成统一的、结构化的错误信息。包含一个机器可读的错误 `id`，一个人类可读的错误信息
+(`message`)，根据情况可以添加一个 `url` 来告诉客户端关于这个错误的更多信息以及如何解决它，
+例如:
 
-```
+```http
 HTTP/1.1 429 Too Many Requests
 ```
 
@@ -493,32 +647,61 @@ HTTP/1.1 429 Too Many Requests
 }
 ```
 
-文档化错误信息格式，以及客户端可能遇到的错误信息`id`。
+提供错误信息格式及客户端可能遇到的错误 `id` 的相关文档。
 
 ### 显示频率限制状态
 
-客户端的访问速度限制可以维护服务器的良好状态，保证为其他客户端请求提供高性的服务。你可以使用[token bucket algorithm](http://en.wikipedia.org/wiki/Token_bucket)技术量化请求限制。
+限制客户端的访问频次来维护服务器的良好状态，并为其他客户端提供高可用的服务。你可以使用
+[token bucket algorithm](http://en.wikipedia.org/wiki/Token_bucket)
+来量化请求限制。
 
-为每一个带有`RateLimit-Remaining`响应头的请求，返回预留的请求tokens。
+在响应的 `RateLimit-Remaining` Header 中返回请求 token 的剩余可用数量。
 
 <details>
-  <summary>接口调用频次限制一般如何实现？</summary>
+  <summary>Circuit Breaker</summary>
 
 ---
 
->>>>> progress
+> [nodeshift/opossum](https://github.com/nodeshift/opossum)
+
+```js
+const CircuitBreaker = require('opossum');
+
+function asyncFunctionThatCouldFail(x, y) {
+  return new Promise((resolve, reject) => {
+    // Do something, maybe on the network or a disk
+  });
+}
+
+const options = {
+  // If our function takes longer than 3 seconds, trigger a failure
+  timeout: 3000, 
+
+  // When 50% of requests fail, trip the circuit
+  errorThresholdPercentage: 50,
+
+  // After 30 seconds, try again.
+  resetTimeout: 30000
+};
+const breaker = new CircuitBreaker(asyncFunctionThatCouldFail, options);
+
+breaker.fire(x, y)
+  .then(console.log)
+  .catch(console.error);
+```
 
 </details>
 
-### 保证响应JSON最小化
+### 保持响应 JSON 最小化
 
-请求中多余的空格会增加响应大小，而且现在很多的HTTP客户端都会自己输出可读格式（"prettify"）的JSON。所以最好保证响应JSON最小化，例如：
+请求中多余的空白符会增加响应大小，而且现在很多 HTTP 客户端都会自己输出人类可读 ("prettify")
+的 JSON。所以最好保持响应 JSON 最小化，例如:
 
 ```json
 {"beta":false,"email":"alice@heroku.com","id":"01234567-89ab-cdef-0123-456789abcdef","last_login":"2012-01-01T12:00:00Z","created_at":"2012-01-01T12:00:00Z","updated_at":"2012-01-01T12:00:00Z"}
 ```
 
-而不是这样：
+而不是这样:
 
 ```json
 {
@@ -531,7 +714,9 @@ HTTP/1.1 429 Too Many Requests
 }
 ```
 
-你可以提供可选的方式为客户端提供更详细可读的响应，使用查询参数（例如：`?pretty=true`）或者通过`Accept`头信息参数（例如：`Accept: application/vnd.heroku+json; version=3; indent=4;`）。
+也可以提供可选的方式为客户端提供更详细可读的响应，可以使用查询参数 (例如: `?pretty=true`)
+或通过 `Accept` 头信息参数
+(例如: `Accept: application/vnd.heroku+json; version=3; indent=4;`)。
 
 ## 工件（Artifacts）
 
@@ -567,7 +752,7 @@ $ curl -is https://$TOKEN@service.com/users
 
 ### 描述稳定性
 
-描述您的API的稳定性或是它在各种各样节点环境中的完备性和稳定性，例如：加上 原型版（prototype）/开发版（development）/产品版（production）等标记。
+描述您的API的稳定性或是它在各种各样节点环境中的完备性和稳定性，例如:加上 原型版（prototype）/开发版（development）/产品版（production）等标记。
 
 更多关于可能的稳定性和改变管理的方式，查看 [Heroku API compatibility policy](https://devcenter.heroku.com/articles/api-compatibility-policy)
 
@@ -580,10 +765,10 @@ $ curl -is https://$TOKEN@service.com/users
 
 - [HTTP API 设计指南](https://github.com/ZhangBohan/http-api-design-ZH_CN)
   - 英文原版: [HTTP API Design Guide](https://github.com/interagent/http-api-design)
-- [Microservices: From Design to Deployment, a Free Ebook from NGINX](https://www.nginx.com/blog/microservices-from-design-to-deployment-ebook-nginx/)
 
 ## 扩展阅读
 
+- [microsoft]
 - [An Architect's guide to APIs: SOAP, REST, GraphQL, and gRPC](https://www.redhat.com/architect/apis-soap-rest-graphql-grpc)
 - [GraphQL](https://graphql.org/)
   - [How to GraphQL](https://www.howtographql.com/)
