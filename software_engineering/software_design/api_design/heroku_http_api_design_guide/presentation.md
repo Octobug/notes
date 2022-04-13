@@ -48,8 +48,8 @@
     - [生成结构化的错误](#生成结构化的错误)
     - [显示频率限制状态](#显示频率限制状态)
     - [保持响应 JSON 最小化](#保持响应-json-最小化)
-  - [工件（Artifacts）](#工件artifacts)
-    - [提供机器可读的JSON模式](#提供机器可读的json模式)
+  - [工件 (Artifacts)](#工件-artifacts)
+    - [提供机器可读的 JSON Schema](#提供机器可读的-json-schema)
     - [提供人类可读的文档](#提供人类可读的文档)
     - [提供可执行的例子](#提供可执行的例子)
     - [描述稳定性](#描述稳定性)
@@ -658,7 +658,7 @@ HTTP/1.1 429 Too Many Requests
 在响应的 `RateLimit-Remaining` Header 中返回请求 token 的剩余可用数量。
 
 <details>
-  <summary>Circuit Breaker</summary>
+  <summary>插播 Circuit Breaker</summary>
 
 ---
 
@@ -718,48 +718,55 @@ breaker.fire(x, y)
 或通过 `Accept` 头信息参数
 (例如: `Accept: application/vnd.heroku+json; version=3; indent=4;`)。
 
-## 工件（Artifacts）
+## 工件 (Artifacts)
 
-### 提供机器可读的JSON模式
+工件部分描述了用来管理和讨论 API 设计与模式的物理对象。
 
-提供一个机器可读的模式来恰当的表现你的API。使用
-[prmd](https://github.com/interagent/prmd)管理你的模式，并且确保用`prmd verify`验证是有效的。
+### 提供机器可读的 JSON Schema
+
+提供一个机器可读的模式来准确表达你的 API。使用 [prmd](https://github.com/interagent/prmd)
+来管理 Schema，并且确保用 `prmd verify` 验证是有效的。
 
 ### 提供人类可读的文档
 
-提供人类可读的文档让客户端开发人员可以理解你的API。
+提供人类可读的文档使客户端开发人员能够理解你的 API。
 
-如果你用prmd创建了一个概要并且按上述要求描述，你可以为所有节点很容易的使用`prmd doc`生成Markdown文档。
+如果你安装以上的描述用 `prmd` 创建了一个 Schema，
+那么你使用 `prmd doc` 方便地为所有端点 (API) 生成 Markdown 文档。
 
-除了节点信息，提供一个API概述信息:
+除了端点信息，提供一个所有 API 的概述信息:
 
-* 验证授权，包含如何取得和如何使用token。
-* API稳定及版本管理，包含如何选择所需要的版本。
-* 一般情况下的请求和响应的头信息。
-* 错误的序列化格式。
-* 不同编程语言客户端使用API的例子。
+- 验证授权，包含如何获取与如何使用 token。
+- API 稳定性及版本信息，包含如何选择所需要的版本。
+- 请求和响应的头信息。
+- 错误信息的序列化格式。
+- 不同编程语言客户端的 API 使用例子。
 
 ### 提供可执行的例子
 
-提供可执行的示例让用户可以直接在终端里面看到API的调用情况，最大程度的让这些示例可以简单的使用，以减少用户尝试使用API的工作量。例如:
+提供可执行的示例让用户可以直接在终端里面观察 API 的调用情况，
+最大程度地让这些示例可以方便地使用，以减少用户尝试使用 API 的工作量。例如:
 
-```
-$ export TOKEN=... # acquire from dashboard
-$ curl -is https://$TOKEN@service.com/users
+```sh
+export TOKEN=... # acquire from dashboard
+curl -is https://$TOKEN@service.com/users
 ```
 
-如果你使用[prmd](https://github.com/interagent/prmd)生成Markdown文档，每个节点都会自动获取一些示例。
+如果你使用 [prmd](https://github.com/interagent/prmd) 生成 Markdown 文档，
+每个端点可以自动生成一些示例。
 
 ### 描述稳定性
 
-描述您的API的稳定性或是它在各种各样节点环境中的完备性和稳定性，例如:加上 原型版（prototype）/开发版（development）/产品版（production）等标记。
+根据成熟度与稳定性来描述 API 或具体端点的稳定性，例如: 加上原型 (prototype) / 开发版
+(development) / 产品版 (production) 等标记。
 
-更多关于可能的稳定性和改变管理的方式，查看 [Heroku API compatibility policy](https://devcenter.heroku.com/articles/api-compatibility-policy)
+更多关于可能的稳定性和变更管理的方式，请查看 [Heroku API compatibility policy](https://devcenter.heroku.com/articles/api-compatibility-policy)
 
-一旦你的API宣布产品正式版本及稳定版本时，不要在当前API版本中做一些不兼容的改变。如果你需要，请创建一个新的版本的API。
+一旦你的 API 以正式版本及稳定版本发布，不要在当前 API 版本中做出任何不兼容的变更。
+如果确实需要，请创建一个新版本的 API。
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>参考资料与扩展阅读</summary>
 
 ## 参考资料
 
@@ -768,7 +775,7 @@ $ curl -is https://$TOKEN@service.com/users
 
 ## 扩展阅读
 
-- [microsoft]
+- [Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines)
 - [An Architect's guide to APIs: SOAP, REST, GraphQL, and gRPC](https://www.redhat.com/architect/apis-soap-rest-graphql-grpc)
 - [GraphQL](https://graphql.org/)
   - [How to GraphQL](https://www.howtographql.com/)
