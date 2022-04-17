@@ -23,6 +23,12 @@
       - [二、可重复原则与将来的时间有关](#二可重复原则与将来的时间有关)
       - [三、可重复性原则与过去时间](#三可重复性原则与过去时间)
       - [四、可重复性原则与现在时间](#四可重复性原则与现在时间)
+      - [五、可重复性原则与一般时间](#五可重复性原则与一般时间)
+      - [六、可重复性原则与地点表达](#六可重复性原则与地点表达)
+      - [七、可重复性原则与去世的人的情况](#七可重复性原则与去世的人的情况)
+      - [八、可重复性原则与特定语境](#八可重复性原则与特定语境)
+  - [思维训练 5.4-5.5](#思维训练-54-55)
+  - [5.6 单一事件](#56-单一事件)
 
 ## 5.1 完成时态的构成
 
@@ -293,7 +299,7 @@ I have entered for the examination but I don't want to take it.
 
 #### 三、可重复性原则与过去时间
 
-确定的过去时间状语 (如 yesterday, last night) 不能用于现在完成时态，
+确定的**过去时间**状语 (如 yesterday, last night) **不能**用于现在完成时态，
 因为过去时间状语表明事件在过去已经完成而无法延续或重复到现在及未来，
 这违背了完成时态的将来可重复性原则。
 
@@ -303,5 +309,84 @@ I have entered for the examination but I don't want to take it.
   - this semester 还没结束，将来可能就继续 absent.
 
 #### 四、可重复性原则与现在时间
+
+**现在时间**指 today, this week, this year 这类时间状语。
+这样的时间状语一般用于**现在完成时态**，
+如果有特殊语境表明某个事件无法继续延续或重复到现在及将来，就用**一般过去时态**。
+
+- I haven't seen him this morning.
+  - 今天上午到现在我还一直没有见到他。
+  - 说话时是 this morning (非字面信息)，该事件具有可重复性，可能还会见到他。
+- I didn't see him this morning.
+  - 我今天上午没有见到他。
+  - 说话时已经过了 this moring，该事件不具有可重复性。
+
+#### 五、可重复性原则与一般时间
+
+**一般时间**指诸如 in the morning 这样不确定是现在还是过去的时间。
+
+- ❌ I have gotten up at five o'click this morning.
+  - 说话的时候 this morning 已成为过去，具体的过去时间状语不能使用现在完成时态。
+- ✅ I have gotten up at five o'clock in the morning.
+  - 我曾经在早晨五点钟起过床。
+  - in the morning 不是一个具体的时间，且可以重复，因此可以使用现在完成时态。
+- ❌ I have gone swimming at 12 last night.
+- ✅ I have gone swimming at 12 at midnight.
+
+#### 六、可重复性原则与地点表达
+
+有时**地点状语**起着表明说话时间的作用，因为地点的转化总是伴随着时间的变化。
+
+- In my hometown, I had five jobs.
+  - 我在老家的时候，做过五份不同的工作。
+  - in my hometown 表明我现在人不在老家，暗含了过去时间，因此要用一般过去时态。
+- In this city, I have had two jobs.
+  - 在这个城市，我到目前为止做过两份不同的工作。
+  - in this city 暗含了现在的时间，且事件具有可重复性，所以用现在完成时态。
+
+#### 七、可重复性原则与去世的人的情况
+
+去世的人无法延续和重复其事件，不具有将来可重复性，所以要用**一般过去时态**。
+
+- Marilyn Monroe starred in many movies. She died in 1962.
+  - 玛丽莲·梦露于 1962 年去世，她生前出演过多部电影。
+- Julia Roberts has starred in many American movies.
+  - 茱莉亚·罗伯茨出演过很多美国电影。
+  - Julia Roberts starred in many American movies.
+    - 她去世后可以这么说；
+    - 她退出影坛后可以这么说。
+
+#### 八、可重复性原则与特定语境
+
+有时，语句里的“超语言信息”背景知识并不是一个众所周知的常识，
+而只是交际双方共有知识 (shared knowledge) 的一部分，
+此时使用现在完成时态还是一般过去时态取决于具体语境。如果超语言信息决定了某一活动不再延续重复，
+就要用一般过去时态。
+
+- A: Have you ever fallen off a horse?
+  - 到目前为止，你骑马从马背上摔下来过吗？
+  - 使用现在完成时态意味着“骑马”这个活动将来还会重复。
+  - B: Yes, I've fallen off quite often.
+- A: Did you ever fallen off a horse?
+  - 你以前骑马的时候，从马背上摔下来过吗？
+  - 使用一般过去时态意味着“骑马”这个活动已结束，不会再重复发生。
+  - B: Yes, I did occasionally.
+
+## 思维训练 5.4-5.5
+
+*3. A total of 36,832 fires in China _____(kill) 971 people during the first
+quarter of the year, injuring 1,228 and causing 310 million yuan in direct
+economic losses, a source with the statistics said*.
+
+> have killed. 表示重复活动，因为火灾造成的死亡人数不是一次完成的，而是多次火灾导致众多死亡。
+
+*4. Give him another chance*.  
+*Husband: I've got to get rid of my chauffeur; he _____(nearly, kill) me four
+times*.  
+*Wife: Oh, give him another chance*.
+
+> has nearly killed. 表示重复活动，并且具体说出重复四次。
+
+## 5.6 单一事件
 
 >>>>> progress
