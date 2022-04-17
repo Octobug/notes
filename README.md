@@ -85,13 +85,15 @@ disciplines according to the
     1. [Finance](finance)
         1. [Personal Finance](finance/personal_finance)
         2. Mathematical Finance
-2. [Medicine and Health](https://en.wikipedia.org/wiki/Medicine)
-    1. [Primary Care](primary_care)
-        1. Health Administration
-3. [Journalism](https://en.wikipedia.org/wiki/Journalism),
+2. [Journalism](https://en.wikipedia.org/wiki/Journalism),
    [Media Studies](https://en.wikipedia.org/wiki/Media_studies) and
    [Communication](https://en.wikipedia.org/wiki/Communication_studies)
     1. [Journalism](journalism)
+3. [Medicine and Health](https://en.wikipedia.org/wiki/Medicine)
+    1. [Primary Care](primary_care)
+        1. Health Administration
+4. [Military Sciences](https://en.wikipedia.org/wiki/Military_science)
+    1. [Military Organization](military_organization)
 
 ## Blogs
 
