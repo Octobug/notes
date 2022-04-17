@@ -36,7 +36,7 @@ Apart from conscripted personnel one can distinguish:
   - 少校
   - 准校 (部分国家)
 - Company grade or junior officers (尉官)
-  - 大尉(部分国家)
+  - 大尉 (部分国家)
   - 上尉
   - 中尉
   - 少尉
