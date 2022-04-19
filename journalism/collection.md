@@ -5,6 +5,7 @@ my position. I simply need these resources for further studies.
 
 ## 2022
 
+- 2022.04.19: [微博 - 卢旭宁 - ________，有必要吗？？？](http://web.archive.org/web/20220419050846/https://m.weibo.cn/status/4759922787485839#&gid=1&pid=1)
 - 2022.04.11: [微博 - 郎咸平 - 网上流传我母亲过世的信息是我的哥哥Allen...](https://web.archive.org/web/20220412062658/https://m.weibo.cn/status/4757077844560468?wm=3333_2001&from=10C3593010&sourcetype=weixin)
 - 2022.04.10: [润学](https://github.com/The-Run-Philosophy-Organization/run)
 - 2022.04.09: [问卷网 - 上海政企厨艺大赛投票开始啦！](https://web.archive.org/web/20220409090317/https://www.wenjuan.com/vote/result/624d3879bac4852e069d5b84?pid=624d3879bac4852e069d5b84&sid=QrY32ul&seq=110033&vcode=2397&rid=62514b9afe0e7145fc8f9003)
