@@ -1,0 +1,17 @@
+# Getting Started with Podman
+
+> <https://podman.io/getting-started/>
+
+- [Getting Started with Podman](#getting-started-with-podman)
+  - [Podman Installation Instructions](#podman-installation-instructions)
+
+## Podman Installation Instructions
+
+```sh
+# macOS
+brew install podman
+
+# podman machine
+podman machine init
+podman machine start
+```
