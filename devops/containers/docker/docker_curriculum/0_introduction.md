@@ -2,6 +2,11 @@
 
 > <https://docker-curriculum.com/#introduction>
 
+- [Introduction](#introduction)
+  - [What is Docker?](#what-is-docker)
+  - [What are containers?](#what-are-containers)
+  - [Why use containers?](#why-use-containers)
+
 ## What is Docker?
 
 > An open-source project that automates the deployment of software applications
@@ -10,8 +15,9 @@
 >
 > Wikipedia
 
-The key benefit of Docker is that it allows users to package an application
-with all of its dependencies into a standardized unit for software development.
+The key benefit of Docker is that it allows users to **package an application
+with all of its dependencies into a standardized unit** for software
+development.
 
 Unlike virtual machines, containers do not have high overhead and hence enable
 more efficient usage of the underlying system and resources.

@@ -2,6 +2,15 @@
 
 > <https://docker-curriculum.com/#hello-world>
 
+- [Hello World](#hello-world)
+  - [Playing with Busybox](#playing-with-busybox)
+  - [Docker Run](#docker-run)
+    - [run](#run)
+    - [ps](#ps)
+    - [rm](#rm)
+    - [container](#container)
+  - [Terminology](#terminology)
+
 ## Playing with Busybox
 
 ```sh
@@ -66,3 +75,4 @@ docker container prune
 - *Docker Hub* - A `registry` of Docker images. You can think of the registry
   as a directory of all available Docker images. If required, one can host
   their own Docker registries and can use them for pulling images.
+
