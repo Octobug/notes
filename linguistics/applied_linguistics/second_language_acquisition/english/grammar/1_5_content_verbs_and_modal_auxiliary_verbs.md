@@ -6,6 +6,30 @@
     - [5.2.1 助动词 be, do 和 have](#521-助动词-be-do-和-have)
     - [5.2.2 用作实义动词的 be, do 和 have](#522-用作实义动词的-be-do-和-have)
   - [5.3 情态动词 (modal verb)](#53-情态动词-modal-verb)
+  - [思维训练 5.1-5.3](#思维训练-51-53)
+  - [5.4 陈述句的否定](#54-陈述句的否定)
+    - [5.4.1 谓语中含有 `be` 动词或`情态动词`的否定](#541-谓语中含有-be-动词或情态动词的否定)
+    - [5.4.2 谓语动词是实义动词的否定](#542-谓语动词是实义动词的否定)
+    - [5.4.3 否定的缩写](#543-否定的缩写)
+  - [5.5 一般疑问句](#55-一般疑问句)
+    - [5.5.1 谓语动词中含有 be 动词或情态动词的提问](#551-谓语动词中含有-be-动词或情态动词的提问)
+    - [5.5.2 谓语动词是实义动词的提问](#552-谓语动词是实义动词的提问)
+  - [5.6 特殊疑问句](#56-特殊疑问句)
+    - [5.6.1 不与名词连用的疑问词](#561-不与名词连用的疑问词)
+      - [一、对人提问——who](#一对人提问who)
+      - [二、对事物或所做的事情提问——what](#二对事物或所做的事情提问what)
+      - [三、对时间提问——when](#三对时间提问when)
+      - [四、对地点提问——where](#四对地点提问where)
+      - [五、对方式提问——how](#五对方式提问how)
+      - [六、对原因提问——why](#六对原因提问why)
+    - [5.6.2 要与名词连用的疑问词](#562-要与名词连用的疑问词)
+      - [一、which](#一which)
+      - [二、whose](#二whose)
+    - [5.6.3 how 的用法详解](#563-how-的用法详解)
+      - [一、how 可以单独使用](#一how-可以单独使用)
+      - [二、how 还常与形容词或副词连用](#二how-还常与形容词或副词连用)
+      - [三、对动作发生的频率提问——how often/how many times...?](#三对动作发生的频率提问how-oftenhow-many-times)
+  - [思维训练 5.4-5.6](#思维训练-54-56)
 
 一个完整的英语句子可以没有**主语**或**宾语**等成分，但不能没有**谓语动词**。
 
@@ -52,10 +76,12 @@
 
 ### 5.2.2 用作实义动词的 be, do 和 have
 
-⚠️ 不要混淆它们作为**实义动词**与**助动词**
+⚠️ 不要混淆它们作为**实义动词**与**助动词**的用法
 
 - be
-  - **系动词**，用作谓语: I **am** a student.
+  - **实义动词**，用作谓语
+    - **系动词**: I **am** a student.
+    - **不及物动词**: I **am** in Beijing.
   - **助动词**，助动词，帮助构成进行时态: I **am studying** grammr.
 - do
   - **实义动词**，用作谓语: I often **do** my homework at home.
@@ -66,4 +92,246 @@
 
 ## 5.3 情态动词 (modal verb)
 
->>>>> progress
+- 从词义角度来看：情态动词有别于助动词。情态动词有其自身的词汇意义，如用来表示**可能**、
+  **建议**、**愿望**、**必要**、**允许**、**能力**、**怀疑**等，
+  以表示说话者对某种行为或状态的看法或态度。
+- 从在谓语中的作用这一角度来看：与助动词一样，情态动词在句中不能单独作句子的谓语，
+  而必须和实义动词一起构成复合谓语。
+- 英文中的情态动词主要有下列 10 个：
+  - can/could
+  - may/might
+  - shall/should
+  - will/would
+  - must
+  - had better
+- 与情态动词有关的短语动词
+  - be able to (与 can 类似)
+  - be going to (与 will 类似)
+  - ought to, be supposed to (与 should 类似)
+  - have to, have got to (与 must 类似)
+- need 和 dare 既可以用作情态动词，也可以用作实义动词
+
+## 思维训练 5.1-5.3
+
+找出下列句子中的实义动词、助动词或情态动词。
+
+*12. I have`1` two brothers. One brother`2` has been out of school for many
+years. Now he is`3` working in a dot-com company. He is`4` married and has`5`
+his own family. The other brother is`6` now at college and hasn't`7` graduated
+yet. He has`8` a girlfriend and they have`9` known each other for 2 years*.
+
+1. have: 实义动词
+2. has: 助动词
+3. is: 助动词
+4. is: 实义动词
+5. has: 实义动词
+6. is: 系动词
+7. hasn't: 助动词
+8. has: 实义动词
+9. have: 助动词
+
+## 5.4 陈述句的否定
+
+### 5.4.1 谓语中含有 `be` 动词或`情态动词`的否定
+
+这时直接在 be 动词或情态动词的后面加否定词 not 即构成否定句。
+
+| 肯定句                         | 否定句                             |
+| ------------------------------ | ---------------------------------- |
+| He **is** a teacher.           | He **is not** a teacher.           |
+| I **can** swim.                | I **cannot** swim.                 |
+| He **will** come to the party. | He **will not** come to the party. |
+
+### 5.4.2 谓语动词是实义动词的否定
+
+这时陈述句的否定要借助动词 do 及其各种变形来完成。
+
+- **一般现在时**: do + not + 动词原形
+  - **单数第三人称**: does + not + 动词原形
+- **一般过去时**: did + not + 动词原形
+
+| 肯定句                | 否定句                        |
+| --------------------- | ----------------------------- |
+| I **like** English.   | I **do not like** English.    |
+| He **likes** English. | He **does not like** English. |
+| I **liked** English.  | I **did not like** English.   |
+
+### 5.4.3 否定的缩写
+
+| NO. | (情态)助动词 | 分开       | 缩写      |
+| --- | ------------ | ---------- | --------- |
+| 1   | am           | am not     | 无        |
+| 2   | are          | are not    | aren't    |
+| 3   | is           | is not     | isn't     |
+| 4   | was          | was not    | wasn't    |
+| 5   | were         | were not   | weren't   |
+| 6   | do           | do not     | don't     |
+| 7   | does         | does not   | doesn't   |
+| 8   | did          | did not    | didn't    |
+| 9   | have         | have not   | haven't   |
+| 10  | has          | has not    | hasn't    |
+| 11  | had          | had not    | hadn't    |
+| 12  | will         | will not   | won't     |
+| 13  | would        | would not  | wouldn't  |
+| 14  | shall        | shall not  | shan't    |
+| 15  | should       | should not | shouldn't |
+| 16  | can          | cannot     | can't     |
+| 17  | could        | could      | couldn't  |
+| 18  | may          | may not    | 无        |
+| 19  | might        | might not  | mightn't  |
+| 20  | must         | must       | mustn't   |
+
+## 5.5 一般疑问句
+
+### 5.5.1 谓语动词中含有 be 动词或情态动词的提问
+
+要构成一般疑问句，只需将 **be** 动词或**情态动词**移到句首。
+
+- He **is** a teacher.
+  - **Is** he a teacher?
+    - Yes, he is.
+    - No, he isn't.
+- He **can** swim.
+  - **Can** he swim?
+    - Yes, he can.
+    - No, he can't.
+
+### 5.5.2 谓语动词是实义动词的提问
+
+如果句子是**一般现在时**，要借助助动词 **do** 或 **does**，将 do 或 does 放在句首。
+如果是**一般过去时**，则是将 **did** 放在句首，谓语动词变回动词原形。
+
+- I **like** English.
+  - **Do** you **like** English?
+    - Yes, I do.
+    - No, I don't.
+- He **likes** English.
+  - **Does** he **like** English?
+    - Yes, he does.
+    - No, he doesn't.
+- He **liked** English.
+  - **Did** he **like** English?
+    - Yes, he did.
+    - No, he didn't.
+
+## 5.6 特殊疑问句
+
+特殊疑问句是在一般疑问句的基础上变化而来的。其句式为: `特殊疑问词 + 一般疑问句 + ?`。
+英语中特殊疑问词有:
+
+- who
+- what
+- which
+- when
+- where
+- why
+- how
+
+### 5.6.1 不与名词连用的疑问词
+
+#### 一、对人提问——who
+
+- **He** can sing in English.
+  - Who can sing in English?
+
+#### 二、对事物或所做的事情提问——what
+
+- I like **English**.
+  - What do you like?
+- I am studying **English grammar**.
+  - What are you studying?
+
+#### 三、对时间提问——when
+
+- I was born **in 1980**.
+  - When were you born?
+
+#### 四、对地点提问——where
+
+- He lives **in Beijing**.
+  - Where does he live?
+
+#### 五、对方式提问——how
+
+- He goes to school **by bus**.
+  - How does he go to school.
+
+#### 六、对原因提问——why
+
+- I often study at the library **because it's quiet**.
+  - Why do you often study at the library?
+
+### 5.6.2 要与名词连用的疑问词
+
+#### 一、which
+
+当说话者提供多种对象供对方选择时，我们就要用 which 来提问。此时 which 后面通常要接一个名词，
+意思是“哪一个什么东西”。
+
+A: Could you lend me your pen?
+B: Sure. I have two pens. Which pen/ Which one/ Which do you want?
+A: That red one. Thanks.
+
+⚠️ 上面例句 Which 后面也可以不接名词，此时作为代词。
+
+#### 二、whose
+
+whose 的后面必须接名词，表示“谁的什么东西”。
+
+- This is **his book**.
+  - Whose book is this?
+
+### 5.6.3 how 的用法详解
+
+#### 一、how 可以单独使用
+
+how 单独使用时，是对动作的方式进行提问。
+
+- A: How do you go to work?
+  - B: By car.
+- A: How did he break his leg?
+  - B: He fell off the ladder.
+
+#### 二、how 还常与形容词或副词连用
+
+- How old are you?
+- How well does he speak English?
+
+#### 三、对动作发生的频率提问——how often/how many times...?
+
+- I make a phone call to my parents **once a month**.
+  - How often do you make a phone call to your parents?
+- I make a phone call to my parents **once** a month.
+  - How many times a month do you make a phone call to your parents?
+
+其他表示频率的短语:
+
+```diagram
+every           |
+every other     |
+once a          |- day/week/month/year
+twice a         |
+three times a   |
+```
+
+## 思维训练 5.4-5.6
+
+**一、将下列句子先改为否定句，然后改为一般疑问句，并做出肯定及否定回答。
+然后再对画线部分提问一个特殊疑问句**。
+
+*4. I often get up at `7:00 in the morning`*.
+
+- I don't often get up at 7:00 in the morning.
+- Do you often get up at 7:00 in the morning?
+- Yes, I do.
+- No, I don't.
+- When do you often get up?
+
+**二、which/what 辨析**。
+
+*11*.
+
+- *A: We have a lot of different pens. Their prices vary from 10 yuan to 300
+  yuan. ____ are you going to buy?*.
+- *B: That one*.
+- 答案: Which

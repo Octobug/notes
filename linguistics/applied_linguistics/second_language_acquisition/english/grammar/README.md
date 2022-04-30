@@ -22,8 +22,8 @@
 - [ ] 2. 限定词 (一): 冠词
 - [ ] 3. 限定词 (二): 数量限定词与个体限定词
 - [ ] 4. 形容词
-- [ ] [5. 动词分类 (一): 实义动词与 (情态) 助动词](1_5_content_verbs_and_modal_auxiliary_verbs.md)
-- [ ] 6. 动词分类 (二): 英语的五种基本句型
+- [x] [5. 动词分类 (一): 实义动词与 (情态) 助动词](1_5_content_verbs_and_modal_auxiliary_verbs.md)
+- [ ] [6. 动词分类 (二): 英语的五种基本句型](1_6_five_basic_sentence_patterns.md)
 - [ ] 7. 英文时态 (一): 一般时态
 - [ ] 8. 英文时态 (二): 进行时态
 
