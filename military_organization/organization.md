@@ -1,0 +1,94 @@
+# Military Organization
+
+> - <https://en.wikipedia.org/wiki/Military_organization>
+> - <https://zh.wikipedia.org/zh-cn/%E8%BB%8D%E4%BA%8B%E7%B5%84%E7%B9%94>
+
+- [Military Organization](#military-organization)
+  - [Modern hierarchy](#modern-hierarchy)
+
+## Modern hierarchy
+
+- Unit Name
+  - NATO Symbol
+  - No. of personnel
+  - No. of aircraft
+  - No. of subordinate units
+  - Officer in command
+- Combatant Command (战斗指挥)
+  - `XXXXXX`
+  - Entire force
+  - Entire air force
+  - All Major Commands
+  - Air Chief Marshal
+- Major Command (战区)
+  - `XXXXX`
+  - Varies
+  - Varies
+  - Varies
+  - Gen / Air Chf Mshl (上将)
+- No USAF equivalen
+  - `XXXX`
+  - Varies
+  - Varies
+  - Varies
+  - Gen or Lt-Gen / Air Chf Mshl or Air Mshl
+- Numbered Air Force (集团军)
+  - `XXX`
+  - Varies
+  - Varies
+  - 2+ Wings/Groups
+  - Maj-Gen or Lt-Gen (少将、中将)
+- No USAF equivalent (师)
+  - `XX`
+  - Varies
+  - Varies
+  - 2+ Wings/Groups
+  - Maj-Gen or Div-Gen (大校、少将)
+- Wing/Group (旅)
+  - `X`
+  - 1,000–5,000
+  - 48–200
+  - 2+ Groups/Wings
+  - Brig-Gen/AVM or Air Cdre (大校、上校)
+- Group/Wing or Station (团)
+  - `III`
+  - 300–1,000
+  - 17–48
+  - 3–4 Squadrons/3–10 Flights
+  - Col/Gp Capt or Wg Cdr (上校、中校)
+- Squadron (营)
+  - `II`
+  - 100–300
+  - 7–16
+  - 3–4 Flights
+  - Lt Col or Maj/Wg Cdr or Sqn Ldr (少校、中校)
+- Flight or flying staffel (连)
+  - `I`
+  - 20–100
+  - 4–6
+  - 2 or more Sections plus maintenance and support crew
+  - Maj or Capt/Sqn Ldr or Flt Lt (上尉、中尉)
+- No equivalent
+  - `••••`
+  - 40–160
+  - 6-12
+  - 1-2 Sections plus maintenance and support crew
+  - Captain or Staff Captain (上尉、参谋上尉)
+- Element or Section (排)
+  - `•••`
+  - 10-40
+  - N/A-2
+  - N/A
+  - Junior Officer or Senior NCO (中尉、少尉、高级士官)
+- Detail (班)
+  - `••`
+  - 8-12
+  - N/A
+  - N/A
+  - Senior NCO or Junior NCO (高级、初级士官)
+- Squad or crew (小队)
+  - `•`
+  - 2-4
+  - N/A
+  - N/A
+  - Junior NCO (初级士官)
