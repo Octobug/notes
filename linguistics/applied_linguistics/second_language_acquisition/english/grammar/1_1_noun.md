@@ -15,6 +15,10 @@
       - [第四组：抽象名词](#第四组抽象名词)
       - [第五组：研究学科](#第五组研究学科)
     - [1.2.2 可数与不可数的“相对论”](#122-可数与不可数的相对论)
+      - [一、规律一](#一规律一)
+      - [二、规律二](#二规律二)
+      - [三、规律三](#三规律三)
+    - [1.2.3 不能按中文的思维理解英文名词的可数与不可数](#123-不能按中文的思维理解英文名词的可数与不可数)
 
 ## 1.1 名词的定义与分类
 
@@ -190,5 +194,134 @@ person or thing.)。
 - math
 
 ### 1.2.2 可数与不可数的“相对论”
+
+一个名词是否可数关键在于它所表达的意义，因而名词的可数性与它所使用的上下文语境密切相关。
+
+*1) Do you know anything about this food pyramid*?
+
+名词 food 作定语，修饰 pyramid，表示"食物"这个总称的、抽象的概念。
+
+*5) Read the labels on food products. This information will tell you how
+nutritious the foods are*.
+
+第一个 food 作定语，修饰 products，表示"食物"这个总称的、抽象的概念。
+第二个 foods 指代上文中的 food products，表示"各种食品"，这里 foods 是作为可数名词使用。
+
+*6)Avoid eating foods that are high in simple carbohydrates, that are, sugars.
+A chocolate bar will first give you energy, but then it will leave you feeling
+even more tired*.
+
+这里的 foods 表示不同种类的、具体的食物。
+
+#### 一、规律一
+
+**对于物质名词或总称的名词，若是表示不同的种类，或者因为特定的意思，
+或者是液体表示"几杯"或"几瓶"这样的数量，则转化为可数名词**。
+
+总称或物质名词在表示"不同种类或具体的事物"时转化为可数名词，此时它们的词义没有改变或改变不大。
+
+- cake
+  - I like cake, not hamburger.
+    - 不可数，指"蛋糕"这类食物的总称。
+  - My mother is making a cake in the kitchen.
+    - 可数，指具体的"一块蛋糕"。
+- milk
+  - I don't like milk.
+    - 不可数，指"牛奶"这种饮品的总称。
+  - Yogurt contains a higher percentage of lactic acid than other fermented
+    milks.
+    - 可数，指不同种类的奶制品。
+
+某些物质名词作为可数或不可数名词时，意思会发生很大的改变。
+
+- paper
+  - I need some paper to write a letter on.
+    - 不可数，指"纸"这类物质。
+  - I have a term paper to write on weekends.
+    - 可数，指"论文"。
+  - I bought a paper.
+    - 可数，指"报纸"。
+- lamb
+  - There is lamb on the menu today.
+    - 不可数，指"羔羊肉"。
+  - The lambs were eating quietly.
+    - 可数，指"羔羊"。
+- glass
+  - Glass does not rust or rot.
+    - 不可数，指"玻璃"这种材料。
+  - This vase is made of glass.
+    - 不可数，指"玻璃"这种材料。
+  - She drank two glasses of wine.
+    - 可数，指"玻璃杯"。
+  - He broke a piece of glass.
+    - 不可数，指"玻璃"这种材料。
+- water
+  - the waters of the East China Sea
+    - 可数，指"海域"。⚠️ waters 的这种用法只能是复数。
+- beer & coffee
+  - Two beers and three coffees, please!
+    - 可数，这里使用复数形式，表示"几杯"。
+
+#### 二、规律二
+
+**对于抽象名词，若是具体化了，则转化为可数名词。并且，此时往往伴随着词义上或大或小的改变**。
+
+不可数名词转化为可数名词:
+
+- art
+  - The Armory Show, held in New York in 1913, was an important exihibition of
+    modern European art.
+    - 不可数，指"艺术"这个抽象概念。
+  - Knitting is an art.
+    - 可数，指一项具体的技艺。
+- beauty
+  - She had great beauty in her youth.
+    - 不可数，指"美丽"这个抽象概念。
+  - She was a beauty in her youth.
+    - 可数，指具体的一个"美人"。
+- youth
+  - Youth is not a time of life. It is a state of mind.
+    - 不可数，指"青春"这个抽象概念。
+  - When as a youth I dreamed and talked -- Time walked!
+    - 可数，指一个"青年人"。
+- collection
+  - Financier Andrew Mellon donated most of his magnificent art collection to
+    the National Gallery of Art, where it is now located.
+    - 不可数，指"艺术收藏品"这个总称的、抽象的概念，而没有具体说明是什么收藏品。
+  - One of the most impressive collections of nineteenth-century European
+    paintings in the United States can be found at the Philadelphia Museum of
+    Art.
+    - 可数，特指"某些"收藏品。
+
+可数名词转化成不可数名词:
+
+- room
+  - There's plenty of room`1` for everybody to sit down in this room`2`.
+    - `1` 不可数，指"空间"。
+    - `2` 可数，指"房间"。
+- husband & wife
+  - I pronounce this couple to be husband and wife. You may kiss.
+    - 不可数，表示"夫妻"。
+
+#### 三、规律三
+
+从更广泛的意义上来说，当一个名词表示**抽象的、总称的概念** (abstract or generic concept)
+时，一般作为**不可数**名词来用。而当它表示**具体的、特定的事物** (concrete or particular
+things) 时，则通常作为**可数**名词。
+
+- area
+  - The square convers an area of 20,000 square meters.
+    - 可数，指具体有多大"面积"。
+  - Chongqing is the largest city in area in China
+    - 不可数，指"面积"这个抽象概念。
+
+Large, multicolored insects `with (A)` four wings, dragonflies `play (B)` a very
+important role in the ecosystem of humid `area (C)` by `controlling (D)` the
+population of mosquitoes.
+
+答案: `C` 应为 areas。根据上下文，这里 area 是"地区"的意思，是可数名词，因此要加 s，
+这样前面就可以不用限定词修饰。
+
+### 1.2.3 不能按中文的思维理解英文名词的可数与不可数
 
 >>>>> progress
