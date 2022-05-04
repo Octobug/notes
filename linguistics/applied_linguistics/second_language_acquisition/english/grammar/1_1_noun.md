@@ -19,6 +19,11 @@
       - [二、规律二](#二规律二)
       - [三、规律三](#三规律三)
     - [1.2.3 不能按中文的思维理解英文名词的可数与不可数](#123-不能按中文的思维理解英文名词的可数与不可数)
+    - [1.2.4 不可数名词的度量](#124-不可数名词的度量)
+      - [一、不可数名词与量词](#一不可数名词与量词)
+      - [二、不可数名词不能被 a(n) 修饰](#二不可数名词不能被-an-修饰)
+      - [三、不可数名词不能被基数词修饰](#三不可数名词不能被基数词修饰)
+    - [思维训练 1.2](#思维训练-12)
 
 ## 1.1 名词的定义与分类
 
@@ -323,5 +328,53 @@ population of mosquitoes.
 这样前面就可以不用限定词修饰。
 
 ### 1.2.3 不能按中文的思维理解英文名词的可数与不可数
+
+英语里的总称名词往往都是强调一个抽象的概念，而非具体实物。
+
+### 1.2.4 不可数名词的度量
+
+#### 一、不可数名词与量词
+
+不可数名词不能用具体的数字来表示其数量，但可以借用量词还表示其量的概念。
+
+**1. 常用 piece 修饰以下抽象名词和物质名词**.
+
+- advice
+- bread
+- baggage
+- chalk
+- equipment: several pieces of furniture
+- furniture
+- information
+- jewelry
+- luggage
+- music
+- news: a piece of news
+
+**2. 用 bottle, cup, drop 和 glass 修饰液态物质**.
+
+- beer
+- blood: several drops of blood
+- coffee: two cups of coffee
+- milk: a glass of milk
+- tea
+- water
+- wine: two glasses of wine
+
+**3. 其他的量词**.
+
+a loaf of bread
+a tube of toothpaste
+a slice of meat
+
+#### 二、不可数名词不能被 a(n) 修饰
+
+前面必须加量词修饰。比如不能说 "a news"。
+
+#### 三、不可数名词不能被基数词修饰
+
+前面必须加量词修饰。比如不能说 "one book"。
+
+### 思维训练 1.2
 
 >>>>> progress
