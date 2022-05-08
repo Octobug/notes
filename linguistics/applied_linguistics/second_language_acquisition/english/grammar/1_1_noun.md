@@ -24,6 +24,7 @@
       - [二、不可数名词不能被 a(n) 修饰](#二不可数名词不能被-an-修饰)
       - [三、不可数名词不能被基数词修饰](#三不可数名词不能被基数词修饰)
     - [思维训练 1.2](#思维训练-12)
+  - [1.3 名词的数 (二): 单数与复数](#13-名词的数-二-单数与复数)
 
 ## 1.1 名词的定义与分类
 
@@ -376,5 +377,56 @@ a slice of meat
 前面必须加量词修饰。比如不能说 "one book"。
 
 ### 思维训练 1.2
+
+*1. Did you hear ____ just now?*
+
+- *A. a noise*
+- *B. noise*
+
+答案: B.
+
+*5. There is ____ in my soup!*
+
+- *A. hair*
+- *B. a hair*
+
+答案: B.
+
+*6. These boys need to have their ____ cut.*
+
+- *A. hair*
+- *B. hairs*
+
+答案: A.
+
+*7. I don't like wearing ____.*
+
+- *A. a long hair*
+- *B. long hair*
+
+答案: B.
+
+*8. I can find some white ____ on your head.*
+
+- *A. hair*
+- *B. hairs*
+
+答案: B.
+
+*11. More ____ will have to be made on the program for these performers.*
+
+- *A. rooms*
+- *B. room*
+
+答案: B.
+
+*14. I had some interesting ____ during the journey.*
+
+- *A. experiences*
+- *B. experience*
+
+答案: A.
+
+## 1.3 名词的数 (二): 单数与复数
 
 >>>>> progress
