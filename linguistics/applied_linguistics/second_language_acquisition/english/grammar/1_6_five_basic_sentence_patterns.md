@@ -151,15 +151,52 @@ bites a dog that is news.
 
 系动词、不及物动词、单宾语动词、双宾语动词和复合动词。
 
-- linking verb (联系动词): 主语 + 系动词 + 表语
-- intransitive verb (不及物动词): 主语 + 谓语
-- transitive verb with directive object alone (单宾动词: 只接一个宾语的动词):
+- `linking verb` (联系动词): 主语 + 系动词 + 表语
+- `intransitive verb` (不及物动词): 主语 + 谓语
+- `transitive verb with directive object alone` (单宾动词: 只接一个宾语的动词):
   主语 + 谓语 + 宾语
-- transitive verb with direct object and indirect object (双宾动词:
+- `transitive verb with direct object and indirect object` (双宾动词:
   接间接宾语 + 直接宾语的动词): 主语 + 谓语 + 简介宾语 + 直接宾语
-- transitive verb with direct object and object complement (复合宾语动词:
+- `transitive verb with direct object and object complement` (复合宾语动词:
   接宾语和宾语补足语的动词): 主语 + 谓语 + 宾语 + 宾语补足语
 
 ## 综合训练
 
->>>>> progress
+**一、判断下列句子属于何种句型。**
+
+*7. Old habits die hard.*
+
+答案:
+
+- Old habits: 主语
+- die hard: 谓语
+
+*9. He speaks English well.*
+
+答案:
+
+- He: 主语
+- speaks: 谓语
+- English: 宾语
+
+*23. She will make him a good husband.*
+
+答案:
+
+- She: 主语
+- will make: 谓语
+- him: 宾语
+- a good wife: 主语补足语
+
+**三、分析下列句子的成分。**
+
+- *The not-so-easy way may mean getting down on your hands and knees and pulling
+  out the weeds by the roots.*
+  - The not-so-easy way: 主语
+  - my mean: 谓语
+  - getting down on your hands and knees and pulling out the weeds by the roots:
+    宾语
+- *The first solution appeared easy.*
+  - The first solution: 主语
+  - appeared: 系动词
+  - easy: 表语
