@@ -179,7 +179,7 @@ bites a dog that is news.
 - speaks: 谓语
 - English: 宾语
 
-*23. She will make him a good husband.*
+*22. She will make him a good wife.*
 
 答案:
 
