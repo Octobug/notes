@@ -8,6 +8,7 @@
       - [二、表示主语由一种状态转变为另一种状态](#二表示主语由一种状态转变为另一种状态)
       - [三、表示主语保持某种状态](#三表示主语保持某种状态)
       - [四、近似于不及物动词的系动词](#四近似于不及物动词的系动词)
+    - [1.2.2 简单句叠加成复杂难句](#122-简单句叠加成复杂难句)
 
 ## 1.1 引言
 
@@ -141,5 +142,22 @@
 - *Don't act stupidly.*
   - stupidly 是副词，作状语修饰 act。
   - 译: 别笨手笨脚的。
+- *I acted foolish.* (装傻)
+  - act 是系动词，后接形容分词 foolish 作表语。
+- *I'm ashamed I acted foolish.* (真傻)
+  - act 是行为动词，后接副词 foolishly 作状语。
+
+例句4:
+
+- *All men are created equal.*
+  - ✅ 人人生而平等。
+  - ❌ 所有人都是被平等地创造出来。
+  - 这里 equal 用来修饰主语 all men: all men are equal.
+- *He was born poor.*
+  - poor 修饰主语 He 而不是 born，因此不用 poorly。
+- *People aren't born great. They become great.*
+- *The boy blushed scarlet.*
+
+### 1.2.2 简单句叠加成复杂难句
 
 >>>>> progress
