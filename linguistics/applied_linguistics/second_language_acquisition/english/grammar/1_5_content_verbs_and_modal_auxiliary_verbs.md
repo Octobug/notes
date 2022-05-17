@@ -266,7 +266,7 @@ yet. He has`8` a girlfriend and they have`9` known each other for 2 years*.
 #### 一、which
 
 当说话者提供多种对象供对方选择时，我们就要用 which 来提问。此时 which 后面通常要接一个名词，
-意思是“哪一个什么东西”。
+意思是"哪一个什么东西"。
 
 A: Could you lend me your pen?
 B: Sure. I have two pens. Which pen/ Which one/ Which do you want?
@@ -276,7 +276,7 @@ A: That red one. Thanks.
 
 #### 二、whose
 
-whose 的后面必须接名词，表示“谁的什么东西”。
+whose 的后面必须接名词，表示"谁的什么东西"。
 
 - This is **his book**.
   - Whose book is this?

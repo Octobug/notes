@@ -14,7 +14,7 @@
       - [第三组: 总称名词](#第三组-总称名词)
       - [第四组：抽象名词](#第四组抽象名词)
       - [第五组：研究学科](#第五组研究学科)
-    - [1.2.2 可数与不可数的“相对论”](#122-可数与不可数的相对论)
+    - [1.2.2 可数与不可数的"相对论"](#122-可数与不可数的相对论)
       - [一、规律一](#一规律一)
       - [二、规律二](#二规律二)
       - [三、规律三](#三规律三)
@@ -28,14 +28,14 @@
     - [1.3.1 英语名词的单数与复数的概念](#131-英语名词的单数与复数的概念)
     - [1.3.2 只用作单数的名词](#132-只用作单数的名词)
     - [1.3.3 只用作复数的名词](#133-只用作复数的名词)
-      - [一、“二合一”的复数名词](#一二合一的复数名词)
-      - [二、“单形复义”的名词](#二单形复义的名词)
-      - [三、“the + 形容词”——表示一类人的复数名词](#三the--形容词表示一类人的复数名词)
+      - [一、"二合一"的复数名词](#一二合一的复数名词)
+      - [二、"单形复义"的名词](#二单形复义的名词)
+      - [三、"the + 形容词"——表示一类人的复数名词](#三the--形容词表示一类人的复数名词)
       - [四、复数专有名词](#四复数专有名词)
     - [1.3.4 规则的复数名词](#134-规则的复数名词)
       - [一、一般在词尾加 `-s`](#一一般在词尾加--s)
       - [二、以 `-s`, `-x`, `-ch`, `-sh` 结尾的名词加 `-es`](#二以--s--x--ch--sh-结尾的名词加--es)
-      - [三、以“辅音字母+y”结尾的名词，变 `-y` 为 `-i`，再加 `-es`；以“元音字母+y”结尾的名词，则加 `-s`](#三以辅音字母y结尾的名词变--y-为--i再加--es以元音字母y结尾的名词则加--s)
+      - [三、以"辅音字母+y"结尾的名词，变 `-y` 为 `-i`，再加 `-es`；以"元音字母+y"结尾的名词，则加 `-s`](#三以辅音字母y结尾的名词变--y-为--i再加--es以元音字母y结尾的名词则加--s)
       - [四、有关以 `-o` 结尾的名词](#四有关以--o-结尾的名词)
       - [五、有关以 `-f` 或 `-fe` 结尾的名词](#五有关以--f-或--fe-结尾的名词)
     - [1.3.5 不规则的复数名词](#135-不规则的复数名词)
@@ -47,11 +47,11 @@
       - [六、变 `-ouse` 为 `-ice`](#六变--ouse-为--ice)
       - [七、以 `-us` 结尾的拉丁语名词，变 `-us` 为 `-i`，有的可在词尾直接加 `-es`](#七以--us-结尾的拉丁语名词变--us-为--i有的可在词尾直接加--es)
     - [1.3.6 复合名词变复数](#136-复合名词变复数)
-      - [一、“man/woman + 名词”构成的复合名词](#一manwoman--名词构成的复合名词)
+      - [一、"man/woman + 名词"构成的复合名词](#一manwoman--名词构成的复合名词)
       - [二、以 `-man`/`-woman`/`-child` 结尾的复合名词](#二以--man-woman-child-结尾的复合名词)
-      - [三、“名词 + 介词或介词短语”构成的复合名词](#三名词--介词或介词短语构成的复合名词)
+      - [三、"名词 + 介词或介词短语"构成的复合名词](#三名词--介词或介词短语构成的复合名词)
       - [四、由动词短语演变成的复合名词](#四由动词短语演变成的复合名词)
-      - [五、“名词 + 形容词”构成的复合名词](#五名词--形容词构成的复合名词)
+      - [五、"名词 + 形容词"构成的复合名词](#五名词--形容词构成的复合名词)
     - [1.3.7 单复数同形的名词 (零复数名词)](#137-单复数同形的名词-零复数名词)
       - [一、动物名称](#一动物名称)
       - [二、国籍名称](#二国籍名称)
@@ -97,9 +97,9 @@ person or thing.)。
    September, October, November, December.
 
    这些月份的单词专指阳历 (the solar calendar)，阴历的月份要使用序数词表达。  
-   比如“阴历二月”为 "the second month on the lunar calendar"，
+   比如"阴历二月"为 "the second month on the lunar calendar"，
    或 "the second lunar month"。  
-   “七夕”为 "the seventh of the seventh lunar month"。
+   "七夕"为 "the seventh of the seventh lunar month"。
 
 4. **星期**: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday.
 5. **节日**: Christmas, Easter, New Year's Day, Mother's Day, Thanksgiving Day.
@@ -231,7 +231,7 @@ person or thing.)。
 - history
 - math
 
-### 1.2.2 可数与不可数的“相对论”
+### 1.2.2 可数与不可数的"相对论"
 
 一个名词是否可数关键在于它所表达的意义，因而名词的可数性与它所使用的上下文语境密切相关。
 
@@ -466,17 +466,17 @@ a slice of meat
 ### 1.3.1 英语名词的单数与复数的概念
 
 英语要区分名词的**单数** (singular, 缩写为 `sg.`) 和**复数** (plural, 缩写为 `pl.`)：
-单数表示“一”；复数表示“多于一”，即表示两个或两个以上的数量。
+单数表示"一"；复数表示"多于一"，即表示两个或两个以上的数量。
 
 1. one half day 半天 (单数)
 2. one day 一天 (单数)
 3. one and a half day 一天半 (复数)
 
-英语中的“复数”限定词:
+英语中的"复数"限定词:
 
-- 限定词 both, either 和 neither 都只能用来指“二”，不能指“二以上”的复数概念；
-- each 可以指“二或二以上”的复数概念；
-- every 只能指“三或三以上”的复数概念。
+- 限定词 both, either 和 neither 都只能用来指"二"，不能指"二以上"的复数概念；
+- each 可以指"二或二以上"的复数概念；
+- every 只能指"三或三以上"的复数概念。
 - Each sex has its own physical and psychological characteristics.
   - ❌ Every sex... 因为性别只有男女两种。
 
@@ -489,7 +489,7 @@ a slice of meat
 
 这些名词没有词形的变化，但都是当作复数名词来用。它们作主语时，谓语要用复数形式。
 
-#### 一、“二合一”的复数名词
+#### 一、"二合一"的复数名词
 
 这些名词表示由相同的两个部分合在一起构成的工具、仪器或服装。
 
@@ -520,7 +520,7 @@ a slice of meat
    - trousers (长裤)
    - trunks (男士泳裤)
 
-#### 二、“单形复义”的名词
+#### 二、"单形复义"的名词
 
 有些名词形式上是单数，但表达的是复数的意义。
 
@@ -528,32 +528,32 @@ a slice of meat
   - 作为 person 的复数形式
     - There was only one **person** in the room.
     - There were many **people** in the room.
-  - 作为“民族”或“部族”的意义时，它就是一个普通名词，有单复数变化。不过这时单数的 people
+  - 作为"民族"或"部族"的意义时，它就是一个普通名词，有单复数变化。不过这时单数的 people
     通常也用**复数形式**的谓语。
     - The Chinese **are** an industrious **people**.
     - the English-speaking **peoples**.
     - The Chinese people **have** achieved a great success.
-- cattle: 表示“牛群”，用作复数名词。作主语时谓语用复数形式。
+- cattle: 表示"牛群"，用作复数名词。作主语时谓语用复数形式。
   - All his cattle **were** grazing in the field.
-- police: 表示“警察部门”或“警方”这样的含义，是一个集体名词。若表示个体的警察，则用
+- police: 表示"警察部门"或"警方"这样的含义，是一个集体名词。若表示个体的警察，则用
   a police officer, 或 a policeman/policewoman, 复数形式是
   police officers/policemen/policewomen。
   - Why don't you ask a policeman?
   - The police are investigating the witnesses.
 - poultry
-  - 表示“家禽”时，当作复数名词用。
+  - 表示"家禽"时，当作复数名词用。
     - Where are your poultry?
-  - 表示“禽肉”时，则要当作单数名词来用。
+  - 表示"禽肉"时，则要当作单数名词来用。
     - Poultry is harder to come by nowadays than beef.
-  - chicken 可以表示“鸡”，也可以表示“鸡肉”。
-  - pig 表示“猪”，pork 表示“猪肉”。
-  - ox, bull, cow 表示“牛”，beef 表示“牛肉”。
-- livestock: 表示“农村里的牲畜”，是一个集体名词，当作复数名词，用复数谓语。
+  - chicken 可以表示"鸡"，也可以表示"鸡肉"。
+  - pig 表示"猪"，pork 表示"猪肉"。
+  - ox, bull, cow 表示"牛"，beef 表示"牛肉"。
+- livestock: 表示"农村里的牲畜"，是一个集体名词，当作复数名词，用复数谓语。
   - Our livestock are not numerous as they used to be.
 
-#### 三、“the + 形容词”——表示一类人的复数名词
+#### 三、"the + 形容词"——表示一类人的复数名词
 
-“the + 形容词”表示一类人，此时当作复数名词，作主语时，谓语要用复数。
+"the + 形容词"表示一类人，此时当作复数名词，作主语时，谓语要用复数。
 
 The rich are becoming richer.
 
@@ -589,7 +589,7 @@ The rich are becoming richer.
 
 - stomach/stomachs (胃、肚子)
 
-#### 三、以“辅音字母+y”结尾的名词，变 `-y` 为 `-i`，再加 `-es`；以“元音字母+y”结尾的名词，则加 `-s`
+#### 三、以"辅音字母+y"结尾的名词，变 `-y` 为 `-i`，再加 `-es`；以"元音字母+y"结尾的名词，则加 `-s`
 
 - `-es`
   - baby/babies (婴儿)
@@ -721,9 +721,9 @@ The rich are becoming richer.
 
 ### 1.3.6 复合名词变复数
 
-#### 一、“man/woman + 名词”构成的复合名词
+#### 一、"man/woman + 名词"构成的复合名词
 
-由“man/woman + 名词”构成的复合名词，两个词均须变为复数。
+由"man/woman + 名词"构成的复合名词，两个词均须变为复数。
 
 - man doctor/ men doctors (男医生)
 - man servant/ men servants (男仆)
@@ -745,9 +745,9 @@ The rich are becoming richer.
 - Frenchman/Frenchmen (法国人)
 - German 不是合成词，直接加 `-s` 为 Germans
 
-#### 三、“名词 + 介词或介词短语”构成的复合名词
+#### 三、"名词 + 介词或介词短语"构成的复合名词
 
-“名词 + 介词或介词短语”构成的复合名词变复数时，将主体名词（中心名词）变为复数。
+"名词 + 介词或介词短语"构成的复合名词变复数时，将主体名词（中心名词）变为复数。
 
 - bride-to-be/brides-to-be (准新娘)
 - comrade-in-arms/comrades-in-arms (战友)
@@ -773,9 +773,9 @@ The rich are becoming richer.
 - take-off/take-offs (起飞)
 - takeover/takeovers (接管)
 
-#### 五、“名词 + 形容词”构成的复合名词
+#### 五、"名词 + 形容词"构成的复合名词
 
-“名词 + 形容词”构成的复合名词变复数时，变名词为复数。
+"名词 + 形容词"构成的复合名词变复数时，变名词为复数。
 
 - Attorney General/ Attorneys General (司法部长)
 - consul general/ consuls general (总领事)
