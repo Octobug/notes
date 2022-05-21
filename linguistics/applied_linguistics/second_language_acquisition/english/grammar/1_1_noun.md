@@ -57,6 +57,35 @@
       - [二、国籍名称](#二国籍名称)
     - [1.3.8 有新词义的复数名词](#138-有新词义的复数名词)
     - [思维训练 1.3](#思维训练-13)
+  - [1.4 名词的格 (一): `'s` 所有格的构成及逻辑语义关系](#14-名词的格-一-s-所有格的构成及逻辑语义关系)
+    - [1.4.1 `'s` 所有格的构成](#141-s-所有格的构成)
+      - [一、单数名词](#一单数名词)
+      - [二、复数名词](#二复数名词)
+      - [三、复合名词](#三复合名词)
+      - [四、并列名词](#四并列名词)
+    - [1.4.2 `'s` 所有格的逻辑语义关系](#142-s-所有格的逻辑语义关系)
+      - [一、所属关系](#一所属关系)
+      - [二、主谓关系](#二主谓关系)
+      - [三、动宾关系](#三动宾关系)
+      - [四、同位关系](#四同位关系)
+      - [五、表示时间或距离](#五表示时间或距离)
+      - [六、表示重量或价值等度量](#六表示重量或价值等度量)
+      - [七、表示国家、城市、国际组织或地理名词等](#七表示国家城市国际组织或地理名词等)
+      - [八、用于交通工具机器部件的所属关系](#八用于交通工具机器部件的所属关系)
+    - [1.4.3 名词所有格修饰的名词被省去](#143-名词所有格修饰的名词被省去)
+      - [一、避免名词重复](#一避免名词重复)
+      - [二、表示店铺或教堂](#二表示店铺或教堂)
+      - [三、表示某人的住宅](#三表示某人的住宅)
+    - [思维训练 1.4](#思维训练-14)
+  - [1.5 名词的格 (二): of 属格的构成及逻辑语义关系](#15-名词的格-二-of-属格的构成及逻辑语义关系)
+    - [1.5.1 of 属格的构成](#151-of-属格的构成)
+      - [一、表示无生命物体的名词的所有关系](#一表示无生命物体的名词的所有关系)
+      - [二、当有生命的名词后面接短语或从句修饰时，也用 of 属格](#二当有生命的名词后面接短语或从句修饰时也用-of-属格)
+    - [1.5.2 of 属格的逻辑语义关系](#152-of-属格的逻辑语义关系)
+      - [一、主谓关系: 从右往左翻译](#一主谓关系-从右往左翻译)
+      - [二、动宾关系: 从左往右翻译](#二动宾关系-从左往右翻译)
+      - [三、同位关系](#三同位关系)
+    - [思维训练 1.5](#思维训练-15)
 
 ## 1.1 名词的定义与分类
 
@@ -867,5 +896,262 @@ The rich are becoming richer.
 这些名词在表示特定意思时，只能用作复数。
 
 ### 思维训练 1.3
+
+**将下列名词变成复数形式**。
+
+- *1. sheep*/sheep, *deer*/deer
+- *2. stomach*/stomachs
+- *4. tomato*/tomatoes, *potato*/potatoes, *bamboo*/bamboos
+- *5. half*/halves, *chief*/chiefs, *thief*/thieves, *roof*/roofs
+- *6. man teacher*/men teachers, *man servant*/men servants,
+  *woman pilot*/women pilots, *passer-by/passers-by*, *looker-on*/lookers-on,
+  *mother-in-law*/mothers-in-law
+- *7. quota*/quotas, *licenses*/license, *business*/businesses
+- *8. originality*/originality, *sensitivity*/sensitivity
+
+## 1.4 名词的格 (一): `'s` 所有格的构成及逻辑语义关系
+
+### 1.4.1 `'s` 所有格的构成
+
+名词所有格 `'s` 主要用来表示有生命的名词的所属关系。
+所以它通常用在**姓名**、**人称**、**不定代词**、**集体名词**和**高等动物**等名词后面。
+
+- 姓名 (names): Mary's brother
+- 人称 (personal nouns): my brother's car
+- 不定代词 (indefinite pronouns): nobody's fault
+- 集体名词 (collectivce nouns): the party's decision
+- 高等动物 (animals): the horse's mouth
+
+#### 一、单数名词
+
+单数名词的所有格，在词尾加 `'s`
+
+- my sister's boyfriend
+- the person's choice
+
+#### 二、复数名词
+
+对于复数名词的所有格的构成，要分两种情况:
+
+1. 不以 `-s` 或 `-es` 结尾的特殊变化的复数名词，在词尾加 `'s`:
+   - the Children's Day
+   - the children's books
+   - women's wear
+2. 以 `-s` 结尾的复数名词，在词尾加 `'` 构成所有格:
+   - her friends' money
+   - The stars' concert was a sell-out
+
+#### 三、复合名词
+
+复合名词的所有格，在最后一个词的词尾加 `'s` 构成:
+
+- my father-in-law's company
+- everyone else's viewpoints
+- Henry the Eight's wives
+
+#### 四、并列名词
+
+对于由 and 连接的并列名词，当表示"共有"的情况下，只需在最后一个人名词的词尾加 `'s`；
+若表示"各自所有"，则需在每个名词的词尾加 `'s`:
+
+- John and his wife's bank savings
+- John's and his wife's bank savings
+- Clint and John's bedroom
+- Clint's and John's bedrooms
+
+### 1.4.2 `'s` 所有格的逻辑语义关系
+
+#### 一、所属关系
+
+即某人拥有的人或物:
+
+- my father-in-law's company
+- my sister's boyfriend
+
+所属关系有时是表示某物属于某一类人，而不是属于具体的某个人:
+
+- the children's books
+- women's wear
+- student's book
+
+#### 二、主谓关系
+
+- *How will Bhutto's death affect the world?*
+  - Bhutto's death 相当于说 Bhutto died, 即一个主谓关系。
+- *the visitor's departure*
+  - the visitor departed
+
+#### 三、动宾关系
+
+*Bhutto's assassination rocks Pakistan.*
+
+这里的名词短语 Bhutto's assassination 相当于说 assassinate Bhutto，是一个动宾关系，
+而不是主谓关系——Bhutto assasinates someone。
+
+所谓"动宾关系"，是指被修饰的名词相当于一个谓语，且是及物动词。
+而所有格名词相当于这个及物动词的宾语。
+
+- the children's education
+- the boy's punishment
+
+#### 四、同位关系
+
+*For Washington, Bhutto's loss is incalculable.*
+
+这里的名词短语 Bhutto's loss 相当于 the loss of Bhutto。这里 loss 是中心词，而
+Bhutto's 是用来详述具体损失了什么东西，补充说明 loss，即相当于一个同位语。
+
+名词所有格还可以用于一下"非生命名词"
+
+#### 五、表示时间或距离
+
+所有格 `'s` 用在表示时间的名词后面。
+
+- today's newspaper
+- tomorrow's weather
+- tonight's TV
+- three hours' delay
+
+#### 六、表示重量或价值等度量
+
+所有格 `'s` 用在表示度量的名词后面:
+
+- two pounds' weight
+- a ton's weight
+- a ton's steel
+- two dollars' worth of sugar
+
+#### 七、表示国家、城市、国际组织或地理名词等
+
+- China's population
+- thr city's weather
+- the earth's surface
+- the sea's depth
+
+#### 八、用于交通工具机器部件的所属关系
+
+- the car's exhaust
+- the plane's engine
+
+### 1.4.3 名词所有格修饰的名词被省去
+
+#### 一、避免名词重复
+
+若名词所有格所修饰的名词已经出现过，则第二次出现在所有格后面的名词可以省去，以避免重复。
+
+- This bike is mine, not Michael's (bike).
+- This is my room and that is my sister's (room).
+- I don't know her name, but I call tell you her husband's (name).
+
+#### 二、表示店铺或教堂
+
+在一些表示店铺或教堂的名词的所有格后面可省去名词，此时所有格表示相应的场所，
+且一般要在所有格名词前加定冠词 the.
+
+- at the baker's (shop)
+- at the butcher's (shop)
+- at the chemist's (store)
+- at the dentist's (clinic)
+- I'm going to the dentist's (clinic) tomorrow afternoon.
+- I want to pay a visit to the St. Paul's (Cathedral).
+
+#### 三、表示某人的住宅
+
+在人名后的所有格省去名词时，表示某人的住宅。
+
+- go to my sister's (home)
+- I called at my uncle's (home) yesterday
+
+### 思维训练 1.4
+
+**二、用名词所有格简化下列句子中加粗的部分。**
+
+*23. He has been staying for a few weeks at **the house of his uncle**.*
+
+- his uncle's
+
+*27. President George W. Bush arrived at the Tsinghua University in Beijing on
+February 22, 2002; the news was reported in yesterday's newspaper. (合并成一句)*
+
+- President George W. Bush's arriving at the Tsinghua University in Beijing on
+  February 22, 2002 was reported in yesterday's newspaper.
+
+## 1.5 名词的格 (二): of 属格的构成及逻辑语义关系
+
+### 1.5.1 of 属格的构成
+
+其基本构成是: `N1 + of + N2`。这里 N1 表示第一个名词，N2 表示第二个名词。
+of 属格主要用于以下两种情形:
+
+#### 一、表示无生命物体的名词的所有关系
+
+- the roof of the church
+- the name of the song
+- the title of the book
+
+总体来说，`'s` 所有格主要是用于**有生命**的名词，而 of 属格主要用于**无生命**的名词。
+从这个意义上来说，两种所有格是互为补充的关系，在彼此不作为的领域发挥着作用。
+
+#### 二、当有生命的名词后面接短语或从句修饰时，也用 of 属格
+
+What is the name of **the boy sitting next to her**?
+
+这里的 boy 被分词短语 sitting next to her 所修饰，此时不能说
+"What is the boy sitting next to her's name?"。如果没有这个分词短语，则可以说
+What is the boy's name?
+
+I took the advice of **an old man I met during a journey** and decided to make
+something of myself.
+
+这里同样不能用 `'s` 所有格说成 "...an old man I met during a journey's advice..."。
+
+### 1.5.2 of 属格的逻辑语义关系
+
+of 常见的三种语义关系: 主谓关系、动宾关系和同位关系。
+
+#### 一、主谓关系: 从右往左翻译
+
+基本结构是 `N1 + of + N2`，这里 N1 是由不及物动词变化过来的名词，表示某个行为，
+这一行为是由 N2 发出的。
+
+- the arrival of my mother 我妈妈到了
+- the rise of the U.S. Superpower 超级大国美国的兴起
+
+#### 二、动宾关系: 从左往右翻译
+
+其基本结构是 `N1 + of + N2`，这里 N1 是由及物动词变化过来的名词，N2 是 N1 行为的承受者:
+
+- William's conquest of the Empire 威廉王征服这个帝国
+- a statement of the facts 陈述事实
+- the discussion of the plan 讨论这个计划
+
+如果动词既可作及物动词又可作不及物动词使用，则会产生麻烦:
+
+the shooting of the rebels
+
+- 主谓关系: the rebels were shooting 叛乱者开枪扫射
+- 动宾关系: someone shoots the rebels 开枪打死这些叛乱者
+
+对于这种情况的原则是: 凡是可以理解为动宾关系的 of 短语，就不妨这样理解，
+除非上下文有相反的证明。比如:
+
+- the examination of the fireman
+  - 动宾关系: 某人检查消防队员
+  - 主谓关系: 消防队员来检查
+- the scrutiny of the tenants
+  - 动宾关系: 某人调查房客
+  - 主谓关系: 房客们来调查
+- the examination of the experts
+  - 动宾关系: 某人检查专家
+  - 主谓关系: 专家们来检查 (更合适)
+
+#### 三、同位关系
+
+其结构是 `N1 + of + N2`，这里 N2 表示 N1 的具体内容，二者互为同位说明:
+
+- the city of Rome (Rome is a city)
+- the news of the team's victory
+
+### 思维训练 1.5
 
 >>>>> progress
