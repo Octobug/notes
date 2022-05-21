@@ -17,6 +17,12 @@
       - [四、动词与时态表达有关](#四动词与时态表达有关)
     - [思维总结](#思维总结)
   - [7.2 一般现在时态——并非表示现在](#72-一般现在时态并非表示现在)
+    - [7.2.1 用法一: 表示普遍的事实或真理 (expressing a general truth)](#721-用法一-表示普遍的事实或真理-expressing-a-general-truth)
+    - [7.2.2 用法二: 表示重复活动 (expressing a regularly occurring event)](#722-用法二-表示重复活动-expressing-a-regularly-occurring-event)
+      - [一、表示习惯的动作](#一表示习惯的动作)
+      - [二、表示习惯的状态](#二表示习惯的状态)
+    - [7.2.3 用法比较: 表示重复活动的一般现在时态和现在完成进行时态](#723-用法比较-表示重复活动的一般现在时态和现在完成进行时态)
+    - [7.2.4 用法三: 一般现在时表示正在发生的动作](#724-用法三-一般现在时表示正在发生的动作)
 
 英语谓语的核心是**助动词**和**实义动词**。
 
@@ -242,5 +248,118 @@
    这些就是所谓的"动词体 (lexical aspect)"。
 
 ## 7.2 一般现在时态——并非表示现在
+
+一般现在时态并非只是表示"现在"。确切地说，**一般现在时**本质的思维特征是:
+表示从过去到现在直至将来的一段时间内发生的**动作** (action) 或存在的**状态** (state)。
+也就是说，这些动作或状态的发生不限于某个特定的时间，它们可发生于任何时间，包括现在、过去和将来。
+这一段时间可以近乎无限长 (如表示客观真理)，也可以是人们生活的一段时间 (如人们的习惯活动)。
+因此，一般现在时态通常被描述为有两种基本用法:
+
+1. 表示客观真理: The sun *rises* in the east and *sets* in the west.
+2. 表示习惯活动: I often *spend* two hours reading English in the morning.
+
+具体来说，我们可用已办现在时来表示:
+
+1. 不受时间限制的科学事实、客观真理、谚语格言，以及用于概括、结论、观点等；
+2. 表示人们日常生活习惯及重复活动。
+
+### 7.2.1 用法一: 表示普遍的事实或真理 (expressing a general truth)
+
+表示不受时间限制的**科学事实**、**客观真理**、**言语格言**，以及用于**概括**、**结论**、
+**观点**等。此时，这些动作或状态的发生不限于某个特定的时间，即它们可发生于任何时间，
+包括**现在**、**过去**和**将来**。
+
+```diagram
+ <----------------|---------------->
+------------------|--------------------
+                                时间坐标
+```
+
+- Water freezes at 32 Fahrenheit and boils at 212 Fahrenheit.
+- The world is round.
+- The earth moves around the sun.
+- Opportunities always favor the prepared minds.
+
+### 7.2.2 用法二: 表示重复活动 (expressing a regularly occurring event)
+
+表示经常发生的、习惯性的动作 (action) 或者是存在的状态 (state)。
+
+```diagram
+        · · · · · | · · · · ·
+------------------|--------------------
+                                时间坐标
+```
+
+#### 一、表示习惯的动作
+
+- He often goes to the gym.
+- I go to the gym twice a week.
+- He walks to school every day.
+
+#### 二、表示习惯的状态
+
+*I like rice for dinner.*
+
+这一用法常和一些表示动作频率的时间副词连用。
+
+1. 表示肯定的频度副词
+   - always
+   - frequently
+   - generally
+   - occasionally
+   - often
+   - sometimes
+   - usually
+2. 表示否定的频度副词
+   - never
+   - rarely
+   - seldom
+3. 表示频度的副词短语
+   - once a week
+   - twice a year
+   - once in every 6 months
+   - on alternatr days
+
+应用上述这些副词的注意点:
+
+1. 它在句子中的位置通常是: 在 be 动词后、实义动词前
+   - He is **always** late.
+   - He **always** goes to schools by bike.
+2. 上述否定副词不能再与否定助动词 (如 don't) 连用
+   - ❌ He doesn't seldom come late.
+   - ✅ He **seldom** comes late.
+3. 这些副词一般放在否定助动词前，**always** 除外
+   - The history lectures **sometimes** aren't interesting.
+   - His wife complains that he **sometimes** doesn't listen to her.
+   - He doesn't **always** leave before 6 o'clock. **Sometimes** he works until
+     7 o'clock.
+
+### 7.2.3 用法比较: 表示重复活动的一般现在时态和现在完成进行时态
+
+1. I swim 1,000 meters every afternoon.
+   - 我每天下午游 1,000 米。
+   - 表示过去、现在、将来都是 swim 1,000 meters。但无法表达何时开始、何时结束。
+2. I have been swimming 1,000 meters every afternoon.
+   - 到目前为止，我每天下午游 1,000 米。
+   - 表示从过去到目前为止
+
+加上具体的时间状语可以用来表示一项活动在具体多长时间段内重复，这种用法可以用于现在完成进行时，
+因为**完成进行时**可以表达明确的时间段概念，这个概念表示"从过去一直到目前为止"。
+
+但这种用法不能用于一般现在时，因为**一般现在时无法表达一个明确的时间段**。
+
+- 现在完成进行时
+  - ✅ I have been swimming 1,000 meters every afternoon, but I think I'll make
+    it a little longer later.
+  - ✅ I have been winter swimming since 1984.
+- 一般现在时 (没有这个用法)
+  - ❌ I swim 1,000 meters every afternoon, but I think I'll make it a little
+    longer later.
+  - ❌ I winter swim since 1984.
+
+综上，**一般现在时**是在泛泛地谈时间，并没有时间段的概念；
+而**完成进行时**表示说话人的脑子里有一个"到目前为止"的时间段的概念。
+
+### 7.2.4 用法三: 一般现在时表示正在发生的动作
 
 >>>>> progress
