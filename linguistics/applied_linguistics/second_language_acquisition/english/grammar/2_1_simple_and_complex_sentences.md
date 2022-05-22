@@ -9,6 +9,14 @@
       - [三、表示主语保持某种状态](#三表示主语保持某种状态)
       - [四、近似于不及物动词的系动词](#四近似于不及物动词的系动词)
     - [1.2.2 简单句叠加成复杂难句](#122-简单句叠加成复杂难句)
+    - [思维训练 1.2](#思维训练-12)
+  - [1.3 句型二: 主语 + 谓语](#13-句型二-主语--谓语)
+    - [1.3.1 谓语动词的特点](#131-谓语动词的特点)
+    - [1.3.2 简单句叠加成复杂难句](#132-简单句叠加成复杂难句)
+  - [1.4 句型三: 主语 + 谓语 + 宾语](#14-句型三-主语--谓语--宾语)
+    - [1.4.1 谓语动词的特点](#141-谓语动词的特点)
+    - [1.4.2 简单句叠加成复杂难句](#142-简单句叠加成复杂难句)
+    - [1.5 句型四: 主语 + 谓语 + 间接宾语 + 直接宾语](#15-句型四-主语--谓语--间接宾语--直接宾语)
 
 ## 1.1 引言
 
@@ -159,5 +167,117 @@
 - *The boy blushed scarlet.*
 
 ### 1.2.2 简单句叠加成复杂难句
+
+- Vitamins are organic compounds.
+  - vitamins: 主语
+  - are: 系动词, 谓语
+  - organic compounds: 表语, 名词短语
+- Vitamins are organic compounds **necessary for the normal growth of life**.
+- Vitamins are organic compounds necessary for the normal growth **and
+  maintenance** of life **of animals, including man**.
+- Vitamins are organic compounds necessary **in small amounts in the diet** for
+  the normal growth and maintenance of life of animals, including man.
+
+### 思维训练 1.2
+
+**二、请比较下面两个句子含义的区别。**
+
+- *5. He acted stupid.*
+  - 他当时在装傻。
+- *6. He acted stupidly.*
+  - 他当时的行为非常愚蠢。
+
+## 1.3 句型二: 主语 + 谓语
+
+### 1.3.1 谓语动词的特点
+
+该句型的谓语动词是**不及物动词** (intransitive verb)，所表示的动作没有作用对象，
+其本身意思完整，其后不需带宾语。
+
+- The egg hatched.
+  - The egg: 主语
+  - hatched: 谓语
+- The little eagle grew up.
+  - The little eagle: 主语
+  - grew up: 谓语
+- It clucked and cackled.
+  - It: 主语
+  - clucked, cackled: 谓语动词
+- An eagle's egg was placed in the nest of a prairie chicken.
+  - An eagles's egg: 主语
+  - was placed: 谓语
+  - in the nest of a prairie chicken: 地点状语
+- It scratched in the dirt for seeds.
+  - It: 主语
+  - scratched: 谓语
+  - in the dirt: 地点状语
+  - for seeds: 目的状语
+
+### 1.3.2 简单句叠加成复杂难句
+
+- This trend began during the Second World War.
+  - This trend: 主语
+  - began: 谓语
+  - during the Second World War: 时间状语
+- This trend began during the Second World War, **when several governments came
+  to the conclusion**.
+  - **when several governments came to the conclusion**: 定语从句修饰时间 the
+    Second World War。这个定语从句是一个"主语 + 谓语 + 宾语"的句型，主语是 several
+    governments，谓语是 came to，宾语是 the conclusion。
+- This trend began during the Second World War, when several governments came to
+  the conclusion **that the specific demands cannot generally be foreseen in
+  detail**.
+  - **that the specific demands cannot generally be foreseen in detail**:
+    同位语从句补充说明 conclusion。这个同位语从句也是一个"主语 + 谓语"的句型。
+- This trend began during the Second World War, when several governments came to
+  the conclusion that the specific demands **that a government wants to make of
+  its scientific establishment** cannot generally be foreseen in detail.
+  - **that a government wants to make of its scientific establishment**:
+    定语从句修饰 the specific demands。这里 that 指代先行词 demands，在定语从句中作谓语
+    make 的宾语，从而构成 make **demands** of 的搭配，表示"对...提出要求"。
+
+## 1.4 句型三: 主语 + 谓语 + 宾语
+
+### 1.4.1 谓语动词的特点
+
+该句型的谓语动词是**及物动词** (transitive verb)，
+这种动词告诉我们由主语发出的动作所作用的对象是什么，这个"所作用的对象"就是通常所说的**宾语**，
+即宾语是主语动作的承受对象。对于**不及物动词**作谓语，此时可以加适当的介词再接宾语。
+
+- They are **looking for** one-minute solutions to everything.
+- Just like instant coffee, they **want** instant happiness.
+- There are no quick fixes. This attitude **leads to** disapointment or even
+  failure.
+
+### 1.4.2 简单句叠加成复杂难句
+
+- The emphasis helped to obscure the great importance.
+  - The emphasis: 主语
+  - helped: 谓语
+  - to obscure the great importance: 不定式短语作宾语
+- The emphasis **given by both scholars and statesmen** helped to obscure the
+  great importance.
+  - **given by both scholars and statesmen**: 后置定语修饰 The emphasis
+- The emphasis given by both scholars and statesmen **to the presumed
+  disappearance of the American frontier** helped to obscure the great
+  importance.
+  - **to the presumed disappearance of the American frontier**:
+    介词短语补充说明主语 the emphasis，表明强调的内容是什么。
+- The emphasis given by both scholars and statesmen to the presumed
+  disappearance of the American frontier helped to obscure the great importance
+  **of changes in the conditions and consequences of international trade**.
+  - **of changes in the conditions and consequences of international trade**:
+    后置定语修饰 the great importance。这里 **conditions** 和 **consequences**
+    是并列关系，介词短语 **of international trade** 修饰
+    **conditions and consequences**，整个介词短语 **in the conditions and
+    consequences of international trade** 修饰 changes。
+- The emphasis given by both scholars and statesmen to the presumed
+  disappearance of the American frontier helped to obscure the great importance
+  of changes in the conditions and consequences of international trade **that
+  occurred during the second half of the nineteenth century**.
+  - **that occurred during the second half of the nineteenth century**:
+    后置定语修饰 international trade。
+
+### 1.5 句型四: 主语 + 谓语 + 间接宾语 + 直接宾语
 
 >>>>> progress
