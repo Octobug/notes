@@ -1,9 +1,13 @@
-# 英语语法新思维学习笔记
+# 语法学习笔记
 
-> PDF 使用 [yzane/vscode-markdown-pdf](https://github.com/yzane/vscode-markdown-pdf)
+> 本 PDF 使用 [yzane/vscode-markdown-pdf](https://github.com/yzane/vscode-markdown-pdf)
 > 插件生成
 
 :[简介](README.md)
+
+<div class="page"/>
+
+## 英语语法新思维 初级教程：走近语法
 
 <div class="page"/>
 
