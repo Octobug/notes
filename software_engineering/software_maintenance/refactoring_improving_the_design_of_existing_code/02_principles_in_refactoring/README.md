@@ -18,6 +18,13 @@
     - [What Do I Tell My Manager?](#what-do-i-tell-my-manager)
     - [When Should I Not Refactor?](#when-should-i-not-refactor)
   - [Problems with Refactoring](#problems-with-refactoring)
+    - [Slowing Down New Features](#slowing-down-new-features)
+    - [Code Ownership](#code-ownership)
+    - [Branches](#branches)
+    - [Testing](#testing)
+    - [Legacy Code](#legacy-code)
+    - [Databases](#databases)
+  - [Refactoring, Architecture, and Yagni](#refactoring-architecture-and-yagni)
 
 ## Defining Refactoring
 
@@ -103,5 +110,56 @@ the next couple of months.
 > - When it's easier to rewrite it than to refactor it.
 
 ## Problems with Refactoring
+
+### Slowing Down New Features
+
+💡 The whole purpose of refactoring is to make us program faster, producing more
+value with less effort.
+
+> I'm more likely to not refactor if it's part of the code I rarely touch and
+> the cost of the inconvenience isn't something I feel very often.
+
+The point of refactoring isn't to show how sparkly a code base is -- it is
+purely economic. We refactor because it makes us faster -- faster to add
+features, faster to fix bugs.
+
+### Code Ownership
+
+> My preference is to allow team ownership of code -- so that anyone in the same
+> team can modify the team's code, even if originally written by someone else.
+
+### Branches
+
+Keeps feature branches short. Each team member integrates with mainline at least
+once per day. This prevents any branches diverting too far from each other and
+thus greatly reduces the complexity of merges.
+
+### Testing
+
+Self-testing code not only enables refactoring -- it also makes it much safer to
+add new features. The key point here is that when a test fails, we can look at
+the change we've made between when the tests were last running correctly and
+the current code.
+
+### Legacy Code
+
+If you have a big legacy system with no tests, you can't safely refactor it into
+clarity. The obvious answer to this problem is that you add tests.
+
+> Even when I do have tests, I don't advocate trying to refactor a complicated
+> legacy mess into beautiful code all at once. What I prefer to do is tackle it
+> in relevant pieces. Each time I pass through a section of the code, I try to
+> make it a little bit better.
+
+### Databases
+
+The essence of database refactoring is to combine the structural changes to a
+database's schema and access code with data migration scripts that can easily
+compose to handle large changes.
+
+Database changes often are best separated over multiple releases to production.
+This makes it easy to reverse any change that causes a problem in production.
+
+## Refactoring, Architecture, and Yagni
 
 >>>>> progress
