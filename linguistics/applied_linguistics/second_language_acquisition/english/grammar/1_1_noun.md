@@ -86,6 +86,7 @@
       - [二、动宾关系: 从左往右翻译](#二动宾关系-从左往右翻译)
       - [三、同位关系](#三同位关系)
     - [思维训练 1.5](#思维训练-15)
+  - [综合训练](#综合训练)
 
 ## 1.1 名词的定义与分类
 
@@ -1153,5 +1154,60 @@ the shooting of the rebels
 - the news of the team's victory
 
 ### 思维训练 1.5
+
+**判断下列短语或句子中 of 所表示的语义关系，并翻译成中文**。
+
+*1. the imprisonment of the murder.*
+
+- 动宾关系
+- 译: 关押凶手
+
+*2. the use of solar energy.*
+
+- 动宾关系
+- 译: 利用太阳能
+
+*3. He called for the removal of the ban.*
+
+- 动宾关系
+- 译: 他要求取消禁令。
+
+*4. guidelines for the control of dogs in public places.*
+
+- 动宾关系
+- 译: 在公共场所控制犬类的指导
+
+*5. the virtue of thrift.*
+
+- 同位关系
+- 译: 节俭的美德
+
+*6. companionship of books.*
+
+- 同位关系
+- 译: 以书为友
+
+*11. To affect change, there needs to be a motivation to change; there has to
+be **a concept of** how to change and then there has to be **a means and
+program of** **implementation of** this change.*
+
+- **a concept of**: 关于
+- **a means and program of**: 关于
+- **implementation of**: 动宾关系
+- 译: 要促进变革，首先要有变革的动力，其次要有如何变革的理念，
+  再则要有实施这一变革的手段和方案。
+
+*12. **The denial of** these principles and **the placement of** man at **the
+core of** the universe results in a paralyzing mass selfishness, and **the
+signs of** it are already frightening evident.*
+
+- **the denial of**: 动宾关系
+- **the placement of**: 动宾关系
+- **the core of**: 固定短语中的介词
+- **the signs of**: 关于
+- 译: 如果我们否认这些基本原理，把个人置于宇宙的中心，其结果是大家就会变得自私自利，
+  这使一切都处于瘫痪。这方面的迹象已经十分明显，达到了可怕的地步。
+
+## 综合训练
 
 >>>>> progress
