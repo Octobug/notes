@@ -25,6 +25,7 @@
     - [Legacy Code](#legacy-code)
     - [Databases](#databases)
   - [Refactoring, Architecture, and Yagni](#refactoring-architecture-and-yagni)
+  - [Refactoring and the Wider Software Development Process](#refactoring-and-the-wider-software-development-process)
 
 ## Defining Refactoring
 
@@ -161,5 +162,20 @@ Database changes often are best separated over multiple releases to production.
 This makes it easy to reverse any change that causes a problem in production.
 
 ## Refactoring, Architecture, and Yagni
+
+One way of dealing with future changes is to put flexibility mechanisms into
+the software.
+
+> With refactoring, I can use a different strategy. Instead of speculating on
+> what flexibility I will need in the future and what mechanisms will best
+> enable that, I build software that solves only the currently understood needs,
+> but I make this software excellently designed for those needs.
+
+This approach to design goes under various names: simple design, incremental
+design, or `yagni` (you aren't gonna need it). Yagni doesn't imply that
+architectural thinking disappears, although it is sometimes naively applied
+that way.
+
+## Refactoring and the Wider Software Development Process
 
 >>>>> progress
