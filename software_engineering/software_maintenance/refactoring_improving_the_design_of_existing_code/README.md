@@ -6,8 +6,8 @@
 
 - [x] [Preface](00_preface)
 - [x] [Chapter 1: Refactoring: A First Example](01_a_first_example)
-- [ ] [Chapter 2: Principles in Refactoring](02_principles_in_refactoring)
-- [ ] [Chapter 3: Bad Smells in Code](.)
+- [x] [Chapter 2: Principles in Refactoring](02_principles_in_refactoring)
+- [ ] [Chapter 3: Bad Smells in Code](03_bad_smells_in_code)
 - [ ] [Chapter 4: Building Tests](.)
 - [ ] [Chapter 5: Introducing the Catalogthe Catalog](.)
 - [ ] [Chapter 6: A First Set of Refactorings](.)

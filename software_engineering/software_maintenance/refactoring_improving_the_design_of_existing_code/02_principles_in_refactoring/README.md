@@ -26,6 +26,10 @@
     - [Databases](#databases)
   - [Refactoring, Architecture, and Yagni](#refactoring-architecture-and-yagni)
   - [Refactoring and the Wider Software Development Process](#refactoring-and-the-wider-software-development-process)
+  - [Refactoring and Performance](#refactoring-and-performance)
+  - [Where Did Refactoring Come From?](#where-did-refactoring-come-from)
+  - [Automated Refactorings](#automated-refactorings)
+  - [Going Further](#going-further)
 
 ## Defining Refactoring
 
@@ -178,4 +182,44 @@ that way.
 
 ## Refactoring and the Wider Software Development Process
 
->>>>> progress
+1. The first foundation for **refactoring** is **self-testing code**.
+2. To refactor on a team, it's important that each member can refactor when they
+   need to without interfering with other's work.
+   (With **Continuous Integration**)
+
+## Refactoring and Performance
+
+Three general approaches to writing fast software:
+
+1. Time budgeting, often used in hard real-time systems. It gives each component
+   a budget for resources -- time and footprint.
+2. Constant attention approach: Every programmer does whatever he/she can to
+   keep performance high all the time.
+3. In most programs, most of their time is spent in a small fraction of the
+   code. We can build program without paying attention to performance until we
+   began a deliberate performance optimization exercise.
+
+## Where Did Refactoring Come From?
+
+Two of the first people to recognize the importance of refactoring were
+**Ward Cunningham** and **Kent Beck**.
+
+**Bill Opdyke** researched the necessary semantics-preserving refactorings and
+showed how to prove they were semantics-preserving and how a tool could
+implement these ideas.
+
+## Automated Refactorings
+
+To do refactoring properly, the tool has to operate on the syntax tree of the
+code, not on the text.
+
+Refactoring isn't just understanding and updating the syntax tree. The tool also
+needs to figure out how to rerender the code into text back in the editor view.
+
+## Going Further
+
+- Bill Wakes's *Refactoring Workbook*
+- Josh Kerievsky's *Refactoring to Patterns*
+- *Refactoring Databases*
+- *Refactoring HTML*
+- Michael Feathers's *Working Effectively with Legacy Code*
