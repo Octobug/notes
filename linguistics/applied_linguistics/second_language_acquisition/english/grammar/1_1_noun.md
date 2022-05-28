@@ -617,6 +617,7 @@ The rich are becoming richer.
 
 以 `-ch` 结尾的名词，若 `-ch` 发 `/k/` 音，则加 `-s`。
 
+- monarch/monarchs (君主)
 - stomach/stomachs (胃、肚子)
 
 #### 三、以"辅音字母+y"结尾的名词，变 `-y` 为 `-i`，再加 `-es`；以"元音字母+y"结尾的名词，则加 `-s`
@@ -822,6 +823,7 @@ The rich are becoming richer.
 #### 一、动物名称
 
 1. 永远用作零复数
+   - aircraft (飞行器)
    - deer (鹿)
    - sheep (绵羊)
      - a sheep
@@ -1210,4 +1212,287 @@ signs of** it are already frightening evident.*
 
 ## 综合训练
 
->>>>> progress
+**一、选择最佳答案填空。**
+
+*1. The old folk of the city is among the first to be evacuated by the five
+____.*
+
+- *A. aircraft*
+- *B. aircrafts*
+
+答案: A (零复数)
+
+*2. ____ is being built.*
+
+- *A. A steelwork*
+- *B. A steelworks*
+
+答案: B
+
+*5. In ancient ____ men usually lived in caves.*
+
+- *A. time*
+- *B. times*
+
+答案: B
+
+*9. The police ____ making inquiries about the accident.*
+
+- *A. is*
+- *B. are*
+
+答案: B (单形复义)
+
+*11. The Chinese people ____ a great people.*
+
+- *A. is*
+- *B. are*
+
+答案: B (作为"民族"或"部族"的意义时，people 是一个普通名词，有单复数变化。不过这时单数的
+people 通常也用**复数形式**的谓语。)
+
+*15. Under no ____ would I tell a lie.*
+
+- *A. circumstances*
+- *B. circumstance*
+
+答案: A
+
+*16. The public ____ requested not to leave cigarette ends in these woods.*
+
+- *A. is*
+- *B. are*
+
+答案: B
+
+*17. That fellow is clever; he has ____.*
+
+- *A. brain*
+- *B. brains*
+
+答案: B
+
+*20. Before liberation, he could hardly support his family with his ____.*
+
+- *A. wages*
+- *B. wage*
+
+答案: A
+
+*25. The singer and dancer ____ attend our evening.*
+
+- *A. is to*
+- *B. are to*
+
+答案: A (the singer and dancer 指同一个人，否则应该是 the singer and the dancer)
+
+*30. Xiao Li and Lao Wang put up the ____ decorations.*
+
+- *A. party*
+- *B. party's*
+
+答案: A
+
+*41. In ten years' time, all those youngsters will become ____.*
+
+- *A. grown-up*
+- *B. grown-ups*
+- *C. growns-up*
+- *D. growns-ups*
+
+答案: B
+
+*42.Ten years had elapsed, I found she had ____.*
+
+- *A. a few white hairs*
+- *B. much white hair*
+- *C. a little white hairs*
+- *D. few white hair*
+
+答案: A
+
+*43. ____ are grazing in the fields.*
+
+- *A. Ten heads of cattle*
+- *B. Ten head of cattle*
+- *C. Ten heads of cattles*
+- *D. Ten head of cattles*
+
+答案: B
+
+*45. Hardly a month goes by without ____ of another survey revealing new depths
+of scientific illiteracy among U.S. citizens.*
+
+- *A. words*
+- *B. a word*
+- *C. the word*
+- *D. word*
+
+答案: D (当用来指"消息、信息"时，word 为不可数名词)
+
+*48. I walked too much yesterday and ____ are still aching now.*
+
+- *A. my leg's muscles*
+- *B. my muscles of leg*
+- *C. my leg muscles*
+- *D. my muscles of the leg*
+
+答案: C
+
+*52. ____ is too much for a little boy to carry.*
+
+- *A. bike's weight*
+- *B. Bike's weight*
+- *C. The weight of a bike*
+- *D. The weights of bikes*
+
+答案: C (表示无生命物体的名词的所有关系)
+
+*58. The soldier left his ____ in the ____.*
+
+- *A. arm, quarter*
+- *B. arm, quarters*
+- *C. arms, quarter*
+- *D. arms, quarters*
+
+答案: D (quarters: 住处)
+
+*59. The basketball team ____ baths now.*
+
+- *A. has*
+- *B. have*
+- *C. is having*
+- *D. are having*
+
+答案: D
+
+*64. Can you make change for a ____?*
+
+- *A. twenty-dollars bill*
+- *B. twenty-dollar bill*
+- *C. twenty dollars bill*
+- *D. twenty dollar bill*
+
+答案: B (twenty-dollar 是一个形容词，twenty dollars 是名词短语)
+
+*65. I have to write a ____ this weekend.*
+
+- *A. one-thousand-words paper*
+- *B. one-thousand-word paper*
+- *C. one thousand words paper*
+- *D. one thousand word paper*
+
+答案: B
+
+*68. ____ dull.*
+
+- *A. This scissors are*
+- *B. These scissors is*
+- *C. This pair of scissors is*
+- *D. This pair of scissors are*
+
+答案: C (When you say "a pair of scissors", you are referring to one pair,
+hence it's singular.)
+
+*70. There are ____ students in this room than in the next room.*
+
+- *A. little*
+- *B. few*
+- *C. less*
+- *D. fewer*
+
+答案: D (可数名词通常用 fewer 修饰)
+
+*74. Only ____ dollars have been borrowed from the manager.*
+
+- *A. a few*
+- *B. few*
+- *C. some*
+- *D. little*
+
+答案: A
+
+*76. There are ____ in the Central Park.*
+
+- *A. lots of children*
+- *B. lots of childs*
+- *C. a lot children*
+- *D. a lot childs*
+
+答案: A
+
+**a lot of** vs. **lots of** vs. **a lot**
+
+- **a lot of** and **lots of** have the same meaning: they both mean a large
+  amount or number of people or things.
+
+  They are both used before countable nouns and uncountable nouns:
+
+  - with countable nouns:
+    - A lot of people went to the game.
+    - Lots of people went to the game.
+  - with uncountable nouns:
+    - A lot of snow falls in winter.
+    - Lots of snow falls in winter.
+
+- **a lot**: a lot means very often or very much. It is used as an adverb. It
+  often comes at the end of a sentence and never before a noun.
+
+  - I like basketball a lot.
+  - She's a lot happier now than she was.
+  - I don't go there a lot anymore.
+
+*77. There are a lot of ____ in the field.*
+
+- *A. sheeps and cows*
+- *B. sheeps and cow*
+- *C. sheep and cows*
+- *D. sheep and cow*
+
+**二、改错题。**
+
+*82. The `actor(A)` James Earl Jones `gained(B)` Broadway stardom in The Great
+White Hope for his `powerful(C)` portrayal of `prizefighter(D)`.*
+
+答案: D. a prizefighter
+
+*90. The `health(A)` `authority(B)` announced that `decision(C)` two days
+`ago(D)`.*
+
+答案: B. authorities (具体的主管部门用复数)
+
+*93. To meet `needs(A)` of providing `live(B)` international television
+`coverage(C)`, more and more `communication(D)` satellites have been
+launched.*
+
+答案: D. communications (表示通信需要使用复数形式)
+
+*94. In old `times(A)` there were `many(B)` `monarches(C)` `in Europe(D)`.*
+
+答案: C. monarchs
+
+*96. `As many as(A)` 50 percent of the `income(B)` from motion pictures produced
+in the United States `comes from(C)` marketing the films `abroad(D)`.*
+
+答案: A. As much as
+
+*100. Because of `its(A)` vast tracts of virtually uninhabited northern
+`forest(B)`, Canada has one of the lowest `population(C)` `density(D)` in the
+world.*
+
+答案: D. densities
+
+*101. An intrinsic part of the sound structure of `poet(A)`, the repetition of a
+consonant sound or `sounds(B)`, may `also be(C)` exhibited `in prose(D)`.*
+
+答案: A. poetry
+
+*105. North American `bisons(A)` `differ(B)` from domestic cattle in `having(C)`
+14 `rather than(D)` 13 pairs of ribs.*
+
+答案: A. bison
+
+*112. The purpose of `traveler's checks(A)` `is(B)` to protect travelers from
+`theft(C)` and accidental `lost(D)` of money.*
+
+答案: D. loss

@@ -18,8 +18,8 @@
 ### 初级教程：走近语法
 
 - [x] [0. 名词短语](1_0_noun_phrase.md)
-- [ ] [1. 名词](1_1_noun.md)
-- [ ] 2. 限定词 (一): 冠词
+- [x] [1. 名词](1_1_noun.md)
+- [ ] [2. 限定词 (一): 冠词](1_2_determiner_article.md)
 - [ ] 3. 限定词 (二): 数量限定词与个体限定词
 - [ ] 4. 形容词
 - [x] [5. 动词分类 (一): 实义动词与 (情态) 助动词](1_5_content_verbs_and_modal_auxiliary_verbs.md)
