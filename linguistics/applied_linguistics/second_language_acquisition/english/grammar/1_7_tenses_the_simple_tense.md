@@ -23,6 +23,21 @@
       - [二、表示习惯的状态](#二表示习惯的状态)
     - [7.2.3 用法比较: 表示重复活动的一般现在时态和现在完成进行时态](#723-用法比较-表示重复活动的一般现在时态和现在完成进行时态)
     - [7.2.4 用法三: 一般现在时表示正在发生的动作](#724-用法三-一般现在时表示正在发生的动作)
+      - [一、一般现在时态用在以 there 或 here 开头的句子中，表示目前的短暂动作](#一一般现在时态用在以-there-或-here-开头的句子中表示目前的短暂动作)
+      - [二、表示现在瞬间的动作 (instant actions)](#二表示现在瞬间的动作-instant-actions)
+    - [7.2.5 用法四: 一般现在时表示将来发生的动作](#725-用法四-一般现在时表示将来发生的动作)
+      - [一、用在条件状语从句和时间状语从句中](#一用在条件状语从句和时间状语从句中)
+      - [二、在谈到未来的计划和时间安排表的时候，表示将来的动作](#二在谈到未来的计划和时间安排表的时候表示将来的动作)
+      - [三、在从句中表示将来的动作，此时主句往往用了一个将来时](#三在从句中表示将来的动作此时主句往往用了一个将来时)
+    - [7.2.6 用法五: 一般现在时表示过去发生的动作](#726-用法五-一般现在时表示过去发生的动作)
+      - [一、表示死者的理论、著作等](#一表示死者的理论著作等)
+      - [二、引用书刊、报纸、通知或新近收到的信件内容时](#二引用书刊报纸通知或新近收到的信件内容时)
+    - [7.2.7 用法六: 一般现在时代指现在完成时](#727-用法六-一般现在时代指现在完成时)
+    - [思维训练 7.2](#思维训练-72)
+  - [7.3 被遗忘了的一般过去时态](#73-被遗忘了的一般过去时态)
+    - [7.3.1 引言](#731-引言)
+    - [7.3.2 基本用法一: 过去发生的短暂动作或状态](#732-基本用法一-过去发生的短暂动作或状态)
+    - [7.3.3 基本用法二: 过去发生的重复或延续动作](#733-基本用法二-过去发生的重复或延续动作)
 
 英语谓语的核心是**助动词**和**实义动词**。
 
@@ -361,5 +376,162 @@
 而**完成进行时**表示说话人的脑子里有一个"到目前为止"的时间段的概念。
 
 ### 7.2.4 用法三: 一般现在时表示正在发生的动作
+
+#### 一、一般现在时态用在以 there 或 here 开头的句子中，表示目前的短暂动作
+
+- Here comes your wife.
+  - 你妻子来了。
+  - 说话人看到 your wife 正在走来，这句话表示正在发生的动作。
+  - ❌ Here is coming your wife.
+  - ✅ Your wife is coming.
+    - 你妻子很快就要过来了。
+- There goes our bus; we'll have to wait for the next one.
+  - 我们的车开走了，我们只好等下一辆了。
+
+#### 二、表示现在瞬间的动作 (instant actions)
+
+这个瞬间动作是说话人在说话的同时即刻发生的。这只适用于表达动作的动词，表示对一些动作的解说，
+比如: 球赛解说、剧情介绍、解释自己正在做的事情、给别人一边说一边做的示范动作等。
+
+- Michael passess to Clint. Clint to Jack, Jack back to Clint -- and Clint
+  shoots -- and it's a goal!
+  - 球赛解说，表示在说话时刻正在发生的动作。
+- The woman is a spy, now she enters the room, opens the drawer, takes out a
+  pistol and slips it into her pocket.
+  - 剧情说明。
+- I select an anlbum, remove the record from its cover and put it on the turn
+  table.
+  - 解释自己正在做的动作。
+
+### 7.2.5 用法四: 一般现在时表示将来发生的动作
+
+在某些特定的场合，一般现在时态有时可表示将来发生的动作。
+
+#### 一、用在条件状语从句和时间状语从句中
+
+主要用在**条件状语**从句 (if 和 unless) 和**时间状语**从句 (when, as soon as, before
+和 after 等) 中，表示将来的动作。
+
+- Please let me know when he comes back.
+- What are you going to do when you leave school?
+- I'll be glad if shee comes over to visit me.
+- I'll give the book to him as soon as I see him.
+- I will get everything ready before you come back.
+
+上述从句中的动作 come 和 see 均是将在未来发生的，但要用一般现在时态表示将来。
+若从句中的动作含有"意愿"的意思，则从句中可用 will。
+
+- If you will give me a hand with these books, I'll appreciate it.
+- If they will not accept a check, we shall have to pay in cash, though it
+  would be much trouble for both sides.
+
+#### 二、在谈到未来的计划和时间安排表的时候，表示将来的动作
+
+此时句中的动词往往是表示短暂动作的动词，如 go, come, leave, start 和 move 等。
+
+- The train starts at 2 o'clock.
+- We move next week.
+- They leave for Shanghai by train tomorrow evening.
+
+#### 三、在从句中表示将来的动作，此时主句往往用了一个将来时
+
+- I will reward the person who finds my lost kitten.
+- I will give the booklet to whoever asks for it.
+
+### 7.2.6 用法五: 一般现在时表示过去发生的动作
+
+在某些特定的场合，一般现在时还可表示过去发生的动作。
+
+#### 一、表示死者的理论、著作等
+
+因为这些理论、著作到现在仍然有效；或表示一些名人名言。
+
+- In The Sociology of Science, now considered a classic, Robert Merton
+  **discusses** cultural, economic, and social forces that contributed to the
+  development of modern science.
+- R.Descartes says that the reading of all good books is like a conversation
+  with the finest men of past centuries.
+
+#### 二、引用书刊、报纸、通知或新近收到的信件内容时
+
+- The newspaper **reads**, "The criminal who killed eight women has been
+  executed."
+  - 这里 reads 其实是表示过去，因为显然是说话人看过 newspaper 之后才说了这句话。
+- The sign on the washing machines says, "Out of Order."
+
+### 7.2.7 用法六: 一般现在时代指现在完成时
+
+在**口语**中，可以用一般现在时代指现在完成时。能这样使用的动词主要有:
+
+- find
+- hear
+  - I hear (=have heard) that he has left Beijing.
+- inform
+  - I am (=have been) informed that you have been there.
+- learn
+- read
+  - I read (=have read) in the newspaper that the criminal who killed eight
+    women has been executed.
+- see
+  - I see (=have seen) that you have your hair cut.
+- tell
+
+### 思维训练 7.2
+
+**用动词的适当形式填空。**
+
+*7. Okay, so you ____ (stick) to your New Year's resolution and ____ (go) to the
+gym on a regular basis. But wait! Are you eating and drinking the right things
+at the right in order to maximize your efforts?*
+
+答案: have been sticked, going
+
+## 7.3 被遗忘了的一般过去时态
+
+### 7.3.1 引言
+
+**San Francisco Was.**
+
+上面这句导语是 1906 年旧金山大地震时的新闻导语。这里通过关键词 **was**
+表明这次地震对旧金山的破坏程度——该城市已不复存在。
+
+其他例子: `Was $57, Now $38` (打折标语)。
+
+以上例子可看出，英语通过动词的变形来潜含各种言外之意。这种特色称为**话语标记**
+(language mark)。
+
+### 7.3.2 基本用法一: 过去发生的短暂动作或状态
+
+一般过去时常表示在过去某一个特定的时间所发生的**动作**或存在的**状态**，
+此时常和表示过去的特定**时间状语**连用。这些时间状语有:
+
+- last night
+- last spring
+- last year
+- the night before last
+- three days ago
+- yesterday
+
+⚠️ 注意，以上这类时间状语之前不需要加介词，比如 at last night, in last year 等都是错的。
+
+- I saw him in the library yesterday morning.
+- I began to learn English ten years ago.
+- He was late for school this morning.
+- I was tired last night, so I went to bed early.
+
+以上例句均表示在过去某一特定的时间点 (a specific point of time in the past)
+发生的动作或状态:
+
+```diagram
+          A     |
+----------------|-------------->
+```
+
+有时句子里没有明确的过去时间，这时需要根据上下文语境推断出某个动作是过去发生的，
+这时也要用一般过去时。
+
+I didn't choose this life; it chose me.
+
+### 7.3.3 基本用法二: 过去发生的重复或延续动作
 
 >>>>> progress
