@@ -29,8 +29,8 @@
 
 ### 中级教程：通悟语法
 
-- [ ] [1. 简单句与复合句](2_1_simple_and_complex_sentences.md)
-- [ ] 2. 名词从句
+- [x] [1. 简单句与复合句](2_1_simple_and_complex_sentences.md)
+- [ ] [2. 名词从句](2_2_nominal_clauses.md)
 - [ ] 3. 定语从句
 - [ ] 4. 状语从句
 - [ ] [5. 完成时态](2_5_perfect_tense.md)
