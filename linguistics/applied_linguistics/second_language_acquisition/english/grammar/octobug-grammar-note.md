@@ -25,6 +25,7 @@
 
 <div class="page"/>
 
+<!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD025 -->
 
 # 目录
@@ -42,7 +43,7 @@
 
 <div class="page"/>
 
-# 初级教程：走近语法
+# 英语语法新思维 初级教程：走近语法
 
 <div class="page"/>
 
@@ -62,7 +63,7 @@
 
 <div class="page"/>
 
-# 中级教程：通悟语法
+# 英语语法新思维 中级教程：通悟语法
 
 <div class="page"/>
 
