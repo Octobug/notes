@@ -14,6 +14,11 @@
       - [一、the + 国籍名词](#一the--国籍名词)
       - [二、the + 形容词](#二the--形容词)
     - [2.4.3 单数名词与定冠词 the 连用可以表示泛指](#243-单数名词与定冠词-the-连用可以表示泛指)
+    - [2.4.4 单数名词与不定冠词 a/an 连用可以表示泛指](#244-单数名词与不定冠词-aan-连用可以表示泛指)
+      - [一、单数名词与不定冠词 a/an 连用可以表示泛指](#一单数名词与不定冠词-aan-连用可以表示泛指)
+      - [二、关于 a(n) 的泛指用法的深入讨论](#二关于-an-的泛指用法的深入讨论)
+  - [2.5 定冠词 the 的特指用法](#25-定冠词-the-的特指用法)
+    - [2.5.2 上下文共指 (textual co-reference)](#252-上下文共指-textual-co-reference)
 
 英语中**限定词** (determiner) 与名词的关系最为密切，因为它必然是修饰某个名词，
 以限定名词所指的范围，对名词起泛指或特指、定量或不定量等限定修饰作用。
@@ -221,5 +226,81 @@
   - the wise 是复数概念，泛指"智者"这类人。
 
 ### 2.4.3 单数名词与定冠词 the 连用可以表示泛指
+
+定冠词 the 与单数名词连用时，可以表示泛指。在语气上显得比较正式或文雅，
+表示一个由典型的样品所代表的那个类别。
+
+- The tiger is becoming almost extinct.
+- Tigers are becoming almost extinct.
+- The tiger is a dangerous animal.
+- Tigers are dangerous animals.
+
+定冠词 the 与单数名词连用也可以表示特指，即表示某类事物中具体的某一个。
+
+对于 "the + 单数名词"，到底是表示泛指还是特指，一定要根据上下文的语境来判断。
+
+- The tiger is becoming almost extinct. (泛指)
+- The tiger is sleeping in the cage. (特指)
+- The whale is the largest mammal on earth. (泛指)
+- The whale is dead. (特指)
+
+由于 "the + 单数名词" 既可以表示泛指也可以表示特指，所以有时候会出现歧义:
+
+- A: The president is too powerful.
+- B: Which president?
+- A: No, I mean presidents in general.
+
+还有一些特殊词值得注意，当 man 表示"人类"而不是"男人"时，相当于 mankind，不用冠词，
+表示泛指。
+
+- Man is a social animal.
+- Man has been on this planet for over a million years.
+- Throughout history man has had to accept the fact that all living things must
+  die, for the very nature of life includes death.
+
+### 2.4.4 单数名词与不定冠词 a/an 连用可以表示泛指
+
+#### 一、单数名词与不定冠词 a/an 连用可以表示泛指
+
+"a/an + 单数可数名词" 可以表示泛指，不定冠词 a/an
+的泛指用法指的是**某一类事物中任何一个具有代表性的成员**，所以这里的 a/an 相当于 any。
+
+- A tiger is a dangerous animal.
+  - "a + 单数名词" 表泛指
+  - The tiger is a dangerous animal.
+    - "the + 单数名词" 表泛指
+  - Tigers are dangerous animals.
+    - 复数名词表泛指
+- A teacher should be patient with his or her students.
+  - "a + 单数名词"，这里的 a teacher 相当于 all teachers 或 any teacher
+- A child needs plenty of love.
+  - Children need plenty of love.
+  - Any child needs plenty of love.
+
+#### 二、关于 a(n) 的泛指用法的深入讨论
+
+由于不定冠词 a/an 的泛指用法指的是某一类事物中任何一个**具有代表性**的成员，所以可以用 any
+来替换 a/an。
+
+- A tiger is a dangerous animal.
+- Any tiger is a dangerous animal.
+
+对于那些没有代表性的成员，无法使用 a/an 来表示那些**只属于整个类别**的特性。比如:
+
+- ❌ A tiger is becoming almost extinct.
+
+对于这种"整个类别"的特性，可以用复数名词或 the 来泛指。
+
+- The tiger is becoming almost extinct.
+- Tigers are becoming almost extinct.
+
+⚠️ a/an 与单数名词连用表示泛指，主要限于用在主语的位置，如果是在处在其他位置则不表示泛指。
+甚至即使是在主语位置，也不一定都是表示泛指。
+
+## 2.5 定冠词 the 的特指用法
+
+>>>>> progress
+
+### 2.5.2 上下文共指 (textual co-reference)
 
 >>>>> progress
