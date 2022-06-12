@@ -18,6 +18,10 @@
       - [一、单数名词与不定冠词 a/an 连用可以表示泛指](#一单数名词与不定冠词-aan-连用可以表示泛指)
       - [二、关于 a(n) 的泛指用法的深入讨论](#二关于-an-的泛指用法的深入讨论)
   - [2.5 定冠词 the 的特指用法](#25-定冠词-the-的特指用法)
+    - [2.5.1 情景/文化特指 (situational/cultural reference)](#251-情景文化特指-situationalcultural-reference)
+      - [一、一般常识 (general knowledge) /较大情景](#一一般常识-general-knowledge-较大情景)
+      - [二、具体知识 (specific knowledge) /局部情景 (local use)](#二具体知识-specific-knowledge-局部情景-local-use)
+      - [三、即时情景用法 (immediate situation)](#三即时情景用法-immediate-situation)
     - [2.5.2 上下文共指 (textual co-reference)](#252-上下文共指-textual-co-reference)
 
 英语中**限定词** (determiner) 与名词的关系最为密切，因为它必然是修饰某个名词，
@@ -299,7 +303,92 @@
 
 ## 2.5 定冠词 the 的特指用法
 
->>>>> progress
+**特指** (specific reference) 是针对交际的双方来说的，即一方是说话者/作者
+(speaker/writer)，另一方是听话者/读者 (listener/reader)。我们说定冠词 the 表特指，
+就是根据说话者和听话者共有的知识，或根据上下文可以识别的独特的某物。
+
+一般来说，听话者可以采用两个方法判断说话者的所指对象，因而形成两种特指模式:
+
+1. **情景/文化特指** (situational/cultural reference)
+2. **上下文共指** (textual coreference)
+
+- Have you fed the cat?
+  - 情景/文化特指
+  - 比如这句话是发生在家里，听话者知道这里说的 the cat 是指家里的猫，而不是别处的猫，
+    更不是泛指所有猫。
+- I went to New York City last week. The traffic is awful.
+  - 上下文共指
+  - 这里的 the traffic 不是泛指所有交通，而是专指上文提到的 New York City。
+- The brick house on the corner is mine.
+  - 上下文共指
+  - 这里用 the 来限定 brick house 是因为其后置定语 one the corner，
+    它告诉听话者这里的 brick house 是特指。这里使用 the
+    是因为句子的结构本身带有一个后置定语。
+
+### 2.5.1 情景/文化特指 (situational/cultural reference)
+
+定冠词 the 用于这一类特指，必须依赖于说话者和听话者双方共有的知识，
+或者说至少是说话者认为听话者知道的知识。
+
+定冠词 the 有一个用法可以表示"著名的"人或事物，一般是在人名后面接一个带有 the 的名词短语，
+来说明这个人的身份。比如:
+
+- Albert Einstein, the famous physicist.
+  - ❓ Albert Einstein, a famous physicist.
+    这句一般认为是错误的，除非说话者认为听话者不知道爱因斯坦。
+
+在使用 the 特指"著名的"事物这个用法时，需要区分听话者是否掌握这样的共有知识。
+
+- Andy Lau, the famous actor.
+  - 面向华人
+- Andy Lau, a famous Chinese actor.
+  - 面向非华人
+
+the 特指"著名的"事物的另一种用法是 "the + 专有名词"，此时 the 的读音为 `/ði/`，用以强调。
+
+- A: My name is James Bond.
+- B: What, not the James Bond?
+- I live in Rome, not the Rome, but a little village in Wales.
+
+根据说话者与听话者共有知识的范围大小，"情景/文化特指"这一类特指用法又可以进一步分类:
+
+#### 一、一般常识 (general knowledge) /较大情景
+
+这里的"一般常识"指的是说话者与听话者共同具有的较大情景的知识。对于这样的一般常识，the
+所指的对象究竟是什么，对双来来说都是不言而喻的。比如:
+
+- the earth
+- the Equator
+- the moon
+- the North Pole
+- the Pope
+- the Renainssance
+- the sky
+- the universe
+
+#### 二、具体知识 (specific knowledge) /局部情景 (local use)
+
+说话者与听话者共有的知识只是局限在一个特定的较小的范围内，
+比如对于同一个家庭或村庄的成员来说是独一无二的。
+
+- Have you visited the castle?
+- I missed both the lectures this morning.
+- Let's go to the library.
+
+#### 三、即时情景用法 (immediate situation)
+
+在说话的时刻，所指为双方共同看到或听到的。此时 the 的所指是从语言以外的实境
+(the extra-linguistic situation) 中推知的。
+
+- The roses are very beautiful.
+- These are the pistons.
+- Can you find the page?
+
+在实际使用中，说话者不可能总能了解听话者的领会情况，the 的用法也就带有某种程度的猜测的意味。
+若听话者不清楚说话者的所指对象，可以用 which/what 来提问以求弄清所指物。
+
+- A: Shut the door, please!
+- B: Which door?
 
 ### 2.5.2 上下文共指 (textual co-reference)
 
