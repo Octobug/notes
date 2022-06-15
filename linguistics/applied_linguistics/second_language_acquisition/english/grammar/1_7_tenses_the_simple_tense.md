@@ -45,6 +45,8 @@
     - [7.3.8 口语用法四: 根据上下文的语境灵活地使用一般过去时](#738-口语用法四-根据上下文的语境灵活地使用一般过去时)
     - [7.3.9 口语用法五: 礼貌表达](#739-口语用法五-礼貌表达)
     - [思维训练 7.3](#思维训练-73)
+  - [7.4 一般将来时态——预测、计划和意愿](#74-一般将来时态预测计划和意愿)
+    - [7.4.1 引言](#741-引言)
     - [7.4.2 will 表示将来——预测](#742-will-表示将来预测)
 
 英语谓语的核心是**助动词**和**实义动词**。
@@ -457,7 +459,7 @@
 - In The Sociology of Science, now considered a classic, Robert Merton
   **discusses** cultural, economic, and social forces that contributed to the
   development of modern science.
-- R.Descartes says that the reading of all good books is like a conversation
+- R.Descartes **says** that the reading of all good books is like a conversation
   with the finest men of past centuries.
 
 #### 二、引用书刊、报纸、通知或新近收到的信件内容时
@@ -716,7 +718,125 @@ neighborhood."，这句话使用了过去状态表达，显然对于上一次看
 
 ### 思维训练 7.3
 
->>>>> progress
+**一、用括号中动词的适当形式填空。**
+
+*1. Mozart ____ (write) more than 600 pieces of music.*
+
+答案: wrote
+
+不同于[7.2.6 用法五: 一般现在时表示过去发生的动作](#726-用法五-一般现在时表示过去发生的动作)
+这里并没有表达"著作现在仍然有效"这个意思。
+
+*9.*
+
+- *A: Do you have to play that music so loud? I've got a test tomorrow!*
+- *B: Sorry, I ____ (not, realize) you ____ (be) studying.*
+
+答案: didn't realize, were
+
+*11.*
+
+- *A: Sally says we should meet her in the park at noon.*
+- *B: I ____ (think) we ____ (be) meeting at the library.*
+
+答案: thought, were
+
+*14.*
+
+- *A: This is the most fascinating article that I've ever read.*
+- *B: Oh, really? I ____ (think) that anything about eletronics ____ (be)
+  tedious.*
+
+答案: thought, would be
+
+**二、翻译句子。**
+
+*16.*
+
+- *A: 我还以为你说你不能来参加这个会议呢。*
+- *B: 哦，不，我能来。*
+
+答案:
+
+- A: I thought you said you couldn't come to the meeting.
+- B: Oh, no, I can.
+
+*17.*
+
+- *A: 我还以为你说上周要给我打电话说工作的问题呢。*
+- *B: 哦，对不起，我全忘光了！*
+
+答案:
+
+- A: I thought you said were going to call me last week about the job.
+- B: Oh, I'm sorry. It completely slipped my mind.
+
+*18. 你理了短发之后，我差一点把你当成别人了呢。*
+
+答案: I almost thought you were someone else with that short haircut.
+
+*19. 哦，我差点忘了，还有件事，我忘了问你明天是否能开车送我去上学。*
+
+答案: Oh, I almost forgot. Just one more thing. I forgot to ask you if you could
+give me a ride to school tomorrow.
+
+*20.*
+
+- *A: Excuse me. 我想我比你先来这里。Do you mind waiting your turn?*
+- *B: Oh, sure. Sorry.*
+- *A: That's OK.*
+
+答案: I thought I was here first.
+
+## 7.4 一般将来时态——预测、计划和意愿
+
+### 7.4.1 引言
+
+从严格意义上来说，英文里是没有"将来时态"的，而只有现在时态和过去时态这两种时态 (Technically,
+English has no "future tense", but only two distinct tense forms -- present and
+past tenses.)。
+
+一、从时态形态 (tense form) 的构成来看:
+
+1. 现在时态 (present tense) 的构成使用动词原形 (basic verb form)，
+   或遇到单数第三人称主语，谓语动词加 `-s`。
+2. 过去时态 (past tense) 的构成则是动词变为过去式。
+3. 因此，对于现在时态和过去时态，都是在谓语动词的词尾上进行变形。但对于将来时态，
+   动词的词尾却没有任何变形。
+4. 正是因为在表示将来时间内发生的事情时，英语谓语动词的词干 (stem word)
+   不会发生任何形式的变化，因此"将来时"的说法被看作是不贴切的。
+5. 所以，从这个结构意义上来说，英语中是没有将来时态的。
+
+二、从表达"将来时态"的各种手段来看，
+表达将来时态是采取动词形式变化以外的其他方式来达到这一目的。具体的方式有:
+
+1. 使用情态动词 will 和 be going to
+2. 使用现在进行时 (be doing) 表示将来的动作
+3. 采用其他的句型结构，如 be to do 或 be about to do
+
+三、从是否成为事实的角度 (factual or on-factual) 来看。
+
+1. 发生在过去或现在的事情都已是确定无疑的，是一个事实。但谈论将来要发生的事情，
+   就不可能成为一个确定无疑的事实，而只能表示一种可能性。
+2. 从核心意义的角度来说，发生在"将来"的事件与发生在"过去"或"现在"的事件不可能有相同的确信度
+   (certainty)。
+3. 因此，严格地讲，will 用来表示对未来的预测，但不是对事实的叙述或报告。will do
+   本质上只是情态动词 will 的一种用法而已。
+
+    It will rain later.
+
+    传统上把这里的 will rain 看作一般将来时，但实际上这里只是情态动词 will 表示"推测"，
+    或确切地说是"预测 (prediction)"的一种用法。另外还可以用其他情态动词来表示预测:
+
+    - It may rain later.
+    - It might rain later.
+  
+    但我们一般不会认为 may do 或 might do 是一般将来时态。
+
+4. 从情态意义上来看:
+   1. 预测 (prediction): 表示说话人认为将来会发生某件事；
+   2. 事先计划 (future plan): 表示说话人在头脑里已经做出决定将来要做某件事；
+   3. 意愿 (willingness): 表示说话人在说话的时刻立即做出决断表明他将去做某事。
 
 ### 7.4.2 will 表示将来——预测
 
