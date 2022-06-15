@@ -15,6 +15,12 @@
     - [2.1.5 引导名词从句的连接词](#215-引导名词从句的连接词)
     - [思维训练 2.1](#思维训练-21)
   - [2.2 简单句与主语从句](#22-简单句与主语从句)
+    - [2.2.1 陈述句作主语](#221-陈述句作主语)
+      - [一、It is + 过去分词 + that 从句](#一it-is--过去分词--that-从句)
+      - [二、It is + 形容词 + that 从句](#二it-is--形容词--that-从句)
+      - [三、It is + 名词短语 + that 从句](#三it-is--名词短语--that-从句)
+    - [2.2.2 一般疑问句作主语](#222-一般疑问句作主语)
+  - [2.5 简单句与同位语从句](#25-简单句与同位语从句)
 
 ## 2.1 简单句与名词从句
 
@@ -200,5 +206,70 @@ whether 或 if (**if 只用在宾语从句中**) 来引导，**以保留原句�
 答案: The little boy wants to know why the water of the sea is salty.
 
 ## 2.2 简单句与主语从句
+
+### 2.2.1 陈述句作主语
+
+把"that + 陈述句"这一结构放在主语的位置即构成主语从句。对于陈述句作主语，更常见的是用
+**it 作形式主语置于句首，而将主语从句放在句末**。
+
+- **That the seas are being overfished** has been known for years.
+  - It has been known for years **that the seas are being overfished**.
+- **That English is important** is an undoubted fact.
+  - It is an undoubted fact **that English is important**.
+- **That the moon itself does not give off light** is common knowledge.
+  - It is common knowledge **that the moon itself does not give off light**.
+
+📌 下列是常见的主语从句句型:
+
+#### 一、It is + 过去分词 + that 从句
+
+- It is reported that ... (据报道...)
+- It is believed that ... (人们相信...)
+- It is generally thought that ... (人们普遍认为...)
+- It should be noted that ... (应当注意...)
+- It has been found that ... (现已发现...)
+- It must be pointed out that ... (必须指出...)
+
+类似的动词还有:
+
+- estimate
+- expect
+- forecast
+- know
+- say
+  - It has been said that in order to counteract this, ...
+
+#### 二、It is + 形容词 + that 从句
+
+- It is clear that ... (显然...)
+- It is possible that ... (很可能...)
+- It is likely that ... (很可能...)
+- It is natural that ... (很自然...)
+- It is certain that ... (可以相信...)
+- It is strange that ... (奇怪的是...)
+- It is fortunate that ... (幸运的是...)
+- It is necessary that ... (有必要...)
+- It is true that ... (的确...)
+  - It is true that English is becoming an international language.
+
+#### 三、It is + 名词短语 + that 从句
+
+- It is a pity that ... (可惜的是...)
+- It is a fact that ... (事实是...)
+- It is good news that ... (...真是太好了)
+- It is a good thing that ... (...真是件好事)
+- It is no wonder that ... (难怪...)
+- It is a shame that ... (遗憾的是...; ...真是太不像话了)
+  - It is a shame that you did not pass the test.
+- It is an honor that ... (真荣幸...)
+- It is common knowledge that ... (...是常识)
+- It is my belief that ... (我相信)
+- It is a miracle that ... (...真是奇迹)
+
+### 2.2.2 一般疑问句作主语
+
+>>>>> progress
+
+## 2.5 简单句与同位语从句
 
 >>>>> progress
