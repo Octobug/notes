@@ -20,6 +20,13 @@
       - [二、It is + 形容词 + that 从句](#二it-is--形容词--that-从句)
       - [三、It is + 名词短语 + that 从句](#三it-is--名词短语--that-从句)
     - [2.2.2 一般疑问句作主语](#222-一般疑问句作主语)
+    - [2.2.3 特殊疑问句作主语](#223-特殊疑问句作主语)
+    - [思维训练 2.2](#思维训练-22)
+  - [2.3 简单句与宾语从句](#23-简单句与宾语从句)
+    - [2.3.1 陈述句作宾语](#231-陈述句作宾语)
+    - [2.3.2 一般疑问句作宾语](#232-一般疑问句作宾语)
+    - [2.3.3 特殊疑问句作宾语](#233-特殊疑问句作宾语)
+  - [2.4 简单句与表语从句](#24-简单句与表语从句)
   - [2.5 简单句与同位语从句](#25-简单句与同位语从句)
 
 ## 2.1 简单句与名词从句
@@ -267,6 +274,88 @@ whether 或 if (**if 只用在宾语从句中**) 来引导，**以保留原句�
 - It is a miracle that ... (...真是奇迹)
 
 ### 2.2.2 一般疑问句作主语
+
+一般疑问句作主语时，要把一般疑问句变成陈述句，并且用 **whethet** 来引导，然后充当句子的主语，
+即构成主语从句。
+
+Does he come or not?
+
+- Whether he comes or not makes no difference to me.
+
+### 2.2.3 特殊疑问句作主语
+
+特殊疑问句需要将原来的倒装句调整为陈述句语序，然后作主句的主语，即构成主语从句。
+
+- What do we need?
+  - What we need is a wholly new kind of police force.
+  - what 是 need 的宾语
+- What did he tell you?
+  - What he told you is true.
+  - what 是 told 的直接宾语
+- When is the meeting to be held?
+  - When the meeting is to be held has not yet been decided.
+  - when 是从句的时间状语
+- How does a person master his fate.
+  - How a person masters his fate is more important than what his fate is.
+
+### 思维训练 2.2
+
+**请把下列句子改写成 it 作主语的句子。**
+
+*6. That he has been late for work over and over again is a serious matter.*
+
+答案: It is a serious matter that he has been late for work over and over again.
+
+## 2.3 简单句与宾语从句
+
+### 2.3.1 陈述句作宾语
+
+把 "that + 陈述句" 这一结构放在宾语的位置即构成宾语从句。
+
+- We know (that) the world is round.
+- I think (that) a sound knowledge of grammar is indispensible to good writing.
+
+⚠️ **只有宾语从句中的 that 在不影响对句意的理解时才可以省去**，
+而主语从句、表语从句和同位语从句中的 that 一般不能省去。
+
+### 2.3.2 一般疑问句作宾语
+
+把 "whether/if + 陈述句" 这一结构放在宾语的位置即构成宾语从句。
+
+- Does he need my help?
+  - I don't know if/whether he needs my help.
+- Would interest rates rise?
+  - No one knew whether or not interest rates would rise.
+
+⚠️ **只有宾语从句才可以用 if 引导**，主语从句、表语从句和同位语从句一般都要用 whether 引导。
+
+### 2.3.3 特殊疑问句作宾语
+
+把特殊疑问句变成陈述句语序后放在宾语的位置即构成宾语从句。
+
+- Whom should I vote for?
+  - I have not decided whom I should vote for.
+  - whom 是 vote for 的宾语
+- How did speech begin?
+  - No one knows exactly how speech began.
+  - how 是 began 的方式状语
+- Where is the post office?
+  - Could you tell me where the post office is?
+  - where 是 is 的表语
+- Why did not he come yesterday?
+  - We don't know why he did not come yesterday.
+  - why 是 come 的原因状语
+- Who came to the meeting?
+  - They gave who came to the meeting a pamphlet.
+  - who 是 came 的主语，本来就是陈述句，所以无需调整语序
+- Which candidate do you assume best?
+  - You should vote for which candidate you assume best.
+  - which 作定语，修饰 candidate
+- Whichever books does her son want?
+  - The mother will buy whichever books her son wants.
+  - 这里 whichever 相当于 which，是 which 的强调形式，作定语修饰 books
+
+## 2.4 简单句与表语从句
 
 >>>>> progress
 
