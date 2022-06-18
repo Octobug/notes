@@ -27,6 +27,9 @@
     - [2.3.2 一般疑问句作宾语](#232-一般疑问句作宾语)
     - [2.3.3 特殊疑问句作宾语](#233-特殊疑问句作宾语)
   - [2.4 简单句与表语从句](#24-简单句与表语从句)
+    - [2.4.1 陈述句作表语](#241-陈述句作表语)
+    - [2.4.2 一般疑问句作表语](#242-一般疑问句作表语)
+    - [2.4.3 特殊疑问句作表语](#243-特殊疑问句作表语)
   - [2.5 简单句与同位语从句](#25-简单句与同位语从句)
 
 ## 2.1 简单句与名词从句
@@ -357,7 +360,33 @@ Does he come or not?
 
 ## 2.4 简单句与表语从句
 
->>>>> progress
+### 2.4.1 陈述句作表语
+
+把 "that + 陈述句" 这一结构放在表语的位置即构成表语从句。
+
+The child should be sent to school.
+
+- My idea is that the child should be sent to school.
+
+### 2.4.2 一般疑问句作表语
+
+把 "whether + 陈述句" 这一结构放在表语的位置即构成表语从句。
+
+Does he come or not?
+
+- My concern is whether he comes or not.
+
+### 2.4.3 特殊疑问句作表语
+
+把特殊疑问句变成陈述句语序后放在表语的位置即构成表语从句。
+
+- What keeps us fresh and innovative?
+  - Change is what keeps us fresh and innovative.
+- What are we badly in need of?
+  - Money is what we are badly in need of?
+- Why is it called a present?
+  - Yesterday is history. Tomorrow is a mystery. Today is a gift. That's why
+    it's called the present.
 
 ## 2.5 简单句与同位语从句
 
