@@ -59,6 +59,9 @@
       - [规律二](#规律二)
     - [思维训练 5.7](#思维训练-57)
   - [5.8 完成时态用于最高级句型](#58-完成时态用于最高级句型)
+    - [一、最高级](#一最高级)
+    - [二、序数词](#二序数词)
+    - [思维训练 5.8](#思维训练-58)
   - [5.9 时间连词 since 的特殊用法](#59-时间连词-since-的特殊用法)
 
 ## 5.1 完成时态的构成
@@ -1164,7 +1167,87 @@ He has been fired.
 
 ## 5.8 完成时态用于最高级句型
 
->>>>> progress
+### 一、最高级
+
+On a plane, a man sits next to a mother holding her baby. The mother is very
+proud of her baby. She shows it off to the man.
+
+- The man: I don't mean to offend you, madam. But this is the ugliest baby I've
+  ever seen in my life.
+- The woman cannot believe her ears, she asks: Excuse me?
+- The man: I mean I've seen ugly babies before, but this baby is the ugliest of
+  all.
+- The woman is very angry and sad, and she starts shouting and crying: How dare
+  you insult me and my baby! I'm going to sue you.
+- The air stewardess hears the shouting. She quickly goes over to the woman and
+  tries to calm her down: Excuse me, madam, why don't you just relax while I
+  get you a cup of tea and a banana for your monkey?
+
+😄
+
+英文中常常把现在完成时态用于这样的结构中: **最高级 + 名词 + that 从句 + 现在完成时谓语**，
+也就是说，**在形容词最高级修饰的名词后面若接有一个 that 从句，
+此时从句的谓语要用现在完成时态**。
+
+最高级与现在完成时态有一种"天然"的内在联系:
+二者都具有"重复"的意义——**表示从过去到目前为止的一个时间段内的重复事件**。
+要比较说某事物"最怎么样"，显然是"回顾"了自己以前类似的经历，并把它们与现在相比较，
+然后才说这事物"最怎么样"。
+
+`例句 3`: For us this has been the most perfect way to remember her, and this is
+how she would want to be remembered.
+
+- 这里也是完成时 has been 与最高级 the most perfect way 结合.
+
+为了配合最高级所表达的"重复"意义，要采用现在完成时态来造句，
+即我们可以把**最高级**所在的句子的**谓语**直接用现在完成时态，比如
+"this has been the most perfect way"；也可以在**最高级后面的从句中**使用现在完成时谓语，
+比如 "this is the ugliest baby I've ever seen"。
+此时，最高级所在的主句的谓语要用一般时态。
+这相当于把现在完成时态"后移"——由原来的主句谓语移至从句谓语。
+
+改写 `例句 3`: This is the most perfect way that we have had to remember her...
+
+在日常口语中，告诉别人自己"最怎么样"的经历时通常也用现在完成时态。
+
+- `例句 8`: This is the most interesting novel that I've ever read.
+- `例句 9`: This is the hardest job that I've ever done.
+
+### 二、序数词
+
+在这个句型结构中，除了用最高级外，还可以用序数词来修饰名词。此时从句的谓语同样要用现在完成时态。
+同样具有"重复"意义。
+
+`例句 12`
+
+- A: This is the tenth cup of coffee that I've drunk this evening.
+- B: How are you going to be able to fall asleep later if you keep on like this?
+
+⚠️ 在口语中，如果要告诉别人自己是第几次来某地方，都要用现在完成时态。
+
+- `例句 14`: This is the first time that I've come to Beijing.
+- `例句 15`: This is the third time that I've come to Paris.
+- `例句 16`: A problem has been detected and Windows has been shut down to
+  prevent damage to your computer. If this is the **first** time you've seen
+  this stop error screen, restart your computer. If this screen appears again,
+  follow these steps.
+
+⚠️ 上述句型中，主句的谓语若是一般过去时 (比如 was)，that
+后面的句子谓语要用**过去**完成时态。
+
+`例句 17`: That was the tenth cup of coffee that I had drunk that night.
+
+### 思维训练 5.8
+
+**二、请翻译成英文。**
+
+*7. 这是我喝过的最美的酒。*
+
+答案: This is the best wine I have ever drunk.
+
+*9. 这是所有我做过的工作当中最难的一份。*
+
+答案: This is the hardest job I have ever had.
 
 ## 5.9 时间连词 since 的特殊用法
 
