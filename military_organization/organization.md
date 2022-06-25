@@ -32,37 +32,37 @@
   - Varies
   - Varies
   - Gen or Lt-Gen / Air Chf Mshl or Air Mshl
-- Numbered Air Force (集团军)
+- Numbered Air Force (集团军, Army)
   - `XXX`
   - Varies
   - Varies
   - 2+ Wings/Groups
   - Maj-Gen or Lt-Gen (少将、中将)
-- No USAF equivalent (师)
+- No USAF equivalent (师, Division)
   - `XX`
   - Varies
   - Varies
   - 2+ Wings/Groups
   - Maj-Gen or Div-Gen (大校、少将)
-- Wing/Group (旅)
+- Wing/Group (旅, Brigade)
   - `X`
   - 1,000–5,000
   - 48–200
   - 2+ Groups/Wings
   - Brig-Gen/AVM or Air Cdre (大校、上校)
-- Group/Wing or Station (团)
+- Group/Wing or Station (团, Regiment)
   - `III`
   - 300–1,000
   - 17–48
   - 3–4 Squadrons/3–10 Flights
   - Col/Gp Capt or Wg Cdr (上校、中校)
-- Squadron (营)
+- Squadron (营, Battalion)
   - `II`
   - 100–300
   - 7–16
   - 3–4 Flights
   - Lt Col or Maj/Wg Cdr or Sqn Ldr (少校、中校)
-- Flight or flying staffel (连)
+- Flight or flying staffel (连, Company)
   - `I`
   - 20–100
   - 4–6
@@ -74,13 +74,13 @@
   - 6-12
   - 1-2 Sections plus maintenance and support crew
   - Captain or Staff Captain (上尉、参谋上尉)
-- Element or Section (排)
+- Element or Section (排, Platoon)
   - `•••`
   - 10-40
   - N/A-2
   - N/A
   - Junior Officer or Senior NCO (中尉、少尉、高级士官)
-- Detail (班)
+- Detail (班, Squad)
   - `••`
   - 8-12
   - N/A
