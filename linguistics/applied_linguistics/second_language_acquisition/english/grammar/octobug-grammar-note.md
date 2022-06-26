@@ -40,6 +40,7 @@
 ## [中级教程：通悟语法](#英语语法新思维-中级教程通悟语法)
 
 - [1. 简单句与复合句](#1-简单句与复合句)
+- [2. 名词从句](#2-名词从句)
 
 <div class="page"/>
 
@@ -68,3 +69,7 @@
 <div class="page"/>
 
 :[1. 简单句与复合句](2_1_simple_and_complex_sentences.md)
+
+<div class="page"/>
+
+:[2. 名词从句](2_2_nominal_clauses.md)
