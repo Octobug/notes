@@ -47,7 +47,14 @@
     - [思维训练 7.3](#思维训练-73)
   - [7.4 一般将来时态——预测、计划和意愿](#74-一般将来时态预测计划和意愿)
     - [7.4.1 引言](#741-引言)
+      - [一、从时态形态 (tense form) 的构成来看](#一从时态形态-tense-form-的构成来看)
+      - [二、从表达“将来时态”的各种手段来看](#二从表达将来时态的各种手段来看)
+      - [三、从是否成为事实的角度 (factual or on-factual) 来看](#三从是否成为事实的角度-factual-or-on-factual-来看)
     - [7.4.2 will 表示将来——预测](#742-will-表示将来预测)
+    - [7.4.3 be going to 表示将来——预测](#743-be-going-to-表示将来预测)
+      - [一、表示“预测”，be going to 比 will 有更多的证据支持，而且事件发生的时间更近](#一表示预测be-going-to-比-will-有更多的证据支持而且事件发生的时间更近)
+      - [二、表示“预测”时，will 的语气比 be going to 显得正式](#二表示预测时will-的语气比-be-going-to-显得正式)
+    - [7.4.4 be going to 表示“计划”与 will 表示“意愿”](#744-be-going-to-表示计划与-will-表示意愿)
 
 英语谓语的核心是**助动词**和**实义动词**。
 
@@ -796,7 +803,7 @@ give me a ride to school tomorrow.
 English has no "future tense", but only two distinct tense forms -- present and
 past tenses.)。
 
-一、从时态形态 (tense form) 的构成来看:
+#### 一、从时态形态 (tense form) 的构成来看
 
 1. 现在时态 (present tense) 的构成使用动词原形 (basic verb form)，
    或遇到单数第三人称主语，谓语动词加 `-s`。
@@ -807,14 +814,15 @@ past tenses.)。
    不会发生任何形式的变化，因此"将来时"的说法被看作是不贴切的。
 5. 所以，从这个结构意义上来说，英语中是没有将来时态的。
 
-二、从表达"将来时态"的各种手段来看，
+#### 二、从表达“将来时态”的各种手段来看
+
 表达将来时态是采取动词形式变化以外的其他方式来达到这一目的。具体的方式有:
 
 1. 使用情态动词 will 和 be going to
 2. 使用现在进行时 (be doing) 表示将来的动作
 3. 采用其他的句型结构，如 be to do 或 be about to do
 
-三、从是否成为事实的角度 (factual or on-factual) 来看。
+#### 三、从是否成为事实的角度 (factual or on-factual) 来看
 
 1. 发生在过去或现在的事情都已是确定无疑的，是一个事实。但谈论将来要发生的事情，
    就不可能成为一个确定无疑的事实，而只能表示一种可能性。
@@ -839,5 +847,111 @@ past tenses.)。
    3. 意愿 (willingness): 表示说话人在说话的时刻立即做出决断表明他将去做某事。
 
 ### 7.4.2 will 表示将来——预测
+
+will 最典型的用法就是对未来进行"预测" (prediction about the future -- something we
+expect to happen)。
+
+- `例句 1`: Will we travel to the stars?
+- `例句 6`: Will we travel back or forward in time?
+- `例句 13`: How will the universe end?
+- `例句 14`: Will there be anything left to discover?
+- `例句 16`: What will we wear?
+- `例句 25`: How much will the Internet rule our lives?
+- `例句 26`: How hot will it get?
+- `例句 29`: Will we live to be 125?
+
+### 7.4.3 be going to 表示将来——预测
+
+- `例句 1`: Look at those black clouds! It's going to rain.
+- `例句 2`: It's not going to snow again tomorrow, is it? It was supposed to be
+  warm all week.
+
+#### 一、表示“预测”，be going to 比 will 有更多的证据支持，而且事件发生的时间更近
+
+be going to 是一个现在时态的形式，它所表示的对将来行为的预测往往暗示与"现在"有联系，
+而且是在说话后不久就将发生的。所以当有**现在的证据**可以支持预测时，
+或者说根据目前**明显的迹象**来推断某件事将要发生时，我们就要用 be going to，而不宜用 will。
+
+- `例句 3`: With all of these typos in this resume, you are not going to make a
+  very good impression.
+- `例句 4`
+  - A: Look at the time. I'm going to miss my bus.
+  - B: Don't worry. I'll drive you to the stop. And if the bus has already
+    left, I can get you to your apartment.
+- `例句 5`: The traffic is terrible. We **are going to** be late.
+
+`例句 9`:
+
+![Dive](images/1_7.4.3_9_dive.png)
+
+- ✅ She is going to dive into the water.
+- ❌ She will dive into the water.
+  - 因为这个女子的动作已经可以明显表明"她要跳水了"这样的推断。
+
+另外，be going to 还往往表示当前已有迹象表明说话者无力控制的 (uncontrollable)
+即将发生的行为。
+
+`例句 10`:
+
+- ✅ Help! I'm going to fall!
+- ❌ Help! I'll fall.
+
+相比较而言，will 则只是表明说话人(主观地)认为或相信某件事将要发生。
+
+- `例句 15`:
+  - A: I hear Mary isn't getting much support in her running against Steve in
+    the election.
+  - B: It is not over yet. I think she will make a come back.
+- `例句 16`: There will be a lot of rainfall next spring.
+
+或者 will 用于"在某种条件下某事才会发生"的情况。所以，在带有**条件或时间状语从句**的主句中，
+我们通常用 will 表示预测，而不用 be going to。
+
+- `例句 17`: If the crop fails, there will be a famine.
+  - 条件状语
+- `例句 18`: You'll feel better when you take this medicine.
+  - 时间状语
+- `例句 19`: You'll feel better if you take this medicine.
+  - 条件状语
+
+**will** 和 **be going to** 分别出现在同一个句子里的差别:
+
+- `例句 23`:
+  - I'm going to be sick.
+    - 相当于说 "I'm going to be sick because I feel terrible now."，
+      即目前有迹象表明要生病了。
+    - 译: 我感觉要生病了。
+  - I will be sick.
+    - 相当于说 "I will be sick if I eat any more of this ice cream."，
+      即这种预测是附带在另一个条件之上的。
+    - 译: 我会生病的。
+- `例句 24`:
+  - The bridge is going to collapse.
+    - 有坍塌的迹象才会这么说。
+    - 译: 这座桥就要塌了。
+  - The bridge will collapse.
+    - 判断这座桥也许因为设计问题，也许是豆腐渣工程，做出了未来会坍塌的判断。
+    - 译: 这座桥会塌的。
+
+综上所述，在表示预测时，will 和 be going to 有以下两点区别:
+
+1. 用 be going to 特别意指根据目前的明显迹象来推断某件事将要发生；而 will
+   则只是表明说话人认为或相信某件事将要发生。
+2. be going to 通常用来表示说话人预期所说的事件马上或在相当近的将来就要发生；而 will
+   所表示的动作发生的时间可近可远。
+
+此外，be going to 往往还表示当前已有迹象表明说话者无力控制的即将发生的行为。
+
+#### 二、表示“预测”时，will 的语气比 be going to 显得正式
+
+will 比较正式，而 be going to 更为不正式，常用于私人谈话中，所以在口语中很常用，而且
+be going to 在口语交流中常被读成 be gonna。
+
+`餐馆场景中`:
+
+- 对朋友说: I'm gonna have the chicken.
+- 对服务员说: I'll have the chicken.
+
+### 7.4.4 be going to 表示“计划”与 will 表示“意愿”
 
 >>>>> progress
