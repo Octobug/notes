@@ -2,6 +2,10 @@
 
 > <https://git-scm.com/>
 
+## Git Config
+
+- [Git Config](config.md)
+
 ## Useful Extensions
 
 - [Git LFS](https://git-lfs.github.com/)
