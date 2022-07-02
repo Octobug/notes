@@ -51,9 +51,8 @@ disciplines according to the
         1. [Ansible](devops/ansible)
         2. [CI/CD/CD](devops/ci_cd_cd)
         3. [Containers](devops/containers)
-        4. [Infrastructure Operations](devops/infrastructure_operations)
-        5. NGINX
-        6. Site Reliability Engineering
+        4. NGINX
+        5. Site Reliability Engineering
     6. [Operating System](operating_system)
         1. [Operating Systems](operating_system/operating_systems)
         2. Systems Programming
@@ -75,7 +74,7 @@ disciplines according to the
         2. macOS
         3. [Markdown](cs_miscellaneous/markdown)
         4. TeXs
-        5. Unix-like
+        5. [Unix-like](cs_miscellaneous/unix-like)
         6. Virtual Machines
         7. Windows
 

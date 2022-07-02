@@ -1,6 +1,6 @@
 # Unix-like
 
-> Wikipedia: <https://en.wikipedia.org/wiki/Unix-like>
+> <https://en.wikipedia.org/wiki/Unix-like>
 
 ## Learning Materials
 
