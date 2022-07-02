@@ -166,6 +166,3 @@ wish*.
 ## References
 
 - [Root Words, Roots and Affixes](https://www.readingrockets.org/article/root-words-roots-and-affixes)
-- [Root Words & Prefixes: Quick Reference](https://www.learnthat.org/pages/view/roots.html)
-- [List of English Suffixes](https://www.learnthat.org/pages/view/suffix.html)
-- [The full list of English roots](https://github.com/WithEnglishWeCan/generated-english-roots-list)
