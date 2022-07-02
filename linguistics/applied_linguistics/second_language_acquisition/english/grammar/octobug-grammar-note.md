@@ -2,7 +2,7 @@
 
 > 本 PDF 使用 Visual Studio Code 插件
 > [yzane/vscode-markdown-pdf](https://github.com/yzane/vscode-markdown-pdf)
-> 生成
+> 生成。
 
 ## 引言
 
