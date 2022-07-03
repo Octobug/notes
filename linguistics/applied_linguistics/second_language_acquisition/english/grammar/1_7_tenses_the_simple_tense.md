@@ -851,19 +851,19 @@ past tenses.)。
 will 最典型的用法就是对未来进行"预测" (prediction about the future -- something we
 expect to happen)。
 
-- `例句 1`: Will we travel to the stars?
-- `例句 6`: Will we travel back or forward in time?
-- `例句 13`: How will the universe end?
-- `例句 14`: Will there be anything left to discover?
-- `例句 16`: What will we wear?
-- `例句 25`: How much will the Internet rule our lives?
-- `例句 26`: How hot will it get?
-- `例句 29`: Will we live to be 125?
+- `例 1`: Will we travel to the stars?
+- `例 6`: Will we travel back or forward in time?
+- `例 13`: How will the universe end?
+- `例 14`: Will there be anything left to discover?
+- `例 16`: What will we wear?
+- `例 25`: How much will the Internet rule our lives?
+- `例 26`: How hot will it get?
+- `例 29`: Will we live to be 125?
 
 ### 7.4.3 be going to 表示将来——预测
 
-- `例句 1`: Look at those black clouds! It's going to rain.
-- `例句 2`: It's not going to snow again tomorrow, is it? It was supposed to be
+- `例 1`: Look at those black clouds! It's going to rain.
+- `例 2`: It's not going to snow again tomorrow, is it? It was supposed to be
   warm all week.
 
 #### 一、表示“预测”，be going to 比 will 有更多的证据支持，而且事件发生的时间更近
@@ -872,15 +872,15 @@ be going to 是一个现在时态的形式，它所表示的对将来行为的�
 而且是在说话后不久就将发生的。所以当有**现在的证据**可以支持预测时，
 或者说根据目前**明显的迹象**来推断某件事将要发生时，我们就要用 be going to，而不宜用 will。
 
-- `例句 3`: With all of these typos in this resume, you are not going to make a
+- `例 3`: With all of these typos in this resume, you are not going to make a
   very good impression.
-- `例句 4`
+- `例 4`
   - A: Look at the time. I'm going to miss my bus.
   - B: Don't worry. I'll drive you to the stop. And if the bus has already
     left, I can get you to your apartment.
-- `例句 5`: The traffic is terrible. We **are going to** be late.
+- `例 5`: The traffic is terrible. We **are going to** be late.
 
-`例句 9`:
+`例 9`:
 
 ![Dive](images/1_7.4.3_9_dive.png)
 
@@ -891,32 +891,32 @@ be going to 是一个现在时态的形式，它所表示的对将来行为的�
 另外，be going to 还往往表示当前已有迹象表明说话者无力控制的 (uncontrollable)
 即将发生的行为。
 
-`例句 10`:
+`例 10`:
 
 - ✅ Help! I'm going to fall!
 - ❌ Help! I'll fall.
 
 相比较而言，will 则只是表明说话人(主观地)认为或相信某件事将要发生。
 
-- `例句 15`:
+- `例 15`:
   - A: I hear Mary isn't getting much support in her running against Steve in
     the election.
   - B: It is not over yet. I think she will make a come back.
-- `例句 16`: There will be a lot of rainfall next spring.
+- `例 16`: There will be a lot of rainfall next spring.
 
 或者 will 用于"在某种条件下某事才会发生"的情况。所以，在带有**条件或时间状语从句**的主句中，
 我们通常用 will 表示预测，而不用 be going to。
 
-- `例句 17`: If the crop fails, there will be a famine.
+- `例 17`: If the crop fails, there will be a famine.
   - 条件状语
-- `例句 18`: You'll feel better when you take this medicine.
+- `例 18`: You'll feel better when you take this medicine.
   - 时间状语
-- `例句 19`: You'll feel better if you take this medicine.
+- `例 19`: You'll feel better if you take this medicine.
   - 条件状语
 
 **will** 和 **be going to** 分别出现在同一个句子里的差别:
 
-- `例句 23`:
+- `例 23`:
   - I'm going to be sick.
     - 相当于说 "I'm going to be sick because I feel terrible now."，
       即目前有迹象表明要生病了。
@@ -925,7 +925,7 @@ be going to 是一个现在时态的形式，它所表示的对将来行为的�
     - 相当于说 "I will be sick if I eat any more of this ice cream."，
       即这种预测是附带在另一个条件之上的。
     - 译: 我会生病的。
-- `例句 24`:
+- `例 24`:
   - The bridge is going to collapse.
     - 有坍塌的迹象才会这么说。
     - 译: 这座桥就要塌了。

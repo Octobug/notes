@@ -1053,7 +1053,7 @@ He has been fired.
 而"状态表达"若用了**完成时态**，则与"动作表达"的**完成时态**在时间上离现在的远近是不同的，
 "状态表达"完成时态较远，强调过去的经历，"动作表达"完成时态很近，强调现在的影响或结果。
 
-`例句 2`
+`例 2`
 
 - I have been married.
   - 为什么这句没有歧义，只能理解为"我结过婚"，而不能理解为"我已经结婚了"？
@@ -1063,7 +1063,7 @@ He has been fired.
   - 动作表达
   - 我已经结婚了。
 
-`例句 3`
+`例 3`
 
 - ❌ His father has been dead.
   - 为什么这句不能理解为 "His father has died." (他爸爸已经去世了)？
@@ -1073,7 +1073,7 @@ He has been fired.
   - 动作表达，理解为最近的事件。
   - 他的父亲去世了。
 
-`例句 4`
+`例 4`
 
 - ❌ I have been old.
   - 为什么这句不能理解成"我已经老了"？
@@ -1082,7 +1082,7 @@ He has been fired.
   - 动作表达
   - 我已经变老了。
 
-`例句 8`
+`例 8`
 
 - He has come here.
   - 动作表达，相当于 "He is here."
@@ -1093,13 +1093,13 @@ He has been fired.
 
 ⚠️ **对于不能明确区分是动作还是状态的谓语，则会产生歧义**。
 
-`例句 10` He has been fired.
+`例 10` He has been fired.
 
 - 为什么会有"他被开除了"和"他被开除过"这样的歧义？
 - be fired 既可以是"动作表达"也可以是"状态表达" (这与"动态被动"和"静态被动"有密切联系)，
   所以这个句子才会有对应的两种意思。
 
-`例句 11` Have you asked your little brother to do the dishes?
+`例 11` Have you asked your little brother to do the dishes?
 
 这句的谓语同样有"动作表达"和"状态表达"两种理解。
 
@@ -1200,7 +1200,7 @@ proud of her baby. She shows it off to the man.
 要比较说某事物"最怎么样"，显然是"回顾"了自己以前类似的经历，并把它们与现在相比较，
 然后才说这事物"最怎么样"。
 
-`例句 3`: For us this has been the most perfect way to remember her, and this is
+`例 3`: For us this has been the most perfect way to remember her, and this is
 how she would want to be remembered.
 
 - 这里也是完成时 has been 与最高级 the most perfect way 结合.
@@ -1212,28 +1212,28 @@ how she would want to be remembered.
 此时，最高级所在的主句的谓语要用一般时态。
 这相当于把现在完成时态"后移"——由原来的主句谓语移至从句谓语。
 
-改写 `例句 3`: This is the most perfect way that we have had to remember her...
+改写 `例 3`: This is the most perfect way that we have had to remember her...
 
 在日常口语中，告诉别人自己"最怎么样"的经历时通常也用现在完成时态。
 
-- `例句 8`: This is the most interesting novel that I've ever read.
-- `例句 9`: This is the hardest job that I've ever done.
+- `例 8`: This is the most interesting novel that I've ever read.
+- `例 9`: This is the hardest job that I've ever done.
 
 ### 二、序数词
 
 在这个句型结构中，除了用最高级外，还可以用序数词来修饰名词。此时从句的谓语同样要用现在完成时态。
 同样具有"重复"意义。
 
-`例句 12`
+`例 12`
 
 - A: This is the tenth cup of coffee that I've drunk this evening.
 - B: How are you going to be able to fall asleep later if you keep on like this?
 
 ⚠️ 在口语中，如果要告诉别人自己是第几次来某地方，都要用现在完成时态。
 
-- `例句 14`: This is the first time that I've come to Beijing.
-- `例句 15`: This is the third time that I've come to Paris.
-- `例句 16`: A problem has been detected and Windows has been shut down to
+- `例 14`: This is the first time that I've come to Beijing.
+- `例 15`: This is the third time that I've come to Paris.
+- `例 16`: A problem has been detected and Windows has been shut down to
   prevent damage to your computer. If this is the **first** time you've seen
   this stop error screen, restart your computer. If this screen appears again,
   follow these steps.
@@ -1241,7 +1241,7 @@ how she would want to be remembered.
 ⚠️ 上述句型中，主句的谓语若是一般过去时 (比如 was)，that
 后面的句子谓语要用**过去**完成时态。
 
-`例句 17`: That was the tenth cup of coffee that I had drunk that night.
+`例 17`: That was the tenth cup of coffee that I had drunk that night.
 
 ### 思维训练 5.8
 
@@ -1257,13 +1257,13 @@ how she would want to be remembered.
 
 ## 5.9 时间连词 since 的特殊用法
 
-`例句 1`: I have worked in this company since I left school.
+`例 1`: I have worked in this company since I left school.
 
 这个例句中的 since 作为时间连词，意思是"**自从...以来**"。
 与它有关的主句和从句的时态搭配关系是: since 后面所接从句的谓语要用**一般过去时态**；
 与其搭配的主句谓语则用**现在完成时态**。
 
-`例句 2`: It has been three years since I worked in this company.
+`例 2`: It has been three years since I worked in this company.
 
 - ❌ 我在这家公司工作已经有三年了。
 - ✅ 我最后一次在这家公司工作是在三年前。
@@ -1279,10 +1279,10 @@ how she would want to be remembered.
 时间连词 since 接**短暂动词**: 主句用**现在完成时**，since 后面的从句用**一般过去时**。
 实际上，这里的谓语动词也可以采用现在完成时态，句子意思不变。
 
-- `例句 3`:
+- `例 3`:
   - I have worked in this company since I **left** school.
   - I have worked in this company since I **have left** school.
-- `例句 4`:
+- `例 4`:
   - It has been three years since I **came** to China.
   - It has been three years since I **have come** to China.
 
@@ -1296,17 +1296,17 @@ how she would want to be remembered.
 - 若用**一般过去时态**，则表示从句动作"**结束**"以来，主句活动在持续；
 - 若用**现在完成时态**，则表示从句动作"**开始**"以来，主句活动在持续。
 
-- `例句 7`:
+- `例 7`:
   - It's been three years since I worked in this company.
     - worked 是延续动词用于一般过去时态，主句时间是从 work 这个活动**结束**以来算起。
     - 译: 我不在这家公司工作有三年了。
   - It's been three years since I have worked in this company.
     - have worked 是延续动词用于现在完成时态，主句时间是从 work 这个活动**开始**以来算起。
     - 译: 我在这家公司工作有三年了。
-- `例句 10`: Since China has been open she's traveled to Australia, where she
+- `例 10`: Since China has been open she's traveled to Australia, where she
   always dreaming of going, many times.
   - 译: 自从中国开放以来，她已经多次到澳大利亚旅游，澳洲一直是她梦想去的地方。
-- `例句 11`:
+- `例 11`:
   - It's two years since I was in this university.
     - 我大学毕业已经有两年了。
   - It's two years since I have been in this university.

@@ -99,12 +99,12 @@
 为了避免混淆，在句首加上一个标志 that，that 后面紧接着的句子作为另一个句子的某一个成分，
 而不是要表达的核心意思。
 
-`例句 2`
+`例 2`
 
 - The criminal confessed his sins harmed many people.
 - The criminal confessed that his sins harmed many people.
 
-`例句 3`
+`例 3`
 
 He said no word at the meeting was strange.
 
@@ -114,7 +114,7 @@ He said no word at the meeting was strange.
 ❓ 为什么宾语从句中的 that 可以省去呢？
 
 对于宾语从句，主语的谓语已经出现，谓语后面接的成分自然是宾语，
-所以在**不影响句子意思的情况下**，可以把 that 省去。但是像`例句 2`那样的宾语从句 that
+所以在**不影响句子意思的情况下**，可以把 that 省去。但是像`例 2`那样的宾语从句 that
 也不宜省去。
 
 综上，在陈述句作名词从句时，需要添加 that，**这个 that 相当于一个"指路牌"，
@@ -405,15 +405,15 @@ Does he come or not?
 
 把"that 陈述句"这一结构放在同位语的位置即构成同位语从句。
 
-- `例句 1`: He was prepared to prove **his theory** that two different weights
+- `例 1`: He was prepared to prove **his theory** that two different weights
   would fall to the ground at the same time.
-- `例句 2`: **The fact** that he succeeded in the experiment pleased everybody.
-- `例句 3`: **The rumor** that Tom was a thief turned out to be unture.
+- `例 2`: **The fact** that he succeeded in the experiment pleased everybody.
+- `例 3`: **The rumor** that Tom was a thief turned out to be unture.
 
 ⚠️ 同位语从句可能与其修饰的名词被其他成分隔开。
 
-- `例句 4`: They spread **the lie** everywhere that Tom was guilty of theft.
-- `例句 5`: **A saying** goes that practice makes perfect.
+- `例 4`: They spread **the lie** everywhere that Tom was guilty of theft.
+- `例 5`: **A saying** goes that practice makes perfect.
 
 ### 2.5.2 一般疑问句作同位语
 
@@ -425,10 +425,10 @@ They are faced with the **problem** whether they should continue to work.
 
 把特殊疑问句变成陈述句语序后放在同位语的位置即构成同位语从句。
 
-- `例句 1`: There arose the **question** where we could get the loan.
-- `例句 2`: The **question** who should go abroad on this business tour requires
+- `例 1`: There arose the **question** where we could get the loan.
+- `例 2`: The **question** who should go abroad on this business tour requires
   consideration.
-- `例句 3`: I have no **idea** when he will return.
+- `例 3`: I have no **idea** when he will return.
 
 💡 **同位语从句主要是由 that 引导**，而很少用 whether 以及连接代词或连接副词引导，
 这是因为我们多是用陈述句来补充说明名词的内容，而很少用**一般疑问句**或**特殊疑问句**。
