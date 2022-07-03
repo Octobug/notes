@@ -15,7 +15,7 @@
       - [二、深入理解每一种体态动作的核心意义](#二深入理解每一种体态动作的核心意义)
       - [三、以“体态 (aspect)”为学习时态的基础](#三以体态-aspect为学习时态的基础)
       - [四、动词与时态表达有关](#四动词与时态表达有关)
-    - [7.1 英文时态体系概述 - 思维总结](#71-英文时态体系概述---思维总结)
+    - [思维总结: 7.1 英文时态体系概述](#思维总结-71-英文时态体系概述)
   - [7.2 一般现在时态——并非表示现在](#72-一般现在时态并非表示现在)
     - [7.2.1 用法一: 表示普遍的事实或真理 (expressing a general truth)](#721-用法一-表示普遍的事实或真理-expressing-a-general-truth)
     - [7.2.2 用法二: 表示重复活动 (expressing a regularly occurring event)](#722-用法二-表示重复活动-expressing-a-regularly-occurring-event)
@@ -55,6 +55,13 @@
       - [一、表示“预测”，be going to 比 will 有更多的证据支持，而且事件发生的时间更近](#一表示预测be-going-to-比-will-有更多的证据支持而且事件发生的时间更近)
       - [二、表示“预测”时，will 的语气比 be going to 显得正式](#二表示预测时will-的语气比-be-going-to-显得正式)
     - [7.4.4 be going to 表示“计划”与 will 表示“意愿”](#744-be-going-to-表示计划与-will-表示意愿)
+      - [一、be going to 表示“计划”，需要用“人”作主语](#一be-going-to-表示计划需要用人作主语)
+      - [二、be going to 可以表示“决心”，具有强烈的感情色彩](#二be-going-to-可以表示决心具有强烈的感情色彩)
+      - [三、will 表示“意愿”，一个当机立断的决定](#三will-表示意愿一个当机立断的决定)
+      - [四、比较: will 表示“意愿”和 be going to 表示“打算”](#四比较-will-表示意愿和-be-going-to-表示打算)
+      - [思维总结: be going to 与 will](#思维总结-be-going-to-与-will)
+      - [思维训练 7.4.4](#思维训练-744)
+    - [7.4.5 现在进行时表示将来](#745-现在进行时表示将来)
 
 英语谓语的核心是**助动词**和**实义动词**。
 
@@ -265,7 +272,7 @@
       1. 短暂动作 (punctual)
       2. 延续动作 (durative)
 
-### 7.1 英文时态体系概述 - 思维总结
+### 思维总结: 7.1 英文时态体系概述
 
 1. 英语的"时态"是由"时"和"态"两个不同的概念组成的。共有四个时间的和四个体态，因此英语共有 16
    种时态。
@@ -302,8 +309,8 @@
 包括**现在**、**过去**和**将来**。
 
 ```diagram
- <----------------|---------------->
-------------------|--------------------
+ | <---------------- | ----------------> |
+ | ----------------- | ----------------- |
                                 时间坐标
 ```
 
@@ -317,8 +324,8 @@
 表示经常发生的、习惯性的动作 (action) 或者是存在的状态 (state)。
 
 ```diagram
-        · · · · · | · · · · ·
-------------------|--------------------
+        | · · · · · | · · · · · |
+        | --------- | --------- |
                                 时间坐标
 ```
 
@@ -540,8 +547,8 @@ at the right in order to maximize your efforts?*
 发生的动作或状态:
 
 ```diagram
-          A     |
-----------------|-------------->
+          | A   |
+          | --- ||>
 ```
 
 有时句子里没有明确的过去时间，这时需要根据上下文语境推断出某个动作是过去发生的，
@@ -555,8 +562,8 @@ I didn't choose this life; it chose me.
 the past) 内延续或重复的动作:
 
 ```diagram
-  ------------  |
-----------------|--------------->
+  | ------------ |
+  | ------------ ||>
 ```
 
 - I slept for eight hours last night.
@@ -599,15 +606,15 @@ I slept *for eight hours* last night.
 一般过去时表示的延续动作或状态:
 
 ```diagram
-  ------------  |
-----------------|--------------->
+  | ------------ |
+  | ------------ ||>
 ```
 
 现在完成时表示的延续动作:
 
 ```diagram
-    ------------|
-----------------|--------------->
+    | ------------ |
+    | ------------ ||>
 ```
 
 从以上图示可以看出两种时态的区别:
@@ -953,5 +960,181 @@ be going to 在口语交流中常被读成 be gonna。
 - 对服务员说: I'll have the chicken.
 
 ### 7.4.4 be going to 表示“计划”与 will 表示“意愿”
+
+be going to 也常用于表示"计划或打算 (a plan)"。
+此时，说话人头脑里已经做出决定将来要做某件事，并且往往还含有已经为这一行动做了某些准备的意思。
+因为只有人才能有主观的思维意识去对将来的行为做出"计划"，因此，be going to
+的这个用法主要是用于人称主语 (person subject)，而不可能用于非人称主语
+(non-person subject)。
+
+- `例 1`: Close your eyes. I'm going to give you a surprise.
+- `例 3`: My grandmother is eighty now, but she is keeping up with the modern
+  technology. She has just bought a computer and she's going to learn how to
+  browse the Internet.
+
+#### 一、be going to 表示“计划”，需要用“人”作主语
+
+be going to 的"计划"用法只能用于人称主语；但表示"预测"时，则主语可以是人称，也可以是非人称。
+换句话说，如果是非人称主语，则 be going to 不会是表示"计划打算"，而是表示"推测"。
+
+- `例 4`: Look at those black clouds! It's going to rain.
+  - 预测
+- `例 5`:
+  - A: Look at the time. I'm going to miss my bus.
+    - 预测
+  - B: Don't worry. I'll drive you to the stop. And if the bus has already left,
+    I can get you to your apartment.
+- `例 10`:
+  - A: Doctor, help me. My heart is beating very quickly and I feel terrible. I
+    think I'm going to die.
+    - 这里的 be going to 表示"推测"
+  - B: Nonsense. That's the last thing you'll do.
+    - 这里的 be going to 表示"计划打算"，即医生将它理解为"我打算去死"
+    - 译: 胡扯，那是你最不愿意做的事情。
+
+通过以上例子可以发现，在表示"预测 (prediction)"时，是说话人做出的预测
+(the speaker's prediction)，而不是句子的主语做出的预测 (not the subject's
+prediction)。
+
+但在表示"打算"时，却是句子的主语做出的打算 (the subject's intention)。
+
+因此在表示"预测"时，主语可以不是人称，因为其实是说话人在做预测。但是在表示"打算"时，
+是句子的主语在做打算，因而此时句子的主语必须是人称。
+
+#### 二、be going to 可以表示“决心”，具有强烈的感情色彩
+
+- `例 11`: We're going to become the world's leading forwarding company.
+  - 我们一定要成为世界上最大的运输公司。
+- `例 13`:
+  - Mr. Hillcock: I'm going to`1` show you something, Mrs. Gump. Now here is
+    normal. Forrest is right here. The State requires a minimum IQ of 80 to
+    attend public school, Mrs. Gump. He's going to`2` have to go to a special
+    school. He'll be just fine.
+  - Mrs. Gump: What does normal mean, anyway? He might be a bit on the slow
+    side, but my boy, Forrest, is going to`3` get the same opportunities as
+    everyone else. He's not going to`4` some special school to learn how to
+    retread tires. We're talking about 5 little points here. There must be
+    something can be done.
+  - `1`: 表示"打算"
+  - `2`: 表示"预测"
+  - `3`: 表示"决心"
+  - `4`: 表示"决心"
+
+#### 三、will 表示“意愿”，一个当机立断的决定
+
+所谓"意愿"，简言之，就是"当机立断 (spontaneous dicision)"，而不是事先计划好的
+(unplanned)，也不是预计某事会发生。具体来说，说话人事先并不知道，而是在得知新的信息之后，
+在说话的时刻立即做出决断表明他将去做某事，这是一个当机立断的决定，表达说话人的"意愿
+(willingness)"，此时只能用 will 来表达。
+
+- `例 15`:
+  - A: The telephone is ringing.
+  - B: I'll get it.
+
+关于用 will 表示"意愿"的情况要注意以下几点:
+
+1. will 表示"预测"时，句子的主语往往是无生命的事物。
+   而表"意愿"时，句子的主语通常是有生命的"人"。
+   如果用"物"作主语则具有拟人的意味，此时说话人往往是在抱怨，而且通常用否定形式 won't。
+   - `例 17`: The closet dorr won't open. Will you try it?
+2. will 这种表示"意愿"的意义，若用于第二人称的一般疑问句
+   (Will you?)，则可以用来提出"请求"。
+   - `例 19`:
+     - A: Will you help me to mail these letters?
+     - B: I'll do it.
+3. 关于 will 的否定，需要看具体的说话语境。
+   - `例 22`: Paul won't come.
+     - Paul won't come, because he is too busy.
+       - 说话人的推测，not 重点否定 come
+       - 译: 我想保罗恐怕来不了，因为他太忙了。
+     - Paul won't come, because he doesn't want to.
+       - 句子主语的意愿，not 重点否定 will
+       - 译: 保罗不愿意来，因为他不想来。
+
+#### 四、比较: will 表示“意愿”和 be going to 表示“打算”
+
+二者的主要差别是:
+
+1. be going to 表示说话人对未来行动的计划或打算，
+   通常是经过事先考虑并含有已经为这一行动做了某些准备的意思。
+2. will 表示意愿，表示在说话的时刻立即做出决定将去做某事，事先并没有经过考虑，
+   更没有为这一活动做出事先的准备。
+
+- `例 23`:
+  - Husband: There isn't any milk left in the fridge.
+  - Wife: I'll buy some after work.
+    - 我下班后去买。
+- `例 24`:
+  - Husband: There isn't any milk left in the fridge.
+  - Wife: I'm going to buy some after work.
+    - 我本来打算下班后去买。
+
+有预先准备打算时用 be going to，表示当机立断的意愿时用 will，二者不能互相替换。
+
+- `例 25`: I have bought a computer and I'm going to learn the computer science.
+- `例 28`:
+  - A: Someone is knocking at the door.
+  - B: I'll go and open it.
+
+#### 思维总结: be going to 与 will
+
+| 用法                | 用词                | 条件                          |
+| ------------------- | ------------------- | ----------------------------- |
+| 预测                | will 或 be going to | 人称或非人称主语 (说话人预测) |
+| 意图打算            | be going to         | 人称主语 (主语的打算)         |
+| 意愿/当机立断的决定 | will                | 人称主语 (主语的意愿)         |
+
+#### 思维训练 7.4.4
+
+**一、用 will 或 be going to 的适当形式完成下列对话。**
+
+*1.*
+
+- *A: Have you made any vacation plans?*
+- *B: Well, I've decided on one thing -- I ____`1` go camping.*
+- *A: That's great! For how long?*
+- *B: I ____`2` be away for a week. I only have five days of vacation.*
+- *A: So, when are you leaving?*
+- *B: I'm not sure. I ____`3` probably leave around the end of May.*
+- *A: And where ____ you ____`4` go?*
+- *B: I haven't thought about that yet. I guess I ____`5` go to one of the
+  national parks.*
+- *A: That sounds like fun.*
+- *B: Yeah. Maybe I ____`6` go hiking and do some fishing.*
+- *A: ____ you ____`7` rent a camper?*
+- *B: I'm not sure. Actually, I probably ____`8` rent a camper -- it's too
+  expensive.*
+- *A: ____ you ____`9` go with anyone?*
+- *B: No. I need some time alone. I ____`10` travel by myself.*
+
+答案:
+
+1. am going to
+2. am going to
+3. will
+4. are, doing to
+5. will
+6. will
+7. Are, going to
+8. won't
+9. Are, going to
+10. am going to
+
+**二、比较下列对话中 B 的不同回答方式的含义区别。**
+
+*2.*
+
+- *A: The seller hasn't received the documents.*
+- *B: I'll send them.*`1`
+- *B: I'm sending them next week.*`2`
+- *B: I'm going to send them next week.*`3`
+
+答案:
+
+1. 事前不知道，表示一个当机立断的决定
+2. 事前已经知道，并计划下周去做
+3. 事前已经知道，并计划下周去做，但其确定程度不及 am sending
+
+### 7.4.5 现在进行时表示将来
 
 >>>>> progress
