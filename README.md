@@ -27,7 +27,7 @@ disciplines according to the
 ### Ⅲ. [Natural Science](https://en.wikipedia.org/wiki/Natural_science)
 
 1. [Physics](https://en.wikipedia.org/wiki/Physics)
-    1. [Miscellaneous](phys_miscellaneous)
+    1. [Miscellaneous](phys_misc)
         1. Six Easy Pieces: Essentials of Physics by Its Most Brilliant
             Teacher
 
@@ -69,12 +69,12 @@ disciplines according to the
         2. Software Maintenance
         3. [Software Testing](software_engineering/software_testing)
     10. Theory of Computation
-    11. [Miscellaneous](cs_miscellaneous)
+    11. [Miscellaneous](cs_misc)
         1. Data Management
         2. macOS
-        3. [Markdown](cs_miscellaneous/markdown)
+        3. [Markdown](cs_misc/markdown)
         4. TeXs
-        5. [Unix-like](cs_miscellaneous/unix-like)
+        5. [Unix-like](cs_misc/unix-like)
         6. Virtual Machines
         7. Windows
 
