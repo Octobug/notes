@@ -22,6 +22,10 @@ module.exports = {
       'error',
       'unix'
     ],
+    'object-curly-spacing': [
+      'error',
+      'always',
+    ],
     'semi': [
       'error',
       'always'
