@@ -59,6 +59,11 @@
     - [三、定冠词 the 与姓氏连用](#三定冠词-the-与姓氏连用)
     - [四、表示强调时，会用 the](#四表示强调时会用-the)
   - [2.9 其他不用冠词的场合](#29-其他不用冠词的场合)
+    - [一、关于职业、身份或头衔](#一关于职业身份或头衔)
+    - [二、关于球类、棋类运动](#二关于球类棋类运动)
+    - [三、关于其他限定词与冠词](#三关于其他限定词与冠词)
+    - [四、特殊名词](#四特殊名词)
+    - [五、关于星期](#五关于星期)
 
 英语中**限定词** (determiner) 与名词的关系最为密切，因为它必然是修饰某个名词，
 以限定名词所指的范围，对名词起泛指或特指、定量或不定量等限定修饰作用。
@@ -1010,5 +1015,108 @@ a/an 可以用来表示度量，以表示价格、速度或比率等概念。这
   - Customer: No, no, it's for **the** two of us.
 
 ## 2.9 其他不用冠词的场合
+
+### 一、关于职业、身份或头衔
+
+表示某人的职业，一般是用不定冠词 a/an。但如果这个头衔是独一无二的，
+或者说这个职位在一个单位里是唯一的，此时常**不用**冠词。不过也可以用 the
+(但不可能用 a/an，因为是独一无二的)。
+
+- `例 1`: I am an English teacher.
+- `例 2`:
+  - They appointed him Head Librarian.
+  - He's a librarian.
+
+⚠️ 这些表示独一无二的身份或职务的名称在句中通常出现在补足语的位置
+(主语补足语、宾语补足语以及系动词后的表语位置) 和同位语位置，此时尤其会省去 the。
+若是出现在其他位置如宾语位置或主语位置，则需要加 the。
+
+- `例 3`:
+  - He was elected **President** in 1879.
+    - President 是独一无二的头衔，在该句中是主语补足语，the 可以省去。
+  - I want to see **the President**.
+    - the President 是宾语，尽管它是独一无二的，但此时 the 不能省略。
+- `例 4`:
+  - Queen Elizabeth had dinner with President Kennedy.
+    - 这里 Queen 和 President 都是独一无二的头衔，它们分别作 Elizabeth 和 Kennedy
+      的同位语，因此 the 可以省去。
+  - The Queen had dinner with the President.
+    - 这里 Queen 和 President 分别是主语和宾语，因此尽管是独一无二的头衔，也不能省去 the。
+
+从以上讨论可得出省去 the 的两个条件:
+
+1. 表示独一无二的职务或头衔
+2. 出现在句子的补足语或同位语位置
+
+下面详细举例说明。
+
+1. 独一无二的头衔出现在表语位置
+   - `例 5`: John F. Kennedy was (the) President of the United States in 1961.
+   - `例 6`: John is (the) captain of the team.
+   - `例 8`: Mr. Smith used to be (the) president of our bank.
+2. 独一无二的头衔出现在主语补足语的位置
+   - `例 10`: Henry was elected (the) chairman of the committee.
+   - `例 11`: He was elected (the) President for the second time.
+3. 独一无二的头衔出现在宾语补足语的位置
+   - `例 12`: They elected Henry (the) chairman.
+4. 独一无二的头衔出现在同位语的位置
+   - `例 14`: As (the) chairman of the committee, I declare this meeting closed.
+     - as 引导的名词短语 chairman of the committee 作主语 I 的同位语
+        (位于被修饰词之前)。
+   - `例 15`: Elizabeth II, (the) Queen of England (位于被修饰词之后)
+
+### 二、关于球类、棋类运动
+
+表示球类、棋类运动项目的名词前面不加冠词。
+
+- play football
+- play chess
+- play tennis
+
+### 三、关于其他限定词与冠词
+
+下面各个限定词之间彼此排斥，不能同时出现在名词前面。
+
+1. 冠词: the, an, a
+2. 物主形容词: my, your, his, our, their
+3. 指示形容词: this, that, these, those
+4. 名词所有格: Tom's, John's
+
+如:
+
+- ❌ the my book
+- ❌ Tom's the book
+
+因此，如果一个名词的前面已经有了物主词、指示词或名词所有格，则不能再有冠词修饰它。
+
+值得注意的是，所有格本身可以有冠词。如: the boss's wife。
+其实这里不能把 the 和 boss's 分开来看，因为 boss 作为单数可数名词必须有限定词来修饰。
+所以这里应该是将 the boss 看作一个整体，然后再加 's 构成所有格。
+
+### 四、特殊名词
+
+下列这些特殊名词前不加 the:
+
+1. **nature**: 泛指自然界，不加冠词。
+   - ✅ in nature: 在大自然中
+   - ❌ in the nature
+   - If you destroy nature you will suffer for it.
+2. **society**: 泛指我们在其中生活的这个社会，一般不加冠词。
+   - ✅ in society: 在社会中
+   - ❌ in the society
+   - Society turns people into criminals and then locks them up.
+3. **space**: 泛指星球之间的空间，不加冠词。
+   - ✅ in space: 在太空中
+   - ❌ in the space
+   - Man has just taken his first steps into space.
+4. **man/mankind**: 泛指整个人类时，不加冠词。
+   - Man can conquer nature.
+   - That's one small step for a man, one giant leap fot mankind.
+5. history: 泛指人类的整个历史时，不用冠词。
+   - ✅ in history: 在历史上
+   - ❌ in the history
+   - History may repeat itself.
+
+### 五、关于星期
 
 >>>>> progress
