@@ -69,6 +69,8 @@
     - [思维训练 5.9](#思维训练-59)
   - [5.10 过去完成时](#510-过去完成时)
     - [5.10.1 在“过去”回顾“更远的过去”](#5101-在过去回顾更远的过去)
+      - [思维训练 5.10.1](#思维训练-5101)
+    - [5.10.2 延续事件、重复事件和单一事件的过去完成时](#5102-延续事件重复事件和单一事件的过去完成时)
 
 ## 5.1 完成时态的构成
 
@@ -1363,5 +1365,157 @@ since 引导的从句的谓语不仅可以使用**一般过去时态**，还可�
 ## 5.10 过去完成时
 
 ### 5.10.1 在“过去”回顾“更远的过去”
+
+完成时态本质的思维特征是"回顾"。现在完成时态是站在"现在"回顾"过去"，
+而过去完成时态是站在"过去"回顾"更远的过去"。
+
+现在完成时态以"现在"作为时间参照物来谈论过去，
+过去完成时态则是以"过去"作为时间参照物来谈论更远的过去。
+
+因此，可以说现在完成时和过去完成时本质的思维是一样的，区别只是参照的时间不同——前者是"现在"，
+而后者是"过去"。
+
+**现在完成时态的参照时间"现在"可以隐含在语境中而不明确地表达出来**。比如:
+
+`例 1`: I have been a school teacher for 28 years.
+
+但是，对于过去完成时态，其参照时间"过去"则一般是要明确地在上下文中给出——必须先有一个过去时，
+然后以这个过去时作为参照的时间点，来谈论更远的过去，此时这个更远的过去才能用过去完成时态。
+
+**过去完成时态可以说是一个不能独立使用的时态，它必须依附于一个在上下文中出现的一般过去时**。
+也就是说，要先有一般过去时态，才可能有过去完成时态。
+
+`例 9`:
+
+- At the hotel she **asked** immediately for Dr. Barrett, of St. Louis. He
+  **had left** for home **that morning** and would not be back, she was told.
+  - 这里的 had left 发生在过去的动作 asked 之前，所以用过去完成时。
+  - 这里还有一个具体的过去时间 that morning: **过去完成时态可以与具体的过去时间状语连用**。
+- One there she sat silent and thinking for many days, then told us that when
+  she was 18 she had loved a young medical student with all her heart.
+  - had loved 发生在 told 之前，所以用了过去完成时。
+
+具体的过去时间之所以可以与过去完成时连用，是因为只要这个具体的过去时间是表示"过去的过去"，
+就符合过去完成时态的根本使用原则——**表示"过去的过去"**之情况。
+
+`例 11`: 当国会下院议员的感受
+
+- A: You have been a member of Parliament for five or six weeks now. Is it as
+  you expected it to be?
+- B: I had an idea of what being a member of Parliament was like. I had been on
+  a local authority for four years, and as a journalist and as a political
+  activist I had visited the House of Commons, so it's more or less what I
+  expected.
+
+**解析**: B 一开始回答就用了一般过去时态 had an idea, 表示以前对当议员的生活有所了解。
+紧接着他解释自己为什么会对议员的生活有所了解，因为她自己以前曾经在 (had been) 一个地方当局
+(a local authority) 工作过四年，并且常常拜访 (had visited) 国会下院。这里的
+had been 和 had visited 都是基于前面的一般过去时态的 had an idea
+基础上的一个更远的过去事件，所以都用了过去完成时态。也就是说，因为前文先有了 had an idea，
+所以后文再往过去回顾就得用过去完成时 had been 和 had visited。
+
+如果 B 是在做了五六个星期议员后才了解议员工作，那么他就会用**一般现在时态**说成
+Since I have been a member of Parliament for five or six weeks now, I have an
+idea of what being a member of Parliament is like.
+由于没有了**一般过去时态**作为时间参照，后文再对过去的事件进行陈述就不能用**过去完成时态**，
+而应该改用**一般过去时态**: ... I was on a local authority for four years and ... I
+visited the House of Commons, ...。
+
+但是从前后两部分的逻辑关系来看，原文 had been 和 had visited 是对前文的 had an idea
+的解释，如果改成**一般现在时态**说成 have an idea，那么后文的 was 和 visited 就与前文的
+have an idea 在逻辑语义上没有联系，因此也就无法对 have an idea 进行解释说明。
+
+`例 12`: 母羊如何辨认小羊羔
+
+I had always wondered how the ewes knew their own lambs; now I learned that it
+was partly by voice, but chiefly by smell, looks not entering into it.
+
+译: 过去我一直不明白母羊是怎样认出自己生的羊羔的，后来我才知道，它们一方面是靠听声音来辨认，
+但主要是靠气味，而不是靠长相。
+
+**解析**: 如果后面说成 now I learn that ...，那么前面就得改为**一般过去时态**说成
+I always wondered how the ewes knew their own lambs; now I learn that it is
+partly by voice, but chiefly by smell, looks not entering into it.
+
+`例 15`:
+
+- A: It was my grandmother's birthday yesterday.
+- B: Is she old?
+- A: Well, by the time we lit up the last candle on her birthday cake, the first
+  one had gone out!
+
+解析: by the time 本身的意思是 "在...之前"，所以过去的动作 lit 之前发生了 had gone out
+的动作，故用**过去完成时态**。
+
+💡 **by the time** 常常与**过去完成时态**搭配使用，具体结构是: "过去完成时态 + by the
+time + 一般过去时"。
+
+`例 16`: She felt suitably humble just as she ____ when he had first taken a
+good look at her, hair waved and golden, nails red and pointed.
+
+- A. had
+- B. had had
+- C. would have had
+- D. has had
+
+答案: A。首先主句的谓语 felt 是表示过去的时间。其次，时间状语从句 when 的谓语 had taken
+是过去完成时。综合这两点，需要判断 as 引导的方式状语从句的谓语需要用什么时态。显然，as
+引导的从句的谓语动作发生在 felt 之前，故也需要用过去完成时态，因而可以排除 C 和 D。
+B 选项 had had 是一个完整的谓语，谓语动词是 had，但该句中没有 "had (有)" 的意思。
+A 选项 had 其实是一个省略形式，完整的谓语应该是 had done，done 可以省去。这里的 done
+代替了 felt，也就是说真正的谓语是 had felt (as she had felt humble)。因此选 A。
+
+译: 她举止谦逊、得体，就像他当初见到她时，她所表现的那样: 金色波浪发、尖尖的指甲涂成了红色。
+
+#### 思维训练 5.10.1
+
+**一、请用括号中动词的适当形式完成下面句子。**
+
+*1. I ____ (just, sit) down in the recliner to watch TV when I ____ (hear) a
+knock on the door. When I ____ (open) the front door I ____ (see) a young man
+standing there staring at me.*
+
+答: had just sat, heard, opened, saw
+
+*2. I ____ (just, pour) myself a cup of tea when the phone ____ (ring). When I
+____ (come) back from answering it, the cup ____ (be) empty. Somebody ____
+(drink) the tea or ____ (throw) it away.*
+
+答案: had just poured, rang, came, was, had drunk, thrown (省略 had)
+
+*3.*
+
+- *A: It's already 10 o'clock. I guess Bob and Amy won't be coming to the
+  party.*
+- *B: They ____ (call) at nine to say that they ____ (hold up).*
+
+答案: called, had been help up
+
+**二、用括号中动词的适当形式完成下面这则笑话：**
+
+*4.*
+
+- *Surgeon: How ____ the patient ____ (be) since I ____ (operate) on his heart?*
+- *Nurse: He is fine except that he seems to have a double heartbeat.*
+- *Surgeon: Ah, so that's where it's gone! I was wondering where I ____ (lose)
+  my watch!*
+
+答案: has...been, operated, had lost
+
+*5. When her daughter ____ (arrive) home from a party, Mrs. Thompson asked her
+if she ____ (thank) her hostess. "No," she said. "The girl in front of me
+thanked her and the lady said 'Don't mention it' so I didn't."*
+
+答案: arrived, had thanked
+
+*8.*
+
+- *A: Mum! Mum! Dad ____ (fall) over a cliff.*
+- *B: Is he okay?*
+- *A: I don't know. He ____ (not, stop) falling when I left.*
+
+答案: has fallen, hadn't stopped
+
+### 5.10.2 延续事件、重复事件和单一事件的过去完成时
 
 >>>>> progress
