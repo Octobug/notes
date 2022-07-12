@@ -23,9 +23,11 @@ test work, and refactoring to ensure the result is as clean as possible.
 
 ## Sample Code to Test
 
->>>>> progress
+[sample.js](sample.js)
 
 ## A First Test
+
+>>>>> progress
 
 ## Add Another Test
 
