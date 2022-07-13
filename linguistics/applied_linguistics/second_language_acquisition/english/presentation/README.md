@@ -171,7 +171,31 @@ class: invert
 
 <!-- class: invert -->
 
-# 如何理解这几句话？
+# 问题
+
+## 用这句话描述下图是否正确？
+
+She will dive into the water.
+
+![Dive](images/1_7.4.3_9_dive.png)
+
+---
+
+<!-- class: invert -->
+
+# 问题
+
+## 如何用英语表达"我忘了"？
+
+用 "forget" 还是 "forgot"?
+
+---
+
+<!-- class: invert -->
+
+# 问题
+
+## 如何理解这几句话？
 
 1. *I have been married.*
 2. *I have been coming to Beijing for fourteen years.*
@@ -214,3 +238,139 @@ class: invert
 # 包含哪些内容？
 
 [🔗英语语法新思维语法提纲 (pdf)](grammar-outline.md)
+
+---
+
+<!-- class: invert -->
+
+# 问题
+
+## 用这句话描述下图是否正确？
+
+She will dive into the water.
+
+![Dive](images/1_7.4.3_9_dive.png)
+
+---
+
+<!-- class: invert -->
+
+❌ She will dive into the water.
+
+> 表示“预测”时，be going to 比 will 有更多的证据支持，而且事件发生的时间更近。它所表示的对将来行为的预测往往暗示与"现在"有联系，而且是在说话后不久就将发生的。所以当有**现在的证据**可以支持预测时，或者说根据目前**明显的迹象**来推断某件事将要发生时，我们就要用 be going to，而不宜用 will。另外，be going to 还往往表示当前已有迹象表明说话者无力控制的 (uncontrollable) 即将发生的行为。
+
+✅ She is going to dive into the water.
+
+知识点: `一般将来时`
+
+---
+
+<!-- class: invert -->
+
+# 问题
+
+## 如何用英语表达"我忘了"？
+
+用 "forget" 还是 "forgot"?
+
+---
+
+<!-- class: invert -->
+
+## forget 还是 forgot 需要分情况
+
+- I forget the meaning of the word.
+  - 说话的时刻依然是忘记的。
+- I forgot to bring your earphone back.
+  - 说话的时刻已经想起来，"忘记"已成为过去。
+
+"我忘记做某事"，由于说这句话的时候已经想起来某事，"忘记"是过去的事情，所以在英语中一般说成 "I forgot to do..."，而非 "I forget to do..."。表达"忘记了"也可以用 "It slipped my mind that ..."。
+
+知识点: `一般过去时`
+
+---
+
+<!-- class: invert -->
+
+# 问题
+
+## 如何理解这几句话？
+
+1. *I have been married.*
+2. *I have been coming to Beijing for fourteen years.*
+3. *Beauty means this to one and that to the other. And yet when anyone of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
+
+---
+
+<!-- class: invert -->
+
+*1. I have been married.*
+
+❌ 我已经结婚了。
+
+我已经结婚了:
+
+- ✅ I have married.
+  - 动作表达，带有感情色彩，只适用于新婚不久的情况，以表达出"对现在的影响 (如很开心)"。
+- ✅ I am married.
+  - 状态表达，只是很客观地、平静地说出"我已经结婚了"这个事实。
+
+知识点: `现在完成时`
+
+---
+
+<!-- class: invert -->
+
+*2. I have been coming to Beijing for fourteen years.*
+
+> 用短暂动词 (come) 的完成进行时 (have been coming)
+来表示到目前为止的一段时间内重复发生的动作。
+
+- ❌ 我来北京有 14 年了。
+- ✅ 过去这 14 年中，我常常来北京。
+
+---
+
+<!-- class: invert -->
+
+*3. Beauty means this to one and that to the other. And yet when anyone of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
+
+第二句话有两个定语从句:
+
+一、And yet when anyone of us has seen that **which to him is beautiful**
+
+- 定语从句 which to him is beautiful 修饰先行词 that，关系词是 which；
+- 先行词 that 是代词，指代前面所说的 beauty，作为句子的宾语；
+- him 指代 anyone of us。
+
+---
+
+<!-- class: invert -->
+
+*3. Beauty means this to one and that to the other. And yet when anyone of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
+
+二、he has known an emotion **which is in every case the same in kind**.
+
+- 定语从句 which is in every case the same in kind 修饰先行词 emotion，关系词是 which；
+- he 和 him 一样指代 anyone of us。
+
+---
+
+<!-- class: invert -->
+
+*3. Beauty means this to one and that to the other. And yet when anyone of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
+
+字面直译: 然而，当我们任何一个人见到对他来说是美的事物时，
+他就知道了一种在任何情况下都相通的情感。
+
+完整翻译: 审美标准，因人而异。但一旦美在眼前出现，我们对美的感受却并无二致。
+
+---
+
+<!-- class: invert -->
+
+# 2. 语法 (Grammar)
+
+### 需要投入多少时间？
+
+语法学习需要专门安排时间并且最好做笔记，对于《英语语法新思维》这套书比较合适的学习时间应该是半年到一年。

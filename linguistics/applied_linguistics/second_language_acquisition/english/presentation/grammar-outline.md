@@ -72,10 +72,15 @@
 - 简单句与复合句
   - 五种基本句型
     - 主语 + 系动词 + 表语
+      - I am a Webaholic.
     - 主语 + 谓语
+      - Internet dating hurts.
     - 主语 + 谓语 + 宾语
+      - I like chatting online.
     - 主语 + 谓语 + 间接宾语 + 直接宾语
+      - Chatting on the Internet brings me a lot of fun.
     - 主语 + 谓语 + 宾语 + 宾语补足语
+      - We can call Internet addicts a Webaholic.
   - 名词从句
     - 句子类型
       - 陈述句 (that)
