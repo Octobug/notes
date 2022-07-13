@@ -74,10 +74,10 @@ class: invert
 
 # 词汇名称解释
 
-- **雅思**: IELTS `/ˈaɪ.ɛlts/`，International English Language Testing System，主要面向去英联邦国家留学的学生；
-- **托福**: TOEFL `/ˈtoʊfəl/`，Test of English as a Foreign Language，主要面向去北美国家留学的学生；
+- **雅思**: IELTS `/ˈaɪ.ɛlts/` International English Language Testing System，主要面向去英联邦国家留学的学生；
+- **托福**: TOEFL `/ˈtoʊfəl/` Test of English as a Foreign Language，主要面向去北美国家留学的学生；
 - **GRE**: Graduate Record Examinations，北美研究生入学考试；
-- **COCA**: `/ˈkəʊkə/`，Corpus of Contemporary American English，美国当代英语语料库。
+- **COCA**: `/ˈkəʊkə/` Corpus of Contemporary American English，美国当代英语语料库。
 
 ---
 
@@ -171,7 +171,46 @@ class: invert
 
 <!-- class: invert -->
 
+# 如何理解这几句话？
+
+1. *I have been married.*
+2. *I have been coming to Beijing for fourteen years.*
+3. *Beauty means this to one and that to the other. And yet when anyone of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
+
+---
+
+<!-- class: invert -->
+
 # 目标
 
 - **读**: 正确理解英文资料的字面意思；
-- **写**: 正确、流畅地表达自己。
+- **写**: 正确、流畅地表达自己的想法。
+
+---
+
+<!-- class: invert -->
+
+# 语法书
+
+- [🔗《英语魔法师之语法俱乐部》](https://book.douban.com/subject/1014914/)(2001)，旋元佑
+- [🔗《赖世雄经典英语语法》](https://book.douban.com/subject/34781531/)(2019)，赖世雄
+- 《英语语法新思维 (第 2 版)》(2018)，张满胜
+  - [🔗初级教程：走近语法](https://book.douban.com/subject/30701505/)
+  - [🔗中级教程：通悟语法](https://book.douban.com/subject/30571037/)
+  - [🔗高级教程：驾驭语法](https://book.douban.com/subject/30778541/)
+
+---
+
+<!-- class: invert -->
+
+# 英语语法新思维
+
+![height:470px](images/new_thought_on_grammar_1.png)![height:470px](images/new_thought_on_grammar_2.png)![height:470px](images/new_thought_on_grammar_3.png)
+
+---
+
+<!-- class: invert -->
+
+# 包含哪些内容？
+
+[🔗英语语法新思维语法提纲 (pdf)](grammar-outline.md)
