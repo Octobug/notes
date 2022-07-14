@@ -27,9 +27,14 @@ test work, and refactoring to ensure the result is as clean as possible.
 
 ## A First Test
 
->>>>> progress
+💡 Always make sure a test will fail when it should.
+
+💡 Run tests frequently. Run those exercising the code you're working on at
+least every few minutes; run all test at least daily.
 
 ## Add Another Test
+
+>>>>> progress
 
 ## Modifying the Fixture
 
