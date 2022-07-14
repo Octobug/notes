@@ -34,10 +34,38 @@ least every few minutes; run all test at least daily.
 
 ## Add Another Test
 
->>>>> progress
+> ⚠️ Testing should be risk-driven; remember, I'm trying to find bugs, now or
+> in the future. Therefore I don't trst accessors that just read and write a
+> field: They are so simple that I'm not likely to find a bug there.
+
+💡 It is better to write and run incomplete tests than not to run complete
+tests.
+
+⚠️ A shared fixture which causes tests to interact will end up with
+intermittent test failures due to tests interacting through the shared fixture.
 
 ## Modifying the Fixture
 
+Testing phases:
+
+- `setup-exercise-verify`
+- `given-when-then`
+- `arrange-act-assert`
+
 ## Probing the Boundaries
 
+It's good to throw tests at the boundaries of these conditions -- to see what
+happens when things might go wrong.
+
+💡 Think of the boundary conditions under which things might go wrong and
+concentrate your tests there.
+
+💡 Don't let the fear that testing can't catch all bugs stop you from writing
+tests that catch most bugs.
+
+You should concentrate on where the risk is. Look at the code and see where it
+becomes complex. Look at a function and consider the likely areas of error.
+
 ## Much More Than This
+
+💡 When you get a bug report, start by writing a unit test that exposes the bug.
