@@ -1,5 +1,7 @@
 # Refactoring: Improving the Design of Existing Code
 
+> by Martin Fowler
+>
 > <https://www.goodreads.com/book/show/35135772-refactoring>
 
 ## Table of Contents
@@ -9,8 +11,8 @@
 - [x] [Chapter 2: Principles in Refactoring](02_principles_in_refactoring)
 - [x] [Chapter 3: Bad Smells in Code](03_bad_smells_in_code)
 - [x] [Chapter 4: Building Tests](04_building_tests)
-- [ ] [Chapter 5: Introducing the Catalog](05_introducing_the_catalog)
-- [ ] [Chapter 6: A First Set of Refactorings](.)
+- [x] [Chapter 5: Introducing the Catalog](05_introducing_the_catalog)
+- [ ] [Chapter 6: A First Set of Refactorings](06_a_first_set_of_refactorings)
 - [ ] [Chapter 7: Encapsulation](.)
 - [ ] [Chapter 8: Moving Features](.)
 - [ ] [Chapter 9: Organizing Data](.)
