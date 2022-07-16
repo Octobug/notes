@@ -62,6 +62,12 @@
       - [思维总结: be going to 与 will](#思维总结-be-going-to-与-will)
       - [思维训练 7.4.4](#思维训练-744)
     - [7.4.5 现在进行时表示将来](#745-现在进行时表示将来)
+      - [一、必须带有表示将来的时间状语](#一必须带有表示将来的时间状语)
+      - [二、必须是人称主语](#二必须是人称主语)
+      - [三、与一般现在时表示将来的区别](#三与一般现在时表示将来的区别)
+      - [四、用 be going to 表示计划与进行时态表示计划的区别](#四用-be-going-to-表示计划与进行时态表示计划的区别)
+    - [7.4.6 一般现在时表示将来](#746-一般现在时表示将来)
+    - [思维训练 7.4](#思维训练-74)
 
 英语谓语的核心是**助动词**和**实义动词**。
 
@@ -1136,5 +1142,83 @@ prediction)。
 3. 事前已经知道，并计划下周去做，但其确定程度不及 am sending
 
 ### 7.4.5 现在进行时表示将来
+
+现在进行时可以表示对**最近的将来**做出计划或安排 (definite future plans)。
+
+- `例 1`:
+  - A: The summer holidays are coming soon, Jack. What are your plans?
+  - B: Well, Mike, I am taking my girlfriend to Qingdao. She is a beach person,
+    you know.
+- `例 2`: I am flying to Beijing next Monday.
+- `例 3`: I am taking a makeup test tomorrow.
+- `例 4`: We are meeting the supplier on Tuesday.
+
+用现在进行时表示将来的动作要注意一下几点:
+
+#### 一、必须带有表示将来的时间状语
+
+用现在进行时表示将来的动作，动作发生的时间必须指出或在前文中已经指出，
+否则就可能会造成**现在进行**动作与**一般将来**动作相混淆。
+
+`例 9`:
+
+- A: What are you doing next Sunday?
+- B: I'm not going out. I'm staying at home.
+  - B 的回答虽然没有出现具体的将来时间，但其实上文中已经给出 next Sunday
+
+#### 二、必须是人称主语
+
+现在进行时表将来的这种用法，通常是表示说话人已经计划安排好的活动，如果不是，则不能这样用。
+
+❌ It's raining tomorrow. (因为这种活动人们是无法事先计划好的。)
+
+#### 三、与一般现在时表示将来的区别
+
+1. **一般现在时**要比**现在进行时**听起来更正式，个人主观色彩要淡一些。
+
+    `例 10`:
+
+    - I am leaving tonight.
+      - 个人主观色彩比较浓，含有"我自己决定今晚走"的以为。
+    - I leave tonight.
+      - 更加客观，比如可能是"公司安排的"。
+    - Our shop opens next week.
+      - 更加正式
+    - Our shop is opening next week.
+
+2. 如果是一系列预定的将来的安排，比如旅游行程安排，用**进行时态**显得较累赘，
+   而用**一般时态**则较简洁。
+
+    `例 11`: We leave Beijing at 9:00 tomorrow morning, arrive in Kunming
+    around 12:00 and then we tour the World Horti-Expo Garden.
+
+#### 四、用 be going to 表示计划与进行时态表示计划的区别
+
+总的来说，be doing 表达的将来计划要比 be going to 的计划更确定 (more definite)。
+
+- `例 12`:
+  - I'm taking my holiday in April.
+    - 确定性更高，比如请假已经得到批准，或行程已经订好。
+    - 译: 我四月份要休假了。
+  - I'm going to take my holiday in April.
+    - 确定性相对低一些，只是打算。
+    - 译: 我打算四月份休假。
+- `例 13`:
+  - I'm going to take my holiday in April, although I have not yet had my
+    boss's approval.
+  - I'm taking my holiday in April, although I have not yet had my boss's
+    approval.
+    - 除非你有要跟老板对着干的意思。
+
+这两种将来的表达 (be going to 与 be doing) 之所以有上述确定程度 (degree of certainty)
+的差异，原因可能还在于这两个时态本身。进行时态 be doing 给人的感觉是事情马上就要发生了，
+因而应该是确定无疑的；而 be going to 因为有表示"将来预测"的意味，这就给它带来了不确定性，
+不过它比 hope to do 和 would like to do 要更为确定些。
+
+### 7.4.6 一般现在时表示将来
+
+>>>>> progress
+
+### 思维训练 7.4
 
 >>>>> progress
