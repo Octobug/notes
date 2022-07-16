@@ -64,6 +64,13 @@
     - [三、关于其他限定词与冠词](#三关于其他限定词与冠词)
     - [四、特殊名词](#四特殊名词)
     - [五、关于星期](#五关于星期)
+    - [六、关于四季](#六关于四季)
+    - [七、关于昼夜的各段时间](#七关于昼夜的各段时间)
+    - [八、关于进餐](#八关于进餐)
+    - [九、关于交通工具的名词](#九关于交通工具的名词)
+    - [十、关于通讯工具的名词](#十关于通讯工具的名词)
+    - [十一、平行结构](#十一平行结构)
+  - [综合训练: 2. 限定词 (一): 冠词](#综合训练-2-限定词-一-冠词)
 
 英语中**限定词** (determiner) 与名词的关系最为密切，因为它必然是修饰某个名词，
 以限定名词所指的范围，对名词起泛指或特指、定量或不定量等限定修饰作用。
@@ -1119,4 +1126,312 @@ a/an 可以用来表示度量，以表示价格、速度或比率等概念。这
 
 ### 五、关于星期
 
->>>>> progress
+表示星期几的名词前面一般不加冠词，而是直接用介词 **on** 加上一个星期的名称，即
+"on + 星期名称"。比如 on Monday。
+这种情形所指的具体时间与真实的说话语境所暗指的某一个时间点是有联系的。假如说话的时间是"周三"，
+那么说 on Monday 就是指刚刚过去的那个"周一"，表示的是一个过去的时间 (past time)。
+而如果的是 on Friday，就是指即将到来的那个"周五"，表示的是一个将来的时间 (future time)。
+
+- `例 29`: She left on Monday.
+- `例 30`: See you on Friday.
+
+由此可见，不加冠词的星期表达 "on + 星期名称" 表示的不是一个"过去的时间"就是一个"将来的时间"，
+而且都是以说话时间为参照，是在说话的同一周，即与说话时的真实语境密切相关。
+
+除此意外，"on + 星期名称"还可以表示周期性的"星期几"，表示一个规律性的日期，比如 on Monday
+可以表示"每逢周一"。这种表达也可以在星期名词后面加 `-s`。
+
+- `例 31`: I have English class on Monday(s).
+- `例 32`: It was Sunday. I never get up early on Sunday(s). I sometimes stay in
+  bed until lunchtime. Last Sunday I got up very late.
+
+综上所述，"on + 星期名称"这样的星期表达可以包含两个意思:
+
+1. 表示一个规律性的日期，意思是"每逢周几"；
+2. 表示过去或将来的某个具体日期 (a specific date)，此时是以说话时间为参照的。
+
+如果某个星期几不是以说话时间为参照，而是以上下文中别的时间为参照，此时就需要用定冠词 the
+来修饰星期，说成 "on the + 星期名称"。
+
+- `例 33`:
+  - She phoned me on Wednesday and we are meeting on Friday.
+    - 以说话时间来确定 Wednesday 和 Friday 具体所指是哪一天，这句话暗示了周四是说话时间。
+  - The last time I saw her was three weeks ago. She was in England for one
+    week. She phoned me on **the** Wednesday and we met on **the** Friday.
+    - 这句话的星期前加了冠词 the，说明此时的参照时间不是说话时间，而是上下文所确立的某一时间。
+      比如这里是以 three weeks ago 为参照时间，这里的 Wednesday 和 Friday
+      指的就是三周前那个周三和周五，而不是离说话时间最近的周三和周五。
+    - 这里的定冠词 the 其实就是使用了
+      [2.5.2 上下文共指 (textual co-reference)](#252-上下文共指-textual-co-reference)
+      中的前指用法。
+- `例 34`:
+  - A: It was a terrible week, wasn't it? Did you remember?
+  - B: Yes, we had snow on **the** Monday and floods on **the** Thursday!
+- `例 35`:
+  - She died on **the** Tuesday after the accident.
+    - 这里的参照时间是发生 accident 的时刻。
+  - She died of the accident on Tuesday.
+    - 这里的参照时间是说话时间，也就是指刚刚过去的那个周二。
+
+以上都是定指的星期表达，还有不定指的星期表达，此时用不定冠词 a 来修饰星期，说成
+"on a + 星期名词"。
+
+- `例 36`:
+  - She left on **a** Wednesday.
+    - 表示过去某一个不确定的星期三，与说话时间没有联系。
+  - She left on Wednesday.
+    - 以说话时间为参照，表示离说话时间最近的刚刚过去的周三。
+
+### 六、关于四季
+
+指一般的四季而不是具体某一年的某一段时间时，通常不加冠词。
+
+- in spring
+- in summer
+- in autumn
+- in winter
+
+`例 38`: Winter is coming.
+
+如果是指特定某年的某个季节，就要加冠词。
+
+`例 39`: The spring of last year was cold.
+
+### 七、关于昼夜的各段时间
+
+以下这些名词尤其是当它们出现在 at, by, after 和 before 之后时，往往不加冠词。
+
+- 黎明/破晓: dawn/daybreak
+  - at dawn
+  - at daybreak
+- 日出: sunrise
+  - at sunrise
+- 正午: noon
+  - at noon
+- 黄昏: dusk/twilight
+  - at dusk
+  - at twilight
+- 日落: sunset
+  - at sunset
+- 夜晚: night
+  - at night
+- 午夜: midnight
+  - at mignight
+
+如果是用在其他介词之后，或者是其他场合，这些名词前面往往要加冠词。
+
+- watch the dawn
+- The sunrise was splendid.
+- We admired the sunset.
+- see nothing in the dusk
+- wake up in the night
+- all through the night
+
+另外，若是表示特定的某一天的某一个时间段，往往用不定冠词，并且用介词 on，
+此时这些名词前面通常会有形容词修饰。
+
+- `例 40`: on a frosty December night
+  - 表示具体的某一天晚上
+- `例 41`: on a rainy morning
+- `例 42`: on a sunny winter afternoon
+
+### 八、关于进餐
+
+指一般日常惯例的用餐时，通常不加冠词。
+
+- `例 43`: have rice for dinner
+  - for breakfast/lunch
+  - stay for breakfast
+  - before lunch
+  - after dinner
+- `例 44`: I was invited to dinner.
+
+如果指需要特别提出的某一次用餐，则常用 the 来强调。
+
+`例 45`:
+
+- Where are we having dinner tonight?
+- **The** dinner after his retirement party was quite lavish.
+
+若三餐名词前有形容词，则一般加不定冠词来表示什么样的一餐。
+
+`例 46`: We often have **a** big lunch and **a** nice dinner.
+
+### 九、关于交通工具的名词
+
+接在 by 之后的交通工具名词，其前面不加冠词。但是这些名词在其他场合要加冠词。
+
+- `例 47`:
+  - by bicycle
+  - take the bicycle
+- `例 48`:
+  - by bus
+  - be on the bus
+- `例 49`:
+  - by car
+  - be in the car
+- `例 50`:
+  - by boat
+  - take the boat
+- `例 51`:
+  - by train
+  - take the train
+- `例 52`:
+  - by plane
+  - be on the plane
+- on foot
+
+### 十、关于通讯工具的名词
+
+接在 by 之后的通讯工具名词，其前面不加冠词。但是这些名词在其他场合要加冠词。
+
+- `例 53`:
+  - by radio
+  - a talk on the radio
+- `例 54`:
+  - by telephone
+  - John is on the telephone.
+- `例 55`:
+  - by post
+  - put a letter in the post
+- `例 56`:
+  - by mail
+  - send the letter through the mail
+- `例 57`:
+  - by satellite
+  - The satellite TV is replacing cable TV.
+
+### 十一、平行结构
+
+如果两个名词一起放在同一平行结构里，即使是单数可数名词，也通常不加冠词。
+
+- after
+  - day after day
+- by
+  - inch by inch
+- in
+  - arm in arm
+  - hand in hand
+- to
+  - back to back
+  - eye to eye
+  - eyeball to eyeball
+  - face to face
+  - shoulder to shoulder
+  - toe to toe
+  - from
+    - from door to door
+    - from father to son
+    - from person to person
+    - from top to toe
+
+上面带有重复名词的短语往往具有副词的功能，在句中作状语，修饰动词。
+
+- `例 71`: They talked face to face.
+- `例 72`: They talked man to man.
+- `例 73`: The stood toe to toe.
+- `例 74`: They stood eyeball to eyeball.
+
+这些名词没有冠词是因为它们基本上失去了名词的主要特性，比如它们没有数的变化。
+
+❌ They talked faces to faces.
+
+## 综合训练: 2. 限定词 (一): 冠词
+
+**一、判断句子正误，并将错误的句子修改正确。**
+
+*8. Diamond is the hardest substance in the nature.*
+
+答案: 错误。Diamand is the hardest substance in nature.
+
+**二、解释下面句子中不同说话者对 coffee 这个词的不同理解。**
+
+*12. I'd like a coffee, please.*
+
+答案: coffee 作为可数名词，表示"一杯咖啡"，而不是其他饮品，具有描述功能。
+
+*13. The coffee here is good.*
+
+答案: 用 the 表示特指，强调的是某一个特定地方的咖啡，以与其他地方的咖啡作对比。
+
+*14. This cafe has dozens of different coffees.*
+
+答案: 这里 coffees 是可数名词复数，强调咖啡的不同种类。
+
+*15. She has coffee on her dress.*
+
+答案: 这里的 coffee 是物质名词，不可数，不能加 a。
+
+**三、请在必要的地方填上适当的冠词。**
+
+*23. I'll meet you at ____ university at three o'clock, outside ____ room 26.*
+
+答案: the, /
+
+**五、下面这篇短文是有关阿诺德·施瓦辛格的介绍。请在必要的地方填上适当的冠词。**
+
+*28. Arnold Schwarzenegger grew up in Austria. His father was ____ policeman and
+his mother ____ housewife. ____ home didn't have ____ flush toilet or ____
+refrigerator until Arnie was 14. He arrived in the US ____ penniless
+21-year-old. His wife, Maria Shiver, is ____ anchor woman on US TV news and ____
+niece of assassinated President John F. Kennedy. Andy Warhol and Grace Jones
+were among ____ 500 guests at their ____ wedding. Others invited who were unable
+to attend included ____ Pope and ____ Reagans. His ____ hobbies include reading,
+collecting ____ art and attending ____ classical music festivals.*
+
+答案: a, a, **/**, **a**, **a**, a, an, /, the, /, the, the, /, /, /
+
+**六、在下列文章空格中必要的地方填上适当的冠词。**
+
+***Boy and His Apple Tree***
+
+*29. ____ long time ago, there was ____ huge apple tree.*
+
+答案: A, a
+
+*I am no longer ____ kid, I don't play around ____ trees anymore. The boy
+replied, "I want ____ toys. I need money to buy them." "Sorry, but I don't have
+____ money... but you can pick all ____ my apples and sell them. So, you will
+have ____ money." The boy was so excited. He grabbed all ____ apples on the tree
+and left happily.*
+
+答案: a, /, /, /, /, **/**, the
+
+*"I am sad and getting old. I want to go sailing to relax myself. Can you give
+me ____ boat?" "Use my trunk to build your boat. You can sail far away and be
+happy." So the boy cut the tree trunk to make ____ boat.*
+
+答案: a, **a**
+
+*"I don't have ____ teeth to bite." the boy replied.*
+
+答案: **/**
+
+**七、单项选择。**
+
+*31. ____ are good for you.*
+
+- *A. Apple*
+- *B. An apple*
+- *C. Apples*
+- *D. The apples*
+
+答案: C
+
+*34. Most people believe that ____ are the basis of ____.*
+
+- *A. marriage and family life/society*
+- *B. marriage and family life/the society*
+- *C. the marriage and family life/society*
+- *D. the marriage and family life/the society*
+
+答案: A
+
+*36. One of our biggest social problems is ____.*
+
+- *A. the unemployment*
+- *B. unemployment*
+- *C. an unemployment*
+- *D. unemployments*
+
+答案: B
