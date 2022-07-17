@@ -67,7 +67,16 @@
       - [三、与一般现在时表示将来的区别](#三与一般现在时表示将来的区别)
       - [四、用 be going to 表示计划与进行时态表示计划的区别](#四用-be-going-to-表示计划与进行时态表示计划的区别)
     - [7.4.6 一般现在时表示将来](#746-一般现在时表示将来)
+    - [7.4.7 其他表示将来的句型结构](#747-其他表示将来的句型结构)
+      - [一、be to do](#一be-to-do)
+      - [二、be about to do](#二be-about-to-do)
+      - [三、be on the point/verge/brink/eve of doing](#三be-on-the-pointvergebrinkeve-of-doing)
     - [思维训练 7.4](#思维训练-74)
+  - [7.5 补充: 一般过去将来时](#75-补充-一般过去将来时)
+    - [7.5.1 基本用法](#751-基本用法)
+    - [7.5.2 一般过去将来时可用来表示非真实的动作或状态](#752-一般过去将来时可用来表示非真实的动作或状态)
+    - [7.5.3 其他表达法](#753-其他表达法)
+    - [7.5.4 注意事项](#754-注意事项)
 
 英语谓语的核心是**助动词**和**实义动词**。
 
@@ -435,38 +444,38 @@
 
 ### 7.2.5 用法四: 一般现在时表示将来发生的动作
 
-在某些特定的场合，一般现在时态有时可表示将来发生的动作。
+在某些特定的场合，**一般现在时态**有时可表示**将来发生**的动作。
 
 #### 一、用在条件状语从句和时间状语从句中
 
 主要用在**条件状语**从句 (if 和 unless) 和**时间状语**从句 (when, as soon as, before
 和 after 等) 中，表示将来的动作。
 
-- Please let me know when he comes back.
-- What are you going to do when you leave school?
-- I'll be glad if shee comes over to visit me.
-- I'll give the book to him as soon as I see him.
-- I will get everything ready before you come back.
+- `例 1`: Please let me know when he comes back.
+- `例 2`: What are you going to do when you leave school?
+- `例 3`: I'll be glad if she comes over to visit me.
+- `例 4`: I'll give the book to him as soon as I see him.
+- `例 5`: I will get everything ready before you come back.
 
 上述从句中的动作 come 和 see 均是将在未来发生的，但要用一般现在时态表示将来。
 若从句中的动作含有"意愿"的意思，则从句中可用 will。
 
-- If you will give me a hand with these books, I'll appreciate it.
-- If they will not accept a check, we shall have to pay in cash, though it
-  would be much trouble for both sides.
+- `例 6`: If you will give me a hand with these books, I'll appreciate it.
+- `例 7`: If they will not accept a check, we shall have to pay in cash, though
+  it would be much trouble for both sides.
 
 #### 二、在谈到未来的计划和时间安排表的时候，表示将来的动作
 
-此时句中的动词往往是表示短暂动作的动词，如 go, come, leave, start 和 move 等。
+此时句中的动词往往是表示**短暂**动作的动词，如 go, come, leave, start 和 move 等。
 
-- The train starts at 2 o'clock.
-- We move next week.
-- They leave for Shanghai by train tomorrow evening.
+- `例 9`: The train starts at 2 o'clock.
+- `例 10`: We move next week.
+- `例 11`: They leave for Shanghai by train tomorrow evening.
 
 #### 三、在从句中表示将来的动作，此时主句往往用了一个将来时
 
-- I will reward the person who finds my lost kitten.
-- I will give the booklet to whoever asks for it.
+- `例 12`: I will reward the person who finds my lost kitten.
+- `例 13`: I will give the booklet to whoever asks for it.
 
 ### 7.2.6 用法五: 一般现在时表示过去发生的动作
 
@@ -1217,8 +1226,142 @@ prediction)。
 
 ### 7.4.6 一般现在时表示将来
 
->>>>> progress
+详见:
+[7.2.5 用法四: 一般现在时表示将来发生的动作](#725-用法四-一般现在时表示将来发生的动作)。
+
+- `例 2`:
+  - A: I begin to work at the Swan Laundry on Monday.
+    - 这里的一般现在时 begin 表示将来的动作，句中的 on Monday 是表示将来最近的一个周一。
+  - B: That's wonderful! But tell me, how do you wash a swan?
+- `例 3`:
+  - A: My daughter gets married at three o'clock in St. Mary's Church on
+    Saturday.
+    - 这里的一般现在时态 gets married 是表示将来的工作。
+  - B: How do you feet about it?
+  - A: Well, I'm losing a daughter but I am gaining a telephone!
+    - I'm losing ... am gaining ... 也是表示将来的动作。
+
+### 7.4.7 其他表示将来的句型结构
+
+#### 一、be to do
+
+1. 表示已安排好要在将来发生的事，是比较正式的用法
+
+    - `例 1`: They are to go on a strike on July 8th.
+    - `例 2`: She is to be married next month.
+
+2. 表示强烈的命令，相当于 must，should，如: 父母对孩子、上级对下级或法律条文中的规定等
+
+    - `例 4`: You are to finish your homework before you go to play.
+    - `例 5`: The form is to be filled out in ink and returned this week.
+    - `例 6`: These tablets are not to be taken orally.
+    - `例 7`: The parties involved are to sign the agreement.
+    - `例 8`: If it doesn't rain within the next few weeks, the crops will have
+      to be watered if they are to survive.
+    - `例 9`: If he is to succeed in his new profession, he must try harder.
+
+#### 二、be about to do
+
+这一结构用来表示(短时间内)即将发生的动作，意思是"正要，马上就要"。
+
+- `例 10`: The train is about to leave.
+- `例 11`: Jack is holding a fly swatter and staring at a fly on the kitchen
+  table. He is about to swat the fly.
+- `例 12`: Sally has her hand on the doorknob. She is about to open the door.
+
+#### 三、be on the point/verge/brink/eve of doing
+
+这一结构与 be about to do 的意思差不多，但其动作发生的时间比 be about to do 还要快一些。
+
+- `例 13`: He was on the point of killing himself when she stepped into his
+  room.
+- `例 14`: The child was on the verge of laughing, but he held back.
 
 ### 思维训练 7.4
 
 >>>>> progress
+
+## 7.5 补充: 一般过去将来时
+
+**一般过去将来时**的出发点是过去，由 "should/would + 动词原形" 构成。
+表示从**过去的某一时间**来看将来要发生的动作或存在的状态。
+过去将来时常用于宾语从句和间接引语中。
+
+### 7.5.1 基本用法
+
+- be going to
+  - 肯定句: 主语 + be (was, were) going to + 动词原形
+  - 否定句: 主语 + be (was, were) not going to + 动词原形
+  - 疑问句: be (was, were) + 主语 + going to + 动词原形
+- should/would
+  - 肯定句: 主语 + would/should + 动词原形
+  - 否定句: 主语 + would/should not + 动词原形
+  - 疑问句: would/should + 主语 + 动词原形
+
+- He asked me yesterday when I should leave for Paris.
+  - 昨天他问我什么时候动身去巴黎。
+- They wanted to know how they would finish the homework earlier.
+  - 他们想知道怎样才能早一点儿完成家庭作业。
+- I said on Thursday I should see my friend the next day.
+  - 我星期四说我将于第二天拜访我的朋友。
+
+### 7.5.2 一般过去将来时可用来表示非真实的动作或状态
+
+- If I had a chance to study abroad, I would study at University of Cambridge.
+
+### 7.5.3 其他表达法
+
+1. was/were going to + 动词原形:
+  
+    He said that he was going to live in the country when he retired.
+
+    他说他退休后要住在农村。
+
+2. was/were + 动词 `-ing` 形式:
+
+    Nobody knew whether the guests were coming.
+
+    没人知道客人们是否要来。
+
+3. was/were + 动词不定式:
+
+    She said she was to clean the classroom after school.
+
+    她说她放学后要打扫教室。
+
+### 7.5.4 注意事项
+
+1. "was/were going to + 动词原形" 或 "was/were + 动词不定式完成体"
+   可表示未能实现的**过去将来**时间的动作。
+
+    Last Sunday we were going to visit the Great Wall, but it rained.
+
+    上星期天我们本想去游览长城的，但却下雨了。
+
+2. "was/were about to do" 表示说话的瞬间就会发生的动作。
+
+    I felt something terrible was about to happen.
+
+    我觉得有可怕的事要发生了。
+
+3. "was/were on the point of doing"
+
+    I'm glad you have come. I was on the point of calling you, but you've saved
+    me the trouble now.
+
+    很高兴你来了。我正准备给你打电话，现在你省去我这个麻烦了。
+
+4. "be about to do" 和 "be on the point of doing"
+   结构一般**不**与表示将来的时间状语连用，但后面可以接 when 引导的分句。
+
+    I was about to start when it suddenly began to rain.
+
+    我正要动身天突然下雨了。
+
+5. 过去将来时常可用来表示过去习惯性的动作。此时，不管什么人称，一律用 would。
+
+    This door wouldn't open.
+
+    这扇门老是打不开。
+
+💡 **过去将来时**是由**过去时**和**将来时**组合而成的。
