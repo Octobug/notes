@@ -43,6 +43,8 @@ tests.
 
 ⚠️ A shared fixture which causes tests to interact will end up with
 intermittent test failures due to tests interacting through the shared fixture.
+A shared variable is allowed, but the shared variable should be initialized each
+time before it is used.
 
 ## Modifying the Fixture
 
