@@ -17,7 +17,16 @@ class ExtendableError extends Error {
     }
   }
 }
-// now I can extend
+
+// simplified version
+class NamedError extends Error {
+    constructor(message) {
+        super(message);
+        this.name = this.constructor.name;
+        this.message = message;
+        Error.captureStackTrace(this, this.constructor);
+    }
+}
 
 class MyError extends ExtendableError {}
 
