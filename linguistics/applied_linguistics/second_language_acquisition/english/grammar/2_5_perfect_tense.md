@@ -71,6 +71,11 @@
     - [5.10.1 在“过去”回顾“更远的过去”](#5101-在过去回顾更远的过去)
       - [思维训练 5.10.1](#思维训练-5101)
     - [5.10.2 延续事件、重复事件和单一事件的过去完成时](#5102-延续事件重复事件和单一事件的过去完成时)
+      - [一、过去完成时表示“延续事件”](#一过去完成时表示延续事件)
+      - [二、过去完成时表示“重复事件”](#二过去完成时表示重复事件)
+      - [三、过去完成时表示“单一事件”](#三过去完成时表示单一事件)
+    - [5.10.3 过去完成时的其他意义和用法](#5103-过去完成时的其他意义和用法)
+  - [5.11 将来完成时](#511-将来完成时)
 
 ## 5.1 完成时态的构成
 
@@ -1517,5 +1522,103 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
 答案: has fallen, hadn't stopped
 
 ### 5.10.2 延续事件、重复事件和单一事件的过去完成时
+
+过去完成时是站在"过去时间"的角度回顾更远的过去，即谈的是"过去的过去"。这里涉及两个时间点:
+一个事件从更远的过去开始发生，然后"延续"到另一个较近的过去，或者"重复"到另一个较近的过去，
+或者在过去的某一个时刻已经结束，这就分别构成了**延续事件**、**重复事件**和**单一事件**。
+具体来说，过去完成时是用来表示在过去的某一时刻之前就已开始的动作，这一动作:
+
+1. 在该过去时刻仍然在继续，或在该过去时刻刚刚停止 (延续事件)；
+2. 在该过去时刻之前的一段时间内重复的动作 (重复事件)；
+3. 在该过去时刻之前的某一时刻停止的动作 (单一事件)。
+
+#### 一、过去完成时表示“延续事件”
+
+如同现在完成时，
+**过去完成时可以表示开始于过去之前(即过去的过去)的动作或状态在过去这一时刻仍在持续**。
+具体来说，就是表示一个动作或状态在过去的某一时间之前已经开始，
+这一动作或状态一直持续到这一过去时间，并且到这一过去时间还未结束并仍有可能继续持续下去。
+
+```diagram
+      A----------->B...........>|  
+------|------------|------------|---->
+    stayed        moved
+```
+
+- `例 1`: I had stayed in America for two years when he moved here.
+- `例 2`: I had earned 1,000 words by the end of last year.
+- `例 3`: We had studied English for six years when we entered college.
+
+  这句如果改为谈一般情况，则需要说成:
+  
+  `例 4`: We have studied English for six years when we enter college.
+
+- `例 5`:
+  - A: It's already 10 o'clock. I guess Bob and Amy won't be coming to the
+    party.
+  - B: They called at nine to say that they'd been help up.
+
+也可以是上下文明确告知动作或状态持续到过去这一时刻即停止。
+
+```diagram
+      A----------->B            |  
+------|------------|------------|---->
+    waited        turned
+```
+
+- `例 8`: I had waited for her for two hours in such a severe winter when she
+  eventually turned up, which of course drove me mad.
+- `例 9`: He had served in the army for ten years; then he retired and married.
+  His children were now at school.
+- `例 10`: There had been fifty colleges in our city up till 1993.
+
+#### 二、过去完成时表示“重复事件”
+
+如同现在完成时，
+**过去完成时可以表示在过去之前开始的动作在过去之前的一段时间内重复发生**。
+
+```diagram
+      A   B   C   D   E   |  
+------|-------------------|------>
+```
+
+- `例 11`: She (Audrey Hepburn) had made a total of 31 high quality movies.
+  
+  奥黛丽赫本在这句话之前已经去世，拍电影的动作在过去已经停止，无法继续重复，所以用过去完成时。
+
+  He (Tom Cruise) has made hit after hit movies.
+
+  汤姆克鲁斯还在世，且依然在影视圈内，他拍电影这一活动可能一直重复下去，所以这里用现在完成时。
+
+- `例 13`: I had proposed to her five times, but she still refused to marry me.
+- `例 14`: I had written 100 letters when she finally promised to marry me.
+- `例 15`: Clint had written three letters by the time she arrived.
+
+#### 三、过去完成时表示“单一事件”
+
+如同现在完成时，
+**过去完成时可以表示开始于过去之前的动作到过去这一时刻之前即已停止**。
+具体来说，就是表示一个动作或状态在过去的某一时间之前已经开始，并在这一过去的时间之前即告结束，
+而没有持续到这一过去的时刻。这时过去完成时的动作通常是短暂动作。
+
+```diagram
+      A---->B  
+------|-----|-------------|------>
+    made  came
+```
+
+- `例 16`: She had made everything ready before I came.
+- `例 17`: Her baby had fallen asleep when she went into the room.
+  - fall 的动作在 went 之前已经完成，故用过去完成时。
+- `例 19`: I had just sat down in the recliner to watch TV when I heard a knock
+  on the door. When I opened the front door I saw a young man standing there
+  staring at me.
+  - sit 这个动作在 heard 之前已完成，故用过去完成时。
+
+### 5.10.3 过去完成时的其他意义和用法
+
+>>>>> progress
+
+## 5.11 将来完成时
 
 >>>>> progress
