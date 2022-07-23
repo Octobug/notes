@@ -341,7 +341,40 @@ things **that** they don't want, to impress people **that** they don't like.
 
 答案: The church where we were married was built in 1400.
 
->>>>> progress
+*16. She told me her address. I wrote it down on a piece of paper.*
+
+答案: She told me her address, which I wrote down on a piece of paper.
+
+*19. John isn't home yet. That worried me.*
+
+答案: John isn't home yet, which worried me.
+
+*20. Jack was fired from his job. That surprised all of his co-workers.*
+
+答案: Jack was fired from his job, which surprised all of his co-workers.
+
+*21. My roommate always plays music at the dorm. That really gets on my nerves.*
+
+答案: My roommate always plays music at the dorm, which really gets on my
+nerves.
+
+**二、请判断下列句子是否正确，错误的请改正。**
+
+*25. I gave the book to him that he needed it.*
+
+答案: 错误。改为: I gave the book to him that he needed.
+
+*29. The woman was nice that I met yesterday.*
+
+答案: 错误。改为: The woman that I met yesterday was nice. ⚠️ 存疑
+
+*31. Let ABC be a triangle which sides are of unequal length.*
+
+答案: Let ABC be a triangle whose sides are of unequal length.
+
+*35. The day, when began brightly, ended with a violent storm.*
+
+答案: The day, which began brightly, ended with a violent storm.
 
 ## 3.4 关系副词的用法
 
