@@ -75,6 +75,9 @@
       - [二、过去完成时表示“重复事件”](#二过去完成时表示重复事件)
       - [三、过去完成时表示“单一事件”](#三过去完成时表示单一事件)
     - [5.10.3 过去完成时的其他意义和用法](#5103-过去完成时的其他意义和用法)
+      - [一、表示“非真实”的过去](#一表示非真实的过去)
+      - [二、用于最高级句型](#二用于最高级句型)
+      - [5.10.4 过去完成时与一般过去时的比较](#5104-过去完成时与一般过去时的比较)
   - [5.11 将来完成时](#511-将来完成时)
 
 ## 5.1 完成时态的构成
@@ -1617,7 +1620,81 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
 
 ### 5.10.3 过去完成时的其他意义和用法
 
->>>>> progress
+#### 一、表示“非真实”的过去
+
+以下动词用于过去完成时的时候，可表示过去未能实现的计划、设想、意图或希望。
+
+- consider
+  - `例 7`:
+    - A: Are you glad you came to China?
+    - B: Yes. Indeed. I'd considered going to Tokyo or Singapore, but I've never
+      regretted my decision.
+- expect
+- hope
+  - `例 4`: She had hoped that he would come to date her, but he didn't show up.
+  - `例 5`: They had hoped to see you off at the airport, but they got there too
+    late.
+- intend
+  - `例 1`: I had intended to watch just one program, but somehow I couldn't
+    make myself switch off the TV.
+  - `例 2`: I had intended to see you, but I was busy.
+- mean
+- plan
+  - `例 3`: I had planned to go shopping with you, but my mother came to see me
+    just when I was about to go.
+- propose
+- suppose
+- think
+- want
+- wish
+
+#### 二、用于最高级句型
+
+这一点完全类似于 [5.8 完成时态用于最高级句型](#58-完成时态用于最高级句型) 中的用法，
+即用在 "It was + 序数词 (first, second...)" 或 "最高级 + 名词 + that 从句"
+句型中。
+
+`例 8`: It was the third time that someone had interrupted me that night.
+
+译: 那是那天晚上我第三次被打断。
+
+#### 5.10.4 过去完成时与一般过去时的比较
+
+1. 两个或两个以上相继发生的动作，用 and 或 but 按动作发生的先后顺序连接，
+    此时要用**一般过去时**。**过去完成时**则强调在过去的某一时刻"回顾"更早的动作。
+    具体来说，如果在谈论过去某一事件时，又想到在这之前已发生的某事，就要用过去完成时态。
+    - `例 1`: He opened the door and entered, but found nobody.
+    - `例 2`:
+      - He served in the army for ten years; then retired and married. His
+        children are now at school.
+        - 因为有 are 表示现在并作为参照时间，所以在此前的动作都用一般过去时。
+      - He had served in the army for ten years; then he retired and married.
+        His children were now at school.
+        - 因为有 were 表示过去并作为参照时间，所以回顾在此之前的动作是过去的过去，
+          因此用过去完成时。
+    - `例 4`: I heard voices and realized that there were several people in the
+      next room.
+    - `例 6`:
+      - ✅ I realized that we had met before.
+      - ❌ I realized that we met before.
+2. 在表示两个相继发生的动作时，用**过去完成时**可以表示一个动作完成以后，
+    另一个动作才开始发生，从而使得两个动作相互独立，彼此脱离开来。用**一般过去时**，
+    则可能表示***一个动作"导致"另一个动作的发生，或两个动作之间有因果关系***。
+    - `例 7`:
+      - ✅ When I had opened all the windows, I sat down and had a cup of tea.
+      - ❌ When I opened all the windows, I sat down and had a cup of tea.
+    - `例 8`: When I opened the window the cat jumped in.
+      - 比说 When I had opened ... 更自然。
+    - `例 9`:
+      - ✅ When I had written my letters I did some gardening.
+      - ❌ When I wrote my letters I did some gardening.
+    - `例 10`: When I wrote him a letter, he came at once.
+      - 我给他写了封信后，他立即就来了。
+    - `例 11`:
+      - When the singer had sung her song, she sat down.
+        - 这名歌手唱完歌以后，就坐下了。
+      - When the singer sang her song, she sat down.
+        - 可能给人造成这种印象: 这位歌手喜欢坐着唱歌。
 
 ## 5.11 将来完成时
 
