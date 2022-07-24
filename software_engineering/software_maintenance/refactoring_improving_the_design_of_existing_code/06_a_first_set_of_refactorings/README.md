@@ -8,8 +8,10 @@
     - [Example: Using Local Variables](#example-using-local-variables)
     - [Example: Reassigning a Local Variable](#example-reassigning-a-local-variable)
   - [Inline Function](#inline-function)
+    - [Motivation](#motivation-1)
+    - [Mechanics](#mechanics-1)
+    - [Example](#example)
   - [Extract Variable](#extract-variable)
-  - [Introduce Parameter Object](#introduce-parameter-object)
 
 ## Extract Function
 
@@ -110,8 +112,39 @@ first, with `Replace Temp with Query` and `Split Variable`.
 
 Inverse of: `Extract Function`
 
-## Extract Variable
+```js
+function getRating(driver) {
+  return moreThanFiveLateDeliveries(driver) ? 2 : 1;
+}
 
-## Introduce Parameter Object
+function moreThanFiveLateDeliveries(driver) {
+  return driver.numberOfLateDeliveries > 5;
+}
+
+function getRating(driver) {
+  return (driver.numberOfLateDeliveries > 5) ? 2 : 1;
+}
+```
+
+### Motivation
+
+Sometimes the body of the function is as clear as the name, and this needless
+indirection should be got rid of.
+
+### Mechanics
+
+- Check that this isn't a polymorphic method.
+  - If this is a method in a class, and has subclasses that override it, then
+    it can't be inlined.
+- Find all the callers of the function.
+- Replace each call with the function's body.
+- Test after each replacement.
+- Remove the function definition.
+
+### Example
+
+- [inline_function.js #version1, #version2, #version3, #version4](inline_function.js)
+
+## Extract Variable
 
 >>>>> progress
