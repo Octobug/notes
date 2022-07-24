@@ -5,11 +5,38 @@
     - [Motivation](#motivation)
     - [Mechanics](#mechanics)
     - [Example: No Variables Out of Scope](#example-no-variables-out-of-scope)
+    - [Example: Using Local Variables](#example-using-local-variables)
+    - [Example: Reassigning a Local Variable](#example-reassigning-a-local-variable)
+  - [Inline Function](#inline-function)
+  - [Extract Variable](#extract-variable)
+  - [Introduce Parameter Object](#introduce-parameter-object)
 
 ## Extract Function
 
-- inverse of: `Inline Function`
-- [extract_function.js](extract_function.js)
+Inverse of: `Inline Function`
+
+```js
+function printOwing(invoice) {
+  printBanner();
+  let outstanding = calculateOutstanding();
+
+  // print details
+  console.log(`name: ${invoice.customer}`);
+  console.log(`amount: ${outstanding}`);
+}
+
+// refactored:
+function printOwing(invoice) {
+  printBanner();
+  let outstanding = calculateOutstanding();
+  printDetails(outstanding);
+
+  function printDetails(outstanding) {
+    console.log(`name: ${invoice.customer}`);
+    console.log(`amount: ${outstanding}`);
+  }
+}
+```
 
 ### Motivation
 
@@ -47,5 +74,44 @@ extracted.
   function.
 
 ### Example: No Variables Out of Scope
+
+[extract_function.js #version1, #version2, #version3](extract_function.js)
+
+### Example: Using Local Variables
+
+The easiest case with local variables is when they are used but not assigned.
+In this case, just pass them in as parameters.
+
+[extract_function.js #version4, version5](extract_function.js)
+
+### Example: Reassigning a Local Variable
+
+> If I see an assignment to a parameter, I immediately use `Split Variable`,
+> which turns it into a temp.
+
+For temps that are assigned to, there are two cases:
+
+1. The variable is a temporary variable used only within the extracted code.
+2. The variable is used outside the extracted function. In this case, new value
+   needs to be returned.
+
+[extract_function.js #version6](extract_function.js)
+
+**What happens if more than one variable needs to be returned?**
+
+A function to return one value is preferred, so try to arrange for multiple
+functions for different values.
+
+If it really needs to extract with multiple values, just form a record and
+returned it. But usually it is better to rework **the temporary variables**
+first, with `Replace Temp with Query` and `Split Variable`.
+
+## Inline Function
+
+Inverse of: `Extract Function`
+
+## Extract Variable
+
+## Introduce Parameter Object
 
 >>>>> progress
