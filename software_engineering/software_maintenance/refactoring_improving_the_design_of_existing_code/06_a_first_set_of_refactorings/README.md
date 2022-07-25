@@ -12,6 +12,7 @@
     - [Mechanics](#mechanics-1)
     - [Example](#example)
   - [Extract Variable](#extract-variable)
+    - [Motivation](#motivation-2)
 
 ## Extract Function
 
@@ -146,5 +147,21 @@ indirection should be got rid of.
 - [inline_function.js #version1, #version2, #version3, #version4](inline_function.js)
 
 ## Extract Variable
+
+Inverse of: `Inline Variable`
+
+```js
+return order.quantity * order.itemPrice -
+  Math.max(0, order.quantity - 500) * order.itemPrice * 0.05 +
+  Math.min(order.quantity * order.itemPrice * 0.1, 100);
+
+
+const basePrice = order.quantity * order.itemPrice;
+const quantityDiscount = Max.max(0, order.quantity - 500) * order.itemPrice * 0.05;
+const shipping = Math.min(basePrice * 0.1, 100);
+return basePrice - quantityDiscount + shipping;
+```
+
+### Motivation
 
 >>>>> progress
