@@ -8,6 +8,9 @@
   - [3.2 数量限定词 (二): some/any](#32-数量限定词-二-someany)
     - [一、与名词的搭配关系 (some/any)](#一与名词的搭配关系-someany)
     - [二、特殊用法一: any 与单数名词搭配](#二特殊用法一-any-与单数名词搭配)
+    - [三、特殊用法二: some 与单数名词搭配](#三特殊用法二-some-与单数名词搭配)
+    - [四、特殊用法三: some 与数词连用](#四特殊用法三-some-与数词连用)
+  - [3.3 个体限定词 (一): each/every](#33-个体限定词-一-eachevery)
   - [3.5 个体限定词 (三) either/neither](#35-个体限定词-三-eitherneither)
   - [3.11 补充: 英语中的八种否定](#311-补充-英语中的八种否定)
 
@@ -75,6 +78,42 @@ some 一般用在**肯定句**中，而 any 一般用在**否定句**中。
 - `例 8`: Can I have some more wine?
 
 ### 二、特殊用法一: any 与单数名词搭配
+
+当 any 后面接单数名词时，它的意思是"无论哪一个，任何一个"，此时可用于任何类型的句子。
+
+- `例 9`: You can catch any bus. They all go to the railway station.
+- `例 10`: You can ask any person over there. They all can tell you.
+
+### 三、特殊用法二: some 与单数名词搭配
+
+some 可与**单数可数名词**连用，这时的 some 表示不确定的"某一个"的意思。
+
+- `例 11`: Of the many ways of getting to prison, Soapy thought the best was to
+  eat a big meal at **some good restaurant** and then tell the manager that he
+  doesn't have money to pay.
+- `例 12`: A mirage is an atmospheric optical illusion of some object.
+- `例 13`: Some person at the gate is asking to see you.
+
+📢 some 的这一特殊用法可表示强烈的感情色彩，它往往暗示缺乏兴趣，甚至是蔑视的态度。
+
+- `例 15`: I don't want to spend my life in some lonely little village.
+- `例 16`:
+  - A: Two buttons have been off my new jacket.
+  - B: Some bargain.
+- `例 17`:
+  - A: Mike promised he'd help on this rush job. But he never showed up.
+  - B: Some friend he is.
+
+### 四、特殊用法三: some 与数词连用
+
+在限定复数名词时，some 后面还可以先接一个数词，然后再接名词，此时 some 表示"大约"的意思。
+这一用法常常暗指这是一个给人以深刻印象的很大的数字。
+
+- `例 20`: **Some** 1,500 passengers and crew died aboard the Titanic when it
+  sank on April 14, 1912 after hitting an iceberg. It lies at a depth of
+  **some** 4,000 meters, **some** 640 kilometers south of Newfoundland, Canada.
+
+## 3.3 个体限定词 (一): each/every
 
 >>>>> progress
 
