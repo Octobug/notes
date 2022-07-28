@@ -13,6 +13,10 @@
   - [3.3 个体限定词 (一): each/every](#33-个体限定词-一-eachevery)
     - [一、与名词的搭配关系 (each/every)](#一与名词的搭配关系-eachevery)
     - [二、二者用法上的差异 (each/every)](#二二者用法上的差异-eachevery)
+    - [思维训练 3.3](#思维训练-33)
+  - [3.4 个体限定词 (二): another/other](#34-个体限定词-二-anotherother)
+    - [一、与名词的搭配关系 (another/other)](#一与名词的搭配关系-anotherother)
+    - [二、与数词的搭配关系 (another/other)](#二与数词的搭配关系-anotherother)
   - [3.5 个体限定词 (三) either/neither](#35-个体限定词-三-eitherneither)
   - [3.11 补充: 英语中的八种否定](#311-补充-英语中的八种否定)
 
@@ -153,9 +157,51 @@ each 和 every 后面都只能接**单数可数名词**，这也是称它们为*
     - `例 11`: I give the boys each a gift.
       - 用作代词，也可放个在间接宾语后面。
 2. 二者在意思上有两点区别
-    1. each 可以用来指**两个或两个以上**的事物
+    1. each 用来指**两个或两个以上**的事物，而 every 用来指**三个或三个以上的事物**。
+        - `例 12`: Each sex has its own physical and psychological
+          characteristics.
+        - `例 13`: There are a lot of trees on each side of the street.
+    2. 虽然 each 和 every 都可作为"每一个"来理解，但两者的意思并不完全一样。every
+      强调整体，相当于 all 的意思；而 each 则表示个别的概念，强调一个个不同的对象。
+        - `例 14`: We want **every** student to succeed in the exam.
+          - 用 every 强调整体，表示希望所有学生都通过考试。
+        - `例 15`: Each student has his own personal dream in his mind.
+          - 用 each 强调个体差别，因为每个人的梦想不一样。
+        - `例 16`: Different fields create various No.1s. Each profession
+          produces its own best.
+        - `例 17`: I want to welcome **each and every balloon enthusiast in
+          Philadelphia. Thank you for coming here this morning to commemorate
+          the first balloon voyage in the United States.**
+          - 由于 each 和 every 强调的重点不一样，所以可以将两者并列起来使用，说成
+            each and every，既强调个体差别，又强调整体。
+    3. 与数词的搭配关系
+        - 一般来说，each 不与数词连用，而 every 可与数词连用，然后再加复数名词。
+          - `例 18`: every two days
+            - every other day
+            - 每两天/每隔一天
+          - `例 19`: every four years
+            - 每四年/每隔三年
+          - `例 20`: In the United States, presidential elections are held once
+            every four years.
+        - 还可以用 "every + 序数词 + 单数名词" 这个结构来表示同样的意思。
+          - `例 21`: every fourth year
+            - 每四年/每隔三年
+
+### 思维训练 3.3
+
+**用 each 或 every 填空。**
+
+*2. Please write your suggestions ____ other line.*
+
+答案: every
+
+## 3.4 个体限定词 (二): another/other
+
+### 一、与名词的搭配关系 (another/other)
 
 >>>>> progress
+
+### 二、与数词的搭配关系 (another/other)
 
 ## 3.5 个体限定词 (三) either/neither
 
