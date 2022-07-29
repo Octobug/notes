@@ -136,7 +136,7 @@ each 和 every 后面都只能接**单数可数名词**，这也是称它们为*
 
 ### 二、二者用法上的差异 (each/every)
 
-1. 二者在词性上的差别:
+1. **二者在词性上的差别**:
     - each 不仅可以用作**限定词**，也可用作**代词**，因此可以单独使用；
     - every 只能用作**限定词**，因此只能与名词连用。
     - `例 4`:
@@ -158,7 +158,7 @@ each 和 every 后面都只能接**单数可数名词**，这也是称它们为*
       - 用作代词，也可放在句末。(但我感觉更像是状语: 每个人地...)
     - `例 11`: I give the boys each a gift.
       - 用作代词，也可放个在间接宾语后面。
-2. 二者在意思上有两点区别
+2. **二者在意思上有两点区别**:
     1. each 用来指**两个或两个以上**的事物，而 every 用来指**三个或三个以上的事物**。
         - `例 12`: Each sex has its own physical and psychological
           characteristics.
@@ -270,7 +270,52 @@ more 则要说成 a few more。
 
 ### 三、other 本身的其他用法
 
->>>>> progress
+1. **other 之前可以有其他限定词修饰**
+
+    常见的置于 other 前面的限定词包括:
+
+    - any
+      - `例 18`: Have you got any other colors?
+    - enough
+      - `例 14`: You can have everything in life you want if you'll just help
+        enough other people to get what they want!
+    - every
+      - `例 16`: every other day = every two days
+    - his/my/their
+    - many
+      - `例 19`: I have many other books for you to read.
+    - no
+      - `例 17`: no other tools
+    - one/two/three...
+    - some
+      - `例 15`: Can you give me some other reference books?
+
+    other 和名词之间不能加其他限定词，如:
+
+    - ❌ other many books
+    - ❌ other three books
+    - ❌ other some books
+
+2. **other/others**
+    - 词尾不带 `-s` 的 other 只能作限定词来用，其后面必须接名词，而不能单独使用。
+      - ❌ other are ...
+    - others 只能用作代词，后面不能再接名词，而只能单独使用。
+      - ❌ others people are ...
+
+3. **other/the other**
+    - "other + 名词"表示不确定的"其他的，另外的"。
+    - "the other + 名词"则表示特定范围内的"剩下其余的"。
+      - the other 和名词之间可以加其他限定词
+      - the other four balls
+    - `例 22`:
+      - Of all metals, only mercury is liquid and **the other** metals are
+        solid.
+        - 句首的 of all metals 提供了范围，所有要用 the other 来限定其他 metals。
+      - Of all metals, only mercury is liquid and **the others** are solid.
+      - Some metals are magnetic and **other** metals are not.
+        - 只是泛泛而谈一个话题，没有限定 metals 的范围，所以使用 other。
+        - "some ... other" 是常用搭配。
+      - Some metals are magnetic and **others** are not.
 
 ## 3.5 个体限定词 (三) either/neither
 
