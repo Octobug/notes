@@ -841,6 +841,8 @@ The rich are becoming richer.
 3. 零复数和规则复数均可，零复数往往是把动物当成整体来看，而规则复数则是表示不同个体或种类
    - antelope/antelopes (羚羊)
    - fish/fishes (鱼)
+     - 表示鱼的个体数量为复数时使用 fish
+     - 表示鱼的种类数量为复数时使用 fishes
      - We caught only a few fish. 我们只抓了几条鱼。
      - the fishes of the Mediterranean 地中海的鱼
    - flounder/flounders (比目鱼)
