@@ -24,8 +24,8 @@
 - [ ] 4. 形容词
 - [x] [5. 动词分类 (一): 实义动词与 (情态) 助动词](1_5_content_verbs_and_modal_auxiliary_verbs.md)
 - [x] [6. 动词分类 (二): 英语的五种基本句型](1_6_five_basic_sentence_patterns.md)
-- [ ] [7. 英文时态 (一): 一般时态](1_7_tenses_the_simple_tense.md)
-- [ ] 8. 英文时态 (二): 进行时态
+- [x] [7. 英文时态 (一): 一般时态](1_7_tenses_the_simple_tense.md)
+- [ ] [8. 英文时态 (二): 进行时态](1_8_tenses_the_continuous_tense.md)
 
 ### 中级教程：通悟语法
 

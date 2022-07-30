@@ -77,6 +77,8 @@
     - [7.5.2 一般过去将来时可用来表示非真实的动作或状态](#752-一般过去将来时可用来表示非真实的动作或状态)
     - [7.5.3 其他表达法](#753-其他表达法)
     - [7.5.4 注意事项](#754-注意事项)
+  - [一般时态总结](#一般时态总结)
+  - [综合训练: 英文时态 (一): 一般时态](#综合训练-英文时态-一-一般时态)
 
 英语谓语的核心是**助动词**和**实义动词**。
 
@@ -1279,7 +1281,30 @@ prediction)。
 
 ### 思维训练 7.4
 
->>>>> progress
+**二、阅读下面的幽默对话，并判断其中黑体部分的谓语时态的含义。**
+
+*15.*
+
+- *A: Waiter, there's only one piece of meat on my plate.*
+- *B: Just wait a minute, sir, and I'**ll** cut it in two.*
+
+答案: will 表示当机立断的决定。
+
+**三、用适当的将来时形态填空。**
+
+*36.*
+
+- *John: Would you call a taxi to take me to the airport, Joe?*
+- *Joe: Call a taxi? I ____ (take) you myself. What time is your flight?*
+- *John: 8 o'clock this evening.*
+- *Joe: OK, we ____ (leave) at about 6 o'clock.*
+- *Later that day, Ann offers to take John to the airport.*
+- *Ann: Do you want me to take you to the airport, John?*
+- *John: No, thanks. Joe ____ (take) me there.*
+
+答案: 'll take, 'll leave, is going to take
+
+**四、用 will 或 ge doing to 的适当形式完成下列对话。**
 
 ## 7.5 补充: 一般过去将来时
 
@@ -1365,3 +1390,79 @@ prediction)。
     这扇门老是打不开。
 
 💡 **过去将来时**是由**过去时**和**将来时**组合而成的。
+
+## 一般时态总结
+
+一般时态只有"时"的变化，没有"体"的变化，是"零"体态动作，
+所以这几个时态之间没有共同的"体态"特征，因而各自用法比较独立，联系不大。
+因此，没必要对这几个一般时态进行横向比较。
+
+## 综合训练: 英文时态 (一): 一般时态
+
+**一、用适当的时态形式填空。**
+
+*2.*
+
+- *A: Do you know if George is coming to the meeting?*
+- *B: Oh, no. I ____ (be) supposed to tell you that he is sick and can't come.*
+
+答案: was
+
+*9. I ____ (jog) every morning for the past two years.*
+
+答案: have been jogging
+
+*10.*
+
+- *A: Have you devided what to do during the summer break?*
+- *B: Oh yes. Everything is planned. I ____ (take) a holiday for a few weeks and
+  then I ____ (take) a grammar course in New Oriental School.*
+
+答案: am going to take, am going to take
+
+*11.*
+
+- *A: Do you want to go shopping with me? I ____ (go) to the shopping mall
+  downtown.*
+- *B: Sure. What time do you want to leave?*
+
+答案: am going
+
+**二、把下列中文句子译成英文。**
+
+*18. 我就知道你能得到这份工作。恭喜了！*
+
+答案: I knew you would get the job. Congratulations!
+
+*19. 我就知道你会考得很好。干得漂亮！*
+
+答案: I knew you would ace your test. Well done!
+
+*20. 那是个星期天，而我在星期天是从不早起的，有时还会在床上一直躺到吃午饭时间。
+上个星期天我就起得很晚。*
+
+答案: It was Sunday. I never get up early on Sundays. I sometimes stay in bed
+until lunch time. Last Sunday I got up very late.
+
+*21.*
+
+- *A: 我本来打算下学期上日语课 —— but now it's been cut.*
+- *B: I hear the university's going to double the tuition, too.*
+
+答案: I was going to tale a Japenese lesson next semester.
+
+*22.*
+
+- *A: 我以为萨姆病了。*
+- *B: 我也是。But he seems to have recovered very quickly. He certainly doesn't
+  seem to be sick now.*
+
+答案:
+
+- A: I thought Sam was sick.
+- B: I thought so.
+
+*23. 我弟弟每天上网，他要花大量的时间浏览许多不同的网站。*
+
+答案: My brother surfs the Internet every day. He spends a lot of time looking
+at many different websites.
