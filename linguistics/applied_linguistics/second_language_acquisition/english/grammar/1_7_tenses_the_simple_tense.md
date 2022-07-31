@@ -1323,6 +1323,8 @@ prediction)。
   - 否定句: 主语 + would/should not + 动词原形
   - 疑问句: would/should + 主语 + 动词原形
 
+例:
+
 - He asked me yesterday when I should leave for Paris.
   - 昨天他问我什么时候动身去巴黎。
 - They wanted to know how they would finish the homework earlier.
