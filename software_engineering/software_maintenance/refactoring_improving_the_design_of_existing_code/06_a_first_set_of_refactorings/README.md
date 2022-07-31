@@ -13,6 +13,22 @@
     - [Example](#example)
   - [Extract Variable](#extract-variable)
     - [Motivation](#motivation-2)
+    - [Mechanics](#mechanics-2)
+    - [Example](#example-1)
+    - [Example: With a Class](#example-with-a-class)
+  - [Inline Variable](#inline-variable)
+    - [Motivation](#motivation-3)
+    - [Mechanics](#mechanics-3)
+  - [Change Function Declaration](#change-function-declaration)
+    - [Motivation](#motivation-4)
+    - [Mechanics](#mechanics-4)
+      - [Simple Mechanics](#simple-mechanics)
+      - [Migration Mechanics](#migration-mechanics)
+    - [Example: Renaming a Function (Simple Mechanics)](#example-renaming-a-function-simple-mechanics)
+    - [Example: Renaming a Function (Migration Mechanics)](#example-renaming-a-function-migration-mechanics)
+    - [Example: Adding a Parameter](#example-adding-a-parameter)
+    - [Example: Changing a Parameter to One of Its Properties](#example-changing-a-parameter-to-one-of-its-properties)
+  - [Encapsulate Variable](#encapsulate-variable)
 
 ## Extract Function
 
@@ -122,6 +138,7 @@ function moreThanFiveLateDeliveries(driver) {
   return driver.numberOfLateDeliveries > 5;
 }
 
+// refactored:
 function getRating(driver) {
   return (driver.numberOfLateDeliveries > 5) ? 2 : 1;
 }
@@ -144,7 +161,7 @@ indirection should be got rid of.
 
 ### Example
 
-- [inline_function.js #version1, #version2, #version3, #version4](inline_function.js)
+[inline_function.js #version1, #version2, #version3, #version4](inline_function.js)
 
 ## Extract Variable
 
@@ -155,7 +172,7 @@ return order.quantity * order.itemPrice -
   Math.max(0, order.quantity - 500) * order.itemPrice * 0.05 +
   Math.min(order.quantity * order.itemPrice * 0.1, 100);
 
-
+// refactored:
 const basePrice = order.quantity * order.itemPrice;
 const quantityDiscount = Max.max(0, order.quantity - 500) * order.itemPrice * 0.05;
 const shipping = Math.min(basePrice * 0.1, 100);
@@ -163,5 +180,113 @@ return basePrice - quantityDiscount + shipping;
 ```
 
 ### Motivation
+
+Expressions can become very complex and hard to read. In such situations, local
+variable may help break the expression down into something more manageable.
+
+### Mechanics
+
+- Ensure that the expression you want to extract does not have side effects.
+- Declare an immutable variable. Set it to a copy of the expression you want to
+  name.
+- Replace the original expression with the new variable.
+- Test.
+
+### Example
+
+[extract_variable.js #version1, #version2](extract_variable.js)
+
+### Example: With a Class
+
+[extract_variable.js #version3, #version4](extract_variable.js)
+
+## Inline Variable
+
+Inverse of: `Extract Variable`
+
+```js
+let basePrice = anOrder.basePrice;
+return (basePrice > 1000);
+
+// refactored:
+return anOrder.basePrice > 1000;
+```
+
+### Motivation
+
+Sometimes the name of a variable doesn't really communicate more than the
+expression itself.
+
+### Mechanics
+
+- Check that the right-hand side of the assignment is free of side effects.
+- If the variable isn't already declared immutable, do so and test.
+- Find the first reference to the variable and replace it with the right-hand
+  side of the assignment.
+- Test.
+- Repeat replacing references to the variable until you've replaced all of them.
+- Remove the declaration and assignment of the variable.
+- Test.
+
+## Change Function Declaration
+
+```js
+function circum(radius) {...}
+
+// refactored:
+function circumference(radius) {...}
+```
+
+### Motivation
+
+Bad functions make it harder to figure out what the software does and how to
+modify it as needs change.
+
+The most important element is the name of the function. A good name allows us
+to understand what the function does.
+
+The parameters of a function dictate how a function fits in with the rest of its
+world.
+
+### Mechanics
+
+#### Simple Mechanics
+
+- If you're removing a parameter, ensure it isn't referenced in the body of the
+  function.
+- Change the method declaration to the disired declaration.
+- Find all references to the old method declaration, update them to the new one.
+- Test.
+
+#### Migration Mechanics
+
+- If necessary, refactor the body of the function to make it easy to do the
+  following extraction step.
+- Use `Extract Function` on the function body to create the new function.
+- If the extracted function needs additional parameters, use the simple
+  mechanics to add them.
+- Test.
+- Apply `Inline Function` to the old function.
+- If you used a temporary name, use `Change Function Declaration` again to
+  restore it to the original name.
+- Test.
+
+### Example: Renaming a Function (Simple Mechanics)
+
+[change_function_declaration.js #version1, #version2](change_function_declaration.js)
+
+### Example: Renaming a Function (Migration Mechanics)
+
+[change_function_declaration.js #version3, #version4](change_function_declaration.js)
+
+### Example: Adding a Parameter
+
+[change_function_declaration.js #version5, #version6, #version7, #version8](change_function_declaration.js)
+
+### Example: Changing a Parameter to One of Its Properties
+
+[change_function_declaration.js #version9, #version10, #version11, #version12](change_function_declaration.js)
+
+## Encapsulate Variable
 
 >>>>> progress
