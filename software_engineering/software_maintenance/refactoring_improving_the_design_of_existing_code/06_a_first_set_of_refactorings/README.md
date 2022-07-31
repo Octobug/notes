@@ -29,6 +29,8 @@
     - [Example: Adding a Parameter](#example-adding-a-parameter)
     - [Example: Changing a Parameter to One of Its Properties](#example-changing-a-parameter-to-one-of-its-properties)
   - [Encapsulate Variable](#encapsulate-variable)
+    - [Motivation](#motivation-5)
+    - [Mechanics](#mechanics-5)
 
 ## Extract Function
 
@@ -288,5 +290,40 @@ world.
 [change_function_declaration.js #version9, #version10, #version11, #version12](change_function_declaration.js)
 
 ## Encapsulate Variable
+
+```js
+let defaultOwner = { firstName: 'Martin', lastName: 'Fowler' };
+
+// refactored:
+let defaultOwnerData = { firstName: 'Martin', lastName: 'Fowler' };
+export function defaultOwner() { return defaultOwnerData; }
+export function setDefaultOwner(arg) { defaultOwnerData = arg; }
+```
+
+### Motivation
+
+If we move data around, we have to change all the references to the data in a
+single cycle to keep the code working.
+
+So if we want to move widely accessed data, often the best approach is to first
+encapsulate it by routing all its access through functions.
+
+That way, we turn the difficult task of reorganizing data into the simpler task
+of reorganizing functions.
+
+Encapsulating data provides a clear point to monitor changes and use of the
+data; We can easily add validation or consequential logic on the updates.
+The greater the scope of the data, the more important it is to encapsulate.
+
+Whenever the legacy code needs to be changed or added a new reference to such a
+variable, we should take the opportunity to encapsulate it. That way we prevent
+the increase of coupling to commonly used data.
+
+This priciple is why the object-oriented approach puts so much emphasis on
+keeping an object's data peivate.
+
+Keeping data encapsulated is much less important for immutable data.
+
+### Mechanics
 
 >>>>> progress
