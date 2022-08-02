@@ -31,6 +31,10 @@
   - [Encapsulate Variable](#encapsulate-variable)
     - [Motivation](#motivation-5)
     - [Mechanics](#mechanics-5)
+    - [Example](#example-2)
+      - [Encapsulating the Value](#encapsulating-the-value)
+  - [Rename Variable](#rename-variable)
+    - [Motivation](#motivation-6)
 
 ## Extract Function
 
@@ -319,11 +323,38 @@ Whenever the legacy code needs to be changed or added a new reference to such a
 variable, we should take the opportunity to encapsulate it. That way we prevent
 the increase of coupling to commonly used data.
 
-This priciple is why the object-oriented approach puts so much emphasis on
+This principle is why the object-oriented approach puts so much emphasis on
 keeping an object's data peivate.
 
 Keeping data encapsulated is much less important for immutable data.
 
 ### Mechanics
+
+- Create encapsulating functions to access and update the variable.
+- Run static checks
+- For each reference to the variable, replace with a call to the appropriate
+  encapsulating function. Test after each replacement.
+- Restrict the visibility of the variable.
+- Test
+- If the value of the variable is a record, consider `Encapsulate Record`.
+
+### Example
+
+[encapsulate_variable.js #version1, #version2, #version3, #version4](encapsulate_variable.js)
+
+#### Encapsulating the Value
+
+[encapsulate_variable.js #version5, #version6, #version7](encapsulate_variable.js)
+
+## Rename Variable
+
+```js
+let a = height * width;
+
+// refactored:
+let area = height * width;
+```
+
+### Motivation
 
 >>>>> progress
