@@ -35,6 +35,10 @@
       - [Encapsulating the Value](#encapsulating-the-value)
   - [Rename Variable](#rename-variable)
     - [Motivation](#motivation-6)
+    - [Mechanics](#mechanics-6)
+    - [Example](#example-3)
+      - [Renaming a Constant](#renaming-a-constant)
+  - [Introduce Parameter Object](#introduce-parameter-object)
 
 ## Extract Function
 
@@ -356,5 +360,36 @@ let area = height * width;
 ```
 
 ### Motivation
+
+The importance of a name depends on how widely it's used. Persistent fields
+that last beyond a single function invocation require more careful naming.
+
+### Mechanics
+
+- If the variable is used widely, consider `Encapsulate Variable`.
+- Find all reference to the variable, and change every one.
+  - If there are references from another code base, the variable is a published
+    variable, and you cannot do this refactoring.
+  - If the variable does not change, you can copy it to one with the new name,
+    then change gradually, testing after each change.
+- Test.
+
+### Example
+
+[rename_variable.js #version1, #version2](rename_variable.js)
+
+💡 If the variable is used widely enough that it should be encapsulted it in
+order to change its name, it's worth keeping it encapsulated behind functions
+for the future, rather than inlining the wrapping functions.
+
+#### Renaming a Constant
+
+[rename_variable.js #version3, #version4](rename_variable.js)
+
+When renaming a constant, the rename can be done gradually by copying.
+With the copy, its references can be gradually changed from the old name to the
+new name.
+
+## Introduce Parameter Object
 
 >>>>> progress
