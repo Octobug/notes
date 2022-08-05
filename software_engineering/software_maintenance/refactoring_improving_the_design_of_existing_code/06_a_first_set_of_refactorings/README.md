@@ -39,6 +39,11 @@
     - [Example](#example-3)
       - [Renaming a Constant](#renaming-a-constant)
   - [Introduce Parameter Object](#introduce-parameter-object)
+    - [Motivation](#motivation-7)
+    - [Mechanics](#mechanics-7)
+    - [Example](#example-4)
+  - [Combine Functions into Class](#combine-functions-into-class)
+    - [Motivation](#motivation-8)
 
 ## Extract Function
 
@@ -391,5 +396,59 @@ With the copy, its references can be gradually changed from the old name to the
 new name.
 
 ## Introduce Parameter Object
+
+```js
+function amountInvoiced(startDate, endDate) {...}
+function amountReceived(startDate, endDate) {...}
+function amountOverdue(startDate, endDate) {...}
+
+// refactored:
+function amountInvoiced(aDateRange) {...}
+function amountReceived(aDateRange) {...}
+function amountOverdue(aDateRange) {...}
+```
+
+### Motivation
+
+- Grouping data into a structure is valueable because it makes explicit the
+  relationship between the data items.
+- It reduces the size of parameter lists for any function that uses the new
+  structure.
+- It helps consistency since all functions that use the structure will use the
+  same names to get at its elements.
+
+### Mechanics
+
+- If there isn't a suitable structure already, create one (a class is
+  preferred).
+- Test.
+- Use `Change Function Declaration` to add a parameter for the new structure.
+- Test.
+- Adjust each caller to pass in the correct instance of the new structure. Test
+  after each one.
+- For each element of the new structure, replace the use of the original
+  parameter with the element of the structure. Remove the parameter.
+- Test.
+
+### Example
+
+[introduce_parameter_object.js #version1, #version2, #version3, ##version4](introduce_parameter_object.js)
+
+## Combine Functions into Class
+
+```js
+function base(aReading) {...}
+function texableCharge(aReading) {...}
+function calculateBaseCharge(aReading) {...}
+
+// refactored:
+class Reading {
+  base() {...}
+  texableCharge() {...}
+  calculateBaseCharge() {...}
+}
+```
+
+### Motivation
 
 >>>>> progress
