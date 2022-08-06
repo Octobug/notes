@@ -44,6 +44,16 @@
     - [Example](#example-4)
   - [Combine Functions into Class](#combine-functions-into-class)
     - [Motivation](#motivation-8)
+    - [Mechanics](#mechanics-8)
+    - [Example](#example-5)
+  - [Combine Functions into Transform](#combine-functions-into-transform)
+    - [Motivation](#motivation-9)
+    - [Mechanics](#mechanics-9)
+    - [Example](#example-6)
+  - [Split Phase](#split-phase)
+    - [Motivation](#motivation-10)
+    - [Mechanics](#mechanics-10)
+    - [Example](#example-7)
 
 ## Extract Function
 
@@ -451,4 +461,116 @@ class Reading {
 
 ### Motivation
 
->>>>> progress
+When we see a group of functions that operate closely together on a common body
+of data (usually passed as arguments to the function call), we have an
+opportunity to form a class. Using a class makes the common environment that
+these functions share more explicit, allows me to simplify function calls
+inside the object by removing many of the arguments, and provides a reference
+to pass such an object to other parts of the system.
+
+One significant advantage of using a class is that it allows clients to mutate
+the core data of the object, and the derivations remain consistent.
+
+Usually a class is preferred to a nested function, as it can be difficult to
+test functions nested with another.
+
+### Mechanics
+
+- Apply `Encapsulate Record` to the common data record that the functions share.
+- Take each function that uses the common record and use `Move Function` to move
+  it into new class.
+- Each bit of logic that manipulates the data can be extracted with
+  `Extract Function` and then moved into the new class.
+
+### Example
+
+[combine_functions_into_class.js #version1, #version2, #version3](combine_functions_into_class.js)
+
+## Combine Functions into Transform
+
+```js
+function base(aReading) {...}
+function texableCharge(aReading) {...}
+
+// refactored:
+function enrichReading(argReading) {
+  const aReading = _.cloneDeep(argReading);
+  aReading.baseCharge = base(aReading);
+  aReading.texableCharge = texableCharge(aReading);
+  return aReading;
+}
+```
+
+### Motivation
+
+Value derivations are preferred to be brought together, so we have a consistent
+place to find and update them and avoid any duplicate logic.
+
+One way to do this is to use a data transformation function that takes the
+source data as input and calculates all the derivations.
+
+An alternative to Combine Functions into Transform is
+`Combine Functions into Class` that moves the logic into methods on a class
+formed from the source data. Using a class is much better if the source data
+gets updated within the code.
+
+### Mechanics
+
+- Create a transformation function that takes the record to be transformed and
+  returnrs the same values.
+- Pick some logic and move its body into the transform to create a new field in
+  the record. Change the client code to access the new field.
+- Test.
+- Repeat for the other relevant functions.
+
+### Example
+
+[combine_functions_into_transform.js #version1, #version2, #version3, #version4](combine_functions_into_transform.js)
+
+## Split Phase
+
+```js
+const orderData = orderString.split(/\s+/);
+const productPrice = priceList(orderData[0].split('-')[1]);
+const orderPrice = parseInt(orderData[1] * productPrice);
+
+// refactored:
+const orderData = parseOrder(order);
+const orderPrice = price(orderRecord, priceList);
+
+function parseOrder(aString) {
+  const values = aString.split(/\s+/);
+  return ({
+    productID: values[0].split('-')[1],
+    quantity: parseInt(values[1]),
+  });
+}
+
+function price(order, priceList) {
+  return order.quantity * priceList[order.productID];
+}
+```
+
+### Motivation
+
+Code that is dealing with two different things is better be split into separate
+modules.
+
+The best clue is when different stages of the fragment use different sets of
+data and functions.
+
+### Mechanics
+
+- Extract the second phase code intto its own function.
+- Test.
+- Introduce an intermediate data structure as an additional argument to the
+  extracted function.
+- Test.
+- Examine each parameter of the extracted second phase. If it is used by first
+  phase, move it to the intermediate data structure. Test after each move.
+- Apply `Extract Function` on the first-phase code, returning the intermediate
+  data structure.
+
+### Example
+
+[split_phase.js #version1, #version2, #version3, #version4, #version5](split_phase.js)
