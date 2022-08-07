@@ -24,6 +24,21 @@
     - [3.3.4 that 可以指代“人”，也可以指代“物”](#334-that-可以指代人也可以指代物)
     - [思维训练 3.3](#思维训练-33)
   - [3.4 关系副词的用法](#34-关系副词的用法)
+    - [3.4.1 when 的用法](#341-when-的用法)
+      - [一、先行词指时间](#一先行词指时间)
+      - [二、关系副词 when 在从句中作时间状语](#二关系副词-when-在从句中作时间状语)
+    - [3.4.2 where 的用法](#342-where-的用法)
+      - [一、where 的先行词指地点](#一where-的先行词指地点)
+      - [二、关系副词 where 在从句中作地点状语](#二关系副词-where-在从句中作地点状语)
+    - [3.4.3 why 的用法](#343-why-的用法)
+    - [思维训练 3.4](#思维训练-34)
+  - [3.5 限制性与非限制性定语从句](#35-限制性与非限制性定语从句)
+    - [3.5.1 限制性定语从句——不用逗号隔开](#351-限制性定语从句不用逗号隔开)
+    - [3.5.2 非限制性定语从句——用逗号隔开](#352-非限制性定语从句用逗号隔开)
+      - [一、专有名词](#一专有名词)
+      - [二、类指名词](#二类指名词)
+    - [3.5.3 用或不用逗号，句意有差别](#353-用或不用逗号句意有差别)
+  - [3.6 定语从句与同位语从句的区分](#36-定语从句与同位语从句的区分)
 
 定语从句的两个重要概念: **先行词**和**关系词**。
 
@@ -377,5 +392,160 @@ nerves.
 答案: The day, which began brightly, ended with a violent storm.
 
 ## 3.4 关系副词的用法
+
+### 3.4.1 when 的用法
+
+#### 一、先行词指时间
+
+when 可以引导**限制性**和**非限制性**定语从句，其先行词必须是表示时间的名词，如 day, year
+或 time 等。
+
+- `例 1`: I'll never forget the day when I met you.
+- `例 2`: The day when we stop learning is the day when we die.
+- `例 3`: My favorite season is spring, when the earth seems born again.
+  - 非限制性定语从句
+- `例 4`: We will put off the outing until next week, when we won't be so busy.
+  - 非限制性定语从句
+- `例 5`: March 10, 1876 was the day when the first complete sentence was sent
+  over a telephone.
+- `例 6`: The day may soon come when we don't bother to go to office but just
+  work **at home**.
+
+#### 二、关系副词 when 在从句中作时间状语
+
+若定语从句不是缺少状语，而是**缺少主语或宾语，那么即使先行词是表示时间的名词，也不能用 when
+而要用 which 或 that 来引导定语从句**。因为用 when 来引导定语从句的前提条件是: when
+必须在其引导的定语从句中作**时间状语**。
+
+- `例 7`:
+  - I'll never forget the time **which** I spent on campus.
+    - 关系词在从句中充当**宾语**
+  - I'll never forget the day **when** we first met in the park.
+    - 关系词在从句中充当**状语**
+- `例 8`: The day, which began brightly, ended with a violent storm.
+  - 关系词在非限制性从句中充当**主语**
+
+### 3.4.2 where 的用法
+
+#### 一、where 的先行词指地点
+
+where 引导定语从句，其先行词一般是表示地点的名词，如 place 和 house 等。
+
+- `例 1`:
+  - A: Since you work in the theater, can't you get me a free ticket now and
+    then?
+  - B: Certainly if you bring me a few notes now and then from the bank where
+    you work!
+- `例 2`: Do you know any place where I can buy Mr. Zhang's grammar book?
+- `例 3`: This is the town where I spent my childhood.
+
+#### 二、关系副词 where 在从句中作地点状语
+
+与 where 类似，并非先行词是表示地点的名词时，都得由 where 来引导定语从句，
+这得看关系词在句中充当的成分。
+**若定语从句缺主语或宾语，则要用 which 或 that 引导定语从句**。
+
+- `例 4`:
+  - This is the town where I spent my childhood.
+    - 关系词在从句中作状语
+  - This is the town which I told you about before.
+    - 关系词在从句中作宾语
+- `例 5`:
+  - The library where students often study was on fire last night.
+    - 关系词在从句中作状语
+  - The library, which was built in the 1930's, needs to be renovated.
+    - 关系词在从句中作主语
+- `例 6`: I've never been to Beijing, but it's the place ____.
+  - A. where I'd like to visit
+  - B. in which I'd like to visit
+  - C. I most want to visit
+  - D. that I want to visit it most
+  - 答案: C. (that/which) I most want to visit
+
+### 3.4.3 why 的用法
+
+why 用来表示原因，只引导**限制性**定语从句，先行词是 reason 等表示原因的名词。
+
+This is the reason why I didn't come here.
+
+### 思维训练 3.4
+
+**一、请将下列每一组中的两个简单句合并为一个定语从句，用第二个句子作定语。**
+
+*2. He arrived in Shanghai that day. On the same day I left.*
+
+答案: He arrived in Shanghai on the day when I left.
+
+*5. The city was beautiful. We spent our vacationn there.*
+
+答案: The city where we spent our vacation was beautiful.
+
+*8. This is the house. They put their tools in it.*
+
+答案: This is the house where they put their tools.
+
+## 3.5 限制性与非限制性定语从句
+
+二者在形式上的区别:
+
+- 在**限制性**定语从句中，先行词和关系词之间不用逗号隔开；
+- 在**非限制性**定语从句中，先行词和关系词之间需要逗号隔开。
+
+### 3.5.1 限制性定语从句——不用逗号隔开
+
+**限制性**定语从句是用来对一个名词提供**必要**的信息 (a defining relative clause
+defines or gives essential information about a noun)，
+以说明定语从句所修饰的先行词的**身份或性质**，或用来限制先行词**所指的范围**。
+若去掉限制性定语从句，则主句部分含义不明确，或意义不完整，所以不能用逗号来分隔先行词和定语从句。
+
+比如 "I don't like people." 这句话意思不明确，people 需要加上限定性的修饰语。
+
+- `例 1`: I don't like people *who are never on time*.
+- `例 2`: I don't like people *who never keep their word*.
+- `例 3`: There are two factors *which determine an individual's intelligence*.
+- `例 4`: He is a man *who is of value to the people*.
+
+### 3.5.2 非限制性定语从句——用逗号隔开
+
+非限制性定语从句用来提供**附加的而非必要**的信息，只是对先行词做进一步的解释、补充或说明
+(a non-defining relative clause gives optional information about a noun)。
+若是去掉此定语从句，整个主句的意义一样很明确，不会引起误解和歧义。
+一般来讲，先行词为**专有名词**和**类指名词**的句子，其后都宜用非限制性定语从句。
+
+#### 一、专有名词
+
+定语从句修饰一个专有名词，一般要用逗号分隔先行词与定语从句，也就是使用非限制性定语从句。
+这是因为专有名词本身的意思已经很完整，不需要限制，用定语从句只是对它进行补充说明。
+
+- `例 1`: My mother, who is 50 this year, lives with me now.
+  - mother 是专有名词，这里 my mother 意义明确，who is 50 this year
+    只能作为非限制性定语从句来修饰它。如果说成
+    "My mother who is 50 this year lives with me now."，
+    则言外之意是"我有好几个母亲，目前和我住在一起的是今年 50 岁的那位母亲。"
+- `例 4`: Beijing, which is the capital of China, has developed into an
+  international city.
+- `例 5`: Einstein, who was a great Jewish scientist, created the theory of
+  relativity.
+- `例 6`: Hawaii, which consists of eight principal islands, is a favorite
+  vacation spot.
+
+#### 二、类指名词
+
+普通名词若是用来表示**类指**，即表示的是一类事物，而非具体的某一个事物，此时，
+其后也宜用非限制性定语从句。
+
+`例 7`:
+
+- An elephant, which is the earth's largest land mammal, has few natural enemies
+  other than human beings.
+  - 这里 elephant 是类指或泛指，表示"大象"这类动物，而不是具体的某一头大象。
+- One of the elephants which we saw at the zoo had only one tusk.
+  - 这里的 elephant 是具体指代某一头大象。
+
+### 3.5.3 用或不用逗号，句意有差别
+
+>>>>> progress
+
+## 3.6 定语从句与同位语从句的区分
 
 >>>>> progress
