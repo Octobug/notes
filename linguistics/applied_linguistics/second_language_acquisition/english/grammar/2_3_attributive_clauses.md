@@ -38,6 +38,8 @@
       - [一、专有名词](#一专有名词)
       - [二、类指名词](#二类指名词)
     - [3.5.3 用或不用逗号，句意有差别](#353-用或不用逗号句意有差别)
+    - [3.5.4 非限制性定语从句的翻译](#354-非限制性定语从句的翻译)
+    - [思维训练 3.5](#思维训练-35)
   - [3.6 定语从句与同位语从句的区分](#36-定语从句与同位语从句的区分)
 
 定语从句的两个重要概念: **先行词**和**关系词**。
@@ -544,7 +546,84 @@ defines or gives essential information about a noun)，
 
 ### 3.5.3 用或不用逗号，句意有差别
 
->>>>> progress
+还有一类句子，用限制性或非限制性定语从句都可以，但强调的意义不一样。
+
+- `例 1`:
+  - He has a daughter who works in a hospital.
+    - 他有一个在医院工作的女儿。(有多个女儿)
+  - He has a daughter, who works in a hospital.
+    - 他有个女儿，是在医院工作的。
+- `例 2`:
+  - The food which wasn't in the fridge all went off.
+    - 定语从句是用于限定 food 的范围
+    - 没有放在冰箱里的那些食物坏了。(部分食物坏了)
+  - The food, which wasn't in the fridge, all went off.
+    - 定语从句是用于补充说明 food 坏的原因
+    - 食物都坏了，因为没有放在冰箱里。
+- `例 3`:
+  - The cab drivers who knew about the traffic jam took another road.
+    - 知道那里堵车的出租车司机换了另一条路。
+  - The cab drivers, who knew about the traffic jam, took another road.
+    - 出租车司机知道那里堵车了，他们都换了另一条路。
+
+### 3.5.4 非限制性定语从句的翻译
+
+- `例 1`: The food, which wasn't in the fridge, all went off.
+  - 食物都坏了，因为没有放在冰箱里。(译成**原因状语**从句)
+- `例 2`: The Ambassador gave a dinner to the scientists, with whom he
+  especially wished to talk.
+  - 大使宴请了那些科学家，因为他特别想与他们交谈一下。(译成**原因状语**从句)
+- `例 3`: The people were desperate for work, any work, which could support
+  their family.
+  - 人们急于找到工作，什么工作都行，只要能养家糊口。(译成**条件状语**从句)
+- `例 4`: The millionaire had another house built, which he didn't need at all.
+  - 那位百万富翁又建了一幢房子，尽管他并不需要。(译成**让步状语**从句)
+- `例 5`: They tried to stamp out the revolt, which spread all the more
+  furiously throughout the country.
+  - 起义依然声势浩大地遍布全国，尽管他们试图镇压。(译成**让步状语**从句)
+- `例 6`: Both players, neither of whom reached the final, played well.
+  - 尽管两名选手都未进入决赛，但都表现得很好。(译成**让步状语**从句)
+- `例 7`: We know that a cat, whose eyes can take in many more rays of light
+  than our eyes, can see clearly in the night.
+  - 我们知道，因为猫的眼睛能够比人的眼睛吸收更多的光线，所以猫在黑夜里也能够看得很清楚。
+    (译成**原因状语**从句)
+
+### 思维训练 3.5
+
+**二、请分析下面句中所含定语从句分别属于本节所述 3 种情形中的哪一种，必要时请添加逗号。**
+
+*13. The teacher who comes from Canada teaches us English.*
+
+答案: the teacher 为特指，所以应该添加逗号，改为非限制性定从句:
+
+The teacher, who comes from Canada, teaches us English.
+
+*15. I saw him stand under the apple tree which was behind the house.*
+
+答案: 限制性或非限制性均可。
+
+- 限制性定语从句: 表明屋子周围有多棵树。
+- I saw him stand under the apple tree, which was behind the house.
+  - 非限制性定语从句: 表明屋子周围只有一棵树，the apple tree 为特指。
+
+*19. One of the elephants which we saw at the zoo had only one tusk.*
+
+答案: 保留限制性定语从句。One of the elephants had only one tusk.
+去掉定语从句后无法确定是哪些大象。
+
+*20. The rice which we had for dinner last night was very good.*
+
+答案: 保留限制性定语从句。The rice was very good. 去掉定语从句后无法确定是哪些米饭。
+
+*22. Jane was delighted when she opened the present which was from her
+ex-boyfriend.*
+
+答案: 限制性或非限制性均可。
+
+- 限制性定语从句: 表明 Jane 收到了多份礼物。
+- Jane was delighted when she opened the present, which was from her
+  ex-boyfriend.
+  - 非限制性定语从句，表明 Jane 只收到一份礼物。
 
 ## 3.6 定语从句与同位语从句的区分
 
