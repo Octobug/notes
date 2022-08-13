@@ -11,6 +11,9 @@
     - [Mechanics](#mechanics-1)
     - [Example](#example-1)
   - [Replace Primitive with Object](#replace-primitive-with-object)
+    - [Motivation](#motivation-2)
+    - [Mechanics](#mechanics-2)
+    - [Example](#example-2)
 
 The most important criteria to be used in decomposing modules is to identiify
 secrets that modules should hide from the rest of the system. Data structures
@@ -116,5 +119,36 @@ source data will be visible in the proxy but not in a copy.
 [encapsulate_collection.js #version1, #version2](encapsulate_collection.js)
 
 ## Replace Primitive with Object
+
+```js
+orders.filter(o => 'high' === o.priority
+  || 'rush' === o.priority);
+
+// refactored:
+orders.filter(o => o.priority.higherThan(new Priority('normal')));
+```
+
+### Motivation
+
+It is a good way to create a new class for some bits of data when you want to
+do something other than simple printing.
+
+### Mechanics
+
+- Apply `Encapsulate Variable` if it isn't already.
+- Create a simple value class for the data value. It should take the existing
+  value in its constructor and provide a getter for that value.
+- Run sttic checks.
+- Change the setter to create a new instance of the value class and store that
+  in the field, changing the type of the field if present.
+- Change the getter to return the result of invoking the getter of the new
+  class.
+- Test.
+- Consider using `Rename Function` on the original accessors to better reflect
+  what they do.
+- Consider clarifying the role of the new object as a value or reference object
+  by applying `Change Reference to Value` or `Change Value to Reference`.
+
+### Example
 
 >>>>> progress
