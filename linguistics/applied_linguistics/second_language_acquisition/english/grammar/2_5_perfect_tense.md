@@ -79,6 +79,14 @@
       - [二、用于最高级句型](#二用于最高级句型)
       - [5.10.4 过去完成时与一般过去时的比较](#5104-过去完成时与一般过去时的比较)
   - [5.11 将来完成时](#511-将来完成时)
+    - [5.11.1 将来完成动作的开始时间](#5111-将来完成动作的开始时间)
+    - [5.11.2 将来完成时的三种思维用法](#5112-将来完成时的三种思维用法)
+      - [一、延续事件](#一延续事件)
+  - [5.12 补充: 过去将来完成时](#512-补充-过去将来完成时)
+    - [5.12.1 形式](#5121-形式)
+    - [5.12.2 用法](#5122-用法)
+      - [一、表示在过去将来某一时间以前发生的动作，并往往会对过去将来某一时间产生影响。](#一表示在过去将来某一时间以前发生的动作并往往会对过去将来某一时间产生影响)
+      - [二、常用在虚拟语气中，表示与过去的事实相反。](#二常用在虚拟语气中表示与过去的事实相反)
 
 ## 5.1 完成时态的构成
 
@@ -1698,4 +1706,61 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
 
 ## 5.11 将来完成时
 
+### 5.11.1 将来完成动作的开始时间
+
+将来完成时是以"将来"作为"坐标时间"，来表示开始于**将来之前**
+(可能是**过去**、**现在**或**将来**)的动作持续到将来。
+
+这里说动作开始于"将来之前"，意味着动作开始的时间可能是过去的某一时刻、可能是现在的某一时刻，
+或者也可能是将来的某一时刻。但动作开始的时间并不重要，
+关键是说话人要站在**将来的某一时间**来谈某一动作的完成情况。例如:
+
+We will have taken five exams by next Friday.
+
+- 到下个星期五之前，我们将完成五门考试。
+
+对于这句话可以有多种情形:
+
+- 可能是昨天开始考试的: We started our exam yesterday and we will have taken five
+  exams by next Friday.
+- 可能是今天开始考试的: We have started our exam today and we will have taken five
+  exams by next Friday.
+- 可能是明天才开始考试: We will start our exam tomorrow and we will have taken five
+  exams by next Friday.
+
+### 5.11.2 将来完成时的三种思维用法
+
+#### 一、延续事件
+
+表示在将来某一时刻之前开始的动作，一直延续到该时刻，并可能继续延续下去。
+
 >>>>> progress
+
+## 5.12 补充: 过去将来完成时
+
+过去将来完成时常用于虚拟语气，表示对已经发生的事情进行虚拟假设后得出的某种推论或结果。
+
+### 5.12.1 形式
+
+should/would have done sth.
+
+### 5.12.2 用法
+
+#### 一、表示在过去将来某一时间以前发生的动作，并往往会对过去将来某一时间产生影响。
+
+- `例 1`: I thought you'd have left by this time.
+  - 我想这会儿你已经走了。
+- `例 2`: He told them he would have finished it by 8 o'clock.
+  - 他告诉他们他会在8点以前干完。
+- `例 3`: I guessed that Helen would have told her something.
+  - 我猜海伦会告诉她一些情况的。
+- `例 4`: I believed by the end of that year an advanced version of that
+  software would have been developed, but I was wrong.
+  - 我坚信到那年年底为止，那个软件的新版本将被开发出来。但是我错了。
+
+#### 二、常用在虚拟语气中，表示与过去的事实相反。
+
+- `例 5`: For Oliver, being honest would have been a better play.
+  - 对奥利弗来说，诚实才是更好的选择。
+- `例 6`: Catherine would have become a pianist if she had not been injured in
+  the accident.
