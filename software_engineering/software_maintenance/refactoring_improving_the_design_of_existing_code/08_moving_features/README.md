@@ -5,6 +5,7 @@
     - [Motivation](#motivation)
     - [Mechanics](#mechanics)
     - [Example: Moving a Nested Function to Top Level](#example-moving-a-nested-function-to-top-level)
+    - [Example: Moving between Classes](#example-moving-between-classes)
 
 ## Move Function
 
@@ -46,5 +47,9 @@ of the software to be less dependent on the details of this module.
 - Consider `Inline Function` on the source function.
 
 ### Example: Moving a Nested Function to Top Level
+
+[moving_a_nested_function_to_top_level.js](moving_a_nested_function_to_top_level.js)
+
+### Example: Moving between Classes
 
 >>>>> progress
