@@ -902,7 +902,9 @@ be going to 是一个现在时态的形式，它所表示的对将来行为的�
   - A: Look at the time. I'm going to miss my bus.
   - B: Don't worry. I'll drive you to the stop. And if the bus has already
     left, I can get you to your apartment.
-- `例 5`: The traffic is terrible. We **are going to** be late.
+- `例 5`: The traffic is terrible. We **are going to** be late. By the time we
+  get to the airport, Bob's plane will already have arrived, and he'll be
+  wondering where we are.
 
 `例 9`:
 

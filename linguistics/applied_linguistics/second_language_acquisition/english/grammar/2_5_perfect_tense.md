@@ -77,16 +77,19 @@
     - [5.10.3 过去完成时的其他意义和用法](#5103-过去完成时的其他意义和用法)
       - [一、表示“非真实”的过去](#一表示非真实的过去)
       - [二、用于最高级句型](#二用于最高级句型)
-      - [5.10.4 过去完成时与一般过去时的比较](#5104-过去完成时与一般过去时的比较)
+    - [5.10.4 过去完成时与一般过去时的比较](#5104-过去完成时与一般过去时的比较)
   - [5.11 将来完成时](#511-将来完成时)
     - [5.11.1 将来完成动作的开始时间](#5111-将来完成动作的开始时间)
     - [5.11.2 将来完成时的三种思维用法](#5112-将来完成时的三种思维用法)
       - [一、延续事件](#一延续事件)
+      - [二、重复事件](#二重复事件)
+      - [三、单一事件](#三单一事件)
   - [5.12 补充: 过去将来完成时](#512-补充-过去将来完成时)
     - [5.12.1 形式](#5121-形式)
     - [5.12.2 用法](#5122-用法)
       - [一、表示在过去将来某一时间以前发生的动作，并往往会对过去将来某一时间产生影响。](#一表示在过去将来某一时间以前发生的动作并往往会对过去将来某一时间产生影响)
       - [二、常用在虚拟语气中，表示与过去的事实相反。](#二常用在虚拟语气中表示与过去的事实相反)
+  - [综合训练: 5. 完成时态](#综合训练-5-完成时态)
 
 ## 5.1 完成时态的构成
 
@@ -1666,7 +1669,7 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
 
 译: 那是那天晚上我第三次被打断。
 
-#### 5.10.4 过去完成时与一般过去时的比较
+### 5.10.4 过去完成时与一般过去时的比较
 
 1. 两个或两个以上相继发生的动作，用 and 或 but 按动作发生的先后顺序连接，
     此时要用**一般过去时**。**过去完成时**则强调在过去的某一时刻"回顾"更早的动作。
@@ -1734,7 +1737,45 @@ We will have taken five exams by next Friday.
 
 表示在将来某一时刻之前开始的动作，一直延续到该时刻，并可能继续延续下去。
 
->>>>> progress
+- `例 1`: I will have taught English in New Oriental School for five years by
+  the end of next month.
+  - 到下个月底之前，我在新东方学校教英语的时间将满五年。
+- `例 2`: I will have learned 8,000 words by the end of next year.
+  - 到明年年底之前，我将学会 8,000 个单词。
+- `例 3`: I will have waited for her for two hours when she arrives at 2 o'clock
+  this afternoon.
+  - 她今天下午两点钟到达的时候，我等她的时间将达到两个小时。
+- `例 4`: The old man will have worked in this factory for 50 years when he
+  retires next month.
+  - 那个老人到下个月退休，届时他在这家工厂的工龄将满 50 年。
+
+#### 二、重复事件
+
+表示在将来的某一时刻之前开始的动作，并在该时刻之前的一段时间内重复发生。
+
+`例 5`: By five o'clock this afternoon the spaceship will have traveled eleven
+times round the world.
+
+- 到今天下午五点钟之前，这艘宇宙飞船就将绕地球飞行 11 次了。
+
+#### 三、单一事件
+
+表示在将来的某一时刻之前开始的动作，到该时刻之前已经完成。
+
+- `例 6`: We will have finished our exam by the end of next week.
+  - 到下个周末为止，我们将完成考试。
+- `例 7`: By the year 2050, scientists probably will have discovered a cure for
+  cancer.
+  - 到 2050 年时，科学家可能会找到治愈癌症的方法。
+- `例 8`: I will graduate in July. I will see you in September. By the time I
+  see you, I will have graduated.
+  - 我将于 7 月份毕业，与 9 月份与你见面，到我见到你的时候，我就已经毕业了。
+- `例 9`: I will have finished my homework by the time I go out on a date
+  tonight.
+  - 到我今晚出去赴约的时候，我就已经做完作业了。
+- `例 10`: The construction company will have completed the stadium by the end
+  of next July, when the Olympic Games is to be held here.
+  - 这家建筑公司将于明年 7 月底之前把体育场建成，奥运会将在该场馆举行。
 
 ## 5.12 补充: 过去将来完成时
 
@@ -1764,3 +1805,161 @@ should/would have done sth.
   - 对奥利弗来说，诚实才是更好的选择。
 - `例 6`: Catherine would have become a pianist if she had not been injured in
   the accident.
+
+## 综合训练: 5. 完成时态
+
+**一、请用适当的时态填空。**
+
+*5. I felt very tired when I got home, so I ____ (go) straight to bed.*
+
+答案: went
+
+*7. Sorry I'm late. The car ____ (break) down on my way here.*
+
+答案: broke。
+
+详解比较:
+
+> <https://forum.wordreference.com/threads/im-sorry-im-late-my-car-broke-down-has-broken-down-on-my-way-here.3523598/>
+
+- Sorry I'm late. The car broke down on my way here.
+  - "On my way here" acts as a specific time reference (The car broke down
+    earlier this morning).
+- Sorry I'm late. The car has broken down.
+  - It's an ongoing situation. You are probably still on the road, phoning in
+    to the office to explain why you haven't arrived yet.
+
+*8. We ____ (drive) along the road when we saw a car that ____ (break) down, so
+we stoppped to see if we could help.*
+
+答案: were driving, had broken
+
+*9. Yesterday I had a phone call from Clint. I was very suprised. I ____ (write)
+to him many times but he ____ (never, reply) to my letters.*
+
+答案: had written, had never replied
+
+*13. Last Spring I went to France. It was the first time that I ____ (be)
+there.*
+
+答案: had been
+
+*14. This is the only novel that he ____ (write).*
+
+答案: has written
+
+*15. This is the first time that I ____ (take) the flight.*
+
+答案: have taken
+
+*17. I hope you ____ (read) all the material before you make the final
+decision.*
+
+答案: will have read
+
+*20. I ____ (lose) my key, so I couldn't get into my house. But now I ____
+(find) it.*
+
+答案: lost, have found
+
+*22. It's reported that by the end of this month the output of cement in the
+dactory ____ (rise) by about 10%.*
+
+答案: will have risen
+
+*23.*
+
+- *A: May I speak to your manager Mr. Williams at eight tonight?*
+- *B: I am sorry. Mr. Williams ____ (go) to a conference long before then.*
+
+答案: will have gone
+
+*24.*
+
+- *A: I ____ (think) this shirt ____ (be) a great deal but I washed it once and
+  it ____ (shrink) so much that I can't wear it.*
+- *B: Some bargain. You should ask for a refund.*
+
+答案: thought, was, has shrunk
+
+*25.*
+
+- *A: Look! It ____ (snow).*
+- *B: It's wonderful! This is the first time I ____ (see) snow. It ____ (snow,
+  not) in my hometown.*
+
+答案: is snowing, have ever seen, doesn't snow
+
+*28.*
+
+- *A: ____ you ____ (see) this postcard from Ron? He's in Florida.*
+- *B: Oh, so he ____ (be) able to get time off.*
+
+答案: Have, seen, was
+
+*29.*
+
+- *A: I wish I hadn't hurt Mary's feelings like that. You know I never ____
+  (mean) to.*
+- *B: The great thing about Mary is that she ____ (not, hold) the grudge. By
+  tomorrow she ____ (forget) all about it.*
+
+答案: meant, doesn't hold, will have forgotten
+
+*30.*
+
+- *A: Look at the time. I'm going to miss my bus.*
+- *B: Don't worry. I ____ (drive) you to the stop. And if the bus ____
+  (already, leave), I can get you to your apartment.*
+
+答案: will drive, has already left
+
+**二、请判断下面各句的时态使用是否正确，错误的请改正。**
+
+*31. I have entered the university for two years.*
+
+答案: 错误。改为:
+
+I have been in the university for two years. 或
+I entered the university two years ago.
+
+*32. He has come here for three hours.*
+
+答案: 错误。改为:
+
+He has been here for three hours.
+
+*33. The old lady has died for ten years.*
+
+答案: 错误。改为:
+
+The old lady has been dead for ten years.
+
+*34. He has left his native place for three years.*
+
+答案: 错误。改为:
+
+He has been away from his native place for three years.
+
+*35. I have married for one year.*
+
+答案: 错误。改为:
+
+I have been married for one year.
+
+*36. He has joined in the army for five years.*
+
+答案: 错误。改为:
+
+He has been in the army for five years.
+
+*37. I have come to Beijing for seven years.*
+
+答案: 错误。改为:
+
+I have been in Beijing for seven years.
+
+**三、根据场景提示，请用括号中动词的正确形式完成句子，在合适的地方填入 just, already, yet,
+before 等。**
+
+>>>>> progress
