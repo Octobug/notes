@@ -45,9 +45,13 @@
 - [2. 名词从句](#2-名词从句)
 - [5. 完成时态](#5-完成时态)
 
+## [高级教程：驾驭语法](#英语语法新思维-高级教程驾驭语法)
+
 <div class="page"/>
 
 # 英语语法新思维 初级教程：走近语法
+
+![1](../presentation/images/new_thought_on_grammar_1.png)
 
 <div class="page"/>
 
@@ -77,6 +81,8 @@
 
 # 英语语法新思维 中级教程：通悟语法
 
+![2](../presentation/images/new_thought_on_grammar_2.png)
+
 <div class="page"/>
 
 :[1. 简单句与复合句](2_1_simple_and_complex_sentences.md)
@@ -88,3 +94,9 @@
 <div class="page"/>
 
 :[5. 完成时态](2_5_perfect_tense.md)
+
+<div class="page"/>
+
+# 英语语法新思维 高级教程：驾驭语法
+
+![3](../presentation/images/new_thought_on_grammar_3.png)
