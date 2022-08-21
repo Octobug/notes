@@ -33,8 +33,8 @@
 - [x] [2. 名词从句](2_2_nominal_clauses.md)
 - [ ] [3. 定语从句](2_3_attributive_clauses.md)
 - [ ] 4. 状语从句
-- [ ] [5. 完成时态](2_5_perfect_tense.md)
-- [ ] 6. 完成进行时态
+- [x] [5. 完成时态](2_5_perfect_tense.md)
+- [ ] [6. 完成进行时态](2_6_perfect_continuous_tense.md)
 - [ ] 7. 虚拟语气
 - [ ] 8. 情态动词
 

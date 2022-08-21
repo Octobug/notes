@@ -1962,4 +1962,113 @@ I have been in Beijing for seven years.
 **三、根据场景提示，请用括号中动词的正确形式完成句子，在合适的地方填入 just, already, yet,
 before 等。**
 
->>>>> progress
+*40. After lunch you fo to see a friend at her house. She says "Would you like
+something to ear?" You say: No, thank you. ____. (have lunch)*
+
+答案: I've already had lunch.
+
+**四、请阅读下面的笑话，说出其中完成时态属于哪一种思维和用法。**
+
+*44.*
+
+- *Mary: How long have you been married?*
+- *Lisa: This time -- or altogether?*
+
+答: 完成时态表示延续事件。
+
+*45. A Perfect Record.*
+
+- *Teacher: Young man, you haven't handed in one homework assignment since we
+  started this class. Won't you please do tonight's assignment?*
+- *George: What? And ruin a perfect record?*
+
+答: 单一事件否定，相当于一个延续事件。
+
+**五、请把下列各句中的中文翻译成英文。**
+
+*48. 我来美国到现在有三个月了，交到了很多好朋友。但是他们都是男生，我希望我能认识些女生。*
+
+答案: I've been in America for three months now. I've made many good friends,
+but all of them are boys. I wish I could get to know some girls.
+
+*49. 你是不是一直在减肥 (on a diet) 呀？看你现在皮包骨 (skin and bones) 的样子！*
+
+答案: Have you been on a diet? You're nothing but skin and bones.
+
+*50. 中国历来就一直反对任何形式的恐怖主义 (terrorism)。*
+
+答案: China has always opposed terrorism in any form.
+
+*51. 这几天晚上他一直睡在地板上。*
+
+答案: For the past few nights he has slept on the floor.
+
+*52.*
+
+- *A: 我想我以前没见你穿过那件羊毛衫。It's great!*
+- *B: You think so? 这是我奶奶前几年为我做的。But this is the first time I dare to
+  wear it in public.*
+
+答案:
+
+- A: I don't think I've ever seen you in that sweater before.
+- B: My grandmother made it for me years ago.
+
+*53.*
+
+- *A: 我还以为你打算读 this book by today.*
+- *B: Oh, but 我已经读过了。*
+
+答案:
+
+- A: I thought you were going to read this book by today.
+- B: Oh, but I have.
+
+*54.*
+
+- *A: Are you glad you came to China?*
+- *B: Yes. Indeed. 我本来是要考虑去 Tokyo or Singapore, but 我从不后悔我的决定。*
+
+答案:
+
+- B: I had considered going to Tokyo or Singapore, but I've never regretted my
+  decision.
+
+*55.*
+
+- *A: 我们篮球队到目前为止赢得了每一场比赛。*
+- *B: Isn't that because of the new coach?*
+
+答案: Our basketball team has won every game so far.
+
+*56. 我不知道该如何解这道数学题，我试过的每一个方法 just leads to a dead end.*
+
+答案: I don't know how to solve this math problem. Every method that I've tried
+just leads to a dead end.
+
+*57.*
+
+- *A: I'm really not interested in seeing that film.*
+- *B: 可是它赢得了那么多的奖项啊。*
+
+答案:
+
+- B: But it has won so many awards.
+
+*58.*
+
+- *A: Denis told us he likes to play cards.*
+- *B: 可是我们邀请过他三次，他一次也不来。*
+
+答案:
+
+- B: But we have invited him three times and he hasn't come once.
+
+*59.*
+
+- *A: Did you tell Carl that the concert starts at eight?*
+- *B: 我试过好几次，但电话一直占线。*
+
+答案:
+
+- I've tried several times, but the line has been busy.
