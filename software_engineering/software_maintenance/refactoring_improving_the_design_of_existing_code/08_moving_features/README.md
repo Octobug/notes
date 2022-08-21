@@ -6,6 +6,12 @@
     - [Mechanics](#mechanics)
     - [Example: Moving a Nested Function to Top Level](#example-moving-a-nested-function-to-top-level)
     - [Example: Moving between Classes](#example-moving-between-classes)
+  - [Move Field](#move-field)
+    - [Motivation](#motivation-1)
+    - [Mechanics](#mechanics-1)
+    - [Example](#example)
+      - [Changing a Bare Record](#changing-a-bare-record)
+    - [Example: Moving to a Shared Object](#example-moving-to-a-shared-object)
 
 ## Move Function
 
@@ -51,5 +57,51 @@ of the software to be less dependent on the details of this module.
 [moving_a_nested_function_to_top_level.js](moving_a_nested_function_to_top_level.js)
 
 ### Example: Moving between Classes
+
+[moving_between_classes.js](moving_between_classes.js)
+
+## Move Field
+
+```js
+class Customer {
+  get plan() { return this._plan; }
+  get discountRate() { return this._discountRate; }
+}
+
+// refactored:
+class Customer {
+  get plan() { return this._plan; }
+  get discountRate() { return this.plan.discountRate; }
+}
+```
+
+### Motivation
+
+Poor data structures lead to lots of code whose job is merely dealing with the
+poor data. The messy code is harder to understand and the data structures
+obscure what the program is doing.
+
+### Mechanics
+
+- Ensure the source field is encapsulated.
+- Test.
+- Create a field (and accessors) in the target.
+- Run static checks.
+- Ensure there is a reference from the source object to the target object.
+- Adjust accessors to use the target field.
+- Test.
+- Remove the source field.
+- Test.
+
+### Example
+
+[move_field.js](move_field.js)
+
+#### Changing a Bare Record
+
+If possible, the first move is better to use `Encapsulate Record` to turn the
+record into a class so it could be changed more easily.
+
+### Example: Moving to a Shared Object
 
 >>>>> progress
