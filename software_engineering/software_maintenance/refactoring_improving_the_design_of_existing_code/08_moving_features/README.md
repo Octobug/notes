@@ -12,6 +12,10 @@
     - [Example](#example)
       - [Changing a Bare Record](#changing-a-bare-record)
     - [Example: Moving to a Shared Object](#example-moving-to-a-shared-object)
+  - [Move Statements into Function](#move-statements-into-function)
+    - [Motivation](#motivation-2)
+    - [Mechanics](#mechanics-2)
+    - [Example](#example-1)
 
 ## Move Function
 
@@ -103,5 +107,60 @@ If possible, the first move is better to use `Encapsulate Record` to turn the
 record into a class so it could be changed more easily.
 
 ### Example: Moving to a Shared Object
+
+[moving_to_a_shared_object.js](moving_to_a_shared_object.js)
+
+## Move Statements into Function
+
+```js
+result.push(`<p>title: ${person.photo.title}</p>`);
+result.concat(photoData(person.photo));
+
+function photoData(aPhoto) {
+  return [
+    `<p>location: ${aPhoto.location}</p>`,
+    `<p>date: ${aPhoto.date.toDateString()}</p>`,
+  ];
+}
+
+// refactored:
+result.concat(photoData(person.photo));
+
+function photoData(aPhoto) {
+  return [
+    `<p>title: ${aPhoto.title}</p>`,
+    `<p>location: ${aPhoto.location}</p>`,
+    `<p>date: ${aPhoto.date.toDateString()}</p>`,
+  ];
+}
+```
+
+### Motivation
+
+If some code executed every time when a particular function is called, that
+repeating code should be combined into the function itself.
+
+If these code don't make sense as part of the called function, but still should
+be called with it, then use `Extract Function` on the statements and the called
+function.
+
+### Mechanics
+
+- If the repetitive code isn't adjacent to the call of the target function, use
+  `Slide Statements` to get it adjacent.
+- If the target function is only called by the source function, just cut the
+  code from the source, paste it into the target, test, and ignore the rest of
+  these mechanics.
+- If you have more callers, use `Extract Function` on one of the call sites to
+  extract both the call to the target function and the statements you wish to
+  move into it. Give it a name that's transient, but easy to grep.
+- Convert every other call to use the new function. Test after each conversion.
+- When all the original calls use the new function, use `Inline Function` to
+  inline the original function completely into the new function, removing the
+  original funciton.
+- `Rename Funciton` to change the name of the new function to the same name as
+  the original function.
+
+### Example
 
 >>>>> progress
