@@ -16,6 +16,7 @@
     - [Motivation](#motivation-2)
     - [Mechanics](#mechanics-2)
     - [Example](#example-1)
+  - [Move Statements to Callers](#move-statements-to-callers)
 
 ## Move Function
 
@@ -162,5 +163,9 @@ function.
   the original function.
 
 ### Example
+
+[move_statements_into_function.js](move_statements_into_function.js)
+
+## Move Statements to Callers
 
 >>>>> progress
