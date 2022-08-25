@@ -17,6 +17,28 @@
     - [Mechanics](#mechanics-2)
     - [Example](#example-1)
   - [Move Statements to Callers](#move-statements-to-callers)
+    - [Motivation](#motivation-3)
+    - [Mechanics](#mechanics-3)
+    - [Example](#example-2)
+  - [Replace Inline Code with Function Call](#replace-inline-code-with-function-call)
+    - [Motivation](#motivation-4)
+    - [Mechanics](#mechanics-4)
+  - [Slide Statements](#slide-statements)
+    - [Motivation](#motivation-5)
+    - [Mechanics](#mechanics-5)
+    - [Example](#example-3)
+    - [Example: Sliding with Conditionals](#example-sliding-with-conditionals)
+  - [Split Loop](#split-loop)
+    - [Motivation](#motivation-6)
+    - [Mechanics](#mechanics-6)
+    - [Example](#example-4)
+  - [Replace Loop with Pipeline](#replace-loop-with-pipeline)
+    - [Motivation](#motivation-7)
+    - [Mechanics](#mechanics-7)
+    - [Example](#example-5)
+  - [Remove Dead Code](#remove-dead-code)
+    - [Motivation](#motivation-8)
+    - [Mechanics](#mechanics-8)
 
 ## Move Function
 
@@ -168,4 +190,205 @@ function.
 
 ## Move Statements to Callers
 
->>>>> progress
+```js
+emitPhotoData(outStream, person.photo);
+
+function emitPhotoData(outStream, photo) {
+  outStream.write(`<p>title: ${photo.title}</p>\n`);
+  outStream.write(`<p>location: ${photo.location}</p>\n`);
+}
+
+// refactored:
+emitPhotoData(outStream, person.photo);
+outStream.write(`<p>location: ${person.photo.location}</p>\n`);
+
+function emitPhotoData(outStream, photo) {
+  outStream.write(`<p>title: ${photo.title}</p>\n`);
+}
+```
+
+### Motivation
+
+When common behavior used in several places needs to vary in some of its calls,
+we need to move the varing behavior out of the function to its callers.
+
+### Mechanics
+
+- In simple circumstances, where you have only one or two callers and a simple
+  function to call from, just cut the first line from the called function and
+  paste (and perhaps fit) it into the callers. Test and you're done.
+- Otherwise, apply `Extract Function` to all the statements that you **don't**
+  wish to move; give it a temporary but easily searchable name.
+- Use `Inline Function` on the original function.
+- Apply `Change Function Declaration` on the extracted function to rename it to
+  the original name.
+
+### Example
+
+[move_statements_to_callers.js](move_statements_to_callers.js)
+
+## Replace Inline Code with Function Call
+
+```js
+let appliesToMass = false;
+for (const s of states) ;{
+  if (s === 'MA') {
+    appliesToMass = true;
+  }
+}
+
+// refactored:
+let appliesToMass = states.includes('MA);
+```
+
+### Motivation
+
+A named function can explain the purpose of the code rather than its mechanics.
+It's also valuable to remove duplication: Instead of writing the same code
+twice, we can just call the function.
+
+### Mechanics
+
+- Replace the inline code with a call to the existing function.
+- Test.
+
+## Slide Statements
+
+```js
+const pricingPlan = retrievePricingPlan();
+const order = retrieveOrder();
+let charge;
+const chargePerUnit = pricingPlan.unit;
+
+// refactored:
+const pricingPlan = retrievePricingPlan();
+const chargePerUnit = pricingPlan.unit;
+const order = retrieveOrder();
+let charge;
+```
+
+### Motivation
+
+Code is easier to understand when things that are related to each other appear
+together. If several lines of code access the same data structure, it's best for
+them to be together rather than intermingled with code accessing other data
+structures.
+
+### Mechanics
+
+- Identify the target position to move the fragment to. Examine statements
+  between source and target to see if there is interference for the candidate
+  fragment. Abandon action if there is any interference.
+- Cut the fragment from the source and paste into the target position.
+- Test.
+
+### Example
+
+[slide_statements.js](slide_statements.js)
+
+### Example: Sliding with Conditionals
+
+[sliding_with_conditionals.js](sliding_with_conditionals.js)
+
+## Split Loop
+
+```js
+let averageAge = 0;
+let totalSalary = 0;
+for (const p of people) {
+  averageAge += p.age;
+  totalSalary += p.salary;
+}
+averageAge = averageAge / people.length;
+
+// refactored:
+let totalSalary = 0;
+for (const p of people) {
+  totalSalary += p.salary;
+}
+
+let averageAge = 0;
+for (const p of people) {
+  averageAge += p.age;
+}
+averageAge = averageAge / people.length;
+```
+
+### Motivation
+
+If you're doing two different things in the same loop, then whenever you need to
+modify the loop you have to understand both things. By splitting the loop, you
+ensure you only need to understand the behavior you need to modify.
+
+Splitting a loop can also make it easier to use.
+
+### Mechanics
+
+- Copy the loop.
+- Identify and eliminate duplicate side effects.
+- Test.
+
+### Example
+
+[split_loop.js](split_loop.js)
+
+## Replace Loop with Pipeline
+
+```js
+const names = [];
+for (const i of input) {
+  if (i.job === 'programmer') {
+    names.push(i.name);
+  }
+}
+
+// refactored:
+const names = input
+  .filter(i => i.job === 'programmer')
+  .map(i => i.name);
+```
+
+### Motivation
+
+Collection Pipelines allow us to describe our processing as a series of
+operations, each consuming and emitting a collection.
+
+### Mechanics
+
+- Create a new variable for the loop's collection.
+- Starting at the top, take each bit of behavior in the loop and replace it with
+  a collection pipeline operation in the derivation of the loop collection
+  variable. Test after each change.
+- Once all behavior is removed from the loop, remove it.
+
+### Example
+
+[replace_loop_with_pipeline.js](replace_loop_with_pipeline.js)
+
+## Remove Dead Code
+
+```js
+if (false) {
+  doSomethingThatUsedToMatter();
+}
+
+// refactored:
+// empty
+```
+
+### Motivation
+
+Unused code is a significant burden when trying to understand how the software
+works. It doesn't carry any warning signs telling programmers that they can
+ignore this function as it's never called any more, so they still have to spend
+time understanding what it's doing and why changing it doesn't seem to alter the
+output as they expected.
+
+Once code isn't used any more, we should delete it.
+
+### Mechanics
+
+- If the dead code can be referenced from outside, e.g., when it's a full
+  function, do a search to check for callers.
+- Remove the dead code.
+- Test.
