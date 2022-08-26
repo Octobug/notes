@@ -20,7 +20,13 @@
       - [another/more 与 few 搭配](#anothermore-与-few-搭配)
     - [三、other 本身的其他用法](#三other-本身的其他用法)
   - [3.5 个体限定词 (三) either/neither](#35-个体限定词-三-eitherneither)
+    - [一、与名词的搭配关系](#一与名词的搭配关系)
+    - [二、二者用作代词](#二二者用作代词)
+    - [三、词义差别](#三词义差别)
+    - [四、either...not 相当于 neither](#四eithernot-相当于-neither)
+  - [3.6 限定词总结 (一): 限定词中的"二"与"三"](#36-限定词总结-一-限定词中的二与三)
   - [3.11 补充: 英语中的八种否定](#311-补充-英语中的八种否定)
+  - [综合训练: 3. 限定词 (二): 数量限定词与个体限定词](#综合训练-3-限定词-二-数量限定词与个体限定词)
 
 ## 3.1 数量限定词 (一): a few, few/a little, little
 
@@ -319,6 +325,92 @@ more 则要说成 a few more。
 
 ## 3.5 个体限定词 (三) either/neither
 
+### 一、与名词的搭配关系
+
+二者用作**限定词**时都是与**单数可数名词**连用，谓语动词用**单数**，
+并且不能再与其他限定词连用。
+
+- `例 1`: Either day is OK.
+  - 两天中的哪一天都行。
+- `例 2`: Neither day is OK.
+  - 两天中的哪一天都不行。
+- `例 3`: ❌ the either book
+- `例 4`: ❌ either your book
+
+### 二、二者用作代词
+
+用作代词时，二者不直接接名词，而是单独使用或接 of 短语。
+
+- `例 5`: Come over on Saturday or Sunday. Either is OK.
+  - 你周六或周日过来，哪天都行。
+- `例 6`: You can't choose Choices A and B. Neither is right.
+  - 选项 A 和 B 你都不能选，两个都不对。
+
+它们与 of 短语连用过时的结构为:
+
+"either/neither of + 限定词 (如冠词、物主代词或指示形容词) + 名词**复数** +
+单数谓语动词"。
+
+- `例 7`: Either of the answers is right.
+  - 两个答案都对。
+- `例 8`: Neither of my children has done that.
+  - 我的两个孩子都没做那件事。
+
+在这个结构中有三点需要注意:
+
+1. 名词前必须有限定词
+  
+    - ❌ either of answer
+    - ❌ neither of children
+
+2. 名词必须用复数
+
+    - ❌ either of the answer
+    - ❌ neither of my child
+
+3. 谓语动词通常用单数
+
+    - ❌ Either of the answer are right.
+    - ❌ Neither of my children have done that.
+
+### 三、词义差别
+
+**either 有两个意思**:
+
+1. 两个当中的任何一个，这个或那个 (one or the other)。
+
+    `例 9`: Come over on Saturday or Sunday. Either day is OK.
+
+2. 两个中的每一个 (each of two)，特别是在与 end 与 side 连用时。
+
+    - `例 10`: There are a lot of trees on either **side** of the river.
+    - `例 11`:
+      - There are a lot of trees on both **sides** of the river.
+      - There are a lot of trees on each **side** of the river.
+      - ❌ There are a lot of trees on every side of the river.
+        - every 指三者或三者以上
+
+**neither 只有一个意思**: 两者都不 (not one and not the other)。
+
+`例 12`: Neither of the answers is right.
+
+### 四、either...not 相当于 neither
+
+`例 13`:
+
+- Either of the answers is not correct.
+- Neither of the answers is correct.
+
+译: 两个答案都不正确。
+
+## 3.6 限定词总结 (一): 限定词中的"二"与"三"
+
 >>>>> progress
 
 ## 3.11 补充: 英语中的八种否定
+
+>>>>> progress
+
+## 综合训练: 3. 限定词 (二): 数量限定词与个体限定词
+
+>>>>> progress
