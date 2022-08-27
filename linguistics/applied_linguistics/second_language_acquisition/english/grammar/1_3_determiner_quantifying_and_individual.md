@@ -25,6 +25,30 @@
     - [三、词义差别](#三词义差别)
     - [四、either...not 相当于 neither](#四eithernot-相当于-neither)
   - [3.6 限定词总结 (一): 限定词中的"二"与"三"](#36-限定词总结-一-限定词中的二与三)
+    - [一、都: both vs. all](#一都-both-vs-all)
+    - [二、都不: neither vs. none](#二都不-neither-vs-none)
+    - [三、另外一个: the other vs. another](#三另外一个-the-other-vs-another)
+    - [四、每一个: each vs. every](#四每一个-each-vs-every)
+  - [3.7 限定词总结 (二): 限定词与可数/不可数名词](#37-限定词总结-二-限定词与可数不可数名词)
+    - [一、只与`单数可数`名词搭配的限定词](#一只与单数可数名词搭配的限定词)
+    - [二、只与`复数可数`名词搭配的限定词](#二只与复数可数名词搭配的限定词)
+    - [三、只与`不可数`名词搭配的限定词](#三只与不可数名词搭配的限定词)
+    - [四、既可以与`不可数`名词也可以与`复数可数`名词搭配的限定词](#四既可以与不可数名词也可以与复数可数名词搭配的限定词)
+    - [五、与`单数可数`名词、`复数可数`名词和`不可数`名词均可搭配的限定词](#五与单数可数名词复数可数名词和不可数名词均可搭配的限定词)
+  - [3.8 限定词总结 (三): 限定词与 of 短语](#38-限定词总结-三-限定词与-of-短语)
+    - [一、all/most/some/any of + 特指限定词 + 复数可数或不可数名词](#一allmostsomeany-of--特指限定词--复数可数或不可数名词)
+    - [二、many/a few/few/several/both/two/three of + 特指限定词 + 复数可数名词](#二manya-fewfewseveralbothtwothree-of--特指限定词--复数可数名词)
+    - [三、much/a little/little of + 特指限定词 + 不可数名词](#三mucha-littlelittle-of--特指限定词--不可数名词)
+    - [四、特别关注: all 和 both](#四特别关注-all-和-both)
+    - [五、特别关注: 不定代词与 of 短语](#五特别关注-不定代词与-of-短语)
+    - [思维训练 3.8](#思维训练-38)
+  - [3.9 限定词总结 (四): 限定词之间的位置关系](#39-限定词总结-四-限定词之间的位置关系)
+    - [一、前位限定词](#一前位限定词)
+    - [二、中位限定词](#二中位限定词)
+    - [三、后位限定词](#三后位限定词)
+  - [3.10 限定词与形容词的区别](#310-限定词与形容词的区别)
+    - [一、限定词和形容词的性质区别](#一限定词和形容词的性质区别)
+    - [二、限定词和形容词的用法区别](#二限定词和形容词的用法区别)
   - [3.11 补充: 英语中的八种否定](#311-补充-英语中的八种否定)
   - [综合训练: 3. 限定词 (二): 数量限定词与个体限定词](#综合训练-3-限定词-二-数量限定词与个体限定词)
 
@@ -405,7 +429,356 @@ more 则要说成 a few more。
 
 ## 3.6 限定词总结 (一): 限定词中的"二"与"三"
 
->>>>> progress
+### 一、都: both vs. all
+
+both 表示"两者都"，all 表示"三个或三个以上都"。
+
+- `例 1`:
+  - Both of us have learned English for a year.
+    - 我们俩学习英语都有一年了。
+  - All of us have learned English for a year.
+    - 我们大家学习英语都有一年了。
+- `例 2`:
+  - Both John and Tom have learned English for a year.
+    - 约翰和汤姆学习英语都有一年了。
+  - All of the students have learned English for a year.
+    - 所有的学生学习英语都有一年了。
+
+### 二、都不: neither vs. none
+
+neither 表示"两者都不"，none 表示"三者或三者以上都不"。
+
+`例 3`: ____ of the twins was arrested, because I saw both at a party last
+night.
+
+- A. None
+- B. Both
+- C. Neither
+- D. All
+
+答案: C。
+
+译: 这对双胞胎都没有被抓，因为我昨晚在聚会上看到他俩了。
+
+### 三、另外一个: the other vs. another
+
+the other 表示"确定的另外一个"，常用来表示"两个中的另外一个"。
+因为总共只有两个，所以如果确定其中一个，则另外一个也随之确定了。
+常用搭配: one ... the other ...
+
+another 表示"不确定的另外一个"，必然是指"三个或三个以上的另一个"。
+因为总共有三个或三个以上，所以即使确定了其中一个，剩下的依然是不确定的。
+
+`例 4`: He took her money in one hand and with ____ hand he grasped her mitten.
+
+- A. other
+- B. the other
+- C. the others
+- D. another
+
+答案: B。
+
+译: 他一只手拿着她的钱，另一只手抓住她的手套。
+
+### 四、每一个: each vs. every
+
+each 表示"两个或两个以上的每一个"，而 every 表示"三个或三个以上的每一个"。
+
+`例 8`: each of the three men 三个人中的每一个
+
+## 3.7 限定词总结 (二): 限定词与可数/不可数名词
+
+### 一、只与`单数可数`名词搭配的限定词
+
+- a, an
+- another
+- each
+- either, neither
+- every
+- one
+
+### 二、只与`复数可数`名词搭配的限定词
+
+- a number of
+- both
+- few, a few, fewer
+- many
+- several
+- these, those
+- two 及 two 以上的基数词
+
+### 三、只与`不可数`名词搭配的限定词
+
+- a bit of, a great amount of, a great deal of
+- less
+- little, a little
+- much
+
+### 四、既可以与`不可数`名词也可以与`复数可数`名词搭配的限定词
+
+- a lot of, lots of
+- all
+- more, most
+- plenty of
+
+### 五、与`单数可数`名词、`复数可数`名词和`不可数`名词均可搭配的限定词
+
+- any
+- no
+- some
+- the
+- Tom's, my mother's 等名词属格
+- your, my, their 等物主限定词
+
+## 3.8 限定词总结 (三): 限定词与 of 短语
+
+很多数量或个体限定词同时还可以用作代词，此时它们的后面可以接 of 短语连用。此时的结构一般是:
+
+数量或个体词 + of + 特指限定词 + 复数名词或不可数名词
+
+这里的"特指限定词"主要有四类:
+
+1. 指示限定词: this, that, these, those
+2. 物主限定词: my, your, his, her, its, their, our
+3. 名词所有格: Mike's, Mary's, the teacher's
+4. 定冠词 the
+
+这四类限定词在使用时***有且只能有一个***。
+
+### 一、all/most/some/any of + 特指限定词 + 复数可数或不可数名词
+
+`例 1`:
+
+- ✅ Most of my/these/the/John's books are interesting.
+  - 我的/这些/约翰的大多数图书都很有趣。
+- ❌ Most of books are interesting.
+- ✅ Most books are interesting.
+
+### 二、many/a few/few/several/both/two/three of + 特指限定词 + 复数可数名词
+
+`例 2`:
+
+- ✅ Many of these students are good at English.
+  - 这些学生中的许多人英语都很好。
+- ❌ Many of students are good at English.
+- ✅ Many students are good at English.
+
+### 三、much/a little/little of + 特指限定词 + 不可数名词
+
+`例 3`:
+
+- ✅ Much of the water is wasted.
+  - 大部分的水都浪费了。
+- ❌ Much of water is wasted.
+- ✅ Much water is wasted.
+
+其他本身就带有 of 的数量词如: a lot of, lots of, a couple of, plenty of, a number of
+必须直接与名词连用，名词前不需要加特指限定词。
+
+- `例 4`:
+  - ✅ a lot of books
+  - ❌ a lot of the books
+- `例 5`:
+  - ✅ a great deal of water
+  - ❌ a great deal of the water
+- `例 6`:
+  - ✅ a couple of days
+  - ❌ a couple of the days
+
+### 四、特别关注: all 和 both
+
+all (三个或三个以上都) 与 both (两个都) 的用法较为特殊。
+
+- `例 7`:
+  - ✅
+    - All students are smart.
+    - All of my students are smart.
+    - All my students are smart. (all 的独特用法)
+  - ❌ All of students are smartt.
+- `例 8`:
+  - ✅
+    - Both students are smart.
+    - Both of my students are smart.
+    - Both my students are smart. (both 的独特用法)
+  - ❌ Both of students are smart.
+- ❌ most my students
+- ❌ most the students
+- ❌ many these students
+
+### 五、特别关注: 不定代词与 of 短语
+
+不定代词 none, someone, anyone 以及 everyone 都是两个词合起来写成的一个词。
+它们还有分开写的形式: no one, some one, any one 以及 every one，
+都是两个词构成的不定代词。它们与 of 短语的搭配关系不同:
+
+- 不接 of 短语
+  - anyone
+    - ❌ Anyone of us has a gift.
+    - > 注: 没错，著名歌曲 "Anyone of Us (Stupid Mistake)" (by Gareth Gates)
+      的正确拼写应该是 "Any One of Us"。
+      [参考 (cantstopthepop.com)](https://www.cantstopthepop.com/2022/03/28/gareth-gates-anyone-of-us-stupid-mistake/)
+  - everyone: Everyone is here.
+    - ❌ Everyone of us has a gift.
+  - someone
+    - ❌ Someone of us has a gift.
+  - **no one**
+    - ❌ No one of us has a gift.
+- 接 of 短语
+  - any one: Any one of us has a gift.
+  - every one: Every one of us has a gift.
+  - some one: Some one of us has a gift.
+  - **none**: None of us has a gift.
+
+### 思维训练 3.8
+
+**一、在必要的地方加上 of。**
+
+*5. Most ____ people need six tot eight hours of sleep every night.*
+
+答案: \
+
+*6. Most ____ the people in this class like English.*
+
+答案: of
+
+**二、all 和 both 的独特用法: 判断下列空格哪些不能加 of，哪些可加可不加。**
+
+*12. Both ____ those books are mine.*
+
+答案: of 或不填 of
+
+## 3.9 限定词总结 (四): 限定词之间的位置关系
+
+根据限定词在名词前的位置关系，可以把限定词分为三类:
+
+1. 前位限定词 (pre-determiner)
+2. 中位限定词 (central determiner)
+3. 后位限定词 (post-determiner)
+
+- `例 1`: I met ***all my many friends***.
+  - 我见到了我所有的那么多朋友。
+- `例 2`: They questioned ***both the last two boys***.
+  - 最后两个男孩他们都提问了。
+
+以上两个例句的限定词分类如下:
+
+|                 | 前位 | 中位 | 后位     | 名词    |
+| --------------- | ---- | ---- | -------- | ------- |
+| I met           | all  | my   | many     | friends |
+| They questioned | both | the  | last two | boys    |
+
+### 一、前位限定词
+
+**1. 种类.**
+
+前位限定词主要用来说明名词的数量，主要有三种:
+
+1. 表示倍数关系的数量形容词:
+    - `例 3`: half my salary
+    - `例 4`: twice my salary
+    - `例 5`: double my salary
+    - `例 6`: three times my salary
+2. 表示几分之几的数词:
+    - `例 7`: one third my salary
+    - `例 8`: two-thirds my salary
+3. 个体形容词: all 和 both:
+    - `例 9`: all my salary
+    - `例 10`: both my salaries
+
+**2. 共存性.**
+
+前位限定词一般互相排斥，不能共存。
+
+- ❌ all half my salary
+- ❌ half double her income
+
+### 二、中位限定词
+
+**1. 种类.**
+
+1. 冠词: a, an, the
+    - `例 11`: all the book
+    - `例 12`: half an hour
+    - `例 13`: twice the size
+2. 形容词性物主代词: my, your, his, her, our, their
+    - `例 14`: all my money
+    - `例 15`: all his money
+3. 指示代词: this, that, these, those
+    - `例 16`: all these problems
+    - `例 17`: twice that size
+    - `例 18`: four times this amount
+4. 名词所有格: John's, his father's 等
+    - `例 19`: all John's money
+
+**2. 共存性.**
+
+中位限定词也是彼此排斥，不能同时出现。
+
+- ❌ my the money
+- ❌ our these problems
+
+### 三、后位限定词
+
+**1. 种类.**
+
+1. 基数词: one, two, three, four 等。
+    - `例 20`: the two children
+2. 序数词: first, second, third, fourth 等。
+    - `例 21`: his fourth birthday
+3. 一般序数词: next, last, past, previous, subsequent, other, another 等。
+    - `例 22`: my next plan
+    - `例 23`: our last meeting
+    - `例 24`: your previous mistakes
+    - `例 25`: her subsequent response
+4. 数量限定词: few, many, several, little, less, more 等。
+    - `例 26`: my many friends
+    - `例 27`: our several achievements
+    - `例 28`: the few friends that I have
+
+**2. 共存性.**
+
+后位限定词可以同时出现在名词前，且也有先后顺序，一般采用如下顺序:
+
+1. 序数词/一般序数词 + 基数词。
+    - `例 29`: my next (一般序数词) two (基数词) plans
+    - `例 31`: the first (序数词) two (基数词) weeks
+    - `例 32`: during the next (一般序数词) 50 (基数词) years
+2. 序数词/一般序数词 + 数量限定词。
+    - `例 33`: during the past (一般序数词) few (数量限定词) years
+3. 基数词/数量限定词一般置于 other 前面。
+    - `例 30`: several (数量限定词) other people
+    - two (基数词) other people
+    - many (数量限定词) other people
+4. 基数词一般置于 another 后面。
+    - another ten (基数词) minutes
+
+## 3.10 限定词与形容词的区别
+
+限定词和形容词都可以放在名词前面来修饰名词，但二者在性质和用法上却存在着很大的差别。
+
+### 一、限定词和形容词的性质区别
+
+- 限定词用来限定名词所指的范围，对名词起泛指或特指、定量或不定量等限定修饰作用；
+  - `例 1`: many/few/his children 许多/几乎没有/他的孩子
+- 而形容词则是用来表示名词的性质、特征的。
+  - `例 2`: naughty/lovely/clever children 淘气的/可爱的/聪明的孩子
+
+### 二、限定词和形容词的用法区别
+
+- 限定词一般不用作表语 (少数表示数量的限定词 few, many, much 除外)；
+  - 除了 few, little, many, much 外，限定词没有比较级和最高级形式
+  - 限定词总是位于名词之前
+    - this/his/Tom's/every/the book 这本/他的/汤姆的/每一本/这本书
+- 绝大多数形容词都可以用作表语。
+  - 大多数形容词有比较级和最高级形式
+  - 形容词作定语时有的可置于被修饰词之后
+    - a kind woman 一个好心的女人
+    - a clever boy 一个聪明的男孩
+    - the secretary general 秘书长
+    - the attorney general 大律师
+    - something interesting 有趣的事情
+    - the notary public 公证员
+    - the president elect 当选总统
 
 ## 3.11 补充: 英语中的八种否定
 
