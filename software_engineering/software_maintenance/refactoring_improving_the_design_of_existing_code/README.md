@@ -16,6 +16,6 @@
 - [x] [Chapter 7: Encapsulation](07_encapsulation)
 - [x] [Chapter 8: Moving Features](08_moving_features)
 - [x] [Chapter 9: Organizing Data](09_organizing_data)
-- [ ] [Chapter 10: Simplifying Conditional Logic](10_simplifying_conditional_logic)
-- [ ] [Chapter 11: Refactoring APIs](.)
+- [x] [Chapter 10: Simplifying Conditional Logic](10_simplifying_conditional_logic)
+- [ ] [Chapter 11: Refactoring APIs](11_refactoring_apis)
 - [ ] [Chapter 12: Dealing with Inheritance](.)
