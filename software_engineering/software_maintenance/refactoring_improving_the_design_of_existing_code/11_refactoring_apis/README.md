@@ -34,6 +34,13 @@
     - [Mechanics](#mechanics-7)
     - [Example](#example-7)
   - [Replace Function with Command](#replace-function-with-command)
+    - [Motivation](#motivation-7)
+    - [Mechanics](#mechanics-8)
+    - [Example](#example-8)
+  - [Replace Command with Function](#replace-command-with-function)
+    - [Motivation](#motivation-8)
+    - [Mechanics](#mechanics-9)
+    - [Example](#example-9)
 
 ## Separate Query from Modifier
 
@@ -330,4 +337,94 @@ leadEngineer = createEngineer(document.leadEngineer);
 
 ## Replace Function with Command
 
->>>>> progress
+```js
+function score(candidate, medicalExam, scoringGuide) {
+  let result = 0;
+  let healthLevel = 0;
+  // long body code
+}
+
+// refactored:
+class Scorer {
+  constructor(candidate, medicalExam, scoringGuide) {
+    this._candidate = candidate;
+    this._medicalExam = medicalExam;
+    this._scoringGuide = scoringGuide;
+  }
+
+  execute() {
+    this._result = 0;
+    this._healthLevel = 0;
+    // long body code
+  }
+}
+```
+
+### Motivation
+
+There are times when it's useful to encapsulate a function into its own object,
+which is refered to as a "command object" or simply a **command**.
+
+A command offers a greater flexibility for the control and expression of a
+function than the plain function mechanism.
+
+Command objects provide a powerful mechanism for handling complex computations.
+
+### Mechanics
+
+- Create an empty class for the function. Name it based on the function.
+- Use `Move Function` to move the function to the empty class.
+  - Follow any convention the language has for naming commands. If there is no
+    convention, choose a generic name for the command’s execute function, such
+    as `execute` or `call`.
+- Consider making a field for each argument, and move these arguments to the
+  constructor.
+
+### Example
+
+[replace_function_with_command.js](replace_function_with_command.js)
+
+## Replace Command with Function
+
+```js
+class ChargeCalculator {
+  constructor (customer, usage) {
+    this._customer = customer;
+    this._usage = usage;
+  }
+  execute() {
+    return this._customer.rate * this._usage;
+  }
+}
+
+// refactored:
+function charge(customer, usage) {
+  return customer.rate * usage;
+}
+```
+
+### Motivation
+
+If the function isn't too complex, then a command object is more trouble than
+its worth and should be turned into a regular function.
+
+### Mechanics
+
+- Apply `Extract Function` to the creation of the command and the call to the
+  command’s execution method.
+- For each method called by the command’s execution method, apply
+  `Inline Function`.
+  - If the supporting function returns a value, use `Extract Variable` on the
+    call first and then `Inline Function`.
+- Use `Change Function Declaration` to put all the parameters of the
+  constructor into the command’s execution method instead.
+- For each field, alter the references in the command’s execution method to use
+  the parameter instead. Test after each change.
+- Inline the constructor call and command’s execution method call into the
+  caller (which is the replacement function).
+- Test.
+- Apply `Remove Dead Code` to the command class.
+
+### Example
+
+[replace_command_with_function.js](replace_command_with_function.js)
