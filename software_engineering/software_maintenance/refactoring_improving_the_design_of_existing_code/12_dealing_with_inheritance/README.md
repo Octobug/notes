@@ -18,6 +18,22 @@
     - [Motivation](#motivation-3)
     - [Mechanics](#mechanics-4)
   - [Replace Type Code with Subclasses](#replace-type-code-with-subclasses)
+    - [Motivation](#motivation-4)
+    - [Mechanics](#mechanics-5)
+    - [Example](#example-2)
+    - [Example: Using Indirect Inheritance](#example-using-indirect-inheritance)
+  - [Remove Subclass](#remove-subclass)
+    - [Motivation](#motivation-5)
+    - [Mechanics](#mechanics-6)
+    - [Example](#example-3)
+  - [Extract Superclass](#extract-superclass)
+    - [Motivation](#motivation-6)
+    - [Mechanics](#mechanics-7)
+    - [Example](#example-4)
+  - [Collapse Hierarchy](#collapse-hierarchy)
+    - [Motivation](#motivation-7)
+    - [Mechanics](#mechanics-8)
+  - [Replace Subclass with Delegate](#replace-subclass-with-delegate)
 
 ## Pull Up Method
 
@@ -214,3 +230,172 @@ should be moved to those subclasses.
 - Test.
 
 ## Replace Type Code with Subclasses
+
+```js
+function createEmployee(name, type) {
+  return new Employee(name, type);
+}
+
+// refactored:
+function createEmployee(name, type) {
+  switch (type) {
+    case "engineer": return new Engineer(name);
+    case "salesman": return new Salesman(name);
+    case "manager": return new Manager (name);
+  }
+}
+```
+
+### Motivation
+
+Subclasses allow us to use polymorphism to handle conditional logic.
+
+### Mechanics
+
+- Self-encapsulate the type code field.
+- Pick one type code value. Create a subclass for that type code. Override the
+  type code getter to return the literal type code value.
+- Create selector logic to map from the type code parameter to the new subclass.
+  - With direct inheritance, use `Replace Constructor with Factory Function`
+    and put the selector logic in the factory. With indirect inheritance, the
+    selector logic may stay in the constructor.
+- Test.
+- Repeat creating the subclass and adding to the selector logic for each type
+  code value. Test after each change.
+- Remove the type code field.
+- Test.
+- Use `Push Down Method` and `Replace Conditional with Polymorphism` on any
+  methods that use the type code accessors. Once all are replaced, you can
+  remove the type code accessors.
+
+### Example
+
+[replace_type_code_with_subclasses.js](replace_type_code_with_subclasses.js)
+
+### Example: Using Indirect Inheritance
+
+[using_indirect_inheritance.js](using_indirect_inheritance.js)
+
+## Remove Subclass
+
+```js
+class Person {
+  get genderCode() { return "X"; }
+}
+class Male extends Person {
+  get genderCode() { return "M"; }
+}
+class Female extends Person {
+  get genderCode() { return "F"; }
+}
+
+// refactored:
+class Person {
+  get genderCode() { return this._genderCode; }
+}
+```
+
+### Motivation
+
+A subclass that does too little incurs a cost in understanding that is no longer
+worthwhile. When that time comes, it's best to remove the subclass, replacing it
+with a field on its superclass.
+
+### Mechanics
+
+- Use `Replace Constructor with Factory Function` on the subclass constructor.
+  - If the clients of the constructors use a data field to decide which
+    subclass to create, put that decision logic into a superclass factory
+    method.
+- If any code tests against the subclass’s types, use `Extract Function` on the
+  type test and `Move Function` to move it to the superclass. Test after each
+  change.
+- Create a field to represent the subclass type.
+- Change the methods that refer to the subclass to use the new type field.
+- Delete the subclass.
+- Test.
+
+### Example
+
+[remove_subclass.js](remove_subclass.js)
+
+## Extract Superclass
+
+```js
+class Department {
+  get totalAnnualCost() {...}
+  get name() {...}
+  get headCount() {...}
+}
+
+class Employee {
+  get annualCost() {...}
+  get name() {...}
+  get id() {...}
+}
+
+// refactored:
+class Party {
+  get name() {...}
+  get annualCost() {...}
+}
+
+class Department extends Party {
+  get annualCost() {...}
+  get headCount() {...}
+}
+
+class Employee extends Party {
+  get annualCost() {...}
+  get id() {...}
+}
+```
+
+### Motivation
+
+Using inheritance or delegation as a way to unify duplicate behavior? Often
+`Extract Superclass` is the simpler approach.
+
+### Mechanics
+
+- Create an empty superclass. Make the original classes its subclasses.
+- Test.
+- One by one, use `Pull Up Constructor Body`, `Pull Up Method`, and
+  `Pull Up Field` to move common elements to the superclass.
+- Examine remaining methods on the subclasses. See if there are common parts.
+  If so, use `Extract Function` followed by `Pull Up Method`.
+- Check clients of the original classes. Consider adjusting them to use the
+  superclass interface.
+
+### Example
+
+[extract_superclass.js](extract_superclass.js)
+
+## Collapse Hierarchy
+
+```js
+class Employee {...}
+class Salesman extends Employee {...}
+
+// refactored:
+class Employee {...}
+```
+
+### Motivation
+
+When a class and its parent are no longer different enough to be worth keeping
+separate, it's better to merge them together.
+
+### Mechanics
+
+- Choose which one to remove.
+- Use `Pull Up Field`, `Push Down Field`, `Pull Up Method`, and
+  `Push Down Method` to move all the elements into a single class.
+- Adjust any references to the victim to change them to the class that will
+  stay.
+- Remove the empty class.
+- Test.
+
+## Replace Subclass with Delegate
+
+>>>>> progress
