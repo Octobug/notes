@@ -12,6 +12,12 @@
     - [Mechanics](#mechanics-2)
     - [Example](#example-1)
   - [Push Down Method](#push-down-method)
+    - [Motivation](#motivation-2)
+    - [Mechanics](#mechanics-3)
+  - [Push Down Field](#push-down-field)
+    - [Motivation](#motivation-3)
+    - [Mechanics](#mechanics-4)
+  - [Replace Type Code with Subclasses](#replace-type-code-with-subclasses)
 
 ## Pull Up Method
 
@@ -143,4 +149,68 @@ the superclass.
 
 ## Push Down Method
 
->>>>> progress
+```js
+class Employee {
+  get quota {...}
+}
+
+class Engineer extends Employee {...}
+class Salesman extends Employee {...}
+
+// refactored:
+class Employee {...}
+class Engineer extends Employee {...}
+class Salesman extends Employee {
+  get quota {...}
+}
+```
+
+### Motivation
+
+If a method is only relevant to one subclass or a small proportion of
+subclasses, removing it from the superclass and putting it only on the
+subclasses makes that clearer. This refactoring could only be done if the
+callers knows it's working with a particular subclass -- otherwise, we should
+use `Replace Conditional with Polymorphism` with some placebo behavior on the
+superclass.
+
+### Mechanics
+
+- Copy the method into every subclass that needs it.
+- Remove the method from the superclass.
+- Test.
+- Remove the method from each subclasses that don’t need it.
+- Test.
+
+## Push Down Field
+
+```java
+class Employee {
+  private String quota;
+}
+class Engineer extends Employee {...}
+class Salesman extends Employee {...}
+
+// refactored:
+class Employee {...}
+class Engineer extends Employee {...}
+
+class Salesman extends Employee {
+  protected String quota;
+}
+```
+
+### Motivation
+
+If a field is only used by one subclass or a small proportion of subclasses, it
+should be moved to those subclasses.
+
+### Mechanics
+
+- Declare field in all subclasses that need it.
+- Remove the field from the superclass.
+- Test.
+- Remove the field from all subclasses that don’t need it.
+- Test.
+
+## Replace Type Code with Subclasses
