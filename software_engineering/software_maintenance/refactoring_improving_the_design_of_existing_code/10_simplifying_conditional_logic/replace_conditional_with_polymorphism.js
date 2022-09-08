@@ -105,7 +105,7 @@ function version3() {
         return new EuropeanSwallow(bird);
       case 'AfricanSwallow':
         return new AfricanSwallow(bird);
-      case 'NorweigianBlueParrot':
+      case 'NorwegianBlueParrot':
         return new NorwegianBlueParrot(bird);
       default:
         return new Bird(bird);
@@ -170,7 +170,7 @@ function version4() {
         return new EuropeanSwallow(bird);
       case 'AfricanSwallow':
         return new AfricanSwallow(bird);
-      case 'NorweigianBlueParrot':
+      case 'NorwegianBlueParrot':
         return new NorwegianBlueParrot(bird);
       default:
         return new Bird(bird);
@@ -238,7 +238,7 @@ function version5() {
         return new EuropeanSwallow(bird);
       case 'AfricanSwallow':
         return new AfricanSwallow(bird);
-      case 'NorweigianBlueParrot':
+      case 'NorwegianBlueParrot':
         return new NorwegianBlueParrot(bird);
       default:
         return new Bird(bird);
@@ -304,7 +304,7 @@ function version6() {
         return new EuropeanSwallow(bird);
       case 'AfricanSwallow':
         return new AfricanSwallow(bird);
-      case 'NorweigianBlueParrot':
+      case 'NorwegianBlueParrot':
         return new NorwegianBlueParrot(bird);
       default:
         return new Bird(bird);

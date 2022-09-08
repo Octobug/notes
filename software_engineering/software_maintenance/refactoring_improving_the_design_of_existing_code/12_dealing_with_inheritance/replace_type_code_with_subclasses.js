@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 function version1() {
   class Employee {
     constructor(name, type) {

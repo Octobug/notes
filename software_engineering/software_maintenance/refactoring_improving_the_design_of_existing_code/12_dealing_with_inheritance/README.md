@@ -34,6 +34,11 @@
     - [Motivation](#motivation-7)
     - [Mechanics](#mechanics-8)
   - [Replace Subclass with Delegate](#replace-subclass-with-delegate)
+    - [Motivation](#motivation-8)
+    - [Mechanics](#mechanics-9)
+    - [Example](#example-5)
+    - [Example: Replacing a Hierarchy](#example-replacing-a-hierarchy)
+  - [Replace Superclass with Delegate](#replace-superclass-with-delegate)
 
 ## Pull Up Method
 
@@ -398,4 +403,94 @@ separate, it's better to merge them together.
 
 ## Replace Subclass with Delegate
 
->>>>> progress
+```js
+class Order {
+  get daysToShip() {
+    return this._warehouse.daysToShip;
+  }
+}
+
+class PriorityOrder extends Order {
+  get daysToShip() {
+    return this._priorityPlan.daysToShip;
+  }
+}
+
+// refactored:
+class Order {
+  get daysToShip() {
+    return (this._priorityDelegate)
+      ? this._priorityDelegate.daysToShip
+      : this._warehouse.daysToShip;
+  }
+}
+
+class PriorityOrderDelegate {
+  get daysToShip() {
+    return this._priorityPlan.daysToShip;
+  }
+}
+```
+
+### Motivation
+
+Inheritance has its downsides. Inheritance can only be used for a single axis of
+variation. A further problem is that inheritance introduces a very close
+relationship between classes.
+
+Delegation handles both of these problems. Delegation could be made to many
+different classes for different reasons. Delegation is a regular relationship
+between objects, which is much less coupling than subclassing.
+
+There is a popular principle:
+**Favor object composition over class class inhetitance**.
+
+Inheritance is a valuable mechanism that does the job most of the time without
+problems. So we could reach for it first, and move onto delegation when it
+starts to rub badly.
+
+Not all cases of `Replace Subclass with Delegate` involve an inheritance
+hierarchy for the delegate, but setting up a hierarchy for states or strategies
+if often useful.
+
+### Mechanics
+
+- If there are many callers for the constructors, apply
+  `Replace Constructor with Factory Function`.
+- Create an empty class for the delegate. Its constructor should take any
+  subclass-specific data as well as, usually, a back-reference to the
+  superclass.
+- Add a field to the superclass to hold the delegate.
+- Modify the creation of the subclass so that it initializes the delegate field
+  with an instance of the delegate.
+  - This can be done in the factory function, or in the constructor if the
+    constructor can reliably tell whether to create the correct delegate.
+- Choose a subclass method to move to the delegate class.
+- `Use Move Function` to move it to the delegate class. Don’t remove the
+  source’s delegating code.
+  - If the method needs elements that should move to the delegate, move them.
+    If it needs elements that should stay in the superclass, add a field to the
+    delegate that refers to the superclass.
+- If the source method has callers outside the class, move the source’s
+  delegating code from the subclass to the superclass, guarding it with a check
+  for the presence of the delegate. If not, apply `Remove Dead Code`.
+  - If there’s more than one subclass, and you start duplicating code within
+    them, use `Extract Superclass`. In this case, any delegating methods on the
+    source superclass no longer need a guard if the default behavior is moved
+    to the delegate superclass.
+- Test.
+- Repeat until all the methods of the subclass are moved.
+- Find all callers of the subclasses’s constructor and change them to use the
+  superclass constructor.
+- Test.
+- Use `Remove Dead Code` on the subclass.
+
+### Example
+
+[replace_subclass_with_delegate_v1.js](replace_subclass_with_delegate_v1.js)
+
+### Example: Replacing a Hierarchy
+
+[replacing_a_hierarchy_v1.js](replacing_a_hierarchy_v1.js)
+
+## Replace Superclass with Delegate
