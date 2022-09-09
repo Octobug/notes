@@ -39,6 +39,9 @@
     - [Example](#example-5)
     - [Example: Replacing a Hierarchy](#example-replacing-a-hierarchy)
   - [Replace Superclass with Delegate](#replace-superclass-with-delegate)
+    - [Motivation](#motivation-9)
+    - [Mechanics](#mechanics-10)
+    - [Example](#example-6)
 
 ## Pull Up Method
 
@@ -494,3 +497,43 @@ if often useful.
 [replacing_a_hierarchy_v1.js](replacing_a_hierarchy_v1.js)
 
 ## Replace Superclass with Delegate
+
+```js
+class List {...}
+class Stack extends List {...}
+
+// refactored:
+class List {...}
+class Stack {
+  constructor() {
+    this._storage = new List();
+  }
+}
+```
+
+### Motivation
+
+Subclassing can be done in a way that leads to confusion and complication.
+
+If functions of the superclass don't make sense on the subclass, that's a sign
+that we shouldn't be using inheritance to use the superclass's functionality.
+
+Using delegation makes it clear that it is a separate thing -- one where only
+some of the functions carry over.
+
+The recommended way is to mostly use inheritance first, and apply
+`Replace Superclass with Delegate` when it becomes a problem.
+
+### Mechanics
+
+- Create a field in the subclass that refers to the superclass object.
+  Initialize this delegate reference to a new instance.
+- For each element of the superclass, create a forwarding function in the
+  subclass that forwards to the delegate reference. Test after forwarding each
+  consistent group.
+- When all superclass elements have been overridden with forwarders, remove the
+  inheritance link.
+
+### Example
+
+[replace_superclass_with_delegate.js](replace_superclass_with_delegate.js)
