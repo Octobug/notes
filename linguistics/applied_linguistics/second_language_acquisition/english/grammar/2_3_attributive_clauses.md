@@ -41,6 +41,10 @@
     - [3.5.4 非限制性定语从句的翻译](#354-非限制性定语从句的翻译)
     - [思维训练 3.5](#思维训练-35)
   - [3.6 定语从句与同位语从句的区分](#36-定语从句与同位语从句的区分)
+    - [3.6.1 从结构上区分: that 是否作成分](#361-从结构上区分-that-是否作成分)
+    - [3.6.2 从意义上区分: that 引导的从句的意义不同](#362-从意义上区分-that-引导的从句的意义不同)
+    - [思维训练 3.6](#思维训练-36)
+  - [综合训练: 3. 定语从句](#综合训练-3-定语从句)
 
 定语从句的两个重要概念: **先行词**和**关系词**。
 
@@ -627,4 +631,190 @@ ex-boyfriend.*
 
 ## 3.6 定语从句与同位语从句的区分
 
->>>>> progress
+### 3.6.1 从结构上区分: that 是否作成分
+
+- that 在**定语从句**中要充当成分，比如作从句的主语或宾语: "名词 + that + 不完整的句子"
+- that 在**同位语从句**中不充当任何成分，仅起连词的作用: "名词 + that + 完整的陈述句"
+- `例 1`:
+  - The rumor that he spread everywhere turned out to be untrue.
+  - The rumor that Tom was a thief turned out to be untrue.
+- `例 2`:
+  - The fact that we talked about is very important.
+  - The fact that he succeeded in the experiment pleased everybody.
+
+### 3.6.2 从意义上区分: that 引导的从句的意义不同
+
+- 定语从句相当于形容词，对先行词起修饰、描述和限制的作用
+- 同位语从句相当于一个名词，是对先行词内容的具体表述，二者是同位关系
+
+`例 1`:
+
+- The news that you heard is not true.
+  - "that you heard" 并不是表示 news 的内容，只是在限制 news 所指的范围。
+- The news that Lincoln was murdered at a theater is true.
+  - that Lincoln was murdered at a theater 表示 news 的具体内容，在意义上与 news
+    构成同位关系。
+
+### 思维训练 3.6
+
+**二、请分析下列 that 引导的是定语从句还是名词从句，并翻译成中文。**
+
+*4. The mere fact that most people believe nuclear war would be madness does not
+mean that it will not occur.*
+
+答案: 同位语从句。
+
+译: 尽管大多数人认为核战争是愚蠢的行为，但这并不意味着核战不会爆发。
+
+*5. An evidence that life may have existed on earth 3.8 billions years ago has
+been discovered in these ancient rocks.*
+
+答案: 同位语从句。
+
+译: 生命早在 38 亿年前就已经存在的证据在这些古老的岩石中被发现了。
+
+*8. ... It's good to see that we have one real man in the kingdom.*
+
+答案: 宾语从句。
+
+译: 太好了，我们的国度里还有一个真正的男人。
+
+## 综合训练: 3. 定语从句
+
+**一、请将下列中文翻译成英文。**
+
+*1. 我昨天买了一本书，该书的作者是一位盲人。*
+
+答案: Yesterday I bought a book whose author was blind.
+
+*2. 我的办公室在这栋大楼的二层，它很小。*
+
+答案: My office, which is very small, is on the second floor of this building.
+
+*3. 你昨天借给我的那本书很有趣。*
+
+答案: The book that you lent me yesterday is very interesting.
+
+> 补充: 句子 `1.` 与 `3.` 的时态存疑
+>
+> 根据
+> "7. 英文时态 (一): 一般时态 -
+> 7.3.8 口语用法四: 根据上下文的语境灵活地使用一般过去时"
+> 中的解释，句子 `1.` 合理使用 was。为什么句子 `3.` 使用的是 is？
+>
+> 这里猜测是以主句时态为准，即 `3.` 的主句为 "The book is very interesting."，
+> 主句的时态不用随从句时态而调整。
+
+*4. 那位老师教我英文，他来自加拿大。*
+
+答案: The teacher, who comes from Canada, teaches me English.
+
+*5. 和我一起工作的那个女孩已经有男朋友了。*
+
+答案: The girl I work with has a boyfriend.
+
+*6. 告诉我今天早晨你迟到的原因。*
+
+答案: Please tell me the reason why you were late this morning.
+
+*7. 他们到的时候天正在下雨。*
+
+答案: It was raining when they arrived.
+
+*8. 他是一个值得信赖的人。*
+
+答案: He is the man who you can depend on.
+
+*9. 你住的那家酒店叫什么名字？*
+
+答案: What's the name of the hotel where you live?
+
+*10. 接电话的那个男的告诉我你不在。*
+
+答案: The man who answered the phone told me that you were away.
+
+**二、请选择最恰当的词填空。**
+
+*12. I don't suppose anything happens ____ he doesn't foresee.*
+
+- *A. that*
+- *B. which*
+- *C. what*
+- *D. as*
+
+答案: A。先行词是 anything，此时只能用 that 引导定语从句。
+
+*13. They shouted with the loudest voice ____ they could.*
+
+- *A. when*
+- *B. that*
+- *C. which*
+- *D. what*
+
+答案: B。先行词 voice 有最高级 the loudest 修饰，此时只能用 that 引导定语从句。
+
+*14. This is the best book ____ on the subject.*
+
+- *A. which there is*
+- *B. that there is*
+- *C. which is*
+- *D. what is*
+
+答案: B。先行词 book 有最高级 the best 修饰，此时只能用 that 引导定语从句。
+
+*15. He's written a book ____ name I've completely forgotten.*
+
+- *A. whose*
+- *B. which*
+- *C. of which*
+- *D. that*
+
+答案: A。表示所属关系，用关系词 whose。
+也可以说 **of which the name** 或 **the name of which**。
+
+*16. The meeting was postponed, ____ was exactly what I wanted.*
+
+- *A. that*
+- *B. which it*
+- *C. and that*
+- *D. this*
+
+答案: C。先行词是整个主句 the meeting was postponed，此时只能用 which 引导定语从句。
+这里没有 which 选项，则可以采用并列句 and that。
+
+*18. There is not much ____ can be done now.*
+
+- *A. that*
+- *B. which*
+- *C. who*
+- *D. what*
+
+答案: A。先行词是 much，用 that 引导定语从句。
+
+*19. He showed me a book, ____ I could tell that it was pretty old.*
+
+- *A. which cover*
+- *B. of which cover*
+- *C. the cover which*
+- *D. from the cover of which*
+
+答案: D。这里根据句子意思来选择介词，from the cover of which 表示"从书的封面(可以判断)"。
+
+*22. What is ____ ordered the English book?*
+
+- *A. the lady's address in Beijing who*
+- *B. the lady's address in Beijing which*
+- *C. the address of the lady in Beijing who*
+- *D. the address of the lady in Beijing which*
+
+答案: C。A 的先行词是 address，但关系词是 who，故错误；B 的先行词是 address，与谓语
+ordered "订购"语义不搭配，故错误；D 的先行词是 lady，但关系词是 which，故错误。
+
+*23. There comes a time in every man's life ____.*
+
+- *A. then he has to think*
+- *B. which he needs*
+- *C. when he has to think*
+- *D. therefore he has to work hard*
+
+答案: C。先行词是 time，表示时间，故 when 正确。
