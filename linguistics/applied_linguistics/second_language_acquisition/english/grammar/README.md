@@ -31,8 +31,8 @@
 
 - [x] [1. 简单句与复合句](2_1_simple_and_complex_sentences.md)
 - [x] [2. 名词从句](2_2_nominal_clauses.md)
-- [ ] [3. 定语从句](2_3_attributive_clauses.md)
-- [ ] 4. 状语从句
+- [x] [3. 定语从句](2_3_attributive_clauses.md)
+- [ ] [4. 状语从句](2_4_adverbial_clauses.md)
 - [x] [5. 完成时态](2_5_perfect_tense.md)
 - [ ] [6. 完成进行时态](2_6_perfect_continuous_tense.md)
 - [ ] 7. 虚拟语气

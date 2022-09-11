@@ -435,7 +435,8 @@ when 可以引导**限制性**和**非限制性**定语从句，其先行词必�
 
 #### 一、where 的先行词指地点
 
-where 引导定语从句，其先行词一般是表示地点的名词，如 place 和 house 等。
+where 可以引导**限制性**和**非限制性**定语从句，其先行词一般是表示地点的名词，如 place 和
+house 等。
 
 - `例 1`:
   - A: Since you work in the theater, can't you get me a free ticket now and
@@ -695,15 +696,14 @@ been discovered in these ancient rocks.*
 
 答案: The book that you lent me yesterday is very interesting.
 
-> 补充: 句子 `1.` 与 `3.` 的时态存疑
+> 补充: 句子 `1.` 与 `3.` 的时态对比
 >
-> 根据
-> "7. 英文时态 (一): 一般时态 -
-> 7.3.8 口语用法四: 根据上下文的语境灵活地使用一般过去时"
-> 中的解释，句子 `1.` 合理使用 was。为什么句子 `3.` 使用的是 is？
+> `1.` 的主句为 Yesterday I bought a book.
 >
-> 这里猜测是以主句时态为准，即 `3.` 的主句为 "The book is very interesting."，
-> 主句的时态不用随从句时态而调整。
+> `3.` 的主句为 The book is very interesting.
+>
+> 首先，句子的时态肯定是以主句为准，因此对于句子 `3.` 使用 is 没有疑问。
+> 对于句子 `1.`，需要的知识背景是 "sequence of tense"。这个知识点待补充。
 
 *4. 那位老师教我英文，他来自加拿大。*
 
@@ -818,3 +818,36 @@ ordered "订购"语义不搭配，故错误；D 的先行词是 lady，但关系
 - *D. therefore he has to work hard*
 
 答案: C。先行词是 time，表示时间，故 when 正确。
+
+*32. Yet no firm evidence had come to light ____ the men arrested were actually
+responsible.*
+
+- *A. which*
+- *B. as*
+- *C. what*
+- *D. that*
+
+答案: D。这里 that 引导同位语从句，"the man arrested were actually responsible"
+补充说明 evidence。
+
+*34. They helped us time and again, ____ very kind of them.*
+
+- *A. who were*
+- *B. which was*
+- *C. that was*
+- *D. which were*
+
+答案: B。这里定语从句修饰前面整个句子 they helped us time and again。
+
+*35.*
+
+*Do you like the book your father gave you?*
+
+*Very much. It's exactly ____ I wanted.*
+
+- *A. one which*
+- *B. that*
+- *C. one what*
+- *D. the one*
+
+答案: D。这里 the one 相当于 the one which，关系词被省去。
