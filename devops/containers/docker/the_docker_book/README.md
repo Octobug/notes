@@ -6,8 +6,7 @@
 
 ## Table of Contents
 
-- [ ] [Foreword](0_foreword)
-- [ ] [Chapter 1 Introduction](.)
+- [ ] [Chapter 1 Introduction](1_introduction)
 - [ ] [Chapter 2 Installing Docker](.)
 - [ ] [Chapter 3 Getting Started with Docker](.)
 - [ ] [Chapter 4 Working with Docker images and repositories](.)

@@ -1,5 +1,0 @@
-# Foreword
-
-- [Foreword](#foreword)
-
->>>>> progress
