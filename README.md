@@ -98,7 +98,6 @@ disciplines according to the
 
 Blogs that I've been reading, listed in alphabetical order.
 
-- [ ] [当然我在扯淡](http://www.yinwang.org/)
 - [ ] [酷壳](https://coolshell.cn/)
 - [ ] [Randy's Blog](https://lutaonan.com/)
 - [ ] [The GitHub Blog](https://github.blog/)
