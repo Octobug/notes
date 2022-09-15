@@ -9,8 +9,9 @@
 ## 单词书
 
 - [ ] COCA 语料库 20000 常用词 (扇贝单词 App)
-- [ ] GRE (扇贝单词 App)
-- [ ] Merriam-Websters Vocabulary Builder by Merriam-Webster (2010)
+- [ ] 雅思 8000 词 (扇贝单词 App)
+- [ ] 托福词频 9000 词汇 (扇贝单词 App)
+- [ ] 扇贝精选 GRE 3000 词 (扇贝单词 App)
 
 ## 其他
 
