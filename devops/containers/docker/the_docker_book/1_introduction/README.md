@@ -12,7 +12,8 @@
     - [Registries](#registries)
     - [Containers](#containers)
     - [Compose, Swarm and Kubernetes](#compose-swarm-and-kubernetes)
-    - [What can you use Docker for?](#what-can-you-use-docker-for)
+  - [Docker with configuration management](#docker-with-configuration-management)
+  - [Docker's technical components](#dockers-technical-components)
 
 Containers run in **user** space on top of an operating system's kernel.
 
@@ -102,6 +103,19 @@ A Docker container is:
 - Kubernetes: Docker provides the primary underlying compute layer in the
   orchestration tool Kubernetes.
 
-### What can you use Docker for?
+## Docker with configuration management
+
+Compared to traditional image models, Docker is a lot more lightweight: images
+are layered, and you can quickly iterate on them.
+
+With short-lived, immutable, disposable, and service-oriented, you are rarely
+concerned with long-term management of state, entropy is less of a concern
+because containers rarely live long enough for it to be, and the recreation of
+state may often be cheaper than the remediation of state.
+
+With the need to manage docker itself, both Docker and configuration management
+tools are likely to be deployed in the majority of organization.
+
+## Docker's technical components
 
 >>>>> progress
