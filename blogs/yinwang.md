@@ -72,10 +72,10 @@
 - 2016年04月13日 - 博文的自愿付费方式
 - 2016年03月31日 - 我为什么不再做 PL 人
 - 2016年03月19日 - 为什么自动车完全不可以犯错误
-- 2016年03月09日 - AlphaGo与人工智能
-- 2016年02月12日 - 我看自动驾驶技术
-- 2016年01月18日 - 给Java说句公道话
-- 2016年01月10日 - Tesla Autopilot
+- [x] 2016年03月09日 - [AlphaGo与人工智能](http://www.yinwang.org/blog-cn/2016/03/09/alpha-go)
+- [x] 2016年02月12日 - [我看自动驾驶技术](http://www.yinwang.org/blog-cn/2016/02/12/self-driving-car)
+- [x] 2016年01月18日 - [给Java说句公道话](http://www.yinwang.org/blog-cn/2016/01/18/java)
+- [x] 2016年01月10日 - [Tesla Autopilot](http://www.yinwang.org/blog-cn/2016/01/10/tesla-autopilot)
 - [x] 2015年12月21日 - [Tesla Model X的车门设计问题](http://www.yinwang.org/blog-cn/2015/12/21/tesla-model-x)
 - [x] 2015年12月12日 - [Tesla Model S 的设计失误](http://www.yinwang.org/blog-cn/2015/12/12/tesla-model-s)
 - [x] 2015年11月21日 - [编程的智慧](http://www.yinwang.org/blog-cn/2015/11/21/programming-philosophy)
