@@ -94,17 +94,7 @@ disciplines according to the
 4. [Military Sciences](https://en.wikipedia.org/wiki/Military_science)
     1. [Military Organization](military_organization)
 
-## Blogs
-
-Blogs that I've been reading, listed in alphabetical order.
-
-- [ ] [酷壳](https://coolshell.cn/)
-- [ ] [Randy's Blog](https://lutaonan.com/)
-- [ ] [The GitHub Blog](https://github.blog/)
-- [ ] [Yingyu's Blog](https://wingu.se/)
-- [ ] [银色子弹](https://silverrainz.me/)
-
 ## Miscellaneous
 
-- [Interview](interview) for Software Engineer
+- [Blogs](blogs) that I've been reading.
 - [Thoughts](thoughts) on everything

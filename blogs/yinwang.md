@@ -1,0 +1,157 @@
+# 当然我在扯淡
+
+> <http://yinwang.org>
+>
+> Kuri-su/yinwang.bak: <https://github.com/Kuri-su/yinwang.bak>
+
+## 目录
+
+- 2020年06月10日 - 新丑陋的中国人
+- 2020年05月23日 - 几个需要避免的美国英语习惯
+- 2020年04月30日 - 一对一教学计划
+- 2020年03月26日 - 计算机科学入门班报名
+- 2020年03月23日 - 对智商的怀疑
+- 2020年03月06日 - 英语学习的一些经验
+- 2020年03月05日 - 知识星球试运营
+- 2020年03月03日 - 计算机科学课程
+- 2020年02月17日 - 谈职场中的命令口气
+- 2020年02月13日 - 一道 Java 面试题
+- 2020年02月05日 - 如何阅读别人的代码
+- 2020年01月17日 - 顾问业务试运营（v2.0）
+- 2020年01月16日 - 我的事业计划
+- 2020年01月15日 - 未来的事业
+- 2019年12月31日 - 2020新年寄语
+- 2019年12月26日 - 所谓“成功”
+- 2019年12月24日 - 我不是编译器专家
+- 2019年12月23日 - 抱怨与观察的差别
+- 2019年12月15日 - 自动化服务的误区
+- 2019年11月05日 - 永恒
+- 2019年10月24日 - 写在 1024 程序员节
+- 2019年10月17日 - 免费食物不是好事
+- 2019年09月30日 - 自动驾驶车的责任和风险分析
+- 2019年09月16日 - 机器与人类视觉能力的差距（3）
+- 2019年09月15日 - 机器与人类视觉能力的差距（2）
+- 2019年09月14日 - 机器与人类视觉能力的差距（1）
+- 2019年09月11日 - Talk is not cheap
+- 2019年08月19日 - 关于微内核的对话
+- 2019年08月17日 - 中国人的信任危机
+- 2019年07月31日 - 关于人的素质
+- 2019年07月21日 - 再谈“P vs NP”问题
+- 2019年07月12日 - 学习的智慧
+- 2018年11月23日 - 解谜英语语法
+- 2018年04月13日 - 解谜计算机科学
+- 2018年03月27日 - 扶门的礼仪
+- 2018年03月08日 - 从苹果产品的设计错误学教训
+- 2018年02月22日 - 智能合约和形式验证
+- 2017年11月09日 - iPhone X
+- 2017年11月05日 - 网络用语
+- 2017年11月01日 - 理性的力量
+- 2017年10月16日 - 人体工学
+- 2017年08月19日 - 知乎和 MITBBS
+- 2017年08月14日 - 旅行的智慧
+- 2017年07月08日 - 生活的智慧
+- 2017年07月06日 - 如何掌握所有的程序语言
+- 2017年07月06日 - 带猫回国经历
+- 2017年05月25日 - DSL 的误区
+- 2017年05月23日 - Kotlin 和 Checked Exception
+- 2017年05月17日 - 什么是现实理想主义者
+- 2017年05月08日 - 美国企业的装嫩问题
+- 2017年04月23日 - 人工智能的局限性
+- 2017年04月17日 - 美国公司管理层的洗脑技巧
+- 2017年04月14日 - 经验和洞察力
+- 2016年10月13日 - C# 的 IDisposable 接口
+- 2016年10月12日 - C 编译器优化的 Bug
+- 2016年09月18日 - 对 Rust 语言的分析
+- 2016年09月14日 - 测试的道理
+- 2016年07月10日 - Tesla autopilot 引起致命车祸
+- 2016年06月28日 - 养生节目的危害
+- 2016年06月14日 - 美国社会的信息不平等现象
+- 2016年06月08日 - Java 有值类型吗？
+- 2016年06月06日 - Swift 语言的设计错误
+- 2016年05月22日 - 正面思维的误区
+- 2016年04月13日 - 博文的自愿付费方式
+- 2016年03月31日 - 我为什么不再做 PL 人
+- 2016年03月19日 - 为什么自动车完全不可以犯错误
+- 2016年03月09日 - AlphaGo与人工智能
+- 2016年02月12日 - 我看自动驾驶技术
+- 2016年01月18日 - 给Java说句公道话
+- 2016年01月10日 - Tesla Autopilot
+- [x] 2015年12月21日 - [Tesla Model X的车门设计问题](http://www.yinwang.org/blog-cn/2015/12/21/tesla-model-x)
+- [x] 2015年12月12日 - [Tesla Model S 的设计失误](http://www.yinwang.org/blog-cn/2015/12/12/tesla-model-s)
+- [x] 2015年11月21日 - [编程的智慧](http://www.yinwang.org/blog-cn/2015/11/21/programming-philosophy)
+- [x] 2015年10月18日 - [图灵的光环](http://www.yinwang.org/blog-cn/2015/10/18/turing)
+- [x] 2015年09月19日 - [对 Parser 的误解](http://www.yinwang.org/blog-cn/2015/09/19/parser)
+- [x] 2015年07月04日 - [数学和编程](http://www.yinwang.org/blog-cn/2015/07/04/math)
+- [x] 2015年07月02日 - [谈程序的正确性](http://www.yinwang.org/blog-cn/2015/07/02/program-correctness)
+- [x] 2015年06月14日 - [DRY原则的误区](http://www.yinwang.org/blog-cn/2015/06/14/dry-principle)
+- [x] 2015年06月07日 - [所谓软件工程](http://www.yinwang.org/blog-cn/2015/06/07/software-engineering)
+- [x] 2015年04月03日 - [编程的宗派](http://www.yinwang.org/blog-cn/2015/04/03/paradigms)
+- [x] 2015年03月21日 - [英语口音](http://www.yinwang.org/blog-cn/2015/03/21/accent)
+- [x] 2015年03月21日 - [英语口音与装逼心理](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E9%9F%B3%E4%B8%8E%E8%A3%85%E9%80%BC%E5%BF%83%E7%90%86.md)
+- [x] 2015年03月20日 - [智商的圈套](http://www.yinwang.org/blog-cn/2015/03/20/trap-of-intelligence)
+- [x] 2015年03月20日 - [为什么拍照是个坏习惯](http://www.yinwang.org/blog-cn/2015/03/20/photograph)
+- [X] 2015年03月17日 - [设计的重要性](http://www.yinwang.org/blog-cn/2015/03/17/design)
+- [x] 2015年03月11日 - [关于Git的礼节](http://www.yinwang.org/blog-cn/2015/03/11/git-etiquette)
+- [x] 2015年03月03日 - [怎样尊重一个程序员](http://www.yinwang.org/blog-cn/2015/03/03/how-to-respect-a-programmer)
+- [x] 2015年02月24日 - [所谓“人为错误”](http://www.yinwang.org/blog-cn/2015/02/24/human-errors)
+- [x] 2015年02月20日 - [其他人的BUG](http://www.yinwang.org/blog-cn/2015/02/20/other-peoples-bug)
+- [x] 2015年02月01日 - [创造者的思维方式](http://www.yinwang.org/blog-cn/2015/02/01/creative-thinking)
+- [x] 2015年01月19日 - [小费和中国人的尊严](http://www.yinwang.org/blog-cn/2015/01/19/tips)
+- [x] 2015年01月05日 - [牛校综合征](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%89%9B%E6%A0%A1%E7%BB%BC%E5%90%88%E5%BE%81.md)
+- [x] 2014年11月12日 - [恶评《星际穿越》](http://www.yinwang.org/blog-cn/2014/11/12/interstellar)
+- [x] 2014年09月15日 - [谈创新](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%B0%88%E5%88%9B%E6%96%B0.md)
+- [x] 2014年08月15日 - [贡献和价值](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%B4%A1%E7%8C%AE%E5%92%8C%E4%BB%B7%E5%80%BC.md)
+- [x] 2014年08月14日 - [谦虚不是一种美德](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%B0%A6%E8%99%9A%E4%B8%8D%E6%98%AF%E4%B8%80%E7%A7%8D%E7%BE%8E%E5%BE%B7.md)
+- [x] 2014年04月24日 - [关系式模型的实质](http://www.yinwang.org/blog-cn/2014/04/24/relational)
+- [x] 2014年04月18日 - [对 Go 语言的综合评价](http://www.yinwang.org/blog-cn/2014/04/18/golang)
+- [x] 2014年04月11日 - [黑客文化的精髓](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E9%BB%91%E5%AE%A2%E6%96%87%E5%8C%96%E7%9A%84%E7%B2%BE%E9%AB%93.md)
+- [x] 2014年04月10日 - [电视编剧的问题](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%94%B5%E8%A7%86%E7%BC%96%E5%89%A7%E7%9A%84%E9%97%AE%E9%A2%98.md)
+- [x] 2014年03月24日 - [学术腐败是历史的必然](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%AD%A6%E6%9C%AF%E8%85%90%E8%B4%A5%E6%98%AF%E5%8E%86%E5%8F%B2%E7%9A%84%E5%BF%85%E7%84%B6.md)
+- [x] 2014年02月18日 - [一个对 Dijkstra 的采访视频](http://www.yinwang.org/blog-cn/2014/02/18/dijkstra-interview)
+- [x] 2014年02月15日 - [我的第一次和最后一次 Hackathon 经历](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%92%8C%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%20Hackathon%20%E7%BB%8F%E5%8E%86.md)
+- [x] 2014年02月09日 - [程序员的心理疾病](http://www.yinwang.org/blog-cn/2014/02/09/programmer-mental)
+- [x] 2014年02月04日 - [程序语言与它们的工具](http://www.yinwang.org/blog-cn/2014/02/04/pl-tool)
+- [x] 2014年01月28日 - [RubySonar：一个 Ruby 静态分析器](http://www.yinwang.org/blog-cn/2014/01/28/rubysonar)
+- [x] 2014年01月25日 - [程序语言与……](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E2%80%A6%E2%80%A6.md)
+- [x] 2014年01月04日 - [我和权威的故事](http://www.yinwang.org/blog-cn/2014/01/04/authority)
+- [x] 2013年11月25日 - [PySonar2 与 Sourcegraph 集成完毕](http://www.yinwang.org/blog-cn/2013/11/25/pysonar2-sg)
+- [x] 2013年07月13日 - [丘奇和图灵](http://www.yinwang.org/blog-cn/2013/07/13/church-turing)
+- [x] 2013年07月06日 - [Pydiff Python结构化程序比较工具](http://www.yinwang.org/blog-cn/2013/07/06/PyDiff-Python%E7%BB%93%E6%9E%84%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%AF%94%E8%BE%83%E5%B7%A5%E5%85%B7)
+- [x] 2013年06月19日 - [我离开了 Coverity](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%88%91%E7%A6%BB%E5%BC%80%E4%BA%86%20Coverity.md)
+- [x] 2013年04月26日 - [原因与证明](http://www.yinwang.org/blog-cn/2013/04/26/reason-and-proof)
+- [x] 2013年04月21日 - [Ydiff 结构化的程序比较](http://www.yinwang.org/blog-cn/2013/04/21/ydiff-%E7%BB%93%E6%9E%84%E5%8C%96%E7%9A%84%E7%A8%8B%E5%BA%8F%E6%AF%94%E8%BE%83)
+- [x] 2013年04月21日 - [程序语言不是工具](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80%E4%B8%8D%E6%98%AF%E5%B7%A5%E5%85%B7.md)
+- [x] 2013年04月20日 - [编辑器与IDE](http://www.yinwang.org/blog-cn/2013/04/20/editor-ide)
+- [x] 2013年04月18日 - [程序语言的常见设计错误(2) - 试图容纳世界](http://www.yinwang.org/blog-cn/2013/04/18/language-design-mistake2)
+- [x] 2013年04月17日 - [关于语言的思考](http://www.yinwang.org/blog-cn/2013/04/17/languages)
+- [x] 2013年04月16日 - [Yoda 表示法错在哪里](http://www.yinwang.org/blog-cn/2013/04/16/yoda-notation)
+- [x] 2013年04月15日 - [几个超炫的专业词汇](http://www.yinwang.org/blog-cn/2013/04/15/terminology)
+- [x] 2013年04月14日 - [标准化试卷标记语言](http://www.yinwang.org/blog-cn/2013/04/14/standard-exam-language)
+- [x] 2013年04月14日 - [一种新的操作系统设计](http://www.yinwang.org/blog-cn/2013/04/14/os-design)
+- [x] 2013年04月14日 - [Markdown 的一些问题](http://www.yinwang.org/blog-cn/2013/04/14/markdown)
+- [x] 2013年04月14日 - [论“我”和“我们”](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%AE%BA%E2%80%9C%E6%88%91%E2%80%9D%E5%92%8C%E2%80%9C%E6%88%91%E4%BB%AC%E2%80%9D.md)
+- [x] 2013年04月13日 - [谈程序的“通用性”](http://www.yinwang.org/blog-cn/2013/04/13/generality)
+- [x] 2013年04月12日 - [什么是启发](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E4%BB%80%E4%B9%88%E6%98%AF%E5%90%AF%E5%8F%91.md)
+- [x] 2013年04月11日 - [Scheme 编程环境的设置](http://www.yinwang.org/blog-cn/2013/04/11/scheme-setup)
+- [x] 2013年04月10日 - [我为什么离开 Cornell](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A6%BB%E5%BC%80%20Cornell.md)
+- [x] 2013年04月07日 - [测试驱动开发](http://www.yinwang.org/blog-cn/2013/04/07/test-driven-dev)
+- [x] 2013年04月03日 - [爱因斯坦谈教育](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6%E8%B0%88%E6%95%99%E8%82%B2.md)
+- [x] 2013年04月02日 - [Currying 的局限性](http://www.yinwang.org/blog-cn/2013/04/02/currying)
+- [x] 2013年04月01日 - [惰性求值](http://www.yinwang.org/blog-cn/2013/04/01/lazy-evaluation)
+- [x] 2013年03月31日 - [函数式语言的宗教](http://www.yinwang.org/blog-cn/2013/03/31/purely-functional)
+- [x] 2013年03月29日 - [什么是“脚本语言”](http://www.yinwang.org/blog-cn/2013/03/29/scripting-language)
+- [x] 2013年03月28日 - [Chez Scheme 的传说](http://www.yinwang.org/blog-cn/2013/03/28/chez-scheme)
+- [x] 2013年03月26日 - [Lisp 已死，Lisp 万岁！](http://www.yinwang.org/blog-cn/2013/03/26/lisp-dead-alive)
+- [x] 2013年03月24日 - [论对东西的崇拜](http://www.yinwang.org/blog-cn/2013/03/24/tools)
+- [x] 2013年03月19日 - [“解决问题”与“消灭问题”](http://www.yinwang.org/blog-cn/2013/03/19/eliminate-problems)
+- [x] 2013年03月15日 - [程序语言的常见设计错误(1) - 片面追求短小](http://www.yinwang.org/blog-cn/2013/03/15/language-design-mistake1)
+- [x] 2013年03月08日 - [谈语法](http://www.yinwang.org/blog-cn/2013/03/08/on-syntax)
+- [x] 2013年03月07日 - [Oberon 操作系统：被忽略的珍宝](http://www.yinwang.org/blog-cn/2013/03/07/oberon)
+- [x] 2013年03月07日 - [谈 Linux，Windows 和 Mac](http://www.yinwang.org/blog-cn/2013/03/07/linux-windows-mac)
+- [x] 2013年03月07日 - [解密“设计模式”](http://www.yinwang.org/blog-cn/2013/03/07/design-patterns)
+- [x] 2013年03月04日 - [Braid - 一个发人深思的游戏](http://www.yinwang.org/blog-cn/2013/03/04/braid)
+- [x] 2012年09月18日 - [TeXmacs：一个真正“所见即所得”的排版系统](http://www.yinwang.org/blog-cn/2012/09/18/texmacs)
+- [x] 2012年08月01日 - [怎样写一个解释器](http://www.yinwang.org/blog-cn/2012/08/01/interpreter)
+- [x] 2012年07月25日 - [什么是语义学](http://www.yinwang.org/blog-cn/2012/07/25/semantics)
+- [x] 2012年07月04日 - [GTF - Great Teacher Friedman](http://www.yinwang.org/blog-cn/2012/07/04/dan-friedman)
+- [x] 2012年05月18日 - [什么是“对用户友好”](http://www.yinwang.org/blog-cn/2012/05/18/user-friendliness)
