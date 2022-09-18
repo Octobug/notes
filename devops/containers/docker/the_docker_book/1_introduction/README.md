@@ -14,6 +14,7 @@
     - [Compose, Swarm and Kubernetes](#compose-swarm-and-kubernetes)
   - [Docker with configuration management](#docker-with-configuration-management)
   - [Docker's technical components](#dockers-technical-components)
+  - [What's in the book?](#whats-in-the-book)
 
 Containers run in **user** space on top of an operating system's kernel.
 
@@ -118,4 +119,35 @@ tools are likely to be deployed in the majority of organization.
 
 ## Docker's technical components
 
->>>>> progress
+Docker can be run on any x64 host running a modern Linux kernel. It includes:
+
+- A native Linux container format that Docker calls `libcontainer`.
+- `Linux kernel namespaces`, which provide isolation for **filesystems**,
+  **processes**, and **networks**.
+  - **Filesystem isolation**: each container is its own root filesystem.
+  - **Process isolation**: each container runs in its own process environment.
+  - **Network isolation**: separate virtual interfaces and IP addressing between
+    containers.
+- Resource isolation and grouping: resources like CPU and memory are allocated
+  individually to each Docker container using the `cgroups`, or control groups,
+  kernel feature.
+- `Copy-on-write`: filesystems are created with copy-on-write, meaning they are
+  layered and fast and require limited disk usage.
+- Logging: `STDOUT`, `STDERR`, `STDIN` from the container are collected, logged,
+  and available for analysis or trouble-shooting.
+- Interactive shell: You can create a pseudo-tty and attach to `STDIN` to
+  provide an interactive shell to your container.
+
+## What's in the book?
+
+- Install Docker.
+- Take your first steps with a Docker container.
+- Build Docker images.
+- Manage and share Docker images.
+- Run and manage more complex Docker containers and stacks of Docker containers.
+- Deploy Docker containers as part of your testing pipeline.
+- Build multi-container applications and environments.
+- Introduce the basics of Docker orchestration with `Docker Compose`, `Consul`,
+  and `Swarm`.
+- Explore the Docker API.
+- Getting Help and Extending Docker.
