@@ -68,10 +68,10 @@
 - 2016年06月14日 - 美国社会的信息不平等现象
 - 2016年06月08日 - Java 有值类型吗？
 - 2016年06月06日 - Swift 语言的设计错误
-- 2016年05月22日 - 正面思维的误区
-- 2016年04月13日 - 博文的自愿付费方式
-- 2016年03月31日 - 我为什么不再做 PL 人
-- 2016年03月19日 - 为什么自动车完全不可以犯错误
+- [x] 2016年05月22日 - [正面思维的误区](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%AD%A3%E9%9D%A2%E6%80%9D%E7%BB%B4%E7%9A%84%E8%AF%AF%E5%8C%BA.md)
+- [x] 2016年04月13日 - [博文的自愿付费方式](http://www.yinwang.org/blog-cn/2016/04/13/pay-blog)
+- [x] 2016年03月31日 - [我为什么不再做 PL 人](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%86%8D%E5%81%9A%20PL%20%E4%BA%BA.md)
+- [x] 2016年03月19日 - [为什么自动车完全不可以犯错误](http://www.yinwang.org/blog-cn/2016/03/19/self-driving-car-liability)
 - [x] 2016年03月09日 - [AlphaGo与人工智能](http://www.yinwang.org/blog-cn/2016/03/09/alpha-go)
 - [x] 2016年02月12日 - [我看自动驾驶技术](http://www.yinwang.org/blog-cn/2016/02/12/self-driving-car)
 - [x] 2016年01月18日 - [给Java说句公道话](http://www.yinwang.org/blog-cn/2016/01/18/java)
