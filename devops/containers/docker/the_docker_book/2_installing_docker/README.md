@@ -13,6 +13,12 @@
       - [Installing on Fedora](#installing-on-fedora)
     - [Starting the Docker daemon on the Red Hat family](#starting-the-docker-daemon-on-the-red-hat-family)
   - [Docker for Mac](#docker-for-mac)
+  - [Docker for Windows installtion](#docker-for-windows-installtion)
+  - [Using Docker on OSX and Windows with this book](#using-docker-on-osx-and-windows-with-this-book)
+  - [Docker installation script](#docker-installation-script)
+  - [The Docker daemon](#the-docker-daemon)
+    - [Configuring the Docker daemon](#configuring-the-docker-daemon)
+    - [Checking that the Docker daemon is running](#checking-that-the-docker-daemon-is-running)
 
 💡 Tips: Docker for Mac and Docker for Windows are a collection of components.
 It includes a tiny **virtual machine** shipped with a **wrapper script** to
@@ -162,4 +168,98 @@ sudo systemctl enable docker
 
 ## Docker for Mac
 
->>>>> progress
+Docker for Mac ships with a variety of components:
+
+- Hyperkit.
+- The Docker client and server.
+- Docker Compose.
+- Docker Machine - Which helps you create Docker hosts.
+- Kitematic - is a GUI that helps you run Docker locally and interact with the
+  Docker Hub.
+
+## Docker for Windows installtion
+
+Docker for Windows ships with a variety of components:
+
+- The Docker client and server.
+- Docker Compose.
+- Docker Machine - Which helps you create Docker hosts.
+- Kitematic - is a GUI that helps you run Docker locally and interact with the
+  Docker Hub.
+
+Docker for Windows requires Microsoft Hyper-V.
+
+## Using Docker on OSX and Windows with this book
+
+📢 On Windows: You can't mount a local directory on host into the Docker host
+running in the Docker virtual machine because they don't share a file system.
+
+## Docker installation script
+
+```sh
+curl https://get.docker.com/ | sudo sh
+```
+
+## The Docker daemon
+
+Docker runs as a `root`-privileged daemon process to allow it to handle
+operations that can't be executed by normal users. The `docker` binary runs as a
+client of this daemon and also requires `root` privileges to run.
+
+By default, the daemon listens on a Unix socket at `/var/run/docker.sock` for
+incoming Docker requests. If a group named `docker` exists on our system, Docker
+will apply ownership of the socket to that group. Hence, any use that belongs to
+the `docker` group can run Docker without needing to use the `sudo` command.
+
+⚠️ Remember that although the `docker` group makes life easier, it is still a
+security exposure. The `docker` group is `root`-equivalent and should be limited
+to those users and applications who absolutely need it.
+
+### Configuring the Docker daemon
+
+```sh
+# server daemon
+sudo dockerd -H tcp://0.0.0.0:2375
+# client
+docker -H :2375
+# use env var
+export DOCKER_HOST="tcp://0.0.0.0:2375"
+
+# or use Unix socket
+sudo dockerd -H unix:///home/docker.sock
+# multiple bindings
+sudo dockerd -H tcp://0.0.0.0:2375 -H unix:///home/docker.sock
+```
+
+⚠️ By default, Docker client-server communication is not authenticated. If you
+bind Docker to an exposed network interface, anyone can connect to the daemon.
+
+📢 If you're running Docker behind a proxy or corporate firewall you can also
+use the `HTTPS_PROXY`, `HTTP_PROXY`, `NO_PROXY` options to control how the
+daemon connects.
+
+To make these changes permanent:
+
+- On SystemV-enabled Ubuntu and Debian releases: editing the
+  `/etc/default/docker` file and changing the `DOCKER_OPTS` variable.
+- On Systemd-enabled distributions: add on override file at
+  `/etc/systemd/system/docker.service.d/override.conf`:
+
+  ```ini
+  [Service]
+  ExecStart=
+  ExecStart=/usr/bin/dockerd -H ...
+  ```
+
+### Checking that the Docker daemon is running
+
+```sh
+# On Ubuntu
+sudo status docker
+sudo stop docker
+sudo start docker
+
+# On systemd-enabled linux
+sudo service docker stop
+sudo service docker start
+```

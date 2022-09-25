@@ -7,8 +7,8 @@
 ## Table of Contents
 
 - [x] [Chapter 1 Introduction](1_introduction)
-- [ ] [Chapter 2 Installing Docker](2_installing_docker)
-- [ ] [Chapter 3 Getting Started with Docker](.)
+- [x] [Chapter 2 Installing Docker](2_installing_docker)
+- [ ] [Chapter 3 Getting Started with Docker](3_getting_started)
 - [ ] [Chapter 4 Working with Docker images and repositories](.)
 - [ ] [Chapter 5 Testing with Docker](.)
 - [ ] [Chapter 6 Building services with Docker](.)
