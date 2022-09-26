@@ -786,4 +786,24 @@ all (三个或三个以上都) 与 both (两个都) 的用法较为特殊。
 
 ## 综合训练: 3. 限定词 (二): 数量限定词与个体限定词
 
+**一、单项选择。**
+
+*3. He works harder than ____ in his class.*
+
+- *A. anyone*
+- *B. any one else*
+- *C. any other student*
+- *D. any another student*
+
+答案: C。
+
+- A: anyone 的意思是任何人，包括 "he"，自己和自己对比在这个句子中显然不对。
+  要指其他人时需要加 else (形容词作定语修饰不定代词的时候需要后置)。
+- B: any one 从意思上和 anyone 几乎一样，但它的结构是"形容词 + 代词"，
+  而代词（区别不定代词）的修饰语应当放在代词之前，也就是"形容词 + 形容词 + 代词"，
+  所以不会出现 any one else 这样的说法。
+- C: any other 指任何一个其他的，既然是"一个"，后面的名词自然需要使用单数。
+  如果希望使用复数，可以用 other students。但是此时强调意味不如 "any other"(任何一个)强。
+- D: another 是"另一个"的意思，等同于 any other ，不能再用 any 修饰。
+
 >>>>> progress
