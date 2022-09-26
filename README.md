@@ -13,7 +13,7 @@ disciplines according to the
     1. [Linguistics](linguistics)
         1. [Applied Linguistics](linguistics/applied_linguistics)
     2. [World Literature](world_literature)
-        1. [Chinese Literature](chinese_literature)
+        1. [Chinese Literature](world_literature/chinese_literature)
 2. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
     1. [Music](music)
         1. Music Theory
