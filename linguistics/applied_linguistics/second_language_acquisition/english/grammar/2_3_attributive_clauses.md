@@ -161,8 +161,22 @@ The woman who lives next door is a famous dancer.
 - `例 1`:
   - I'm talking about friends and you can share almost everything with **them**.
   - I'm talking about friends **who** you can share almost everything **with**.
+  - I'm talking about friends **with whom** you can share almost everything.
 - `例 2`: I hope I never have a boss who I can't talk to about my problems.
 - `例 3`: I like the people who I work with.
+
+`补充例句`: **In other words, anyone can improve the speed with which he gets
+what he wants from his reading**.
+
+- 主句结构: anyone can improve the speed.
+- 修饰 the speed 的定语从句: with which he gets what he wants from his reading.
+- `the speed` with which he gets `what he wants` from his reading.
+  
+  可还原成:
+
+  he gets `what he wants (宾语从句)` from his reading with `the speed`.
+
+- 译: 换句话说，任何人都可以提高**足以让他从阅读中得到他想要的东西**的速度。
 
 ### 3.2.4 作宾语的关系词可以省去
 
