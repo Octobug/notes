@@ -61,7 +61,8 @@
     - [3.11.7 运用含否定意义的词或词组表否定意义](#3117-运用含否定意义的词或词组表否定意义)
       - [3.11.7.1 动词短语表否定意义](#31171-动词短语表否定意义)
       - [3.11.7.2 动词表否定意义](#31172-动词表否定意义)
-    - [3.11.8 运用连词before unless等引导的状语表否定意义](#3118-运用连词before-unless等引导的状语表否定意义)
+      - [3.11.7.3 介词表否定意义](#31173-介词表否定意义)
+    - [3.11.8 运用连词 before, unless 等引导的状语表否定意义](#3118-运用连词-before-unless-等引导的状语表否定意义)
   - [综合训练: 3. 限定词 (二): 数量限定词与个体限定词](#综合训练-3-限定词-二-数量限定词与个体限定词)
 
 ## 3.1 数量限定词 (一): a few, few/a little, little
@@ -904,47 +905,39 @@ hardly, scarcely, seldom, little, few 等。
 
 #### 3.11.7.2 动词表否定意义
 
->>>>> progress
+- absent 缺席
+  - Why did you absent yourself from school yesterday?
+    - 昨天你为什么不来上学？
+- escape 被...忽视
+- fail 不及格
+- miss 未赶上，错过
+  - He missed the 9:30 train and therefore missed the accident.
+    - 他没赶上 9:30 的那班火车，也因此而逃过那次事故.
+- refuse 拒绝
 
-如，absent(缺席)、fail(不及格)、refuse(拒绝)、miss(未赶上，错过)、escape(被……忘掉)等。例如：
+#### 3.11.7.3 介词表否定意义
 
-①Why did you absent yourself from school yesterday?
+- above 超出...之外
+  - His conduct has always been above suspicion.
+    - 他的行为一直无可置疑。
+- against 反对
+- beyond 超出，无法
+- but 除...外
+- except 除...外
+- off 离开
+- past 超过
+  - His stupidity is past all belief.
+    - 他的愚蠢简直不可思义。
+- without 无，没有
+  - I can't finish the work without your help.
+    - 没有你的帮助，我完不成这工作。
 
-昨天你为什么不来上学？
+### 3.11.8 运用连词 before, unless 等引导的状语表否定意义
 
-②He missed the 9:30 train and therefore missed the accident.
-
-他没赶上9:30的那班火车,也因此而逃过那次车祸.
-
-3.介词表否定意义
-
-without(无，没有)、against(反对)、beyond(超出，无法)、except/but(除……外)、past(超过)、off(离开)、above(超出……之外)等。
-
-例如：
-
-①I can t finish the work without your help.
-
-没有你的帮助,我完不成这工作。
-
-②His conduct has always been above suspicion.
-
-他的行为一直无可置疑。
-
-③His stupidity is past all belief.
-
-他的愚蠢简直不可思义。
-
-### 3.11.8 运用连词before unless等引导的状语表否定意义
-
-例如：
-
-①WangWei went to bed before he finished his homework.
-
-王伟没完成作业就睡觉了。
-
-②Unless you put on your overcoat, you ll catch a cold.
-
-如果你不穿大衣，你就会感冒
+- WangWei went to bed before he finished his homework.
+  - 王伟没完成作业就睡觉了。
+- Unless you put on your overcoat, you'll catch a cold.
+  - 如果你不穿大衣，你就会感冒。
 
 ## 综合训练: 3. 限定词 (二): 数量限定词与个体限定词
 
