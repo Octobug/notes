@@ -961,4 +961,35 @@ hardly, scarcely, seldom, little, few 等。
   如果希望使用复数，可以用 other students。但是此时强调意味不如 "any other"(任何一个)强。
 - D: another 是"另一个"的意思，等同于 any other ，不能再用 any 修饰。
 
+*7. She spent ____ on clothes.*
+
+- *A. her all earnings*
+- *B. her all earning*
+- *C. all her earnings*
+- *D. all her earning*
+
+答案: C
+
+*12. Nebraska has floods in some years, ____.*
+
+- *A. in others drought*
+- *B. droughts are others*
+- *C. while other droughts*
+- *D. others in droughts*
+
+答案: A
+
+*15. ____ the teachers came on the trip.*
+
+- *A. Neither of*
+- *B. Nobody of*
+- *C. None*
+- *D. No one of*
+
+答案: A。
+
+- B: Nobody 不接 of 短语
+- C: None 应接 of 短语
+- D: No one of 不接 of 短语
+
 >>>>> progress
