@@ -323,7 +323,7 @@ more 则要说成 a few more。
       - `例 14`: You can have everything in life you want if you'll just help
         enough other people to get what they want!
     - every
-      - `例 16`: every other day = every two days
+      - `例 16`: **every other day** = every two days
     - his/my/their
     - many
       - `例 19`: I have many other books for you to read.
@@ -950,7 +950,7 @@ hardly, scarcely, seldom, little, few 等。
 - *C. any other student*
 - *D. any another student*
 
-答案: C。
+答案: C
 
 - A: anyone 的意思是任何人，包括 "he"，自己和自己对比在这个句子中显然不对。
   要指其他人时需要加 else (形容词作定语修饰不定代词的时候需要后置)。
@@ -986,10 +986,70 @@ hardly, scarcely, seldom, little, few 等。
 - *C. None*
 - *D. No one of*
 
-答案: A。
+答案: A
 
 - B: Nobody 不接 of 短语
 - C: None 应接 of 短语
 - D: No one of 不接 of 短语
 
->>>>> progress
+*17. Ed and Jim have arrived, but ____ in the class aren't here yet.*
+
+- *A. other*
+- *B. others*
+- *C. the others*
+- *D. the other*
+
+答案: C
+
+*20. It is reported that ____ adopted children want to know who their natural
+parents are.*
+
+- *A. the most*
+- *B. most of*
+- *C. most*
+- *D. the most of*
+
+答案: C
+
+- B: 需改为 most of the，即需要加特指限定词。
+
+*21. Radio, televisions and press ____ of conveying news and information.*
+
+- *A. are the most three common means*
+- *B. are the most common three means*
+- *C. are the three most common means*
+- *D. are three the most common means*
+
+答案: C
+
+*24. ____ dyas we have been busy fighting drought.*
+
+- *A. These all last few*
+- *B. These all few last*
+- *C. Last few all these*
+- *D. All these last few*
+
+答案: D
+
+**二、辨别改错。**
+
+*27. Since `the`(A) 1950s, `folk music`(B) has had a significant `influence`(C)
+on `many`(D) popular vocal and instrumental music.*
+
+答案: D。改为 much，被修饰的名词是 music，不可数。
+
+*35. The factory is experimenting `with`(A) a new kind of `drug`(B) that will
+have `less`(C) side `effects`(D).*
+
+答案: C。改为 fewer，被修饰的名词是复数 effects，而 less 只能接不可数名词。
+
+*38. Seven `of planets`(A) rotate in the same direction `as`(B) their orbital
+motions, `while`(C) Venus and Uranus rotate in the `opposite direction`(D).*
+
+答案: A。改为 of the planets，of 后面需要接一个限定词，然后才能接名词。
+
+*46. If they `will not accept`(A) a check, we `shall have to`(B) pay
+`the cash`(C), though it `would be`(D) much trouble for both sides.*
+
+答案: C。改为把 the 去掉，这里 cash 是相对于 check 来说的，是一个泛指概念，
+不可数名词泛指不能用 the。
