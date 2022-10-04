@@ -6,6 +6,8 @@
   - [Container naming](#container-naming)
   - [Starting a stopped container](#starting-a-stopped-container)
   - [Attaching to a container](#attaching-to-a-container)
+  - [Creating daemonized containers](#creating-daemonized-containers)
+  - [Seeing what's happening inside our container](#seeing-whats-happening-inside-our-container)
 
 ## Running our first container
 
@@ -84,6 +86,27 @@ docker start bob_the_container
 container but does not run it. This allows you more granular control over your
 container workflow.
 
+The container will restart with the same options we'd specified when we launched
+it with the `docker run` command.
+
 ## Attaching to a container
 
+```sh
+docker attach bob_the_container
+```
+
+## Creating daemonized containers
+
+```sh
+docker run --name daemon_dave -d ubuntu /bin/sh -c \
+  "while true; do echo hello world; sleep 1; done"
+```
+
+## Seeing what's happening inside our container
+
 >>>>> progress
+
+```sh
+# Fetching the logs of our daemonized container
+docker logs daemon_dave
+```
