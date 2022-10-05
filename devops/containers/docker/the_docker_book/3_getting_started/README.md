@@ -8,6 +8,12 @@
   - [Attaching to a container](#attaching-to-a-container)
   - [Creating daemonized containers](#creating-daemonized-containers)
   - [Seeing what's happening inside our container](#seeing-whats-happening-inside-our-container)
+  - [Docker log drivers](#docker-log-drivers)
+  - [Inspecting the container's processes](#inspecting-the-containers-processes)
+  - [Docker statistics](#docker-statistics)
+  - [Running a process inside an already running container](#running-a-process-inside-an-already-running-container)
+  - [Stopping a daemonized container](#stopping-a-daemonized-container)
+  - [Automatic container restarts](#automatic-container-restarts)
 
 ## Running our first container
 
@@ -109,4 +115,66 @@ docker run --name daemon_dave -d ubuntu /bin/sh -c \
 ```sh
 # Fetching the logs of our daemonized container
 docker logs daemon_dave
+
+# Tailing the logs of our daemonized container
+docker logs -f daemon_dave
+
+# Tailing part of the logs
+docker logs --tail 10 daemon_dave
+
+# Following the logs of a container without having to read the whole log file
+docker logs --tail 0 -f daemon_dave
+
+# Tailing the logs with timestamp
+docker logs -ft daemon_dave
 ```
+
+## Docker log drivers
+
+```sh
+# Enabling Syslog at the container level
+# - json-file (default)
+# - syslog
+# - none
+docker run --log-driver="syslog" --name daemon_dwayne -d \
+  ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
+```
+
+## Inspecting the container's processes
+
+```sh
+docker top daemon_dave
+```
+
+## Docker statistics
+
+```sh
+docker stats daemon_dave daemon_dwayen
+```
+
+## Running a process inside an already running container
+
+We can run additional processes inside our containers using the `docker exec`
+command.
+
+```sh
+docker exec -d daemon_dave touch /etc/new_config_file
+
+# Running an interactive command inside a container
+docker exec -it daemon_dave /bin/bash
+```
+
+## Stopping a daemonized container
+
+```sh
+docker stop daemon_dave
+```
+
+📝 The `docker stop` command sends a `SIGTERM` signal to the Docker container's
+running process. If you want to stop a container a bit more enthusiastically,
+you can use the `docker kill` command, which will send a `SIGKILL` signal to the
+container's process.
+
+## Automatic container restarts
+
+>>>>> progress
