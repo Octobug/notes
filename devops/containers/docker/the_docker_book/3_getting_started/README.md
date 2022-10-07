@@ -14,6 +14,8 @@
   - [Running a process inside an already running container](#running-a-process-inside-an-already-running-container)
   - [Stopping a daemonized container](#stopping-a-daemonized-container)
   - [Automatic container restarts](#automatic-container-restarts)
+  - [Finding out more about our container](#finding-out-more-about-our-container)
+  - [Deleting a container](#deleting-a-container)
 
 ## Running our first container
 
@@ -177,4 +179,50 @@ container's process.
 
 ## Automatic container restarts
 
->>>>> progress
+```sh
+docker run --restart=always --name daemon_alice -d ubuntu \
+  /bin/sh -c "while true; do echo hello world; sleep 1; done"
+```
+
+Values of `--restart`:
+
+- `always`: no matter what exit code it returned
+- `on-failure`: if it exits with a non-zero exit code, it also accepts an
+  optional restart count
+  - `on-failure:5`
+
+## Finding out more about our container
+
+```sh
+docker inspect daemon_alice
+
+# Selectively inspecting a container
+docker inspect --format='{{ .State.Running }}' daemon_alice
+
+# Inspecting the container's IP address
+docker inspect --format='{{ .NetworkSettings.IPAddress }}' daemon_alice
+
+# Inspecting multiple containers
+docker inspect --format '{{ .Name }} {{ .State.Running }}' \
+  daemon_dave daemon_alice
+```
+
+💡 The `--format` or `-f` flag is a bit more than it seems on the surface. It's
+actually a full Go template being exposed.
+
+📝 In addition to inspecting containers, you can see a bit more about how Docker
+works by explorinng the `/var/lib/docker` directory. This directory holds your
+images, containers, and container configuration. You'll find all your containers
+in the `/var/lib/docker/containers` directory.
+
+## Deleting a container
+
+```sh
+docker rm daemon_alice
+
+# Deleting a running conntainer
+docker rm -f daemon_alice
+
+# Deleting all containers
+docker rm -f $(docker ps -aq)
+```
