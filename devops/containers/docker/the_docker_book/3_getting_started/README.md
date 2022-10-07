@@ -112,8 +112,6 @@ docker run --name daemon_dave -d ubuntu /bin/sh -c \
 
 ## Seeing what's happening inside our container
 
->>>>> progress
-
 ```sh
 # Fetching the logs of our daemonized container
 docker logs daemon_dave
