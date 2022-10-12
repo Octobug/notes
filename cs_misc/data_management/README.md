@@ -11,17 +11,18 @@ Data rebuilding takes too much time.
 
 ## Mobile Disks
 
+- 2022.10.10 (2TB, HDD, Lenovo): tv
+- 2022.07.25 (2TB, HDD, Lenovo): movie
 - 2022.03.04 (2TB, HDD, WD)
   - book
-  - career
-  - education
+  - career (backup)
+  - education (backup)
   - life
   - live
-  - movie
+  - movie (backup)
   - music
   - photo
-- 2020.02.01 (2TB, HDD, WD)
-  - tv
+- 2020.02.01 (2TB, HDD, WD): tv (backup)
 - 2019.11.24 (480GB, SSD, Toshiba)
   - career
   - education
