@@ -1,12 +1,12 @@
-# 黑铁时代 - 王小波未竟稿合集 (2018)
+# 黑铁时代：王小波未竟稿合集 (2018)
 
 > <https://book.douban.com/subject/30296222/>
 
 有学问的人往往很笨，没有学问的人反而很聪明。
 这是因为假如学问会给人带来好处，聪明人就不会不要它，或者有了学问也不让你知道。
 
-- [x] [大学四年级](../collection/senior_year.md)
-- [ ] [黑铁时代](../collection/iron_age.md)
+- [x] [大学四年级](collection/senior_year.md)
+- [ ] [黑铁时代](collection/iron_age.md)
 - [ ] 黑铁公寓
 - [ ] 最灿烂的阳光
 - [ ] 王仙客寻无双记
