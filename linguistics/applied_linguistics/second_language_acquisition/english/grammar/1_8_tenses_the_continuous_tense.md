@@ -13,6 +13,7 @@
     - [8.2.3 用法三: 用于表示“改变”的动词，强调“逐渐变化”的过程](#823-用法三-用于表示改变的动词强调逐渐变化的过程)
     - [思维训练 8.2.1-8.2.3](#思维训练-821-823)
     - [8.2.4 用法四: 用于强烈的感情色彩的表达](#824-用法四-用于强烈的感情色彩的表达)
+    - [8.2.5 用法五: 表示将来确定的安排](#825-用法五-表示将来确定的安排)
 
 ## 8.1 引言
 
@@ -92,7 +93,7 @@
 (The action may not be happening exactly now, but it is happening just before
 and just after now, and it is not permanent or habitual.)。
 
-- `例 1`: Jenny: Yes. And I know while you**'re not living** in poverty, a
+- `例 1`: Jenny: Yes. And I know while you'***re not living*** in poverty, a
   college student still can't afford an apartment by the train station.
   - 这里 are not living 并不是强调说话时刻正在做什么，而是表示目前短暂的生活情况。
 - `例 2`:
@@ -181,5 +182,50 @@ workers.*
 答案: Because our factory is losing money
 
 ### 8.2.4 用法四: 用于强烈的感情色彩的表达
+
+复习"与现在有关的动作"的用法:
+
+- `例 1`:
+  - Sally: So you'***re going*** with her.
+    - 表示现阶段在持续的活动
+  - Sally: So you'***re coming*** on to me!
+    - 表示此刻正在进行的动作
+
+在日常的口语交际中，我们表表达自己的各种强烈的感情，比如生气、激动和兴奋等等。
+我们往往会在说话的过程中频繁地使用**现在进行时**。
+这一用法与表示“现在正在进行的动作”有关，因为我们一般都是在正在进行的交互对话的过程中，
+用现在进行时来表达我们的各种内心情感。
+不过，此时说话人用进行时态，并非是要强调某个正在进行的动作，而是要表达自己强烈的情感。
+
+- `例 2`:
+  - Harry: What I'***m saying*** is... and this is not a come-on in any way,
+    shape or form, is that men and women can't be friends.
+  - Sally: You'***re saying*** I'***m having*** sex with these men without my
+    knowledge?
+  - Harry: No, what I'***m saying*** is they all want to have sex with you.
+  - Sally: So you'***re saying*** that a man can be friends with a woman he
+    finds unattractive.
+  - 这些现在进行时态并不是说明动作在说话的时刻正在进行，
+    而是为了强调两人在陈述和坚持自己的观点，具有强烈的感情色彩。
+- `例 3`:
+  - Harry: ***Are*** you ***seeing*** anybody?
+    - 表示现阶段的活动
+  - Harry: I'***am not saying*** it didn't mean anything. What I
+    ***am saying*** is why does it have to mean everything!
+    - 表示强烈的感情色彩
+- `例 4` Sally: What ***are*** you ***saying***? You took pity on me?
+  - 表示强烈的愤怒
+- `例 5` Marie: You'***re missing*** the point, I'***m telling*** you what I
+  found.
+  - 表示强调的感情色彩
+- `例 6`: What are we waiting for then? Let's get started.
+- `例 7`: I'm not having this conversation with you.
+  - 相当于说 I don't want to talk to you about this.
+- `例 8`: You're not asking me to marry you, are you?
+- `例 9`: You're not backing out of our date, are you?
+  - 你该不是不想和我约会吧？
+- `例 11`: You are asking too much!
+
+### 8.2.5 用法五: 表示将来确定的安排
 
 >>>>> progress
