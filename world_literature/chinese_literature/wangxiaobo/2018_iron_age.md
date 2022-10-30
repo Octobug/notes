@@ -6,8 +6,8 @@
 这是因为假如学问会给人带来好处，聪明人就不会不要它，或者有了学问也不让你知道。
 
 - [x] [大学四年级](collection/senior_year.md)
-- [ ] [黑铁时代](collection/iron_age.md)
-- [ ] 黑铁公寓
+- [x] [黑铁时代](collection/iron_age.md)
+- [ ] [黑铁公寓](collection/iron_tenement.md)
 - [ ] 最灿烂的阳光
 - [ ] 王仙客寻无双记
 - [ ] 白银时代
