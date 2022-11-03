@@ -35,19 +35,12 @@ load_env() {
     logger "ENV: ${ENV}"
 }
 
-npm_install() {
-    if [[ $run_npm != "false" ]]; then
-        logger "Running npm install..."
-        npm install --production
-    else
-        logger "Skipped npm install."
-    fi
-}
+setup_prisma() {
+    logger "Generating prisma client..."
+    npx prisma generate
 
-pm2_reload() {
-    proc_name=$1
-    logger "Reloading ${proc_name}"
-    pm2 reload $proc_name
+    logger "Running prisma migrate..."
+    npx prisma migrate deploy
 }
 
 setup_nodejs() {
@@ -66,19 +59,8 @@ setup_nodejs() {
 
 main() {
     load_env
-
     cd $WORKDIR
-
-    if [[ $ENV == 'staging' ]]; then
-        deploy_staging
-    elif [[ $ENV == 'production' ]]; then
-        deploy_production
-    else
-        logger "Invalid ENV: ${ENV}"
-        exit
-    fi
-
-    logger "Finished."
+    setup_nodejs
 }
 
 main
