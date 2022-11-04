@@ -32,14 +32,3 @@ someAsyncApiCall(() => {
 
 bar = 1;
 ```
-
-## Modules
-
-### Main
-
-
-```js
-if (require.main === module) {
-  main();
-}
-```
