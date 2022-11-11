@@ -5,8 +5,10 @@
   - [6.2 完成进行时态的意义](#62-完成进行时态的意义)
   - [6.3 延续事件](#63-延续事件)
     - [6.3.1 延续事件概述](#631-延续事件概述)
-    - [6.3.2 延续事件 (一)：长期在延续的事件](#632-延续事件-一长期在延续的事件)
-    - [6.3.3 延续事件 (二)：近期在延续的事件](#633-延续事件-二近期在延续的事件)
+    - [6.3.2 延续事件（一）：长期在延续的事件](#632-延续事件一长期在延续的事件)
+    - [6.3.3 延续事件（二）：近期在延续的事件](#633-延续事件二近期在延续的事件)
+    - [6.3.4 延续事件（三）：在说话时刻仍在延续的事件](#634-延续事件三在说话时刻仍在延续的事件)
+    - [6.3.5 延续事件（四）：在说话时刻之前在延续的事件（即刚刚在延续的事件）](#635-延续事件四在说话时刻之前在延续的事件即刚刚在延续的事件)
   - [6.4 延续事件比较：完成进行时与完成时](#64-延续事件比较完成进行时与完成时)
 
 ## 6.1 完成进行时态的构成
@@ -85,7 +87,7 @@ activity)。
 3. 在说话时刻仍在延续的活动；
 4. 在说话时刻之前在延续的活动，或者刚刚在延续但现在已结束的活动。
 
-### 6.3.2 延续事件 (一)：长期在延续的事件
+### 6.3.2 延续事件（一）：长期在延续的事件
 
 现在完成进行时可以表示**从过去到现在的一个相当长的时期内持续的一般性活动**。
 
@@ -153,7 +155,7 @@ learn, live, study, teach, wait, work 等动词并不能表达出某一具体的
   - `例 17`: I've been waiting for you for three hours!
   - `例 18`: I've been waiting for this for months.
 
-### 6.3.3 延续事件 (二)：近期在延续的事件
+### 6.3.3 延续事件（二）：近期在延续的事件
 
 这一用法的语义重点，不是关心某个活动在说话时是否正在进行，
 而是关心该活动在最近一段时期内是否在持续。
@@ -167,6 +169,48 @@ learn, live, study, teach, wait, work 等动词并不能表达出某一具体的
     是否在写论文，而是表达她近期的一般性活动。
 
 由此可见，**现在完成进行时表示“近期在延续的事件”这一用法与现在进行时的关系更密切**。
+
+- `例 7`：All the students have been studying hard, for final exams start next
+  week.
+- `例 8`：I have been thinking about changing my job.
+- `例 9`：I've been flirting with the idea of changing my job; I probably won't.
+- `例 11`：I have been thinking about what you said and I've decided to take
+  your advice.
+- `例 12`：I've been doing a lot of thinking and the thing is I love you.
+- `例 13`：I have been looking forward to meeting you.
+- `例 14`：Thank you so much for the binoculars. I've been wanting a pair for
+  ages.
+
+现在完成进行时表达“近期”延续事件，这里的“近期”是一个相对概念，可以是近几天，也可以是几个月。
+它与“长期”延续事件并没有明确的分界限，完全是**根据实际生活经验来判断的**。
+
+比如 `例 14`，也可以看作是“长期在持续的事件”。
+
+### 6.3.4 延续事件（三）：在说话时刻仍在延续的事件
+
+现在完成进行时可以表示一个在说话时刻之前一段时间内延续的活动，并且这个活动在说话的时刻仍在进行。
+这一用法与**现在进行时**很接近，不过现在进行时态不能接持续的时间状语
+（durational adverbials），而现在完成进行时往往会接一个这样的状语。
+
+- `例 1`：
+  - A: You've certainly been reading that one page for a long time now.
+  - B: Well, I'm being tested on it tomorrow.
+- `例 2`：I'm staring at this computer. I've been staring at this computer
+  screen for hours and my eyes hurt.
+- `例 4`：
+  - I'm staring at this computer.
+  - I've been staring at this computer screen for hours and my eyes hurt.
+  - ❌ I'm staring at this computer for hours.
+- `例 6`：It began raining two hours ago and it's still raining. It has been
+  raining for two hours.
+
+持续到说话时刻的活动，也可以到此为止：
+
+- `例 11`：Where have you been? I've been looking for you for the last half
+  hour.
+- `例 12`：I'm so sorry I'm late. Have you been waiting long?
+
+### 6.3.5 延续事件（四）：在说话时刻之前在延续的事件（即刚刚在延续的事件）
 
 >>>>> progress
 
