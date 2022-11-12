@@ -9,6 +9,7 @@
     - [6.3.3 延续事件（二）：近期在延续的事件](#633-延续事件二近期在延续的事件)
     - [6.3.4 延续事件（三）：在说话时刻仍在延续的事件](#634-延续事件三在说话时刻仍在延续的事件)
     - [6.3.5 延续事件（四）：在说话时刻之前在延续的事件（即刚刚在延续的事件）](#635-延续事件四在说话时刻之前在延续的事件即刚刚在延续的事件)
+    - [思维总结 6.3 延续事件](#思维总结-63-延续事件)
   - [6.4 延续事件比较：完成进行时与完成时](#64-延续事件比较完成进行时与完成时)
 
 ## 6.1 完成进行时态的构成
@@ -212,7 +213,78 @@ learn, live, study, teach, wait, work 等动词并不能表达出某一具体的
 
 ### 6.3.5 延续事件（四）：在说话时刻之前在延续的事件（即刚刚在延续的事件）
 
->>>>> progress
+具体指一个事件在说话时刻之前一直在延续，但在说话时刻已经结束了（a recently finished
+activity）。
+
+- `例 1`：He returned home yesterday. He has been traveling.
+- `例 2`：What have you been doing while I have been away?
+
+更多的时候，某个事件“刚刚在延续”并不会明确地表达出来，
+而是通过上下文来表明这个事件是“刚刚在延续”。
+
+- `例 3`：
+  - A: You look hot.
+  - B: Yes, I've been running.
+  - “刚刚在延续”的活动所导致的“现在”结果清晰可见，在这个对话中，“跑步”的活动不久前刚刚结束，
+    而并没有延续到说话时刻，它导致现在依然清晰可见的结果是 "You look hot."。
+
+现在完成进行时的这一表示“刚刚在延续的事件”的用法往往是
+**强调一个持续活动所带来的、现在清晰可见的后果**。
+
+- `例 6`：My throat is husky because I've been talking too much.
+- `例 7`：Your friend is out of breath. You ask, "Have you been running?"
+- `例 8`：You meet a friend in the street, whose face and hands are very dirty.
+  You ask, "What have you been doing?"
+- `例 9`：The little boy is dirty from head to foot because he has been playing
+  in the mud.
+
+有时，某个动作的明显后果并不是在句子的字面上能反映出来的，而是体现在语言之外的现实世界中。
+
+- `例 12`：It's only when the tide goes out that you learn who's been swimming
+  naked.
+
+对于某个句子是“刚刚在延续”还是“一直在延续”，需要结合上下文的具体语境来看。
+如果没有上下文，那么就可能有歧义。
+
+- `例 14`：
+  - A: You do look cold. What happened?
+  - B: I've been standing outside in Arctic temperatures for over an hour
+    waiting for a bus. (延续已结束)
+  - 也可以是 B 在说话的时刻依然在外面等车，此时 A 就不会那样问。
+- `例 15`：I've been running for half an hour.
+  - 理解为“一直在延续”：到现在为止我跑了有半小时了。
+  - 理解为“刚刚在延续”：刚才我跑了半小时。（所以我现在满头大汗。）
+
+在没有上下文语境帮助排除歧义的情况下，
+**对于带有持续的时间状语的完成进行时的句子，一般会解释成“一直在延续”的事件**。
+
+- `例 13`：
+  - Be careful! I've been painting the door!
+    - 小心，这门我刚刚刷完漆。
+  - I've been painting the door **for half an hour**.
+    - 这门我刷了有半个小时了。
+
+对于不带有持续的时间状语的句子同样会存在歧义。
+
+- `例 16`：It's been snowing.
+  - 说话时外面还在下着雪，则表示“一直在延续”：一直在下雪。
+  - 说话时外面雪已经停了，则表示“刚刚在延续”：刚刚下过雪。（瞧，地上是白的。）
+
+在没有上下文语境帮助排除歧义的情况下，
+**对于没有持续的时间状语的完成进行时的句子，一般会解释成“刚刚在延续”的事件**。
+
+### 思维总结 6.3 延续事件
+
+现在完成进行时可表示四种不同的延续事件，它们与**现在进行时**和**现在完成时**的联系如下：
+
+- 表示“长期在延续的事件”：与**现在进行时态**的关系较远，而与**现在完成时态**关系更近，
+  完全类似于现在完成时所表达的“延续事件”的意义。
+- 表示“近期在延续的事件”：与**现在进行时态**的关系更密切，完全类似于现在进行时所表示的
+  “一个在近期持续的一般性活动”的意义。
+- 表示“在说话时刻仍在延续的事件”：与**现在进行时态**的意义很接近，
+  因为二者都表示这个活动在说话的时刻仍然在进行。
+- 表示“刚刚在延续的事件”：与**现在完成时态**的关系更接近，类似于完成时表示的“单一事件”。
+  与现在进行时的关系较远，因为现在进行时没有表示事件在说话时刻已经结束的用法。
 
 ## 6.4 延续事件比较：完成进行时与完成时
 
