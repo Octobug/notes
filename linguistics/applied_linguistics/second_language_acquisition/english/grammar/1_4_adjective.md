@@ -18,6 +18,12 @@
     - [4.2.2 双音节词](#422-双音节词)
       - [一、以 `-y` 结尾的双音节形容词，要先变 `y` 为 `i`，再加 `-er` 和 `-est` 分别构成比较级和最高级](#一以--y-结尾的双音节形容词要先变-y-为-i再加--er-和--est-分别构成比较级和最高级)
       - [二、其他绝大多数双音节词是分别在词前加 more 和 most 构成比较级和最高级](#二其他绝大多数双音节词是分别在词前加-more-和-most-构成比较级和最高级)
+      - [三、少数几个双音节词可以用上述两种基本方法来构成比较级和最高级](#三少数几个双音节词可以用上述两种基本方法来构成比较级和最高级)
+    - [4.2.3 多音节词](#423-多音节词)
+      - [一、三个或更多音节的词都是分别在其前面加 more 和 most 来构成比较级和最高级](#一三个或更多音节的词都是分别在其前面加-more-和-most-来构成比较级和最高级)
+      - [二、特殊形式的比较级和最高级](#二特殊形式的比较级和最高级)
+    - [4.2.4 不具有等级的形容词](#424-不具有等级的形容词)
+    - [思维训练 4.2 形容词的比较级和最高级的构成形式](#思维训练-42-形容词的比较级和最高级的构成形式)
   - [4.3 形容词的比较级和最高级的用法](#43-形容词的比较级和最高级的用法)
 
 ## 4.1 形容词在名词短语中的位置
@@ -263,7 +269,164 @@
 
 #### 二、其他绝大多数双音节词是分别在词前加 more 和 most 构成比较级和最高级
 
->>>>> progress
+| 原级   | 比较级      | 最高级      |
+| ------ | ----------- | ----------- |
+| tiring | more tiring | most tiring |
+
+#### 三、少数几个双音节词可以用上述两种基本方法来构成比较级和最高级
+
+| 原级    | 比较级                 | 最高级                  |
+| ------- | ---------------------- | ----------------------- |
+| common  | commoner/more common   | commonest/most common   |
+| clever  | cleverer/more clever   | cleverest/most clever   |
+| shallow | shallower/more shallow | shallowest/most shallow |
+
+常见的这样的双音节词有：
+
+- cruel
+- common
+- friendly
+- funny
+- handsome
+- mature
+- noisy
+- pleasant
+- polite
+- quiet
+- stupid
+- tired
+
+以 `-ow` 结尾的词有：
+
+- hollow
+- narrow
+- shallow
+
+以 `-er` 结尾的词有：
+
+- clever
+- tender
+
+以 `-le` 结尾的词有：
+
+- feeble
+- gentle
+- noble
+
+📢 几乎所有的双音节形容词（除了以 `-y` 结尾的词外），都可以在其前面加 more 和 most
+来分别构成比较级和最高级。
+
+### 4.2.3 多音节词
+
+#### 一、三个或更多音节的词都是分别在其前面加 more 和 most 来构成比较级和最高级
+
+| 原级        | 比较级           | 最高级           |
+| ----------- | ---------------- | ---------------- |
+| interesting | more interesting | most interesting |
+| excited     | more excited     | most excited     |
+| successful  | more successful  | most successful  |
+
+#### 二、特殊形式的比较级和最高级
+
+| 原级      | 比较级          | 最高级            |
+| --------- | --------------- | ----------------- |
+| good/well | better          | best              |
+| bad/ill   | worse           | worst             |
+| far       | farther/further | farthest/furthest |
+| old       | older/elder     | oldest/eldest     |
+| little    | less            | least             |
+| many/much | more            | most              |
+| late      | later/latter    | latest/last       |
+| up        | upper           | uppermost/upmost  |
+
+1. farther(farthest)/further(furthest)
+
+    这四个词都可以指实际的距离。
+    further/furthest 可用于抽香意义，表示“进一步的，更多的，更深入的”，常与抽象名词连用。
+
+    - `例 1`：further discussion
+    - `例 2`：further debate
+    - `例 7`：This was the furthest concession that he would make.
+
+2. older(oldest)/elder(eldest)
+
+    elder 和 eldest 主要是用来表示家庭成员之间的长幼关系，而并非指年龄的大小。
+
+    - `例 8`：my elder brother/sister
+    - `例 9`：his eldest son/daughter
+
+    在有 than 的比较级的句子中一般不用 elder，而要用 older。
+
+    - `例 10`：I am seven years older than Rex.
+
+3. later, latter, latest, last
+
+    - later: 一般用来表示时间上的“较迟的”。
+      - `例 11`：I am having a meeting right now. Could you call me later?
+    - latter: 表示顺序上的“后者”，与 former 相对应。
+      - `例 12`：Like all ecological systems, a forest is made up of a living
+        environment and a nonliving environment, the latter composed of air,
+        rocks, soil and water.
+    - latest: 意思是“最近的，最新的”，主要用来指新近的事物。
+      - `例 14`：the latest fashions
+      - `例 16`：His latest novel is being published now.
+    - last: 主要有两个意思，一是指“在目前之前的一个 (the one or ones before the
+      present one)”，或者指“一系列事物中的最后一个 (after all others)”。
+      - `例 17`：
+        - A: What do you think of the writer's latest novel?
+        - B: I like it much better than his last one.
+      - `例 18`：He was the last to arrive.
+
+### 4.2.4 不具有等级的形容词
+
+英语中有一小部分形容词，它们表示绝对的含义，因此没有比较级和最高级形式。其中常见的词包括：
+
+- absolute
+- alone
+- dead
+- empty
+- equal
+- eternal
+- final
+- horizontal
+- perfect
+- primary
+- pregnant
+- round
+- single
+- square
+- straight
+- supreme
+- unique
+- unanimous
+
+尽管这些词没有“等级差别”，但还是可以用一些表示“接近，几乎”的副词来修饰。比如：
+
+- almost: almost fatal
+- nearly/more nearly
+  - nearly perfect
+  - nearly dead
+- the most closely
+
+### 思维训练 4.2 形容词的比较级和最高级的构成形式
+
+**一、写出下列形容词的比较级和最高级。**
+
+*1. tiny.*
+
+答案：tinier, tiniest
+
+*2. simple.*
+
+答案：simpler/more simple, simplest/most simple
+
+*3. angry.*
+
+答案：angrier, angriest
+
+*11. gentle.*
+
+答案：more gentle, most gentle
 
 ## 4.3 形容词的比较级和最高级的用法
 
