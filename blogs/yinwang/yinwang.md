@@ -4,8 +4,6 @@
 >
 > Kuri-su/yinwang.bak: <https://github.com/Kuri-su/yinwang.bak>
 
-## 目录
-
 - 2020年06月10日 - 新丑陋的中国人
 - 2020年05月23日 - 几个需要避免的美国英语习惯
 - 2020年04月30日 - 一对一教学计划
@@ -59,11 +57,11 @@
 - 2017年04月23日 - 人工智能的局限性
 - 2017年04月17日 - 美国公司管理层的洗脑技巧
 - 2017年04月14日 - 经验和洞察力
-- 2016年10月13日 - C# 的 IDisposable 接口
-- 2016年10月12日 - C 编译器优化的 Bug
-- 2016年09月18日 - 对 Rust 语言的分析
-- 2016年09月14日 - 测试的道理
-- 2016年07月10日 - Tesla autopilot 引起致命车祸
+- [ ] 2016年10月13日 - C# 的 IDisposable 接口
+- [ ] 2016年10月12日 - C 编译器优化的 Bug
+- [ ] 2016年09月18日 - 对 Rust 语言的分析
+- [ ] 2016年09月14日 - [测试的道理](http://www.yinwang.org/blog-cn/2016/09/14/tests)
+- [x] 2016年07月10日 - [Tesla autopilot 引起致命车祸](http://www.yinwang.org/blog-cn/2016/07/10/tesla-autopilot-fatal-crash)
 - [x] 2016年06月28日 - [养生节目的危害](http://www.yinwang.org/blog-cn/2016/06/28/yangsheng)
 - [x] 2016年06月14日 - [美国社会的信息不平等现象](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%BE%8E%E5%9B%BD%E7%A4%BE%E4%BC%9A%E7%9A%84%E4%BF%A1%E6%81%AF%E4%B8%8D%E5%B9%B3%E7%AD%89%E7%8E%B0%E8%B1%A1.md)
 - [x] 2016年06月08日 - [Java 有值类型吗？](http://www.yinwang.org/blog-cn/2016/06/08/java-value-type)
@@ -154,4 +152,3 @@
 - [x] 2012年08月01日 - [怎样写一个解释器](http://www.yinwang.org/blog-cn/2012/08/01/interpreter)
 - [x] 2012年07月25日 - [什么是语义学](http://www.yinwang.org/blog-cn/2012/07/25/semantics)
 - [x] 2012年07月04日 - [GTF - Great Teacher Friedman](http://www.yinwang.org/blog-cn/2012/07/04/dan-friedman)
-- [x] 2012年05月18日 - [什么是“对用户友好”](http://www.yinwang.org/blog-cn/2012/05/18/user-friendliness)
