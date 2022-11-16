@@ -18,6 +18,9 @@
       - [二、主句动作先于从句动作](#二主句动作先于从句动作)
     - [思维训练 4.1 时间状语从句](#思维训练-41-时间状语从句)
   - [4.2 地点状语从句](#42-地点状语从句)
+    - [思维训练 4.2 地点状语从句](#思维训练-42-地点状语从句)
+  - [4.3 原因状语从句](#43-原因状语从句)
+  - [4.6 条件状语从句](#46-条件状语从句)
 
 ## 4.1 时间状语从句
 
@@ -277,5 +280,35 @@ man holding up a sign reading "Boston"*.
 Vermont 是州名，如果要改为地点状语从句，应该是 somewhere in Vermont 之类的表达。
 
 ## 4.2 地点状语从句
+
+地点状语从句通常由 where 引导，用来表达主句的动作发生的场所。
+其结构通常是“where + 陈述句”，从句可以放在句首或句末。
+
+- `例 1`：Stay where you are.
+- `例 2`：Generally, air will be heavily polluted where there are factories.
+- `例 3`：A driver should slow down where there are schools.
+
+地点状语从句若放在句首，在翻译时往往失去地点的含义，要灵活处理。
+
+- `例 4`：Where there is a will, there is a way.
+
+### 思维训练 4.2 地点状语从句
+
+**请选择最佳答案填空。**
+
+*1. The picture is not hanging ____ it should on the wall.*
+
+- A. until
+- B. wherever
+- C. where
+- D. when
+
+答案：C。从句中省略了 hang，where it should (hang) on the wall.
+
+## 4.3 原因状语从句
+
+>>>>> progress
+
+## 4.6 条件状语从句
 
 >>>>> progress
