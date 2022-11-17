@@ -20,7 +20,16 @@
   - [4.2 地点状语从句](#42-地点状语从句)
     - [思维训练 4.2 地点状语从句](#思维训练-42-地点状语从句)
   - [4.3 原因状语从句](#43-原因状语从句)
-  - [4.6 条件状语从句](#46-条件状语从句)
+    - [4.3.1 常见连词的用法](#431-常见连词的用法)
+    - [4.3.2 用介词表示因果关系](#432-用介词表示因果关系)
+    - [思维训练 4.3 原因状语从句](#思维训练-43-原因状语从句)
+  - [4.4 目的状语从句](#44-目的状语从句)
+    - [思维训练 4.4 目的状语从句](#思维训练-44-目的状语从句)
+  - [4.5 结果状语从句](#45-结果状语从句)
+    - [4.5.1 常见连词的用法](#451-常见连词的用法)
+      - [一、连词 so...that 的用法](#一连词-sothat-的用法)
+      - [二、连词 such...that 的用法](#二连词-suchthat-的用法)
+    - [4.5.2 结果状语从句的倒装](#452-结果状语从句的倒装)
 
 ## 4.1 时间状语从句
 
@@ -307,8 +316,163 @@ Vermont 是州名，如果要改为地点状语从句，应该是 somewhere in V
 
 ## 4.3 原因状语从句
 
->>>>> progress
+### 4.3.1 常见连词的用法
 
-## 4.6 条件状语从句
+常用的引导原因状语从句的连词有：
+
+- because
+- since
+- as
+- for
+
+这四个连词中，because 的语气最强，只有它才能用来回答 why 的问句，
+所引出的原因往往是听话人所不知道的或最感兴趣的；
+也只有 because 才能被强调词如 only, just 和 perhaps 等修饰。
+
+- `例 1`：My friends dislike me because I'm handsome and successful.
+- `例 2`：Perhaps because most of today's cross-cultural marriages occur because
+  of "true love", these couples work hard to overcome their differences.
+  - ❌ perhaps for
+  - ❌ perhaps as
+  - ❌ perhaps since
+
+连词 since 表示人们已知的事实，是不需强调的原因，所以常译成“既然”，通常放在句首。
+
+- `例 3`：Since we don't have class tomorrow, why not go out for a picnic?
+- `例 4`：Since you are an English major, I guess you can help me with this
+  sentence.
+
+连词 as 与 since 的用法差不多，所引出的理由在说话人看来已经很明显，
+或已为听话人所熟悉而不需用 because 加以强调。
+
+- `例 5`：As Monday is a national holiday, all government offices will be
+  closed.
+
+连词 for 表示推断的理由，是对前面分句的内容**加以解释或说明**。
+
+- `例 6`：It rained last night, for the ground is wet this morning.
+  - 比较：Because it rained last night, the ground is wet this morning.
+
+相比较而言：
+
+- as 和 for 引导的主、从句，二者处于平等位置；
+- because 引导的从句显得比主句重要，强调原因；
+- since 引导的从句显得次要，而主句重要，以说明将要做什么事。
+
+### 4.3.2 用介词表示因果关系
+
+常用的介词有：
+
+- because of
+- due to
+- owing to: 常置于句首
+
+因为是介词，所以后面不能接从句。
+
+- `例 1`：We had an accident because he was careless.
+- `例 2`：We had an accident due to his carelessness.
+- `例 3`：Owing to his carelessness we had an accident.
+
+### 思维训练 4.3 原因状语从句
+
+**请选择最佳答案填空。**
+
+*5. ____ he has had a reputation for being a careful driver, his accident came
+as quite a surprise.*
+
+- *A. Since*
+- *B. Since that*
+- *C. Because*
+- *D. For*
+
+答案：A。这里 since 表示众所周知的原因。
+
+## 4.4 目的状语从句
+
+常用的引导目的状语从句的连词有：
+
+- so that
+- in order that
+- that
+
+此外，在目的状语从句中常含有情态动词：
+
+- may/might
+- can/could
+
+例句：
+
+- `例 1`：I turned off the TV **in order that** my roommate could study in
+  peace and quiet.
+- `例 2`：When I was a child, I would take a flashlight to bed with me
+  **so that** I could read comic books without my parent's knowing about it.
+- `例 4`：I spoke slowly and clearly **so that/in order that** the audience
+  could understand me.
+- `例 6`：We climbed high **(so) that** we might get a better view.
+
+从上面例子可以看出，目的状语从句一般位于主句之后。但若要强调目的状语从句，可将 so that 或
+in order that 引导的目的状语从句置于句首。
+
+- `例 8`：**In order that** my roommate could study in peace and quiet, I turned
+  off the TV.
+
+### 思维训练 4.4 目的状语从句
+
+**请将下列简单句合并成目的状语从句，注意使用情态动词。**
+
+*1. I am going to leave the party early. I want to be able to get a good
+night's sleep.*
+
+答案：I am going to leave the party early so that I can get a good night's sleep.
+
+*2. Harry brought his umbrella. He wanted to be sure he didn't get wet.*
+
+答案：Harry brought his umbrella so that he could not get wet.
+
+*6. I put the milk in the refrigerator. I wanted to make sure it didn't spoil.*
+
+答案：I put the milk in the refrigerator so that it wouldn't spoil.
+
+## 4.5 结果状语从句
+
+### 4.5.1 常见连词的用法
+
+常用的引导结果状语从句的连词有：
+
+- so...that
+- such...that
+
+⚠️ 结果状语从句都要放在主句之后，而不能提到句首。
+
+#### 一、连词 so...that 的用法
+
+多数结果状语从句是由 so...that 引导的，so 后面接形容词或副词。
+
+1. **接形容词**
+
+    - `例 2`：The moon is **so** large **that** several million people could
+      live there.
+    - `例 3`：The food in our school canteen is **so** bad **that** flies go
+      there to lose weight.
+
+2. **接副词**
+
+    - `例 4`：He has put forward unquestioned claims **so** consistently
+      **that** he not only believes them himself, but has convinced industrial
+      and business management that they are true.
+      - 他一直不断地提出确定不疑的主张，以至于不仅他自己对他们深信不疑，
+        而且还使得工商管理界相信他们都是真的。
+
+#### 二、连词 such...that 的用法
+
+such...that 引导结果状语从句时，such 后面要接名词（短语）。
+
+- `例 6`：Diplomats and crabs are creatures who move in **such** a way **that**
+  it is impossible to tell whether they are coming or going.
+- `例 7`：
+  - He is **such** a good teacher **that** everyone likes him.
+  - He is **so** good a teacher **that** everyone likes him.
+
+### 4.5.2 结果状语从句的倒装
 
 >>>>> progress
