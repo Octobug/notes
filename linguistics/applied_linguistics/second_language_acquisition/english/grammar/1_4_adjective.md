@@ -25,6 +25,11 @@
     - [4.2.4 不具有等级的形容词](#424-不具有等级的形容词)
     - [思维训练 4.2 形容词的比较级和最高级的构成形式](#思维训练-42-形容词的比较级和最高级的构成形式)
   - [4.3 形容词的比较级和最高级的用法](#43-形容词的比较级和最高级的用法)
+    - [4.3.1 形容词比较级的用法](#431-形容词比较级的用法)
+      - [一、than 的比较级句型](#一than-的比较级句型)
+      - [二、比较级与 the](#二比较级与-the)
+      - [三、more and more 句型](#三more-and-more-句型)
+      - [四、可以修饰比较级的词](#四可以修饰比较级的词)
 
 ## 4.1 形容词在名词短语中的位置
 
@@ -429,5 +434,50 @@
 答案：more gentle, most gentle
 
 ## 4.3 形容词的比较级和最高级的用法
+
+### 4.3.1 形容词比较级的用法
+
+#### 一、than 的比较级句型
+
+这一比较级句型必须明确以下几点：
+
+第一，在 than 的前面必须有形容词或副词的比较级形式；
+第二，被比较的两个对象应该是同类事物，即具有“事物的可比性”。
+
+1. 常见的句型是：A + 比较级 + than  + B。A 与 B 一般是两个同类的、彼此独立的人或事物。
+    - `例 1`：This question is less difficult than that question.
+2. 也可以不是两个同类事物的比较，而是某一事物与自身相比。
+    此时的句子结构为：A + 比较级 + 情形1 + than + 情形2。
+    - `例 2`：He did much better in the finals this term than last term.
+    - `例 3`：Since it has been repaired, the machine works more efficiently
+      than it did before.
+3. 若被比较的对象不是彼此独立的人或物，而是具有“一事物包含另一事物”这样的所属关系，此时要用
+    other 或 else 将其与整体区别开来，以免造成逻辑上的矛盾。
+    - `例 4`：Iron is more useful than any other metal.
+    - `例 5`：She works harder than any other student in her class.
+      - ❌ She works harder than any student in her class.
+      - 因为 she 属于 her class 中的一员，而 any student in her class 包括
+        “她自己”，这显然前后矛盾。
+
+#### 二、比较级与 the
+
+比较级的前面一般不需加定冠词 the，但当介词短语 of the two 出现在比较级句中的时候，
+比较级的前面必须加定冠词 the。
+
+- `例 6`：I think this painting is **the** more interesting **of the two**.
+  - 或：I think this painting is more interesting than that one.
+
+#### 三、more and more 句型
+
+用 more and more 双重比较来表示事物持续不断的变化，相当于汉语中的“越来越”。
+
+- `例 7`：The city is becoming more and more beautiful.
+- `例 8`：That female singer is getting fatter and fatter.
+- `例 9`：As summer approaches, the days seem longer and longer.
+
+⚠️ more and more 不可用在单音节词前。比如不能说：more and more big。
+也不能重复使用形容词或副词。比如不能说：more beautiful and more beautiful。
+
+#### 四、可以修饰比较级的词
 
 >>>>> progress
