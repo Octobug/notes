@@ -30,6 +30,17 @@
       - [二、比较级与 the](#二比较级与-the)
       - [三、more and more 句型](#三more-and-more-句型)
       - [四、可以修饰比较级的词](#四可以修饰比较级的词)
+      - [五、否定意义的词 + 比较级](#五否定意义的词--比较级)
+    - [4.3.2 形容词最高级的用法](#432-形容词最高级的用法)
+      - [一、the + 最高级 + in + 地方](#一the--最高级--in--地方)
+      - [二、the + 序数词 + 最高级 + in + 地方](#二the--序数词--最高级--in--地方)
+      - [三、the + 形容词/副词的最高级 + of + 所属范围](#三the--形容词副词的最高级--of--所属范围)
+      - [四、最高级前面的定冠词 the 加与不加](#四最高级前面的定冠词-the-加与不加)
+  - [4.4 Interesting or interested?](#44-interesting-or-interested)
+    - [4.4.1 `-ing` 形容词与 `-ed` 形容词的特点](#441--ing-形容词与--ed-形容词的特点)
+    - [4.4.2 `-ing` 形容词可以修饰“人”](#442--ing-形容词可以修饰人)
+    - [4.4.3 `-ed` 形容词可以修饰“物”](#443--ed-形容词可以修饰物)
+  - [综合训练 4. 形容词](#综合训练-4-形容词)
 
 ## 4.1 形容词在名词短语中的位置
 
@@ -480,4 +491,168 @@
 
 #### 四、可以修饰比较级的词
 
->>>>> progress
+形容词的比较级前可以用以下表示程度的词或短语来修饰：
+
+- a bit
+- a great deal
+- a little
+- a little bit
+- a lot
+- any
+  - `例 10`：Are you feeling any better?
+- by far
+- even
+- far
+  - `例 12`：He makes far fewer mistakes in spellings than before.
+- much
+- no
+  - `例 11`：Things are no better than before.
+- rather
+- slightly
+- **still**
+  - We hope you'll sing still better.
+- very much
+
+⚠️ 这些词一般不用来修饰比较级：
+
+- fairly
+- many
+- **more**
+- quite
+- very
+
+❌ My girlfriend is very older than me.
+
+#### 五、否定意义的词 + 比较级
+
+用“否定意义的词 + 比较级”这种结构可以表达一个最高级的意思。这样的词有：
+
+- few
+- never
+- not
+- nothing
+
+例句：
+
+- `例 13`：
+  - A: How have you been?
+  - B: It couldn't be worse.
+- `例 14`：Few are better qualified for the job than he is.
+
+另外，never 与比较级连用，是在强调这个比较级的词，意思也相当于这个词的最高级，
+且要用在完成时的句子中。
+
+- `例 15`：I have never heard a better song.
+  - This is the best song that I have ever heard.
+
+### 4.3.2 形容词最高级的用法
+
+比较级是将彼此独立的人或事物进行比较，最高级则是把一个群体中的一员与该群体整体进行比较。
+其用法的一般特点是：
+
+最高级用于**两者以上**的事物之间进行比较；
+
+一般的结构是：the + 形容词/副词的最高级 + 比较范围。
+
+#### 一、the + 最高级 + in + 地方
+
+- `例 1`：It is the most expensive car in the world.
+  - ❌ It is the most expensive car *of* the world.
+- `例 2`：The best woman in the world is my mother. The most beautiful sound in
+  the world is my mother's voice.
+
+#### 二、the + 序数词 + 最高级 + in + 地方
+
+- `例 3`：The Yangtze River is the longest river in China, but it is the third
+  longest river in the world.
+
+#### 三、the + 形容词/副词的最高级 + of + 所属范围
+
+- `例 5`：Certian zoologists regard crows the most intelligent of birds.
+  - 这句可看成最高级形容词的后面省去了代词 one，即指 bird (鸟类)。
+    实际应用中常省略 one 这个代词。
+  - `例 6`：Certain zoologists regard crows the most intelligent one (bird) of
+    birds.
+- `例 7`：The youngest of the family is most successful.
+  - `例 8`：The youngest member of the familiy is most successful.
+- `例 9`：Gold is the least useful of all metals.
+- `例 12`：A good book is the best of friends, the same today and forever.
+
+另外，“of + 范围”这一短语还可以放置在句首。
+
+- `例 13`：Of all metals, gold is the least useful.
+- `例 14`：Of all forms of energy, electricity is most widely used.
+
+#### 四、最高级前面的定冠词 the 加与不加
+
+1. 形容词的最高级修饰名词用在名词之前，一定要加 the。
+    - `例 15`：This is the most interesting book of all.
+2. most 有时用在形容词前，并非表示最高级，而是表示“非常，很”之意，相当于 very, very much。
+    此时，most 的前面一般不用定冠词 the。
+    - `例 16`：The story is most interesting.
+    - `例 17`：It is a most diffcult problem.
+
+## 4.4 Interesting or interested?
+
+### 4.4.1 `-ing` 形容词与 `-ed` 形容词的特点
+
+以 interesting 与 interested 为例：
+
+- `例 1`：The book is interesting.
+- `例 2`：He is interested.
+
+从上面例子可以看出：interesting 往往是与事物联系在一起的，而 interested
+往往与人联系在一起。由此得出一般规律：
+
+1. `-ing` 形容词主要是用来描述引起人某种感觉的事物，因此，句子的主语通常是事物，
+   或该形容词作定语修饰事物（修饰人的情况相对较少）；
+2. `-ed` 形容词主要是用来描述人的感觉，表示“人对事物产生某种感觉”，
+   句子的主语通常是人或有情绪的动物，或该形容词用来修饰人或动物（修饰事物的情况相对较少）。
+
+### 4.4.2 `-ing` 形容词可以修饰“人”
+
+一般来说，用 `-ing` 形容词修饰人，是说明这个人能够引起某种情绪。
+
+- `例 1`：
+  - a boring man
+    - 一个让别人感到乏味的男子
+  - a bored man
+    - 一个对生活感到乏味的男子
+- `例 2`：He is interesting to listen to.
+  - 这里既然用的是 interesting，那么就是表示“他”能够引起别人的兴趣。
+  - ❌ 他对听别人讲话很感兴趣。
+  - ✅ 听他讲话很有意思。
+  - 这句话 he 其实是逻辑宾语，逻辑主语是隐含的大众。
+  - It is interesting to listen to him.
+
+### 4.4.3 `-ed` 形容词可以修饰“物”
+
+- `例 1`：But my diary is good on nature: The first time I saw a fox in the
+  garden in 1986, the first time ..., all in excited detail.
+  - excited 修饰了 detail，但其真正的意义是在描述作者的心境，“兴奋地描述了细节”。
+- `例 2`：They set out with an innocent, excited anticipation of the journey to
+  come, but the five men quickly encounter reality in the form of blizzards,
+  lightning, thirst, starvation and snakes.
+  - 这里 excited 虽然是修饰 anticipation，但真正表示的是这些人的心态。
+- `例 3`：I spend a lot of time on planes listening for that dreaded "Is there a
+  doctor on board?" announcement.
+  - 这里用 dreading 还是 dreaded 要看作者的意图。这里的 dreaded 强调的是“我”的感受，
+    而不是强调 announcement。
+- `例 5`：
+  - Tom had a frightening look on his face.
+    - 汤姆的表情吓死人了。
+  - Tom had a frightened look on his face.
+    - 汤姆吓坏了，满脸都是惊恐的表情。
+
+## 综合训练 4. 形容词
+
+**二、选择最佳答案填空。**
+
+*14. You sang well last night. We hope you'll sing ____.*
+
+- *A. more better*
+- *B. still better*
+- *C. nicely*
+- *D. best*
+
+答案：B。better 本身是比较级，前面不能加 more。

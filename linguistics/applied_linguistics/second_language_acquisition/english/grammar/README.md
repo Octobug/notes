@@ -21,7 +21,7 @@
 - [x] [1. 名词](1_1_noun.md)
 - [x] [2. 限定词 (一): 冠词](1_2_determiner_article.md)
 - [x] [3. 限定词 (二): 数量限定词与个体限定词](1_3_determiner_quantifying_and_individual.md)
-- [ ] [4. 形容词](1_4_adjective.md)
+- [x] [4. 形容词](1_4_adjective.md)
 - [x] [5. 动词分类 (一): 实义动词与 (情态) 助动词](1_5_content_verbs_and_modal_auxiliary_verbs.md)
 - [x] [6. 动词分类 (二): 英语的五种基本句型](1_6_five_basic_sentence_patterns.md)
 - [x] [7. 英文时态 (一): 一般时态](1_7_tenses_the_simple_tense.md)
