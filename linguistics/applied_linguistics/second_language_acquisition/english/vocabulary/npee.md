@@ -19,6 +19,10 @@
     - [`-cap-`, `-cip-`, `-cup-` 抓](#-cap---cip---cup--抓)
     - [`-care-` 关心](#-care--关心)
     - [`-ceed-`, `-cede-`, `-cess-` 走](#-ceed---cede---cess--走)
+    - [`-ceive-`, `-cept-` 收，拿](#-ceive---cept--收拿)
+    - [`-cent-` 百](#-cent--百)
+    - [`-centr-` 中心、中央](#-centr--中心中央)
+    - [`-cid-`, `-cis-`, `-cas-` 切，落下](#-cid---cis---cas--切落下)
 
 ## A
 
@@ -392,3 +396,80 @@
   - v. 接近 ≈ make a way to
   - some of the children don't have the access to educational
     resources/Internet/information/job
+
+### `-ceive-`, `-cept-` 收，拿
+
+- concept
+  - n. 概念；想法（涉及具体事物的概念）
+  - New Concept English: 新概念英语
+  - the concept of sth.: 某事物的概念
+  - conception
+    - n. 想法；概念（脱离具体的对象时才用，少用！）
+    - I have a conception.
+      - 我有个想法/概念。
+- conceive
+  - v. 构想；怀孕
+  - ≈ receive a concept/image
+  - **The couple** conceived a baby.
+    - 那对夫妇有了孩子。
+    - 这里用 the couple 是由于基督教文化对语言的影响，怀孕被视为是上帝的礼物，夫妇共同接收。
+- perceive
+  - v. 认知，领悟，理解
+  - A is perceived as B.
+    - A 被理解为/被认为是 B。
+  - Perceive and reverse.
+    - 刷新主观认知，颠覆客观事实。
+- perception
+  - n.认知，认识
+  - perception of sth.: 对某事物的认知/认识
+- except
+  - with the exception of...: 除了……这种例外
+  - exceptional
+    - adj. 非常优秀的，异样的
+- susceptible
+  - adj. 易受影响的，易遭受……
+  - be susceptible to sth.: 易受……的影响
+  - He was susceptible to women.
+    - 他对女性毫无招架之力。
+  - Young people are the most susceptible to advertisements.
+
+### `-cent-` 百
+
+- decent
+  - de (加强的) cent (百分)
+- incentive
+  - adj. & n. 鼓励；刺激（金钱物质方面的）
+  - a strong incentive: 很强的刺激
+  - incentive system: 激励体系
+  - positive/negative incentive: 正面（积极）/反面（消极）鼓励
+
+### `-centr-` 中心、中央
+
+- eccentric
+  - adj. 古怪的，离经叛道的，非主流的
+  - ec (ex，向外的，远离的) + centr (中心) + ic (的)
+
+### `-cid-`, `-cis-`, `-cas-` 切，落下
+
+- decisive
+  - adj. 决定性的，果断的
+  - a decisive battle: 决定性的战役
+  - Human effort is the decisive factor.
+    - 人定胜天。
+- casualty
+  - n. （事故）伤亡人数
+  - civilian casualty: 平民伤亡
+- incident
+  - n. 事件（意外的且不好的）
+- incidence
+  - n. 发生率
+  - incidence rate of crime: 犯罪发生率
+  - incidence rate of disease: 发病率
+- coincide
+  - v. 符合；与……一致
+  - coincide with: 与……一致
+  - He happened to coincide with you on this point.
+    - 他在这一点上与你不谋而合。
+  - coincidence
+    - n. 一致；巧合
+    - by coincidence: 碰巧的是
