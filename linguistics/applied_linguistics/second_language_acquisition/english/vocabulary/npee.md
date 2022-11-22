@@ -9,6 +9,16 @@
     - [`-auc-`, `-aug-` 大](#-auc---aug--大)
     - [`-aud-`, `-audi-` 听](#-aud---audi--听)
     - [`-auth-` 作者](#-auth--作者)
+    - [A 孤儿词](#a-孤儿词)
+  - [B](#b)
+    - [`-band-` 带、条](#-band--带条)
+    - [`-bat-` 打](#-bat--打)
+    - [B 孤儿词](#b-孤儿词)
+  - [C](#c)
+    - [`-camp-` 营地](#-camp--营地)
+    - [`-cap-`, `-cip-`, `-cup-` 抓](#-cap---cip---cup--抓)
+    - [`-care-` 关心](#-care--关心)
+    - [`-ceed-`, `-cede-`, `-cess-` 走](#-ceed---cede---cess--走)
 
 ## A
 
@@ -107,3 +117,278 @@
   - adj. 真正的；可信的；地道的
   - authentic Chinese food: 地道的中国美食
   - authentic love: 真爱
+
+### A 孤儿词
+
+- abolish
+  - v. 废除；取消
+  - abolish the death penalty
+- absurd
+  - adj. 荒谬的；不合理的
+  - His assertion is absurd.
+- abuse
+  - n. & v. 滥用；虐待
+  - drug abuse
+  - abuse of power
+  - personal abuse: 人身攻击
+  - abuse the situation: 别有用心地利用了局势
+- accompany
+  - v. 陪伴；伴随
+  - be accompanied with/by sth.: 随之而来的
+  - We need to face the problems accompanied with the acceleration of economic
+    globalization.
+  - company
+    - n. 陪伴；公司
+- accuse
+  - vt. 控告；指责
+  - cause
+    - n. 原因
+  - accuse sb. of sth.
+  - be accused of + 罪名
+- acknowledge
+  - **It is a truth universally acknowledged** that a single man in possession
+    of a good fortune must **be in want of** a wife.
+    - be in want of: 想要
+  - It is widely/universally acknowledged that ...
+- admire
+  - vt. 仰慕；钦佩
+  - admiration
+    - with admiration
+    - a sigh of admiration: 一声赞叹
+- advisable
+  - adj. 明智的；可取的
+  - it is advisable for sb. to do sth.
+- alarm
+  - on alarm: 处于警惕状态
+- ambitious
+  - an ambitious movie: 一部气势宏大的电影
+  - One may be poor but never ceases to be ambitious.
+    - 人穷志不短。
+- amount
+  - amount to + 数字: 总计多少个
+- anguish
+  - n. 极度烦恼；痛苦
+- apparent
+  - for apparent reasons: 出于显而易见的原因
+- appoint
+  - v. 指派；认命
+- approach
+  - n. 方法；途径 (way, a way to)
+  - v. 接近、靠近；笼络、贿赂 (make a way to)
+- appropriate
+  - proper
+  - due
+    - adj. 应有个、应得的
+    - Due attention should be given to this problem.
+- assault
+  - v. & n. 攻击；侮辱
+- asset
+  - intangible asset: 无形资产
+  - physical asset: 有形资产
+  - liability
+    - n. 债务、负债
+  - equity
+    - n. 股票；公平
+  - He is a great asset to our company.
+    - 他是我们公司的宝贵人才。
+  - You are a liability to the team.
+    - 你是团队的累赘。
+- assess
+  - v. 评估；估价
+- award
+  - reward
+    - And those who follow the path of the righteous shall have their reward.
+
+## B
+
+### `-band-` 带、条
+
+- bound
+  - adj. 受束缚的；有关系的；注定的
+  - be bound to do sth.
+    - 注定会/有义务做某事
+- abound
+  - vi. 富于；盛产
+  - `a`bount
+    - a: 否定 + bound: 捆绑 = 不受限制，富于...
+  - abound with/in
+    - 有很多...
+    - Venice abounds in famous hotels.
+      - 威尼斯有很多知名的酒店。
+- abundant
+  - adj. 大量的、充足的
+  - abundant resource: 充足的资源
+  - abundant supply: 充足的工具
+  - A just cause enjoys abundant support.
+    - 得道多助。
+- abandon
+  - v. 抛弃，放弃
+  - abandon oneself to sth.: 在某种强大的力量面前放弃自我
+  - We should not abandon ourselves to our feelings.
+  - I abandon myself to his absolute power.
+  - I abandon myself to the goddess.
+
+### `-bat-` 打
+
+- combat
+  - v. & n. 对抗；打击
+  - combat crime: 打击犯罪
+  - combat recession: 应对经济衰退
+- debate
+  - debate over sth.
+  - intense debate
+
+### B 孤儿词
+
+- balance
+  - balance sheet: 资产负债表
+- bargain
+  - bargain **over** sth. 就某一事物讨价还价
+- blunt
+  - adj.迟钝的；耿直的
+  - I hate to be blunt, but...
+    - 我不想那么直白，但...
+- board
+  - n. 甲板；董事会
+  - commission board: 委员会
+  - the advisoray panel: 顾问小组
+  - on board: 上车、上船；在车上、在船上
+- aborad
+  - adv. & prep
+  - 到船/飞机上
+  - ≈ on board
+- broad
+  - in broad light: 光天化日之下
+  - broad discussion/support: 广泛的讨论/支持
+- abroad
+  - n. & adv. & adj. 国外；到国外；国外的
+- boast
+  - v. & n. 吹嘘；炫耀
+  - boast of/about sth.
+- boom
+  - v. & n. 快速发展；快速增加
+- bloom
+  - v. & n. 开花；盛开；盛放
+  - The economy of China bloomed in the 1990s.
+
+## C
+
+### `-camp-` 营地
+
+- camp
+  - concentration camp: 集中营
+- chamber
+  - Harry Potter and the Chamber of Secret
+  - the chamber of secret: 有很多秘密的房间（突出秘密）
+  - the secret chamber: 神秘的房间
+  - chamber music: 室内乐 -> 交响乐/古典乐
+- campaign
+  - mass media campaign: 大众媒体宣传攻势
+
+### `-cap-`, `-cip-`, `-cup-` 抓
+
+- capital
+  - capital punishment: 极刑；死刑
+- capable
+  - capability: n. 能力；才能
+    - physical capability
+    - mental capability
+- capture
+  - captive
+    - a captive market: 一个垄断性市场
+- capacity
+  - reduce excessive capacity: 减少过剩的能力
+  - at full capacity: 满负荷运转
+- anticipate
+  - v. 预测、预期
+  - anti (在……之前) + cip (抓) + ate
+- ancient
+  - anci (在……之前) + ent
+- ancestor
+  - ance (在……之前) + ces (走) + tor (人)
+- discipline
+  - n. 纪律；学科；行为准则
+- occupation
+  - n. 占用，占据；职业，工作
+  - occupation of the market: 市场占有
+  - occupation rate: 占有率
+
+### `-care-` 关心
+
+- scarce
+  - scarcely
+    - adv. 几乎不 ≈ seldom
+- charity
+  - depend on charity: 依靠救济金度日
+- concern
+  - as far as I am concerned, ... 就我而言/在我看来...
+  - It concerns me.
+    - 这牵扯/涉及到我了！
+  - sth. is of great concern
+    - 某事备受关注
+- accurate
+  - ac (加强) + cur (care 关心在意) + ate
+- caution
+  - a man of caution: 一个谨慎的男人
+  - precaution
+    - n. 预防；防范
+    - take precaution
+    - as a precaution against sth. 作为……的预防措施
+
+### `-ceed-`, `-cede-`, `-cess-` 走
+
+- precede
+  - vt. 在……之前，先于
+  - A be preceded by B: A 的前面是 B；总是先出现 B 再出现 A
+  - preceeding
+    - adj. 前面的，领先的
+    - Each generation surpasses the proceeding one.
+      - 一代更比一代强。
+- precedent
+  - n. 先例
+  - set a precedent: 创下先例
+  - unprecedented
+    - adj. 没有先例的，史无前例的
+    - This is an unprecedented achievement in Chinese History.
+- predecessor
+  - n. 前任（公务），前身
+  - This is the predecessor of Peking Opera.
+    - 这就是京剧的前身。
+- recession
+  - n. 衰退；不景气
+  - deep recession: 严重的衰退
+  - We are finally out of the recession.
+  - The company has weathered the recession.
+    - 公司挺过了/熬过了衰退/经济寒冬。
+  - weather
+    - vt. 平安度过，熬过
+    - There are storms we cannot weather.
+      - 总有些我们过不去的坎。
+- succeed
+  - v. 成功；继承
+  - suc (之后) + ceed (走)
+  - succeed to his throne: 继承他的王位
+- succession
+  - n. 继承；连续
+  - a succession of sth.: 一连串的……/一系列的……
+  - successive
+    - adj. 连续的
+  - successor
+    - n. 继任者
+    - predecessor
+- excess
+  - n. 超过；过来
+  - excessive
+    - adj. 过量的
+    - excessive capacity: 过剩产能
+  - exceedingly
+    - adv. 特别、非常、及其
+- excel
+  - v. 优于、胜出；擅长
+  - excel in sth.: 在……中优胜
+  - excel at sth.: 擅长某事
+- access
+  - n. 途径、方法；靠近
+  - v. 接近 ≈ make a way to
+  - some of the children don't have the access to educational
+    resources/Internet/information/job
