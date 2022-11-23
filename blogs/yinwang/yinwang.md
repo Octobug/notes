@@ -151,4 +151,3 @@
 - [x] 2012年09月18日 - [TeXmacs：一个真正“所见即所得”的排版系统](http://www.yinwang.org/blog-cn/2012/09/18/texmacs)
 - [x] 2012年08月01日 - [怎样写一个解释器](http://www.yinwang.org/blog-cn/2012/08/01/interpreter)
 - [x] 2012年07月25日 - [什么是语义学](http://www.yinwang.org/blog-cn/2012/07/25/semantics)
-- [x] 2012年07月04日 - [GTF - Great Teacher Friedman](http://www.yinwang.org/blog-cn/2012/07/04/dan-friedman)
