@@ -8,6 +8,7 @@
   - [`dom` 房子，家；支配，统治](#dom-房子家支配统治)
   - [`duce`, `duct` 引导](#duce-duct-引导)
   - [`dur` 持续](#dur-持续)
+  - [D 孤儿词](#d-孤儿词)
 
 ## `dem` 民众
 
@@ -78,3 +79,18 @@
   - adj. 持久的；耐久的
 - duration
   - n. 持久；持续时间
+
+## D 孤儿词
+
+- deadline
+  - meet the deadline: 赶上最后期限
+  - extend the deadline: 延长截止日期
+- deliver
+  - deliver a speech: 发表演讲
+- deteriorate
+  - v. 恶化，变坏
+  - His health is increasingly deteriorating.
+- determine
+  - Attitude determines altitude.
+- diligent
+  - adj. 勤奋的，用功的
