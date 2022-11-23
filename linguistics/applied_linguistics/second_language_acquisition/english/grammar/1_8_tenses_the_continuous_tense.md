@@ -17,6 +17,14 @@
     - [8.2.6 用法六：与 always 等连用，表示多次重复，且含感情色彩](#826-用法六与-always-等连用表示多次重复且含感情色彩)
   - [8.3 过去进行时——回顾过去讲故事](#83-过去进行时回顾过去讲故事)
     - [8.3.1 常见用法：用来设置故事的背景](#831-常见用法用来设置故事的背景)
+      - [一、动作长短的相对性及其与时态的关系](#一动作长短的相对性及其与时态的关系)
+      - [二、when 和 while 的区别](#二when-和-while-的区别)
+    - [8.3.2 少见用法：两个过去同时在持续的动作](#832-少见用法两个过去同时在持续的动作)
+    - [思维训练 8.3.1-8.3.2](#思维训练-831-832)
+    - [8.3.3 典型用法：描述一件过去特定时刻正在发生的事情](#833-典型用法描述一件过去特定时刻正在发生的事情)
+    - [8.3.4 口语用法：表示委婉的请求或建议](#834-口语用法表示委婉的请求或建议)
+    - [思维训练 8.3 过去进行时——回顾过去讲故事](#思维训练-83-过去进行时回顾过去讲故事)
+  - [8.4 将来进行时——想象未来](#84-将来进行时想象未来)
 
 ## 8.1 引言
 
@@ -299,5 +307,123 @@ be going to do 和 be doing 的主要区别：
 ## 8.3 过去进行时——回顾过去讲故事
 
 ### 8.3.1 常见用法：用来设置故事的背景
+
+在讲故事时，往往会用到过去进行时态 (the past continuous tense) was/were doing
+来设置故事发生的过去北京。
+这是因为进行时态往往表示一个持续的活动场景，用它来铺垫故事背景能给读者一种身临其境的感觉。
+
+- `例 1`：It **was getting** darker. The rain was beating on the windows...
+  Suddenly, there was a knock on the door...
+- `例 2`：James Bond was driving through town. It was raining. The wind was
+  blowing hard. Nobody was walking in the streets. Suddenly, Bond saw the killer
+  in a telephone box...
+
+在日常生活叙事中，常把“过去进行时”和“一般过去时”配合使用。
+此时，过去进行时通常表示一个历时较长的体现“背景”的动作或状态；
+而一般过去时则表示在此“背景”下发生的一个短暂的动作或状态。
+简言之，**长动作用过去进行时，短动作用一般过去时**，以此表示在过去进行时的动作持续期间，
+发生了另一个短暂动作。这两个动作之间用 when 或 while 连接。
+
+- `例 3`：I was walking along the street late last night when suddenly I heard
+  footsteps behind me. Somebody was following me. I was frightened and I started
+  to run.
+
+过去进行时的这一用法需要注意以下两点。
+
+#### 一、动作长短的相对性及其与时态的关系
+
+- `例 5`：I was watching TV when the telephone rang.
+- `例 6`：I was walking past the car when it exploded.
+
+动作的长短是指具体句子里的两个动作的相对长短。
+相对短的动作用**一般过去时**，相对长的动作用**过去进行时**。
+
+- `例 10`：
+  - I was telephoning Harry when she arrived.
+    - 她到的时候我正在给她打电话。
+  - I telephoned Harry when she arrived.
+    - 她到了之后，我再给哈里打电话。
+    - 主句与从句同为一般过去时，从句的动作在前。
+
+#### 二、when 和 while 的区别
+
+过去进行时与一般过去时的这种搭配使用主要由 when 或 while 连接，但两者有以下区别：
+
+1. when 的后面接短动作，用一般过去时；或接长动作，用过去进行时；
+2. while 的后面只能接长动作，用过去进行时。
+
+- `例 11`：I was walking past the car when it exploded.
+  - ❌ I was walking past the car while it exploded.
+- `例 12`：The car exploded when I was walking past it.
+- `例 13`：The car exploded while I was walking past it.
+
+### 8.3.2 少见用法：两个过去同时在持续的动作
+
+若句子中的两个动作都是较长的动作，则两个动作都用过去进行时，表示两个过去同时在持续的动作。
+此时分不出哪个动作先发生。
+
+- `例 1`：While I was studying in my dorm, my roommates were talking loudly with
+  their friends.
+- `例 2`：While I was studying last night, my wife was watching TV.
+
+### 思维训练 8.3.1-8.3.2
+
+**一、告诉你的朋友这样一个故事。**
+
+*1. 昨晚 12 点左右，你当时正一个人在家看电视。
+突然有人按门铃，然后你去开门，但发现屋外没有人。*
+
+答案：What a mystery! It was around 12:00 last night. I was watching TV when
+someone rang the doorbell. I answered the door, but found nobody outside...
+
+### 8.3.3 典型用法：描述一件过去特定时刻正在发生的事情
+
+过去进行时还可以用来描述一件在过去特定时刻正在发生的事情，这是各种进行时的典型用法。
+
+- `例 1`：I was discussing my thesis with my director at this time last night.
+- `例 2`：
+  - A: What were you doing at 10 o'clock last night.
+  - B: I was having dinner with my friends.
+- `例 3`：
+  - A: Where were you last night?
+  - B: I was reading in the library.
+- `例 4`：
+  - It was raining hard, but no one stopped working.
+
+### 8.3.4 口语用法：表示委婉的请求或建议
+
+在口语表达中，常常用**过去进行时**来表示委婉的请求或建议，这时并不表示过去时间的动作。
+这尤其适用于表示态度的动词，如 wonder，hope，think
+等，这些动词用**过去进行时**或**现在进行时**，均表示现在的一种愿望或态度，
+给人一种探询式的、犹豫不决的印象，因而显得很礼貌。
+
+- `例 1`：
+  - A: Excuse me, Prof. Davidson. But I was hoping to talk to you about my class
+    project for economics.
+  - B: I have a class in a few minutes. Why don't you come and see me during
+    office hours tomorrow?
+- `例 2`：I was wondering if you'd like to lend me your car.
+- `例 4`：I was hoping that you'd like to lend me your car.
+- `例 5`：I was thinking that you'd like to lend me your car.
+
+若使用一般现在时，则显得有点欠缺礼貌。
+
+- `例 6`：I hope to borrow your car.
+- `例 7`：I wonder if you can lend me your car.
+
+### 思维训练 8.3 过去进行时——回顾过去讲故事
+
+**二、翻译下列句子。**
+
+*10. 当时电视开着的，但没有人在看。*
+
+答案：The television was on but nobody was watching it.
+
+*11. 上星期我做晚饭时把手指给切了，现在手上还有伤疤呢！*
+
+答案：I cut my finger while I was cooking dinner last week. Now I have a scar on
+my finger.
+
+## 8.4 将来进行时——想象未来
 
 >>>>> progress
