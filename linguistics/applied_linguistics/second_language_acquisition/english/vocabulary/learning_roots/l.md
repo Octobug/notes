@@ -1,9 +1,16 @@
-# K
+# L
 
-- [K](#k)
+- [L](#l)
   - [`labor` 努力、劳动](#labor-努力劳动)
   - [`lect`, `leg`, `lig` 选择；说；法律](#lect-leg-lig-选择说法律)
   - [`lev` 举起，变轻](#lev-举起变轻)
+  - [`liber` 自由](#liber-自由)
+  - [`light` 轻的、灯光](#light-轻的灯光)
+  - [`liter` 文字](#liter-文字)
+  - [`loc` 地点，地方](#loc-地点地方)
+  - [`log`, `loq` 说话](#log-loq-说话)
+  - [`logy` 学科](#logy-学科)
+  - [`lus` 光线](#lus-光线)
 
 ## `labor` 努力、劳动
 
@@ -91,3 +98,72 @@
 - alleviate
   - v. 减轻，缓和
   - A number of measures are taken to alleviate this problem.
+
+## `liber` 自由
+
+- liberty
+  - n. 自由，解放
+  - liberty, equality, and fraternity: 自由，平等，博爱
+- libertine
+  - adj. & n. 放荡不羁的，浪荡的
+- liberal
+  - adj. 自由的，开明的
+  - The Liberal Party: 自由党
+  - liberation
+    - PLA: People's Liberation Army
+
+## `light` 轻的、灯光
+
+- slight
+  - adj. 微小的，细小的
+- bright
+  - adj. 明亮的，辉煌的；聪明的；美好的
+  - They all have a bright future.
+  - gloomy future: 惨淡的未来
+- delight
+  - v. & n. （使）高兴，快乐
+- enlighten
+  - v. 启发，启蒙，教导
+  - The Enlightenment: 启蒙运动
+
+## `liter` 文字
+
+- literate
+  - adj. 识字的，有文化的
+- literally
+  - adv. 真正的（字面意义上的）
+  - The views are literally breathtaking.
+    - 这景色真的美得令人窒息。
+
+## `loc` 地点，地方
+
+- local
+  - adj. 地方的，本地的
+  - n. 本地人
+
+## `log`, `loq` 说话
+
+- apology
+  - n. 道歉，认错；辩解
+  - apo (远离) + log (说话) -> 为了免除罪责而说话 -> 道歉
+- eloquent
+  - adj. 雄辩的，有口才的
+- analogy
+  - n. 类比，相似；类似
+  - ana (against，对着) + log (说)
+
+## `logy` 学科
+
+- ideology
+  - n. 意识形态，思想体系
+  - A person's work style is related to his ideology.
+
+## `lus` 光线
+
+- illusion
+  - n. 幻觉，错觉
+  - ill (病态的) + lus (光线)
+- illustrate
+  - v. 说明，表明
+- illustrator
+  - n. 插图（用以说明、表明的工具）
