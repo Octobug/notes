@@ -30,6 +30,9 @@
       - [一、连词 so...that 的用法](#一连词-sothat-的用法)
       - [二、连词 such...that 的用法](#二连词-suchthat-的用法)
     - [4.5.2 结果状语从句的倒装](#452-结果状语从句的倒装)
+    - [思维训练 4.5 结果状语从句](#思维训练-45-结果状语从句)
+  - [4.6 条件状语从句](#46-条件状语从句)
+    - [4.7.2 表示让步转折关系的介词](#472-表示让步转折关系的介词)
 
 ## 4.1 时间状语从句
 
@@ -444,35 +447,132 @@ night's sleep.*
 
 ⚠️ 结果状语从句都要放在主句之后，而不能提到句首。
 
+> 补充参考：<https://test-english.com/explanation/b1-2/so-such-so-much-so-many/>
+
 #### 一、连词 so...that 的用法
 
 多数结果状语从句是由 so...that 引导的，so 后面接形容词或副词。
 
-1. **接形容词**
-
+1. so + **形容词/副词** + that...
     - `例 2`：The moon is **so** large **that** several million people could
       live there.
     - `例 3`：The food in our school canteen is **so** bad **that** flies go
       there to lose weight.
-
-2. **接副词**
-
     - `例 4`：He has put forward unquestioned claims **so** consistently
       **that** he not only believes them himself, but has convinced industrial
       and business management that they are true.
       - 他一直不断地提出确定不疑的主张，以至于不仅他自己对他们深信不疑，
         而且还使得工商管理界相信他们都是真的。
+2. so + **形容词** + **a/an** + **单数可数名词** + that...
+    - He is **so** good a teacher **that** everyone likes him.
+3. so + **many/few** + **复数可数名词** + that...
+    - `补充`：He has so many books that I can't count them.
+4. so + **much/little** + **不可数名词** + that...
+    - `补充`：There was so much food that we couldn't eat it all.
 
 #### 二、连词 such...that 的用法
 
 such...that 引导结果状语从句时，such 后面要接名词（短语）。
 
-- `例 6`：Diplomats and crabs are creatures who move in **such** a way **that**
-  it is impossible to tell whether they are coming or going.
-- `例 7`：
-  - He is **such** a good teacher **that** everyone likes him.
-  - He is **so** good a teacher **that** everyone likes him.
+公式：such + `(限定词 a/an) + (形容词) + 名词` + that...
+
+1. such + **a/an** + (形容词) + **单数可数名词** + that...
+    - `例 6`：Diplomats and crabs are creatures who move in **such** a way
+      **that** it is impossible to tell whether they are coming or going.
+    - `例 7`：He is **such** a good teacher **that** everyone likes him.
+2. such + (形容词) + **复数可数名词** + that...
+    - `补充`：They are such interesting books that we all enjoy reading them.
+3. such + (形容词) + **不可数名词** + that...
+    - `补充`：He shut the window with such force that the glass broke.
+    - `补充`：We had such terrible weather that we decided to go back home.
 
 ### 4.5.2 结果状语从句的倒装
+
+such/so...that 引导结果状语从句，为了强调，还可以将主句中的 so/such
+引导的部分置于句首从而构成倒装结构。
+
+- `例 1`：**So** fast does light travel **that** it is difficult for us to
+  imagine its speed.
+  - Light travels **so** fast **that** it is difficult for us to imagine its
+    speed.
+- `例 2`：**So** terrible was the storm **that** the roofs were all ripped off.
+  - The storm was **so** terrible **that** the roofs were all ripped off.
+- `例 3`：____ that the pilot couldn't fly through it.
+  - A. So the storm was severe
+  - B. So severe was the storm
+  - C. The storm so severe was
+  - D. Such was the storm severe
+  - 答案：B。
+  - The storm was so severe that the pilot couldn't fly through it.
+- `例 4`：**Such** a fool was he **that** he believed her.
+  - He was **such** a fool **that** he believed her.
+
+### 思维训练 4.5 结果状语从句
+
+**一、请用 so...that 和/或 such...that 合并句子。**
+
+*1. This tea is good. I think I'll have another cup.*
+
+答案：This tea is so good that I will have another cup.
+
+`so + 形容词 + that`
+
+*8. It took us only ten minutes to get there. There was little traffic.*
+
+答案：There was **so** little traffic that it took us only ten minutes to get
+there.
+
+`so + little + 不可数名词 + that`
+
+原答案使用了 such that，应该是错的。
+
+参考：<https://forum.wordreference.com/threads/such-so-question.2195227/>
+
+*9. There were few people at the meeting. It was cancelled.*
+
+答案：There were so few people at the meeting that it was cancelled.
+
+`so + few + 复数可数名词 + that`
+
+*10. I have too much trouble. I need your help.*
+
+答案：I have so much trouble that I need your help.
+
+`so + much + 不可数名词 + that`
+
+*11. The classroom has comfortable chairs. The students find it easy to fall
+asleep.*
+
+答案：The classroom has such comfortable chairs that the students find it easy to
+fall asleep.
+
+`such + 形容词 + 复数可数名词 + that`
+
+**二、请选择最佳答案填空。**
+
+*12. So involved with their computers ____ that leaders at summer computer camps
+often have to force them to break for sports and games.*
+
+- *A. became the children*
+- *B. become the children*
+- *C. had the children become*
+- *D. do the children become*
+
+答案：D。C 选项时态不对，因为从句谓语是一般现在时态的 have to，不可能与过去完成时态搭配。
+
+*13. It is ____ weather that I would like to go to the beach.*
+
+- *A. so nice*
+- *B. such nice*
+- *C. such a nice*
+- *D. so nice a*
+
+答案：B。weather 为不可数名词。
+
+## 4.6 条件状语从句
+
+>>>>> progress
+
+### 4.7.2 表示让步转折关系的介词
 
 >>>>> progress
