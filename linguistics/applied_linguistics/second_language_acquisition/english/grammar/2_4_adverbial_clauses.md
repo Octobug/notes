@@ -32,6 +32,11 @@
     - [4.5.2 结果状语从句的倒装](#452-结果状语从句的倒装)
     - [思维训练 4.5 结果状语从句](#思维训练-45-结果状语从句)
   - [4.6 条件状语从句](#46-条件状语从句)
+    - [4.6.1 常见连词的用法](#461-常见连词的用法)
+    - [4.6.2 其他条件状语从句的连词](#462-其他条件状语从句的连词)
+    - [思维训练 4.6](#思维训练-46)
+  - [4.7 让步状语从句](#47-让步状语从句)
+    - [4.7.1 常见连词的用法](#471-常见连词的用法)
     - [4.7.2 表示让步转折关系的介词](#472-表示让步转折关系的介词)
 
 ## 4.1 时间状语从句
@@ -571,7 +576,89 @@ often have to force them to break for sports and games.*
 
 ## 4.6 条件状语从句
 
->>>>> progress
+### 4.6.1 常见连词的用法
+
+最常见的条件状语从句的引导词是 **if** 和 **unless**。
+连词 if 表示“如果”，unless 表示“如果不”或“除非”。
+
+- `例 1`：**If winter comes, can spring be far behind?
+- `例 3`：Today if a happy smile comes to you, a happy smile that perhaps you
+  can't explain...it is because at that moment, I am thinking of you, and
+  smiling, too.
+  - 假如今天你不经意间开心地微笑起来，连你都无法解释自己为什么会笑……
+    这是因为此时此刻我正在想你，我也在微笑。
+- `例 4`：In politics, if you want someone to make a speech, ask a man; if you
+  want something done, ask a woman.
+- `例 5`：Please do not post any private information unless you want it to be
+  available publicly and never assume that you are completely anonymous and
+  cannot be identified by you comments.
+- `例 6`：Discussions about "face" can be difficult if one is not familiar with
+  the significance and importance attached to it by many Asian people. It does
+  have different meanings to different people and, unless a teacher is
+  "comfortable" with broaching the subject, it is best left alone.
+  - 亚洲人非常看重“面子”问题，如果你对此不熟悉的话，讨论“面子”问题就会很困难。
+    对于不同的人，“面子”问题的意思是不同的，除非作为老师，你很善于把握这个话题，
+    否则还是不要涉及为好。
+- `例 7`：Read silently. Do not make a sound, move your tongue or lips. Reading
+  aloud slows you down and will not help pronunciation unless you have a mentor
+  who will correct your pronunciation.
+- `例 8`：Inside this book you will find a series of successful skills,
+  strategies and suggestions for improving your English, but these will be
+  useless unless you carry them out.
+
+### 4.6.2 其他条件状语从句的连词
+
+其他引导条件状语从句的连词有：
+
+- suppose (that)
+- suppsing (that)
+- providing/provided (that)
+- so long as
+- as long as
+- on condition that
+
+例子：
+
+- `例 1`：So long as you work hard enough, an iron rod can be ground into a
+  needle.
+- `例 2`：A man is not old as long as he is seeking something. A man is not old
+  until regrets take the place of dreams.
+- `例 4`：Knowledge helps you to reach the destination provided you know what
+  the destination is.
+  - 如果你知道自己的目标是什么，知识就能帮助你达到这个目标。
+
+### 思维训练 4.6
+
+**请选择最佳答案填空。**
+
+*1. You can arrive in Beijing earlier for the meeting ____ you don't mind
+taking the night train.*
+
+- *A. provided*
+- *B. unless*
+- *C. though*
+- *D. until*
+
+答案：A。这里的逻辑关系是“鉴于……所以……”，而不是“……，除非……”。
+
+## 4.7 让步状语从句
+
+### 4.7.1 常见连词的用法
+
+常见的引导让步状语从句的词有 though, although, even though, even if。
+此时，**主句前不可用 but，但可用 yet 或 still**。
+
+- `例 1`：Although he tried hard, (yet/still) he failed.
+- `例 2`：Although I didn't know anybody at the party, I had a very good time.
+- `例 3`：The family is the essential presence -- the thing that never leaves
+  you, even if you find you have to leave it.
+- `例 4`：Although Professor Green's lectures usually ran ***over***`A` the
+  fifty-minute period, ***but***`B` ***none***`C` of his students
+  ***even objected***`D` as they found his lectures both informative and
+  interesting.
+  - 答案：B。应该把 but 去掉。
+  - 尽管格林教授上课时间常超过 50 分钟，但是他的学生中没有一个人反对，
+    因为他们觉得他的课既有趣又有收获。
 
 ### 4.7.2 表示让步转折关系的介词
 
