@@ -15,6 +15,12 @@
   - [`pose` 放置](#pose-放置)
   - [`prec` 价值](#prec-价值)
   - [`press` 压](#press-压)
+  - [`pri` 前](#pri-前)
+  - [`prim`, `prin` 第一](#prim-prin-第一)
+  - [`prov` 证明](#prov-证明)
+  - [`pub` 公开](#pub-公开)
+  - [`put` 想，思考](#put-想思考)
+  - [P 孤儿词](#p-孤儿词)
 
 ## `par`, `part` 部分、分离
 
@@ -272,3 +278,136 @@
   - n. 萧条，沮丧，抑郁
   - the Great Depression：大萧条
   - economic depression：经济不景气、经济萧条
+
+## `pri` 前
+
+- prior
+  - adj. 优先的，在前的
+  - He had no prior knowledge of the action.
+    - 他对此次行动事先并不知情。
+  - It happened prior to his arrival.
+    - 这发生在他到达之前。
+- priority
+  - The government's first priority is to build more roads.
+- previous
+  - There is no previous statistic data for comparison.
+
+## `prim`, `prin` 第一
+
+- prime
+  - adj. 基本的，首要的，最好的
+  - the Prime Minister：首相
+  - The wellbeing of Chinese people will be a prime concern.
+    - 中国人民的幸福是头等大事。
+- primary
+  - adj. 主要的，首要的，最初的
+- primitive
+  - adj. 原始的，早期的
+- principle
+  - n. 原则，准则，原理
+  - We must **adhere** to the principle of making study serve the practical
+    purpose.
+    - 我们必须坚持学以致用的原则。
+- principal
+  - adj. 主要的
+  - n. 本金
+  - the principal reason：主要原因
+  - the principal concern：首要的考虑
+
+## `prov` 证明
+
+- prove
+  - It is proved to be...：这被证明是……
+- proof
+  - n. 证据
+  - adj. 防……的
+  - water proof
+- approve
+  - approve of sth./sb.
+- approval
+  - n. 赞同，批准，同意
+  - on one's approval：在某人的批准之下
+- improve
+  - improvement
+  - That is a substantial improvement under the current situation.
+  - He sees no sign of improvement in the UK's economy.
+
+## `pub` 公开
+
+- public
+  - n. 公众
+  - adj. 公众的，公开的
+  - public figures：公众人物
+  - public spending：公共开支
+  - public opinion poll：民意调查
+  - public facilities：公共设施
+  - in public：adv. 公开地
+- publish
+- publisher
+- publication
+
+## `put` 想，思考
+
+- dispute
+  - v. & n. 争论，争吵
+  - beyond dispute：adv. 毫无争议地
+  - in dispute：处在争议中
+- repute
+- reputation
+  - Companies should earn an reputation for honesty.
+    - 公司应该以诚信著称。
+
+## P 孤儿词
+
+- panic
+  - v. & n. 惊慌，恐慌
+  - pan (希腊神话中的潘神) + ic
+  - in a panic
+  - don't panic
+- patent
+  - v. & n. (申请)专利，专利权
+  - adj. 显然的
+  - exclusive patent
+  - This is patent nonsense.
+- peculiar
+  - He has a rather peculiar sense of humor.
+    - 他的笑点很奇怪。
+- peer
+  - peer review：同行评审
+  - peer pressure
+  - peer psychological counseling：朋辈心理咨询
+- penalty
+  - legal penalty
+- permanent
+  - permanent damage：永久的伤害
+  - permanent address：固定住所/住址
+  - a permanent solution to the problem：解决问题的长久之计
+- philosophy
+  - philo (热爱) + sophy (智慧)
+  - PhD (Doctor of Philosophy)：博士
+- physical
+  - physical condition：身体健康状况
+- physician：医生
+- potential
+  - be of great potential：拥有很大的潜力
+  - potential customer：潜在顾客
+  - potential threat：潜在的威胁
+  - realize one's full potential：发挥其全部潜力
+- prone
+  - adj. 倾向于……的，易于……的
+  - prone to sth.：倾向于/易于……
+- prompt
+  - v. 推进，促进
+  - adj. 立即的，敏捷的
+  - prompt action is needed.：需要立即采取行动
+- punctual
+  - adj. 准时到，准点的
+- punctuality
+  - n. 准时，准点
+- pursue
+  - v. 追赶，追求
+  - pursue one's career：追求、发展某人的事业
+  - pursue one's own interest：发展某人自己的兴趣爱好
+- pursuit
+  - n. 追踪，追求
+  - in pursuit of sth.：adv. 对……对追逐
