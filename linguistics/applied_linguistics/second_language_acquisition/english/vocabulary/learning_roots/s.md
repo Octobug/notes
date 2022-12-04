@@ -7,6 +7,10 @@
   - [`sert` 塞，放](#sert-塞放)
   - [`serv` 服务，保持](#serv-服务保持)
   - [`sid` 坐](#sid-坐)
+  - [`sign` 签，符号](#sign-签符号)
+  - [`sim`, `sem`, `sym`, `syn` 相同](#sim-sem-sym-syn-相同)
+  - [`soci` 社会](#soci-社会)
+  - [`sol` 单独，一致](#sol-单独一致)
 
 ## `scend`, `scent` 送
 
@@ -102,3 +106,63 @@
 - residence
   - n. 住处，住宅
   - He has applied for permanent residence.
+
+## `sign` 签，符号
+
+- sign
+  - there is no sign of
+- signature
+- significance
+  - The authority attached great significance to his visit.
+    - 当局对他的来访非常重视。
+- resign
+- resignation
+  - He was left with no option but to resign.
+    - 他除了辞职别无选择。
+
+## `sim`, `sem`, `sym`, `syn` 相同
+
+- simulate
+- simulation
+  - numerical simulation：数值模拟
+- assimilate
+  - v. 同化，吸收
+  - They didn't assimilate with the local population.
+    - 他们没有融入当地人民。
+- simultaneous
+- simultaneously
+- resemble
+  - v. 像，类似于
+  - She resembles her mother.
+    - 她很像她母亲。
+- sympathy
+  - n. 同情心
+- empathy
+  - n. 同理心，同情心，共情，共鸣
+- synthesis
+  - n. 综合，合成
+
+## `soci` 社会
+
+- social
+  - social justice
+  - social position
+  - social progress
+- sociable
+  - adj. 好交际的，友善的
+- associate
+  - v. 交往，打交道，联系
+- association
+
+## `sol` 单独，一致
+
+- sole
+  - adj. 单独的，唯一的
+- soul
+  - n. 灵魂
+- solid
+  - solid evidence
+- solidarity
+  - n. 团结，一致
+- consolidate
+  - v. 加固，加强，合并
