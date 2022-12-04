@@ -19,6 +19,9 @@
   - [6.5 重复事件](#65-重复事件)
     - [6.5.1 重复时间（一）：短暂动词](#651-重复时间一短暂动词)
     - [6.5.2 重复事件（二）：有限延续动词](#652-重复事件二有限延续动词)
+    - [思维总结 6.5 重复事件](#思维总结-65-重复事件)
+    - [思维训练 6.5 重复事件](#思维训练-65-重复事件)
+  - [6.6 重复事件比较：完成进行时与完成时](#66-重复事件比较完成进行时与完成时)
 
 ## 6.1 完成进行时态的构成
 
@@ -469,5 +472,98 @@ activity)。
 - ✅ Mike has been winning that race for years.
 
 ### 6.5.2 重复事件（二）：有限延续动词
+
+- `例 1`：I've been chatting online for a little over three years and have met
+  hundreds of people.
+  - chat 是一个延续动词，根据实际经验，它用在三年这么长的时间跨度里只能是表示一个重复事件。
+  - 我上网聊天已经有三年多了，也认识了很多人。
+- `例 2`：I have been chatting online for three hours now.
+  - 我上网聊天到现在有三个小时了。
+- `例 3`：
+  - Frank likes to eavesdrop on his boss's phone conversations. His boss doesn't
+    know Frank has been listening to him talk on the phone for the past three
+    years. (talk 存疑，可能使用 talking 才正确)
+    - 与表达较长时间的持续时间状语 for the past three years
+      搭配使用，表示在近三年当中，他不断“重复”地偷听他老板的电话。
+      所以，这里的 has been listening 表示重复活动。
+  - Frank is eavesdropping on his boss's phone conversations. He has been
+    listening to him talk on the phone for ten minutes now.
+    - 与表达较短时间的持续时间状语 for ten minutes now
+      搭配使用，表示他偷听老板的电话是一直在“延续”的，已经延续了 10 分钟了。
+      所以，这里的 has been listening 表示延续活动。
+- `例 5`：
+  - A: I'm going out to pick up a sandwich. Can I get you something?
+  - B: Hmm. I've been eating too much lately. I'll just have the yogurt I
+    brought, but thanks for the offer.
+
+`总结`：
+像动词 chat，listen，interview，ask 和 eat 等，都是表示可以延续的动作，
+所以这些动词用于完成进行时都可以表示**延续**的活动。
+这些动词的延续性又是有限的，它们表示的某个单一具体的动作一般不可能持续太长的时间。
+因此，当它们用于表达较长时间的时间状语时，就不能说某一活动在“延续”，而只能解释为活动在“重复”。
+这不同于 come 这样的瞬间即结束的动词，因为它不能延续，所以它的完成进行时 have been coming
+用于较长的时间段内，只能解释为重复的动作。
+
+对于这样具有一定的延续性但又不能长时间延续的动词，我们称之为“有限延续动词”：
+**“有限延续动词”用于完成进行时态，若接表达较长时间的状语表示“重复活动”；
+若接表达较短时间的状语则表示“延续活动”**。
+
+- `例 6`：
+  - He has been repairing cars for almost 20 years.
+    - 他修理汽车将近 20 年了。
+  - He has been repairing his car since 6:00 this morning.
+    - 从早上 6 点到现在，他一直在修理他的车。
+- `例 8`：
+  - A: I've been running a mile every afternoon for the past month, but I still
+    haven't been able to lose more than a pound or two. I wonder if it's worth
+    it.
+  - B: Oh, don't give up now. It always seems hard when you are just starting
+    out.
+
+以上说的“长时间”说一个相对的概念，尤其是针对特定的谓语动词来说。
+
+- `例 10`：
+  - A: I've been calling David for the past half hour, but I keep getting a busy
+    signal.
+  - B: Well, if you don't get him soon we'll just have to go to the movies
+    without him.
+- `例 14`：You've been saying that for five years. I wonder when you're going to
+  put it into practice.
+- `例 15`：I've been talking about it for nearly fifty years. Now I'm going to
+  do it.
+
+既然存在**有限延续动词**，也就存在**无限延续动词**。像 work，learn 和 wait
+等动词并不能表现出某一具体的动作，它们近乎一种状态的延续，这样的的动词被称为**无限延续动词**。
+对于无限动词来说，所接的时间状语**不论表达的时间长短，都表示延续活动的意义**。
+
+- `例 17`：
+  - I've been learning English for over ten years now.
+  - I've been learning English for the past two hours. No wonder I feel tired.
+- `例 18`：
+  - He has been working in the same job for 30 years.
+  - He has been working on the puzzles for two hours.
+
+对于这些无限延续动词，也可以通过其他方式来表示重复事件：
+
+- `例 20`：I've been working on the night shift for several weeks.
+  - work 是一个典型的无限延续动词，但由于句中有 on the night shift
+    这一时间状语表示“上夜班”，所以该句中的 have been working 表示重复活动。
+  - 近几个星期以来我一直在上夜班。
+
+### 思维总结 6.5 重复事件
+
+“重复事件”的用法主要适用于两类动词：**短暂动词**和**有限延续动词**。
+**无限延续动词**需要搭配特殊的时间状语才能表示重复时间。
+
+### 思维训练 6.5 重复事件
+
+**一、请用括号中的动词的适当形式填空。**
+
+*2. You ____ (go) with Nancy for over three years now. Why don't you pop her the
+question?*
+
+答案：have been going
+
+## 6.6 重复事件比较：完成进行时与完成时
 
 >>>>> progress
