@@ -493,3 +493,38 @@
   - n. 挫折，阻碍
   - We should take warning from this setback.
     - 我们对这次挫折应当引以为戒。
+- shift
+  - Attitudes toward mental illness have shifted in recent years.
+    - 最近几年对精神疾病的态度已经有了转变。
+  - There has been a shift from heavy industries to high-tech ones.
+    - 产业结构已经从重工业转向了高科技产业。
+  - Don't try to shift the losses on to the customers.
+    - 不要试图把损失转嫁到消费者身上。
+- spot
+  - n. 斑点
+  - v. 认出，指认
+  - The block chain has become a hot spot.
+  - He failed to spot the error.
+  - on the spot：当场
+- stem
+  - n.（花草的）茎
+  - v. 起源于，来自
+  - stem from：源于，发源于
+  - Correct judgements stem from thorough investigation and study.
+    - 正确的判断来源于周密的调查和研究。
+- strategy
+  - Tactics differ from strategy.
+    - 战术于战略是不同的。
+- strike
+  - CS: Counter Strike
+- strive
+  - v. 努力，奋斗
+  - Let us strive together to achieve this splendid goal.
+    - 让我们为了实现这一宏伟目标而共同努力。
+- struggle  
+  - v. & n. 奋斗；挣扎
+- stubborn
+  - He has a stubborn characteristic.
+    - 他的性格很顽固。
+  - The first and most stubborn problem is...
+    - 最首要也最棘手的问题是……
