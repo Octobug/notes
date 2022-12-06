@@ -7,6 +7,7 @@
   - [`tend`, `tent` 倾向](#tend-tent-倾向)
   - [`test` 考试](#test-考试)
   - [`tract` 拖，拉](#tract-拖拉)
+  - [T 孤儿词](#t-孤儿词)
 
 ## `tach`, `tact` 接触
 
@@ -132,3 +133,41 @@
 - contract
   - v. & n.（签）合同，契约
   - contract spirit：契约精神
+
+## T 孤儿词
+
+- tedious
+  - adj. 乏味的，无聊的
+- territory
+  - n. 国土，领土
+  - terre (土，大地) -> terrain (地形，地面)
+- tolerance
+  - n. 容忍，忍受；**宽容**
+- intolerance
+  - lactose intolerance：乳糖不耐
+- toss
+  - v. 扔，投掷
+- tough
+  - a tough choice：一个艰难的选择
+  - a tough day：难熬的一天
+  - a tough man：一个彪悍、坚强的男人
+- trace
+  - trace the history of sth.：追溯某事的历史
+  - without trace：无影无踪
+  - trace the origin/roots of sth.：追本溯源
+- trigger
+  - Stress may act as a trigger for these illnesses.
+    - 压力可能是引发这些疾病的诱因。
+  - It will trigger a chain of reaction.
+    - 那将引起一串连锁反应。
+- turbulent
+  - adj. 骚乱的，混乱的
+- turbulence
+- triumph
+  - n. 巨大的胜利
+  - v. 战胜
+  - We firmly believe that a just cause is bound to triumph.
+    - 我们坚信正义终将胜利。
+- typical
+  - This painting is typical of the Renaissance period.
+    - 这幅画具有文艺复兴时期的典型特点。
