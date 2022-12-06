@@ -25,6 +25,11 @@
     - [8.3.4 口语用法：表示委婉的请求或建议](#834-口语用法表示委婉的请求或建议)
     - [思维训练 8.3 过去进行时——回顾过去讲故事](#思维训练-83-过去进行时回顾过去讲故事)
   - [8.4 将来进行时——想象未来](#84-将来进行时想象未来)
+    - [8.4.1 典型用法：将来某一特定时刻正在持续的事](#841-典型用法将来某一特定时刻正在持续的事)
+    - [8.4.2 口语用法：将来计划好的事](#842-口语用法将来计划好的事)
+    - [8.4.3 少见用法：表示背景动作——提供另外一个短动作发生的事件背景](#843-少见用法表示背景动作提供另外一个短动作发生的事件背景)
+    - [8.4.4 难点用法一：用在疑问句中，表示客气地询问](#844-难点用法一用在疑问句中表示客气地询问)
+  - [8.5 难点：深入分析进行时的思维特征](#85-难点深入分析进行时的思维特征)
 
 ## 8.1 引言
 
@@ -425,5 +430,70 @@ someone rang the doorbell. I answered the door, but found nobody outside...
 my finger.
 
 ## 8.4 将来进行时——想象未来
+
+在实际的口语交际中，**将来进行时态**被频繁使用。
+
+- He won't come. `vs.` He won't be coming.
+- How will you pay for this? `vs.` How will you be paying for this?
+
+### 8.4.1 典型用法：将来某一特定时刻正在持续的事
+
+将来进行时态的典型用法，就是**想象自己或其他人在将来某一特定时刻 (at a particular time in
+future) 正在做某事**。
+
+- `例 1`：
+  - A: When do you leave for Hainan?
+  - B: Tomorrow. Just think, two days from now I **will be lying** on the beach
+    in the sun.
+  - A: Sounds great!
+- `例 2`：Don't telephone me after eight tomorrow -- I'll be having a meeting.
+- `例 3`：Wait until seven o'clock so that they won't still be eating.
+- `例 5`：Do you think you will still be working here in two years' time?
+
+### 8.4.2 口语用法：将来计划好的事
+
+日常口语中，**常用 will be doing 来谈一个将来计划好的事情**。
+
+- `例 1`：Professor Smith will be giving a lecture on American literature
+  tomorrow evening.
+  - 这里的将来时态表示确定好的安排。也可以用现在进行时态 be doing 表示，
+    这两种时态互换区别不是很大：
+  - Professor Smith is giving a lecture on American literature tomorrow evening.
+- `例 2`：
+  - He is taking a makeup test next week.
+  - He will be taking a makeup test next week.
+- `例 3`：
+  - He isn't coming to the party.
+  - He won't be coming to the party.
+- `例 4`：I'm taking her to the Forbidden City in the morning, and later I'll be
+  taking her to the Great Wall.
+
+**will be doing 和 be doing 的区别**：
+
+1. 现在进行时表示**最近的将来**；而将来进行时**既可以表示最近的将来，也可以表示较远的将来**。
+    - `例 5`：I am meeting him tomorrow.
+    - `例 6`：I will be meeting him tomorrow/next year.
+2. 现在进行时表示最近将来的动作时，**必须有确定的表示将来的时间状语（否则就不表示将来了）**；
+    而将来进行时则**没有这种限制**。
+    - `例 7`
+      - He's working in this room next Monday.
+      - He'll be working in this room.
+
+### 8.4.3 少见用法：表示背景动作——提供另外一个短动作发生的事件背景
+
+将来进行时可以表示一个背景动作，来表示在这个背景动作下，将会发生的另外一个短暂动作。
+
+- `例 1`：They probably will be watching TV when we get there.
+- `例 2`：Will your friends be waiting for you at the ariport when you arrive?
+- `例 3`：What do you think she'll be doing when we get there?
+- `例 4`：If we don't hurry, the musicians will be playing by the time we
+  arrive.
+
+### 8.4.4 难点用法一：用在疑问句中，表示客气地询问
+
+**为什么用 "How will you be paying for this?" 而不用
+"How will you pay for this?"**？
+
+## 8.5 难点：深入分析进行时的思维特征
 
 >>>>> progress
