@@ -29,6 +29,11 @@
     - [8.4.2 口语用法：将来计划好的事](#842-口语用法将来计划好的事)
     - [8.4.3 少见用法：表示背景动作——提供另外一个短动作发生的事件背景](#843-少见用法表示背景动作提供另外一个短动作发生的事件背景)
     - [8.4.4 难点用法一：用在疑问句中，表示客气地询问](#844-难点用法一用在疑问句中表示客气地询问)
+      - [思维训练 8.4.4 难点用法一：用在疑问句中，表示客气地询问](#思维训练-844-难点用法一用在疑问句中表示客气地询问)
+    - [8.4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆](#845-难点用法二用来表示客观的将来以避免与表示意愿的-will-do-混淆)
+      - [思维训练 8.4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆](#思维训练-845-难点用法二用来表示客观的将来以避免与表示意愿的-will-do-混淆)
+    - [思维总结 8.4 将来进行时——想象未来](#思维总结-84-将来进行时想象未来)
+    - [思维训练 8.4 将来进行时——想象未来](#思维训练-84-将来进行时想象未来)
   - [8.5 难点：深入分析进行时的思维特征](#85-难点深入分析进行时的思维特征)
 
 ## 8.1 引言
@@ -493,6 +498,174 @@ future) 正在做某事**。
 
 **为什么用 "How will you be paying for this?" 而不用
 "How will you pay for this?"**？
+
+**将来进行时态** (will be doing) 用于询问，显得比一般将来时 will do 更委婉客气更有礼貌。
+这是因为 will be doing 常表示很客观地询问事实，并不想干涉对方的决定；
+**而 will do 往往带有各种感情色彩，如请求、命令、指示、质问甚至威胁等等。**
+
+所以，"how will you be paying for this" 就是一种客气的询问。
+"how will you pay for this" 则显得比较生硬，不够礼貌，会让顾客感觉对方是在质问自己。
+后者的意思更接近“这钱你到底想要怎么付？”。
+
+- `例 1`：
+  - Receptionist: How long will you be staying, Mr. Tang?
+  - Guest: Just one night. I'll fly to America tomorrow.
+  - Receptionist: I see. And how will you be paying?
+  - Guess: With a traveler's check. Is that OK?
+  - Receptionist: Yes, that's fine.
+- `例 4`：Who will I be acting with?
+  - 请问我要和谁演对手戏呢？
+- `例 6`：
+  - When will you pay back the money?
+    - 你什么时候才能还钱啊？（语气强硬，不耐烦）
+  - When will you be paying back the money?
+
+当我们要客观地询问事实，宜用 will be doing 来提问；
+而若是其他预期，比如请求或命令等，就要用 will do 来提问：
+
+- `例 7`：
+  - ❌ Will you be lending me ten dollars?
+  - ✅ Will you lend me ten dollars?
+- `例 8`：
+  - Will you be staying in this evening?
+    - 表示礼貌、客观地询问，只是想了解“你”今晚的打算，没有干涉的意思。
+    - 译：今晚你不出去吧？
+  - Will you stay in this evening?
+    - 含有感情色彩，可能是请求或者命令。
+    - 译（请求）：今晚你别出去了，好吗？
+    - 译（命令）：今晚你不要出去了行不行？！
+
+**为什么 will be doing 不能表示“请求”**？
+
+在谈“请求”时，就是在询问听话人现在是否有“意愿”在将来做某事，这里问的是一个“现在的状态”。
+既然是现在的状态，就不必用进行时态来谈动作的持续性。
+
+事实上，will 与进行时态 be doing 连用，一般是表示“推测”。
+对“推测”进行提问，同样还表示来说话人的猜测，而没有请求或命令等含义。
+
+- `例 9`：
+  - When will she be contacting me?
+    - 她什么时候会联系我呢？
+  - When will she contact me?
+    - 她什么时候才能联系我啊？（显得有点不耐烦）
+
+#### 思维训练 8.4.4 难点用法一：用在疑问句中，表示客气地询问
+
+**一、请分析和比较下列两句的含义差别，并准确译成中文。**
+
+*2.*
+
+- *a. Will you be joining us for dinner?*
+- *b. Will you join us for dinner?*
+
+答案：
+
+- a: 表示委婉地、客观地询问事实。
+  - 译：你会不会来和我们一起吃晚餐？
+- b: 表示发出请求。
+  - 译：你来跟我们一起吃晚餐吧，好吗？
+
+**二、请根据说话的语境，分析下列空格该用何种时态填入为宜。**
+
+*4. "Is there anything more that you ____ (want) tonight, Mr. Smith?" the maid
+said.*
+
+答案：用将来进行时态 will be wanting，表示委婉询问，因为这是女仆对主人的询问，所以要有礼貌。
+
+### 8.4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆
+
+`例 1`：
+
+- A: It's already 10 o'clock. I guess Bob and Amy won't be coming to the party.
+- B: They called at nine to say that they had been held up.
+  - 用 won't be coming 强调他们可能是因为其他事情耽误而来不了这一客观事实，
+    而非主观意愿上的“不愿来”。
+
+**为什么要用 won't be coming 而不用 won't come?**
+
+这里涉及情态动词 will 的意义和用法问题。will 可以用来表示意愿 (willingness) 和意图
+(intention) 等情态语义，will do 往往表示主观意愿，won't do 就有“不愿意为之”的含义。
+
+将来进行时态 will be doing 则是表示客观的将来时间，侧重于对将来事件的客观陈述，
+表示在正常情况下预计要发生的事件，而不表达个人意图。
+
+总而言之，will be doing 较客观，will do 较主观，所以往往用 will be doing
+来表示客观的将来时间，以避免与表示主观意愿的 will do 混淆。
+
+- `例 2`：If I fail to show up by 7 o'clock, I will not be coming at all.
+  - 如果我 7 点钟还没到的话，我就压根来不了了。
+- `例 3`：
+  - Allison: **Won't we be blocking** people's ways then?
+  - Lynn: Yes, but they're used to it. Just keep your balance. And expect some
+    pushing.
+  - Allison: People **will be pushing** me?
+  - Lynn: Just a little! Don't worry so much!
+- `例 4`：
+  - Mary won't be paying this bill.
+    - （我想）玛丽不会付账的。（实际有可能会）
+  - Mary won't pay this bill.
+    - 玛丽不愿意付账。（表示玛丽本人的意愿）
+- `例 5`：
+  - He won't resign.
+    - 他拒绝辞职。
+  - He won't be resigning.
+    - （我想）他不会辞职。
+
+#### 思维训练 8.4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆
+
+**请分析和比较下列每组句子的含义差别，并准确译成中文。**
+
+*3.*
+
+- *a. I don't think I will be meeting him tonight.*
+- *b. I don't think I will meet him tonight.*
+
+答案：
+
+- a: 表猜测
+  - 译：我想今晚碰不到他了。
+- b: 表意愿
+  - 译：今晚我不想见他。
+
+*4.*
+
+- *a. We'll be flying at 30,000 feet.*
+- *b. We'll fly at 30,000 feet.*
+
+答案：
+
+- a: 表示例行公事，表明这一高度是这次飞行时正常的、预期的高度。
+  - 译：飞机预计飞行高度在三万英尺。
+- b: 表示主观意图
+  - 译：我们会飞到三万英尺。
+
+### 思维总结 8.4 将来进行时——想象未来
+
+将来进行时态 will be doing 有下列五种意义和用法：
+
+1. 想象自己或其他人在将来某一特定的时刻正在做某事；
+2. 表示计划好的事；
+3. 表示背景动作，提供另外一个短动作发生的事件背景；
+4. 用在疑问句中，表示客气的询问。这一用法在口语中尤为常见；
+5. 用 will be doing 来表示客观的将来，以避免与表示“意愿”的 will do 混淆。
+
+### 思维训练 8.4 将来进行时——想象未来
+
+**一、用括号中动词的适当时态形式填空。**
+
+**二、翻译下列句子。**
+
+*10. 他不打算辞职。*
+
+答案：He is not going to resign.
+
+*11. 他拒绝辞职。*
+
+答案：He won't resign.
+
+*12. 我想他不会辞职。*
+
+答案：He won't be resigning.
 
 ## 8.5 难点：深入分析进行时的思维特征
 
