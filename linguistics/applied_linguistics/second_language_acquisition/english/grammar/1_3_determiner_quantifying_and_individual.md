@@ -1,5 +1,7 @@
 # 3. 限定词 (二): 数量限定词与个体限定词
 
+> Determiner: Quantifying Determiner and Individual Determiner
+
 - [3. 限定词 (二): 数量限定词与个体限定词](#3-限定词-二-数量限定词与个体限定词)
   - [3.1 数量限定词 (一): a few, few/a little, little](#31-数量限定词-一-a-few-fewa-little-little)
     - [一、与名词的搭配关系 (few/little)](#一与名词的搭配关系-fewlittle)

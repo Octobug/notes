@@ -1,5 +1,7 @@
 # 绪论 名词短语
 
+> Noun Phrase
+
 名词短语 (noun phrase)，是英语句子的核心组成部分 (a core element of a sentence)。
 
 - [绪论 名词短语](#绪论-名词短语)
