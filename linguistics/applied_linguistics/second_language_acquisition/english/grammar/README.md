@@ -6,12 +6,12 @@
 
 过去这 14 年中，我常常来北京。
 
-解析: 用短暂动词 (come) 的完成进行时 (have been coming)
+解析：用短暂动词 (come) 的完成进行时 (have been coming)
 来表示到目前为止的一段时间内重复发生的动作。
 
 ❌ I have been coming to Beijing fourteen times.
 
-解析: 现在完成进行时态在表示重复活动时，不能说明具体的次数。
+解析：现在完成进行时态在表示重复活动时，不能说明具体的次数。
 
 ## 目录
 
@@ -19,13 +19,13 @@
 
 - [x] [0. 名词短语](1_0_noun_phrase.md)
 - [x] [1. 名词](1_1_noun.md)
-- [x] [2. 限定词 (一): 冠词](1_2_determiner_article.md)
-- [x] [3. 限定词 (二): 数量限定词与个体限定词](1_3_determiner_quantifying_and_individual.md)
+- [x] [2. 限定词 (一)：冠词](1_2_determiner_article.md)
+- [x] [3. 限定词 (二)：数量限定词与个体限定词](1_3_determiner_quantifying_and_individual.md)
 - [x] [4. 形容词](1_4_adjective.md)
-- [x] [5. 动词分类 (一): 实义动词与 (情态) 助动词](1_5_content_verbs_and_modal_auxiliary_verbs.md)
-- [x] [6. 动词分类 (二): 英语的五种基本句型](1_6_five_basic_sentence_patterns.md)
-- [x] [7. 英文时态 (一): 一般时态](1_7_tenses_the_simple_tense.md)
-- [ ] [8. 英文时态 (二): 进行时态](1_8_tenses_the_continuous_tense.md)
+- [x] [5. 动词分类 (一)：实义动词与 (情态) 助动词](1_5_content_verbs_and_modal_auxiliary_verbs.md)
+- [x] [6. 动词分类 (二)：英语的五种基本句型](1_6_five_basic_sentence_patterns.md)
+- [x] [7. 英文时态 (一)：一般时态](1_7_tenses_the_simple_tense.md)
+- [ ] [8. 英文时态 (二)：进行时态](1_8_tenses_the_continuous_tense.md)
 
 ### 中级教程：通悟语法
 
