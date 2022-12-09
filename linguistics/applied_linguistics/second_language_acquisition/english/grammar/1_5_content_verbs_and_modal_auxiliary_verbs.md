@@ -32,6 +32,20 @@
       - [二、how 还常与形容词或副词连用](#二how-还常与形容词或副词连用)
       - [三、对动作发生的频率提问——how often/how many times...?](#三对动作发生的频率提问how-oftenhow-many-times)
   - [思维训练 5.4-5.6](#思维训练-54-56)
+  - [5.7 补充：英语中的八种否定](#57-补充英语中的八种否定)
+    - [5.7.1 完全否定](#571-完全否定)
+    - [5.7.2 部分否定](#572-部分否定)
+    - [5.7.3 几乎否定（半否定）](#573-几乎否定半否定)
+    - [5.7.4 双重否定](#574-双重否定)
+    - [5.7.5 转移否定](#575-转移否定)
+      - [5.7.5.1 转移否定多用于表思维活动](#5751-转移否定多用于表思维活动)
+      - [5.7.5.2 主句的谓语动词是表感觉的系动词，通常也用于转移否定句](#5752-主句的谓语动词是表感觉的系动词通常也用于转移否定句)
+    - [5.7.6 运用某些结构表达否定意义](#576-运用某些结构表达否定意义)
+    - [5.7.7 运用含否定意义的词或词组表否定意义](#577-运用含否定意义的词或词组表否定意义)
+      - [5.7.7.1 动词短语表否定意义](#5771-动词短语表否定意义)
+      - [5.7.7.2 动词表否定意义](#5772-动词表否定意义)
+      - [5.7.7.3 介词表否定意义](#5773-介词表否定意义)
+    - [5.7.8 运用连词 before, unless 等引导的状语表否定意义](#578-运用连词-before-unless-等引导的状语表否定意义)
 
 一个完整的英语句子可以没有**主语**或**宾语**等成分，但不能没有**谓语动词**。
 
@@ -338,3 +352,149 @@ three times a   |
   yuan. ____ are you going to buy?*.
 - *B: That one*.
 - 答案: Which
+
+## 5.7 补充：英语中的八种否定
+
+### 5.7.1 完全否定
+
+英语中的完全否定可以用 **not, no, never, none, nobody, nothing, neither...nor,
+nowhere** 等表示。
+
+- Nothing is difficult for him.
+  - 没什么难得到他。
+- Mary never has beef.
+  - 玛丽从来不吃牛肉。
+- Neither answer **is** correct.
+  - 两种答案都不对。
+
+### 5.7.2 部分否定
+
+英语中表示“全体”意义的代词、形容词或副词，如：**all, both, altogether, always,
+completely, every day, everyone, everything, everywhere, every, everybody,
+many, often** 等与 not 搭配时，通常表示部分否定，意思是"并非都是", "不完全是",
+"不是每个都是"等。
+
+- Not everyone was amused by these April Fool's jokes.
+  - 并不是每个人都觉得这些玩笑有趣。
+- Food likes and dislikes do not always seem related to nutrition.
+  - 对食物的好恶似乎并不总与营养有关。
+
+比较：
+
+- Nothing makes him happy.
+  - 没有哪一件事情让他开心。（全部否定）
+- Not everything makes him happy.
+  - 并不是每一件事都让他开心。（部分否定）
+- None of the students went to visit the science museum last week.
+  - 上周没有一个学生去参观科技博物馆。（完全否定）
+- Not all of the students went to visit the science museum last week.
+  - 上周并不是所有的学生都去参观了科技博物馆。（部分否定）
+
+### 5.7.3 几乎否定（半否定）
+
+一些半否定词表否定之意。他们不可再与否定词连用，他们与谓语肯定式连用，构成几乎否定句。如：
+**hardly, scarcely, seldom, little, few** 等。
+
+- I could hardly hear what he said.
+  - 我几乎没听见他说了什么。
+- There is little water in the bottle, isn't there?
+  - 瓶子里几乎没有水，不是吗？
+
+### 5.7.4 双重否定
+
+双重否定句由“not + 具有否定意义的词”构成，形成“否定 + 否定 = 肯定”的语言效果。
+双重否定可以表示**强调**，也可以表示**委婉**的含义。
+
+- Her name can't escape me forever.
+  - 我永远忘不了她的名字。
+- The songs never fail to make the children smile.
+  - 这些歌曲一向都能使孩子微笑。
+
+### 5.7.5 转移否定
+
+转移否定，即句中的否定虽然出现在谓语部分，否定范围却不在主句谓语动词本身，
+而转移到了句子中的宾语、状语或其他成分上。这种形式比较常见的有以下两种情况：
+
+#### 5.7.5.1 转移否定多用于表思维活动
+
+如：**believe, expect, hope, imagine, think** 等。
+
+- I don't think he will pass the exam.
+  - 我认为他考试会不及格的。
+
+#### 5.7.5.2 主句的谓语动词是表感觉的系动词，通常也用于转移否定句
+
+这类动词有：**seem, feel, appear, look like** 等。
+
+- It doesn't look like it's going to rain.
+  - = It looks like it isn't going to rain.
+  - 好象不会下雨。
+- No matter how hard he studies, he never seems to be able to pass the exam.
+  - 不管他多么努力的学习，他似乎永远也考不及格。
+
+### 5.7.6 运用某些结构表达否定意义
+
+- `too...to` 太...而不能
+  - He is too tired to walk.
+    - 他太累了，走不动了。
+- `more A than B` (与其 B 不如 A) 或 `more than + 含有 can 的从句`
+  - The young man is more brave than wise.
+    - 这年轻人有勇无谋。
+  - The gratitude for your help is more than I can express.
+    - 对于你给我的感激之情我无法言表。
+- prefer to do sth rather than do sth 宁愿(喜欢)...而不愿...
+  - He prefers to write his letters rather than dictate them.
+    - 他喜欢自己写信而不愿口授自己的信。
+
+### 5.7.7 运用含否定意义的词或词组表否定意义
+
+#### 5.7.7.1 动词短语表否定意义
+
+- differ from 与...不同
+- prefer...to... 喜欢...而不喜欢...
+  - Sally prefers singing to dancing.
+    - 莎丽喜欢唱歌而不喜欢跳舞。
+- keep/prevent/stop/protect...from 阻止，使...不
+  - The Great Green Wall stops the sand from moving to the rich land in the
+    south.
+    - 绿色长城阻止了风沙吹向南方肥沃的田地。
+- keep off 不接近，不让...接近
+- lose sight of 看不见
+  - He lost sight of his wife and went away alone.
+    - 他没看见他的妻子，独自走了。
+
+#### 5.7.7.2 动词表否定意义
+
+- absent 缺席
+  - Why did you absent yourself from school yesterday?
+    - 昨天你为什么不来上学？
+- escape 被...忽视
+- fail 不及格
+- miss 未赶上，错过
+  - He missed the 9:30 train and therefore missed the accident.
+    - 他没赶上 9:30 的那班火车，也因此而逃过那次事故.
+- refuse 拒绝
+
+#### 5.7.7.3 介词表否定意义
+
+- above 超出...之外
+  - His conduct has always been above suspicion.
+    - 他的行为一直无可置疑。
+- against 反对
+- beyond 超出，无法
+- but 除...外
+- except 除...外
+- off 离开
+- past 超过
+  - His stupidity is past all belief.
+    - 他的愚蠢简直不可思义。
+- without 无，没有
+  - I can't finish the work without your help.
+    - 没有你的帮助，我完不成这工作。
+
+### 5.7.8 运用连词 before, unless 等引导的状语表否定意义
+
+- Wang Wei went to bed before he finished his homework.
+  - 王伟没完成作业就睡觉了。
+- Unless you put on your overcoat, you'll catch a cold.
+  - 如果你不穿大衣，你就会感冒。
