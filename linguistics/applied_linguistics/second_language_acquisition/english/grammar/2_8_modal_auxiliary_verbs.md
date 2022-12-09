@@ -10,6 +10,7 @@
       - [一、情态动词 + 一般式](#一情态动词--一般式)
       - [二、情态动词 + 完成式/进行式/完成进行式](#二情态动词--完成式进行式完成进行式)
       - [三、情态动词 + 情态动词短语](#三情态动词--情态动词短语)
+    - [思维训练 8.1 引言：多情多义的情态动词](#思维训练-81-引言多情多义的情态动词)
   - [8.2 推测用法（一）：现在推测（情态动词一般式）](#82-推测用法一现在推测情态动词一般式)
 
 ## 8.1 引言：多情多义的情态动词
@@ -143,7 +144,50 @@ must have been doing。
 
 #### 三、情态动词 + 情态动词短语
 
->>>>> progress
+情态动词对应如下短语：
+
+- be able to
+- be allowed to
+- have (got) to
+- be supposed to/ought to
+- be going to
+
+这些短语可以用在情态动词后面。
+
+- `例 6`：We're supposed to do our best and we **should be able to** finish this
+  work before the boss has to start screaming at us again.
+  - 我们应该竭尽全力，这样才能够在老板再次冲我们大喊大叫之前完成这项工作。
+- `例 7`：If you could just concentrate on getting finished, we **might be
+  allowed to** leave early this afternoon.
+  - 如果你能集中精力干完活儿，我们今天下午或许可以早点走。
+- `例 8`：He **may be able to** help.
+  - 他或许能够帮忙。
+- `例 9`：You **might have to** work late. The others **may be allwed to** leave
+  early.
+  - 你可能得加班，其他人或许可以早走。
+
+从以上例子可以看出，**情态动词接短语时，往往也是只有推测的意义，而没有基本意义**。
+
+### 思维训练 8.1 引言：多情多义的情态动词
+
+**三、请判断下列句子中情态动词在使用形式上是否正确，错误的请予以纠正。**
+
+*12. He can spoke English well.*
+
+答案：错误。情态动词后边只能接动词原形，所以要把 spoke 改为 speak。
+
+*19. They must did the work yesterday.*
+
+答案：错误。情态动词后边只能接动词原形，所以 must did 错误。
+
+另外，must 没有过去时态，这里要表示过去时间的动作，可以用 had to，所以要把 must did 改为
+had to do。这时句子的意思是：
+
+他们昨天必须工作。
+
+或者，把 must did 改为 must have done，此时 must 表示推测含义，这时句子意思是：
+
+他们昨天一定做了这项工作。
 
 ## 8.2 推测用法（一）：现在推测（情态动词一般式）
 
