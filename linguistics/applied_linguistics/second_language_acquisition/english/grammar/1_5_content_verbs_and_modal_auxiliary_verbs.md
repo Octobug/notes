@@ -1,8 +1,8 @@
-# 5. 动词分类 (一): 实义动词与 (情态) 助动词
+# 5. 动词分类 (一)：实义动词与 (情态) 助动词
 
 > Verb: Content Verbs and Modal Auxiliary Verbs
 
-- [5. 动词分类 (一): 实义动词与 (情态) 助动词](#5-动词分类-一-实义动词与-情态-助动词)
+- [5. 动词分类 (一)：实义动词与 (情态) 助动词](#5-动词分类-一实义动词与-情态-助动词)
   - [5.1 实义动词 (notional verb)](#51-实义动词-notional-verb)
   - [5.2 助动词 (auxiliary verb)](#52-助动词-auxiliary-verb)
     - [5.2.1 助动词 be, do 和 have](#521-助动词-be-do-和-have)
@@ -77,18 +77,18 @@
 2. 从在谓语中的作用这一角度来看，助动词不能单独充当句子的谓语，它必须和实义动词连用，
    以帮助构成各种时态、语态、否定和疑问等。
 
-英语的助动词有三个: be, do 和 have, 他们分别具有各种变化形式：
+英语的助动词有三个：be, do 和 have, 他们分别具有各种变化形式：
 
 1. **be**: am, is, are, was, were, been, being
     - 帮助构成进行时态
       - I **am studying** grammr.
       - He **is playing** football.
-    - 帮助构成被动语态: I **was cheated**.
+    - 帮助构成被动语态：I **was cheated**.
 2. **do**: does, did
-    - 帮助实义动词构成否定: I **do not** like English.
-    - 帮助实义动词构成疑问: **Do** you like English?
+    - 帮助实义动词构成否定：I **do not** like English.
+    - 帮助实义动词构成疑问：**Do** you like English?
 3. **have**: has, had, having
-    - 帮助构成完成时态: I **have studied** English for 3 years.
+    - 帮助构成完成时态：I **have studied** English for 3 years.
 
 ### 5.2.2 用作实义动词的 be, do 和 have
 
@@ -96,15 +96,15 @@
 
 - be
   - **实义动词**，用作谓语
-    - **系动词**: I **am** a student.
-    - **不及物动词**: I **am** in Beijing.
-  - **助动词**，助动词，帮助构成进行时态: I **am studying** grammr.
+    - **系动词**：I **am** a student.
+    - **不及物动词**：I **am** in Beijing.
+  - **助动词**，助动词，帮助构成进行时态：I **am studying** grammr.
 - do
-  - **实义动词**，用作谓语: I often **do** my homework at home.
-  - **助动词**，帮助构成否定句: I **do not** like English.
+  - **实义动词**，用作谓语：I often **do** my homework at home.
+  - **助动词**，帮助构成否定句：I **do not** like English.
 - have
-  - **实义动词**: I **have** two brothers.
-  - **助动词**，帮助构成完成时态: I **have studied** English for 3 years.
+  - **实义动词**：I **have** two brothers.
+  - **助动词**，帮助构成完成时态：I **have studied** English for 3 years.
 
 ## 5.3 情态动词 (modal verb)
 
@@ -137,15 +137,15 @@ years. Now he is`3` working in a dot-com company. He is`4` married and has`5`
 his own family. The other brother is`6` now at college and hasn't`7` graduated
 yet. He has`8` a girlfriend and they have`9` known each other for 2 years*.
 
-1. have: 实义动词
-2. has: 助动词
-3. is: 助动词
-4. is: 实义动词
-5. has: 实义动词
-6. is: 系动词
-7. hasn't: 助动词
-8. has: 实义动词
-9. have: 助动词
+1. have：实义动词
+2. has：助动词
+3. is：助动词
+4. is：实义动词
+5. has：实义动词
+6. is：系动词
+7. hasn't：助动词
+8. has：实义动词
+9. have：助动词
 
 ## 5.4 陈述句的否定
 
@@ -163,9 +163,9 @@ yet. He has`8` a girlfriend and they have`9` known each other for 2 years*.
 
 这时陈述句的否定要借助动词 do 及其各种变形来完成。
 
-- **一般现在时**: do + not + 动词原形
-  - **单数第三人称**: does + not + 动词原形
-- **一般过去时**: did + not + 动词原形
+- **一般现在时**：do + not + 动词原形
+  - **单数第三人称**：does + not + 动词原形
+- **一般过去时**：did + not + 动词原形
 
 | 肯定句                | 否定句                        |
 | --------------------- | ----------------------------- |
@@ -233,8 +233,8 @@ yet. He has`8` a girlfriend and they have`9` known each other for 2 years*.
 
 ## 5.6 特殊疑问句
 
-特殊疑问句是在一般疑问句的基础上变化而来的。其句式为: `特殊疑问词 + 一般疑问句 + ?`。
-英语中特殊疑问词有:
+特殊疑问句是在一般疑问句的基础上变化而来的。其句式为：`特殊疑问词 + 一般疑问句 + ?`。
+英语中特殊疑问词有：
 
 - who
 - what
@@ -321,7 +321,7 @@ how 单独使用时，是对动作的方式进行提问。
 - I make a phone call to my parents **once** a month.
   - How many times a month do you make a phone call to your parents?
 
-其他表示频率的短语:
+其他表示频率的短语：
 
 ```diagram
 every           |
@@ -351,7 +351,7 @@ three times a   |
 - *A: We have a lot of different pens. Their prices vary from 10 yuan to 300
   yuan. ____ are you going to buy?*.
 - *B: That one*.
-- 答案: Which
+- 答案：Which
 
 ## 5.7 补充：英语中的八种否定
 
