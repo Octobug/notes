@@ -13,6 +13,8 @@
       - [二、主动完成的动作](#二主动完成的动作)
     - [思维训练 6.1 分词的意义](#思维训练-61-分词的意义)
   - [6.2 分词的作用（一）：状语](#62-分词的作用一状语)
+    - [6.2.5 分词作状语的意义](#625-分词作状语的意义)
+      - [一、“（名词 +）分词”作状语的意义](#一名词-分词作状语的意义)
 
 分词是一种重要的连词成句的手段。
 
@@ -233,3 +235,27 @@ a hooded top **seen** **running** away from the scene.
 ## 6.2 分词的作用（一）：状语
 
 >>>>> progress
+
+### 6.2.5 分词作状语的意义
+
+#### 一、“（名词 +）分词”作状语的意义
+
+1. **表示条件**
+2. **表示时间**
+3. **表示原因**
+4. **表示让步**
+5. **表示结果**
+
+    `补充`：Millions of mothers have gone to work，transforming basic family
+    economics.
+    - transform 的主语是主句 millions of mothers have gone to work 整句，其与
+      transform 是主动关系，所以这里是主动语态，即“母亲们去工作”改变了经济模式。
+      transforming basic family economics
+      是补充性状语分句，相当于伴随状语（或结果状语）。
+    - 可将原句分别改成关系分句和并列分句：
+      - Millions of mothers have gone to work, **which** transforms basic family
+        economics.
+        - which 指代主句
+      - Millions of mothers have gone to work, and **that** transforms basic
+        family economics.
+        - that 指代主句
