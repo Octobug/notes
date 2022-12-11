@@ -216,7 +216,19 @@ a hooded top **seen** **running** away from the scene.
 
 ### 思维训练 6.1 分词的意义
 
->>>>> progress
+**用括号中动词的适当形式填空。**
+
+*6. More traffic will be able to pass on the ____ (widen) road.*
+
+答案：widened
+
+*7. Clint can't bear the smell of ____ (burn) bread.*
+
+答案：burned/burnt
+
+*10. The mother of the ____ (drown) child was grieved to death.*
+
+答案：drowned
 
 ## 6.2 分词的作用（一）：状语
 
