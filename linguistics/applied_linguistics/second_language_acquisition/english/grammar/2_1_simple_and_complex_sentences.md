@@ -28,6 +28,10 @@
     - [1.6.3 简单句叠加成复杂难句](#163-简单句叠加成复杂难句)
     - [思维训练 1.6](#思维训练-16)
   - [1.7 从简单句到复合句](#17-从简单句到复合句)
+    - [补充：插入语](#补充插入语)
+  - [1.8 补充：并列结构](#18-补充并列结构)
+    - [1.8.1 并列结构举例](#181-并列结构举例)
+    - [1.8.2 并列句中的省略：省略相同的成分](#182-并列句中的省略省略相同的成分)
 
 ## 1.1 引言
 
@@ -56,7 +60,7 @@
   - The closet was painted pink by him.
     - 这里 pink 变成了修饰主语，因此是主语补足语，显然这里 pink 不是表语。
 
-用作表语的形式有很多，可以是:
+用作表语的形式有很多，可以是：
 
 - 不定式
   - to run a lawnmower
@@ -151,7 +155,7 @@
 - a prairie chicken 是介词 of 的宾语
 - a prairie chicken 是主语补足语，die 是系动词
 
-例句对比1:
+例句对比1：
 
 - *Jane Austin `died` a spinster.*
   - a spinster 是主语补足语，补充说明 Jane Austin 的性质特征。
@@ -159,14 +163,14 @@
   - 这里 a hero's death 是**同源宾语** (death 和 die 同词源)。
   - 除了接同源宾语， die 不能接其他正常的宾语。
 
-例句对比2:
+例句对比2：
 
 - *Lei Feng died young.*
   - young 是形容词，作表语 (或主语补足语)，以说明 Lei Feng 的性质特征。
 - *Lei Feng worked hard.*
   - hard 是副词，作状语，用来修饰 work，说明 work 的行为特征。
 
-例句对比3:
+例句对比3：
 
 - *Don't act stupid.*
   - stupid 是形容词，act 作系动词。
@@ -179,7 +183,7 @@
 - *I'm ashamed I acted foolish.* (真傻)
   - act 是行为动词，后接副词 foolishly 作状语。
 
-例句4:
+例句4：
 
 - *All men are created equal.*
   - ✅ 人人生而平等。
@@ -318,10 +322,10 @@
   - I am going to buy a gift for her.
 
 对于以上句型，改写时可以把直接宾语提前至谓语后面，然后添加介词 to 或 for，
-再把直接宾语放在介词后面。选择介词 to 还是 for，取决于谓语动词:
+再把直接宾语放在介词后面。选择介词 to 还是 for，取决于谓语动词：
 
 1. 同 show 一样，当间接宾语后移时，间接宾语前需带介词 to，表示间接宾语是动作接受者。
-   这样的词有:
+   这样的词有：
    - assign
    - award
    - bring
@@ -345,7 +349,7 @@
    - show
    - take
    - write
-2. 同 buy 一样，当间接宾语后移时，间接宾语前需带介词 for。这样的动词有:
+2. 同 buy 一样，当间接宾语后移时，间接宾语前需带介词 for。这样的动词有：
    - book
    - buy
    - build
@@ -364,13 +368,13 @@
    - spare
    - win
 3. 个别动词只能用于"主语 + 动词 + 间接宾语 (+ 直接宾语)"的结构，而不用介词来替换。
-   这样的词有:
+   这样的词有：
    - bet
      - I'll bet you ten dollars.
    - charge
      - The repairman charged me ten dollars.
    - cost
-4. 此外，还有些更特殊的动词，当间接宾语后移时，间接宾语前需带介词 of，如:
+4. 此外，还有些更特殊的动词，当间接宾语后移时，间接宾语前需带介词 of，如：
    - ask
      - Can I ask you a question?
        - Can I ask a question of you?
@@ -388,17 +392,17 @@
 
 *6. Can you spare me a few minitues of your valuable time?*
 
-答案：me 是间接宾语，a few minitues of your valuable time 是直接宾语。可用 for 改写为:
+答案：me 是间接宾语，a few minitues of your valuable time 是直接宾语。可用 for 改写为：
 Can you spare a few minitues of your valuable time for me?
 
 *9. That will save you a lot of time.*
 
-答案：you 是间接宾语，a lot of time 是直接宾语。可用 for 改写成:
+答案：you 是间接宾语，a lot of time 是直接宾语。可用 for 改写成：
 That will save a lot of time for you.
 
 *10. The novel won the author a Nobel Prize.*
 
-答案：the author 是间接宾语，a Nobel Prize 是直接宾语。可用 for 改写成:
+答案：the author 是间接宾语，a Nobel Prize 是直接宾语。可用 for 改写成：
 The novel won a Nobel Prize for the author.
 
 *11. It costs me three dollars.*
@@ -413,7 +417,7 @@ The novel won a Nobel Prize for the author.
 而此宾语后又接补充说明宾语的补足语 (Object Complement)。
 宾语和宾语补足语合起来称为**复合宾语**。
 
-常见的带符合宾语的动词有:
+常见的带符合宾语的动词有：
 
 - appoint
 - believe
@@ -435,7 +439,7 @@ The novel won a Nobel Prize for the author.
 - suppose
 - vote
 
-例句:
+例句：
 
 - I very much hope that this new medium will make **my Christmas message**
   **more personal and direct**.
@@ -487,23 +491,108 @@ The novel won a Nobel Prize for the author.
 
 英语中各种复杂难句都是由上述五种基本句型通过扩展、组合、省略、倒装等形式变化得来的。
 一般来讲，一个句子除了有**主语**和**谓语**之外，
-其他可能包含的成分还有**宾语**、**表语**、**定语**、**状语**和**同位语**等。在这些成分中，
-谓语较为特殊，只能由动词 (短语) 来充当，而其他成分则可以由词、短语或者句子来充当。
-用一个完整的句子来充当另一个句子的某个成分即构成相应的从句。三大从句分类如下:
+其他可能包含的成分还有**宾语**、**表语**、**定语**、**状语**，**同位语**和**插入语**等。
+在这些成分中，谓语较为特殊，只能由动词（短语）来充当，而其他成分则可以由词、短语或者句子来充当。
+用一个完整的句子来充当另一个句子的某个成分即构成相应的从句。三大从句分类如下：
 
 1. **名词从句**
    1. 主语从句
    2. 宾语从句
    3. 表语从句
    4. 同位语从句
-2. **形容词从句**或**关系从句** (relative clause) 或**定语从句**:
+2. **形容词从句**或**关系从句** (relative clause) 或**定语从句**：
    形容词最大的热点是在句中起限定词或修饰作用。
 3. **副词从句**或**状语从句**：副词常用来修饰动词、形容词和副词。
 
-💡 掌握五种基本句型的关键在于掌握谓语动词的用法，这些动词包括:
+💡 掌握五种基本句型的关键在于掌握谓语动词的用法，这些动词包括：
 
 - 系动词
 - 不及物动词
 - 单宾语动词
 - 双宾语动词
 - 复合宾语动词
+
+### 补充：插入语
+
+**插入语**：顾名思义，就是后来插入句子中的成分，表示想补充说明的内容。
+插入语是非核心成分，而且它插入会造成原句的分裂，加大看懂句子的难度。
+通常插入语两端会出现逗号或破折号，或接在冒号之后。但有时候也可以没有标点符号隔开。
+
+## 1.8 补充：并列结构
+
+> 并列句（compound sentence）
+
+并列结构指用并列**连词**将**意义相关**、**层次相同**和**句法功能相同**的结构或句子连接起来；
+并列结构属于重要的句子结构现象，它是句子变长，变复杂的一个重要原因。
+
+常用关联词：
+
+- 添加，补充
+  - and
+  - also
+  - both... and...
+  - besides
+  - not only... but also...
+  - as well as
+  - in addition
+- 选择
+  - or
+  - or else
+  - rather... than...
+  - either... or...
+- 因果
+  - so
+  - for
+  - therefore
+  - hence
+  - thus
+  - consequently
+  - accordingly
+  - as a consequence
+  - as a result
+- 转折
+  - but
+  - while
+  - whereas
+  - yet
+  - however
+  - nevertheless
+  - on the contrary
+  - by comparison
+  - otherwise
+  - instead
+
+### 1.8.1 并列结构举例
+
+- `例 1`：Surely it should be obvious to the dimmest executive **that** trust is
+  easily destroyed and hugely expensive to restore -- **and that** few things
+  are more likely to destroy trust than a company letting sensitive personal
+  data get into the wrong hands.
+- `例 2`：In Europe, taxes account for up to four-fifths of the retail price,
+  **so** even quite big changes in the price of crude oil have a more muted
+  effect on pump prices than in the past.
+- `例 3`：The teachers' unions keep an eye on schools`,` the CCPOA on prisons
+  **and** a variety of labor groups on health care.
+- `例 4`：Given the advantages of electronic money, you might think that we
+  would move quickly to the cashless society in which all payments are made
+  electronically. ____ a true cashless society is probably not around the
+  corner.
+  - A. However
+  - B. Moreover
+  - C. Therefore
+  - D. Otherwise
+  - 答案：A
+
+### 1.8.2 并列句中的省略：省略相同的成分
+
+为了避免重复，突出新信息，使上下文紧密联系，英语句子常常把重复的信息省略。
+省略增加了理解的难度，当句子较长、较复杂时，省略了某些成分的分句或短语往往被误解为其他句子成分。
+
+- `例 1`：It is said that in England death is pressing, in Canada inevitable and
+  in California optional.
+  - It is said that in England death is pressing, in Canada (death is)
+    inevitable and in California (death is) optional.
+- `例 2`：The teachers' unions keep an eye on schools, the CCPOA on prisons and
+  a variety of labor groups on health care.
+  - The teachers' unions keep an eye on schools, the CCPOA (keeps an eye) on
+    prisons and a variety of labor groups (keep an eye) on health care.
