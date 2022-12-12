@@ -21,6 +21,8 @@
       - [一、It is + 过去分词 + that 从句](#一it-is--过去分词--that-从句)
       - [二、It is + 形容词 + that 从句](#二it-is--形容词--that-从句)
       - [三、It is + 名词短语 + that 从句](#三it-is--名词短语--that-从句)
+      - [四、It is + 介词短语 + that 从句](#四it-is--介词短语--that-从句)
+      - [五、It + 动（宾） + that 从句](#五it--动宾--that-从句)
     - [2.2.2 一般疑问句作主语](#222-一般疑问句作主语)
     - [2.2.3 特殊疑问句作主语](#223-特殊疑问句作主语)
     - [思维训练 2.2](#思维训练-22)
@@ -226,6 +228,8 @@ whether 或 if (**if 只用在宾语从句中**) 来引导，**以保留原句�
 
 ## 2.2 简单句与主语从句
 
+> Subject Clause
+
 ### 2.2.1 陈述句作主语
 
 把"that + 陈述句"这一结构放在主语的位置即构成主语从句。对于陈述句作主语，更常见的是用
@@ -238,16 +242,17 @@ whether 或 if (**if 只用在宾语从句中**) 来引导，**以保留原句�
 - **That the moon itself does not give off light** is common knowledge.
   - It is common knowledge **that the moon itself does not give off light**.
 
-📌 下列是常见的主语从句句型:
+📌 下列是常见的主语从句句型：
 
 #### 一、It is + 过去分词 + that 从句
 
-- It is reported that ... (据报道...)
-- It is believed that ... (人们相信...)
-- It is generally thought that ... (人们普遍认为...)
-- It should be noted that ... (应当注意...)
-- It has been found that ... (现已发现...)
-- It must be pointed out that ... (必须指出...)
+- It is believed that...（人们相信……）
+- It is generally acknowledge/agreed/assumed/thought that...（人们普遍认为……）
+- It is reported that...（据报道……）
+- It is suggested that...（建议……）
+- It should be noted that...（应当注意……）
+- It has been found that...（现已发现……）
+- It must be pointed out that...（必须指出……）
 
 类似的动词还有:
 
@@ -260,30 +265,50 @@ whether 或 if (**if 只用在宾语从句中**) 来引导，**以保留原句�
 
 #### 二、It is + 形容词 + that 从句
 
-- It is clear that ... (显然...)
-- It is possible that ... (很可能...)
-- It is likely that ... (很可能...)
-- It is natural that ... (很自然...)
-- It is certain that ... (可以相信...)
-- It is strange that ... (奇怪的是...)
-- It is fortunate that ... (幸运的是...)
-- It is necessary that ... (有必要...)
-- It is true that ... (的确...)
+- It is certain that...（可以相信……）
+- It is clear that...（显然……）
+- It is fortunate that...（幸运的是……）
+- It is likely that...（很可能……）
+- It is natural that...（很自然……）
+- It is necessary that...（有必要……）
+- It is obvious that...（显然……）
+- It is possible that...（很可能……）
+- It is strange that...（奇怪的是……）
+- It is true that...（的确……）
   - It is true that English is becoming an international language.
+- It is worrisome that...（令人不安的是……）
 
 #### 三、It is + 名词短语 + that 从句
 
-- It is a pity that ... (可惜的是...)
-- It is a fact that ... (事实是...)
-- It is good news that ... (...真是太好了)
-- It is a good thing that ... (...真是件好事)
-- It is no wonder that ... (难怪...)
-- It is a shame that ... (遗憾的是...; ...真是太不像话了)
+- It is a fact that...（事实是……
+- It is a good thing that...（……真是件好事)
+- It is a miracle that...（……真是奇迹)
+- It is a pity that...（可惜的是……）
+- It is a shame that...（遗憾的是……；……真是太不像话了)
+- It is an honor that...（真荣幸……）
+- It is common knowledge that...（……是常识)
+- It is good news that...（……真是太好了)
+- It is my belief that...（我相信)
+- It is no wonder that...（难怪……）
   - It is a shame that you did not pass the test.
-- It is an honor that ... (真荣幸...)
-- It is common knowledge that ... (...是常识)
-- It is my belief that ... (我相信)
-- It is a miracle that ... (...真是奇迹)
+
+#### 四、It is + 介词短语 + that 从句
+
+- It is by chance that...：有机会……
+- It is in the interest of sb...：……是为了某人的利益
+
+#### 五、It + 动（宾） + that 从句
+
+- It appears/seems that...：似乎……
+- It comes about that...：结果是……
+- It dawns upon/on sb. that...：某人突然想起……
+- It follows that...：因此……
+- It happens that...：碰巧
+- It helps that...：起到作用的是……
+- It makes no difference that...：……无所谓
+- It occurs to sb. that...：某人突然想起……
+- It strikes sb. that...：给某人留下印象的是……
+- It turns out that...：结果证明是……
 
 ### 2.2.2 一般疑问句作主语
 
@@ -456,7 +481,7 @@ They are faced with the **problem** whether they should continue to work.
 
 1. 用陈述句作成分时，需要在句首加 that；
 2. 用一般疑问句作成分时，需要先将疑问句转换成陈述句语序，然后在句首加上 whether 或 if
-   (只用在宾语从句中)，已保留原句的疑问意义；
+   （只用在宾语从句中），已保留原句的疑问意义；
 3. 用特殊疑问句作成分时，只需要将疑问句转换成陈述句语序。
 
 ## 综合训练: 2. 名词从句
