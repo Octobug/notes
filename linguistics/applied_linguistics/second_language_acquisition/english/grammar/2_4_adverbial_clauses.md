@@ -41,6 +41,18 @@
     - [4.7.1 常见连词的用法](#471-常见连词的用法)
     - [4.7.2 表示让步转折关系的介词](#472-表示让步转折关系的介词)
     - [4.7.3 置于句首的 while 一般表示“尽管”](#473-置于句首的-while-一般表示尽管)
+    - [4.7.4 as 引导的倒装句表示让步](#474-as-引导的倒装句表示让步)
+      - [一、形容词提至句首](#一形容词提至句首)
+      - [二、副词提至句首](#二副词提至句首)
+    - [三、分词提至句首](#三分词提至句首)
+    - [四、名词提至句首](#四名词提至句首)
+    - [思维训练 4.7 让步状语从句](#思维训练-47-让步状语从句)
+  - [4.8 比较状语从句](#48-比较状语从句)
+    - [4.8.1 连词 as 的基本用法](#481-连词-as-的基本用法)
+      - [一、结构1：as + 形容词或副词 + as](#一结构1as--形容词或副词--as)
+      - [二、结构2：as + 形容词 + a(n) + 可数名词单数 + as](#二结构2as--形容词--an--可数名词单数--as)
+      - [三、在否定句中第一个 as 可用 so 代替](#三在否定句中第一个-as-可用-so-代替)
+      - [四、为了保持句子平衡，从句还可以用倒装结构](#四为了保持句子平衡从句还可以用倒装结构)
     - [4.8.2 连词 than 的基本用法](#482-连词-than-的基本用法)
 
 ## 4.1 时间状语从句
@@ -656,6 +668,7 @@ taking the night train.*
 - `例 2`：Although I didn't know anybody at the party, I had a very good time.
 - `例 3`：The family is the essential presence -- the thing that never leaves
   you, even if you find you have to leave it.
+  - 对于每个人来说，家是不可或缺的，它永远为你守候，即使有一天你发现你不得不离开它。
 - `例 4`：Although Professor Green's lectures usually ran ***over***`A` the
   fifty-minute period, ***but***`B` ***none***`C` of his students
   ***even objected***`D` as they found his lectures both informative and
@@ -710,7 +723,148 @@ taking the night train.*
 
 ### 4.7.3 置于句首的 while 一般表示“尽管”
 
->>>>> progress
+while 位于句首，一般意为“尽管”，引导让步状语从句。
+
+- `例 2`：While the government pushed for a total breakup of the software maker,
+  Microsoft fought fiercely against any positions that would affect its ability
+  to compete in the marketplace.
+  - 尽管美国政府积极要求彻底拆分微软这个软件巨人，但是微软公司极力反对任何影响其市场竞争力的动议。
+- `例 3`：While even the modestly educated sought an elevated tone when they
+  put pen to paper before the 1960s, even the most well regarded writing since
+  then has sought to capture spoken English on the page.
+  - 在 20 世纪 60 年代之前，当人们伏案写作时，即使受教育不多的人也追求一种高雅的风格，
+    而从那以后，即使受令人景仰的文章作品也在追求一种口语风格。
+- `例 4`：While often praised by foreigners for its emphasis on the basics,
+  Japanese education tends to stress test taking and mechanical learning over
+  creativity and self-expression.
+  - While often praised by foreigners = While **it is** often praised by
+    foreigners
+  - 虽然日本的教育常常因为重视基础知识而受到外国人士的赞扬，
+    但是其教育往往强调应试和机械性的学习，而不是强调创造性及自我表现。
+- `例 5`：While history once revered its affinity to literature and philosophy,
+  the emerging social sciences seemed to afford greater opportunities for asking
+  new questions and providing rewarding approaches to an understanding of the
+  past.
+  - 尽管历史学曾经崇尚它与文学和哲学的相似性，但新兴的社会科学似乎为人们开辟了更为广阔的天地，
+    来提出新问题和提供了解过去的有效途径。
+
+### 4.7.4 as 引导的倒装句表示让步
+
+as 引导的倒装句可表示让步，这一结构为：
+
+`形容词/副词/分词/名词（无冠词）/短语 + as + 主语 + 谓语动词`
+
+#### 一、形容词提至句首
+
+- `例 1`：Young as he is, he is knowledgeable.
+  - 他虽然年轻，但知识渊博。
+- `例 2`：In addition, difficult as it is to believe, there are desert fish
+  which can survive through years of drought in the form of inactive eggs.
+- `例 3`：Oldest in our workshop as he is, he works hardest.
+  - 尽管他是我们车间最年长的一位，他工作起来最努力。
+
+#### 二、副词提至句首
+
+- `例 4`：Much as I respect him, I can not agree with him.
+  - 虽然我非常尊重他，但是我仍旧不同意他的意见。
+- `例 5`：Again as he failed in doing this experiment, he didn't lose his heart.
+  - 尽管他的试验再次失败了，但是他并不灰心。
+
+### 三、分词提至句首
+
+- `例 6`：Praised as he was, he remained modest.
+  - 尽管他受到了表扬，却仍旧很谦虚。
+
+### 四、名词提至句首
+
+- `例 7`：Child as he is, he is knowledgeable.
+  - ⚠️ 这句话的名词 child 前面不带冠词。
+  - 他虽然还是个孩子，却知识渊博。
+- `例 8`：Lazy a boy as he is, he is kind to help others.
+  - 他虽然很懒惰，却乐于助人。
+
+💡 这里的 as 可以替换成 that 或 though（although 则不行），不过很少这样使用。
+
+- `例 9`：Odd though it sounds, cosmic inflation is a scientifically plausible
+  consequence of some respected ideas in elementary particle physics, and many
+  astrophysicists have been convinced for the better part of decade that it is
+  true.
+  - 宇宙膨胀理论虽然听似奇特，但它是基本粒子物理学中一些公认的理论在科学上看来可信的推论。
+    许多天体物理学家十几年来一直确信这一论说是正确的。
+- `例 10`：**Much although**`A` I have traveled, I have never seen anyone
+  **to equal**`B` her in thoroughness, **whatever**`C` **the job**`D`.
+  - 答案：A。应改为：Much as。
+  - 尽管我游历甚广，但我还从没有见过一个像她这样不论对什么工作都如此细致认真的人。
+
+### 思维训练 4.7 让步状语从句
+
+**一、请选择最佳答案填空。**
+
+*3. Airsickness is produced by a disturbance of the inner car, ____ psychogenic
+factors, such as fear, also play a part.*
+
+- *A. in spite of*
+- *B. neither*
+- *C. nor*
+- *D. although*
+
+答案：D。"such as fear" 是插入语，实际上 "psychogenic factors also play a part."
+是一个句子，不能用 in spite of。
+
+**二、辨别改错。**
+
+*13. **Despite**`A` fats and oils are **nutritionally**`B` important **as**`C`
+energy sources, medical research **indicates**`D` that saturated fats may
+contribute to hardening of the arteries.
+
+答案：A。应改为 Though 或 Although。
+
+译：尽管动物脂肪和植物油都是重要的能量来源，但是医学研究表明饱和脂肪可能会导致动脉硬化。
+
+## 4.8 比较状语从句
+
+### 4.8.1 连词 as 的基本用法
+
+as 引导比较状语从句，其基本结构是 as...as...，其中前一个 as 是**副词**，后一个 as
+是**比较状语从句的连词**。
+
+#### 一、结构1：as + 形容词或副词 + as
+
+- `例 1`：The work is not as difficult as **you think**.
+- `例 2`：Eyes are as eloquent as **lips (are)**.
+- `例 3`：An adult human must take eight steps to go as far as **a giraffe does
+  in one stride**.
+
+#### 二、结构2：as + 形容词 + a(n) + 可数名词单数 + as
+
+这里前一个 as 作为副词来修饰一个形容词，而这个形容词同时又修饰一个名词。
+使用时要特别注意这里**形容词置于不定冠词之前**这一特点。
+
+- `例 4`：Rarely has a technological development had as great an impact on so
+  many aspects of social, economic, and cultural development as the growth of
+  electronics.
+  - 这个句子是一个倒装句，正常语序是：
+  - A technological development has rarely had as great an impact on so...
+  - 很少有哪项科技的发展能像电子技术的发展那样，对我们的社会、经济以及文化等诸多方面产生如此重要的影响。
+- `例 5`：Americans tend to think from small to large. Let us take as simple an
+  example as the addressing of envelopes.
+
+#### 三、在否定句中第一个 as 可用 so 代替
+
+- `例 6`：This room is not so large as the one we saw yesterday.
+- `例 7`：No other modern nation devotes so small a portion of its wealth to
+  public health as the United States does.
+
+#### 四、为了保持句子平衡，从句还可以用倒装结构
+
+此时的结构是“as...as + 助动词 + 主语”。
+
+- `例 8`：Small as it is, the ant is **as much a creature as are all other
+  animals on the earth**.
+  - 尽管蚂蚁很小，但是它同地球上的任何其他动物一样，也是一种动物。
+- `例 9`：The computer revolution may well change society **as fundamentally as
+  did the Industrial Revolution**.
+  - 计算机革命对于我们人类社会的改变之深刻，就如同当年的工业革命。
 
 ### 4.8.2 连词 than 的基本用法
 
