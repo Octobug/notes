@@ -24,6 +24,14 @@
       - [二、先行词是一个短语](#二先行词是一个短语)
       - [三、先行词是一个句子](#三先行词是一个句子)
     - [3.3.4 that 可以指代“人”，也可以指代“物”](#334-that-可以指代人也可以指代物)
+      - [3.3.4.1 先行词中同时出现"人"和"物"时，用 that](#3341-先行词中同时出现人和物时用-that)
+      - [3.3.4.2 先行词为指"物"的 all, little, few, much, none 和 the first 时，用 that](#3342-先行词为指物的-all-little-few-much-none-和-the-first-时用-that)
+      - [3.3.4.3 先行词是不定代词 something, anything, nothing 和 everything 时，一般用 that](#3343-先行词是不定代词-something-anything-nothing-和-everything-时一般用-that)
+      - [3.3.4.4 先行词被这几类特殊词修饰时，用 that](#3344-先行词被这几类特殊词修饰时用-that)
+      - [3.3.4.5 that 不用在非限制性定语从句中](#3345-that-不用在非限制性定语从句中)
+      - [3.3.4.6 不能用于介词后面](#3346-不能用于介词后面)
+    - [补充：3.3.5 先行词与关系词被分隔](#补充335-先行词与关系词被分隔)
+    - [补充：3.3.6 关系代词 as](#补充336-关系代词-as)
     - [思维训练 3.3](#思维训练-33)
   - [3.4 关系副词的用法](#34-关系副词的用法)
     - [3.4.1 when 的用法](#341-when-的用法)
@@ -311,60 +319,93 @@ things **that** they don't want, to impress people **that** they don't like.
 既然 **that** 可以指物也可以指人，那么就会涉及与 **which** 和 **who** 在用法上的区别。
 以下这些情况最好使用 that:
 
-1. **先行词中同时出现"人"和"物"时，用 that**
+#### 3.3.4.1 先行词中同时出现"人"和"物"时，用 that
 
-    `例 2`: The writer and his novels that the article deals with are quite
-    familiar to us.
+- `例 2`: The writer and his novels that the article deals with are quite
+  familiar to us.
+  - 这里先行词是 the writer and his novels
+  - 译: 这篇文章里所说的这个作家以及他的小说，我们都比较熟悉。
 
-    - 这里先行词是 the writer and his novels
-    - 译: 这篇文章里所说的这个作家以及他的小说，我们都比较熟悉。
+#### 3.3.4.2 先行词为指"物"的 all, little, few, much, none 和 the first 时，用 that
 
-2. **先行词为指"物"的 all, little, few, much, none 和 the first 时，用 that**
+- `例 3`: **All** that glitters is not gold.
+  - 这里的先行词是 all，所以用 that 来引导定语从句。另外这里的否定是**半否定**:
+    "all ... not ..." 应翻译成"并非都是"，而不是**全否定**的"所有都不"。
+  - 译: 闪光的并非都是金子。
+- `例 4`: The book contains **little** that is useful.
+  - 这里的先行词是表示否定意义的代词 little，所以用 that 来引导定语从句。
+- `例 5`: There is not **much** that can be done.
+  - 这里的先行词是代词 much，所以用 that 来引导定语从句。
 
-    - `例 3`: **All** that glitters is not gold.
-      - 这里的先行词是 all，所以用 that 来引导定语从句。另外这里的否定是**半否定**:
-        "all ... not ..." 应翻译成"并非都是"，而不是**全否定**的"所有都不"。
-      - 译: 闪光的并非都是金子。
-    - `例 4`: The book contains **little** that is useful.
-      - 这里的先行词是表示否定意义的代词 little，所以用 that 来引导定语从句。
-    - `例 5`: There is not **much** that can be done.
-      - 这里的先行词是代词 much，所以用 that 来引导定语从句。
+#### 3.3.4.3 先行词是不定代词 something, anything, nothing 和 everything 时，一般用 that
 
-3. **先行词是不定代词 something, anything, nothing 和 everything 时，一般用 that**
+- `例 7`: I would much rather receive **something** that made me laugh, made me
+  reminisce, or fit my personality than **something** that cost a lot but that
+  I will just throw in my closet and forget about.
 
-    `例 7`: I would much rather receive **something** that made me laugh, made
-    me reminisce, or fit my personality than **something** that cost a lot but
-    that I will just throw in my closet and forget about.
+#### 3.3.4.4 先行词被这几类特殊词修饰时，用 that
 
-4. **先行词被 any, only, all, every, no, some, much, few, little, 序数词，
-   形容词最高级，the only, the one, the very, the right 和 the last
-   等成分修饰时，用 that**
+- any, only, all, every, no, some, much, few, little
+  - `例 8`: Tell us **all** things that you know.
+  - `例 9`: There is **no** difficult that they can't overcome.
+  - `例 10`: The **only** thing that we should do is find our way home.
+- 序数词，形容词最高级
+- the only, the one, the very, the right 和 the last
+  - `例 11`: The **very** problem that I want to solve is like this.
+  - `例 12`: He is the **only** man that can speak four foreign languages in
+    our company.
 
-    - `例 8`: Tell us **all** things that you know.
-    - `例 9`: There is **no** difficult that they can't overcome.
-    - `例 10`: The **only** thing that we should do is find our way home.
-    - `例 11`: The **very** problem that I want to solve is like this.
-    - `例 12`: He is the **only** man that can speak four foreign languages in
-      our company.
+#### 3.3.4.5 that 不用在非限制性定语从句中
 
-5. **that 不用在非限制性定语从句中**
+不用 that 引导非限制性定语从句。比如:
 
-    不用 that 引导非限制性定语从句。比如:
-
-    `例 13`: I became a single mother overnight, which is nothing like becoming
+- `例 13`: I became a single mother overnight, which is nothing like becoming
+  famous overnight.
+  - ❌ I became a single mother overnight, **that** is nothing like becoming
     famous overnight.
-    - ❌ I became a single mother overnight, **that** is nothing like becoming
-      famous overnight.
 
-6. **不能用于介词后面**
+#### 3.3.4.6 不能用于介词后面
 
-    不能在 that 前面使用介词。比如:
+不能在 that 前面使用介词。比如:
 
-    `例 14`:
-      - The world in which we live is made up of matter.
-      - The world which we live in is made up of matter.
-      - The world that we live in is made up of matter.
-      - ❌ The world **in that** we live is made up of matter.
+- `例 14`
+  - The world in which we live is made up of matter.
+  - The world which we live in is made up of matter.
+  - The world that we live in is made up of matter.
+  - ❌ The world **in that** we live is made up of matter.
+
+### 补充：3.3.5 先行词与关系词被分隔
+
+- `例 1`：Today stepladders carry **labels** several inches long **that** warn,
+  among other things, that you might -- surprise! -- fall off.
+- `例 2`：There exists no **language or dialect** in the world **that** cannot
+  convey complex ideas.
+
+### 补充：3.3.6 关系代词 as
+
+as 主要引导**非限制性**定语从句，它的“先行词”一般是一整句话。
+
+- `例 1`：As is true of any developed society, in America a complex set of
+  cultural signals, assumptions, and conventions underlies all social
+  interrelationships.
+  - As 指代 "in America a complex set of cultural signals, assumptions, and
+    conventions underlies all social interrelationships"，在从句中作主语。
+- `例 2`：This description even fits the majority of eminent scholars. "Being
+  learned in some branch of human knowledge is one thing, living in public and
+  illustrious thoughts," as Emerson would say, "is something else."
+  - as 指代 "Being learned in some branch of human knowledge is one thing,
+    living in public and illustrious thoughts is something else."，
+    在从句中作宾语。
+- `例 3`：Stratford-on-Avon, as we all know, has only one industry -- William
+  Shakespeare -- but there are two distinctly separate and increasingly hostile
+  branches.
+  - as 指代 "Stratford-on-Avon has only one industry"，在从句中作宾语。
+- `例 4`：I have discovered as perhaps Kelsey will (discover) after her
+  much-publicized resignation from the editorship of *She* after a build up of
+  stress, that abandoning the doctrine of "juggling your life," and making the
+  alternative move into "downshifting" brings with it far greater rewards than
+  financial success and social status.
+  - as 在从句中作宾语。
 
 ### 思维训练 3.3
 
