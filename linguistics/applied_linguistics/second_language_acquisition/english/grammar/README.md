@@ -22,7 +22,7 @@
 - [ ] [4. 状语从句](2_4_adverbial_clauses.md)
 - [x] [5. 完成时态](2_5_perfect_tense.md)
 - [ ] [6. 完成进行时态](2_6_perfect_continuous_tense.md)
-- [ ] 7. 虚拟语气
+- [ ] [7. 虚拟语气](subjunctive_mood.md)
 - [ ] [8. 情态动词](2_8_modal_auxiliary_verbs.md)
 
 ### 高级教程：驾驭语法
