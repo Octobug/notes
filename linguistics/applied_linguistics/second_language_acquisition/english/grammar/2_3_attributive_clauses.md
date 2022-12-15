@@ -23,6 +23,7 @@
       - [一、先行词是单个的名词](#一先行词是单个的名词)
       - [二、先行词是一个短语](#二先行词是一个短语)
       - [三、先行词是一个句子](#三先行词是一个句子)
+      - [四、补充：介词 + which](#四补充介词--which)
     - [3.3.4 that 可以指代“人”，也可以指代“物”](#334-that-可以指代人也可以指代物)
       - [3.3.4.1 先行词中同时出现"人"和"物"时，用 that](#3341-先行词中同时出现人和物时用-that)
       - [3.3.4.2 先行词为指"物"的 all, little, few, much, none 和 the first 时，用 that](#3342-先行词为指物的-all-little-few-much-none-和-the-first-时用-that)
@@ -299,6 +300,13 @@ which 可以指代前面的整个句子。
 - `例 6`: He tore up my photo, which upset me.
 - `例 7`: I became a single mother overnight, which is nothing like becoming
   famous overnight.
+
+#### 四、补充：介词 + which
+
+- `例 1`：They're groaning about soaring health budgets, the fastest-growing
+  component **of which** are pharmaceutical costs.
+  - They're groaning about soaring health budgets. The fastest-growing component
+    of health budgets are pharmaceutical costs.
 
 ### 3.3.4 that 可以指代“人”，也可以指代“物”
 
