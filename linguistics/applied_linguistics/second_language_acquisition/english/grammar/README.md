@@ -1,19 +1,6 @@
-# 英语语法新思维
+# 英语语法笔记
 
-## 引言
-
-*I have been coming to Beijing for fourteen years*.
-
-过去这 14 年中，我常常来北京。
-
-解析：用短暂动词 (come) 的完成进行时 (have been coming)
-来表示到目前为止的一段时间内重复发生的动作。
-
-❌ I have been coming to Beijing fourteen times.
-
-解析：现在完成进行时态在表示重复活动时，不能说明具体的次数。
-
-## 目录
+## 《英语语法新思维》
 
 ### 初级教程：走近语法
 
@@ -48,9 +35,8 @@
 - [ ] [6. 分词](3_6_participles.md)
 - [ ] 7. 从句与非谓语
 
-## 参考资料
+### 英语语法新思维（第 2 版），张满胜
 
-- 英语语法新思维（第 2 版），张满胜
-  - [初级教程：走近语法](https://book.douban.com/subject/30701505/)
-  - [中级教程：通悟语法](https://book.douban.com/subject/30571037/)
-  - [高级教程：驾驭语法](https://book.douban.com/subject/30778541/)
+- [初级教程：走近语法](https://book.douban.com/subject/30701505/)
+- [中级教程：通悟语法](https://book.douban.com/subject/30571037/)
+- [高级教程：驾驭语法](https://book.douban.com/subject/30778541/)

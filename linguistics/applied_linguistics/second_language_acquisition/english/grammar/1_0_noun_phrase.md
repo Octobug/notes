@@ -20,6 +20,8 @@
 - the seven world most famous wonders
 - the world's seven most famous wonders
 
+答案：the most famous Seven Wonders of the World
+
 ## 0.2 名词短语
 
 语言的构造级别：
