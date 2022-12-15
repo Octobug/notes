@@ -1,8 +1,24 @@
 # 英语语法笔记
 
-## 《英语语法新思维》
+## 目录
 
-### 初级教程：走近语法
+- 句子成分基础
+- 句子结构基础
+- 十六种时态
+- 三种从句
+- 非谓语动词
+
+---
+
+## 参考资料
+
+### 《英语语法新思维》（第 2 版），张满胜
+
+- [初级教程：走近语法](https://book.douban.com/subject/30701505/)
+- [中级教程：通悟语法](https://book.douban.com/subject/30571037/)
+- [高级教程：驾驭语法](https://book.douban.com/subject/30778541/)
+
+#### 初级教程：走近语法
 
 - [x] [0. 名词短语](1_0_noun_phrase.md)
 - [x] [1. 名词](1_1_noun.md)
@@ -14,7 +30,7 @@
 - [x] [7. 英文时态 (一)：一般时态](1_7_simple_tense.md)
 - [ ] [8. 英文时态 (二)：进行时态](1_8_continuous_tense.md)
 
-### 中级教程：通悟语法
+#### 中级教程：通悟语法
 
 - [x] [1. 简单句与复合句](2_1_simple_and_complex_sentences.md)
 - [x] [2. 名词从句](2_2_nominal_clauses.md)
@@ -25,7 +41,7 @@
 - [ ] [7. 虚拟语气](subjunctive_mood.md)
 - [ ] [8. 情态动词](2_8_modal_auxiliary_verbs.md)
 
-### 高级教程：驾驭语法
+#### 高级教程：驾驭语法
 
 - [ ] [1. 名词从句](3_1_nominal_clauses.md)
 - [ ] 2. 定语从句
@@ -34,9 +50,3 @@
 - [ ] [5. 动名词](3_5_gerund.md)
 - [ ] [6. 分词](3_6_participles.md)
 - [ ] 7. 从句与非谓语
-
-### 英语语法新思维（第 2 版），张满胜
-
-- [初级教程：走近语法](https://book.douban.com/subject/30701505/)
-- [中级教程：通悟语法](https://book.douban.com/subject/30571037/)
-- [高级教程：驾驭语法](https://book.douban.com/subject/30778541/)
