@@ -44,8 +44,8 @@
     - [4.7.4 as 引导的倒装句表示让步](#474-as-引导的倒装句表示让步)
       - [一、形容词提至句首](#一形容词提至句首)
       - [二、副词提至句首](#二副词提至句首)
-    - [三、分词提至句首](#三分词提至句首)
-    - [四、名词提至句首](#四名词提至句首)
+      - [三、分词提至句首](#三分词提至句首)
+      - [四、名词提至句首](#四名词提至句首)
     - [思维训练 4.7 让步状语从句](#思维训练-47-让步状语从句)
   - [4.8 比较状语从句](#48-比较状语从句)
     - [4.8.1 连词 as 的基本用法](#481-连词-as-的基本用法)
@@ -415,9 +415,10 @@ as quite a surprise.*
 
 常用的引导目的状语从句的连词有：
 
-- so that
+- so that：所以，以便
 - in order that
 - that
+- for fear that：以免
 
 此外，在目的状语从句中常含有情态动词：
 
@@ -439,6 +440,8 @@ in order that 引导的目的状语从句置于句首。
 
 - `例 8`：**In order that** my roommate could study in peace and quiet, I turned
   off the TV.
+- `例 9`：He pushed open the door gently and stole out of the room for fear that
+  he should awake her.
 
 ### 思维训练 4.4 目的状语从句
 
@@ -628,7 +631,7 @@ often have to force them to break for sports and games.*
 
 - suppose (that)
 - suppsing (that)
-- providing/provided (that)
+- providing/provided (that)：假如/如果
 - so long as
 - as long as
 - on condition that
@@ -661,7 +664,13 @@ taking the night train.*
 
 ### 4.7.1 常见连词的用法
 
-常见的引导让步状语从句的词有 though, although, even though, even if。
+常见的引导让步状语从句的词有
+
+- though
+- although
+- even though
+- even if
+
 此时，**主句前不可用 but，但可用 yet 或 still**。
 
 - `例 1`：Although he tried hard, (yet/still) he failed.
@@ -770,12 +779,12 @@ as 引导的倒装句可表示让步，这一结构为：
 - `例 5`：Again as he failed in doing this experiment, he didn't lose his heart.
   - 尽管他的试验再次失败了，但是他并不灰心。
 
-### 三、分词提至句首
+#### 三、分词提至句首
 
 - `例 6`：Praised as he was, he remained modest.
   - 尽管他受到了表扬，却仍旧很谦虚。
 
-### 四、名词提至句首
+#### 四、名词提至句首
 
 - `例 7`：Child as he is, he is knowledgeable.
   - ⚠️ 这句话的名词 child 前面不带冠词。
