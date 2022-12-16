@@ -512,7 +512,7 @@ such...that 引导结果状语从句时，such 后面要接名词（短语）。
 
 ### 4.5.2 结果状语从句的倒装
 
-such/so...that 引导结果状语从句，为了强调，还可以将主句中的 so/such
+so/such...that 引导结果状语从句，为了强调，还可以将主句中的 so/such
 引导的部分置于句首从而构成倒装结构。
 
 - `例 1`：**So** fast does light travel **that** it is difficult for us to
