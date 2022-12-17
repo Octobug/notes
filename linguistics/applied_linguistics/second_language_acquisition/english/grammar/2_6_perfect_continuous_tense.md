@@ -24,6 +24,9 @@
     - [思维总结 6.5 重复事件](#思维总结-65-重复事件)
     - [思维训练 6.5 重复事件](#思维训练-65-重复事件)
   - [6.6 重复事件比较：完成进行时与完成时](#66-重复事件比较完成进行时与完成时)
+  - [6.6.1 比较（三）：重复动作的分割性](#661-比较三重复动作的分割性)
+    - [6.6.2 比较（四）：短暂动词用于完成进行时来表示重复活动](#662-比较四短暂动词用于完成进行时来表示重复活动)
+  - [6.7 完成进行时与完成时对比总结](#67-完成进行时与完成时对比总结)
 
 ## 6.1 完成进行时态的构成
 
@@ -567,5 +570,84 @@ question?*
 答案：have been going
 
 ## 6.6 重复事件比较：完成进行时与完成时
+
+比较完成进行时与完成时的“重复事件”，需要注意三点：
+
+1. **重复动作的分割性**：现在完成进行时表示重复活动时，不能被分割开来，即不能说出具体的次数。
+    它的重复性是根据人们的实际经验而体会出来的。而完成时表示的重复活动，往往要说出具体的次数。
+    因此，可以这样来看两者的差别：**现在完成进行时的重复是“隐性”的，是模糊的**；
+    **现在完成时的重复是“显性”的，是明确的**。
+2. 短暂动词的**完成进行时**表示重复活动。
+3. 完成进行时的“重复事件”与一般现在时的“重复事件”
+
+## 6.6.1 比较（三）：重复动作的分割性
+
+完成进行时具有进行时的特点，而进行时强调动作的持续性，因此这一活动必须是连续不断的。
+如果把动作分割开来看，则违背了进行时态的核心意义——持续性，所以不能用进行时态。
+
+我们在下列两种情况下会把动作分割开：
+
+1. 谈到在一段时间内一共做了多少事情；
+2. 说明某件事发生的次数。
+
+因此，这两种情形下都不能使用各种进行时态，包括现在完成进行时。
+
+综上可以得出结论：**完成进行时态不能用来谈某个动作都具体次数或几件事情，而要用完成时态**。
+
+- `例 1`：今天下午我喝了五杯咖啡。
+  - ✅ I have drunk five cups of coffee this afternoon.
+  - ❌ I have been drinking five cups of coffee this afternoon.
+- `例 2`：他今年去过三次洛杉矶。
+  - ✅ He has gone to Los Angeles three times this year.
+  - ✅ He has been to Los Angeles three times this year.
+  - ❌ He has been going to Los Angeles three times this year.
+- `例 3`：Larry King **has been interviewing** important people for more than 40
+  years. King **has been asking** famous people questions throughout his career
+  and **has done** more than 40,000 interviews. He **has talked with** every
+  American president since Richard Nixon.
+  - 这里 has been interviewing 和 has been talking
+    都是表示重复的动作，但由于没有说明具体的次数，所以可以用完成进行时态，
+    来强调他到目前为止还一直在从事采访活动。
+    而接下来由于说出了具体的 40,000 次采访以及采访过每一位美国总统，这都使得动作被分割开，
+    **强调一个结果或成就**，而不是强调一个不间断的过程，所以该用了现在完成时 has done
+    和 has talked 来表达。
+- `例 4`：I **have been chatting** online for a little over three years and
+  **have met** hundreds of people.
+
+⚠️ 完成进行时态**不能**用来谈具体的几次或几件事，换句话说，
+它所表示的重复动作是不能被分割开来的，而只能看作是一个不间断的过程，这是进行提赋予它的特点。
+完成时态则常常表示间断的重复活动，可以标明具体几次或几件事，这也是完成时强调活动结果的体现。
+
+现在完成进行时表示的重复活动都是不能说出具体次数的，而只能从上下文体会出来，
+或者依据完美的实际经验体会出来。
+
+- `例 5`
+  - A: I've been calling David for the past half hour, but I keep getting a busy
+    signal.
+  - B: Well, if you don't get him soon we'll just have to go to the movies
+    without him.
+- `例 6`：I've called David four times for the past half hour, but I keep
+  getting a busy signal.
+
+综上，可以这么看待两种时态所表示的重复活动：
+**现在完成进行时的重复是“隐性”的，是模糊的，它的重复性是根据人们的实际经验体会出来的；
+现在完成时的重复是“显性”的，是明确的。**
+
+- `例 7`
+  - I've been writing letters this morning.
+    - 今天上午到目前为止我一直在写信。
+  - I've written three letters this morning.
+    - 今天上午到目前为止我写了三封信。
+- `例 8`
+  - I have been sitting in class since 8 o'clock this morning.
+    - 从早上 8 点钟到现在我一直在上课。
+  - I have had three classes since 8 o'clock this morning.
+    - 从早上 8 点钟到现在我上了三门课。
+
+### 6.6.2 比较（四）：短暂动词用于完成进行时来表示重复活动
+
+>>>>> progress
+
+## 6.7 完成进行时与完成时对比总结
 
 >>>>> progress

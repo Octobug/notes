@@ -391,7 +391,7 @@ the planet Mars.
 
 **一般时间**指诸如 in the morning 这样不确定是现在还是过去的时间。
 
-- ❌ I have gotten up at five o'click this morning.
+- ❌ I have gotten up at five o'clock this morning.
   - 说话的时候 this morning 已成为过去，具体的过去时间状语不能使用现在完成时态。
 - ✅ I have gotten up at five o'clock in the morning.
   - 我曾经在早晨五点钟起过床。
