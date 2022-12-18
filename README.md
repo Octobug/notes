@@ -11,7 +11,7 @@ disciplines according to the
 1. [Languages](https://en.wikipedia.org/wiki/Language)
     and [Literature](https://en.wikipedia.org/wiki/Literature)
     1. [Linguistics](linguistics)
-        1. [Applied Linguistics](linguistics/applied_linguistics)
+        1. [Second-language Acquisition](linguistics/second_language_acquisition)
     2. [World Literature](world_literature)
         1. [Chinese Literature](world_literature/chinese_literature)
 2. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
