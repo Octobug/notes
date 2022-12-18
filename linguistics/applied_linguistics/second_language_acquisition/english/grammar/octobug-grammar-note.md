@@ -100,7 +100,7 @@
 
 <div class="page"/>
 
-:[2. 名词从句](2_2_nominal_clauses.md)
+:[2. 名词从句](nominal_clause.md)
 
 <div class="page"/>
 
