@@ -58,7 +58,7 @@
 
 <div class="page"/>
 
-:[0. 名词短语](1_0_noun_phrase.md)
+:[0. 名词短语](noun_phrase.md)
 
 <div class="page"/>
 
