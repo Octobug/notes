@@ -96,7 +96,7 @@
 
 <div class="page"/>
 
-:[1. 简单句与复合句](simple_and_complex_sentences.md)
+:[1. 简单句与复合句](simple_and_complex_sentence.md)
 
 <div class="page"/>
 

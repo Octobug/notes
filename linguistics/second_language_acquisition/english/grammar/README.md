@@ -3,8 +3,9 @@
 ## 目录
 
 1. 句子成分基础
-    1. [名词短语](noun_phrase.md)
+   1. [名词短语](noun_phrase.md)
 2. 句子结构基础
+   1. [简单句与复合句](simple_and_complex_sentence.md)
 3. 三种从句
 4. 十六种时态
 5. 非谓语动词
@@ -35,7 +36,7 @@
 
 #### 中级教程：通悟语法
 
-- [x] [1. 简单句与复合句](simple_and_complex_sentences.md)
+- [x] [1. 简单句与复合句](simple_and_complex_sentence.md)
 - [x] [2. 名词从句](nominal_clause.md)
 - [x] [3. 定语从句](2_3_attributive_clauses.md)
 - [ ] [4. 状语从句](2_4_adverbial_clauses.md)
