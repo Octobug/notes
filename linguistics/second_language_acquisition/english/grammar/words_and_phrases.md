@@ -3,18 +3,25 @@
 - [易错词汇与短语](#易错词汇与短语)
   - [词汇](#词汇)
   - [短语](#短语)
-    - [举例，比如说](#举例比如说)
-      - [for example, for instance](#for-example-for-instance)
-      - [such as, like](#such-as-like)
-      - [for example vs. such as](#for-example-vs-such-as)
+    - [rather than vs. other than](#rather-than-vs-other-than)
+    - [for example, for instance](#for-example-for-instance)
+    - [such as, like](#such-as-like)
+    - [for example vs. such as](#for-example-vs-such-as)
 
 ## 词汇
 
 ## 短语
 
-### 举例，比如说
+### rather than vs. other than
 
-#### for example, for instance
+- rather than
+  - 与其…（不如）
+  - 不是…（而是）
+- other than
+  - 不同于,非
+  - 除了
+
+### for example, for instance
 
 for example 和 for instance 用法一致，但 for instance 一般不用于口语中。
 
@@ -44,7 +51,7 @@ for example 和 for instance 用法一致，但 for instance 一般不用于口�
   - In the electronics industry, for instance, 5,000 jobs are being lost.
   - They intend to provide information, via the Internet for instance.
 
-#### such as, like
+### such as, like
 
 such as 和 like 都用于举例子，用法一致。只是 like 比较口语化，不常用于书面语，而 such as
 在口语和书面语都可以用。
@@ -54,7 +61,7 @@ such as 和 like 都用于举例子，用法一致。只是 like 比较口语化
 - The neglect that large cities like New York have received over the past 12
   years is tremendous.
 
-#### for example vs. such as
+### for example vs. such as
 
 相同用法：
 
