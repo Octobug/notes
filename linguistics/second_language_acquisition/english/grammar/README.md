@@ -35,7 +35,7 @@
 
 #### 中级教程：通悟语法
 
-- [x] [1. 简单句与复合句](2_1_simple_and_complex_sentences.md)
+- [x] [1. 简单句与复合句](simple_and_complex_sentences.md)
 - [x] [2. 名词从句](nominal_clause.md)
 - [x] [3. 定语从句](2_3_attributive_clauses.md)
 - [ ] [4. 状语从句](2_4_adverbial_clauses.md)
