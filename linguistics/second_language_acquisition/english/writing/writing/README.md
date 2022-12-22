@@ -5,8 +5,9 @@
     - [首段——表达写信的目的](#首段表达写信的目的)
     - [尾段——表达对读信人的期望](#尾段表达对读信人的期望)
     - [第二段——主体段](#第二段主体段)
-      - [1.是什么（以说明介绍活动信息为主）](#1是什么以说明介绍活动信息为主)
-      - [2.为什么选ta（分析利弊）](#2为什么选ta分析利弊)
+      - [1. 是什么（以说明介绍活动信息为主）](#1-是什么以说明介绍活动信息为主)
+      - [2. 为什么（分析利弊）](#2-为什么分析利弊)
+      - [3. 怎么办（建议意见）](#3-怎么办建议意见)
 
 ## 三分归元法
 
@@ -78,7 +79,7 @@ For more details, you could refer to the attachment below.
 
 三元：是什么（说明介绍）、为什么（原因利弊）、怎么办（建议意见）
 
-#### 1.是什么（以说明介绍活动信息为主）
+#### 1. 是什么（以说明介绍活动信息为主）
 
 - 常见活动：
   - 志愿者招募
@@ -105,6 +106,40 @@ For more details, you could refer to the attachment below.
   - it is highly recommended to be properly dressed for the occasion
 - **问询类**：I would like to know whether...
 
-#### 2.为什么选ta（分析利弊）
+#### 2. 为什么（分析利弊）
 
->>>>> progress
+- 常见活动：
+  - 推荐电影/书籍/城市景点
+  - 感谢外国友人的招待并邀请外国友人来中国玩
+  - 介绍某个中国传统文化
+  - 因时间冲突爽约而向教授道歉并提出解决方案
+  - 选择城市交通辩论赛主题并告诉教授你的活动安排
+  - 介绍春游景点并给出春游小贴士
+- 万能图书、电影、景点、中华文化推荐：The Great Wall
+- **权威认可**：ta 获得了权威机构的官方奖项、资质、认可……
+  - have (has) an official award/qualification/recognition from the authority
+- **群众基础**：人民群众/很多社交媒体平台对 ta 很欢迎/评价很高/很关注担心
+  - enjoy(s) a widespreads popularity/reputation/concern
+    - among...
+    - on multiple social platforms
+- **个人喜欢**：我个人觉得XX很有吸引力、有趣、有益
+  - I personally find it attractive/interesting/beneficial/necessary (to do
+    sth).
+
+#### 3. 怎么办（建议意见）
+
+- 常见活动：
+  - 如何适应中国校园生活
+  - 如何提高身体素质
+  - 给外国友人提找工作的建议
+  - 如何适应大学生活
+  - 如何提高翻译水平
+- **端正认识**：端正认识并建立起关于XX的正确价值观是首要任务
+  - it's advisable to put things into perspective and establish a correct value
+    about sth primarily
+- **实践经验**：你可以在知乎上寻找该领域的相关/先进/国际/历史经验
+  - you could look for relevent/advanced/international/historical experience in
+    this aspect on Zhihu Community.
+- **知行合一**：应该及时制定合理可行的计划并优先执行
+  - a practical and reasonable plan should be promptly carried out and remain
+    high on your agenda
