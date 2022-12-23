@@ -8,6 +8,7 @@
       - [1. 是什么（以说明介绍活动信息为主）](#1-是什么以说明介绍活动信息为主)
       - [2. 为什么（分析利弊）](#2-为什么分析利弊)
       - [3. 怎么办（建议意见）](#3-怎么办建议意见)
+    - [道歉信](#道歉信)
 
 ## 三分归元法
 
@@ -143,3 +144,16 @@ For more details, you could refer to the attachment below.
 - **知行合一**：应该及时制定合理可行的计划并优先执行
   - a practical and reasonable plan should be promptly carried out and remain
     high on your agenda
+
+### 道歉信
+
+时间本体以各类跨境爽约为主。
+
+主体段思路：
+
+- 解释爽约的原因：发生什么事了？
+  - 日程冲突没办法
+  - 日程紧张做错事
+- 提出补偿措施：
+  - 送礼赔偿
+  - 改天再约
