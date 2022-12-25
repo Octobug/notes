@@ -1,8 +1,8 @@
-# 5. 动词分类 (一)：实义动词与 (情态) 助动词
+# 动词分类 (一)：实义动词与 (情态) 助动词
 
 > Verb: Content Verbs and Modal Auxiliary Verbs
 
-- [5. 动词分类 (一)：实义动词与 (情态) 助动词](#5-动词分类-一实义动词与-情态-助动词)
+- [动词分类 (一)：实义动词与 (情态) 助动词](#动词分类-一实义动词与-情态-助动词)
   - [5.1 实义动词 (notional verb)](#51-实义动词-notional-verb)
   - [5.2 助动词 (auxiliary verb)](#52-助动词-auxiliary-verb)
     - [5.2.1 助动词 be, do 和 have](#521-助动词-be-do-和-have)

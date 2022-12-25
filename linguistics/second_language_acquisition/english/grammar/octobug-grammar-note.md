@@ -78,11 +78,11 @@
 
 <div class="page"/>
 
-:[5. 动词分类 (一)：实义动词与 (情态) 助动词](1_5_content_verbs_and_modal_auxiliary_verbs.md)
+:[5. 动词分类 (一)：实义动词与 (情态) 助动词](content_verbs_and_modal_auxiliary_verbs.md)
 
 <div class="page"/>
 
-:[6. 动词分类 (二)：英语的五种基本句型](1_6_five_basic_sentence_patterns.md)
+:[6. 动词分类 (二)：英语的五种基本句型](five_basic_sentence_patterns.md)
 
 <div class="page"/>
 
