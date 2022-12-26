@@ -67,7 +67,7 @@
 
 #### 高级教程：驾驭语法
 
-- [ ] [1. 名词从句](3_1_nominal_clauses.md)
+- [ ] [1. 名词从句](nominal_clause.md)
 - [ ] 2. 定语从句
 - [ ] 3. 状语从句
 - [ ] [4. 不定式](3_4_infinitive.md)
