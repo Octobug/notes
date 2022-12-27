@@ -12,10 +12,10 @@
    1. [动词分类 (一)：实义动词与 (情态) 助动词](content_verbs_and_modal_auxiliary_verbs.md)
    2. [动词分类（二）：英语的五种基本句型](five_basic_sentence_patterns.md)
    3. [简单句与复合句](simple_and_complex_sentence.md)
-3. 三种从句
+3. 三类从句
    1. [名词从句](nominal_clause.md)
    2. [定语从句](attributive_clause.md)
-   3. 状语从句
+   3. [状语从句](adverbial_clause.md)
 4. 十六种时态
    1. 一般时态
    2. [进行时态](continuous_tense.md)
@@ -59,7 +59,7 @@
 - [x] [1. 简单句与复合句](simple_and_complex_sentence.md)
 - [x] [2. 名词从句](nominal_clause.md)
 - [x] [3. 定语从句](attributive_clause.md)
-- [ ] [4. 状语从句](2_4_adverbial_clauses.md)
+- [ ] [4. 状语从句](adverbial_clause.md)
 - [x] [5. 完成时态](2_5_perfect_tense.md)
 - [ ] [6. 完成进行时态](2_6_perfect_continuous_tense.md)
 - [ ] [7. 虚拟语气](subjunctive_mood.md)
