@@ -195,25 +195,19 @@ The woman who lives next door is a famous dancer.
 
 ### 2.3 关系词用作从句中介词的宾语
 
-- `例 1`:
+- `1`
   - I'm talking about friends and you can share almost everything with **them**.
   - I'm talking about friends **who** you can share almost everything **with**.
   - I'm talking about friends **with whom** you can share almost everything.
-- `例 2`: I hope I never have a boss who I can't talk to about my problems.
-- `例 3`: I like the people who I work with.
-
-`补充例句`: **In other words, anyone can improve the speed with which he gets
-what he wants from his reading**.
-
-- 主句结构: anyone can improve the speed.
-- 修饰 the speed 的定语从句: with which he gets what he wants from his reading.
-- `the speed` with which he gets `what he wants` from his reading.
-  
-  可还原成:
-
-  he gets `what he wants (宾语从句)` from his reading with `the speed`.
-
-- 译: 换句话说，任何人都可以提高**足以让他从阅读中得到他想要的东西**的速度。
+- `2`: I hope I never have a boss who I can't talk to about my problems.
+- `3`: I like the people who I work with.
+- `4`: **In other words, anyone can improve the speed with which he gets what
+  he wants from his reading**.
+  - 主句结构：anyone can improve the speed.
+  - 修饰 the speed 的定语从句：with which he gets what he wants from his reading.
+  - `the speed` with which he gets `what he wants` from his reading.
+    可还原成：He gets `what he wants (宾语从句)` from his reading with `the speed`.
+  - 译：换句话说，任何人都可以提高**足以让他从阅读中得到他想要的东西**的速度。
 
 ### 2.4 作宾语的关系词可以省去
 
@@ -584,7 +578,7 @@ This is the reason why I didn't come here.
 
 ## 5. 限制性与非限制性定语从句
 
-二者在形式上的区别:
+二者在形式上的区别：
 
 - 在**限制性**定语从句中，先行词和关系词之间不用逗号隔开；
 - 在**非限制性**定语从句中，先行词和关系词之间需要逗号隔开。
@@ -598,10 +592,14 @@ defines or gives essential information about a noun)，
 
 比如 "I don't like people." 这句话意思不明确，people 需要加上限定性的修饰语。
 
-- `例 1`: I don't like people *who are never on time*.
-- `例 2`: I don't like people *who never keep their word*.
-- `例 3`: There are two factors *which determine an individual's intelligence*.
-- `例 4`: He is a man *who is of value to the people*.
+- `1`: I don't like people *who are never on time*.
+- `2`: I don't like people *who never keep their word*.
+- `3`: There are two factors *which determine an individual's intelligence*.
+- `4`: He is a man *who is of value to the people*.
+- `5`: The effect is caused by the way (`in which`/`that`) we allocate our
+  attention.
+  - 这里关系词可以省略的原因是，the way 是方式状语，其后面接的定语从句是限制性定语从句，
+    除了用 in which 作引导词，还可以用 that，此时 that 可以省略。
 
 ### 5.2 非限制性定语从句——用逗号隔开
 
@@ -664,25 +662,30 @@ defines or gives essential information about a noun)，
 
 ### 5.4 非限制性定语从句的翻译
 
-- `例 1`: The food, which wasn't in the fridge, all went off.
+- `1`: The food, which wasn't in the fridge, all went off.
   - 食物都坏了，因为没有放在冰箱里。(译成**原因状语**从句)
-- `例 2`: The Ambassador gave a dinner to the scientists, with whom he
+- `2`: The Ambassador gave a dinner to the scientists, with whom he
   especially wished to talk.
   - 大使宴请了那些科学家，因为他特别想与他们交谈一下。(译成**原因状语**从句)
-- `例 3`: The people were desperate for work, any work, which could support
+- `3`: The people were desperate for work, any work, which could support
   their family.
   - 人们急于找到工作，什么工作都行，只要能养家糊口。(译成**条件状语**从句)
-- `例 4`: The millionaire had another house built, which he didn't need at all.
+- `4`: The millionaire had another house built, which he didn't need at all.
   - 那位百万富翁又建了一幢房子，尽管他并不需要。(译成**让步状语**从句)
-- `例 5`: They tried to stamp out the revolt, which spread all the more
+- `5`: They tried to stamp out the revolt, which spread all the more
   furiously throughout the country.
   - 起义依然声势浩大地遍布全国，尽管他们试图镇压。(译成**让步状语**从句)
-- `例 6`: Both players, neither of whom reached the final, played well.
+- `6`: Both players, neither of whom reached the final, played well.
   - 尽管两名选手都未进入决赛，但都表现得很好。(译成**让步状语**从句)
-- `例 7`: We know that a cat, whose eyes can take in many more rays of light
+- `7`: We know that a cat, whose eyes can take in many more rays of light
   than our eyes, can see clearly in the night.
   - 我们知道，因为猫的眼睛能够比人的眼睛吸收更多的光线，所以猫在黑夜里也能够看得很清楚。
     (译成**原因状语**从句)
+- `8`: While producing large quantities of CO2, these computers emit a great
+  deal of heat, so the centres need to be well air-conditioned, which uses even
+  more energy.
+  - which 的“先行词”是“the centres need to be well air-conditioned”整句话。
+  - 在产生大量二氧化碳的同时，这些计算机会散发出大量热量，因此中心需要配备良好的空调，这会消耗更多能源。
 
 ### 思维训练 5. 限制性与非限制性定语从句
 
