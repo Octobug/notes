@@ -14,7 +14,7 @@
    3. [简单句与复合句](simple_and_complex_sentence.md)
 3. 三种从句
    1. [名词从句](nominal_clause.md)
-   2. 定语从句
+   2. [定语从句](attributive_clause.md)
    3. 状语从句
 4. 十六种时态
    1. 一般时态
@@ -58,7 +58,7 @@
 
 - [x] [1. 简单句与复合句](simple_and_complex_sentence.md)
 - [x] [2. 名词从句](nominal_clause.md)
-- [x] [3. 定语从句](2_3_attributive_clauses.md)
+- [x] [3. 定语从句](attributive_clause.md)
 - [ ] [4. 状语从句](2_4_adverbial_clauses.md)
 - [x] [5. 完成时态](2_5_perfect_tense.md)
 - [ ] [6. 完成进行时态](2_6_perfect_continuous_tense.md)

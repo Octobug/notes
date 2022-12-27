@@ -1,67 +1,93 @@
-# 3. 定语从句
+# 定语从句
 
 > Attributive Clauses
 
-- [3. 定语从句](#3-定语从句)
-  - [3.1 定语从句概述](#31-定语从句概述)
-    - [3.1.1 形容词作定语与从句作定语比较](#311-形容词作定语与从句作定语比较)
-    - [3.1.2 定语从句的两个重要概念: 先行词和关系词](#312-定语从句的两个重要概念-先行词和关系词)
+- [定语从句](#定语从句)
+  - [1. 定语从句概述](#1-定语从句概述)
+    - [1.1 什么是定语](#11-什么是定语)
+    - [1.2 形容词作定语与从句作定语比较](#12-形容词作定语与从句作定语比较)
+    - [1.3 定语从句的两个重要概念: 先行词和关系词](#13-定语从句的两个重要概念-先行词和关系词)
       - [一、先行词](#一先行词)
       - [二、关系词](#二关系词)
-    - [思维训练 3.1](#思维训练-31)
-  - [3.2 关系词在定语从句中充当的成分](#32-关系词在定语从句中充当的成分)
-    - [3.2.1 关系词用作从句的主语](#321-关系词用作从句的主语)
-    - [3.2.2 关系词用作从句动词的宾语](#322-关系词用作从句动词的宾语)
-    - [3.2.3 关系词用作从句中介词的宾语](#323-关系词用作从句中介词的宾语)
-    - [3.2.4 作宾语的关系词可以省去](#324-作宾语的关系词可以省去)
-  - [3.3 关系代词与先行词的搭配关系](#33-关系代词与先行词的搭配关系)
-    - [3.3.1 先行词指“人”，用关系代词 who 或 whom](#331-先行词指人用关系代词-who-或-whom)
+    - [思维训练 1. 定语从句概述](#思维训练-1-定语从句概述)
+  - [2. 关系词在定语从句中充当的成分](#2-关系词在定语从句中充当的成分)
+    - [2.1 关系词用作从句的主语](#21-关系词用作从句的主语)
+    - [2.2 关系词用作从句动词的宾语](#22-关系词用作从句动词的宾语)
+    - [2.3 关系词用作从句中介词的宾语](#23-关系词用作从句中介词的宾语)
+    - [2.4 作宾语的关系词可以省去](#24-作宾语的关系词可以省去)
+  - [3. 关系代词与先行词的搭配关系](#3-关系代词与先行词的搭配关系)
+    - [3.1 先行词指“人”，用关系代词 who 或 whom](#31-先行词指人用关系代词-who-或-whom)
       - [一、先行词指“人”才能用 who 或 whom](#一先行词指人才能用-who-或-whom)
       - [二、who 和 whom 的区别](#二who-和-whom-的区别)
-    - [3.3.2 表示人或物的所有关系，用 whose](#332-表示人或物的所有关系用-whose)
-    - [3.3.3 先行词指“物”，用关系代词 which](#333-先行词指物用关系代词-which)
+    - [3.2 表示人或物的所有关系，用 whose](#32-表示人或物的所有关系用-whose)
+    - [3.3 先行词指“物”，用关系代词 which](#33-先行词指物用关系代词-which)
       - [一、先行词是单个的名词](#一先行词是单个的名词)
       - [二、先行词是一个短语](#二先行词是一个短语)
       - [三、先行词是一个句子](#三先行词是一个句子)
       - [四、补充：介词 + which](#四补充介词--which)
-    - [3.3.4 that 可以指代“人”，也可以指代“物”](#334-that-可以指代人也可以指代物)
-      - [3.3.4.1 先行词中同时出现"人"和"物"时，用 that](#3341-先行词中同时出现人和物时用-that)
-      - [3.3.4.2 先行词为指"物"的 all, little, few, much, none 和 the first 时，用 that](#3342-先行词为指物的-all-little-few-much-none-和-the-first-时用-that)
-      - [3.3.4.3 先行词是不定代词 something, anything, nothing 和 everything 时，一般用 that](#3343-先行词是不定代词-something-anything-nothing-和-everything-时一般用-that)
-      - [3.3.4.4 先行词被这几类特殊词修饰时，用 that](#3344-先行词被这几类特殊词修饰时用-that)
-      - [3.3.4.5 that 不用在非限制性定语从句中](#3345-that-不用在非限制性定语从句中)
-      - [3.3.4.6 不能用于介词后面](#3346-不能用于介词后面)
-    - [补充：3.3.5 先行词与关系词被分隔](#补充335-先行词与关系词被分隔)
-    - [补充：3.3.6 关系代词 as](#补充336-关系代词-as)
-    - [思维训练 3.3](#思维训练-33)
-  - [3.4 关系副词的用法](#34-关系副词的用法)
-    - [3.4.1 when 的用法](#341-when-的用法)
+    - [3.4 that 可以指代“人”，也可以指代“物”](#34-that-可以指代人也可以指代物)
+      - [3.4.1 先行词中同时出现"人"和"物"时，用 that](#341-先行词中同时出现人和物时用-that)
+      - [3.4.2 先行词为指"物"的 all, little, few, much, none 和 the first 时，用 that](#342-先行词为指物的-all-little-few-much-none-和-the-first-时用-that)
+      - [3.4.3 先行词是不定代词 something, anything, nothing 和 everything 时，一般用 that](#343-先行词是不定代词-something-anything-nothing-和-everything-时一般用-that)
+      - [3.4.4 先行词被这几类特殊词修饰时，用 that](#344-先行词被这几类特殊词修饰时用-that)
+      - [3.4.5 that 不用在非限制性定语从句中](#345-that-不用在非限制性定语从句中)
+      - [3.4.6 不能用于介词后面](#346-不能用于介词后面)
+    - [3.5 先行词与关系词被分隔](#35-先行词与关系词被分隔)
+    - [3.6 关系代词 as](#36-关系代词-as)
+    - [思维训练 3. 关系代词与先行词的搭配关系](#思维训练-3-关系代词与先行词的搭配关系)
+  - [4. 关系副词的用法](#4-关系副词的用法)
+    - [4.1 when 的用法](#41-when-的用法)
       - [一、先行词指时间](#一先行词指时间)
       - [二、关系副词 when 在从句中作时间状语](#二关系副词-when-在从句中作时间状语)
-    - [3.4.2 where 的用法](#342-where-的用法)
+    - [4.2 where 的用法](#42-where-的用法)
       - [一、where 的先行词指地点](#一where-的先行词指地点)
       - [二、关系副词 where 在从句中作地点状语](#二关系副词-where-在从句中作地点状语)
-    - [3.4.3 why 的用法](#343-why-的用法)
-    - [思维训练 3.4](#思维训练-34)
-  - [3.5 限制性与非限制性定语从句](#35-限制性与非限制性定语从句)
-    - [3.5.1 限制性定语从句——不用逗号隔开](#351-限制性定语从句不用逗号隔开)
-    - [3.5.2 非限制性定语从句——用逗号隔开](#352-非限制性定语从句用逗号隔开)
+    - [4.3 why 的用法](#43-why-的用法)
+    - [思维训练 4. 关系副词的用法](#思维训练-4-关系副词的用法)
+  - [5. 限制性与非限制性定语从句](#5-限制性与非限制性定语从句)
+    - [5.1 限制性定语从句——不用逗号隔开](#51-限制性定语从句不用逗号隔开)
+    - [5.2 非限制性定语从句——用逗号隔开](#52-非限制性定语从句用逗号隔开)
       - [一、专有名词](#一专有名词)
       - [二、类指名词](#二类指名词)
-    - [3.5.3 用或不用逗号，句意有差别](#353-用或不用逗号句意有差别)
-    - [3.5.4 非限制性定语从句的翻译](#354-非限制性定语从句的翻译)
-    - [思维训练 3.5](#思维训练-35)
-  - [3.6 定语从句与同位语从句的区分](#36-定语从句与同位语从句的区分)
-    - [3.6.1 从结构上区分: that 是否作成分](#361-从结构上区分-that-是否作成分)
-    - [3.6.2 从意义上区分: that 引导的从句的意义不同](#362-从意义上区分-that-引导的从句的意义不同)
-    - [思维训练 3.6](#思维训练-36)
-  - [综合训练: 3. 定语从句](#综合训练-3-定语从句)
+    - [5.3 用或不用逗号，句意有差别](#53-用或不用逗号句意有差别)
+    - [5.4 非限制性定语从句的翻译](#54-非限制性定语从句的翻译)
+    - [思维训练 5. 限制性与非限制性定语从句](#思维训练-5-限制性与非限制性定语从句)
+  - [6. 定语从句与同位语从句的区分](#6-定语从句与同位语从句的区分)
+    - [6.1 从结构上区分: that 是否作成分](#61-从结构上区分-that-是否作成分)
+    - [6.2 从意义上区分: that 引导的从句的意义不同](#62-从意义上区分-that-引导的从句的意义不同)
+    - [思维训练 6. 定语从句与同位语从句的区分](#思维训练-6-定语从句与同位语从句的区分)
+  - [综合训练：定语从句](#综合训练定语从句)
 
 定语从句的两个重要概念: **先行词**和**关系词**。
 
-## 3.1 定语从句概述
+## 1. 定语从句概述
 
-### 3.1.1 形容词作定语与从句作定语比较
+### 1.1 什么是定语
+
+- the college **students** in the classroom：教室里的大学生
+  - 是核心词为 students 的名词短语
+  - college 是名词，作前置定语
+  - in the class 是介词短语，作后置定语
+
+结论：
+
+1. 定语修饰名词
+2. 英语中定语分前置和后置
+3. 英语中简单定语前置，复杂定语后置
+4. （汉语中只有前置定语）
+
+英语中定语位置及基本形式：
+
+- 前置定语
+  - 形容词
+  - 名词
+- 后置定语
+  - 介词短语
+  - 非谓语动词
+  - 形容词短语：a student good at English
+  - 定语从句
+
+### 1.2 形容词作定语与从句作定语比较
 
 - `例 1`: I don't like **lazy** *people*.
   - 形容词作定语
@@ -73,7 +99,7 @@
 一个有完整主谓结构的句子，用作定语功能修饰另一个句子 (主句) 中的某个成分，
 这个句子称为定语从句。
 
-### 3.1.2 定语从句的两个重要概念: 先行词和关系词
+### 1.3 定语从句的两个重要概念: 先行词和关系词
 
 #### 一、先行词
 
@@ -88,7 +114,7 @@
 1. **代词的作用**: 重复指代先行词并且在定语从句充当一定成分。
 2. **连接作用**: 连接主句和从句。
 
-### 思维训练 3.1
+### 思维训练 1. 定语从句概述
 
 **请找出下列短文中的定语从句，并指明先行词和关系词。**
 
@@ -116,9 +142,9 @@ case the same in kind.*
 
 完整翻译: 审美标准，因人而异。但一旦美在眼前出现，我们对美的感受却并无二致。
 
-## 3.2 关系词在定语从句中充当的成分
+## 2. 关系词在定语从句中充当的成分
 
-### 3.2.1 关系词用作从句的主语
+### 2.1 关系词用作从句的主语
 
 `例 1`: **The woman** is a famous dancer and **she** lives next door. (简单句)
 
@@ -154,7 +180,7 @@ The woman who lives next door is a famous dancer.
   least.
   - one: 这里 one 作为代词，和名词一样可以被定语从句修饰。
 
-### 3.2.2 关系词用作从句动词的宾语
+### 2.2 关系词用作从句动词的宾语
 
 关系词作为从句动词的宾语可以区分为从句**动词的并与**和从句**介词的宾语**。
 
@@ -167,7 +193,7 @@ The woman who lives next door is a famous dancer.
   ... completely.
 - I'd really like to find a friend who I can trust completely.
 
-### 3.2.3 关系词用作从句中介词的宾语
+### 2.3 关系词用作从句中介词的宾语
 
 - `例 1`:
   - I'm talking about friends and you can share almost everything with **them**.
@@ -189,7 +215,7 @@ what he wants from his reading**.
 
 - 译: 换句话说，任何人都可以提高**足以让他从阅读中得到他想要的东西**的速度。
 
-### 3.2.4 作宾语的关系词可以省去
+### 2.4 作宾语的关系词可以省去
 
 关系词在定语从句中主要可以充当两种成分: **主语**或**宾语 (动词的宾语或介词的宾语)**。
 英语里有这样的习惯: **作宾语的关系词可以省去**，不论关系词是作动词的宾语还是作介词的宾语。
@@ -199,7 +225,7 @@ what he wants from his reading**.
 - I'm talking about friends you can share almost everything with.
 - I hope I never have a boss I can't talk to about my problems.
 
-## 3.3 关系代词与先行词的搭配关系
+## 3. 关系代词与先行词的搭配关系
 
 关系词可以分为两大类:
 
@@ -212,7 +238,7 @@ what he wants from his reading**.
    2. where
    3. why
 
-### 3.3.1 先行词指“人”，用关系代词 who 或 whom
+### 3.1 先行词指“人”，用关系代词 who 或 whom
 
 #### 一、先行词指“人”才能用 who 或 whom
 
@@ -241,7 +267,7 @@ what he wants from his reading**.
 总之，who 可以作主语，**也可以替代 whom 作宾语或表语**，但不能用在介词后面。而因为 who
 是宾格形式，所以不能作主语。
 
-### 3.3.2 表示人或物的所有关系，用 whose
+### 3.2 表示人或物的所有关系，用 whose
 
 whose 表示所有关系，其作用就如同物主代词 my, your, her, his, their 和 our，whose
 的后面要接名词。whose 可指人也可指物。
@@ -260,7 +286,7 @@ whose 表示所有关系，其作用就如同物主代词 my, your, her, his, th
   world rested.
   - whose shoulder 作从句中 rested on 的宾语，这里 on 被提前了。
 
-### 3.3.3 先行词指“物”，用关系代词 which
+### 3.3 先行词指“物”，用关系代词 which
 
 关系词 which 的造句结构完全类似于 who，比如 which 可以作从句的**主语**或**宾语**，
 只不过 which 的先行词是"物"。
@@ -308,7 +334,7 @@ which 可以指代前面的整个句子。
   - They're groaning about soaring health budgets. The fastest-growing component
     of health budgets are pharmaceutical costs.
 
-### 3.3.4 that 可以指代“人”，也可以指代“物”
+### 3.4 that 可以指代“人”，也可以指代“物”
 
 关系代词 that 的意义和用法主要有以下三点:
 
@@ -327,14 +353,14 @@ things **that** they don't want, to impress people **that** they don't like.
 既然 **that** 可以指物也可以指人，那么就会涉及与 **which** 和 **who** 在用法上的区别。
 以下这些情况最好使用 that:
 
-#### 3.3.4.1 先行词中同时出现"人"和"物"时，用 that
+#### 3.4.1 先行词中同时出现"人"和"物"时，用 that
 
 - `例 2`: The writer and his novels that the article deals with are quite
   familiar to us.
   - 这里先行词是 the writer and his novels
   - 译: 这篇文章里所说的这个作家以及他的小说，我们都比较熟悉。
 
-#### 3.3.4.2 先行词为指"物"的 all, little, few, much, none 和 the first 时，用 that
+#### 3.4.2 先行词为指"物"的 all, little, few, much, none 和 the first 时，用 that
 
 - `例 3`: **All** that glitters is not gold.
   - 这里的先行词是 all，所以用 that 来引导定语从句。另外这里的否定是**半否定**:
@@ -345,13 +371,13 @@ things **that** they don't want, to impress people **that** they don't like.
 - `例 5`: There is not **much** that can be done.
   - 这里的先行词是代词 much，所以用 that 来引导定语从句。
 
-#### 3.3.4.3 先行词是不定代词 something, anything, nothing 和 everything 时，一般用 that
+#### 3.4.3 先行词是不定代词 something, anything, nothing 和 everything 时，一般用 that
 
 - `例 7`: I would much rather receive **something** that made me laugh, made me
   reminisce, or fit my personality than **something** that cost a lot but that
   I will just throw in my closet and forget about.
 
-#### 3.3.4.4 先行词被这几类特殊词修饰时，用 that
+#### 3.4.4 先行词被这几类特殊词修饰时，用 that
 
 - any, only, all, every, no, some, much, few, little
   - `例 8`: Tell us **all** things that you know.
@@ -363,7 +389,7 @@ things **that** they don't want, to impress people **that** they don't like.
   - `例 12`: He is the **only** man that can speak four foreign languages in
     our company.
 
-#### 3.3.4.5 that 不用在非限制性定语从句中
+#### 3.4.5 that 不用在非限制性定语从句中
 
 不用 that 引导非限制性定语从句。比如:
 
@@ -372,7 +398,7 @@ things **that** they don't want, to impress people **that** they don't like.
   - ❌ I became a single mother overnight, **that** is nothing like becoming
     famous overnight.
 
-#### 3.3.4.6 不能用于介词后面
+#### 3.4.6 不能用于介词后面
 
 不能在 that 前面使用介词。比如:
 
@@ -382,14 +408,14 @@ things **that** they don't want, to impress people **that** they don't like.
   - The world that we live in is made up of matter.
   - ❌ The world **in that** we live is made up of matter.
 
-### 补充：3.3.5 先行词与关系词被分隔
+### 3.5 先行词与关系词被分隔
 
 - `例 1`：Today stepladders carry **labels** several inches long **that** warn,
   among other things, that you might -- surprise! -- fall off.
 - `例 2`：There exists no **language or dialect** in the world **that** cannot
   convey complex ideas.
 
-### 补充：3.3.6 关系代词 as
+### 3.6 关系代词 as
 
 as 主要引导**非限制性**定语从句，它的“先行词”一般是一整句话。
 
@@ -415,7 +441,7 @@ as 主要引导**非限制性**定语从句，它的“先行词”一般是一�
   financial success and social status.
   - as 在从句中作宾语。
 
-### 思维训练 3.3
+### 思维训练 3. 关系代词与先行词的搭配关系
 
 **一、请讲下列每一组中的两个简单句合并为一个定语从句，用第二个句子作定语。**
 
@@ -462,9 +488,9 @@ nerves.
 
 答案: The day, which began brightly, ended with a violent storm.
 
-## 3.4 关系副词的用法
+## 4. 关系副词的用法
 
-### 3.4.1 when 的用法
+### 4.1 when 的用法
 
 #### 一、先行词指时间
 
@@ -496,7 +522,7 @@ when 可以引导**限制性**和**非限制性**定语从句，其先行词必�
 - `例 8`: The day, which began brightly, ended with a violent storm.
   - 关系词在非限制性从句中充当**主语**
 
-### 3.4.2 where 的用法
+### 4.2 where 的用法
 
 #### 一、where 的先行词指地点
 
@@ -534,13 +560,13 @@ house 等。
   - D. that I want to visit it most
   - 答案: C. (that/which) I most want to visit
 
-### 3.4.3 why 的用法
+### 4.3 why 的用法
 
 why 用来表示原因，只引导**限制性**定语从句，先行词是 reason 等表示原因的名词。
 
 This is the reason why I didn't come here.
 
-### 思维训练 3.4
+### 思维训练 4. 关系副词的用法
 
 **一、请将下列每一组中的两个简单句合并为一个定语从句，用第二个句子作定语。**
 
@@ -556,14 +582,14 @@ This is the reason why I didn't come here.
 
 答案: This is the house where they put their tools.
 
-## 3.5 限制性与非限制性定语从句
+## 5. 限制性与非限制性定语从句
 
 二者在形式上的区别:
 
 - 在**限制性**定语从句中，先行词和关系词之间不用逗号隔开；
 - 在**非限制性**定语从句中，先行词和关系词之间需要逗号隔开。
 
-### 3.5.1 限制性定语从句——不用逗号隔开
+### 5.1 限制性定语从句——不用逗号隔开
 
 **限制性**定语从句是用来对一个名词提供**必要**的信息 (a defining relative clause
 defines or gives essential information about a noun)，
@@ -577,7 +603,7 @@ defines or gives essential information about a noun)，
 - `例 3`: There are two factors *which determine an individual's intelligence*.
 - `例 4`: He is a man *who is of value to the people*.
 
-### 3.5.2 非限制性定语从句——用逗号隔开
+### 5.2 非限制性定语从句——用逗号隔开
 
 非限制性定语从句用来提供**附加的而非必要**的信息，只是对先行词做进一步的解释、补充或说明
 (a non-defining relative clause gives optional information about a noun)。
@@ -614,7 +640,7 @@ defines or gives essential information about a noun)，
 - One of the elephants which we saw at the zoo had only one tusk.
   - 这里的 elephant 是具体指代某一头大象。
 
-### 3.5.3 用或不用逗号，句意有差别
+### 5.3 用或不用逗号，句意有差别
 
 还有一类句子，用限制性或非限制性定语从句都可以，但强调的意义不一样。
 
@@ -636,7 +662,7 @@ defines or gives essential information about a noun)，
   - The cab drivers, who knew about the traffic jam, took another road.
     - 出租车司机知道那里堵车了，他们都换了另一条路。
 
-### 3.5.4 非限制性定语从句的翻译
+### 5.4 非限制性定语从句的翻译
 
 - `例 1`: The food, which wasn't in the fridge, all went off.
   - 食物都坏了，因为没有放在冰箱里。(译成**原因状语**从句)
@@ -658,7 +684,7 @@ defines or gives essential information about a noun)，
   - 我们知道，因为猫的眼睛能够比人的眼睛吸收更多的光线，所以猫在黑夜里也能够看得很清楚。
     (译成**原因状语**从句)
 
-### 思维训练 3.5
+### 思维训练 5. 限制性与非限制性定语从句
 
 **二、请分析下面句中所含定语从句分别属于本节所述 3 种情形中的哪一种，必要时请添加逗号。**
 
@@ -695,9 +721,9 @@ ex-boyfriend.*
   ex-boyfriend.
   - 非限制性定语从句，表明 Jane 只收到一份礼物。
 
-## 3.6 定语从句与同位语从句的区分
+## 6. 定语从句与同位语从句的区分
 
-### 3.6.1 从结构上区分: that 是否作成分
+### 6.1 从结构上区分: that 是否作成分
 
 - that 在**定语从句**中要充当成分，比如作从句的主语或宾语: "名词 + that + 不完整的句子"
 - that 在**同位语从句**中不充当任何成分，仅起连词的作用: "名词 + that + 完整的陈述句"
@@ -708,7 +734,7 @@ ex-boyfriend.*
   - The fact that we talked about is very important.
   - The fact that he succeeded in the experiment pleased everybody.
 
-### 3.6.2 从意义上区分: that 引导的从句的意义不同
+### 6.2 从意义上区分: that 引导的从句的意义不同
 
 - 定语从句相当于形容词，对先行词起修饰、描述和限制的作用
 - 同位语从句相当于一个名词，是对先行词内容的具体表述，二者是同位关系
@@ -721,7 +747,7 @@ ex-boyfriend.*
   - that Lincoln was murdered at a theater 表示 news 的具体内容，在意义上与 news
     构成同位关系。
 
-### 思维训练 3.6
+### 思维训练 6. 定语从句与同位语从句的区分
 
 **二、请分析下列 that 引导的是定语从句还是名词从句，并翻译成中文。**
 
@@ -745,7 +771,7 @@ been discovered in these ancient rocks.*
 
 译: 太好了，我们的国度里还有一个真正的男人。
 
-## 综合训练: 3. 定语从句
+## 综合训练：定语从句
 
 **一、请将下列中文翻译成英文。**
 

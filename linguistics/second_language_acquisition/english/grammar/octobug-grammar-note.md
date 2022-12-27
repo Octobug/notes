@@ -104,7 +104,7 @@
 
 <div class="page"/>
 
-:[3. 定语从句](2_3_attributive_clauses.md)
+:[3. 定语从句](attributive_clause.md)
 
 <div class="page"/>
 
