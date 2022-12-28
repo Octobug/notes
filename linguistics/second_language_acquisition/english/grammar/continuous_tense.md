@@ -3,44 +3,53 @@
 > Continuous Tense
 
 - [进行时态](#进行时态)
-  - [8.1 引言](#81-引言)
-    - [8.1.1 进行时态的构成](#811-进行时态的构成)
-    - [8.1.2 进行时态的意义](#812-进行时态的意义)
+  - [1. 引言：进行时态](#1-引言进行时态)
+    - [1.1 进行时态的构成](#11-进行时态的构成)
+    - [1.2 进行时态的意义](#12-进行时态的意义)
       - [一、直接给出具体的时间](#一直接给出具体的时间)
       - [二、通过另一活动表达这一特定时刻](#二通过另一活动表达这一特定时刻)
-    - [8.1.3 进行时态的使用语境](#813-进行时态的使用语境)
-  - [8.2 现在进行时——不一定正在进行](#82-现在进行时不一定正在进行)
-    - [8.2.1 用法一: 说话时刻正在进行的动作 (action happening exactly now)](#821-用法一-说话时刻正在进行的动作-action-happening-exactly-now)
-    - [8.2.2 用法二: 在目前一段时期内持续的一种暂时的情况 (action happening around now)](#822-用法二-在目前一段时期内持续的一种暂时的情况-action-happening-around-now)
-    - [8.2.3 用法三: 用于表示“改变”的动词，强调“逐渐变化”的过程](#823-用法三-用于表示改变的动词强调逐渐变化的过程)
-    - [思维训练 8.2.1-8.2.3](#思维训练-821-823)
-    - [8.2.4 用法四: 用于强烈的感情色彩的表达](#824-用法四-用于强烈的感情色彩的表达)
-    - [8.2.5 用法五: 表示将来确定的安排](#825-用法五-表示将来确定的安排)
-    - [8.2.6 用法六：与 always 等连用，表示多次重复，且含感情色彩](#826-用法六与-always-等连用表示多次重复且含感情色彩)
-  - [8.3 过去进行时——回顾过去讲故事](#83-过去进行时回顾过去讲故事)
-    - [8.3.1 常见用法：用来设置故事的背景](#831-常见用法用来设置故事的背景)
+    - [1.3 进行时态的使用语境](#13-进行时态的使用语境)
+  - [2. 现在进行时——不一定正在进行](#2-现在进行时不一定正在进行)
+    - [2.1 用法一: 说话时刻正在进行的动作 (action happening exactly now)](#21-用法一-说话时刻正在进行的动作-action-happening-exactly-now)
+    - [2.2 用法二: 在目前一段时期内持续的一种暂时的情况 (action happening around now)](#22-用法二-在目前一段时期内持续的一种暂时的情况-action-happening-around-now)
+    - [2.3 用法三: 用于表示“改变”的动词，强调“逐渐变化”的过程](#23-用法三-用于表示改变的动词强调逐渐变化的过程)
+    - [思维训练 2.1-2.3](#思维训练-21-23)
+    - [2.4 用法四: 用于强烈的感情色彩的表达](#24-用法四-用于强烈的感情色彩的表达)
+    - [2.5 用法五: 表示将来确定的安排](#25-用法五-表示将来确定的安排)
+    - [2.6 用法六：与 always 等连用，表示多次重复，且含感情色彩](#26-用法六与-always-等连用表示多次重复且含感情色彩)
+  - [3. 过去进行时——回顾过去讲故事](#3-过去进行时回顾过去讲故事)
+    - [3.1 常见用法：用来设置故事的背景](#31-常见用法用来设置故事的背景)
       - [一、动作长短的相对性及其与时态的关系](#一动作长短的相对性及其与时态的关系)
       - [二、when 和 while 的区别](#二when-和-while-的区别)
-    - [8.3.2 少见用法：两个过去同时在持续的动作](#832-少见用法两个过去同时在持续的动作)
-    - [思维训练 8.3.1-8.3.2](#思维训练-831-832)
+    - [3.2 少见用法：两个过去同时在持续的动作](#32-少见用法两个过去同时在持续的动作)
+    - [思维训练 3.1-3.2](#思维训练-31-32)
     - [8.3.3 典型用法：描述一件过去特定时刻正在发生的事情](#833-典型用法描述一件过去特定时刻正在发生的事情)
-    - [8.3.4 口语用法：表示委婉的请求或建议](#834-口语用法表示委婉的请求或建议)
-    - [思维训练 8.3 过去进行时——回顾过去讲故事](#思维训练-83-过去进行时回顾过去讲故事)
-  - [8.4 将来进行时——想象未来](#84-将来进行时想象未来)
-    - [8.4.1 典型用法：将来某一特定时刻正在持续的事](#841-典型用法将来某一特定时刻正在持续的事)
-    - [8.4.2 口语用法：将来计划好的事](#842-口语用法将来计划好的事)
+    - [3.4 口语用法：表示委婉的请求或建议](#34-口语用法表示委婉的请求或建议)
+    - [思维训练 3. 过去进行时——回顾过去讲故事](#思维训练-3-过去进行时回顾过去讲故事)
+  - [4. 将来进行时——想象未来](#4-将来进行时想象未来)
+    - [4.1 典型用法：将来某一特定时刻正在持续的事](#41-典型用法将来某一特定时刻正在持续的事)
+    - [4.2 口语用法：将来计划好的事](#42-口语用法将来计划好的事)
     - [8.4.3 少见用法：表示背景动作——提供另外一个短动作发生的事件背景](#843-少见用法表示背景动作提供另外一个短动作发生的事件背景)
-    - [8.4.4 难点用法一：用在疑问句中，表示客气地询问](#844-难点用法一用在疑问句中表示客气地询问)
-      - [思维训练 8.4.4 难点用法一：用在疑问句中，表示客气地询问](#思维训练-844-难点用法一用在疑问句中表示客气地询问)
-    - [8.4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆](#845-难点用法二用来表示客观的将来以避免与表示意愿的-will-do-混淆)
-      - [思维训练 8.4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆](#思维训练-845-难点用法二用来表示客观的将来以避免与表示意愿的-will-do-混淆)
-    - [思维总结 8.4 将来进行时——想象未来](#思维总结-84-将来进行时想象未来)
-    - [思维训练 8.4 将来进行时——想象未来](#思维训练-84-将来进行时想象未来)
-  - [8.5 难点：深入分析进行时的思维特征](#85-难点深入分析进行时的思维特征)
+    - [4.4 难点用法一：用在疑问句中，表示客气地询问](#44-难点用法一用在疑问句中表示客气地询问)
+      - [思维训练 4.4 难点用法一：用在疑问句中，表示客气地询问](#思维训练-44-难点用法一用在疑问句中表示客气地询问)
+    - [4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆](#45-难点用法二用来表示客观的将来以避免与表示意愿的-will-do-混淆)
+      - [思维训练 4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆](#思维训练-45-难点用法二用来表示客观的将来以避免与表示意愿的-will-do-混淆)
+    - [思维总结 4. 将来进行时——想象未来](#思维总结-4-将来进行时想象未来)
+    - [思维训练 4. 将来进行时——想象未来](#思维训练-4-将来进行时想象未来)
+  - [5. 难点：深入分析进行时的思维特征](#5-难点深入分析进行时的思维特征)
+    - [5.1 进行时态的核心含义（grammatical aspect）](#51-进行时态的核心含义grammatical-aspect)
+      - [一、进行体动作与一般动作对比](#一进行体动作与一般动作对比)
+      - [二、不适合用进行体的情形](#二不适合用进行体的情形)
+    - [5.2 进行时态与动词体（lexical aspect）](#52-进行时态与动词体lexical-aspect)
+      - [一、静态动词](#一静态动词)
+      - [二、短暂动词](#二短暂动词)
+    - [思维总结：5. 难点：深入分析进行时的思维特征](#思维总结5-难点深入分析进行时的思维特征)
+  - [6. 过去将来进行时](#6-过去将来进行时)
+  - [综合训练：进行时态](#综合训练进行时态)
 
-## 8.1 引言
+## 1. 引言：进行时态
 
-### 8.1.1 进行时态的构成
+### 1.1 进行时态的构成
 
 进行时态 (continuous tense) 的构成是 be + doing。
 注意，这里的 be 动词不是**系动词**，而是**助动词**，因而没有"是"的意思。
@@ -61,7 +70,7 @@
 | \              | we/you/they were doing |
 | 将来进行时     | will be doing          |
 
-### 8.1.2 进行时态的意义
+### 1.2 进行时态的意义
 
 进行时态最典型的一个意义是表示**正在发生的动作**。
 具体来说，进行时是强调在某个特定的时间点(现在、过去或将来)，某项活动正在发生。
@@ -84,14 +93,14 @@
 - `例 6`: I was watching CCTV news when he arrived.
 - `例 7`: I will be studying English when you come tomorrow.
 
-### 8.1.3 进行时态的使用语境
+### 1.3 进行时态的使用语境
 
 进行时态因为往往强调在说话时刻某活动正在发生，所以常用进行时态表达生动、具体的场景。
 正因为进行时态表现生动，所以在**口语中出现的频率远远高于书面语**。
 
-## 8.2 现在进行时——不一定正在进行
+## 2. 现在进行时——不一定正在进行
 
-### 8.2.1 用法一: 说话时刻正在进行的动作 (action happening exactly now)
+### 2.1 用法一: 说话时刻正在进行的动作 (action happening exactly now)
 
 现在进行时态在口语中尤其频繁出现，最典型的用法是表示在说话的时刻正在进行的动作
 (action happening at the time of speaking or exactly now)。
@@ -108,7 +117,7 @@
 - `例 6`: Please don't make so much noise. I am studying. I can't concentrate.
 - `例 7`: Someone is knocking at the door. Can you answer it?
 
-### 8.2.2 用法二: 在目前一段时期内持续的一种暂时的情况 (action happening around now)
+### 2.2 用法二: 在目前一段时期内持续的一种暂时的情况 (action happening around now)
 
 现在进行时还常常用来表示现阶段正在持续的活动。
 这时进行时态表示的是一个一般性的活动，**在说话时刻这个动作并不一定正在发生**，
@@ -142,7 +151,7 @@ and just after now, and it is not permanent or habitual.)。
 以上例子都是表示现阶段在延续的一般活动，而不是正在发生的活动。
 但它们并不是恒久的或是规律性的活动 (not permanent or habitual)，否则就要用一般现在时态了。
 
-### 8.2.3 用法三: 用于表示“改变”的动词，强调“逐渐变化”的过程
+### 2.3 用法三: 用于表示“改变”的动词，强调“逐渐变化”的过程
 
 这种表示 action happening around now 的进行时态的用法，若是用于表示"改变"的动词，
 则强调"逐渐变化"的过程。常见的表示"改变"的动词有:
@@ -162,7 +171,7 @@ become, change, come, deteriorate, get, grow
 - `例 7`: Money at home and from abroad is changing Shanghai.
 - `例 8`: I need a vacation. I'm getting burned-out from working too much.
 
-### 思维训练 8.2.1-8.2.3
+### 思维训练 2.1-2.3
 
 **一、用动词的适当形式填空。**
 
@@ -204,7 +213,7 @@ workers.*
 
 答案: Because our factory is losing money
 
-### 8.2.4 用法四: 用于强烈的感情色彩的表达
+### 2.4 用法四: 用于强烈的感情色彩的表达
 
 复习"与现在有关的动作"的用法:
 
@@ -249,7 +258,7 @@ workers.*
   - 你该不是不想和我约会吧？
 - `例 11`: You are asking too much!
 
-### 8.2.5 用法五: 表示将来确定的安排
+### 2.5 用法五: 表示将来确定的安排
 
 现在进行时在口语中还经常用来表示**将来的动作 (action in the future)**，
 此时现在进行时是表示在说话之前就确定的、计划好的将来的安排。
@@ -301,7 +310,7 @@ be going to do 和 be doing 的主要区别：
   - ❌ We are winning the tennis match next weekend.
   - ✅ We are going to win the tennis match next weekend.
 
-### 8.2.6 用法六：与 always 等连用，表示多次重复，且含感情色彩
+### 2.6 用法六：与 always 等连用，表示多次重复，且含感情色彩
 
 现在进行时的感情色彩的表达，还可常与 always, forever, continually 和 constantly
 等连用，表示多次重复的行为。
@@ -316,9 +325,9 @@ be going to do 和 be doing 的主要区别：
   - `例 4`：He'**s continually asking** me for money.
   - `例 5`：My wife **is forever looking** for her keys.
 
-## 8.3 过去进行时——回顾过去讲故事
+## 3. 过去进行时——回顾过去讲故事
 
-### 8.3.1 常见用法：用来设置故事的背景
+### 3.1 常见用法：用来设置故事的背景
 
 在讲故事时，往往会用到过去进行时态 (the past continuous tense) was/were doing
 来设置故事发生的过去北京。
@@ -369,7 +378,7 @@ be going to do 和 be doing 的主要区别：
 - `例 12`：The car exploded when I was walking past it.
 - `例 13`：The car exploded while I was walking past it.
 
-### 8.3.2 少见用法：两个过去同时在持续的动作
+### 3.2 少见用法：两个过去同时在持续的动作
 
 若句子中的两个动作都是较长的动作，则两个动作都用过去进行时，表示两个过去同时在持续的动作。
 此时分不出哪个动作先发生。
@@ -378,7 +387,7 @@ be going to do 和 be doing 的主要区别：
   their friends.
 - `例 2`：While I was studying last night, my wife was watching TV.
 
-### 思维训练 8.3.1-8.3.2
+### 思维训练 3.1-3.2
 
 **一、告诉你的朋友这样一个故事。**
 
@@ -402,7 +411,7 @@ someone rang the doorbell. I answered the door, but found nobody outside...
 - `例 4`：
   - It was raining hard, but no one stopped working.
 
-### 8.3.4 口语用法：表示委婉的请求或建议
+### 3.4 口语用法：表示委婉的请求或建议
 
 在口语表达中，常常用**过去进行时**来表示委婉的请求或建议，这时并不表示过去时间的动作。
 这尤其适用于表示态度的动词，如 wonder，hope，think
@@ -423,7 +432,7 @@ someone rang the doorbell. I answered the door, but found nobody outside...
 - `例 6`：I hope to borrow your car.
 - `例 7`：I wonder if you can lend me your car.
 
-### 思维训练 8.3 过去进行时——回顾过去讲故事
+### 思维训练 3. 过去进行时——回顾过去讲故事
 
 **二、翻译下列句子。**
 
@@ -436,14 +445,14 @@ someone rang the doorbell. I answered the door, but found nobody outside...
 答案：I cut my finger while I was cooking dinner last week. Now I have a scar on
 my finger.
 
-## 8.4 将来进行时——想象未来
+## 4. 将来进行时——想象未来
 
 在实际的口语交际中，**将来进行时态**被频繁使用。
 
 - He won't come. `vs.` He won't be coming.
 - How will you pay for this? `vs.` How will you be paying for this?
 
-### 8.4.1 典型用法：将来某一特定时刻正在持续的事
+### 4.1 典型用法：将来某一特定时刻正在持续的事
 
 将来进行时态的典型用法，就是**想象自己或其他人在将来某一特定时刻 (at a particular time in
 future) 正在做某事**。
@@ -457,7 +466,7 @@ future) 正在做某事**。
 - `例 3`：Wait until seven o'clock so that they won't still be eating.
 - `例 5`：Do you think you will still be working here in two years' time?
 
-### 8.4.2 口语用法：将来计划好的事
+### 4.2 口语用法：将来计划好的事
 
 日常口语中，**常用 will be doing 来谈一个将来计划好的事情**。
 
@@ -496,7 +505,7 @@ future) 正在做某事**。
 - `例 4`：If we don't hurry, the musicians will be playing by the time we
   arrive.
 
-### 8.4.4 难点用法一：用在疑问句中，表示客气地询问
+### 4.4 难点用法一：用在疑问句中，表示客气地询问
 
 **为什么用 "How will you be paying for this?" 而不用
 "How will you pay for this?"**？
@@ -551,7 +560,7 @@ future) 正在做某事**。
   - When will she contact me?
     - 她什么时候才能联系我啊？（显得有点不耐烦）
 
-#### 思维训练 8.4.4 难点用法一：用在疑问句中，表示客气地询问
+#### 思维训练 4.4 难点用法一：用在疑问句中，表示客气地询问
 
 **一、请分析和比较下列两句的含义差别，并准确译成中文。**
 
@@ -574,7 +583,7 @@ said.*
 
 答案：用将来进行时态 will be wanting，表示委婉询问，因为这是女仆对主人的询问，所以要有礼貌。
 
-### 8.4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆
+### 4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆
 
 `例 1`：
 
@@ -613,7 +622,7 @@ said.*
   - He won't be resigning.
     - （我想）他不会辞职。
 
-#### 思维训练 8.4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆
+#### 思维训练 4.5 难点用法二：用来表示客观的将来，以避免与表示“意愿”的 will do 混淆
 
 **请分析和比较下列每组句子的含义差别，并准确译成中文。**
 
@@ -641,7 +650,7 @@ said.*
 - b: 表示主观意图
   - 译：我们会飞到三万英尺。
 
-### 思维总结 8.4 将来进行时——想象未来
+### 思维总结 4. 将来进行时——想象未来
 
 将来进行时态 will be doing 有下列五种意义和用法：
 
@@ -651,7 +660,7 @@ said.*
 4. 用在疑问句中，表示客气的询问。这一用法在口语中尤为常见；
 5. 用 will be doing 来表示客观的将来，以避免与表示“意愿”的 will do 混淆。
 
-### 思维训练 8.4 将来进行时——想象未来
+### 思维训练 4. 将来进行时——想象未来
 
 **一、用括号中动词的适当时态形式填空。**
 
@@ -669,6 +678,255 @@ said.*
 
 答案：He won't be resigning.
 
-## 8.5 难点：深入分析进行时的思维特征
+## 5. 难点：深入分析进行时的思维特征
+
+在英语中，并不是所有的动词都可以与进行体连用，比如：
+
+- 是的，我现在懂了。
+  - ❌ Yes, I am understanding you now.
+
+有些动词虽然可以与进行时态搭配使用，但不能在某些句子中使用，比如：
+
+- ❌ Tom was washing three cars.
+- ✅ Tom was washing cars.
+
+上面两个例子都与“体”有关，英语的“体”与动作内在结构特点方面的属性有关。
+当谈到“时”时，关心的是这个动作发生的时间，即是现在、过去还是将来发生的。
+而当谈到“体”时，关心的则是这个动作是固定不变的还是动态变化的（fixed or changing）；
+这个动作是完成了的还是在延续的（complete or ongoing）；
+这个动作持续的时间是很短还是很长（lasting for only a moment or for a long time）。
+
+英语通过两方面来表达“体”方面的属性，也就是英语中的两类体：
+
+1. 语法体（grammatical aspect）：**进行体（continuous）**和**完成体（perfect）**；
+2. 动词体（lexical aspect）：用于标示动词词义本身所固有的特点（in inherent properties
+   of the verb's meaning），分为**状态和动作（state and action）**，
+   其中动作又分为**短暂动作和延续动作（punctual and durative）**。
+
+“体”有广义和狭义之分：广义的“体”包括“语法体”和“动词体”；狭义的“体”指“语法体”。
+
+动词有自己的内在词汇含义，因此动词的不同会对语法方面的意义产生影响。
+“语法体”和“动词体”之间所相互作用的，二者的共同作用不仅影响到时态的正确使用，
+同时也深刻地影响着对句子意思的理解。
+
+### 5.1 进行时态的核心含义（grammatical aspect）
+
+这里的“语法体”就是“进行体”。进行动作的核心意义在于表示：
+
+1. **事件具有持续性（ongoing）**：进行时态首先表示的是一个事件或活动在某个特定的时间正在持续；
+2. **事件具有短暂性（temporary）**：即表明事件的持续时间是有限的。
+   如果是无限的，即表达一个长期的、恒久的含义，则应该用一般现在时态；
+3. **事件未完成（incomplete）**：进行体即然强调动作的持续性，那么就表明这个动作还没有结束。
+
+因此，一个进行体动作往往具有持续性、短暂性和未完成性这样的特点。
+当然，具体的句子不必同时都包含这三个特点。
+
+总体而言，**现在进行时用于描述有限时间内正在进行的动作**，而**一般现在时经常与状态相联系**。
+
+#### 一、进行体动作与一般动作对比
+
+**1. 活动与状态的对比**：进行体表示具体的活动，而一般时态往往与状态有关。
+
+- `1`
+  - I am thinking about the answer.
+    - 进行时态表明 think 是用于“动态”的意义，相当于 consider，表示思考活动。
+  - I think the answer is 144.
+    - 一般时态表明 think 是用于“静态”的意义，相当于说 have an opinion，表示思维状态。
+
+**2. 发生在说话那一刻的一个动作与一个习惯的对比**：进行体表示发生在说话时刻的一个动作，
+而一般时态则表示一个习惯。
+
+- `2`
+  - Why are you wearing glasses?
+    - 现在进行时态表示一个当下的具体动作，即“在说话的时刻，对方正在戴着眼镜”。
+  - Why do you wear glasses?
+    - 一般现在时态表示一个习惯动作，即使在说话的时刻对方并没有戴眼镜也可以说这句话。
+
+**3. 具体事件与概括描述的对比**：进行体总是十分具体的，而一般动作可用于概括的叙述。
+
+- `3`
+  - Weeds are growing like wildfire (in my garden).
+    - 进行时态往往会表达目前所见到的一个具体场景。
+  - Weeds grow like wildfire.
+    - 一般时态通常表示一个一般情形。
+- `4`
+  - What are you doing for the Spring Festival?
+    - 进行时态表示计划好的活动，这里是针对一个具体的春节来说的，即将要来临的这个春节。
+    - 今年春节你打算怎么过？
+  - What do you do for the Spring Festival?
+    - 一般时态则不是具体所指，而只是询问对方的习惯，这里是问每年的春节时对方要做什么。
+    - 春节你一般都是怎么过的？
+
+**4. 暂时的事件与长期的状态对比**：进行体表示暂时的事件，而一般时态则往往表示一个长期的状态。
+
+- `5`
+  - Joan is singing well.
+    - 进行时态表示，在某一特定的场合，也就是在说话的时刻，Joan
+      唱歌发挥得很好，或者指她在某一特定的演出中的唱歌表演。说明的是一次具体的活动。
+  - Joan sings well.
+    - 一般现在时态则是强调 Joan 有一副好嗓子，是一种比较永久的属性，相当于一个状态的表达，
+      而不是指具体的演唱活动。
+- `6`
+  - Linda is living with her parents (until she gets a better job).
+  - Linda lives with her parents (because it costs her too much to live alone).
+- `7`
+  - Mr. Smith is standing by the Nile.
+  - The Sphinx stands by the Nile.
+- `8`
+  - They were living in Beijing during the seventies.
+    - 他们 70 年代生活在北京。
+  - They lived in Beijing all their lives.
+    - 他们一辈子都生活在北京。
+
+**5. 未完成与完成对比**：过去进行时表示动作未完成，一般过去时表示动作已完成。
+
+- `9`
+  - He was drowning in the lake, so the lifeguard raced into the water.
+    - 进行时态表示 drown 的动作尚未完成，即他当时正在溺水，而并没有死，还在挣扎。
+  - He drowned in the lake.
+    - 一般过去时态表示一个完成了的过去动作，即他溺水身亡了。
+
+**6. 事件可变化与不变化的对比**：过去进行时表示事件已经开始进行，并随着时间的推移在继续，
+因此它允许有变化；而一般过去时把事件看作一个整体，没有变化的余地。
+
+- `10`
+  - He was calling Mary when I came in.
+    - “打电话”在先，“我进来”灾后。过去进行时表示“打电话”先于“我进来”，并且在“我进来”之后，
+      他可能还在继续打电话，也可能立即结束打电话。即“打电话”这一事件可以有变化。
+  - He called Mary when I came in.
+    - “我进来”在先，“打电话”在后。一般过去时把“打电话”这一事件作为一个整体，
+      只是说明“他给玛丽打了个电话”，而不能说明这个事件是继续进行的还是立即停止了。
+
+#### 二、不适合用进行体的情形
+
+进行时态包含这样两个意义：一是事件的持续性（ongoing），二是事件的短暂性，即有限的持续性。
+进行时强调的是动作在一段时间里的持续性，因此这一活动必须是连续不断的。
+如果把动作分割开了看，则违背了进行时态的核心意义——持续性，所以不能用进行时态。
+
+我们在下列两种情况下会把动作分割开：一是谈到在一段时间内做了不同的事情，二是说明某件事发生的次数。
+因此，在这两种情形都不能使用各种进行时态。
+
+**1. 不用进行时谈不能在同一时间内同时做的不同事情**：即使是几件同样的事情在同时做，也不能用进行时态。
+
+- `11`
+  - ❌ I am painting the room and cooking dinner.
+  - ✅ I am painting the room and after that I will cook dinner.
+- `12`
+  - ❌ Tom was washing three cars.
+    - 这个句子给人的感觉是 Tom 有三只手，他用三只手同时在擦洗三辆车，
+      但这显然不符合通常的情况。所以，这个句子听起来很怪，而被认为不正确。
+  - ✅ Tom was washing cars.
+  - 如果要说明具体有几辆车，就要用一般过去时说成：
+  - ✅ Tom washed three cars.
+- `13`
+  - ❌ I am writing six letters.
+  - ✅ I am writing letters.
+
+如果是两个可以同时进行的动作，则两个都可用进行时态表示。
+
+- `15`: She was knitting and listening to the radio.
+- `16`: I was having dinner and watching the news.
+
+**2. 不用进行式谈活动的次数**：当我们说到做一件事情的次数，此时也是把动作割裂开了，
+因而与进行时态的“持续性”特点发生了语义冲突，所以不能用进行时态表达。
+
+- `17`
+  - ❌ I was ringing the bell six times.
+  - ✅ I rang the bell six times.
+- `18`
+  - ❌ I will be knocking three times if your door is closed.
+  - ✅ I will knock three times if your door is closed.
+
+### 5.2 进行时态与动词体（lexical aspect）
+
+对于进行体动作，需要关注动词词义本身的特点，比如它是表示动作还是状态，是短暂动词还是延续动词等。
+换句话说，进行时态的使用与动词词义本身所固有的特点是密切相关的。
+
+根据动词词义的特点，可以把动词分为静态动词（stative verb）和动态动词（dynamic verb）。
+动态动词又可以进一步分为短暂动词（punctual verb）和延续动词（durative verb）。
+因此，从词义的角度，可以把动词分为**静态动词**、**短暂动词**和**延续动词**。
+
+#### 一、静态动词
+
+静态动词与变化无关，它们描述的是一个稳定的状况（situations that are relatively
+constant over time），这种状况会或长或短地持续下去。一般来说，静态动词可包括以下几类：
+
+- 感觉感官（perception）
+  - feel
+  - hear
+  - see
+  - smell
+  - taste
+- 心理知觉（cognition）
+  - believe
+  - doubt
+  - forget
+  - imagine
+  - know
+    - And we know the answers.
+  - mean
+  - realize
+  - recognize
+  - remember
+  - think
+  - understand
+    - We understand the questions.
+  - want
+- 所属关系（possession）
+  - bear
+  - belong
+  - have
+    - And we have opinions.
+  - lack
+  - owe
+  - own
+  - possess
+- 情感、态度、观点（emotion or opinion）
+  - appreciate
+  - care
+  - desire
+  - dislike
+  - doubt
+  - envy
+  - fear
+  - feel
+  - hate
+    - But we hate the tests.
+  - like
+    - We like our English class.
+  - love
+  - mind
+  - need
+  - prefer
+  - want
+  - wish
+- 度量（measure）
+  - cost
+  - equal
+  - measure
+  - weigh
+- 相互关系（relation）
+  - consist of
+  - contain
+  - entail
+  - include
+- 描述（description）
+  - appear
+  - be
+    - We are intelligent people.
+  - look
+  - resemble
+  - seem
+  - sound
+
+#### 二、短暂动词
 
 >>>>> progress
+
+### 思维总结：5. 难点：深入分析进行时的思维特征
+
+>>>>> progress
+
+## 6. 过去将来进行时
+
+## 综合训练：进行时态
