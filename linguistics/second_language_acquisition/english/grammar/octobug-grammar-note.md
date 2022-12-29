@@ -62,7 +62,7 @@
 
 <div class="page"/>
 
-:[1. 名词](1_1_noun.md)
+:[1. 名词](noun.md)
 
 <div class="page"/>
 

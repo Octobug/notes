@@ -4,7 +4,7 @@
 
 1. 句子成分
    1. [名词短语](noun_phrase.md)
-   2. 名词
+   2. [名词](noun.md)
    3. 限定词（一）：冠词
    4. 限定词（二）：数量限定词与个体限定词
    5. 形容词
@@ -16,7 +16,7 @@
    1. [名词从句](nominal_clause.md)
    2. [定语从句](attributive_clause.md)
    3. [状语从句](adverbial_clause.md)
-4. 十六种时态
+4. 四种时态
    1. 一般时态
    2. [进行时态](continuous_tense.md)
    3. 完成时态
@@ -45,7 +45,7 @@
 #### 初级教程：走近语法
 
 - [x] [0. 名词短语](noun_phrase.md)
-- [x] [1. 名词](1_1_noun.md)
+- [x] [1. 名词](noun.md)
 - [x] [2. 限定词（一）：冠词](1_2_determiner_article.md)
 - [x] [3. 限定词（二）：数量限定词与个体限定词](1_3_determiner_quantifying_and_individual.md)
 - [x] [4. 形容词](1_4_adjective.md)
