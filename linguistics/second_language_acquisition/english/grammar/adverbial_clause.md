@@ -56,7 +56,12 @@
       - [二、结构2：as + 形容词 + a(n) + 可数名词单数 + as](#二结构2as--形容词--an--可数名词单数--as)
       - [三、在否定句中第一个 as 可用 so 代替](#三在否定句中第一个-as-可用-so-代替)
       - [四、为了保持句子平衡，从句还可以用倒装结构](#四为了保持句子平衡从句还可以用倒装结构)
-    - [4.8.2 连词 than 的基本用法](#482-连词-than-的基本用法)
+    - [9.2 连词 than 的基本用法](#92-连词-than-的基本用法)
+      - [一、可比性问题](#一可比性问题)
+      - [二、比较形式问题](#二比较形式问题)
+      - [三、为了保持句子平衡，从句还可以用全部或部分倒装](#三为了保持句子平衡从句还可以用全部或部分倒装)
+    - [9.3 表示倍数比较的三种句型](#93-表示倍数比较的三种句型)
+  - [10. 方式状语从句](#10-方式状语从句)
 
 ## 1.状语从句概述
 
@@ -914,6 +919,55 @@ as 引导比较状语从句，其基本结构是 as...as...，其中前一个 as
   did the Industrial Revolution**.
   - 计算机革命对于我们人类社会的改变之深刻，就如同当年的工业革命。
 
-### 4.8.2 连词 than 的基本用法
+### 9.2 连词 than 的基本用法
+
+#### 一、可比性问题
+
+可比性问题指两个**同类事物**才能比较。
+
+- `1`
+  - He is taller than I (am).
+  - ❌ The weather of the South is wetter than the North.
+  - ✅ The weather of the South is wetter than that of the North.
+- `2`: Young readers, more often than ***not***`A`, find the novels ***of***`B`
+  Dickens ***far more***`C` exciting than ***Thackeray***`D`.
+  - 答案：D。应改为：Thackeray's。
+
+#### 二、比较形式问题
+
+指在有 than 的比较句子里，主句中必须有**比较级形式**出现。
+
+- `1`: There are few electronic applications ____ to raise fears regarding
+  future employment opportunities than robots.
+  - A. likely
+  - B. more likely
+  - C. most likely
+  - D. much likely
+  - 答案：B。
+- `2`: ***On the whole***`A`, ambitious students are ***much likely***`B` to
+  succeed in their studies than ***are those***`C` with ***little***`D`
+  ambition.
+  - 答案：D。应改为：more likely。
+
+#### 三、为了保持句子平衡，从句还可以用全部或部分倒装
+
+此时的结构是：than 助动词 + 主语。
+
+- `1`: On the whole, ambitious students are more likely to succeed in their
+  studies than are those with little ambition.
+  - than are those with little ambition 是一个倒装结构，主语是 those with little
+    ambition。
+- `2`: Foreign-born Asians and Hispanics "have higher rates of intermarriage
+  than do U.S.-born whites and blacks".
+- `3`: In addition, far more Japanese workers expressed dissatisfaction with
+  their jobs than did their counterparts in the 10 other countries surveyed.
+- `4`: The surface conditions on the planet Mars are more like the Earth's than
+  are those of any other planet in the solar system.
+
+### 9.3 表示倍数比较的三种句型
+
+>>>>> progress
+
+## 10. 方式状语从句
 
 >>>>> progress
