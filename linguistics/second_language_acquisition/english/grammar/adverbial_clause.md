@@ -61,6 +61,9 @@
       - [二、比较形式问题](#二比较形式问题)
       - [三、为了保持句子平衡，从句还可以用全部或部分倒装](#三为了保持句子平衡从句还可以用全部或部分倒装)
     - [9.3 表示倍数比较的三种句型](#93-表示倍数比较的三种句型)
+    - [9.4 the more..., the more 句型](#94-the-more-the-more-句型)
+    - [思维训练 9. 比较状语从句](#思维训练-9-比较状语从句)
+      - [答案：思维训练 9. 比较状语从句](#答案思维训练-9-比较状语从句)
   - [10. 方式状语从句](#10-方式状语从句)
 
 ## 1.状语从句概述
@@ -966,7 +969,126 @@ as 引导比较状语从句，其基本结构是 as...as...，其中前一个 as
 
 ### 9.3 表示倍数比较的三种句型
 
->>>>> progress
+在英文中，除了用 than 和 as 来对两个事物进行比较外，还可以用 times 和 twice
+等词来说明两事物之间的倍数关系，可有以下三种句型：
+
+1. “倍数 + 比较级”结构：A is three times **bigger（或其他形容词的比较级）than** B
+2. “倍数 + as...as”结构：A is three times **as big（或其他形容词的原级）as** B
+3. “倍数 + 名词”结构：A is three times **the size（或其他形容词对应的名词形式）of** B
+
+- `1`: When the United States entered just such a glowing period after the end
+  of the Second World War, it had a market **eight times larger than** any
+  competitor, giving its industries unparalleled economies of scale.
+  - 美国在二战后进入这样辉煌的历史时期时，其市场规模比任何竞争对手的八倍都要大，
+    这使其工业经济规模无可匹敌。
+- `2`: There are about 105 males born for every 100 females, but this ratio
+  drops to near balance at the age of maturity, and among 70-year-olds there are
+  **twice as many** women **as** men.
+- `3`: There are only **half as many** fisheries **as** there were 15 years ago.
+- `4`: According to the Canadian Institute for Health Information, prescription
+  drug costs have risen since 1997 at **twice the rate of** overall health-care
+  spending.
+  - 加拿大医疗信息协会的资料表明，自 1997 年以来，处方药费用的增长速度是整个医疗费用增长速度的两倍。
+- `5`: Smoking is so harmful to personal health that it kills ____ people each
+  year than automobile accidents.
+  - A. seven more times
+  - B. seven times more
+  - C. over seven times
+  - D. seven times
+  - 答案：B。“倍数 + 比较级”。
+- `6`: Americans eat ____ as they actually need every day.
+  - A. twice as much protein
+  - B. twice protein as much twice
+  - C. twice protein as much
+  - D. protein as twice much
+  - 答案：A。“倍数 + as...as”。
+
+### 9.4 the more..., the more 句型
+
+“the more..., the more”结构的基本意思是“越……，越……”。
+这里的**比较级部分都必须在各自的分句中充当一定的成分**，
+相当于是**将分句中的某个成分变为比较级之后提到了各自的句首**。
+
+- `1`：你用词越准确，人们就能越容易理解你的意思。
+  - ❌ The more exact you use your words, the easier people will understand you.
+    - the more exact 不能修饰 use，the easier 也不能修饰 understand，
+      即比较级部分无法充当后面分句的任何成分。
+  - The more exactly you use your words, the more easily people will understand
+    you.
+  - The more exact your words are, the easier it is for people to understand
+    you.
+  - The more exact words you use, the more easily people will understand you.
+
+这个句型有三个用法要点：
+
+1. 正确使用该句型的核心：**比较级部分都必须在各自引导的分句中充当一定的成分**。
+2. 从结构上来看，这个句型的前半部分是从句，后半部分是主句，即
+   “the + 比较级（从句），the + 比较级（主句）”，这就是为什么前半句常用**一般现在时态**，
+   而后半句常用**一般将来时态**，类似于其他状语从句的“主语用将来时，从句用一般现在时”的规则。
+3. 该结构翻译成汉语时，一般是按前后正常的语序来翻译，即先译从句，后译主句。
+
+💡 在这个句型中，系动词常常被省略。
+
+- `2`: An archaeologist is the best husband a woman can have: the older she is,
+  the more interested he is in her.
+  - 考古学家可谓是一个女人的丈夫的最好人选：因为她越老，他对她就会越感兴趣。
+- `3`: Aging is a part of life, and it can be an exciting and rewarding part. It
+  has been said that aging is like climbing a mountain: the higher you get, the
+  more tired and breathless you become, but the view becomes much more
+  extensive.
+- `4`: The more we help others, the more we receive in return.
+- `5`: Friends are lights in winter: the older the friend, the brighter the
+  light.
+  - 这个句子的比较级部分是省略结构，完整的表达是：the older the friend is, the brighter
+    the light is. 即这里省去了系动词 is。
+- `6`: The more time you spend with native speakers, the more you will
+  understand how they think and the better you will be able to write in a way
+  that is similar to theirs.
+- `7`: Why study? The more we study, the more we know. The more we know, the
+  more we forget. The more we forget, the less we know. So, why study?
+
+### 思维训练 9. 比较状语从句
+
+**一、请选择最佳答案填空。**
+
+*1. I would have paid ____ -- for my car if the salesman had insisted, because
+I really wanted it.*
+
+- *A. as much twice*
+- *B. much twice*
+- *C. twice as much*
+- *D. two times*
+
+*2. Any preexisting illness, even ____ the common cold, increases the chances of
+contracting another disease.*
+
+- *A. as mild one as*
+- *B. as one mild as*
+- *C. as a mild one as*
+- *D. as mild a one as*
+
+*3. In China the South generally receives much less snow than ____ the North.*
+
+- *A. does*
+- *B. it does*
+- *C. does in*
+- *D. it does in*
+
+*4. The number of registered participants in this year's marathon was half ____.*
+
+- *A. of last year's*
+- *B. those of last year's*
+- *C. of those of last year*
+- *D. that of last year's*
+
+#### 答案：思维训练 9. 比较状语从句
+
+1. C。“倍数 + as...as”结构。
+2. D。“as + 形容词 + a(n) + 可数名词单数 + as”
+3. A。这里比较对象是 South 和 North，does the North 是一个倒装结构，相当于 the North
+   receives.
+4. D。这里的句型结构是“倍数 + 名词”。比较对象是“今年的报名人数”和“去年的报名人数”。
+   这里的名词是 the number of registered participants，为了避免重复使用 that 来指代。
 
 ## 10. 方式状语从句
 
