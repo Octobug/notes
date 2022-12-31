@@ -46,7 +46,7 @@
 
 - [x] [0. 名词短语](noun_phrase.md)
 - [x] [1. 名词](noun.md)
-- [x] [2. 限定词（一）：冠词](1_2_determiner_article.md)
+- [x] [2. 限定词（一）：冠词](determiner_article.md)
 - [x] [3. 限定词（二）：数量限定词与个体限定词](1_3_determiner_quantifying_and_individual.md)
 - [x] [4. 形容词](1_4_adjective.md)
 - [x] [5. 动词分类（一）：实义动词与（情态）助动词](content_verbs_and_modal_auxiliary_verbs.md)

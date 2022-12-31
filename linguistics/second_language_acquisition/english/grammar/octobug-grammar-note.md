@@ -66,7 +66,7 @@
 
 <div class="page"/>
 
-:[2. 限定词 (一)：冠词](1_2_determiner_article.md)
+:[2. 限定词 (一)：冠词](determiner_article.md)
 
 <div class="page"/>
 
