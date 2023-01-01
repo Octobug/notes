@@ -31,6 +31,12 @@
   - [7. 完成进行时与完成时对比总结](#7-完成进行时与完成时对比总结)
     - [7.1 比较（五）：完成进行时强调“延续过程”，完成时强调“成果”](#71-比较五完成进行时强调延续过程完成时强调成果)
       - [一、未完成与已完成](#一未完成与已完成)
+      - [二、延续过程与结果（成果）](#二延续过程与结果成果)
+      - [三、感情色彩的不同](#三感情色彩的不同)
+      - [四、重复活动：完成进行时强调持续，不讲次数；完成时强调成果，讲次数](#四重复活动完成进行时强调持续不讲次数完成时强调成果讲次数)
+    - [7.2 现在完成进行时与现在完成时的思维差异总结](#72-现在完成进行时与现在完成时的思维差异总结)
+      - [一、时（tense）与态（aspect）](#一时tense与态aspect)
+      - [二、语法体与动词体](#二语法体与动词体)
   - [8. 过去完成进行时](#8-过去完成进行时)
 
 ## 1. 完成进行时态的构成
@@ -745,6 +751,101 @@ achievement）。**
   beginning of time.
 
 #### 一、未完成与已完成
+
+比较现在完成进行时的“未完成”与现在完成时的“已完成”：
+
+- `1`
+  - I have been reading your grammar book. After I finish it, I'll discuss some
+    problems with you.
+  - I have read your grammar book and I have questions to ask you.
+- `2`
+  - I have been reading the book you lent me but I haven't finished it yet.
+  - I have read the book you lent me, so you can have it back now.
+- `3`
+  - 1)
+    - A: Have you been cleaning the windows?
+    - B: Yes, but I haven't finished them yet.
+  - 2)
+    - A: Have you cleaned the windows?
+    - B: No, I haven't finished them yet.
+
+#### 二、延续过程与结果（成果）
+
+- `1`
+  - How long have you been learning English?
+    - 用现在完成进行时强调活动的持续过程。
+  - How many words have you learned?
+    - 用现在完成时强调学习的成果。
+- `2`
+  - How long have you been living in your present apartment?
+    - 延续事件
+  - How many apartments have you lived in in this city?
+    - 重复事件
+- `3`
+  - Robert has been living in Pittsburgh for several years.
+    - 延续事件
+  - Robert has lived in many different locations.
+    - 重复事件
+- `4`
+  - My hands are very dirty. I've been painting the house.
+    - 延续事件
+  - I have painted the house green. The house was white, but now it's green.
+    - 单一事件
+- `5`
+  - Sorry about the mess -- I've been painting the house.
+    - 延续事件
+  - I've painted two rooms since lunchtime.
+    - 重复事件
+- `6`
+  - A: Oh, I have been sitting in the same position too long. My legs have
+    fallen asleep.
+    - have been sitting 强调过程的延续性，have fallen asleep 强调 sit 的结果。
+  - B: Shake it a little before you get up.
+
+#### 三、感情色彩的不同
+
+由于完成进行时更强调动作的延续性，因而往往带有强烈的感情色彩，较为口语化。
+所以，在口语中完成进行时使用得较为普遍。
+而现在完成时则只是说明一个事实、一种结果，较为平铺直叙，缺乏明显的感情色彩。
+
+- `1`
+  - A: Why are you so late? I've been waiting here for more than an hour!
+    - 这里用了 have been waiting 的形式，显得较为生气。如果是说 have waited
+      则显得很平铺直叙，只是简单说明一个事实。
+  - B: Sorry to have kept you waiting. But is has been a hectic day today. I've
+    got a million things to attend to.
+- `2`: I've been waiting more than 30 years to say this: "Dad, I always told you
+  I'd come back and get my degree."
+
+注：上面两个例句中第一句时间状语使用了 for，而第二句没有。两种都是正确的，for
+在非句首时可以省略，但在正式的表达中一般不省略。
+
+#### 四、重复活动：完成进行时强调持续，不讲次数；完成时强调成果，讲次数
+
+- `1`
+  - I've been ironing my shirts this morning.
+    - 现在完成进行时**不能说出具体是几件衬衫**，强调的是持续的过程。
+  - I've ironed five shirts this morning.
+- `2`
+  - Jason has been neglecting his schoolwork to spend time with Julia. Now he is
+    failing his classes.
+  - Jason has neglected his schoolwork three times this semester.
+- `3`
+  - I've been traveling.
+  - I've done a lot of travel.
+- `4`
+  - I've been writing letters this morning.
+  - I've written three letters this morning.
+
+### 7.2 现在完成进行时与现在完成时的思维差异总结
+
+#### 一、时（tense）与态（aspect）
+
+谈到“时”的时候，我们关心的是这个动作发生的时间，即是现在、过去还是将来发生的。
+谈到“态”的时候，我们关心的则是这个动作是固定不变的还是动态变化的；
+这个动作是完成了的还是在延续的；这个动作持续的时间是很短还是很长。
+
+#### 二、语法体与动词体
 
 >>>>> progress
 
