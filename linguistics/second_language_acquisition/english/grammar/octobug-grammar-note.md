@@ -70,7 +70,7 @@
 
 <div class="page"/>
 
-:[3. 限定词 (二)：数量限定词与个体限定词](1_3_determiner_quantifying_and_individual.md)
+:[3. 限定词 (二)：数量限定词与个体限定词](determiner_quantifying_and_individual.md)
 
 <div class="page"/>
 
