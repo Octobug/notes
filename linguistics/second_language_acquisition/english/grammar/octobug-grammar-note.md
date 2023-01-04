@@ -74,7 +74,7 @@
 
 <div class="page"/>
 
-:[4. 形容词](1_4_adjective.md)
+:[4. 形容词](adjective.md)
 
 <div class="page"/>
 
