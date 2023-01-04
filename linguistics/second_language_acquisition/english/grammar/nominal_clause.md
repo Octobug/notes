@@ -28,16 +28,19 @@
       - [五、It + 动（宾） + that 从句](#五it--动宾--that-从句)
     - [2.2 一般疑问句作主语](#22-一般疑问句作主语)
     - [2.3 特殊疑问句作主语](#23-特殊疑问句作主语)
-    - [思维训练 2. 简单句与主语从句](#思维训练-2-简单句与主语从句)
-  - [3. 简单句与宾语从句](#3-简单句与宾语从句)
+    - [2.4 because 引导的主语从句](#24-because-引导的主语从句)
+    - [思维训练 2. 主语从句](#思维训练-2-主语从句)
+      - [答案：思维训练 2. 主语从句](#答案思维训练-2-主语从句)
+  - [3. 宾语从句](#3-宾语从句)
     - [3.1 陈述句作宾语](#31-陈述句作宾语)
     - [3.2 一般疑问句作宾语](#32-一般疑问句作宾语)
     - [3.3 特殊疑问句作宾语](#33-特殊疑问句作宾语)
-  - [4. 简单句与表语从句](#4-简单句与表语从句)
+    - [3.4 在及物动词后作宾语](#34-在及物动词后作宾语)
+  - [4. 表语从句](#4-表语从句)
     - [4.1 陈述句作表语](#41-陈述句作表语)
     - [4.2 一般疑问句作表语](#42-一般疑问句作表语)
     - [4.3 特殊疑问句作表语](#43-特殊疑问句作表语)
-  - [5. 简单句与同位语从句](#5-简单句与同位语从句)
+  - [5. 同位语从句](#5-同位语从句)
     - [5.1 陈述句作同位语](#51-陈述句作同位语)
     - [5.2 一般疑问句作同位语](#52-一般疑问句作同位语)
     - [5.3 特殊疑问句作同位语](#53-特殊疑问句作同位语)
@@ -45,7 +48,7 @@
       - [句子成分](#句子成分)
       - [结构变化](#结构变化)
   - [综合训练：名词从句](#综合训练名词从句)
-    - [1.2.2 whether 及连接代词或连接副词引导的主语从句](#122-whether-及连接代词或连接副词引导的主语从句)
+  - [1.4 表语从句](#14-表语从句)
 
 ## 1. 简单句与名词从句
 
@@ -382,38 +385,99 @@ whether 或 if (**if 只用在宾语从句中**) 来引导，**以保留原句�
 
 ### 2.2 一般疑问句作主语
 
-一般疑问句作主语时，要把一般疑问句变成陈述句，并且用 **whether** 来引导，然后充当句子的主语，
-即构成主语从句。
+一般疑问句作主语时，要把一般疑问句变成陈述句，并且用 **whether**
+来引导，然后充当句子的主语，即构成主语从句。whether 引导主语从句一般放在句首。
 
-Does he come or not?
-
-- Whether he comes or not makes no difference to me.
+- `1`: Does he come or not?
+  - Whether he comes or not makes no difference to me.
+- `2`: Whether the Government should increase the financing of pure science at
+  the expense of technology or vice versa often depends on the issue of which is
+  seen as the driving force.
+  - of 后面接的 which 从句是一个宾语从句，补充说明 issue，相当于 issue 的同位语。
+  - 政府究竟是以减少对技术的经费投入来增加对纯理论科学的经费投入，还是相反，
+    这往往取决于把哪一方面看作是驱动性的力量。
+- `3`: However, whether such a sense of fairness evolved indepentently in
+  capuchins and humans, or whether it stems from the common ancestor that the
+  species had 35 million years ago, is, as yet, an unanswered question.
+  - 这里有两个由 whether 引导的并列主语从句，由并列连词 or 连接。
+  - 不过，这种公平感是在卷尾猴和人类身上各自独立演化而成的，
+    还是来自于三千五百万年前他们共同的祖先，这还是一个未解之谜。
+- `4`: Whether the eyes are "the windows of the soul" is debatable; that they
+  are intensely important in interpersonal communication is a fact.
+  - 眼睛是否是“心灵的窗口”，这还有争议；但无疑，眼睛在人际交流中有着重要的作用。
 
 ### 2.3 特殊疑问句作主语
 
 特殊疑问句需要将原来的倒装句调整为陈述句语序，然后作主句的主语，即构成主语从句。
+连接代词或连接副词引导的主语从句一般也位于句首。
 
-- What do we need?
+- `1`: What do we need?
   - What we need is a wholly new kind of police force.
   - what 是 need 的宾语
-- What did he tell you?
+- `2`: What did he tell you?
   - What he told you is true.
   - what 是 told 的直接宾语
-- When is the meeting to be held?
+- `3`: When is the meeting to be held?
   - When the meeting is to be held has not yet been decided.
   - when 是从句的时间状语
-- How does a person master his fate.
+- `4`: How does a person master his fate.
   - How a person masters his fate is more important than what his fate is.
+- `5`: Whoever tries to resolve a conflict soon learns that nothing pleases
+  everybody.
+  - 连接代词 whoever 相当于 who 的强调形式，引导主语从句。
+- `6`: What happened on September 11, 2001 will be forever etched in our
+  memories.
+- `7`: Several days ago, a Beijing-based IT company fired about 400 people
+  overnight. The act startled the fired employees and at the same time worried
+  the rest. Moreover, what was special about this case was that the day before
+  the 400 were fired, they all received from their boss a gift -- the book *Who
+  Moved My Cheese*?
+  - 连接代词 what 引导主语从句。
+- `8`: How well the predictions will be validated by later performance depends
+  upon the amount, reliability, and appropriateness of the information used and
+  on the skill and wisdom with which it is interpreted.
+  - 连接副词 how 引导主语从句，how well 在从句中充当状语，修饰 validated。
 
-### 思维训练 2. 简单句与主语从句
+### 2.4 because 引导的主语从句
 
-**请把下列句子改写成 it 作主语的句子。**
+还有一种较为特殊的主语从句，即是由 because 引导的主语从句。
+这种主语从句的结构一般是“because + 陈述句”，置于主语位置，后面直接加谓语，而且这个谓语往往是
+does not mean。在 because 前面往往还会有 just 一词，其强调语气的作用。
 
-*6. That he has been late for work over and over again is a serious matter.*
+- `1`: Just because someone doesn't love you the way you want them to doesn't
+  mean they don't love you with all they have.
+  - 如果有人没有以你希望的方式去爱你，并不意味着他们没有全身心地爱你。
+- `2`: Something which seems valuable at first may turn out to be worthless.
+  Example: "All that glitters is not gold!" Just because something appears
+  valuable does not mean that it really is valuable.
+- `3`: There is a big difference between activity and accomplishment. Just
+  because you are doing something doesn't mean you are getting anywhere. One
+  must evaluate one's activity in order to have accomplishment.
+  - 工作与成就这两者之间是有很大差距的，仅仅是不停地工作并不意味着你就取得了成就。
+    因此，人们必须认真审视自己眼下的工作，看是否真的能够取得成就。
 
-答案: It is a serious matter that he has been late for work over and over again.
+### 思维训练 2. 主语从句
 
-## 3. 简单句与宾语从句
+**一、请把下列句子改写成 it 作主语的句子。**
+
+*1. That he has been late for work over and over again is a serious matter.*
+
+**二、选择最佳答案填空。**
+
+*2. ____ that the professor's strictness with him is not to punish a careless
+student but to teach hime how to be precise.*
+
+- *A. Joseph was dawned*
+- *B. It was dawned on Joseph*
+- *C. It dawned on Joseph*
+- *D. Joseph dawned it on*
+
+#### 答案：思维训练 2. 主语从句
+
+1. It is a serious matter that he has been late for work over and over again.
+2. B。这是一个固定句型，it dawns on sb. that...不用被动语态。
+
+## 3. 宾语从句
 
 ### 3.1 陈述句作宾语
 
@@ -462,7 +526,11 @@ Does he come or not?
   - The mother will buy whichever books her son wants.
   - 这里 whichever 相当于 which，是 which 的强调形式，作定语修饰 books
 
-## 4. 简单句与表语从句
+### 3.4 在及物动词后作宾语
+
+>>>>> progress
+
+## 4. 表语从句
 
 ### 4.1 陈述句作表语
 
@@ -492,7 +560,7 @@ Does he come or not?
   - Yesterday is history. Tomorrow is a mystery. Today is a gift. That's why
     it's called the present.
 
-## 5. 简单句与同位语从句
+## 5. 同位语从句
 
 所谓同位语，就是用来补充说明名词的成分。**被补充说明的名词，叫作先行词**。
 当用一个完整的句子来补充说明名词时，即构成同位语从句。所以，同位语从句都位于一个名词的后面，
@@ -609,6 +677,6 @@ silk ribbon on the young tree in his courtyard.*
 
 答案: why。这里 why 引导的是主语从句，从句被放在了句末。
 
-### 1.2.2 whether 及连接代词或连接副词引导的主语从句
+## 1.4 表语从句
 
 >>>>> progress
