@@ -36,6 +36,10 @@
     - [3.2 一般疑问句作宾语](#32-一般疑问句作宾语)
     - [3.3 特殊疑问句作宾语](#33-特殊疑问句作宾语)
     - [3.4 在及物动词后作宾语](#34-在及物动词后作宾语)
+    - [3.5 在双宾语动词后作直接宾语](#35-在双宾语动词后作直接宾语)
+    - [3.6 在双宾动词后作间接宾语](#36-在双宾动词后作间接宾语)
+    - [3.7 在介词后作宾语](#37-在介词后作宾语)
+    - [3.8 宾语从句后置](#38-宾语从句后置)
   - [4. 表语从句](#4-表语从句)
     - [4.1 陈述句作表语](#41-陈述句作表语)
     - [4.2 一般疑问句作表语](#42-一般疑问句作表语)
@@ -527,6 +531,52 @@ student but to teach hime how to be precise.*
   - 这里 whichever 相当于 which，是 which 的强调形式，作定语修饰 books
 
 ### 3.4 在及物动词后作宾语
+
+- I've learned that love, not time, heals all wounds. I've learned that everyone
+you meet deserves to be greeted with a smile.
+- I've learned that there's nothing sweeter than sleeping with your babies and
+feeling their breath on your cheeks.
+
+### 3.5 在双宾语动词后作直接宾语
+
+- `1`: I assure you that I had no intention of offending you.
+- `2`: Prof. Lee's book will show you how what you have observed can be used in
+  other contexts.
+  - 李教授的这本书会让你知道如何把你观察到的东西应用到其他场景中。
+
+### 3.6 在双宾动词后作间接宾语
+
+- They gave who came to the meeting a pamphlet.
+
+### 3.7 在介词后作宾语
+
+- `1`: I find the best way to concentrate is to make notes on **what the
+  teachers are saying**.
+  - what the teachers are saying 作介词 on 的宾语。
+- `2`: There is disagreement among economists about **what money is** and
+  **how money is measured**.
+  - what money is 以及 how money is measured 都作介词 about 的宾语。
+  - 经济学家之间对于什么是货币以及怎样计量存在分歧。
+- `3`: "The test of any democratic society," he wrote in a Wall Street Journal
+  column, "lies not in **how well it can control expression** but in
+  **whether it gives freedom of thought and expression the widest possible
+  latitude**, however disputable or irritating the results may sometimes be. We
+  won't retreat in the face of any threats."
+  - 他在《华尔街日报》的一个专栏中写道：“对任何民主社会的检验不在于它能多有效地控制言论的自由表达，
+    而在于它是否能最大限度地赋予思想自由和表达自由，尽管其结果有时可能会非常有争议和令人不悦。
+    面对威胁，我们不会退缩。”
+- `4`: In recent years, the debate over **whether fossil-appearing objects from
+  Mars were, in fact, indicators of past or present life on that planet** has
+  promoted many to ask whether people are ready, psychologically, to accept the
+  possibility of life elsewhere.
+- `5`: I will give this dictionary to ____ wants to have it.
+  - A. whomever
+  - B. someone
+  - C. whoever
+  - D. anyone
+  - 答案：C。要注意 to 后面是一个宾语从句，而连词在宾语从句中是作主语。
+
+### 3.8 宾语从句后置
 
 >>>>> progress
 
