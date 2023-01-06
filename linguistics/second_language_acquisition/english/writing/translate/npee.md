@@ -29,3 +29,37 @@ things that happen, but not those who believe everything happens for the best.*
 *4. 他离开了学校，这让我大吃一惊。*
 
 译：**He left the school, which surprised me greatly.**
+
+*5. 我找到了导致这场意外的原因。*
+
+译：
+
+- **I have found the reason that led to the accident.**
+- **I have found the reason leading to the accident.**
+- **I have found the reason why this accident happened.**
+
+*6. 这座房子就是他出生的地方。*
+
+译：
+
+- **The house is the place in which he was born.**
+- **The house is the place where he was born.**
+- **This is the house where he was born.**
+
+*7. 我参加过无数考试，几乎没有不及格过。*
+
+译：
+
+- **I have taken countless exams, in which I have hardly failed.**
+- **I have taken countless exams, which/that I have hardly failed.**
+
+failed 既是及物动词又是不及物动词。
+
+*8. 他获得了比赛的一等奖，我感到十分高兴。*
+
+译：
+
+- **He won the first prize in the competition, which pleased me greatly.**
+- **He won the first prize in the competition, about which I feel very happy.**
+- **He won the first prize in the competition, for which I am very happy.**
+- **He won the first prize in the competition, which delights me.**
