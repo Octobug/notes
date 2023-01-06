@@ -40,6 +40,9 @@
     - [3.6 在双宾动词后作间接宾语](#36-在双宾动词后作间接宾语)
     - [3.7 在介词后作宾语](#37-在介词后作宾语)
     - [3.8 宾语从句后置](#38-宾语从句后置)
+    - [3.9 that 在宾语从句中省略的问题](#39-that-在宾语从句中省略的问题)
+    - [思维训练 3. 宾语从句](#思维训练-3-宾语从句)
+      - [答案：思维训练 3. 宾语从句](#答案思维训练-3-宾语从句)
   - [4. 表语从句](#4-表语从句)
     - [4.1 陈述句作表语](#41-陈述句作表语)
     - [4.2 一般疑问句作表语](#42-一般疑问句作表语)
@@ -578,7 +581,54 @@ feeling their breath on your cheeks.
 
 ### 3.8 宾语从句后置
 
->>>>> progress
+宾语从句还可以出现在
+“动词 + it 形式宾语 + 宾语补足语 + that 宾语从句”
+结构中，此时就是一个后置的宾语从句。
+
+- `1`: We believe it true that the human body is also a kind of good conductor.
+  - it 指代后置的宾语从句，true 为 it 的补足语。
+- `2`: We must make it clear that the parties involved are to make every effort
+  to curb the pollution.
+  - 我们必须说清楚，有关部门要尽一切努力来治理污染。
+- `3`: There are those who consider it questionable that these defense-linked
+  research projects will account for an improvement in the standard of living
+  or, alternately, do much to protect our diminishing resources.
+  - who 引导定语从句，that 引导后置宾语从句。
+  - 这些与防御有关的研究项目会不会说明生活水平的提高，或者会不会有利于保护我们日益减少的资源，
+    对此，有人持怀疑态度。
+
+### 3.9 that 在宾语从句中省略的问题
+
+一般来说，连词 that 引导宾语从句时可以省去。但若是几个宾语从句并列使用，则 that
+一般都不可省去，因为 that 在这种情况下起“指路牌”的作用，便于读者快速判断句子结构。
+
+- I once read that "the beauty of life is its changes" and that "the art of
+  life lies in a constant readjustment to our surroundings."
+  - 两个 that 从句作为 read 的宾语，构成并列的宾语从句。
+
+### 思维训练 3. 宾语从句
+
+**选择最佳答案填空。**
+
+*1. He asked me ____ I intended to do after my graduation.*
+
+- *A. that what*
+- *B. what*
+- *C. that*
+- *D. which*
+
+*2. John didn't say ____ he would return, but I presume he'll be back for
+dinner.*
+
+- *A. that when*
+- *B. when*
+- *C. if or not*
+- *D. where*
+
+#### 答案：思维训练 3. 宾语从句
+
+1. B。what 引导的宾语从句，作 do 的宾语。that 和 what 是两个连词，但后面只有一个从句。
+2. B。when 引导的宾语从句，修饰 return。that 和 when 是两个连词，但后面只有一个从句。
 
 ## 4. 表语从句
 
