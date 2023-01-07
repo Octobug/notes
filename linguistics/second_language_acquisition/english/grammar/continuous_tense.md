@@ -49,8 +49,13 @@
       - [六、短暂动词与进行时态](#六短暂动词与进行时态)
       - [七、静态动词与进行时态](#七静态动词与进行时态)
       - [八、延续状态（be + adj.）与进行时态](#八延续状态be--adj与进行时态)
-    - [思维总结：5. 难点：深入分析进行时的思维特征](#思维总结5-难点深入分析进行时的思维特征)
+    - [思维训练：5. 难点：深入分析进行时的思维特征](#思维训练5-难点深入分析进行时的思维特征)
+      - [答案：思维训练：5. 难点：深入分析进行时的思维特征](#答案思维训练5-难点深入分析进行时的思维特征)
   - [6. 过去将来进行时](#6-过去将来进行时)
+    - [6.1 过去将来进行时的构成](#61-过去将来进行时的构成)
+    - [6.2 过去将来进行时的用法](#62-过去将来进行时的用法)
+      - [一、表示在过去的将来的某一时刻或某段时间正在进行的动作](#一表示在过去的将来的某一时刻或某段时间正在进行的动作)
+      - [二、表示在过去某一时间之后即将或按计划进行的动作](#二表示在过去某一时间之后即将或按计划进行的动作)
   - [综合训练：进行时态](#综合训练进行时态)
 
 ## 1. 引言：进行时态
@@ -1204,10 +1209,75 @@ adjective）和动态形容词（dynamic adjective）。
   - You are a fool.
     - 你真笨。
 
-### 思维总结：5. 难点：深入分析进行时的思维特征
+### 思维训练：5. 难点：深入分析进行时的思维特征
 
->>>>> progress
+**一、判断下面句子的正误，错误的请改正，并说明原因。**
+
+*1. I'm understanding less and less about life, the older I get.*
+
+**二、用一般时态或进行时态填空。**
+
+*2. The doctor ____ (feel) her pulse when I came in.*
+
+**三、用一般时态或进行时态填空。**
+
+*3. I ____ (smell) the scent of the rose in this room now.*
+
+*4. I ____ (smell) the rose now, but it ____ (not, smell) much.*
+
+*5. She ____ (be) stupid. Actually she had already known the story.*
+
+#### 答案：思维训练：5. 难点：深入分析进行时的思维特征
+
+1. 正确。这里 understand 表示“渐渐理解”，尤其此时把 understand 用于进行时态，
+   表示的是一个理解程度的变化状态。该句意思是“我年龄越大，对生活越发不能理解了”。
+2. was feeling
+3. smell
+4. am smelling, doesn't smell
+5. was being
 
 ## 6. 过去将来进行时
 
+过去将来进行时（future-in-the-past continuous tense）表示，
+对过去某一时间而言的将来某一时刻正在进行的动作，
+它常和表过去将来的时间状语连用（当上下文清楚时，时间状语亦可省略）。
+
+### 6.1 过去将来进行时的构成
+
+构成形式为：
+“should be（第一人称）或 would be（第二、三人称）+ 现在分词”
+构成。美式英语一律用 would。
+
+- `1`: I thought you'd be sleeping.
+  - 我以为你在睡觉哩。
+- `2`: She said she would be looking after you.
+  - 她说她会照顾你的。
+- `3`: He didn't know when he'd be seeing us again.
+  - 他不知道什么时候他会再见到我们。
+- `4`: I asked her what she would be doing on Saturday.
+  - 我问她星期六干什么。
+- `5`: He said that he would be seeing me off on the 10 o'clock train.
+  - 他说他将送我乘 10 点钟的火车走。
+- `6`: They moved to the main entrance where the car would be waiting.
+  - 他们向大门走去，那辆车会在那里等着。
+
+### 6.2 过去将来进行时的用法
+
+#### 一、表示在过去的将来的某一时刻或某段时间正在进行的动作
+
+- `1`: He asked me what I should be doing at ten the next day.
+  - 他问我第二天十点钟我将干什么。
+- `2`: They said that they would be expecting us the next week.
+  - 他们说他们下个星期等我们去。
+
+#### 二、表示在过去某一时间之后即将或按计划进行的动作
+
+- `1`: He said he could not come because he would be having a meeting.
+  - 他说他不能来，因为要开会。
+- `2`: The government promised that a new highway would be being built next
+  July.
+  - 政府承诺说第二年 7 月将有一条新的高速公路正在修建。
+
 ## 综合训练：进行时态
+
+>>>>> progress
