@@ -5,9 +5,9 @@
 1. 句子成分
    1. [名词短语](noun_phrase.md)
    2. [名词](noun.md)
-   3. 限定词（一）：冠词
-   4. 限定词（二）：数量限定词与个体限定词
-   5. 形容词
+   3. [限定词（一）：冠词](determiner_article.md)
+   4. [限定词（二）：数量限定词与个体限定词](determiner_quantifying_and_individual.md)
+   5. [形容词](adjective.md)
 2. 句子结构
    1. [动词分类 (一)：实义动词与 (情态) 助动词](content_verbs_and_modal_auxiliary_verbs.md)
    2. [动词分类（二）：英语的五种基本句型](five_basic_sentence_patterns.md)
@@ -17,16 +17,16 @@
    2. [定语从句](attributive_clause.md)
    3. [状语从句](adverbial_clause.md)
 4. 四种时态
-   1. 一般时态
+   1. [一般时态](simple_tense.md)
    2. [进行时态](continuous_tense.md)
-   3. 完成时态
+   3. [完成时态](perfect_tense.md)
    4. 完成进行时态
 5. 非谓语动词
    1. 不定式
    2. 动名词
    3. 分词
    4. 从句与非谓语
-6. 情态动词与虚拟语气
+6. 虚拟语气与情态动词
    1. [虚拟语气](subjunctive_mood.md)
    2. 情态动词
 7. 其他
@@ -51,7 +51,7 @@
 - [x] [4. 形容词](adjective.md)
 - [x] [5. 动词分类（一）：实义动词与（情态）助动词](content_verbs_and_modal_auxiliary_verbs.md)
 - [x] [6. 动词分类（二）：英语的五种基本句型](five_basic_sentence_patterns.md)
-- [x] [7. 英文时态（一）：一般时态](1_7_simple_tense.md)
+- [x] [7. 英文时态（一）：一般时态](simple_tense.md)
 - [ ] [8. 英文时态（二）：进行时态](continuous_tense.md)
 
 #### 中级教程：通悟语法
@@ -60,7 +60,7 @@
 - [x] [2. 名词从句](nominal_clause.md)
 - [x] [3. 定语从句](attributive_clause.md)
 - [ ] [4. 状语从句](adverbial_clause.md)
-- [x] [5. 完成时态](2_5_perfect_tense.md)
+- [x] [5. 完成时态](perfect_tense.md)
 - [ ] [6. 完成进行时态](perfect_continuous_tense.md)
 - [ ] [7. 虚拟语气](subjunctive_mood.md)
 - [ ] [8. 情态动词](2_8_modal_auxiliary_verbs.md)

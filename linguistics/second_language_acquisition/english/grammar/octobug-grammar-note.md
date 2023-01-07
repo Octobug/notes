@@ -86,7 +86,7 @@
 
 <div class="page"/>
 
-:[7. 英文时态 (一)：一般时态](1_7_simple_tense.md)
+:[7. 英文时态 (一)：一般时态](simple_tense.md)
 
 <div class="page"/>
 
@@ -108,7 +108,7 @@
 
 <div class="page"/>
 
-:[5. 完成时态](2_5_perfect_tense.md)
+:[5. 完成时态](perfect_tense.md)
 
 <div class="page"/>
 
