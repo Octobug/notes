@@ -1,6 +1,15 @@
 # NPEE
 
+- [NPEE](#npee)
+  - [英译中](#英译中)
+    - [定语从句（英译中）](#定语从句英译中)
+  - [中译英](#中译英)
+    - [名词从句（中译英）](#名词从句中译英)
+    - [定语从句（中译英）](#定语从句中译英)
+
 ## 英译中
+
+### 定语从句（英译中）
 
 *1. According to Ben-Shalar, realistic optimists are those who make the best of
 things that happen, but not those who believe everything happens for the best.*
@@ -9,6 +18,49 @@ things that happen, but not those who believe everything happens for the best.*
 而不是那些相信一切都会朝着最好的方向发生的人。**
 
 ## 中译英
+
+### 名词从句（中译英）
+
+*1. 我们什么时候能成功取决于我们自身的努力。*
+
+译：**When we can succeed depends on our own efforts.**
+
+*2. 我们最终取得了成功依靠的是我们自身的努力。*
+
+译：**That we finally succeeded depended on our own efforts.**
+
+*3. 他离开了学校。这让我大吃一惊。*
+
+译：**That he left the school surprised me greatly.**
+
+*4. 我们什么时候能成功还是一个未知数。*
+
+译：
+
+- **When we can succeed is still unknown/ a mystery.**
+- **It is still unknown/ a mystery when we can succeed.**
+
+*5. 中国赢得 2010 年世博会举办权，靠的是国际社会的支持。*
+
+译：
+
+- **That China successfully bid for 2010 World Expo depended on the
+  international society's support.**
+
+*6. 中国坚持和平发展是基于中国国情的必然选择。*
+
+译：
+
+- **That China insists on peaceful development is a necessary choice based on
+  China's condition.**
+- **It is a necessary choice based on China's condition that China insists on
+  peaceful development.**
+
+*7. 你很难想象我当时有多吃惊。*
+
+译：**You can hardly imagine how surprised I was at that time.**
+
+### 定语从句（中译英）
 
 *1. 这是我昨天买的那本书。*
 
