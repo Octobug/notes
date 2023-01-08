@@ -20,7 +20,7 @@
    1. [一般时态](simple_tense.md)
    2. [进行时态](continuous_tense.md)
    3. [完成时态](perfect_tense.md)
-   4. 完成进行时态
+   4. [完成进行时态](perfect_continuous_tense.md)
 5. 非谓语动词
    1. 不定式
    2. 动名词
@@ -29,7 +29,7 @@
 6. 虚拟语气、情态动词、倒装与强调
    1. [虚拟语气](subjunctive_mood.md)
    2. 情态动词
-   3. 倒装与强调
+   3. [倒装与强调](inverted_and_emphatic.md)
 7. 其他
    1. [易错词汇与短语](words_and_phrases.md)
 
@@ -64,7 +64,7 @@
 - [x] [5. 完成时态](perfect_tense.md)
 - [ ] [6. 完成进行时态](perfect_continuous_tense.md)
 - [ ] [7. 虚拟语气](subjunctive_mood.md)
-- [ ] [8. 情态动词](2_8_modal_auxiliary_verbs.md)
+- [ ] [8. 情态动词](modal_auxiliary_verbs.md)
 
 #### 高级教程：驾驭语法
 
