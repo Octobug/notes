@@ -57,6 +57,7 @@
       - [一、表示在过去的将来的某一时刻或某段时间正在进行的动作](#一表示在过去的将来的某一时刻或某段时间正在进行的动作)
       - [二、表示在过去某一时间之后即将或按计划进行的动作](#二表示在过去某一时间之后即将或按计划进行的动作)
   - [综合训练：进行时态](#综合训练进行时态)
+    - [答案：综合训练：进行时态](#答案综合训练进行时态)
 
 ## 1. 引言：进行时态
 
@@ -1280,4 +1281,121 @@ adjective）和动态形容词（dynamic adjective）。
 
 ## 综合训练：进行时态
 
->>>>> progress
+**一、翻译句子。**
+
+*1. Clint 和 Jane 要结婚了？我连他们俩在谈恋爱（go together）都不知道。*
+
+*2. 此刻正在考试的学生变得十分细心，以免出错。*
+
+*3.*
+
+- *A: 我求你再给我一次机会，Sam!*
+- *B: No. It's over. I'm sorry.*
+
+*4.*
+
+- *A: 我爸妈定在这个周末来看我们公寓。*
+- *B: Looks as if I'd better lend you my vaccum cleaner then.*
+
+*5.*
+
+- *A: 下星期公司派我飞到 Hawaii 出差。*
+- *B: 好极了，他们安排你住哪？*
+
+*6.*
+
+- *A: Congratulations! I understand you got a job. When do you start work?*
+- *B: 你一定是想到其他人了，我还在等着听信呢。*
+
+*7.*
+
+- *A: Have you found a position yet?*
+- *B: 我还在查报纸呢。*
+
+*8.*
+
+- *A: We're going over to the cafeteria now. Aren't you coming?*
+- *B: 我在等一个电话。*
+
+**二、将下列句子译成汉语，并解释其中进行时态的含义。**
+
+*9. Don't you think they're **being foolish** to worry about it at this time?*
+
+*10.*
+
+- *A: My cousin Bob **is getting** married in California and I can't decide
+  whether to go.*
+- *B: It's a long trip but I think you will have a good time.*
+
+**三、判断时态正误，错误的请改正。**
+
+*11. I am seeing the doctor tomorrow morning.*
+
+**四、单项选择。**
+
+*12. My bicycle ____ down just when I need it most.*
+
+- *A. always breaks*
+- *B. always broke*
+- *C. is always breaking*
+- *D. has always broken*
+
+*13. Nobody likes her because she ____ to curry favor with the boss.*
+
+- *A. has always tried*
+- *B. does always try*
+- *C. always tries*
+- *D. is always trying*
+
+**五、用适当时态填空。**
+
+*14. Clint phoned me last night. He is on holidy in Qingdao. He ____ (have) a
+good time and ____ (not, want) to come back until the end of this month.*
+
+*15. Look at these dark clouds. When class ____ (be) over, it ____ (rain,
+probably).*
+
+*16. Don't phone me between 7 and 8. We ____ (have) dinner then. You can phone
+me after 8 o'clock. We ____ (finish) dinner by then.*
+
+*17.*
+
+- *A: Oh, I ____ (leave) the lights on again.*
+- *B: Typically! You ____ (always, leave) the lights on.*
+
+*18.*
+
+- *A: Hey, guys. Having a good time?*
+- *B: Definitely. How about you?*
+- *A: Not bad. But I was wondering if you'd mind turning the volume down just a
+  bit? I ____ (not, want) to spoil your party, but the music ____ (drown) out
+  our conversation.*
+- *B: Oh, sorry, dude. We ____ (not, know) we ____ (bother) you. We ____ (turn)
+  it down.*
+- *A: Thanks a lot.*
+
+### 答案：综合训练：进行时态
+
+1. Clint and Jane are getting married? I didn't even know they were going
+   together.
+2. The students who are taking the test right now are being very careful not to
+   make any errors.
+3. I am begging you to give me another chance, Sam!
+4. My parents are coming to see our apartment this weekend.
+5. ->
+    - A: My company is flying me out to Hawaii on business next week.
+    - B: That's great. Where are they putting you up?
+6. You must be thinking of someone else. I'm still waiting to hear.
+7. I'm still checking the papers.
+8. I'm waiting for a phone call.
+9. 这里是动态形容词用于现在进行时态，表示在说话时刻的行为表现。
+   - 译：这个时候他们才开始担忧，你不觉得这很愚蠢吗？
+10. 这里的现在进行时表示将来确定的安排。
+11. 时态正确。
+12. C。
+13. D。
+14. is having, doesn't want
+15. is, will probably be raining
+16. will be having, will have finished
+17. have left, are always leaving
+18. don't want, is drowning, didn't know, bothered, will turn
