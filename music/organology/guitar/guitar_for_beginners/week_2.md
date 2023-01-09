@@ -67,11 +67,11 @@ could get a starting pitch of an A.
 
 #### Finger Picking A Minor (Play Twice)
 
-![A Minor](./images/week2_a_minor.jpg)
+![A Minor](images/week2_a_minor.jpg)
 
 #### Finger Picking E Major (Play Twice)
 
-![E Major](./images/week2_e_major.jpg)
+![E Major](images/week2_e_major.jpg)
 
 ## Strumming
 
@@ -79,8 +79,8 @@ could get a starting pitch of an A.
 
 #### Strumming Exercise
 
-![Strumming](./images/week2_strumming_1.jpg)
+![Strumming](images/week2_strumming_1.jpg)
 
 #### Strumming Exercise (Optional)
 
-![Strumming](./images/week2_strumming_2.jpg)
+![Strumming](images/week2_strumming_2.jpg)
