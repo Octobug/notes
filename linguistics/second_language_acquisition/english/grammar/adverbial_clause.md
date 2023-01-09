@@ -18,6 +18,7 @@
     - [2.3 时间连词 until 的用法特点](#23-时间连词-until-的用法特点)
       - [一、延续动词 + until + 短暂动词或时间点](#一延续动词--until--短暂动词或时间点)
       - [二、短暂动词 + until + 短暂动词或时间点](#二短暂动词--until--短暂动词或时间点)
+      - [三、not until...that 句型](#三not-untilthat-句型)
     - [2.4 表示“一……就”的结构](#24-表示一就的结构)
       - [一、从句动作先于主句动作](#一从句动作先于主句动作)
       - [二、主句动作先于从句动作](#二主句动作先于从句动作)
@@ -65,6 +66,8 @@
     - [思维训练 9. 比较状语从句](#思维训练-9-比较状语从句)
       - [答案：思维训练 9. 比较状语从句](#答案思维训练-9-比较状语从句)
   - [10. 方式状语从句](#10-方式状语从句)
+  - [综合训练：状语从句](#综合训练状语从句)
+    - [答案：综合训练：状语从句](#答案综合训练状语从句)
 
 ## 1.状语从句概述
 
@@ -248,23 +251,30 @@ until 的用法有以下三个要点：
 until 的后面若接从句，则从句的谓语必定是短暂动词，或者接表示时间点（point of time）
 的名词短语。
 
-- `例 1`：Wait until he comes back.
-- `例 2`：Until I came back, he was wating for me at my home.
-- `例 3`：We'll stay here until it stops raining.
-- `例 5`：I will be away from my office until next Tuesday.
+- `1`: Wait until he comes back.
+- `2`: Until I came back, he was wating for me at my home.
+- `3`: We'll stay here until it stops raining.
+- `4`: I will be away from my office until next Tuesday.
 
 #### 二、短暂动词 + until + 短暂动词或时间点
 
 若主句的谓语动词是**短暂动词**，则要用**否定**形式。
 因为否定之后表示的是一个状态，而状态是延续的。这个结构就是 not...until。
 
-- `例 6`：He didn't leave the office until his boss came back.
-- `例 7`：I did not realize how special my mother was until I became an adult.
-- `例 8`：One will never realize how much and how little he knows until he
+- `5`: He didn't leave the office until his boss came back.
+- `6`: I did not realize how special my mother was until I became an adult.
+- `7`: One will never realize how much and how little he knows until he
   starts talking.
-- `例 9`：Ice cream did not reach America until about the middle of the
+- `8`: Ice cream did not reach America until about the middle of the
   eighteenth century.
-- `例 10`：I didn't go to bed until 12 o'clock last night.
+- `9`: I didn't go to bed until 12 o'clock last night.
+
+#### 三、not until...that 句型
+
+- `10`: It was not until the eleventh century that the detective found out the
+  truth.
+- `11`: It was not until she had arrived home that she remembered her
+  appointment with the doctor.
 
 ### 2.4 表示“一……就”的结构
 
@@ -399,6 +409,7 @@ Vermont 是州名，如果要改为地点状语从句，应该是 somewhere in V
 这四个连词中，because 的语气最强，只有它才能用来回答 why 的问句，
 所引出的原因往往是听话人所不知道的或最感兴趣的；
 也只有 because 才能被强调词如 only, just 和 perhaps 等修饰。
+此外，短语 in that 也可以用来表示原因，后面接句子。
 
 - `例 1`：My friends dislike me because I'm handsome and successful.
 - `例 2`：Perhaps because most of today's cross-cultural marriages occur because
@@ -839,7 +850,7 @@ as 引导的倒装句可表示让步，这一结构为：
 - `例 8`：Lazy a boy as he is, he is kind to help others.
   - 他虽然很懒惰，却乐于助人。
 
-💡 这里的 as 可以替换成 that 或 though（although 则不行），不过很少这样使用。
+💡 **这里的 as 可以替换成 that 或 though（although 则不行），不过很少这样使用**。
 
 - `例 9`：Odd though it sounds, cosmic inflation is a scientifically plausible
   consequence of some respected ideas in elementary particle physics, and many
@@ -931,7 +942,7 @@ as 引导比较状语从句，其基本结构是 as...as...，其中前一个 as
 - `1`
   - He is taller than I (am).
   - ❌ The weather of the South is wetter than the North.
-  - ✅ The weather of the South is wetter than that of the North.
+  - ✅ The weather of the South is wetter than **that of** the North.
 - `2`: Young readers, more often than ***not***`A`, find the novels ***of***`B`
   Dickens ***far more***`C` exciting than ***Thackeray***`D`.
   - 答案：D。应改为：Thackeray's。
@@ -1092,4 +1103,110 @@ contracting another disease.*
 
 ## 10. 方式状语从句
 
->>>>> progress
+方式状语从句表示动作的方式，引导词有：as, as if, as though, like, the way 等。
+
+- `1`: When in Rome, do **as** the Romans do.
+  - When traveling, follow the customs of the local people.
+  - 入乡随俗。
+- `2`: Do it **the way** you were taught.
+  - 按照教给你的那样做。
+- `3`: He looks **as though/ as if** he is an actor.
+  - 他看上去像个演员。
+- `4`: Work **like** you don't need the money.
+  Love **like** you've never been hurt.
+  Dance **like** nobody's watching.
+  Sing **like** nobody's listening.
+  Live **like** it's heaven on earth.
+
+## 综合训练：状语从句
+
+**一、请选择最佳答案填空。**
+
+*1. Poor ____ he is, he is honest and kind.*
+
+- *A. that*
+- *B. however*
+- *C. because*
+- *D. although*
+
+*2. ____ apparently rigid, bones exhibit a degree of elasticity that enables
+the skeleton to withstand considerable impact.*
+
+- *A. In spite of*
+- *B. As*
+- *C. Although*
+- *D. Despite*
+
+*3. ____ native to Europe, the daisy has now spread throughout most of North
+America.*
+
+- *A. Although*
+- *B. In spite of*
+- *C. If it were*
+- *D. That it is*
+
+*4. Not until I shouted at the top of my voice ____ his head.*
+
+- *A. that he turned*
+- *B. did he turn*
+- *C. he didn't turn*
+- *D. he had turned*
+
+*5. He wrote down the address ____ he should forget it.*
+
+- *A. in case not*
+- *B. lest*
+- *C. in order that*
+- *D. of fear that*
+
+*6. This approach is superior to that one ____ it provides explicit accounts.*
+
+- *A. in which*
+- *B. in this way*
+- *C. in that*
+- *D. in order that*
+
+*7. ____, he remains stupid.*
+
+- *A. Though his learning*
+- *B. Through all his learning*
+- *C. For all his learning*
+- *D. However his learning*
+
+*8. It was not until the eleventh century that ____.*
+
+- *A. the detective found out the truth*
+- *B. did the detective find out the truth*
+- *C. had the detective find out the truth*
+- *D. had the detective found out the truth*
+
+*9. The lower ____ in a room, the more slowly our eyes focus.*
+
+- *A. the level of lighting*
+- *B. light level*
+- *C. leveling of light*
+- *D. lighting is level*
+
+**二、辨别改错。**
+
+*10. The speaker claimed that ***no other***`A` modern nation devotes
+***so small***`B` a portion of its wealth to public assistance and health
+***than***`C` the United States ***does***`D`.*
+
+*11. Saturn is the ***second largest***`A` planet ***after***`B` Jupiter,
+***with***`C` a diameter nearly ten times ***those of***`D` Earth.*
+
+### 答案：综合训练：状语从句
+
+1. A。这里 that（though 也可以，although 不行）替换了 as，引导一个倒装句，表示让步。
+2. C。这里是形容词短语，相当于一个从句，所以只能用连词，而不能用介词。
+3. A。这里是形容词短语，相当于一个从句，所以只能用连词，而不能用介词。
+4. B。这里是 not until 的倒装结构。
+5. B。lest，“以免”。
+6. C。in that 表示原因。
+7. C。his learning 是一个名词短语，应该用介词 for all。
+8. A。it was not until...that...句型，表示时间。
+9. A。lighting，照明的意思。前半部分是省略 is 等结构：The lower the level of lighting
+    is in a room。
+10. C。改为 as。考查 not so...as 原级比较句型。
+11. D。改为 that of。指代单数名词 diameter 应该用 that。
