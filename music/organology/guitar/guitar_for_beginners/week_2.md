@@ -1,5 +1,26 @@
 # Week 2
 
+- [Week 2](#week-2)
+  - [String Names and Numbers](#string-names-and-numbers)
+  - [Tuning Your Guitar](#tuning-your-guitar)
+    - [Tuning Your Guitar with a Tuner](#tuning-your-guitar-with-a-tuner)
+    - [Tuning Your Guitar by Matching](#tuning-your-guitar-by-matching)
+      - [With a Tuning Fork](#with-a-tuning-fork)
+    - [Tuning Your Guitar with Harmonics](#tuning-your-guitar-with-harmonics)
+  - [Picking](#picking)
+    - [Picking Technique](#picking-technique)
+      - [Single Downstrokes](#single-downstrokes)
+      - [Two-Stroke Alternate Picking](#two-stroke-alternate-picking)
+      - [Three-Stroke Alternate Picking](#three-stroke-alternate-picking)
+      - [Four-Stroke Alternate Picking](#four-stroke-alternate-picking)
+    - [Finger Picking](#finger-picking)
+      - [Finger Picking A Minor (Play Twice)](#finger-picking-a-minor-play-twice)
+      - [Finger Picking E Major (Play Twice)](#finger-picking-e-major-play-twice)
+  - [Strumming](#strumming)
+    - [Strumming the Guitar](#strumming-the-guitar)
+      - [Strumming Exercise](#strumming-exercise)
+      - [Strumming Exercise (Optional)](#strumming-exercise-optional)
+
 ## String Names and Numbers
 
 From thin (1) to thick (6):

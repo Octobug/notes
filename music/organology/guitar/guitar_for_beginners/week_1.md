@@ -1,5 +1,10 @@
 # Week 1
 
+- [Week 1](#week-1)
+  - [Parts of the Guitar (Acoustic)](#parts-of-the-guitar-acoustic)
+  - [Chord Block Diagrams and Fretboard Maps](#chord-block-diagrams-and-fretboard-maps)
+  - [A Minor and E Major Chords](#a-minor-and-e-major-chords)
+
 ## Parts of the Guitar (Acoustic)
 
 ![Parts of the Guitar](images/week1_parts_of_the_acoustic_guitar_1.jpg)
