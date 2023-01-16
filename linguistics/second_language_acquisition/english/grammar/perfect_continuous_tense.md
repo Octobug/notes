@@ -40,8 +40,21 @@
       - [三、完成进行时的意义](#三完成进行时的意义)
       - [四、完成进行时与完成时的意义比较](#四完成进行时与完成时的意义比较)
   - [8. 过去完成进行时](#8-过去完成进行时)
+    - [8.1 过去时刻在延续的事件](#81-过去时刻在延续的事件)
+      - [一、过去的长期延续事件](#一过去的长期延续事件)
+      - [二、过去的近期延续事件](#二过去的近期延续事件)
+      - [三、过去说话时刻在延续的事件](#三过去说话时刻在延续的事件)
+      - [四、过去刚刚在延续的事件](#四过去刚刚在延续的事件)
+    - [8.2 在过去时刻重复发生的事件](#82-在过去时刻重复发生的事件)
+    - [思维训练：8. 过去完成进行时](#思维训练8-过去完成进行时)
+      - [答案：思维训练：8. 过去完成进行时](#答案思维训练8-过去完成进行时)
   - [9. 将来完成进行时](#9-将来完成进行时)
+    - [一、长期延续的事件](#一长期延续的事件)
+    - [二、说话时刻在延续的事件](#二说话时刻在延续的事件)
+    - [三、表示重复事件](#三表示重复事件)
   - [10. 过去将来完成进行时](#10-过去将来完成进行时)
+    - [10.1 过去将来完成进行时的构成与用法](#101-过去将来完成进行时的构成与用法)
+    - [10.2 间接引语与过去将来完成进行时](#102-间接引语与过去将来完成进行时)
   - [综合训练：完成进行时态](#综合训练完成进行时态)
 
 ## 1. 完成进行时态的构成
@@ -965,15 +978,223 @@ achievement）。**
 
 ## 8. 过去完成进行时
 
->>>>> progress
+**过去完成进行时**与**现在完成进行时**的用法在本质上是相同的，
+区别只是将说话的“参照时间”由现在移到过去。这种“时间坐标”发生位移的情况从下面这个例子可以看出：
+
+- `1`
+  - Your eyes are red. You've been crying, haven't you?
+    - 由 are 可知，这里说话语境的时间是现在，所以后面用现在完成进行时 have been crying
+      来表达一个在“现在”说话时刻之前在延续的时间，即“现在刚刚”结束的事件。
+  - Her eyes were red. It was obvious she had been crying.
+    - 由 were 可知，这里说话语境的时间是过去，此时要表达一个在“过去”说话时刻之前在延续的事件，
+      即“过去刚刚”结束的事件就要用过去完成进行时 had been crying。
+- `2`
+  - A: Don't you think Prof. Morison's test was too difficult?
+    - 你不觉得 Morison 教授上次那个测验太难了吗？
+  - B: Well, I must admit I had been expecting more than just a passing grade in
+    biology.
+    - 是啊，我得承认，我当时还盼着那次生物考试不仅仅是拿个及格分呢。
+  - 从时间角度看，这里的 had been expecting 是谈论过去时间 was 之前的事件，具体来说，
+    就是说话人 B 在回顾自己在上次生物测验之前的心态——在考试之前以为考试不会很难，
+    所以他在考试之前期望成绩不只是及格就可以了，而是会考出一个更好的分数。
+    但实际上考试成绩并不理想，因为考试比说话人料想的要难。
+    这个言外之意就是通过这里的过去完成进行时表达出来的。
+  - 其次，从完成进行时的意义角度来看，这里过去完成进行时 had been expecting 表达的是在 was
+    之前一个近期延续事件。
+
+### 8.1 过去时刻在延续的事件
+
+过去完成进行时表示开始于过去某个时刻之前的动作延续到过去这一时刻，并继续持续下去。
+
+- `1`: When I arrived in Inner Mongolia, it had been snowing for half a month.
+- `2`: She had been studying French for one year before she went to France.
+
+类似于现在完成进行时，过去完成进行时的延续事件同样包括：
+
+1. 长期延续
+2. 近期延续
+3. 说话时刻在延续
+4. 说话时刻之前在延续
+
+#### 一、过去的长期延续事件
+
+- `3`: The police had been looking for the murderer for two years before they
+  caught him.
+  - 警察抓住这个杀人犯之前，已经找了他两年了。
+- `4`: I had been looking for jobs for nearly half a year before I finally got
+  a position in this dot-com company.
+  - 我找工作找了将近半年，最后得到了一家网络公司的聘用。
+
+#### 二、过去的近期延续事件
+
+- `5`: He looked so tired. I knew he had been studying for the final exams.
+  - 他当时看起来很累，我知道他一直在忙着准备期末考试。
+
+#### 三、过去说话时刻在延续的事件
+
+- `6`: Snowflakes had been falling past my window for several hours when it came
+  time to leave for class. I pulled on two sweaters, a coat, a wool hat and
+  boots, making for the bus stop. In this December storm it was a hard journey.
+  As I tied around my neck the blue scarf that Grandma had knitted for me, I
+  could almost hear her voice, "Why don't you see if you can find a lift?"
+  - 窗外的雪花纷纷扬扬地下了几个小时，上学的时间到了。
+    我穿上两件毛衣、一件外套，头戴羊毛帽子，脚穿靴子向公交车站走去。
+    在 12 月份的这种暴风雪的天气里，这是一段艰难的路程。
+    我用祖母为我织的蓝色围巾把脖子围紧，耳边似乎响起了她的声音：
+    “为什么不看看是否能搭个便车呢？”
+- `7`: He told me he had been working on the report for hours and hadn't
+  finished it yet. He was still working on it.
+- `8`: He told me he had been hunting for a room since noon but with no success.
+- `9`: He finally showed up at nine o'clock. I had been waiting for him since
+  six o'clock.
+- `10`: When she arrived, I had been waiting in the cold for three hours.
+- `11`: The plane, which had been waiting on the runway for hours, finally got
+  clearance for taking off.
+
+#### 四、过去刚刚在延续的事件
+
+- `12`: She answered the door carrying a magazine she had been reading.
+- `13`: When the boys came into the house, their clothes were dirty, their hair
+  was untidy and one of them had a black eye. I knew they had been fighting.
+- `14`: There was nobody in the room but there was a smell of cigarettes.
+  Somebody had been smoking in the room.
+- `15`: Mary's eyes were red. She had been crying.
+- `16`: My face was hot and red because I had been lying in the sun.
+
+### 8.2 在过去时刻重复发生的事件
+
+过去完成进行时可表示重复发生的动作。具体来说，就是表示过去某一时刻之前的一段时间内重复发生的活动。
+
+- `1`: He had been gambling for two years before his wife found out.
+- `2`: I had been trying to get her on the phone. Finally she gave me a call.
+  - 我当时一直试着打电话找她，最后她给我回了个电话。
+  
+同样地，这里的重复也不能说出具体次数。如果要表示具体次数，需要改为过去完成时：
+
+- ❌ I had been trying five times to get her on the phone. Finally she gave me a
+  call.
+- ✅ I had tried five times to get her on the phone before she finally gave me a
+  call.
+
+### 思维训练：8. 过去完成进行时
+
+**请用括号中动词的适当形式填空。**
+
+```txt
+Firemen ____ (fight) the forest fire for nearly three weeks before they could
+get it under control. A short time before, great trees ____ (cover) the
+countryside for miles around. Now, smoke still rose up from the warm ground
+over the desolate hills. Winter was coming on and the hills threatened the
+surrounding villages with destruction, for heavy rain would not only wash away
+the soil but would cause serious floods as well. When the fire ____ at last
+____ (put out), the forest authorities ordered several tons of a special type
+of grass-seed which would grow quickly. The seed was sprayed over the ground in
+huge quantities by airplanes. The planes ____ (plant) seed for nearly a month
+when it began to rain. By then, however, in many places the grass ____
+(already, take root). In place of the great trees which ____ (grow) there for
+centuries, patches of green had begun to appear in the blackened soil.
+```
+
+#### 答案：思维训练：8. 过去完成进行时
+
+had been fighting, had covered, had...been put out, had been planting,
+had already taken root, had been growing
 
 ## 9. 将来完成进行时
 
->>>>> progress
+**将来完成进行时**的用法与**现在完成进行时**基本相同，只是将“坐标时间”移到了将来。
+同样是强调动作的持续性，表示开始于将来某个时刻之前的动作持续到将来这一时刻，并可能继续持续下去。
+
+从时间的角度来看，将来完成进行时需要在上下文中有将来的时间坐标，
+这类似于过去完成进行时的过去时间坐标。
+通常用
+`by + 将来时间`
+或者是
+`by the time + 从句（从句谓语用一般现在时）`
+来给出一个将来的时间坐标。
+
+- `1`: My brother has promised to help me study for my exam tomorrow. I get home
+  from school at 3:00 and he gets home from school at 5:00. I will have been
+  studying for two hours **by the time** he gets home.
+  - 这里是“by the time + 从句”结构给出的将来的时间坐标，从句的谓语 gets 是一般现在时态，
+    但表示将来的动作。然后在这个将来时间的基础上谈论之前的一个延续事件——一直在学习，
+    此时就要用将来完成进行时 will have been studying 这一较为复杂的动词形式。
+  - 我哥哥答应帮我学习，以准备明天的考试。我下午 3 点放学回家，他则是下午 5 点放学回家。
+    所以，等他到家后，我都得一直学习两个小时。
+
+**by the time** vs. **when**
+
+- **by the time**: possibly before and up to X time is prepositional phrase
+  that is followed by a clause that
+  - relates a time-frame, for viewing the progress or completion of the
+    activity in the main clause;
+  - includes an activity having duration and an end-point.
+- **when**: at X time, is a preposition that is followed by a clause that
+  - relates a point in time for viewing the progress or completion of the
+    activity in the main clause;
+  - includes an activity whose duration is relatively short or not of
+    importance (focus).
+
+### 一、长期延续的事件
+
+- `2`: I'm retiring this fall. By then I'll have been teaching for 30 years.
+  - 我将于今年秋天退休，到那时，我教书就有 30 年了。
+- `3`: She will have been taking care of her blind husband for 20 years by then.
+  - 到那时，她照顾她双目失明的丈夫就将近有 20 年了。
+
+### 二、说话时刻在延续的事件
+
+- `4`: I'm getting tired of sitting in the car. Do you realize that by the time
+  we arrive in Beijing, we will have been driving for twenty straight hours?
+  - 我在车里都坐累了。你有没有想到，等我们到北京的时候，我们连续开车就将达到 20 个小时了？
+
+### 三、表示重复事件
+
+将来完成进行时同样可以表示重复事件，即表示在将来某个时间之前经常重复的动作。
+
+- `5`: The old man will have been getting up at 4:00 for ten years by next
+  month.
+  - 到下个月，这老头坚持凌晨 4:00 起床就将长达 10 年时间了。
+- `6`: I will have been attending Professor Smith's lectures for half a year by
+  next week.
+  - 到下个星期，我听 Smith 教授到讲座就将有半年了。
+- `7`: By tomorrow I will have been doing morning exercises for 100 days.
+  - 到明天，我坚持做早操就将有 100 天了。
 
 ## 10. 过去将来完成进行时
 
->>>>> progress
+### 10.1 过去将来完成进行时的构成与用法
+
+过去将来完成进行时由“would/should have been + 现在分词”构成。
+过去将来完成进行时表示动作从过去某一时间开始一直延续到过去将来某一时间。
+动作是否继续下去，由上下文决定。
+
+- `1`: He said that by the end of the spring term he would have been studying
+  English for three years.
+  - 他说到了春季学期末，他就学了三年英语了。
+- `2`: I knew by that time he would have been working there for 30 years.
+  - 我知道到那时候他就在那儿工作满 30 年了。
+- `3`: She told me she'd have been teaching in that university for 20 years by
+  that summer.
+  - 她告诉我到那年夏天她在那所大学教书就满 20 年了。
+- `4`: I heard by July you'd have been teaching here for ten years.
+  - 我听说到七月份，你就在这里教了 10 年书了。
+- `5`: They said that by the end of the following month, the project would have
+  been being worked for 3 years.
+  - 他们说到第二个月底为止，这项工程就已经不停地进行 3 年了。
+
+### 10.2 间接引语与过去将来完成进行时
+
+在间接引语中，若**主句为过去时态**，
+则用于**宾语从句**中的间接引语要把将来完成进行时改为过去将来完成进行时。
+
+- `1`
+  - I know by this time next week you'll have been working here for 30 years.
+  - I knew by that time he would have been working there for 30 years.
+- `2`
+  - She will have been teaching in this university for 20 years by this summer.
+  - She told me she'd have been teaching in that university for 20 years by
+    that summer.
 
 ## 综合训练：完成进行时态
 

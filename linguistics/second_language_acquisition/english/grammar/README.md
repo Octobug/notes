@@ -9,7 +9,7 @@
    4. [限定词（二）：数量限定词与个体限定词](determiner_quantifying_and_individual.md)
    5. [形容词](adjective.md)
 2. 句子结构基础
-   1. [动词分类 (一)：实义动词与 (情态) 助动词](content_verbs_and_modal_auxiliary_verbs.md)
+   1. [动词分类（一）：实义动词与 (情态) 助动词](content_verbs_and_modal_auxiliary_verbs.md)
    2. [动词分类（二）：英语的五种基本句型](five_basic_sentence_patterns.md)
    3. [简单句与复合句](simple_and_complex_sentence.md)
 3. 三类从句
