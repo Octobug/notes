@@ -73,5 +73,5 @@
 - [ ] 3. 状语从句
 - [ ] [4. 不定式](infinitive.md)
 - [ ] [5. 动名词](gerund.md)
-- [ ] [6. 分词](3_6_participles.md)
+- [ ] [6. 分词](participles.md)
 - [ ] 7. 从句与非谓语
