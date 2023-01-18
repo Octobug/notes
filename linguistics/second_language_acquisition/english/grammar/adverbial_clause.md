@@ -1,11 +1,12 @@
 # 状语从句
 
-> Adverbial Clauses
+> Adverbial Clause
 
 - [状语从句](#状语从句)
   - [1.状语从句概述](#1状语从句概述)
     - [1.1 什么是状语（adverbial）？](#11-什么是状语adverbial)
     - [1.2 状语的位置](#12-状语的位置)
+    - [1.3 基本结构](#13-基本结构)
   - [2. 时间状语从句](#2-时间状语从句)
     - [2.1 时间连词 when 的用法特点](#21-时间连词-when-的用法特点)
       - [一、主句一般过去时 + 从句一般过去时](#一主句一般过去时--从句一般过去时)
@@ -104,6 +105,25 @@
 - He got to the station quickly.
   - 他很快就到了车站。（动词前，常见）
   - 很快，他就到了车站。（主语前）
+
+### 1.3 基本结构
+
+- 引导词 + 主谓，句子
+  - When I cam home, I saw a stranger.
+- 句子 + 引导词 + 主谓
+  - I saw a stranger when I came home.
+  - He is so excited that he laughs and shouts.
+
+⚠️ 注意：
+
+1. 状语从句的引导词都是逻辑关系词，表示主从句间的逻辑关系。
+2. that 一般需要出现在固定搭配中才能引导状语从句，如：
+   - so that
+   - in that
+   - now that
+   - given that
+   - on condition that
+   - in order that
 
 ## 2. 时间状语从句
 
@@ -823,42 +843,43 @@ as 引导的倒装句可表示让步，这一结构为：
 
 #### 一、形容词提至句首
 
-- `例 1`：Young as he is, he is knowledgeable.
+- `1`：Young as he is, he is knowledgeable.
   - 他虽然年轻，但知识渊博。
-- `例 2`：In addition, difficult as it is to believe, there are desert fish
+- `2`：In addition, difficult as it is to believe, there are desert fish
   which can survive through years of drought in the form of inactive eggs.
-- `例 3`：Oldest in our workshop as he is, he works hardest.
+- `3`：Oldest in our workshop as he is, he works hardest.
   - 尽管他是我们车间最年长的一位，他工作起来最努力。
 
 #### 二、副词提至句首
 
-- `例 4`：Much as I respect him, I can not agree with him.
+- `4`：Much as I respect him, I can not agree with him.
   - 虽然我非常尊重他，但是我仍旧不同意他的意见。
-- `例 5`：Again as he failed in doing this experiment, he didn't lose his heart.
+- `5`：Again as he failed in doing this experiment, he didn't lose his heart.
   - 尽管他的试验再次失败了，但是他并不灰心。
 
 #### 三、分词提至句首
 
-- `例 6`：Praised as he was, he remained modest.
+- `6`：Praised as he was, he remained modest.
   - 尽管他受到了表扬，却仍旧很谦虚。
 
 #### 四、名词提至句首
 
-- `例 7`：Child as he is, he is knowledgeable.
+- `7`：Child as he is, he is knowledgeable.
   - ⚠️ 这句话的名词 child 前面不带冠词。
   - 他虽然还是个孩子，却知识渊博。
-- `例 8`：Lazy a boy as he is, he is kind to help others.
+- `8`：Lazy a boy as he is, he is kind to help others.
   - 他虽然很懒惰，却乐于助人。
 
 💡 **这里的 as 可以替换成 that 或 though（although 则不行），不过很少这样使用**。
 
-- `例 9`：Odd though it sounds, cosmic inflation is a scientifically plausible
+- `9`：Odd though it sounds, cosmic inflation is a scientifically plausible
   consequence of some respected ideas in elementary particle physics, and many
   astrophysicists have been convinced for the better part of decade that it is
   true.
+  - that it is true 是 have been convinced 的宾语从句。
   - 宇宙膨胀理论虽然听似奇特，但它是基本粒子物理学中一些公认的理论在科学上看来可信的推论。
     许多天体物理学家十几年来一直确信这一论说是正确的。
-- `例 10`：**Much although**`A` I have traveled, I have never seen anyone
+- `10`：**Much although**`A` I have traveled, I have never seen anyone
   **to equal**`B` her in thoroughness, **whatever**`C` **the job**`D`.
   - 答案：A。应改为：Much as。
   - 尽管我游历甚广，但我还从没有见过一个像她这样不论对什么工作都如此细致认真的人。

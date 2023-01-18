@@ -500,6 +500,8 @@ student but to teach hime how to be precise.*
 
 ## 3. 宾语从句
 
+> Object Clause
+
 ### 3.1 陈述句作宾语
 
 把 "that + 陈述句" 这一结构放在宾语的位置即构成宾语从句。
@@ -671,6 +673,8 @@ dinner.*
 
 ## 4. 表语从句
 
+> Predicative Clause
+
 ### 4.1 陈述句作表语
 
 把 "that + 陈述句" 这一结构放在表语的位置即构成表语从句。
@@ -711,6 +715,8 @@ Does he come or not?
 - `2`: He looks as if the whole world belonged to him.
 
 ## 5. 同位语从句
+
+> Appositive Clause
 
 所谓同位语，就是用来补充说明名词的成分，并且两者之间可以划等号。
 **被补充说明的名词，叫作先行词**。先行词一般是能包含有具体内容的抽象名词，如 fact, idea 等。
