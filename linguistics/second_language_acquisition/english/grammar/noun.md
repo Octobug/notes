@@ -1156,10 +1156,11 @@ the shooting of the rebels
 
 #### 三、同位关系
 
-其结构是 `N1 + of + N2`，这里 N2 表示 N1 的具体内容，二者互为同位说明:
+其结构是 `N1 + of + N2`，这里 N2 表示 N1 的具体内容，二者互为同位说明：
 
 - the city of Rome (Rome is a city)
 - the news of the team's victory
+- the duty of defending our country
 
 ### 思维训练 5. 名词的格 (二): of 属格的构成及逻辑语义关系
 

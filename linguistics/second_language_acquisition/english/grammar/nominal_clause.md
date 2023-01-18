@@ -48,6 +48,7 @@
     - [4.1 陈述句作表语](#41-陈述句作表语)
     - [4.2 一般疑问句作表语](#42-一般疑问句作表语)
     - [4.3 特殊疑问句作表语](#43-特殊疑问句作表语)
+    - [4.4 特殊词引导表语从句](#44-特殊词引导表语从句)
   - [5. 同位语从句](#5-同位语从句)
     - [5.1 陈述句作同位语](#51-陈述句作同位语)
     - [5.2 一般疑问句作同位语](#52-一般疑问句作同位语)
@@ -55,6 +56,7 @@
     - [5.4 同位语从句句型（一）：名词 + that + 陈述句](#54-同位语从句句型一名词--that--陈述句)
     - [5.5 同位语从句句型（二）：名词 + 定语 + that + 陈述句](#55-同位语从句句型二名词--定语--that--陈述句)
     - [5.6 同位语从句句型（三）：名词 + 谓语 + that + 陈述句](#56-同位语从句句型三名词--谓语--that--陈述句)
+    - [5.7 同位语从句句型（四）：同位语名词后置](#57-同位语从句句型四同位语名词后置)
     - [总结 5. 同位语从句](#总结-5-同位语从句)
       - [同位语从句句子成分](#同位语从句句子成分)
       - [同位语从句结构变化](#同位语从句结构变化)
@@ -621,6 +623,19 @@ feeling their breath on your cheeks.
 2. 不定式
 3. 动名词
 
+常用句型：
+
+- take it for granted that...
+  - 理所当然地认为……
+- make it clear that...
+  - 澄清、表明……
+- redard it as... that...
+  - 把……视为/看作……
+- owe it to... that...
+  - 把……归因于……
+- see to it that...
+  - 确保/保证……
+
 ### 3.9 that 在宾语从句中省略的问题
 
 一般来说，连词 that 引导宾语从句时可以省去。但若是几个宾语从句并列使用，则 that
@@ -660,9 +675,9 @@ dinner.*
 
 把 "that + 陈述句" 这一结构放在表语的位置即构成表语从句。
 
-The child should be sent to school.
-
-- My idea is that the child should be sent to school.
+- `1`: The child should be sent to school.
+  - My idea is that the child should be sent to school.
+- `2`: My dream is that I can further my study in this university.
 
 ### 4.2 一般疑问句作表语
 
@@ -688,12 +703,19 @@ Does he come or not?
   that's why most divorced mothers regard themselves as victims.
   - 一些女性太专注于家庭了。一旦婚姻开始瓦解，她们就会迷失方向。
     这就是她们不快乐的原因，也是为什么大多数离婚的母亲认为她们是受害者。
+- `5`: My question is how I can further my study in this university.
+
+### 4.4 特殊词引导表语从句
+
+- `1`: His success is because he has worked really hard.
+- `2`: He looks as if the whole world belonged to him.
 
 ## 5. 同位语从句
 
-所谓同位语，就是用来补充说明名词的成分。**被补充说明的名词，叫作先行词**。
-当用一个完整的句子来补充说明名词时，即构成同位语从句。所以，同位语从句都位于一个名词的后面，
-构成"名词 + 连词 + 同位语从句"这样的结构。
+所谓同位语，就是用来补充说明名词的成分，并且两者之间可以划等号。
+**被补充说明的名词，叫作先行词**。先行词一般是能包含有具体内容的抽象名词，如 fact, idea 等。
+当用一个完整的句子来补充说明名词时，即构成同位语从句。
+所以，同位语从句都位于一个名词的后面，构成"名词 + 连词 + 同位语从句"这样的结构。
 
 ### 5.1 陈述句作同位语
 
@@ -783,6 +805,17 @@ They are faced with the **problem** whether they should continue to work.
 - `2`: Evidence camp up that specific speech sounds are recognized by babies as
   young as 6 months old.
   - 有证据表明，六个月大的婴儿就能辨别出特定的说话声。
+
+### 5.7 同位语从句句型（四）：同位语名词后置
+
+- `1`: This alone demonstrates **that**`1` the television business is not an
+  easy world to survive in, **a fact** underlined by statistics **that**`2` show
+  **that**`3` out of eighty European television networks no less than 50% took a
+  loss in 1989.
+  - 第一个 that 引导 demonstrates 的宾语从句；
+  - 第二个 that 引导修饰 statistics 的定语从句；
+  - 第三个 that 引导 show 的宾语从句；
+  - a fact 是第一个 that 引导的宾语从句的同位语。
 
 ### 总结 5. 同位语从句
 

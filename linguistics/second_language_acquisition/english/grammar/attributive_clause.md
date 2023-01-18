@@ -556,7 +556,8 @@ house 等。
 
 ### 4.3 why 的用法
 
-why 用来表示原因，只引导**限制性**定语从句，先行词是 reason 等表示原因的名词。
+why 用来表示原因，只引导**限制性**定语从句，在从句中作原因状语，先行词是 reason
+等表示原因的名词。
 
 This is the reason why I didn't come here.
 

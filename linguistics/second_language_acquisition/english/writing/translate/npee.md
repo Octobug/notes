@@ -5,6 +5,10 @@
     - [定语从句（英译中）](#定语从句英译中)
   - [中译英](#中译英)
     - [名词从句（中译英）](#名词从句中译英)
+      - [主语从句](#主语从句)
+      - [宾语从句](#宾语从句)
+      - [表语从句](#表语从句)
+      - [同位语从句](#同位语从句)
     - [定语从句（中译英）](#定语从句中译英)
 
 ## 英译中
@@ -20,6 +24,8 @@ things that happen, but not those who believe everything happens for the best.*
 ## 中译英
 
 ### 名词从句（中译英）
+
+#### 主语从句
 
 *1. 我们什么时候能成功取决于我们自身的努力。*
 
@@ -56,9 +62,72 @@ things that happen, but not those who believe everything happens for the best.*
 - **It is a necessary choice based on China's condition that China insists on
   peaceful development.**
 
+#### 宾语从句
+
 *7. 你很难想象我当时有多吃惊。*
 
 译：**You can hardly imagine how surprised I was at that time.**
+
+*8. 大多数的人都理所当然地认为水是一种取之不尽、用之不竭的自然资源。*
+
+译：**Most people take it for granted that water is an endless/ a limitless/
+an infinite/ an exhaustless/ an inexhaustible natural resources.**
+
+*9. 许多大学毕业生找不到工作表明中国的就业形势并不乐观。*
+
+译：**That many college students fail to find a job makes it clear that the
+employment situation of China is serious.**
+
+*10. 老师把他学生通过了六级考试视为一种巨大的荣耀。*
+
+译：**The teacher regards it as a great honour that his students passed CET6.**
+
+*11. 同学们把他们的成功归因于各位老师。*
+
+译：**The students owe it to their teachers that they have succeeded.**
+
+*12. 我们要确保每个孩子都受到良好的教育。*
+
+译：**We must see to it that every child gets good education.**
+
+#### 表语从句
+
+*13. 问题是我们能多快到车站。*
+
+译：**The question is how fast we can get to the station.**
+
+#### 同位语从句
+
+*14. 所有人，无论男女老幼，都应该注意保护环境。*
+
+译：**All people, male or female, old or young, should pay attention to
+environmental protection.**
+
+*15. 长沙是湖南省省会，坐落在湘江之滨。*
+
+译：
+
+- **Changsha is the capital city of Hunan Province, located by the Xiangjiang
+  River.**
+- **Changsha, the capital city of Hunan Province, is located by the Xiangjiang
+  River.**
+
+*16. 我有一个想法。我们应该为六级早作准备。*
+
+译：**I have an idea that we should make early preparation of CET6.**
+
+*17. 没有人可以否认我通过了六级的事实。*
+
+译：**No one can deny the fact that I passed CET6.**
+
+*18. 我得出了这人是个骗子的结论。*
+
+译：**I draw a conclusion that the man is a cheater.**
+
+*19. 这幅图揭示了一个真理。那就是人类的贪婪是造成环境污染的主要原因。*
+
+译：**The picture reveals a truth that the human greed is the main reason that
+leads to the environmental pollution.**
 
 ### 定语从句（中译英）
 
@@ -115,3 +184,7 @@ failed 既是及物动词又是不及物动词。
 - **He won the first prize in the competition, about which I feel very happy.**
 - **He won the first prize in the competition, for which I am very happy.**
 - **He won the first prize in the competition, which delights me.**
+
+*9. 我不知道他离开学校的时间。*
+
+译：**I don't know the time when he left the school.**
