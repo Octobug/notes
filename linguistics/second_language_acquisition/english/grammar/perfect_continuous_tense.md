@@ -56,6 +56,7 @@
     - [10.1 过去将来完成进行时的构成与用法](#101-过去将来完成进行时的构成与用法)
     - [10.2 间接引语与过去将来完成进行时](#102-间接引语与过去将来完成进行时)
   - [综合训练：完成进行时态](#综合训练完成进行时态)
+    - [答案：综合训练：完成进行时态](#答案综合训练完成进行时态)
 
 ## 1. 完成进行时态的构成
 
@@ -1198,4 +1199,74 @@ had already taken root, had been growing
 
 ## 综合训练：完成进行时态
 
->>>>> progress
+**一、请用适当的时态填空。**
+
+*1. We were good friends. We ____ (know) each other for a long time.*
+
+*2.*
+
+- *A: I kept looking for Mary at the seminar but never did see her. I can't
+  imagine she forgot about it and she ____ (talk) about it for weeks.*
+- *B: Oh she didn't. It's just that she caught a really bad cold a couple of
+  days ago.*
+
+*3.*
+
+- *A: ____ you ____ (have) a chance to wear your new shirt yet?*
+- *B: That reminds me. I ____ (mean) to exchange it for a larger size.*
+
+*4. Titanic 的发掘：*
+
+```txt
+In 1912, the "unsinkable" luxury ship Titanic ____ (hit) an iceberg and ____
+(sink) to the bottom of the sea. Its final resting place ____ (remain) a mystery
+for more than 70 years. You probably already know that tragic story. But do you
+know the whole story? Do you know who finally ____ (discover) the wreck of the
+Titanic?
+
+Robert Ballard, of course. Who's Ballard? He's an explorer who ____ (see) more
+of the ocean floor than anyone in history. He ____ (explore) under the ocean
+waves for more than 30 years!
+```
+
+*5. 谈转学：*
+
+```txt
+A: I'm thinking about transferring out of state college into another school in
+  the spring.
+B: After only a year and a half? How come? I ____ (think) you ____ (like) it
+  here.
+A: I do. But our Commercial Art Department only ____ (give) associate degrees.
+B: And you want a bachelor's, right?
+A: Right!
+B: So where do you want to go?
+A: I ____ (think) about Westwater University. It has an excellent reputation.
+  But it's probably very selective.
+B: But you ____ (get) good grades in the three semesters since you ____ (be) in
+  here at the state college, haven't you?
+A: Yeah, mostly As in my major and a few Bs in sciences.
+B: So what are you worried about? Just ask your art professors to write letters
+  of recommendation for you and give you portfolio together, and you'll be set.
+```
+
+*6. 谈旅游：*
+
+```txt
+A: I ____ (study) too much and need a change. So I'm just making plans to go
+  away during January break.
+B: Really? Where are you going?
+A: I ____ (plan) to visit New Mexico.
+B: My sister and I ____ (have) the vacation there last year and we had a great
+  time.
+A: ____ you ____ (get) into Albuquerque?
+B: Sure. Whenever we were skating.
+```
+
+### 答案：综合训练：完成进行时态
+
+1. had known
+2. has been talking
+3. Have...had, have been meaning
+4. hit, sank, remained, discovered, has seen, has been exploring
+5. thought, liked, gives, have been thinking, have gotten, have been
+6. Have been studying, am planning, had, Did...get

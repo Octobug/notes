@@ -10,12 +10,12 @@
       - [二、通过另一活动表达这一特定时刻](#二通过另一活动表达这一特定时刻)
     - [1.3 进行时态的使用语境](#13-进行时态的使用语境)
   - [2. 现在进行时——不一定正在进行](#2-现在进行时不一定正在进行)
-    - [2.1 用法一: 说话时刻正在进行的动作 (action happening exactly now)](#21-用法一-说话时刻正在进行的动作-action-happening-exactly-now)
-    - [2.2 用法二: 在目前一段时期内持续的一种暂时的情况 (action happening around now)](#22-用法二-在目前一段时期内持续的一种暂时的情况-action-happening-around-now)
-    - [2.3 用法三: 用于表示“改变”的动词，强调“逐渐变化”的过程](#23-用法三-用于表示改变的动词强调逐渐变化的过程)
+    - [2.1 用法一：说话时刻正在进行的动作（action happening exactly now）](#21-用法一说话时刻正在进行的动作action-happening-exactly-now)
+    - [2.2 用法二：在目前一段时期内持续的一种暂时的情况（action happening around now）](#22-用法二在目前一段时期内持续的一种暂时的情况action-happening-around-now)
+    - [2.3 用法三：用于表示“改变”的动词，强调“逐渐变化”的过程](#23-用法三用于表示改变的动词强调逐渐变化的过程)
     - [思维训练 2.1-2.3](#思维训练-21-23)
-    - [2.4 用法四: 用于强烈的感情色彩的表达](#24-用法四-用于强烈的感情色彩的表达)
-    - [2.5 用法五: 表示将来确定的安排](#25-用法五-表示将来确定的安排)
+    - [2.4 用法四：用于强烈的感情色彩的表达](#24-用法四用于强烈的感情色彩的表达)
+    - [2.5 用法五：表示将来确定的安排](#25-用法五表示将来确定的安排)
     - [2.6 用法六：与 always 等连用，表示多次重复，且含感情色彩](#26-用法六与-always-等连用表示多次重复且含感情色彩)
   - [3. 过去进行时——回顾过去讲故事](#3-过去进行时回顾过去讲故事)
     - [3.1 常见用法：用来设置故事的背景](#31-常见用法用来设置故事的背景)
@@ -112,7 +112,7 @@
 
 ## 2. 现在进行时——不一定正在进行
 
-### 2.1 用法一: 说话时刻正在进行的动作 (action happening exactly now)
+### 2.1 用法一：说话时刻正在进行的动作（action happening exactly now）
 
 现在进行时态在口语中尤其频繁出现，最典型的用法是表示在说话的时刻正在进行的动作
 (action happening at the time of speaking or exactly now)。
@@ -129,41 +129,39 @@
 - `例 6`: Please don't make so much noise. I am studying. I can't concentrate.
 - `例 7`: Someone is knocking at the door. Can you answer it?
 
-### 2.2 用法二: 在目前一段时期内持续的一种暂时的情况 (action happening around now)
+### 2.2 用法二：在目前一段时期内持续的一种暂时的情况（action happening around now）
 
 现在进行时还常常用来表示现阶段正在持续的活动。
 这时进行时态表示的是一个一般性的活动，**在说话时刻这个动作并不一定正在发生**，
-而是在目前一段时期内持续的一种暂时的情况
-(The action may not be happening exactly now, but it is happening just before
-and just after now, and it is not permanent or habitual.)。
+而是在目前一段时期内持续的一种暂时的情况（The action may not be happening exactly now,
+but it is happening just before and just after now, and it is not permanent or
+habitual.）。
 
-- `例 1`: Jenny: Yes. And I know while you'***re not living*** in poverty, a
+- `1`: Jenny: Yes. And I know while you'***re not living*** in poverty, a
   college student still can't afford an apartment by the train station.
   - 这里 are not living 并不是强调说话时刻正在做什么，而是表示目前短暂的生活情况。
-- `例 2`:
+- `2`
   - A: What are you doing these days.
   - B: I am taking Prof. Zhang's grammar course in New Oriental School.
   - A: Oh, really? How are you getting along with your English? Is your English
     getting better?
   - B: Yeah. Of course! I'm coming along.
-- `例 3`:
+- `3`:
   - A: Have you found a position yet?
   - B: I'm still checking the papers.
     - 此时 B 不一定正在 checking。
-- `例 4`: Long hair is really in right now. So I'm letting my hair grow.
-- `例 5`: Florence is putting away half her pay each month. Soon, she'll be able
+- `4`: Long hair is really in right now. So I'm letting my hair grow.
+- `5`: Florence is putting away half her pay each month. Soon, she'll be able
   to buy a new car.
-- `例 6`: I am taking the bus to work this week, because my car is in the
-  garage.
+- `6`: I am taking the bus to work this week, because my car is in the garage.
   - 这里 am taking the bus to work 只是暂时的，与过去开车上班形成今昔对比。
   - 译: 这个星期我都是坐公共汽车上班，因为我的车正在维修厂修理。
-- `例 7`: I am not teaching English this month. I am working on a special
-  project.
+- `7`: I am not teaching English this month. I am working on a special project.
 
 以上例子都是表示现阶段在延续的一般活动，而不是正在发生的活动。
-但它们并不是恒久的或是规律性的活动 (not permanent or habitual)，否则就要用一般现在时态了。
+但它们并不是恒久的或是规律性的活动（not permanent or habitual），否则就要用一般现在时态了。
 
-### 2.3 用法三: 用于表示“改变”的动词，强调“逐渐变化”的过程
+### 2.3 用法三：用于表示“改变”的动词，强调“逐渐变化”的过程
 
 这种表示 action happening around now 的进行时态的用法，若是用于表示"改变"的动词，
 则强调"逐渐变化"的过程。常见的表示"改变"的动词有:
@@ -225,7 +223,7 @@ workers.*
 
 答案: Because our factory is losing money
 
-### 2.4 用法四: 用于强烈的感情色彩的表达
+### 2.4 用法四：用于强烈的感情色彩的表达
 
 复习"与现在有关的动作"的用法:
 
@@ -270,7 +268,7 @@ workers.*
   - 你该不是不想和我约会吧？
 - `例 11`: You are asking too much!
 
-### 2.5 用法五: 表示将来确定的安排
+### 2.5 用法五：表示将来确定的安排
 
 现在进行时在口语中还经常用来表示**将来的动作 (action in the future)**，
 此时现在进行时是表示在说话之前就确定的、计划好的将来的安排。
