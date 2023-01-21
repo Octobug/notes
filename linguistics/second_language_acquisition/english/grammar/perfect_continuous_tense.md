@@ -1262,6 +1262,20 @@ A: ____ you ____ (get) into Albuquerque?
 B: Sure. Whenever we were skating.
 ```
 
+*7. 牛顿的故事：*
+
+```txt
+    Science, in practice, depends far less on the experiments it prepares than 
+on the preparedness of the minds of the men who watch the experiments. Sir Issac
+Newton supposedly ____ (discover) gravity through the fall of an apple. Apples
+____ (fall) in many places for centuries and thousands of people ____ (see) them
+fall. But Newton for years ____ (be) curious about the cause of the orbital
+motion of the moon and planets. What kept them in place? Why didn't they fall
+out of the sky? The fact that the apple fell down toward the earth and not up
+into the tree answered the question he ____ (ask) himself about those larger
+fruits of the heavens, the moon and the planets.
+```
+
 ### 答案：综合训练：完成进行时态
 
 1. had known
@@ -1270,3 +1284,4 @@ B: Sure. Whenever we were skating.
 4. hit, sank, remained, discovered, has seen, has been exploring
 5. thought, liked, gives, have been thinking, have gotten, have been
 6. Have been studying, am planning, had, Did...get
+7. discovered, had been falling, had seen, had been, had been asking
