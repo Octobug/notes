@@ -1276,6 +1276,42 @@ into the tree answered the question he ____ (ask) himself about those larger
 fruits of the heavens, the moon and the planets.
 ```
 
+*8. 超速被罚：*
+
+```txt
+A: Can I see your license and registration please?
+B: What's the matter, officer? Did I do something wrong?
+A: You ____ (speed).
+B: I ____ (speed)?
+A: You certainly were. Do you have any idea how fast you ____ (go)?
+B: I'm not sure, but I think I ____ (go) about 35.
+A: This street is in a 25-mile-per-hour speed zone, you know.
+B: It is?
+A: In this state, the speed limit in residential area is 25 unless otherwise
+  posted. Besides, there are signs all along this street.
+B: I'm sorry, officer, I guess I ____ (not, notice). I was thinking about my job
+  interview. I'm on my way to it right now and I ____ (not, plan) to come this
+  way.
+A: What do you mean?
+B: Well, I ____ (go) to come down Elm Street but the traffic was really backed
+  up. There was some kind of construction going on. I turned on to a side street
+  and ended up here. Give me a break. I'm nervous enough as it is.
+```
+
+**二、请选择最佳答案填空。**
+
+*9.*
+
+```txt
+A: You look great since you ____ those exercise classes.
+B: Thanks. I've never felt better in my life.
+```
+
+- *A. took*
+- *B. have been taking*
+- *C. take*
+- *D. are taking*
+
 ### 答案：综合训练：完成进行时态
 
 1. had known
@@ -1285,3 +1321,9 @@ fruits of the heavens, the moon and the planets.
 5. thought, liked, gives, have been thinking, have gotten, have been
 6. Have been studying, am planning, had, Did...get
 7. discovered, had been falling, had seen, had been, had been asking
+8. were speeding, was speeding, were going, was going, didn't noticed,
+  hadn't planned, was going
+9. B。1.since 接短暂动词，常用一般过去时态，这是 since 最常见的用法。
+    2.接延续动词，此时分两种情况：一是用一般过去时态（did）表示从句动作已经结束；
+    二是用现在完成时态表示从句动作开始延续。
+    3.从句动作也可用完成进行时态（have been doing），此时动词的延续性或短暂性不限。
