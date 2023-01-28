@@ -1312,6 +1312,21 @@ B: Thanks. I've never felt better in my life.
 - *C. take*
 - *D. are taking*
 
+*10. I can't believe that you ____ three pizzas already! I ____ them in fifteen
+minutes ago!*
+
+- *A. ate/only brought*
+- *B. have been eating/only brought*
+- *C. have eaten/have only brought*
+- *D. have eaten/only brought*
+
+*11. By the time you get back, great changes ____ in this area.*
+
+- *A. will take place*
+- *B. will be taken place*
+- *C. will be taking place*
+- *D. will have taken place*
+
 ### 答案：综合训练：完成进行时态
 
 1. had known
@@ -1327,3 +1342,5 @@ B: Thanks. I've never felt better in my life.
     2.接延续动词，此时分两种情况：一是用一般过去时态（did）表示从句动作已经结束；
     二是用现在完成时态表示从句动作开始延续。
     3.从句动作也可用完成进行时态（have been doing），此时动词的延续性或短暂性不限。
+10. D。C 错误是因为确定的过去时间状语不能用于现在完成时态。
+11. D。
