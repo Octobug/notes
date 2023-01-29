@@ -62,7 +62,7 @@
 - [x] [3. 定语从句](attributive_clause.md)
 - [x] [4. 状语从句](adverbial_clause.md)
 - [x] [5. 完成时态](perfect_tense.md)
-- [ ] [6. 完成进行时态](perfect_continuous_tense.md)
+- [x] [6. 完成进行时态](perfect_continuous_tense.md)
 - [ ] [7. 虚拟语气](subjunctive_mood.md)
 - [ ] [8. 情态动词](modal_auxiliary_verbs.md)
 

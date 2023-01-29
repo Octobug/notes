@@ -57,22 +57,22 @@ If I could rearrange the alphabet, I would put U and I together.
 对于**现在的情形既可以是假设，也可以是谈与现在事实相反的情况**；
 对于**过去只能是谈与事实相反的情形**。
 
-- `例 1`：If I were to have the time tomorrow, I would help him.
+- `1`: If I were to have the time tomorrow, I would help him.
   - 表示将来虚拟假设的情形。
     用了虚拟，就表明说话人“我”认为自己明天有时间的可能性不大，所以言外之意是“我”可能帮不了他。
     这里用虚拟只是说明可能性不大，而不是表达与事实相违背的不可能的情形。
-- `例 2`：If I had the time now, I would help him.
+- `2`: If I had the time now, I would help him.
   - 表示现在虚拟假设的情形。表达的意义和 `例 1` 一样。
-- `例 3`：If I were you, I would help him.
+- `3`: If I were you, I would help him.
   - 表示与现在事实相反的情形。因为“我”成为“你”是不可能发生的情形，而不是可能性不大的情形了。
-- `例 4`：If I were the President, I would make some changes.
+- `4`: If I were the President, I would make some changes.
   - 表示与事实相反的情形。
-- `例 5`：If my grandfather were alive today, he would experience a very
+- `5`: If my grandfather were alive today, he would experience a very
   different world.
   - 表示与事实相反的情形。
-- `例 6`：If my grandfather were here now, he would be angry.
+- `6`: If my grandfather were here now, he would be angry.
   - 表示与事实相反的情形。
-- `例 7`：If I had had the time yesterday, I would have helped him.
+- `7`: If I had had the time yesterday, I would have helped him.
   - 表示过去事实相反的虚拟。
     “我”昨天没有时间，这已成为一个确定的事实，不可更改。
   - 昨天我要是有时间的话，我就会帮他了。

@@ -17,7 +17,7 @@
     - [5.4.2 “延续事件”与时间状语的关系](#542-延续事件与时间状语的关系)
       - [一、谓语要表示“延续”](#一谓语要表示延续)
       - [二、要与“延续性时间状语”连用](#二要与延续性时间状语连用)
-      - [三、没有延续性的时间状语，则表示一个“完成了 (complete)”的动作](#三没有延续性的时间状语则表示一个完成了-complete的动作)
+      - [三、没有延续性的时间状语，则表示一个“完成了（complete）”的动作](#三没有延续性的时间状语则表示一个完成了complete的动作)
   - [5.5 重复事件](#55-重复事件)
     - [5.5.1 过去的事件“重复”到现在](#551-过去的事件重复到现在)
     - [5.5.2 “重复事件”与时间状语的关系](#552-重复事件与时间状语的关系)
@@ -232,7 +232,7 @@
     - I have lived in China for 3 years. (还住在中国)
     - I lived in China for 3 years. (已不住在中国)
 
-#### 三、没有延续性的时间状语，则表示一个“完成了 (complete)”的动作
+#### 三、没有延续性的时间状语，则表示一个“完成了（complete）”的动作
 
 完成时态表示延续思维的两个条件：
 
@@ -319,46 +319,47 @@ the planet Mars.
 
 **现在完成时态** vs. **一般过去时态**
 
-- I have called him three times this morning.
+- `1`: I have called him three times this morning.
   - 我今天上午到目前为止已经给他打过三次电话了。
   - 言外之意是可能还会继续打。
-  - 说话的时间是"今天上午"。
-- I called him three times this morning.
+  - 说话的时间是“今天上午”。
+- `2`: I called him three times this morning.
   - 我今天上午给他打了三次电话。
   - 不会继续重复。
-  - 说话时间是"今天下午或晚上"
+  - 说话时间是“今天下午或晚上”
 
 **现在完成时态具有"将来可重复性"，而一般过去时态不具有"将来可重复性"**。
-这是判断用现在完成时态还是一般过去时态的重要原则，
-称为**可重复性** (Principle of Repeatability) 原则。
+这是判断用现在完成时态还是一般过去时态的重要原则，称为**可重复性** (Principle of
+Repeatability) 原则。
 
 #### 一、可重复原则是现在完成时态的一条根本原则
 
-- ✅ His father has been dead for three years.
+- `3`: ✅ His father has been dead for three years.
   - 他爸爸去世已经有三年了。
-- ❌ His father has been dead.
-  - 他爸爸曾经去世过。
-    - [三、没有延续性的时间状语，则表示一个"完成了 (complete)"的动作](#三没有延续性的时间状语则表示一个完成了-complete的动作)
+  - ❌ His father has been dead.
+    - 他爸爸曾经去世过。
+      - 参考[三、没有延续性的时间状语，则表示一个“完成了（complete）”的动作](#三没有延续性的时间状语则表示一个完成了-complete的动作)
     - 在英文里，这个句子一般被认为是错误的，因为没有使用场合。
-- ✅ His father is dead.
-  - 他爸爸已经去世了。
-- ❌ I have been old.
+  - ✅ His father is dead.
+    - 他爸爸已经去世了。
+- `4`: ❌ I have been old.
 
-如果是一个天然不具有重复性的事件，就不能用现在完成时态来表达。
+⚠️ 如果是一个天然不具有重复性的事件，就不能用现在完成时态来表达。
 
 #### 二、可重复原则与将来的时间有关
 
 **现在完成时态可以说是以现在的时间为参照来谈一个可以持续或重复到将来的事件**。
 
-- How many people have entered for the race?
+- `5`: How many people have entered for the race?
   - 表重复：到目前为止，有多少人报名参加这个比赛。
-- How many people entered for the race?
+- `6`: How many people entered for the race?
   - 比赛已结束：有多少人报名参加了那次比赛？
 
 单一事件使用了现在完成时态，同样与将来时间有关。
 
-- I have entered for the examination but I don't want to take it.
-- A: Have you visited the new exhibit?
+- `7`: I have entered for the examination but I don't want to take it.
+- `8`
+  - A: Have you visited the new exhibit?
   - B: Not yet, but it will be at the student center until June.
 
 展会还没结束，因此 A 使用的是现在完成时态。如果已结束应该用一般过去时。
@@ -369,10 +370,17 @@ the planet Mars.
 因为过去时间状语表明事件在过去已经完成而无法延续或重复到现在及未来，
 这违背了完成时态的将来可重复性原则。
 
-- I was absent four times last semester.
+- `9`: I was absent four times last semester.
   - last semester 表明 absent 这个事件已经结束。
-- I have been absent twice this semester.
+- `10`: I have been absent twice this semester.
   - this semester 还没结束，将来可能继续 absent.
+- `11`: In the last few years thousands of films ____ all over the word.
+  - A. have produced
+  - B. have been produced
+  - C. are producing
+  - D. are being produced
+  - 答案：B。in the last few years：在过去的几年时间里，其实是从过去算到现在，是现在完成时的标志。
+  - 在过去的几年时间里，全世界制作了成千上万部电影。
 
 #### 四、可重复性原则与现在时间
 
@@ -1387,51 +1395,51 @@ since 引导的从句的谓语不仅可以使用**一般过去时态**，还可�
 
 ### 5.10.1 在“过去”回顾“更远的过去”
 
-完成时态本质的思维特征是"回顾"。现在完成时态是站在"现在"回顾"过去"，
-而过去完成时态是站在"过去"回顾"更远的过去"。
+完成时态本质的思维特征是“回顾”。
+现在完成时态是站在“现在”回顾“过去”，而过去完成时态是站在“过去”回顾“更远的过去”。
 
-现在完成时态以"现在"作为时间参照物来谈论过去，
-过去完成时态则是以"过去"作为时间参照物来谈论更远的过去。
+现在完成时态以“现在”作为时间参照物来谈论过去，
+过去完成时态则是以“过去”作为时间参照物来谈论更远的过去。
 
-因此，可以说现在完成时和过去完成时本质的思维是一样的，区别只是参照的时间不同——前者是"现在"，
-而后者是"过去"。
+因此，可以说现在完成时和过去完成时本质的思维是一样的，区别只是参照的时间不同——前者是“现在”，
+而后者是“过去”。
 
-**现在完成时态的参照时间"现在"可以隐含在语境中而不明确地表达出来**。比如:
+💡 **现在完成时态的参照时间“现在”可以隐含在语境中而不明确地表达出来**。
 
-`例 1`: I have been a school teacher for 28 years.
+- `1`: I have been a school teacher for 28 years.
 
-但是，对于过去完成时态，其参照时间"过去"则一般是要明确地在上下文中给出——必须先有一个过去时，
+但是，对于过去完成时态，其参照时间“过去”则一般是要明确地在上下文中给出——必须先有一个过去时，
 然后以这个过去时作为参照的时间点，来谈论更远的过去，此时这个更远的过去才能用过去完成时态。
 
 **过去完成时态可以说是一个不能独立使用的时态，它必须依附于一个在上下文中出现的一般过去时**。
 也就是说，要先有一般过去时态，才可能有过去完成时态。
 
-`例 9`:
+- `2`:
+  - At the hotel she **asked** immediately for Dr. Barrett, of St. Louis. He
+    **had left** for home **that morning** and would not be back, she was told.
+    - 这里的 had left 发生在过去的动作 asked 之前，所以用过去完成时。
+    - 这里还有一个具体的过去时间 that morning：**过去完成时态可以与具体的过去时间状语连用**。
+  - One there she sat silent and thinking for many days, then told us that when
+    she was 18 she had loved a young medical student with all her heart.
+    - had loved 发生在 told 之前，所以用了过去完成时。
 
-- At the hotel she **asked** immediately for Dr. Barrett, of St. Louis. He
-  **had left** for home **that morning** and would not be back, she was told.
-  - 这里的 had left 发生在过去的动作 asked 之前，所以用过去完成时。
-  - 这里还有一个具体的过去时间 that morning: **过去完成时态可以与具体的过去时间状语连用**。
-- One there she sat silent and thinking for many days, then told us that when
-  she was 18 she had loved a young medical student with all her heart.
-  - had loved 发生在 told 之前，所以用了过去完成时。
+💡 具体的过去时间之所以可以与过去完成时连用，是因为只要这个具体的过去时间是表示“过去的过去”，
+就符合过去完成时态的根本使用原则——**表示“过去的过去”**之情况。
 
-具体的过去时间之所以可以与过去完成时连用，是因为只要这个具体的过去时间是表示"过去的过去"，
-就符合过去完成时态的根本使用原则——**表示"过去的过去"**之情况。
-
-`例 11`: 当国会下院议员的感受
+`3`：当国会下院议员的感受
 
 - A: You have been a member of Parliament for five or six weeks now. Is it as
   you expected it to be?
-- B: I had an idea of what being a member of Parliament was like. I had been on
-  a local authority for four years, and as a journalist and as a political
+- B: I had an idea of what being a member of Parliament was like. I had been
+  on a local authority for four years, and as a journalist and as a political
   activist I had visited the House of Commons, so it's more or less what I
   expected.
 
-**解析**: B 一开始回答就用了一般过去时态 had an idea, 表示以前对当议员的生活有所了解。
-紧接着他解释自己为什么会对议员的生活有所了解，因为她自己以前曾经在 (had been) 一个地方当局
-(a local authority) 工作过四年，并且常常拜访 (had visited) 国会下院。这里的
-had been 和 had visited 都是基于前面的一般过去时态的 had an idea
+**解析**：B 一开始回答就用了一般过去时态 had an idea, 表示以前对当议员的生活有所了解。
+紧接着他解释自己为什么会对议员的生活有所了解，因为她自己以前曾经在（had been）一个地方当局（a
+local authority）工作过四年，并且常常拜访（had visited）国会下院。
+
+这里的 had been 和 had visited 都是基于前面的一般过去时态的 had an idea
 基础上的一个更远的过去事件，所以都用了过去完成时态。也就是说，因为前文先有了 had an idea，
 所以后文再往过去回顾就得用过去完成时 had been 和 had visited。
 
@@ -1439,39 +1447,39 @@ had been 和 had visited 都是基于前面的一般过去时态的 had an idea
 Since I have been a member of Parliament for five or six weeks now, I have an
 idea of what being a member of Parliament is like.
 由于没有了**一般过去时态**作为时间参照，后文再对过去的事件进行陈述就不能用**过去完成时态**，
-而应该改用**一般过去时态**: ... I was on a local authority for four years and ... I
+而应该改用**一般过去时态**：... I was on a local authority for four years and ... I
 visited the House of Commons, ...。
 
 但是从前后两部分的逻辑关系来看，原文 had been 和 had visited 是对前文的 had an idea
 的解释，如果改成**一般现在时态**说成 have an idea，那么后文的 was 和 visited 就与前文的
 have an idea 在逻辑语义上没有联系，因此也就无法对 have an idea 进行解释说明。
 
-`例 12`: 母羊如何辨认小羊羔
+`4`：母羊如何辨认小羊羔
 
 I had always wondered how the ewes knew their own lambs; now I learned that it
 was partly by voice, but chiefly by smell, looks not entering into it.
 
-译: 过去我一直不明白母羊是怎样认出自己生的羊羔的，后来我才知道，它们一方面是靠听声音来辨认，
+译：过去我一直不明白母羊是怎样认出自己生的羊羔的，后来我才知道，它们一方面是靠听声音来辨认，
 但主要是靠气味，而不是靠长相。
 
-**解析**: 如果后面说成 now I learn that ...，那么前面就得改为**一般过去时态**说成
+**解析**：如果后面说成 now I learn that ...，那么前面就得改为**一般过去时态**说成
 I always wondered how the ewes knew their own lambs; now I learn that it is
 partly by voice, but chiefly by smell, looks not entering into it.
 
-`例 15`:
+`5`：
 
 - A: It was my grandmother's birthday yesterday.
 - B: Is she old?
 - A: Well, by the time we lit up the last candle on her birthday cake, the first
   one had gone out!
 
-解析: by the time 本身的意思是 "在...之前"，所以过去的动作 lit 之前发生了 had gone out
+解析：by the time 本身的意思是“在...之前”，所以过去的动作 lit 之前发生了 had gone out
 的动作，故用**过去完成时态**。
 
-💡 **by the time** 常常与**过去完成时态**搭配使用，具体结构是: "过去完成时态 + by the
-time + 一般过去时"。
+💡 **by the time** 常常与**过去完成时态**搭配使用，具体结构是：“过去完成时态 + by the
+time + 一般过去时”。
 
-`例 16`: She felt suitably humble just as she ____ when he had first taken a
+`6`: She felt suitably humble just as she ____ when he had first taken a
 good look at her, hair waved and golden, nails red and pointed.
 
 - A. had
@@ -1479,14 +1487,14 @@ good look at her, hair waved and golden, nails red and pointed.
 - C. would have had
 - D. has had
 
-答案: A。首先主句的谓语 felt 是表示过去的时间。其次，时间状语从句 when 的谓语 had taken
+答案：A。首先主句的谓语 felt 是表示过去的时间。其次，时间状语从句 when 的谓语 had taken
 是过去完成时。综合这两点，需要判断 as 引导的方式状语从句的谓语需要用什么时态。显然，as
 引导的从句的谓语动作发生在 felt 之前，故也需要用过去完成时态，因而可以排除 C 和 D。
-B 选项 had had 是一个完整的谓语，谓语动词是 had，但该句中没有 "had (有)" 的意思。
+B 选项 had had 是一个完整的谓语，谓语动词是 had，但该句中没有 "had（有）" 的意思。
 A 选项 had 其实是一个省略形式，完整的谓语应该是 had done，done 可以省去。这里的 done
 代替了 felt，也就是说真正的谓语是 had felt (as she had felt humble)。因此选 A。
 
-译: 她举止谦逊、得体，就像他当初见到她时，她所表现的那样: 金色波浪发、尖尖的指甲涂成了红色。
+译：她举止谦逊、得体，就像他当初见到她时，她所表现的那样：金色波浪发、尖尖的指甲涂成了红色。
 
 #### 思维训练 5.10.1
 
@@ -1539,10 +1547,10 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
 
 ### 5.10.2 延续事件、重复事件和单一事件的过去完成时
 
-过去完成时是站在"过去时间"的角度回顾更远的过去，即谈的是"过去的过去"。这里涉及两个时间点:
-一个事件从更远的过去开始发生，然后"延续"到另一个较近的过去，或者"重复"到另一个较近的过去，
+过去完成时是站在“过去时间”的角度回顾更远的过去，即谈的是“过去的过去”。这里涉及两个时间点：
+一个事件从更远的过去开始发生，然后“延续”到另一个较近的过去，或者“重复”到另一个较近的过去，
 或者在过去的某一个时刻已经结束，这就分别构成了**延续事件**、**重复事件**和**单一事件**。
-具体来说，过去完成时是用来表示在过去的某一时刻之前就已开始的动作，这一动作:
+具体来说，过去完成时是用来表示在过去的某一时刻之前就已开始的动作，这一动作：
 
 1. 在该过去时刻仍然在继续，或在该过去时刻刚刚停止 (延续事件)；
 2. 在该过去时刻之前的一段时间内重复的动作 (重复事件)；
@@ -1550,8 +1558,7 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
 
 #### 一、过去完成时表示“延续事件”
 
-如同现在完成时，
-**过去完成时可以表示开始于过去之前(即过去的过去)的动作或状态在过去这一时刻仍在持续**。
+如同现在完成时，**过去完成时可以表示开始于过去之前(即过去的过去)的动作或状态在过去这一时刻仍在持续**。
 具体来说，就是表示一个动作或状态在过去的某一时间之前已经开始，
 这一动作或状态一直持续到这一过去时间，并且到这一过去时间还未结束并仍有可能继续持续下去。
 
@@ -1561,15 +1568,14 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
     stayed        moved
 ```
 
-- `例 1`: I had stayed in America for two years when he moved here.
-- `例 2`: I had earned 1,000 words by the end of last year.
-- `例 3`: We had studied English for six years when we entered college.
-
-  这句如果改为谈一般情况，则需要说成:
+- `1`: I had stayed in America for two years when he moved here.
+- `2`: I had earned 1,000 words by the end of last year.
+- `3`: We had studied English for six years when we entered college.
   
-  `例 4`: We have studied English for six years when we enter college.
+`3` 如果改为谈一般情况，则需要说成：
 
-- `例 5`:
+- `4`: We have studied English for six years when we enter college.
+- `5`:
   - A: It's already 10 o'clock. I guess Bob and Amy won't be coming to the
     party.
   - B: They called at nine to say that they'd been help up.
@@ -1582,23 +1588,22 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
     waited        turned
 ```
 
-- `例 8`: I had waited for her for two hours in such a severe winter when she
+- `6`: I had waited for her for two hours in such a severe winter when she
   eventually turned up, which of course drove me mad.
-- `例 9`: He had served in the army for ten years; then he retired and married.
+- `7`: He had served in the army for ten years; then he retired and married.
   His children were now at school.
-- `例 10`: There had been fifty colleges in our city up till 1993.
+- `8`: There had been fifty colleges in our city up till 1993.
 
 #### 二、过去完成时表示“重复事件”
 
-如同现在完成时，
-**过去完成时可以表示在过去之前开始的动作在过去之前的一段时间内重复发生**。
+如同现在完成时，**过去完成时可以表示在过去之前开始的动作在过去之前的一段时间内重复发生**。
 
 ```diagram
       A   B   C   D   E   |  
 ------|-------------------|------>
 ```
 
-- `例 11`: She (Audrey Hepburn) had made a total of 31 high quality movies.
+- `9`: She (Audrey Hepburn) had made a total of 31 high quality movies.
   
   奥黛丽赫本在这句话之前已经去世，拍电影的动作在过去已经停止，无法继续重复，所以用过去完成时。
 
@@ -1606,14 +1611,13 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
 
   汤姆克鲁斯还在世，且依然在影视圈内，他拍电影这一活动可能一直重复下去，所以这里用现在完成时。
 
-- `例 13`: I had proposed to her five times, but she still refused to marry me.
-- `例 14`: I had written 100 letters when she finally promised to marry me.
-- `例 15`: Clint had written three letters by the time she arrived.
+- `10`: I had proposed to her five times, but she still refused to marry me.
+- `11`: I had written 100 letters when she finally promised to marry me.
+- `12`: Clint had written three letters by the time she arrived.
 
 #### 三、过去完成时表示“单一事件”
 
-如同现在完成时，
-**过去完成时可以表示开始于过去之前的动作到过去这一时刻之前即已停止**。
+如同现在完成时，**过去完成时可以表示开始于过去之前的动作到过去这一时刻之前即已停止**。
 具体来说，就是表示一个动作或状态在过去的某一时间之前已经开始，并在这一过去的时间之前即告结束，
 而没有持续到这一过去的时刻。这时过去完成时的动作通常是短暂动作。
 
@@ -1623,10 +1627,10 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
     made  came
 ```
 
-- `例 16`: She had made everything ready before I came.
-- `例 17`: Her baby had fallen asleep when she went into the room.
+- `13`: She had made everything ready before I came.
+- `14`: Her baby had fallen asleep when she went into the room.
   - fall 的动作在 went 之前已经完成，故用过去完成时。
-- `例 19`: I had just sat down in the recliner to watch TV when I heard a knock
+- `15`: I had just sat down in the recliner to watch TV when I heard a knock
   on the door. When I opened the front door I saw a young man standing there
   staring at me.
   - sit 这个动作在 heard 之前已完成，故用过去完成时。
@@ -1638,22 +1642,22 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
 以下动词用于过去完成时的时候，可表示过去未能实现的计划、设想、意图或希望。
 
 - consider
-  - `例 7`:
+  - `1`:
     - A: Are you glad you came to China?
     - B: Yes. Indeed. I'd considered going to Tokyo or Singapore, but I've never
       regretted my decision.
 - expect
 - hope
-  - `例 4`: She had hoped that he would come to date her, but he didn't show up.
-  - `例 5`: They had hoped to see you off at the airport, but they got there too
+  - `2`: She had hoped that he would come to date her, but he didn't show up.
+  - `3`: They had hoped to see you off at the airport, but they got there too
     late.
 - intend
-  - `例 1`: I had intended to watch just one program, but somehow I couldn't
+  - `4`: I had intended to watch just one program, but somehow I couldn't
     make myself switch off the TV.
-  - `例 2`: I had intended to see you, but I was busy.
+  - `5`: I had intended to see you, but I was busy.
 - mean
 - plan
-  - `例 3`: I had planned to go shopping with you, but my mother came to see me
+  - `6`: I had planned to go shopping with you, but my mother came to see me
     just when I was about to go.
 - propose
 - suppose
@@ -1664,12 +1668,11 @@ thanked her and the lady said 'Don't mention it' so I didn't."*
 #### 二、用于最高级句型
 
 这一点完全类似于 [5.8 完成时态用于最高级句型](#58-完成时态用于最高级句型) 中的用法，
-即用在 "It was + 序数词 (first, second...)" 或 "最高级 + 名词 + that 从句"
+即用在 “It was + 序数词 (first, second...)” 或 “最高级 + 名词 + that 从句”
 句型中。
 
-`例 8`: It was the third time that someone had interrupted me that night.
-
-译: 那是那天晚上我第三次被打断。
+- `7`: It was the third time that someone had interrupted me that night.
+  - 那是那天晚上我第三次被打断。
 
 ### 5.10.4 过去完成时与一般过去时的比较
 

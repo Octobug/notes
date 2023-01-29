@@ -3,6 +3,7 @@
 - [易错词汇与短语](#易错词汇与短语)
   - [词汇](#词汇)
   - [短语](#短语)
+    - [in + 一段时间's time](#in--一段时间s-time)
     - [rather than vs. other than](#rather-than-vs-other-than)
     - [for example, for instance](#for-example-for-instance)
     - [such as, like](#such-as-like)
@@ -11,6 +12,10 @@
 ## 词汇
 
 ## 短语
+
+### in + 一段时间's time
+
+表示在“一段时间”之后。
 
 ### rather than vs. other than
 

@@ -393,24 +393,24 @@ activity)。
 
 在带有持续的时间状语时，用两种时态几乎没有多大区别，都表示一个开始于过去的动作一直延续到现在。
 
-- `例 1`：我学习英文有 10 年了。
+- `1`：我学习英文有 10 年了。
   - I have been learning English for ten years.
   - I have learned English for ten years.
-- `例 2`：自从三年前开始，我就一直住在这里。
+- `2`：自从三年前开始，我就一直住在这里。
   - I have been living here since three years ago.
   - I have lived here since three years ago.
-- `例 3`：我教书有 25 年了。
+- `3`：我教书有 25 年了。
   - I have been teaching for 25 years.
   - I have taught for 25 years.
 
 📢 还有一种观点认为此时二者的细微区别在于：现在完成进行时会**强烈暗示动作会继续持续下去**；
 而现在完成时则往往表示**动作有可能会持续下去**。
 
-- `例 3` 对比：
+- `4` 对比：
   - I have been teaching for 25 years, and I can't imagine doing anything else.
   - I have taught for 25 years, so now it's time to think about doing something
     else.
-- `例 4`：It is amazing that the Leaning Tower of Pisa ____ for so long.
+- `5`: It is amazing that the Leaning Tower of Pisa ____ for so long.
   - A. has stood
   - B. has been standing
   - C. stood
@@ -427,17 +427,17 @@ activity)。
 即表示“单一事件”中的过去的经历；
 而**现在完成进行时**在没有持续的时间状语的情况下，依然可以表示延续至今的事件。
 
-- `例 5`：
+- `6`:
   - I have worked in this company.
     - have worked 表示曾经的经历。
   - I have been working in this company.
     - have been working 表示一直在延续的事件，即现在还在这家公司工作。
-- `例 6`：
+- `7`:
   - Have you ever worked in a foreign-funded company?
     - have worked 表示询问对方曾经的经历。
   - You look tired. Have you been working hard?
     - have been working 表示“在近期持续的一般性活动”。
-- `例 7`：
+- `8`:
   - He has slept.
     - 他睡过觉了。
   - He has been sleeping.
@@ -446,7 +446,7 @@ activity)。
 从以上这些例子可以看到，在不带有时间状语时，现在完成时指的是在过去某一时间完成了的动作，
 现在完成进行时则表示一个正在持续的活动，活动还没有结束。
 
-- `例 8`：
+- `9`:
   - ✅ I've been cleaning the house, but I still haven't finished.
   - ❌ I've cleaned the house, but I still haven't finished.
     - have cleaned 表示一个过去完成了的活动，所以接下去无法说 but I still haven't
@@ -1327,6 +1327,110 @@ minutes ago!*
 - *C. will be taking place*
 - *D. will have taken place*
 
+*12. John and I ____ neighbors since we ____ children.*
+
+- *A. are/were*
+- *B. were/have been*
+- *C. have been/are*
+- *D. have been/were*
+
+*13.*
+
+```txt
+A: The plumber ____ here yet?
+B: Yes, but he only ____ for thirty minutes.
+```
+
+- *A. has been/has stayed*
+- *B. was/has stayed*
+- *C. has been/stayed*
+- *D. was/stayed*
+
+*14. Many years ago, he ____ in Paris with his uncle for a long period of time.*
+
+- *A. had been living*
+- *B. had lived*
+- *C. lived*
+- *D. has been living*
+
+*15. That was the first time the old lady ____ her suffering to others.*
+
+- *A. was telling*
+- *B. had told*
+- *C. have told*
+- *D. told*
+
+*16. It's the third time I ____ this particular aspect of grammar.*
+
+- *A. explain*
+- *B. explained*
+- *C. have explained*
+- *D. will explain*
+
+*17. In two years' time he ____ his master's degree in chemistry.*
+
+- *A. has completed*
+- *B. will be completing*
+- *C. will have completed*
+- *D. will have been completing*
+
+*18. Until then, Jack's family ____ from him for more than a year.*
+
+- *A. hadn't heard*
+- *B. hasn't heard*
+- *C. didn't hear*
+- *D. hasn't been hearing*
+
+*19. It is amazing that the leaning Tower of Pisa ____ for so long.*
+
+- *A. have stood*
+- *B. stands*
+- *C. has been standing*
+- *D. should have stood*
+
+**三、请把下列各句中的中文翻译成英语。**
+
+*20. 近一个月来，Jim 每天半夜都要给我打电话，向我诉苦，真的让我很烦！*
+
+*21. 我们谈恋爱有三年了。*
+
+*22. 最近物价一直看涨，不知是否会一直这样。*
+
+*23. 你最近又在熬夜？*
+
+*24. 那话你都说了有五年了。*
+
+*25. 我计划这次旅行有一年多了，并且和他讨论了很多次。*
+
+*26. 自从上大学以来，我一直坚持早起。*
+
+*27.*
+
+- *A: Have you had a chance to wear your new shirt yet?*
+- *B: That reminds me. 我一直想换个大号的。*
+
+*28.*
+
+- *A: 我一直想检查一下眼睛。I just haven't gotten around to it yet.*
+- *B: Why don't you call for an appointment right away? Once on your calendar
+  you will get it done.*
+
+*29.*
+
+- *A: 自从我一个人搬了那个很重的书桌以来，到现在，我肩膀疼了两三个星期了。*
+- *B: If it hasn't gotten better by now you should have it looked at.*
+
+*30.*
+
+- *A: 今年你一直住在校外的，是吧？*
+- *B: Yes, and I'm going to next year too. It's so much nicer than living in the
+  dormitory.*
+
+*31.*
+
+- *A: You ought to see a doctor about that cough.*
+- *B: I guess I should. 我已经拖了好几天了。*
+
 ### 答案：综合训练：完成进行时态
 
 1. had known
@@ -1344,3 +1448,26 @@ minutes ago!*
     3.从句动作也可用完成进行时态（have been doing），此时动词的延续性或短暂性不限。
 10. D。C 错误是因为确定的过去时间状语不能用于现在完成时态。
 11. D。
+12. D。
+13. C。
+14. C。
+15. B。过去完成时用于最高级句型。
+16. C。现在完成时用于最高级句型。
+17. C。
+18. A。until then 是一个过去时间的标志。
+19. C。A 人称形式不对，若改为 has stood 也不行，因为这有一种表示斜塔刚刚倒塌的意味。
+20. Jim has been calling me up in the middle of the night over the past month
+    and telling me his troubles. I really feel upset.
+21. We have been going together for three years.
+22. The price has been going up recently. I wonder whether it will remain so.
+23. You have been staying up late again?
+24. You have beening saying that for five years.
+25. I have been planning this trip for more than a year and have discussed it
+    with him many times.
+26. I have been getting up early since I entered the college.
+27. I have been meaning to exchange it for a larger size.
+28. I have been meaning to get my eyes checked.
+29. My shoulder has been hurting for a couple weeks till now ever since I
+    moved that heavy desk by myself.
+30. You have been living off campus this year, haven't you?
+31. I have been putting it off for days.
