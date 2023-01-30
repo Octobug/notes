@@ -5,7 +5,11 @@
     - [1.1 在过去时刻重复发生的事件](#11-在过去时刻重复发生的事件)
     - [1.2 虚拟条件句：两类三时](#12-虚拟条件句两类三时)
     - [1.3 虚拟条件句的谓语变化](#13-虚拟条件句的谓语变化)
-  - [2. 将来虚拟 (ZjCj)](#2-将来虚拟-zjcj)
+  - [2. 将来虚拟](#2-将来虚拟)
+  - [3. 现在虚拟](#3-现在虚拟)
+    - [思维训练 3. 现在虚拟](#思维训练-3-现在虚拟)
+      - [答案：思维训练 3. 现在虚拟](#答案思维训练-3-现在虚拟)
+  - [7.4 过去虚拟 (ZgCg)](#74-过去虚拟-zgcg)
 
 语气 (mood) 是英文中谓语动词的一种变化形式，用来表示说话者的**意图和态度**。
 英文中的语气可分为三种：
@@ -47,7 +51,7 @@ If I could rearrange the alphabet, I would put U and I together.
 对三种时间进行虚拟，即是对**将来**、**现在**和**过去**这三种时间的虚拟。
 
 - **将来时间**：将来的情形还没有发生，因而不可能成为一个事实，即谈到将来的一切情形都不是一个事实。
-  因此，对于将来时间都虚拟不可能以事实为基础，而只能是表达说话人都一个设想或愿望。
+  因此，对于将来时间都虚拟不可能以事实为基础，而只能是表达说话人的一个设想或愿望。
   所以，**对于将来的虚拟只适用于假设条件句，而不可能表达一个与事实相反的虚拟**。
 - **现在时间**：对于现在的情形，既可能是事实，也可能是假设条件。
   因此，**假设条件句和事实相反句适用于谈现在的情况**。
@@ -62,7 +66,7 @@ If I could rearrange the alphabet, I would put U and I together.
     用了虚拟，就表明说话人“我”认为自己明天有时间的可能性不大，所以言外之意是“我”可能帮不了他。
     这里用虚拟只是说明可能性不大，而不是表达与事实相违背的不可能的情形。
 - `2`: If I had the time now, I would help him.
-  - 表示现在虚拟假设的情形。表达的意义和 `例 1` 一样。
+  - 表示现在虚拟假设的情形。表达的意义和 `1` 一样。
 - `3`: If I were you, I would help him.
   - 表示与现在事实相反的情形。因为“我”成为“你”是不可能发生的情形，而不是可能性不大的情形了。
 - `4`: If I were the President, I would make some changes.
@@ -107,7 +111,7 @@ If I could rearrange the alphabet, I would put U and I together.
 3. **混合虚拟一（主现从过）**：would do + if...had done，这里的主句是表示对现在的虚拟，而
    if 引导的条件状语从句是表示对过去的虚拟，即主句与从句所虚拟的时间不一致。
 4. **混合虚拟二（主过从现）**：would have done + if...did，
-   这里的主句是表示对过去的虚拟，而 if 引导的条件状语从句是表示对过去的虚拟，
+   这里的主句是表示对过去的虚拟，而 if 引导的条件状语从句是表示对现在的虚拟，
    即主句与从句所虚拟的时间不一致。
 
 使用虚拟语气需要考虑以下四个方面：
@@ -117,6 +121,197 @@ If I could rearrange the alphabet, I would put U and I together.
 3. **主句虚拟**：是用 would do 还是 would have done；
 4. **从句虚拟**：是用 were to do 或 should do，还是 did/were，还是 had done/had been。
 
-## 2. 将来虚拟 (ZjCj)
+## 2. 将来虚拟
+
+形式：从句用 were to do 或 should do，主句用 would do。
+
+对于将来虚拟，它只能是**谈将来的“不大可能”的情形**，而不是一个与事实相反的情形。
+其意义是用将来虚拟谈论自己认为不太可能发生的事情。
+
+💡 将来虚拟在很大程度上是由说话人对事件的态度决定的。
+所以，将来虚拟使用起来非常灵活，即**你对说话语气（虚拟或不虚拟）的选择，反映了你的态度**。
+
+我们常常会用将来虚拟来谈一个不太可能实现的愿望。
+
+- `1`: If I were to live my life over again, I would have you as my wife.
+  - 这里将来虚拟表达的是一个良好的愿望，将来是不会实现的。
+  - 如果我有来生，我一定会娶你为妻。
+
+或者用将来虚拟来谈一个说话人认为不太可能发生的情形，这表明说话人的自信程度。
+
+- `2`: If I should win the lottery, I would buy a house.
+  - 这里用 should，表示说话人对于自己赢得大奖的信心不大，但还是想碰碰运气。
+    也相当于表达了自己将来的愿望。
+  - 万一我赢得了彩票大奖，我就会买一栋房子。
+- `3`: Sometimes I have thought it would be an excellent rule to live each day
+  as if we should die tomorrow. Such an attitude would emphasize sharply the
+  values of life.
+  - 这里说“假如我们明天就会死掉”，这不是绝对不可能发生的事件，而只是可能性不大。
+    所以要用将来虚拟 should die 来表达这种将来的“小概率”事件。
+  - 我时常会想，如果我们能以明天就要告别这个世界的态度来度过每一天的话，那一定是极好的，
+    因为这种心态会让每一个人珍视生命的意义。
+
+事实上，对于很多将来的情况，选择用虚拟还是不用虚拟，完全取决于说话人对所陈述事件的态度，或者说虚拟语气能表明说话人的态度。
+
+- `4`: What do you think would be the value of the necklace, if I were to sell
+  it?
+  - 这里“卖项链”这个事件是说话人完全可以控制的，但说话人依然用了将来虚拟的谓语形式 were to
+    sell，这只是表明说话人这样一个态度——不会卖或不大可能会卖这个项链。
+    至于为什么不大可能卖，只有说话人自己知道，也不是听者所关心的。
+  - 假如我把这串项链卖了，你觉得会是什么价？
+
+将来虚拟在很大程度上是由说话人对事件的态度决定的，所以，将来虚拟使用起来非常灵活。
+比如，同样是“卖项链”事件，对于一个急需用钱而且想把自己的项链卖掉来换钱的人，若他在询问卖价，
+这时他就不会用将来虚拟了，而是用一般陈述的语气。
+
+- `5`: What do you think is the value of the necklace if I sell it to you?
+  - 这里说话人是真想卖掉项链，所以他就用 is 和 sell 这样的一般时态来询问卖价。
+  - 如果我把这串项链卖给你，你能出什么价？
+
+比较**真实条件**与**将来虚拟条件**的区别：
+
+- `6`
+  - If it were to rain, I would stay home.
+    - 虚拟语气表明说话人认为将来不太可能会下雨。
+    - 万一要下雨，那我就在家呆着。
+  - If it rains, I will stay home.
+    - 陈述语气表明说话人认为将来下雨的可能性比较大。
+    - 如果下雨了，我就在家呆着。
+- `7`: What would happen if someone were to dispose litter in a public place?
+  "It would stir public anger and denouncement," Sonia said. "People would look
+  at you strangely as if you were an alien from outer space. At the same time,
+  someone would quietly pick it up for you. Who wouldn't be embarrassed by such
+  a scene?"
+  - 这里用的都是虚拟语气，言外之意是，这里的人们不太可能在公共场所乱扔垃圾，或者说这种情况极少发生。
+  - 如果有人在公共场所公然乱扔垃圾，会怎样呢？Sonia 说：“这会引起公愤，招来谴责。
+    人们会用奇怪的目光看着你，仿佛你是个外星来的怪物，而且会有人默默地替你拾起垃圾。
+    如果置身于这样的场景之中，谁能不感到尴尬呢？”
+
+## 3. 现在虚拟
+
+形式：**主句谓语用“would/should + 动词原形”，从句谓语用一般过去时态（如果是 be
+动词则使用 were）**。
+
+> **were 还是 was?**
+>
+> <https://www.italki.com/en/post/question-325231>
+>
+> Technically, "I wish I were special" is the correct way, although "I wish I
+> was special" is so widely used nowadays that it's generally considered
+> acceptable. "Were", in this case, is the past subjunctive of the verb "to be",
+> but because of its similarity to the indicative plural past tense of the verb
+> ("we were", "you were", "they were"), it is often re-analysed as a past
+> indicative form and "corrected" to the singular "was". When speaking or
+> writing in formal settings, I would recommend using "were", but otherwise you
+> can use either form.
+
+对比以下两个句子，其中例 `1` 中的谓语大都采用了“would + 动词原形”的形式，而例 `2`
+中的谓语则采用了动词的一般现在时态。这涉及对现在一般情况的虚拟。
+
+- `1`: If we could shrink the earth's population to a village of precisely 100
+  people, with all the existing human ratios remaining the same, it would look
+  something like the following:
+
+  - 因为我们不可能把地球上的 60 多亿人口缩减到 100 人，所以作者在从句中用过去式 could，
+    且在主句中用 would look 这样标准的一般虚拟的谓语形式。
+
+  There would be 57 Asians, 21 Europeans, 14 from the Western Hemisphere, both
+  north and south, 8 Africans.
+
+  52 would be female and 48 would be male.
+
+  ...
+- `2`: The following is also something to ponder...
+
+  If you woke up this morning with more health than illness, you are more
+  blessed than the million who will not survive this week.
+
+  - 这里 if 从句的谓语 woke up 使用过去式并不是表示虚拟，而是因为 this morning
+    相当于一个过去的时间，所以 woke up 就是一个一般过去时态。因此，主句自然就不是使用 would
+    be 这样的虚拟形式，而是一般现在时态 are。
+
+  If you have never experienced the danger of battle, the loneliness of
+  imprisonment, the agony of torture, or the pangs of starvation...you are ahead
+  of 500 million people in the world.
+
+  ...
+- `3`: I have often thought it **would be** a blessing if each human being
+  **were stricken** blind and deaf for a few days at some time during his early
+  adult life. Darkness **would make** him more appreciative of sight; silence
+  **would teach** him the joys of sound.
+  - 我常常想：如果每一个人在他生活的早期都要遭受几天的眼睛失明，耳朵失聪，那该是多么幸福啊！
+    黑暗会使他更加珍惜视觉；寂静无声能教会他欣赏声音的美妙。
+
+  If I **were** the president of a university I **should establish** a
+  compulsory course in "How to Use Your Eyes". The professor **would try** to
+  show his pupils how they **could add** joy to their lives by really seeing
+  what passes unnoticed before them. He **would try** to awake their dormant
+  and sluggish faculties.
+  - 如果我是一名大学校长的话，我会开设一门“如何用眼”的必修课。
+    教授应该教给学生如何真正看到从他们面前溜走的，被熟视无睹的事物，从而为生活增添乐趣，
+    他一定要唤醒学生们迟钝、麻木的感觉官能。
+
+  Suppose you set your mind to work on the problem of how you **would use**
+  your own eyes if you **had** only three more days to see. If with the oncoming
+  darkness of the third night you **knew** that the sun **would** never **rise**
+  for you again, how **would** you **spend** those three precious intervening
+  days? What **would** you most **want** to let your gaze rest upon?
+  - 设想你在思考这样一个问题：假如你只有三天的视力，你该如何使用你的眼睛。
+    假如在第三天晚上，随着黑暗的降临，你知道明天太阳不会再为你升起，你将如何度过这宝贵的三天？
+    你最想让你的目光凝视在什么上面？
+- `4`: It is not the lack of love that makes unhappy marriages; it is the lack
+  of friengship. My advice to all men is "Choose in marriage a woman that you
+  **would choose** as a friend if she **were** a man". This applies to women in
+  the same way. One tragedy in many marriages is that the romantic love on which
+  it was based never repened into friendship.
+  - 这里作者说 if she were a man，但实际上女人无法变为男人，所以这是一个对一般情况的虚拟。
+- `5`: If everyone lived like Americans, then you would need three planet earths
+  to sustain that level of consumption.
+- `6`: How would the Chinese cope if the average family in China had two cars,
+  and, like Americans, the average person ate 269 pounds (122 kilograms) of meat
+  a year?
+- `7`: This has been my life. I have found it worth living, and would gladly
+  live it again if the chance were offered me.
+- `8`: If I could read and write in Chinese, I would need to recognize at least
+  3,000 or more characters.
+- `9`: From the letter I have been receiving from our Chinese readers, the
+  problem with tense seems to be foremost. English tenses would make me tense if
+  I were a Chinese student.
+
+💡 虚拟语气其实就是时态问题，不过它要比一般的时态问题更难。
+因为它不仅需要判断谓语动作发生的时间，还要能够敏锐地“嗅出”与事实相反的虚拟“味道”来。
+
+- `10`: If I became President, I would...
+  - 对于一个不太可能成为总统的人，“当总统”是一个与现实相反的虚拟假设，
+    所以这句话要借助谓语动词变化来传达这种虚拟假设的情形。
+- `11`: If I become President, I will make America stronger at home and mroe
+  respected in the world.
+  - 对于一个很有可能成为总统的人，比如总统候选人来说，则可以这么说，即使用真实条件句。
+
+### 思维训练 3. 现在虚拟
+
+**一、单项选择。**
+
+*1.*
+
+```txt
+Man: I haven't seen George all day.
+Woman: Have you checked the lab? I wouldn't be surprised if he slept there.
+
+Question: What does the woman imply about George?
+```
+
+- *A. He is probably still asleep in the lab.*
+- *B. He spends a lot of time in the lab.*
+- *C. She needs to check his work.*
+- *D. She has no idea where he is.*
+
+#### 答案：思维训练 3. 现在虚拟
+
+1. B。说话人用了虚拟语气 I wouldn't be surprised if he slept there.
+   （如果他睡在那里，我都不觉得奇怪。）这表明乔治花在实验室的时间很多，
+   而不是说明乔治可能还在实验室睡觉，所以 A 不对。
+
+## 7.4 过去虚拟 (ZgCg)
 
 >>>>> progress
