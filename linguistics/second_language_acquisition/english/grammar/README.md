@@ -68,8 +68,8 @@
 
 #### 高级教程：驾驭语法
 
-- [ ] [1. 名词从句](nominal_clause.md)
-- [ ] 2. 定语从句
+- [x] [1. 名词从句](nominal_clause.md)
+- [ ] [2. 定语从句](attributive_clause.md)
 - [ ] 3. 状语从句
 - [ ] [4. 不定式](infinitive.md)
 - [ ] [5. 动名词](gerund.md)

@@ -62,8 +62,11 @@
       - [同位语从句结构变化](#同位语从句结构变化)
   - [6. 从句嵌套结构](#6-从句嵌套结构)
     - [6.1 名词从句的“嵌套结构”](#61-名词从句的嵌套结构)
-    - [1.6.2 连词与动词的配比原则](#162-连词与动词的配比原则)
+    - [6.2 连词与动词的配比原则](#62-连词与动词的配比原则)
+    - [思维训练：6. 从句嵌套结构](#思维训练6-从句嵌套结构)
+      - [答案：思维训练：6. 从句嵌套结构](#答案思维训练6-从句嵌套结构)
   - [综合训练：名词从句](#综合训练名词从句)
+    - [答案：综合训练：名词从句](#答案综合训练名词从句)
 
 ## 1. 简单句与名词从句
 
@@ -871,25 +874,99 @@ They are faced with the **problem** whether they should continue to work.
   - 答案：D。how 引导的宾语从句中嵌套了一个由 what 引导的主语从句。
   - Lee 教授的这本书能够让你知道如何把观察到的东西应用到其他场景中。
 
-### 1.6.2 连词与动词的配比原则
+### 6.2 连词与动词的配比原则
 
->>>>> progress
+对于复杂的名词从句，尤其是当一个复杂句子里“嵌套”有多个名词从句时，
+往往需要借助于名词从句的谓语动词和连词来断句以弄清不同层次的名词从句之间的逻辑关系。
+
+因此，在分析句子结构时，可以先找到句中的各个谓语动词，然后再找连词。
+由于连词后面必然是从句，而从句中必然有谓语动词，
+因此，在每个连词后面必然要找到一个与之相应的从句谓语动词。
+
+在英语中，有 N 个谓语动词，就会对应有 N-1 个连词以及 N-1 个对应的从句。
+在句子中，谓语动词的个数一定是多于连词个数的， 通常是多出一个（主句的谓语动词）。
+
+- `1`: That the seas are being overfished has been known for years. What
+  researchers such as Ransom Myers and Boris Worm have shown is just how fast
+  things are changing.
+- `2`: No one takes much interest in the marks a little child gets on his test;
+  what we are interested in is whether we can conclude from his mark on the test
+  that the child will do better or worse than other children of his age at tasks
+  which we think require "general intelligence".
+  - 定语从句：marks (which/that) a little child gets on his test
+  - 主语从句：what we are interested in
+  - 主语的谓语：is
+  - 表语从句：
+    - 主谓状结构：whether we can conclude from his mark on the test
+    - 宾语从句：
+      - 主谓状结构：that the child will do better or worse
+      - 插入比较结构（分隔了 do better or worse 与 at 的搭配）：than other children
+        of his age (do)
+      - 中心词 tasks：at tasks
+      - 定语从句：which
+        - 插入语：we think
+        - 谓语部分：require "general intelligence"
+
+### 思维训练：6. 从句嵌套结构
+
+**请分析下面句子的结构，然后将其译成地道汉语。**
+
+*1. On the other, it links these concepts to everyday realities in a manner
+which is parallel to the links journalists forge on a daily basis as they cover
+and comment on the news.*
+
+*2. Initially I had doubted their claim, knowing for a fact that the center was
+located somewhere in New England.*
+
+*3. On the other hand, he did not accept as well founded the charge made by some
+of his critics that while he was a good observer, he had no power of reasoning.*
+
+#### 答案：思维训练：6. 从句嵌套结构
+
+1. 分析：
+    - 主谓宾结构：On the other, it links these concepts to everyday realities
+    - 方式状语：in a manner
+    - 定语从句：which is parallel to the links journalists forge on a daily basis
+      as they cover and comment on the news.
+      - 定语从句：links (that) journalists forge on a daily basis as they cover
+        and comment on the news.
+        - 状语从句：as they cover and comment on the news.
+    - 译：另一方面，这一学科把这些概念结合到日常生活中，
+      这与新闻记者每天报道和评论新闻时的做法是相同的。
+2. 分析：
+    - 主谓宾：Initially I had doubted their claim,
+    - 状语（分词短语）：knowing for a fact that the center was located somewhere
+      in New England.
+      - 分词：knowing
+      - 插入语（介词短语）：for a fact
+      - knowing 的宾语从句：that the center was located somewhere in New England.
+    - 译：起初，我对他们的说法持怀疑态度，因为我认定的事实是世界的中心在 New England
+      的某个地方。
+3. 分析：
+    - 主语：he
+    - 谓语：did not accept
+    - 宾语补足语：as well founded，accepted...as well-founded，表示“认为……有根据或有说服力”
+    - 宾语（后置）：the charge made by some of his critics that while he was a
+      good observer, he had no power of reasoning.
+      - 中心词：the charge
+      - 分词短语修饰 charge：made by some of his critics
+      - charge 的同位语从句：
+        - 让步状语从句：that while he was a good observer,
+        - 主句：he had no power of reasoning.
+    - 译：另一方面，有人批评他虽然擅长观察但不善于推理，对于这样的指责，他认为没有多少根据。
 
 ## 综合训练：名词从句
 
 **一、请选择最佳答案填空。**
 
-*9. He asked me ____ I intended to do after my graduation.*
+*1. He asked me ____ I intended to do after my graduation.*
 
 - *A. that what*
 - *B. what*
 - *C. that*
 - *D. which*
 
-答案: B。这是 what 引导的宾语从句，其中 what 作 do 的宾语。A 错误是因为 that 和 what
-是两个连词，但后面只有一个从句。
-
-*19. The mountain was ____ many animals, such as wolves, badgers and rabbits
+*2. The mountain was ____ many animals, such as wolves, badgers and rabbits
 once haunted but now it is so silent.*
 
 - *A. that place*
@@ -897,35 +974,115 @@ once haunted but now it is so silent.*
 - *C. what*
 - *D. then*
 
-答案: B。这是 where 引导的表语从句，表示地点。
-
-*20. The reason we're so late is ____.*
+*3. The reason we're so late is ____.*
 
 - *A. because of the car breaking down*
 - *B. due the car broke down*
 - *C. that the car broke down*
 - *D. because the car broke down*
 
-答案: C。在 reason 后面的表语从句一般不用 because，而用 that。
-
-*21. The question is ____ can be put into practice.*
+*4. The question is ____ can be put into practice.*
 
 - *A. how you have learned*
 - *B. how that you have learned*
 - *C. that why you have learned*
 - *D. how what you have learned*
 
-答案: D。这是从句的嵌套结构。首先是 how 引导一个表语从句，然后在此从句中，嵌套一个 what
-引导的主语从句。其中 what 充当从句谓语 learned 的宾语。
+*5. ____ theories approximate the truth is the day-to-day business of science.*
+
+- *A. Determining how closely*
+- *B. How closely to determine*
+- *C. How one determine close*
+- *D. One is close to determining*
+
+*6. It has always puzzled me ____ the old man tied a red silk ribbon on the
+young tree in his courtyard.*
+
+- *A. that*
+- *B. why*
+- *C. where*
+- *D. what*
+
+*7. Free movie tickets will be given to ____ comes first.*
+
+- *A. whoever*
+- *B. whomever*
+- *C. whichever*
+- *D. whatever*
+
+*8. We agreed to accept ____ they thought was the best tourist guide.*
+
+- *A. whatever*
+- *B. whomever*
+- *C. whichever*
+- *D. whoever*
+
+*9. Yet no firm evidence had come to light ____ the men arrested were actually
+responsible.*
+
+- *A. which*
+- *B. as*
+- *C. what*
+- *D. that*
+
+*10. ____ that his story may be a fabrication?*
+
+- *A. Was it ever dawned upon you*
+- *B. Have they ever dawned upon you*
+- *C. Do they ever dawned upon you*
+- *D. Has it ever dawned upon you*
+
+*11. Fossils records indicate ____ existing in the past have become extinct.*
+
+- *A. that many species of organisms*
+- *B. many species of organisms that are*
+- *C. many species of organisms are*
+- *D. there are many organisms*
 
 **二、请选择括号中的连词填空。**
 
-*27. It's doubtful ____ (whether/that/how/what) the government of that country
+*12. It's doubtful ____ (whether/that/how/what) the government of that country
 can accept them as permanent residents.*
 
-答案: whether。这里 whether 引导的是主语从句，从句被放在了句末。
-
-*28. It has always puzzled me ____ (that/why/where/what) the old man tied a red
+*13. It has always puzzled me ____ (that/why/where/what) the old man tied a red
 silk ribbon on the young tree in his courtyard.*
 
-答案: why。这里 why 引导的是主语从句，从句被放在了句末。
+**三、辨别改错。**
+
+*14. Widely acknowledged ***as a great***`A` and important playwright, Eugene
+O'Neill brought to the United States stage ***it***`B` was probably its
+***first really***`C` ***serious drama***`D`.*
+
+*15. We consider ***necessary***`A` ***that***`B` the instrument ***should***`C`
+be adjusted ***each time***`D`.*
+
+### 答案：综合训练：名词从句
+
+1. B。这是 what 引导的宾语从句，其中 what 作 do 的宾语。A 错误是因为 that 和 what
+   是两个连词，但后面只有一个从句。
+2. B。这是 where 引导的表语从句，表示地点。
+3. C。在 reason 后面的表语从句一般不用 because，而用 that。
+4. D。这是从句的嵌套结构。首先是 how 引导一个表语从句，然后在此从句中，嵌套一个 what
+   引导的主语从句。其中 what 充当从句谓语 learned 的宾语。
+5. A。动名词短语 determining how closely theories approximate the truth 作主语。
+   充当 determining 宾语的是 how 引导的宾语从句 how closely theories approximate
+   the truth。
+
+   译：确定理论与实际之间差距的近似程度构成了科学研究的日常活动。
+6. B。why 引导的主语从句。根据句子含义，需要使用 why 来表达出“为什么”的意思。
+7. A。连词需要在从句中充当主语，所以要用 whoever。
+8. D。连词需要在从句中充当主语，所以要用 whoever。其中 they thought 是插入语。
+9. D。that 引导的同位语从句，补充说明先行词 evidence。
+10. D。这是主语从句的固定句型“It dawns upon somebody that...”，
+    这里谓语采用了现在完成时态 has dawned。
+11. A。that 引导的宾语从句。
+12. whether。这里 whether 引导的是主语从句，从句被放在了句末。
+13. why。这里 why 引导的是主语从句，从句被放在了句末。
+14. B。改为 what。what 引导的宾语从句充当 brought 的宾语，但被后置了。
+    正常语序是：Eugene O'Neill brought what was probably its first really serious
+    drama to the United States stage.
+    也就是说，brought 与其宾语被介词短语 to the United States stage 隔开。
+    由基本结构“brought A to B”变成宾语后置结构“brought to B A”。
+
+    译：在美国，Eugene O'Neill 被公认为是一位伟大的剧作家，是他首次将真正意义上的严肃歌剧带到美国舞台。
+15. A。改为 it necessary。需要添加形式宾语 it，来指代真正的宾语，即 that 引导的宾语从句。
