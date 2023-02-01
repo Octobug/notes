@@ -3,6 +3,7 @@
 - [NPEE](#npee)
   - [英译中](#英译中)
     - [定语从句（英译中）](#定语从句英译中)
+    - [状语从句（英译中）](#状语从句英译中)
   - [中译英](#中译英)
     - [名词从句（中译英）](#名词从句中译英)
       - [主语从句](#主语从句)
@@ -10,6 +11,7 @@
       - [表语从句](#表语从句)
       - [同位语从句](#同位语从句)
     - [定语从句（中译英）](#定语从句中译英)
+    - [状语从句（中译英）](#状语从句中译英)
 
 ## 英译中
 
@@ -20,6 +22,12 @@ things that happen, but not those who believe everything happens for the best.*
 
 译：**根据 Ben-Shalar 的说法，现实的乐观主义者是那些充分利用会发生的事情的人，
 而不是那些相信一切都会朝着最好的方向发生的人。**
+
+### 状语从句（英译中）
+
+*1. He rushed to the railway station only to find the train had gone.*
+
+译：**他赶到火车站，却发现火车已经走了。**
 
 ## 中译英
 
@@ -188,3 +196,22 @@ failed 既是及物动词又是不及物动词。
 *9. 我不知道他离开学校的时间。*
 
 译：**I don't know the time when he left the school.**
+
+### 状语从句（中译英）
+
+*1. 虽然翻译很难，但有老师的帮助就不是问题。*
+
+译：**Although translation is difficult, it won't be a problem with the
+teacher's help.**
+
+*2. 他离开了学校。这让我大吃一惊。*
+
+译：**Because he left the school, I was greatly surprised.**
+
+*3. 看到这幅图，我心情十分复杂。*
+
+译：**Seeing the picture, I have very complicated feelings.**
+
+*4. 为了通过考试，所有的付出都是值得的。*
+
+译：**To pass the test, I feel all the efforts are worthwhile**.
