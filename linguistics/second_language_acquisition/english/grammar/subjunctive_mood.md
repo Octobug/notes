@@ -106,7 +106,7 @@ If I could rearrange the alphabet, I would put U and I together.
 | 现在       | would/could/might + do        | did/were                  |
 | 过去       | would/could/might + have done | had done/had been         |
 
-主从句的谓语有以下四种搭配组合（以 would 为例）：
+主从句的谓语常有以下四种搭配组合（以 would 为例，不包括将来虚拟）：
 
 1. **现在虚拟（主现从现）**：would do + if...did，这里的主句和 if
    引导的条件状语从句都是表示对现在的虚拟。
@@ -345,13 +345,41 @@ Question: What does the woman imply about George?
 *1. If you ____ (choose) where you were born and grew up, what country/culture
 ____ (be) your choice?*
 
+**二、单项选择。**
+
+*2. If you ____ Jerry Brown until recently, you'd think the photograph on the
+right was strange.*
+
+- *A. shouldn't contact*
+- *B. didn't contact*
+- *C. weren't to contact*
+- *D. hadn't contacted*
+
 #### 答案：思维训练 4. 过去虚拟
 
 1. could have chosen, would have been
+2. D。这里表示对过去事实的虚拟，从句使用过去完成时态。
+   译：要是你最近一直没有和 Jerry 联系过的话，你一定会认为右边这张照片很奇怪。
 
 ## 5. 混合虚拟（一）：主句现在 + 从句过去
 
->>>>> progress
+当主从句动作发生的时间不一致时，主句和从句各自的谓语形式要根据它们各自动作发生的时间做调整。
+这里讨论的是：
+
+主句表示**与现在事实相反**的假设，也就是对现在的虚拟，谓语用“would + 动词原形”；
+从句表示**与过去事实相反**的假设，也就是对过去的虚拟，谓语用过去完成时“had done”。
+这种混合时间的虚拟句子是最常见的。
+
+- `1`: If you had married him, you would be the wife of a gas station attendant
+  instead of the wife of a chief executive officer.
+  - 你当初要是嫁给了他，你现在就做不了总裁的太太，而只能是加油工的太太了。
+- `2`: If I had married him, he would be the chief executive officer and you
+  would be the gas station attendant.
+- `3`: Do you ever think about what life would be like if things had been
+  different and you had married him instead of me?
+  - 你想过没有，如果当初情况不同，我是说如果当初你嫁给了他，你现在的生活就完全不同了。
+
+>>>>> 帕瓦罗蒂的成功之路
 
 ## 7.8 跳层虚拟
 
