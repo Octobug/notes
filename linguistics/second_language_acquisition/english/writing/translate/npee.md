@@ -215,3 +215,7 @@ teacher's help.**
 *4. 为了通过考试，所有的付出都是值得的。*
 
 译：**To pass the test, I feel all the efforts are worthwhile**.
+
+*5. 去年修好后，这房子就一直空着。*
+
+译：**Built last year, the house has remained unoccupied/ vacant.**
