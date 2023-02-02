@@ -9,7 +9,11 @@
   - [3. 现在虚拟](#3-现在虚拟)
     - [思维训练 3. 现在虚拟](#思维训练-3-现在虚拟)
       - [答案：思维训练 3. 现在虚拟](#答案思维训练-3-现在虚拟)
-  - [7.4 过去虚拟 (ZgCg)](#74-过去虚拟-zgcg)
+  - [4. 过去虚拟](#4-过去虚拟)
+    - [思维训练 4. 过去虚拟](#思维训练-4-过去虚拟)
+      - [答案：思维训练 4. 过去虚拟](#答案思维训练-4-过去虚拟)
+  - [5. 混合虚拟（一）：主句现在 + 从句过去](#5-混合虚拟一主句现在--从句过去)
+  - [7.8 跳层虚拟](#78-跳层虚拟)
 
 语气 (mood) 是英文中谓语动词的一种变化形式，用来表示说话者的**意图和态度**。
 英文中的语气可分为三种：
@@ -312,6 +316,43 @@ Question: What does the woman imply about George?
    （如果他睡在那里，我都不觉得奇怪。）这表明乔治花在实验室的时间很多，
    而不是说明乔治可能还在实验室睡觉，所以 A 不对。
 
-## 7.4 过去虚拟 (ZgCg)
+## 4. 过去虚拟
+
+表示对过去的虚拟，主句谓语要采用 would have done 的形式，从句谓语则要用 had done。
+
+- `1`: If you had invited Wealth or Success, the other two of us would've stayed
+  out.
+  - 过去虚拟是对过去事实的一个相反假设。
+  - 在这个例句的上下文中，"you" 没有 invite Wealth or Success。
+- `2`: If he had known about the win, I would never have known whether it was me
+  or the money he would want to stay with.
+  - 这句话表明了 "he" hadn't known about the win。
+- `3`: I don't know what I would have done if he hadn't answered yes.
+  - 这句话表明了 "he" had answered yes。
+- `4`: Like any son, I wouldn't have grown up into the person I am if they
+  hadn't passed on their values to me. Marriage and parenthood, I think, are the
+  two most important things any of us ever take on in our lives.
+- `5`: Two years ago if someone had turned round to me and said "in two years
+  you'll be England captain", I would have turned round and said: "I don't
+  think so!"
+  - 事实是两年前并没有人跟他这么说过，所以用虚拟语气。
+  - 如果两年前，有人对我说“你将在两年后成为英格兰队的队长”，我肯定会对此一笑了之。
+
+### 思维训练 4. 过去虚拟
+
+**一、请用下面括号中动词的适当形式填空。**
+
+*1. If you ____ (choose) where you were born and grew up, what country/culture
+____ (be) your choice?*
+
+#### 答案：思维训练 4. 过去虚拟
+
+1. could have chosen, would have been
+
+## 5. 混合虚拟（一）：主句现在 + 从句过去
+
+>>>>> progress
+
+## 7.8 跳层虚拟
 
 >>>>> progress
