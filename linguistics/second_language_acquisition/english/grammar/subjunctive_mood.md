@@ -13,6 +13,10 @@
     - [思维训练 4. 过去虚拟](#思维训练-4-过去虚拟)
       - [答案：思维训练 4. 过去虚拟](#答案思维训练-4-过去虚拟)
   - [5. 混合虚拟（一）：主句现在 + 从句过去](#5-混合虚拟一主句现在--从句过去)
+    - [思维训练：5. 混合虚拟（一）：主句现在 + 从句过去](#思维训练5-混合虚拟一主句现在--从句过去)
+      - [答案：思维训练：5. 混合虚拟（一）：主句现在 + 从句过去](#答案思维训练5-混合虚拟一主句现在--从句过去)
+  - [6. 混合虚拟（二）：主句过去 + 从句现在](#6-混合虚拟二主句过去--从句现在)
+  - [7. 倒装虚拟](#7-倒装虚拟)
   - [7.8 跳层虚拟](#78-跳层虚拟)
 
 语气 (mood) 是英文中谓语动词的一种变化形式，用来表示说话者的**意图和态度**。
@@ -378,8 +382,127 @@ right was strange.*
 - `3`: Do you ever think about what life would be like if things had been
   different and you had married him instead of me?
   - 你想过没有，如果当初情况不同，我是说如果当初你嫁给了他，你现在的生活就完全不同了。
+- `4`: If I hadn't listened to my father and dropped teaching, I would never be
+  here.
+  - 如果当初我没有听从我父亲的建议，放弃教书，那我今天就不可能站在这里了。
+- `5`
+  - A: I don't like my mother-in-law.
+  - B: Listen, don't you realize that you couldn't have your wife if it hadn't
+    been for your mother-in-law?
+  - A: Yes, that's why I don't like her.
+    - couldn't have 是对现在的虚拟，hadn't been 是对过去的虚拟。
+- `6`
+  - A: What an accident! If you had been careful, things would not be as they
+    are.
+    - 这里的从句是对过去的虚拟，主句是对现在的虚拟。
+  - B: What do you mean, it was my fault? If it were, surely I would take all
+    responsibility for it.
+    - 这里从句和主句都是对现在的虚拟，言外之意是：这不是他的错。
+- `7`: If I had not studied English, I would never be here to teach you grammar
+  today.
+  - 如果我没有学过英语，我现在就不能在这里教你们语法了。
+- `8`: If they had invested in that stock, they might be wealthy now.
+- `9`: If I had studied English at school, I could read the English novel now.
+- `10`: If he had studied English two years ago, he might have a chance of going
+  abroad for further study now.
 
->>>>> 帕瓦罗蒂的成功之路
+### 思维训练：5. 混合虚拟（一）：主句现在 + 从句过去
+
+**请选择最佳答案填空。**
+
+*1. Had Paul received six more votes in the last election, he ____ our chairman
+now.*
+
+- *A. must have been*
+- *B. would have been*
+- *C. were*
+- *D. would be*
+
+*2. ____ for the timely investment from the general public, our company would
+not be so thriving as it is.*
+
+- *A. Had it not been*
+- *B. Were it not*
+- *C. Be it not*
+- *D. Should it not be*
+
+#### 答案：思维训练：5. 混合虚拟（一）：主句现在 + 从句过去
+
+1. D。这里从句谓语是一个倒装结构 Had Paul received，表示对过去的虚拟。主句里有时间状语
+   now，表示对现在的虚拟。
+
+   译：假如保罗在上次选举中多得六票的话，他就是我们现在的主席了。
+2. A。这里主句谓语是 would not be，表示对现在的虚拟。
+   对于从句，从逻辑关系来看是对过去的虚拟，因为投资人的投资应该发生在过去。
+   同时从句谓语也是一个倒装结构。
+
+   译：若不是因为当时大众及时投资，我们公司就不会像现在这样景气了。
+
+## 6. 混合虚拟（二）：主句过去 + 从句现在
+
+这种混合虚拟，从句谈的是**一般情况，是对一般情况的虚拟**；
+主句谈过去，是对**过去某一个具体情况的虚拟**。
+该句型的使用没有前一种混合虚拟常见。
+
+- 如果我不爱她，我就不会娶她。
+  - `1`: If I don't love her, I won't marry her.
+    - 这是一个真实条件句：如果我不爱她，我就不娶她。
+    - 这句并不能表达出原句的言外之意：我当然爱她，要不我就不会娶她了。
+  - `2`: ✅ If I didn't love her, I wouldn't have married her.
+    - 从句表示对现在事实的虚拟，主句表示对过去事实的虚拟。
+  - `3`: If I hadn't loved her, I wouldn't have married her.
+    - 主句从句都是对过去的虚拟。表示结婚时“我”是爱她的，不然当时就不会娶她。
+  - `4`: If I didn't love her, I wouldn't marry her.
+    - 主句从句都是对现在的虚拟，主句表示两人还没结婚。
+    - 如果我不爱她，我将来就不打算和她结婚了。
+
+日常对话中，经常出现的这句话也是一个“主过从现”型混合虚拟语气：
+
+If you knew me better, you wouldn't have said that.
+
+## 7. 倒装虚拟
+
+在英文中，虚拟从句可以采用倒装结构。
+具体来说，**当 if 引导的条件句省去 if 时，可将 should, had 或 were 置于句首**，
+从而构成倒装虚拟句，而意义不变。
+
+- `1`: Countless divorced politicians would have been elected out of office
+  years ago had they even thought of a divorce, let alone gotten one.
+  - 这里的从句用了倒装结构 had they even thought..., 相当于 if they had even
+    thought...。
+  - 现如今很多政客都纷纷离婚，这在几年前时不可能的。
+    那时，不要说真的离婚了，哪怕他们有离婚的想法，都一定会被赶下台。
+- `2`: For example, they do not compensate for gross social inequality, and thus
+  do not tell how able an underprivileged youngster might have been had he grown
+  up under more favorable circumstances.
+  - 倒装结构 had he grown 相当于 if he had grown。
+  - 例如，它们并不能弥补明显的社会不公；
+    因此，它们不能说明一个处于弱势地位的年轻人，如果在较好的环境中成长的话，会有多大才干。
+- `3`: Should I win the lottery, I would buy a car.
+  - If I should win the lottery, I would buy a car.
+- `4`: Were he to leave today, he would get there by Monday.
+  - If he were to leave today, he would get there by Monday.
+  - 如果他今天出发，他就能在星期一之前到达那里。
+- `5`: Were he to tell everything, we could try to solve his problem.
+  - If he were to tell us everything, we could try to solve his problem.
+  - 如果他把一切都告诉我们，我们就能想办法解决他的问题。
+- `6`: Should you change your mind, no one would blame you.
+  - If you should change your mind, no one would blame you.
+  - 如果你改变主意的话，没有人会责怪你。
+- `7`: Had he not been promoted, he would never have remained with the company.
+  - If he had not been promoted, he would never have remained with the company.
+- `8`: Had such a disaster occurred, the damage would have been incalculable.
+  - If such a disaster had occurred, the damage would have been incalculable.
+  - 如果这场灾难发生，损失将难以估量。
+
+另外，在英语口语里，常常会使用“疑问句 + 陈述句”这样的结构，如：
+
+- `9`: Are you ready? Okay we can leave.
+  - 这里的一般疑问句相当于一个条件从句：If you are ready...，
+    整个句子相当于“如果你准备好了，那我们现在就走”。
+  - 你准备好了吗？那我们现在就走。
+- `10`: Had I known? I would have come sooner.
+  - If I had known, I would have come sooner.
 
 ## 7.8 跳层虚拟
 
