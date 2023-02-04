@@ -15,7 +15,8 @@
   - [2. 推测用法（一）：现在推测（情态动词一般式）](#2-推测用法一现在推测情态动词一般式)
     - [2.1 对现在的肯定推测](#21-对现在的肯定推测)
       - [一、must 表示“推测”及其他含义](#一must-表示推测及其他含义)
-  - [8.3 推测用法（二）：将来预测（情态动词一般式）](#83-推测用法二将来预测情态动词一般式)
+      - [二、其他表示推测的情态动词](#二其他表示推测的情态动词)
+    - [8.2.3 对现在进行推测的其他情态动词](#823-对现在进行推测的其他情态动词)
 
 ## 1. 引言：多情多义的情态动词
 
@@ -219,8 +220,90 @@ must have been doing。
   and excitement.
 - `9`: Winter must be cold for those with no warm memories.
 
+must 除了表示“推测”之外，还有另一个常见的用法是表示“责任”或“义务”，译成“必须”。这是 must
+的基本用法。must 在表示“必须”时，可以是非常“强烈的义务（strong
+obligation）”，比如法律规定或某些规章制度等。
+
+- `10`: You must wear a seat belt while driving.
+- `11`: Door must be closed when machine is in operation.
+- `12`: Students must pay course fees before attending classes.
+
+must 还可以是表示说话人主观认为某事是重要的、必须完成的“义务”。
+这种表示“义务”的程度要比法律规定的“义务”弱很多。
+
+- `13`: You must concentrate on one thing at a time.
+
+另外，如果 must 是用于描述说话人自身，则“义务”的含义更弱。
+
+- `14`: I must remember to feed the cat.
+- `15`: I must try harder next time.
+
+在现代英语口语中，还有一种语气更弱的“义务”，用来谈未来的“安排（arrangement）”。
+
+- `16`: You must come to see us one of these days.
+- `17`: We must get together for lunch sometime.
+
+综上，must 在表示“必须”的含义时，大致可以分为以上四种由强到弱的程度。
+
+**must 的“推测”用法 vs. “必须”用法**：
+
+1. 表示“推测”时，must 不能表示将来，只能表示对现在的推测和对过去的推测。其谓语形式分别是：
+    - 对现在的推测：“must 一般式”，即 must do；或“must 进行式”，即 must be doing。
+    - 对过去的推测：“must 完成式”，即 must have done。
+2. 表示“必须”时，must 不能谈过去的事件，只能谈现在和将来的事情。其谓语形式都是“must
+   一般式”，即 must do。
+    - 不能用“must 进行式”或“must 完成式”，即 must be doing 或 must have done 中的
+      must 一定不会译成“必须”，而只能是表示推测。
+    - must 表示“必须”的意义时没有过去时态，如果要表示“过去必须”，则要借用 had to 来表达。
+3. 表示“必须”时，must 后面的谓语动词一般是表示动作（action），也就是现在的动作或将来的动作，
+   而不会是表示状态。在表示“推测”时，must 后面的谓语动词可以是动作，也可以是状态。
+
+- `18`: He must be dead.
+  - be 表示状态，所以这句话不会译成“他必须死掉”，而只能是表示推测。
+  - 他一定是死了。
+
+与 must 相关的情态动词短语是 **have (got) to**。
+它同 must 一样，既可以表示“推测”，也可以表示“必须”。
+
+- `19`: Look at that house! Those people have to have a lot of money.
+  - 这里表推测
+  - 你看他们那房子！那些人一定很有钱。
+- `20`: He is really big; he has to be over seven feet tall.
+  - 这里表推测
+  - 他块头很大，肯定超过 7 英尺高了。
+- `21`: He was really big; he had to be over seven feet tall.
+
+have to 表示“必须”时，与 must 主要有两点区别：
+
+1. 在时态的表达上，must 只能谈现在或将来，不能谈过去。must 没有时态变化，而 have to
+   有各种时态的变化，比如过去式 had to，将来式 will have to，现在完成式
+   have had to，过去完成式 had had to 等。
+    - `22`: When I was in school, we had to wear school uniform.
+    - `23`
+      - A: Do we really have to go to this meeting?
+      - B: Yes, and we will have to present our report.
+2. 如果是来自外界的不可控的行为，此时要用 have to，而不使用 must。
+    - `24`: Excuse me, but I have to sneeze.
+3. must（“必须”）的否定形式 mustn't 不是表示“不必”，而是“千万别做某事”的意思；
+   表示“不必”应该说 don't have to。
+   因此，可以说 must（“必须”）的否定是 don't have to（“不必”）。
+4. must（“一定是”）的否定不是 mustn't，而是 can't（“不可能是”）。
+
+在口语中，have got to 作为 have to 的口语形式更为常用，同样有“推测”和“必须”两个意思。
+但 have got to 没有时态的变化，只能表示现在或将来，这一点和 must 的“必须”用法一致。
+比如不能说 had got to 等。
+
+- `25`: They've got to try harder next time.
+  - 这里表示“必须”
+  - 他们下次得更努力些。
+- `26`: You've got to be joking!
+  - 这里表示“推测”
+  - 你准是在开玩笑！
+
+#### 二、其他表示推测的情态动词
+
 >>>>> progress
 
-## 8.3 推测用法（二）：将来预测（情态动词一般式）
+### 8.2.3 对现在进行推测的其他情态动词
 
 >>>>> progress
