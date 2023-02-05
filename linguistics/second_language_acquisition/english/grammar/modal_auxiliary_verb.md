@@ -16,6 +16,7 @@
     - [2.1 对现在的肯定推测](#21-对现在的肯定推测)
       - [一、must 表示“推测”及其他含义](#一must-表示推测及其他含义)
       - [二、其他表示推测的情态动词](#二其他表示推测的情态动词)
+    - [2.2 对现在的否定推测](#22-对现在的否定推测)
     - [8.2.3 对现在进行推测的其他情态动词](#823-对现在进行推测的其他情态动词)
 
 ## 1. 引言：多情多义的情态动词
@@ -302,7 +303,53 @@ have to 表示“必须”时，与 must 主要有两点区别：
 
 #### 二、其他表示推测的情态动词
 
->>>>> progress
+其他可以表示对现在的推测的情态动词有：may, might, could 等。
+
+- `27`
+  - A: I wonder where Tom is.
+  - B: He may/might/could be in the library.
+- `28`: While this might explain some cases, it is not universally applicable.
+  - 这种观点或许可以解释某些情况，但它并非放之四海而皆准。
+- `29`: Nonverbal information comes from facial expression, eye contact, body
+  posture and hand movements. If a person is smiling or laughing, he may be
+  telling a joke. If a person is yawning, then he may be tired of the
+  conversation.
+
+不同的情态动词所表达的可能性的程度不一样：
+
+- A: Why isn't John in class?
+- B:
+  - He is sick.（100% 确定，对客观事实的陈述）
+  - He must be sick.（90% 确定，很有把握的陈述）
+  - He may be sick.（50% 确定，不太有把握的陈述）
+  - He could/might be sick.（25% 确定，很没有把握的陈述，只是提供一种可能的情况）
+    - He might be sick.
+    - He might be in the library.
+    - He could be out of town.
+
+上面例子的百分比数字不是绝对的，只是为了便于比较不同情态动词所表达的确定程度。
+具体使用什么词，完全取决于说话人当时的确信程度，或其掌握的信息情况。
+
+### 2.2 对现在的否定推测
+
+- A: The restaurant is always empty.
+- B:
+  - It isn't good.（100% 确定，对客观事实的陈述）
+  - It can't/couldn't be good.（90% 确定，很有把握的陈述）
+  - It may not be good.（50% 确定，不太有把握的陈述）
+  - It might not be good.（25% 确定，很没有把握的陈述，只是提供一种可能）
+
+对于否定推测有以下四点值得注意：
+
+1. 在否定推测中没有 must，must 表示推测时一般只用在肯定句中。而否定的 mustn't
+   常用于表示“命令别人不要做什么”，译为“千万别”。
+2. 与 must 相反，can 表示推测时不能用在肯定句中，只用在否定句和疑问句中。
+   must 不能在否定句表示推测，正好和 can 形成互补，即 must（推测）的否定是 can't。
+    - You must be joking.
+    - You can't be serious.
+3. 在肯定推测时，could 的肯定程度很低；在否定推测时，couldn't 则表示十分确信，和 can't
+   差不多，可译为“不可能”。
+4. could 和 might 虽然是过去式，但这里并不是表示对过去的推测，而是表示对现在或未来的推测。
 
 ### 8.2.3 对现在进行推测的其他情态动词
 
