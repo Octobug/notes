@@ -199,7 +199,7 @@ She will dive into the water.
 
 1. *I have been married.*
 2. *I have been coming to Beijing for fourteen years.*
-3. *Beauty means this to one and that to the other. And yet when anyone of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
+3. *Beauty means this to one and that to the other. And yet when any one of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
 
 ---
 
@@ -298,7 +298,7 @@ She will dive into the water.
 
 1. *I have been married.*
 2. *I have been coming to Beijing for fourteen years.*
-3. *Beauty means this to one and that to the other. And yet when anyone of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
+3. *Beauty means this to one and that to the other. And yet when any one of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
 
 ---
 
@@ -333,32 +333,32 @@ She will dive into the water.
 
 <!-- class: invert -->
 
-*3. Beauty means this to one and that to the other. And yet when anyone of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
+*3. Beauty means this to one and that to the other. And yet when any one of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
 
 第二句话有两个定语从句:
 
-一、And yet when anyone of us has seen that **which to him is beautiful**
+一、And yet when any one of us has seen that **which to him is beautiful**
 
 - 定语从句 which to him is beautiful 修饰先行词 that，关系词是 which；
 - 先行词 that 是代词，指代前面所说的 beauty，作为句子的宾语；
-- him 指代 anyone of us。
+- him 指代 any one of us。
 
 ---
 
 <!-- class: invert -->
 
-*3. Beauty means this to one and that to the other. And yet when anyone of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
+*3. Beauty means this to one and that to the other. And yet when any one of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
 
 二、he has known an emotion **which is in every case the same in kind**.
 
 - 定语从句 which is in every case the same in kind 修饰先行词 emotion，关系词是 which；
-- he 和 him 一样指代 anyone of us。
+- he 和 him 一样指代 any one of us。
 
 ---
 
 <!-- class: invert -->
 
-*3. Beauty means this to one and that to the other. And yet when anyone of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
+*3. Beauty means this to one and that to the other. And yet when any one of us has seen that which to him is beautiful he has known an emotion which is in every case the same in kind.*
 
 字面直译: 然而，当我们任何一个人见到对他来说是美的事物时，
 他就知道了一种在任何情况下都相通的情感。

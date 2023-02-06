@@ -6,10 +6,11 @@
   - [1. 定语从句概述](#1-定语从句概述)
     - [1.1 什么是定语](#11-什么是定语)
     - [1.2 形容词作定语与从句作定语比较](#12-形容词作定语与从句作定语比较)
-    - [1.3 定语从句的两个重要概念: 先行词和关系词](#13-定语从句的两个重要概念-先行词和关系词)
+    - [1.3 定语从句的两个重要概念：先行词和关系词](#13-定语从句的两个重要概念先行词和关系词)
       - [一、先行词](#一先行词)
       - [二、关系词](#二关系词)
-    - [思维训练 1. 定语从句概述](#思维训练-1-定语从句概述)
+    - [思维训练：1. 定语从句概述](#思维训练1-定语从句概述)
+      - [答案：思维训练：1. 定语从句概述](#答案思维训练1-定语从句概述)
   - [2. 关系词在定语从句中充当的成分](#2-关系词在定语从句中充当的成分)
     - [2.1 关系词用作从句的主语](#21-关系词用作从句的主语)
     - [2.2 关系词用作从句动词的宾语](#22-关系词用作从句动词的宾语)
@@ -56,6 +57,16 @@
     - [6.1 从结构上区分: that 是否作成分](#61-从结构上区分-that-是否作成分)
     - [6.2 从意义上区分: that 引导的从句的意义不同](#62-从意义上区分-that-引导的从句的意义不同)
     - [思维训练 6. 定语从句与同位语从句的区分](#思维训练-6-定语从句与同位语从句的区分)
+  - [7. 先行词的结构特点](#7-先行词的结构特点)
+    - [7.1 先行词是一个词](#71-先行词是一个词)
+    - [7.2 先行词是一个短语](#72-先行词是一个短语)
+    - [7.3 先行词是一个分句](#73-先行词是一个分句)
+    - [7.4 先行词是一个完整的句子](#74-先行词是一个完整的句子)
+    - [思维训练：7. 先行词的结构特点](#思维训练7-先行词的结构特点)
+      - [答案：思维训练：7. 先行词的结构特点](#答案思维训练7-先行词的结构特点)
+  - [8. 先行词的位置特点](#8-先行词的位置特点)
+    - [8.1 先行词 + 其他定语 + 定语从句](#81-先行词--其他定语--定语从句)
+    - [2.2.2 先行词 + 状语 + 定语从句](#222-先行词--状语--定语从句)
   - [综合训练：定语从句](#综合训练定语从句)
 
 定语从句的两个重要概念: **先行词**和**关系词**。
@@ -99,7 +110,7 @@
 一个有完整主谓结构的句子，用作定语功能修饰另一个句子 (主句) 中的某个成分，
 这个句子称为定语从句。
 
-### 1.3 定语从句的两个重要概念: 先行词和关系词
+### 1.3 定语从句的两个重要概念：先行词和关系词
 
 #### 一、先行词
 
@@ -114,33 +125,30 @@
 1. **代词的作用**: 重复指代先行词并且在定语从句充当一定成分。
 2. **连接作用**: 连接主句和从句。
 
-### 思维训练 1. 定语从句概述
+### 思维训练：1. 定语从句概述
 
 **请找出下列短文中的定语从句，并指明先行词和关系词。**
 
-***Passage 3***:
-
-*Beauty means this to one and that to the other. And yet when anyone of us has
+*Beauty means this to one and that to the other. And yet when any one of us has
 seen that which to him is beautiful he has known an emotion which is in every
 case the same in kind.*
 
-**答案**:
+#### 答案：思维训练：1. 定语从句概述
 
-第二句话:
+第二句话：
 
-- 两个定语从句:
-  1. And yet when anyone of us has seen that **which to him is beautiful**
+- 两个定语从句：
+  1. And yet when any one of us has seen that **which to him is beautiful**
      - 定语从句 which to him is beautiful 修饰先行词 that，关系词是 which
      - 先行词 that 是代词，指代前面所说的 beauty，作为句子的宾语
-     - him 指代 anyone of us
+     - him 指代 any one of us
   2. he has known an emotion **which is in every case the same in kind**.
      - 定语从句 which is in every case the same in kind 修饰先行词 emotion，关系词是
        which
-     - he 和 him 一样指代 anyone of us
-- 字面直译: 然而，当我们任何一个人见到对他来说是美的事物时，
-他就知道了一种在任何情况下都相通的情感。
+     - he 和 him 一样指代 any one of us
+- 字面直译：然而，当我们任何一个人见到对他来说是美的事物时，他就知道了一种在任何情况下都相通的情感。
 
-完整翻译: 审美标准，因人而异。但一旦美在眼前出现，我们对美的感受却并无二致。
+完整翻译：审美标准，因人而异。但一旦美在眼前出现，我们对美的感受却并无二致。
 
 ## 2. 关系词在定语从句中充当的成分
 
@@ -774,6 +782,171 @@ been discovered in these ancient rocks.*
 答案: 宾语从句。
 
 译: 太好了，我们的国度里还有一个真正的男人。
+
+## 7. 先行词的结构特点
+
+> Antecedent
+
+先行词并不一定都是一个“单词”。在英语中，被定语从句修饰的对象叫作 antecedent，它可以是：
+
+- 词（word）
+- 短语（phrase）
+- 分句（clause）
+- 独立的句子（sentence）
+
+### 7.1 先行词是一个词
+
+先行词可以是一个单词，通常是**名词**或**代词**。
+
+- `1`: The beauty of a woman is not in the **clothes** she wears, the **figure**
+  that she carries, or the **way** she combs her hair. The beauty of a woman
+  must be seen from in her eyes, because that is the doorway to her heart, the
+  **place** where love resides.
+
+作为先行词的代词可以是 he（泛指作用，其他人称代词不可以），指示代词 that/those，不定代词
+one 等。
+
+- `2`: There is this difference between happiness and wisdom: **he** who thinks
+  himself the happiest man really is so; but **he** who thinks himself the
+  wisest is generally the greatest fool.
+  - 幸福与智慧的区别在于：认为自己最幸福的人，他真的就是最幸福；而认为自己最智慧的人，
+    却往往是最大的傻瓜。
+- ❌ We/You who think ourselves...
+  - he 之外的人称代词不能作为定语从句的先行词，因为**人称代词本身已经表达了一个完整的意思**，
+    不需要任何定语从句来修饰。但人称代词若是表示泛指，则可以接定语从句来修饰，这里的 he
+    相当于 anyone。
+- `3`: Only those who have the patience to do simple things perfectly will
+  acquire the skill to do difficult things easily.
+  - 这里的 those 泛指人。
+- `4`: A rich person is not one who has the most, but is one who needs the
+  least.
+- `5`: Remember that the best relationship is one where your love for each other
+  is greater than your need for each other.
+  - 这里的 one 指 relationship。
+  - 请谨记：两人相处的最佳状态应该是对彼此的爱超过对彼此的需要。
+
+从上面的例子可以看出，代词作先行词的情况往往出现在一些格言或谚语中。这也间接体现出代词的泛指意味。
+
+### 7.2 先行词是一个短语
+
+先行词可以是一个名词短语。
+
+- `1`: In Europe, as elsewhere, multi-media groups have been increasingly
+  **successful groups** which bring together **television, radio, newspapers,
+  magazines and publishing houses** that work in relation to one another.
+  - 这里关系词 which 指代 successful groups；关系词 that 指代
+    television, radio, newspapers, magazines and publishing houses。
+  - 在欧洲，像在其他地方一样，多媒体集团越来越成功了。
+    这些集团把相互间联系密切的电视台、电台、报纸、杂志以及出版社组合到了一起。
+
+### 7.3 先行词是一个分句
+
+先行词可以是一个分句。
+
+- `1`: He said **that he had no time**, which isn't true.
+  - 这里 which 指代的是宾语从句 that he had no time。
+  - 他说他没有时间，事实并非如此。
+- `2`: The Greeks assumed **that the structure of language had some connections
+  with the process of thought**, which took root in Europe long before people
+  realized how diverse languages could be.
+  - 希腊人认为，语言结构与思维过程之间存在着某种联系。
+    这一观点早在人们尚未认识到语言的千差万别的时候就已经在欧洲扎下了根。
+
+### 7.4 先行词是一个完整的句子
+
+先行词可以是一个完整的主句。
+
+- `1`: **My girlfriend likes dancing with other guys**, which really drives me
+  crazy.
+  - 我女朋友喜欢和别的小伙子跳舞，这让我十分恼火。
+
+### 思维训练：7. 先行词的结构特点
+
+**分析下列句子中定语从句的先行词，并将各句译成汉语。**
+
+*1. Perhaps it is human to appreciate little that which we have and to long for
+that which we have not.*
+
+*2. He helped popularize the idea that some diseases not previously thought to
+have a bacterial cause were actually infections, which aroused much controversy
+when it was first suggested.*
+
+*3. He asserted also that his power to follow a long and purely abstract train
+of thought was very limited, for which reason he felt certain that he never
+could have succeeded with mathematics.*
+
+#### 答案：思维训练：7. 先行词的结构特点
+
+1. 先行词：that，that
+
+    译：或许，“不惜已获，贪求不得”是人类的共同弱点吧。
+2. 先行词：同位语从句 that some diseases not previously thought to have a
+   bacterial cause were actually infections
+
+    译：他曾经帮助宣扬过这一观点：某些疾病，虽然以前不认为是由细菌原因引起的，但确实是细菌感染。
+    当时这个观点首次被提出时，即引起了人们很大的争议。
+3. 先行词：宾语从句 that his power to follow a long and purely abstract train of
+   thought was very limited
+
+   "that he never could have succeeded with mathematics." 是定语从句中的宾语从句。
+
+    译：他同时还声称，由于自己在长时间进行一系列抽象性思维这方面的能力有限，
+    因而他确信自己在数学方面不可能取得成就。
+
+## 8. 先行词的位置特点
+
+先行词与关系词紧靠在一起时，句法结构相对容易理解。比如：
+
+- `1`: Behaviorists suggest that the child who is raised in an environment where
+  there are many stimuli which develop his or her capacity for approriate
+  responses will experience greater intellectual development.
+  - 这里有三个定语从句，三个先行词分别是 child, environment, stimuli，均与其关系词在一起。
+  - 行为学家的看法是：如果一个儿童在由许多刺激物的环境中长大，
+    而这些刺激物又能培养其做出适当反应的能力，那么他就会有比较高的智力发育水平。
+    - 这里将定语从句 who is raised in an environment where there are many stimuli
+      译成了一个条件状语。
+      事实上，定语从句很多时候不是译为汉语的定语结构“……的”，而是译成各种状语，
+      比如条件状语、原因状语、结果状语或让步状语等等。
+
+然而在英语中，有很多复杂的定语从句，它们的先行词不像常规那样紧靠着关系词，
+而是在它们之间插入了其他成分，导致先行词与关系词被分隔。
+
+### 8.1 先行词 + 其他定语 + 定语从句
+
+在先行词与关系词之间插入其他的定语，这种情形最常见。
+这是由于先行词同时带有多个定语，其中包括定语从句。
+定语从句与其他定语相比一般较长，结构也较复杂，按照英语的“尾重原则（principle of end
+weight）”，**结构复杂的定语从句置于其他定语后边**，从而造成与先行词隔离。
+
+- `1`: The mineral elements from the soil that are usable by the plant must be
+  dissolved in the soil solution before they can be taken into the root.
+  - 这里先行词是 elements，与关系词被介词短语 from the soil 隔开。
+    定语从句中的谓语动词是复数形式 are，与 elements 一致。
+  - the mineral elements from the soil：土壤里的矿物质
+  - the mineral elements...that are usable by the plant：能够被植物利用的矿物质
+  - 土壤中可供植物利用的矿物质只有先溶解在土壤中，然后才能被植物的根部吸收。
+- `2`: Changes in the social structure may indirectly affect juvenile crime
+  rates. For example, changes in the economy that lead to fewer job
+  opportunities for youth and rising unemployment in general make gainful
+  employment increasingly difficult to obtain.
+  - 这里的介词短语 in the economy 和定语从句 that lead to fewer job opportunities
+    for youth and rising unemployment in general 共同修饰中心名词 changes。
+    定语从句的谓语动词用了复数形式 lead，与 changes 一致。
+  - changes in the economy：经济方面的变化
+  - changes...that lead to fewer job opportunities for youth and rising
+    unemployment in general：这些变化使得青年的就业机会更少、总的失业率上升
+  - 社会结构方面的变化也许在间接地影响青少年犯罪率。
+    比如经济方面的变化使得青年的就业机会更少、失业率上升，这就会使得赚钱的工作越来越难找。
+- `3`: There comes a time in most couples' lives when a break-up seems
+  inevitable. What causes it and how to handle it puts a lot of stress and
+  strain on a young person's shoulders.
+  - 这里的先行词 time 与定语从句 when... 被 in most couples' lives 隔开。
+  - 对大多数恋人来说，分手似乎都是难免的。
+    是什么原因导致分手以及如何面对分手，这都给年轻人带来压力，造成痛苦，可谓是压在年轻人肩上的重担。
+
+### 2.2.2 先行词 + 状语 + 定语从句
+
+>>>>> progress
 
 ## 综合训练：定语从句
 

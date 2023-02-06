@@ -615,9 +615,10 @@ all (三个或三个以上都) 与 both (两个都) 的用法较为特殊。
 - 不接 of 短语
   - anyone
     - ❌ Anyone of us has a gift.
-    - > 注: 没错，著名歌曲 "Anyone of Us (Stupid Mistake)" (by Gareth Gates)
+    - > 注：是的，著名歌曲 "Anyone of Us (Stupid Mistake)" (by Gareth Gates)
       的正确拼写应该是 "Any One of Us"。
-      [参考 (cantstopthepop.com)](https://www.cantstopthepop.com/2022/03/28/gareth-gates-anyone-of-us-stupid-mistake/)
+      - [参考 1（cantstopthepop.com）](https://www.cantstopthepop.com/2022/03/28/gareth-gates-anyone-of-us-stupid-mistake/)
+      - [参考 2（painintheenglish.com）](https://painintheenglish.com/case/393)
   - everyone: Everyone is here.
     - ❌ Everyone of us has a gift.
   - someone
