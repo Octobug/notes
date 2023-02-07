@@ -16,7 +16,10 @@
     - [3.3 结构三：动词 + it + 宾语补足语 + to do](#33-结构三动词--it--宾语补足语--to-do)
     - [思维训练 2-3](#思维训练-2-3)
       - [答案：思维训练 2-3](#答案思维训练-2-3)
-  - [4.4 不定式的作用（三）：作宾语补足语（动词 + 宾语 + to do）](#44-不定式的作用三作宾语补足语动词--宾语--to-do)
+  - [4. 不定式的作用（三）：作宾语补足语（动词 + 宾语 + to do）](#4-不定式的作用三作宾语补足语动词--宾语--to-do)
+  - [5. 不定式的作用（四）：作定语（名词 + to do）](#5-不定式的作用四作定语名词--to-do)
+    - [5.1 宾语关系](#51-宾语关系)
+    - [4.5.2 主语关系](#452-主语关系)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
 
@@ -321,6 +324,82 @@ out research accurately and efficiently.*
    译：所有这一切使一个科学家无法处理大量的新资料、新技术和新设备，
    而这些资料、技术和设备是进行精确和高效的研究工作所必需的。
 
-## 4.4 不定式的作用（三）：作宾语补足语（动词 + 宾语 + to do）
+## 4. 不定式的作用（三）：作宾语补足语（动词 + 宾语 + to do）
+
+不定式作宾语补足语，通常只放在某些特定的谓语动词后面，其基本结构是“谓语动词 + 宾语 + to do”。
+
+- `1`: There is still good availability of some of the hottest toys this
+  Christmas, but we still **advise parents and shoppers to get** to stores as
+  early as possible next week.
+  - 今年圣诞节期间一些热门玩具仍货源充足，但我们还是建议家长和顾客下周尽早去商店购买。
+- `2`: Allow me to drink to your success!
+  - 让我为你的成功干杯！
+- `3`: Allow me to propose a toast to our friendship!
+  - 我提议，为我们的友谊干杯！
+- `4`: They don't allow people to smoke in the theater.
+  - 他们不允许在剧场内吸烟。
+- `5`: The chairman declared the meeting to be over.
+  - 主席宣布会议结束。
+- `6`: Then our sense of timidity can cause us to hesitate, to move slowly, and
+  not to take a step until we know the ground is safe.
+  - 我们的胆怯心理往往会使我们犹豫不决、行动迟缓、不敢向前迈进一步，知道我们确信一切安全。
+- `7`: In hot, dry regions, the sun's heat causes the outer layer of rocks ____,
+  process called exfoliation.
+  - A. are expanded and peeled away
+  - B. to expend and peel away
+  - C. expanding and peeling away
+  - D. they expand and peel away
+  - 答案：B。谓语动词 cause 要求接不定式作宾语补足语。
+
+能用于词结构中的动词有：advice, allow, ask, beg, believe, cause, command, challenge,
+compel, declare, encourage, expect, forbid, force, get, hate, have, help,
+instruct, intend, invite, judge, leave, let, like, mean, make, need, oblige,
+order, permit, persuade, prefer, press, recommend, request, remind, teach,
+tell, tempt, trouble, want, warn, wish（hope 不可）, urge 等。
+
+另外，在 let, make, have, see, hear, feel, watch, notice, listen to
+等动词（短语）后面的不定式作宾语补足语的句子中，to 要省略。
+
+## 5. 不定式的作用（四）：作定语（名词 + to do）
+
+不定式作定语时主要关注其与被修饰名词之间的**逻辑关系**。
+由于不定式是由小品词 to 后面接一个动词构成的，是一个短语的形式。
+而短语作名词定语时都要放在名词后面构成后置定语，因此，不定式作定语都要放在被修饰名词的后面。
+
+> **小品词**：语言中一种形似介词的副词。
+> 小品词是一类比较特殊的词，它既有副词的某些特征，又具有介词的词形。
+> 它往往与前面的动词形成修饰和补充说明的语义关系，本身不能单独充当句子成分；
+> 它形似介词，又没有实体意义，却不能独自带宾语。
+>
+> 在英语中，由动词和小品词（up, down, in, out, on, off, over, away）构成的短语动词很多，
+> 有时很难猜出它们的意义。
+
+- `1`: He is the best man to choose.
+  - 这里 to choose 作为 man 的后置定语。
+  - 这句话是有歧义的，产生歧义的地方在于 man 与 to choose 的逻辑关系不确定。
+    - man 可以理解为逻辑主语（主谓关系）：He is the best man to do the choosing. 或
+      He is the best man to make the choice.
+      - 译为：由他来做出选择时最好的。
+    - man 也可以理解为逻辑宾语（动宾关系）：He is the best man that we can choose. 或
+      He is the best man for us to choose. 或 He is the best man to be chosen by
+      us.
+      - 译为：他是最佳的人选。
+
+### 5.1 宾语关系
+
+宾语关系就是指被修饰的名词在逻辑上充当不定式的宾语。进一步细分还可以分为两种情况：
+
+1. 作不定式中的动词的宾语；
+2. 作不定式中的介词的宾语。
+
+>>>>> progress
+
+`1`: I have a letter to write.
+
+`2`: I need a pen to write.
+
+`3`: I need some paper to write.
+
+### 4.5.2 主语关系
 
 >>>>> progress
