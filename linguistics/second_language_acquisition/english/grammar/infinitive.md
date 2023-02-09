@@ -431,10 +431,9 @@ tell, tempt, trouble, want, warn, wish（hope 不可）, urge 等。
 
 ⚠️ 由于不定式中的动词已经有了自己的逻辑宾语，因此该动词后面不能再跟一个宾语。
 
-`7`
+`7`: I gave the kid a comic to read it. ❌
 
-- I gave the kid a comic to read it. ❌
-- She has four children to take care of them. ❌
+`8`: She has four children to take care of them. ❌
 
 #### 二、作不定式中的介词的宾语
 
@@ -443,19 +442,11 @@ tell, tempt, trouble, want, warn, wish（hope 不可）, urge 等。
 1. 介词与动词构成搭配；
 2. 介词与被修饰的名词构成搭配。
 
-`8`: She has four children to take care of.
+`9`: She has four children to take care of.
 
 - 这句话句末的 of 是 take care of 这个短语中的固定搭配。children 作 of 的宾语，或者说是
   take care of 这个动词短语的宾语。
 - 译：她有四个孩子需要照顾。
-
-`9`: I had no place to live in.
-
-- 这句话句末的 in 与 live 构成语义搭配。place 作 in 的宾语，或者说是 live in
-  这个动词短语的宾语。
-- 译：我当时没有地方可住。
-- 💡 对于 a **place** to do 这个表达，日常使用中人们通常将介词省去，因为读起来更加自然。
-  time, day, way 的不定式作定语时，也有省略介词的情况。
 
 `10`: They say a person needs just three things to be truly happy in this world
 -- someone to love, something to do and something to hope for.
@@ -516,6 +507,14 @@ but **to have discussions with**, and I'd hope to make some real friends.
 - 因为 to practice speaking English 与 language partner 没有逻辑关系，所以需要添加
   with 形成语义搭配。
 - I have no language partner to practice speaking English with. ✅
+
+`17`: I had no place to live in.
+
+- 这句话句末的 in 与 live 构成语义搭配。place 作 in 的宾语，或者说是 live in
+  这个动词短语的宾语。
+- 译：我当时没有地方可住。
+- 💡 对于 a **place** to do 这个表达，日常使用中人们通常将介词省去，因为读起来更加自然。
+  time, day, way 的不定式作定语时，也有省略介词的情况。
 
 ### 4.5.2 主语关系
 
