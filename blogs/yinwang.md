@@ -59,8 +59,8 @@
 - 2017年04月14日 - 经验和洞察力
 - [ ] 2016年10月13日 - C# 的 IDisposable 接口
 - [ ] 2016年10月12日 - C 编译器优化的 Bug
-- [ ] 2016年09月18日 - 对 Rust 语言的分析
-- [ ] 2016年09月14日 - [测试的道理](http://www.yinwang.org/blog-cn/2016/09/14/tests)
+- [x] 2016年09月18日 - [对 Rust 语言的分析](http://www.yinwang.org/blog-cn/2016/09/18/rust)
+- [x] 2016年09月14日 - [测试的道理](http://www.yinwang.org/blog-cn/2016/09/14/tests)
 - [x] 2016年07月10日 - [Tesla autopilot 引起致命车祸](http://www.yinwang.org/blog-cn/2016/07/10/tesla-autopilot-fatal-crash)
 - [x] 2016年06月28日 - [养生节目的危害](http://www.yinwang.org/blog-cn/2016/06/28/yangsheng)
 - [x] 2016年06月14日 - [美国社会的信息不平等现象](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%BE%8E%E5%9B%BD%E7%A4%BE%E4%BC%9A%E7%9A%84%E4%BF%A1%E6%81%AF%E4%B8%8D%E5%B9%B3%E7%AD%89%E7%8E%B0%E8%B1%A1.md)
