@@ -602,7 +602,8 @@ feeling their breath on your cheeks.
   never could have succeeded with mathematics.
   - that his power... 是宾语从句；
   - for which... 是定语从句；
-  - that he never... 是省略了介词 about（feel about）的宾语从句。
+  - that he never... 是省略了介词 about (feel about) 的宾语从句，
+    因为英语中不允许介词后面加 that 引导的宾语从句。
 
 ### 3.8 宾语从句后置
 

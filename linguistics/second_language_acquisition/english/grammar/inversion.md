@@ -185,8 +185,20 @@ freedom of thought and of personal expression.
 
 ### 2.1 句首为否定词或否定意义词组的倒装
 
-常见的词有：at no time, hardly, in no way, little, never, no, not, not only,
-not until, scarcely, seldom 等。
+常见的词有：
+
+- at no time
+- by no means
+- hardly
+- in no way
+- little
+- never
+- no
+- not
+- not only
+- not until
+- scarcely
+- seldom
 
 `1` Never before have I seen you.
 
