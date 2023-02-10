@@ -9,9 +9,11 @@
       - [1.1.1 地点、时间和表运动的副词在句首的倒装](#111-地点时间和表运动的副词在句首的倒装)
       - [1.1.2 介词短语在句首的倒装](#112-介词短语在句首的倒装)
     - [1.2 主语补语（表语）的倒装](#12-主语补语表语的倒装)
+      - [1.2.1 正常主系表结构的倒装](#121-正常主系表结构的倒装)
+      - [1.2.2 可作形容词的过去/现在分词的倒装](#122-可作形容词的过去现在分词的倒装)
   - [2. 部分倒装](#2-部分倒装)
     - [2.1 句首为否定词或否定意义词组的倒装](#21-句首为否定词或否定意义词组的倒装)
-    - [2.2 only 出现在句首修饰副词、介词短语、状语从句时，主句要部分倒装](#22-only-出现在句首修饰副词介词短语状语从句时主句要部分倒装)
+    - [2.2 only 在句首修饰副词、介词短语、状语从句时主句的部分倒装](#22-only-在句首修饰副词介词短语状语从句时主句的部分倒装)
     - [2.3 比较状语从句中的部分倒装](#23-比较状语从句中的部分倒装)
     - [2.4 so 与 such 引导的结果状语从句的倒装](#24-so-与-such-引导的结果状语从句的倒装)
     - [2.5 “if...should...”构成虚拟语气的倒装](#25-ifshould构成虚拟语气的倒装)
@@ -107,7 +109,7 @@ So long as men can breathe, or eyes can see,
 
 `9` Ahead sat an old woman.
 
-⚠️ 这个倒装结构主语必须是**名词**，如果是人称代词则不能完全倒装。
+⚠️ 这一类倒装结构主语必须是**名词**，如果是人称代词则不能完全倒装。
 
 `10` Here he comes.
 
@@ -144,15 +146,35 @@ figures from diplomacy, filmmaking, music, and journalism.
 ### 1.2 主语补语（表语）的倒装
 
 即对“主系表”结构的倒装。
-为了保持句子平衡或强调表语部分，将作表语的形容词、分词、介词短语、such 置于句首时，需要完全倒装。
+为了保持句子平衡（尤其是“长主语”）或强调表语部分，将作表语的形容词、分词、介词短语、such
+置于句首时，需要完全倒装。
 
-`1`: Seated on the ground is a group of rabbits.
+#### 1.2.1 正常主系表结构的倒装
+
+`1` Such were the wolf's tricks.
+
+- 这就是大灰狼的把戏。
+
+`2` More serious is the problem of how environmental pollution will affect our
+life.
+
+- The problem of how environmental pollution will affect our life is more
+  serious.
+- 这里的主语包含一个从句，依照“尾重原则”，可以把句子倒装，使“长主语”后置。
+
+`3` Especially significant was his view of freedom, which, for him, was
+associated with the rights and responsibilities of the individual: he advocated
+freedom of thought and of personal expression.
+
+#### 1.2.2 可作形容词的过去/现在分词的倒装
+
+`1` Seated on the ground is a group of rabbits.
 
 - 席地而坐的是一群兔子。
 
-`2`: Such were the wolf's tricks.
+`2` Running fast is a young man, who tries to catch the train.
 
-- 这就是大灰狼的把戏。
+`3` Vividly depicted in this novel is a boy, who fights the evil wizard.
 
 ## 2. 部分倒装
 
@@ -163,27 +185,52 @@ figures from diplomacy, filmmaking, music, and journalism.
 
 ### 2.1 句首为否定词或否定意义词组的倒装
 
-常见的词有：hardly, little, never, no, not only, scarcely
+常见的词有：at no time, hardly, in no way, little, never, no, not, not only,
+not until, scarcely, seldom 等。
 
-- `1`：Not only **did** they develop such a device but by the turn of the
-  millenium they had also managed to embed it in a world wide system accessed by
-  billions of people every day.
-  - They not only developed such a device but by the turn of the millenium they
-    had also managed to embed it in a world wide system accessed by billions of
-    people every day.
-- `2`: Never before have I seen you.
-  - I have never seen you before.
-- `3`: Hardly do I attend the grammar class.
-- `4`: By no means will he tell a lie.
-- `5`: Not until the exam came did I realize the danger.
-  - 状语从句：until the exam came
-- `6`: Hardly had I got to the station when the train left.
-- `7`: No sooner had I got to the station than the train left.
-- `8`: Not only did he complain, but also he refused to pay.
-- `9`: No longer will this terrible thing happen.
-- `10`: Nowhere else can you find a cheaper stuff like this.
+`1` Never before have I seen you.
 
-### 2.2 only 出现在句首修饰副词、介词短语、状语从句时，主句要部分倒装
+- I have never seen you before.
+
+`2` Hardly do I attend the grammar class.
+
+`3` By no means will he tell a lie.
+
+`4` Hardly had I got to the station when the train left.
+
+`5` No sooner had I got to the station than the train left.
+
+`6` Not only did he complain, but also he refused to pay.
+
+`7` No longer will this terrible thing happen.
+
+`8` Nowhere else can you find a cheaper stuff like this.
+
+`9` Seldom does he come here.
+
+`10` Not only **did** they develop such a device but by the turn of the
+millenium they had also managed to embed it in a world wide system accessed by
+billions of people every day.
+
+- They not only developed such a device but by the turn of the millenium they
+  had also managed to embed it in a world wide system accessed by billions of
+  people every day.
+
+`11` Television is one of the means by which these feelings are created and
+conveyed -- and perhaps never before has it served so much to connect different
+peoples and nations as is the recent events in Europe.
+
+⚠️ 当 not until 引出主从复合句，**主句倒装，从句不倒装**。
+
+`12` Not until the exam came did I realize the danger.
+
+- 状语从句：until the exam came
+
+`13` Not until I saw the score did I realize I hadn't worked hard.
+
+- I didn't realize I hadn't worked hard until I saw the score.
+
+### 2.2 only 在句首修饰副词、介词短语、状语从句时主句的部分倒装
 
 在英语中，状语可以是：
 
@@ -193,16 +240,30 @@ figures from diplomacy, filmmaking, music, and journalism.
 4. 形容词短语
 5. 状语从句
 
-但是在倒装结构中，能倒装的只有副词、介词短语、状语从句。
+但是在倒装结构中，能倒装的只有 only 在句首修饰副词、介词短语、状语从句的情况。
 
-- `1`：Only when human began to get its food in a more productive way **was**
-  there time for other things.
-  - When human began to get its food in a more productive way there **was**
-    time for other things.
-- `2`: Only gradually can we succeed.
-  - We can succeed only gradually.
-- `3`: Only in this way can we succeed.
-- `4`: Only when/if effective measures are taken can this problem be solved.
+`1` Only when human began to get its food in a more productive way **was**
+there time for other things.
+
+- When human began to get its food in a more productive way there **was** time
+  for other things.
+
+`2` Only gradually can we succeed.
+
+- We can succeed only gradually.
+
+`3` Only in this way can we succeed.
+
+`4` Only when/if effective measures are taken can this problem be solved.
+
+`5` Only gradually was the by-product of the institution noted, and only more
+gradually still was this effect considered as a directive factor in the conduct
+of the institution.
+
+- 这里是两个并列的部分倒装句。
+  - the by-product...was noted only gradually
+  - this effect was considered as a...only more gradually still
+- `译` 机构附带产生的影响只有逐渐地才能被注意到；而这种影响被视为机构运作的指导性因素的过程则更加缓慢。
 
 ### 2.3 比较状语从句中的部分倒装
 
