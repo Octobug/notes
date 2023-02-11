@@ -17,7 +17,9 @@
       - [答案：思维训练：5. 混合虚拟（一）：主句现在 + 从句过去](#答案思维训练5-混合虚拟一主句现在--从句过去)
   - [6. 混合虚拟（二）：主句过去 + 从句现在](#6-混合虚拟二主句过去--从句现在)
   - [7. 倒装虚拟](#7-倒装虚拟)
-  - [7.8 跳层虚拟](#78-跳层虚拟)
+  - [8 跳层虚拟](#8-跳层虚拟)
+    - [8.1 陈述句 + or + 虚拟主句](#81-陈述句--or--虚拟主句)
+    - [8.2 虚拟主句 + but + 陈述句](#82-虚拟主句--but--陈述句)
 
 语气 (mood) 是英文中谓语动词的一种变化形式，用来表示说话者的**意图和态度**。
 英文中的语气可分为三种：
@@ -504,6 +506,51 @@ If you knew me better, you wouldn't have said that.
 - `10`: Had I known? I would have come sooner.
   - If I had known, I would have come sooner.
 
-## 7.8 跳层虚拟
+## 8 跳层虚拟
+
+`1` He must have heard her initial instructions or he would not have known where
+to take her.
+
+- must have heard 不是虚拟语气，而是 must 表示推测的用法。
+  “must + have done”结构表示对过去的推测。
+- or 表示“否则”，后面的 would not have known 是虚拟语气。
+- 由 must have heard 是对过去推测可知，这里虚拟的时间是过去。
+- or 后面的句子相当于一个虚拟主句，所以其谓语要采用虚拟主句的谓语形式，即过去虚拟“would
+  have done”。
+- 句子结构为“陈述句 + or + 虚拟句”。
+
+上面的例子没有典型的 if 子句，是一类较为特殊的虚拟语气。
+这类虚拟句一般分为两部分，两部分在语气上截然相反。其中
+一部分虚拟，另一部分不虚拟而使用陈述语气，用以陈述一个事实。
+两部分往往由 but, or, or else 或 otherwise 连接。
+这种在同一个句子中有一部分虚拟，而另一部分又跳出了虚拟语境的情形，称为“跳层虚拟”。
+
+### 8.1 陈述句 + or + 虚拟主句
+
+这里的连接词除了 or，还可以是 or else 和 otherwise。
+or 前面的句子是陈述语气，后面是虚拟语气，而且是虚拟主句。具体的谓语搭配结构是：
+
+1. 主语 + 一般现在时的谓语形式 + or + 主语 + would do：表示对现在事实的虚拟；
+2. 主语 + 一般过去时的谓语形式 + or + 主语 + would have done：表示对过去事实的虚拟。
+
+`1` Well, I had to do it. Otherwise, she would have given me a low score.
+
+- had to do it 表示过去时间，otherwise 后面要接一个过去虚拟主句。
+
+`2` We didn't know his telephone number, otherwise we would have telephoned him.
+
+- `=` We would have telephoned him if we had known his telephone number.
+
+`3` He must have had an accident, or he would have been here then.
+
+- `译` 他一定是出事故了，要不然早就到了。
+
+`4` Mary couldn't have received my letter; otherwise she would have replied
+before now.
+
+- 这里陈述句部分用情态动词的过去时态 couldn't have done 表示对过去的推测。
+- `译` 玛丽不可能收到我的信，要不然她现在已经给我回复了。
+
+### 8.2 虚拟主句 + but + 陈述句
 
 >>>>> progress
