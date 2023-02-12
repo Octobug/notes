@@ -1,5 +1,15 @@
 # Preface and Introduction
 
+- [Preface and Introduction](#preface-and-introduction)
+  - [Preface](#preface)
+  - [Introduction](#introduction)
+    - [Data Types](#data-types)
+    - [Control-flow constructions](#control-flow-constructions)
+    - [Functions](#functions)
+    - [Source Files](#source-files)
+    - [Macros](#macros)
+    - [Language Level](#language-level)
+
 ## Preface
 
 *The C Programming Language* was publicized in 1978.
@@ -84,3 +94,4 @@ C provides **no**:
 
 Some of the features above are provided by standard libraries, but some are
 impossible to be achieved.
+
