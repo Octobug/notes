@@ -39,7 +39,7 @@ types. The fundamental types are:
 - statement grouping
 - decision making (if-else)
 - selecting one of a set of possible cases (switch)
-- looping with the temination test and early loop exit (break)
+- looping with the termination test and early loop exit (break)
   - while
   - for
   - do-while
@@ -49,14 +49,21 @@ types. The fundamental types are:
 - recursion
 - lexical scope
 
+### Source Files
+
+- source code of a C origram may exist in separate source files
+- variables may be internal to a function, external but known only within a
+  single source file, or visible to the entire program
+
 ### Macros
 
 - source code substitution
+- inclusion of other source files
 
 ### Language Level
 
 C is a relatively "low level" language. It deals with the same sort of objects
-that most computes do, namely characters, numbers, and addresses.
+that most computers do, namely characters, numbers, and addresses.
 
 C provides **no**:
 
@@ -67,7 +74,7 @@ C provides **no**:
   - arrays.
 - storage allocation facility
   - heap
-  - gargabe collection
+  - garbage collection
 - I/O facilities
   - file access methods
 - multiprogamming
