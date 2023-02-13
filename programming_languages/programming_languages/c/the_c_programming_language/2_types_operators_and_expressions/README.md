@@ -1,5 +1,27 @@
 # Chapter 2: Types, Operators, and Expressions
 
+- [Chapter 2: Types, Operators, and Expressions](#chapter-2-types-operators-and-expressions)
+  - [2.1 Variable Names](#21-variable-names)
+  - [2.2 Data Types and Sizes](#22-data-types-and-sizes)
+  - [2.3 Constants](#23-constants)
+    - [long](#long)
+    - [unsigned](#unsigned)
+    - [float and double](#float-and-double)
+    - [decimal, octal and hex](#decimal-octal-and-hex)
+    - [character](#character)
+    - [constant expression](#constant-expression)
+    - [string](#string)
+    - [enumeration](#enumeration)
+  - [2.4 Declarations](#24-declarations)
+  - [2.5 Arithmetic Operators](#25-arithmetic-operators)
+  - [2.6 Relational and Logical Operators](#26-relational-and-logical-operators)
+  - [2.7 Type Conversions](#27-type-conversions)
+  - [2.8 Increment and Decrement Operators](#28-increment-and-decrement-operators)
+  - [2.9 Bitwise Operators](#29-bitwise-operators)
+  - [2.10 Assignment Operators and Expressions](#210-assignment-operators-and-expressions)
+  - [2.11 Conditional Expressions](#211-conditional-expressions)
+  - [2.12 Precedence and Order of Evaluation](#212-precedence-and-order-of-evaluation)
+
 ## 2.1 Variable Names
 
 - **Do not** begin variable names with underscore, since library routines often
@@ -135,7 +157,7 @@ that types.
 
 The direction of truncation for `/` and the sign of the result for `%` are
 machine-dependent for negative operands, as is the action taken on overflow or
-onderflow.
+underflow.
 
 `unary operator`: 一元操作符
 
@@ -149,7 +171,7 @@ for (i = 0; i < lim - 1 && (c=getchar()) != '\n' && c != EOF; ++i)
 ```
 
 The unary negation operator `!` converts a non-zero operand in to `0`, and a
-zero operand into `1`. A commone use of `!` is in constructions like
+zero operand into `1`. A common use of `!` is in constructions like
 `if (!valid)` rather than `if (valid === 0)`.
 
 ## 2.7 Type Conversions
@@ -159,7 +181,7 @@ a "wider" one without losing information.
 
 Expression that might lose information, like assigning a longer integer type to
 a shorter, or a floating-point type to an integer, may draw a warning, but they
-not illegal.
+are not illegal.
 
 e.g.
 
@@ -171,7 +193,7 @@ int atoi(char s[])
 
     n = 0;
     for (i = 0; s[i] >= '0' && s[i] <= '9'; ++i)
-        n = 10 * n + (s[i] - '0);
+        n = 10 * n + (s[i] - '0');
     return n;
 }
 ```
@@ -179,13 +201,14 @@ int atoi(char s[])
 The definition of C guarantees that any character in the machine's standard
 **printing character** set will never be negative.
 
-If there are no unsigned operands, the following set of rules will suffic:
+If there are no unsigned operands, the following informal set of rules will
+suffice:
 
 - If either operand is `long double`, convert the other to `long double`
 - Otherwise, if either operand is `double`, convert the other (except `float`)
   to `double`
 - Otherwise, if either operand is `float`, convert the other to `float`
-- Otherwise, convert `char` and `short` to int
+- Otherwise, convert `char` and `short` to `int`
 - Then, if either operand is `long`, convert the other to `long`
 
 ## 2.8 Increment and Decrement Operators
