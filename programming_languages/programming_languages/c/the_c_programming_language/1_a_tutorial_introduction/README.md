@@ -1,14 +1,43 @@
 # Chapter 1: A Tutorial Introduction
 
+- [Chapter 1: A Tutorial Introduction](#chapter-1-a-tutorial-introduction)
+  - [1.1 Getting Started](#11-getting-started)
+    - [main() function](#main-function)
+    - [Library](#library)
+    - [character string (or string constant)](#character-string-or-string-constant)
+  - [1.2 Variables and Arithmetic Expressions](#12-variables-and-arithmetic-expressions)
+    - [Basic data types](#basic-data-types)
+    - [Arithmetic](#arithmetic)
+    - [`printf` args format](#printf-args-format)
+  - [1.3 The For Statement](#13-the-for-statement)
+  - [1.4 Symbolic Constants](#14-symbolic-constants)
+  - [1.5 Character Input and Output](#15-character-input-and-output)
+    - [1.5.1 File Copying](#151-file-copying)
+    - [1.5.2 Character Counting](#152-character-counting)
+      - [`while` and `for`](#while-and-for)
+    - [1.5.3 Line Counting](#153-line-counting)
+      - [character constant](#character-constant)
+    - [1.5.4 Word Counting](#154-word-counting)
+  - [1.6 Arrays](#16-arrays)
+  - [1.7 Functions](#17-functions)
+    - [Function Prototype](#function-prototype)
+  - [1.8 Arguments -- Call by Value](#18-arguments----call-by-value)
+  - [1.9 Character Arrays](#19-character-arrays)
+    - [`\0`](#0)
+  - [1.10 External Variables and Scope](#110-external-variables-and-scope)
+
 ## 1.1 Getting Started
 
 ```c
-#include <stdio.h>
+#include <stdio.h>              // include information about standard library
 
-int main()
-{
-    printf("Hello, world\n");
-    return 0;
+int main()                      // define a function called main that received
+                                // no argument values
+{                               // statements of main are enclosed in braces
+    printf("Hello, world\n");   // main calls library function printf to print
+                                // this sequence of characters
+                                // \n represents the newline character
+    return 0;               
 }
 ```
 
@@ -24,19 +53,21 @@ standard input/output library.
 
 ### character string (or string constant)
 
+is a sequence of characters in double quotes.
+
 ## 1.2 Variables and Arithmetic Expressions
 
 ### Basic data types
 
-- char: character
-- int: integer
-- short: short interger
-- long: long integer
-- float: single-precision floating point
-- double: double-precision floating point
+- `char`: character
+- `int`: integer
+- `short`: short interger
+- `long`: long integer
+- `float`: single-precision floating point
+- `double`: double-precision floating point
 
 The sizes of these objects are also machine-dependent. There are also types
-of these basic types
+of these basic types:
 
 - arrays
 - structures
@@ -72,7 +103,7 @@ Magic number: constant numbers written in codes.
 A `define` for them is a good practice.
 
 ```c
-#define name    replacement text // no semicolon here
+#define name    replacement_text // no semicolon here
 ```
 
 Symbolic constant names are conventionally written in upper case so they can be
@@ -180,7 +211,7 @@ be a string represented in this form.
 ## 1.10 External Variables and Scope
 
 An external variable must be *defined* outside of any function. It must also be
-*declared* in each function that wants to access it. This states the tyoe of the
+*declared* in each function that wants to access it. This states the type of the
 variable.
 
 The declaration may be an explicit `extern` statement or may be implicit from
