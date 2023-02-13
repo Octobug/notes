@@ -108,5 +108,5 @@ error:
     // clean up the mess
 ```
 
-`lable` can be attached to any statement in the same function as the `goto`. The
+`label` can be attached to any statement in the same function as the `goto`. The
 scope of a label is the entire function.
