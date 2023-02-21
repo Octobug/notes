@@ -17,9 +17,16 @@
       - [答案：思维训练：5. 混合虚拟（一）：主句现在 + 从句过去](#答案思维训练5-混合虚拟一主句现在--从句过去)
   - [6. 混合虚拟（二）：主句过去 + 从句现在](#6-混合虚拟二主句过去--从句现在)
   - [7. 倒装虚拟](#7-倒装虚拟)
-  - [8 跳层虚拟](#8-跳层虚拟)
+  - [8. 跳层虚拟](#8-跳层虚拟)
     - [8.1 陈述句 + or + 虚拟主句](#81-陈述句--or--虚拟主句)
     - [8.2 虚拟主句 + but + 陈述句](#82-虚拟主句--but--陈述句)
+    - [思维总结：8. 跳层虚拟](#思维总结8-跳层虚拟)
+    - [思维训练：8. 跳层虚拟](#思维训练8-跳层虚拟)
+      - [答案：思维训练：8. 跳层虚拟](#答案思维训练8-跳层虚拟)
+  - [9. 名词从句中如何使用虚拟](#9-名词从句中如何使用虚拟)
+    - [9.1 在下列词的宾语从句中](#91-在下列词的宾语从句中)
+    - [7.9.2 在 it is + 形容词/过去分词/特定名词 + that 的主语从句中](#792-在-it-is--形容词过去分词特定名词--that-的主语从句中)
+  - [综合训练：虚拟语气](#综合训练虚拟语气)
 
 语气 (mood) 是英文中谓语动词的一种变化形式，用来表示说话者的**意图和态度**。
 英文中的语气可分为三种：
@@ -506,7 +513,7 @@ If you knew me better, you wouldn't have said that.
 - `10`: Had I known? I would have come sooner.
   - If I had known, I would have come sooner.
 
-## 8 跳层虚拟
+## 8. 跳层虚拟
 
 `1` He must have heard her initial instructions or he would not have known where
 to take her.
@@ -530,8 +537,8 @@ to take her.
 这里的连接词除了 or，还可以是 or else 和 otherwise。
 or 前面的句子是陈述语气，后面是虚拟语气，而且是虚拟主句。具体的谓语搭配结构是：
 
-1. 主语 + 一般现在时的谓语形式 + or + 主语 + would do：表示对现在事实的虚拟；
-2. 主语 + 一般过去时的谓语形式 + or + 主语 + would have done：表示对过去事实的虚拟。
+1. 主语 + 一般现在时的谓语形式 + or + 主语 + would do：**表示对现在事实的虚拟**；
+2. 主语 + 一般过去时的谓语形式 + or + 主语 + would have done：**表示对过去事实的虚拟**。
 
 `1` Well, I had to do it. Otherwise, she would have given me a low score.
 
@@ -552,5 +559,168 @@ before now.
 - `译` 玛丽不可能收到我的信，要不然她现在已经给我回复了。
 
 ### 8.2 虚拟主句 + but + 陈述句
+
+与 or 等词不同的是，这里 but 的前面是虚拟主句，but 的后面是陈述句。
+该句型的使用规律是：
+
+1. 主语 + would do, BUT + 主语 + 一般现在时的谓语形式：**表示对现在事实的虚拟**；
+2. 主语 + would have done, BUT + 主语 + 一般过去时的谓语形式：**表示对过去事实的虚拟**。
+
+句中的 would 可替换成 should, might 或 could。这类跳层虚拟句的关键标志词是 but，随着 but
+一转折，句子的语气也由虚拟变为不虚拟，即 but 将句子一分为二，**but
+前面部分的句子用虚拟语气，but 后面部分的句子用陈述语气**。
+
+`1` He would put on weight, but he doesn't eat much.
+
+- `=` He would put on weight if he ate much.
+- 这里不用 didn't 而是用 doesn't，因为前面的 would
+  不是表示过去时态，而是表示对现在事实的虚拟。
+- `译` 他本来是会发胖的，但是他从来不会多吃。
+
+`2` He could not have bought that limousine, but he inherited a big fortune from
+his father.
+
+- `=` He could not have bought that limousine if he had not inherited a big
+  fortune from his father.
+  - 他本来是买不起那辆豪华小汽车的，不过他从他爸爸那里继承了一大笔遗产。
+
+`3` A: I thought you were going to call me last night about the train schedule.
+
+B: Sorry. I would have. But Harry and Jack stopped by and stayed past midnight.
+
+- 这里 I would have 省略了 called。
+
+`4` I would have gone to visit him in the hospital, had it been at all possible,
+but I was fully occupied the whole of last week.
+
+- 这里 but 前面的句子是过去虚拟，所以采用过去虚拟主句的谓语形式 would have gone。
+- `译` 如果有一线可能，我本来是想去医院看望他的，但是我上周整个一周都很忙。
+
+`5` Some women could have made a good salary in a job instead of staying home,
+but they decided not not to work for the sake of the family.
+
+- `=` Some women could have made a good salary in a job instead of staying home
+  if they hadn't decided not to work for the sake of the family.
+- 这里 but 后面的句子是陈述过去的事实，前面是对过去的虚拟。
+- `译` 有些妇女本来是能够挣得高薪的，但是为了家庭，她们放弃了工作，呆在家里。
+
+有时不用 but 来表示转折，而是用其他副词。
+
+`6` A safety analysis would have identified the target as a potential danger.
+Unfortunately, it was never done.
+
+- 这里的 unfortunately 在语义上相当于 but，表示转折，使句子从虚拟转为不虚拟。
+- `译` 若是做一下安全分析，就可以发现这个潜在的隐患，但遗憾的是，并没有做安全分析。
+
+### 思维总结：8. 跳层虚拟
+
+共有两类跳层虚拟句，一类是由 or 等引导的，具体句型是：
+
+1. 主语 + 一般现在时谓语形式, or + 主语 + would do：表示对现在事实的虚拟；
+2. 主语 + 一般过去时谓语形式, or + 主语 + would have done：表示对过去事实的虚拟。
+
+另一类是由 but 引导的，具体的句型结构是：
+
+1. 主语 + would do, but + 主语 + 一般现在时谓语形式：表示对现在事实的虚拟；
+2. 主语 + would have done, but + 主语 + 一般过去时谓语形式：表示对过去事实的虚拟。
+
+这两类句型的前后两个分句的语气正好相反。
+
+### 思维训练：8. 跳层虚拟
+
+**请选择最佳答案填空。**
+
+*1. Mary ____ my letter; otherwise she would have replied before now.*
+
+- *A. has received*
+- *B. ought to have received*
+- *C. couldn't have received*
+- *D. shouldn't have received*
+
+#### 答案：思维训练：8. 跳层虚拟
+
+1. C。这里情态动词的过去时态 couldn't have done 是表示对过去的推测，而不是虚拟语气。
+   - `译` 玛丽不可能收到我的信，要不然她现在已经给我回复了。
+
+## 9. 名词从句中如何使用虚拟
+
+虚拟语气除了用在非真实条件从句中，在特定的名词从句中也**需要**用虚拟语气。
+在这类名词从句中含有特定的**标志词**，这些表示词可用来表示**愿望、建议、命令、请求或意志**等语气。
+一旦主句中出现某一个标志词，就要注意其从句谓语需要用 should do。
+与非真实条件虚拟句中的主句和从句的谓语动词形式完全不同的是，
+名词从句虚拟句的谓语变化形式只有一条规律：名词从句虚拟句无论其主句的谓语动词是何种形式，
+从句的谓语形式均为“**should 动词原形**”，而不是用 would。其中 **should 可以省去**。
+
+`1` I suggest that we should go tomorrow.
+
+- `译` 我建议我们明天走。
+
+`2` I suggested that we should go the next day.
+
+- `译` 我当时建议我们第二天走。
+
+上面两个句子中的 suggest 即是标志词。这里从句谓语的时态 (should go)
+没有受主句谓语时态 (suggest, suggested) 的影响。
+
+### 9.1 在下列词的宾语从句中
+
+- advice
+- ask
+- beg
+- command
+- demand
+- decide
+- deserve
+- desire
+- determine
+- insist
+- move
+- order
+- prefer
+- propose
+- require
+- recommend
+- request
+- suggest
+- urge
+
+`1` His father **urged** that he study medicine.
+
+- 这里省略 should，因此从句谓语不是 studies 而是 study。
+- `译` 他父亲要求他学医。
+
+`2` The Chinese government and people have **demanded** that the U.S. Government
+shoulder all the responsibilities for the incident, apologize to the Chinese
+side and take effective measures to prevent the recurrence of such incidents.
+
+- `译` 中国政府和人民要求美国政府对此事件必须承担全部责任，向中国道歉，
+  并采取有效措施防止类似事件再次发生。
+
+`3` The instructions **ask** that we not take more than three tablets once.
+
+- 从句的谓语 not take 相当于 should not take，这里 should 被省略了。
+- `译` 说明书要求每次服用的量不超过三粒。
+
+`4` The board deemed it **urgent** that these files should be printed right
+away.
+
+- 这里因为有形容词 urgent，所以从句要用虚拟语气。
+- 董事会要求把这些文件立刻打印出来。
+
+`5` He **ordered** that federal funds not be used for such an experiment.
+
+- `译` 他要求不要将联邦基金用于进行这类试验。
+
+`6` NBAC will **ask** that Clinton's 90-day ban on federal funds for human
+cloning be extended indefinitely, and possibly that it be made law.
+
+- `译` 美国生命伦理咨询委员会 (NBAC) 将会要求克林顿的关于禁止联邦基金用于人类克隆的“90
+  天禁令”无限期延长，也许还会将其以法律的形式固定下来。
+
+### 7.9.2 在 it is + 形容词/过去分词/特定名词 + that 的主语从句中
+
+>>>>> progress
+
+## 综合训练：虚拟语气
 
 >>>>> progress
