@@ -26,7 +26,28 @@
   - [9. 名词从句中如何使用虚拟](#9-名词从句中如何使用虚拟)
     - [9.1 在下列词的宾语从句中](#91-在下列词的宾语从句中)
     - [7.9.2 在 it is + 形容词/过去分词/特定名词 + that 的主语从句中](#792-在-it-is--形容词过去分词特定名词--that-的主语从句中)
-  - [综合训练：虚拟语气](#综合训练虚拟语气)
+      - [一、形容词](#一形容词)
+      - [二、过去分词](#二过去分词)
+      - [三、特定的名词](#三特定的名词)
+    - [9.3 在特定名词的表语从句和同位语从句中](#93-在特定名词的表语从句和同位语从句中)
+    - [思维训练：9. 名词从句中如何使用虚拟](#思维训练9-名词从句中如何使用虚拟)
+      - [答案：思维训练：9. 名词从句中如何使用虚拟](#答案思维训练9-名词从句中如何使用虚拟)
+  - [10. 各种虚拟句型](#10-各种虚拟句型)
+    - [10.1 在 wish 后面的宾语从句中](#101-在-wish-后面的宾语从句中)
+      - [一、对现在的虚拟](#一对现在的虚拟)
+      - [二、对过去的虚拟](#二对过去的虚拟)
+      - [三、对将来的虚拟](#三对将来的虚拟)
+  - [10.2 在 if only 感叹句中](#102-在-if-only-感叹句中)
+    - [10.3 在 as if/as though 引导的从句中](#103-在-as-ifas-though-引导的从句中)
+      - [一、表示与现在事实相反或对现在情况有所怀疑，谓语用过去时](#一表示与现在事实相反或对现在情况有所怀疑谓语用过去时)
+      - [二、表示与过去事实相反，谓语用过去完成时](#二表示与过去事实相反谓语用过去完成时)
+    - [10.4 在 it is (high) time (that) 从句中](#104-在-it-is-high-time-that-从句中)
+    - [10.5 在 would rather, would (just) as soon, would sooner, would prefer 等从句中](#105-在-would-rather-would-just-as-soon-would-sooner-would-prefer-等从句中)
+      - [一、would rather do sth](#一would-rather-do-sth)
+      - [二、would rather have done sth](#二would-rather-have-done-sth)
+      - [三、would rather sb. did](#三would-rather-sb-did)
+      - [四、would rather sb. had done](#四would-rather-sb-had-done)
+  - [思维训练：10. 各种虚拟句型](#思维训练10-各种虚拟句型)
 
 语气 (mood) 是英文中谓语动词的一种变化形式，用来表示说话者的**意图和态度**。
 英文中的语气可分为三种：
@@ -719,8 +740,466 @@ cloning be extended indefinitely, and possibly that it be made law.
 
 ### 7.9.2 在 it is + 形容词/过去分词/特定名词 + that 的主语从句中
 
->>>>> progress
+#### 一、形容词
 
-## 综合训练：虚拟语气
+这些形容词一般表示个人对事件的反应，常用的有：
+
+- advisable
+- amazing
+- appropriate
+- astonishing
+- crucial
+- desirable
+- essential
+- imperative
+- important
+- keen
+- natural
+- necessary
+- normal
+- odd
+- preferable
+- proper
+- shocked
+- sorry
+- strange
+- surprising
+- unusual
+- urgent
+- vital
+
+`1` If we are ever going to protect the atmosphere, it is **crucial** that
+those new plants be environmentally sound.
+
+- 这里用了形容词 crucial，所以从句要用虚拟语气，即用动词原形 be。
+- `译` 我们若是想保护大气层，那么就应该要求那些新开工的工厂对环境无害。
+
+`2` It is **natural** that I should dwell upon his successes rather than upon
+his failures.
+
+- `译` 我宁愿强调他成功的地方，而不愿突出他的失败之处，这是理所当然的。
+
+`3` It is **strange** that he should not come here.
+
+- 这里的 should 只表明一种意外的语气，可译为“竟然”。
+- `译` 他竟然没来，这真是太奇怪了。
+
+`4` It's **essential** that people be psychologically able to resist the impact
+brought about by the transition from planned economy to market economy.
+
+- `译` 从心理上来讲，人们能够抗拒由计划经济转变为市场经济这一过程带来的影响，这是至关重要的。
+
+`5` It is **important** that the hotel receptionist make sure that guests are
+registered correctly.
+
+- `译` 宾馆的前台接待人员应该确认客人们登记注册无误，这是十分重要的。
+
+`6` It is quite **natural** that the customs of all national minorities be
+respected.
+
+- `译` 各个少数民族的风俗习惯都应该得到尊重，这是自然而然的事。
+
+#### 二、过去分词
+
+这些过去分词常用的有：
+
+- decided
+- demanded
+- desired
+- ordered
+- recommended
+- requested
+- required
+- suggested
+
+`7` It is **requested** that all members be present at the meeting.
+
+- `译` 要求所有的成员都出席这次会议。
+
+`8` It is politely **requested** by the hotel management that radios not be
+played after 11 o'clock at night.
+
+- `译` 宾馆的管理人员恳请客人晚上 11 点以后不要开收音机。
+
+#### 三、特定的名词
+
+这些名词常用的有：
+
+- advice
+- decision
+- demand
+- desire
+- idea
+- motion
+- order
+- pray
+- preference
+- proposal
+- recommendation
+- requirement
+- resolution
+- suggestion
+- wish
+
+`9` It is my proposal that he be sent to study further abroad.
+
+- `译` 我建议把他送到国外去学习。
+
+### 9.3 在特定名词的表语从句和同位语从句中
+
+这些名词常用的有：
+
+- advice
+- decision
+- demand
+- desire
+- idea
+- insistence
+- motion
+- order
+- pray
+- preference
+- proposal
+- recommendation
+- requirement
+- resolution
+- suggestion
+- wish
+
+`1` Jean Wagner's most enduring contribution to the study of Afro-American
+poetry is his **insistence** that it be analyzed in religious, as well as
+worldly, frame of reference.
+
+- `译` Jean Wagner 对美国黑人诗歌的研究最为持久的贡献是，他坚持认为，应把此类诗歌放在宗教与世俗的框架中进行分析。
+
+`2` For my own part, it seems that the main **requirement** of an international
+language is that it be easily learned.
+
+- `译` 我个人认为，对于一门国际语言最主要的要求是，它必须易于学习。
+
+`3` The **motion** that the meeting be adjourned was adopted.
+
+- `译` 要求会议暂停的动议被批准了。
+
+`4` The government has backed away from **demands** that the software giant be
+broken up, while Microsoft is now more willing to accept restrictions on how it
+manages its business.
+
+- `译` 政府已经不再支持拆分软件巨人微软公司的要求，而微软目前则更愿意接受对于如何管理其企业的限制。
+
+`5` The **suggestion** that the mayor present the prizes was accepted by
+everyone.
+
+- `译` 由市长颁奖的建议被所有人接受了。
+
+### 思维训练：9. 名词从句中如何使用虚拟
+
+**一、请选择最佳答案填空。**
+
+*1. The instructions ask that we ____ more than three tablets once.*
+
+- *A. not to take*
+- *B. not take*
+- *C. won't take*
+- *D. wouldn't take*
+
+#### 答案：思维训练：9. 名词从句中如何使用虚拟
+
+1. 答案：B。含有虚拟标志词 ask。
+
+## 10. 各种虚拟句型
+
+在英语中，虚拟语气可以分为非真实条件句 (unreal conditionals) 和名词从句虚拟句两大类。
+在这两类之外还有一些固定句型表示的虚拟语气。
+
+### 10.1 在 wish 后面的宾语从句中
+
+用来表示说话者难以实现的或与事实违背的愿望，具有较强的感情色彩，可分别表示对现在、过去和将来情景的虚拟。
+
+#### 一、对现在的虚拟
+
+即表示对**现状的愿望**，从句的谓语动词用**过去时**。
+
+`1` I wish I were a little younger.
+
+- `译` 我希望我能够年轻一点。
+
+`2` I wish I could travel to the moon (but I can't do that).
+
+- `译` 我希望我能够登上月球（但实际上我不能）。
+
+`3` I wish I knew his address (but I don't know his address).
+
+- `译` 我希望我知道他的地址（但实际上我不知道）。
+
+`4` Whenever something goes wrong, I just push this little Reset button and
+restart. I wish my whole life were like that!
+
+- `译` 每次电脑出故障的时候，我只要按一下 Reset 键，电脑就可以重启了。我真希望人生也能如此啊！
+
+`5` Success makes so many people hate you. I wish it weren't that way. It would
+be wonderful to enjoy success without seeing envy in the eyes of those around
+you.
+
+- `译` 成功会让很多人讨厌你，我真希望不要这样。如果在享受成功时，看不到身旁人嫉妒的眼神，那该有多么美好啊。
+
+#### 二、对过去的虚拟
+
+即对过去发生的事情表示遗憾或后悔，从句的谓语动词用过去完成时 (had done)
+或“would/could + 现在完成时”，意指从句的谓语动词所表示的动作发生在主句的谓语所表示的动作之前。
+
+`6` I wish I had been there.
+
+- `译` 我真希望我当时在那儿。
+
+`7` I wish I had not attended that party.
+
+- `译` 我真希望我当时没参加那个聚会。
+
+`8` I wish I could have gone with you to the concert last night.
+
+- `译` 我真希望昨晚能和你一起去听音乐会。
+
+`9` A: I wish I hadn't hurt Mary's feelings like that. You know I never meant
+to.
+
+B: The great thing about Mary is that she doesn't hold the grudge. By tomorrow
+she'll have forgotten all about it.
+
+- `译`
+  - A: 我真希望我没有像那样伤害玛丽的感情，你知道我从来不是故意那么做的。
+  - B: 别担心，玛丽最大的优点就是从不记仇，到明天她准会把这件事全忘记了。
+
+#### 三、对将来的虚拟
+
+即对将来发生的事情表示祝愿，从句的谓语动词用“would/could + 动词原形”。
+意指从句的谓语动词所表示的动作可能发生在主句的谓语所表示的动作之后。
+
+`10` A: It's not fun being around Debbie and Mike these days. All they do is
+quarrel.
+
+B: I've noticed it, too. I wish they would keep their squabbles to themselves.
+
+- `译`
+  - A: 这两天跟 Debbie 和 Mike 呆在一起真没意思，他们整天就是吵架。
+  - B: 我也注意到了，我真希望他们要吵就私下里吵，而不要当着大家的面吵。
+
+`11` I wish he could explain what he means.
+
+- `译` 我希望他能解释一下他是什么意思。
+
+`12` I wish you would shut up.
+
+- `译` 我希望你能闭嘴。
+
+⚠️ 即使将 wish 改为 wished，以上例句谓语的时态仍然不变。
+
+## 10.2 在 if only 感叹句中
+
+if only 表示“但愿”“要是……就好了”，其用法和 wish 基本相同，可表示对现在、过去和将来的虚拟，比
+wish 具有更强烈的感情色彩。
+
+`1` If only the rain would stop.
+
+- `译` 但愿雨能停。（对将来的虚拟）
+
+`2` If only I were taller.
+
+- `译` 我的个子要是能高一点就好了。（对现在的虚拟）
+
+`3` If only he had followed your advice!
+
+- `译` 他要是听从了你的建议就好了！（对过去的虚拟）
+
+💡 only 除了紧跟 if，还可以放在句中的位置。
+
+`4` If he had only followed your advice!
+
+`5` 请选择这句话的意思：If I'd only remembered to lock the door.
+
+- A. I would remember if I had locked the door.
+- B. I didn't remember to bring the door key.
+- C. I forgot there was a rock near the door.
+- D. I wish I had locked the door.
+- 答案：D。
+- 我要是记得锁门就好了。
+
+从上面例句可以看出，if only 和 wish 的用法和意义均相同。
+
+### 10.3 在 as if/as though 引导的从句中
+
+#### 一、表示与现在事实相反或对现在情况有所怀疑，谓语用过去时
+
+`1` I really don't care for the way you're speaking to me. It seems as if you
+were my father.
+
+- `译` 我真的非常讨厌你和我说话的方式。你听起来就好像是我爸爸。
+
+`2` You should live each days as if it were the last and use every second to
+your advantage.
+
+- `译` 你们应该把每一天都当作是生命中的最后一天来度过，充分利用每一秒钟。
+
+#### 二、表示与过去事实相反，谓语用过去完成时
+
+`3` We have not seen each other for ten solid years, but when we encountered
+on the street that day, we were still so affectionate that it seemed as if not
+a single day had gone by.
+
+- `译` 我们已经有整整 10 年没见了，但是当那天我们在街上相遇时，我们仍然感到无比亲切，
+  就好像时光并未流逝，我们还是 10 年以前那样。
+
+⚠️ 如果从句中的情形是根据现在的迹象作出的推测，有可能发生，则用陈述语气。
+
+`4` It is becoming dark. It looks as if it's going to rain.
+
+- `译` 天变黑了，似乎就要下雨。
+
+`5` It seems as if he has been to America.
+
+- `译` 他好像去过美国。
+
+### 10.4 在 it is (high) time (that) 从句中
+
+表示“该是做什么事的时候了”，含有“晚了一点”的意思，从句中用过去时。
+
+`1` Don't dawdle away your youth any more. It is time you thought about your
+future.
+
+- `译` 不要再浪费青春了，你该考虑自己的将来了。
+
+`2` It seems to be high time that this argument were put to an end.
+
+- `译` 现在似乎是时候结束争吵了。
+
+`3` "You are very selfish. It's high time you realized that you are not the most
+important person in the world," Edgar said to his boss angrily.
+
+- `译` Edgar 生气地对他老板说：“你太自私了。你早就应该知道，你绝对不是这个世界上最重要的人。”
+
+`4` Man: The school had the football field redone over the summer.
+
+Woman: It's about time.
+
+Question: What does the woman imply?
+
+- A. Summer is a good time for repairs.
+- B. The field had been in poor shape.
+- C. It's too hot to play football in the summer.
+- D. The work on the football field is almost finished.
+- 答案：B。
+- `译`
+  - 男：学校在暑假期间把足球场重新翻修了一下。
+  - 女：早就该修了。
+
+`5` Man: Lets get this desk in order.
+
+Woman: Yes, it's about time we cleared it off.
+
+Question: What can be inferred about the desk?
+
+- A. It isn't placed right.
+- B. There isn't enough time to clear it off.
+- C. A new desk has been ordered to replace it.
+- D. It has needed reorganizing for quite a while.
+- 答案：D。
+- `译`
+  - 男：我们把这张桌子整理一下吧。
+  - 女：是的，我们早该整理了。
+
+### 10.5 在 would rather, would (just) as soon, would sooner, would prefer 等从句中
+
+这里以 would rather 为例。首先，其后面可以接从句和动词原形；其次，would rather
+表示将来时、现在时或过去时的谓语动词的不同形式。
+
+#### 一、would rather do sth
+
+would rather 的后面接动词原形，可以表示将来或现在的事件，意指“主语宁愿自己做某事”。
+这是 would rather 最常见的用法。
+
+`1` I would rather go there tomorrow.
+
+- `译` 我想明天去那里。
+
+如果要和另外一件事情来比较，则要用 than 来引出另外的事情。
+
+`2` He would rather stay at home than go to the cinema tonight.
+
+- `译` 他今晚就想在家里呆着，而不想去看电影。
+
+⚠️ 对该句型的否定，要在动词前面加 not，而不是在 would 的后面加 not。
+
+`3` He would rather not stay at home tonight.
+
+- `译` 他今晚不想在家呆着。
+
+He would not rather stay at home tonight. ❌
+
+#### 二、would rather have done sth
+
+这是 would rather 后面接动词完成式的用法，表示过去的事件，意指“某人宁愿自己过去做了某事，但实际上没有做”。
+因此，具有过去虚拟的意味，如同过去虚拟条件主句的谓语形式。
+
+`4` I took Sally to the cinema last night, but I would rather have been there
+alone.
+
+- `译` 我昨晚带 Sally 看电影去了，可是我还不如自己一个人去呢（真不该带她去）。
+
+`5` I'm eager to acquire knowledge. For my ninth birthday, my father gave me a
+set of the World Book Encyclopedia. Although I would rather have received a set
+of transformers, as I look back realize that my dad made the right decision.
+
+- `译` 我非常渴望学习知识。记得在我九岁生日的时候，我爸爸送给了我一套《世界百科全书》。
+  当时我还想，他倒不如送我一套变形金刚更好。但是现在回想起来，我还是觉得爸爸当时的决定时对的。
+
+`6` I would rather have had one breath of her hair, one kiss of her mouth, one
+touch of her hand than an eternity without it.
+
+- `译` 如果可以呼吸到她散发在空气中的发香、轻吻她的双唇、抚摸她的双手，那么我宁愿放弃永生。
+
+#### 三、would rather sb. did
+
+这是 would rather 后面接从句的用法，意指“主语宁愿让另一个人做某事”。
+这里从句的谓语用**一般过去式**，但表示的是现在或将来的事件，如同现在虚拟条件从句的谓语形式。
+
+`7` Don't come tomorrow. I'd rather you came next weekend.
+
+- 这里的时间状语 next weekend 显然是一个表示将来的时间，但句子的谓语却用了 came
+  这样的一般过去式。
+- `译` 明天就别来了，我希望你下周末过来。
+
+`8` She says she'd rather he left tomorrow instead of today.
+
+- `译` 她说她希望他明天走，而不是今天。
+
+#### 四、would rather sb. had done
+
+这是 would rather 后面接从句的用法，意指“主语宁愿别人过去做了某事，但实际上没有做”。
+这里从句的谓语用过去完成时表示过去的事件，如同过去虚拟条件从句的谓语形式。
+
+`9` For my ninth birthday, my father gave me a set of the World Book
+Encyclopedia. But I would rather he had given me a set of transformers.
+
+- `译` 在我九岁生日的时候，我爸爸送给了我一套《世界百科全书》，可是我倒宁愿他能送我一套变形金刚。
+
+其他的结构，如 would (just) as soon, would sonner 和 would prefer 在接从句时，完全如同
+would rather 的虚拟用法。
+
+`10` I'd just as soon you didn't speak rudely to her.
+
+- `译` 我希望你不要那么粗鲁地对她说话。
+
+`11` I'd as soon you hadn't spoken rudely to her.
+
+- `译` 我希望你当时没有那么粗鲁地对她说话。
+
+`12` Our holidays were ruined by the weather -- we might just as well have
+stayed at home.
+
+- might just as well have done 类似于 would rather have done
+  的意义和用法，都表示对过去的虚拟，意思是“还不如做了某事”，但实际上没有做。
+- `译` 因为天气的原因，我们的假期全给毁了。我们还不如就在家里呆着哪儿也不去呢！
+
+## 思维训练：10. 各种虚拟句型
 
 >>>>> progress
