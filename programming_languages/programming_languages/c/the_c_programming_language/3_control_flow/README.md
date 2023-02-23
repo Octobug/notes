@@ -1,5 +1,16 @@
 # Chapter 3: Control Flow
 
+- [Chapter 3: Control Flow](#chapter-3-control-flow)
+  - [3.1 Statements and Blocks](#31-statements-and-blocks)
+  - [3.2 If-Else](#32-if-else)
+  - [3.3 Else-If](#33-else-if)
+  - [3.4 Switch](#34-switch)
+    - [Shell Sort](#shell-sort)
+    - [The comma operator](#the-comma-operator)
+  - [3.6 Loops -- Do-while](#36-loops----do-while)
+  - [3.7 Break and Continue](#37-break-and-continue)
+  - [3.8 Goto and Labels](#38-goto-and-labels)
+
 ## 3.1 Statements and Blocks
 
 In C, the semicolon is a statement terminator, rather than a seperator as it is
