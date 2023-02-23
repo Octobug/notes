@@ -103,7 +103,7 @@ Magic number: constant numbers written in codes.
 A `define` for them is a good practice.
 
 ```c
-#define name    replacement_text // no semicolon here
+#define name    replacement text // no semicolon here
 ```
 
 Symbolic constant names are conventionally written in upper case so they can be

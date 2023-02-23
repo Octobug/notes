@@ -1,5 +1,27 @@
 # Chapter 4: Functions and Program Structure
 
+- [Chapter 4: Functions and Program Structure](#chapter-4-functions-and-program-structure)
+  - [4.1 Basics of Functions](#41-basics-of-functions)
+    - [The `return` statement](#the-return-statement)
+  - [4.2 Functions Returning Non-integers](#42-functions-returning-non-integers)
+  - [4.3 External Variables](#43-external-variables)
+  - [4.4 Scope Rules](#44-scope-rules)
+    - [Declaration](#declaration)
+    - [Definition](#definition)
+  - [4.5 Header Files](#45-header-files)
+  - [4.6 Static Variables](#46-static-variables)
+  - [4.7 Register Variables](#47-register-variables)
+  - [4.8 Block Structure](#48-block-structure)
+  - [4.9 Initialization](#49-initialization)
+    - [Array](#array)
+  - [4.10 Recursion](#410-recursion)
+  - [4.11 The C Preprocessor](#411-the-c-preprocessor)
+    - [4.11.1 File Inclusion](#4111-file-inclusion)
+    - [4.11.2 Macro Substitution](#4112-macro-substitution)
+      - [Macros with arguments](#macros-with-arguments)
+      - [Pitfalls](#pitfalls)
+    - [4.11.3 Conditional Inclusion](#4113-conditional-inclusion)
+
 ## 4.1 Basics of Functions
 
 A minimal function is `dummy() {}`, which does nothing and returns nothing. It
@@ -57,7 +79,7 @@ by the same name, even from functions compiled separately, are references to the
 same thing. The standard calls this property `external linkage`.
 
 If a large number of variables must be shared among functions, external
-variables are more convient and efficient then long argument lists.
+variables are more convient and efficient than long argument lists.
 
 - Infix expression: `(1 - 2) * (4 + 5)`
 - Polish notation: `1 2 - 4 5 + *`
@@ -103,7 +125,7 @@ double val[MAXVAL];
 
 ## 4.5 Header Files
 
-Each file have access only to the information it needs for its job.
+Each file has access only to the information it needs for its job.
 
 vs.
 
