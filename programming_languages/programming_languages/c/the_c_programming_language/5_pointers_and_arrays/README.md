@@ -1,11 +1,27 @@
 # Chapter 5: Pointers and Arrays
 
+- [Chapter 5: Pointers and Arrays](#chapter-5-pointers-and-arrays)
+  - [5.1 Pointers and Addresses](#51-pointers-and-addresses)
+  - [5.2 Pointers and Function Arguments](#52-pointers-and-function-arguments)
+  - [5.3 Pointers and Arrays](#53-pointers-and-arrays)
+  - [5.4 Address Arithmetic](#54-address-arithmetic)
+  - [5.5 Character Pointers and Functions](#55-character-pointers-and-functions)
+    - [strcpy: copy t to s](#strcpy-copy-t-to-s)
+    - [strcmp: return \<0 if s \< t, 0 if s == t, \>0 if s \> t](#strcmp-return-0-if-s--t-0-if-s--t-0-if-s--t)
+  - [5.6 Pointer Arrays; Pointers to Pointers](#56-pointer-arrays-pointers-to-pointers)
+  - [5.7 Multi-dimensional Arrays](#57-multi-dimensional-arrays)
+  - [5.8 Initialization of Pointer Arrays](#58-initialization-of-pointer-arrays)
+  - [5.9 Pointers vs. Multi-dimensional Arrays](#59-pointers-vs-multi-dimensional-arrays)
+  - [5.10 Command-line Arguments](#510-command-line-arguments)
+  - [5.11 Pointers to Functions](#511-pointers-to-functions)
+  - [5.12 Complicated Declarations](#512-complicated-declarations)
+
 ## 5.1 Pointers and Addresses
 
 A pointer is a group of cells (often two or four) that can hold an address.
 
-The unary operator `&` gitves the address of an object, so the statement
-`p = &c;` assigns the address of c to the variable p.
+The unary operator `&` gives the address of an object, so the statement
+`p = &c;` assigns the address of `c` to the variable `p`.
 
 The unary operator `*` is the *indirection* or *dereferencing* operator.
 
@@ -88,7 +104,7 @@ exception of interchange between pointers and integers. The symbolic constant
 `NULL`(defined in <stdio.h>) is often used in place of zero, as a mnemonic to
 indicate more clearly that this is a special value for a pointer.
 
-The construction `p + n` means the address of the n-th object beyond the one p
+The construction `p + n` means the address of the n-th object beyond the one `p`
 currently points to, regardless of the kind of object `p` points to; `n` is
 scaled according to the size of the objects `p` points to, which is determined
 by the declaration of `p`. If an `int` is four bytes, then the `int` will be
@@ -277,7 +293,7 @@ int a[10][20];
 int *b[10];
 ```
 
-a[3][4] and b[3][4] are both syntactically legal references to a single int.
+`a[3][4]` and `b[3][4]` are both syntactically legal references to a single int.
 If each element of b points to a 20-element array, then there will be 200 ints
 set aside, plus ten cells for the pointers.
 
@@ -297,7 +313,7 @@ is at least 1. The standard requires that argv[argc] be a null pointer.
 ## 5.11 Pointers to Functions
 
 In C, a function itself is not a variable, but it is possible to define pointers
-to functions, which can be assignedm placed in arrays, passed to functions,
+to functions, which can be assigned, placed in arrays, passed to functions,
 returned by functions.
 
 Functions to be passed to other functions need not to use the `&` operator.
