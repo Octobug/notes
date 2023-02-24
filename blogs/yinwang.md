@@ -4,6 +4,7 @@
 >
 > Kuri-su/yinwang.bak: <https://github.com/Kuri-su/yinwang.bak>
 
+- 2020年09月24日 - 计算机科学集体班（第二期）报名
 - 2020年06月10日 - 新丑陋的中国人
 - 2020年05月23日 - 几个需要避免的美国英语习惯
 - 2020年04月30日 - 一对一教学计划
@@ -57,8 +58,8 @@
 - 2017年04月23日 - 人工智能的局限性
 - 2017年04月17日 - 美国公司管理层的洗脑技巧
 - 2017年04月14日 - 经验和洞察力
-- [ ] 2016年10月13日 - C# 的 IDisposable 接口
-- [ ] 2016年10月12日 - C 编译器优化的 Bug
+- [x] 2016年10月13日 - [C# 的 IDisposable 接口](http://www.yinwang.org/blog-cn/2016/10/13/c-sharp-disposable)
+- [x] 2016年10月12日 - [C 编译器优化的 Bug](http://www.yinwang.org/blog-cn/2016/10/12/compiler-bug)
 - [x] 2016年09月18日 - [对 Rust 语言的分析](http://www.yinwang.org/blog-cn/2016/09/18/rust)
 - [x] 2016年09月14日 - [测试的道理](http://www.yinwang.org/blog-cn/2016/09/14/tests)
 - [x] 2016年07月10日 - [Tesla autopilot 引起致命车祸](http://www.yinwang.org/blog-cn/2016/07/10/tesla-autopilot-fatal-crash)
