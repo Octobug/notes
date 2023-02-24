@@ -3,6 +3,8 @@
 > <http://yinwang.org>
 >
 > Kuri-su/yinwang.bak: <https://github.com/Kuri-su/yinwang.bak>
+>
+> `fb62b6e0bd4966a78fa869cde770d0d66030812e`
 
 - 2020年09月24日 - 计算机科学集体班（第二期）报名
 - 2020年06月10日 - 新丑陋的中国人
@@ -13,51 +15,60 @@
 - 2020年03月06日 - 英语学习的一些经验
 - 2020年03月05日 - 知识星球试运营
 - 2020年03月03日 - 计算机科学课程
-- 2020年02月17日 - 谈职场中的命令口气
-- 2020年02月13日 - 一道 Java 面试题
-- 2020年02月05日 - 如何阅读别人的代码
-- 2020年01月17日 - 顾问业务试运营（v2.0）
-- 2020年01月16日 - 我的事业计划
-- 2020年01月15日 - 未来的事业
-- 2019年12月31日 - 2020新年寄语
-- 2019年12月26日 - 所谓“成功”
-- 2019年12月24日 - 我不是编译器专家
-- 2019年12月23日 - 抱怨与观察的差别
-- 2019年12月15日 - 自动化服务的误区
-- 2019年11月05日 - 永恒
-- 2019年10月24日 - 写在 1024 程序员节
-- 2019年10月17日 - 免费食物不是好事
-- 2019年09月30日 - 自动驾驶车的责任和风险分析
-- 2019年09月16日 - 机器与人类视觉能力的差距（3）
-- 2019年09月15日 - 机器与人类视觉能力的差距（2）
-- 2019年09月14日 - 机器与人类视觉能力的差距（1）
-- 2019年09月11日 - Talk is not cheap
-- 2019年08月19日 - 关于微内核的对话
-- 2019年08月17日 - 中国人的信任危机
-- 2019年07月31日 - 关于人的素质
-- 2019年07月21日 - 再谈“P vs NP”问题
-- 2019年07月12日 - 学习的智慧
-- 2018年11月23日 - 解谜英语语法
-- 2018年04月13日 - 解谜计算机科学
-- 2018年03月27日 - 扶门的礼仪
-- 2018年03月08日 - 从苹果产品的设计错误学教训
-- 2018年02月22日 - 智能合约和形式验证
-- 2017年11月09日 - iPhone X
-- 2017年11月05日 - 网络用语
-- 2017年11月01日 - 理性的力量
-- 2017年10月16日 - 人体工学
-- 2017年08月19日 - 知乎和 MITBBS
-- 2017年08月14日 - 旅行的智慧
-- 2017年07月08日 - 生活的智慧
-- 2017年07月06日 - 如何掌握所有的程序语言
-- 2017年07月06日 - 带猫回国经历
-- 2017年05月25日 - DSL 的误区
-- 2017年05月23日 - Kotlin 和 Checked Exception
-- 2017年05月17日 - 什么是现实理想主义者
-- 2017年05月08日 - 美国企业的装嫩问题
-- 2017年04月23日 - 人工智能的局限性
-- 2017年04月17日 - 美国公司管理层的洗脑技巧
-- 2017年04月14日 - 经验和洞察力
+- 2020年03月03日 - [新的付费咨询方式](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%96%B0%E7%9A%84%E4%BB%98%E8%B4%B9%E5%92%A8%E8%AF%A2%E6%96%B9%E5%BC%8F.md)
+- 2020年03月02日 - [顾问服务试运营方案](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E9%A1%BE%E9%97%AE%E6%9C%8D%E5%8A%A1%E8%AF%95%E8%BF%90%E8%90%A5%E6%96%B9%E6%A1%88.md)
+- 2020年02月17日 - [谈职场中的命令口气](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%B0%88%E8%81%8C%E5%9C%BA%E4%B8%AD%E7%9A%84%E5%91%BD%E4%BB%A4%E5%8F%A3%E6%B0%94.md)
+- 2020年02月16日 - [知识的价值](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%9F%A5%E8%AF%86%E7%9A%84%E4%BB%B7%E5%80%BC.md)
+- 2020年02月13日 - [一道 Java 面试题](http://www.yinwang.org/blog-cn/2020/02/13/java-type-system)
+- 2020年02月05日 - [如何阅读别人的代码](http://www.yinwang.org/blog-cn/2020/02/05/how-to-read-code)
+- 2020年01月17日 - [专家顾问服务实施方案（试运行）](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E4%B8%93%E5%AE%B6%E9%A1%BE%E9%97%AE%E6%9C%8D%E5%8A%A1%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88%EF%BC%88%E8%AF%95%E8%BF%90%E8%A1%8C%EF%BC%89.md)
+- 2020年01月16日 - [我的事业计划](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%88%91%E7%9A%84%E4%BA%8B%E4%B8%9A%E8%AE%A1%E5%88%92.md)
+- 2020年01月15日 - [未来的事业](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%9C%AA%E6%9D%A5%E7%9A%84%E4%BA%8B%E4%B8%9A.md)
+- 2019年12月31日 - [2020新年寄语](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/2020%E6%96%B0%E5%B9%B4%E5%AF%84%E8%AF%AD.md)
+- 2019年12月26日 - [所谓“成功”](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%89%80%E8%B0%93%E2%80%9C%E6%88%90%E5%8A%9F%E2%80%9D.md)
+- 2019年12月25日 - [警惕“编译器人”和“函数式程序员”.md](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%AD%A6%E6%83%95%E2%80%9C%E7%BC%96%E8%AF%91%E5%99%A8%E4%BA%BA%E2%80%9D%E5%92%8C%E2%80%9C%E5%87%BD%E6%95%B0%E5%BC%8F%E7%A8%8B%E5%BA%8F%E5%91%98%E2%80%9D.md)
+- 2019年12月24日 - [我不是编译器专家](http://www.yinwang.org/blog-cn/2019/12/24/compilers)
+- 2019年12月24日 - [机器与人类智能的差距](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%9C%BA%E5%99%A8%E4%B8%8E%E4%BA%BA%E7%B1%BB%E6%99%BA%E8%83%BD%E7%9A%84%E5%B7%AE%E8%B7%9D.md)
+- 2019年12月24日 - [也说人的素质](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E4%B9%9F%E8%AF%B4%E4%BA%BA%E7%9A%84%E7%B4%A0%E8%B4%A8.md)
+- 2019年12月24日 - [欢迎关注我的微博](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8%E6%88%91%E7%9A%84%E5%BE%AE%E5%8D%9A.md)
+- 2019年12月24日 - [清华梦的破碎](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%B8%85%E5%8D%8E%E6%A2%A6%E7%9A%84%E7%A0%B4%E7%A2%8E)
+- 2019年12月24日 - [机器学习与逻辑编程](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E9%80%BB%E8%BE%91%E7%BC%96%E7%A8%8B.md)
+- 2019年12月23日 - [抱怨与观察的差别](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%8A%B1%E6%80%A8%E4%B8%8E%E8%A7%82%E5%AF%9F%E7%9A%84%E5%B7%AE%E5%88%AB.md)
+- 2019年12月15日 - [自动化服务的误区](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9C%8D%E5%8A%A1%E7%9A%84%E8%AF%AF%E5%8C%BA.md)
+- 2019年11月05日 - [永恒](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%B0%B8%E6%81%92.md)
+- 2019年10月24日 - [写在 1024 程序员节](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%86%99%E5%9C%A8%201024%20%E7%A8%8B%E5%BA%8F%E5%91%98%E8%8A%82.md)
+- 2019年10月17日 - [免费食物不是好事](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%85%8D%E8%B4%B9%E9%A3%9F%E7%89%A9%E4%B8%8D%E6%98%AF%E5%A5%BD%E4%BA%8B.md)
+- 2019年09月30日 - [自动驾驶车的责任和风险分析](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E8%BD%A6%E7%9A%84%E8%B4%A3%E4%BB%BB%E5%92%8C%E9%A3%8E%E9%99%A9%E5%88%86%E6%9E%90.md)
+- 2019年09月16日 - [机器与人类视觉能力的差距（3）](http://www.yinwang.org/blog-cn/2019/09/16/machine-vs-human-3)
+- 2019年09月15日 - [机器与人类视觉能力的差距（2）](http://www.yinwang.org/blog-cn/2019/09/15/machine-vs-human-2)
+- 2019年09月14日 - [机器与人类视觉能力的差距（1）](http://www.yinwang.org/blog-cn/2019/09/14/machine-vs-human)
+- 2019年09月11日 - [Talk is not cheap](http://www.yinwang.org/blog-cn/2019/09/11/talk-is-not-cheap)
+- 2019年08月19日 - [关于微内核的对话](http://www.yinwang.org/blog-cn/2019/08/19/microkernel)
+- 2019年08月17日 - [中国人的信任危机](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E4%B8%AD%E5%9B%BD%E4%BA%BA%E7%9A%84%E4%BF%A1%E4%BB%BB%E5%8D%B1%E6%9C%BA.md)
+- 2019年07月31日 - [关于人的素质](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%85%B3%E4%BA%8E%E4%BA%BA%E7%9A%84%E7%B4%A0%E8%B4%A8.md)
+- 2019年07月21日 - [再谈“P vs NP”问题](http://www.yinwang.org/blog-cn/2019/07/21/pnp2)
+- 2019年07月12日 - [学习的智慧](http://www.yinwang.org/blog-cn/2019/07/12/learning-philosophy)
+- 2018年11月23日 - [解谜英语语法](http://www.yinwang.org/blog-cn/2018/11/23/grammar)
+- 2018年04月13日 - [解谜计算机科学](http://www.yinwang.org/blog-cn/2018/04/13/computer-science)
+- 2018年03月27日 - [扶门的礼仪](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%89%B6%E9%97%A8%E7%9A%84%E7%A4%BC%E4%BB%AA.md)
+- 2018年03月08日 - [从苹果产品的设计错误学教训](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E4%BB%8E%E8%8B%B9%E6%9E%9C%E4%BA%A7%E5%93%81%E7%9A%84%E8%AE%BE%E8%AE%A1%E9%94%99%E8%AF%AF%E5%AD%A6%E6%95%99%E8%AE%AD.md)
+- 2018年02月22日 - [智能合约和形式验证](http://www.yinwang.org/blog-cn/2018/02/22/smart-contract)
+- 2017年11月09日 - [iPhone X](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/iPhone%20X.md)
+- 2017年11月05日 - [网络用语](http://www.yinwang.org/blog-cn/2017/11/05/words)
+- 2017年11月01日 - [理性的力量](http://www.yinwang.org/blog-cn/2017/11/01/power-of-reasoning)
+- 2017年10月16日 - [人体工学](http://www.yinwang.org/blog-cn/2017/10/16/ergonomics)
+- 2017年08月19日 - [知乎和 MITBBS](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%9F%A5%E4%B9%8E%E5%92%8C%20MITBBS.md)
+- 2017年08月14日 - [旅行的智慧](http://www.yinwang.org/blog-cn/2017/08/14/travel-wisdom)
+- 2017年07月08日 - [生活的智慧](http://www.yinwang.org/blog-cn/2017/07/08/living-philosophy)
+- 2017年07月06日 - [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl)
+- 2017年07月06日 - [带猫回国经历](http://www.yinwang.org/blog-cn/2017/07/06/cat-travel-china)
+- 2017年05月25日 - [DSL 的误区](http://www.yinwang.org/blog-cn/2017/05/25/dsl)
+- 2017年05月23日 - [Kotlin 和 Checked Exception](http://www.yinwang.org/blog-cn/2017/05/23/kotlin)
+- 2017年05月17日 - [什么是现实理想主义者](http://www.yinwang.org/blog-cn/2017/05/17/practical-idealism)
+- 2017年05月08日 - [美国企业的装嫩问题](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%BE%8E%E5%9B%BD%E4%BC%81%E4%B8%9A%E7%9A%84%E8%A3%85%E5%AB%A9%E9%97%AE%E9%A2%98.md)
+- 2017年04月23日 - [人工智能的局限性](http://www.yinwang.org/blog-cn/2017/04/23/ai)
+- 2017年04月17日 - [美国公司管理层的洗脑技巧](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%BE%8E%E5%9B%BD%E5%85%AC%E5%8F%B8%E7%AE%A1%E7%90%86%E5%B1%82%E7%9A%84%E6%B4%97%E8%84%91%E6%8A%80%E5%B7%A7.md)
+- 2017年04月14日 - [经验和洞察力](http://www.yinwang.org/blog-cn/2017/04/14/experience-and-insight)
 - [x] 2016年10月13日 - [C# 的 IDisposable 接口](http://www.yinwang.org/blog-cn/2016/10/13/c-sharp-disposable)
 - [x] 2016年10月12日 - [C 编译器优化的 Bug](http://www.yinwang.org/blog-cn/2016/10/12/compiler-bug)
 - [x] 2016年09月18日 - [对 Rust 语言的分析](http://www.yinwang.org/blog-cn/2016/09/18/rust)
@@ -152,3 +163,5 @@
 - [x] 2012年09月18日 - [TeXmacs：一个真正“所见即所得”的排版系统](http://www.yinwang.org/blog-cn/2012/09/18/texmacs)
 - [x] 2012年08月01日 - [怎样写一个解释器](http://www.yinwang.org/blog-cn/2012/08/01/interpreter)
 - [x] 2012年07月25日 - [什么是语义学](http://www.yinwang.org/blog-cn/2012/07/25/semantics)
+- [x] 2012年07月04日 - [GTF - Great Teacher Friedman](http://www.yinwang.org/blog-cn/2012/07/04/dan-friedman)
+- [x] 2012年05月18日 - [什么是“对用户友好”](http://www.yinwang.org/blog-cn/2012/05/18/user-friendliness)
