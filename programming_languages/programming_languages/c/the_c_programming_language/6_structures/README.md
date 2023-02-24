@@ -1,5 +1,16 @@
 # Chapter 6: Structures
 
+- [Chapter 6: Structures](#chapter-6-structures)
+  - [6.1 Basics of Structures](#61-basics-of-structures)
+  - [6.2 Structures and Functions](#62-structures-and-functions)
+  - [6.3 Arrays of Structures](#63-arrays-of-structures)
+  - [6.4 Pointers to Structures](#64-pointers-to-structures)
+  - [6.5 Self-referential Structures](#65-self-referential-structures)
+  - [6.6 Table Lookup](#66-table-lookup)
+  - [6.7 Typedef](#67-typedef)
+  - [6.8 Unions](#68-unions)
+  - [6.9 Bit-fields](#69-bit-fields)
+
 A structure is a collection of one or more variables, possibly of different
 types, grouped together under a single name for convenient handling.
 
@@ -37,9 +48,9 @@ A structure declaration that is not followed by a list of variables reserves no
 storage; it merely describes a template or the shape of a structure.
 
 ```c
+// defines a variable pt which is a structure of type struct point.
 struct point pt;
 
-// defines a variable pt which is a structure of type struct point.
 struct point maxpt = { 320, 200 };
 printf("%d, %d", pt.x, pt.y);
 ```
@@ -60,7 +71,7 @@ screen.pt1.x;
 
 ## 6.2 Structures and Functions
 
-structure parameters are passed by value like any others. Structure pointers are
+Structure parameters are passed by value like any others. Structure pointers are
 just like pointers to ordinary variables.
 
 ```c
@@ -151,18 +162,28 @@ proper value.
 e.g. Use a `binary tree` to store words. The tree contains one "node" per
 distinct word; each node contains
 
-- a pointer to the next of the word
+- a pointer to the text of the word
 - a count of the number of occurrences
 - a pointer to the left child node
 - a pointer to the right child node
 
-It is illegal for a structure to contain an instance of itself, but
+```c
+struct tnode {              // the tree node:
+    char * word;            // points to the text
+    int count;              // number of occurrences
+    struct tnode *left      // left child
+    struct tnode *right;    // right child
+}
+```
+
+This recursive declaration of a node is correct. It is illegal for a structure
+to contain an instance of itself, but
 
 ```c
 struct tnode *left;
 ```
 
-declaras `left` to be a pointer to a `tnode`, not a `tnode` itself.
+declares `left` to be a pointer to a `tnode`, not a `tnode` itself.
 
 One needs a variation of self-referential structures: two structures that refer
 to each other:
@@ -211,7 +232,7 @@ int strcmp(String, String);
 p = (String) malloc(100);
 ```
 
-Using caplitalized names for typedefs to make them out is a good convention.
+Using capitalized names for typedefs to make them out is a good convention.
 
 ```c
 typedef struct tnode *Treeptr;
@@ -258,7 +279,7 @@ There are two main reasons for using typedefs.
 
 1. To parameterize a program against portability problems.
 
-   If `typedef`s are used for datat types that may be machine-dependent, only
+   If `typedef`s are used for data types that may be machine-dependent, only
    the typedefs need change when the program is moved. One common situation is
    to use `typedef` names for various integer quantities, then make an
    appropriate set of choices of `short`, `int`, and `long` for each host
@@ -267,7 +288,7 @@ There are two main reasons for using typedefs.
 
 2. The second purpose of `typedef`s is to provide better documentation for a
    program -- a type called `Treeptr` may be easier to understand than one
-   declaraed only as a pointer to a complicated structure.
+   declared only as a pointer to a complicated structure.
 
 ## 6.8 Unions
 
@@ -363,7 +384,7 @@ enum { KEYWORD = 01, EXTERNAL = 02, STATIC = 04 };
 ```
 
 The numbers must be powers of two. Then accessing the bits becomes a matter of
-"bit-fiddling" with the shifting, masking, and complementig operators.
+"bit-fiddling" with the shifting, masking, and complementing operators.
 
 Certain idioms appear frequently:
 
@@ -418,5 +439,5 @@ Fields need not be named; unnamed fields (a colon and width only) are used for
 padding. The special width 0 may be used to force alignment at the next word
 boundary.
 
-Fields are not arrays, and they do not have addressed, so the `&` operator
+Fields are not arrays, and they do not have addresses, so the `&` operator
 cannot be applied to them.
