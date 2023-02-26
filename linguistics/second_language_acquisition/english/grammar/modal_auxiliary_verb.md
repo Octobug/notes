@@ -404,11 +404,189 @@ B: It's not. I think you should have turned left at the last intersection.
 ## 3. 推测用法（二）：将来预测（情态动词一般式）
 
 对将来的推测，更确切地说应该是“预测 (prediction)”，谓语形式也是用“情态动词一般式”。
-除了 must，情态动词如 will, should, may, might 和 could 都可以表示对将来的预测。
+除了 must，情态动词如 will, would, should, may, might 和 could 都可以表示对将来的预测。
 
->>>>> Progress
+`1` A: What did the weatherman say?
 
-`1`
+B:
+
+- It will rain tomorrow.
+- It should rain tomorrow.
+- It may rain tomorrow.
+- It might/could rain tomorrow.
+
+上例句 B 的回答确定程度是由高到低。
+
+`2`
+
+- Tom will know the address.
+  - `译` 我肯定汤姆知道地址。
+- Tom should know the address.
+  - `译` 我想汤姆会知道地址。
+
+`3` It is a near certainty that science will discover the aging gene and find
+out how to turn it off. The ethical problems of who shall live and who shall die
+and who can have children in a crowded world will be monumentally difficult to
+solve.
+
+- 因为对未来科技以及随之而来的问题很确信，所以都用了 will。
+- `译` 几乎可以肯定的是，未来的科学会发现人类的致衰老基因，并知道如何消除这一基因。
+  到那时，由此引出的各种问题，比如让什么人长生不老，让什么人寿终正寝，
+  以及在这样拥挤的地球上谁可以生孩子，这些都将是难以解决的伦理问题。
+
+`4` A: I hear Mary isn't getting much support in her running against Steve in
+election.
+
+B: It is not over yet. I think she will make a come back.
+
+- `译`
+  - A：我听说玛丽在与史蒂夫的选举对决中，并没有获得很多的支持。
+  - B：现在选举还没结束呢，我想她最终会反败为胜。
+
+`5` A: Think it'll rain tomorrow? I am sure it won't.
+
+B: But according to the weather report, it will rain tomorrow.
+
+- `译`
+  - A：你认为明天会下雨吗？我敢肯定不会下雨。
+  - B：可是天气预报说明天要下雨。
+
+`6` This movie will be popular in China because it explores some of the
+differences between Western and Eastern culture and the changing from the
+tradition to the modern world.
+
+- `译` 预计这部电影将在中国大受欢迎，因为它探讨了东西方文化的差异以及从传统社会过渡到现代社会这一过程中所发生的变化。
+
+`7` If much more snow accumulates, the roads will have to be closed.
+
+- `译` 如果再有更多的雪堆积起来，那么肯定要封路的。
+
+would 表示确定程度较大的预测。
+
+`8` In many European countries, people believe that the first visitor on New
+Year's Day **would** bring them either good luck or bad luck. A dark-haired man
+**would** bring good luck. A woman or a man with light hair **would** bring bad
+luck.
+
+- 这里三个 would 都是表示推测。
+- `译` 在许多欧洲国家，人们相信，在新年这天你遇到的第一个人将会给你带来好运或者厄运。
+  若是遇到一头黑发的男子，这就意味着好运。若是遇到浅色头发的女子或男子，则意味着是厄运。
+
+should 表示确定程度较大的预测，相当于“很可能将会这样 (most probably the case)”。
+
+`9` The results are expected tomorrow. We should know the results tomorrow.
+
+- `译` 结果明天就出来了。我们明天就该知道结果了。
+
+`10` He should have plenty of time to get to the station.
+
+- `译` 他应该有足够多的时间去车站。
+
+`11` They shouldn't have any difficulty in finding the house.
+
+- `译` 他们找这个房子时不应该有太大的困难。
+
+`12` The job should be finished by next Monday.
+
+- `译` 下周一之前应该能够完成这项工作。
+
+`13` He is the best runner, so he should win the race.
+
+- `译` 他是最好的赛跑运动员，所以应该能赢得这个比赛。
+
+`14` The journey should take two or three days.
+
+- `译` 行程应该需要两到三天。
+
+`15` Your laundry should be ready for pick-up tomorrow.
+
+- `译` 你送洗的衣服明天应该可以来去。
+
+⚠️ should 在表示推测时，也翻译成“应该”，但这并不是表示义务或责任的“应该”，而是表示说话人的主观判断或推测。
+
+may 表示约 50% 确定的预测。
+
+`16` Tomorrow's computers may have something for your nose to enjoy.
+
+- `译` 未来的计算机可能就会使你的鼻子能够闻到气味。
+
+`17` This bridge may collapse in an earthquake.
+
+- `译` 这座桥可能会在地震中坍塌。
+
+`18` We may go camping this summer.
+
+- `译` 今年夏天我们可能去野营。
+
+could/might 表示很不确定（如只有 25%）的预测。
+
+`19` There might/could be a strike next week.
+
+- `译` 下周可能会有罢工。
+
+`20` I might be given a new job soon.
+
+- `译` 不久我也许就会找到新的工作。
+
+`21` Look at those dark clouds. It could start raining any minute.
+
+- `译` 看这漫天乌云密布的，说不定随时会下雨。
+
+`22` A campaign on the harsh terrain of a nation as large as California could be
+longer and more difficult than some predict.
+
+- `译` 在一个面积同加利福尼亚州一样大的、并且充满险恶地形的国家里进行战争，意味着战争的时间可能比人们预想的要长，困难要大。
+
+`23` Between in vitro fertilization and cloning, dads could become dinosaurs.
+Moms, too, with the possibility looming of an artificial womb.
+
+- 用 could 表示谨慎预测，而不是用 will 或 should。
+- `译` 由于体外受精和克隆技术的发展，父亲的角色可能将会像恐龙一样从地球上消失。
+  另外，由于人造子宫将会发明，母亲的角色也将可能成为历史。
+
+⚠️ 在否定句中，can't/couldn't 的否定语气要比 may not/might not 更加强烈。
+
+`24`
+
+- We may/might not go camping this summer.
+  - `译` 今年夏天我们可能不去野营。
+- We can't/couldn't go camping this summer.
+  - `译` 今年夏天我们不可能去野营。
+
+⚠️ should 表示说话人的一种合理假设，因此它是用来对说话人所希望发生的事进行推断的。
+若将来的事件不是说话人所期望发生的，则不用 should 表示这种推测。
+
+`25`
+
+- Let's not go to the movie. It could be bad.
+  - “电影可能不好”并不是说话人所期望的，所以不用 should。
+  - `译` 我们别去看电影了，它或许不好看。
+- Let's go to the movie. The film should be really good.
+  - “电影好看”是说话人所希望的。
+  - `译` 我们去看那电影吧，它应该很好看。
+- There should be another disaster shortly. ❌
+  - 用 should 意味着说话人希望灾难发生，除非是真的这样认为，否则这样的表达是错误的。
+- There could be another disaster shortly.
+  - `译` 很快就会发生另一场灾难。
+
+`26` A: I have flushed cheeks and a slight fever.
+
+B: You should be coming down with something. ❌
+
+- B 用 should 意味着他希望 A 生病，这里最好用 could, might, may 或 must。
+- `译`
+  - A：我脸颊发红，有些低烧。
+- B：你应该是生病了。
+
+`27` A: These summer days are getting to be more than I can take. It was even
+too hot to go to the pool yesterday.
+
+B: Hold on, according to the weather report we should have some relief by the
+end of the week.
+
+- `译`
+  - A：这夏天热得让我越来越受不了了。昨天热得都无法去游泳池了。
+  - B：别急，天气预报说，到这个周末，可能就会凉快点。
 
 ## 8.4 推测用法（三）：过去推测（情态动词完成式）
 
