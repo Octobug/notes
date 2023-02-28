@@ -5,4 +5,5 @@
 
 ## Tools
 
+- [losethevery](https://www.losethevery.com/)
 - [Write & Improve with Cambridge English](https://writeandimprove.com/)
