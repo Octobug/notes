@@ -3,6 +3,7 @@
 - [Chapter 7: Input and Output](#chapter-7-input-and-output)
   - [7.1 Standard Input and Output](#71-standard-input-and-output)
   - [7.2 Formatted Output - printf](#72-formatted-output---printf)
+  - [7.3 Variable-length Argument Lists](#73-variable-length-argument-lists)
 
 Input and output are not part of the C language itself.
 
@@ -68,5 +69,51 @@ is made for hte header in a standard set of places (eg. on UNIX, typically in
 `/usr/include`).
 
 ## 7.2 Formatted Output - printf
+
+The format string of `int printf(char *format, arg1, arg2, ...);` contains two
+types of objects: ordinary characters, which are copied to the output stream,
+and conversion specifications, each of which causes conversion and printing
+of the next successive argument to `printf`. Each conversion specification
+begins with a `%` and ends with a conversion character. Between the `%` and the
+conversion character there may be, in order:
+
+- A minus sign: specifies left adjustment of the converted argument.
+- A number: specifies the minimum field width.
+- A period: separates the field width from the precision.
+- A number, the precision: specifies the maximum number of characters to be
+  printed from a string, or the number of digits after the decimal point of a
+  floating-point value, or the minimum number of digits for an integer.
+- An `h` if the integer is to be printed as a `short`, or `l` if as a `long`.
+- Conversion characters:
+  - `d`, `i`: `int`; decimal number
+  - `o`: `int`; unsigned octal number
+  - `x`, `X`: `int`; unsigned hexadecimal number
+  - `u`: `int`; unsigned decimal number
+  - `c`: `int`; single character
+  - `s`: `char *`; print characters from the string until a `\0` or the number
+    of characters given by the precision
+  - `f`: `double`; `[-]`m.dddddd
+  - `e`, `E`: `double`;`[-]`m.dddddd`e+/-`
+  - `g`, `G`: `double`; use `%e` or `%E` if the exponent is less than `-4` or
+    greater than ot equal to the precision; otherwise use `%f`
+  - `p`: `void *`; pointer
+  - `%`: print a %
+
+A width or precision may be specified as `*`, in which case the value is
+computed by converting the next argument. eg. to print at most `max` characters
+from a string `s`:
+
+```c
+printf("%.*s", max, s);
+```
+
+The function `sprintf` does the same conversions as `printf` does, but stores
+the output in a string (the first argument):
+
+```c
+int sprintf(char *string, char *format, arg1, arg2, ...);
+```
+
+## 7.3 Variable-length Argument Lists
 
 >>>>> progress
