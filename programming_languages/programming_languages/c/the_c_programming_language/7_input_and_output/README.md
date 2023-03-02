@@ -4,6 +4,7 @@
   - [7.1 Standard Input and Output](#71-standard-input-and-output)
   - [7.2 Formatted Output - printf](#72-formatted-output---printf)
   - [7.3 Variable-length Argument Lists](#73-variable-length-argument-lists)
+  - [7.4 Formatted Input - Scanf](#74-formatted-input---scanf)
 
 Input and output are not part of the C language itself.
 
@@ -115,5 +116,80 @@ int sprintf(char *string, char *format, arg1, arg2, ...);
 ```
 
 ## 7.3 Variable-length Argument Lists
+
+The proper declaration for `printf` is
+
+```c
+int printf(char *fmt, ...)
+```
+
+where the declaration `...` means that the number and types of these arguments
+may vary. The declaration `...` can only appear at the end of an argument list.
+eg. `minprintf` was declaraed as
+
+```c
+void minprintf(char *fmt, ...)
+```
+
+The standard header `<stdarg.h>` contains a set of macro definitions that define
+how to step through an argument list. The implementation of this header will
+vary from machine to machine, but the interface it presents is uniform.
+
+The type `va_list` is used to declare a variable that will refer to each
+argument in turn; in `minprintf`, this variable is called `ap`, for argument
+pointer. The macro `va_start` initializes `ap` to point to the first unnamed
+argument. It must be called once before `ap` is used.
+
+There must be at least one named argument; the final named argument is used by
+`va_start` to get started.
+
+Each call of `va_arg` returns one argument and steps `ap` to the next; `va_arg`
+uses a type name to determine what type to return and how big a step to take.
+Finally, `va_end` does whatever cleanup is necessary. It must be called before
+the program returns.
+
+```c
+#include <stdarg.h>
+
+/* minprintf: minimal printf with variable argument list */
+void minprintf(char *fmt, ...)
+{
+    va_list ap; /* points to each unnamed arg in turn */
+    char *p, *sval;
+    int ival;
+    double dval;
+
+    va_start(ap, fmt); /* make ap point to 1st unnamed arg */
+    for (p = fmt; *p; p++)
+    {
+        if (*p != '%')
+        {
+            putchar(*p);
+            continue;
+        }
+        switch (*++p)
+        {
+        case 'd':
+            ival = va_arg(ap, int);
+            printf("%d", dval);
+            break;
+        case 'f':
+            dval = va_arg(ap, double);
+            printf("%f", dval);
+            break;
+        case 's':
+            for (sval = va_arg(ap, char *); *sval; sval++)
+                putchar(*sval);
+            break;
+        default:
+            putchar(*p);
+            break;
+        }
+    }
+    va_end(ap); /* clean up when done */
+}
+```
+
+## 7.4 Formatted Input - Scanf
 
 >>>>> progress
