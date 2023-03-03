@@ -6,6 +6,7 @@
   - [7.3 Variable-length Argument Lists](#73-variable-length-argument-lists)
   - [7.4 Formatted Input - Scanf](#74-formatted-input---scanf)
   - [7.5 File Access](#75-file-access)
+  - [7.6 Error Handling - Stderr and Exit](#76-error-handling---stderr-and-exit)
 
 Input and output are not part of the C language itself.
 
@@ -288,5 +289,122 @@ call to any input function will begin by reading the first character not read by
 `scanf`.
 
 ## 7.5 File Access
+
+In C, a ***file pointer*** points to a structure that contains information about
+the file, such as the location of a buffer, the current character position in
+the buffer, whether the file is being read or written, and whether errors or end
+of file have occured.
+
+The definitions obtained from `<stdio.h>` include a structure declaration called
+`FILE`. The only declaration needed for a file pointer is exemplified by
+
+```c
+FILE *fp;
+FILE *fopen(char *name, char *mode);
+```
+
+This says that `fp` is a pointer to a FILE, and `fopen` returns a pointer to a
+`FILE`. `FILE` is a type name, like `int`, not a structure tag; it is defined
+with a `typedef`.
+
+The call to `fopen` in a program is
+
+```c
+fp = fopen(name, mode);
+```
+
+Allowable modes include read(`r`), write(`w`), and append(`a`). Some systems
+distinguish between text and binary files; for the latter, a `b` must be
+appended to this mode string.
+
+If a file that does not exist is opened for writing or appending, it is created
+if possible. If there is any error, `fopen` will return `NULL`.
+
+`getc` returns the next character from a file; it needs the file pointer to tell
+it which file: `int getc(FILE *fp)`. `getc` returns the next character from the
+stream referred to by `fp`; it returns `EOF` for end of file or error.
+
+`putc` is an output function: `int putc(int c, FILE *fp)`. `putc` writes the
+character `c` to the file `fp` and returns the character written, or `EOF` if an
+error occurs.
+
+💡 When a C program is started, the operating system environment is responsible
+for opening three files and providing pointers for them. These files are **the
+standard input**, **the standard output**, and **the standard error**; the
+corresponding file pointers are called `stdin`, `stdout`, and `stderr`, and are
+declared in `<stdio.h>`.
+
+`getchar` and `putchar` can be defined in terms of `getc`, `putc`, `stdin`, and
+`stdout` as follows:
+
+```c
+#define getchar()   getc(stdin)
+#define putchar(c)  putc((c), stdout)
+```
+
+For formatted input or output of files, the functions `fscanf` and `fprintf` may
+be used:
+
+```c
+int fscanf(FILE *fp, char *format, ...)
+int fprintf(FILE *fp, char *format, ...)
+```
+
+eg. cat
+
+```c
+#include <stdio.h>
+
+/* cat: concatenate files, version 1 */
+int main(int argc, char *argv[])
+{
+    FILE *fp;
+    void filecopy(FILE *, FILE *);
+
+    if (argc == 1) /* no args: copy standard input */
+    {
+        filecopy(stdin, stdout);
+    }
+    else
+    {
+        while (--argc > 0)
+        {
+            if ((fp = fopen(*++argv, "r")) == NULL)
+            {
+                printf("cat: can't open %s\n", *argv);
+                return 1;
+            }
+            else
+            {
+                filecopy(fp, stdout);
+                fclose(fp);
+            }
+        }
+        return 0;
+    }
+}
+
+/* filecopy: copy file ifp to file ofp */
+void filecopy(FILE *ifp, FILE *ofp)
+{
+    int c;
+
+    while ((c = getc(ifp)) != EOF)
+    {
+        putc(c, ofp);
+    }
+}
+```
+
+The file pointers `stdin` and `stdout` are objects of type `FILE *`.
+
+The function `int fclose(FILE *fp)` is the inverse of `fopen`, it breaks the
+connection between the file pointer and the external name that was established
+by `fopen`, freeing the file pointer for another file.
+
+`fclose` also flushes the buffer in which `putc` is collecting output. `fclose`
+is called automatically for each open file when a program terminates normally.
+
+## 7.6 Error Handling - Stderr and Exit
 
 >>>>> progress
