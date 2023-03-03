@@ -5,6 +5,7 @@
   - [7.2 Formatted Output - printf](#72-formatted-output---printf)
   - [7.3 Variable-length Argument Lists](#73-variable-length-argument-lists)
   - [7.4 Formatted Input - Scanf](#74-formatted-input---scanf)
+  - [7.5 File Access](#75-file-access)
 
 Input and output are not part of the C language itself.
 
@@ -191,5 +192,101 @@ void minprintf(char *fmt, ...)
 ```
 
 ## 7.4 Formatted Input - Scanf
+
+`scanf` reads characters from the standard input, interprets them according to
+the specification in `format`, and stores the results through the remaining
+arguments, **each of which must be a pointer**, indicate where the corresponding
+converted input should be stored.
+
+There is also a function `sscanf` that reads from a string instead of the
+standard input:
+
+```c
+int sscanf(char *string, char *format, arg1, arg2, ...)
+```
+
+The format string may contain:
+
+- Blanks or tabs.
+- Ordinary characters (not `%`).
+- Conversion specifications
+  - `%`
+  - `*`, optional
+  - `h`, `l` or `L`, optional
+- A conversion specification directs the conversion of the next input field.
+  An input field is defined as a string of non-white space characters; it
+  extends either to the next white space character or until the field width,
+  is specified, is exhausted.
+  This implies that `scanf` will read across boundaries to find its input, since
+  newliens are white space.
+- Input Data; Argument type:
+  - `d`: decimal interger; `int *`
+  - `i`: integer; `int *`
+  - `o`: octal integer; `int *`
+  - `u`: unsigned decimal integer; `unsigned in *`
+  - `x`: hexadecimal integer; `int *`
+  - `c`: characters; `char *`, use `%1s` to read the next non-white space char
+  - `s`: character string; `char *`
+  - `e`, `f`, `g`: floating-point number with optional sign, optional decimal
+    point and optional exponent; `float *`
+  - `%`: literal %
+  - The conversion characters `d`, `i`, `o`, `u`, and `x` may be preceded by `h`
+    to indicate that a pointer to `short` rather than `int` appears in the
+    argument in the argument list, or by `l` to indicate that a pointer to
+    `long` appears in the argument list.
+
+eg. a calculator:
+
+```c
+#include <stdio.h>
+
+int main() /* rudimentary calculator */
+{
+    double sum, v;
+
+    sum = 0;
+    while (scanf("%lf", &v) == 1)
+    {
+        printf("\t%.2f\n", sum += v);
+    }
+    return 0;
+}
+```
+
+Input lines and their `scanf` statement:
+
+```c
+// 25 Dec 1988
+int day, year;
+char monthname[20];
+scanf("%d %s %d", &day, monthname, &year);
+
+// mm/dd/yy
+int day, month, year;
+scanf("%d/%d/%d", &month, &day, &year);
+```
+
+To read input whose format is not fixed, it is often best to read a line at a
+time, then pick it apart with `scanf`.
+
+eg. read lines that might contain a date in multiple forms:
+
+```c
+while (getline(line, sizeof(line)) > 0) {
+  if (sscanf(line, "%d %s %d", &day, monthname, &year) == 3)) {
+    printf("valid: %s\n", line); /* 25 Dec 1988 form */
+  } else if (sscanf(line, "%d/%d/%d", &month, & day, &year) == 3) {
+    printf("valid: &s\n", line); /* mm/dd/yy form */
+  } else {
+    printf("invalid: %s\n", line); /* invalid form */
+  }
+}
+```
+
+⚠️ Calls to `scanf` can be mixed with calls to other input functions. The next
+call to any input function will begin by reading the first character not read by
+`scanf`.
+
+## 7.5 File Access
 
 >>>>> progress
