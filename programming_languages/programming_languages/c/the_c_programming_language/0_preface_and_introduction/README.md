@@ -94,4 +94,3 @@ C provides **no**:
 
 Some of the features above are provided by standard libraries, but some are
 impossible to be achieved.
-
