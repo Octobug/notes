@@ -66,7 +66,13 @@
       - [答案：思维训练：7. 先行词的结构特点](#答案思维训练7-先行词的结构特点)
   - [8. 先行词的位置特点](#8-先行词的位置特点)
     - [8.1 先行词 + 其他定语 + 定语从句](#81-先行词--其他定语--定语从句)
-    - [2.2.2 先行词 + 状语 + 定语从句](#222-先行词--状语--定语从句)
+    - [8.2 先行词 + 状语 + 定语从句](#82-先行词--状语--定语从句)
+    - [8.3 作主语的先行词 + 谓语部分 + 定语从句](#83-作主语的先行词--谓语部分--定语从句)
+  - [9. 如何判断先行词](#9-如何判断先行词)
+    - [思维总结：9. 如何判断先行词](#思维总结9-如何判断先行词)
+  - [思维训练：8-9](#思维训练8-9)
+    - [答案：思维训练：8-9](#答案思维训练8-9)
+  - [2.4 与先行词有关的考点](#24-与先行词有关的考点)
   - [综合训练：定语从句](#综合训练定语从句)
 
 定语从句的两个重要概念: **先行词**和**关系词**。
@@ -944,7 +950,196 @@ weight）”，**结构复杂的定语从句置于其他定语后边**，从而�
   - 对大多数恋人来说，分手似乎都是难免的。
     是什么原因导致分手以及如何面对分手，这都给年轻人带来压力，造成痛苦，可谓是压在年轻人肩上的重担。
 
-### 2.2.2 先行词 + 状语 + 定语从句
+### 8.2 先行词 + 状语 + 定语从句
+
+造成先行词与关系词被分隔的第二种情形：在先行词与关系词之间插入一个状语，这个状语一般是修饰**主句的谓语动词**的。
+
+`1` Never leave that until tomorrow which you can do today.
+
+- 这里的先行词是 that，在其与定语从句之间插入了时间状语 until tomorrow 来修饰 leave。
+- `译` 今日事，今日毕。
+
+`2` Word does that for a language which brick does for a building.
+
+- 目的状语 for a language 修饰第一个 does。
+- `译` 字词对于一门语言的作用，就如同砖块对于一栋大厦的作用一样。
+
+`3` Politics is probably the only business in the world where they spend the
+most money when they have the least number of available customers to pitch to.
+
+- 这里的先行词是 business，定语从句是 where they spend the most money when they have
+  the least number of available customers to pitch to. 由关系副词 where
+  引导，where 在从句中作为状语修饰 spend。中间被地点状语 in the world 隔开。
+- `译` 政治可能是世界上唯一的投资最多而顾客最少的生意。
+
+`4` If there is anything in the world that a young man should be more grateful
+for than another, it is the poverty which necessitates starting life under very
+great disadvantage.
+
+- 这里先行词是 anything，定语从句是 that a young man should be more grateful for
+  than another. 中间插入了地点状语 in the world。
+- `译` 对于青年人来说，如果世上真的有什么事物是他最应该感激的，那就是贫穷，因为贫穷能促使他在非常恶劣的环境下开创生活。
+
+### 8.3 作主语的先行词 + 谓语部分 + 定语从句
+
+先行词与关系词被分隔的第三种情形是：两者被主句谓语隔开。
+这是因为先行词在主句作主语，然后它又被一个定语从句所修饰，而定语从句一般都会比主句谓语的结构复杂。
+因此，按照英语的“尾重原则 (principle of end weight)”，结构复杂的定语从句置于主句谓语后边，从而造成关系词与先行词被隔离。
+
+`1` It can be predicted, however, that from time to time questions will arise
+which will require specific scientific answers.
+
+- that 引导的是一个主语从句，其中从句的主语是 questions，其后面接一个 which
+  引导的定语从句，中间被谓语 will arise 隔开。
+- `译` 然而，可以预见的是，将来会经常出现一些问题，这些问题需要给出专门的科学的回答。
+
+`2` Social science is that branch of intellectual enquiry which seeks to study
+humans and their endeavors in the same reasoned, orderly, systematic, and
+dispassioned manner that natural scientists used for the study of natural
+phenomena.
+
+- which 引导的定语从句修饰先行词 social science。
+- `译` 社会科学是知识探索的一个分支，它力图像自然科学家研究自然现象那样，用理性的、有序的、系统的和冷静的方式研究人类及其行为。
+
+## 9. 如何判断先行词
+
+先行词与它的定语从句关系密切，想要正确地找到先行词，首先应该正确理解定语从句本身的意思。
+然后根据从句的意思来找能与其构成逻辑语义联系的先行名词，并结合先行词的结构特点和位置特点判断。
+
+判断先行词的基本步骤：
+
+1. 翻译定语从句，正确地理解定语从句本身的意思；
+2. 结合先行词的结构特点和位置特点，在关系词之前寻找与定语从句意思有逻辑语义联系的名词、短语或从句，此即为先行词。
+
+`1` Even when homeless individuals manage to find a ____ that will give them
+three meals a day and a place to sleep at night, a good number still spend the
+bulk of each day wandering the street.
+
+- A. lodging
+- B. shelter
+- C. dwelling
+- D. house
+- `答案` B。该空格后面是由 that 引导的定语从句 will give them three meals a day and
+  a place to sleep at night，从句要和其先行词构成一种解释关系。这个定语从句的意思是：
+  为那些无家可归者提供一日三餐和住处。而四个选项分别是：
+  - lodging: a place to live in, especially temporarily
+  - shelter an establishment that provides temporary housing for homeless people
+  - dwelling: a place to live in
+  - house: a structure serving as a dwelling for one or more persons, especially
+    for a family
+  由此可看出选择 shelter 最合适。
+- `译` 即使个别无家可归者设法找到了可为其提供一日三餐和栖身之所的收容所，但仍有大量无家可归者每天的大部分时间流浪街头。
+
+有时，定语从句中的某个关键词就能帮助判断先行词。
+
+`2` **Social science** is that branch of intellectual enquiry which seeks to
+study humans and their endeavors in the same reasoned, orderly, systematic, and
+dispassioned manner that natural scientists used for the study of natural
+phenomena.
+
+- 这里定语从句中的关键概念 natural scientists 与关系词前面的 social science
+  是对照关系，有助于判断先行词是 social science。
+- `译` 社会科学是知识探索的一个分支，它力图像自然科学家研究自然现象那样，用理性的、有序的、系统的和冷静的方式研究人类及其行为。
+
+有时还可以根据定语从句的谓语动词的单复数来判断先行词。
+
+`3` The mineral elements from the soil that are usable by the plant must be
+dissolved in the soil solution before they can be taken into the root.
+
+- 这里定语从句 that are usable by the plant 的谓语是 are，可以据此很快找到先行词
+  elements，而不是单数名词 soil。
+- `译` 土壤中可供植物利用的矿物成分，只有先溶解在土壤中然后才能被植物的根部吸收。
+
+`4` Changes in the social structure may indirectly affect juvenile crime rates.
+For example, **changes** in the economy that lead to fewer job opportunities for
+youth and rising unemployment in general make gainful employment increasingly
+difficult to obtain.
+
+- 定语从句 that lead to fewer job... 的谓语是 lead，因此先行词只能是复数的
+  changes，而不是单数名词 economy。
+- `译` 社会结构方面的变化也许在间接地影响青少年犯罪率。
+  比如，经济方面的变化使得青年的就业机会更少、失业率上升，这就会使得赚钱的工作越来越难找。
+
+此外，还可以根据关系词判断先行词。
+
+`5` The words used by the speaker may stir up unfavorable reactions in the
+listener which interfere with his comprehension.
+
+- 这里的关系词是 which，因此先行词不可能是 listener。
+  reactions 是指物的名词，同时它的形式和从句谓语一致，意义也符合逻辑，因此可以判断它就是先行词。
+- `译` 说话人的用词可能会引起听者的不良反应，这就会影响听者的理解。
+
+### 思维总结：9. 如何判断先行词
+
+可以结合以下各个要点进行判断：
+
+1. 定语从句的意思：语义逻辑必然与先行词密切相关；
+2. 定语从句中的关键词：关键词可能会和先行词构成鲜明对照；
+3. 定语从句的谓语单复数；
+4. 定语从句的关系词；
+5. 先行词的结构特点：可能是一个词、短语、分句或完整的句子；
+6. 先行词的位置特点：可能被定语、状语或谓语分隔。
+
+## 思维训练：8-9
+
+**一、分析下列句子中定语从句的先行词，并将各句译成汉语。**
+
+*1. As a linguist, he acknowledges that all varieties of human language,
+including non-standard ones like Black English, can be powerfully
+expressive -- there exists no language or dialect in the world that cannot
+convey complex ideas.*
+
+*2. More and more frequently, magazines are being published that are outside of
+the mainstream press. These are called 'fringe' publications and deal with the
+multitude of issues that are ignored by industry, the governments and the
+established professions.*
+
+*3. Very little architecture is created that does not have a practical
+function. In that sense, it is hard to distinguish between it being a 'Fine
+Art' and an 'Applied Art'.*
+
+*4. Smart cars have already been built which can monitor one's driving and the
+driving conditions nearby.*
+
+*5. A ceasefire was arranged which allowed the Iraq government to remain in
+control.*
+
+*6. No plan should ever be so rigid that it is unable to adapt to changing
+circumstances. As your career develops, opportunities will arise, and you will
+have choices to make that may lead you down quite different paths from those
+which you originally envisaged.*
+
+**二、选择最佳答案。**
+
+*7. Because they are adjusting to their new bodies and a whole host of new
+intellectual and emotional challenges, teenagers are especially self-conscious
+and need the ____ that comes from achieving success and knowing that their
+accomplishments are admired by others.*
+
+- *A. assistance*
+- *B. guidance*
+- *C. confidence*
+- *D. tolerance*
+
+### 答案：思维训练：8-9
+
+1. language or dialect。
+   `译` 作为一名语言学家，他承认所有的人类语言，包括非标准的语言，如黑人英语，都可以明确地表情达意——世界上没有一种语言或方言不能表达复杂的意思。
+2. magazines。
+   `译` 现在出版的杂志越来越多的是一些非主流的杂志，或称作“边缘杂志”。
+   这些边缘出版物内容涉及一些被工业、政府、专业行业所忽视的问题。
+3. architecture。
+   `译` 很少有哪个建筑物不具备实用功能的，这样一来就很难分辨“美艺术”与“应用艺术”之间的区别了。
+4. smart cars。
+   `译` 能监控行车过程以及周围行车状况的智能汽车已经研制出来。
+5. ceasefire。
+   `译` 后来签订了停火协议，协议同意伊拉克政府继续当政。
+6. choices。
+   `译` 要计划，但不要僵化，也就是说计划要随着形势的改变而改变。
+   随着你职业的发展，机遇会不断产生，这时，你可能会选择一个完全不同于原先设定的职业方向。
+7. C。`译` 因为青少年是在不断调整，以适应身体、智力和情感上出现的一系列新的变化和挑战，因此他们非常敏感，并且需要有自信心，而这些信心主要来自于自己获得成功以及自己成功能够被别人认可。
+
+## 2.4 与先行词有关的考点
 
 >>>>> progress
 
