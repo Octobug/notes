@@ -4,17 +4,34 @@
 >
 > Kuri-su/yinwang.bak: <https://github.com/Kuri-su/yinwang.bak>
 >
-> `fb62b6e0bd4966a78fa869cde770d0d66030812e`
+> `332c98db9b3a71475e7ed1f8954668b7f591e83c`
 
-- 2020年09月24日 - 计算机科学集体班（第二期）报名
-- 2020年06月10日 - 新丑陋的中国人
-- 2020年05月23日 - 几个需要避免的美国英语习惯
-- 2020年04月30日 - 一对一教学计划
-- 2020年03月26日 - 计算机科学入门班报名
-- 2020年03月23日 - 对智商的怀疑
-- 2020年03月06日 - 英语学习的一些经验
-- 2020年03月05日 - 知识星球试运营
-- 2020年03月03日 - 计算机科学课程
+- 2020年12月21日 - [音乐的语言是很糟糕的](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E9%9F%B3%E4%B9%90%E7%9A%84%E8%AF%AD%E8%A8%80%E6%98%AF%E5%BE%88%E7%B3%9F%E7%B3%95%E7%9A%84.md)
+- 2020年11月13日 - [中国的审美问题](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%AE%A1%E7%BE%8E%E9%97%AE%E9%A2%98.md)
+- 2020年11月12日 - [中国的审美水平问题](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%AE%A1%E7%BE%8E%E6%B0%B4%E5%B9%B3%E9%97%AE%E9%A2%98.md)
+- 2020年09月24日 - [计算机科学集体班（第二期）报名](http://www.yinwang.org/blog-cn/2020/09/24/cs-class2)
+- 2020年08月28日 - [生活模仿艺术](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%94%9F%E6%B4%BB%E6%A8%A1%E4%BB%BF%E8%89%BA%E6%9C%AF.md)
+- 2020年08月25日 - [学霸](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%AD%A6%E9%9C%B8.md)
+- 2020年08月25日 - [干货](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%B9%B2%E8%B4%A7.md)
+- 2020年06月10日 - [新丑陋的中国人](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%96%B0%E4%B8%91%E9%99%8B%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA.md)
+- 2020年06月10日 - [中国文化有多落后](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E4%B8%AD%E5%9B%BD%E6%96%87%E5%8C%96%E6%9C%89%E5%A4%9A%E8%90%BD%E5%90%8E.md)
+- 2020年05月23日 - [几个需要避免的美国英语习惯](http://www.yinwang.org/blog-cn/2020/05/23/american-english-problems)
+- 2020年04月30日 - [一对一教学计划](http://www.yinwang.org/blog-cn/2020/04/30/individualized-learning)
+- 2020年04月30日 - [全个性化教育计划](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%85%A8%E4%B8%AA%E6%80%A7%E5%8C%96%E6%95%99%E8%82%B2%E8%AE%A1%E5%88%92.md)
+- 2020年04月10日 - [知识的传递](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%9F%A5%E8%AF%86%E7%9A%84%E4%BC%A0%E9%80%92.md)
+- 2020年04月09日 - [知道与不知道](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%9F%A5%E9%81%93%E4%B8%8E%E4%B8%8D%E7%9F%A5%E9%81%93.md)
+- 2020年03月26日 - [计算机科学入门班报名](http://www.yinwang.org/blog-cn/2020/03/26/entry-level-class)
+- 2020年03月25日 - [顾问业务试运营（v2.0）](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E9%A1%BE%E9%97%AE%E4%B8%9A%E5%8A%A1%E8%AF%95%E8%BF%90%E8%90%A5%EF%BC%88v2.0%EF%BC%89.md)
+- 2020年03月23日 - [对智商的怀疑](http://www.yinwang.org/blog-cn/2020/03/23/wisdom-of-intelligence)
+- 2020年03月17日 - [谈知识的交流](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%B0%88%E7%9F%A5%E8%AF%86%E7%9A%84%E4%BA%A4%E6%B5%81.md)
+- 2020年03月17日 - [顾问服务试运营（v2.0）](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E9%A1%BE%E9%97%AE%E6%9C%8D%E5%8A%A1%E8%AF%95%E8%BF%90%E8%90%A5%EF%BC%88v2.0%EF%BC%89.md)
+- 2020年03月16日 - [知识星球试运营](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83%E8%AF%95%E8%BF%90%E8%90%A5.md)
+- 2020年03月06日 - [英语学习的一些经验](http://www.yinwang.org/blog-cn/2020/03/06/english-learning-tips)
+- 2020年03月05日 - [知识星球试运行](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83%E8%AF%95%E8%BF%90%E8%A1%8C.md)
+- 2020年03月04日 - [课程计划变动](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%AF%BE%E7%A8%8B%E8%AE%A1%E5%88%92%E5%8F%98%E5%8A%A8.md)
+- 2020年03月04日 - [新的付费咨询方式（取消）](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%96%B0%E7%9A%84%E4%BB%98%E8%B4%B9%E5%92%A8%E8%AF%A2%E6%96%B9%E5%BC%8F%EF%BC%88%E5%8F%96%E6%B6%88%EF%BC%89.md)
+- 2020年03月03日 - [顾问服务试运营方案（v2.0）](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E9%A1%BE%E9%97%AE%E6%9C%8D%E5%8A%A1%E8%AF%95%E8%BF%90%E8%90%A5%E6%96%B9%E6%A1%88%EF%BC%88v2.0%EF%BC%89.md)
+- 2020年03月03日 - [计算机科学课程](http://www.yinwang.org/blog-cn/2020/03/03/cs-course)
 - 2020年03月03日 - [新的付费咨询方式](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%96%B0%E7%9A%84%E4%BB%98%E8%B4%B9%E5%92%A8%E8%AF%A2%E6%96%B9%E5%BC%8F.md)
 - 2020年03月02日 - [顾问服务试运营方案](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E9%A1%BE%E9%97%AE%E6%9C%8D%E5%8A%A1%E8%AF%95%E8%BF%90%E8%90%A5%E6%96%B9%E6%A1%88.md)
 - 2020年02月17日 - [谈职场中的命令口气](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%B0%88%E8%81%8C%E5%9C%BA%E4%B8%AD%E7%9A%84%E5%91%BD%E4%BB%A4%E5%8F%A3%E6%B0%94.md)
