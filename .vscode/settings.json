@@ -1,5 +1,6 @@
 {
   "files.associations": {
+    "*.ejs": "html",
     "*.tpl": "html",
     "__hash_table": "cpp",
     "__split_buffer": "cpp",
@@ -24,6 +25,9 @@
     "stdlib.h": "c",
     "complex": "cpp",
     "__threading_support": "cpp",
-    "__mutex_base": "cpp"
+    "__mutex_base": "cpp",
+    "syscalls.h": "c",
+    "unistd.h": "c",
+    "fcntl.h": "c"
   }
 }

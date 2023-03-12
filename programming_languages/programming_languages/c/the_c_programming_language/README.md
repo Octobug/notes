@@ -14,7 +14,7 @@
 - [x] [Chapter 5: Pointers and Arrays](5_pointers_and_arrays)
 - [x] [Chapter 6: Structures](6_structures)
 - [x] [Chapter 7: Input and Output](7_input_and_output)
-- [ ] Chapter 8: The UNIX System Interface
+- [ ] [Chapter 8: The UNIX System Interface](8_the_unix_system_interface)
 - [ ] [Appendix A - Reference Manual](a_reference_manual)
 - [ ] [Appendix B - Standard Library](b_standard_library)
 - [ ] Appendix C - Summary of Changes
