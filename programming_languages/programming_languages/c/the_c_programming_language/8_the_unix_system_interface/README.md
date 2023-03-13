@@ -7,6 +7,7 @@
   - [8.4 Random Access - Lseek](#84-random-access---lseek)
   - [8.5 Example - An implementation of Fopen and Getc](#85-example---an-implementation-of-fopen-and-getc)
   - [8.6 Example - Listing Directories](#86-example---listing-directories)
+  - [Example - A Storage Allocator](#example---a-storage-allocator)
 
 ## 8.1 File Descriptors
 
@@ -380,5 +381,198 @@ length of a filename component is `NAME_MAX`, which is a system-dependent value.
 `opendir` returns a pointer to a structure called `DIR`, analogous to `FILE`,
 which is used by `readdir` and `closedir`. This information is collected into a
 file called `dirent.h`.
+
+The system call `stat` takes a filename and returns all of the information in
+the inode for that file, or `-1` if there is an error.
+
+```c
+char *name;
+struct stat stbuf;
+int stat(char *, struct stat *);
+
+stat(name, &stbuf);
+```
+
+fills the structure `stbuf` with the inode information for the file name. The
+structure describing the value returned by `stat` is in `<sys/stat.h>`, and
+typically looks like this:
+
+```c
+struct stat // inode information returned by stat
+{
+    dev_t   st_dev;     // device of inode
+    ino_t   st_ino;     // inode number
+    short   st_mode;    // mode bits
+    short   st_nlink;   // number of links to file
+    short   st_uid;     // owners user id
+    short   st_gid;     // owners group id
+    dev_t   st_rdev;    // for special files
+    off_t   st_size;    // file size in characters
+    time_t  st_atime;   // time last accessed
+    time_t  st_mtime;   // time last modified
+    time_t  st_ctime;   // time originally created
+};
+```
+
+The types like `dev_t` and `ino_t` are defined in `<sys/types.h>`.
+
+The `st_mode` entry contains a set of flags describing the file. The flag
+definitions are also included in `<sys/types.h>`. Part of them are:
+
+```c
+#define S_IFMT  0160000 // type of file
+#define S_IFDIR 0040000 // directory
+#define S_IFCHR 0020000 // character special
+#define S_IFBLK 0060000 // block special
+#define S_IFREG 0010000 // regular
+```
+
+eg. `fsize`
+
+```c
+#include <fcntl.h> // flags for read and write
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/stat.h>  // structure returned by stat
+#include <sys/types.h> // typedefs
+#include "dirent.h"
+#include "syscalls.h"
+
+#define MAX_PATH 1024
+#ifndef DIRSIZ
+#define DIRSIZ 14
+#endif
+struct direct
+{                        // directory entry
+    ino_t d_ino;         // inode number
+    char d_name[DIRSIZ]; // long name does not have '\0'
+};
+
+void fsize(const char *);
+
+/* print file name */
+int main(int argc, char **argv)
+{
+    if (argc == 1) // default: current directory (no args given)
+    {
+        fsize(".");
+    }
+    else
+    {
+        while (--argc > 0)
+        {
+            fsize(*++argv);
+        }
+    }
+    return 0;
+}
+
+int stat(char *, struct stat *);
+int fstat(int fd, struct stat *);
+void dirwalk(const char *, void (*fcn)(const char *));
+
+/* fsize: print the name of file "name" */
+void fsize(const char *name)
+{
+    struct stat stbuf;
+    {
+        if (stat(name, &stbuf) == -1)
+        {
+            fprintf(stderr, "fsize: can't access %s\n", name);
+            return;
+        }
+        if ((stbuf.st_mode & S_IFMT) == S_IFDIR)
+        {
+            dirwalk(name, fsize);
+        }
+        printf("%8lld %s\n", stbuf.st_size, name);
+    };
+}
+
+/* dirwalk: apply fcn to all files in dir */
+void dirwalk(const char *dir, void (*fcn)(const char *))
+{
+    char name[MAX_PATH];
+    Dirent *dp;
+    DIR *dfd;
+    int path_len = 0;
+
+    if ((dfd = opendir(dir)) == NULL)
+    {
+        fprintf(stderr, "dirwalk: can't open %s\n", dir);
+        return;
+    }
+    while ((dp = readdir(dfd)) != NULL)
+    {
+        if (strcmp(dp->name, ".") == 0 || strcmp(dp->name, ".."))
+        {
+            continue; // skip self and parent
+        }
+
+        path_len = strlen(dir) + strlen(dp->name) + 2;
+        if (path_len > sizeof(name))
+        {
+            fprintf(stderr, "dirwalk: name %s %s too long\n", dir, dp->name);
+        }
+        else
+        {
+            snprintf(name, path_len, "%s/%s", dir, dp->name);
+            (*fcn)(name);
+        }
+    }
+    closedir(dfd);
+}
+
+/* opendir: open a directory for readdir calls */
+DIR *opendir(const char *dirname)
+{
+    int fd;
+    struct stat stbuf;
+    DIR *dp;
+
+    if ((fd = open(dirname, O_RDONLY, 0)) == -1
+        || fstat(fd, &stbuf) == -1
+        || (stbuf.st_mode & S_IFMT) != S_IFDIR
+        || (dp = (DIR *)malloc(sizeof(DIR))) == NULL)
+    {
+        return NULL;
+    }
+    dp->fd = fd;
+    return dp;
+}
+
+/* closedir: close directory opened by opendir */
+void closedir(DIR *dp)
+{
+    if (dp)
+    {
+        close(dp->fd);
+        free(dp);
+    }
+}
+
+/* readdir: read directory entries in sequence */
+Dirent *readdir(DIR *dp)
+{
+    struct direct dirbuf; // local directory structure
+    static Dirent d;      // return: portable structure
+
+    while (read(dp->fd, (char *)&dirbuf, sizeof(dirbuf)) == sizeof(dirbuf))
+    {
+        if (dirbuf.d_ino == 0) // slot not in use
+        {
+            continue;
+        }
+        d.ino = dirbuf.d_ino;
+        strncpy(d.name, dirbuf.d_name, DIRSIZ);
+        d.name[DIRSIZ] = '\0'; // ensure termination
+        return &d;
+    }
+    return NULL;
+}
+```
+
+## Example - A Storage Allocator
 
 >>>>> progress
