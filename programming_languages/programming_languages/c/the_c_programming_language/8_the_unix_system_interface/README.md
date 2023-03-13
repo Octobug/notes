@@ -575,4 +575,14 @@ Dirent *readdir(DIR *dp)
 
 ## Example - A Storage Allocator
 
+> These routines illustrate some of the considerations involved in writing
+> machine-dependent code in a relatively machine-independent way.
+
+Since other activities in the program may also request space without calling
+`malloc`, the space that `malloc` manages may not be contiguous. Thus its free
+storage is kept as a list of free blocks. Each blocks contains a size, a pointer
+to the next block, and the space itself. The blocks are kept in order of
+increasing storage address, and the last block (highest address) points to the
+first.
+
 >>>>> progress
