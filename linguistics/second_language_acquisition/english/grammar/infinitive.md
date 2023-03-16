@@ -21,7 +21,9 @@
     - [5.1 宾语关系](#51-宾语关系)
       - [一、作不定式中的动词的宾语](#一作不定式中的动词的宾语)
       - [二、作不定式中的介词的宾语](#二作不定式中的介词的宾语)
-    - [4.5.2 主语关系](#452-主语关系)
+    - [5.2 主语关系](#52-主语关系)
+    - [5.3 同位语关系](#53-同位语关系)
+  - [4.6 不定式的作用（五）：形容词 + to do](#46-不定式的作用五形容词--to-do)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
 
@@ -516,6 +518,114 @@ but **to have discussions with**, and I'd hope to make some real friends.
 - 💡 对于 a **place** to do 这个表达，日常使用中人们通常将介词省去，因为读起来更加自然。
   time, day, way 的不定式作定语时，也有省略介词的情况。
 
-### 4.5.2 主语关系
+### 5.2 主语关系
+
+主语关系，就是指被修饰的名词在逻辑意义上充当不定式中动词的主语。
+
+`1` The man to help you is Mr. Johnson.
+
+- 名词短语 the man to help you 相当于 the man who can help you。不定式 to help
+  的逻辑主语是 man，即被修饰的名词与不定式之间是主谓关系。
+- `译` 能够帮你的人就是 Johnson 先生。
+
+`2` Have you got a key to unlock this door?
+
+- the key to unlock this door 相当于 the key that can unlock this door。不定式
+  to unlock 的逻辑主语是 key。
+- `译` 你有能够打开这个门的钥匙吗？
+
+`3` I don't think he is the best man to do the job.
+
+- `译` 我认为他并不是做这项工作的最佳人选。
+
+`4` The next train to arrive is from New York.
+
+- `译` 下一列到达的火车是从纽约开来的。
+
+`5` Clint was the second person to fall into this trap.
+
+- `译` Clint 是第二个掉进陷阱的人。
+
+`6` Clint was the only person to survive the air crash.
+
+- `译` Clint 是这次空难事故中唯一的幸存者。
+
+`7` He was the second person to be killed in this way.
+
+- `译` 他是第二个这样被害的人。
+
+### 5.3 同位语关系
+
+同位语关系，就是指不定式短语的内容是对被修饰的名词作进一步补充说明，因此名词与不定式短语之间构成同位说明的关系。
+
+`1` The need to love and to be loved seems universal. Maybe this is one trait
+that separates human beings from other animals.
+
+- 不定式短语 to love and to be loved 补充说明名词 need 的具体内容，没有它 need 的内容就不完整、不明确。
+- `译` 爱与被爱的需要似乎是人类普遍的特性，或许正是这一特性把人和动物区分开了。
+
+⚠️ 不是所有名词与不定式连用都能够表示同位语关系，这样的名词一般仅限于两类：
+
+1. 与动词相关的名词：那些要求与不定式连用的动词，因而它们的名词形式也要接不定式。常见的名词有：
+   - arrangement
+   - attempt
+   - claim
+   - decision
+   - hope
+   - determination
+   - failure
+   - need
+   - plan
+   - promise
+   - refusal
+   - resulotion
+   - tendency
+   - threat
+   - wish
+2. 与形容词相关的名词：那些要求与不定式连用的形容词，因而它们的名词形式也要接不定式。
+   - ability
+   - ambition
+   - anxiety
+   - eagerness
+   - inclination
+   - reluctance
+
+`2`
+
+- He refused to co-operate with us.
+  - `译` 他拒绝与我们合作。
+- His refusal to co-operate makes us angry.
+  - refuse 后面要接不定式 to do，所以其名词 refusal 也要接不定式，而不能说 refusal of
+    doing。这里的不定式 to co-operate 作名词 refusal 的同位语。
+  - `译` 他拒绝与我们合作，这让我们很生气。
+
+`3`
+
+- I don't wish to change.
+- I have no wish to change.
+- `译` 我不愿意改变。
+
+`4`
+
+- She was reluctant to accept his invitation
+  - `译` 她很不愿意接受他的邀请。
+- Her reluctance to accept his invitation upset him.
+  - `译` 她很不愿意接受他的邀请，这使他很心烦。
+
+`5`
+
+- They were eager to help me.
+  - `译` 他们非常热心地帮助我。
+- Their eagerness to help pleased me.
+  - 他们的热心帮助真让我高兴。
+
+`6` In order to grow, to travel new roads, people need to have a willingness to
+take risks, to confront the unknown, and to accept the possibility that they may
+"fail" at first. How we see ourselves as we try a new way of being is essential
+to our ability to grow.
+
+>>>>> progress
+
+## 4.6 不定式的作用（五）：形容词 + to do
 
 >>>>> progress
