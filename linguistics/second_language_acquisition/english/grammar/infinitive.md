@@ -589,6 +589,7 @@ that separates human beings from other animals.
    - eagerness
    - inclination
    - reluctance
+   - willingness
 
 `2`
 
@@ -619,12 +620,26 @@ that separates human beings from other animals.
 - Their eagerness to help pleased me.
   - 他们的热心帮助真让我高兴。
 
-`6` In order to grow, to travel new roads, people need to have a willingness to
-take risks, to confront the unknown, and to accept the possibility that they may
-"fail" at first. How we see ourselves as we try a new way of being is essential
-to our ability to grow.
+`6` In order to grow, to travel new roads, people need to have a **willingness**
+to take risks, to confront the unknown, and to accept the possibility that they
+may "fail" at first. How we see ourselves as we try a new way of being is
+essential to our **ability** to grow.
 
->>>>> progress
+- 这里的两个名词 willingness 和 ability 分别由形容词 willing 和 able 变化而来。
+- `译` 为了成长，为了踏上新的人生征途，人们需要用于承担风险，面对未知以及接受起初可能的失败。
+  在尝试新事物时我们如何看待自己，这对我们成长能力的培养至关重要。
+
+`7` A decision ____ stock by one or a few of these large companies may have a
+very important effect on the market as a whole.
+
+- A. buying or to sell
+- B. to buy or selling
+- C. buying or selling
+- D. to buy or sell
+- 答案：D。这里的名词是 decision (decide to do)。
+- `译` 一家或几家这样的大公司若是决定在市场上买进或卖出股票，都可能会对整个股票市场造成很大的影响。
+
+`8` >>>>> progress
 
 ## 4.6 不定式的作用（五）：形容词 + to do
 
