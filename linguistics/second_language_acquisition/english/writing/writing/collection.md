@@ -35,3 +35,20 @@ a person you knew was always in your corner.
 
                                                                         Chuck
 ```
+
+### Kimberly Wexler's letter to the Planning Board in Broomfield
+
+> *Better Call Saul* S05E09
+
+```txt
+Dear Mr. Armand Bekaris (Chairman of the Planning and Zoning Commission),
+CC Elaine Perlman (Vice chair),
+
+    Mesa Verde Bank and Trust respectfully submit the following request for your
+consideration. In regards to the resolution number PZ2004-36 variance appeal to
+allow for a six-and-one-half-foot encroachment into the minimum required rear
+setback for a drive-through awning to facilitate access to the property at 841
+North.
+
+...
+```
