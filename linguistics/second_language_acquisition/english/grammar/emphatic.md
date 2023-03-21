@@ -18,3 +18,8 @@
 - `例 1`：**It is the playgoers**, the ESC contends, **who** bring in much of
   the town's revenue because they spend the night (some of them four or five
   nights) pouring cash into the hotels and restaurants.
+
+## todo
+
+- 英语兔
+- <https://www.cpsenglish.com/question/28269>
