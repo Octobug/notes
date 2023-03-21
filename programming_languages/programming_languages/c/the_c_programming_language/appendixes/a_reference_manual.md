@@ -19,7 +19,18 @@
     - [A.4.2 Basic Types](#a42-basic-types)
     - [A.4.3 Derived Types](#a43-derived-types)
     - [A.4.4 Type Qualifiers](#a44-type-qualifiers)
+  - [A.5 Objects and Lvalues](#a5-objects-and-lvalues)
+  - [A.6 Conversions](#a6-conversions)
+    - [A.6.1 Integral Promotion](#a61-integral-promotion)
+    - [A.6.2 Integral Conversions](#a62-integral-conversions)
+    - [A.6.3 Integer and Floating](#a63-integer-and-floating)
+    - [A.6.4 Floating Types](#a64-floating-types)
+    - [A.6.5 Arithmetic Conversions](#a65-arithmetic-conversions)
+    - [A.6.6 Pointers and Integers](#a66-pointers-and-integers)
+    - [A.6.7 Void](#a67-void)
+    - [A.6.8 Pointers to Void](#a68-pointers-to-void)
   - [A.7 Expressions](#a7-expressions)
+    - [A.7.1 Pointer Conversion](#a71-pointer-conversion)
     - [A.7.17 Assignment Expressions](#a717-assignment-expressions)
   - [A.8 Declarations](#a8-declarations)
     - [A.8.2 Type Specifiers](#a82-type-specifiers)
@@ -154,7 +165,11 @@ these types are referred to as ***arithmetic*** types.
 
 ### A.4.3 Derived Types
 
->>>>> progress
+- `arrays` of objects of a given types;
+- `functions` returning objects of a given types;
+- `pointers` to objects of a given types;
+- `structures` containing a sequence of objects of various types;
+- `unions` capable of containing any of one of several objects of various types.
 
 ### A.4.4 Type Qualifiers
 
@@ -162,6 +177,34 @@ Declaring an object `const` announces that its value will not be changed;
 declaring it `volatile` announces that it has special properties relevant to
 optimization. Neither qualifier affects the range of values or arithmetic
 properties of the object.
+
+## A.5 Objects and Lvalues
+
+An `Object` is a named region of storage; an `lvalue` is an expression referring
+to an object. If `E` is an expression of pointer type, then `*E` is an lvalue
+expression referring to the object to which `E` points. The name `lvalue` comes
+from the assignment expression `E1 = E2` in which the left operand `E1` must be
+an lvalue expression.
+
+> lvalue 是可以被赋值的表达式或变量，它总是代表着一个可修改的内存位置。
+
+## A.6 Conversions
+
+### A.6.1 Integral Promotion
+
+### A.6.2 Integral Conversions
+
+### A.6.3 Integer and Floating
+
+### A.6.4 Floating Types
+
+### A.6.5 Arithmetic Conversions
+
+### A.6.6 Pointers and Integers
+
+### A.6.7 Void
+
+### A.6.8 Pointers to Void
 
 ## A.7 Expressions
 
@@ -178,6 +221,10 @@ The handling of overflow, divide check, and other exceptions in expression
 evaluation is not defined by the language. Most existing implementations of C
 ignore overflow in evaluation of signed integral expressions and assignments,
 but this behavior is not guaranteed.
+
+### A.7.1 Pointer Conversion
+
+>>>>> progress
 
 ### A.7.17 Assignment Expressions
 
