@@ -1,5 +1,34 @@
 # Appendix A - Reference Manual
 
+- [Appendix A - Reference Manual](#appendix-a---reference-manual)
+  - [A.1 Introduction](#a1-introduction)
+  - [A.2 Lexical Conventions](#a2-lexical-conventions)
+    - [A.2.1 Tokens](#a21-tokens)
+    - [A.2.2 Comments](#a22-comments)
+    - [A.2.3 Identifiers](#a23-identifiers)
+    - [A.2.4 Keywords](#a24-keywords)
+    - [A.2.5 Constants](#a25-constants)
+      - [A.2.5.1 Integer constants](#a251-integer-constants)
+      - [A.2.5.2 Charater Constants](#a252-charater-constants)
+      - [A.2.5.3 Floating Constants](#a253-floating-constants)
+      - [A.2.5.4 Enumeration Constants](#a254-enumeration-constants)
+    - [A.2.6 String Literals](#a26-string-literals)
+  - [A.3 Syntax Notation](#a3-syntax-notation)
+  - [A.4 Meaning of Identifiers](#a4-meaning-of-identifiers)
+    - [A.4.1 Storage Class](#a41-storage-class)
+    - [A.4.2 Basic Types](#a42-basic-types)
+    - [A.4.3 Derived Types](#a43-derived-types)
+    - [A.4.4 Type Qualifiers](#a44-type-qualifiers)
+  - [A.7 Expressions](#a7-expressions)
+    - [A.7.17 Assignment Expressions](#a717-assignment-expressions)
+  - [A.8 Declarations](#a8-declarations)
+    - [A.8.2 Type Specifiers](#a82-type-specifiers)
+
+## A.1 Introduction
+
+This manual is an interpretation of the proposed standard, not the standard
+itself.
+
 ## A.2 Lexical Conventions
 
 A program is translated in several phases. The first phases do low-level
@@ -7,9 +36,26 @@ lexical transformations, carry out directives introduced by the lines beginning
 with the `#` character, and perform macro definition and expansion. When the
 preprocessing is complete, the program has been reduced to a sequence of tokens.
 
+### A.2.1 Tokens
+
+There are six classes of tokens:
+
+- identifiers
+- keywords
+- constants
+- string literals
+- operators
+- other separators
+
+### A.2.2 Comments
+
+### A.2.3 Identifiers
+
+An identifiers is a sequence of letters (including `_`) and digits.
+
 ### A.2.4 Keywords
 
-`auto`, (`asm`),
+(`asm`) `auto`,
 `break`,
 `case`, `char`, `const`, `continue`,
 `default`, `do`, `double`,
@@ -25,6 +71,54 @@ preprocessing is complete, the program has been reduced to a sequence of tokens.
 `void`, `volatile`
 `while`
 
+### A.2.5 Constants
+
+There are several kinds of constants:
+
+- integer-constant
+- character-constant
+- floating-constant
+- enumeration-constant
+
+#### A.2.5.1 Integer constants
+
+prefix
+
+- octal: `0`
+- decimal
+- hexadecimal: `0x` or `0X`
+
+suffix
+
+- unsigned: `u` or `U`
+- long: `l` or `L`
+- unsigned + long: `UL`, `ul`, ...
+
+#### A.2.5.2 Charater Constants
+
+A character constant is a sequence of one or more characters enclosed in single
+quotes as in `'x'`. The value of a multi-character constant is
+implementation-defined.
+
+#### A.2.5.3 Floating Constants
+
+A floating constants consists of an integer part, a decimal part, a fraction
+part, an `e` or `E`, an optionally signed integer exponent and an optional type
+suffix. one of `f`, `F`, `l` or `L`. The type is determined by the suffix; `F`
+or `f` makes it `float`, `L` or `l` makes it `long double`, otherwise it is
+`double`.
+
+#### A.2.5.4 Enumeration Constants
+
+Indentifiers declared as enumerators are constants of type `int`.
+
+### A.2.6 String Literals
+
+A string literal, also called a string constant, is a sequence of characters
+surrounded by double quotes as in `"..."`.
+
+## A.3 Syntax Notation
+
 ## A.4 Meaning of Identifiers
 
 Identifiers, or names, refer to a variety of things: functions; tags of
@@ -37,6 +131,30 @@ the type determines the meaning of the values found in the identified object. A
 name also has a scope, which is the region of the program in which it is known,
 and a linkage, which determines whether the same name in another scope refers
 to the same object or function.
+
+### A.4.1 Storage Class
+
+There are two storage classes:
+
+- **automatic**: automatic objects are local to a block, and are discarded on
+  exit from the block.
+- **static**: static objects may be local to a block or external to all blocks,
+  but in either case retain their values across exit from and reentry to
+  functions and blocks.
+
+### A.4.2 Basic Types
+
+The standard header `<limits.h>` defines the largest and smallest values of each
+type in the local implementation.
+
+Types `char`, and `int` of all sizes, each with or without sign, and also
+enumeration types, will collectively be called ***integral*** types. The types
+`float`, `double`, and `long double` will be called ***floating*** types. All
+these types are referred to as ***arithmetic*** types.
+
+### A.4.3 Derived Types
+
+>>>>> progress
 
 ### A.4.4 Type Qualifiers
 

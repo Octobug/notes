@@ -72,6 +72,8 @@ or `UL` indicates `unsigned long`.
 
 ### float and double
 
+> [What's the difference between a single precision and double precision floating point operation?](https://stackoverflow.com/a/801146/7267801)
+
 Floating-point constants contain a decimal point or an exponent (1e-2) or both;
 their type is double, unless suffixed. The suffixes `f` or `F` indicate a
 `float` constant; `l` or `L` indicate a long double.
