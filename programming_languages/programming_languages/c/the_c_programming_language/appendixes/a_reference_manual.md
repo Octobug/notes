@@ -31,6 +31,23 @@
     - [A.6.8 Pointers to Void](#a68-pointers-to-void)
   - [A.7 Expressions](#a7-expressions)
     - [A.7.1 Pointer Conversion](#a71-pointer-conversion)
+    - [A.7.2 Primary Expressions](#a72-primary-expressions)
+    - [A.7.3 Postfix Expressions](#a73-postfix-expressions)
+      - [A.7.3.1 Array References](#a731-array-references)
+      - [A.7.3.2 Function Calls](#a732-function-calls)
+      - [A.7.3.3 Structure References](#a733-structure-references)
+      - [A.7.3.4 Postfix Incrementation](#a734-postfix-incrementation)
+    - [A.7.4 Unary Operators](#a74-unary-operators)
+      - [A.7.4.1 Prefix Incrementation Operators](#a741-prefix-incrementation-operators)
+      - [A.7.4.2 Address Operator](#a742-address-operator)
+      - [A.7.4.3 Indirection Operator](#a743-indirection-operator)
+      - [A.7.4.4 Unary Plus Operator](#a744-unary-plus-operator)
+      - [A.7.4.5 Unary Minus Operator](#a745-unary-minus-operator)
+      - [A.7.4.6 One's Complement Operator](#a746-ones-complement-operator)
+      - [A.7.4.7 Logical Negation Operator](#a747-logical-negation-operator)
+      - [A.7.4.8 Sizeof Operator](#a748-sizeof-operator)
+    - [A.7.5 Casts](#a75-casts)
+    - [A.7.6 Multiplicative Operators](#a76-multiplicative-operators)
     - [A.7.17 Assignment Expressions](#a717-assignment-expressions)
   - [A.8 Declarations](#a8-declarations)
     - [A.8.2 Type Specifiers](#a82-type-specifiers)
@@ -223,6 +240,61 @@ ignore overflow in evaluation of signed integral expressions and assignments,
 but this behavior is not guaranteed.
 
 ### A.7.1 Pointer Conversion
+
+### A.7.2 Primary Expressions
+
+Primary expressions are identifiers, constants, strings, or expressions in
+parentheses.
+
+### A.7.3 Postfix Expressions
+
+#### A.7.3.1 Array References
+
+#### A.7.3.2 Function Calls
+
+#### A.7.3.3 Structure References
+
+#### A.7.3.4 Postfix Incrementation
+
+### A.7.4 Unary Operators
+
+#### A.7.4.1 Prefix Incrementation Operators
+
+eg. `++var`
+
+#### A.7.4.2 Address Operator
+
+`&`
+
+#### A.7.4.3 Indirection Operator
+
+`*`
+
+#### A.7.4.4 Unary Plus Operator
+
+`+`
+
+#### A.7.4.5 Unary Minus Operator
+
+`-`
+
+#### A.7.4.6 One's Complement Operator
+
+`~`
+
+#### A.7.4.7 Logical Negation Operator
+
+`!`
+
+#### A.7.4.8 Sizeof Operator
+
+`sizeof`
+
+### A.7.5 Casts
+
+`(type-name)cast-expression`
+
+### A.7.6 Multiplicative Operators
 
 >>>>> progress
 
