@@ -30,8 +30,6 @@ disciplines according to the
 
 1. [Physics](https://en.wikipedia.org/wiki/Physics)
     1. [Miscellaneous](phys_misc)
-        1. Six Easy Pieces: Essentials of Physics by Its Most Brilliant
-            Teacher
 
 ### Ⅳ. [Formal Science](https://en.wikipedia.org/wiki/Formal_science)
 
@@ -72,13 +70,6 @@ disciplines according to the
         3. [Software Testing](software_engineering/software_testing)
     10. Theory of Computation
     11. [Miscellaneous](cs_misc)
-        1. Data Management
-        2. macOS
-        3. [Markdown](cs_misc/markdown)
-        4. TeXs
-        5. [Unix-like](cs_misc/unix-like)
-        6. Virtual Machines
-        7. Windows
 
 ### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)
 
