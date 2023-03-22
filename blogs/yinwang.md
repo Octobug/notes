@@ -6,6 +6,20 @@
 >
 > `4d0ad8542d2d559b179f5f6da34cd9f2c65f8f50`
 
+- [当然我在扯淡](#当然我在扯淡)
+  - [2021](#2021)
+  - [2020](#2020)
+  - [2019](#2019)
+  - [2018](#2018)
+  - [2017](#2017)
+  - [2016](#2016)
+  - [2015](#2015)
+  - [2014](#2014)
+  - [2013](#2013)
+  - [2012](#2012)
+
+## 2021
+
 - 2021年07月28日 - [居里夫人，核武器和诺贝尔奖](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%B1%85%E9%87%8C%E5%A4%AB%E4%BA%BA%EF%BC%8C%E6%A0%B8%E6%AD%A6%E5%99%A8%E5%92%8C%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%A5%96.md)
 - 2021年07月27日 - [居里夫人，核物理和诺贝尔奖](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%B1%85%E9%87%8C%E5%A4%AB%E4%BA%BA%EF%BC%8C%E6%A0%B8%E7%89%A9%E7%90%86%E5%92%8C%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%A5%96.md)
 - 2021年07月25日 - [阿波罗登月是骗局](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E9%98%BF%E6%B3%A2%E7%BD%97%E7%99%BB%E6%9C%88%E6%98%AF%E9%AA%97%E5%B1%80.md)
@@ -19,6 +33,9 @@
 - 2021年01月26日 - [巴赫，肖邦与莫扎特](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%B7%B4%E8%B5%AB%EF%BC%8C%E8%82%96%E9%82%A6%E4%B8%8E%E8%8E%AB%E6%89%8E%E7%89%B9.md)
 - 2021年01月21日 - [巴赫与莫扎特](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%B7%B4%E8%B5%AB%E4%B8%8E%E8%8E%AB%E6%89%8E%E7%89%B9.md)
 - 2020年12月30日 - [吉他的正确调音方式](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%90%89%E4%BB%96%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%B0%83%E9%9F%B3%E6%96%B9%E5%BC%8F.md)
+
+## 2020
+
 - 2020年12月30日 - [吉他的正确调弦方式](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%90%89%E4%BB%96%E7%9A%84%E6%AD%A3%E7%A1%AE%E8%B0%83%E5%BC%A6%E6%96%B9%E5%BC%8F.md)
 - 2020年12月21日 - [音乐的语言是很糟糕的](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E9%9F%B3%E4%B9%90%E7%9A%84%E8%AF%AD%E8%A8%80%E6%98%AF%E5%BE%88%E7%B3%9F%E7%B3%95%E7%9A%84.md)
 - 2020年11月13日 - [中国的审美问题](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%AE%A1%E7%BE%8E%E9%97%AE%E9%A2%98.md)
@@ -55,6 +72,9 @@
 - 2020年01月17日 - [专家顾问服务实施方案（试运行）](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E4%B8%93%E5%AE%B6%E9%A1%BE%E9%97%AE%E6%9C%8D%E5%8A%A1%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88%EF%BC%88%E8%AF%95%E8%BF%90%E8%A1%8C%EF%BC%89.md)
 - 2020年01月16日 - [我的事业计划](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%88%91%E7%9A%84%E4%BA%8B%E4%B8%9A%E8%AE%A1%E5%88%92.md)
 - 2020年01月15日 - [未来的事业](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%9C%AA%E6%9D%A5%E7%9A%84%E4%BA%8B%E4%B8%9A.md)
+
+## 2019
+
 - 2019年12月31日 - [2020新年寄语](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/2020%E6%96%B0%E5%B9%B4%E5%AF%84%E8%AF%AD.md)
 - 2019年12月26日 - [所谓“成功”](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%89%80%E8%B0%93%E2%80%9C%E6%88%90%E5%8A%9F%E2%80%9D.md)
 - 2019年12月25日 - [警惕“编译器人”和“函数式程序员”.md](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%AD%A6%E6%83%95%E2%80%9C%E7%BC%96%E8%AF%91%E5%99%A8%E4%BA%BA%E2%80%9D%E5%92%8C%E2%80%9C%E5%87%BD%E6%95%B0%E5%BC%8F%E7%A8%8B%E5%BA%8F%E5%91%98%E2%80%9D.md)
@@ -79,11 +99,17 @@
 - 2019年07月31日 - [关于人的素质](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%85%B3%E4%BA%8E%E4%BA%BA%E7%9A%84%E7%B4%A0%E8%B4%A8.md)
 - 2019年07月21日 - [再谈“P vs NP”问题](http://www.yinwang.org/blog-cn/2019/07/21/pnp2)
 - 2019年07月12日 - [学习的智慧](http://www.yinwang.org/blog-cn/2019/07/12/learning-philosophy)
+
+## 2018
+
 - 2018年11月23日 - [解谜英语语法](http://www.yinwang.org/blog-cn/2018/11/23/grammar)
 - 2018年04月13日 - [解谜计算机科学](http://www.yinwang.org/blog-cn/2018/04/13/computer-science)
 - 2018年03月27日 - [扶门的礼仪](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E6%89%B6%E9%97%A8%E7%9A%84%E7%A4%BC%E4%BB%AA.md)
 - 2018年03月08日 - [从苹果产品的设计错误学教训](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E4%BB%8E%E8%8B%B9%E6%9E%9C%E4%BA%A7%E5%93%81%E7%9A%84%E8%AE%BE%E8%AE%A1%E9%94%99%E8%AF%AF%E5%AD%A6%E6%95%99%E8%AE%AD.md)
 - 2018年02月22日 - [智能合约和形式验证](http://www.yinwang.org/blog-cn/2018/02/22/smart-contract)
+
+## 2017
+
 - 2017年11月09日 - [iPhone X](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/iPhone%20X.md)
 - 2017年11月05日 - [网络用语](http://www.yinwang.org/blog-cn/2017/11/05/words)
 - 2017年11月01日 - [理性的力量](http://www.yinwang.org/blog-cn/2017/11/01/power-of-reasoning)
@@ -100,6 +126,9 @@
 - [x] 2017年04月23日 - [人工智能的局限性](http://www.yinwang.org/blog-cn/2017/04/23/ai)
 - [x] 2017年04月17日 - [美国公司管理层的洗脑技巧](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%BE%8E%E5%9B%BD%E5%85%AC%E5%8F%B8%E7%AE%A1%E7%90%86%E5%B1%82%E7%9A%84%E6%B4%97%E8%84%91%E6%8A%80%E5%B7%A7.md)
 - [x] 2017年04月14日 - [经验和洞察力](http://www.yinwang.org/blog-cn/2017/04/14/experience-and-insight)
+
+## 2016
+
 - [x] 2016年10月13日 - [C# 的 IDisposable 接口](http://www.yinwang.org/blog-cn/2016/10/13/c-sharp-disposable)
 - [x] 2016年10月12日 - [C 编译器优化的 Bug](http://www.yinwang.org/blog-cn/2016/10/12/compiler-bug)
 - [x] 2016年09月18日 - [对 Rust 语言的分析](http://www.yinwang.org/blog-cn/2016/09/18/rust)
@@ -117,6 +146,9 @@
 - [x] 2016年02月12日 - [我看自动驾驶技术](http://www.yinwang.org/blog-cn/2016/02/12/self-driving-car)
 - [x] 2016年01月18日 - [给Java说句公道话](http://www.yinwang.org/blog-cn/2016/01/18/java)
 - [x] 2016年01月10日 - [Tesla Autopilot](http://www.yinwang.org/blog-cn/2016/01/10/tesla-autopilot)
+
+## 2015
+
 - [x] 2015年12月21日 - [Tesla Model X的车门设计问题](http://www.yinwang.org/blog-cn/2015/12/21/tesla-model-x)
 - [x] 2015年12月12日 - [Tesla Model S 的设计失误](http://www.yinwang.org/blog-cn/2015/12/12/tesla-model-s)
 - [x] 2015年11月21日 - [编程的智慧](http://www.yinwang.org/blog-cn/2015/11/21/programming-philosophy)
@@ -139,6 +171,9 @@
 - [x] 2015年02月01日 - [创造者的思维方式](http://www.yinwang.org/blog-cn/2015/02/01/creative-thinking)
 - [x] 2015年01月19日 - [小费和中国人的尊严](http://www.yinwang.org/blog-cn/2015/01/19/tips)
 - [x] 2015年01月05日 - [牛校综合征](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%89%9B%E6%A0%A1%E7%BB%BC%E5%90%88%E5%BE%81.md)
+
+## 2014
+
 - [x] 2014年11月12日 - [恶评《星际穿越》](http://www.yinwang.org/blog-cn/2014/11/12/interstellar)
 - [x] 2014年09月15日 - [谈创新](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%B0%88%E5%88%9B%E6%96%B0.md)
 - [x] 2014年08月15日 - [贡献和价值](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E8%B4%A1%E7%8C%AE%E5%92%8C%E4%BB%B7%E5%80%BC.md)
@@ -155,6 +190,9 @@
 - [x] 2014年01月28日 - [RubySonar：一个 Ruby 静态分析器](http://www.yinwang.org/blog-cn/2014/01/28/rubysonar)
 - [x] 2014年01月25日 - [程序语言与……](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E2%80%A6%E2%80%A6.md)
 - [x] 2014年01月04日 - [我和权威的故事](http://www.yinwang.org/blog-cn/2014/01/04/authority)
+
+## 2013
+
 - [x] 2013年11月25日 - [PySonar2 与 Sourcegraph 集成完毕](http://www.yinwang.org/blog-cn/2013/11/25/pysonar2-sg)
 - [x] 2013年07月13日 - [丘奇和图灵](http://www.yinwang.org/blog-cn/2013/07/13/church-turing)
 - [x] 2013年07月06日 - [Pydiff Python结构化程序比较工具](http://www.yinwang.org/blog-cn/2013/07/06/PyDiff-Python%E7%BB%93%E6%9E%84%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%AF%94%E8%BE%83%E5%B7%A5%E5%85%B7)
@@ -191,6 +229,9 @@
 - [x] 2013年03月07日 - [谈 Linux，Windows 和 Mac](http://www.yinwang.org/blog-cn/2013/03/07/linux-windows-mac)
 - [x] 2013年03月07日 - [解密“设计模式”](http://www.yinwang.org/blog-cn/2013/03/07/design-patterns)
 - [x] 2013年03月04日 - [Braid - 一个发人深思的游戏](http://www.yinwang.org/blog-cn/2013/03/04/braid)
+
+## 2012
+
 - [x] 2012年09月18日 - [TeXmacs：一个真正“所见即所得”的排版系统](http://www.yinwang.org/blog-cn/2012/09/18/texmacs)
 - [x] 2012年08月01日 - [怎样写一个解释器](http://www.yinwang.org/blog-cn/2012/08/01/interpreter)
 - [x] 2012年07月25日 - [什么是语义学](http://www.yinwang.org/blog-cn/2012/07/25/semantics)
