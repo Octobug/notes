@@ -8,3 +8,4 @@ Blogs that I've been reading, listed in alphabetical order.
 - [ ] [The GitHub Blog](https://github.blog/)
 - [ ] [Yingyu's Blog](https://wingu.se/)
 - [ ] [银色子弹](https://silverrainz.me/)
+- [ ] [云风的 BLOG](https://codingnow.com/)
