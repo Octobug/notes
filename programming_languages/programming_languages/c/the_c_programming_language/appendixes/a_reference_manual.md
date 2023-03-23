@@ -48,9 +48,41 @@
       - [A.7.4.8 Sizeof Operator](#a748-sizeof-operator)
     - [A.7.5 Casts](#a75-casts)
     - [A.7.6 Multiplicative Operators](#a76-multiplicative-operators)
+    - [A.7.7 Additive Operators](#a77-additive-operators)
+    - [A.7.8 Shift Operators](#a78-shift-operators)
+    - [A.7.9 Relational Operators](#a79-relational-operators)
+    - [A.7.10 Equality Operators](#a710-equality-operators)
+    - [A.7.11 Bitwise AND Operator](#a711-bitwise-and-operator)
+    - [A.7.12 Bitwise Exclusive OR Operator](#a712-bitwise-exclusive-or-operator)
+    - [A.7.13 Bitwise Inclusive OR Operator](#a713-bitwise-inclusive-or-operator)
+    - [A.7.14 Logical AND Operator](#a714-logical-and-operator)
+    - [A.7.15 Logical OR Operator](#a715-logical-or-operator)
+    - [A.7.16 Conditional Operator](#a716-conditional-operator)
     - [A.7.17 Assignment Expressions](#a717-assignment-expressions)
+    - [A.7.18 Comma Operator](#a718-comma-operator)
+    - [A.7.19 Constant Expressions](#a719-constant-expressions)
   - [A.8 Declarations](#a8-declarations)
+    - [A.8.1 Storage Class Specifiers](#a81-storage-class-specifiers)
     - [A.8.2 Type Specifiers](#a82-type-specifiers)
+    - [A.8.3 Structure and Union Declarations](#a83-structure-and-union-declarations)
+    - [A.8.4 Enumerations](#a84-enumerations)
+    - [A.8.5 Declarators](#a85-declarators)
+    - [A.8.6 Meaning of Declarators](#a86-meaning-of-declarators)
+      - [A.8.6.1 Pointer Declaratiors](#a861-pointer-declaratiors)
+      - [A.8.6.2 Array Declarators](#a862-array-declarators)
+      - [A.8.6.3 Function Declarators](#a863-function-declarators)
+    - [A.8.7 Initializations](#a87-initializations)
+    - [A.8.8 Type names](#a88-type-names)
+    - [A.8.9 Typedef](#a89-typedef)
+    - [A.8.10 Type Equivalence](#a810-type-equivalence)
+  - [A.9 Statements](#a9-statements)
+    - [A.9.1 Labeled Statements](#a91-labeled-statements)
+    - [A.9.2 Expression Statement](#a92-expression-statement)
+    - [A.9.3 Compound Statement](#a93-compound-statement)
+    - [A.9.4 Selection Statements](#a94-selection-statements)
+    - [A.9.5 Iteration Statements](#a95-iteration-statements)
+    - [A.9.6 Jump Statements](#a96-jump-statements)
+  - [A.10 External Declarations](#a10-external-declarations)
 
 ## A.1 Introduction
 
@@ -296,7 +328,53 @@ eg. `++var`
 
 ### A.7.6 Multiplicative Operators
 
->>>>> progress
+`*`, `/`, and `%`
+
+### A.7.7 Additive Operators
+
+`+`, `-`
+
+A pointer to an object in an array and a value of any integral type may be
+added. The latter is converted to an address offset by multiplying it by the
+size of the object to which the pointer points. Thus if `p` is a pointer to an
+object in an array, the expression `p + 1` is a pointer to the next object in
+the array.
+
+### A.7.8 Shift Operators
+
+`<<`, `>>`
+
+### A.7.9 Relational Operators
+
+`<`, `>`, `<=`, `>=`
+
+### A.7.10 Equality Operators
+
+`==`, `!=`
+
+### A.7.11 Bitwise AND Operator
+
+`&`
+
+### A.7.12 Bitwise Exclusive OR Operator
+
+`^`
+
+### A.7.13 Bitwise Inclusive OR Operator
+
+`|`
+
+### A.7.14 Logical AND Operator
+
+`&&`
+
+### A.7.15 Logical OR Operator
+
+`||`
+
+### A.7.16 Conditional Operator
+
+`? E1 : E2`
 
 ### A.7.17 Assignment Expressions
 
@@ -321,6 +399,12 @@ taken place.
 
 An expression of the form `E1 op= E2` is equivalent to `E1 = E1 op (E2)` except
 that `E1` is evaluated only once.
+
+### A.7.18 Comma Operator
+
+`,`
+
+### A.7.19 Constant Expressions
 
 ## A.8 Declarations
 
@@ -356,6 +440,16 @@ declarator = initializer
 Declarators contain the names being declared. A declaration must have at least
 one declarator, or its type specifier must declare a structure tag, a union
 tag, or the members of an enumeration; empty declarations are not permitted.
+
+### A.8.1 Storage Class Specifiers
+
+The storage class specifiers are:
+
+- `auto`
+- `register`
+- `static`
+- `extern`
+- `typedef`
 
 ### A.8.2 Type Specifiers
 
@@ -409,3 +503,65 @@ pointer to a device register might be declared as a pointer to `volatile`, in
 order to prevent the compiler from removing apparently redundant references
 through the pointer. Except that it should diagnose explicit attempts to change
 `const` objects, a compiler may ignore these qualifiers.
+
+### A.8.3 Structure and Union Declarations
+
+### A.8.4 Enumerations
+
+### A.8.5 Declarators
+
+### A.8.6 Meaning of Declarators
+
+#### A.8.6.1 Pointer Declaratiors
+
+#### A.8.6.2 Array Declarators
+
+#### A.8.6.3 Function Declarators
+
+### A.8.7 Initializations
+
+### A.8.8 Type names
+
+### A.8.9 Typedef
+
+Declarations whose storage class specifier is `typedef` do not declare objects;
+instead they define identifiers that name types. These identifiers are called
+typedef names.
+
+### A.8.10 Type Equivalence
+
+## A.9 Statements
+
+Except as described, statements are executed in sequence. Statements are
+executed for their effect, and do not have values.
+
+### A.9.1 Labeled Statements
+
+```pseudo
+case constant-expression: statement
+default: statement
+```
+
+### A.9.2 Expression Statement
+
+### A.9.3 Compound Statement
+
+The body of a function definition is a compound statement.
+
+### A.9.4 Selection Statements
+
+`if...else`, `switch...case...`
+
+### A.9.5 Iteration Statements
+
+Iteration statements specify looping.
+
+`while`, `do...while`, `for(;;)`
+
+### A.9.6 Jump Statements
+
+`goto`, `continue`, `break`, `return`
+
+## A.10 External Declarations
+
+>>>>> progress
