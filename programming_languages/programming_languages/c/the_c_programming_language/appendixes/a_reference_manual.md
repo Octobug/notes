@@ -83,6 +83,23 @@
     - [A.9.5 Iteration Statements](#a95-iteration-statements)
     - [A.9.6 Jump Statements](#a96-jump-statements)
   - [A.10 External Declarations](#a10-external-declarations)
+    - [A.10.1 Function Definitions](#a101-function-definitions)
+    - [A.10.2 External Declarations](#a102-external-declarations)
+  - [A.11 Scope and Linkage](#a11-scope-and-linkage)
+    - [A.11.1 Lexical Scope](#a111-lexical-scope)
+    - [A.11.2 Linkage](#a112-linkage)
+  - [A.12 Preprocessing](#a12-preprocessing)
+    - [A.12.1 Trigraph Sequences](#a121-trigraph-sequences)
+    - [A.12.2 Line Splicing](#a122-line-splicing)
+    - [A.12.3 Macro Definition and Expansion](#a123-macro-definition-and-expansion)
+    - [A.12.4 File Inclusion](#a124-file-inclusion)
+    - [A.12.5 Conditional Compilation](#a125-conditional-compilation)
+    - [A.12.6 Line Control](#a126-line-control)
+    - [A.12.7 Error Generation](#a127-error-generation)
+    - [A.12.8 Pragmas](#a128-pragmas)
+    - [A.12.9 Null Directive](#a129-null-directive)
+    - [A.12.10 Predefined Names](#a1210-predefined-names)
+  - [A.13 Grammar](#a13-grammar)
 
 ## A.1 Introduction
 
@@ -564,4 +581,73 @@ Iteration statements specify looping.
 
 ## A.10 External Declarations
 
->>>>> progress
+The unit of input provided to the C compiler is called a translation unit; it
+consists of a sequence of external declarations, which are either declarations
+or function definitions.
+
+### A.10.1 Function Definitions
+
+### A.10.2 External Declarations
+
+## A.11 Scope and Linkage
+
+A program need not all be compiled at one time: the source text may be kept in
+several files containing translation units, and precompiled routines may be
+loaded from libraries.
+
+There are two kinds of scope to consider:
+
+1. The `lexical scope` of an identifier which is the region of the program text
+   within which the identifier's characteristics are understood;
+2. The scope associated with objects and functions with external linkage, which
+   determines the connections between identifiers in separately compiled
+   translation units.
+
+### A.11.1 Lexical Scope
+
+### A.11.2 Linkage
+
+## A.12 Preprocessing
+
+A preprocessor performs macro substitution, conditional compilation, and
+inclusion of named files.
+
+### A.12.1 Trigraph Sequences
+
+The character set of C source programs is contained within seven-bit ASCII, but
+is a superset of the ISO 646-1983 Invariant Code Set. In order to enable
+programs to be represented in the reduced set, all occurrences of the following
+trigraph sequences are replaced by the corresponding single character.
+
+eg. `??=` -> `#`
+
+### A.12.2 Line Splicing
+
+`\`
+
+### A.12.3 Macro Definition and Expansion
+
+### A.12.4 File Inclusion
+
+### A.12.5 Conditional Compilation
+
+### A.12.6 Line Control
+
+### A.12.7 Error Generation
+
+A preprocessor line of the form
+
+```c
+# error token-sequence
+```
+
+causes the preprocessor to write a diagnostic message that includes the token
+sequence.
+
+### A.12.8 Pragmas
+
+### A.12.9 Null Directive
+
+### A.12.10 Predefined Names
+
+## A.13 Grammar
