@@ -25,7 +25,7 @@
       - [答案：思维训练：8. 跳层虚拟](#答案思维训练8-跳层虚拟)
   - [9. 名词从句中如何使用虚拟](#9-名词从句中如何使用虚拟)
     - [9.1 在下列词的宾语从句中](#91-在下列词的宾语从句中)
-    - [7.9.2 在 it is + 形容词/过去分词/特定名词 + that 的主语从句中](#792-在-it-is--形容词过去分词特定名词--that-的主语从句中)
+    - [9.2 在 it is + 形容词/过去分词/特定名词 + that 的主语从句中](#92-在-it-is--形容词过去分词特定名词--that-的主语从句中)
       - [一、形容词](#一形容词)
       - [二、过去分词](#二过去分词)
       - [三、特定的名词](#三特定的名词)
@@ -37,17 +37,20 @@
       - [一、对现在的虚拟](#一对现在的虚拟)
       - [二、对过去的虚拟](#二对过去的虚拟)
       - [三、对将来的虚拟](#三对将来的虚拟)
-  - [10.2 在 if only 感叹句中](#102-在-if-only-感叹句中)
+    - [10.2 在 if only 感叹句中](#102-在-if-only-感叹句中)
     - [10.3 在 as if/as though 引导的从句中](#103-在-as-ifas-though-引导的从句中)
       - [一、表示与现在事实相反或对现在情况有所怀疑，谓语用过去时](#一表示与现在事实相反或对现在情况有所怀疑谓语用过去时)
       - [二、表示与过去事实相反，谓语用过去完成时](#二表示与过去事实相反谓语用过去完成时)
-    - [10.4 在 it is (high) time (that) 从句中](#104-在-it-is-high-time-that-从句中)
+    - [10.4 在 it is (high/about) time (that) 从句中](#104-在-it-is-highabout-time-that-从句中)
     - [10.5 在 would rather, would (just) as soon, would sooner, would prefer 等从句中](#105-在-would-rather-would-just-as-soon-would-sooner-would-prefer-等从句中)
       - [一、would rather do sth](#一would-rather-do-sth)
       - [二、would rather have done sth](#二would-rather-have-done-sth)
       - [三、would rather sb. did](#三would-rather-sb-did)
       - [四、would rather sb. had done](#四would-rather-sb-had-done)
-  - [思维训练：10. 各种虚拟句型](#思维训练10-各种虚拟句型)
+    - [思维训练：10. 各种虚拟句型](#思维训练10-各种虚拟句型)
+      - [答案：思维训练：10. 各种虚拟句型](#答案思维训练10-各种虚拟句型)
+  - [综合训练：虚拟语气](#综合训练虚拟语气)
+    - [答案：综合训练：虚拟语气](#答案综合训练虚拟语气)
 
 语气 (mood) 是英文中谓语动词的一种变化形式，用来表示说话者的**意图和态度**。
 英文中的语气可分为三种：
@@ -702,7 +705,7 @@ Unfortunately, it was never done.
 - require
 - recommend
 - request
-- suggest
+- suggest (建议，表示“表示，显示”的意思时不使用虚拟语气)
 - urge
 
 `1` His father **urged** that he study medicine.
@@ -738,7 +741,7 @@ cloning be extended indefinitely, and possibly that it be made law.
 - `译` 美国生命伦理咨询委员会 (NBAC) 将会要求克林顿的关于禁止联邦基金用于人类克隆的“90
   天禁令”无限期延长，也许还会将其以法律的形式固定下来。
 
-### 7.9.2 在 it is + 形容词/过去分词/特定名词 + that 的主语从句中
+### 9.2 在 it is + 形容词/过去分词/特定名词 + that 的主语从句中
 
 #### 一、形容词
 
@@ -830,7 +833,7 @@ played after 11 o'clock at night.
 - demand
 - desire
 - idea
-- motion
+- motion (动议)
 - order
 - pray
 - preference
@@ -994,7 +997,7 @@ B: I've noticed it, too. I wish they would keep their squabbles to themselves.
 
 ⚠️ 即使将 wish 改为 wished，以上例句谓语的时态仍然不变。
 
-## 10.2 在 if only 感叹句中
+### 10.2 在 if only 感叹句中
 
 if only 表示“但愿”“要是……就好了”，其用法和 wish 基本相同，可表示对现在、过去和将来的虚拟，比
 wish 具有更强烈的感情色彩。
@@ -1059,7 +1062,7 @@ a single day had gone by.
 
 - `译` 他好像去过美国。
 
-### 10.4 在 it is (high) time (that) 从句中
+### 10.4 在 it is (high/about) time (that) 从句中
 
 表示“该是做什么事的时候了”，含有“晚了一点”的意思，从句中用过去时。
 
@@ -1200,6 +1203,308 @@ stayed at home.
   的意义和用法，都表示对过去的虚拟，意思是“还不如做了某事”，但实际上没有做。
 - `译` 因为天气的原因，我们的假期全给毁了。我们还不如就在家里呆着哪儿也不去呢！
 
-## 思维训练：10. 各种虚拟句型
+### 思维训练：10. 各种虚拟句型
+
+**请选择最佳答案填空。**
+
+*1. Sometimes I wish I ____ in a different time and a different place.*
+
+- *A. be living*
+- *B. were living*
+- *C. would live*
+- *D. would have lived*
+
+*2. It seems to be high time that this argument ____ put to an end.*
+
+- *A. must be*
+- *B. is*
+- *C. were*
+- *D. should be*
+
+*3. You don't have to be in such a hurry. I would rather you ____ on business
+first.*
+
+- *A. would go*
+- *B. will go*
+- *C. went*
+- *D. have gone*
+
+*4. Wouldn't you rather your child ____ to bed early?*
+
+- *A. go*
+- *B. went*
+- *C. would go*
+- *D. goes*
+
+#### 答案：思维训练：10. 各种虚拟句型
+
+1. B。这句是 wish 后面的宾语从句中的对现在的虚拟。
+2. C。在 it is high time that 从句中用过去时。
+3. C。这是 would rather 后面接从句的用法，意指“主语宁愿让另一个人做某事”。 这里从句的谓语用一般过去式，但表示的是现在或将来的事件，如同现在虚拟条件从句的谓语形式。
+4. B。同上一题。
+
+## 综合训练：虚拟语气
+
+**一、请选择最佳答案填空。**
+
+*1. George would certainly have attended the proceedings ____.*
+
+- *A. had he not had a flat tire*
+- *B. had the tire not flattened it self*
+- *C. if the flat tire hadn't happened*
+- *D. if he didn't get a flat tire*
+
+*2. ____ the sense of someone watching them, Ralph would have shouted at his
+wife.*
+
+- *A. Despite*
+- *B. Except*
+- *C. But for*
+- *D. Except for*
+
+*3. Sometimes I have thought it would be an excellent rule to live each day as
+if we ____ tomorrow.*
+
+- *A. should die*
+- *B. are to die*
+- *C. were dying*
+- *D. must die*
+
+*4. At the conference, it has been decided that she ____ an opportunity to go
+abroad as a sales representative.*
+
+- *A. is going to have*
+- *B. have*
+- *C. will have*
+- *D. has*
+
+*5. The women's magazines, deploring the statistics, urged that courses on
+marriage, and marriage counselors, ____ in the high schools.*
+
+- *A. installed*
+- *B. be installed*
+- *C. have been installed*
+- *D. installing*
+
+*6. I intend to move that our committee ____ Tom as chairman, and I hope that
+you will second my motion.*
+
+- *A. will apoint*
+- *B. appoint*
+- *C. appoints*
+- *D. has appointed*
+
+*7. The dean approved of the requirement that every student ____ on social
+investigation after summer vacation.*
+
+- *A. reports*
+- *B. report*
+- *C. reported*
+- *D. reporting*
+
+*8. A: I wish you ____ the play last night. B: It's a shame that I ____.*
+
+- *A. had attended/didn't*
+- *B. attended/didn't*
+- *C. had attended/hadn't*
+- *D. could attend/haven't*
+
+*9. The picture exhibition bored me to death. I wish I ____ to it.*
+
+- *A. have not gone*
+- *B. had not gone*
+- *C. didn't go*
+- *D. should not have gone*
+
+*10. It's about time I ____ something about home-decorating.*
+
+- *A. learn*
+- *B. learned*
+- *C. have learned*
+- *D. should learn*
+
+*11. If only we ____ a phone! I'm tired of queuing outside the public phone box.*
+
+- *A. had*
+- *B. had had*
+- *C. would have*
+- *D. Have had*
+
+*12. The manager would rather his daughter ____ in the same office.*
+
+- *A. had not worked*
+- *B. not no work*
+- *C. does not work*
+- *D. did not work*
+
+*13. He would rather ____ than worked last night.*
+
+- *A. have slept*
+- *B. has slept*
+- *C. sleep*
+- *D. slept*
+
+*14. In the United States a law requires that a warning label ____ on cigarette
+packages.*
+
+- *A. ought to be printed*
+- *B. needs to be printed*
+- *C. must be printed*
+- *D. should be printed*
+
+*15. If the United States had built more homes for people in 1995, the housing
+problems now in some parts of this country ____ so serious.*
+
+- *A. wouldn't be*
+- *B. will not have been*
+- *C. wouldn't have been*
+- *D. would have not been*
+
+*16. These facts suggested that women ____ in opportunity for physical exercise
+by cultural taboos.*
+
+- *A. should been limited*
+- *B. had been limited*
+- *C. be limited*
+- *D. have been limited*
+
+*17. I would very much like to have gone to see the movie, but I ____ a ticket.*
+
+- *A. shall not have*
+- *B. haven't had*
+- *C. don't have*
+- *D. didn't have*
+
+*18. The result has turned still worse than it ____.*
+
+- *A. would otherwise have been*
+- *B. would be otherwise*
+- *C. has otherwise been*
+- *D. had otherwise been*
+
+*19. He turned down her proposal that she ____ at the conference.*
+
+- *A. should offer*
+- *B. offer*
+- *C. offered*
+- *D. offering*
+
+*20. The school board listened quickly as John read the demands that his
+followers ____ for.*
+
+- *A. be demonstrating*
+- *B. demonstrate*
+- *C. had been demonstrating*
+- *D. have demonstrated*
+
+*21. It was suggested at the meeting that effective measures ____ to solve the
+problem.*
+
+- *A. be taken*
+- *B. were taken*
+- *C. must be taken*
+- *D. take*
+
+*22. I move that he ____ discharged for his serious mistake.*
+
+- *A. be to be*
+- *B. was to be*
+- *C. is to be*
+- *D. would be*
+
+*23. Mr. Smith didn't phone me last night, but he ____.*
+
+- *A. might have to*
+- *B. would do*
+- *C. had to*
+- *D. should have*
+
+*24. You ____ her in her office last Friday; she's been out of town for two
+weeks.*
+
+- *A. needn't have seen*
+- *B. must have seen*
+- *C. might have seen*
+- *D. can't have seen*
+
+*25. Sally can't have been in Paris, or ____.*
+
+- *A. I met*
+- *B. I'd met*
+- *C. I'll meet him*
+- *D. I'd have met*
+
+*26. To be frank, I'd rather you ____ in the case.*
+
+- *A. not to be involved*
+- *B. not involved*
+- *C. will not be involved*
+- *D. were not involved*
+
+*27. It seems to be high time that this argument ____ put to an end.*
+
+- *A. must be*
+- *B. is*
+- *C. were*
+- *D. should be*
+
+*28. The dentist said that my tooth went worse and I ____ it pulled out.*
+
+> 存疑
+
+- *A. should have had*
+- *B. might have had*
+- *C. needn't have had*
+- *D. mustn't have had*
+
+*29. The businuss is risky. But ____, we would be rich.*
+
+- *A. should we succeed*
+- *B. would we succeed*
+- *C. might we succeed*
+- *D. could we succeed*
+
+*81.*
 
 >>>>> progress
+
+### 答案：综合训练：虚拟语气
+
+1. A。当 if 引导的条件句省去 if 时，可将 should, had 或 were 置于句首，从而构成倒装虚拟句。
+   C 选项形式正确，但不符合英语的表达习惯。
+2. C。这句是“虚拟主句 + but + 陈述句”结构，由于前面不是一个句子而是一个名词短语，所以要加介词
+   for 构成介词短语。
+3. A。将来虚拟。
+4. B。在 it is + 过去分词 (decided) + that 的主语从句中要使用虚拟语气，谓语动词使用 should do，这里省略了 should。
+5. B。在 urge 的宾语从句中要使用虚拟语气，谓语动词使用 should do，这里省略了 should。
+6. B。在 move 的宾语从句中要使用虚拟语气，谓语动词使用 should do，这里省略了 should。
+7. B。在 requirement 的同位语从句中，谓语动词使用 should do，这里省略了 should。
+8. A。第一句时对过去的虚拟；第二句是简单陈述一件过去发生的事情。
+9. B。对过去的虚拟。
+10. B。在 it is about time (that) 从句中，谓语动词使用一般过去时。
+11. A。if only 句型对现在的虚拟，谓语动词用一般过去时。
+12. D。这是 would rather 后面接从句的用法，意指“主语宁愿让另一个人做某事”。
+    这里从句的谓语用**一般过去式**，但表示的是现在或将来的事件。
+13. A。这是 would rather 后面接动词完成式的用法，表示过去的事件，意指“某人宁愿自己过去做了某事，但实际上没有做”。
+    have worked 中的 have 被省略。
+14. D。在 require 的宾语从句中需要使用虚拟语气，谓语动词的形式为 should do。
+15. A。对现在的虚拟。
+16. B。这里的 suggest 是“表明，显示”的意思，而不是“建议”，因此不使用虚拟语气。
+17. D。主语 + would have done, BUT + 主语 + 一般过去时的谓语形式，表示对过去事实的虚拟。
+18. A。这里有 otherwise，表明要用虚拟，而且是虚拟的主句形式。
+    根据句意判断，这里是表示对过去的虚拟，因此使用 would have done 的形式。
+19. C。这里 that she...at the conference 是一个定语从句，不是同位语从句，因此不需要使用虚拟语气，而是用正常的时态。
+    这里是表示过去，所以选 offered。
+20. C。这里 that his followers ____ for 是一个定语从句，不是同位语从句，因此不需要使用虚拟语气，而是用正常的时态。
+    这里是表示过去完成进行时态，所以选 had been demonstrating。
+21. A。在 it is + suggested + that 的主语从句中要使用虚拟语气，谓语动词使用 should
+    do，这里省略了 should。
+22. A。move 的宾语从句中要使用虚拟语气，谓语动词使用 should do，这里省略了 should。
+23. D。跳层虚拟。
+24. D。这里是情态动词表示过去推测，不是虚拟语气。
+25. D。主语 + 一般过去时谓语形式, or + 主语 + would have done：表示对过去事实的虚拟。
+26. D。would rather sb. did。
+27. C。在 it is high time that 从句中需要使用虚拟语气，谓语形式为一般过去时，如果是 be
+    动词则用 were。
+28. A。表示对过去的虚拟。
+29. A。当 if 引导的条件句省去 if 时，可将 should 倒装置于句首。
