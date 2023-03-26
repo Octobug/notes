@@ -27,8 +27,8 @@
    3. 分词
    4. 从句与非谓语
 6. 虚拟语气、情态动词、倒装与强调
-   1. [虚拟语气](subjunctive_mood.md)
-   2. [情态动词](modal_auxiliary_verb.md)
+   1. [情态动词](modal_auxiliary_verb.md)
+   2. [虚拟语气](subjunctive_mood.md)
    3. [倒装与强调](inverted_and_emphatic.md)
 7. 其他
    1. [易错词汇与短语](words_and_phrases.md)
@@ -63,7 +63,7 @@
 - [x] [4. 状语从句](adverbial_clause.md)
 - [x] [5. 完成时态](perfect_tense.md)
 - [x] [6. 完成进行时态](perfect_continuous_tense.md)
-- [ ] [7. 虚拟语气](subjunctive_mood.md)
+- [x] [7. 虚拟语气](subjunctive_mood.md)
 - [ ] [8. 情态动词](modal_auxiliary_verb.md)
 
 #### 高级教程：驾驭语法

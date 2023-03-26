@@ -1464,9 +1464,27 @@ weeks.*
 - *C. might we succeed*
 - *D. could we succeed*
 
-*81.*
+*30. Through worldly loss he came to an insight into spiritual truth to which he
+might ____ have been a stranger.*
 
->>>>> progress
+- *A. no more*
+- *B. no less*
+- *C. neither*
+- *D. otherwise*
+
+*31. I had intended to go to the airport yesterday, in which case I ____ the
+guests.*
+
+- *A. might meet*
+- *B. would meet*
+- *C. might have met*
+- *D. had met*
+
+**二、辨别改错。**
+
+*32. Your math instructor ***would have been***`A` happy to give you a makeup
+examination ***had you gone***`B` and ***explained***`C` that your parents
+***had been***`D` ill at the time.*
 
 ### 答案：综合训练：虚拟语气
 
@@ -1508,3 +1526,7 @@ weeks.*
     动词则用 were。
 28. A。表示对过去的虚拟。
 29. A。当 if 引导的条件句省去 if 时，可将 should 倒装置于句首。
+30. D。主语 + 一般过去时 + otherwise + 主语 + might have done：**表示对过去事实的虚拟**。
+    `译` 通过世俗的损失，他洞察到灵性的真理，否则他可能对这些真理感到陌生。
+31. C。对过去的推测。
+32. D。改为 were。
