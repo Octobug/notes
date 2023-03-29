@@ -15,6 +15,6 @@
 - [x] [Chapter 6: Structures](6_structures)
 - [x] [Chapter 7: Input and Output](7_input_and_output)
 - [x] [Chapter 8: The UNIX System Interface](8_the_unix_system_interface)
-- [ ] [Appendix A - Reference Manual](appendixes/a_reference_manual.md)
-- [ ] [Appendix B - Standard Library](appendixes/b_standard_library.md)
-- [ ] [Appendix C - Summary of Changes](appendixes/c_summary_of_changes.md)
+- [x] [Appendix A - Reference Manual](appendixes/a_reference_manual.md)
+- [x] [Appendix B - Standard Library](appendixes/b_standard_library.md)
+- [x] Appendix C - Summary of Changes
