@@ -90,4 +90,5 @@ disciplines according to the
 ## Miscellaneous
 
 - [Blogs](blogs) that I've been reading.
+- [Scholars](scholars) that I desire to know about.
 - [Thoughts](thoughts) on everything.
