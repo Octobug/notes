@@ -41,7 +41,7 @@ disciplines according to the
     2. Computer Graphics
     3. [Computer Network](computer_network)
         1. IETF
-        2. Internet Protocol Suite
+        2. [Internet Protocol Suite](computer_network/internet_protocol_suite)
         3. [Network Programming](computer_network/network_programming)
     4. [Databases](databases)
         1. [Database Design](databases/database_design)

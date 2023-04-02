@@ -8,9 +8,8 @@
 
 ### Table of Contents
 
-- [ ] 0. Foreword and Prefaces
-  - > progress: Content Changes for the Second Edition
-- [ ] 1. Introduction
+- [x] 0. Foreword and Prefaces
+- [ ] [1. Introduction](introduction)
 - [ ] 2. The Internet Address Architecture
 - [ ] 3. Link Layer
 - [ ] 4. ARP: Address Resolution Protocol
