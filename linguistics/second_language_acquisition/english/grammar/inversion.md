@@ -81,9 +81,9 @@ So long as men can breathe, or eyes can see,
 
 这类地点副词有 here, there 等。
 
-`1`: There goes the last bus.
+`1`: Here is your coffee.
 
-- The last bus goes.
+- Your coffee is here.
 
 `2`: Here comes the bus.
 
