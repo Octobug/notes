@@ -554,10 +554,36 @@ student but to teach hime how to be precise.*
 
 ### 3.4 在及物动词后作宾语
 
-- I've learned that love, not time, heals all wounds. I've learned that everyone
-you meet deserves to be greeted with a smile.
-- I've learned that there's nothing sweeter than sleeping with your babies and
+`1` I've learned that love, not time, heals all wounds. I've learned that
+everyone you meet deserves to be greeted with a smile.
+
+`2` I've learned that there's nothing sweeter than sleeping with your babies and
 feeling their breath on your cheeks.
+
+`3` I have discovered as perhaps Kelsey will (discover) after her
+much-publicized resignation from the editorship of *She* after a build up of
+stress, that abandoning the doctrine of "juggling your life," and making the
+alternative move into "downshifting" brings with it far greater rewards than
+financial success and social status.
+
+- 本句的主要结构是 I have discovered... that abandoning... and making... brings...
+  far greater rewards...
+- that 引导宾语从句：that abandoning... and making... brings... far greater
+  rewards...，做 discovered 的宾语；
+  - abandoning the doctrine of "juggling your life" 和 making the alternative
+    move into "downshifting" 是两个并列的主语；
+  - far greater rewards than financial success and social status 做 brings
+    的宾语；
+- as perhaps Kelsey will (discover) after her much-publicized resignation from
+  the editorship of She after a build-up of stress
+  是插入结构，做比较状语，谓语部分承上文省略了谓语主要动词 discover，该部分主要结构是 as
+  perhaps Kelsey will (discover)...，介词短语 after her much-publicized
+  resignation from the editorship of She after a build-up of stress
+  做时间状语，修饰 as perhaps Kelsey will (discover)，介词短语
+  after a build-up of stress 是时间状语，修饰 resignation from the editorship of
+  She。
+- as 在从句中作宾语。
+- `译` 或许正像凯茜在不堪重负后而公开宣称辞去她在《她》杂志编辑的职务后一样，我发现放弃“为生活忙碌”的信仰转而过一种比较悠闲的生活所带给你的回报远远大于经济成功和社会地位。
 
 ### 3.5 在双宾动词后作直接宾语
 

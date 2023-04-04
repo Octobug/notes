@@ -25,7 +25,7 @@
       - [一、先行词是单个的名词](#一先行词是单个的名词)
       - [二、先行词是一个短语](#二先行词是一个短语)
       - [三、先行词是一个句子](#三先行词是一个句子)
-      - [四、补充：介词 + which](#四补充介词--which)
+      - [四、介词 + which](#四介词--which)
     - [3.4 that 可以指代“人”，也可以指代“物”](#34-that-可以指代人也可以指代物)
       - [3.4.1 先行词中同时出现"人"和"物"时，用 that](#341-先行词中同时出现人和物时用-that)
       - [3.4.2 先行词为指"物"的 all, little, few, much, none 和 the first 时，用 that](#342-先行词为指物的-all-little-few-much-none-和-the-first-时用-that)
@@ -34,7 +34,8 @@
       - [3.4.5 that 不用在非限制性定语从句中](#345-that-不用在非限制性定语从句中)
       - [3.4.6 不能用于介词后面](#346-不能用于介词后面)
     - [3.5 先行词与关系词被分隔](#35-先行词与关系词被分隔)
-    - [3.6 关系代词 as](#36-关系代词-as)
+    - [3.6 定语从句中的主谓一致问题](#36-定语从句中的主谓一致问题)
+    - [3.7 关系代词 as](#37-关系代词-as)
     - [思维训练 3. 关系代词与先行词的搭配关系](#思维训练-3-关系代词与先行词的搭配关系)
   - [4. 关系副词的用法](#4-关系副词的用法)
     - [4.1 when 的用法](#41-when-的用法)
@@ -72,7 +73,8 @@
     - [思维总结：9. 如何判断先行词](#思维总结9-如何判断先行词)
   - [思维训练：8-9](#思维训练8-9)
     - [答案：思维训练：8-9](#答案思维训练8-9)
-  - [2.4 与先行词有关的考点](#24-与先行词有关的考点)
+  - [2.6 关系代词 whose](#26-关系代词-whose)
+  - [2.7 介词 + 关系代词](#27-介词--关系代词)
   - [综合训练：定语从句](#综合训练定语从句)
 
 定语从句的两个重要概念: **先行词**和**关系词**。
@@ -235,22 +237,36 @@ The woman who lives next door is a famous dancer.
 
 ## 3. 关系代词与先行词的搭配关系
 
-关系词可以分为两大类:
+关系词可以分为两大类：
 
-1. **关系代词**: 主要起着代词的作用，在定语从句里充当主语, 宾语或定语 (whose)。
+1. **关系代词**: 主要起着代词的作用，在定语从句里充当主语，宾语或定语 (whose)。
    1. who/whom: 先行词只能是指"人"
    2. which: 先行词只能是指"物"
    3. that/whose: 先行词可以指"人"或"物"
+   4. as/than/but/what
 2. **关系副词**: 主要起着副词的作用，在定语从句里充当状语。
    1. when
    2. where
    3. why
 
+最常用的关系代词主要是 which, that, who, whom。
+
 ### 3.1 先行词指“人”，用关系代词 who 或 whom
 
 #### 一、先行词指“人”才能用 who 或 whom
 
-`例 1`: I'm talking about friends who you can share almost everything with.
+`1` I'm talking about friends who you can share almost everything with.
+
+`2` Some companies are limiting the risk by conducting online transactions only
+with established business partners who are given access to the company's private
+Intranet.
+
+- `译` 一些公司只与那些获准进入公司内部网的固定交易伙伴进行在线交易，通过这种方式来降低风险。
+
+`3` The "housing slave" is a new expression in China, referring to people who
+use most of their salary to repay bank loans due to soaring housing prices.
+
+- `译` 在中国，“房奴”是个新词，指的是那些因房价飞涨而把绝大部分工资用于偿还银行贷款的人。
 
 #### 二、who 和 whom 的区别
 
@@ -299,9 +315,8 @@ whose 表示所有关系，其作用就如同物主代词 my, your, her, his, th
 关系词 which 的造句结构完全类似于 who，比如 which 可以作从句的**主语**或**宾语**，
 只不过 which 的先行词是"物"。
 
-`例 1`:
+`1` We are studying sentences. **They** contain adjective clauses.
 
-- We are studying sentences. **They** contain adjective clauses.
 - We are studying sentences **which** contain adjective clauses.
 
 这里先行词是 sentences，表示"物"，因此不能用 who。
@@ -310,10 +325,26 @@ whose 表示所有关系，其作用就如同物主代词 my, your, her, his, th
 
 #### 一、先行词是单个的名词
 
-- `例 2`: Anger is a **wind** which blows out the lamp of the mind.
-- `例 3`: Perhaps it is human to appreciate little **that** which we have and to
-  long for **that** which we have not.
-  - 先行词是 that，即 which 指单个的名词。
+`2` Anger is a **wind** which blows out the lamp of the mind.
+
+`3` Perhaps it is human to appreciate little **that** which we have and to long
+for **that** which we have not.
+
+- 先行词是 that，即 which 指单个的名词。
+
+`4` A friend is a present which you give yourself. To be a good friend or
+partner, it's important to be a good listener.
+
+- `译` 朋友是你送给自己的一份礼物。要想成为一个好朋友或好伙伴，重要的是做一个好听众。
+
+`5` In Europe, as elsewhere, multi-media groups have been increasingly
+successful groups which bring together television, radio, newspapers, magazines
+and publishing houses that work in relation to one another.
+
+- 这里 which 的先行词是 groups。that 的先行词是 television, radio, newspapers,
+  magazines and publishing houses.
+- `译` 在欧洲，像在其他地方一样，多媒体集团越来越成功了。
+  这些集团把相互联系密切的电视台、电台、报纸、杂志以及出版社组合到了一起。
 
 #### 二、先行词是一个短语
 
@@ -335,12 +366,21 @@ which 可以指代前面的整个句子。
 - `例 7`: I became a single mother overnight, which is nothing like becoming
   famous overnight.
 
-#### 四、补充：介词 + which
+#### 四、介词 + which
 
-- `例 1`：They're groaning about soaring health budgets, the fastest-growing
-  component **of which** are pharmaceutical costs.
-  - They're groaning about soaring health budgets. The fastest-growing component
-    of health budgets are pharmaceutical costs.
+`1` They're groaning about soaring health budgets, the fastest-growing component
+**of which** are pharmaceutical costs.
+
+- They're groaning about soaring health budgets. The fastest-growing component
+  of health budgets are pharmaceutical costs.
+
+`2` The method of scientific investigation is nothing but the expression of the
+necessary mode of working of the human mind; it is simply the mode by which all
+phenomena are reasoned about and given precise and exact explanation.
+
+- It is simply the mode. All phenomena are reasoned about and given precise and
+  exact explanation by the mode.
+- `译` 科学研究的方法不过是人类思维活动的必要表达方式，也就是对一切现象进行思索并给以精确而严谨解释的表达方式。
 
 ### 3.4 that 可以指代“人”，也可以指代“物”
 
@@ -418,36 +458,57 @@ things **that** they don't want, to impress people **that** they don't like.
 
 ### 3.5 先行词与关系词被分隔
 
-- `例 1`：Today stepladders carry **labels** several inches long **that** warn,
-  among other things, that you might -- surprise! -- fall off.
-- `例 2`：There exists no **language or dialect** in the world **that** cannot
-  convey complex ideas.
+`1` Today stepladders carry **labels** several inches long **that** warn, among
+other things, that you might -- surprise! -- fall off.
 
-### 3.6 关系代词 as
+`2` There exists no **language or dialect** in the world **that** cannot convey
+complex ideas.
 
-as 主要引导**非限制性**定语从句，它的“先行词”一般是一整句话。
+### 3.6 定语从句中的主谓一致问题
 
-- `例 1`：As is true of any developed society, in America a complex set of
-  cultural signals, assumptions, and conventions underlies all social
-  interrelationships.
-  - As 指代 "in America a complex set of cultural signals, assumptions, and
-    conventions underlies all social interrelationships"，在从句中作主语。
-- `例 2`：This description even fits the majority of eminent scholars. "Being
-  learned in some branch of human knowledge is one thing, living in public and
-  illustrious thoughts," as Emerson would say, "is something else."
-  - as 指代 "Being learned in some branch of human knowledge is one thing,
-    living in public and illustrious thoughts is something else."，
-    在从句中作宾语。
-- `例 3`：Stratford-on-Avon, as we all know, has only one industry -- William
-  Shakespeare -- but there are two distinctly separate and increasingly hostile
-  branches.
-  - as 指代 "Stratford-on-Avon has only one industry"，在从句中作宾语。
-- `例 4`：I have discovered as perhaps Kelsey will (discover) after her
-  much-publicized resignation from the editorship of *She* after a build up of
-  stress, that abandoning the doctrine of "juggling your life," and making the
-  alternative move into "downshifting" brings with it far greater rewards than
-  financial success and social status.
-  - as 在从句中作宾语。
+定语从句的谓语动词是用单数还是用复数，这不取决于关系词，而是由先行词决定。
+
+`1` The words used by the speaker may stir up unfavorable reactions in the
+listener ____ interfere with his comprehension.
+
+- A. who
+- B. as
+- C. which
+- D. what
+- `答案` C。
+  - 分析：结合从句谓语动词 interfere 这一复数形式可知，先行词应该是复数名词 reactions
+    而不是单数名词 listener，因此这里的关系代词用 which。
+- `译` 说话者的用词可能会引起听者的不良反应，这种反应会影响听者的理解。
+
+`2` ***Despite***`A` much research, there are still certain elements ***in***`B`
+the life cycle of the insect that ***is***`C` not fully ***understood***`D`.
+
+- `答案` C。应改为 are。这里先行词 elements 与关系词 that 被后置定语 in the life cycle
+  of the insect 分隔。that 指代 elements，在从句中作主语，所以谓语动词要用复数形式 are。
+- `译` 尽管人们已经对昆虫进行了大量的研究，但是对其生命周期中的某些方面还没有完全了解。
+
+### 3.7 关系代词 as
+
+as 主要引导**非限制性**定语从句，它的“先行词”一般是**一整句话**。
+
+`1` As is true of any developed society, in America a complex set of cultural
+signals, assumptions, and conventions underlies all social interrelationships.
+
+- As 指代 "in America a complex set of cultural signals, assumptions, and
+  conventions underlies all social interrelationships"，在从句中作主语。
+
+`2` This description even fits the majority of eminent scholars. "Being learned
+in some branch of human knowledge is one thing, living in public and illustrious
+thoughts," as Emerson would say, "is something else."
+
+- as 指代 "Being learned in some branch of human knowledge is one thing, living
+  in public and illustrious thoughts is something else."，在从句中作宾语。
+
+`3` Stratford-on-Avon, as we all know, has only one industry -- William
+Shakespeare -- but there are two distinctly separate and increasingly hostile
+branches.
+
+- as 指代 "Stratford-on-Avon has only one industry"，在从句中作宾语。
 
 ### 思维训练 3. 关系代词与先行词的搭配关系
 
@@ -1139,7 +1200,11 @@ accomplishments are admired by others.*
    随着你职业的发展，机遇会不断产生，这时，你可能会选择一个完全不同于原先设定的职业方向。
 7. C。`译` 因为青少年是在不断调整，以适应身体、智力和情感上出现的一系列新的变化和挑战，因此他们非常敏感，并且需要有自信心，而这些信心主要来自于自己获得成功以及自己成功能够被别人认可。
 
-## 2.4 与先行词有关的考点
+## 2.6 关系代词 whose
+
+>>>>> progress
+
+## 2.7 介词 + 关系代词
 
 >>>>> progress
 
