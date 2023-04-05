@@ -37,6 +37,7 @@
     - [3.6 定语从句中的主谓一致问题](#36-定语从句中的主谓一致问题)
     - [3.7 关系代词 as](#37-关系代词-as)
     - [思维训练 3. 关系代词与先行词的搭配关系](#思维训练-3-关系代词与先行词的搭配关系)
+      - [答案：思维训练 3. 关系代词与先行词的搭配关系](#答案思维训练-3-关系代词与先行词的搭配关系)
   - [4. 关系副词的用法](#4-关系副词的用法)
     - [4.1 when 的用法](#41-when-的用法)
       - [一、先行词指时间](#一先行词指时间)
@@ -73,7 +74,6 @@
     - [思维总结：9. 如何判断先行词](#思维总结9-如何判断先行词)
   - [思维训练：8-9](#思维训练8-9)
     - [答案：思维训练：8-9](#答案思维训练8-9)
-  - [2.6 关系代词 whose](#26-关系代词-whose)
   - [2.7 介词 + 关系代词](#27-介词--关系代词)
   - [综合训练：定语从句](#综合训练定语从句)
 
@@ -293,22 +293,52 @@ use most of their salary to repay bank loans due to soaring housing prices.
 
 ### 3.2 表示人或物的所有关系，用 whose
 
-whose 表示所有关系，其作用就如同物主代词 my, your, her, his, their 和 our，whose
-的后面要接名词。whose 可指人也可指物。
-"whose + 名词"在从句中可作**主语**、**动词的宾语**或**介词的宾语**。
+whose 表示所有关系，其作用就如同物主代词 my, your, her, his, their 和 our。
+whose 后面必须接一个名词，而不能单独使用。
+因此 whose 用作关系词确切地说应该算作是**关系形容词**，或者叫**关系限定词**。
+whose 可指人也可指物。
 
-- `例 1`:
-  - I know a friend. **His** brother is a pop singer.
-  - I know a frined **whose** brother is a pop singer.
-- `例 2`:
-  - These children sit in a schoolroom. **Its** windows are all broken.
-  - These children sit in a schoolroom **whose** windows are all broken.
-- `例 3`: When I looked through the window, I saw a girl whose beauty took my
-  breath away.
-- `例 4`: It was a meeting whose importance I did not realize at the time.
-- `例 5`: Atlas (in Greek mythology) was a kneeling man on whose shoulder the
-  world rested.
-  - whose shoulder 作从句中 rested on 的宾语，这里 on 被提前了。
+“whose + 名词”在从句中可作**主语**、**动词的宾语**或**介词的宾语**。
+
+`1` I know a frined **whose** brother is a pop singer.
+
+- I know a friend. **His** brother is a pop singer.
+
+`2` These children sit in a schoolroom **whose** windows are all broken.
+
+- These children sit in a schoolroom. **Its** windows are all broken.
+
+`3` When I looked through the window, I saw a girl whose beauty took my breath
+away.
+
+`4` It was a meeting whose importance I did not realize at the time.
+
+`5` Atlas (in Greek mythology) was a kneeling man on whose shoulder the world
+rested.
+
+- whose shoulder 作从句中 rested on 的宾语，这里 on 被提前了。
+
+`6` There are nations whose lack of contact with the outside world has resulted
+in poverty.
+
+- `译` 有些国家因为闭关锁国，缺少与其他国家的交流，导致贫困。
+
+`7` President-elect Bush inherits a nation whose citizens will be ready to
+assist him in the conduct of his large responsibilities.
+
+- `译` 总统当选人布什所接手的这个国家，其全体国民均准备好协助他来履行自己的重大责任。
+
+`8` Aimlessness has hardly been typical of the postwar Japan whose productivity
+and social harmony are the envy of the United States and Europe.
+
+- `译` 战后，日本的目标一直很明确，它的生产力和社会和谐的状况为美国和欧洲所羡慕。
+
+`9` At the same time, the American Law Institute -- a grounp of judges, lawyers,
+and academics whose recommendations carry substantial weight -- issued new
+guidelines for tort law stating that companies need not warn customers of
+obvious dangers or bombard them with a lengthy list of possible ones.
+
+- `译` 与此同时，美国法律研究所（由一群法官、律师和理论专家组成，他们的建议极有分量）发布了新的民事伤害法令指导方针，宣称公司不必提醒客户注意显而易见的危险，也不必连篇累牍地一再请他们注意一些可能会出现的危险。
 
 ### 3.3 先行词指“物”，用关系代词 which
 
@@ -512,7 +542,32 @@ branches.
 
 ### 思维训练 3. 关系代词与先行词的搭配关系
 
-**一、请讲下列每一组中的两个简单句合并为一个定语从句，用第二个句子作定语。**
+**一、选择最佳答案。**
+
+*1. Beer is the most popular drink among male drinkers, ____ overall consumption
+is significantly higher than that of women.*
+
+- *A. whose*
+- *B. which*
+- *C. that*
+- *D. what*
+
+*2. I don't suppose anything happens ____ he doesn't foresee.*
+
+- *A. that*
+- *B. which*
+- *C. that*
+- *D. as*
+
+*3. What's in a name? That ____ we call a rose by any other name would smell as
+sweet.*
+
+- *A. what*
+- *B. that*
+- *C. which*
+- *D. when*
+
+**二、请讲下列每一组中的两个简单句合并为一个定语从句，用第二个句子作定语。**
 
 *9. He is the professor. I am taking his grammar course.*
 
@@ -539,7 +594,7 @@ branches.
 答案: My roommate always plays music at the dorm, which really gets on my
 nerves.
 
-**二、请判断下列句子是否正确，错误的请改正。**
+**三、请判断下列句子是否正确，错误的请改正。**
 
 *25. I gave the book to him that he needed it.*
 
@@ -556,6 +611,13 @@ nerves.
 *35. The day, when began brightly, ended with a violent storm.*
 
 答案: The day, which began brightly, ended with a violent storm.
+
+#### 答案：思维训练 3. 关系代词与先行词的搭配关系
+
+1. A。whose 指代先行词 male drinkers。
+2. A。先行词是不定代词 anything，此时只能用 that 引导定语从句。
+3. C。先行词是 that，此时只能用 which 引导定语从句，以避免 that that 重复。
+   - `译` 名字里能包含什么呢？无论我们管玫瑰叫作什么，它依然芬芳。
 
 ## 4. 关系副词的用法
 
@@ -1199,10 +1261,6 @@ accomplishments are admired by others.*
    `译` 要计划，但不要僵化，也就是说计划要随着形势的改变而改变。
    随着你职业的发展，机遇会不断产生，这时，你可能会选择一个完全不同于原先设定的职业方向。
 7. C。`译` 因为青少年是在不断调整，以适应身体、智力和情感上出现的一系列新的变化和挑战，因此他们非常敏感，并且需要有自信心，而这些信心主要来自于自己获得成功以及自己成功能够被别人认可。
-
-## 2.6 关系代词 whose
-
->>>>> progress
 
 ## 2.7 介词 + 关系代词
 
