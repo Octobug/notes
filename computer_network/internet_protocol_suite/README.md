@@ -10,7 +10,7 @@
 
 - [x] 0. Foreword and Prefaces
 - [ ] [1. Introduction](introduction)
-- [ ] 2. The Internet Address Architecture
+- [ ] [2. The Internet Address Architecture](address_architecture)
 - [ ] 3. Link Layer
 - [ ] 4. ARP: Address Resolution Protocol
 - [ ] 5. The Internet Protocol (IP)
