@@ -35,9 +35,7 @@ disciplines according to the
 
 1. [Computer Science](https://en.wikipedia.org/wiki/Computer_science)
     1. [Algorithms and Data Structures](algorithms_and_data_structures)
-        1. Algorithms
-        2. Data Structures
-        3. [LeetCode](algorithms_and_data_structures/leetcode)
+        1. [LeetCode](algorithms_and_data_structures/leetcode)
     2. Computer Graphics
     3. [Computer Network](computer_network)
         1. IETF
