@@ -2,12 +2,13 @@
 
 - [Introduction](#introduction)
   - [1. Architectural Principles](#1-architectural-principles)
-    - [1.1. Packets, Connections, and Datagrams](#11-packets-connections-and-datagrams)
-    - [1.2. The End-to-End Argument and Fate Sharing](#12-the-end-to-end-argument-and-fate-sharing)
-    - [1.3. Error Control and Flow Control](#13-error-control-and-flow-control)
+    - [1.1 Packets, Connections, and Datagrams](#11-packets-connections-and-datagrams)
+    - [1.2 The End-to-End Argument and Fate Sharing](#12-the-end-to-end-argument-and-fate-sharing)
+    - [1.3 Error Control and Flow Control](#13-error-control-and-flow-control)
   - [2. Design and Implementation](#2-design-and-implementation)
-    - [2.1. Layering](#21-layering)
-    - [2.2. Multiplexing, Demultiplexing, and Encapsulation in Layered Implementations](#22-multiplexing-demultiplexing-and-encapsulation-in-layered-implementations)
+    - [2.1 Layering](#21-layering)
+    - [2.2 Multiplexing, Demultiplexing, and Encapsulation in Layered Implementations](#22-multiplexing-demultiplexing-and-encapsulation-in-layered-implementations)
+  - [3. The Architecture and Protocols of the TCP/IP Suite](#3-the-architecture-and-protocols-of-the-tcpip-suite)
 
 The first definition of a protocol, according to the *New Oxford American
 Dictionary*, is
@@ -50,7 +51,7 @@ The second-level goals are:
   effort.
 - The resource used in the Internet architecture must be accountable.
 
-### 1.1. Packets, Connections, and Datagrams
+### 1.1 Packets, Connections, and Datagrams
 
 - **packets**
   - *statitical multiplexing*
@@ -71,7 +72,7 @@ The second-level goals are:
     - Applications need to implement their own methods to indicate a sender's
       message boundaries if this capability is required.
 
-### 1.2. The End-to-End Argument and Fate Sharing
+### 1.2 The End-to-End Argument and Fate Sharing
 
 One of the most important principles that influenced the design of the TCP/IP
 suite is called the *end-to-end argument*:
@@ -106,7 +107,7 @@ has failed for a (modest) period of time. Fate sharing also supports a "dumb
 network with smart end hosts" model, and one of the ongoing tensions in today's
 Internet is what functions reside in the network and what functions do not.
 
-### 1.3. Error Control and Flow Control
+### 1.3 Error Control and Flow Control
 
 - *error control*: it can be implemented in the systems constituting the network
   infrastructure, or in the systems that attach to the network, or some
@@ -124,7 +125,7 @@ Internet is what functions reside in the network and what functions do not.
 
 ## 2. Design and Implementation
 
-### 2.1. Layering
+### 2.1 Layering
 
 Layers are beneficial because a layered design allows developers to evolve
 different portions of the system separately, often by different people with
@@ -149,6 +150,40 @@ somewhat different areas of expertise.
     - 2.Link (or Data-Link)
     - 1.Physical
 
-### 2.2. Multiplexing, Demultiplexing, and Encapsulation in Layered Implementations
+### 2.2 Multiplexing, Demultiplexing, and Encapsulation in Layered Implementations
+
+A layered architecture has natural ability to perform *protocol multiplexing*.
+This form of multiplexing allows multiple different protocols to coexist on the
+same infrastructure. It also allows multiple instantiations of the same
+protocol object to be used simultaneously without being confused.
+
+When an object, called a *protocol data unit* (PDU), at one layer is carrried
+by a lower layer, it is said to be *encapsulated* by the next layer down. Thus,
+multiple objects at layer `N` can be multiplexed together using encapsulation
+in layer `N - 1`.
+
+The essence of encapsulation is that each layer treats the
+data from above as opaque, uninterpretable information.
+
+```diagram
+Layer Number          Encapsulated Object
+
+N                                       [Layer N PDU.....]
+                                        |                |
+                                        v                v
+N-1                   [Layer N-1 Header][PDU from Layer N]...[Layer N-1 Trailer]
+                      |                 [Treated as Opaque Data at Layer N-1]  |
+                      v                                                        v
+N-2 [Layer N-2 Header][PDU from Layer N-1......................................]
+                      [Treated as Opaque Data at Layer N-2]
+```
+
+Encapsulation takes place at each sender, and decapsulation takes place at each
+receiver.
+
+A router, by definition, has two or more network interfaces (because it connects
+two or more networks). Any system with multiple interfaces is called *multihomed*.
+
+## 3. The Architecture and Protocols of the TCP/IP Suite
 
 >>>>> progress
