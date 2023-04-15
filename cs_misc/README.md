@@ -1,6 +1,6 @@
 # Computer Science (Miscellaneous)
 
-## [CS 自学指南](https://csdiy.wiki/)
+## [CS 自学指南](https://github.com/pkuflyingpig/cs-self-learning/)
 
 - [x] [前言](https://csdiy.wiki/)
 - [x] [如何使用这本书](https://csdiy.wiki/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/)
