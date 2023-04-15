@@ -30,7 +30,9 @@
     - [5.5 补语关系](#55-补语关系)
     - [思维训练 4-5 不定式的作用](#思维训练-4-5-不定式的作用)
       - [答案：思维训练 4-5 不定式的作用](#答案思维训练-4-5-不定式的作用)
-  - [4.6 不定式的作用（五）：形容词 + to do](#46-不定式的作用五形容词--to-do)
+  - [6. 不定式的作用（五）：形容词 + to do](#6-不定式的作用五形容词--to-do)
+    - [6.1 宾语关系（一）：He is interesting to listen to](#61-宾语关系一he-is-interesting-to-listen-to)
+    - [4.6.2 宾语关系（二）：The book is interesting to buy](#462-宾语关系二the-book-is-interesting-to-buy)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
 
@@ -780,6 +782,88 @@ experience the world, new ideas to try, new challenges to accept.
 8. 名词短语 the best man to do the job 相当于 the best man who can do the job，即逻辑语义是主谓关系。
    - `译` 我觉得他并不是做这个工作的最佳人选。
 
-## 4.6 不定式的作用（五）：形容词 + to do
+## 6. 不定式的作用（五）：形容词 + to do
+
+`1` A: Is my wish to become a scientist possible ____?
+
+B: Yes, your wish is sure ____.
+
+- A. to realize, to realize
+- B. to be realized, to be realized
+- C. to realize, to be realized
+- D. to be realized, to realize
+
+`答案` C。`译` A: 我想成为科学家这个愿望能够实现吗？B: 当然能，你的愿望一定能实现。
+
+`2`
+
+- He is easy to fool.
+  - `译` 他很容易被骗。
+- He is afraid to be fooled.
+  - `译` 他很害怕被骗。
+
+`3`
+
+- He is easy to please.
+  - `译` 他很容易被取悦。
+- He is eager to please.
+  - `译` 他很喜欢取悦别人。
+
+`4` He is interesting to listen to.
+
+用在形容词后面的不定式充当什么成分，取决于句子主语与不定式之间的**逻辑语义关系**。
+
+### 6.1 宾语关系（一）：He is interesting to listen to
+
+`1` He is interesting to listen to.
+
+- `译` 他对听别人讲话很感兴趣。❌
+- `译` 听他讲话很有意思。✅
+- 这个句子可以还原成：
+  - It is interesting to listen to him.
+  - To listen to him is interesting.
+- 也就是说，he 在表面上是作为句子的主语，但在其原有的语义逻辑中，he 其实是作 listen to
+  的逻辑宾语。而句子的真正主语是 to listen to him 这件事，而不是 he 这个人。这里不定式
+  to listen to 的逻辑主语是泛指其他人。
+
+`2` He is easy to fool.
+
+- 这句真正的主语是 to fool him 这件事，而 he 是 fool 的逻辑宾语。
+- `=` It is easy to fool him.
+- `=` To fool him is easy.
+- `译` 他很容易被骗。
+- 在翻译中，“容易”看似是在形容“他”，但实际上 easy 是在形容 to fool him 这件事，而不是在强调
+  he 的特质。
+  - He is easy to fool. `->` He is easy. ❌
+  - 这句改写后的话没有实际意义，表明 he 无法充当 easy 的主语，即原句中 he
+    并不是真正意义上的主语，而只是一个形式主语。
+
+`3` He is difficult to understand.
+
+- `=` It is difficult to understand him.
+- `=` To understand him is difficult.
+- `译` 他讲话的意思很难理解。
+- He is difficult to understand. `->` He is difficult.
+  - 改写后的句子中 difficult 的意思是“难以相处”，变成了“他这人很难相处”。
+    这个含义和原句的 to understand 无法建立合理的逻辑语义关系，因此 he 并不是逻辑主语。
+
+`4` 我们很难一夜之间把英语学好。
+
+- We are difficult to learn English well overnight. ❌
+- For us to learn English well overnight is difficult. ✅
+- It is difficult for us to learn English well overnight. ✅
+
+`5` 比较：
+
+- He is difficult to understand.
+  - he 不是真正的逻辑主语。
+- We are difficult to learn English well overnight. ❌
+  - we 是真正的逻辑主语，这与 difficult 的意义特点有冲突，所以该句错误。
+
+`6` The speaker who has
+
+>>>>> progress
+
+### 4.6.2 宾语关系（二）：The book is interesting to buy
 
 >>>>> progress
