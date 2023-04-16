@@ -32,6 +32,8 @@
       - [答案：思维训练 4-5 不定式的作用](#答案思维训练-4-5-不定式的作用)
   - [6. 不定式的作用（五）：形容词 + to do](#6-不定式的作用五形容词--to-do)
     - [6.1 宾语关系（一）：He is interesting to listen to](#61-宾语关系一he-is-interesting-to-listen-to)
+      - [一、形容词 + to do 宾语关系句型结构特点](#一形容词--to-do-宾语关系句型结构特点)
+      - [二、使用该句型的注意点](#二使用该句型的注意点)
     - [4.6.2 宾语关系（二）：The book is interesting to buy](#462-宾语关系二the-book-is-interesting-to-buy)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
@@ -860,9 +862,151 @@ B: Yes, your wish is sure ____.
 - We are difficult to learn English well overnight. ❌
   - we 是真正的逻辑主语，这与 difficult 的意义特点有冲突，所以该句错误。
 
-`6` The speaker who has
+`6` The speaker who has no specific words in his working vocabulary may be ____
+to explain or describe in a way that can be understood by his listeners.
+
+- A. difficult
+- B. impossible
+- C. unable
+- D. imporbable
+- `答案` C。difficult, impossible 和 improbable 都是用来修饰“事情”，而不是“人”。
+- `译` 说话者如果在他可用的词汇里找不到确切的词来表达自己的意思，那么听者可能就无法理解他的解释或描述。
+
+`7` The process of personal growth is much more difficult to determine, since by
+definistion it is a journey and not the specific signposts or landmarks along
+the way.
+
+- the process of personal growth is much more difficult to determine
+  - `=` It is much more difficult to determine the process of personal growth
+  - `=` to determine the process of personal growth is much more difficult
+- `译` 相比之下，个人成长的过程更加难以衡量，因为这样定义的“成长”应该是一个“人生旅程”，而不是“旅途”中的某一个具体路标或里程碑。
+
+`8` She is very nice to talk to.
+
+- `=` It is very nice to talk to her.
+- `=` To talk to her is very nice.
+- `译` 和她聊天很开心。
+
+`9` Mary is easy to get on with.
+
+- `=` It is easy to get on with Mary.
+- `=` To get on with Mary is easy.
+- `译` Mary 很容易相处。
+
+`10` Bob is hard to convince.
+
+- `=` It is hard to convice Bob.
+- `=` To convince Bob is hard.
+- `译` Bob 很难被说服。
+
+`11` Bill is fun to be with: he has a great sense of adventure.
+
+- `=` It is fun to be with Bill.
+- `=` To be with Bill is fun.
+- `译` 和 Bill 待在一起很好玩，因为他非常有冒险精神。
+
+用“事物”作主语的例子：
+
+`12` English is difficult to speak.
+
+- `=` It is difficult to speak English.
+- `=` To speak English is difficult.
+- 这里 difficult 虽然能用来形容 English，但后面接 to speak 表明 English 不是逻辑主语，
+  而是 to speak 的宾语，因此这里 difficult 应是侧重于强调“事情”或“活动”的性质特征，而不是“事物”。
+
+`13` 比较：
+
+- English is difficult to speak.
+  - 这句更加具体，是在强调“说”英语方面比较困难。
+  - English is difficult to speak, but it is not hard to read.
+    - `译` 说好英文不容易，但看懂不难。
+- English is difficult.
+
+`14` 比较：
+
+- The bread is hard to bake.
+  - `译` 烤面包很不容易。
+- The bread is hard.
+  - `译` 这个面包很硬。
+
+`15` Relativity theory isn't easy to understand.
+
+- `=` It isn't easy to understand relativity theory.
+- `=` To understand relativity theory isn't easy.
+- `译` 相对论不好理解。
+
+`16` Football is very interesting to watch.
+
+- `=` It is very interesting to watch football.
+- `译` 看足球很有趣。
+
+`17` The opening ceremony was exciting to watch.
+
+- `=` It was exciting to watch the opening ceremony.
+- `译` 开幕式很激动人心。
+
+`18` The instructions were hard to follow.
+
+- `译` 这些指令很难遵从。
+
+`19` This car isn't safe to drive.
+
+- `译` 这辆车开起来不安全。
+
+`20` This idea is difficult to comprehend. Can you explain it to me again?
+
+- `译` 这一点很难理解。你能再给我解释一遍吗？
+
+#### 一、形容词 + to do 宾语关系句型结构特点
+
+1. **句子的表层结构与深层结构不统一**
+    - 从句子表层结构来看，通常是“人”作主语或“事物”作主语；
+    - 在句子深层结构中，是一个“事件”或“活动”充当真正意义上的主语；
+    - 从逻辑语义上来看，句子的主语是充当不定式的逻辑宾语：
+      - 可以是充当不定式的宾语；
+      - 可以是充当不定式中的借此的宾语。
+2. **句型可变换、还原**
+    - 把作逻辑主语的不定式不定式直接置于举手；
+    - 或者用 it 作形式主语，把作为逻辑主语的不定式放在句末。
+3. **形容词特点**
+    - 侧重于强调“事情”或“活动”的性质特征，而不是形式主语的性质特征；
+    - 有的形容词不能和形式主语搭配；
+    - 有的是可以和形式主语搭配，但单独使用的含义与带不定式的含义有差别；
+    - 这样的词有：
+      - 形容词
+        - agreeable, awful
+        - comfortable, convenient
+        - dangerous, delightful, difficult, disagreeable, dreadful
+        - easy
+        - hard, horrible
+        - impossible
+        - lovely
+        - marvelous
+        - safe, splendid, strange
+        - terrible
+        - unsafe
+        - wonderful
+      - 动词现在分词
+        - alarm, amaze, amuse, annoy, astonish
+        - bewilder, bore, depress, disappoint, discourage, disgust
+        - embarrass, encourage, excite
+        - frighten
+        - horrify
+        - interest
+        - surprise
+        - terrify
+        - upset
+4. **动词特点**
+    - 及物动词不带宾语：此时句子主语要充当不定式动词的逻辑宾语，因此不定式动词一定是及物动词，且后面不带宾语；
+    - 不及物动词 + 介词
+
+#### 二、使用该句型的注意点
 
 >>>>> progress
+
+1. **不定式动词一般不用被动态（这是最容易出错的点）**
+2. **不定式后不能再加宾语**
+3. **有时需要在不定式中添加适当的介词**
 
 ### 4.6.2 宾语关系（二）：The book is interesting to buy
 
