@@ -1,7 +1,7 @@
 {
   "files.associations": {
-    "*.ejs": "html",
     "*.tpl": "html",
+    "*.ejs": "html",
     "__hash_table": "cpp",
     "__split_buffer": "cpp",
     "array": "cpp",
@@ -33,6 +33,7 @@
     "dirent.h": "c",
     "types.h": "c",
     "stat.h": "c",
-    "dir.h": "c"
+    "dir.h": "c",
+    "chrono": "cpp"
   }
 }
