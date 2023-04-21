@@ -4,7 +4,7 @@
 >
 > Kuri-su/yinwang.bak: <https://github.com/Kuri-su/yinwang.bak>
 >
-> `4d0ad8542d2d559b179f5f6da34cd9f2c65f8f50`
+> `85e8ac2897c2532695248d72e0916684e45d75a8`
 
 - [当然我在扯淡](#当然我在扯淡)
   - [2021](#2021)
@@ -20,6 +20,8 @@
 
 ## 2021
 
+- 2021年09月25日 - [科学和伪科学](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%A7%91%E5%AD%A6%E5%92%8C%E4%BC%AA%E7%A7%91%E5%AD%A6.md)
+- 2021年07月29日 - [“AI 超人类视觉”是骗局](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E2%80%9CAI%20%E8%B6%85%E4%BA%BA%E7%B1%BB%E8%A7%86%E8%A7%89%E2%80%9D%E6%98%AF%E9%AA%97%E5%B1%80.md)
 - 2021年07月28日 - [居里夫人，核武器和诺贝尔奖](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%B1%85%E9%87%8C%E5%A4%AB%E4%BA%BA%EF%BC%8C%E6%A0%B8%E6%AD%A6%E5%99%A8%E5%92%8C%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%A5%96.md)
 - 2021年07月27日 - [居里夫人，核物理和诺贝尔奖](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E5%B1%85%E9%87%8C%E5%A4%AB%E4%BA%BA%EF%BC%8C%E6%A0%B8%E7%89%A9%E7%90%86%E5%92%8C%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%A5%96.md)
 - 2021年07月25日 - [阿波罗登月是骗局](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E9%98%BF%E6%B3%A2%E7%BD%97%E7%99%BB%E6%9C%88%E6%98%AF%E9%AA%97%E5%B1%80.md)
@@ -116,9 +118,9 @@
 - 2017年10月16日 - [人体工学](http://www.yinwang.org/blog-cn/2017/10/16/ergonomics)
 - 2017年08月19日 - [知乎和 MITBBS](https://github.com/Kuri-su/yinwang.bak/blob/master/articles/%E7%9F%A5%E4%B9%8E%E5%92%8C%20MITBBS.md)
 - 2017年08月14日 - [旅行的智慧](http://www.yinwang.org/blog-cn/2017/08/14/travel-wisdom)
-- 2017年07月08日 - [生活的智慧](http://www.yinwang.org/blog-cn/2017/07/08/living-philosophy)
-- 2017年07月06日 - [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl)
-- 2017年07月06日 - [带猫回国经历](http://www.yinwang.org/blog-cn/2017/07/06/cat-travel-china)
+- [x] 2017年07月08日 - [生活的智慧](http://www.yinwang.org/blog-cn/2017/07/08/living-philosophy)
+- [x] 2017年07月06日 - [如何掌握所有的程序语言](http://www.yinwang.org/blog-cn/2017/07/06/master-pl)
+- [x] 2017年07月06日 - [带猫回国经历](http://www.yinwang.org/blog-cn/2017/07/06/cat-travel-china)
 - [x] 2017年05月25日 - [DSL 的误区](http://www.yinwang.org/blog-cn/2017/05/25/dsl)
 - [x] 2017年05月23日 - [Kotlin 和 Checked Exception](http://www.yinwang.org/blog-cn/2017/05/23/kotlin)
 - [x] 2017年05月17日 - [什么是现实理想主义者](http://www.yinwang.org/blog-cn/2017/05/17/practical-idealism)
