@@ -10,7 +10,9 @@
 
 ## [roadmap](https://roadmap.sh/)
 
-- [Computer Science](https://roadmap.sh/computer-science)
-- [Backend Developer](https://roadmap.sh/backend)
-- [DevOps Roadmap](https://roadmap.sh/devops)
-- [Software Design and Architecture](https://roadmap.sh/software-design-architecture)
+- [ ] [Computer Science](https://roadmap.sh/computer-science)
+- [ ] [Backend Developer](https://roadmap.sh/backend)
+- [ ] [DevOps Roadmap](https://roadmap.sh/devops) (Currently)
+- [ ] [Software Design and Architecture](https://roadmap.sh/software-design-architecture)
+- [ ] [Software Architect](https://roadmap.sh/software-architect)
+- [ ] [System Design](https://roadmap.sh/system-design)
