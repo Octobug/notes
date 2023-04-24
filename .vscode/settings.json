@@ -34,6 +34,7 @@
     "types.h": "c",
     "stat.h": "c",
     "dir.h": "c",
-    "chrono": "cpp"
+    "chrono": "cpp",
+    "exception": "cpp"
   }
 }
