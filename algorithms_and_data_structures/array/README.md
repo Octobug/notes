@@ -6,6 +6,9 @@
   - [二分查找](#二分查找)
     - [左闭右闭写法](#左闭右闭写法)
     - [左闭右开写法](#左闭右开写法)
+  - [双指针](#双指针)
+    - [快慢指针](#快慢指针)
+    - [相向双指针](#相向双指针)
   - [References](#references)
 
 ## 理论基础
@@ -102,6 +105,63 @@ public:
       }
     }
     return -1;
+  }
+};
+```
+
+## 双指针
+
+### 快慢指针
+
+- 快指针：寻找新数组的元素，即不含有目标元素的数组
+- 慢指针：指向更新新数组下标的位置
+
+```cpp
+// 时间复杂度：O(n)
+// 空间复杂度：O(1)
+class Solution {
+public:
+  int removeElement(vector<int>& nums, int val) {
+    int slowIndex = 0;
+    for (int fastIndex = 0; fastIndex < nums.size(); fastIndex++) {
+      if (val != nums[fastIndex]) {
+        nums[slowIndex++] = nums[fastIndex];
+      }
+    }
+    return slowIndex;
+  }
+};
+```
+
+### 相向双指针
+
+基于元素顺序可以改变的题目描述改变了元素相对位置，确保移动最少元素。
+
+```cpp
+/**
+* 时间复杂度：O(n)
+* 空间复杂度：O(1)
+*/
+class Solution {
+public:
+  int removeElement(vector<int>& nums, int val) {
+    int leftIndex = 0;
+    int rightIndex = nums.size() - 1;
+    while (leftIndex <= rightIndex) {
+      // 找左边等于val的元素
+      while (leftIndex <= rightIndex && nums[leftIndex] != val){
+        ++leftIndex;
+      }
+      // 找右边不等于val的元素
+      while (leftIndex <= rightIndex && nums[rightIndex] == val) {
+        -- rightIndex;
+      }
+      // 将右边不等于val的元素覆盖左边等于val的元素
+      if (leftIndex < rightIndex) {
+        nums[leftIndex++] = nums[rightIndex--];
+      }
+    }
+    return leftIndex;   // leftIndex一定指向了最终数组末尾的下一个元素
   }
 };
 ```

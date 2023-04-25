@@ -8,6 +8,9 @@
 			"args": [
 				"-std=c++17",
 				"-stdlib=libc++",
+				"-I",
+				"${workspaceFolder}/algorithms_and_data_structures/include",
+				"${workspaceFolder}/algorithms_and_data_structures/include/*.cpp",
 				"-g",
 				"${file}",
 				"-o",

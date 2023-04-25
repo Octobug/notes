@@ -3,7 +3,7 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/algorithms_and_data_structures/include/**"
             ],
             "defines": [],
             "macFrameworkPath": [

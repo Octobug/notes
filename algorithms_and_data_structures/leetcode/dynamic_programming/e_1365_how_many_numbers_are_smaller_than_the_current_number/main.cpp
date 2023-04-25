@@ -4,21 +4,6 @@
 
 using namespace std;
 
-void output(vector<int> &arr)
-{
-    cout << '[';
-    cout << boolalpha;
-    for (int i = 0; i < arr.size(); ++i)
-    {
-        cout << arr[i];
-        if (i != arr.size() - 1)
-        {
-            cout << ',';
-        }
-    }
-    cout << ']' << endl;
-}
-
 class Solution
 {
 public:
