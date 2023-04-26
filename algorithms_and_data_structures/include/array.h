@@ -5,6 +5,7 @@
 
 using namespace std;
 
-void output(vector<int> &arr);
+void output(vector<int> &numbers);
+void swap(vector<int> &numbers, int index_l, int index_r);
 
 #endif
