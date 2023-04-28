@@ -3,7 +3,7 @@
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "C/C++: clang++ builds executables",
+			"label": "C/C++: Build",
 			"command": "/usr/bin/clang++",
 			"args": [
 				"-std=c++17",
