@@ -20,4 +20,4 @@ Output: "255[.]100[.]50[.]0"
 
 **Constraints:**
 
-* The given `address` is a valid IPv4 address.
+- The given `address` is a valid IPv4 address.
