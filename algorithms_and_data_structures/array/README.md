@@ -9,6 +9,7 @@
   - [双指针](#双指针)
     - [快慢指针](#快慢指针)
     - [相向双指针](#相向双指针)
+  - [滑动窗口](#滑动窗口)
   - [References](#references)
 
 ## 理论基础
@@ -166,6 +167,13 @@ public:
 };
 ```
 
+## 滑动窗口
+
+- 时间复杂度：$O(n)$
+
+滑动窗口的精妙之处在于根据当前子序列和大小的情况，不断调整子序列的起始位置。
+从而将 $O(n^2)$ 的暴力解法降为 $O(n)$。
+
 ## References
 
 - [x] 数组
@@ -175,4 +183,4 @@ public:
   - [x] [有序数组的平方](https://programmercarl.com/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.html)
   - [x] [长度最小的子数组](https://programmercarl.com/0209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.html)
   - [x] [螺旋矩阵II](https://programmercarl.com/0059.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5II.html)
-  - [ ] [总结篇](https://programmercarl.com/%E6%95%B0%E7%BB%84%E6%80%BB%E7%BB%93%E7%AF%87.html)
+  - [x] [总结篇](https://programmercarl.com/%E6%95%B0%E7%BB%84%E6%80%BB%E7%BB%93%E7%AF%87.html)
