@@ -56,8 +56,10 @@ disciplines according to the
         2. Systems Programming
     7. [Programming Languages](programming_languages)
         1. Compiler
-        2. [Programming Languages](programming_languages/programming_languages)
-        3. [Programming Paradigms](programming_languages/programming_paradigms)
+        2. [Programming Paradigms](programming_languages/programming_paradigms)
+        3. [Go](programming_languages/go)
+        4. [JavaScript](programming_languages/javascript)
+        5. [Python](programming_languages/python)
     8. [Software Development](software_development)
         1. [Git](software_development/git)
         2. Open Source
@@ -88,5 +90,4 @@ disciplines according to the
 ## Miscellaneous
 
 - [Blogs](blogs) that I've been reading.
-- [Scholars](scholars) that I desire to know about.
 - [Thoughts](thoughts) on everything.
