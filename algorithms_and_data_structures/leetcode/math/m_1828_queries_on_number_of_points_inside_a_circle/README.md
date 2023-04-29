@@ -1,6 +1,6 @@
 # 1828. Queries on Number of Points Inside a Circle
 
-> origin: <https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/>
+> <https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/>
 
 You are given an array `points` where <code>points[i] = [x<sub>i</sub>,
 y<sub>i</sub>]</code> is the coordinates of the <code>i<sup>th</sup></code>

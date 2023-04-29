@@ -1,6 +1,6 @@
 # 1431. Kids With the Greatest Number of Candies
 
-> origin: <https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/>
+> <https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/>
 
 There are `n` kids with candies. You are given an integer array `candies`, where
 each `candies[i]` represents the number of candies the <code>i<sup>th</sup>

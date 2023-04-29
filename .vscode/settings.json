@@ -8,6 +8,7 @@
         "string": "cpp",
         "string_view": "cpp",
         "iostream": "cpp",
-        "array": "cpp"
+        "array": "cpp",
+        "ios": "cpp"
     }
 }

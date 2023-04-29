@@ -1,6 +1,6 @@
 # 1769. Minimum Number of Operations to Move All Balls to Each Box
 
-> origin: <https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/>
+> <https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/>
 
 You have `n` boxes. You are given a binary string `boxes` of length `n`, where
 `boxes[i]` is `'0'` if the <code>i<sup>th</sup></code> box is **empty**, and

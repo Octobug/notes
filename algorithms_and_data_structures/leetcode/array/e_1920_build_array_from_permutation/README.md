@@ -1,6 +1,6 @@
 # 1920. Build Array from Permutation
 
-> origin: <https://leetcode.com/problems/build-array-from-permutation/>
+> <https://leetcode.com/problems/build-array-from-permutation/>
 
 Given a **zero-based permutation** `nums` (**0-indexed**), build an array
 `ans` of the **same length** where `ans[i] = nums[nums[i]]` for each
