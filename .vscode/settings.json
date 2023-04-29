@@ -7,6 +7,7 @@
         "__string": "cpp",
         "string": "cpp",
         "string_view": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "array": "cpp"
     }
 }
