@@ -1,0 +1,3 @@
+go 1.20
+
+use ./programming_languages/programming_languages/go/getting_started/getting_started/hello

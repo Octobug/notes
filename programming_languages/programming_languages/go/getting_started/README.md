@@ -1,10 +1,48 @@
 # Getting Started
 
-> <https://golang.org/doc/#getting-started>
+> <https://go.dev/doc/>
 
-## Managing Go installations
+- [Getting Started](#getting-started)
+  - [Download and install](#download-and-install)
+    - [Managing Go installations](#managing-go-installations)
+  - [Tutorial: Get started with Go](#tutorial-get-started-with-go)
+  - [Tutorial: Create a Go Module](#tutorial-create-a-go-module)
+  - [pkg source](#pkg-source)
+  - [Function](#function)
+  - [Package](#package)
+  - [Module](#module)
+    - [Installing Module](#installing-module)
+    - [Local Module](#local-module)
+  - [Slice](#slice)
+  - [`init()`](#init)
+  - [map](#map)
+  - [Testing](#testing)
+  - [Compile and install](#compile-and-install)
+  - [Struct](#struct)
 
-> <https://golang.org/doc/manage-install#installing-multiple>
+## Download and install
+
+> <https://go.dev/doc/install>
+
+### Managing Go installations
+
+> <https://go.dev/doc/manage-install>
+
+## Tutorial: Get started with Go
+
+> <https://go.dev/doc/tutorial/getting-started>
+
+- the [hello](getting_started/hello/) project
+- `go.mod`: manage dependencies
+  - `go mod init`: initialize a go project
+  - `go mod tidy`: automatically manage modules
+- Module > Package
+
+## Tutorial: Create a Go Module
+
+> <https://go.dev/doc/tutorial/create-module>
+
+progress
 
 ## pkg source
 
