@@ -1,3 +1,7 @@
 go 1.20
 
-use ./programming_languages/go/getting_started/getting_started/hello
+use (
+	./programming_languages/go/getting_started/create_a_go_module/greetings
+	./programming_languages/go/getting_started/create_a_go_module/hello
+	./programming_languages/go/getting_started/getting_started/hello
+)

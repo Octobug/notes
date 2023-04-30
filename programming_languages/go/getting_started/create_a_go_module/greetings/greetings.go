@@ -14,13 +14,17 @@ func Hello(name string) (string, error) {
 		return "", errors.New("empty name")
 	}
 
+	// To fail the test:
+	// message := fmt.Sprintf(randomFormat())
 	// Create a message using a random format.
 	message := fmt.Sprintf(randomFormat(), name)
+	return message, nil
 
 	// or
 	// var message string
+	// // If a name was received, return a value that embeds the name
+	// // in a greeting message.
 	// message = fmt.Sprintf("Hi, %v. Welcome!", name)
-	return message, nil
 }
 
 // Hellos returns a map that associates each of the named people
@@ -44,7 +48,7 @@ func Hellos(names []string) (map[string]string, error) {
 
 // Init sets initial values for variables used in the function.
 func init() {
-	rand.Seed(time.Now().UnixNano())
+	rand.New(rand.NewSource(time.Now().UnixNano()))
 }
 
 // randomFormat returns one of a set of greeting messages. The returned
