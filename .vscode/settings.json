@@ -9,6 +9,9 @@
         "string_view": "cpp",
         "iostream": "cpp",
         "array": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "__config": "cpp",
+        "iterator": "cpp",
+        "locale": "cpp"
     }
 }

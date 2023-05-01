@@ -18,6 +18,20 @@ void output(vector<int> &numbers)
     cout << ']' << endl;
 }
 
+void output(vector<double> &numbers)
+{
+    cout << '[';
+    for (int i = 0; i < numbers.size(); i++)
+    {
+        cout << numbers[i];
+        if (i != numbers.size() - 1)
+        {
+            cout << ',';
+        }
+    }
+    cout << ']' << endl;
+}
+
 void output2d(vector<vector<int>> &matrix)
 {
     for (int i = 0; i < matrix.size(); i++)
