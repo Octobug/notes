@@ -74,8 +74,16 @@
     - [思维总结：9. 如何判断先行词](#思维总结9-如何判断先行词)
   - [思维训练：8-9](#思维训练8-9)
     - [答案：思维训练：8-9](#答案思维训练8-9)
-  - [2.7 介词 + 关系代词](#27-介词--关系代词)
+  - [10. 介词 + 关系代词](#10-介词--关系代词)
+    - [10.1 看从句选介词](#101-看从句选介词)
+      - [一、看从句的动词：所用介词须与定语从句中的动词构成固定搭配（最常见）](#一看从句的动词所用介词须与定语从句中的动词构成固定搭配最常见)
+      - [二、看从句的形容词：所用介词须与定语从句中的形容词构成搭配（比较常见）](#二看从句的形容词所用介词须与定语从句中的形容词构成搭配比较常见)
+      - [三、看从句的名词：所用介词须与定语从句中的某个名词构成搭配（较少用）](#三看从句的名词所用介词须与定语从句中的某个名词构成搭配较少用)
+    - [10.2 看先行词选介词](#102-看先行词选介词)
     - [2.7.3 看句义选介词](#273-看句义选介词)
+    - [2.7.7 “介词 + 关系代词 + to do”结构](#277-介词--关系代词--to-do结构)
+    - [2.8.2 as 引导限定性定语从句](#282-as-引导限定性定语从句)
+  - [2.11 缩合关系代词 what](#211-缩合关系代词-what)
   - [综合训练：定语从句](#综合训练定语从句)
 
 定语从句的两个重要概念: **先行词**和**关系词**。
@@ -1263,11 +1271,203 @@ accomplishments are admired by others.*
    随着你职业的发展，机遇会不断产生，这时，你可能会选择一个完全不同于原先设定的职业方向。
 7. C。`译` 因为青少年是在不断调整，以适应身体、智力和情感上出现的一系列新的变化和挑战，因此他们非常敏感，并且需要有自信心，而这些信心主要来自于自己获得成功以及自己成功能够被别人认可。
 
-## 2.7 介词 + 关系代词
+## 10. 介词 + 关系代词
+
+### 10.1 看从句选介词
+
+即根据从句中的**动词**、**形容词**和**名词**来判断应该用什么介词搭配。
+
+#### 一、看从句的动词：所用介词须与定语从句中的动词构成固定搭配（最常见）
+
+这里说的动词往往是指定语从句中的谓语动词。
+
+`1` The girl with whom you work is his girlfriend.
+
+- 关系词 whom 前面的介词 with 与定语从句中的谓语动词 work 构成固定搭配 work with。
+- `译` 和你一起工作的那个女孩是他的女朋友。
+
+`2` He is the man on whom I think you can depend.
+
+- depend on
+- `译` 我认为他是你可以依靠的人。
+
+`3` The buzzard can watch high in the sky the groud for signs of the waste and
+dead animals on which it feeds.
+
+- feed on
+- `译` 秃鹰可以从高空俯瞰大地，搜寻它们要吃的垃圾和动物尸体。
+
+`4` It was luck again, according to Nina, that brought her the role in Mute Wife
+for which she is best known.
+
+- be known for
+- `译` 尼娜认为，这次她又是幸运地在 Mute Wife 这部剧中担任角色，她正是以此剧目最为著名。
+
+`5` The goals for which he had fought all his life no longer seemed important to
+him.
+
+- fight for
+- `译` 他毕生为之奋斗的目标现在对他来说似乎并不重要了。
+
+`6` On the whole such a conclusion can be drawn with a certain degree of
+confidence, but only if the child can be assumed to have had the same attitude
+towards the test as the others **with whom** he is being compared, and only if
+he was not punished by lack of relevant information which they possessed.
+
+- compare with
+- `译` 总的来说，得出这种结论是有一定程度的把握的，但是必须具备两个条件：
+  一是能够假定这个孩子对测试的态度和与他进行比较的其他孩子的态度相同；
+  二是他也没有因为缺乏其他孩子所具有的相关知识而被扣分。
+
+💡 关系词前的介词还可以和从句中的其他不充当谓语的动词构成固定搭配关系。
+
+`7` Homo erectus is the name commonly given to the primate species from which
+humans are believed to have evolved.
+
+- evolved from 而不是 be believed from
+- `译` homo erectus 一词通常是用来指灵长类动物，据说人类就是从灵长类动物进化而来的。
+
+#### 二、看从句的形容词：所用介词须与定语从句中的形容词构成搭配（比较常见）
+
+如果定语从句的谓语不是一个实义动词，而是由 be 动词与某个形容词构成的，就要使用与该形容词搭配的介词。
+
+`8` We assume that the meanings of these underwater sounds are similar to those
+with which we are familiar on land.
+
+- be familiar with
+- `译` 据我们猜测，这些水下声音的意义同我们所熟悉的陆地上的声音的意义相似。
+
+`9` He referred me to some reference books with which I am not very familiar.
+
+- be familiar with
+- `译` 他让我参考的几本书我一本也不熟悉。
+
+`10` They will pass along their fresh impressions to the youth groups in which
+they are active.
+
+- be active in
+- `译` 他们会把自己获得的新鲜印象与他们积极参与的青年团体分享。
+
+`11` Dolphins might be trained to cooperate with fishermen and help them by
+finding, tracking, herding, or even catching fish -- in all of which activities
+dolphins are expert.
+
+- 关系词 which 构成的短语 all of which activities 前面的介词 in 与定语从句中的 expert
+  构成固定搭配 be expert in
+- `译` 可以训练海豚与渔民们合作，帮他们捕鱼，因为可以通过海豚发现鱼群、跟踪鱼群，或把鱼聚集成群，甚至是直接抓鱼——这些活动都是海豚所擅长的。
+
+💡 有时介词的判断不是根据谓语部分中的形容词，而是根据作定语的形容词。
+
+`12` He is her son, than whom a kinder son does not exist.
+
+- 这句可还原为：A kinder son than her son does not exist. 这里的介词 than
+  与定语从句中作定语的形容词 kinder 构成呼应搭配。
+- `译` 他是她的儿子，再也找不到像他这么好的儿子了。
+
+#### 三、看从句的名词：所用介词须与定语从句中的某个名词构成搭配（较少用）
+
+如果从句中的动词或形容词都没有可与之形成固定搭配的介词，则要根据从句中的名词来分辨介词。
+
+`13` I am sending you an inquiry, to which your prompt attention is highly
+appreciated.
+
+- 这句话通常出现在商务函电中。这里的关系词 which 前面的介词 to 与定语从句中的 attention
+  构成固定搭配 attention to。
+- `译` 兹寄去询价单一纸，望尽快办理，不胜感激。
+
+`14` Many hypersomniacs suffer from narcolepsy, for which the primary sympton is
+excessive daytime sleepiness.
+
+- symptom for 表示“是……症状”
+- `译` 许多嗜睡的人都患有发作性嗜睡病，其早期症状就是在白天都极度想睡觉。
+
+### 10.2 看先行词选介词
+
+在这种情形中，关系词前面用什么介词与定语从句没有关系，而是与关系词前面的**先行词**密切相关，所选用的介词要与先行词构成固定搭配。
+
+`1` The ease with which Mr. Zhang cracked the complex sentence was unbelievable.
+
+- 这句可以拆解成两个简单句：Mr. Zhang cracked the complex sentence with ease and the
+  case was unbelievable.
+- 将 the ease was unbelievable 作为主句，将 Mr. Zhang cracked the complex sentence
+  with ease 作为定语从句来修饰 the ease，将它们合并起来就是：
+  
+  The ease (Mr. Zhang cracked the complex sentence with ease) was unbelievable.
+
+  其中先行词是 ease，用关系词 which 来指代就是：
+
+  The ease (Mr. Zhang cracked the complex sentence with which) was unbelievable.
+
+  关系词 which 应该放在从句开头，而 with which (即 with ease) 是固定搭配，所以要将
+  with which 一起放在从句开头：
+
+  The ease (with which Mr. Zhang cracked the complex sentence) was unbelievable.
+
+- `译` 这个复杂的句子，张老师能够如此轻而易举地分析出来，真是让人难以置信。
+
+`2` The ease with which the fish can be collected from the shore has almost
+resulted in its extinction.
+
+- `译` 人们在岸边就能够轻而易举地捕到鱼，这几乎使这里的鱼灭绝了。
+
+`3` About a thousand species of animals are in danger of extinction, and the
+rate at which they are being destroyed has increased.
+
+- 拆成简单句：About a thousand species of animals are in danger of extinction.
+  They are being destroyed at this rate and the rate has increased.
+- the rate has increased 作为主句，they are being destroyed at this rate
+  作为定语从句来修饰 the rate，构成：
+
+  The rate (they are being destroyed at this rate) has increased.
+
+  先行词是 rate，用 which 来指代：
+
+  The rate (they are being destroyed at which) has increased.
+
+  关系词 which 应该放在从句开头，又因为 at which (即 at this rate) 是固定搭配，所以要将
+  at which 一起移到句子开头：
+
+  The rate (at which they are being destroyed) has increased.
+
+- `译` 约有 1000 种动物濒临灭绝的危险，而且它们受残害的速度日益加快。
+
+根据上面两个例子可以看出，要想正确地使用介词，必须记住相关的**介词短语搭配**。常见的有：
+
+- at the rate
+- at the temperate
+- by the means
+- by the mode
+- in a culture
+- in practice
+- in the direction
+- to the degree
+- to the extent
+- with ease
+
+`4` The speed at which an animal lives is determined by measuring the rate at
+which it uses oxygen.
+
+- at the speed, at the rate，在从句中均作状语，修饰从句的谓语。
+- `译` 通过测定动物消耗氧气的速率可以测定该动物的生长速度。
+
+`5` When television was first introduced, the extent to which it would affect
+human society could not have been foreseen.
 
 >>>>> progress
 
 ### 2.7.3 看句义选介词
+
+>>>>> progress
+
+### 2.7.7 “介词 + 关系代词 + to do”结构
+
+>>>>> progress
+
+### 2.8.2 as 引导限定性定语从句
+
+>>>>> progress
+
+## 2.11 缩合关系代词 what
 
 >>>>> progress
 
