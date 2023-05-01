@@ -12,6 +12,12 @@
         "ios": "cpp",
         "__config": "cpp",
         "iterator": "cpp",
-        "locale": "cpp"
+        "locale": "cpp",
+        "iosfwd": "cpp",
+        "__hash_table": "cpp",
+        "compare": "cpp",
+        "tuple": "cpp",
+        "typeinfo": "cpp",
+        "version": "cpp"
     }
 }
