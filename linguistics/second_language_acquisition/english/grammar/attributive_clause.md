@@ -80,6 +80,14 @@
       - [二、看从句的形容词：所用介词须与定语从句中的形容词构成搭配（比较常见）](#二看从句的形容词所用介词须与定语从句中的形容词构成搭配比较常见)
       - [三、看从句的名词：所用介词须与定语从句中的某个名词构成搭配（较少用）](#三看从句的名词所用介词须与定语从句中的某个名词构成搭配较少用)
     - [10.2 看先行词选介词](#102-看先行词选介词)
+    - [对“10.1 看从句选介词”与“10.2 看先行词选介词”的比较与总结](#对101-看从句选介词与102-看先行词选介词的比较与总结)
+      - [一、介词在短语中的位置](#一介词在短语中的位置)
+      - [二、介词在定语从句中的位置](#二介词在定语从句中的位置)
+      - [三、定语从句的完整性](#三定语从句的完整性)
+      - [四、“介词 + 关系代词”充当的成分](#四介词--关系代词充当的成分)
+      - [五、如何决定该选用第一种方法还是第二种方法](#五如何决定该选用第一种方法还是第二种方法)
+    - [思维训练：10.1-10.2](#思维训练101-102)
+      - [答案：思维训练：10.1-10.2](#答案思维训练101-102)
     - [2.7.3 看句义选介词](#273-看句义选介词)
     - [2.7.7 “介词 + 关系代词 + to do”结构](#277-介词--关系代词--to-do结构)
     - [2.8.2 as 引导限定性定语从句](#282-as-引导限定性定语从句)
@@ -1453,7 +1461,137 @@ which it uses oxygen.
 `5` When television was first introduced, the extent to which it would affect
 human society could not have been foreseen.
 
->>>>> progress
+- to which `=` to the exten: 在某种程度上，在定语从句中作状语，修饰谓语动词 affect
+- `译` 人们发明电视的时候，并没能预见到它会对人类社会产生多大的影响。
+
+`6` Public demonstrations are an effective means by which the people can bring
+social inequalities to the attention of government officials.
+
+- by which `=` by the means: 通过这种方式
+- `译` 公众通过游行示威这种方式，可以有效地让政府官员们注意到不平等的社会现实。
+
+`7` The method of scientific investigation is nothing but the expression of the
+necessary mode of working of the human mind; it is simply the mode by which all
+phenomena are reasoned about and given precise and exact explanation.
+
+- by which `=` by the mode: 通过某种方式
+- `译` 科学研究的方法不过是人类思维活动的必要表达方式，也就是对一切现象进行思索并给以精确而严谨解释的表达方式。
+
+`8` An important factor in a market-oriented economy is the mechanism by which
+consumer demands can be expressed and responded to by producers.
+
+- by which `=` by the mechanism
+- `译` 在以市场为导向的经济中，一个非常重要的因素就是一种用来表现消费者需求并使生产商能做出反应的机制。
+
+### 对“10.1 看从句选介词”与“10.2 看先行词选介词”的比较与总结
+
+#### 一、介词在短语中的位置
+
+根据定语从句判断介词，所用介词与从句中的动词、形容词或名词构成搭配，比如：depend on,
+familiar with, attention to 等。
+
+根据先行词判断介词，所用介词与先行词构成搭配，比如：with ease, at the rate, to the
+extent 等。
+
+通过比较上面几个例子，可以看出介词在短语中的位置是不同的，有时是在短语末尾，比如
+attention to；有时是在短语开头，比如 with ease。
+因此，同样是名词，如果是定语从句中的名词，则要看名词后面用什么介词；
+如果是先行词，则要看名词前面用什么介词。
+
+`1` It was he ____ we had the greatest faith.
+
+- A. in which
+- B. in whom
+- C. with whom
+- D. with whom
+- `答案` B。
+- have faith in sb.
+- `译` 我们最信任的人是他。
+
+`2` This is the faith ____ I come back.
+
+- A. in which
+- B. in whom
+- C. with which
+- D. with whom
+- `答案` C。
+- with faith
+- `译` 正是怀着这个信念，我回来了。
+
+#### 二、介词在定语从句中的位置
+
+虽然都是“介词 + 关系代词”这一结构，但两种判断方法所选用的介词在句中的位置是有差别的。
+
+如果是**看从句选介词**，所用的介词可前置，即置于关系代词前面；
+也可后置，即把介词后移到定语从句中，分别紧跟在动词、形容词或名词后面。
+
+`3` He is the man on whom you can depend.
+
+可以说成：
+
+`4` He is the man who you can depend on.
+
+在口语中，介词往往是置于从句中。
+而在书面语中，往往是把介词至于关系词前面，这样句子显得更紧凑。
+
+对于**看先行词选介词**，因为“介词 + 关系词”是一个固定搭配，此时介词与定语从句中的任何词都没有语义关系。
+因此，这种情况介词是无法后移到句中的，而只能在关系词前面构成搭配。
+
+`5` The ease with which Mr. Zhang cracked the complex sentence was unbelievable.
+
+综上，对于**看从句选介词**，这个介词可以放在关系词前面，也可以后移到定语从句中；
+对于**看先行词选介词**，这个介词只能放在关系词前面。
+
+#### 三、定语从句的完整性
+
+看**从句选介词**时，定语从句的意思一般都是不完整的，而“介词 + 关系代词”结构补充说明定语从句中的动词、形容词或名词的意思。
+
+看**先行词选介词**时，定语从句的意思是完整的，或者说定语从句中没有任何词缺少与之搭配的介词。
+
+#### 四、“介词 + 关系代词”充当的成分
+
+正因为两种判断介词的方法在定语从句的完整性方面有差异，导致“介词 + 关系代词”这一结构在定语从句中所充当的成分是不同的。
+
+看**从句选介词**，这种情况下的介宾结构“介词 + 关系代词”是在定语从句中作不足与，补充说明从句中的某个动词、形容词或名词。
+
+而看**先行词选介词**这种情况下的介宾结构“介词 + 关系代词”是在定语从句中作**状语**，修饰从句的谓语动词。
+
+#### 五、如何决定该选用第一种方法还是第二种方法
+
+对于**看先行词选介词**，此时的先行词都是非常特殊的名词，其特殊之处在于这些名词都有固定介词与之搭配，比如：
+to the extent, by the means, with ease, at the rate, at the pace 等。
+因此，如果遇到这些特殊先行词，而且定语从句又是完整的句子，就可以确定要看先行词来选介词——选择与先行词构成固定搭配的介词。
+
+如果先行词是普通的名词，没有什么介词与其构成固定搭配，则一般可以考虑看从句选介词——选择与定语从句中的某个动词、形容词或名词构成固定搭配的介词。
+
+### 思维训练：10.1-10.2
+
+**一、在下面空格中填入合适的介词，并将句子译成汉语。**
+
+*1. Divorce sets in motion events ____ which an individual has little control,
+such as the reactions of spouses and children, as well as the uncertainty of new
+relationships.*
+
+*2. The pressure from spending in turn determines the ease ____ which prices
+increase.*
+
+**二、辨别改错。**
+
+*3. There is ***a***`A` delicate balance of nature ***which***`B` many square
+miles of ocean and vegetation and clean air ***are needed to***`C` maintain only
+***a relatively few***`D` human beings.*
+
+#### 答案：思维训练：10.1-10.2
+
+1. over。over 与定语从句中的名词 control 构成固定搭配 have control over，表示“对……控制”。
+   `译` 离婚常会引发很多当事人所无法掌控的情况，比如配偶和孩子的反应以及未来婚姻关系的不确定性。
+2. with。with 与先行词 ease 构成固定搭配，with which `=` with ease，表示“轻易地”。在从句中作状语，修饰谓语动词 increase。
+   `译` 来自消费的压力转而又决定了价格上涨的快慢。
+3. B，改为 in which。定语从句是一个完整句子，因此，which 无法在从句中充当成分，这违背了关系词一定要在定语从句中充当某种成分这一基本要求。
+   所以，which 前面显然缺少了介词，这个介词要和先行词 a delicate balance of nature
+   构成搭配，所以应该是 in，表示“在一种微妙的自然平衡中”。
+
+   `译` 在自然界里，存在着这样一种微妙的生态平衡——为了维持相对较少的人类的生存而需要若干平方英里的海洋、植被和干净空气。
 
 ### 2.7.3 看句义选介词
 
