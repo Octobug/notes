@@ -70,7 +70,7 @@
 
 - [x] [1. 名词从句](nominal_clause.md)
 - [ ] [2. 定语从句](attributive_clause.md)
-- [ ] 3. 状语从句
+- [ ] [3. 状语从句](adverbial_clause.md)
 - [ ] [4. 不定式](infinitive.md)
 - [ ] [5. 动名词](gerund.md)
 - [ ] [6. 分词](participles.md)
