@@ -1,5 +1,7 @@
 # Notes
 
+![The Purpose of Life](.assets/the_purpose_of_life.jpg)
+
 ## Categories
 
 These notes are categorized into directories named in academic
