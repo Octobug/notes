@@ -7,7 +7,7 @@
     - [1.1 什么是状语（adverbial）？](#11-什么是状语adverbial)
     - [1.2 状语的位置](#12-状语的位置)
     - [1.3 基本结构](#13-基本结构)
-    - [3.1 状语从句的本质](#31-状语从句的本质)
+    - [1.4 状语从句的本质](#14-状语从句的本质)
   - [2. 时间状语从句](#2-时间状语从句)
     - [2.1 时间连词 when 的用法特点](#21-时间连词-when-的用法特点)
       - [一、主句一般过去时 + 从句一般过去时](#一主句一般过去时--从句一般过去时)
@@ -128,7 +128,24 @@
    - on condition that
    - in order that
 
-### 3.1 状语从句的本质
+### 1.4 状语从句的本质
+
+状语从句就是**用不同的连词将几个分句连接起来，以表达分句之间特定的逻辑关系**。
+
+`1` George Annas, chair of the Health Law Department at Boston University,
+maintains that, `____` a doctor prescribes a drug for a legitimate medical
+purpose, the doctor has done nothing illegal `____` the patient uses the drug to
+hasten death. "It's like surgery," he says. "We don't call those deaths
+homicides `____` the doctors didn't intend to kill their patients, `____` they
+risked their death. `____` you're a physician, you can risk your patient's
+suicide `____` you don't intend their suicide."
+
+- `答案` as long as; even if; because; although; If; as long as
+- `译` 波士顿大学健康法律系主任 George Annas 认为，只要医生所开的药物是出于合法的医疗目的，他就没有做违法的事情，即使病人用这些药物来加速死亡。
+  “这就好比外科手术，”他说道：“我们并不把外科手术过程中发生的死亡称作他杀，因为医生并不想要杀死他们的病人，虽然他们冒了致人死亡的风险。
+  如果你是医生，你可以冒病人自杀的风险，只要你没有想要他们自杀。”
+
+`2` Not everyone...
 
 >>>>> progress
 
