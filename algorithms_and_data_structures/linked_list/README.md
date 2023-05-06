@@ -18,6 +18,9 @@
       - [双指针逻辑](#双指针逻辑)
       - [递归拆分](#递归拆分)
   - [两两交换链表结点](#两两交换链表结点)
+  - [环形链表入口](#环形链表入口)
+    - [判断链表是否有环](#判断链表是否有环)
+    - [寻找环的入口点](#寻找环的入口点)
   - [References](#references)
 
 ## 理论基础
@@ -192,6 +195,37 @@ public:
 };
 ```
 
+## 环形链表入口
+
+### 判断链表是否有环
+
+用快慢双指针即可，只要两指针相遇就说明链表有环。
+
+### 寻找环的入口点
+
+设：
+
+- `x`: 头结点到环形入口结点的结点数
+- `y`: 环形入口结点到双指针相遇结点的结点数
+- `z`: 双指针相遇结点到环形入口结点的结点数
+
+相遇时，`slow` 指针走过的结点数为 `x + y`，`fast` 走过的结点数为 `x + y + n (y + z)`，n
+为 `fast` 指针在环内走了 `n` 圈才遇到 `slow` 指针。
+
+`fast` 每走两步 `slow` 走一步，因此有: `(x + y) * 2 = x + y + n * (y + z)`
+
+化简为: `x + y = n * (y + z)`
+
+因此: `x = n * (y + z) - y`
+
+将 `n * (y + z)` = `(n - 1) (y + z) + y + z` 代入，得:
+`x = (n - 1) (y + z) + z (n >= 1)`
+
+- 当 `n = 1` 时, `x = z`
+- 当 `n > 1` 时，`fast` 指针需要转 `n` 圈才能遇到 `slow`。
+
+**这意味着，从头结点出发一个指针，从相遇结点也出发一个指针，这两个指针每次只走一个结点，当它们相遇时就是环形入口结点**。
+
 ## References
 
 - [x] 链表
@@ -200,7 +234,7 @@ public:
   - [x] [设计链表](https://programmercarl.com/0707.%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8.html)
   - [x] [翻转链表](https://programmercarl.com/0206.%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8.html)
   - [x] [两两交换链表中的结点](https://programmercarl.com/0024.%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9.html)
-  - [ ] [删除链表的倒数第N个结点](https://programmercarl.com/0019.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9.html)
-  - [ ] 链表相交
-  - [ ] 环形链表II
-  - [ ] 总结篇
+  - [x] [删除链表的倒数第N个结点](https://programmercarl.com/0019.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9.html)
+  - [x] [链表相交](https://programmercarl.com/%E9%9D%A2%E8%AF%95%E9%A2%9802.07.%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4.html)
+  - [x] [环形链表II](https://programmercarl.com/0142.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.html)
+  - [x] [总结篇](https://programmercarl.com/%E9%93%BE%E8%A1%A8%E6%80%BB%E7%BB%93%E7%AF%87.html)
