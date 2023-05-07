@@ -23,6 +23,7 @@
     - [Add a test](#add-a-test)
     - [Compile and install the application](#compile-and-install-the-application)
   - [Tutorial: Getting started with multi-module workspaces](#tutorial-getting-started-with-multi-module-workspaces)
+    - [Create the workspace](#create-the-workspace)
   - [Tutorial: Developing a RESTful API with Go and Gin](#tutorial-developing-a-restful-api-with-go-and-gin)
 
 ## Download and install
@@ -224,4 +225,24 @@ func Hello(name string) (string, error) {
 
 > <https://go.dev/doc/tutorial/workspaces>
 
-## [Tutorial: Developing a RESTful API with Go and Gin](developing_a_restful_api_with_go_and_gin)
+### Create the workspace
+
+```sh
+go work init PATH
+```
+
+The `go.work` file has similar syntax to `go.mod`.
+
+```work
+go 1.18
+
+use ./hello
+```
+
+- The `go` directive tells Go the version.
+- The `use` directive tells Go that the module in `./hello` should be used as
+  main modules.
+
+## Tutorial: Developing a RESTful API with Go and Gin
+
+> <https://go.dev/doc/tutorial/web-service-gin>
