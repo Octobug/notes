@@ -8,6 +8,8 @@
     - [1.2 状语的位置](#12-状语的位置)
     - [1.3 基本结构](#13-基本结构)
     - [1.4 状语从句的本质](#14-状语从句的本质)
+      - [思维训练：1.4 状语从句的本质](#思维训练14-状语从句的本质)
+      - [答案：思维训练：1.4 状语从句的本质](#答案思维训练14-状语从句的本质)
   - [2. 时间状语从句](#2-时间状语从句)
     - [2.1 时间连词 when 的用法特点](#21-时间连词-when-的用法特点)
       - [一、主句一般过去时 + 从句一般过去时](#一主句一般过去时--从句一般过去时)
@@ -145,9 +147,199 @@ suicide `____` you don't intend their suicide."
   “这就好比外科手术，”他说道：“我们并不把外科手术过程中发生的死亡称作他杀，因为医生并不想要杀死他们的病人，虽然他们冒了致人死亡的风险。
   如果你是医生，你可以冒病人自杀的风险，只要你没有想要他们自杀。”
 
-`2` Not everyone...
+`2` Not everyone agrees on the number of Americans who are homeless. Estimates
+range anywhere from 600,000 to 3 million. `____` the figure may vary, analysts
+do agree on another matter: that the number of the homeless is increasing.
 
->>>>> progress
+- A. Now that
+- B. Although
+- C. Provided
+- D. Except that
+- `答案` B。让步转折。
+- `译` 不是每个人都认可美国无家可归者的人数，人们的估计数字从 60 万到 300 万不等。
+  尽管数字不同，但是分析人士均认同另外一件事：无家可归者的人数正在增加。
+
+`3` Part of the problem is that many homeless adults are addicted to alcohol or
+drugs. And a significant number of the homeless have serious mental disorders.
+Many others, `____` not addicted or mentally ill, simply lack the everyday
+survival skills needed to turn their lives around.
+
+- A. when
+- B. once
+- C. while
+- D. whereas
+- `答案` C。让步转折。这里 C. while 和 D. whereas 都有转折的意思，这里取 while
+  “尽管”的意思。
+  - while:
+    - 当……时候 (during the time that)，时间状语从句连词；
+    - 只要 (as long as)，条件状语从句连词；
+    - 尽管 (although)，让步状语从句连词；
+    - 然而 (whereas)，表示对比。
+  - whereas: 用来表示对比的转折，比如: Some people like fat meat, whereas others
+    hate it.
+- `译` 部分问题在于，许多无家可归的成年人酗酒或吸毒成瘾，还有大量的无家可归者患有严重的精神疾病。
+  其他许多人虽然未酗酒、吸毒成瘾或患有精神疾病，但是他们缺乏改变他们生活所必需的生存技能。
+
+`4` Strangely, some people find that they can smell one type of flower but not
+another, `____` others are sensitive to the smells of both flowers.
+
+- A. when
+- B. since
+- C. for
+- D. whereas
+- `答案` D。转折让步。
+- `译` 奇怪的是，有些人发现他们能够闻到一种类型的花香但闻不到另一种花香，而另外一些人则对两种花香都敏感。
+
+`5` Glenn: Does it matter if the accents are British or American?
+
+Nick: Not really. It's a matter of preference. Some people like a British accent
+whereas others prefer an American one.
+
+- `译`
+  - Glenn: 选择英音还是美音这很重要吗？
+  - Nick: 不重要，只是偏好的问题。一些人喜欢英音而另一些喜欢美音。
+
+`6` The phenomenon provides a way for companies to remain globally competitive
+`____` avoiding market cycles and the growing burdens imposed by employment
+rules, healthcare costs and pension plans.
+
+- A. but
+- B. while
+- C. and
+- D. whereas
+- `答案` B。
+- `译` 这种现象为公司开辟了一条道路，使它们既保持了自身的国际竞争力，同时也避免了市场周期的冲击，以及就业法规、医疗费用和养老金造成的日益繁重的负担。
+
+状语从句的连接词主要有：
+
+- 时间
+  - 常用连接词
+    - after
+    - as
+    - as soon as
+    - before
+    - since
+    - till
+    - until
+    - when
+    - while
+  - 特殊连接词
+    - 名词
+      - every time
+      - next time
+      - the day
+      - the instant
+      - the minute
+      - the moment
+    - 副词
+      - directly
+      - immediately
+      - instantly
+    - 连词
+      - hardly...when
+      - no sooner...than
+      - scarcely...wjem
+- 地点
+  - 常用连接词
+    - where
+  - 特殊连接词
+    - anywhere
+    - everywhere
+    - wherever
+- 原因
+  - 常用连接词
+    - as
+    - because
+    - for
+    - since
+  - 特殊连接词
+    - considering that
+    - given that
+    - in as much as
+    - in so much as
+    - in that
+    - now that
+    - seeing that
+- 目的
+  - 常用连接词
+    - in order that
+    - so that
+    - that
+  - 特殊连接词
+    - for fear that
+    - for the purpose that
+    - in case
+    - in the hope that
+    - lest
+    - on purpose that
+    - to the end that
+- 结果
+  - 常用连接词
+    - so that
+    - so...that
+    - such...that
+  - 特殊连接词
+    - such that,
+    - to such a degree that
+    - to such an extent that
+    - to the degree that
+    - to the extent that
+- 条件
+  - 常用连接词
+    - if
+    - unless
+  - 特殊连接词
+    - as long as
+    - on condition that
+    - provided
+    - providing
+    - so long as
+    - suppose
+    - supposing
+- 让步
+  - 常用连接词
+    - although
+    - even if
+    - even though
+    - though
+  - 特殊连接词
+    - as (倒装结构), while (一般用在句首)
+    - however, whatever, whoever, whichever, whenever, wherever, whether...or
+    - “as + 形容词 + as + 主谓”结构用在句首
+- 比较
+  - 常用连接词
+    - as
+    - than
+  - 其他句型
+    - A is to B what/as C is to D;
+    - just as..., so...;
+    - no more...than;
+    - not A so much as B/not so much A as B
+    - the more..., the more;
+- 方式
+  - as
+  - the way
+
+#### 思维训练：1.4 状语从句的本质
+
+*1. I've brought my umbrella `____` it's not raining.*
+
+*2. We'll stay here `____` it stops raining.*
+
+*3. I try hard to learn English `____` I don't seem to improve.*
+
+*4. I find it difficult to believe a word he says `____` he never tells me the
+truth.*
+
+*5. You see the lightning `____` it happens, but you hear the thunder later.*
+
+#### 答案：思维训练：1.4 状语从句的本质
+
+1. even though
+2. until
+3. though
+4. as
+5. the moment
 
 ## 2. 时间状语从句
 
