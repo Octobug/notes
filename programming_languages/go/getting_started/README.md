@@ -25,6 +25,12 @@
   - [Tutorial: Getting started with multi-module workspaces](#tutorial-getting-started-with-multi-module-workspaces)
     - [Create the workspace](#create-the-workspace)
   - [Tutorial: Developing a RESTful API with Go and Gin](#tutorial-developing-a-restful-api-with-go-and-gin)
+    - [Design API endpoints](#design-api-endpoints)
+    - [Create the data](#create-the-data)
+  - [Tutorial: Getting started with generics](#tutorial-getting-started-with-generics)
+  - [Tutorial: Getting started with fuzzing](#tutorial-getting-started-with-fuzzing)
+  - [Writing Web Applications](#writing-web-applications)
+  - [How to Write Go Code](#how-to-write-go-code)
 
 ## Download and install
 
@@ -246,3 +252,49 @@ use ./hello
 ## Tutorial: Developing a RESTful API with Go and Gin
 
 > <https://go.dev/doc/tutorial/web-service-gin>
+
+### Design API endpoints
+
+- `/albums`
+  - `GET` - Get a list of all albums, returned as `JSON`.
+  - `POST` - Add a new album from request data sent as `JSON`.
+- `/albums/:id`
+  - `GET` - Get an album by its ID, returning the album data as `JSON`.
+
+### Create the data
+
+```go
+// album represents data about a record album.
+type album struct {
+    ID     string  `json:"id"`
+    Title  string  `json:"title"`
+    Artist string  `json:"artist"`
+    Price  float64 `json:"price"`
+}
+```
+
+Struct tags such as `json:"artist"` specify what a field’s name should be when
+the struct’s contents are serialized into JSON.
+
+Without them, the JSON would use the struct’s capitalized field names – a style
+not as common in JSON.
+
+## Tutorial: Getting started with generics
+
+> <https://go.dev/doc/tutorial/generics>
+>
+>>>>> progress
+
+## Tutorial: Getting started with fuzzing
+
+> <https://go.dev/doc/tutorial/fuzz>
+>
+>>>>> progress
+
+## Writing Web Applications
+
+> <https://go.dev/doc/articles/wiki/>
+
+## How to Write Go Code
+
+> <https://go.dev/doc/code>
