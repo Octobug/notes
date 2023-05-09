@@ -15,7 +15,7 @@ void output(ListNode *head)
     cout << endl;
 }
 
-ListNode *array2list(vector<int> arr)
+ListNode *array2list(vector<int> &arr)
 {
     ListNode *head = new ListNode();
     for (int i = arr.size() - 1; i >= 0; i--)
