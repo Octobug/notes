@@ -31,8 +31,29 @@ void output(vector<double> &numbers)
     }
     cout << ']' << endl;
 }
+void output(vector<string> &strs)
+{
+    cout << '[';
+    for (int i = 0; i < strs.size(); i++)
+    {
+        cout << strs[i];
+        if (i != strs.size() - 1)
+        {
+            cout << ',';
+        }
+    }
+    cout << ']' << endl;
+}
 
 void output2d(vector<vector<int>> &matrix)
+{
+    for (int i = 0; i < matrix.size(); i++)
+    {
+        output(matrix[i]);
+    }
+}
+
+void output2d(vector<vector<string>> &matrix)
 {
     for (int i = 0; i < matrix.size(); i++)
     {
