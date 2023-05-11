@@ -10,6 +10,7 @@
     - [三种常见的哈希结构](#三种常见的哈希结构)
       - [set](#set)
       - [map](#map)
+  - [两个数组的交集](#两个数组的交集)
   - [References](#references)
 
 ## 理论基础
@@ -120,15 +121,37 @@
 
 `hash_set`, `hash_map`, `hash_multiset`, `hash_multimap` 等都是社区贡献的库。
 
+## 两个数组的交集
+
+```cpp
+class Solution {
+public:
+  vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+    unordered_set<int> result_set; // 存放结果，之所以用set是为了给结果集去重
+    unordered_set<int> nums_set(nums1.begin(), nums1.end());
+    for (int num : nums2) {
+      // 发现nums2的元素 在nums_set里又出现过
+      if (nums_set.find(num) != nums_set.end()) {
+        result_set.insert(num);
+      }
+    }
+    return vector<int>(result_set.begin(), result_set.end());
+  }
+};
+```
+
+
+
+
 ## References
 
 - [x] 哈希表
   - [x] [哈希表理论基础](https://programmercarl.com/%E5%93%88%E5%B8%8C%E8%A1%A8%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html)
   - [x] [有效的字母异位词](https://programmercarl.com/0242.%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D.html)
-  - [ ] [两个数组的交集](https://programmercarl.com/0349.%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86.html)
-  - [ ] 快乐数
-  - [ ] 两数之和
-  - [ ] 四数相加II
+  - [x] [两个数组的交集](https://programmercarl.com/0349.%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86.html)
+  - [x] [快乐数](https://programmercarl.com/0202.%E5%BF%AB%E4%B9%90%E6%95%B0.html)
+  - [x] [两数之和](https://programmercarl.com/0001.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.html)
+  - [ ] [四数相加II](https://programmercarl.com/0454.%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0II.html)
   - [ ] 赎金信
   - [ ] 三数之和
   - [ ] 四数之和
