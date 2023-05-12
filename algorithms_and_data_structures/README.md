@@ -24,7 +24,7 @@
 - [x] [数组](array)
 - [x] [链表](linked_list)
 - [ ] [哈希表](hash_table)
-- [ ] 字符串
+- [ ] [字符串](string)
 - [ ] 双指针法
 - [ ] 栈与队列
 - [ ] [二叉树](binary_tree)
