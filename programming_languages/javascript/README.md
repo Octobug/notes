@@ -1,9 +1,8 @@
 # JavaScript
 
-## Front-end Web Development
+- [JavaScript](#javascript)
+  - [References](#references)
 
-> <https://en.wikipedia.org/wiki/Front-end_web_development>
+## References
 
-### Learn Web Development
-
-> <https://developer.mozilla.org/en-US/docs/Learn>
+- [ ] [roadmap.sh](https://roadmap.sh/javascript)
