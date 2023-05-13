@@ -23,7 +23,7 @@
 - [x] [算法性能分析](fundamentals/analysis_of_algorithms.md)
 - [x] [数组](array)
 - [x] [链表](linked_list)
-- [ ] [哈希表](hash_table)
+- [x] [哈希表](hash_table)
 - [ ] [字符串](string)
 - [ ] 双指针法
 - [ ] 栈与队列
