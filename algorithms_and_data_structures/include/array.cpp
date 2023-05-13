@@ -31,6 +31,21 @@ void output(vector<double> &numbers)
     }
     cout << ']' << endl;
 }
+
+void output(vector<char> &chars)
+{
+    cout << '[';
+    for (int i = 0; i < chars.size(); i++)
+    {
+        cout << chars[i];
+        if (i != chars.size() - 1)
+        {
+            cout << ',';
+        }
+    }
+    cout << ']' << endl;
+}
+
 void output(vector<string> &strs)
 {
     cout << '[';

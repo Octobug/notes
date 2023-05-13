@@ -7,6 +7,7 @@ using namespace std;
 
 void output(vector<int> &numbers);
 void output(vector<double> &numbers);
+void output(vector<char> &chars);
 void output(vector<string> &strs);
 void output2d(vector<vector<int>> &matrix);
 void output2d(vector<vector<string>> &matrix);
