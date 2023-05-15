@@ -2,8 +2,8 @@
 
 Blogs that I've been reading, listed in alphabetical order.
 
-- [当然我在扯淡](http://www.yinwang.org/) (Currently following)
-- [酷壳](https://coolshell.cn/)
+- [当然我在扯淡](http://www.yinwang.org/)
+- [酷壳](https://coolshell.cn/) (Currently following)
 - [laymonage](https://laymonage.com/)
 - [美团技术团队](https://tech.meituan.com/)
 - [Randy's Blog](https://lutaonan.com/)
