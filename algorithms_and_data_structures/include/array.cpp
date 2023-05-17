@@ -4,6 +4,20 @@
 
 using namespace std;
 
+void output(int numbers[], int size)
+{
+    cout << '[';
+    for (int i = 0; i < size; i++)
+    {
+        cout << numbers[i];
+        if (i < size - 1)
+        {
+            cout << ',';
+        }
+    }
+    cout << ']' << endl;
+}
+
 void output(vector<int> &numbers)
 {
     cout << '[';

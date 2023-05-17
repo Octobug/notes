@@ -5,6 +5,7 @@
 
 using namespace std;
 
+void output(int numbers[], int size);
 void output(vector<int> &numbers);
 void output(vector<double> &numbers);
 void output(vector<char> &chars);
