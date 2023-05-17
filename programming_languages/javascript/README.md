@@ -20,9 +20,17 @@
     - [Object](#object)
       - [Built-in objects](#built-in-objects)
       - [TypeOf Operator](#typeof-operator)
-    - [Type Casting](#type-casting)
-      - [Explicit Type Casting](#explicit-type-casting)
-      - [Implicit Type Casting](#implicit-type-casting)
+    - [Object Prototype](#object-prototype)
+      - [The prototype chain](#the-prototype-chain)
+      - [Shadowing properties](#shadowing-properties)
+      - [Setting a prototype](#setting-a-prototype)
+        - [Using Object.create](#using-objectcreate)
+        - [Using a constructor](#using-a-constructor)
+        - [Own properties](#own-properties)
+    - [Prototype Inheritance](#prototype-inheritance)
+  - [Type Casting](#type-casting)
+    - [Explicit Type Casting](#explicit-type-casting)
+    - [Implicit Type Casting](#implicit-type-casting)
   - [Data Structures](#data-structures)
     - [Indexed collections](#indexed-collections)
       - [Arrays](#arrays)
@@ -289,13 +297,213 @@ language, all of which are accessible at the global scope. Some examples are:
 You can use the `typeOf` operator to find the data type of a JavaScript
 variable.
 
-### Type Casting
+### Object Prototype
 
-#### Explicit Type Casting
+JavaScript is an object-oriented language built around a prototype model. In
+JavaScript, every object inherits properties from its prototype. A prototype is
+simply an object from which another object inherits properties.
+
+> <https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes>
+
+Prototypes are the mechanism by which JavaScript objects inherit features from
+one another.
+
+#### The prototype chain
+
+```js
+const myObject = {
+  city: "Madrid",
+  greet() {
+    console.log(`Greetings from ${this.city}`);
+  },
+};
+
+myObject.greet(); // Greetings from Madrid
+```
+
+Every object in JavaScript has a built-in property, which is called its
+**prototype**. The prototype is itself an object, so the prototype will have
+its own prototype, making what's called a **prototype chain**. The chain ends
+when we reach a prototype that has null for its own prototype.
+
+> ⚠️ **Note**: The property of an object that points to its prototype is **not**
+> called `prototype`. Its name is not standard, but in practice all browsers
+> use `__proto__`. The standard way to access an object's prototype is the
+> `Object.getPrototypeOf()` method.
+
+When you try to access a property of an object: if the property can't be found
+in the object itself, the prototype is searched for the property. If the
+property still can't be found, then the prototype's prototype is searched, and
+so on until either the property is found, or the end of the chain is reached,
+in which case `undefined` is returned.
+
+So when we call `myObject.toString()`, the browser:
+
+- looks for `toString` in `myObject`
+- can't find it there, so looks in the prototype object of `myObject` for
+  `toString`
+- finds it there, and calls it.
+
+`Object {}` is an object called `Object.prototype`, and it is the most basic
+prototype, that all objects have by default. The prototype of `Object.prototype`
+is `null`, so it's at the end of the prototype chain.
+
+The prototype of an object is not always `Object.prototype`:
+
+```js
+const myDate = new Date();
+let object = myDate;
+
+do {
+  object = Object.getPrototypeOf(object);
+  console.log(object);
+} while (object);
+
+// Date.prototype
+// Object { }
+// null
+```
+
+It shows us that the prototype of `myDate` is a `Date.prototype` object, and
+the prototype of that is `Object.prototype`.
+
+In fact, when you call familiar methods, like `myDate2.getMonth()`, you are
+calling a method that's defined on `Date.prototype`.
+
+#### Shadowing properties
+
+```js
+const myDate = new Date(1995, 11, 17);
+
+console.log(myDate.getYear()); // 95
+
+myDate.getYear = function () {
+  console.log("something else!");
+};
+
+myDate.getYear(); // 'something else!'
+```
+
+When we call `getYear()` the browser first looks in `myDate` for a property
+with that name, and only checks the prototype if `myDate` does not define it.
+So when we add `getYear()` to `myDate`, then the version in `myDate` is called.
+
+This is called "shadowing" the property.
+
+#### Setting a prototype
+
+There are various ways of setting an object's prototype in JavaScript, and here
+are two of them: `Object.create()` and constructors.
+
+##### Using Object.create
+
+The `Object.create()` method creates a new object and allows you to specify an
+object that will be used as the new object's prototype.
+
+```js
+const personPrototype = {
+  greet() {
+    console.log("hello!");
+  },
+};
+
+const carl = Object.create(personPrototype);
+carl.greet(); // hello!
+```
+
+但是不推荐这么做: because this reassigns the `prototype` property and removes the
+`constructor` property, it can be more error-prone
+
+```js
+function Base() {}
+function Derived() {}
+// Re-assigns `Derived.prototype` to a new object
+// with `Base.prototype` as its `[[Prototype]]`
+// DON'T DO THIS — use Object.setPrototypeOf to mutate it instead
+Derived.prototype = Object.create(Base.prototype);
+```
+
+##### Using a constructor
+
+In JavaScript, all functions have a property named `prototype`. When you call a
+function as a constructor, this property is set as the prototype of the newly
+constructed object (by convention, in the property named `__proto__`).
+
+So if we set the `prototype` of a constructor, we can ensure that all objects
+created with that constructor are given that prototype:
+
+```js
+const personPrototype = {
+  greet() {
+    console.log(`hello, my name is ${this.name}!`);
+  },
+};
+
+function Person(name) {
+  this.name = name;
+}
+
+Object.assign(Person.prototype, personPrototype);
+// or
+// Person.prototype.greet = personPrototype.greet;
+```
+
+- an object `personPrototype`, which has a `greet()` method
+- a `Person()` constructor function which initializes the name of the person to
+  create.
+
+We then put the methods defined in `personPrototype` onto the `Person`
+function's `prototype` property using `Object.assign`.
+
+After this code, objects created using `Person()` will get `Person.prototype`
+as their prototype, which automatically contains the `greet` method.
+
+```js
+const reuben = new Person("Reuben");
+reuben.greet(); // hello, my name is Reuben!
+```
+
+##### Own properties
+
+The objects we create using the `Person` constructor above have two properties:
+
+- a `name` property, which is set in the constructor, so it appears directly on
+  `Person` objects
+- a `greet()` method, which is set in the prototype.
+
+It's common to see this pattern, in which methods are defined on the prototype,
+but data properties are defined in the constructor. That's because **methods are
+usually the same for every object we create, while we often want each object to
+have its own value for its data properties**.
+
+Properties that are defined directly in the object, like `name` here, are
+called **own properties**, and you can check whether a property is an own
+property using the static `Object.hasOwn()` method:
+
+```js
+const irma = new Person("Irma");
+
+console.log(Object.hasOwn(irma, "name")); // true
+console.log(Object.hasOwn(irma, "greet")); // false
+```
+
+> ⚠️ Note: You can also use the non-static `Object.hasOwnProperty()` method
+> here, but we recommend that you use `Object.hasOwn()` if you can.
+
+### Prototype Inheritance
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain>
+
+Classes are syntax sugar over constructor functions, which means you can still
+manipulate `Box.prototype` to change the behavior of all instances.
+
+## Type Casting
+
+### Explicit Type Casting
 
 Examples of typecasting methods are `parseInt()`, `parseFloat()`, `toString()`.
 
-#### Implicit Type Casting
+### Implicit Type Casting
 
 Most of the time operators automatically convert a value to the right type.
 
