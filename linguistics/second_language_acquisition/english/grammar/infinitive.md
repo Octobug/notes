@@ -34,7 +34,12 @@
     - [6.1 宾语关系（一）：He is interesting to listen to](#61-宾语关系一he-is-interesting-to-listen-to)
       - [一、形容词 + to do 宾语关系句型结构特点](#一形容词--to-do-宾语关系句型结构特点)
       - [二、使用该句型的注意点](#二使用该句型的注意点)
-    - [4.6.2 宾语关系（二）：The book is interesting to buy](#462-宾语关系二the-book-is-interesting-to-buy)
+    - [6.2 宾语关系（二）：The book is interesting to buy](#62-宾语关系二the-book-is-interesting-to-buy)
+      - [一、结构上的不同：不能进行句式变换](#一结构上的不同不能进行句式变换)
+      - [二、形容词的特点不同](#二形容词的特点不同)
+      - [三、不定式是否可以省去](#三不定式是否可以省去)
+    - [6.3 主语关系（一）：He is kind to help us](#63-主语关系一he-is-kind-to-help-us)
+    - [4.6.4 主语关系（二）：He is glad to help us](#464-主语关系二he-is-glad-to-help-us)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
 
@@ -1016,6 +1021,226 @@ the way.
       - She is interesting to listen. ❌
       - She is easy to get on. ❌
 
-### 4.6.2 宾语关系（二）：The book is interesting to buy
+### 6.2 宾语关系（二）：The book is interesting to buy
+
+`1` The book is interesting to buy.
+
+- 这里不定式动词 buy 是一个及物动词，且其后面没有直接带宾语，句子主语 the book
+  充当它的逻辑宾语。
+- `译` 这本书很有趣，可以买。
+
+`2` The food is ready to eat.
+
+- 这里主语同样充当及物动词 eat 的逻辑宾语。
+- `译` 食物可以吃了。
+
+`3` The water is warm to swim in.
+
+- 主语 the water 充当不定式中的介词 in 的逻辑宾语。
+- `译` 水是温的，可以在里面游泳。
+
+`4` The dorm is too noisy to study in.
+
+- the dorm 充当介词 in 的逻辑宾语。
+- `译` 宿舍里太吵，无法在里面学习。
+
+`5` The money is enough for you to buy books with.
+
+- `译` 这些钱够你买书用了。
+
+这个用法和「6.1 宾语关系（一）」的共同之处是，句子主语都是在不定式短语中充当逻辑宾语。
+但二者之间有重大的差别，具体如下：
+
+#### 一、结构上的不同：不能进行句式变换
+
+「宾语关系（二）」无法进行句式变换还原：
+
+- `原句` The book is interesting to buy.
+  - `变换` It is interesting to buy the book. ❌
+  - 原句的 interesting 是表示“书”这个事物本身有趣，而不是“买书”这个行为有趣。
+- It is ready to eat the food. ❌
+- It is warm to swim in the water. ❌
+- It is too noisy to study in the dorm. ❌
+- `原句` The money is enough for you to buy books with.
+  - It is enough for you to buy books with the money. ❌
+  - 原句的 enough 是表示“钱”这个事物足够，而不是表示“用这个钱买书”这样的“事件”是足够的。
+  
+为什么这些句子无法像「宾语关系（一）」那样改写句式呢？这需要从形容词身上找原因。
+以上句子中的形容词往往是表示句子主语的性质特征，而不是描述某件事情或活动的性质特征。
+因此有不同点：
+
+#### 二、形容词的特点不同
+
+「宾语关系（一）」句型中的形容词主要是用来描述“事件”的性质特点（有的也可以描述“事物”性质特点）；
+「宾语关系（二）」中的形容词只表示“事物”本身的性质特点，而不表示“事件”的性质特点。
+
+`6` 比较
+
+- The book is interesting to buy.
+  - “书有趣”，而不是“买书有趣”。
+  - 如果改成 To but the book is interesting. 则表示“买书有趣”。
+  - 原句可以改成 The book is so interesting that you can buy it.
+- The book is interesting to read.
+  - To read the book is interesting. 和原句意思接近：“这本书有趣” vs. “看这本书有趣。”
+
+`7` The tea is too hot to drink.
+
+- `译` 这茶太烫，喝不了。
+
+`8` The air is frosty to breathe.
+
+- `译` 这空气呼吸起来很冷。
+
+`9` Its fur is soft to touch.
+
+- `译` 它的皮毛摸起来非常柔软。
+
+#### 三、不定式是否可以省去
+
+「宾语关系（一）」中的不定式短语一般不能省去，省去后句子意思会发生改变。
+「宾语关系（二）」中的不定式短语可以省去而不改变句子的核心意思，而且对于某些形容词，往往不需要带不定式。
+
+`10` The food is ready.
+
+- `=` The food is ready to eat.
+
+`11` The tea is too hot.
+
+- `=` The tea is too hot to drink.
+
+`12` The air is frosty.
+
+- `=` The air is frosty to breathe.
+
+`13` Its fur is soft.
+
+- `=` Its fur is soft to touch.
+
+在「宾语关系（一）」中，省去不定式会怎样？
+
+`14`
+
+- He is easy to fool.
+- He is easy. ❌
+
+综上：两者的区别主要在于形容词。
+
+对于某些特殊形容词，很难判断是属于哪种情形：
+
+The bed is comfortable to sleep in.
+
+- 宾语关系（一）
+  - It is comfortable to sleep in the bed. ✅
+  - To sleep in the bed is comfortable. ✅
+- 宾语关系（二）
+  - The bed is comfortable. ✅
+
+这主要是因为 comfortable 这个形容词既可以描述 bed 的性质特征，又可以描述 sleep in the bed
+这个行为的性质特征。
+
+### 6.3 主语关系（一）：He is kind to help us
+
+`1` He is kind to help us.
+
+- 这里的 he 既是 is kind 的主语，表示“他人好”，同时也是不定式 to help us 的逻辑主语，表示“他帮我们”。
+  所以，这个句子的主语 he 与不定式动词构成“主语关系。”
+- `译` 他真好，来帮我们。
+- 对这个句子进行改写：
+  - It is...of sb. to do sth.
+    - It is kind of him to help us.
+  - so...as to do sth.
+    - He is so kind as to help us.
+    - 在口语中常用的表示请求的问句就是采用了这个句型:
+      Would you be so kind as to help me?
+  - How...of sb. it is to do sth.!
+    - How kind of him it is to help us!
+      - 这里 it is 经常省去: How kind of him to help us!
+
+对于某些形容词，还可以采用其名词形式来表达类似的意思。
+
+`2`
+
+- You are foolish to spend so much.
+- You are a fool to spend so much.
+- `译` 你真蠢，花了这么多钱。
+- 这句同样可以有三种变换：
+  - It is foolish of you to spend so much.
+  - You are so foolish as to spend so much.
+  - How foolish of you (it is) to spend so much!
+
+`3` Scott is very generous to be always inviting us out for meals.
+
+- It is generous of Scott to be always inviting us out for meals.
+- Scott is so generous as to be always inviting us out for meals.
+- How generous of Scott (it is) to be always inviting us out for meals!
+- `译` Scott 为人真是慷慨大方，总是请我们出去吃饭。
+
+`4` The boy was careless to break the window.
+
+- It was careless of the boy to break the window.
+- The boy was so careless as to break the window.
+- How careless of the boy (it was) to break the window!
+- `译` 这个男孩不小心把窗子打破了。
+
+`5` He was wrong to tell lies.
+
+- It was wrong of him to tell lies.
+- He was so wrong as to tell lies.
+- How wrong of him (it is) to tell lies!
+- `译` 他当时撒谎了，这是他的不对。
+
+`6` We were silly to believe him.
+
+- It was silly of us to believe him.
+- We were so silly as to believe him.
+- How silly of us (it is) to believe him!
+- `译` 我们当时真傻，相信了他。
+
+`7` Donna is clumsy to dance. While I was dancing with her, she stepped on my
+feet three times!
+
+- It is clumsy of Donna to dance.
+- Donna is so clumsy as to dance.
+- How clumsy of Donna (it is) to dance!
+- `译` Donna 跳舞真笨。我和她跳舞的那一会儿，她踩了我三次！
+
+`8` He is inconsiderate not to write a thank-you note to his host.
+
+- `=` It is inconsiderate of him not to write a thank-you not to his host.
+- `译` 他真是考虑不周，作为客人，也不给主人写封感谢信。
+
+综上，该句型中的形容词特点是：**通常是表示评价人的行为的形容词**。
+具体来说，是表示人的性格特征或行为表现的形容词，如
+
+- brave
+- careful, careless, considerate, cowardly, crazy, cruel
+- generous, good, greedy
+- kind
+- mad, mean, modest
+- nice
+- rude
+- selfish
+- thoughtful
+- wrong
+
+或者是表示人的智能方面的形容词：
+
+- clever
+- foolish
+- idiotic, intelligent
+- sensible, silly, stupid
+- wise
+
+⚠️ 这类形容词与「宾语关系（一）」中的形容词的主要区别是：前者强调“人”的特点，后者强调“事情”的特点。
+而且在用 It is...to do 句型改写时，要使用不同的介词——前者是 “of + 人”，后者用“for + 人”。
+
+`9`
+
+- It is kind of him to help us.
+  - kind 表示“人”的特征，所以用介词 of。
+- It is easy for you to fool him.
+  - easy 表示“事情”的特征，所以后面接人称代词时用介词 for。
+
+### 4.6.4 主语关系（二）：He is glad to help us
 
 >>>>> progress
