@@ -6,56 +6,56 @@ using namespace std;
 class MyQueue
 {
 public:
-    stack<int> orderStack;
-    stack<int> reverseStack;
+    stack<int> stackIn;
+    stack<int> stackOut;
     MyQueue()
     {
     }
 
     void push(int x)
     {
-        this->orderStack.push(x);
+        this->stackIn.push(x);
     }
 
     int pop()
     {
         int result;
-        if (this->reverseStack.empty())
+        if (this->stackOut.empty())
         {
-            while (this->orderStack.size() > 1)
+            while (this->stackIn.size() > 1)
             {
-                this->reverseStack.push(this->orderStack.top());
-                this->orderStack.pop();
+                this->stackOut.push(this->stackIn.top());
+                this->stackIn.pop();
             }
 
-            result = this->orderStack.top();
-            this->orderStack.pop();
+            result = this->stackIn.top();
+            this->stackIn.pop();
             return result;
         }
         else
         {
-            result = this->reverseStack.top();
-            this->reverseStack.pop();
+            result = this->stackOut.top();
+            this->stackOut.pop();
             return result;
         }
     }
 
     int peek()
     {
-        if (this->reverseStack.empty())
+        if (this->stackOut.empty())
         {
-            while (!(this->orderStack.empty()))
+            while (!(this->stackIn.empty()))
             {
-                this->reverseStack.push(this->orderStack.top());
-                this->orderStack.pop();
+                this->stackOut.push(this->stackIn.top());
+                this->stackIn.pop();
             }
         }
-        return reverseStack.top();
+        return stackOut.top();
     }
 
     bool empty()
     {
-        return this->orderStack.empty() && this->reverseStack.empty();
+        return this->stackIn.empty() && this->stackOut.empty();
     }
 };
 
