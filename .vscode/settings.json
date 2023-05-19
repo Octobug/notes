@@ -67,6 +67,8 @@
         "unordered_set": "cpp",
         "variant": "cpp",
         "algorithm": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "queue": "cpp",
+        "deque": "cpp"
     }
 }
