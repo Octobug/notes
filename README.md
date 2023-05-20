@@ -1,6 +1,6 @@
 # Notes
 
-![The Purpose of Life](.assets/the_purpose_of_life.jpg)
+[![The Purpose of Life](.assets/the_purpose_of_life.jpg)](https://www.imdb.com/title/tt0359950/)
 
 ## Categories
 
