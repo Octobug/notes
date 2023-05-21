@@ -25,7 +25,7 @@
 - [x] [链表](linked_list)
 - [x] [哈希表](hash_table)
 - [x] [字符串](string)
-- [ ] [栈与队列](stack_queue)
+- [x] [栈与队列](stack_queue)
 - [ ] [二叉树](binary_tree)
 - [ ] 回溯算法
 - [ ] 贪心算法
