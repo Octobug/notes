@@ -11,6 +11,11 @@
     - [二叉树的遍历方式](#二叉树的遍历方式)
     - [二叉树的定义](#二叉树的定义)
   - [递归遍历](#递归遍历)
+  - [迭代遍历](#迭代遍历)
+    - [前序遍历](#前序遍历)
+    - [中序遍历](#中序遍历)
+    - [后序遍历](#后序遍历)
+    - [前中后统一迭代](#前中后统一迭代)
   - [References](#references)
 
 ## 理论基础
@@ -144,13 +149,89 @@ void traverse(TreeNode* cur, vector<int>& vec) {
 }
 ```
 
+## 迭代遍历
+
+### 前序遍历
+
+```cpp
+class Solution {
+public:
+  vector<int> preorderTraversal(TreeNode* root) {
+    stack<TreeNode*> st;
+    vector<int> result;
+    if (root == NULL) return result;
+    st.push(root);
+    while (!st.empty()) {
+      TreeNode* node = st.top();                       // 中
+      st.pop();
+      result.push_back(node->val);
+      if (node->right) st.push(node->right);           // 右（空节点不入栈）
+      if (node->left) st.push(node->left);             // 左（空节点不入栈）
+    }
+    return result;
+  }
+};
+```
+
+### 中序遍历
+
+```cpp
+class Solution {
+public:
+  vector<int> inorderTraversal(TreeNode* root) {
+    vector<int> result;
+    stack<TreeNode*> st;
+    TreeNode* cur = root;
+    while (cur != NULL || !st.empty()) {
+      if (cur != NULL) { // 指针来访问节点，访问到最底层
+        st.push(cur); // 将访问的节点放进栈
+        cur = cur->left;                // 左
+      } else {
+        cur = st.top(); // 从栈里弹出的数据，就是要处理的数据（放进result数组里的数据）
+        st.pop();
+        result.push_back(cur->val);     // 中
+        cur = cur->right;               // 右
+      }
+    }
+    return result;
+  }
+};
+```
+
+### 后序遍历
+
+先序遍历是“中左右”，后序遍历是“左右中”，调整一下先序遍历的代码顺序就可以变成“中右左”，输出的结果就是左右中了：
+
+```cpp
+class Solution {
+public:
+  vector<int> postorderTraversal(TreeNode* root) {
+    stack<TreeNode*> st;
+    vector<int> result;
+    if (root == NULL) return result;
+    st.push(root);
+    while (!st.empty()) {
+      TreeNode* node = st.top();
+      st.pop();
+      result.push_back(node->val);
+      if (node->left) st.push(node->left); // 相对于前序遍历，这更改一下入栈顺序
+      if (node->right) st.push(node->right); // 空节点不入栈
+    }
+    reverse(result.begin(), result.end()); // 将结果反转之后就是左右中的顺序了
+    return result;
+  }
+};
+```
+
+### 前中后统一迭代
+
 ## References
 
 - [x] 二叉树
   - [x] [二叉树理论基础](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html)
   - [x] [二叉树的递归遍历](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86.html)
-  - [ ] [二叉树的迭代遍历](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BF%AD%E4%BB%A3%E9%81%8D%E5%8E%86.html#%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86-%E8%BF%AD%E4%BB%A3%E6%B3%95)
-  - [ ] 二叉树的统一迭代法
+  - [x] [二叉树的迭代遍历](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BF%AD%E4%BB%A3%E9%81%8D%E5%8E%86.html#%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86-%E8%BF%AD%E4%BB%A3%E6%B3%95)
+  - [ ] [二叉树的统一迭代法](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%BB%9F%E4%B8%80%E8%BF%AD%E4%BB%A3%E6%B3%95.html)
   - [ ] 二叉树的层序遍历
   - [ ] 翻转二叉树
   - [ ] 二叉树周末总结

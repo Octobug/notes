@@ -6,53 +6,51 @@
 
 using namespace std;
 
+class Solution
+{
+public:
+    vector<int> preorderTraversal(TreeNode *root)
+    {
+        stack<TreeNode *> st;
+        vector<int> result;
+        if (root == nullptr)
+            return result;
+
+        st.push(root);
+        while (!st.empty())
+        {
+            TreeNode *cur = st.top();
+            st.pop();
+            result.push_back(cur->val);
+            if (cur->right)
+                st.push(cur->right);
+            if (cur->left)
+                st.push(cur->left);
+        }
+
+        return result;
+    }
+};
+
 class SolutionRecursive
 {
 public:
-    void postTraverse(TreeNode *cur, vector<int> &result)
+    void preTraverse(TreeNode *cur, vector<int> &result)
     {
         if (cur == nullptr)
         {
             return;
         }
 
-        postTraverse(cur->left, result);
-        postTraverse(cur->right, result);
         result.push_back(cur->val);
+        preTraverse(cur->left, result);
+        preTraverse(cur->right, result);
     }
 
-    vector<int> postorderTraversal(TreeNode *root)
+    vector<int> preorderTraversal(TreeNode *root)
     {
         vector<int> result;
-        postTraverse(root, result);
-        return result;
-    }
-};
-
-class Solution
-{
-public:
-    vector<int> postorderTraversal(TreeNode *root)
-    {
-        vector<int> result;
-        stack<TreeNode *> st;
-        if (root == nullptr)
-            return result;
-        st.push(root);
-
-        while (!st.empty())
-        {
-            TreeNode *cur = st.top();
-            st.pop();
-            result.push_back(cur->val);
-
-            if (cur->left != nullptr)
-                st.push(cur->left);
-            if (cur->right != nullptr)
-                st.push(cur->right);
-        }
-        reverse(result.begin(), result.end());
-
+        preTraverse(root, result);
         return result;
     }
 };
@@ -73,7 +71,7 @@ int main()
     outputPreOrder(root);
 
     Solution s;
-    vector<int> result = s.postorderTraversal(root);
+    vector<int> result = s.preorderTraversal(root);
     output(result);
 
     return 0;

@@ -1,11 +1,12 @@
 #include <iostream>
+#include <stack>
 #include <vector>
-#include <bintree.h>
-#include <array.h>
+#include "array.h"
+#include "bintree.h"
 
 using namespace std;
 
-class Solution
+class SolutionRecursive
 {
 public:
     void inTraverse(TreeNode *cur, vector<int> &result)
@@ -24,6 +25,34 @@ public:
     {
         vector<int> result;
         inTraverse(root, result);
+        return result;
+    }
+};
+
+class Solution
+{
+public:
+    vector<int> inorderTraversal(TreeNode *root)
+    {
+        vector<int> result;
+        stack<TreeNode *> st;
+        TreeNode *cur = root;
+        while (cur != nullptr || !st.empty())
+        {
+            if (cur != nullptr)
+            {
+                st.push(cur);
+                cur = cur->left;
+            }
+            else
+            {
+                cur = st.top();
+                st.pop();
+                result.push_back(cur->val);
+                cur = cur->right;
+            }
+        }
+
         return result;
     }
 };
