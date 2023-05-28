@@ -225,14 +225,100 @@ public:
 
 ### 前中后统一迭代
 
+```cpp
+// 中序遍历
+class Solution {
+public:
+  vector<int> inorderTraversal(TreeNode* root) {
+    vector<int> result;
+    stack<TreeNode*> st;
+    if (root != NULL) st.push(root);
+    while (!st.empty()) {
+      TreeNode* node = st.top();
+      if (node != NULL) {
+        st.pop(); // 将该节点弹出，避免重复操作，下面再将右中左节点添加到栈中
+        if (node->right) st.push(node->right);  // 添加右节点（空节点不入栈）
+
+        st.push(node);                          // 添加中节点
+        st.push(NULL); // 中节点访问过，但是还没有处理，加入空节点做为标记。
+
+        if (node->left) st.push(node->left);    // 添加左节点（空节点不入栈）
+      } else { // 只有遇到空节点的时候，才将下一个节点放进结果集
+        st.pop();           // 将空节点弹出
+        node = st.top();    // 重新取出栈中元素
+        st.pop();
+        result.push_back(node->val); // 加入到结果集
+      }
+    }
+    return result;
+  }
+};
+```
+
+```cpp
+// 前序遍历
+class Solution {
+public:
+  vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> result;
+    stack<TreeNode*> st;
+    if (root != NULL) st.push(root);
+    while (!st.empty()) {
+      TreeNode* node = st.top();
+      if (node != NULL) {
+        st.pop();
+        if (node->right) st.push(node->right);  // 右
+        if (node->left) st.push(node->left);    // 左
+        st.push(node);                          // 中
+        st.push(NULL);
+      } else {
+        st.pop();
+        node = st.top();
+        st.pop();
+        result.push_back(node->val);
+      }
+    }
+    return result;
+  }
+};
+```
+
+```cpp
+class Solution {
+public:
+  vector<int> postorderTraversal(TreeNode* root) {
+    vector<int> result;
+    stack<TreeNode*> st;
+    if (root != NULL) st.push(root);
+    while (!st.empty()) {
+      TreeNode* node = st.top();
+      if (node != NULL) {
+        st.pop();
+        st.push(node);                          // 中
+        st.push(NULL);
+
+        if (node->right) st.push(node->right);  // 右
+        if (node->left) st.push(node->left);    // 左
+      } else {
+        st.pop();
+        node = st.top();
+        st.pop();
+        result.push_back(node->val);
+      }
+    }
+    return result;
+  }
+};
+```
+
 ## References
 
 - [x] 二叉树
   - [x] [二叉树理论基础](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html)
   - [x] [二叉树的递归遍历](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86.html)
   - [x] [二叉树的迭代遍历](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BF%AD%E4%BB%A3%E9%81%8D%E5%8E%86.html#%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86-%E8%BF%AD%E4%BB%A3%E6%B3%95)
-  - [ ] [二叉树的统一迭代法](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%BB%9F%E4%B8%80%E8%BF%AD%E4%BB%A3%E6%B3%95.html)
-  - [ ] 二叉树的层序遍历
+  - [x] [二叉树的统一迭代法](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%BB%9F%E4%B8%80%E8%BF%AD%E4%BB%A3%E6%B3%95.html)
+  - [ ] [二叉树的层序遍历](https://programmercarl.com/0102.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86.html)
   - [ ] 翻转二叉树
   - [ ] 二叉树周末总结
   - [ ] 对称二叉树
