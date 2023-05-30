@@ -1,0 +1,3 @@
+# Generics
+
+- [Generics](#generics)
