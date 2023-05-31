@@ -31,6 +31,21 @@
     - [思维训练：7. 基本用法（二）：现实“可能”与理论“可能”](#思维训练7-基本用法二现实可能与理论可能)
       - [答案：思维训练：7. 基本用法（二）：现实“可能”与理论“可能”](#答案思维训练7-基本用法二现实可能与理论可能)
   - [8. 基本用法（三）：过去的能力](#8-基本用法三过去的能力)
+    - [一、表示过去的“潜能”](#一表示过去的潜能)
+    - [二、表示过去的“实际行动”（均不能用 could）](#二表示过去的实际行动均不能用-could)
+    - [思维总结：8. 基本用法（三）：过去的能力](#思维总结8-基本用法三过去的能力)
+  - [9. 基本用法（四）：许可](#9-基本用法四许可)
+    - [9.1 肯定句——给予许可](#91-肯定句给予许可)
+      - [can 表示“许可”和“能力”的辨别](#can-表示许可和能力的辨别)
+    - [9.2 否定句——拒绝许可，甚至禁止](#92-否定句拒绝许可甚至禁止)
+    - [9.3 could 一般不用来表示现在的许可，而表示过去的许可](#93-could-一般不用来表示现在的许可而表示过去的许可)
+  - [10. 基本用法（五）：建议与忠告](#10-基本用法五建议与忠告)
+    - [10.1 could 表示“建议”](#101-could-表示建议)
+    - [10.2 Shall I...? Shall we...?](#102-shall-i-shall-we)
+    - [10.3 may (just) as well, might (just) as well](#103-may-just-as-well-might-just-as-well)
+    - [10.4 should 和 ought to 表示“忠告”](#104-should-和-ought-to-表示忠告)
+    - [10.5 should 表示“忠告”与 could 表示“建议”的比较](#105-should-表示忠告与-could-表示建议的比较)
+    - [10.6 had better 表示“忠告”](#106-had-better-表示忠告)
   - [8.11 基本用法（六）：意愿、意图与执意](#811-基本用法六意愿意图与执意)
   - [8.13 基本用法（八）：过去习惯](#813-基本用法八过去习惯)
   - [8.17 情态动词的否定](#817-情态动词的否定)
@@ -1266,9 +1281,332 @@ now.
 
 - 这里用 was able to 表示过去的一次具体的行为，说明实施了“追车”并追上了，表示“具体的能力”而不是潜能。
 
-`7`
+`7` Walt Disney revealed that his Disneyland Park would be an environment where
+parents and children could have fun together and could experience some of the
+wonders of life and adventure.
 
->>>>> progress
+- could 表示“潜在可能”
+
+`8` I was able to experience the wonders of life and adventure in Disneyland
+last week.
+
+- was able to 表示一次具体的活动
+
+综上，could 和 can 一样，表示的是一种“潜能”或者说“过去的一般能力”，而不是“实际行动”；
+was/were able to 则用来表示过去的“实际能力”或者说“具体的能力”。但注意，was/were ablt to
+也可以用来表示“潜力”，但不如 could 常用。
+
+### 一、表示过去的“潜能”
+
+`10` He could/was able to pull down a bull and acknowledged as a man with super
+strength.
+
+- `译` 他曾能够拉倒一头牛，被公认为是具有神力的人。
+
+`11` I could/was able to recite several poems when I was 3 years of age.
+
+`12` Fred could/was able to speak Russian when he was 6 years old.
+
+`13` In those days few workers could support their families.
+
+### 二、表示过去的“实际行动”（均不能用 could）
+
+`14` They were able to get tickets to the Rolling Stones concert last week.
+
+`15` How were you able to convince him to come to the exhibition last week?
+
+`16` With the aid of the wood, he was able to swim across the river.
+
+`17` I applied everywhere and finally I was able to get a good job.
+
+`18` He hurried to the station, and he was able to catch the train.
+
+`19` The fiee spread through the building quickly but everybody was able to
+escape.
+
+`20` The two boys tried many ways to catch that sly fox and were able to do so
+at last.
+
+`21` Although the pilot was badly hurt he was able to explain what had happened.
+
+`22` Tom has started an exercise program. He was able to run two miles yesterday
+without stopping or slowing down.
+
+`23` He didn't agree with me at first but I was able to persuade him.
+
+对于某些句子，既可以用 could，又可以用 was/were able to，但此时它们的含义不同。
+
+`24`
+
+- I could repair the old car.
+  - 表达过去的一般能力，表示“我过去能修车”。
+  - `译` 我过去时能够修理旧汽车的。
+- I was able to repair the old car.
+  - 表达过去的具体能力，表示“我过去把那辆车修好了”。
+  - `译` 我终于把那辆旧汽车修理好了。
+
+上述 could 和 was/were able to 的区别仅限于肯定句中，在否定句中 could 和 was/were
+able to 可以互换，没有区别。
+
+`26` I ran after the bus yesterday, but wasn't able to/couldn't catch it.
+
+`27` I applied everywhere and I wasn't able to/couldn't get any good job.
+
+`28` The fire spread through the building quickly and people weren't able
+to/couldn't escape.
+
+`29` Though he managed to take a number of brilliant photographs, he could not
+stay near the volcano for very long.
+
+### 思维总结：8. 基本用法（三）：过去的能力
+
+1. 在 can/could 表示“能力”时，两者都表示“潜能”或“一般能力”。
+   其中 can 表示将来或现在的一般能力，could 表示过去的一般能力。
+2. could 表示“过去的一般能力”，不表示“过去的具体能力”；
+   was/were able to 既可以表示“过去的一般能力”，也可以表示“过去的具体能力”。
+3. 在否定句中，couldn't 和 wasn't/weren't able to 没有区别。
+
+## 9. 基本用法（四）：许可
+
+情态动词表示“许可”，以下三点非常重要：
+
+1. 可以用的情态动词有 may, might, can 和 could，但多用 can 或 be allowed to do
+   表示许可；
+2. 表示“许可”一般用陈述句；
+3. 肯定的陈述表示允许某人做某事；否定的陈述则表示不允许某人做某事。
+
+### 9.1 肯定句——给予许可
+
+`1` We can borrow these books from the library.
+
+- `译` 我们可以从图书馆借出这些书。
+
+`2` You need to get a license before you can drive a car in this country.
+
+- `译` 在这个国家，你需要取得驾照然后才可以开车。
+
+`3` I can leave the office as soon as I have finished.
+
+- `译` 我工作一结束就可以离开办公室。
+
+`4` You can use my car tomorrow.
+
+`5` A: May I turn on the TV?
+
+B: Yes, of course you may.
+
+`6` You may only register for two classes.
+
+- `译` 你只能报两门课。
+
+在口语中，我们还是更多地用 can 来表达“许可”。而 may 表示“许可”会用在**非常正式**的文体中，而在口语中比较少见。
+
+#### can 表示“许可”和“能力”的辨别
+
+can 表示“许可”，可以和表示将来的时间状语连用。
+can 表示将来能力时一般不与表示将来的时间状语连用，若有表示将来的时间状语，要说 will be able to do。
+
+`7` You can use my car tomorrow.
+
+- 表示许可。
+
+You can pass your driving test next time you take it. ❌
+
+- 这里的 can 表示“能力”，所以不宜与表达将来的从句 next time you take it 连用，最好改成
+  You will be able to pass your driving test next time you take it.
+- `译` 你下次参加驾照考试应该就能通过了。
+
+`8` Child: Can I leave the table now?
+
+- 这里的 can 表示“许可”。
+- `译` 我现在可以离开饭桌了吗？
+
+Parent: I'm sure you can, but you may not.
+
+- 这里的 can 时表示“能力”，may 表示“许可”。
+- `译` 你是能够离开，但我不允许你离开。
+
+### 9.2 否定句——拒绝许可，甚至禁止
+
+`1` A: May I borrow your car?
+
+B: No, I'm afraid you may not.
+
+`2` You may not smoke in here.
+
+- `=` You are not allowed to smoke in here.
+
+`3` You can't take the test paper out of the classroom.
+
+- `=` You are not allowed to take the test paper out of the classroom.
+
+`4` You can't take your camera into the museum.
+
+还可以用 must not 表示更强烈的拒绝——禁止，must not 比 cannot 或 may not 的语气更强烈。
+
+`5` Students must not take the test papers out of the classroom.
+
+### 9.3 could 一般不用来表示现在的许可，而表示过去的许可
+
+表示过去的一般许可，could 与 was/were allowed to do 可以互换。
+
+`1` I could/was allowed to read what I liked when I was a child.
+
+若表示过去允许进行某项特定的活动时，要用 was/were allowed to do，这一区别与表示“能力”时的
+could 和 was/were able to 的区别类似。
+
+`2` Yesterday evening, Peter was allowed to watch TV for an hour.
+
+- Yesterday evening, Peter could watch TV for an hour. ❌
+- Yesterday evening, Peter might watch TV for an hour. ❌
+
+同理，might 在表示“许可”时，也只能是表示过去的一般许可，而不能表示具体场合的某一个活动。
+
+`3`
+
+- They might have a break after lunch.
+  - 表示过去一般的许可。
+  - `译` 那时，他们吃完午饭后时可以休息一会儿的。
+- They were allowed to have a break after lunch.
+  - 这里 was/were allowed to 既可以表示过去的“一般许可”，也可以表示过去的“具体许可”。
+  - `译` 那次，他们吃完午饭后被允许休息了一会儿（具体许可）。
+
+## 10. 基本用法（五）：建议与忠告
+
+### 10.1 could 表示“建议”
+
+could 可以表示：
+
+1. 将来、现在和过去的推测
+2. 过去的能力
+3. 过去的许可
+4. 建议（不表示过去）
+
+`1` A: I've been invited to a dinner party at Janet's. Do you think I should
+bring something?
+
+B: You could pick up a cake. Chocolate is her favorite.
+
+`2` A: What shall we do this evening?
+
+B: We could go to the cinema.
+
+`3` It is a nice day. We could go for a walk.
+
+`4` We could go to that new restaurant opposite the cinema.
+
+`5` We could go to the theater instead.
+
+- `=` How about going to the theater instead?
+
+### 10.2 Shall I...? Shall we...?
+
+shall 用于**第一人称的一般疑问句中**，表示征求对方的“建议”。
+
+`1` Shall I open the window?
+
+- `=` Would you like me to open the window?
+
+`2` Shall we leave at two? Is that OK?
+
+### 10.3 may (just) as well, might (just) as well
+
+这组情态动词表示“建议换另一种方式做某事”，可译成“倒不如”“不妨”“最好”。
+
+`1` A: I'll go on Monday by train.
+
+B: You might just as well wait till Wednesday and go by plane.
+
+- `译` A: 我将在周一坐火车去。 B: 你不妨等到周三坐飞机去。
+
+`2` We may as well stay here tonight.
+
+- `译` 今晚我们最好待在这里。
+
+另外，may/might as well 还有一种多少有些勉强或讥讽的一位，表示“在没有其他更好选择的情况下，只好为之”的意思。
+
+`3` It's no use waiting here. We might as well start walking.
+
+- `译` 在这里干等没用，我们还不如开始步行回去。
+
+`4` Nobody else is going to turn up now for the lesson, so you may as well go
+home.
+
+- `译` 现在没有其他人会来上课了，所以你还是回家吧。
+
+`5` You might as well tell the truth (as continue to tell lies).
+
+- `译` （与其继续撒谎）你最好实话实说。
+
+### 10.4 should 和 ought to 表示“忠告”
+
+should 最主要的意义和用法就是表示“建议”“忠告”或着“规劝”，表示“某事是应该做的或恰当的”。
+
+`1` You should brush your teeth twice a day.
+
+`2` We should call them before we go there.
+
+`3` You should do as you are told.
+
+`4` We should study harder because the finals are near.
+
+此时 should 往往也会含有“责任”和“义务”的含义，但是其“责任”意味比 must 要轻。
+
+`5` Drivers should obey the speed limit.
+
+`6` Drivers must obey the speed limit.
+
+表示“责任”的 should 也常见于疑问句中，表示否定一个“责任”。
+
+`7` Why should I do what everyone else does?
+
+`8` Why should I go there when I'm quite happy here?
+
+上述例句都可以将 should 替换成 ought to，不过 ought to 更多用于口语中，而不是书面语中。
+
+### 10.5 should 表示“忠告”与 could 表示“建议”的比较
+
+should 表示强烈的、明确的忠告；could 表示建议某事的可能性。
+
+`1` A: Staring at the computer screen can make your eyes really dry and tired.
+You should take a break.
+
+B: I can't. I have to get this paper written. It's due tomorrow.
+
+`2` A: John doesn't feel good. He has a bad stomachache.
+
+B: He should see a doctor.
+
+C: Well, he could see a doctor, or he could simply stay in bed for a day and
+hope he feels better tomorrow.
+
+`3` A: I need to get to the airport.
+
+B: You should take the airport bus. It's cheaper than a taxi.
+
+C: Well, you could take the airport bus. Or you could take a taxi. Maybe Clint
+could take you. He has a car.
+
+总体来说，could 比 should 的语气要弱得多，只是表示提供一种参考意见，听话人可以有多种选择。
+而 should 则是表示听话人最好应该采用的一种选择。
+
+### 10.6 had better 表示“忠告”
+
+常用于口语中，后面接动词原形，否定用 had better not do。
+
+`1` We had better study harder, or we'll probably fail in the exam.
+
+had better 在表示“忠告”时，有时会暗含“如果不这么做，就会有不良后果”的意思，而 should
+则更为中性。
+
+`2` You had better return the book to the library.
+
+- You should return the book to the library.
+  - 用 should 更多的是表示个人的责任或义务，而没有 had better 暗含“后果”的意味。
+
+`3` You had better do your homework.
+
+- You should do your homework.
 
 ## 8.11 基本用法（六）：意愿、意图与执意
 
