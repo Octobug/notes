@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 #include <vector>
 #include "bintree.h"
 
@@ -19,20 +20,42 @@ void outputPreOrder(TreeNode *root)
     cout << endl;
 }
 
-TreeNode *preCreate(vector<int> arr, int idx)
-{
-    if (idx >= arr.size() || arr[idx] == -1)
-    {
-        return nullptr;
-    }
-
-    TreeNode *node = new TreeNode(arr[idx++]);
-    node->left = preCreate(arr, idx++);
-    node->right = preCreate(arr, idx++);
-    return node;
-}
-
 TreeNode *array2treePreOrder(vector<int> arr)
 {
-    return preCreate(arr, 0);
+    if (arr.empty())
+        return nullptr;
+
+    int idx = 0;
+    TreeNode *root = new TreeNode(arr[idx]);
+    queue<TreeNode *> q;
+    q.push(root);
+
+    while (!q.empty())
+    {
+        TreeNode *cur = q.front();
+        q.pop();
+        idx++;
+        if (idx >= arr.size())
+        {
+            break;
+        }
+        if (arr[idx] != INT_MIN)
+        {
+            cur->left = new TreeNode(arr[idx]);
+            q.push(cur->left);
+        }
+
+        idx++;
+        if (idx >= arr.size())
+        {
+            break;
+        }
+        if (arr[idx] != INT_MIN)
+        {
+            cur->right = new TreeNode(arr[idx]);
+            q.push(cur->right);
+        }
+    }
+
+    return root;
 }
