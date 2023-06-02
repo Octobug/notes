@@ -20,7 +20,7 @@ void outputPreOrder(TreeNode *root)
     cout << endl;
 }
 
-TreeNode *array2treePreOrder(vector<int> arr)
+TreeNode *array2treeLevelOrder(vector<int> arr)
 {
     if (arr.empty())
         return nullptr;

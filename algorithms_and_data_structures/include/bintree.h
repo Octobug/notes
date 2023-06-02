@@ -18,6 +18,6 @@ struct TreeNode
 };
 
 void outputPreOrder(TreeNode *root);
-TreeNode *array2treePreOrder(vector<int> arr);
+TreeNode *array2treeLevelOrder(vector<int> arr);
 
 #endif

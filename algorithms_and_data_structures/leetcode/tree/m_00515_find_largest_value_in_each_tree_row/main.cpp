@@ -9,7 +9,7 @@ using namespace std;
 class Solution
 {
 public:
-    vector<int> rightSideView(TreeNode *root)
+    vector<int> largestValues(TreeNode *root)
     {
         vector<int> result;
         queue<TreeNode *> q;
@@ -22,22 +22,25 @@ public:
         q.push(root);
         while (!q.empty())
         {
+            int max = INT_MIN;
             int size = q.size();
+
             for (int i = 0; i < size; i++)
             {
                 TreeNode *cur = q.front();
                 q.pop();
 
-                if (i == size - 1)
+                if (cur->val > max)
                 {
-                    result.push_back(cur->val);
-                };
+                    max = cur->val;
+                }
 
                 if (cur->left)
                     q.push(cur->left);
                 if (cur->right)
                     q.push(cur->right);
             }
+            result.push_back(max);
         }
 
         return result;
@@ -47,11 +50,9 @@ public:
 int main()
 {
     vector<vector<int>> groups = {
-        {1, 2, 3, INT_MIN, 5, INT_MIN, 4},
-        {1, INT_MIN, 3},
-        {},
-        {1, 2},
-        {1, 2, 3, 4},
+        {1, 3, 2, 5, 3, INT_MIN, 9},
+        {1, 2, 3},
+        {0, -1},
     };
 
     int group;
@@ -61,7 +62,7 @@ int main()
     TreeNode *root = array2treeLevelOrder(groups[group - 1]);
 
     Solution s;
-    vector<int> result = s.rightSideView(root);
+    vector<int> result = s.largestValues(root);
 
     output(result);
 

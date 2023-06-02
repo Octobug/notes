@@ -67,7 +67,7 @@ int main()
     cout << "Please input group: ";
     cin >> group;
 
-    TreeNode *root = array2treePreOrder(groups[group - 1]);
+    TreeNode *root = array2treeLevelOrder(groups[group - 1]);
     outputPreOrder(root);
 
     Solution s;
