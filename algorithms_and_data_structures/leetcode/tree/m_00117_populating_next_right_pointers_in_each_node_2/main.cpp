@@ -88,6 +88,7 @@ Node *arr2treeLevelOrder(vector<int> arr)
 
     return root;
 }
+
 class Solution
 {
 public:
@@ -134,7 +135,7 @@ public:
 int main()
 {
     vector<vector<int>> groups = {
-        {1, 2, 3, 4, 5, 6, 7},
+        {1, 2, 3, 4, 5, INT_MIN, 7},
         {},
     };
 
