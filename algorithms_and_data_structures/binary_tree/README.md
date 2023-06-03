@@ -226,6 +226,34 @@ public:
 ### 前中后统一迭代
 
 ```cpp
+// 前序遍历
+class Solution {
+public:
+  vector<int> preorderTraversal(TreeNode* root) {
+    vector<int> result;
+    stack<TreeNode*> st;
+    if (root != NULL) st.push(root);
+    while (!st.empty()) {
+      TreeNode* node = st.top();
+      if (node != NULL) {
+        st.pop();
+        if (node->right) st.push(node->right);  // 右
+        if (node->left) st.push(node->left);    // 左
+        st.push(node);                          // 中
+        st.push(NULL);
+      } else {
+        st.pop();
+        node = st.top();
+        st.pop();
+        result.push_back(node->val);
+      }
+    }
+    return result;
+  }
+};
+```
+
+```cpp
 // 中序遍历
 class Solution {
 public:
@@ -256,34 +284,7 @@ public:
 ```
 
 ```cpp
-// 前序遍历
-class Solution {
-public:
-  vector<int> preorderTraversal(TreeNode* root) {
-    vector<int> result;
-    stack<TreeNode*> st;
-    if (root != NULL) st.push(root);
-    while (!st.empty()) {
-      TreeNode* node = st.top();
-      if (node != NULL) {
-        st.pop();
-        if (node->right) st.push(node->right);  // 右
-        if (node->left) st.push(node->left);    // 左
-        st.push(node);                          // 中
-        st.push(NULL);
-      } else {
-        st.pop();
-        node = st.top();
-        st.pop();
-        result.push_back(node->val);
-      }
-    }
-    return result;
-  }
-};
-```
-
-```cpp
+// 后序遍历
 class Solution {
 public:
   vector<int> postorderTraversal(TreeNode* root) {
@@ -319,10 +320,10 @@ public:
   - [x] [二叉树的迭代遍历](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BF%AD%E4%BB%A3%E9%81%8D%E5%8E%86.html#%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86-%E8%BF%AD%E4%BB%A3%E6%B3%95)
   - [x] [二叉树的统一迭代法](https://programmercarl.com/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%BB%9F%E4%B8%80%E8%BF%AD%E4%BB%A3%E6%B3%95.html)
   - [x] [二叉树的层序遍历](https://programmercarl.com/0102.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86.html)
-  - [ ] [翻转二叉树](https://programmercarl.com/0226.%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91.html)
-  - [ ] 二叉树周末总结
-  - [ ] 对称二叉树
-  - [ ] 二叉树的最大深度
+  - [x] [翻转二叉树](https://programmercarl.com/0226.%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91.html)
+  - [x] [二叉树周末总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20200927%E4%BA%8C%E5%8F%89%E6%A0%91%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
+  - [x] [对称二叉树](https://programmercarl.com/0101.%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91.html)
+  - [ ] [二叉树的最大深度](https://programmercarl.com/0104.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6.html)
   - [ ] 二叉树的最小深度
   - [ ] 完全二叉树的节点个数
   - [ ] 平衡二叉树

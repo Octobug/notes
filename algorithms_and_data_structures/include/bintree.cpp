@@ -1,6 +1,7 @@
 #include <iostream>
 #include <queue>
 #include <vector>
+#include "array.h"
 #include "bintree.h"
 
 using namespace std;
@@ -18,6 +19,28 @@ void outputPreOrder(TreeNode *root)
 {
     preTraverse(root);
     cout << endl;
+}
+
+void outputLevelOrder(TreeNode *root)
+{
+    queue<TreeNode *> q;
+    q.push(root);
+    while (!q.empty())
+    {
+        int size = q.size();
+        vector<int> vec;
+        for (int i = 0; i < size; i++)
+        {
+            TreeNode *cur = q.front();
+            q.pop();
+            vec.push_back(cur->val);
+            if (cur->left)
+                q.push(cur->left);
+            if (cur->right)
+                q.push(cur->right);
+        }
+        output(vec);
+    }
 }
 
 TreeNode *array2treeLevelOrder(vector<int> arr)
