@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Solution
+class SolutionIterative
 {
 public:
     int minDepth(TreeNode *root)
@@ -40,6 +40,38 @@ public:
         }
 
         return depth;
+    }
+};
+
+class Solution
+{
+    int getDepth(TreeNode *node)
+    {
+        if (node == nullptr)
+        {
+            return 0;
+        }
+
+        int left = getDepth(node->left);
+        int right = getDepth(node->right);
+        if (left == 0)
+        {
+            return right + 1;
+        }
+        else if (right == 0)
+        {
+            return left + 1;
+        }
+        else
+        {
+            return min(left, right) + 1;
+        }
+    }
+
+public:
+    int minDepth(TreeNode *root)
+    {
+        return getDepth(root);
     }
 };
 

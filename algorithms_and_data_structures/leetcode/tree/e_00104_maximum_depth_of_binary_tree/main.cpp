@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Solution
+class SolutionLevel
 {
 public:
     int maxDepth(TreeNode *root)
@@ -36,6 +36,27 @@ public:
         }
 
         return result;
+    }
+};
+
+class Solution
+{
+    int getDepth(TreeNode *node)
+    {
+        if (node == nullptr)
+        {
+            return 0;
+        }
+
+        int left = getDepth(node->left);
+        int right = getDepth(node->right);
+        return max(left, right) + 1;
+    }
+
+public:
+    int maxDepth(TreeNode *root)
+    {
+        return getDepth(root);
     }
 };
 
