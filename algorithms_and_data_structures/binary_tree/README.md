@@ -16,6 +16,7 @@
     - [中序遍历](#中序遍历)
     - [后序遍历](#后序遍历)
     - [前中后统一迭代](#前中后统一迭代)
+    - [由遍历序列构造二叉树](#由遍历序列构造二叉树)
   - [References](#references)
 
 ## 理论基础
@@ -312,6 +313,13 @@ public:
 };
 ```
 
+### 由遍历序列构造二叉树
+
+- 中序 + 前序 ✅
+- 中序 + 后序 ✅
+- 中序 + 层序 ✅
+- 前序 + 后序 ❌
+
 ## References
 
 - [x] 二叉树
@@ -328,12 +336,12 @@ public:
   - [x] [完全二叉树的节点个数](https://programmercarl.com/0222.%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0.html)
   - [x] [平衡二叉树](https://programmercarl.com/0110.%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91.html)
   - [x] [二叉树的所有路径](https://programmercarl.com/0257.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84.html)
-  - [ ] [二叉树周末总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20201003%E4%BA%8C%E5%8F%89%E6%A0%91%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
-  - [ ] 左叶子之和
-  - [ ] 找树左下角的值
-  - [ ] 路径总和
-  - [ ] 从中序与后序遍历序列构造二叉树
-  - [ ] 最大二叉树
+  - [x] [二叉树周末总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20201003%E4%BA%8C%E5%8F%89%E6%A0%91%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
+  - [x] [左叶子之和](https://programmercarl.com/0404.%E5%B7%A6%E5%8F%B6%E5%AD%90%E4%B9%8B%E5%92%8C.html)
+  - [x] [找树左下角的值](https://programmercarl.com/0513.%E6%89%BE%E6%A0%91%E5%B7%A6%E4%B8%8B%E8%A7%92%E7%9A%84%E5%80%BC.html)
+  - [x] [路径总和](https://programmercarl.com/0112.%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C.html)
+  - [x] [从中序与后序遍历序列构造二叉树](https://programmercarl.com/0106.%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91.html)
+  - [ ] [最大二叉树](https://programmercarl.com/0654.%E6%9C%80%E5%A4%A7%E4%BA%8C%E5%8F%89%E6%A0%91.html)
   - [ ] 二叉树周末总结
   - [ ] 合并二叉树
   - [ ] 二叉搜索树中的搜索
