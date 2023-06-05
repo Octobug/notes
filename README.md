@@ -58,8 +58,8 @@ disciplines according to the
         2. Systems Programming
     7. [Programming Languages](programming_languages)
         1. Compiler
-        2. [C](programming_languages/c)
-        3. [Programming Paradigms](programming_languages/programming_paradigms)
+        2. Programming Paradigms
+        3. [C](programming_languages/c)
         4. [Go](programming_languages/go)
         5. [JavaScript](programming_languages/javascript)
         6. [Python](programming_languages/python)
