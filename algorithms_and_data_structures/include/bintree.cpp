@@ -23,6 +23,8 @@ void outputPreOrder(TreeNode *root)
 
 void outputLevelOrder(TreeNode *root)
 {
+    if (root == nullptr)
+        return;
     queue<TreeNode *> q;
     q.push(root);
     while (!q.empty())
