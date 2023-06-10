@@ -26,8 +26,8 @@
 - [x] [哈希表](hash_table)
 - [x] [字符串](string)
 - [x] [栈与队列](stack_queue)
-- [ ] [二叉树](binary_tree)
-- [ ] 回溯算法
+- [x] [二叉树](binary_tree)
+- [ ] [回溯算法](back_tracking)
 - [ ] 贪心算法
 - [ ] 动态规划
 - [ ] 单调栈
