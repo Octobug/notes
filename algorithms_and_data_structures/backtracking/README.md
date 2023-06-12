@@ -107,9 +107,9 @@ void backtracking(参数) {
 - 回溯算法
   - [x] [回溯算法理论基础](https://programmercarl.com/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html)
   - [x] [组合问题](https://programmercarl.com/0077.%E7%BB%84%E5%90%88.html)
-  - [ ] [组合（优化）](https://programmercarl.com/0077.%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96.html)
-  - [ ] 组合总和III
-  - [ ] 电话号码的字母组合
+  - [x] [组合（优化）](https://programmercarl.com/0077.%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96.html)
+  - [x] [组合总和III](https://programmercarl.com/0216.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8CIII.html)
+  - [ ] [电话号码的字母组合](https://programmercarl.com/0017.%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E7%9A%84%E5%AD%97%E6%AF%8D%E7%BB%84%E5%90%88.html)
   - [ ] 回溯周末总结
   - [ ] 组合总和
   - [ ] 组合总和II
