@@ -17,12 +17,12 @@
 - [x] [2. Contribute to TiDB](https://pingcap.github.io/tidb-dev-guide/contribute-to-tidb/introduction.html)
   - [x] [2.1. Community Guideline](https://pingcap.github.io/tidb-dev-guide/contribute-to-tidb/community-guideline.html)
   - [x] [2.2. Report an Issue](https://pingcap.github.io/tidb-dev-guide/contribute-to-tidb/report-an-issue.html)
-  - [ ] [2.3. Issue Triage](https://pingcap.github.io/tidb-dev-guide/contribute-to-tidb/issue-triage.html)
-  - [ ] 2.4. Contribute Code
-  - [ ] 2.5. Cherry-pick a Pull Request
-  - [ ] 2.6. Review a Pull Request
-  - [ ] 2.7. Make a Proposal
-  - [ ] 2.8. Code Style and Quality Guide
+  - [x] [2.3. Issue Triage](https://pingcap.github.io/tidb-dev-guide/contribute-to-tidb/issue-triage.html)
+  - [x] [2.4. Contribute Code](https://pingcap.github.io/tidb-dev-guide/contribute-to-tidb/contribute-code.html)
+  - [x] [2.5. Cherry-pick a Pull Request](https://pingcap.github.io/tidb-dev-guide/contribute-to-tidb/cherrypick-a-pr.html)
+  - [x] [2.6. Review a Pull Request](https://pingcap.github.io/tidb-dev-guide/contribute-to-tidb/review-a-pr.html)
+  - [x] [2.7. Make a Proposal](https://pingcap.github.io/tidb-dev-guide/contribute-to-tidb/make-a-proposal.html)
+  - [ ] [2.8. Code Style and Quality Guide](https://pingcap.github.io/tidb-dev-guide/contribute-to-tidb/code-style-and-quality-guide.html)
   - [ ] 2.9. Write Document
   - [ ] 2.10. Release Notes Language Style Guide
   - [ ] 2.11. Committer Guide
