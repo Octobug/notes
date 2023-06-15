@@ -88,7 +88,8 @@
       - [五、如何决定该选用第一种方法还是第二种方法](#五如何决定该选用第一种方法还是第二种方法)
     - [思维训练：10.1-10.2](#思维训练101-102)
       - [答案：思维训练：10.1-10.2](#答案思维训练101-102)
-    - [2.7.3 看句义选介词](#273-看句义选介词)
+    - [10.3 看句义选介词](#103-看句义选介词)
+    - [10.4 表示所属关系或部分与整体的关系时用介词 of](#104-表示所属关系或部分与整体的关系时用介词-of)
     - [2.7.7 “介词 + 关系代词 + to do”结构](#277-介词--关系代词--to-do结构)
     - [2.8.2 as 引导限定性定语从句](#282-as-引导限定性定语从句)
   - [2.11 缩合关系代词 what](#211-缩合关系代词-what)
@@ -1593,9 +1594,51 @@ miles of ocean and vegetation and clean air ***are needed to***`C` maintain only
 
    `译` 在自然界里，存在着这样一种微妙的生态平衡——为了维持相对较少的人类的生存而需要若干平方英里的海洋、植被和干净空气。
 
-### 2.7.3 看句义选介词
+### 10.3 看句义选介词
 
->>>>> progress
+有时，关系词前面的介词完全根据句子意思而定，而不是固定搭配。
+也就是说，选用介词时，既不看前面的先行词，也不看后面的定语从句，而是要看句子的意思来确定。
+
+`1` America's capacity utilizaion, for example, has reached historically high
+levels earlier this year, and its jobless rate (5.6% in August) has fallen below
+most estimates of the natural rate of unemployment -- the rate below which
+inflation has taken off in the past.
+
+- 这里的先行词为 rate，如果按照前面的介词使用规律，这里应该使用介词 at。
+  但是根据句子意思表达的要求，上句用了介词 below。
+- `译` 例如，美国的就业率在今年的前段时间创下了历史高水平，并且它的失业率（八月份为 5.6%）已降至低于大多数对于自然失业率的估测——在过去，当失业率低于自然失业率时，通货膨胀率已开始急剧上升。
+
+`2` There are things you would love to hear but you will never hear it from the
+person from whom you would like to hear it, but don't be deaf to hear it from
+the person who says it with heart.
+
+- 这里选用介词 from，它不与先行词 person 或定语从句中的某个词构成固定搭配，而是完全出于句子表意的需要。这与 from 这个词本身的意思密切相关，它表示“来自（某个地方）”。
+- `译` 有些话你很想听到，然而却无法从你希望的那个人口中听到，但如果有其他人用心对你说出了那些话，不要对它充耳不闻。
+
+`3` Our life is like a wheel with six spokes: family, financial, physical,
+mental, social and spiritual. The physical spoke is our health, without which
+nothing makes sense. The social spoke is that every individual and organization
+has social responsibility without which society starts dying.
+
+- 这里选用介词 without，它不与先行词 health 及 responsibility 或定语从句中的某个词构成固定搭配，而是完全出于句子表意的需要。
+  这里 without 表示“没有”。
+- `译` 我们的生活就像一个车轮，由这样六个轴支撑：家庭、经济、身体、思想、社会以及精神。
+  其中，身体之轴就是我们的健康，没有了健康，任何事情都是毫无意义的。
+  社会之轴就是指每个个体和组织都有自己的社会责任和义务，没有这些，社会就会停滞不前。
+
+### 10.4 表示所属关系或部分与整体的关系时用介词 of
+
+表示所属关系或部分与整体的关系，比较常用的介词是 of。
+
+`1` The company, of which Max Harrison was until recently the chairman, has made
+loss of three million pounds this year.
+
+- 这里的 of which 相当于 of the company，于是整个定语从句相当于 Max Harrison was until
+  recently the chairman of the company，所以这里的 of 表示所属关系，即 the chairman
+  是属于这个公司的。
+- `译` 这家公司今年亏损达三百万英镑，直到前不久 Max Harrison 还是它的董事长。
+
+`2` Progress
 
 ### 2.7.7 “介词 + 关系代词 + to do”结构
 
