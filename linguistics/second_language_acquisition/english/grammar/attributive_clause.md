@@ -90,6 +90,7 @@
       - [答案：思维训练：10.1-10.2](#答案思维训练101-102)
     - [10.3 看句义选介词](#103-看句义选介词)
     - [10.4 表示所属关系或部分与整体的关系时用介词 of](#104-表示所属关系或部分与整体的关系时用介词-of)
+    - [10.5 固定的介宾结构](#105-固定的介宾结构)
     - [2.7.7 “介词 + 关系代词 + to do”结构](#277-介词--关系代词--to-do结构)
     - [2.8.2 as 引导限定性定语从句](#282-as-引导限定性定语从句)
   - [2.11 缩合关系代词 what](#211-缩合关系代词-what)
@@ -1636,9 +1637,78 @@ loss of three million pounds this year.
 - 这里的 of which 相当于 of the company，于是整个定语从句相当于 Max Harrison was until
   recently the chairman of the company，所以这里的 of 表示所属关系，即 the chairman
   是属于这个公司的。
+  原定语从句可改写为 the chairman of which was Max Harrison until recently。
 - `译` 这家公司今年亏损达三百万英镑，直到前不久 Max Harrison 还是它的董事长。
 
-`2` Progress
+`2` They're all groaning about soaring health budgets, the fastest-growing
+component of which are pharmaceutical costs.
+
+- 定语从句中用 which 指代 health budgets 这个整体，表示部分的是 the fastest-growing
+  component，即从句中的 pharmaceutical costs。
+  原从句可以改写为：of which pharmaceutical costs are the fastest-growing component。
+  由此看来，定语从句是一个倒装句，从句主语是 costs。
+- `译` 他们所有人都在抱怨高涨的医疗预算，其中增长最快的部分是药品费用。
+
+`3` The total cultivated area is 13,000 acres, of which 10,000 acres are
+irrigated fields.
+
+- 原定语从句可改写为：10,000 acres of which are irrigated fields.
+- `译` 可耕地的总面积为 13,000 英亩，其中 10,000 英亩为可灌溉良田。
+
+通过以上例句，可以总结出该句型的结构特点如下：
+
+1. 该句型的结构往往是“不定代词/数量词/形容词的比较级或最高级 + of which/whom”，
+   用来表示数量或某种特点。具体地说，在介词 of 前面常出现的词包括：
+   - all, any, a number
+   - both
+   - each, either
+   - few
+   - half
+   - little
+   - many, most, much
+   - neither, none
+   - several, some
+   - the majority
+   - 数字和形容词的最高级等
+2. 这里 of 前面的成分都可以后移至定语从句中。
+
+`4` This kind of support, like all government support, requires decisions about
+the appropriate recipients of funds. Decisions based on utility as opposed to
+lack of utility are straightforward. But a decision among projects none of which
+has immediate utility is more difficult.
+
+- 这里的 none of which 相当于 none of the projects，即 which 指前面的 projects。
+  可以说成 of which none has immediate...
+- `译` 这种支持，如同所有的政府支持一样，需要决定谁适合作为基金的受益人。
+  最终要由效益来决定是直截了当的，可是在那些都看不到近期效益的项目中来决定谁是受益人，这就更难了。
+
+`5` Living in the central Australian desert has its problems, ____ obtaining
+water is not the least.
+
+- A. of which
+- B. for what
+- C. as
+- D. whose
+- `答案` A。
+- obtaining water 是众多 problems 中的一种，which 指代 problems。
+  原句可以改写为：obtaining water of which is not the least.
+- `译` 生活在澳大利亚中部沙漠地区会有很多问题，其中取水问题还不算最大的麻烦。
+
+`6` The Social Security Retirement Program is made up of two trust funds, ____
+could go penniless by next year.
+
+- A. the larger one
+- B. the larger of which
+- C. the largest one
+- D. the largest of which
+- `答案` B。
+- 这里的 of 前面用了比较级 the larger，表示 the larger fund。
+  原定语从句可改写为：of which the larger could go penniless by next year。
+- `译` 这个“社会保障退休计划”由两支基金组成，其中较大的那支基金到明年可能就会破产。
+
+### 10.5 固定的介宾结构
+
+>>>>> progress
 
 ### 2.7.7 “介词 + 关系代词 + to do”结构
 
