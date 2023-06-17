@@ -91,6 +91,7 @@
     - [10.3 看句义选介词](#103-看句义选介词)
     - [10.4 表示所属关系或部分与整体的关系时用介词 of](#104-表示所属关系或部分与整体的关系时用介词-of)
     - [10.5 固定的介宾结构](#105-固定的介宾结构)
+    - [10.6 定语从句的倒装结构](#106-定语从句的倒装结构)
     - [2.7.7 “介词 + 关系代词 + to do”结构](#277-介词--关系代词--to-do结构)
     - [2.8.2 as 引导限定性定语从句](#282-as-引导限定性定语从句)
   - [2.11 缩合关系代词 what](#211-缩合关系代词-what)
@@ -1708,7 +1709,79 @@ could go penniless by next year.
 
 ### 10.5 固定的介宾结构
 
->>>>> progress
+关系代词前面的介词有时与固定的介宾短语结构有关，比如 in this case, in one's honor 和
+with one's help 等。它们若出现在定语从句中，则会相应地变成 in which case, in whose
+honor 和 with whose help。
+
+所以，这里的关系代词 which/whose 前面的介词 in/with 是从原来的短语中沿用而来。
+
+`1` He may be late, in which case we should wait for him.
+
+- 这里的 in which case 就是由 in this case 变化而来，其中 which 指代前面整个句子 he may
+  be late。
+- `译` 他可能要迟到，如果是这样，我们就应该等等他。
+
+`2` He was a great writer, in whose honor this bronze statue was built.
+
+- in whose honor 由 in one's honor 变化而来，表示“纪念某人”。
+- `译` 他是一位伟大的作家，特此设立铜像来纪念他。
+
+`3` We extended our warm welcome to the visiting delegation in whose honor a
+grand banquet was given.
+
+- `译` 我们对到访的代表团表示热烈欢迎，并设盛宴款待。
+
+### 10.6 定语从句的倒装结构
+
+“介词 + 关系代词”这种结构的定语从句往往还伴随着从句采用倒装结构。
+具体的结构是“介词 + 关系代词 + 从句谓语 + 从句主语”，即一个将整个谓语放在主语前面的完全倒装结构。
+
+`1` They're all groaning about soaring health budgets, the fastest-growing
+component of which are pharmaceutical costs.
+
+- 这个定语从句可以改写为：of which pharmaceutical costs are the fastest-growing
+  component，也就是定语从句的主语是复数名词短语 pharmaceutical costs，因此从句谓语用的是
+  are。
+
+💡 采用倒装往往是因为定语从句的主语较复杂，所以按照英语的尾重原则后置了。
+
+`2` This is the world out of which grows the hope, for the first time in
+history, of a society where there will be freedom from want and freedom from
+fear.
+
+- 结构分析
+  - 主语：this is the world
+  - 定语从句（修饰 world）：out of which grows the hope, for the first time in
+    history, of a society
+  - 定语从句（修饰 society）：
+- 第一个定语从句（忽略插入语 for the first time in history） out of which grows the
+  hope of a society 修饰 world。
+  the hope of a society 作定语从句的主语，谓语是 grows，out of which
+  在定语从句中作状语，所以整个定语从句是一个完全倒装结构。
+- 正常的语序是：the hope of a society grows out of of which (which 指代 the
+  world)。第二个定语从句 where there will be freedom from want and freedom from
+  fear 修饰 society。
+- `译` 在这个世界，人类首次希望建立这样一个社会——在那里，他们将会摆脱贫困，摆脱恐惧。
+
+`3` The intellectual process I learned in that class is also life's process,
+because every life is a great work with all the richness of its gifts and the
+wealth of its possibilities. When you graduate from here, you exit with
+thousands of pages of personal text on which are inscribed beliefs and values
+shaped by years of education, family interactions, relationships, experiences.
+And buried within those thousands of pages is your personal truth, your essence.
+
+- 这段话来自惠普公司总裁在斯坦福大学的一次毕业典礼上对毕业生们的演讲。
+- 定语从句 on which are inscribed beliefs and values shaped by years of
+  education, family interactions, relationships, experience 修饰名词短语
+  thousands of pages of personal text。这个从句的主语是 beliefs and values shaped
+  by years of education, family interactions, relationships, experiences，谓语是
+  are inscribed，on which 作地点状语。所以，整个定语从句是一个完全倒装结构。
+- 正常的语序是：beliefs and values shaped by years of education, family
+  interactions, relationships, experiences are inscribed on which (which 指代
+  thousands of pages of personal text)。
+- `译`：我在那门课中所学的掌握知识的过程，也是生活的过程。因为每种人生都是一部伟大的著作，其中包含丰富的才智和美好的可能。
+  当你从这里毕业时，你会带着数千页的人生教科书走出校门，在这本教科书里铭刻着经过多年教育、家庭的作用、社会关系以及个人经历所形成的信念和价值观。
+  而真实的你和你的精华就深藏在这数千页记录中。
 
 ### 2.7.7 “介词 + 关系代词 + to do”结构
 
