@@ -14,10 +14,16 @@
     - [2.1 时间连词 when 的用法特点](#21-时间连词-when-的用法特点)
       - [一、主句一般过去时 + 从句一般过去时](#一主句一般过去时--从句一般过去时)
       - [二、主句一般过去时 + 从句过去完成时](#二主句一般过去时--从句过去完成时)
-      - [三、主句一般过去时 + 从句过去进行时](#三主句一般过去时--从句过去进行时)
-      - [四、主句过去进行时 + 从句一般过去时](#四主句过去进行时--从句一般过去时)
-      - [三与四的对比](#三与四的对比)
-      - [五、主句一般将来时 + 从句一般现在时](#五主句一般将来时--从句一般现在时)
+      - [三、主句过去完成时 + 从句一般过去时](#三主句过去完成时--从句一般过去时)
+      - [四、主句一般过去时 + 从句过去进行时](#四主句一般过去时--从句过去进行时)
+      - [五、主句过去进行时 + 从句一般过去时](#五主句过去进行时--从句一般过去时)
+      - [四与五的对比](#四与五的对比)
+      - [六、主句一般将来时 + 从句一般现在时](#六主句一般将来时--从句一般现在时)
+      - [七、主句一般将来时 + 从句现在完成时](#七主句一般将来时--从句现在完成时)
+      - [八、主句将来完成时 + 从句一般现在时](#八主句将来完成时--从句一般现在时)
+      - [九、主句将来进行时 + 从句一般现在时](#九主句将来进行时--从句一般现在时)
+      - [十、主从句都用一般现在时](#十主从句都用一般现在时)
+      - [十一、whenever 引导时间状语从句](#十一whenever-引导时间状语从句)
     - [2.2 时间连词 while 的用法特点](#22-时间连词-while-的用法特点)
     - [2.3 时间连词 until 的用法特点](#23-时间连词-until-的用法特点)
       - [一、延续动词 + until + 短暂动词或时间点](#一延续动词--until--短暂动词或时间点)
@@ -70,8 +76,13 @@
     - [思维训练 9. 比较状语从句](#思维训练-9-比较状语从句)
       - [答案：思维训练 9. 比较状语从句](#答案思维训练-9-比较状语从句)
   - [10. 方式状语从句](#10-方式状语从句)
-  - [3.2 状语从句的省略](#32-状语从句的省略)
+  - [11. 状语从句的省略](#11-状语从句的省略)
+    - [11.1 时间状语从句的省略](#111-时间状语从句的省略)
+    - [11.2 地点状语从句的省略](#112-地点状语从句的省略)
+    - [11.3 条件状语从句的省略](#113-条件状语从句的省略)
+    - [11.4 让步状语从句的省略](#114-让步状语从句的省略)
     - [3.3.2 时间连词 while 的用法特点](#332-时间连词-while-的用法特点)
+    - [3.3.7 时间连词 until 的用法特点](#337-时间连词-until-的用法特点)
   - [综合训练：状语从句](#综合训练状语从句)
     - [答案：综合训练：状语从句](#答案综合训练状语从句)
 
@@ -343,6 +354,27 @@ truth.*
 
 ## 2. 时间状语从句
 
+从本质上讲，时间状语从句就是用来说明主句动作与从句动作**在发生时间上的先后关系**。
+既然说到动作发生的时间，就必然与主句和从句的谓语时态关系密切，而英文中的时态又与动作持续时间的长短，即延续动词（continuous verb）或短暂动词有关。
+
+因此，在学习时间状语从句时，需要牢牢把握下列贯穿所有时间状语从句的两个核心要点：
+
+1. 注意主句、从句的时态搭配关系。对不同时间状语从句的连接词，这种搭配关系是不同的。
+2. 注意主句、从句的谓语动词的延续性和短暂性。延续动词所表示的动作简称为“长动作（long action）”，短暂动词所表示的动作简称为“短动作（short action）”。
+
+时间状语从句的难点在于，要掌握主从句的时态搭配关系，时态搭配关系不同，句子的意思就有可能不同。
+以下两个句子的主句时态不同，表达的意思也因此不同，其主从动作发生的先后不同。
+
+`1` I was telephoning Harry when she arrived.
+
+- telephoning 先发生，并且是延续性动作；arrived 后发生。
+- `译` 她到的时候，我正在给 Harry 打电话。
+
+`2` I telephoned Harry when she arrived.
+
+- arrived 先发生；telephoned 后发生，是短暂性动作，只强调动作的开始。
+- `译` 她到了以后，我给 Harry 打了一个电话。
+
 ### 2.1 时间连词 when 的用法特点
 
 一般来讲，when 的意思相当于 at that time (在……时刻)，
@@ -352,74 +384,152 @@ truth.*
 
 时间状语从句所表达的时间通常是**过去**和**将来**。
 
-when 引导从句表示过去动作有四组时态搭配：
-
 #### 一、主句一般过去时 + 从句一般过去时
 
-- `例 1`: I started my dinner when he left.
-  - 他走了之后，我才开始吃晚饭。
-- `例 2`: He left when I got there.
-  - 我到了以后，他才离开。
+`1` I started my dinner when he left.
+
+- `译` 他走了之后，我才开始吃晚饭。
+
+`2` He left when I got there.
+
+- `译` 我到了以后，他才离开。
 
 若主从句都用一般过去时，则表示**从句动作先发生**。
-要强调从句动作先发生，从句还可以用过去完成时：
+要强调从句动作先发生，从句还可以用过去完成时。
 
 #### 二、主句一般过去时 + 从句过去完成时
 
-- `例 3`: I started my dinner when he had left.
-- `例 4`: He left when I had got there.
-
 用过去完成时，更强调了从句动作先发生。
 
-when 引导的从句还有一个重要的时态搭配，即一般过去时 (simple past)
-与过去进行时 (past continuous) 搭配。
-**此时的时态搭配与主句、从句没有关系，只与动作的长短有关系。
-短暂动作用一般过去时，延续动作用过去进行时。**
-这一时态配套使用所表示的意义是：在一个延续背景动作的过程中突然发生了一个短暂动作。
+`3` I started my dinner when he had left.
 
-#### 三、主句一般过去时 + 从句过去进行时
+`4` He left when I had got there.
 
-`例 5`: The doorbell rang when I was telephoning.
+以上这两句意思和使用一般过去时区别不大。不过对于某些句子来说，when
+引导的从句用**一般过去时**或**过去完成时**是有区别的。具体来说：
 
-门铃响的时候，我正在打电话。
+- 在表示两个相继发生的动作时，用**过去完成时**可以表示在一个动作完成以后，另一个动作才开始发生，从而使得两个动作相互独立，彼此脱离开来。
+- 而用**一般过去时**，则可能表示一个动作“导致”另一个动作的发生，或两个动作之间有一种因果关系。
 
-#### 四、主句过去进行时 + 从句一般过去时
+`5`
 
-`例 6`: I was telephoning when the doorbell rang.
+- When I had opened all the windows I sat down and had a cup of tea.
+  - 这里不宜用一般过去时，因为 had opened all the windows 是持续了一段时间的。
+  - `译` 我把所有的窗子都打开后，就坐下来喝了杯茶。
+- When I opened the window the cat jumped out.
+  - 用一般过去时比用过去完成时更自然，因为“开完窗”和“猫跳出去”是两个紧接着发生的动作。
+  - `译` 我刚把窗子打开，猫就跳了出去。
 
-我当时正在打电话，突然门铃响了。
+`6`
 
-#### 三与四的对比
+- When I had written my letters I did some gardening.
+  - 不宜用一般过去时，因为这里 had written my letters 是持续了一段时间的，在一系列“写”的动作完成后才 did some gardening。
+  - `译` 我把信写完后，就到花园里干了些活。
+- When I wrote him a letter, he came at once.
+  - 用一般过去时比过去完成时更自然，因为“我写信”和“他过来”之间有因果关系。
+  - `译` 我给他去了封信后，他立即就来了。
+
+显然，若要表达**主句动作**先发生，则主句须用过去完成时。
+
+#### 三、主句过去完成时 + 从句一般过去时
+
+`7` I had started my dinner when he left.
+
+- `译` 他走的时候，我已经开始吃晚饭了。
+
+`8` He had already left when I got home.
+
+- `译` 我到的时候，他已经离开了。
+
+在表示过去的动作中，when 引导的从句还有一个重要的时态搭配，即**一般过去时** (simple past)
+与**过去进行时** (past continuous) 搭配。
+**此时的时态搭配与主句、从句没有关系，只与动作的长短有关系。短暂动作用一般过去时，延续动作用过去进行时。**
+这一时态搭配使用所表示的意义是：在一个延续背景动作的过程中突然发生了一个短暂动作。
+由于此时的时态搭配与主从句没有关系，因此可以组合成如下两种时态搭配。
+即“主句一般过去时 + 从句过去进行时”，和“主句过去进行时 + 从句一般过去时”。
+
+#### 四、主句一般过去时 + 从句过去进行时
+
+`9` The doorbell rang when I was telephoning.
+
+- `译` 门铃响的时候，我正在打电话。
+
+这个句子也可以改成：
+
+#### 五、主句过去进行时 + 从句一般过去时
+
+`10` I was telephoning when the doorbell rang.
+
+- `译` 我当时正在打电话，突然门铃响了。
+
+`9` I was walking along the road when suddenly someone patted me on the shoulder
+from behind.
+
+#### 四与五的对比
 
 由“主句一般过去时 + when + 从句过去进行时”变成“主句过去进行时 + when + 从句一般过去时”，
-此时 when 的意思发生了改变，即由 during the time (当……时候) 变成了
-at the time (正在那时)。
+此时 when 的意思发生了改变，即由 during the time (当……时候) 变成了 at the time (正在那时)。
 这时 when 强调某个短暂动作突然发生，所以可以在 when 引导的从句中添加 suddenly 一词。
 
-- `例 7`:
-  - ❌ The doorbell rang when ***suddenly*** I was telephoning.
-  - ✅ I was telephoning when ***suddenly*** the doorbell rang.
-- `例 8`:
-  - I was telephoning Harry when she arrived.
-    - telephoning 先发生，arrived 后发生。
-    - 她到的时候，我正在给哈里打电话。
-  - I telephoned Harry when she arrived.
-    - arrived 先发生，telephoned 后发生。
-    - 她到了以后，我给哈里打了一个电话。
-- `例 9`: I was walking along the road when suddenly someone patted me on the
-  shoulder from behind.
-- `例 10`: On a rainy day I was driving north through Vermont when suddenly I
-  noticed a young man holding up a sign reading "Boston".
+`11`
 
-when 引导从句表示将来动作主要有一种时态搭配：
+- ❌ The doorbell rang when ***suddenly*** I was telephoning.
+  - 由于 when 的意思是 during the time，强调的是一个动作持续的过程，所以不能用 suddenly。
+- ✅ I was telephoning when ***suddenly*** the doorbell rang.
+  - 由于 when 的意思是 at the time，强调的是一个短暂动作的发生，所以可以用 suddenly 修饰。
 
-#### 五、主句一般将来时 + 从句一般现在时
+`12`: On a rainy day I was driving north through Vermont when suddenly I noticed
+a young man holding up a sign reading "Boston".
+
+- when 强调短暂性动作，这里的意思是“我突然注意到”。
+- `译` 在一个雨天，我正驾着车往北行驶穿越佛蒙特州，这时我突然看见一个年轻男子，手里举着牌子，上面写着“波士顿”。
+
+when 引导从句表示**将来**动作的四组时态搭配：
+
+#### 六、主句一般将来时 + 从句一般现在时
 
 在表示将来的动作时，主句要用**一般将来时 (simple future)**，
 而时间状语从句要用**一般现在时 (simple present)** 表示将来，不能使用将来时态。
+这种搭配从句动作先于主句动作。
 
-- `例 11`: I'll speak to him when he arrives.
-- `例 12`: I'll tell him about it when he comes back.
+`13` I'll speak to him when he arrives.
+
+- `译` 他来了以后我会和他谈谈。
+
+`14` I'll tell him about it when he comes back.
+
+- `译` 他回来后我要告诉他这件事情。
+
+#### 七、主句一般将来时 + 从句现在完成时
+
+在 when 引导的从句中，除了用一般现在时表示将来之外，还可以用现在完成时表示一个将要发生的动作，主句依然用一般将来时。
+从句中用完成时态是为了强调：在从句动作结束了之后，主句动作才开始发生。
+此时从句的动作一般都是需要持续一段时间的。
+
+`15` I'll go when I have had my dinner.
+
+- 如果说 I'll go when I have my dinner. 则变成表示“我吃着饭的同时就出去了。”
+- `译` 我吃完饭就去。
+
+`16` I'll give you a call when I have finished the work.
+
+- `译` 工作做完后，我就给你打电话。
+
+`17` The winner will be declared when every competitor has finished the course.
+
+- `译` 当所有的选手都跑完之后，就将宣布获胜者。
+
+同理，在将来的动作中，若要表示主句动作先发生，则主句要用将来完成时：
+
+#### 八、主句将来完成时 + 从句一般现在时
+
+>>>>> progress
+
+#### 九、主句将来进行时 + 从句一般现在时
+
+#### 十、主从句都用一般现在时
+
+#### 十一、whenever 引导时间状语从句
 
 ### 2.2 时间连词 while 的用法特点
 
@@ -1355,11 +1465,77 @@ contracting another disease.*
   Sing **like** nobody's listening.
   Live **like** it's heaven on earth.
 
-## 3.2 状语从句的省略
+## 11. 状语从句的省略
+
+状语从句的省略结构一般应同时满足以下两点：
+
+1. 主句的主语和从句的主语一致，或从句主语是 it；
+2. 从句谓语中含有 be 动词的情况下，可将从句的主语和 be 动词省略。
+   这种省略常见于**时间**、**地点**、**条件**及**让步**状语从句中。
+
+### 11.1 时间状语从句的省略
+
+`1` A zero can have its meaning only when used with real numbers; thoughts can
+give off brilliant light only when put into actions.
+
+- `还原` A zero can have its meaning only when it is used with real numbers;
+  thoughts can give off brilliant light only when they are put into actions.
+- 这里分别省略了 it (指代 zero) is 和 they (指代 thoughts) are。
+- `译` 零，只有和实数在一起使用才有意义；思想，只有付诸行动才能散发光芒。
+
+`2` Metals expand when heated and contract when cooled.
+
+- `还原` Metals expand when they are heated and contract when they are cooled.
+- `译` 金属具有热胀冷缩的特性。
+
+如果不能同时满足主句与从句主语一致（或从句主语是 it）、从句谓语中含有 be 动词这两个条件，则从句不能省略主语和 be 动词。
+
+`3`
+
+- When I was ten years old, my family moved to the city.
+- When ten years old, my family moved to the city. ❌
+  - 主句主语 my family 和从句主语 I 是不同的，所以该从句主语不能省略。
+- `译` 在我 10 岁的时候，我们家搬到城市里来了。
+
+### 11.2 地点状语从句的省略
+
+`4` The kind of tree grows favorably where wet.
+
+- 这是 where 引导的地点状语从句的省略。
+- `还原` The kind of tree grows favorably where it is wet.
+  这里 it 并不指代主句的主语 tree，而是泛指任何地方。
+- `译` 这种树在潮湿的地方生长得好。
+
+`5` Where appropriate, introduce personal experiences that will have a common
+link with your audience.
+
+- `还原` Where it is appropriate, introduce personal experiences that will have
+  a common link with your audience. it 泛指任何地方。
+- `译` 在合适的地方，你可以把与听众有关联的个人经历讲给他们听。
+
+### 11.3 条件状语从句的省略
+
+`6` A tiger can't be tamed unless caught very young.
+
+- 这里是 unless 引导的条件状语从句的省略。
+- `还原` A tiger can't be tamed unless it is caught very young. it 指代 tiger。
+- `译` 老虎只有在年幼时捉来才能被驯服。
+
+### 11.4 让步状语从句的省略
+
+`7` Although not an economist himself, Dr. Smith has long been a severe critic
+of the government's economic policies.
+
+- 这里是 although 引导的让步状语从句的省略。
+- `还原` Although he is not an economist himself, Dr. Smith has long been a
+  severe critic of the government's economic policies.
+- `译` 尽管 Smith 博士本人不是经济学家，但他一直以来对政府的经济政策提出尖锐的批评。
+
+### 3.3.2 时间连词 while 的用法特点
 
 >>>>> progress
 
-### 3.3.2 时间连词 while 的用法特点
+### 3.3.7 时间连词 until 的用法特点
 
 >>>>> progress
 
