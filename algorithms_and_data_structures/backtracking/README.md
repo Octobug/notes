@@ -114,8 +114,8 @@ void backtracking(参数) {
   - [x] [组合总和](https://programmercarl.com/0039.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C.html)
   - [x] [组合总和II](https://programmercarl.com/0040.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8CII.html)
   - [x] [分割回文串](https://programmercarl.com/0131.%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2.html)
-  - [ ] [复原IP地址](https://programmercarl.com/0093.%E5%A4%8D%E5%8E%9FIP%E5%9C%B0%E5%9D%80.html)
-  - [ ] 子集问题
+  - [x] [复原IP地址](https://programmercarl.com/0093.%E5%A4%8D%E5%8E%9FIP%E5%9C%B0%E5%9D%80.html)
+  - [ ] [子集问题](https://programmercarl.com/0078.%E5%AD%90%E9%9B%86.html)
   - [ ] 回溯周末总结
   - [ ] 子集II
   - [ ] 递增子序列
