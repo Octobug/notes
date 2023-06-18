@@ -519,17 +519,87 @@ when 引导从句表示**将来**动作的四组时态搭配：
 
 - `译` 当所有的选手都跑完之后，就将宣布获胜者。
 
-同理，在将来的动作中，若要表示主句动作先发生，则主句要用将来完成时：
+同理，在将来的动作中，若要表示**主句动作先发生**，则主句要用将来完成时：
 
 #### 八、主句将来完成时 + 从句一般现在时
 
->>>>> progress
+`19` The performer will already have played the music when we get here.
+
+- `译` 一会儿我们到的时候，那位演奏家一定已经弹完那首曲子了。
 
 #### 九、主句将来进行时 + 从句一般现在时
 
+`20` The performer will be playing the music when we get there.
+
+- `译` 一会儿我们到的时候，那位演奏家一定正在弹那首曲子。
+
 #### 十、主从句都用一般现在时
 
+表示现在一般动作的时态搭配是，主从句都用一般现在时态。
+表示一般动作的 when 引导的从句往往是说明一般情况，阐明一个道理，因而常出现在名言警句、谚语或格言中。
+
+`21` When you were born, you cried and the world rejoiced. Live your life so
+that when you die, the world cries and you rejoice.
+
+- `译` 出生的时候，你是哭着来到这个世界，而周围的人都欢笑。要好好度过此生，以便在你去世的时候，全世界都为你哭泣，而你却微笑着离开。
+
+`22` If there are no dogs in Heaven, then when I die I want to go where they
+went.
+
+- `译` 如果天堂里没有狗，那么我愿意死后不去天堂，而去有狗的地方。
+
+`23` Happiness is like a visitor. You can't command her appearance. You can only
+appreciate her when she **does** show up. And you can't force happiness to
+happen -- but you can make sure you are aware of it when it **does**. Happiness
+is an attitude, not a condition.
+
+- 主从句都是用了一般现在时态。
+- `译` 幸福如同一位访客，你无法要求她到来，而是在她到来时，好好享受与她在一起的时光。
+  你无法强迫幸福出现，不过当幸福来临时，你能确信你会感受到。幸福是一种心态，不是一个条件。
+
+`24` When my attitudes are right, there is no barrier too high, no valley too
+deep, no dream too extreme, no challenge too great for me.
+
+- `译` 当我拥有正确的心态时，没有什么障碍不可逾越，没有什么困难不可克服，没有什么梦想过于狂妄，没有什么挑战不可战胜。
+
+表示一般时态的 when 引导的从句还可以用于固定结构中，比如 when it comes to，表示“当说到……”。
+
+`25` Doing your homework is a sure way to improve your test scores, and this is
+especially true when it comes to classroom tests.
+
+- `译` 做作业肯定会有助于你提高考试成绩，尤其是对课堂测试来说。
+
+`26` In general, the tests work most effectively when the qualities to be
+measured can be most precisely defined and least effectively when what is to be
+measured or predicted cannot be well defined.
+
+- 这里 when 虽然是一个时间连词，但在特定的上下文中，可能会含有条件的意味，这种情况可以译为“如果”。
+- `译` 一般来说，如果所需要测定的特征能很精确地界定时，测试最为有效；而如果所要测定或预测的东西不能明确地界定时，测试的效果则最差。
+
 #### 十一、whenever 引导时间状语从句
+
+还可以用 whenever 引导时间状语从句，表示“无论何时”，它相当于 when 的强调形式。
+
+`27` Whenever you say "I love you", mean it. Whenever you say "I'm sorry", look
+the person right in the eyes.
+
+- `译` 无论何时说“我爱你”，请真心诚意。无论何时说“对不起”，请看着对方的眼睛。
+
+`28` Whenever someone asks you something you don't want to answer, smile and
+ask, "Why do you want to know?"
+
+- `译` 当别人问你一些问题而你不想回答时，笑着说：“你为什么想知道这个？”
+
+`29` Smile whenever you pick up the phone, for the caller will be able to notice
+it.
+
+- `译` 面带微笑地接听电话，因为对方会感觉得到。
+
+从以上的例句可以看出：
+
+1. when 引导的时间从句通常表示过去时间的动作较多，其次是表示将来，很少表示一般现在的动作。
+   在表示现在的情况时，往往是用于名言警句中。
+2. 在以上的时态搭配中，最重要、最常用的是第四和第五组中的“过去进行时 + 一般过去时”。
 
 ### 2.2 时间连词 while 的用法特点
 
