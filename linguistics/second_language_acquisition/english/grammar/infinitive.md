@@ -39,7 +39,12 @@
       - [二、形容词的特点不同](#二形容词的特点不同)
       - [三、不定式是否可以省去](#三不定式是否可以省去)
     - [6.3 主语关系（一）：He is kind to help us](#63-主语关系一he-is-kind-to-help-us)
-    - [4.6.4 主语关系（二）：He is glad to help us](#464-主语关系二he-is-glad-to-help-us)
+    - [6.4 主语关系（二）：He is glad to help us](#64-主语关系二he-is-glad-to-help-us)
+      - [比较“主语关系（一）”中的形容词](#比较主语关系一中的形容词)
+      - [比较一：与宾语关系（一）比较](#比较一与宾语关系一比较)
+      - [比较二：与主语关系（一）比较](#比较二与主语关系一比较)
+    - [6.5 主语关系（三）：He is slow to react](#65-主语关系三he-is-slow-to-react)
+  - [4.7 不定式的作用（六）：作状语](#47-不定式的作用六作状语)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
 
@@ -1241,6 +1246,197 @@ feet three times!
 - It is easy for you to fool him.
   - easy 表示“事情”的特征，所以后面接人称代词时用介词 for。
 
-### 4.6.4 主语关系（二）：He is glad to help us
+### 6.4 主语关系（二）：He is glad to help us
+
+`1` He is glad to help us.
+
+- 这里 he 既是 is glad 的主语，也是 to help us 的逻辑主语，表示“他帮我们”。
+  所以，这个句子的主语 he 与不定式动词构成“主语关系”。
+- `译` 他很高兴帮我们。
+
+还可以通过 for 来单独引出不定式自己的逻辑主语，以与句子主语相区别。
+
+`2`
+
+- She's anxious to win the competition.
+  - 句子主语 she 同时充当不定式 to win the competition 的逻辑主语。
+  - `译` 她迫切地想赢得这个比赛。
+- She's anxious for her daughter to win the competition.
+  - 句子主句是 she，而不定式 to win the competition 的逻辑主语是 her daughter。
+  - `译` 她非常渴望她女儿能赢得这个比赛。
+
+#### 比较“主语关系（一）”中的形容词
+
+`3`
+
+- He is kind to help us.
+  - 形容词 kind 是别人对 he 的评价，而不是描述 he 本身的性质特征。
+- He is glad to help us.
+  - glad 是 he 本身的性质特征，是 he 对 to help us 这件事情的态度。
+
+`4` I am sorry to hear it.
+
+- `译` 听说此事我很遗憾。
+
+`5` I'm sorry to have kept you waiting.
+
+- `=` I'm sorry because I have kept you waiting.
+- `译` 抱歉让你久等了。
+
+`6` I was excited to be there.
+
+- `=` To be there excited me.
+- `译` 去那让我感到很激动。
+
+`7` He is afraid to be fooled.
+
+- 他很害怕被骗。
+
+`8` Donna thinks Phil stole her cellphone. But she's afraid to confront him
+about it.
+
+- Donna 认为 Phil 偷了她的手机，但她不敢当面和他对质。
+
+`9` We are extremely fortunate not to know precisely the kind of the world we
+live in.
+
+- `译` 无法确知我们生活在何种世界里，这是何等幸运。
+
+`10` Jenny isn't desperate to get married. She's quite happy being single.
+
+- `译` Jenny 并不急着结婚，她对自己的单身生活感到很开心。
+
+`11` He was most reluctant to lend us the money.
+
+- `译` 他很不情愿把钱借给我们。
+
+从上面可以看出，这里的形容词都是表示情感的，具体来说是表示人对某件事的态度或情感。
+常常是过去分词转化来的形容词，这与“宾语关系（一）”形成对比，其主要是现在分词。
+
+这样的形容词有：
+
+- afraid, angry, anxious, ashamed
+- content, curious
+- determined, desperate
+- eager
+- frightened, furious
+- glad
+- happy
+- impatient, indignant
+- jubilant
+- keen
+- reluctant
+- thankful
+
+过去分词有：
+
+- annoyed, astonished
+- bored
+- concerned
+- delighted, depressed, disappointed, disgusted, dissatisfied
+- embarrassed
+- fascinated, frightened
+- interested
+- overjoyed, overwhelmed
+- perturbed, prepared, puzzled
+- relieved, reluctant
+- surprised
+- unwilling
+- willing, worried
+
+这些形容词是表示情感的，而其后的不定式短语表示产生这种情感的原因。
+所以，有语法专家把这里的不定式看作是充当原因状语。
+即然相当于状语，就可以把形容词变为副词来直接修饰动词。
+
+`12` In Shanghai, East meets West. Back in the 1840s, China **was reluctant to
+open** its doors to foreigners. While foreigners weren't very welcome years ago,
+Shanghai **is today eager to invite** foreign investment.
+
+- was reluctant to 可以修改为 reluctantly opened
+- is today eager to invite 可以修改为 today eagerly invites
+- `译` 在上海，东西文化交汇。早在 19 世纪 40 年代，中国就被迫向外国人打开了自己的大门。
+  尽管很多年以前老外并不怎么受欢迎，但现如今上海渴望吸引外来投资。
+
+`13` Young people are increasingly reluctant to get hitched in early life. We
+take a look at why attitudes to marriage have changed.
+
+- `译` 现在的年轻人越来越不愿意早结婚。我们来看看人们对婚姻的态度为什么会改变。
+
+#### 比较一：与宾语关系（一）比较
+
+关键在于形容词的**语义特点**不同，二者形成鲜明对比：
+
+- “宾语关系（一）”中的形容词是强调外界对“事情”的评价；
+- 而“主语关系（二）”的形容词是强调“人”自身对某件事产生的态度或情感。
+
+`14`
+
+- He is easy to please.
+  - `=` To please him is easy.
+  - 这里 please 是一个及物动词，he 是 please 的逻辑宾语。
+  - `译` 要取悦他很容易。
+- He is eager to please.
+  - 这里 please 是一个不及物动词，he 是 please 的逻辑主语。
+  - `译` 他很想要取悦别人。
+
+`15`
+
+- He is easy to fool.
+  - easy 强调 to fool him 这件事，而不是 he 这个人。这个不定式短语是逻辑主语，而 he 是充当
+    fool 的逻辑宾语。
+    这里的不定式用主动语态 to fool，使得句子主语 he 能够填补 fool 后面宾语的位置。
+    如果不定式用被动语态 to be fooled，则 he 无法后移充当 fool 的宾语，而被迫成为真正的主语。而这与 easy 的语义（修饰事情）有冲突，所以这里不定式只能用主动语态。
+  - `=` To fool him is easy.
+  - `=` It is easy to fool him.
+  - `译` 他很容易被骗。
+- He is afraid to be fooled.
+  - 形容词 afraid 是强调人的情感，所以用 he 来充当主语符合 afraid 的基本语义，he 是句子真正意义上的主语。
+    又因为 he 与 fool 是被动关系，所以这里不定式要用被动语态 to be fooled。
+  - `译` 他很害怕被骗。
+
+从以上对比可以看出，不同形容词会导致其后面的不定式的主动和被动关系不同。
+此外，从句式变换的角度看，二者也有差异。
+
+- It is easy to please him. ✅
+- It is eager for him to please. ❌
+
+#### 比较二：与主语关系（一）比较
+
+关键在于形容词的语义特点不同。
+“主语关系（一）”中的形容词是外界对主语的行为进行评价，而“主语关系（二）”中的形容词是主语自身的感受或态度，而不是外界对主语的评价。
+
+`16`
+
+- He is kind to help us.
+- He is glad to help us.
+
+另外，从句式变换的角度看，二者也有差异。
+
+`17` He is kind to help us.
+
+- `=` It is kind of him to help us.
+- `=` He is so kind as to help us.
+- `=` How kind of hime (it is) to help us!
+
+这些句式变换对“主语关系（二）”均不适用。
+
+- It is glad of him to help us. ❌
+
+对于某些“主语关系（二）”中的句子，可以添加 for 来引出不定式的逻辑主语。
+
+`18`
+
+- She's anxious to win the competition.
+- She's anxious for her daughter to win the competition.
+
+而添加 for 这种做法对“主语关系（一）”不适用：
+
+- He is kind for her to helo us. ❌
+
+### 6.5 主语关系（三）：He is slow to react
+
+>>>>> progress
+
+## 4.7 不定式的作用（六）：作状语
 
 >>>>> progress
