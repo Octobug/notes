@@ -4,7 +4,8 @@
 
 ## Tools
 
-- [Choose an open source license](https://choosealicense.com/)
+- [x] [Choose an open source license](https://choosealicense.com/)
+- [ ] [Open Source Guides](https://opensource.guide/)
 
 ## The Apache Software Foundation
 
