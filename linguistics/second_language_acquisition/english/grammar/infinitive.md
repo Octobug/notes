@@ -44,6 +44,7 @@
       - [比较一：与宾语关系（一）比较](#比较一与宾语关系一比较)
       - [比较二：与主语关系（一）比较](#比较二与主语关系一比较)
     - [6.5 主语关系（三）：He is slow to react](#65-主语关系三he-is-slow-to-react)
+      - [与 6.1 中“作主语的不定式要放在形容词后面”的比较](#与-61-中作主语的不定式要放在形容词后面的比较)
   - [4.7 不定式的作用（六）：作状语](#47-不定式的作用六作状语)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
@@ -1435,7 +1436,34 @@ take a look at why attitudes to marriage have changed.
 
 ### 6.5 主语关系（三）：He is slow to react
 
->>>>> progress
+这里的形容词既不像“主语关系（一）”中那样表示评价“人”的行为，也不像“主语关系（二）”中那样表示“人”的情感，而是在逻辑语义上说明不定式动作的特点，因而可以把形容词当作副词来直接修饰动词，相当于方式状语。
+
+`1` He is slow to react.
+
+- `=` He reacts slowly.
+
+通过这个例句可以看到，把不定式中的动词变成谓语动词形式，并把形容词变为一个副词来充当方式状语来修饰这个动词，可以改写原句。
+
+`2` He was slow to realize that times had changed.
+
+- `=` He realized only slowly that times had changed.
+- `译` 他慢慢地才认识到时代不同了。
+
+`3` Bob is slow to make a decision.
+
+- `译` Bob 迟迟不作决定。
+
+`4` Do we think we're slow to adapt to change or that we're not smart enough to
+cope with a new challenge? Then we are likely to take a more passive role or not
+to try at all.
+
+- `译` 我们会认为自己很难适应变革，或者自己不够聪明来应对新的挑战吗？如果是这样，我们很可能会表现得相当被动，甚至根本不去尝试。
+
+属于这一类的形容词不多，除 slow 外常用的还有 quick 和 prompt。
+
+#### 与 6.1 中“作主语的不定式要放在形容词后面”的比较
+
+`5` progress
 
 ## 4.7 不定式的作用（六）：作状语
 
