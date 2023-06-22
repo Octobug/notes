@@ -118,8 +118,8 @@ void backtracking(参数) {
   - [x] [子集问题](https://programmercarl.com/0078.%E5%AD%90%E9%9B%86.html)
   - [x] [回溯周末总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20201107%E5%9B%9E%E6%BA%AF%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
   - [x] [子集II](https://programmercarl.com/0090.%E5%AD%90%E9%9B%86II.html)
-  - [ ] [递增子序列](https://programmercarl.com/0491.%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.html)
-  - [ ] 全排列
+  - [x] [递增子序列](https://programmercarl.com/0491.%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.html)
+  - [ ] [全排列](https://programmercarl.com/0046.%E5%85%A8%E6%8E%92%E5%88%97.html)
   - [ ] 全排列II
   - [ ] 回溯周末总结
   - [ ] 回溯算法去重问题的另一种写法
