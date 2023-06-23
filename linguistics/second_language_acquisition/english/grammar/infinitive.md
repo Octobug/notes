@@ -45,6 +45,9 @@
       - [比较二：与主语关系（一）比较](#比较二与主语关系一比较)
     - [6.5 主语关系（三）：He is slow to react](#65-主语关系三he-is-slow-to-react)
       - [与 6.1 中“作主语的不定式要放在形容词后面”的比较](#与-61-中作主语的不定式要放在形容词后面的比较)
+    - [思维总结：6. 不定式的作用（五）：形容词 + to do](#思维总结6-不定式的作用五形容词--to-do)
+    - [思维训练：6. 不定式的作用（五）：形容词 + to do](#思维训练6-不定式的作用五形容词--to-do)
+      - [答案：思维训练：6. 不定式的作用（五）：形容词 + to do](#答案思维训练6-不定式的作用五形容词--to-do)
   - [4.7 不定式的作用（六）：作状语](#47-不定式的作用六作状语)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
@@ -1463,7 +1466,102 @@ to try at all.
 
 #### 与 6.1 中“作主语的不定式要放在形容词后面”的比较
 
-`5` progress
+`5` It would be fun to canoe down the river.
+
+- `译` 划小艇顺河而下是很好玩的。
+
+`6` It is boring to do the same thing every day.
+
+- `译` 每天都做同样的工作是很单调乏味的。
+
+`7` It is not feasible for me to finish this project by tomorrow. I just don't
+have the time.
+
+- `译` 我明天不可能完成这个项目，我没时间。
+
+`8` When you haven't had enough sleep, your body is vulnerable. It's really easy
+for you to get sick.
+
+- `译` 如果睡眠不足，你身体的抵抗力就会降低，你就很容易得病。
+
+以上这些句子中的不定式表面上看是放在形容词后面，但与这节的结构不一样。这些句子实际结构是：
+
+- `5` To canoe down the river would be fun.
+- `6` To do the same thing every day is boring.
+- `7` For me to finish this project by tomorrow is not feasible. I just don't
+  have the time.
+- `8` When you haven't had enough sleep, your body is vulnerable. For you to get
+  sick is really easy.
+
+### 思维总结：6. 不定式的作用（五）：形容词 + to do
+
+1. 在宾语关系（一）中，形容词是对“事情”、“事件”或“活动”的评价，比如说某事容易或者难。
+   1. He is interesting to listen to.
+   2. He is easy to fool.
+   3. He is easy to please.
+2. 在宾语关系（二）中，形容词是对“事物”的评价。
+   1. The food is ready to eat.
+   2. The tea is hot to drink.
+3. 在主语关系（一）中，形容词是对“人”的行为进行评价。
+   1. He is kind to help us.
+   2. He was wrong to tell lies.
+4. 在主语关系（二）中，形容词不是评价，而是说明“人”的情感。
+   具体说就是表示句子的主语，即某“人”自身对外界事件的情感或态度，相当于原因状语。
+   1. He is glad to help us.
+   2. He is afraid to be fooled.
+   3. He is eager to please.
+5. 在主语关系（三）中，形容词既不是像“主语关系（一）”中的那样表示评价“人”的行为，也不像“主语关系（二）”中的那样表示“人”的情感，而是在逻辑语义上说明不定式动作的特点，相当于方式状语。
+   1. He is slow to react.
+
+需要注意的是，以上这五种逻辑语义关系并非“形容词 + to do”这一结构的全部内容。
+这些逻辑语义关系，关键在于形容词的用法。
+
+⚠️ 一个形容词会因为其意思不同而导致用法不同。比如：
+
+- He is impossible to work with.
+  - 这里的用法是对“事情”、“事件”或“活动”的评价，属于“宾语关系（一）”。
+  - `=` It is impossible to work with him.
+- He is impossible.
+  - 这里的用法是形容一个人“让人讨厌”，此时就可以用“人”作主语。
+
+`1` A: Is my wish to become a scientist possible ____?
+
+B: Yes, your wish is sure ____.
+
+- A. to realize, to realize
+- B. to be realized, to be realized
+- C. to realize, to be realized
+- D. to be realized, to realize
+
+`答案` C。在 A 的话中，possible 是表示对“事情”的评价，属于“宾语关系（一）”所述的类型，所以要用主动的不定式 to realize。这个句子还原成陈述句：
+
+- My wish to become a scientist is possible to realize.
+- `=` It is possible to realize my wish to become a scientist.
+- `=` To realize my wish to become a scientist is possible.
+
+在 B 的话中，sure 是表示说话人对某件事的态度，即是“主语关系（二）”所述的类型。your wish 与
+realize 是被动关系，所以要用不定式的被动形式 to be realized。
+
+- `=` I am sure that your wish will be realized.
+
+`译`
+
+- A: 我想成为科学家这个愿望能够实现吗？
+- B: 当然能，你的愿望一定能实现。
+
+### 思维训练：6. 不定式的作用（五）：形容词 + to do
+
+**一、判断下列句子的正误，并改正错误的句子。**
+
+`1` It is inconsiderate for him not to write a thank-note to his host.
+
+`2` He is kind for her to help us.
+
+#### 答案：思维训练：6. 不定式的作用（五）：形容词 + to do
+
+1. 该句错误。改为：It is inconsiderate of him not to write a thank-note to his
+host.
+2. 该句错误。改为：He is willing for her to help us.
 
 ## 4.7 不定式的作用（六）：作状语
 
