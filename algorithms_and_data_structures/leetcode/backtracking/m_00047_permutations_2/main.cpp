@@ -19,12 +19,17 @@ public:
             return;
         }
 
+        bool usedNums[21] = {false};
         for (int i = 0; i < nums.size(); i++)
         {
             if (usedIndex[i])
                 continue;
 
+            if (usedNums[nums[i] + 10])
+                continue;
+
             usedIndex[i] = true;
+            usedNums[nums[i] + 10] = true;
             permuts.push_back(nums[i]);
 
             backtrack(nums);
@@ -34,7 +39,7 @@ public:
         }
     }
 
-    vector<vector<int>> permute(vector<int> &nums)
+    vector<vector<int>> permuteUnique(vector<int> &nums)
     {
         backtrack(nums);
         return result;
@@ -44,9 +49,8 @@ public:
 int main()
 {
     vector<vector<int>> inputs = {
+        {1, 1, 2},
         {1, 2, 3},
-        {0, 1},
-        {1},
     };
     int group;
     cout << "Please input group: ";
@@ -54,7 +58,7 @@ int main()
     group--;
 
     Solution s;
-    vector<vector<int>> result = s.permute(inputs[group]);
+    vector<vector<int>> result = s.permuteUnique(inputs[group]);
     output2d(result);
 
     return 0;
