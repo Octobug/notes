@@ -152,6 +152,6 @@ void backtracking(参数) {
   - [x] [回溯周末总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20201112%E5%9B%9E%E6%BA%AF%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
   - [x] [回溯算法去重问题的另一种写法](https://programmercarl.com/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E5%8E%BB%E9%87%8D%E9%97%AE%E9%A2%98%E7%9A%84%E5%8F%A6%E4%B8%80%E7%A7%8D%E5%86%99%E6%B3%95.html)
   - [x] [重新安排行程](https://programmercarl.com/0332.%E9%87%8D%E6%96%B0%E5%AE%89%E6%8E%92%E8%A1%8C%E7%A8%8B.html)
-  - [ ] [N皇后](https://programmercarl.com/0051.N%E7%9A%87%E5%90%8E.html)
-  - [ ] 解数独
+  - [x] [N皇后](https://programmercarl.com/0051.N%E7%9A%87%E5%90%8E.html)
+  - [ ] [解数独](https://programmercarl.com/0037.%E8%A7%A3%E6%95%B0%E7%8B%AC.html)
   - [ ] 回溯法总结篇
