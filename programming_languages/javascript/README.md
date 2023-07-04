@@ -36,6 +36,11 @@
       - [Arrays](#arrays)
     - [Structured data](#structured-data)
       - [JSON](#json)
+    - [Keyed Collections](#keyed-collections)
+      - [Map](#map)
+      - [WeakMap](#weakmap)
+      - [Set](#set)
+      - [WeakSet](#weakset)
   - [Equality Comparisons](#equality-comparisons)
     - [Value Comparison Operators](#value-comparison-operators)
   - [Loops and Iterations](#loops-and-iterations)
@@ -51,12 +56,27 @@
       - [nullish coalescing](#nullish-coalescing)
     - [Comma operators](#comma-operators)
     - [Unary operators](#unary-operators)
+    - [Bitwise Operators](#bitwise-operators)
+    - [BigInt Operators](#bigint-operators)
+    - [Relational Operators](#relational-operators)
   - [Functions](#functions)
     - [Function Parameters](#function-parameters)
       - [Default Parameters](#default-parameters)
       - [Rest Parameters](#rest-parameters)
     - [Arrow Functions](#arrow-functions)
     - [Built-in functions](#built-in-functions)
+    - [IIFE](#iife)
+      - [Use cases](#use-cases)
+        - [Avoid polluting the global namespace](#avoid-polluting-the-global-namespace)
+        - [Execute an async function](#execute-an-async-function)
+        - [The module pattern](#the-module-pattern)
+    - [Arguments object](#arguments-object)
+    - [Scope and function stack](#scope-and-function-stack)
+      - [Scope](#scope)
+      - [Function Stack (Call stack)](#function-stack-call-stack)
+      - [Recursion](#recursion)
+      - [Lexical scoping](#lexical-scoping)
+      - [Closures](#closures)
   - [Asynchronous JavaScript](#asynchronous-javascript)
     - [XMLHttpRequest](#xmlhttprequest)
     - [Fetch](#fetch)
@@ -532,6 +552,36 @@ page.
 JavaScript Object Notation (JSON) is a standard text-based format for
 representing structured data based on JavaScript object syntax.
 
+### Keyed Collections
+
+Keyed collections are data collections that are **ordered by key** not index.
+They are associative in nature. Map and set objects are keyed collections and
+are iterable in the order of insertion.
+
+#### Map
+
+#### WeakMap
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap>
+
+An object's presence as a key in a `WeakMap` does not prevent the object from
+being garbage collected. Once an object used as a key has been collected, its
+corresponding values in any `WeakMap` become candidates for garbage collection
+as well — as long as they aren't strongly referred to elsewhere. The only
+primitive type that can be used as a `WeakMap` key is `symbol` — more
+specifically, non-registered symbols — because non-registered symbols are
+guaranteed to be unique and cannot be re-created.
+
+#### Set
+
+#### WeakSet
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet>
+
+A `WeakSet` is a collection of garbage-collectable values, including objects
+and non-registered symbols. A value in the WeakSet may only occur once. It is
+unique in the WeakSet's collection.
+
 ## Equality Comparisons
 
 ### Value Comparison Operators
@@ -735,6 +785,61 @@ A unary operation is an operation with only one operand.
 - `await`: Pause and resume an async function and wait for the promise's
   fulfillment/rejection.
 
+### Bitwise Operators
+
+- `&` (AND)
+- `|` (OR)
+- `^` (XOR)
+- `~` (NOT)
+- `<<` (Left SHIFT)
+- `>>` (Right SHIFT)
+- `>>>` (Zero-Fill Right SHIFT)
+
+### BigInt Operators
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bigint_operators>
+
+```js
+// BigInt addition
+const a = 1n + 2n; // 3n
+// Division with BigInts round towards zero
+const b = 1n / 2n; // 0n
+// Bitwise operations with BigInts do not truncate either side
+const c = 40000000000000000n >> 2n; // 10000000000000000n
+```
+
+Most operators that can be used with the `Number` data type will also work with
+`BigInt` values (e.g. arithmetic, comparison, etc.). However, the unsigned
+right shift `>>>` operator is an exception and is not supported. Similarly,
+some operators may have slight differences in behaviour (for example, division
+with BigInt will round towards zero).
+
+```js
+const d = 8n >>> 2n; // TypeError: BigInts have no unsigned right shift, use >> instead
+```
+
+BigInts and numbers are not mutually replaceable — you cannot mix them in
+calculations.
+
+This is because `BigInt` is neither a subset nor a superset of numbers. BigInts
+have higher precision than numbers when representing large integers, but cannot
+represent decimals, so implicit conversion on either side might lose precision.
+
+```js
+const a = Number(1n) + 2; // 3
+const b = 1n + BigInt(2); // 3n
+```
+
+### Relational Operators
+
+- `<`: Less than operator.
+- `>`: Greater than operator.
+- `<=`: Less than or equal operator.
+- `>=`: Greater than or equal operator.
+- `instanceof`: The `instanceof` operator determines whether an object is an
+  instance of another object.
+- `in`: The `in` operator determines whether an object has a given property.
+
 ## Functions
 
 ### Function Parameters
@@ -787,6 +892,147 @@ To differentiate between properties and methods, we can think of it this way:
 Since JavaScript methods are actions that can be performed on objects, we first
 need to have objects to start with. There are several objects built into
 JavaScript which we can use.
+
+### IIFE
+
+> <https://developer.mozilla.org/en-US/docs/Glossary/IIFE>
+
+Immediately-Invoked Function Expression is a function that is executed
+immediately after it is created.
+
+```js
+(function () {
+  // …
+})();
+
+(() => {
+  // …
+})();
+
+(async () => {
+  // …
+})();
+```
+
+It is a design pattern which is also known as a Self-Executing Anonymous
+Function and contains two major parts:
+
+1. The first is the anonymous function with lexical scope enclosed within the
+   `Grouping Operator` `()`. This prevents accessing variables within the IIFE
+   idiom as well as polluting the global scope.
+2. The second part creates the immediately invoked function expression `()`
+   through which the JavaScript engine will directly interpret the function.
+
+#### Use cases
+
+##### Avoid polluting the global namespace
+
+```js
+(() => {
+  // some initiation code
+  let firstVariable;
+  let secondVariable;
+})();
+
+// firstVariable and secondVariable will be discarded after the function is executed.
+```
+
+##### Execute an async function
+
+```js
+const getFileStream = async (url) => {
+  // implementation
+};
+
+(async () => {
+  const stream = await getFileStream("https://domain.name/path/file.ext");
+  for await (const chunk of stream) {
+    console.log({ chunk });
+  }
+})();
+```
+
+##### The module pattern
+
+```js
+const makeWithdraw = (balance) =>
+  ((copyBalance) => {
+    let balance = copyBalance; // This variable is private
+    const doBadThings = () => {
+      console.log("I will do bad things with your money");
+    };
+    doBadThings();
+    return {
+      withdraw(amount) {
+        if (balance >= amount) {
+          balance -= amount;
+          return balance;
+        }
+        return "Insufficient money";
+      },
+    };
+  })(balance);
+
+const firstAccount = makeWithdraw(100); // "I will do bad things with your money"
+console.log(firstAccount.balance); // undefined
+console.log(firstAccount.withdraw(20)); // 80
+console.log(firstAccount.withdraw(30)); // 50
+console.log(firstAccount.doBadThings); // undefined; this method is private
+const secondAccount = makeWithdraw(20); // "I will do bad things with your money"
+console.log(secondAccount.withdraw(30)); // "Insufficient money"
+console.log(secondAccount.withdraw(20)); // 0
+```
+
+### Arguments object
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments>
+>
+> ⚠️ In modern code, rest parameters should be preferred.
+
+```js
+function func1(a, b, c) {
+  console.log(arguments[0]);
+  // Expected output: 1
+
+  console.log(arguments[1]);
+  // Expected output: 2
+
+  console.log(arguments[2]);
+  // Expected output: 3
+}
+
+func1(1, 2, 3);
+```
+
+### Scope and function stack
+
+#### Scope
+
+JavaScript has the following kinds of scopes:
+
+- **Global scope**: The default scope for all code running in script mode.
+- **Module scope**: The scope for code running in module mode.
+- **Function scope**: The scope created with a function.
+- **Block scope**: The scope created with a pair of curly braces (a block).
+
+#### Function Stack (Call stack)
+
+The function stack is how the interpreter keeps track of its place in a script
+that calls multiple functions, like which function is currently executing and
+which functions within that function are being called.
+
+#### Recursion
+
+#### Lexical scoping
+
+In simple words, the lexical environment for a function `f` simply refers to
+the environment enclosing that function’s definition in the source code.
+
+#### Closures
+
+A closure refers to a function along with its lexical environment. It is
+essentially what allows us to return a function `A`, from another function `B`,
+that remembers the local variables defined in `B`, even after `B` exits.
 
 ## Asynchronous JavaScript
 
