@@ -11,6 +11,7 @@ void output(vector<double> &numbers);
 void output(vector<char> &chars);
 void output(vector<string> &strs);
 void output2d(vector<vector<int>> &matrix);
+void output2d(vector<vector<char>> &matrix);
 void output2d(vector<vector<string>> &matrix);
 void swap(vector<int> &numbers, int index_l, int index_r);
 

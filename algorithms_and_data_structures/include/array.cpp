@@ -82,6 +82,14 @@ void output2d(vector<vector<int>> &matrix)
     }
 }
 
+void output2d(vector<vector<char>> &matrix)
+{
+    for (int i = 0; i < matrix.size(); i++)
+    {
+        output(matrix[i]);
+    }
+}
+
 void output2d(vector<vector<string>> &matrix)
 {
     for (int i = 0; i < matrix.size(); i++)

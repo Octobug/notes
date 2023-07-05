@@ -27,8 +27,8 @@
 - [x] [字符串](string)
 - [x] [栈与队列](stack_queue)
 - [x] [二叉树](binary_tree)
-- [ ] [回溯算法](backtracking)
-- [ ] 贪心算法
+- [x] [回溯算法](backtracking)
+- [ ] [贪心算法](greedy)
 - [ ] 动态规划
 - [ ] 单调栈
 - [ ] 额外题目

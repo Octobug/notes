@@ -13,6 +13,8 @@
     - [子集问题](#子集问题)
     - [排列问题](#排列问题)
     - [组合问题](#组合问题)
+    - [N皇后问题](#n皇后问题)
+    - [解数独问题](#解数独问题)
   - [References](#references)
 
 ## 理论基础
@@ -130,6 +132,16 @@ void backtracking(参数) {
 
 一般说道回溯算法的复杂度，都说是指数级别的时间复杂度。
 
+### N皇后问题
+
+- **时间复杂度**：$O(n!)$，直觉上是 $O(n^n)$，但皇后之间不能见面所以在搜索的过程中是有剪枝的，最差也就是 $O(n!)。
+- **空间复杂度**：$O(n)$，和子集问题同理。
+
+### 解数独问题
+
+- **时间复杂度**：$O(9^m)$，`m` 是 `'.'` 的数目。
+- **空间复杂度**：$O(n^2)$，递归的深度是 $n^2$
+
 ## References
 
 - 回溯算法
@@ -153,5 +165,5 @@ void backtracking(参数) {
   - [x] [回溯算法去重问题的另一种写法](https://programmercarl.com/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E5%8E%BB%E9%87%8D%E9%97%AE%E9%A2%98%E7%9A%84%E5%8F%A6%E4%B8%80%E7%A7%8D%E5%86%99%E6%B3%95.html)
   - [x] [重新安排行程](https://programmercarl.com/0332.%E9%87%8D%E6%96%B0%E5%AE%89%E6%8E%92%E8%A1%8C%E7%A8%8B.html)
   - [x] [N皇后](https://programmercarl.com/0051.N%E7%9A%87%E5%90%8E.html)
-  - [ ] [解数独](https://programmercarl.com/0037.%E8%A7%A3%E6%95%B0%E7%8B%AC.html)
-  - [ ] 回溯法总结篇
+  - [x] [解数独](https://programmercarl.com/0037.%E8%A7%A3%E6%95%B0%E7%8B%AC.html)
+  - [x] [回溯法总结篇](https://programmercarl.com/%E5%9B%9E%E6%BA%AF%E6%80%BB%E7%BB%93.html)
