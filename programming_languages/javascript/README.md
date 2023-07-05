@@ -77,6 +77,13 @@
       - [Recursion](#recursion)
       - [Lexical scoping](#lexical-scoping)
       - [Closures](#closures)
+  - [Strict Mode](#strict-mode)
+    - [Invoking strict mode](#invoking-strict-mode)
+      - [Strict mode for scripts](#strict-mode-for-scripts)
+      - [Strict mode for functions](#strict-mode-for-functions)
+      - [Strict mode for modules](#strict-mode-for-modules)
+      - [Strict mode for classes](#strict-mode-for-classes)
+    - [Changes in strict mode](#changes-in-strict-mode)
   - [Asynchronous JavaScript](#asynchronous-javascript)
     - [XMLHttpRequest](#xmlhttprequest)
     - [Fetch](#fetch)
@@ -1033,6 +1040,103 @@ the environment enclosing that function’s definition in the source code.
 A closure refers to a function along with its lexical environment. It is
 essentially what allows us to return a function `A`, from another function `B`,
 that remembers the local variables defined in `B`, even after `B` exits.
+
+## Strict Mode
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode>
+
+Strict mode isn’t just a subset: it intentionally has different semantics from
+regular code. Browsers not supporting strict mode will run strict mode code
+with different behavior from browsers that do, so don’t rely on strict mode
+without feature-testing for support for the relevant aspects of strict mode.
+Strict mode code and non-strict mode code can coexist so that scripts can opt
+into strict mode incrementally.
+
+Strict mode makes several changes to normal JavaScript semantics:
+
+- Eliminates some JavaScript silent errors by changing them to throw errors.
+- Fixes mistakes that make it difficult for JavaScript engines to perform
+  optimizations: strict mode code can sometimes run faster than identical code
+  that’s not strict mode.
+- Prohibits some syntax likely to be defined in future versions of ECMAScript.
+
+### Invoking strict mode
+
+#### Strict mode for scripts
+
+```js
+// Whole-script strict mode syntax
+"use strict";
+const v = "Hi! I'm a strict mode script!";
+```
+
+#### Strict mode for functions
+
+```js
+function myStrictFunction() {
+  // Function-level strict mode syntax
+  "use strict";
+  function nested() {
+    return "And so am I!";
+  }
+  return `Hi! I'm a strict mode function! ${nested()}`;
+}
+
+function myNotStrictFunction() {
+  return "I'm not strict.";
+}
+```
+
+The `"use strict"` directive can only be applied to the body of functions with
+simple parameters. Using `"use strict"` in functions with `rest`, `default`, or
+`destructured` parameters is a `syntax error`.
+
+```js
+function sum(a = 1, b = 2) {
+  // SyntaxError: "use strict" not allowed in function with default parameter
+  "use strict";
+  return a + b;
+}
+```
+
+#### Strict mode for modules
+
+```js
+function myStrictFunction() {
+  // because this is a module, I'm strict by default
+}
+export default myStrictFunction;
+```
+
+#### Strict mode for classes
+
+```js
+class C1 {
+  // All code here is evaluated in strict mode
+  test() {
+    delete Object.prototype;
+  }
+}
+new C1().test(); // TypeError, because test() is in strict mode
+
+const C2 = class {
+  // All code here is evaluated in strict mode
+};
+
+// Code here may not be in strict mode
+delete Object.prototype; // Will not throw error
+```
+
+### Changes in strict mode
+
+Strict mode changes both syntax and runtime behavior. Changes generally fall
+into these categories:
+
+- changes converting mistakes into errors (as syntax errors or at runtime)
+- changes simplifying how variable references are resolved
+- changes simplifying `eval` and `arguments`
+- changes making it easier to write "secure" JavaScript
+- changes anticipating future ECMAScript evolution.
 
 ## Asynchronous JavaScript
 
