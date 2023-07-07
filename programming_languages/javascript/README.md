@@ -47,6 +47,11 @@
       - [WeakSet](#weakset)
   - [Equality Comparisons](#equality-comparisons)
     - [Value Comparison Operators](#value-comparison-operators)
+    - [Equality algorithms](#equality-algorithms)
+      - [isLooselyEqual `==`](#islooselyequal-)
+      - [isStrictlyEqual `===`](#isstrictlyequal-)
+      - [Same value zero](#same-value-zero)
+      - [Same value](#same-value)
   - [Loops and Iterations](#loops-and-iterations)
     - [`for…in` statement](#forin-statement)
     - [`for…of` statement](#forof-statement)
@@ -104,6 +109,7 @@
       - [Callback Hell](#callback-hell)
     - [Promises](#promises)
       - [Async/Await](#asyncawait)
+    - [Event Loop](#event-loop)
   - [Working with APIs](#working-with-apis)
     - [XMLHttpRequest](#xmlhttprequest)
     - [Fetch](#fetch)
@@ -111,8 +117,16 @@
   - [Modules](#modules)
     - [CommonJS](#commonjs)
     - [ESModules](#esmodules)
+  - [Javascript Iterators and Generators](#javascript-iterators-and-generators)
+    - [Iterator](#iterator)
+    - [Generator](#generator)
   - [Javascript chrome dev tools](#javascript-chrome-dev-tools)
     - [Debugging issues](#debugging-issues)
+    - [Debugging Memory Leaks](#debugging-memory-leaks)
+    - [Debugging performance](#debugging-performance)
+  - [Memory Management](#memory-management)
+    - [Memory lifecycle](#memory-lifecycle)
+    - [Garbage Collection](#garbage-collection)
   - [References](#references)
 
 ## Introduction
@@ -689,6 +703,44 @@ unique in the WeakSet's collection.
     zeros and `NaN` values. The `===` operator (and the `==` operator) treats
     the number values `-0` and `+0` as equal but treats `NaN` as not equal to
     each other.
+
+### Equality algorithms
+
+#### isLooselyEqual `==`
+
+isLooselyEqual `==` checks whether its two operands are equal, returning a
+`Boolean` result. It attempts to convert and compare operands that are of
+different types.
+
+#### isStrictlyEqual `===`
+
+isStrictlyEqual `===` checks whether its two operands are equal, returning a
+`Boolean` result. It always considers operands of different types to be
+different.
+
+#### Same value zero
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value_equality_using_object.is>
+
+SameValueZero equality determines whether two values are functionally identical
+in all contexts with `+0` and `-0` are also considered equal.
+
+- Double equals (`==`) will perform a type conversion when comparing two
+  things, and will handle `NaN`, `-0`, and `+0` specially to conform to
+  IEEE 754 (so `NaN != NaN`, and `-0 == +0`);
+- Triple equals (`===`) will do the same comparison as double equals (including
+  the special handling for `NaN`, `-0`, and `+0`) but without type conversion;
+  if the types differ, `false` is returned.
+- `Object.is()` does no type conversion and no special handling for `NaN`, `-0`,
+  and `+0` (giving it the same behavior as `===` except on those special
+  numeric values).
+
+#### Same value
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality>
+
+SameValue equality determines whether two values are functionally identical in
+all contexts.
 
 ## Loops and Iterations
 
@@ -1394,6 +1446,13 @@ running into the so-called callback hell.
 fashion. We use `async` keyword to declare a async function that return a
 `Promise`, and the `await` keyword makes a function wait for a `Promise`.
 
+### Event Loop
+
+> <https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick#what-is-the-event-loop>
+
+The Event Loop explains how Node.js can be asynchronous and have non-blocking
+I/O, it explains the “killer feature” of Node.js, which made it this successful.
+
 ## Working with APIs
 
 ### XMLHttpRequest
@@ -1479,6 +1538,22 @@ export { name, draw, reportArea, reportPerimeter };
 import { name, draw, reportArea, reportPerimeter } from "./modules/square.js";
 ```
 
+## Javascript Iterators and Generators
+
+Iterators are objects, abiding by the iterator protocol, that allows us to
+easily iterate over a given sequence in various ways, such as using the
+`for...of` loop. Generators, on the other hand, allow us to use functions and
+the `yield` keyword to easily define iterable sequences that are iterators as
+well.
+
+### Iterator
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator>
+
+### Generator
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator>
+
 ## Javascript chrome dev tools
 
 A very useful feature in the Chrome dev tools is the Lighthouse (for checking
@@ -1487,6 +1562,51 @@ performance).
 ### Debugging issues
 
 > <https://developer.chrome.com/docs/devtools/javascript/>
+
+### Debugging Memory Leaks
+
+In JavaScript, memory leaks commonly occur within heap allocated memory, where
+short lived objects are attached to long lived ones and the Garbage Collector
+cannot safely de-allocate that memory as it is still referenced from the root
+set (the global object).
+
+### Debugging performance
+
+Enter the dev tools and check out the Lighthouse tab. This is essentially a
+series of tests which analyses the currently open website on a bunch of metrics
+related to performance, page speed, accessibility, etc. Feel free to run the
+tests by clicking the **Analyse Page Load** button (you might want to do this
+in an incognito tab to avoid errors arising from extensions you’re using). Once
+you have the results, take your time and read through them (and do click
+through to the reference pages mentioned alongside each test result to know
+more about it!)
+
+## Memory Management
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management>
+
+Low-level languages like C, have manual memory management primitives such as
+`malloc()` and `free()`. In contrast, JavaScript automatically allocates memory
+when objects are created and frees it when they are not used anymore (garbage
+collection). This automaticity is a potential source of confusion:
+
+⚠️ It can give developers the false impression that they don’t need to worry
+about memory management.
+
+### Memory lifecycle
+
+Regardless of the programming language, the memory life cycle is pretty much
+always the same:
+
+- Allocate the memory you need
+- Use the allocated memory (read, write)
+- Release the allocated memory when it is not needed anymore
+
+The second part is explicit in all languages. The first and last parts are
+explicit in low-level languages but are mostly implicit in high-level languages
+like JavaScript.
+
+### Garbage Collection
 
 ## References
 
