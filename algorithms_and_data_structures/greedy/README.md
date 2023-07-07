@@ -42,8 +42,8 @@
 - 贪心算法
   - [x] [贪心算法理论基础](https://programmercarl.com/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html)
   - [x] [分发饼干](https://programmercarl.com/0455.%E5%88%86%E5%8F%91%E9%A5%BC%E5%B9%B2.html)
-  - [ ] [摆动序列](https://programmercarl.com/0376.%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97.html)
-  - [ ] 最大子序和
+  - [x] [摆动序列](https://programmercarl.com/0376.%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97.html)
+  - [ ] [最大子序和](https://programmercarl.com/0053.%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C.html)
   - [ ] 贪心周总结
   - [ ] 买卖股票的最佳时机II
   - [ ] 跳跃游戏
