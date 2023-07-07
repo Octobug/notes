@@ -1610,5 +1610,5 @@ like JavaScript.
 
 ## References
 
-- [ ] [roadmap.sh](https://roadmap.sh/javascript)
+- [x] [roadmap.sh](https://roadmap.sh/javascript)
 - [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
