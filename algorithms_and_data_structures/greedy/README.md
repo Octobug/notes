@@ -49,9 +49,9 @@
   - [x] [跳跃游戏](https://programmercarl.com/0055.%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F.html)
   - [x] [跳跃游戏II](https://programmercarl.com/0045.%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8FII.html)
   - [x] [K次取反后最大化的数组和](https://programmercarl.com/1005.K%E6%AC%A1%E5%8F%96%E5%8F%8D%E5%90%8E%E6%9C%80%E5%A4%A7%E5%8C%96%E7%9A%84%E6%95%B0%E7%BB%84%E5%92%8C.html)
-  - [ ] [贪心周总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20201203%E8%B4%AA%E5%BF%83%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
-  - [ ] 加油站
-  - [ ] 分发糖果
+  - [x] [贪心周总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20201203%E8%B4%AA%E5%BF%83%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
+  - [x] [加油站](https://programmercarl.com/0134.%E5%8A%A0%E6%B2%B9%E7%AB%99.html)
+  - [ ] [分发糖果](https://programmercarl.com/0135.%E5%88%86%E5%8F%91%E7%B3%96%E6%9E%9C.html)
   - [ ] 柠檬水找零
   - [ ] 根据身高重建队列
   - [ ] 贪心周总结
