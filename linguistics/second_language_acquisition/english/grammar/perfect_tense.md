@@ -332,6 +332,12 @@ the planet Mars.
 这是判断用现在完成时态还是一般过去时态的重要原则，称为**可重复性** (Principle of
 Repeatability) 原则。
 
+现在完成时经常搭配的副词有：
+
+- already
+- just
+- yet
+
 #### 一、可重复原则是现在完成时态的一条根本原则
 
 - `3`: ✅ His father has been dead for three years.
