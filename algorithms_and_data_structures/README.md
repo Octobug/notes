@@ -28,8 +28,8 @@
 - [x] [栈与队列](stack_queue)
 - [x] [二叉树](binary_tree)
 - [x] [回溯算法](backtracking)
-- [ ] [贪心算法](greedy)
-- [ ] 动态规划
+- [x] [贪心算法](greedy)
+- [ ] [动态规划](./dynamic_programming/)
 - [ ] 单调栈
 - [ ] 额外题目
 - [ ] [双指针法](two_pointers)
