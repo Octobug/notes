@@ -46,7 +46,17 @@
     - [10.4 should 和 ought to 表示“忠告”](#104-should-和-ought-to-表示忠告)
     - [10.5 should 表示“忠告”与 could 表示“建议”的比较](#105-should-表示忠告与-could-表示建议的比较)
     - [10.6 had better 表示“忠告”](#106-had-better-表示忠告)
-  - [8.11 基本用法（六）：意愿、意图与执意](#811-基本用法六意愿意图与执意)
+  - [11. 基本用法（六）：意愿、意图与执意](#11-基本用法六意愿意图与执意)
+    - [11.1 意图 (intention)](#111-意图-intention)
+    - [11.2 执意 (insistence)](#112-执意-insistence)
+    - [思维训练：11. 基本用法（六）：意愿、意图与执意](#思维训练11-基本用法六意愿意图与执意)
+      - [答案：思维训练：11. 基本用法（六）：意愿、意图与执意](#答案思维训练11-基本用法六意愿意图与执意)
+  - [12. 基本用法（七）：请求](#12-基本用法七请求)
+    - [12.1 第一人称提出请求时的情态动词](#121-第一人称提出请求时的情态动词)
+      - [一、May I...? 和 Could I...? 表示比较正式、礼貌地提出请求](#一may-i-和-could-i-表示比较正式礼貌地提出请求)
+      - [二、Can I...? 是非正式的请求允许，一般用于说话人与对方相当熟悉的情况](#二can-i-是非正式的请求允许一般用于说话人与对方相当熟悉的情况)
+      - [三、Might I...? 显得过于正式和客气，一般很少用](#三might-i-显得过于正式和客气一般很少用)
+    - [12.2 向第二人称请求时的情态动词](#122-向第二人称请求时的情态动词)
   - [8.13 基本用法（八）：过去习惯](#813-基本用法八过去习惯)
   - [8.17 情态动词的否定](#817-情态动词的否定)
   - [综合训练：情态动词](#综合训练情态动词)
@@ -1608,7 +1618,252 @@ had better 在表示“忠告”时，有时会暗含“如果不这么做，就
 
 - You should do your homework.
 
-## 8.11 基本用法（六）：意愿、意图与执意
+## 11. 基本用法（六）：意愿、意图与执意
+
+will 主要的两个意义和用法：预测和意愿。
+
+`1` A: The phone's ringing.
+
+- `译` 电话铃在响。
+
+B1: That'll be for me.
+
+- 表示很确定的预测。
+- `译` 肯定是我的电话。
+
+B2: I'll get it.
+
+- 表示自己有意愿去接电话。
+- `译` 我来接。
+
+`2` We'll carry those for you if he won't.
+
+- 表示意愿。
+- `译` 如果他不愿意，我们会帮你拿那些东西的。
+
+⚠️ 把将来时态中 will 的这两个用法迁移过来。
+
+`3` Think it will rain? I'm sure it won't.
+
+- 表示预测。
+- `译` 你觉着要下雨？我敢肯定不会下雨的。
+
+### 11.1 意图 (intention)
+
+表示“意图”往往涉及将来计划好的事件。
+
+`1` I will borrow some money and buy a car.
+
+- 这里表示说话人的意图和打算，而不是在预测或表达意愿。
+- `译` 我要借钱买辆车。
+
+“意图”的含义可以扩展为两个极端——承诺与威胁。如果是比较正面的意图，可以理解为“承诺”；反之理解为“威胁”。
+
+`2` I will make dinner tomorrow night.
+
+- 这里 will 表示的是一种接近于“承诺”的意图。
+- `译` 明晚我来做晚饭。
+
+`3` I'll call the police if you don't leave.
+
+- 这里 will 表示的是一种接近于“威胁”的意图。
+- `译` 如果你不离开，我就要叫警察了。
+
+说话人也可能意图不甚明确，比如半开玩笑式的回应：
+
+`4` A: I'll talk to you about this later.
+
+- 这里 will 的意图不明确，比如可以理解为“我以后再找你算账”（威胁），页可以理解为“我以后再和你商量这件事”（承诺）。
+
+B: Is that a threat or a promise?
+
+- `译` A: 我以后再跟你说这个。B: 你这是在威胁还是承诺？
+
+### 11.2 执意 (insistence)
+
+will 表示“执意”，来源于其表示“意图”的含义，当某人坚持自己的意图而不愿改变时，就变成了执意。
+此时，肯定的 will 表示“某人坚持要做某事”，I will 相当于 I insist。
+否定的 won't 表示“某人坚持不愿意做某事或禁止做某事”，I won't 相当于 I refuse。
+
+`1` If they will pay in cash, we have to accept it although it'll cause trouble
+to both sides.
+
+- 一般来说，在 if 引导的条件状语从句中不能用将来时态 will。这里 will 不是表示将来时态，而是表示“执意”这样的情态含义，所以
+  will 可以用于 if 引导的条件状语从句。另外，although 引导的从句中 will 是表示说话人的预测。
+- `译` 如果他们非要坚持用现金支付，那我们也只好接受了，尽管这会给双方都造成麻烦。
+
+`2` If they will not accept a check, we shall have to pay cash, though it would
+be much trouble for both sides.
+
+- 在这个 if 引导的条件状语从句中，will not 表示“执意不做某事”，相当于 refuse。
+- `译` 如果他们就是不愿意接受支票，那我们只好付现金了，尽管这会给双方都造成麻烦。
+
+`3` If you will go out without your overcoat, what can you expect?
+
+- `译` 如果你执意不穿外套就出门，你还能指望有什么好结果啊？
+
+`4` If you will keep your watch half an hour slow it is hardly surprising that
+you are late for your appointments.
+
+- `译` 如果你一定要把你的表调慢半个小时，你约会时总迟到就不足为怪了。
+
+`5` A: I'll take the money anyway.
+
+- 这里 will 表示“意图”。
+
+B: You won't!
+
+- won't 表示“执意”的否定。
+
+A: I will!
+
+- will 表示“执意”的肯定，语气强烈。
+
+`译` A: 不管怎样，这钱我要拿走。B: 你办不到！A: 我非得要拿走！
+
+`6` A: I won't do it.
+
+B: Yes, you will.
+
+- `译` A: 我不做，B: 没门，你一定得做。
+
+⚠️ 用 will 表示“执意”这样强烈的情感色彩时，不要缩写成 `'ll`，并且要重读。
+
+will 的过去式 would 也有类似表示“执意”的用法。同样地，这个用法中 would 不能缩写成 `'d`。
+
+`7` We all tried to stop him smoking in bed but he wouldn't do it.
+
+- `译` 我们大家都尽力阻止他在床上抽烟，但是他就是非得要这么做。
+
+### 思维训练：11. 基本用法（六）：意愿、意图与执意
+
+**请判断下列句中的 will 是表示“意图”“意愿”还是“预测”**。
+
+1. I'll do what I can to help, I promise.
+2. Give it to Mikey, he'll eat anything.
+
+#### 答案：思维训练：11. 基本用法（六）：意愿、意图与执意
+
+1. 意图 (intention)
+2. 意愿或预测，或两者兼有 (willingness or prediction or even both)
+
+## 12. 基本用法（七）：请求
+
+在日常交往中，在请求别人为我们做某事时，要表现出礼貌或委婉的态度。
+这时借助情态动词及相关句型就可以使请求显得客气委婉。
+
+`2` A: Excuse me, would you please open this door?
+
+B: I'm afraid it's locked. Shall I get a key?
+
+A: Please, if you wouldn't mind, as quickly as you can.
+
+`译` A: 对不起，你能把门打开吗？
+
+B: 恐怕门被锁上了，要我替你把钥匙拿来吗？
+
+A: 太好了，那就麻烦你快点去拿，好吗？
+
+如果不使用情态动词，对话可能是这样的，显得相当唐突粗鲁，没有礼貌：
+
+`1` A: Hey, you! Open this door!
+
+B: It's locked. Want us to get the key?
+
+A: Yeah, Get it. Fast!
+
+`3` A: Excuse me, sir. I realize you have the right to smoke here. But could you
+put out your cigarette, please? Your smoke is coming right at us.
+
+B: Well, sorry, I am in the smoking section, and I was here before you. If you
+wouldn't mind, you could go to the non-smoking section.
+
+C: OK. Just asking.
+
+`4` A: Put out your cigarette! Your smoke is coming right at us!
+
+B: I am in the smoking section, and I was here before you.
+
+从上面的对比可以看出，情态动词在表示礼貌的请求时所起到的作用有多么重要。
+
+### 12.1 第一人称提出请求时的情态动词
+
+- can/could
+- may/might
+
+以上几个词表示“请求对方允许我们做某事”。比如：
+
+- Can/Could I...?
+- May/Might I...?
+
+区别：
+
+#### 一、May I...? 和 Could I...? 表示比较正式、礼貌地提出请求
+
+`5` May I have your name, please?
+
+`6` Could I have two tickets, please?
+
+`7` Could I see your driving license?
+
+#### 二、Can I...? 是非正式的请求允许，一般用于说话人与对方相当熟悉的情况
+
+`8` Can I use your pen?
+
+`9` A: Hi, Jenny. Can I join you?
+
+B: Sure, Michael. Please sit down.
+
+#### 三、Might I...? 显得过于正式和客气，一般很少用
+
+### 12.2 向第二人称请求时的情态动词
+
+- can/could
+- will/would
+
+表示“请求对方为我们做某事”。
+
+- Can/Could you...?
+- Will/Would you...?
+
+这几个词表达不同的礼貌程度，would 和 could 都是用来表示很客气地请求对方，程度相同。
+
+`10` Would you please open this door?
+
+`11` Could you put out your cigarette, please?
+
+will 不如 would 客气，适用用于熟人之间的对话：
+
+`12` A: I am on duty this afternoon. Will you please cover for me? I have a
+doctor's appointment.
+
+B: I am sorry I can't. My term paper is due tomorrow.
+
+`译` A: 今天下午我值班，你能替我一下吗？我得去看医生。
+
+B: 对不起，我替不了你。我明天得交学期论文。
+
+can 常用于非正式场合、熟人之间。
+
+`13` Can you pass me the salt, Mom?
+
+综上，在“请求”时，不同人称所使用的情态动词不尽相同。
+
+- I will: 意愿
+- Will you: 请求
+- You may: 许可
+- May I: 请求
+- You can/could: 许可
+- Could/Can I: 请求
+- I can/could: 主动提出帮助
+- Could/Can you: 请求
+
+can/could 可以用于两个人称，may/might 只能用于第一人称，will/would 只能用于第二人称。
+
+- May/Might you...? ❌
+- Will/Would I...? ❌
+
+其实，表示“请求”...
 
 >>>>> progress
 
