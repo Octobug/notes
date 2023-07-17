@@ -57,6 +57,10 @@
       - [二、Can I...? 是非正式的请求允许，一般用于说话人与对方相当熟悉的情况](#二can-i-是非正式的请求允许一般用于说话人与对方相当熟悉的情况)
       - [三、Might I...? 显得过于正式和客气，一般很少用](#三might-i-显得过于正式和客气一般很少用)
     - [12.2 向第二人称请求时的情态动词](#122-向第二人称请求时的情态动词)
+    - [12.3 情态动词的礼貌程度](#123-情态动词的礼貌程度)
+    - [思维总结：12. 基本用法（七）：请求](#思维总结12-基本用法七请求)
+    - [思维训练：12. 基本用法（七）：请求](#思维训练12-基本用法七请求)
+      - [答案：思维训练：12. 基本用法（七）：请求](#答案思维训练12-基本用法七请求)
   - [8.13 基本用法（八）：过去习惯](#813-基本用法八过去习惯)
   - [8.17 情态动词的否定](#817-情态动词的否定)
   - [综合训练：情态动词](#综合训练情态动词)
@@ -1863,9 +1867,112 @@ can/could 可以用于两个人称，may/might 只能用于第一人称，will/w
 - May/Might you...? ❌
 - Will/Would I...? ❌
 
-其实，表示“请求”...
+其实，表示“请求”的用法与情态动词的其他意义是密切相关的，具体相关性如下：
 
->>>>> progress
+- 表示“请求”的 will 只能用于第二人称，是因为 will you 句型来源于表示“意愿”的 I
+  will，变成一般疑问句时自然要把 I 变成 you，于是便有了 will you。
+- 表示“意愿”时，英语中没有 you will，因为“意愿”一定是句子主语自己发出的。
+  既然没有表示“意愿”的 you will，自然就不会有 will I 表示“请求”的了。
+  （you will 可以表示“预测”）。
+
+在英语中表示“请求”往往都是用一般疑问句，因为“请求”的含义有三个来源：
+
+1. 询问听话人是否愿意，也就是“will/would you”，表示“请求”；
+2. 询问听话人是否允许我做某事，也就是“may/could/can I”，表示“请求”；
+3. 询问听话人是否能够帮助，也就是“could/can you”，表示“请求”。
+
+### 12.3 情态动词的礼貌程度
+
+表示请求时，在语气上越是不肯定，越是犹豫，就越显得礼貌。
+由“直截了当”到“犹豫不决”可以用不同的情态动词句型来表达不同程度的礼貌。
+这些都是很礼貌的“请求”句型：
+
+- Could you do...?
+- Could you please do...?
+- Could you possibly do...?
+- Would you do...?
+- Would you please do...?
+- Would you kindly do...?
+- Would you mind doing...?
+- Would you be good/kind enough to do...?
+- Would you be so kind as to do...?
+- Do you think I could...?
+- Do you think you could do...?
+- Do you think you would do...?
+- Do you think you would mind doing...?
+
+`15` Could you possibly give me a lift?
+
+`16` Excuse me, but would you kindly lend me your mobile phone?
+
+`17` A: Do you think you could give me a ride to the library tonight?
+
+B: I'd like to, but I'm heading the other direction. I'm meeting Jean tonight.
+
+从上面例句可以看到，表示请求的句型通常是一般疑问句。还可以用 wonder 的各种陈述句型来表示比以上例句更加礼貌的请求：
+
+- I wonder if I could do...
+- I wondered if I could do...
+- I was wondering if I could do...
+- I wonder if you could do...
+- I wonder if you would do...
+- I wonder if you would mind doing...
+- I wondered if you could do...
+- I wondered if you would do...
+- I wondered if you would mind doing...
+- I was wondering if you could do...
+- I was wondering if you would do...
+- I was wondering if you would mind doing...
+
+`18` I was wondering if you could possibly lend me your mobile phone, coz I
+really need to make a long distance call to America right now.
+
+`19` I was wondering...since Doctor Wilson won't be back till next week, if you
+could check in your computer records and find out how I did on her midterm exam?
+
+`20` I was wondering if I could have a chance yet to look at my thesis proposal.
+
+`21` Excuse me, I know this is your cab, but I'm desperately late fo  a plane
+and I was wondering if I could appeal to your good nature and ask you to let me
+have it.
+
+`22` I was wondering if I could join you for breakfast.
+
+### 思维总结：12. 基本用法（七）：请求
+
+英语中情态动词用于表示礼貌请求的句型有四大类：
+
+1. 第一人称：
+    - Can/Could I...?
+    - My/Might I...?
+2. 第二人称：
+    - Can/Could you...?
+    - Will/Would you...?
+3. 其他各种疑问句形式的请求句型；
+4. 带有 wonder 的陈述句所表示的礼貌请求句型。
+
+### 思维训练：12. 基本用法（七）：请求
+
+1. You want to ask your teacher a question.
+2. You're at your friend's apartment. You want to use the phone.
+3. You want your boyfriend to meet you in front of the library at three this
+   afternoon.
+4. You knock on your professor's half-open door. He's sitting at his desk. You
+   want to go in.
+5. You are at a gas station. You want the attendant to check the oil.
+6. You want to see your deskmate's dictionary for a minute.
+7. You want a stranger in an airport to keep an eye on your luggage while you
+   get a drink of water.
+
+#### 答案：思维训练：12. 基本用法（七）：请求
+
+1. Could I ask you a question?
+2. Can I use your phone?
+3. Could you meet me in front of the library at three this afternoon?
+4. I was wondering if I could come in.
+5. Will you check the oil?
+6. Can I use your dictionary for a minute?
+7. Would you please keep an eye on my luggage while I get a drink of water?
 
 ## 8.13 基本用法（八）：过去习惯
 
