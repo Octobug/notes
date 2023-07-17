@@ -92,7 +92,11 @@
     - [10.4 表示所属关系或部分与整体的关系时用介词 of](#104-表示所属关系或部分与整体的关系时用介词-of)
     - [10.5 固定的介宾结构](#105-固定的介宾结构)
     - [10.6 定语从句的倒装结构](#106-定语从句的倒装结构)
-    - [2.7.7 “介词 + 关系代词 + to do”结构](#277-介词--关系代词--to-do结构)
+    - [10.7 “介词 + 关系代词 + to do”结构](#107-介词--关系代词--to-do结构)
+    - [思维总结：10. 介词 + 关系代词](#思维总结10-介词--关系代词)
+    - [思维训练：10. 介词 + 关系代词](#思维训练10-介词--关系代词)
+      - [答案：思维训练：10. 介词 + 关系代词](#答案思维训练10-介词--关系代词)
+  - [11. 关系代词 as](#11-关系代词-as)
     - [2.8.2 as 引导限定性定语从句](#282-as-引导限定性定语从句)
   - [2.11 缩合关系代词 what](#211-缩合关系代词-what)
   - [综合训练：定语从句](#综合训练定语从句)
@@ -1783,7 +1787,222 @@ And buried within those thousands of pages is your personal truth, your essence.
   当你从这里毕业时，你会带着数千页的人生教科书走出校门，在这本教科书里铭刻着经过多年教育、家庭的作用、社会关系以及个人经历所形成的信念和价值观。
   而真实的你和你的精华就深藏在这数千页记录中。
 
-### 2.7.7 “介词 + 关系代词 + to do”结构
+### 10.7 “介词 + 关系代词 + to do”结构
+
+“介词 + 关系代词”这一定语从句结构可以简化成不定式结构“介词 + which + to do”。
+
+`1`
+
+- The farmer used wood to build a house in which he could store grains.
+  - 定语从句作后置定语，修饰 house。
+- The farmer used wood to build a house in which to store grains.
+  - 定语从句 in which he could store grains 中的主语 he 和主语 the farmer
+    一直，所以可以省略。不定式具有情态意义，所以可以把 could 替换为不定式 to，
+    得到 in which to store grains.
+  - “半定语从句半不定式”作后置定语，修饰 house。
+  - `译` 这位农夫用一些木材建造了一座房子，在那里存储粮食。
+- The farmer used wood to build a house to store grains in.
+  - 这句进一步省略了关系词 which。
+  - 不定式作后置定语，修饰 house。
+
+⚠️ 使用这一结构时，应注意以下几点：
+
+1. “介词 + 关系代词”不能用一个关系副词来替换。
+    - The farmer used wood to build a house where to store grains. ❌
+2. 有介词、有关系代词时，不能将介词置于句末。
+    - The farmer used wood to build a house which to store grains in. ❌
+3. 若没有介词，不能采用“半定语从句半不定式”的混合形式作后置定语。
+    - I can't think of anybody whom to invite. ❌
+    - I can't think of anybody to invite. ✅
+
+`2` We moved to the country so that the kids would have a garden ____.
+
+- A. in which to play
+- B. to play with
+- C. to play in
+- D. to play
+- E. where to play
+- F. which to play
+- G. which to play in
+- H. in which they could play
+- I. which they could play in
+
+`答案` A, C, H, I
+
+因此，带有“介词 + 关系代词”的定语从句可以有四种写法：
+
+`3`
+
+1. She is not a person who you can rely on.
+2. She is not a person on whom you can rely.
+3. She is not a person on whom to rely.
+4. She is not a person to rely on.
+
+`4`
+
+1. This is a good instrument which people can measure vibration with.
+2. This is a good instrument with which people can measure vibration.
+3. This is a good instrument with which to measure vibration.
+4. This is a good instrument to measure vibration with.
+
+### 思维总结：10. 介词 + 关系代词
+
+“介词 + 关系代词”中介词的使用规律：
+
+1. 看**从句**选介词——介词与定语从句中的动词、形容词或名词构成搭配；
+2. 看**先行词**选介词——介词与先行词构成固定搭配；
+3. 看**句义**选介词——为了意思表达的需要而使用特定的介词；
+4. 表示所属关系或部分整体关系时用介词 of；
+5. 固定的介宾结构。
+
+### 思维训练：10. 介词 + 关系代词
+
+**一、把下列简单句合并成定语从句。**
+
+*1. He is the man and I think you can depend on him.*
+
+*2. When television was first introduced, it would affect society to the extent
+   and the extent could not have been foreseen.*
+
+*3. Americans regard education as the means and by this means the inequalities
+   among individuals are to be erased and by this means every desirable end is
+   to be achieved.*
+
+**二、选择最佳答案。**
+
+*4. TV's influence should be measured not only in terms of immediate change in
+behavior, but also by the extent ____ it develops certain views of life.*
+
+- A. to which
+- B. so that
+- C. in which
+- D. with which
+
+*5. Many critics agree that the novel is an art form ____ women excel.*
+
+- A. in which
+- B. to which
+- C. of which
+- D. by which
+
+*6. Dolphins might be trained to cooperate with fishermen and help them by
+finding, tracking, herding, or even catching fish -- ____ activities dolphins
+are expert.*
+
+- A. at all of these
+- B. in all of which
+- C. all of which
+- D. in all of what
+
+*7. Agriculture was a step in human progress ____ which subsequently there was
+not anything comparable until our own machine age.*
+
+- A. to
+- B. for
+- C. in
+- D. from
+
+*8. Many countries face some serious problems of land use, ____ result from
+population growth and the demands of modern technological living.*
+
+- A. most which
+- B. which most
+- C. of most which
+- D. most of which
+
+*9. By bringing about a great leap in the speed and ease ____ information moves
+from place to place, the Internet has greatly accelerated the rate of scientific
+and technological changes.*
+
+- A. with which
+- B. which
+- C. to which
+- D. by which
+
+*10. We need a chairman ____.*
+
+- A. for whom everyone has confidence
+- B. in whom everyone has confidence
+- C. who everyone has confidence of
+- D. whom everyone has confidence on
+
+*11. The classroom is a natural environment ____ and apply the concept of
+community service to reduce local crime problems.*
+
+- A. which to introduce
+- B. to introduce
+- C. in which to introduce
+- D. which to introduce
+
+*12. The science of medicine, ____ progress has been very rapid lately, is
+perhaps the most important of all the sciences.*
+
+- A. in which
+- B. to which
+- C. with which
+- D. which
+
+*13. This is an exciting area of study, and one ____ which new applications are
+being discovered almost daily.*
+
+- A. from
+- B. by
+- C. in
+- D. through
+
+*14. This kind of support, like all government support, requires decisions about
+the appropriate recipients of funds. Decisions based on utility as opposed to
+lack of utility are straightforward. But a decision among projects ____ which
+none has immediate utility is more difficult.*
+
+- A. with
+- B. of
+- C. at
+- D. in
+
+**三、翻译下列句子。**
+
+*15. When we indulge in self-pity, we rob the poor and the suffering of that
+which is theirs by right and waste it on ourselves, to whom it does more harm
+than good.*
+
+*16. By the manner in which they quarrel, they manage to re-sure each other
+that they value the relationship.*
+
+*17. Every existing method for mine detection has conditions under which it
+will work very well and conditions under which it will fail.*
+
+#### 答案：思维训练：10. 介词 + 关系代词
+
+1. He is the man on whom I think you can depend.
+2. When television was first introduced, the extent to which it would affect
+   society could not have been foreseen.
+3. Americans regard education as the means by which the inequalities among
+   individuals are to be erased and by which every desirable end is to be
+   achieved.
+4. A。to which 来自于固定搭配 to the extent。
+5. A。in which 来自于固定搭配 excel in。
+6. B。in all of which 来自于固定搭配 be expert in。
+7. A。to which 来自于固定搭配 comparable to。
+8. D。which 指代 serious problems，因此 most of which 相当于 most of the serious
+   problems。
+9. A。with which 来自于固定搭配 with ease。
+10. B。in whom 来自于固定搭配 have confidence in somebody。
+11. C。这是“介词 + 关系代词 + to do”结构。
+12. A。to which 来自于固定搭配 in the science of medicine。
+13. C。代词 one 指代前面名词短语 area of study，in which 来自于固定搭配 in an area of
+    study。
+14. B。表示所属关系或部分整体关系时用介词 of, which 指代 projects，of which none 相当于
+    none of which，即 none of the projects。
+15. to whom 来自 do harm to/do good to somebody 的固定搭配。
+    `译` 如果我们沉溺于自怨自怜中，就等于是把本该属于穷人和悲痛之人的权利浪费在我们自己身上，
+    这对我们实在是百害而无一利。
+16. in which 来自于 in the manner 的固定搭配。
+    `译` 他们通过争吵，向彼此证明他们珍惜这份友谊。
+17. under which 来自于 under the conditions 的固定搭配。
+    `译` 现有各种探测地雷的方法都有其适用条件。符合条件，它就工作得很好，不符合条件，它将无能为力。
+
+## 11. 关系代词 as
 
 >>>>> progress
 
