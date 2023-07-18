@@ -35,7 +35,6 @@
       - [3.4.6 不能用于介词后面](#346-不能用于介词后面)
     - [3.5 先行词与关系词被分隔](#35-先行词与关系词被分隔)
     - [3.6 定语从句中的主谓一致问题](#36-定语从句中的主谓一致问题)
-    - [3.7 关系代词 as](#37-关系代词-as)
     - [思维训练 3. 关系代词与先行词的搭配关系](#思维训练-3-关系代词与先行词的搭配关系)
       - [答案：思维训练 3. 关系代词与先行词的搭配关系](#答案思维训练-3-关系代词与先行词的搭配关系)
   - [4. 关系副词的用法](#4-关系副词的用法)
@@ -97,6 +96,9 @@
     - [思维训练：10. 介词 + 关系代词](#思维训练10-介词--关系代词)
       - [答案：思维训练：10. 介词 + 关系代词](#答案思维训练10-介词--关系代词)
   - [11. 关系代词 as](#11-关系代词-as)
+    - [11.1 as 引导非限定性定语从句](#111-as-引导非限定性定语从句)
+      - [一、as 引导的非限定性定语从句可放在句首](#一as-引导的非限定性定语从句可放在句首)
+      - [二、as 引导的非限定性定语从句可放在句中](#二as-引导的非限定性定语从句可放在句中)
     - [2.8.2 as 引导限定性定语从句](#282-as-引导限定性定语从句)
   - [2.11 缩合关系代词 what](#211-缩合关系代词-what)
   - [综合训练：定语从句](#综合训练定语从句)
@@ -540,29 +542,6 @@ the life cycle of the insect that ***is***`C` not fully ***understood***`D`.
 - `答案` C。应改为 are。这里先行词 elements 与关系词 that 被后置定语 in the life cycle
   of the insect 分隔。that 指代 elements，在从句中作主语，所以谓语动词要用复数形式 are。
 - `译` 尽管人们已经对昆虫进行了大量的研究，但是对其生命周期中的某些方面还没有完全了解。
-
-### 3.7 关系代词 as
-
-as 主要引导**非限制性**定语从句，它的“先行词”一般是**一整句话**。
-
-`1` As is true of any developed society, in America a complex set of cultural
-signals, assumptions, and conventions underlies all social interrelationships.
-
-- As 指代 "in America a complex set of cultural signals, assumptions, and
-  conventions underlies all social interrelationships"，在从句中作主语。
-
-`2` This description even fits the majority of eminent scholars. "Being learned
-in some branch of human knowledge is one thing, living in public and illustrious
-thoughts," as Emerson would say, "is something else."
-
-- as 指代 "Being learned in some branch of human knowledge is one thing, living
-  in public and illustrious thoughts is something else."，在从句中作宾语。
-
-`3` Stratford-on-Avon, as we all know, has only one industry -- William
-Shakespeare -- but there are two distinctly separate and increasingly hostile
-branches.
-
-- as 指代 "Stratford-on-Avon has only one industry"，在从句中作宾语。
 
 ### 思维训练 3. 关系代词与先行词的搭配关系
 
@@ -2003,6 +1982,78 @@ will work very well and conditions under which it will fail.*
     `译` 现有各种探测地雷的方法都有其适用条件。符合条件，它就工作得很好，不符合条件，它将无能为力。
 
 ## 11. 关系代词 as
+
+as 是不太常见的关系代词。它引导**限定性**定语从句只是用在一些固定结构中，即只能用在
+such, the same, as 修饰的先行词后面。
+在主要引导的**非限定性**定语从句中，则没有这样的结构上的要求，它的“先行词”一般是**一整句话**。
+
+`2` This description even fits the majority of eminent scholars. "Being learned
+in some branch of human knowledge is one thing, living in public and illustrious
+thoughts," as Emerson would say, "is something else."
+
+- as 指代 "Being learned in some branch of human knowledge is one thing, living
+  in public and illustrious thoughts is something else."，在从句中作宾语。
+
+### 11.1 as 引导非限定性定语从句
+
+as 引导非限定性定语从句的情况比较常见，这类定语从句的特点主要有两个：
+
+1. as 所指代的先行词通常都是一个完整的句子；
+2. as 引导的定语从句位置很灵活，可以在句首、句中或句末。
+
+#### 一、as 引导的非限定性定语从句可放在句首
+
+as 引导的非限定性定语从句可以放在句首，此时 as 指代后面的整个主句。
+换句话说，**关系代词 as 的先行词可以出现在 as 后面**。
+这一点不同于 which 和其他关系词，which 和其他关系词所指代的先行词必须出现在它们的前面，
+因此 which 引导的非限定性定语从句不能放在句首，这是 as 和 which 的重要区别。
+
+`1` As is so often pointed out, knowledge is a two-edged weapon which can be
+used equally for good and evil.
+
+- 这是一个放在句首的由 as 引导的定语从句，此时 as 所指代的先行词是其后面的完整的主句，即
+  knowledge is a two-edged weapon which can be used equally for good or evil.
+  as 在定语从句中作主语。
+- `译` 正如人们常常指出的，知识是一把双刃剑，既可以用于造福，也同样可以用来为害。
+
+`2` As is true of any developed society, in America a complex set of cultural
+signals, assumptions, and conventions underlies all social interrelationships.
+
+- As 指代的先行词是 in America a complex set of cultural signals, assumptions, and
+  conventions underlies all social interrelationships。as 在从句中作主语。
+- `译` 正如任何发达的社会一样，在美国，一套复杂的文化符号、信念及习俗制约着所有的社会交往。
+
+⚠️ 放在句首的 as 引导的定语从句在结构上很容易与其它从句混淆。
+
+`3`
+
+- ____ is known to us all, the whale is not fish but a mammal.
+  - 两个分句间有逗号分隔，表明这是一个放在从句首的非限定性定语从句，此时只能用 `As`。
+- ____ is known to us all that the whale is not fish but a mammal.
+  - 两个分句由 that 连接，表明这是一个主语从句，其基本的结构是“It is + 过去分词 + that”，
+    所以这句的空白处要填入 `It`。
+- ____ is known to us all is that the whale is not fish but a mammal.
+  - 第二个 is 是谓语，所以它前面的成分是主语，是一个主语从句，而后面是表语。
+    主语从句中也有一个作为谓语的 is，因此填入的连词在从句中也必须能当主语，所以应填 `What`。
+- `译` 我们知道，鲸不是鱼类，而是哺乳类动物。
+
+#### 二、as 引导的非限定性定语从句可放在句中
+
+as 引导的非限定性定语从句放在句中，往往会分隔主句中的某两个成分，因此在分析句子时要先跳过这个
+as 引导的从句，直接将从句前后两个成分练习起来看，便于理解。
+
+尽管 as 引导的从句放在句中，但 as 所指代的先行词依然是主句，只不过此时的主句被 as
+引导的从句分隔成了前后两部分。which 引导的非限定性定语从句也可以放在句中，但 which
+的先行词必须出现在其前面。
+
+`4` Stratford-on-Avon, as we all know, has only one industry -- William
+Shakespeare -- but there are two distinctly separate and increasingly hostile
+branches.
+
+- as 引导的定语从句放在句中，隔开了主语 Stratford-on-Avon 与其谓语 has。
+  此时 as 依然是指代主句 Stratford-on-Avon has only one industry -- William
+  Shakespeare -- but there are two distinctly separate and increasingly hostile
+  branches. 同时，as 在从句中作 know 的宾语。
 
 >>>>> progress
 
