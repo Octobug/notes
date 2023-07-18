@@ -54,8 +54,8 @@ DP 的核心思想是当前状态是由前一个状态推导出来的，而贪�
   - [x] [使用最小花费爬楼梯](https://programmercarl.com/0746.%E4%BD%BF%E7%94%A8%E6%9C%80%E5%B0%8F%E8%8A%B1%E8%B4%B9%E7%88%AC%E6%A5%BC%E6%A2%AF.html)
   - [x] [动规周总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20210107%E5%8A%A8%E8%A7%84%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
   - [x] [不同路径](https://programmercarl.com/0062.%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84.html)
-  - [ ] [不同路径II](https://programmercarl.com/0063.%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84II.html)
-  - [ ] 整数拆分
+  - [x] [不同路径II](https://programmercarl.com/0063.%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84II.html)
+  - [ ] [整数拆分](https://programmercarl.com/0343.%E6%95%B4%E6%95%B0%E6%8B%86%E5%88%86.html)
   - [ ] 不同的二叉搜索树
   - [ ] 动规周总结
   - [ ] 0-1背包理论基础（一）
