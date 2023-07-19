@@ -99,6 +99,7 @@
     - [11.1 as 引导非限定性定语从句](#111-as-引导非限定性定语从句)
       - [一、as 引导的非限定性定语从句可放在句首](#一as-引导的非限定性定语从句可放在句首)
       - [二、as 引导的非限定性定语从句可放在句中](#二as-引导的非限定性定语从句可放在句中)
+      - [三、as 引导的非限定性定语从句可放在句末](#三as-引导的非限定性定语从句可放在句末)
     - [2.8.2 as 引导限定性定语从句](#282-as-引导限定性定语从句)
   - [2.11 缩合关系代词 what](#211-缩合关系代词-what)
   - [综合训练：定语从句](#综合训练定语从句)
@@ -2053,9 +2054,67 @@ branches.
 - as 引导的定语从句放在句中，隔开了主语 Stratford-on-Avon 与其谓语 has。
   此时 as 依然是指代主句 Stratford-on-Avon has only one industry -- William
   Shakespeare -- but there are two distinctly separate and increasingly hostile
-  branches. 同时，as 在从句中作 know 的宾语。
+  branches. 同时，as 在从句中作 know 的宾语，因此“我们所知道”的是主句的内容。
+- 这里若用 which 替换 as，说成 which we all know，那么 which 只能指代
+  Stratford-on-Avon 而不是整个主句。
+- `译` 众所周知，Avon 河上的 Stratford 镇只有一个产业，即 William Shakespeare，
+  但是存在着两个明显不同且日益敌对的分支。
 
->>>>> progress
+`5` There is, as Robert Rubin, the Treasury Secretary, says, a "disjunction"
+between the mass of business anecdote that points to a leap in productivity and
+the picture reflected by the statistics.
+
+- as 引导的定语从句用在句中，隔开了 There is 与 a "disjunction"。
+  此时 as 指代的先行词依然是主句，只不过此时主句被 as 引导的从句分隔成了 There is 和
+  a "disjunction" between the mass of business anecdote that points to a leap
+  in productivity and the picture reflected by the statistics. 两部分。
+  as 指代这个主句的同事在定语从句中作 says 的宾语，因此 Robert Rubin the Treasury
+  Secretary 说的内容就是主句。
+- 这里不能用 which 替换 as，因为定语从句前面只有 there is 这个结构，它不是一个名词，因此无法作
+  which 的先行词。
+- `译` 正如财政部长 Robert Rubin 所说，在显示生产力增长的大量商界轶闻与统计数字所反映的情况之间由一个“脱节”。
+
+`6` There is, as has been suggested, a growing body of research literature in
+journalism and broadcasting, but very little significant attention has been
+devoted to the study of the interview itself.
+
+- as 引导的定语从句放在句中，隔开了 there is 与 a growing body。
+  此时 as 指代的先行词依然是主句，主句是由 but 连接的两个并列句，它们充当 as 指代的先行词。
+  as 在定语从句中作主语。
+- 这里不能用 which 代替 as，因为定语从句前面只有 there is 这个结构，它不是一个名词，因而不能作为
+  which 的先行词。
+- `译` 正如前面已经提及的，对新闻与广播的研究文献越来越多，但是却很少有关注新闻采访本身的研究。
+
+#### 三、as 引导的非限定性定语从句可放在句末
+
+在 as 引导的定语从句中，as 有“正好……”“就像……”“由……而知”的含义。
+所以，当主句和从句在内容上一致时，或者说从句内容是顺着主句的意思说下来时，通常用 as。
+若主句和从句在内容上不一致，或从句的内容对主句的内容起消极作用，即对主句内容起反对、排斥、否定等作用时，则多用 which。
+
+`7`
+
+- She has married again, as was expected.
+  - 定语从句中的关键词 expected 表明定语从句的意思与主句的意思是顺接关系，所以用 as 比较妥当。
+  - `译` 她又结婚了，正如人们所预料的那样。
+- She has married again, which was unexpected.
+  - 定语从句中的关键词 unexpected 表明定语从句的意思与主句的意思是否定、排斥的关系，所以用
+    which 比较妥当。
+  - `译` 她又结婚了，这真出乎人们预料。
+
+`8` She is very careful, as her work shows.
+
+- 定语从句的意思和主句的意思是顺接关系。
+- `译` 她很细心，这从她的工作中就可看得出来。
+
+`9` The young man cheated his friend of much money, which was disgraceful.
+
+- disgraceful 表明定语从句的意思与主句的意思是否定、排斥的关系，所以用 which 比较妥当。
+- `译` 这个年轻人骗了他朋友很多钱，这真可耻。
+
+**总结**：
+
+- as 引导的定语从句可放在句首，而 which 不能；
+- as 引导的定语从句可放在句中，但因为句义或结构上的原因，这种情况下 as 一般不能替换为 which。
 
 ### 2.8.2 as 引导限定性定语从句
 
