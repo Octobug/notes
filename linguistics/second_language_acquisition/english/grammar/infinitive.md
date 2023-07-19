@@ -48,7 +48,12 @@
     - [思维总结：6. 不定式的作用（五）：形容词 + to do](#思维总结6-不定式的作用五形容词--to-do)
     - [思维训练：6. 不定式的作用（五）：形容词 + to do](#思维训练6-不定式的作用五形容词--to-do)
       - [答案：思维训练：6. 不定式的作用（五）：形容词 + to do](#答案思维训练6-不定式的作用五形容词--to-do)
-  - [4.7 不定式的作用（六）：作状语](#47-不定式的作用六作状语)
+  - [7. 不定式的作用（六）：作状语](#7-不定式的作用六作状语)
+    - [7.1 目的状语](#71-目的状语)
+    - [7.2 结果状语](#72-结果状语)
+      - [一、only to do](#一only-to-do)
+      - [二、so...as to do/such as to do](#二soas-to-dosuch-as-to-do)
+    - [4.7.3 条件状语](#473-条件状语)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
 
@@ -1563,6 +1568,153 @@ realize 是被动关系，所以要用不定式的被动形式 to be realized。
 host.
 2. 该句错误。改为：He is willing for her to help us.
 
-## 4.7 不定式的作用（六）：作状语
+## 7. 不定式的作用（六）：作状语
+
+目的状语 (adverbial of purpose) 是不定式充当状语最常见的情形。
+因为在英语中很少有其他形式能够充当目的状语的，比如动名词不会充当目的状语，分词尽管长用作状语，但也不作目的状语。
+所以，不定式最主要的状语功能就是表目的。此外，不定式作状语还可以表示结果、条件以及原因。
+因此，不定式主要可以充当：
+
+- 目的状语
+- 结果状语
+- 条件状语
+- 原因状语
+
+### 7.1 目的状语
+
+作目的状语是不定式最主要的功能之一。
+
+`1` Hating people is like burning down your own house to get rid of a rat.
+
+- to get rid of a rat 表示谓语部分 is like burning down your own house 的目的，即为目的状语。
+- `译` 憎恨别人，就好像为了赶走一只老鼠而把自己的房子烧掉。
+
+`2` I'd climb the highest mountain, just to see your smile. I'd swim the ocean,
+just to hold your hand. I'd run a million miles, just to be with you forever.
+
+- 这句中的三个不定式短语 to see your smile, to hold your hand 和 to be with you
+  forever 分别表示三个谓语动作的目的。
+- `译` 我愿意翻越最高的山脉，就是为了目睹你的微笑；我愿意横渡海洋，就是为了与你牵手；我愿意跨越万里，只是为了与你永远共度此生。
+
+如果要强调目的状语，可以把 to do 提至句首。
+
+`3` To avoid criticism, do nothing, say nothing, be nothing.
+
+- `译` 为了不被批评，那只好什么也不做，什么也不说，最后就什么也不是。
+
+还可以使用 in order to do 或 so as to do 来强调目的状语。
+
+`7` I quote others in order better to express my own self.
+
+`8` We had better start early so as to catch the train.
+
+`9` I went to the post office in order to mail a letter.
+
+`10` In order to play tennis, you need a tennis racket and tennis balls.
+
+⚠️ 作目的状语的不定式，其逻辑主语往往需要和句子的主语一致。
+
+`11` To acquire knowledge, one must study; but to acquire wisdom, one must
+observe.
+
+- 这个句子的主语 one 同时充当不定式 to acquire 的逻辑主语。
+
+`12` Don't avoid the problem. To succeed, you have to tackle your difficulties.
+
+- 主语 you 同时充当不定式 to succeed 的逻辑主语。
+
+`13` You wake up one morning and think: Am I living my own life, or someone
+else's? The French writer Camus once said, "To be happy, we must not be too
+concerned with others."
+
+- 这个句子的主语 we 同时充当不定式 to be happy 的逻辑主语。
+
+如果不定式的逻辑主语不明确，句子会显得不太规范：
+
+`14`
+
+- To study English well, a lot of practices are needed. ❌
+  - 主语 a lot of practices 不能作不定式 to study 的逻辑主语。
+  - To study English well, you need a lot of practices. ✅
+- A lot of practices are needed to study English well. ❌
+  - 主语 a lot of practices 不能作不定式 to study 的逻辑主语。
+  - A lot of practices are needed for you to study English well. ✅
+
+`15` For any adhesive to make a really strong bond, the surfaces to be glued
+must be absolutely clean and free from moisture or grease.
+
+- 句子主语是 the surfaces，它不能充当不定式 to make a really strong bond 的逻辑主语，
+  所以只好借助 for 另外引出 any adhesive 来充当目的状语 to make a really strong bond
+  的逻辑主语。
+- `译` 对于任何黏合剂，要想粘得牢固的话，则被粘的表面必须绝对清洁且不能潮湿或有油渍。
+
+⚠️ 最后，不定式充当目的状语时，它的否定形式要用 in order not to 或 as as not to，而不能单独用 not to。
+
+`16` We'd better start early, in order not to miss the train.
+
+- We'd better start early, not to miss the train. ❌
+
+### 7.2 结果状语
+
+用不定式作状语表示目的之外的其他意义时，一般要附加一些限制条件，以和作为目的使用的不定式区分开。
+因此，不定式作其他状语仅限于一些特定的结构中。
+
+在很特殊的情况下，不定式 to do 可以直接用在句中作结果状语。
+
+`1` He lived to see the Second World War.
+
+- to see 表示结果，这句相当于 He lived until he saw the Second World War.
+- `译` 他一直活到二战。
+
+`2` He lived to be a hundred years.
+
+- `译` 他活到了 100 岁。
+
+`3` What have I done to offend you?
+
+- `译` 我做什么得罪你了？
+
+`4` John left his hometown ten years ago, never to return.
+
+- `译` John 10 年前离开家乡后就再也没有回去。
+
+`5` We parted never to see each other.
+
+- `译` 我们一别之后就再也没有见过面了。
+
+上面是一些直接用 to do 表示结果的例子，而大部分作为结果状语的不定式往往要用在一些固定句型中。
+
+#### 一、only to do
+
+only to do 常用来引出意想不到的或不愉快的结果，表示说话人并不希望它发生。因此，这个结构具有消极的含义。
+
+`6` We hurried to the railway station, only to find the train had just left.
+
+- `译` 我们匆匆忙忙赶到火车站，结果却发现火车刚刚出站。
+
+`7` All too often, women complain that they're educated as equals, only to go
+out into the workforce to be treated as inferiors.
+
+- 女性往往抱怨说，她们和男性接受同样的教育，结果在职场上却被认为低人一等。
+
+`8` He worked very hard, ____ he had not finished half of the job.
+
+- A. to find
+- B. finding
+- C. just finding
+- D. only to find
+- `答案` D。这里前一个分句的意思是“他勤奋工作”，后一个分句的意思是“他还没有完成一半工作”，显然后半句是表示一个消极的意思。若选 to find 来表目的，显然不符合逻辑。
+  B 和 C 是现在分词，可以表示结果，但由于这句话有强烈的消极意思，所以最佳答案是 D。
+- `译` 他工作非常卖力，可却发现他连一半都没有完成。
+
+#### 二、so...as to do/such as to do
+
+so as to do 可以作为目的状语，但 so... as to do 是表示结果的，so 后面常接一个形容词。
+
+`9`
+
+>>>>> progress
+
+### 4.7.3 条件状语
 
 >>>>> progress
