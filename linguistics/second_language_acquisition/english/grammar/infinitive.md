@@ -52,7 +52,13 @@
     - [7.1 目的状语](#71-目的状语)
     - [7.2 结果状语](#72-结果状语)
       - [一、only to do](#一only-to-do)
-      - [二、so...as to do/such as to do](#二soas-to-dosuch-as-to-do)
+      - [二、so + 形容词 + as to do/such as to do](#二so--形容词--as-to-dosuch-as-to-do)
+      - [三、.形容词 + enough to do](#三形容词--enough-to-do)
+      - [四、too + 形容词 + to do](#四too--形容词--to-do)
+        - [1. 肯定形式，否定意思](#1-肯定形式否定意思)
+        - [2. 肯定形式，肯定意思（一）](#2-肯定形式肯定意思一)
+        - [3. 肯定形式，肯定意思（二）](#3-肯定形式肯定意思二)
+        - [4. 否定形式](#4-否定形式)
     - [4.7.3 条件状语](#473-条件状语)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
@@ -1707,13 +1713,125 @@ out into the workforce to be treated as inferiors.
   B 和 C 是现在分词，可以表示结果，但由于这句话有强烈的消极意思，所以最佳答案是 D。
 - `译` 他工作非常卖力，可却发现他连一半都没有完成。
 
-#### 二、so...as to do/such as to do
+#### 二、so + 形容词 + as to do/such as to do
 
-so as to do 可以作为目的状语，但 so... as to do 是表示结果的，so 后面常接一个形容词。
+so as to do 可以作为目的状语，但“so + 形容词 + as to do”是表示结果。
+此外，还可以用 such 来替换“so + 形容词”，也就是 such as to 表示结果。
 
-`9`
+`9` Her story is so sad as to arouse our sympathy.
 
->>>>> progress
+- `=` Her story is such as to arouse our sympathy.
+- `译` 她的经历如此悲惨，以至于引起了我们的同情。
+
+`10` He is so indifferent as to make everyone despair.
+
+- `=` His indifference is such as to make everyone despair.
+- `译` 他是如此的无动于衷，让大家都很绝望。
+
+`11` Her voice is so bad as to make everyone stare.
+
+- `=` Her voice is such as to make everyone stare.
+- `译` 她的嗓音如此糟糕，让大家都盯着她看。
+
+`12` She looks so beautiful as to attract all of us.
+
+- `译` 她的这般美貌吸引了我们所有人。
+
+such 还可以接不定冠词然后修饰名词。
+
+`16` She had such a good friend as to help her when she was in trouble.
+
+- `译` 当她身处困境时，有这么好的一个朋友帮了她。
+
+#### 三、.形容词 + enough to do
+
+`17` Monkey-hunters use a box with an opening at the top, big enough for the
+monkey to slide its hand in, inside the box are nuts.
+
+- `译` 捕猴人一般用一个顶端开口的盒子来抓猴子。这个开口的大小足够猴子把手伸进盒子，盒子里有坚果。
+
+#### 四、too + 形容词 + to do
+
+在使用这个句型时需要注意以下几点：
+
+##### 1. 肯定形式，否定意思
+
+这里的否定意思来自于 too，因为在英语中 too 含有消极、负面的意思，因此整个句型的基本含义就是
+“对于 to do 这件事来说，主语显得太……了，因而做不了”。
+
+`18` The opening is big enough for the hand to slide in, but too small for the
+fist to come out.
+
+`19` Mistress: Be careful not to drop those china dishes.
+
+Maid: Don't worry, madam. If they did fall they are too light to hurt my feet.
+
+- if 引导的从句谓语是虚拟语气形式 did fall，这里不表示过去，只表示可能性极小。
+
+“too + 形容词 + to do”也属于“形容词 + to do”句型。
+这里的逻辑关系是：**句子的主语同时充当不定式的逻辑主语**。不过也有主句主语在不定式中作逻辑宾语的情况。
+
+`20` The box is too heavy for me to even move.
+
+- 句子主语 the box 充当不定式动词 move 的逻辑宾语，这里用 for me 来引出不定式的逻辑主语。
+
+`21` The tea is too hot to drink.
+
+- 句子主语 the tea 充当不定式动词 drink 的逻辑宾语。
+
+`22` Both parents and communities must be involved in the local schools.
+Education is too important to leave solely to a group of professional educators.
+
+- 句子主语 education 充当不定式动词 leave 的逻辑宾语。
+- `译` 家长和整个社会都必须参与到当地的学校中来，因为教育非常重要，不能仅交给一些专业的教育人士来负责。
+
+##### 2. 肯定形式，肯定意思（一）
+
+在 too 后面接一些特殊的形容词时，此时这个句型表示肯定的意思：
+
+- anxious 热心的，急切的
+- eager 热切的
+- ready 乐意的
+- willing 愿意的
+
+`23` You are too ready to find faults with other people.
+
+- `译` 你也太爱找别人的茬儿了。
+
+`24` I'm just too eager to help you.
+
+- `译` 我非常乐意帮助你。
+
+##### 3. 肯定形式，肯定意思（二）
+
+当 too 的前面接一些特殊的副词时，此时这个句型也表示肯定的意思：
+
+- all
+- but
+- only
+- really
+
+`25` He would be only too glad to be her boyfriend, but he knew he couldn't
+match her in family status.
+
+- `译` 他何尝不想成为她的男朋友，但他知道自己的门第配不上她。
+
+`26` I am only too pleased to help you.
+
+- `译` 我非常乐意帮助你。
+
+##### 4. 否定形式
+
+1. 在 too 前面否定，如 not too...to do，即否定句子的谓语：“不很……所以能够”；
+2. 在 to do 前面否定，如 too...not to do，即否定不定式结构：很……所以不会不。
+
+`27` We are never too old to learn.
+
+- `译` 活到老，学到老。
+
+`28` He is too smart not to see your point.
+
+- `译` 他很聪明，不会不明白你的意思。
 
 ### 4.7.3 条件状语
 
