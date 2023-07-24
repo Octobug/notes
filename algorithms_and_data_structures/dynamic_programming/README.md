@@ -359,9 +359,9 @@ int main() {
   - [x] [0-1背包理论基础（二）](https://programmercarl.com/%E8%83%8C%E5%8C%85%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%8001%E8%83%8C%E5%8C%85-2.html)
   - [x] [分割等和子集](https://programmercarl.com/0416.%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86.html)
   - [x] [最后一块石头的重量II](https://programmercarl.com/1049.%E6%9C%80%E5%90%8E%E4%B8%80%E5%9D%97%E7%9F%B3%E5%A4%B4%E7%9A%84%E9%87%8D%E9%87%8FII.html)
-  - [ ] [动规周总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20210121%E5%8A%A8%E8%A7%84%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
-  - [ ] 目标和
-  - [ ] 一和零
+  - [x] [动规周总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20210121%E5%8A%A8%E8%A7%84%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
+  - [ ] [目标和](https://programmercarl.com/0494.%E7%9B%AE%E6%A0%87%E5%92%8C.html)
+  - [ ] [一和零]()
   - [ ] 完全背包理论基础
   - [ ] 零钱兑换II
   - [ ] 动规周总结
