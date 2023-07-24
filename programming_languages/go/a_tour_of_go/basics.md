@@ -21,6 +21,7 @@
     - [For](#for)
     - [If](#if)
       - [If with a short statement](#if-with-a-short-statement)
+    - [Exercise: Loops and Functions](#exercise-loops-and-functions)
     - [Switch](#switch)
       - [Switch with no condition](#switch-with-no-condition)
     - [Defer](#defer)
@@ -285,6 +286,32 @@ if v := math.Pow(x, n); v < lim {
   // 
 } else {
   // 
+}
+```
+
+### Exercise: Loops and Functions
+
+```go
+package main
+
+import (
+  "fmt"
+)
+
+func Sqrt(x float64) float64 {
+  z := float64(1)
+  for i := 1.0; i > 0.000000001; {
+    z -= (z*z - x) / (2*z)
+    i = 2 - (z * z)
+    if i < 0 {
+      i *= -1
+    }
+  }
+  return z
+}
+
+func main() {
+  fmt.Println(Sqrt(2))
 }
 ```
 

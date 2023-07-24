@@ -549,19 +549,295 @@ example, `fmt.Print` takes any number of arguments of type `interface{}`.
 
 ### Type assertions
 
->>>>> <https://go.dev/tour/methods/15>
+```go
+package main
+
+import "fmt"
+
+func main() {
+    var i interface{} = "hello"
+
+    s := i.(string)
+    fmt.Println(s)
+
+    s, ok := i.(string)
+    fmt.Println(s, ok)
+
+    f, ok := i.(float64)
+    fmt.Println(f, ok)
+
+    f = i.(float64) // panic
+    fmt.Println(f)
+}
+```
+
+A `type assertion` provides access to an interface value's underlying concrete
+value.
+
+```go
+t := i.(T)
+```
+
+This statement asserts that the interface value `i` holds the concrete type `T`
+and assigns the underlying `T` value to the variable `t`.
+
+If `i` does not hold a `T`, the statement will trigger a panic.
+
+To *test* whether an interface value holds a specific type, a type assertion
+can return two values:
+
+- the underlying value
+- a boolean value that reports whether the assertion succeeded.
+
+```go
+t, ok := i.(T)
+```
+
+If `i` holds a `T`, then `t` will be the underlying value and ok will be `true`.
+
+If not, ok will be `false` and `t` will be the zero value of type `T`, and no
+panic occurs.
+
+Note the similarity between this syntax and that of reading from a map.
 
 ### Type switches
 
+```go
+package main
+
+import "fmt"
+
+func do(i interface{}) {
+    switch v := i.(type) {
+    case int:
+        fmt.Printf("Twice %v is %v\n", v, v*2)
+    case string:
+        fmt.Printf("%q is %v bytes long\n", v, len(v))
+    default:
+        fmt.Printf("I don't know about type %T!\n", v)
+    }
+}
+
+func main() {
+    do(21)
+    do("hello")
+    do(true)
+}
+```
+
+A `type switch` is a construct that permits several type assertions in series.
+
+A `type switch` is like a regular switch statement, but the cases in a type
+switch specify types (not values), and those values are compared against the
+type of the value held by the given interface value.
+
+```go
+switch v := i.(type) {
+case T:
+    // here v has type T
+case S:
+    // here v has type S
+default:
+    // no match; here v has the same type as i
+}
+```
+
 ### Stringers
+
+```go
+package main
+
+import "fmt"
+
+type Person struct {
+    Name string
+    Age  int
+}
+
+func (p Person) String() string {
+    return fmt.Sprintf("%v (%v years)", p.Name, p.Age)
+}
+
+func main() {
+    a := Person{"Arthur Dent", 42}
+    z := Person{"Zaphod Beeblebrox", 9001}
+    fmt.Println(a, z)
+}
+```
+
+One of the most ubiquitous interfaces is `Stringer` defined by the `fmt`
+package.
+
+```go
+type Stringer interface {
+    String() string
+}
+```
+
+A `Stringer` is a type that can describe itself as a string. The `fmt` package
+(and many others) look for this interface to print values.
 
 ### Exercise: Stringers
 
+Make the `IPAddr` type implement `fmt.Stringer` to print the address as a
+dotted quad.
+
+For instance, `IPAddr{1, 2, 3, 4}` should print as `"1.2.3.4"`.
+
+```go
+package main
+
+import "fmt"
+
+type IPAddr [4]byte
+
+// TODO: Add a "String() string" method to IPAddr.
+func (ip IPAddr) String() string {
+    return fmt.Sprintf("%v.%v.%v.%v", ip[0], ip[1], ip[2], ip[3])
+}
+
+func main() {
+    hosts := map[string]IPAddr{
+        "loopback":  {127, 0, 0, 1},
+        "googleDNS": {8, 8, 8, 8},
+    }
+    for name, ip := range hosts {
+        fmt.Printf("%v: %v\n", name, ip)
+    }
+}
+```
+
 ## Errors
+
+```go
+package main
+
+import (
+    "fmt"
+    "time"
+)
+
+type MyError struct {
+    When time.Time
+    What string
+}
+
+func (e *MyError) Error() string {
+    return fmt.Sprintf("at %v, %s",
+        e.When, e.What)
+}
+
+func run() error {
+    return &MyError{
+        time.Now(),
+        "it didn't work",
+    }
+}
+
+func main() {
+    if err := run(); err != nil {
+        fmt.Println(err)
+    }
+}
+```
+
+Go programs express error state with `error` values.
+
+The `error` type is a built-in interface similar to `fmt.Stringer`:
+
+```go
+type error interface {
+    Error() string
+}
+```
+
+Functions often return an `error` value, and calling code should handle errors
+by testing whether the error equals `nil`.
+
+```go
+i, err := strconv.Atoi("42")
+if err != nil {
+    fmt.Printf("couldn't convert number: %v\n", err)
+    return
+}
+fmt.Println("Converted integer:", i)
+```
+
+A nil `error` denotes success; a non-nil `error` denotes failure.
 
 ### Exercise: Errors
 
+Copy your `Sqrt` function from the earlier exercise and modify it to return an
+`error` value.
+
+`Sqrt` should return a non-nil `error` value when given a negative number, as
+it doesn't support complex numbers.
+
+Create a new type
+
+```go
+type ErrNegativeSqrt float64
+```
+
+and make it an `error` by giving it a
+
+```go
+func (e ErrNegativeSqrt) Error() string
+```
+
+method such that `ErrNegativeSqrt(-2).Error()` returns
+`"cannot Sqrt negative number: -2"`.
+
+**Note**: A call to `fmt.Sprint(e)` inside the `Error` method will send the
+program into an infinite loop. You can avoid this by converting `e` first:
+`fmt.Sprint(float64(e))`.
+
+Change your `Sqrt` function to return an `ErrNegativeSqrt` value when given a
+negative number. You can avoid this by converting `e` first:
+`fmt.Sprint(float64(e))`. Why?
+
+`fmt.Sprint(e)` will call `e.Error()` to convert the value `e` to a `string`.
+If the `Error()` method calls `fmt.Sprint(e)`, then the program recurses until
+out of memory.
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+type ErrNegativeSqrt float64
+
+func (e ErrNegativeSqrt) Error() string {
+    return fmt.Sprintf("Negative float %v is unacceptable!!!", float64(e))
+}
+
+func Sqrt(x float64) (float64, error) {
+    if x < 0 {
+        return 0, ErrNegativeSqrt(x)
+    }
+
+    z := float64(1)
+    for i := 1.0; i > 0.000000001; {
+        z -= (z*z - x) / (2*z)
+        i = 2 - (z * z)
+        if i < 0 {
+            i *= -1
+        }
+    }
+    return z, nil
+}
+
+func main() {
+    fmt.Println(Sqrt(2))
+    fmt.Println(Sqrt(-2))
+}
+```
+
 ## Readers
+
+>>>>> <https://go.dev/tour/methods/21>
 
 ### Exercise: Readers
 
