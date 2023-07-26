@@ -22,6 +22,8 @@
       - [4. 一维 `dp` 数组遍历顺序](#4-一维-dp-数组遍历顺序)
       - [5. 举例推导一维 `dp` 数组](#5-举例推导一维-dp-数组)
       - [一维 `dp` 01 背包完整 C++ 测试代码](#一维-dp-01-背包完整-c-测试代码)
+  - [完全背包基础理论](#完全背包基础理论)
+    - [完全背包总结](#完全背包总结)
   - [References](#references)
 
 ## 理论基础
@@ -342,6 +344,120 @@ int main() {
 }
 ```
 
+## 完全背包基础理论
+
+有 `N` 件物品和一个最多能背重量为 `W` 的背包。第 `i` 件物品的重量是 `weight[i]`，
+得到的价值是 `value[i]`。每件物品都有无限个（也就是可以放入背包多次），
+求解将哪些物品装入背包里物品价值总和最大。
+
+完全背包和 01 背包问题唯一不同的地方就是，每种物品有无限件。
+
+例子：
+
+背包最大重量为 `4`。物品为：
+
+|        | 重量 | 价值 |
+| ------ | ---- | ---- |
+| 物品 0 | 1    | 15   |
+| 物品 1 | 3    | 20   |
+| 物品 2 | 4    | 30   |
+
+问背包能背的物品最大价值是多少？
+
+01 背包和完全背包唯一的不同体现在遍历顺序上。首先再回顾一下 01 背包的核心代码：
+
+```cpp
+for(int i = 0; i < weight.size(); i++) { // 遍历物品
+  for(int j = bagWeight; j >= weight[i]; j--) { // 遍历背包容量
+    dp[j] = max(dp[j], dp[j - weight[i]] + value[i]);
+  }
+}
+```
+
+01 背包内嵌的循环是从大到小遍历，以保证每个物品仅被添加一次。
+而完全背包的物品是可以添加多次的，所以要从小到大去遍历，即：
+
+```cpp
+// 先遍历物品，再遍历背包
+for(int i = 0; i < weight.size(); i++) { // 遍历物品
+  for(int j = weight[i]; j <= bagWeight; j++) { // 遍历背包容量
+    dp[j] = max(dp[j], dp[j - weight[i]] + value[i]);
+  }
+}
+```
+
+其实还有一个很重要的问题，为什么遍历物品在外层循环，遍历背包容量在内层循环？
+
+**在完全背包中，对于一维 `dp` 数组来说，其实两个 `for` 循环嵌套顺序是无所谓的**。
+因为 `dp[j]` 是根据下标 `j` 之前所对应的 `dp[j]` 计算出来的。只要保证下标 `j`之前的
+`dp[j]` 都是经过计算的就可以了。
+
+```cpp
+// 先遍历背包，再遍历物品
+for(int j = 0; j <= bagWeight; j++) { // 遍历背包容量
+  for(int i = 0; i < weight.size(); i++) { // 遍历物品
+    if (j - weight[i] >= 0)
+      dp[j] = max(dp[j], dp[j - weight[i]] + value[i]);
+  }
+}
+```
+
+完整的 C++ 测试代码如下：
+
+```cpp
+// 先遍历物品，再遍历背包
+void test_CompletePack() {
+  vector<int> weight = {1, 3, 4};
+  vector<int> value = {15, 20, 30};
+  int bagWeight = 4;
+  vector<int> dp(bagWeight + 1, 0);
+  for(int i = 0; i < weight.size(); i++) { // 遍历物品
+    for(int j = weight[i]; j <= bagWeight; j++) { // 遍历背包容量
+      dp[j] = max(dp[j], dp[j - weight[i]] + value[i]);
+    }
+  }
+  cout << dp[bagWeight] << endl;
+}
+
+int main() {
+  test_CompletePack();
+}
+```
+
+```cpp
+// 先遍历背包，再遍历物品
+void test_CompletePack() {
+  vector<int> weight = {1, 3, 4};
+  vector<int> value = {15, 20, 30};
+  int bagWeight = 4;
+
+  vector<int> dp(bagWeight + 1, 0);
+
+  for(int j = 0; j <= bagWeight; j++) { // 遍历背包容量
+    for(int i = 0; i < weight.size(); i++) { // 遍历物品
+      if (j - weight[i] >= 0)
+        dp[j] = max(dp[j], dp[j - weight[i]] + value[i]);
+    }
+  }
+  cout << dp[bagWeight] << endl;
+}
+
+int main() {
+  test_CompletePack();
+}
+```
+
+### 完全背包总结
+
+对于纯完全背包问题，其 `for` 循环的先后循环是可以颠倒的。
+
+但如果题目稍稍有点变化，可能就会体现在遍历顺序上。
+
+如果问装满背包有几种方式的话，那么两个 `for` 循环的先后顺序就有很大区别。
+
+- 如果是求组合数，就是外层 `for` 循环遍历物品，内层 `for` 遍历背包。
+- 如果是求排列数，就是外层 `for` 遍历背包，内层 `for` 循环遍历物品。
+
 ## References
 
 - 动态规划
@@ -362,9 +478,9 @@ int main() {
   - [x] [动规周总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20210121%E5%8A%A8%E8%A7%84%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
   - [x] [目标和](https://programmercarl.com/0494.%E7%9B%AE%E6%A0%87%E5%92%8C.html)
   - [x] [一和零](https://programmercarl.com/0474.%E4%B8%80%E5%92%8C%E9%9B%B6.html)
-  - [ ] [完全背包理论基础](https://programmercarl.com/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85.html)
-  - [ ] 零钱兑换II
-  - [ ] 动规周总结
+  - [x] [完全背包理论基础](https://programmercarl.com/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85.html)
+  - [x] [零钱兑换II](https://programmercarl.com/0518.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2II.html)
+  - [ ] [动规周总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20210128%E5%8A%A8%E8%A7%84%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
   - [ ] 组合总和Ⅳ
   - [ ] 爬楼梯（进阶版）
   - [ ] 零钱兑换
