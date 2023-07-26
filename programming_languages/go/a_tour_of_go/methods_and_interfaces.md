@@ -837,12 +837,159 @@ func main() {
 
 ## Readers
 
->>>>> <https://go.dev/tour/methods/21>
+```go
+package main
+
+import (
+    "fmt"
+    "io"
+    "strings"
+)
+
+func main() {
+    r := strings.NewReader("Hello, Reader!")
+
+    b := make([]byte, 8)
+    for {
+        n, err := r.Read(b)
+        fmt.Printf("n = %v err = %v b = %v\n", n, err, b)
+        fmt.Printf("b[:n] = %q\n", b[:n])
+        if err == io.EOF {
+            break
+        }
+    }
+}
+```
+
+The `io` package specifies the `io.Reader` interface, which represents the read
+end of a stream of data.
+
+The Go standard library contains many implementations of this interface,
+including files, network connections, compressors, ciphers, and others.
+
+The `io.Reader` interface has a `Read` method:
+
+```go
+func (T) Read(b []byte) (n int, err error)
+```
+
+`Read` populates the given byte slice with data and returns the number of bytes
+populated and an error value. It returns an `io.EOF` error when the stream ends.
+
+The example code creates a `strings.Reader` and consumes its output 8 bytes at
+a time.
 
 ### Exercise: Readers
 
+Implement a `Reader` type that emits an infinite stream of the ASCII character
+`'A'`.
+
+```go
+package main
+
+import "golang.org/x/tour/reader"
+
+type MyReader struct{}
+
+// TODO: Add a Read([]byte) (int, error) method to MyReader.
+func (mr MyReader) Read(b []byte) (int, error) {
+    for i:= range b {
+        b[i] = 'A'
+    }
+    return len(b), nil
+}
+
+func main() {
+    reader.Validate(MyReader{})
+}
+```
+
 ### Exercise: rot13Reader
+
+A common pattern is an `io.Reader` that wraps another `io.Reader`, modifying
+the stream in some way.
+
+For example, the `gzip.NewReader` function takes an `io.Reader` (a stream of
+compressed data) and returns a `*gzip.Reader` that also implements `io.Reader`
+(a stream of the decompressed data).
+
+Implement a `rot13Reader` that implements `io.Reader` and reads from an
+`io.Reader`, modifying the stream by applying the rot13 substitution cipher to
+all alphabetical characters.
+
+The `rot13Reader` type is provided for you. Make it an `io.Reader` by
+implementing its `Read` method.
+
+```go
+package main
+
+import (
+    "io"
+    "os"
+    "strings"
+)
+
+type rot13Reader struct {
+    r io.Reader
+}
+
+func (rot rot13Reader) Read(b []byte) (int, error) {
+    n, err := rot.r.Read(b)
+
+    for i := 0; i < n; i++ {
+        if (b[i] >= 'A' && b[i] <= 'M') || (b[i] >='a' && b[i] <= 'm') {
+            b[i] += 13
+        } else if (b[i] >= 'N' && b[i] <= 'Z') || (b[i] >='n' && b[i] <= 'z') {
+            b[i] -= 13
+        }
+    }
+
+    return n, err
+}
+
+func main() {
+    s := strings.NewReader("Lbh penpxrq gur pbqr!")
+    r := rot13Reader{s}
+    io.Copy(os.Stdout, &r)
+}
+```
 
 ## Images
 
+```gp
+package main
+
+import (
+    "fmt"
+    "image"
+)
+
+func main() {
+    m := image.NewRGBA(image.Rect(0, 0, 100, 100))
+    fmt.Println(m.Bounds())
+    fmt.Println(m.At(0, 0).RGBA())
+}
+```
+
+Package `image` defines the `Image` interface:
+
+```go
+package image
+
+type Image interface {
+    ColorModel() color.Model
+    Bounds() Rectangle
+    At(x, y int) color.Color
+}
+```
+
+Note: the `Rectangle` return value of the `Bounds` method is actually an
+`image.Rectangle`, as the declaration is inside package `image`.
+
+The `color.Color` and `color.Model` types are also interfaces, but we'll ignore
+that by using the predefined implementations `color.RGBA` and `color.RGBAModel`.
+These interfaces and types are specified by the `image/color` package
+
 ### Exercise: Images
+
+
