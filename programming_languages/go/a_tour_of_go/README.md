@@ -4,5 +4,5 @@
 
 - [x] [Basics](basics.md)
 - [x] [Methods and interfaces](methods_and_interfaces.md)
-- [ ] [Generics](generics.md)
+- [x] [Generics](generics.md)
 - [ ] [Concurrency](concurrency.md)
