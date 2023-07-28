@@ -61,7 +61,8 @@
     - [思维总结：12. 基本用法（七）：请求](#思维总结12-基本用法七请求)
     - [思维训练：12. 基本用法（七）：请求](#思维训练12-基本用法七请求)
       - [答案：思维训练：12. 基本用法（七）：请求](#答案思维训练12-基本用法七请求)
-  - [8.13 基本用法（八）：过去习惯](#813-基本用法八过去习惯)
+  - [13. 基本用法（八）：过去习惯](#13-基本用法八过去习惯)
+  - [14. 基本用法（九）：should 的特殊用法](#14-基本用法九should-的特殊用法)
   - [8.17 情态动词的否定](#817-情态动词的否定)
   - [综合训练：情态动词](#综合训练情态动词)
 
@@ -1974,7 +1975,7 @@ have it.
 6. Can I use your dictionary for a minute?
 7. Would you please keep an eye on my luggage while I get a drink of water?
 
-## 8.13 基本用法（八）：过去习惯
+## 13. 基本用法（八）：过去习惯
 
 would 还可以表示过去经常发生或习惯性的动作。如果在描述过去时只是用一般过去时，则会显得较为索然无味。
 
@@ -1990,7 +1991,44 @@ read comic books without my parents' knowing about it.
 用 would 表示过去习惯或重复的动作时，还可以指某人一贯的行为。
 这时，往往用来批评人们的行为或表示对他人的行为怀有某种恼怒的情绪，此时 would 要重读。
 
-`7` >>>>> progress
+`7` A: Jack would get lost, wouldn't he?
+
+B: It's typical.
+
+- `译` A: Jack 老是迷路，是吧？B: 可不是嘛！
+
+`8` We all tried to stop him smoking in bed but he wouldn't do it.
+
+- `译` 我们都试图不让他在床上抽烟，可他每次偏偏这么做。
+
+`9` He was a nice boy, but he would talk about himself all the time.
+
+- `译` 他人还不错，但就是老喜欢谈论他自己。
+
+`10` A: Bill objected.
+
+B: He would!
+
+- `译` A: 当时 Bill 反对。B: 他老是反对！
+
+💡 也可用 used to 来表示过去习惯的动作。但二者之间的区别是：
+
+- used to 可以表示过去重复的动作，也可以指过去存在的状态，有“现在不再”的含义。
+- would 常用来表示过去重复的动作，不表示过去的状态。
+
+`11` My own mother used to be very busy the whole day.
+
+- 这里用 used to，而不是 would，因为 be very busy 是过去存在的一种状态，不是动作。
+- `译` 以前，我母亲每天总是忙忙碌碌的。
+
+`12` Illiteracy is still a problem in my country, but it used to be much worse.
+
+- 一般不说 it would be much worse，因为 be much worse 同样表示的是一种状态。
+- `译` 文盲在我们国家仍然是一个问题，但在过去更为严重。
+
+## 14. 基本用法（九）：should 的特殊用法
+
+>>>>> progress
 
 ## 8.17 情态动词的否定
 
