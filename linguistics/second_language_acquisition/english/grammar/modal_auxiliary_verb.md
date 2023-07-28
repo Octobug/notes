@@ -1976,7 +1976,21 @@ have it.
 
 ## 8.13 基本用法（八）：过去习惯
 
->>>>> progress
+would 还可以表示过去经常发生或习惯性的动作。如果在描述过去时只是用一般过去时，则会显得较为索然无味。
+
+`2` When I was a child, my mother would read me a story at night before bed.
+
+- `译` 小时候，晚上睡觉前妈妈常常会给我讲故事。
+
+`3` When I was a child, I would take a flashlight to bed with me so that I could
+read comic books without my parents' knowing about it.
+
+- `译` 小时候，我常常会拿着手电筒在床上看连环画，这样爸妈就不会发觉了。
+
+用 would 表示过去习惯或重复的动作时，还可以指某人一贯的行为。
+这时，往往用来批评人们的行为或表示对他人的行为怀有某种恼怒的情绪，此时 would 要重读。
+
+`7` >>>>> progress
 
 ## 8.17 情态动词的否定
 
