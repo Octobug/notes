@@ -63,6 +63,19 @@
       - [答案：思维训练：12. 基本用法（七）：请求](#答案思维训练12-基本用法七请求)
   - [13. 基本用法（八）：过去习惯](#13-基本用法八过去习惯)
   - [14. 基本用法（九）：should 的特殊用法](#14-基本用法九should-的特殊用法)
+    - [14.1 should 表示“竟然”](#141-should-表示竟然)
+    - [14.2 should 表示“万一”](#142-should-表示万一)
+  - [15. 基本用法（十）：shall 的特殊用法](#15-基本用法十shall-的特殊用法)
+    - [15.1 用于第一人称的疑问句中：Shall I/we...?](#151-用于第一人称的疑问句中shall-iwe)
+      - [一、主动提供帮助](#一主动提供帮助)
+      - [二、主动提供建议](#二主动提供建议)
+      - [三、表示请求给予指示](#三表示请求给予指示)
+    - [15.2 用于第三人称的疑问句中](#152-用于第三人称的疑问句中)
+    - [15.3 用于第二、第三人称的陈述句中](#153-用于第二第三人称的陈述句中)
+      - [一、表示“命令”](#一表示命令)
+      - [二、表示说话人的许诺](#二表示说话人的许诺)
+      - [三、表示说话人强烈的意愿，甚至威胁](#三表示说话人强烈的意愿甚至威胁)
+  - [16. 基本用法（十一）：may 的特殊用法](#16-基本用法十一may-的特殊用法)
   - [8.17 情态动词的否定](#817-情态动词的否定)
   - [综合训练：情态动词](#综合训练情态动词)
 
@@ -2028,7 +2041,307 @@ B: He would!
 
 ## 14. 基本用法（九）：should 的特殊用法
 
->>>>> progress
+should 的常规用法表示忠告或规劝，通常译为“应该”。
+should 还有一些特殊用法，不表示劝告，这时表示“竟然”和“万一”，不能译为“应该”。
+
+### 14.1 should 表示“竟然”
+
+用在下列形容词后面的从句中的 should，带有一种很“惊奇”的感情色彩，含有“竟然”的意思。比如：
+
+It is/was + adj. + that...
+
+- absurd, amazing, annoying
+- funny
+- ludicrous
+- odd
+- ridiculous
+- strange
+- surprising
+- unthinkable
+
+`1` It is ridiculous that we should be short of water in a country where it is
+always raining.
+
+- `译` 在经常下雨的国家里，我们竟然会缺水，这简直是荒谬！
+
+`2` It is unthinkable that he should be so careless.
+
+- `译` 真不可思议，他竟然如此粗心大意。
+
+`3` It's strange that you should be staying in the same hotel!
+
+- `译` 真奇怪，你们竟然呆在同一个酒店！
+
+`4` It's odd that you and I should have the same name.
+
+- `译` 很奇怪，我们的名字竟然相同。
+
+此时，从句中也可以用现在时态或过去时态。
+
+`5` It is ridiculous that we are short of water in a country where it is always
+raining.
+
+should 也常用在下列几个从句句型的后面：
+
+- I can't think why...
+- I don't know why...
+- I see no reason why...
+
+`6` I don't know why he should think that I did it.
+
+- `译` 我真不知道他凭什么竟然会认为这件事是我干的。
+
+`7` I see no reason why you should interfere in their quarrel.
+
+- `译` 我真不明白你有什么理由竟然会介入他们的争吵。
+
+`8` I can't think why he should have been so angry.
+
+- `译` 我现在搞不明白他当时为什么竟然那么生气。
+
+`9` You can't imagine that a well-behaved gentleman should be so rude to a lady.
+
+- `译` 你真无法想象，一个举止优雅的绅士竟然会对一个女子如此粗鲁。
+
+`10` Why should anyone object to her enjoying herself?
+
+- `译` 为什么竟然有人反对她过得开心呢？
+
+`11` Why should anyone bother to risk losing his treasure to help a stranger?
+
+- `译` 为什么竟然会有人冒着失去自己财产的危险而去帮助一个陌生人呢？
+
+### 14.2 should 表示“万一”
+
+should 常常用在 lest, for fear that 和 in case 引导的从句中，表示“万一”。
+
+`1` I've brought my umbrella in case it should rain.
+
+- `译` 我带伞了，以防万一下雨。
+
+此时，从句中的谓语也可用正常时态，如一般现在时或一般过去时。
+
+`2` I've brought my umbrella in case it rains.
+
+## 15. 基本用法（十）：shall 的特殊用法
+
+> shall 在现代英语中，相对其他情态动词来说比较不常用
+>
+> - <https://grammar.collinsdictionary.com/easy-learning/when-do-you-use-shall-and-will-in-english>
+> - <https://www.quora.com/Why-dont-we-use-the-word-shall-very-often>
+
+### 15.1 用于第一人称的疑问句中：Shall I/we...?
+
+当 shall 用于第一人称，此时的 shall 可以表示“主动提供帮助”、“提供建议”或“请求给予指示”。
+
+#### 一、主动提供帮助
+
+`1` Shall I go and fetch your hat?
+
+- `=` Would you like me to go and fetch your hat?
+- `译` 要不要我去帮你把帽子捡回来？
+
+`2` Shall I open the window?
+
+- `=` Would you like me to open the window?
+- `译` 你要不要我把窗户打开？
+
+`3` Shall we/I deliver the goods to your home address?
+
+- `译` 你要我（们）把货物送到你家去吗？
+
+#### 二、主动提供建议
+
+`4` Shall we meet at the theater?
+
+- `=` Let's meet at the theater, shall we?
+- `译` 我们在剧院见面好吗？
+
+`5` Shall we leave at two?
+
+`6` What shall we do this evening? Shall we go to the theater?
+
+- `译` 我们今晚做些什么？去剧院好吗？
+
+#### 三、表示请求给予指示
+
+`5` How shall I cook it?
+
+- `译` 这东西该怎么做着吃？
+
+`6` Where shall we put this?
+
+- `译` 我们该把这东西放在哪里？
+
+### 15.2 用于第三人称的疑问句中
+
+在表示提供建议或请求给予指示的意思时，shall 可以用于第三人称。
+
+`1` A man wants to see you, sir. Shall he wait outside?
+
+- `=` Would you like him to wait outside?
+- `译` 你要不要让他在外面等呢？
+
+`2` Shall he come with us?
+
+- `=` Would you like him to come with us?
+- `译` 要不要让他和我们一起去呢？
+
+### 15.3 用于第二、第三人称的陈述句中
+
+#### 一、表示“命令”
+
+在法律条文、规章制度中，常用 shall 表示“命令”，这主要用于第三人称。
+此时，shall 在意思上接近 must。
+
+`1` It has been announced that candidates shall remain in their seats until all
+the papers have been collected.
+
+- `译` 已经宣布，在所有试卷全部收齐之后，考生方能离开自己的座位。
+
+`2` The license of a person who is arrested for driving while intoxicated shall
+be suspended.
+
+- `译` 因醉酒驾车而被捕的司机，其驾照应该被吊销。
+
+`3` The author shall prepare a manuscript which shall meet the following
+requirements.
+
+- `译` 作者准备的手稿必须满足下列要求。
+
+`4` Each competitor shall wear a number.
+
+- `译` 每位参赛人员必须佩戴号码。
+
+`5` Members shall enter the names of their guests in the book provided.
+
+- `译` 会员必须把所邀客人的名字登记在提供的本子上。
+
+`6` The Permit Holder shall comply with all conditions of this Permit.
+
+- `译` 许可证持有人必须完全遵守本许可证的全部条件。
+
+`7` No player shall knowingly pick up or move the ball of another player.
+
+- `译` 不得故意捡起或移动其他球员的球。
+
+这样使用的 shall 很正式，若是在不是很正式的场合，可以用 must 或 are to do 来代替 shall。
+
+#### 二、表示说话人的许诺
+
+shall 用于第二、第三人称的陈述句中，表示说话人的许诺。
+
+`8` You shall have the money back next week.
+
+- `=` I promise you will have the money back next week.
+- `译` （我答应）你下周一定能拿回这笔钱。
+
+`9` If he passes the examination he shall have a bicycle.
+
+- `=` I promise he will have a bicycle.
+- `译` （我答应）只要他能通过考试，就可以得到一辆自行车作为奖励。
+
+`10` The boss has promised that every employee shall have a rise in income.
+
+- `译` 老板已经答应给每一个员工涨工资。
+
+#### 三、表示说话人强烈的意愿，甚至威胁
+
+shall 用于第二、第三人称的陈述句中，表示说话人强烈的意愿，甚至威胁。
+
+`11` They shall do as they are told.
+
+- `译` 他们一定要按照吩咐他们的去做。
+
+`12` He shall be punished if he disobeys.
+
+- `译` 若他不服从，定将受到处罚。
+
+`13` You shall do exactly as I say.
+
+- `译` 你一定得按我说的去做。
+
+`14` You shall pay for this.
+
+- `译` 你一定得为此付出代价！
+
+## 16. 基本用法（十一）：may 的特殊用法
+
+may 的主要含义有：“可能” (possibility)、“许可” (permission) 和“请求” ()。
+它还有一种特殊用法，即用在 may...but 这样的结构中，表示让步 (concession)。
+
+`1` We may have our differences from time to time, but basically we trust one
+another's judgment.
+
+- 这里的 may 几乎失去了“可能”的含义，而是表示被认为是真实的陈述，所以它可以改写为：
+  - We admit that we have our differences, but basically we trust one another's
+    judgment. ✅
+  - Although we have our differences, basically we trust one another's
+    judgment. ✅
+  - It is possible that we have our differences, but basically we trust one
+    another's judgment. ❌
+- `译` 尽管我们常常有分歧，但是我们基本上还是信任彼此的判断。
+
+人们之所以习惯用 may have 这一情态动词结构，而不是用一般现在时 have，主要是出于礼貌或委婉表达的考虑。
+
+`2` You may have good reasons, but that doesn't make it legal.
+
+- `=` Although you have good reasons, that doesn't make it legal.
+- `译` 尽管你有很好的理由，但这并不意味着就合法。
+
+`3` She may be the boss, but that is no excuse for shouting like that.
+
+- `=` Although she is the boss, that is no excuse for shouting like that.
+- `译` 尽管她是老板，但这绝不是她那么大声嚷嚷的理由。
+
+`4` You may be older than me, but that doesn't mean you're cleverer.
+
+- `=` Although you are older than me, that doesn't mean you're cleverer.
+- `译` 尽管你比我年长，但这并不意味着你就更聪明。
+
+`5` You may be in charge, but it doesn't give you the right to be rude.
+
+- `=` Although you are in charge, it doesn't give you the right to be rude.
+- `译` 尽管是你负责，但这并不说明你就有权对别人粗鲁。
+
+`6` I may be small, but I am influential.
+
+- `译` 尽管我身材矮小，但我是很有影响力的。
+
+正因为 may 可以表示让步 (might 也可以)，因此它常常用于各种结构的让步状语从句中，
+用来加强让步语气，相当于汉语中说“可能会多么的”。
+
+`7` But however amazed our descendants may be at how far from Utopia we were,
+they will look just like us.
+
+- 这个句子本来的结构是 Our descendants may be amazed at how far from Utopia we
+  were, they will look just like us. 由于有连词 however，所以 amazed 和 however
+  一同提前到了句首。这里 however 引导一个让步状语从句，从句谓语含有 may。
+- `译` 但是不管我们的后代对我们离乌托邦之遥远感到多么吃惊，他们的长相将和我们一样。
+
+`8` When a new movement in art attains a certain fashion, it is advisable to
+find out what its advocates are aiming at, **for**, however farfetched and
+unreasonable their principles may seem today, it is possible that in years to
+come they may be regarded as normal.
+
+- 这里的 for 是表示原因的连词，引导原因状语从句，在这个 for 引导的原因状语从句里面又套有一个
+  however 引导的让步状语从句。这个让步状语从句原本的结构是：
+  their principles may seem farfetched and unreasonable today，由于有了连词
+  however，所以 farfetched and unreasonable 和 however 一同提到了句首。
+- `译` 当一种新的艺术运动达到某种程度的流行时，我们最好搞清楚这个运动倡导者们的目标是什么，
+  因为不管他们的原则现在看来是如何牵强和不合理，很可能在将来它们会被视为正常的规范。
+
+此外，有时甚至把 may 或 might 省略，只剩下一个动词原形。
+
+`9` Try as he will, no man breaks wholly loose from his first love, no matter
+who she be... We've only one virginity to lose and where we lost it there our
+hearts will be!
+
+- 这里 no matter who she be 就相当于 no matter who she might be 这种加强语气的形式，
+  这里的 no matter who 引导的是一个让步状语从句。
+  此外，该句中的 try as he will 也是一个让步状语从句的结构。
+- `译` 不管怎么样，没有一个男人能够完完全全地忘却自己的初恋，不管她是谁。
+  因为，我们的童贞只有一次，我们永远不会忘记自己奉献出的第一次。
 
 ## 8.17 情态动词的否定
 
