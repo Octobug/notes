@@ -461,6 +461,7 @@ int main() {
 ## References
 
 - 动态规划
+  - 01~10
   - [x] [动态规划理论基础](https://programmercarl.com/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html)
   - [x] [斐波那契数](https://programmercarl.com/0509.%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0.html)
   - [x] [爬楼梯](https://programmercarl.com/0070.%E7%88%AC%E6%A5%BC%E6%A2%AF.html)
@@ -471,6 +472,7 @@ int main() {
   - [x] [整数拆分](https://programmercarl.com/0343.%E6%95%B4%E6%95%B0%E6%8B%86%E5%88%86.html)
   - [x] [不同的二叉搜索树](https://programmercarl.com/0096.%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.html)
   - [x] [动规周总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20210114%E5%8A%A8%E8%A7%84%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
+  - 11~20
   - [x] [0-1背包理论基础（一）](https://programmercarl.com/%E8%83%8C%E5%8C%85%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%8001%E8%83%8C%E5%8C%85-1.html)
   - [x] [0-1背包理论基础（二）](https://programmercarl.com/%E8%83%8C%E5%8C%85%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%8001%E8%83%8C%E5%8C%85-2.html)
   - [x] [分割等和子集](https://programmercarl.com/0416.%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86.html)
@@ -481,16 +483,18 @@ int main() {
   - [x] [完全背包理论基础](https://programmercarl.com/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85.html)
   - [x] [零钱兑换II](https://programmercarl.com/0518.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2II.html)
   - [x] [动规周总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20210128%E5%8A%A8%E8%A7%84%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
+  - 21~30
   - [x] [组合总和Ⅳ](https://programmercarl.com/0377.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C%E2%85%A3.html)
   - [x] [爬楼梯（进阶版）](https://programmercarl.com/0070.%E7%88%AC%E6%A5%BC%E6%A2%AF%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85%E7%89%88%E6%9C%AC.html)
   - [x] [零钱兑换](https://programmercarl.com/0322.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2.html)
-  - [ ] [完全平方数](https://programmercarl.com/0279.%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0.html)
-  - [ ] 动规周总结
+  - [x] [完全平方数](https://programmercarl.com/0279.%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0.html)
+  - [ ] [动规周总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20210204%E5%8A%A8%E8%A7%84%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
   - [ ] 单词拆分
   - [ ] 多重背包理论基础
   - [ ] 背包问题总结篇
   - [ ] 打家劫舍
   - [ ] 打家劫舍II
+  - 31~40
   - [ ] 打家劫舍III
   - [ ] 买卖股票的最佳时机
   - [ ] 动规周总结
@@ -501,6 +505,7 @@ int main() {
   - [ ] 动规周总结
   - [ ] 买卖股票的最佳时机含手续费
   - [ ] 股票问题总结篇
+  - 41~50
   - [ ] 最长上升子序列
   - [ ] 最长连续递增序列
   - [ ] 最长重复子数组
@@ -511,6 +516,7 @@ int main() {
   - [ ] 不同的子序列
   - [ ] 两个字符串的删除操作
   - [ ] 编辑距离
+  - 51~
   - [ ] 编辑距离总结篇
   - [ ] 回文子串
   - [ ] 最长回文子序列
