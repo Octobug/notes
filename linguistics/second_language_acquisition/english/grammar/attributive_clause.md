@@ -100,7 +100,11 @@
       - [一、as 引导的非限定性定语从句可放在句首](#一as-引导的非限定性定语从句可放在句首)
       - [二、as 引导的非限定性定语从句可放在句中](#二as-引导的非限定性定语从句可放在句中)
       - [三、as 引导的非限定性定语从句可放在句末](#三as-引导的非限定性定语从句可放在句末)
-    - [2.8.2 as 引导限定性定语从句](#282-as-引导限定性定语从句)
+    - [11.2 as 引导限定性定语从句](#112-as-引导限定性定语从句)
+      - [一、as 在定语从句中作主语](#一as-在定语从句中作主语)
+      - [二、as 在定语从句中作宾语](#二as-在定语从句中作宾语)
+      - [三、as 在定语从句中作表语](#三as-在定语从句中作表语)
+  - [12. 关系代词 than](#12-关系代词-than)
   - [2.11 缩合关系代词 what](#211-缩合关系代词-what)
   - [综合训练：定语从句](#综合训练定语从句)
 
@@ -2116,9 +2120,125 @@ devoted to the study of the interview itself.
 - as 引导的定语从句可放在句首，而 which 不能；
 - as 引导的定语从句可放在句中，但因为句义或结构上的原因，这种情况下 as 一般不能替换为 which。
 
-### 2.8.2 as 引导限定性定语从句
+### 11.2 as 引导限定性定语从句
 
->>>>> progress
+as 引导限定性定语从句只能用在一些固定结构中，即只能用在由 such，the same，as 修饰的先行词的后面。
+as 在定语从句中可以作**主语**、**宾语**或**表语**。as 的先行词可以是人，也可以是物。
+
+#### 一、as 在定语从句中作主语
+
+`1` He'll repeat such points as are discussed in the book.
+
+- 这里 such...as 构成结构上的呼应关系。as 的先行词是 points。
+  如果没有 such，则不用 as 引导定语从句，可以说成
+  He'll repeat the points that are discussed in the book.
+- `译` 他将会重复书上讨论过的要点内容。
+
+`2` Such a student as works hard will be sure to succeed.
+
+- 这里 such...as 构成结构上的呼应关系，as 的先行词是 a student。
+  如果没有 such，则不用 as 引导定语从句，可以说成 A student who works hard will be
+  sure to succeed.
+- `译` 这样用功的学生将来一定会成功的。
+
+`3` He is not such a man as would leave his work half done.
+
+- 这里 such...as 构成结构上的呼应关系，as 的先行词是 a man。
+  如果没有 such，则不用 as 引导定语从句，比如说成 He is not a man who would leave his
+  work half done.
+- `译` 他不是那种会将工作半途而废的人。
+
+`4` The new map of the ocean floor shows the locations of twice as any undersea
+volcanoes as were previously thought to exist.
+
+- 这里 as...as 构成结构上的呼应关系。as 的先行词是 undersea volcanoes。
+  如果没有第一个 as，则不会用第二个 as 来引导定语从句。
+- `译` 新的洋底地图显示出海底火山的位置，火山数量是人们以前知道的两倍。
+
+#### 二、as 在定语从句中作宾语
+
+`5` He tried to make as few mistakes as he could avoid.
+
+- 这里 as...as 构成结构上的呼应关系。第二个 as 指代先行词 mistakes，并且在从句中作 avoid 的宾语。
+- `译` 他尽量避免犯错误。
+
+`6` He is not the same playboy as we knew.
+
+- 这里 the same...as 构成结构上的呼应关系。as 指代先行词 playboy，在从句中作 knew 的宾语。
+- `译` 他不再是我们所知道的那个花花公子了。
+
+`7` The instrument is not such an instrument as I saw on the exhibition.
+
+- 这里 such...as 构成结构上的呼应关系。as 指代先行词 instrument，在从句中作 saw 的宾语。
+- `译` 这个乐器同我在展览会上看到的不同。
+
+`8` It is unlikely that you will have such an exciting experience as Janet had a
+few years ago.
+
+- such...as 构成结构上的呼应关系。as 指代先行词 exciting experience，并且在从句中作 had
+  的宾语。
+- `译` Janet 几年前的那些精彩的经历，你是不可能有的。
+
+`9` They made the same mistake as others would have made on such an occasion.
+
+- the same...as 构成结构上的呼应关系。as 指代先行词 mistake，在从句中作 would have made
+  的宾语。
+- `译` 他们犯了一个其他人若遇到这种情况时同样会犯的错误。
+
+#### 三、as 在定语从句中作表语
+
+`10` He is not such a fool as we would assume him to be.
+
+- such...as 构成结构上的呼应关系。as 指代先行词 fool，在从句中作 be 的表语。
+- `译` 他并不像我们想象的那样傻。
+
+## 12. 关系代词 than
+
+than 可以用作关系代词来引导定语从句。
+
+`1` Families have also experienced changes these years. More families consist of
+one-parent households or two working parents; consequently, children are likely
+to have less supervision at home ____ was common in the traditional family
+structure.
+
+- A. than
+- B. that
+- C. which
+- D. as
+- `答案` A。其他选项无法和 less 构成结构上的呼应关系。
+- than 在从句中充当主语，后面接有谓语动词 was，它指代的先行词是 supervision (管教)，
+  比较的对象是“现在家庭对孩子的管教”和“传统家庭对孩子的管教”。
+- `译` 这些年来家庭模式也经历了变化，更多的家庭是单亲家庭或者双职工家庭；其结果是，与传统家庭结构相比而言，孩子在现代家庭里所受到的管教可能更少了。
+
+上句中的先行词 supervision 前面有一个形容词比较级 less，而与比较级构成结构上的呼应关系的只能是
+than，也就是构成 less...than 这样的结构搭配。
+
+Children are likely to have less supervision at home than was common in the
+traditional family structure.
+
+**为什么把它看作是定语从句，而不是常见的比较状语从句呢？**
+
+把 less...than 结构从句中去掉，并改写为：
+
+- Children are likely to have the supervision at home that was common in the
+  traditional family structure.
+  - 这是一个典型的定语从句，that 取代了 than，在从句中作主语。
+  - `译` 孩子们在现代家庭里可能有的管教，在传统家庭里也常见。
+
+进一步用 the same...as 替换：
+
+- Children are likely to have the same supervision at home as was common in the
+  traditional family structure.
+  - 这里 as 取代了 than，在从句中作主语。
+  - `译` 孩子们在现代家庭里受到了传统家庭里同样的管教。
+
+从以上例子可以归纳出 than 引导的定语从句的用法特点：
+
+- than 可作关系代词引导定语从句，在从句中一般作主语（也可作宾语）；
+- than 前面的主句需有形容词的比较级形式；
+- 比较级所修饰的名词即为先行词。
+
+`2` >>>>> progress
 
 ## 2.11 缩合关系代词 what
 
