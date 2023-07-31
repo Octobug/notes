@@ -105,6 +105,7 @@
       - [二、as 在定语从句中作宾语](#二as-在定语从句中作宾语)
       - [三、as 在定语从句中作表语](#三as-在定语从句中作表语)
   - [12. 关系代词 than](#12-关系代词-than)
+  - [13. 关系代词 but](#13-关系代词-but)
   - [2.11 缩合关系代词 what](#211-缩合关系代词-what)
   - [综合训练：定语从句](#综合训练定语从句)
 
@@ -2238,7 +2239,81 @@ traditional family structure.
 - than 前面的主句需有形容词的比较级形式；
 - 比较级所修饰的名词即为先行词。
 
-`2` >>>>> progress
+`2` There ought to be less anxiety over the perceived risk of getting cancer
+than ____ in the public mind today.
+
+- A. exists
+- B. exist
+- C. existing
+- D. existed
+- `答案` A。这个句子也是 than 引导的定语从句，先行词是 anxiety，在从句中作主语。
+- `译` 人们不应该像如今这样害怕换上癌症。
+
+`3` These proposals sought to place greater restrictions on the use and copying
+of digital information than ____ in traditional media.
+
+- A. exist
+- B. exists
+- C. existing
+- D. to exist
+- `答案` A。than 引导定语从句，先行词是 restrictions，在从句中作主语。
+- `译` 这些提案试图对数字化信息的使用与复制实行比传统媒体更加严格的限制。
+
+`4` Don't drink more wine than is good for health.
+
+- `译` 不要过量饮酒。适量饮酒有益于健康。
+
+`5` Don't give him more money than is needed, since money will burn a hole in
+his pocket.
+
+- `译` 不要多给他钱，他需要多少就给多少，因为他有钱就花光。
+
+`6` He soon found it easy to make more money by thieving than his father had
+done by a lifetime of honest work.
+
+- 这里 more 修饰的名词 money 即为先行词，than 指代 money 的同时，在从句中作谓语动词
+  had done (即 had made) 的宾语。
+- `译` 很快他就发现，通过盗窃所得的钱比他老爸一辈子辛勤劳动挣来的钱要多得多。
+
+## 13. 关系代词 but
+
+but 用作关系代词的用法特点：
+
+- 从 but 所表达的意义来看，but 作关系代词具有否定意义，相当于 that...not。
+  因此 but 后面接的定语从句在形式上是肯定的，但在意义上是否定的。
+- 从主句的结构上来看，but 所修饰的先行词往往会被一个否定词修饰，即 but
+  常与具有否定意义的主句连用。
+  这样，主句中的否定和 but 本身的否定意义结合起来构成双重否定，表达一个肯定的意思。
+- but 可指人也可指物，在句中作主语或宾语。
+- but 通常只引导**限定性定语从句**。
+
+`1` There are very few rules of grammar but have exceptions; the exception
+proves the rule.
+
+- 首先，but have exceptions 在形式上是肯定句，但 but 本身具有否定意义，
+  所以这个定语从句相当于说 that don't have exceptions，表示“没有例外的”。
+  其次，在主句中有否定词 few 来修饰先行词 rules of grammar，表示“很少有语法规则”。
+  于是主句的否定与从句的否定结合起来构成一个双重否定。
+  第三，but 在这里指物，即 rules of grammar，在从句中作主语。
+- `译` 很少有语法规则是没有例外的，因为有例外才证明规则存在。
+
+`2` There is no man but errs.
+
+- `=` There is no man who doesn't err.
+- but 指代人，在定语从句中作主语。
+- `译` 人必犯错。
+
+`3` There are very few but admire his talents.
+
+- `=` There are very few who don't admire his talents.
+- but 指代先行词 few，在定语从句中作主语。
+- `译` 很少有人不赞赏他的才干的。
+
+`4` There are very few people in this club but he knows.
+
+- `=` There are very few people in this club whom he doesn't know.
+- but 指代先行词 people，在定语从句中作宾语。
+- `译` 这个俱乐部里的人他几乎都认识。
 
 ## 2.11 缩合关系代词 what
 
