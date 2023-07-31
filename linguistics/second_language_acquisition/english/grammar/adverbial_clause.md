@@ -35,7 +35,11 @@
     - [2.7 时间连词 until 的用法特点](#27-时间连词-until-的用法特点)
       - [一、延续动词 + until + 短暂动词或时间点](#一延续动词--until--短暂动词或时间点)
       - [二、短暂动词 + until + 短暂动词或时间点](#二短暂动词--until--短暂动词或时间点)
-      - [三、not until...that 句型](#三not-untilthat-句型)
+      - [三、not...until 的四种不同句式](#三notuntil-的四种不同句式)
+        - [结构一：正常结构](#结构一正常结构)
+        - [结构二：until 置于句首](#结构二until-置于句首)
+        - [结构三：倒装结构](#结构三倒装结构)
+        - [结构四：强调结构 (not until...that)](#结构四强调结构-not-untilthat)
     - [2.4 表示“一……就”的结构](#24-表示一就的结构)
       - [一、从句动作先于主句动作](#一从句动作先于主句动作)
       - [二、主句动作先于从句动作](#二主句动作先于从句动作)
@@ -88,7 +92,7 @@
     - [11.2 地点状语从句的省略](#112-地点状语从句的省略)
     - [11.3 条件状语从句的省略](#113-条件状语从句的省略)
     - [11.4 让步状语从句的省略](#114-让步状语从句的省略)
-    - [3.3.7 时间连词 until 的用法特点](#337-时间连词-until-的用法特点)
+    - [3.3.8 表示“一……就……”的结构](#338-表示一就的结构)
   - [综合训练：状语从句](#综合训练状语从句)
     - [答案：综合训练：状语从句](#答案综合训练状语从句)
 
@@ -842,13 +846,21 @@ B: Thanks. I've never felt better in my life.
 
 ### 2.7 时间连词 until 的用法特点
 
+`1` I will be away from home until 2nd June.
+
+- `译` 到时我将不在家，6 月 2 号才能回来。
+
+`2` I am away from the office until Friday 2 January, 2004. The University is
+closed from 23 December 2003 until Friday 2 January 2004.
+
+- `译` 我现在不上班，2004 年 1 月 2 日（周五）才开始上班。大学从 2003 年 12 月 23 日到
+  2004 年 1 月 2 日（周五）这段期间放假。
+
 until 的用法有以下三个要点：
 
-1. until 既可以用作**介词**也可以用作**连词**，所以 until
-   的后面可以接名词短语也可以接时间状语从句。
-2. until 的本质思维是表示“一个（主句）动作一直持续到某一个时间点”。即
-   **until 前面的主句的谓语必须是延续性的，而 until
-   后面接的从句的谓语须是短暂性动词或接时间点**。
+1. until 既可以用作**介词**也可以用作**连词**，所以 until 后面可以接名词短语也可以接时间状语从句。
+2. until 的本质思维是表示“一个（主句）动作一直持续到某一个时间点”。即 **until
+   前面的主句的谓语必须是延续性的，而 until 后面接的从句的谓语须是短暂性动词或接时间点**。
 3. 根据 `2.`，可得出 until 的句型结构有：
    1. 作为连词引导从句：主句的**延续动词** + until + 从句的**短暂动词**
    2. 作为介词接名词短语：**延续动词** + until + **时间点**
@@ -856,33 +868,166 @@ until 的用法有以下三个要点：
 #### 一、延续动词 + until + 短暂动词或时间点
 
 当主句或句子的谓语动词是**延续动词**时，通常用**肯定**形式。
-until 的后面若接从句，则从句的谓语必定是短暂动词，或者接表示时间点（point of time）
+until 的后面若接从句，则从句的谓语必定是短暂动词，或者接表示时间点 (point of time)
 的名词短语。
 
-- `1`: Wait until he comes back.
-- `2`: Until I came back, he was wating for me at my home.
-- `3`: We'll stay here until it stops raining.
-- `4`: I will be away from my office until next Tuesday.
+`3` Wait until he comes back.
+
+- 主句谓语 wait 是延续动词，从句谓语 comes 是短暂动词。
+- `译` 等他回来吧。
+
+`4` Until I came back, he was wating for me at my home.
+
+- `译` 在我回来之前，他一直在我家里等我。
+
+`5` We'll stay here until it stops raining.
+
+- `译` 我们将一直待到雨停了再走。
+
+`6` When I showed my dad my report card, I said, "Remember, Dad, Thomas Edison
+got bad grades in school, too." He said, "Fine, stay in your room until you
+invent the light bulb."
+
+在上面的句子中，until 都是用作连词，引导时间状语从句。until 作介词，后面接时间点的例子：
+
+`7` I will be away from my office until next Tuesday.
+
+- next Tuesday 表示一个时间点，until 这里作为介词使用。
+- `译` 我将要离开办公室，要到下周二才能回来。
 
 #### 二、短暂动词 + until + 短暂动词或时间点
 
-若主句的谓语动词是**短暂动词**，则要用**否定**形式。
+若主句的谓语动词是**短暂动词**，则主句谓语要用**否定**形式。
 因为否定之后表示的是一个状态，而状态是延续的。这个结构就是 not...until。
 
-- `5`: He didn't leave the office until his boss came back.
-- `6`: I did not realize how special my mother was until I became an adult.
-- `7`: One will never realize how much and how little he knows until he
-  starts talking.
-- `8`: Ice cream did not reach America until about the middle of the
-  eighteenth century.
-- `9`: I didn't go to bed until 12 o'clock last night.
+`8` He didn't leave the office until his boss came back.
 
-#### 三、not until...that 句型
+- 主句谓语 leave 是短暂动词，不能与表示持续时间的 until 连用，所以要用否定形式
+  didn't leave 表示一个持续的状态，才能与 until 连用。从句谓语 came 是短暂动词。
+- `译` 直到老板回来后，他才离开办公室。
 
-- `10`: It was not until the eleventh century that the detective found out the
-  truth.
-- `11`: It was not until she had arrived home that she remembered her
-  appointment with the doctor.
+`9` I did not realize how special my mother was until I became an adult.
+
+- `译` 直到我长大成人以后，我才真正懂得母亲是多么的不平凡。
+
+`10` One will never realize how much and how little he knows until he starts
+talking.
+
+- `译` 人们只有在与人进行交谈时才知道自己到底懂得多少。
+
+以上例句中，until 都用作连词，引导时间状语从句。until 还可以作介词，后面接时间点：
+
+`11` Ice cream did not reach America until about the middle of the eighteenth
+century.
+
+- 名词短语 about the middle of the eighteenth century 表示一个时间点，这里 until
+  作为介词使用。
+- 直到 18 世纪中叶，冰淇淋才传到美国。
+
+`12` I didn't go to bed until 12 o'clock last night.
+
+- `译` 我昨晚 12 点才上床睡觉。
+
+#### 三、not...until 的四种不同句式
+
+not...until 在实际使用中常常会有如下四种变体结构：
+
+##### 结构一：正常结构
+
+即常见的 not...until 结构。
+
+`13` The little boy didn't smile until he saw his mother.
+
+- `译` 这个小男孩看到他妈妈之后才开始笑起来。
+
+`14` The exact time of dying was not of great importance until recently.
+
+- `译` 直到最近，死亡的确切时间才变得尤其重要。
+
+##### 结构二：until 置于句首
+
+结构二是在结构一的基础上演变而来，只需把 until 后面的所有成分提到句首，便有 "Until..., not"
+结构。
+
+`15` Until he saw his mother, the little boy didn't smile.
+
+`16` Until recently, the exact time of dying was not of great importance.
+
+`17` Until recently, scientists have been unable to devise a drill which would
+be capable of cutting through hard rock at great depths.
+
+- 这样的结构很容易被错误翻译为“直到最近，科学家们一直不能设计出……”。
+- `译` 直到最近，科学家们才得以设计出一种可以钻透坚硬岩石的钻头。
+
+`18` Until quite recently, most mothers in Britain did not take paid work
+outside the home.
+
+- `译` 直到最近，英国大多数的母亲才开始走出家庭，参加带薪工作。
+
+`19` Indeed, until adoption of the 1982 Convention, the argument could be made
+that there existed no adequate and comprehensive maritime treaty law as such for
+the larger part of the world community.
+
+- 这里 until 与同位语从句中的否定词 no 构成搭配，也就是 not...until 的变体，意思一致。
+- `译` 的确，可以得出这样的结论：直到《1982 年公约》通过之后，才有了适用于国际社会大部分成员的、健全的海洋条约法律。
+
+##### 结构三：倒装结构
+
+结构三在结构二的基础上演变而来，只需把否定词 not 提到句首，置于 until 前面，就有
+“Not until..., 谓语助动词 + 主语 + 谓语动词”结构。
+也就是说，此时主句采用部分倒装结构，将主句谓语的助动词提到主语前面，谓语动词仍放在主语后面。
+
+`20` Not until he saw his mother did the little boy smile.
+
+- 主句 did the boy smile 采用了部分倒装结构。
+
+⚠️ 在 not until 倒装结构中，需部分倒装的是**主句**中的谓语动词，而非从句中的谓语动词。
+
+Not until **did** he see his mother the little boy smiled. ❌
+
+`21` Not until she had arrived home did she remember her appointment with the
+doctor.
+
+- 主句 did she remember her appointment with the doctor 采用了部分倒装结构。
+- `译` 她到家之后才记起来和医生还有预约。
+
+##### 结构四：强调结构 (not until...that)
+
+结构四是在结构三的基础上演变而来，即加上强调结构 It was...that，并去掉部分倒装结构复合而成，
+于是有“It was not until + 时间状语从句或短语 + that + 主句部分”的结构。
+
+`22` It was not until he saw his mother that the little boy smiled.
+
+`23` It was not until recently that the exact time of dying was of great
+importance.
+
+⚠️ 主句谓语不再采用部分倒装形式。
+
+`24`
+
+- Not until she had arrived home did she remember her appointment with the
+doctor.
+- It was not until she had arrived home that she remembered her appointment with
+  the doctor.
+
+`10` It was not until the eleventh century that the detective found out the
+truth.
+
+`11` It was not until she had arrived home that she remembered her appointment
+with the doctor.
+
+可以看到，在强调句型中，主从句都不采用倒装结构。
+
+`25` As was discussed before, it was not ____ the 19th century that the
+newspaper became the dominant pre-electronic medium, following in the wake of
+the pamphlet and the book and in the company of the periodical.
+
+- A. after
+- B. by
+- C. during
+- D. until
+- `答案` D。
+- `译` 像先前讨论过的那样，直到 19 世纪，报纸才在书本之后与期刊一起成为了电子媒体出现之前的主要媒体。
 
 ### 2.4 表示“一……就”的结构
 
@@ -1793,7 +1938,7 @@ of the government's economic policies.
   severe critic of the government's economic policies.
 - `译` 尽管 Smith 博士本人不是经济学家，但他一直以来对政府的经济政策提出尖锐的批评。
 
-### 3.3.7 时间连词 until 的用法特点
+### 3.3.8 表示“一……就……”的结构
 
 >>>>> progress
 
