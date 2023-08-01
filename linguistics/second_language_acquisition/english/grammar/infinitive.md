@@ -60,6 +60,15 @@
         - [3. 肯定形式，肯定意思（二）](#3-肯定形式肯定意思二)
         - [4. 否定形式](#4-否定形式)
     - [7.3 条件状语](#73-条件状语)
+    - [7.4 原因状语](#74-原因状语)
+  - [8. 不定式的作用（七）：独立使用的不定式](#8-不定式的作用七独立使用的不定式)
+    - [8.1 不定式作独立成分](#81-不定式作独立成分)
+    - [8.2 不定式引导独立的句子](#82-不定式引导独立的句子)
+    - [思维训练：8. 不定式的作用（七）：独立使用的不定式](#思维训练8-不定式的作用七独立使用的不定式)
+      - [答案：思维训练：8. 不定式的作用（七）：独立使用的不定式](#答案思维训练8-不定式的作用七独立使用的不定式)
+  - [9. 不定式的逻辑主语](#9-不定式的逻辑主语)
+    - [9.1 何谓逻辑主语](#91-何谓逻辑主语)
+    - [9.2 不定式逻辑主语的构成（一）：for + 名词或代词 + to do](#92-不定式逻辑主语的构成一for--名词或代词--to-do)
     - [4.9.3 不定式逻辑主语的构成（二）：of sb. to do](#493-不定式逻辑主语的构成二of-sb-to-do)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
@@ -1836,7 +1845,258 @@ match her in family status.
 
 ### 7.3 条件状语
 
->>>>> progress
+当不定式表示条件时，句子的谓语通常含有助动词，如
+
+- can
+- could
+- must
+- shall
+- should
+- will
+- would
+
+此时不定式短语前面的句子相当于一个主句，而不定式短语相当于一个条件状语从句。
+
+`1` The father will be proud for his son to win the gold medal.
+
+- `=` The father will be proud if his son wins the gold medal.
+- 不定式短语 for his son to win the gold medal 相当于一个条件状语从句 if his son wins
+  the gold medal。
+  相应地，前面的 the father will be proud 就成了一个主句，所以此时句子谓语往往带有情态动词，比如这里的 will。
+- `译` 如果他儿子能夺得金牌，这位父亲将非常自豪。
+  
+`2` One must be out of his mind to do such a thing.
+
+- `=` One must be out of his mind if he does such a thing.
+- `译` 如果有人真的做出这种事来，那他一定是脑子有问题。
+
+既然不定式相当于一个条件状语从句，那么也可以表示一个虚拟条件，类似于一个虚拟语气，此时句子谓语的情态动词就要用过去形式，如 would。
+
+`3` I would have been happy to be invited to the party.
+
+- `=` I would have been happy if I had been invited to the party.
+- 不定式短语 to be invited to the party 相当于一个表示过去的虚拟条件状语从句
+  if I had been invited to the party。
+  相应地，前面的 I would have been happy 就成了一个表示过去的虚拟主句。
+- `译` 当时吐过有人邀请我参加那个聚会，我当然会非常高兴（但实际上没有人邀请我）。
+
+`4` A: I guess I should've brought my umbrella.
+
+B: It would be nice to have one but how could you have known that this morning?
+
+- `=` It would be nice if you had one but how could you have known that this
+  morning?
+- 这里的不定式 to have one 相当于对现在一般情况进行虚拟的条件状语从句 if you had one。
+- `译` A: 看样子我本该带把伞来。B: 如果有一把当然好啦，但是今早你怎么能知道呢？
+- 从这个对话能推断出，今天早上天气一定很晴朗，不像要下雨的样子，但是在说话时似乎要下雨了。
+
+### 7.4 原因状语
+
+不定式还可以表示产生某种感情的原因，这种用法不多见。
+
+`1` They laughed to see the clown.
+
+- `=` They laughed as they saw the clown.
+- `译` 看到那个小丑他们都大笑起来。
+
+`2` I was delighted to meet him.
+
+- `=` I was delighted as I met him.
+- `译` 见到他我很高兴。
+
+`3` He is happy for his daughter to marry a wealthy man.
+
+- `=` He is happy as his daughter married a wealthy man.
+- `译` 他女儿嫁给了一个有钱人，他为此感到很高兴。
+
+## 8. 不定式的作用（七）：独立使用的不定式
+
+### 8.1 不定式作独立成分
+
+不定式可用作独立成分，用来修饰整个句子，常见的有：
+
+- so to speak (可以这么说)
+- to be brief (简单地说)
+- to be exact (确切地说)
+- to be frank (坦率地说)
+- to be honest (坦白地说)
+- to begin with (首先)
+- to make a long story short (长话短说)
+- to say nothing of (姑且不说)
+- to say the least (至少可以这么说)
+- to tell the truth (老实说)
+
+`1` To begin with, on behalf of all of your American guests, I wish to thank you
+for the incomparable hospitality.
+
+- `译` 首先，我谨代表你们所有的美国客人向你们表示感谢，感谢你们无可比拟的盛情款待。
+
+`2` About an hour into the match, Eddie's favorite wrestler, Bob Armstrong came
+into the ring for his match. Eddie was overjoyed to say the least.
+
+- `译` 比赛大约进行了一个小时后，轮到埃迪最喜欢的摔跤手鲍勃·阿姆斯特朗上场比赛了，埃迪简直是欣喜若狂。
+
+`3` A: You're in a pretty lousy mood, huh?
+
+B: To say the least.
+
+- `译` A: 你的心情糟糕透了吧？B: 何止是啊。
+
+`4` I have a point there, to say the least.
+
+- `译` 至少可以这么讲，我说的是有道理的。
+
+`5` To make a long story short, he is in hospital now.
+
+- `译` 长话短说，他现在在住院。
+
+### 8.2 不定式引导独立的句子
+
+有时不定式可引导独立的句子，表达愿望、担心、惊讶等强烈的情感。常见的结构是：to think, to
+imagine。这样的结构常理解为：“你想想……竟有这样的事”。
+
+`1` To think she wanted to walk all the way to the park.
+
+- `=` It's too far to walk to the park.
+- `译` 你想想看，她竟然想大老远地走到公园去。
+
+`2` To imagine even for a minute that I would do a thing like that on purpose.
+
+- `=` I would never do that intentionally.
+- `译` 你想想看，我能故意做出那种事来吗？
+
+有时也会用其他动词的不定式结构来引导独立的句子：
+
+`3` To spend so much money on something he didn't even need.
+
+- `=` He spent money unwisely.
+- `译` 他竟然花那么多钱去买一些自己根本不需要的东西。
+
+### 思维训练：8. 不定式的作用（七）：独立使用的不定式
+
+**在 A, B, C 和 D 选项中，选出与题干中的句子意思最接近的一个。**
+
+*1. To think I trusted you!*
+
+- *A. I never trusted you.*
+- *B. I think I can trust you.*
+- *C. I thought you trusted me.*
+- *D. I was wrong to have trusted you.*
+
+*2. To think he used to be overweight.*
+
+- *A. He doesn't think he is overweight.*
+- *B. He thinks about his wieght too much.*
+- *C. He is trying to gain weight.*
+- *D. He isn't overweight any more.*
+
+*3. To think I originally wanted to take five courses this term!*
+
+- *A. I couldn't have managed five courses.*
+- *B. To think I ate all five courses.*
+- *C. I though you wanted to take five courses.*
+- *D. I didn't think I could graduate in five terms.*
+
+#### 答案：思维训练：8. 不定式的作用（七）：独立使用的不定式
+
+1. D。`译` 没想到我竟然信任你！
+2. D。`译` 想想他之前居然超重。
+3. A。在这个句子中，A 选项可还原为 I couldn't have managed five courses if I had
+   taken them. 所以实际上没有选五门课。
+
+## 9. 不定式的逻辑主语
+
+### 9.1 何谓逻辑主语
+
+在英语中，逻辑主语都是针对非谓语动词来说的。对于三种非谓语动词都有一个逻辑主语的问题，这是因为它们都是动词的变化形式。
+既然是动词，就会有动作的执行者，即主语。之所以称之为逻辑主语，就是为了区分句子结构上的语法主语，因为句子谓语的主语和非谓语动词的逻辑主语并不总是同意的，有时并不一致。
+
+`1` He was anxious to meet you.
+
+- 句子主语是 he，不定式 to meet 的动作也是 he 发出，即逻辑主语也是 he。
+- `译` 他渴望认识你。
+
+`2` He was anxious for his sister to meet you.
+
+- 句子主语是 he，不定式 to meet 的动作不是由 he 而是由 his sister 发出，因此 his sister
+  才是逻辑主语。
+- `译` 他渴望让他妹妹认识你。
+
+对于动名词和分词，同样存在句子的主语和逻辑主语一致与不一致的情绪。
+
+### 9.2 不定式逻辑主语的构成（一）：for + 名词或代词 + to do
+
+不定式逻辑主语的构成通常是在 to do 前面添加 for 引导的一个介词短语，从而构成
+“for + 名词或代词 + to do”结构，这里的名词或代词即为不定式动作的逻辑主语。
+
+`1` The monkey tries to get its hand out but the opening is big enough for the
+hand to slide in, but too small for the fist to come out.
+
+- 用 for 来引导不定式的逻辑主语。to slide in 的逻辑主语是 the hand，而该句主语是 the
+  opening；to come out 的逻辑主语是 the fist，而该句的主语是 the opening。
+
+`2`
+
+- The father will be proud for his son to win the gold medal.
+  - to win 的逻辑主语是 his son，整句的主语是 the father。
+  - `译` 如果儿子能够赢得金牌，作为父亲他将会非常自豪。
+- The father will be proud to win the gold medal.
+  - the father 是句子主语，也是 to win 的逻辑主语。
+  - `译` 如果这位父亲能够赢得金牌，他将会非常自豪。
+
+`3` He was very willing for everyone else to come.
+
+- `译` 他很愿意让其他所有的人都来。
+
+在上面的例子中，不定式“for + 名词或代词 + to do”结构都是用在作表语的形容词后面，
+此时的不定式短语相当于一个状语，比如表示结果、条件或其他意义。这个结构的不定式短语还可以作主语：
+
+`4` It's important for you to go there in person.
+
+- 这里不定式 for you to go there in person 表面上是在形容词 important 后面，但实际上是作主语。
+- `=` For you to go there in person is important.
+- `译` 你有必要亲自去那里一趟。
+
+`5` It is very common for him to be absent without leave.
+
+- `=` For him to be absent without leave is common.
+- `译` 不请假就擅自离开是他的一贯作风。
+
+不定式“for + 名词或代词 + to do”结构还可以放在名词后面作定语。
+
+`6` Both Chinese and American parents were asked what they wanted most for their
+children. Chinese parents wanted their children to be successful, while American
+parents expressed a desire for their children to be happy.
+
+- 不定式短语 for their children to be happy 是在 desire 后面作定语，表示同位关系。
+- `译` 中美两国的父母被问及他们对孩子最大的愿望是什么，中国的父母表示，希望自己的孩子将来能出人头地、取得成功，而美国的父母则表示，最大的愿望就是希望自己的孩子能过得幸福。
+
+不定式“for + 名词或代词 + to do”结构还可以作目的状语：
+
+`7` For any adhesive to make a really strong bond, the surfaces to be glued must
+be absolutely clean and free from moisture or grease.
+
+- 不定式短语 for any adhesive to make 放在句首作目的状语。
+- `译` 对于任何黏合剂，要想粘得牢固的话，则被粘的表面必须绝对清洁且不能潮湿和有油渍。
+
+`8` You know my parents have sacrificed a lot for me to come here. They want me
+to do well.
+
+- 不定式短语 for me to come here 用在句末作目的状语。
+- `译` 你知道，我的父母为了让我能来上大学付出了很多。他们希望我有出息。
+
+不定式“for + 名词或代词 + to do”结构还可以作表语：
+
+`9` The eye of an animal is quite easy to see. How then can the eyes be
+prevented from spoiling the animal's blending with its environment? One
+solution would be for the animal to keep its eyes closed when danger threatens.
+
+- 不定式短语 for the animal to keep 放在 be 动词后面作表语。
+- `译` 动物的眼睛很容易被发现，因此，如何防止眼睛破坏动物与其周围环境的融合呢？有一个方法是，当危险来临时，动物们可以把自己的眼睛闭起来。
+
+综上，不定式的逻辑主语常由“for + 名词或代词”引出，这里的“名词或代词”即是不定式的逻辑主语，
+来说明不定式动作的执行者。
+这个不定式“for + 名词或代词 + to do”结构在句中可以作状语、主语、定语或表语等。
 
 ### 4.9.3 不定式逻辑主语的构成（二）：of sb. to do
 
