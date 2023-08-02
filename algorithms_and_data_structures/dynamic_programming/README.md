@@ -561,11 +561,11 @@ int main() {
   - [x] [动规周总结](https://programmercarl.com/%E5%91%A8%E6%80%BB%E7%BB%93/20210204%E5%8A%A8%E8%A7%84%E5%91%A8%E6%9C%AB%E6%80%BB%E7%BB%93.html)
   - [x] [单词拆分](https://programmercarl.com/0139.%E5%8D%95%E8%AF%8D%E6%8B%86%E5%88%86.html)
   - [x] [多重背包理论基础](https://programmercarl.com/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80%E5%A4%9A%E9%87%8D%E8%83%8C%E5%8C%85.html)
-  - [ ] [背包问题总结篇](https://programmercarl.com/%E8%83%8C%E5%8C%85%E6%80%BB%E7%BB%93%E7%AF%87.htm)
-  - [ ] 打家劫舍
-  - [ ] 打家劫舍II
+  - [x] [背包问题总结篇](https://programmercarl.com/%E8%83%8C%E5%8C%85%E6%80%BB%E7%BB%93%E7%AF%87.html)
+  - [x] [打家劫舍](https://programmercarl.com/0198.%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D.html)
+  - [x] [打家劫舍II](https://programmercarl.com/0213.%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8DII.html)
   - 31~40
-  - [ ] 打家劫舍III
+  - [ ] [打家劫舍III](https://programmercarl.com/0337.%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8DIII.html)
   - [ ] 买卖股票的最佳时机
   - [ ] 动规周总结
   - [ ] 买卖股票的最佳时机II
