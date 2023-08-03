@@ -565,8 +565,8 @@ int main() {
   - [x] [打家劫舍](https://programmercarl.com/0198.%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D.html)
   - [x] [打家劫舍II](https://programmercarl.com/0213.%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8DII.html)
   - 31~40
-  - [ ] [打家劫舍III](https://programmercarl.com/0337.%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8DIII.html)
-  - [ ] 买卖股票的最佳时机
+  - [x] [打家劫舍III](https://programmercarl.com/0337.%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8DIII.html)
+  - [ ] [买卖股票的最佳时机](https://programmercarl.com/0121.%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA.html)
   - [ ] 动规周总结
   - [ ] 买卖股票的最佳时机II
   - [ ] 买卖股票的最佳时机III
