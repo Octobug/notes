@@ -7,6 +7,22 @@
 - [x] [Choose an open source license](https://choosealicense.com/)
 - [ ] [Open Source Guides](https://opensource.guide/)
 
+### 如何选择开源项目
+
+- 许可证
+  - 对商业闭源软件较为敌对
+    - GPL
+  - 对商业闭源软件不太友好
+    - LGPL
+  - 对商业闭源软件很友好
+    - BSD
+    - MPL
+    - Apache
+    - MIT
+- 技术因素
+- 普及程度
+- 活跃程度
+
 ## The Apache Software Foundation
 
 > <https://www.apache.org/>

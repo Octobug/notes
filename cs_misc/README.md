@@ -28,3 +28,24 @@ Play and get played.
 - [huihut/interview](https://github.com/huihut/interview)
 - [qiu-deqing/FE-interview](https://github.com/qiu-deqing/FE-interview)
 - [taizilongxu/interview_python](https://github.com/taizilongxu/interview_python)
+
+## How To
+
+- 兴趣
+- 自学
+  - 主动性
+    - 需求驱动
+    - 计划驱动
+  - 方法
+    - 搜索引擎
+    - 百科
+    - 订阅
+      - Blog
+      - RSS
+      - Mailing List
+    - 阅读书籍
+      - 挑选
+        - 评论
+        - 作者
+        - 出版信息
+        - 目录
