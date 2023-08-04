@@ -74,6 +74,14 @@ void output(vector<string> &strs)
     cout << ']' << endl;
 }
 
+void output2d(int *matrix, int m, int n)
+{
+    for (int i = 0; i < m; i++)
+    {
+        output(&matrix[i], n);
+    }
+}
+
 void output2d(vector<vector<int>> &matrix)
 {
     for (int i = 0; i < matrix.size(); i++)
