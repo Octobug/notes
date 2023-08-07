@@ -11,6 +11,11 @@
       - [分片算法](#分片算法)
       - [Region](#region)
       - [Region 的分裂与扩展](#region-的分裂与扩展)
+    - [调度机制](#调度机制)
+    - [多版本控制 (MVCC)](#多版本控制-mvcc)
+    - [分布式事务模型](#分布式事务模型)
+    - [协作处理器 (Coprocessor)](#协作处理器-coprocessor)
+    - [分层架构](#分层架构)
 
 ## 设计目标
 
@@ -85,7 +90,46 @@ Key-Value。
 
 #### Region 的分裂与扩展
 
-当某个 Region 的大小超过一定限制，TiKV 会将它分裂为两个或更多的 Region，以确保各个 Region
-的大小是大致接近的。
+确保各个 Region 的大小是大致接近的：
 
->>>>> <https://learn.pingcap.com/learner/player/12;id=12;source=DETAIL;classroomId=120016;courseDetailId=6;learnerAttemptId=1691243344120>
+- 当某个 Region 的大小超过一定限制，TiKV 会将它分裂为两个或更多的 Region；
+- 当某个 Region 因为大量删除而变得很小时，TiKV 会将相邻的两个小的 Region 合并；
+
+### 调度机制
+
+- 分片数量、Leader、吞吐量自动平衡
+- 自定义调度接口
+  - 支持跨 IDC 表级同时写入
+
+### 多版本控制 (MVCC)
+
+TiKV 的 MVCC 实现是通过在 Key 后面添加版本号来实现。
+有了 MVCC 后，TiKV 得以实现并发控制，实现 SI 的隔离级别、事务支持以及历史数据恢复等功能。
+
+### 分布式事务模型
+
+- **去中心化**的两阶段提交
+  - 通过 PD 全局授时 (TSO)
+  - ~4M timestamp 每秒
+  - 每个 TiKV 节点分配单独区域存放锁信息 (CF Lock)
+- 在 Google Percolator 事务模型基础上优化改进
+- TiKV 支持完整事务 KV API
+- 默认乐观事务模型
+  - 支持悲观事务模型
+- 默认隔离级别：Snapshot Isolation
+
+### 协作处理器 (Coprocessor)
+
+每个 TiKV 节点中都有一个协作处理器，用于读取并计算数据。
+
+### 分层架构
+
+```graph
+| [TiKV API] [Coprocessor API] |            | [TiKV API] [Coprocessor API] |
+|                              |            |                              |
+|        [Transaction]         |            |        [Transaction]         |
+|                              |            |                              |
+|           [Raft]             > Raft Group <           [Raft]             |
+|                              |            |                              |
+|         [RocksDB]            |            |         [RocksDB]            |
+```
