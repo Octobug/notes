@@ -216,26 +216,29 @@ TiDB 本身是带有 OLTP 属性的 HTAP 数据库，对于任何实时的增删
       - [ ] 3.1.3. DQL
     - [ ] 3.2. Parser
     - [ ] 3.3. Planner
-    - [ ] 3.3.1. Table Statistics
-    - [ ] 3.3.2. Rule-based Optimization
-    - [ ] 3.3.3. Cost-based Optimization
-    - [ ] 3.3.4. Plan Cache
-    - [ ] 3.3.5. SQL Plan Management
+      - [ ] 3.3.1. Table Statistics
+      - [ ] 3.3.2. Rule-based Optimization
+      - [ ] 3.3.3. Cost-based Optimization
+      - [ ] 3.3.4. Plan Cache
+      - [ ] 3.3.5. SQL Plan Management
     - [ ] 3.4. Execution
-    - [ ] 3.4.1. Parallel Execution Framework
-    - [ ] 3.4.2. Implementation of Vectorized Execution
-    - [ ] 3.4.3. Memory Management Mechanism
-    - [ ] 3.4.4. Implementation of Typical Operators
+      - [ ] 3.4.1. Parallel Execution Framework
+      - [ ] 3.4.2. Implementation of Vectorized Execution
+      - [ ] 3.4.3. Memory Management Mechanism
+      - [ ] 3.4.4. Implementation of Typical Operators
     - [ ] 3.5. Transaction
-    - [ ] 3.5.1. Transaction on TiKV
-    - [ ] 3.5.2. Optimistic Transaction
-    - [ ] 3.5.3. Lock Resolver
-    - [ ] 3.5.4. Pessimistic Transaction
-    - [ ] 3.5.5. Async Commit
-    - [ ] 3.5.6. 1PC
-    - [ ] 3.5.7. MVCC garbage collection
+      - [ ] 3.5.1. Transaction on TiKV
+      - [ ] 3.5.2. Optimistic Transaction
+      - [ ] 3.5.3. Lock Resolver
+      - [ ] 3.5.4. Pessimistic Transaction
+      - [ ] 3.5.5. Async Commit
+      - [ ] 3.5.6. 1PC
+      - [ ] 3.5.7. MVCC garbage collection
     - [ ] 3.6. Session
     - [ ] 3.7. Privilege
     - [ ] 3.8. Plugin
   - [ ] [4. Project Management](https://pingcap.github.io/tidb-dev-guide/project-management/introduction.html)
+    - [ ] 4.1. Releases Train Model
+    - [ ] 4.2. TiDB Versioning
   - [ ] [5. Extending TiDB](https://pingcap.github.io/tidb-dev-guide/extending-tidb/introduction.html)
+    - [ ] 5.1. Add a function
