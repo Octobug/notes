@@ -186,7 +186,6 @@ TiDB 本身是带有 OLTP 属性的 HTAP 数据库，对于任何实时的增删
 
 - [x] 线上课程
   - [x] [TiDB 快速起步](https://learn.pingcap.com/learner/course/6)
-  - [ ] >>>>> <https://learn.pingcap.com/learner/player/12;id=12;source=DETAIL;classroomId=120016;courseDetailId=6;learnerAttemptId=1691243344120>
 - [x] [pingcap/tidb-dev-guide](https://github.com/pingcap/tidb-dev-guide)
 - [x] [TiDB Development Guide](https://pingcap.github.io/tidb-dev-guide/)
   - [x] [1. Get Started](https://pingcap.github.io/tidb-dev-guide/get-started/introduction.html)
