@@ -79,8 +79,9 @@
   - [17. 情态动词的否定](#17-情态动词的否定)
     - [17.1 情态动词否定意义的深层结构——内部否定和外部否定](#171-情态动词否定意义的深层结构内部否定和外部否定)
     - [17.2 内部否定和外部否定的使用规律](#172-内部否定和外部否定的使用规律)
-    - [思维训练：17. 情态动词的否定](#思维训练17-情态动词的否定)
   - [18. 总结：英文情态与中文情态的简单对比](#18-总结英文情态与中文情态的简单对比)
+    - [18.1 英文情态意义与中文情态意义的对应性](#181-英文情态意义与中文情态意义的对应性)
+    - [18.2 英文情态动词的委婉表达在中文中的缺失](#182-英文情态动词的委婉表达在中文中的缺失)
   - [综合训练：情态动词](#综合训练情态动词)
 
 ## 1. 引言：多情多义的情态动词
@@ -2514,13 +2515,163 @@ if, if the doctor knows, and Carol knows, and Susan knows...
 - couldn't not 是一个双重否定，意思是“不能不”。
 - `译` 我真不敢相信，你都不想知道。我的意思是说，就是说，既然医生知道了，Carol 知道了，Susan 也知道了，我就不能不知道。
 
-### 思维训练：17. 情态动词的否定
-
-**请正确翻译下面句子，并说明每个句子是采用了外部否定还是内部否定。**
-
 ## 18. 总结：英文情态与中文情态的简单对比
 
->>>>> progress
+情态动词是说话人微妙心态变化的反映，这种微妙使得情态动词的用法和词义变化多端。
+
+### 18.1 英文情态意义与中文情态意义的对应性
+
+英文中情态动词的某些意义能在中文中找到比较好的对应表达，比如 can（能够），should（应该）。
+这类情态意义比较容易掌握。
+
+`1` I can speak good English.
+
+- `译` 我能够说一口流利的英文。
+
+`2` You should study English.
+
+- `译` 你应该学习英文。
+
+而有些情态意义比较难识别理解：
+
+`3` Women can do anything when jealous.
+
+- 这里 can 表示“潜在的可能”或者说“理论上的可能”。
+- `译` 女人要是妒忌了，什么事都可能做得出来。
+
+`4` It's strange that you should say this.
+
+- 这里 should 表示惊讶之意“竟然”。
+- `译` 你竟然这么说，真是奇怪。
+
+`5` We should be grateful if you could do it.
+
+- 这里 should 和 could 用于委婉地提出请求，是很正式的用语。在这里 should 没有含义，只是一个礼貌的表达形式。
+- `译` 如果您能这么做，我将非常感激。
+
+`6` He might come.
+
+- 这里 might 表示把握不大的推测。
+- `译` 他或许会来吧。
+
+`7`
+
+- I would be happy to help you.
+  - would 表达一种委婉假设的含义，表达自己在意愿上很乐意帮助别人，为对方提供一种可能性。
+  - `译` 如果需要的话，我会非常乐意帮你的。
+- I am happy to help you.
+  - 这里 am 显得很直截了当，有一种不由分说一定要帮的意味。没有上一句委婉。
+  - `译` 我想要帮你（有困难一定要找我啊）。
+
+`8` Let me see if I could help work this out.
+
+- 这里使用 could 显得非常礼貌和谦虚，如果用 can 会显得有点自负。
+- `译` 我来看看是否能够帮忙解决。
+
+`9` I wouldn't pay them a penny.
+
+- 这里 would 用语虚拟假设。
+- `译` 要是我，一分钱也不会给他们。
+
+### 18.2 英文情态动词的委婉表达在中文中的缺失
+
+英语中往往要求采用比较礼貌的表达形式，尤其是在“指示”“邀请”“请求”和“建议”等语境中。
+该用情态动词的场合若不使用情态动词会使英语的表达显得较为生硬、唐突甚至不礼貌。
+
+`1` 请看一下这篇文章。
+
+- Please read this article.
+  - 直译显得生硬不礼貌。
+- You may like to read this article. ✅
+
+`2` 我们希望你明天能过来和我们一起吃午饭。
+
+- We hope that you will come and have lunch with us tomorrow.
+  - 直译显得生硬不礼貌。
+- We were wondering whether you could come and have lunch with us tomorrow. ✅
+
+`3` 请你过来坐在这儿。
+
+- You come and sit here, please.
+  - 直译显得生硬不礼貌。
+- Would you come and sit here, please? ✅
+
+`4` 我建议你去和他说一下。
+
+- I suggest that you have a word with him.
+  - 直译显得生硬不礼貌。
+- You might want to have a word with him. ✅
+- I would suggest that you have a word with him. ✅
+- May I suggest that you have a word with him? ✅
+
+在正式的交际场合，比如商务谈判中，往往也要借助情态动词来更委婉地表达。
+
+`11`
+
+- That's impossible.
+  - 用 is 显得说话语气直白生硬，容不得商量。
+  - `译` 这是不可能的。
+- Unfortunately that wouldn't be possible.
+  - 借助 would 来软化语气。其次用 unfortunately 和 not possible 也是相对委婉的表达。
+  - `译` 很遗憾，这恐怕不太可能。
+
+`12`
+
+- It is a good idea to agree on a price before we go any further.
+  - it is a good idea 表示“……这样做好”，用这种方式来提建议，会显得有些自负而傲慢，有把自己的观点强加于对方的味道。
+  - `译` 我们还是先商定好价格然后再继续往下谈吧，这样比较好。
+- Wouldn't it be a better idea to agree on a price before we go any further?
+  - 借助 would 软化语气，并把肯定句变为委婉的反问句，以及用 better 替换 good，这些都显得更委婉礼貌。
+  - `译` 在继续往下讨论之前，如果我们能商定一下价格，是不是更好些？
+
+`13`
+
+- We can't go higher than 7 percent.
+  - 直接说 can't，没有给对方回旋的余地。
+  - `译` 我们无法再高于 7% 了。
+- We would find it (quite) difficult to go any higher than 7 percent.
+  - 借助 would 软化语气，其次，difficult 相当于委婉地说 impossible，从而比较委婉地拒绝对方。
+  - `译` 如果这样的话，我们发现很难再高于 7% 了。
+
+`14`
+
+- We need a commitment from you now.
+  - 用 need 显得直截了当。
+  - `译` 我现在就需要你的承诺。
+- We would like some kind of commitment from you now.
+  - 用 would 且加上 some kind of 显得更加委婉。
+  - `译` 现在我们想知道你能不能给我们一些承诺。
+
+`15`
+
+- You'll have to pay more if you want that.
+  - 用 will 显得语气强硬。
+  - `译` 如果你想那样的话，那你就必须得多付钱。
+- You may have to pay slightly more if you (really) want that.
+  - 用 may 加上 slightly 更显得委婉客气。
+  - `译` 如果你真的是想那样的话，那么你或许得需要稍微多付点钱。
+
+`16`
+
+- It will be difficult to get my boss to agree to this.
+  - 用 will 显得语气强硬
+  - `译` 这样会很难得到我们老板的同意。
+- It might not be very easy to get my boss to agree to this.
+  - 用 might 并把 difficult 改成 not very easy，显得更加委婉。
+  - `译` 这样或许不太容易得到我们老板的同意。
+
+`17`
+
+- We should spend more time looking for a compromise here.
+  - 用 should 显得语气强硬。
+  - `译` 在这一点上，我们双方应该多花时间来寻找一个折中的办法。
+- Shouldn't we spend a little more time looking for a compromise here?
+  - 用 shouldn't 委婉地否定反问，显得是在和对方商量，更委婉礼貌。
+  - `译` 在这一点上，我们双方是不是应该多花点时间来寻找一个折中的办法呢？
+
+从以上例子可以看到，在进行委婉表达时，各类情态动词起了决定性作用，其次还可以结合疑问句式以及添加某些词语来共同表达委婉语气。
+
+情态动词的使用，需要观察、分析、体会理解说话人微妙的心态，用不同的情态动词区分出的微妙心态区别。
 
 ## 综合训练：情态动词
 
