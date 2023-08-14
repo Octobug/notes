@@ -106,7 +106,9 @@
       - [三、as 在定语从句中作表语](#三as-在定语从句中作表语)
   - [12. 关系代词 than](#12-关系代词-than)
   - [13. 关系代词 but](#13-关系代词-but)
-  - [2.11 缩合关系代词 what](#211-缩合关系代词-what)
+  - [14. 缩合关系代词 what](#14-缩合关系代词-what)
+    - [14.1 使用关系词 what 的前提：what 的前面不能有先行词](#141-使用关系词-what-的前提what-的前面不能有先行词)
+  - [2.12 关系副词 when](#212-关系副词-when)
   - [综合训练：定语从句](#综合训练定语从句)
 
 定语从句的两个重要概念: **先行词**和**关系词**。
@@ -2315,7 +2317,42 @@ proves the rule.
 - but 指代先行词 people，在定语从句中作宾语。
 - `译` 这个俱乐部里的人他几乎都认识。
 
-## 2.11 缩合关系代词 what
+## 14. 缩合关系代词 what
+
+Dolphins might be trained to cooperate with fishermen and help them by finding,
+tracking, herding, or even catching fish -- in all of what activities dolphins
+are expert. ❌
+
+- `译` 可以训练海豚与渔民们合作，帮他们捕鱼，因为可以通过海豚发现鱼群、跟踪鱼群，或把鱼聚集成群，甚至是直接抓鱼——这些活动都是海豚所擅长的。
+
+⚠️ what 作为关系代词和其他关系代词在结构上有一个重大区别：**what 不能指代先行词**，即 what
+前面不能有名词。换句话说，what 引导的从句并不能修饰主句中的任何先行词。
+
+All ____ is a continuous supply of the basic necessities of life.
+
+- A. what is needed
+- B. the things needed
+- C. for our needs
+- D. that is needed
+- `答案` D。
+  - 对于 A 选项，all 是一个先行词，而 what 不能指代主句中的任何词，所以 A 选项错误。
+  - 对于 B 选项，主语是 things 是复数，和主句的 is 不匹配。
+  - 对于 C 选项，没有 all for our needs is 这样的结构...
+
+为什么 what 引导的从句不能修饰主句中的任何名词，不具有“定语从句要有先行词”这个特点，还要把
+what 称为关系词呢？
+
+从句子结构和 what 本身的意义来看，what 在从句中大多数情况下没有疑问意义，即不翻译成“什么”，
+而是理解为 the things that, all that 或 something that。
+
+因此，从 what 的含义这个角度看，可以把 what 看作一个**特殊的关系代词**，它是先行词和关系代词的结合体。所以称之为“缩合关系代词”。
+或者可以说 what 的含义里已经包含一个“隐性”的先行词，因此前面不能再有“显性”的先行词。
+
+### 14.1 使用关系词 what 的前提：what 的前面不能有先行词
+
+>>>>> progress
+
+## 2.12 关系副词 when
 
 >>>>> progress
 
