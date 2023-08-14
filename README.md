@@ -79,6 +79,7 @@ disciplines according to the
     1. [Finance](finance)
         1. Personal Finance
         2. Mathematical Finance
+    2. Industrial and Labor Relations
 2. [Journalism](https://en.wikipedia.org/wiki/Journalism),
    [Media Studies](https://en.wikipedia.org/wiki/Media_studies) and
    [Communication](https://en.wikipedia.org/wiki/Communication_studies)
