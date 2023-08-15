@@ -108,6 +108,12 @@
   - [13. 关系代词 but](#13-关系代词-but)
   - [14. 缩合关系代词 what](#14-缩合关系代词-what)
     - [14.1 使用关系词 what 的前提：what 的前面不能有先行词](#141-使用关系词-what-的前提what-的前面不能有先行词)
+    - [14.2 what 单独使用，即其后面可以不接名词](#142-what-单独使用即其后面可以不接名词)
+    - [14.3 what 的后面可以接名词](#143-what-的后面可以接名词)
+    - [14.4 what 用在一些固定结构中](#144-what-用在一些固定结构中)
+  - [思维总结：14. 缩合关系代词 what](#思维总结14-缩合关系代词-what)
+  - [思维训练：11.-14](#思维训练11-14)
+    - [答案：思维训练：11.-14](#答案思维训练11-14)
   - [2.12 关系副词 when](#212-关系副词-when)
   - [综合训练：定语从句](#综合训练定语从句)
 
@@ -2319,12 +2325,6 @@ proves the rule.
 
 ## 14. 缩合关系代词 what
 
-Dolphins might be trained to cooperate with fishermen and help them by finding,
-tracking, herding, or even catching fish -- in all of what activities dolphins
-are expert. ❌
-
-- `译` 可以训练海豚与渔民们合作，帮他们捕鱼，因为可以通过海豚发现鱼群、跟踪鱼群，或把鱼聚集成群，甚至是直接抓鱼——这些活动都是海豚所擅长的。
-
 ⚠️ what 作为关系代词和其他关系代词在结构上有一个重大区别：**what 不能指代先行词**，即 what
 前面不能有名词。换句话说，what 引导的从句并不能修饰主句中的任何先行词。
 
@@ -2350,7 +2350,276 @@ what 称为关系词呢？
 
 ### 14.1 使用关系词 what 的前提：what 的前面不能有先行词
 
->>>>> progress
+what 本身的含义已经包括一个关系代词及其先行词，所以 what 前面不能再有先行词出现。
+换句话说，如果主句中已有先行词，就一定不能再用 what 引导定语从句。
+
+You can have everything what you like. ❌
+
+`1`
+
+- Dolphins might be trained to cooperate with fishermen and help them by
+  finding, tracking, herding, or even catching fish -- in all of which
+  activities dolphins are expert. ✅
+  - finding, tracking, herding, or even catching fish 是关系词 which 所指代的先行词。
+  - 因为已经有了这个先行词，所以不能用 what 引导定语从句。
+- Dolphins might be trained to cooperate with fishermen and help them by
+  finding, tracking, herding, or even catching fish -- in all of what
+  activities dolphins are expert. ❌
+- `译` 可以训练海豚与渔民们合作，帮他们捕鱼，因为可以通过海豚发现鱼群、跟踪鱼群，或把鱼聚集成群，甚至是直接抓鱼——这些活动都是海豚所擅长的。
+
+`2`
+
+- A. what
+- B. which
+- C. who
+- D. as
+- Most of the food ____ elephants eat is brought to their mouths by their
+  trunks.
+  - `答案` B。主句有名词 food 作为先行词被定语从句修饰，因此不能选 A. what；food
+    指物，因此不能选 C. who；as 要与 the same, such 或 as 搭配使用，所以 D. as 也不正确。
+- Most of ____ food elephants eat is brought to their mouths by their trunks.
+  - `答案` A。空格前没有任何名词，即没有先行词，所以要填入 what。
+- `译` 大象吃的所有食物中的大部分是通过象鼻送到嘴里的。
+
+`3` Beethoven, the great musician, ***wrote***`A` nine symphonies in his life,
+***most of what***`B` were written after he ***had lost***`C` his
+***hearing***`D`。
+
+- `答案` B。应改为：most of which。
+- 这里有一个非限定性定语从句，补充说明先行词 nine symphonies。因为有先行词，所以不能用 what。
+- `译` Beethoven 这位伟大的音乐家一生中创作了九部交响曲，其中大部分是在他耳朵失聪后完成的。
+
+### 14.2 what 单独使用，即其后面可以不接名词
+
+通常情况下，what 是单独使用的，即其后面不接名词。此时，what 可表示物，也可表示人。
+所以，what 在意义上相当于说 the thing that 或 the person that，此时的 what
+一般不具有“什么”这样的疑问意义。
+
+`1` She is not what she used to be.
+
+- 这里 what 后面没有接名词，what 用来指人。在这里 what 没有疑问意义，相当于一个先行词和关系词的结合体。
+  从含义上来说，what 引导的是一个定语从句。
+  但从结构上来说，它引导的从句是充当 is 的表语，即名词从句中的表语从句。
+  换句话说，what 所引导的从句既可以看作是特殊的定语从句，又可以看作是名词从句。
+- `=` She is not the girl that she used to be.
+- `译` 她不再是以前的她了。
+
+`2` Show me what you have written.
+
+- what 后面没有接名词，what 用来指物，它相当于一个先行词和关系代词的结合体，没有疑问意义。
+  从含义上来说，what 引导的是一个定语从句。
+  从结构上来说，这里 what 从句是充当 show 的直接宾语，即名词从句里的宾语从句。
+- `=` Show me the things that you have written.
+- `译` 把你写的东西给我看看。
+
+`3` Today's vessels can find their prey using satellites and sonar, which were
+not available 50 years ago. That means a higher proportion of what is in the sea
+is being caught.
+
+- 主句：That means + 宾语从句
+  - 宾语从句
+    - 主语：a higher proportion of + of 的宾语从句
+      - 宾语从句: what is in the sea
+    - 谓语：is being caught
+- 这里 what 后面没有接名词，what 用来指物，没有疑问意义。
+- `=` That means a higher proportion of the fish that is in the sea is being
+  caught.
+- `译` 今天的船只可以利用 50 年前还没有的卫星和声呐发现猎物，这意味着海洋里更大比例的鱼类正在被捕捉。
+
+`4` One difficulty is that almost all of what is called behavioral science
+continues to trace behavior to states of mind, feelings, traits of character,
+human nature, and so on.
+
+- 主句：One difficulty is + 表语从句
+  - 表语从句 that...
+    - 主语：almost all of + of 的宾语从句
+      - 宾语从句：what is called bahavioral science
+    - 谓语：continues to trace behavior...
+- `译` 难题之一在于，所谓的行为科学几乎全部依然从心态、感情、性格特征、人性等方面去寻求行为的根源。
+
+### 14.3 what 的后面可以接名词
+
+what 引导从句时，前面不能有名词，但后面可以接名词，此时 what 作关系形容词，结构是
+“what + 名词”，相当于“all the + 名词 + that”，意思是“所有的……，尽可能多的……”。
+此时的 what 同样没有疑问含义。此时 what 一般表示物，而不表示人。
+
+`1` Most of what food elephants eat is brought to their mouths by their trunks.
+
+- what 后面接名词 food，what food 相当于 all the food that，表示“所有食物”，而不表示疑问意义的“什么食物”。
+  所以 most of what food elephants eat 相当于 most of all the food that elephants
+  eat，表示“”大象吃的所有食物中的大部分，而不表示疑问意义的“大象吃的大部分是什么食物”。
+- `译` 大象吃的所有食物中的大部分是通过象鼻送到嘴里的。
+
+`2` What money I have has been given to you.
+
+- what 后面接名词 money，what money I have 相当于 all the money that I have，
+  表示“我身上所有的钱”，并不表示疑问意义的“我身上有什么钱”。
+- `译` 我身上所有的钱都给你了。
+
+`3` Lend me what reference books you have on the subject.
+
+- what 后面接名词短语 reference books，what reference books you have 相当于
+  all the reference books that you have，表示“你所有的参考书”，并不表示疑问意义的
+  “你有什么参考书”。
+- `译` 请把你所有的有关这个研究专题的参考书借给我。
+
+在“what + 名词”这个结构中，在名词前面还可以添加其他限定词修饰名词，比如 little，所以有
+“what little + 名词”结构，相当于“all the little + 名词 + that”，表示“仅有的这点东西”。
+
+`4` The accident completely wiped out what little sight he had left.
+
+- what 后面接名词短语 little sight, 相当于 all the little sight that，表示
+  “仅有的这点视力”。what little sight he had left 相当于 all the little sight that
+  he had left。
+- `译` 这次事故使他原本仅有的一点视力也完全丧失了。
+
+`5` After sharing what little food they had, the old couple let the two angels
+sleep in their bed where they could have a good night's rest.
+
+- what little food they had 相当于 all the little food that they had。
+- `译` 这对老夫妇把仅有的一点点食物拿出来款待这两个天使，然后又让出他们晚上本来可以好好休息的床，给这两个天使睡。
+
+### 14.4 what 用在一些固定结构中
+
+what 从句常用在一些固定结构中，比如：
+
+- 表示“所谓的”
+  - what can be called
+  - what is called
+  - what used to call
+  - what we call
+- what they described as
+- what they regarded as
+- what you may see as
+
+这些结构可以作插入语，一般放在动词或介词后面作宾语。
+
+`1` For Williams, those activities became what he calls "electronic heroin".
+
+- `译` 对 Williams 来说，这些活动成了他所称的“电子海洛因”。
+
+`2` One difficulty is that almost all of what is called behavioral science
+continues to trace behavior to states of mind, feelings, traits of character,
+human nature, and so on.
+
+- `译` 难题之一在于，所谓的行为科学几乎全部依然从心态、感情、性格特征、人性等方面去寻求行为的根源。
+
+`3` It's hard picking up what you may see as someone else's leftovers,
+especially when it's a good friend's.
+
+- `译` 捡人家挑剩下的当然很难，尤其是好朋友剩下的。
+
+`4` I was humming along on the gym treadmill when a sight almost cost me my
+footing. A woman was lumbering noisily toward a trainer wearing what can only
+be described as a garbage bag, except that it had arms and legs and a hole for
+her head.
+
+- what 从句 what can only be described as a garbage bag 作 wearing 的宾语，这整个
+  wearing 的分词短语修饰 woman。
+- `译` 当时我正在健身房的跑步机上气喘吁吁地跑步，突然看到一个妇女，我差点摔倒。
+  只见她身上穿的就像个垃圾袋，除了手臂和腿露在外面，还有一个洞以便头可以伸出来。她咚咚地走向一个私人教练。
+
+`5` The very people responsible for ushering in what some have called a
+"technological renaissance" say they are working longer hours, feel more
+stressed, are more impatient and are even less civil in their dealing with
+colleagues and friends -- not to mention strangers.
+
+- `译` 就是那些开创了被一些人称为“科技复兴”的人们说，他们工作时间延长，感到压力更大，变得越来越没有耐心，在与同事和朋友打交道时变得更没有礼貌，就更不用说对待陌生人了。
+
+`6` The most obvious example is late-stage cancer care. Physicians -- frustrated
+by their inability to cure the disease and fearing loss of hope in the patient
+-- too often offer aggressive treatment far beyond what is scientifically
+justified.
+
+- `译` 最明显的例子是对晚期癌症患者的治疗。因无法治愈癌症而受到挫折的医生们为了不让患者丧失希望，往往采取一些过激的、缺乏科学根据的治疗方法。
+
+`7` Curiously, some two-and-a-half years and two novels later, my experiment
+in what the Americans term "downshifting" has turned my tired excuse into an
+absolute reality.
+
+- `译` 奇怪的是，经过大约两年半的时间，我写了两本小说之后，我的这种被美国人称为“放慢生活节奏”的尝试已经将我那陈词滥调的借口转化成了绝对的事实。
+
+`8` In America, the move away from juggling to a simpler, less materialistic
+lifestyle is a well-established trend. Downshifting—also known in America as
+"voluntary simplicity" -- has, ironically, even bred a new area of what might
+be termed anticonsumerism.
+
+- `译` 在美国，从紧张忙碌的生活隐退到一种较为简单、不太注重物质的生活，这是一个明确的趋势。
+  让人哭笑不得的是，放慢生活节奏——在美国也叫作“自愿返璞归真”——甚至已形成一个可称为“反消费主义”的新领域。
+
+## 思维总结：14. 缩合关系代词 what
+
+对于 what 作为缩合关系代词引导 what 从句的用法：
+
+- 使用 what 的一个基本前提——what 前面不能有名词；
+- what 的两个基本用法：what 的后面可以接名词或不接名词。
+  - 当 what 的后面不接名词时：what 可以指人也可以指物；
+  - 当 what 的后面接名词时：what 一般只表示物，不表示人。
+
+其次，在从句中，what 一般没有疑问意义，因为它相当于一个先行词和关系代词的结合体，从这个意义上来说，what 引导的是一个定语从句。
+但从结构上来说，what 从句往往相当于一个名词从句。换句话说，what 所引导的从句，既可以看作是特殊的定语从句，又可以当作是名词从句。
+因此，为了方便起见把 what 引导的从句统称为 what 从句。
+在英文中不只 what 一个缩合关系词，when 和 where 都可以用作缩合关系词。
+
+## 思维训练：11.-14
+
+**选择最佳答案。**
+
+*6. `____` is known to all that language shows the way `____` the man looks at
+the world around him.*
+
+- *A. All, that*
+- *B. It, /*
+- *C. As, where*
+- *D. That, in which*
+
+*7. ____ can be seen from the comparison of these figures, the principle
+involves the active participation of the patient in the modification of his
+condition.*
+
+- *A. As*
+- *B. What*
+- *C. That*
+- *D. It*
+
+*8. It wasn't such a good dinner ____ she had promised us.*
+
+- *A. as*
+- *B. which*
+- *C. what*
+- *D. who*
+
+*9. As for the winter, it is inconvenient to be cold, with most of ____ furnace
+fuel is allowed saved for the dawn.*
+
+- *A. what*
+- *B. that*
+- *C. which*
+- *D. such*
+
+*10. >>>>> progress
+
+### 答案：思维训练：11.-14
+
+*6. B。这是主语从句的句型 "It is known that..."。
+
+*7. A。as 引导非限定性定语从句，置于句首。
+
+- `译` 从这些数据对比中我们就可以看出，一个基本原则是要求病人要积极参与到改变自己健康状况的过程当中。
+
+*8. A。as 引导限定性定语从句，其中 as 在从句中充当 promised 的宾语。such...as 构成结构上的呼应关系。
+
+*9. A。
+
+- with 后面的成分是由 with 引导的一个独立分词结构，其一般结构是“with + 名词或名词性短语 + 分词”。
+  在这句中的结构可以看成“with + what 引导的从句（相当于名词性短语）+ saved for the dawn（分词结构）”。
+  这个 with 独立分词结构在句中作状语，表示原因。
+- 这里若填 what，前面没有先行词，符合使用 what 的前提条件。
+  这里是 what 第二种用法，即 what + 名词 furnace fuel，相当于 all the furnace fuel
+  that，表示“所有的锅炉燃料”。于是 what furnace fuel is allowed 相当于定语从句
+  all the furnace fuel that is allowed，表示“所有分配的燃料”。what furnace fuel is
+  allowed 这个从句作为 most of 中 of 的宾语，表示“所分配的锅炉燃料中的大部分”。
+- `译` 到了冬天，由于所分配的锅炉燃料中的大部分需要节省下来等到黎明时再用，因此（夜里）冷得难受。
 
 ## 2.12 关系副词 when
 
