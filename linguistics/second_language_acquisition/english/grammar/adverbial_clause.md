@@ -40,9 +40,15 @@
         - [结构二：until 置于句首](#结构二until-置于句首)
         - [结构三：倒装结构](#结构三倒装结构)
         - [结构四：强调结构 (not until...that)](#结构四强调结构-not-untilthat)
-    - [2.4 表示“一……就”的结构](#24-表示一就的结构)
+    - [2.8 表示“一……就……”的结构](#28-表示一就的结构)
       - [一、从句动作先于主句动作](#一从句动作先于主句动作)
       - [二、主句动作先于从句动作](#二主句动作先于从句动作)
+    - [2.9 时间连词 by the time 的用法特点](#29-时间连词-by-the-time-的用法特点)
+      - [一、表示过去的动作：主句用 had done + by the time + 从句用 did](#一表示过去的动作主句用-had-done--by-the-time--从句用-did)
+      - [二、表示将来的动作：主句用 will have done + by the time + 从句用 do](#二表示将来的动作主句用-will-have-done--by-the-time--从句用-do)
+    - [2.10 一些表示时间的名词短语引导的时间状语从句](#210-一些表示时间的名词短语引导的时间状语从句)
+      - [连词还是介词](#连词还是介词)
+    - [思维训练：2. 时间状语从句](#思维训练2-时间状语从句)
     - [思维训练 2. 时间状语从句](#思维训练-2-时间状语从句)
   - [3. 地点状语从句](#3-地点状语从句)
     - [思维训练 3. 地点状语从句](#思维训练-3-地点状语从句)
@@ -92,7 +98,7 @@
     - [11.2 地点状语从句的省略](#112-地点状语从句的省略)
     - [11.3 条件状语从句的省略](#113-条件状语从句的省略)
     - [11.4 让步状语从句的省略](#114-让步状语从句的省略)
-    - [3.3.8 表示“一……就……”的结构](#338-表示一就的结构)
+  - [3.4 地点状语从句](#34-地点状语从句)
   - [综合训练：状语从句](#综合训练状语从句)
     - [答案：综合训练：状语从句](#答案综合训练状语从句)
 
@@ -257,9 +263,9 @@ rules, healthcare costs and pension plans.
       - immediately
       - instantly
     - 连词
-      - hardly...when
       - no sooner...than
-      - scarcely...wjem
+      - hardly...when
+      - scarcely...when
 - 地点
   - 常用连接词
     - where
@@ -1029,11 +1035,14 @@ the pamphlet and the book and in the company of the periodical.
 - `答案` D。
 - `译` 像先前讨论过的那样，直到 19 世纪，报纸才在书本之后与期刊一起成为了电子媒体出现之前的主要媒体。
 
-### 2.4 表示“一……就”的结构
+### 2.8 表示“一……就……”的结构
+
+在英语中，还有一些时间连词用来表达主句动作和从句动作相继发生，两者发生的时间间隔补偿，相当于汉语里的“一……就……”。
+此时，主句和从句的谓语都是**短暂**动词。这样的连词有两组，时态搭配用法也有所不同。
 
 #### 一、从句动作先于主句动作
 
-在从句动作发生之后，紧接着主句动作就发生了。表示这一时间关系的**连词**有：
+在从句动作发生之后，主句动作紧接着就发生了。表示这一时间关系常用的**连词**有：
 
 - as soon as
 - directly
@@ -1049,53 +1058,190 @@ the pamphlet and the book and in the company of the periodical.
 若表示将来的动作，则主句用**一般将来时**（simple future），
 从句用**一般现在时**（simple present）表示将来。
 
-- `例 1`：We will leave as soon as it stops raining.
+`1` We will leave as soon as it stops raining.
+
+- 主句谓语动词 leave 和从句谓语动词 stops 都是短暂动词。
+  主句谓语时态是一般将来时 will leave，从句谓语的时态是一般现在时 stops，但表示将来的动作。
+  从句动作 stops 先发生，紧接着主句动作 leave 发生。
+- `译` 雨一停，我们就动身。
 
 若表示过去的动作，则主句和从句都用**一般过去时**。
 
-- `例 2`：It began to rain as soon as I arrived home.
-- `例 3`：The doorbell rang as soon as we began having dinner.
+`2` It began to rain as soon as I arrived home.
+
+- `译` 我刚到家，就开始下起雨来。
+
+`3` The doorbell rang as soon as we began having dinner.
+
+- `译` 我们刚开始吃晚饭，门铃就响了。
 
 上面例句中的 as soon as 可以换成其他连词：
 
-- `例 4`：It began to rain **immediately** I arrived home.
-- `例 5`：The doorbell rang **immediately** we began having dinner.
-- `例 6`：A fair-weather friend is like a banker who lends you his umbrella when
-  the sun is shining and takes it back **the minute** it rains.
-- `例 7`：Don't trust those who leave their friends **the moment** they get into
-  difficulty!
-- `例 8`：You see the lightning ____ it happens, but you hear the thunder later.
-  - A. the instant
-  - B. for an instant
-  - C. on the instant
-  - D. in an instant
-  - 答案：A。
+`4` It began to rain **immediately** I arrived home.
+
+`5` The doorbell rang **immediately** we began having dinner.
+
+或者换成带有定冠词 the 的连词，比如 the moment, the minute 或 the instant。
+
+`6` A fair-weather friend is like a banker who lends you his umbrella when the
+sun is shining and takes it back **the minute** it rains.
+
+- `译` 酒肉朋友就像一个银行家，阳光灿烂时他会把伞借给你，而天一旦下雨他就会立即将伞收回。
+
+`7` Don't trust those who leave their friends **the moment** they get into
+difficulty!
+
+- `译` 一旦朋友陷入困境就会转身脱逃的人，我们不能信任。
+
+`8` How much luckier we are and how much more happiness we experience, if we can
+fall in love with the life we're living. Happiness is a choice. Reach out for it
+the moment it appears.
+
+- `译` 如果我们能珍惜当下的生活，我们就会觉得自己更加幸运，就会感受到更多的幸福。
+  幸福是一种选择，一旦出现，你要用心拥抱它。
+
+`8` You see the lightning ____ it happens, but you hear the thunder later.
+
+- A. the instant
+- B. for an instant
+- C. on the instant
+- D. in an instant
+- 答案：A。
 
 #### 二、主句动作先于从句动作
 
-主句动作发生之后，紧接着从句的动作就发生了。表示这一时间关系的连词有：
+主句动作发生之后，从句动作就紧接着发生了。表示这一时间关系常用的连词有：
 
-- hardly...when
 - no sooner...than
+- hardly...when
 - scarcely...when
 
 这些连词的用法和句式结构不一样，主从句时态一般也不一致。
 它们一般多用来表示过去的动作，此时，主句多用**过去完成时**，且常倒装，从句用**一般过去时**。
 可与 as soon as 等从句、主句互换。
 
-- `例 9`：我刚到家，天就开始下起雨来。
-  - **No sooner** had I arrived home **than** it began to rain.
-  - It began to rain **as soon as** I arrived home.
-- `例 10`：
-  - A: The floor is awfully wet. What happened?
-  - B: **No sooner** had I got into the shower **than** the phone rang.
-    - 我刚进去洗澡，突然电话铃就响了。
-- `例 11`：**No sooner** had I started to type my paper **than** the telephone
-  rang.
-  - 我刚开始打我的论文，这时电话铃响了。
-- `例 12`：**Hardly** had I arrived home **when** it began to rain.
-- `例 16`：**Scarcely** had I started to type my paper **when** the telephone
-  rang.
+`9` 我刚到家，天就开始下起雨来。
+
+- **No sooner** had I arrived home **than** it began to rain.
+  - it began to rain 是从句，动作晚于主句发生。
+- It began to rain **as soon as** I arrived home.
+  - it began to rain 是主句，动作晚于从句发生。
+
+`10`
+
+- A: The floor is awfully wet. What happened?
+- B: **No sooner** had I got into the shower **than** the phone rang.
+  - `译` 我刚进去洗澡，电话铃就响了。
+
+`11` **No sooner** had the storm started **than** all the lights went out.
+
+- `译` 刚一下起暴雨，所有的灯马上就灭了。
+
+`12` **No sooner** had I started to type my paper **than** the telephone rang.
+
+- `译` 我刚开始打我的论文，电话铃就响了。
+
+还可以用 hardly/scarcely...when 的结构来表达同样的意思。
+
+`13` **Hardly** had I arrived home **when** it began to rain.
+
+- `译` 我刚到家就下起雨来。
+
+`14` **Hardly** had I got into the shower **when** the phone rang.
+
+- `译` 我刚要进去洗澡，电话铃就响了。
+
+`15` **Hardly** had the storm started **when** all the lights went out.
+
+- `译` 刚一下起暴雨，所有的灯马上就灭了。
+
+`16` **Scarcely** had I started to type my paper **when** the telephone rang.
+
+- `译` 我刚开始打我的论文，电话铃就响了。
+
+### 2.9 时间连词 by the time 的用法特点
+
+确切地说，by the time 是一个介词短语，但起着连词的作用，其后面可以直接加一个从句，它的意思是
+“在……之前”，强调的是“一个动作在另一个动作发生之前已经完成”。
+因此，与 by the time 搭配的主句要用完成时态。
+
+#### 一、表示过去的动作：主句用 had done + by the time + 从句用 did
+
+`1` We had already left by the time they arrived.
+
+- arrived 用一般过去时，对应地主句用过去完成时 had left。
+- `译` 那天他们到的时候，我们已经先走了。
+
+`2` By the time he woke up, remembered the race and started running, he saw that
+the tortoise had already reached the finish line and won.
+
+- `译` （兔子）醒来时，他想起了比赛，于是开始跑起来，却发现乌龟早已到达终点，赢得了比赛。
+
+#### 二、表示将来的动作：主句用 will have done + by the time + 从句用 do
+
+`3` We will have already left by the time they arrive.
+
+- `译` 等他们来的时候，我们将已经离开了。
+
+### 2.10 一些表示时间的名词短语引导的时间状语从句
+
+有一些表示时间的名词短语也可以当作连词使用，引导时间状语从句。常见的有：
+
+- each time
+- every time
+- next time
+- the day
+- the week
+
+`1` Next time you come, remember to bring along your sister.
+
+- `译` 下次你来的时候，记得把你的妹妹也带过来。
+
+`2` Every time I listen to your advice, I get into trouble.
+
+- `译` 每次听从你的建议，我准会遇到麻烦。
+
+`3` In the classic children's tale, the puppet Pinocchio's nose grows longer
+every time he tells a lie.
+
+- `译` 在经典的童话故事中，小木偶匹诺曹每次一说谎，鼻子就要长长。
+
+`5` The day he returned, his father was already dead.
+
+- `译` 他回来的那天，父亲已经去世了。
+
+#### 连词还是介词
+
+以 the first time 为例，它起的作用是连词，后面接从句；
+for the first time 意思和其一样，但是后者是一个介词短语，不能接从句。
+
+`6`
+
+- You know the first time I danced with a boy,  he danced worse than me.
+  - the first time 后面接了从句。
+  - `译` 你知道吗，我第一次跳舞的时候，男舞伴就比我跳得差。
+- I hear you're meeting Susan's parents for the frst time.
+  - for the first time 后面没有接句子。
+  - `译` 听说你要见 Susan 的父母了，而且还是第一次见。
+
+`8` Queen Elizabeth II's traditional Christmas speech will be available as a
+podcast for the first time.
+
+- `译` 英国女王 Elizabeth 二世的圣诞致辞将首次在博客上公开。
+
+the first time 除了可以引导时间状语从句外，还可以接定语从句。
+
+`9` The first time I can actually remember hearing it -- in public anyway, was
+when Prince Charles was leaving Australia by boat.
+
+- 这里 the first time 后面连接句子 I can actually remember hearing it -- in public anyway。
+- `译` 我只记得，第一次在公共场合听到这个表达是 Charles 王子乘船离开澳大利亚时。
+
+### 思维训练：2. 时间状语从句
+
+**一、选择最佳答案填空。**
+
+>>>>> progress
 
 ### 思维训练 2. 时间状语从句
 
@@ -1938,7 +2084,7 @@ of the government's economic policies.
   severe critic of the government's economic policies.
 - `译` 尽管 Smith 博士本人不是经济学家，但他一直以来对政府的经济政策提出尖锐的批评。
 
-### 3.3.8 表示“一……就……”的结构
+## 3.4 地点状语从句
 
 >>>>> progress
 
