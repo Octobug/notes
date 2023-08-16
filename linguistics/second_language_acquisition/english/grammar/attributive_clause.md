@@ -2597,7 +2597,67 @@ fuel is allowed saved for the dawn.*
 - *C. which*
 - *D. such*
 
-*10. >>>>> progress
+*10. ____ I have already mentioned, cardio-surgery is one of the amazing new
+surgical techniques that have been developed in recent years.*
+
+- *A. Which*
+- *B. What*
+- *C. As*
+- *D. This*
+
+*13. In her time, Isadora Duncan was ____ today a liberated woman.*
+
+- *A. calling what we would*
+- *B. who would be calling*
+- *C. what we would call*
+- *D. she would call it*
+
+*16. Much more money has been earned in the past two years than ____.*
+
+- *A. what had anticipated*
+- *B. had expected*
+- *C. had been expected*
+- *D. that what had been expected*
+
+*17. A microscope can reveal vastly more detail ____ is visible to the naked
+eye.*
+
+- *A. than*
+- *B. that*
+- *C. which*
+- *D. what*
+
+*22. With the introduction of the electric computer, there are no complicated
+problems ____ can be solved.*
+
+- *A. that*
+- *B. as*
+- *C. but*
+- *D. which*
+
+*23. In Norway, ____ is a Baltic country, you can see the mid-night sun.*
+
+- *A. which*
+- *B. where*
+- *C. in which*
+- *D. that*
+
+*25. In Kuwait, ____ there are many oil wells but no rivers, fresh water had to
+be brought in boats from 100 miles away.*
+
+- *A. which*
+- *B. where*
+- *C. that*
+- *D. what*
+
+*27. For now, however, it does appear that the economy can sustain a higher
+growth rate ____ most people thought plausible just a year or two ago. In that
+limited respect, at least, we appear to be in a "New Economy".*
+
+- *A. which*
+- *B. as*
+- *C. what*
+- *D. than*
 
 ### 答案：思维训练：11.-14
 
@@ -2620,6 +2680,27 @@ fuel is allowed saved for the dawn.*
   all the furnace fuel that is allowed，表示“所有分配的燃料”。what furnace fuel is
   allowed 这个从句作为 most of 中 of 的宾语，表示“所分配的锅炉燃料中的大部分”。
 - `译` 到了冬天，由于所分配的锅炉燃料中的大部分需要节省下来等到黎明时再用，因此（夜里）冷得难受。
+
+*10. C。as 引导非限定性定语从句，置于句首。
+
+*13. C。这是 what 引导的从句，其中 what 在从句中充当 call 的宾语，而短语 a liberated
+woman 充当宾语补足语。
+
+*16. C。这是 than 引导的定语从句，修饰先行词 money，其中 than 在从句中充当主语。
+
+*17. A。这是 than 引导的定语从句，修饰先行词 detail，其中 than 在从句中充当主语。
+
+*22. C。这是 but 引导的定语从句，修饰 problems，其中 but 在从句中充当主语。
+
+*23. A。这是 which 引导的非限定性定语从句，指代 Norway，其中 which 在从句中充当主语。
+
+*25. B。这是 where 引导的非限定性定语从句，其中 where 在从句中充当状语，表示地点。
+
+*27. D。这是 than 引导的定语从句。句中 higher 所修饰的名词短语 growth rate 即为先行词，
+than 在指代 growth rate 的同时，在从句中作谓语动词 thought 的宾语（plausible 作宾语补足语）。
+
+- `译` 不过，目前经济确实实现了持续的、较高的增长，该增长率在一两年前是绝大多数人认为不可能实现的。
+  所以，仅就此而言，我们似乎正处于一个“新经济时代”。
 
 ## 2.12 关系副词 when
 
