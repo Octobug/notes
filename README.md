@@ -42,36 +42,37 @@ disciplines according to the
     3. [Computer Network](computer_network)
         1. [Internet Protocol Suite](computer_network/internet_protocol_suite)
         2. [Network Programming](computer_network/network_programming)
-    4. [Databases](databases)
+    4. Computer Security
+    5. [Databases](databases)
         1. [Database Design](databases/database_design)
         2. [NoSQL](databases/nosql)
         3. Relational Database
-    5. [DevOps](devops)
+    6. [DevOps](devops)
         1. [Ansible](devops/ansible)
         2. [CI/CD/CD](devops/ci_cd_cd)
         3. [Containers](devops/containers)
         4. NGINX
         5. Site Reliability Engineering
-    6. [Operating System](operating_system)
+    7. [Operating System](operating_system)
         1. [Operating Systems](operating_system/operating_systems)
         2. Systems Programming
-    7. [Programming Languages](programming_languages)
+    8. [Programming Languages](programming_languages)
         1. Compiler
         2. Programming Paradigms
         3. [C](programming_languages/c)
         4. [Go](programming_languages/go)
         5. [JavaScript](programming_languages/javascript)
         6. [Python](programming_languages/python)
-    8. [Software Development](software_development)
+    9. [Software Development](software_development)
         1. [Git](software_development/git)
         2. Open Source
         3. [Software Versioning](software_development/software_versioning)
-    9. [Software Engineering](software_engineering)
+    10. [Software Engineering](software_engineering)
         1. [Software Design](software_engineering/software_design)
         2. Software Maintenance
         3. [Software Testing](software_engineering/software_testing)
-    10. Theory of Computation
-    11. [Miscellaneous](cs_misc)
+    11. Theory of Computation
+    12. [Miscellaneous](cs_misc)
 
 ### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)
 
