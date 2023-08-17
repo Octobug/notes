@@ -49,7 +49,7 @@
     - [2.10 一些表示时间的名词短语引导的时间状语从句](#210-一些表示时间的名词短语引导的时间状语从句)
       - [连词还是介词](#连词还是介词)
     - [思维训练：2. 时间状语从句](#思维训练2-时间状语从句)
-    - [思维训练 2. 时间状语从句](#思维训练-2-时间状语从句)
+      - [答案：思维训练：2. 时间状语从句](#答案思维训练2-时间状语从句)
   - [3. 地点状语从句](#3-地点状语从句)
     - [思维训练 3. 地点状语从句](#思维训练-3-地点状语从句)
   - [4. 原因状语从句](#4-原因状语从句)
@@ -677,7 +677,7 @@ healthcare costs and pension plans.
 
 1. 表示条件的“只要”；
 2. 表示对比的“然而”；
-3. 表示让步的“”/尽管。
+3. 表示让步的“尽管”。
 
 ### 2.3 时间连词 as 的用法特点
 
@@ -1241,22 +1241,64 @@ when Prince Charles was leaving Australia by boat.
 
 **一、选择最佳答案填空。**
 
->>>>> progress
+*1. ____ she realized it was too late to go home.*
 
-### 思维训练 2. 时间状语从句
+- *A. No sooner it grew dark than*
+- *B. Scarcely had it grown dark than*
+- *C. Hardly did it grow dark that*
+- *D. It was not until dark that*
 
-**请选择最佳答案填空。**
+*2. I had just started back for the house to change my clothes ____ I heard
+voices.*
 
-*4. I was on the point of going out ____ it began to rain heavily.*
+- *A. as*
+- *B. when*
+- *C. after*
+- *D. while*
+
+*3. Not until ____ himself seriously ill.*
+
+- *A. he had completed the task did he find*
+- *B. had he completed the task did he find*
+- *C. he completed the task he had found*
+- *D. did he complete the task he had found*
+
+*4. By the time the firemen arrived, the whole building ____.*
+
+- *A. has burned down*
+- *B. had burned down*
+- *C. will have burned down*
+- *D. burned down*
+
+*5. We heard a loud sound of drums beating ____ the parade marched.*
+
+- *A. till*
+- *B. while*
+- *C. the moment*
+- *D. once*
+
+*8. ____ Charles started a job, he did it ____ it was finished.*
+
+- *A. Since, where*
+- *B. Once, until*
+- *C. Each time, once*
+- *D. The moment, as*
+
+*9. I was on the point of going out ____ it began to rain heavily.*
 
 - *A. when*
 - *B. while*
 - *C. as*
 - *D. before*
 
-答案：A。when 在这里表示“突然，意外”的含义。
+*10. I was on the point of going out ____ it began to rain heavily.*
 
-*7. On a rainy day I was driving north through Vermont ____ I noticed a young
+- *A. when*
+- *B. while*
+- *C. as*
+- *D. before*
+
+*11. On a rainy day I was driving north through Vermont ____ I noticed a young
 man holding up a sign reading "Boston"*.
 
 - *A. which*
@@ -1264,9 +1306,42 @@ man holding up a sign reading "Boston"*.
 - *C. when*
 - *D. that*
 
-答案：C。
-过去进行时 + 一般过去时所表示的意义是：在一个延续背景动作过程中突然发生了一个短暂动作。
+**二、翻译下列句子。**
+
+*16. Until California recently passed a law, American firms did not have to tell
+anyone, even the victim, when data went astray.*
+
+#### 答案：思维训练：2. 时间状语从句
+
+*1. D。这句是 It was not until...that...强调句型结构。
+
+*2. B。
+
+*3. A。not until 的倒装句型：主句倒装，从句不倒装。
+
+*4. B。考查 by the time 句型的时态搭配关系。
+burn 是双向动词，可以在不改变词义的情况下同时用作及物动词和不及物动词，作及物动词时的宾语与作不及物动词时的主语一致。
+这里 burn 使用了主动形式，可以说 He burned down a building，也可以说 A building burned
+down。这类动词的主动形式和被动形式含义相同。这类动词有：
+
+- Verbs suggesting a change of state: break, burst, form, heal, melt, tear,
+  transform, burn, grow
+- Verbs of cooking: bake, boil, cook, fry
+- Verbs of movement: move, shake, sweep, turn, walk
+- Verbs involving vehicles: drive, fly, reverse, run, sail
+
+*5. B。parade marched 是一个持续性的过程。
+
+*8. B。he did it 是一个持续性过程。
+
+*9. A。when 在这里表示“突然、意外”的含义。
+
+*10. A。when 在这里表示“突然，意外”的含义。
+
+*11. C。过去进行时 + 一般过去时所表示的意义是：在一个延续背景动作过程中突然发生了一个短暂动作。
 Vermont 是州名，如果要改为地点状语从句，应该是 somewhere in Vermont 之类的表达。
+
+*16. 最近，加州通过了一项法律，但在此之前，当数据被泄漏时，美国公司不必告知任何人，甚至对受害人也不告诉。
 
 ## 3. 地点状语从句
 
