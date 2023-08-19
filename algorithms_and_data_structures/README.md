@@ -29,8 +29,8 @@
 - [x] [二叉树](binary_tree)
 - [x] [回溯算法](backtracking)
 - [x] [贪心算法](greedy)
-- [ ] [动态规划](./dynamic_programming/)
-- [ ] 单调栈
+- [x] [动态规划](./dynamic_programming/)
+- [ ] [单调栈](./monotone_stack/)
 - [ ] 额外题目
 - [ ] [双指针法](two_pointers)
 - [ ] 感悟
