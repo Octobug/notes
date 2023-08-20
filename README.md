@@ -57,13 +57,12 @@ disciplines according to the
         1. [Operating Systems](operating_system/operating_systems)
         2. Systems Programming
     8. [Programming Languages](programming_languages)
-        1. [Structure and Interpretation of Computer Programs](./programming_languages/sicp/)
-        2. [Compiler](./programming_languages/compiler/)
-        3. Programming Paradigms
-        4. [C](programming_languages/c)
-        5. [Go](programming_languages/go)
-        6. [JavaScript](programming_languages/javascript)
-        7. [Python](programming_languages/python)
+        1. [Compiler](./programming_languages/compiler/)
+        2. Programming Paradigms
+        3. [C](programming_languages/c)
+        4. [Go](programming_languages/go)
+        5. [JavaScript](programming_languages/javascript)
+        6. [Python](programming_languages/python)
     9. [Software Development](software_development)
         1. [Git](software_development/git)
         2. Open Source
