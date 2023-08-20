@@ -57,7 +57,7 @@ disciplines according to the
         1. [Operating Systems](operating_system/operating_systems)
         2. Systems Programming
     8. [Programming Languages](programming_languages)
-        1. [Compiler](./programming_languages/compiler/)
+        1. [Compiler](./programming_languages/programming_language_theory/)
         2. Programming Paradigms
         3. [C](programming_languages/c)
         4. [Go](programming_languages/go)
