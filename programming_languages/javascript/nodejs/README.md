@@ -28,6 +28,19 @@
       - [Exiting and exit codes](#exiting-and-exit-codes)
       - [Taking input](#taking-input)
       - [Printing output](#printing-output)
+  - [APIs](#apis)
+    - [Making API Calls](#making-api-calls)
+    - [HTTP Server](#http-server)
+    - [Authentication](#authentication)
+  - [Keeping Application Running](#keeping-application-running)
+    - [Nodemon](#nodemon)
+    - [node --watch](#node---watch)
+    - [Template Engines](#template-engines)
+  - [Working with Databases](#working-with-databases)
+    - [Document Databases](#document-databases)
+    - [Relational Databases](#relational-databases)
+  - [Testing](#testing)
+  - [Logging](#logging)
   - [Topics](#topics)
   - [References](#references)
 
@@ -249,6 +262,169 @@ module.
     characters. It works in the browser and with Node.js.
   - `Cli-Progress`: a package that provides a custom progress bar for CLI
     applications.
+
+## APIs
+
+### Making API Calls
+
+- `http` module: You can make API calls using the `http` module in Node.js.
+  - `http.get()` - Make http GET requests.
+  - `http.request()` - Similar to `http.get()` but enables sending other types
+    of http requests (GET requests inclusive).
+- Axios: Axios is a promise-based HTTP Client for node.js and the browser. On
+  the server-side it uses the native node.js `http` module, while on the client
+  (browser) it uses `XMLHttpRequests`.
+- `unfetch`: a tiny 500b fetch “barely-polyfill”
+- `Got`: a lighter, human-friendly, and powerful HTTP request library
+  explicitly designed to work with Node.js. It supports pagination, RFC
+  compliant caching, makes an API request again if it fails, supports cookies
+  out of the box, etc.
+
+### HTTP Server
+
+- `http` module
+- `Express.js`: a node.js web application framework that provides broad features
+  for building web and mobile applications.
+- `NestJS`: a progressive Node.js framework for creating efficient and scalable
+  server-side applications.
+- `Fastify`: a web framework highly focused on providing the best developer
+  experience with the least overhead and a powerful plugin architecture,
+  inspired by `Hapi` and `Express`.
+
+### Authentication
+
+- JWT, or JSON-Web-Token: an open standard for sharing security information
+  between two parties — a client and a server. Each JWT contains encoded JSON
+  objects, including a set of claims. JWTs are signed using a cryptographic
+  algorithm to ensure that the claims cannot be altered after the token is
+  issued.
+- `Passport.js`: a authentication middleware for Node.js. It makes implementing
+  authentication in express apps really easy and fast. It is extremely flexible
+  and modular. It uses "strategies" to support authentication using a username
+  and password, Facebook, Twitter, and a lot of other sites.
+
+## Keeping Application Running
+
+### Nodemon
+
+In Node.js, you need to restart the process to make changes take effect. This
+adds an extra step to your workflow. You can eliminate this extra step by using
+`nodemon` to restart the process automatically.
+
+### node --watch
+
+Since Node.js 18.11.0, you can run Node with the `--watch` flag to reload your
+app everytime a file is changed. So you don’t need to use `nodemon` anymore.
+
+### Template Engines
+
+Template engine helps us to create an HTML template with minimal code. Also, it
+can inject data into HTML template at client side and produce the final HTML.
+
+- `EJS`: a templating language or engine that allows you to generate HTML markup
+  with pure JavaScript. EJS template engine helps to easily embed JavaScript
+  into your HTML template.
+- `Pug` (formerly called Jade): a JavaScript template engine. It is a
+  high-performance template engine heavily influenced by `HAML`.
+- `Marko`: a fast and lightweight HTML-based templating engine that compiles
+  templates to CommonJS modules and supports streaming, `async` rendering, and
+  custom tags. It is HTML re-imagined as a language for building dynamic and
+  reactive user interfaces.
+- `Nunjucks`
+- `Vash`
+- `Handlebars`
+- `HAML`
+
+## Working with Databases
+
+### Document Databases
+
+A document database is a type of nonrelational database that is designed to
+store and query data as JSON-like documents. Document databases make it easier
+for developers to store and query data in a database by using the same
+document-model format they use in their application code.
+
+The flexible, semistructured, and hierarchical nature of documents and document
+databases allows them to evolve with applications' needs.
+
+- `Mongoose`: an Object Data Modeling (ODM) library for MongoDB and Node.js.
+  Mongoose provides a straight-forward, schema-based solution to model your
+  application data. It includes built-in type casting, validation, query
+  building, business logic hooks and more, out of the box.
+- `Prisma`: an open source next-generation ORM in the TypeScript ecosystem. It
+  offers a dedicated API for relation filters. It provide an abstraction layer
+  that makes you more productive compared to writing SQL. Prisma currently
+  supports `PostgreSQL`, `MySQL`, `SQL Server`, `SQLite`, `MongoDB` and
+  `CockroachDB`.
+- `Native Drivers`: Another way to connect to different databases in Node.js is
+  to use the official native drivers provided by the database.
+
+### Relational Databases
+
+- `Knex`: a "batteries included" SQL query builder, which designed to be
+  flexible, portable, and fun to use.
+- `TypeORM`: TypeORM supports both **Active Record** and **Data Mapper**
+  patterns, unlike all other JavaScript ORMs currently in existence, which
+  means you can write high quality, loosely coupled, scalable, maintainable
+  applications the most productive way.
+- `Sequelize`: Sequelize is an easy-to-use and promise-based Node.js ORM tool.
+  It features solid transaction support, relations, eager and lazy loading,
+  read replication and more.
+- `Prisma`: Combined with its Data Platform developers gain reliability and
+  visibility when working with databases.
+- `Native drivers`: NativeDriver is an implementation of the WebDriver API
+  which drives the UI of a native application rather than a web application. It
+  extends the WebDriver API in a few key places, and re-interprets the existing
+  API for native applications.
+  - MySQL:
+    - `mysql`
+    - `mysql2`
+  - MariaDB:
+    - `mariadb`
+  - PostgreSQL:
+    - `pg`
+  - Microsoft SQL Server:
+    - `tedious`
+    - `mssql`
+  - Oracle:
+    - `oracledb`
+
+## Testing
+
+The two most common testing approaches are **unit testing** and
+**end-to-end testing**. In the first, we examine small snippets of code, in the
+second, we test an entire user flow.
+
+- `Jest`: a JavaScript Testing Framework with a focus on simplicity. It works
+  with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!
+- `Mocha`: an open source JavaScript test framework running on Nodejs and in
+  the browser, making asynchronous testing simple and fun, and it’s a great
+  candidate for BDD (Behavior Driven Development).
+- `Cypress`: a new front end testing tool built for the modern web. It enables
+  you to write faster, easier and more reliable tests.
+
+## Logging
+
+Logging is an essential part of understanding the complete application life
+cycle of the Node.js application.
+
+We can much more easily and quickly fix errors by looking at logs throughout
+the development process, from creating to debugging to designing new features.
+
+`error`, `warn`, `info`, and `debug` are the four basic logging levels in
+Node.js. Logging involves persistently collecting information about an
+application’s runtime behaviour.
+
+- `Morgan`: a NodeJS and express.js middleware to log the HTTP request and
+  error, simplifying the debugging process. It provides flexibility in defining
+  the format of log messages and helps override the output destination for your
+  logs.
+- `Winston`: designed to be a simple and universal logging library with support
+  for multiple transports. A transport is essentially a storage device for your
+  logs. Each winston logger can have multiple transports configured at
+  different levels. For example, one may want error logs to be stored in a
+  persistent remote location (like a database), but all logs output to the
+  console or a local file.
 
 ## Topics
 
