@@ -27,6 +27,8 @@ disciplines according to the
     1. [Applied Linguistics](./applied_linguistics/)
 3. [Political Science](https://en.wikipedia.org/wiki/Political_science)
     1. Political Philosophy
+4. [Psychology](https://en.wikipedia.org/wiki/Psychology)
+    1. [Cognitive Psychology](./cognitive_psychology/)
 
 ### Ⅲ. [Natural Science](https://en.wikipedia.org/wiki/Natural_science)
 
@@ -57,7 +59,7 @@ disciplines according to the
         1. [Operating Systems](operating_system/operating_systems)
         2. Systems Programming
     8. [Programming Languages](programming_languages)
-        1. [Compiler](./programming_languages/programming_language_theory/)
+        1. [Compiler](./programming_languages/compiler/)
         2. Programming Paradigms
         3. [C](programming_languages/c)
         4. [Go](programming_languages/go)
