@@ -1,6 +1,6 @@
-# Second-language Acquisition
+# Language Education
 
-> <https://en.wikipedia.org/wiki/Second-language_acquisition>
+> <https://en.wikipedia.org/wiki/Language_education>
 
 ## The Best Tool for Beginners: Duolingo
 

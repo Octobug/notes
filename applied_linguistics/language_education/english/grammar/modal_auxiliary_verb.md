@@ -2675,4 +2675,4 @@ if, if the doctor knows, and Carol knows, and Susan knows...
 
 ## 综合训练：情态动词
 
->>>>> progress
+**一、请根据句意，选出正确的情态动词。**

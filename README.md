@@ -12,9 +12,7 @@ disciplines according to the
 
 1. [Languages](https://en.wikipedia.org/wiki/Language)
     and [Literature](https://en.wikipedia.org/wiki/Literature)
-    1. [Linguistics](linguistics)
-        1. [Second-language Acquisition](linguistics/second_language_acquisition)
-    2. [World Literature](world_literature)
+    1. [World Literature](world_literature)
         1. [Chinese Literature](world_literature/chinese_literature)
 2. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
     1. [Music](music)
@@ -25,7 +23,9 @@ disciplines according to the
 
 1. [Economics](https://en.wikipedia.org/wiki/Economics)
     1. Microeconomics
-2. [Political Science](https://en.wikipedia.org/wiki/Political_science)
+2. [Linguistics](https://en.wikipedia.org/wiki/Linguistics)
+    1. [Applied Linguistics](./applied_linguistics/)
+3. [Political Science](https://en.wikipedia.org/wiki/Political_science)
     1. Political Philosophy
 
 ### Ⅲ. [Natural Science](https://en.wikipedia.org/wiki/Natural_science)
