@@ -64,7 +64,7 @@
 - [x] [5. 完成时态](perfect_tense.md)
 - [x] [6. 完成进行时态](perfect_continuous_tense.md)
 - [x] [7. 虚拟语气](subjunctive_mood.md)
-- [ ] [8. 情态动词](modal_auxiliary_verb.md)
+- [x] [8. 情态动词](modal_auxiliary_verb.md)
 
 #### 高级教程：驾驭语法
 

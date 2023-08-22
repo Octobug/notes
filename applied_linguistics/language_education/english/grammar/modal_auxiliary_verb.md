@@ -83,6 +83,7 @@
     - [18.1 英文情态意义与中文情态意义的对应性](#181-英文情态意义与中文情态意义的对应性)
     - [18.2 英文情态动词的委婉表达在中文中的缺失](#182-英文情态动词的委婉表达在中文中的缺失)
   - [综合训练：情态动词](#综合训练情态动词)
+    - [答案：综合训练：情态动词](#答案综合训练情态动词)
 
 ## 1. 引言：多情多义的情态动词
 
@@ -2676,3 +2677,145 @@ if, if the doctor knows, and Carol knows, and Susan knows...
 ## 综合训练：情态动词
 
 **一、请根据句意，选出正确的情态动词。**
+
+*3. How about going to the theater instead? We (could, should) go to the
+theater instead.*
+
+*5. Nobody else is going to turn up now for the lesson, so you (have to, may as
+well) go home.*
+
+*7. The peace conference (may, has to) find a solution to the problem.*
+
+*13. You (had to give, might have given) me a hand!*
+
+**二、请选出与所给句子在意思上最接近的解释。**
+
+*27. I think it's wrong for you to work so hard.*
+
+- *A. You don't have to work so hard.*
+- *B. You shouldn't work so hard.*
+
+**三、请根据句意填空。**
+
+*31. Peter wasn't here, so he ____ (break) your vase.*
+
+*32. I'm sure Jack didn't mean to ignore you. He ____ (notice) you.*
+
+*33. That was a lucky escape! We ____ (kill)!*
+
+*35. There were plenty of tickets left for the concert. We ____ (buy) them in
+advance.*
+
+*37. Thank you very much for buying me flowers. You ____ (buy) me flowers.*
+
+*38. I don't believe that you have lost your keys again! You ____ (lose) your
+keys again.*
+
+*39. Mary was a talented violinist at the age of ten. She ____ (play) the violin
+very well when she was ten.*
+
+*41. Our worrying so much was a waste of time. `=` We ____ (worry) so much.*
+
+*44. She paid him and walked off. Then she realized that he ____ (not, be) a
+deaf mute. How did she know? He must have heard her initial instructions or he
+____ (not, know) where to take her.*
+
+*45. A: It seems to rain. I guess I ____ (bring) my umbrella.*
+
+*B: It would be nice to have one but how `____` you `____` (know) that this
+morning?*
+
+*46. "If you sit too close to the television, you'll ruin your eyes." Sound
+familiar? You ____ (hear) this warning as a child.*
+
+**四、请选择最佳答案填空。**
+
+*48. You can't imagine that a well-behaved gentleman ____ be so rude to a lady.*
+
+- *A. might*
+- *B. need*
+- *C. should*
+- *D. would*
+
+*50. It is unthinkable that he ____ be so careless.*
+
+- *A. will*
+- *B. would*
+- *C. shall*
+- *D. should*
+
+*51. The boss has promised that every player in NBA ____ have a rise in income.*
+
+- *A. would*
+- *B. might*
+- *C. shall*
+- *D. should*
+
+*55. Several cases have been reported recently of people who ____ read and
+detect colors with their fingers.*
+
+- *A. should*
+- *B. can*
+- *C. will*
+- *D. could*
+
+*56. No one expect his secretary ____ go straight into his office without
+permission.*
+
+- *A. can*
+- *B. is able to*
+- *C. will*
+- *D. is not allowed to*
+
+*61. We did hold a meeting yesterday, but you ____. So we did not inform you.*
+
+- *A. did not need attending*
+- *B. needn't attending*
+- *C. did not need to attend*
+- *D. needn't attend*
+
+### 答案：综合训练：情态动词
+
+*3. could。表示“建议”。
+
+*5. may as well。表示“建议”。
+
+*7. may。表示“可能”。
+
+*13. might have given。表示对过去的推测。`？存疑`
+
+*27. B。
+
+*31. can't have broken
+
+*32. can't have noticed
+
+*33. might have been killed
+
+*35. needn't have bought
+
+*37. shouldn't have bought
+
+*38. can't have lost `? 存疑`
+
+*39. could play
+
+*41. needn't have worried
+
+*44. can't have been, wouldn't have known
+
+*45. should have brought, could...have known
+
+*46. might have heard
+
+*48. C。表示“竟然”。
+
+*50. D。表示“竟然”。
+
+*51. C。表示说话人的“许诺”。
+
+*55. B。表示能力。
+
+*56. A。表示“许可”。
+
+*61. C。否定的是情态意义，“不需要来”。
