@@ -43,9 +43,9 @@
       - [二、关系副词 when 在从句中必须作时间状语](#二关系副词-when-在从句中必须作时间状语)
       - [三、区分 when 引导的定语从句与 when 引导的时间状语从句](#三区分-when-引导的定语从句与-when-引导的时间状语从句)
       - [四、when 的缩合关系词用法](#四when-的缩合关系词用法)
-  - [2.13 关系副词 where](#213-关系副词-where)
     - [4.2 where 的用法](#42-where-的用法)
-      - [一、where 的先行词指地点](#一where-的先行词指地点)
+      - [一、引导定语从句时，先行词通常是表示地点的名词](#一引导定语从句时先行词通常是表示地点的名词)
+    - [2.13.2 先行词表示地点，不一定都用 where 引导定语从句](#2132-先行词表示地点不一定都用-where-引导定语从句)
       - [二、关系副词 where 在从句中作地点状语](#二关系副词-where-在从句中作地点状语)
     - [4.3 why 的用法](#43-why-的用法)
     - [思维训练 4. 关系副词的用法](#思维训练-4-关系副词的用法)
@@ -117,7 +117,6 @@
   - [思维总结：14. 缩合关系代词 what](#思维总结14-缩合关系代词-what)
   - [思维训练：11.-14](#思维训练11-14)
     - [答案：思维训练：11.-14](#答案思维训练11-14)
-    - [2.13.2 先行词表示地点，不一定都用 where 引导定语从句](#2132-先行词表示地点不一定都用-where-引导定语从句)
     - [2.16.2 定语从句的关系词后面插入一个其他成分](#2162-定语从句的关系词后面插入一个其他成分)
   - [综合训练：定语从句](#综合训练定语从句)
 
@@ -803,24 +802,45 @@ husband.
   - when she first met her husband `=` the day when she first met her husband。
 - `译` 对于她来说，当她回忆起初次遇到丈夫时的情景，就把他们之间的关于生活琐事的争议抛到九霄云外了。
 
-## 2.13 关系副词 where
-
->>>>> progress
-
 ### 4.2 where 的用法
 
-#### 一、where 的先行词指地点
+#### 一、引导定语从句时，先行词通常是表示地点的名词
 
-where 可以引导**限制性**和**非限制性**定语从句，其先行词一般是表示地点的名词，如 place 和
-house 等。
+此时关系副词 where 的用法特点有：
 
-- `例 1`:
-  - A: Since you work in the theater, can't you get me a free ticket now and
-    then?
-  - B: Certainly if you bring me a few notes now and then from the bank where
-    you work!
-- `例 2`: Do you know any place where I can buy Mr. Zhang's grammar book?
-- `例 3`: This is the town where I spent my childhood.
+1. where 在定语从句中作地点状语，修饰从句谓语动词；
+2. 其先行词通常是表示地点的名词，如 place 和 house 等；
+3. where 可以引导**限定性**和**非限定性**定语从句，。
+
+`1` Literature is the place where the past meets the present to contemplate the
+future.
+
+- 先行词 place 表示地点，且 where 在从句中充当地点状语，修饰从句谓语 meets。
+- `译` 在文学作品里，过去与现实交汇，以思考未来。
+
+`2`
+
+- A: Since you work in the theater, can't you get me a free ticket now and then?
+  - `译` 既然你在剧院工作，那你就不能时常给我弄些免费的票吗？
+- B: Certainly if you bring me a few notes now and then from the bank where you
+  work!
+  - 先行词 bank 表示地点，且 where 在从句中充当地点状语，修饰从句谓语 work。
+  - `译` 当然可以，只要你能够从你工作的那家银行里时常给我弄些票子出来。
+
+`3` Of all the components of a good night's sleep, dreams seem to be least
+within our control. In dreams, a window opens into a world where logic is
+suspended and dead people speak.
+
+- 先行词 world 表示地点，where 在从句中充当状语，修饰从句谓语 is suspended 和 speak。
+- `译` 在所有构成良好睡眠的因素中，梦看起来是我们最无法控制的一个。梦境中的世界，逻辑失去作用，死者开始言语。
+
+`2` Do you know any place where I can buy Mr. Zhang's grammar book?
+
+`3` This is the town where I spent my childhood.
+
+### 2.13.2 先行词表示地点，不一定都用 where 引导定语从句
+
+>>>>> progress
 
 #### 二、关系副词 where 在从句中作地点状语
 
@@ -2838,10 +2858,6 @@ than 在指代 growth rate 的同时，在从句中作谓语动词 thought 的�
 
 - `译` 不过，目前经济确实实现了持续的、较高的增长，该增长率在一两年前是绝大多数人认为不可能实现的。
   所以，仅就此而言，我们似乎正处于一个“新经济时代”。
-
-### 2.13.2 先行词表示地点，不一定都用 where 引导定语从句
-
->>>>> progress
 
 ### 2.16.2 定语从句的关系词后面插入一个其他成分
 
