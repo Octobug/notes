@@ -83,7 +83,10 @@
     - [10.3 双重被动式](#103-双重被动式)
     - [思维训练：10. 不定式的时态和语态（一）：被动式 (to be done)](#思维训练10-不定式的时态和语态一被动式-to-be-done)
       - [答案：思维训练：10. 不定式的时态和语态（一）：被动式 (to be done)](#答案思维训练10-不定式的时态和语态一被动式-to-be-done)
-  - [4.11 不定时的时态和语态（二）：完成式（to have done）](#411-不定时的时态和语态二完成式to-have-done)
+  - [11. 不定时的时态和语态（二）：完成式（to have done）](#11-不定时的时态和语态二完成式to-have-done)
+    - [11.1 表示在谓语动作之前发生的动作](#111-表示在谓语动作之前发生的动作)
+      - [一、态度情感类谓语](#一态度情感类谓语)
+    - [4.11.2 表示“非真实的”过去](#4112-表示非真实的过去)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
 
@@ -2353,6 +2356,64 @@ systematically in the last century.
 
 *15. understand。这里用主动形式表示被动意思。
 
-## 4.11 不定时的时态和语态（二）：完成式（to have done）
+## 11. 不定时的时态和语态（二）：完成式（to have done）
+
+不定式的完成式最主要的含义，是表达一个发生在**谓语动作之前**的动作，其次是表达**过去虚拟**。
+用在某些特定的动词后面，可以表达一个将来的动作。
+
+### 11.1 表示在谓语动作之前发生的动作
+
+`1`
+
+- A: Look, I'm sorry to bother you about this, but that music's really loud.
+- B: I didn't realize you could hear it.
+  - 这里使用了**一般式**的不定式 to bother，它和 am sorry 的时间先后关系是：说话人先说了
+    sorry，然后再提 bother，最后具体阐述为什么要 bother 对方。
+    这里不定式 to bother 发生在谓语 am sorry 的状态之后。
+  - `译` A: 嘿，对不起，打扰您一下，您播放的音乐声太大了。B: 我不知道你能听见。
+
+`2` I'm sorry to bother you, but can you please send me Nancy's phone number?
+
+- 不定式 to bother 是在谓语 am sorry 之后发生的。
+- `译` 抱歉打扰一下，你能把 Nancy 的手机号码发给我吗？
+
+`3` I'm sorry to have bothered you with so many questions on such an occasion.
+
+- 这里不定式用完成式 to have bothered 表示问题已经问完，也就是问完问题之后才说了这句话。
+  如果还没有问对方问题，则要说成 I am very sorry to bother you with some questions.
+- `译` 很抱歉，在这个时候还问了你这么多问题来打扰你。
+
+通过上面对比可以发现这样的规律：
+
+如果不定式的动作或状态发生在谓语的动作或状态之前，此时不定式就要用完成式，即 to have done。
+因此，要判断不定式用一般式还是用完成式，需要将它与谓语的动作或状态发生的时间相比较：
+
+- 如果不定式的动作在谓语的动作之后发生，不定式用一般式；
+- 如果不定式的动作在谓语的动作之前发生，则不定式用完成式。
+
+对于不定式的完成式，主要用在这几类谓语动词后面：
+
+- 态度情感
+  - be sorry
+  - be happy
+  - be blessed
+  - ...
+- 观点（主要是被动结构）
+  - be said
+  - be believed
+  - be thought
+  - ...
+- 推断
+  - seem
+  - appear
+  - ...
+
+其次，从时态的意义上讲，不定式的完成式相当于不定式的一般过去时态。
+
+#### 一、态度情感类谓语
+
+>>>>> progress
+
+### 4.11.2 表示“非真实的”过去
 
 >>>>> progress
