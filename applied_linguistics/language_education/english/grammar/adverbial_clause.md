@@ -52,9 +52,17 @@
       - [答案：思维训练：2. 时间状语从句](#答案思维训练2-时间状语从句)
   - [3. 地点状语从句](#3-地点状语从句)
     - [思维训练 3. 地点状语从句](#思维训练-3-地点状语从句)
+      - [答案：思维训练 3. 地点状语从句](#答案思维训练-3-地点状语从句)
   - [4. 原因状语从句](#4-原因状语从句)
     - [4.1 常见连词的用法](#41-常见连词的用法)
     - [4.2 用介词表示因果关系](#42-用介词表示因果关系)
+    - [4.3 其他复合连词表示原因](#43-其他复合连词表示原因)
+      - [一、in that](#一in-that)
+      - [二、seeing (that), now (that), considering (that), given (that)](#二seeing-that-now-that-considering-that-given-that)
+      - [三、not that...but that](#三not-thatbut-that)
+      - [四、inasmuch as, insomuch as, in as much as, in so much as](#四inasmuch-as-insomuch-as-in-as-much-as-in-so-much-as)
+    - [4.4 because 的否定转移](#44-because-的否定转移)
+    - [思维训练 3.5：原因状语从句](#思维训练-35原因状语从句)
     - [思维训练 4. 原因状语从句](#思维训练-4-原因状语从句)
   - [5. 目的状语从句](#5-目的状语从句)
     - [思维训练 5. 目的状语从句](#思维训练-5-目的状语从句)
@@ -98,7 +106,6 @@
     - [11.2 地点状语从句的省略](#112-地点状语从句的省略)
     - [11.3 条件状语从句的省略](#113-条件状语从句的省略)
     - [11.4 让步状语从句的省略](#114-让步状语从句的省略)
-  - [3.4 地点状语从句](#34-地点状语从句)
   - [综合训练：状语从句](#综合训练状语从句)
     - [答案：综合训练：状语从句](#答案综合训练状语从句)
 
@@ -1348,13 +1355,47 @@ Vermont 是州名，如果要改为地点状语从句，应该是 somewhere in V
 地点状语从句通常由 where 引导，用来表达主句的动作发生的场所。
 其结构通常是“where + 陈述句”，从句可以放在句首或句末。
 
-- `例 1`：Stay where you are.
-- `例 2`：Generally, air will be heavily polluted where there are factories.
-- `例 3`：A driver should slow down where there are schools.
+`1` Stay where you are.
+
+- `译` 待在原地别动。
+
+`2` Generally, air will be heavily polluted where there are factories.
+
+- `译` 一般在有工厂的地方空气污染都会很严重。
+
+`3` A driver should slow down where there are schools.
+
+- `译` 在有学校的地方，司机应减速慢行。
 
 地点状语从句若放在句首，在翻译时往往失去地点的含义，要灵活处理。
 
-- `例 4`：Where there is a will, there is a way.
+`4` Where there is a will, there is a way.
+
+- `译` 有志者，事竟成。
+
+`5` Where there is Love, there is also Wealth and Success!
+
+- `译` 只要有爱，就会有财富和成功！
+
+`6` Where there is pain, we wish you peace and mercy.
+
+- `译` 当你感到痛苦时，祝福你能保持内心的平静安宁并学会宽恕。
+
+另外，anywhere, everywhere,和 wherever 也可以引导地点状语从句。
+
+`7` Wherever he happens to be, Clint can make himself at home.
+
+- `译` 无论在什么地方，Clint 总是无拘无束。
+
+`8` Everywhere they appeared, there were ovations.
+
+- `译` 他们在哪里都受到热烈欢迎。
+
+`9` Wherever your school is located, the most likely event is that you will be
+met by the Foreign Affairs Officer, or their representative, at the final point
+of your journey.
+
+- `译` 无论你的学校在哪里，最有可能的就是，你到达目的地的时候，会有一位外事官员或他们的代表来迎接你。
 
 ### 思维训练 3. 地点状语从句
 
@@ -1362,12 +1403,24 @@ Vermont 是州名，如果要改为地点状语从句，应该是 somewhere in V
 
 *1. The picture is not hanging ____ it should on the wall.*
 
-- A. until
-- B. wherever
-- C. where
-- D. when
+- *A. until*
+- *B. wherever*
+- *C. where*
+- *D. when*
 
-答案：C。从句中省略了 hang，where it should (hang) on the wall.
+*2. ____, work songs often exhibit the song culture of a people in a
+fundamental form.*
+
+- *A. They occur where they are*
+- *B. Occurring where*
+- *C. Wherever they occur*
+- *D. Where do they occur*
+
+#### 答案：思维训练 3. 地点状语从句
+
+*1. C。从句中省略了 hang，where it should (hang) on the wall.
+
+*2. C。
 
 ## 4. 原因状语从句
 
@@ -1376,38 +1429,51 @@ Vermont 是州名，如果要改为地点状语从句，应该是 somewhere in V
 常用的引导原因状语从句的连词有：
 
 - because
+- for
 - since
 - as
-- for
 
 这四个连词中，because 的语气最强，只有它才能用来回答 why 的问句，
 所引出的原因往往是听话人所不知道的或最感兴趣的；
 也只有 because 才能被强调词如 only, just 和 perhaps 等修饰。
 此外，短语 in that 也可以用来表示原因，后面接句子。
 
-- `例 1`：My friends dislike me because I'm handsome and successful.
-- `例 2`：Perhaps because most of today's cross-cultural marriages occur because
-  of "true love", these couples work hard to overcome their differences.
-  - ❌ perhaps for
-  - ❌ perhaps as
-  - ❌ perhaps since
+`1` My friends dislike me because I'm handsome and successful.
 
-连词 since 表示人们已知的事实，是不需强调的原因，所以常译成“既然”，通常放在句首。
+- `译` 我的朋友都不喜欢我，因为我长相英俊又事业有成。
 
-- `例 3`：Since we don't have class tomorrow, why not go out for a picnic?
-- `例 4`：Since you are an English major, I guess you can help me with this
-  sentence.
+`2` Perhaps because most of today's cross-cultural marriages occur because of
+"true love", these couples work hard to overcome their differences.
+
+- ❌ perhaps for
+- ❌ perhaps as
+- ❌ perhaps since
+- `译` 可能因为现在大多数跨国婚姻都是基于“真爱”，所以夫妇俩都很努力地克服双方之间的差异。
+
+连词 since 表示人们已知的事实或是不需强调的原因，所以常译成“既然”，通常放在句首。
+
+`3` Since we don't have class tomorrow, why not go out for a picnic?
+
+- `译` 既然明天没有课，我们出去野餐如何？
+
+`4` Since you are an English major, I guess you can help me with this sentence.
+
+- `译` 既然你是英语专业的，我想你能帮我看看这个句子。
 
 连词 as 与 since 的用法差不多，所引出的理由在说话人看来已经很明显，
 或已为听话人所熟悉而不需用 because 加以强调。
 
-- `例 5`：As Monday is a national holiday, all government offices will be
-  closed.
+`5` As Monday is a national holiday, all government offices will be closed.
+
+- `译` 由于星期一是国家的法定假日，因此所有的政府办事机构都将关门休息。
 
 连词 for 表示推断的理由，是对前面分句的内容**加以解释或说明**。
 
-- `例 6`：It rained last night, for the ground is wet this morning.
-  - 比较：Because it rained last night, the ground is wet this morning.
+`6` It rained last night, for the ground is wet this morning.
+
+- `译` 昨晚下雨了，因为今天早上地面都是湿的。
+- 比较：Because it rained last night, the ground is wet this morning.
+  - because 表示的语气更强更有信息，而 for 只是一种推断。
 
 相比较而言：
 
@@ -1425,9 +1491,176 @@ Vermont 是州名，如果要改为地点状语从句，应该是 somewhere in V
 
 因为是介词，所以后面不能接从句。
 
-- `例 1`：We had an accident because he was careless.
-- `例 2`：We had an accident due to his carelessness.
-- `例 3`：Owing to his carelessness we had an accident.
+`1` 由于他粗心大意，我们出了车祸。
+
+- We had an accident because he was careless.
+- We had an accident due to his carelessness.
+- Owing to his carelessness we had an accident.
+
+### 4.3 其他复合连词表示原因
+
+除了以上常见的连词外，还有其他表示原因的连词。
+
+#### 一、in that
+
+其基本的意思是“原因就在于”，其引导的从句要放在**主句后面**，而且主句通常是在作比较。
+
+`1` English has an advantage over most of the other languages in that it has
+become, so to speak, an international language.
+
+- 用连接词 in that 引导从句，比较英语和其他语言。
+- `译` 英语相对于其他大多数语言来说有一大优势，原因就在于它可以说已经成为了一门国际通用语言。
+
+`2` E-mail is different from the traditional mail in that it sends and receives
+mails in a second.
+
+- 用连接词 in that 引导从句，比较两种不同通信方式。
+- `译` 电子邮件和传统的邮件是不同的，因为前者收发邮件可以在顷刻之间完成。
+
+`3` Mercury differs from other industrial metals in that it is a liquid.
+
+- `译` 水银不同于其他种类的工业用金属，原因就在于它是液态的。
+
+#### 二、seeing (that), now (that), considering (that), given (that)
+
+这些连词和 since 相似，都有“鉴于某个事实，考虑到”的意思。
+
+`4` Seeing that it's raining hard, we'll have to stay here for the night.
+
+- `译` 鉴于此刻雨下得正大，我们就待在这过夜。
+
+`5` They did the job very well, considering that they had no experience.
+
+- `译` 鉴于他们缺乏经验，这项工作他们已经做得很好了。
+
+`6` Given that they are inexperienced, they've done a good job.
+
+- `译` 鉴于他们缺乏经验，这项工作他们做得还算不错。
+
+`7` Now that the semester is finished, I'm going to rest a few days and then
+take a trip.
+
+- `译` 鉴于这个学期已经结束了，我要休息几天，然后出去旅行。
+
+`8` Now that you are eighteen, you can get a driver's license.
+
+- `译` 鉴于你已经 18 岁了，可以取得驾驶执照了。
+
+#### 三、not that...but that
+
+这个连词的意思是“不是因为……而是因为……”。
+
+`9` I haven't finished writing the report yet, not that I'm lazy, but that I
+have no time.
+
+- `译` 我还没有写完报告，不是因为我懒，而是因为我没时间。
+
+#### 四、inasmuch as, insomuch as, in as much as, in so much as
+
+inasmuch as, insomuch as, in as much as, in so much as
+这四个连词也可以表原因，但不太常用，通常只用于很正式的书面语或演讲中。
+
+`10` Inasmuch as the two government leaders could not reach an agreement, the
+possibilities for peace are still remote.
+
+- `译` 由于双方政府的领导人无法达成一致，实现和平的可能性依然渺茫。
+
+### 4.4 because 的否定转移
+
+`1` You don't love a woman because she is beautiful.
+
+- 单看这句，可以翻译为“你不爱一个女人，因为她太漂亮了。”，但这有违常理。
+- 这里的 don't 在形式上是否定谓语 love，但实际上是否定原因状语从句。
+- You don't love a woman because she is beautiful, but she is beautiful because
+  you love her.
+- `译` 你不是因为一个女人的美貌而爱她，而是因为你爱她才觉得她美。
+
+**分析**：在主句是否定的情况下，because 引导的从句可能是按正常情况翻译（即否定主句谓语），
+也可能是按否定转移来翻译（即否定从句）。具体如何理解要看上下文。
+
+`2` Don't cry because it is over, but smile because it happened.
+
+- 单看前半句，可以正常理解为“不要哭，因为都结束了”。但结合下文就不能这么翻译，而应该按照否定转移翻译。
+- `译` 不要因为感情结束而伤心落泪，要因为曾经经历过而微笑面对。
+
+总结：在主句是否定的情况下，because 引导的从句的翻译可分为三种情形：
+
+1. 只能按正常情况翻译；
+2. 两种翻译都可以，具体如何理解要看上下文；
+3. 只能按否定转移来翻译。
+
+`3`
+
+- I don't study English just because it is so difficult.
+  - 只能按正常情况翻译，而不能按否定转移翻译为“我学英文并不是因为英文太难”，因为显然不符合逻辑。
+  - `译` 我不学英文，因为它太难了。
+- I don't study English just because I like to.
+  - 只能按否定转移翻译，而不能按正常情况翻译为“我不学英文，因为我喜欢英文”，这显然也不符合逻辑。
+  - `译` 我学英文并不是因为我喜欢英文。
+
+`4` He doesn't exercise because he likes to.
+
+- A. He likes to exercise by himself.
+- B. He exercises for reasons other than enjoyment.
+- C. He's glad he doesn't have to exercise.
+- D. He doesn't have enough time to exercise.
+- `答案` B。
+- 只能按照否定转移来理解。
+- `译` 他虽然锻炼身体，但并不是因为他喜欢锻炼。
+
+`5` I wouldn't quit my job because maybe I could get a better one. A bird in
+the hand is worth two in the bush.
+
+- 如果按正常情况理解就是“我不愿意辞去现在的工作，就是因为我可能会找到一个更好的工作”，这不符合逻辑。
+  所以只能按照否定转移来理解。
+- `译` 我不会因为可能会找到更好的工作就把现在的工作辞了，因为一鸟在手胜过双鸟在林啊。
+
+`6` I didn't attend the meeting because he was present, too.
+
+- 正常理解：因为当时他也出席了，所以我就没有去参加那个会议。
+  - 改写以消除歧义：I didn't attend the meeting, because he was present, too.
+- 否定转移：我出席那次会议并不是因为他也参加。
+  - 改写以消除歧义：I attended the meeting, not because he was present, too.
+
+`7` I did not marry her because I loved her.
+
+- 正常理解：因为我爱她，所以我决定不跟她结婚。
+- 否定转移：我并不是因为爱她才和她结婚。
+
+以上的否定转移都是涉及 because 引导的从句，其实否定转移并不局限于 because 引导的原因从句，
+还可以否定句中的其他成分。在口语中，一般来说句子中重读什么词就是在否定什么词。
+
+`10` I didn't come here to scold you.
+
+- 这句读的时候要重读 scold，表明 didn't 是否定 scold 的，即 not scold。
+- `译` 我来这里不是为了要批评你。
+
+`11` He won't go to just any school.
+
+- A. He's the only one who won't go with us.
+- B. He just won't go to school.
+- C. He'll probably study in several locations.
+- D. He's particular about where he goes to school.
+- `答案` D。
+- 这句中的 any 要重读，即表明 won't 是否定 any 的，即 not any。
+- `译` 他可不愿意随随便便上一个学校就算了。
+
+`12` I didn't write that memo to the department chair to amuse myself.
+
+- A. I wrote a funny letter to the department chair.
+- B. I don't think the department chair will write me a letter.
+- C. The department chair was amused by my letter.
+- D. I wrote to the department chair about a serious matter.
+- `答案` D。
+- 这句中的 amuse 要重读，表明 didn't 是否定 amuse 的。
+- `译` 我给部门领导写那个备忘录并不是为了好玩。
+
+综上，可以这样定义**否定转移**：是指形式上否定主句或句子的谓语，但在逻辑语义上是否定句子的其他部分。
+尤其是在与 because 引导的从句连用时，往往否定 because 引导的从句。
+
+### 思维训练 3.5：原因状语从句
+
+>>>>> progress
 
 ### 思维训练 4. 原因状语从句
 
@@ -2158,10 +2391,6 @@ of the government's economic policies.
 - `还原` Although he is not an economist himself, Dr. Smith has long been a
   severe critic of the government's economic policies.
 - `译` 尽管 Smith 博士本人不是经济学家，但他一直以来对政府的经济政策提出尖锐的批评。
-
-## 3.4 地点状语从句
-
->>>>> progress
 
 ## 综合训练：状语从句
 
