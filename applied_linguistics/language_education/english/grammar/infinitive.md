@@ -86,6 +86,8 @@
   - [11. 不定时的时态和语态（二）：完成式（to have done）](#11-不定时的时态和语态二完成式to-have-done)
     - [11.1 表示在谓语动作之前发生的动作](#111-表示在谓语动作之前发生的动作)
       - [一、态度情感类谓语](#一态度情感类谓语)
+      - [二、观点类谓语](#二观点类谓语)
+      - [三、推断类谓语](#三推断类谓语)
     - [4.11.2 表示“非真实的”过去](#4112-表示非真实的过去)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
@@ -2412,7 +2414,216 @@ systematically in the last century.
 
 #### 一、态度情感类谓语
 
->>>>> progress
+这类谓语往往是一些表示个人情感态度的形容词。
+此时谓语通常用一般现在时态来表示说话人此刻的心态，而不定式用完成式来表示过去发生的动作。
+
+`4` I am sorry not to have come on Thursday.
+
+- `=` I am sorry that I didn't come on Thursday.
+- 这里 on Thursday 是一个过去的时间，修饰不定式动作 come，而不是谓语 am sorry。
+  句子谓语用现在时态表示说话人现在的心态。
+- `译` 很抱歉我周四没能来。
+
+`5`
+
+- I'm sorry to keep you waiting.
+  - 不定式用一般式 to keep，表示马上就要到来的将来。说完这句话，“我”可能需要离开一会儿。
+  - `译` 对不起，请稍等一下。
+- I'm sorry to have kept you waiting so long.
+  - 不定式用完成式 to have kept，表示动作已经发生了，是说话人返回后说的话。
+  - `译` 很抱歉让你久等了。
+
+`6` I have a call coming. Sorry to keep you waiting.
+
+- `译` 有人打电话找我，对不起，请稍等一下。
+
+`7` I am sorry to have kept you waiting so long. The traffic was terrible on my
+way here.
+
+- `译` 很抱歉让你久等了，来的路上堵车很严重。
+
+`8`
+
+- We are happy to visit so many historic places in Beijing.
+  - 一般式 to visit 表示将要发生的事情。
+  - `译` 将要参观那么多北京的名胜古迹，我们感到很高兴。
+- We are happy to have visited so many historic places in Beijing.
+  - 完成式 to have visited 表示已经完成参观。
+  - `译` 在北京参观了那么多的名胜古迹，我们感到很高兴。
+
+`9` Nelson, married to her husband for nearly 12 years, knows the meaning of
+happiness. "God gave me the best husband ever", she said. "I am incredibly
+blessed to have met him."
+
+- `译` 与丈夫厮守了近 12 载的 Nelson 明白幸福的真谛：“上帝赐予了我最好的丈夫，能在茫茫人海中遇到他，我真是幸运至极。”
+
+即使不定式不是表示过去发生的具体动作，而是表示一个发生在过去的状态，也要用完成式。
+
+`10` It's been nice talking to you. I really have enjoyed our conversation, but
+I have to leave now. I'm very happy to have had this opportunity to meet you and
+talk with you. Let's try to get together again soon.
+
+- to have had 表示一个过去发生的状态。
+- `译` 和你聊了这么多我很开心，真的非常喜欢我们的交谈。不过我现在得走了。很高兴能有这样的机会与你见面并交谈，我们下次再聚吧。
+
+#### 二、观点类谓语
+
+最常见的动词有 say, believe 和 think 这三个，而且一般都用于被动语态，即 is said, is
+believed 和 is thought，然后再接完成不定式，即 is said to have done, is believed to
+have done 和 is thought to have done。
+
+`11` The marathon has been a traditional part of the Olympics since 1896.
+Lengend says that a messenger ran 42 km, without stopping, from the battlefield
+at Marathon to Athens. After he reported the news of Greece's victory, the
+messenger fell down and died. The marathon is said to have come from this event.
+
+- 这里 is said 表示人们现在仍然持这个观点；但“来源于此次事件”已成为过去，所以不定式要用完成式
+  to have come，以表示这个动作发生在过去。
+- `译` 自从 1896年 以来，马拉松就成为奥运会的一个常规的比赛项目。
+  据说，一个信使从马拉松战场跑到雅典，共跑了约42公里，一刻也没有停。
+  这位信使报告完希腊胜利了之后，就倒地而亡。据说后来的马拉松比赛就源于这次事件。
+
+`12` Taking afternoon tea is a unique custom which is said to have started in
+the early 19th century.
+
+- `译` 喝下午茶是一个非常独特的风俗，据说起源于 19 世纪初。
+
+`13` Humans are believed to have evolved from the primate species.
+
+- `译` 人们相信，人类是由灵长类动物进化而来的。
+
+`14` The Bunsen burner is so named because it is thought to ____ by Robert
+Bunsen, who was German by birth.
+
+- A. be invented
+- B. have been invented
+- C. have invented
+- D. invent
+- `答案` B。“发明”是一个过去的动作，且与句子主语是被动关系，所以用完成被动形式的不定式。
+- `译` 本生灯之所以如此命名，是因为据信它是由出生于德国的科学家 Robert Bunsen 发明的。
+
+think 的同义词 consider 也有相同的用法。
+
+`15` The modern detective story, in which a detective solves a crime by
+discovering and interpreting evidence, is considered to have originated with
+Edger Allan Poe's The Murders in the Rue Morgue in 1841.
+
+- `译` 现代侦探小说通常的写作套路是，一名侦探通过发现证据以及推理判断来破案，据信这种写法源自埃德加·爱伦·坡于 1841 年所著的《莫尔格街凶杀案》。
+
+estimated 也有此用法。
+
+`16` Albert Einstein, the great American scientist, is estimated to have had the
+incredible intelligence quotient of 200.
+
+- is estimated 表示人们现在依然这么认为，但是爱因斯坦已经过去，所以“有”这样的智商已成为过去。
+- `=` It is estimated that Einstein had an incredible intelligence quotient
+  of 200.
+- `译` 据估计，爱因斯坦的智商高达 200，这真让人难以置信。
+
+`例` 据估计，张老师的智商高达 200，这真让人难以置信。
+
+- Mr. Zhang is estimated to have had the incredible intelligence quotient
+  of 200. ❌
+  - 这里用 to have had，是表示张老师现在没有这样的智商了，张老师要么是死了，要么智商衰退了。
+- Mr. Zhang is estimated to have the incredible intelligence quotient of 200. ✅
+  - `=` It is estimated that Mr. Zhang has an incredible intelligence quotient
+    of 200.
+
+#### 三、推断类谓语
+
+这类谓语是表示推断某种可能的情况。最常用的动词是 seem，后面接一个不定式的完成式即 seem to
+have done。
+
+`17`
+
+- A: I seem to have lost some weight. Look how baggy my pants are.
+  - `=` It seems now that I have lost some weight.
+  - 不定式 to have lost 发生在谓语动作 seem 之前。
+- B: They don't look that loose to me.
+- `译` A: 我好像瘦了些，你看这裤子我穿着都松松垮垮的。B: 我看倒没那么松啊。
+
+`18` The rain seems to have stopped.
+
+- `=` The rain seems now to have stopped a few minutes ago.
+- `译` 雨似乎已经停了。
+
+`19`
+
+- It seems to have rained last night.
+  - `译` 昨晚似乎下雨了。
+- It seems to rain any time soon.
+  - `译` 似乎很快要下雨了。
+
+`20` It has been proved that some people's best ideas seem to have occurred when
+they were relaxing.
+
+- `译` 现已证明，有些人的最佳主意是在他们放松的时候出现的。
+
+`21` Gymnastics, tennis and skating were sports where young girls in particular
+seem to have done very well.
+
+- `译` 年轻的女选手似乎在体操、网球、滑冰等运动项目上一直表现出色。
+
+`22` Sorry, I wasn't being insulting. I simply commented that you seem to have
+put on rather a lot of weight lately.
+
+- `译` 抱歉，我当时不是有意要得罪你。我只是说你最近似乎长胖了不少。
+
+`23` The redwood appears ____ some 100 years ago in northen forests around the
+world.
+
+- A. having to flourish
+- B. to flourish
+- C. to have flourished
+- D. have flourished
+- `答案` C。
+- `译` 北美红杉似乎繁盛于大约 100 年前，分布在世界各地北方的森林里。
+
+此外，形容词 likely 也是表示推测的，因而当 likely 后面的不定式的动作发生在谓语的动作之前时，不定式也要用完成式。
+
+`24` These radicals are believed to be the ones most likely to have killed her.
+
+- `译` 这些激进分子最可能是刺杀她的凶手。
+
+以上所有的例句中，句子谓语都是一般现在时态，而不定式的动作是在过去发生的，所以要完成式的 to
+have done。从这个意义上说不定式的完成式相当于不定式的过去式。
+
+但是，句子的谓语也可以用过去时态，此时如果不定式仍然使用完成式的
+to have done，则依然是表示不定式的动作发生在谓语的动作之前，只不过此时的不定式相当于一个**过去完成时态**。
+
+`25` Species at one time was thought to have become extinct at the time of the
+dinosaurs. An Indonesian fisherman has caught a coelacanth, an ancient fish
+once thought to have become extinct at the time of the dinosaurs, a fishery
+expert said on Monday.
+
+- was thought 表示过去人们认为这种鱼已经灭绝。不定式的动作是在 was thought
+  之前，所以依然用完成式 to have become，相当于过去完成时态 had become。
+- Species at one time was thought to have become extinct at the time of the
+  dinosaurs. `=` It was thought that this ancient fish had become extinct at the
+  time of the dinosaurs.
+- `译` 曾经被认为已经在恐龙时代就灭绝了的物种现在又被发现了。
+  一位鱼类专家本周一说，一个印尼渔民日前捕捞到一条腔棘鱼，这是一种古老的鱼类，曾经被认为在恐龙时代就已经灭绝。
+
+从这个例子可以说明，不定式的完成式 to have done 不一定都是表示过去时态。
+事实上，不定式的完成式只是表示不定式的动作在谓语动作之前发生，并不能代表具体的时态。
+它具体相当于什么时间的动作，于句子谓语以及句子的其他信息有关。
+
+一般来说，它主要相当于**一般过去时态**，此外还可以是**现在完成时态**或**过去完成时态**。
+
+`26` I am sorry to have kept you waiting for so long.
+
+- 相当于现在完成时态：使对方一直等到现在
+- `=` I am sorry that I have kept you waiting for so long.
+
+`27` She said she was sorry to have missed you.
+
+- 相当于过去完成时态：动作发生于 said 之前
+- `=` She said she was sorry that she had missed you.
+
+`28` I am sorry not to have come on Thursday.
+
+- 相当于一般过去时态：过去发生的某个动作
+- `=` I am sorry that I didn't come on Thursday.
 
 ### 4.11.2 表示“非真实的”过去
 
