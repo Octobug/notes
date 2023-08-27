@@ -10,51 +10,40 @@ class Solution
 public:
     vector<int> smallerNumbersThanCurrent(vector<int> &nums)
     {
-        vector<int> count(101);
-        vector<int> res(nums.size());
+        vector<int> result(nums.size(), 0);
+        int NUM_SET_LEN = 102;
+        int count[NUM_SET_LEN];
+
+        for (int i = 0; i < NUM_SET_LEN; i++)
+            count[i] = 0;
 
         for (int i = 0; i < nums.size(); i++)
-        {
-            count[nums[i]]++;
-        }
+            count[nums[i] + 1]++;
 
-        int tmp1 = 0;
-        int tmp2 = count[0];
-        count[0] = 0;
-        int tmp3 = count[0];
-        for (int i = 1; i < 101; i++)
-        {
-            if (count[i])
-            {
-                tmp1 = count[i];
-                count[i] = tmp2 + tmp3;
-                tmp2 = count[i];
-                tmp3 = tmp1;
-            }
-        }
+        for (int i = 1; i < NUM_SET_LEN; i++)
+            count[i] += count[i - 1];
 
         for (int i = 0; i < nums.size(); i++)
-        {
-            res[i] = count[nums[i]];
-        }
+            result[i] = count[nums[i]];
 
-        return res;
+        return result;
     }
 };
 
 int main()
 {
+    vector<vector<int>> nums = {
+        {8, 1, 2, 2, 3},      // 4,0,1,1,3
+        {6, 5, 4, 8},         // 2,1,0,3
+        {7, 7, 7, 7},         // 0,0,0,0
+        {5, 0, 10, 0, 10, 6}, // 2,0,4,0,4,3
+    };
+    int group;
+    cout << "Please input group: ";
+    cin >> group;
+    group--;
+
     Solution s;
-    vector<int> in1 = {8, 1, 2, 2, 3};
-    vector<int> in2 = {6, 5, 4, 8};
-    vector<int> in3 = {7, 7, 7, 7};
-    vector<int> in4 = {5, 0, 10, 0, 10, 6};
-    vector<int> res1 = s.smallerNumbersThanCurrent(in1);
-    vector<int> res2 = s.smallerNumbersThanCurrent(in2);
-    vector<int> res3 = s.smallerNumbersThanCurrent(in3);
-    vector<int> res4 = s.smallerNumbersThanCurrent(in4);
-    output(res1);
-    output(res2);
-    output(res3);
-    output(res4);
+    vector<int> result = s.smallerNumbersThanCurrent(nums[group]);
+    output(result);
 }

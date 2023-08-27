@@ -1,6 +1,6 @@
 # 1365. How Many Numbers Are Smaller Than the Current Number
 
-> origin: <https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/>
+> <https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/>
 
 Given the array `nums`, for each `nums[i]` find out how many numbers in the
 array are smaller than it. That is, for each `nums[i]` you have to count the

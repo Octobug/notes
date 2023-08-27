@@ -33,9 +33,9 @@
 - [x] [单调栈](./monotone_stack.md)
 - [x] [额外题目](https://programmercarl.com/other/ewaishuoming.html)
   - 01~10
-  - [ ] [数组：有多少小于当前数字的数字](https://programmercarl.com/1365.%E6%9C%89%E5%A4%9A%E5%B0%91%E5%B0%8F%E4%BA%8E%E5%BD%93%E5%89%8D%E6%95%B0%E5%AD%97%E7%9A%84%E6%95%B0%E5%AD%97.html)
-  - [ ] 数组：有效的山脉数组
-  - [ ] 数组：独一无二的出现次数
+  - [x] [数组：有多少小于当前数字的数字](https://programmercarl.com/1365.%E6%9C%89%E5%A4%9A%E5%B0%91%E5%B0%8F%E4%BA%8E%E5%BD%93%E5%89%8D%E6%95%B0%E5%AD%97%E7%9A%84%E6%95%B0%E5%AD%97.html)
+  - [ ] [数组：有效的山脉数组](https://programmercarl.com/0941.%E6%9C%89%E6%95%88%E7%9A%84%E5%B1%B1%E8%84%89%E6%95%B0%E7%BB%84.html)
+  - [ ] [数组：独一无二的出现次数]()
   - [ ] 数组：移动零
   - [ ] 数组：旋转数组
   - [ ] 数组：寻找数组的中心索引
