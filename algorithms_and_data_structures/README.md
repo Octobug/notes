@@ -34,11 +34,11 @@
 - [x] [额外题目](https://programmercarl.com/other/ewaishuoming.html)
   - 01~10
   - [x] [数组：有多少小于当前数字的数字](https://programmercarl.com/1365.%E6%9C%89%E5%A4%9A%E5%B0%91%E5%B0%8F%E4%BA%8E%E5%BD%93%E5%89%8D%E6%95%B0%E5%AD%97%E7%9A%84%E6%95%B0%E5%AD%97.html)
-  - [ ] [数组：有效的山脉数组](https://programmercarl.com/0941.%E6%9C%89%E6%95%88%E7%9A%84%E5%B1%B1%E8%84%89%E6%95%B0%E7%BB%84.html)
-  - [ ] [数组：独一无二的出现次数]()
-  - [ ] 数组：移动零
-  - [ ] 数组：旋转数组
-  - [ ] 数组：寻找数组的中心索引
+  - [x] [数组：有效的山脉数组](https://programmercarl.com/0941.%E6%9C%89%E6%95%88%E7%9A%84%E5%B1%B1%E8%84%89%E6%95%B0%E7%BB%84.html)
+  - [x] [数组：独一无二的出现次数](https://programmercarl.com/1207.%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C%E7%9A%84%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0.html)
+  - [x] [数组：移动零](https://programmercarl.com/0283.%E7%A7%BB%E5%8A%A8%E9%9B%B6.html)
+  - [x] [数组：旋转数组](https://programmercarl.com/0189.%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84.html)
+  - [ ] [数组：寻找数组的中心索引](https://programmercarl.com/0724.%E5%AF%BB%E6%89%BE%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E5%BF%83%E7%B4%A2%E5%BC%95.html)
   - [ ] 数组：在排序数组中查找元素的第一个和最后一个位置
   - [ ] 数组：按奇偶排序数组II
   - [ ] 数组：搜索插入位置
