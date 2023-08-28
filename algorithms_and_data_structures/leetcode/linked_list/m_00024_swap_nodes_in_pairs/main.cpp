@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <linkedlist.h>
+#include "linkedlist.h"
 
 using namespace std;
 
@@ -10,9 +10,7 @@ public:
     ListNode *swapPairs(ListNode *head)
     {
         if (!head || !head->next)
-        {
             return head;
-        }
 
         ListNode *pre = head;
         ListNode *cur = head->next;
@@ -23,26 +21,16 @@ public:
         {
             cur->next = pre;
 
-            if (nxt)
+            if (nxt && nxt->next)
             {
-                if (nxt->next)
-                {
-                    pre->next = nxt->next;
-                    pre = nxt;
-                    cur = nxt->next;
-                    nxt = cur->next;
-                }
-                else
-                {
-                    // three nodes
-                    pre->next = nxt;
-                    break;
-                }
+                pre->next = nxt->next;
+                pre = nxt;
+                cur = nxt->next;
+                nxt = cur->next;
             }
             else
             {
-                // two nodes
-                pre->next = nullptr;
+                pre->next = nxt;
                 break;
             }
         }
@@ -53,20 +41,20 @@ public:
 
 int main()
 {
-    vector<int> list1 = {1, 2, 3, 4};
-    vector<int> list2 = {};
-    vector<int> list3 = {1};
-
-    vector<vector<int>> groups = {list1, list2, list3};
+    vector<vector<int>> groups = {
+        {1, 2, 3, 4}, // 2,1,4,3
+        {},           //
+        {1},          // 1
+    };
     int group;
-
     cout << "Please input group: ";
     cin >> group;
+    group--;
 
-    ListNode *head = array2list(groups[group - 1]);
-
+    ListNode *head = array2list(groups[group]);
     Solution s;
     ListNode *result = s.swapPairs(head);
     output(result);
+
     return 0;
 }

@@ -17,6 +17,6 @@ struct ListNode
 };
 
 void output(ListNode *head);
-ListNode *array2list(vector<int> arr);
+ListNode *array2list(vector<int> &arr);
 
 #endif

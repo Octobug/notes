@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <string>
+#include "array.h"
 
 using namespace std;
 
@@ -20,13 +20,11 @@ public:
                 left = mid;
                 right = mid;
                 while (left >= 0 && nums[mid] == nums[left])
-                {
                     left--;
-                }
+
                 while (right < nums.size() && nums[mid] == nums[right])
-                {
                     right++;
-                }
+
                 return {left + 1, right - 1};
             }
             else if (target > nums[mid])
@@ -38,22 +36,26 @@ public:
                 right = mid - 1;
             }
         }
+
         return {-1, -1};
     }
 };
 
 int main()
 {
+    vector<vector<int>> nums = {
+        {5, 7, 7, 8, 8, 10}, // 3,4
+        {5, 7, 7, 8, 8, 10}, // -1,-1
+        {},                  // -1,-1
+    };
+    vector<int> targets = {8, 6, 0};
+
+    int group;
+    cout << "Please input group: ";
+    cin >> group;
+    group--;
+
     Solution s;
-
-    vector<int> nums1 = {5, 7, 7, 8, 8, 10};
-    vector<int> nums2 = {1};
-    int target;
-
-    cout << "Please input target: ";
-    cin >> target;
-
-    vector<int> range = s.searchRange(nums2, target);
-
-    cout << range[0] << ", " << range[1] << endl;
+    vector<int> result = s.searchRange(nums[group], targets[group]);
+    output(result);
 }
