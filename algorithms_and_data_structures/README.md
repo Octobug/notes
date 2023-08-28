@@ -38,13 +38,13 @@
   - [x] [数组：独一无二的出现次数](https://programmercarl.com/1207.%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C%E7%9A%84%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0.html)
   - [x] [数组：移动零](https://programmercarl.com/0283.%E7%A7%BB%E5%8A%A8%E9%9B%B6.html)
   - [x] [数组：旋转数组](https://programmercarl.com/0189.%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84.html)
-  - [ ] [数组：寻找数组的中心索引](https://programmercarl.com/0724.%E5%AF%BB%E6%89%BE%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E5%BF%83%E7%B4%A2%E5%BC%95.html)
-  - [ ] 数组：在排序数组中查找元素的第一个和最后一个位置
-  - [ ] 数组：按奇偶排序数组II
-  - [ ] 数组：搜索插入位置
-  - [ ] 链表：两两交换链表中的节点
+  - [x] [数组：寻找数组的中心索引](https://programmercarl.com/0724.%E5%AF%BB%E6%89%BE%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E5%BF%83%E7%B4%A2%E5%BC%95.html)
+  - [x] [数组：在排序数组中查找元素的第一个和最后一个位置](https://programmercarl.com/0034.%E5%9C%A8%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%92%8C%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E4%BD%8D%E7%BD%AE.html)
+  - [ ] [数组：按奇偶排序数组II]()
+  - [ ] [数组：搜索插入位置]()
+  - [ ] [链表：两两交换链表中的节点]()
   - 11~20
-  - [ ] 链表：回文链表
+  - [ ] [链表：回文链表]()
   - [ ] 链表：重排链表
   - [ ] 链表：环形链表
   - [ ] 链表：相交链表
