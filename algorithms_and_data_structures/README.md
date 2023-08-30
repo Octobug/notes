@@ -45,8 +45,8 @@
   - [x] [链表：两两交换链表中的节点](https://programmercarl.com/0024.%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9.html)
   - 11~20
   - [x] [链表：回文链表](https://programmercarl.com/0234.%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.html)
-  - [ ] [链表：重排链表](https://programmercarl.com/0143.%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8.html)
-  - [ ] 链表：环形链表
+  - [x] [链表：重排链表](https://programmercarl.com/0143.%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8.html)
+  - [ ] [链表：环形链表](https://programmercarl.com/0141.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.html)
   - [ ] 链表：相交链表
   - [ ] 哈希表：同构字符串
   - [ ] 哈希表：查找常用字符
