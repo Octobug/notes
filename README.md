@@ -10,12 +10,14 @@ disciplines according to the
 
 ### Ⅰ. [Humanities](https://en.wikipedia.org/wiki/Humanities)
 
-1. [Languages](https://en.wikipedia.org/wiki/Language)
+1. [History](https://en.wikipedia.org/wiki/Outline_of_history)
+    1. Political History
+2. [Languages](https://en.wikipedia.org/wiki/Language)
     and [Literature](https://en.wikipedia.org/wiki/Literature)
     1. [World Literature](world_literature)
         1. [British Literature](./world_literature/british_literature/)
         2. [Chinese Literature](./world_literature/chinese_literature/)
-2. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
+3. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
     1. [Music](music)
         1. Music Theory
         2. [Organology](music/organology)
