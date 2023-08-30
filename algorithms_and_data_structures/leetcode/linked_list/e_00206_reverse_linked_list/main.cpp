@@ -10,24 +10,22 @@ public:
     ListNode *reverseList(ListNode *head)
     {
         if (!head || !head->next)
-        {
             return head;
-        }
 
-        ListNode *p = head;
-        ListNode *tmpLeft = p->next;
-        ListNode *tmpRight;
+        ListNode *a = head;
+        ListNode *b = a->next;
+        ListNode *c;
 
-        while (tmpLeft)
+        a->next = nullptr;
+        while (b)
         {
-            tmpRight = tmpLeft->next;
-            tmpLeft->next = p;
-            p = tmpLeft;
-            tmpLeft = tmpRight;
+            c = b->next;
+            b->next = a;
+            a = b;
+            b = c;
         }
 
-        head->next = nullptr;
-        return p;
+        return a;
     }
 };
 
@@ -38,9 +36,7 @@ public:
     ListNode *reverseList(ListNode *head)
     {
         if (!head || !head->next)
-        {
             return head;
-        }
 
         ListNode *first = head;
         ListNode *remains = reverseList(first->next);
