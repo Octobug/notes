@@ -45,8 +45,8 @@
       - [四、when 的缩合关系词用法](#四when-的缩合关系词用法)
     - [4.2 where 的用法](#42-where-的用法)
       - [一、引导定语从句时，先行词通常是表示地点的名词](#一引导定语从句时先行词通常是表示地点的名词)
-    - [2.13.2 先行词表示地点，不一定都用 where 引导定语从句](#2132-先行词表示地点不一定都用-where-引导定语从句)
-      - [二、关系副词 where 在从句中作地点状语](#二关系副词-where-在从句中作地点状语)
+      - [二、关系副词 where 在从句中必须作地点状语](#二关系副词-where-在从句中必须作地点状语)
+      - [三、where 引导定语从句，先行词可以是有地点意义的其他各种名词](#三where-引导定语从句先行词可以是有地点意义的其他各种名词)
     - [4.3 why 的用法](#43-why-的用法)
     - [思维训练 4. 关系副词的用法](#思维训练-4-关系副词的用法)
   - [5. 限制性与非限制性定语从句](#5-限制性与非限制性定语从句)
@@ -656,7 +656,7 @@ nerves.
 when 作为关系副词时的用法特点有：
 
 1. when 在定语从句中作时间状语，修饰从句谓语动词；
-2. 其前面的先行词必须是表示时间的名词，如 day, year, time 等；
+2. 其前面的先行词**必须**是表示时间的名词，如 day, year, time 等；
 3. 可以引导**限定性**和**非限定性**定语从句。
 
 `1` I'll never forget the day when I met you.
@@ -809,7 +809,7 @@ husband.
 此时关系副词 where 的用法特点有：
 
 1. where 在定语从句中作地点状语，修饰从句谓语动词；
-2. 其先行词通常是表示地点的名词，如 place 和 house 等；
+2. 其先行词**通常**是表示地点的名词，如 place 和 house 等；
 3. where 可以引导**限定性**和**非限定性**定语从句，。
 
 `1` Literature is the place where the past meets the present to contemplate the
@@ -838,32 +838,47 @@ suspended and dead people speak.
 
 `3` This is the town where I spent my childhood.
 
-### 2.13.2 先行词表示地点，不一定都用 where 引导定语从句
+#### 二、关系副词 where 在从句中必须作地点状语
 
->>>>> progress
-
-#### 二、关系副词 where 在从句中作地点状语
-
-与 where 类似，并非先行词是表示地点的名词时，都得由 where 来引导定语从句，
-这得看关系词在句中充当的成分。
+与 where 类似，并不是只要先行词是表示地点的名词，都得由 where 来引导定语从句，这需要看关系词在句中充当的成分。
 **若定语从句缺主语或宾语，则要用 which 或 that 引导定语从句**。
 
-- `例 4`:
-  - This is the town where I spent my childhood.
-    - 关系词在从句中作状语
-  - This is the town which I told you about before.
-    - 关系词在从句中作宾语
-- `例 5`:
-  - The library where students often study was on fire last night.
-    - 关系词在从句中作状语
-  - The library, which was built in the 1930's, needs to be renovated.
-    - 关系词在从句中作主语
-- `例 6`: I've never been to Beijing, but it's the place ____.
-  - A. where I'd like to visit
-  - B. in which I'd like to visit
-  - C. I most want to visit
-  - D. that I want to visit it most
-  - 答案: C. (that/which) I most want to visit
+`1`
+
+- This is the town where I spent my childhood.
+  - 从句缺少地点状语，因此需要关系词在从句中作地点状语
+- This is the town which I told you about before.
+  - 从句中谓语动词 told 缺少宾语，因此需要关系词在从句中作宾语
+
+`5`
+
+- The library where students often study was on fire last night.
+  - 关系词在从句中作状语
+- The library, which was built in the 1930's, needs to be renovated.
+  - 关系词在从句中作主语
+
+`2` In fact, there are now so many deer that some are being sent to places which
+would like to return this kind of deer to the wild.
+
+- 从句缺少主语，所以要用关系代词 which 充当从句主语。
+- `译` 事实上，现在鹿群数量过多，因此有些鹿被送到那些能将它们送回野外的地方。
+
+`3` I've never been to Beijing, but it's the place ____.
+
+- A. where I'd like to visit
+- B. in which I'd like to visit
+- C. I most want to visit
+- D. that I want to visit it most
+- `答案` C。从句中谓语动词 visit 缺少宾语。(that/which) I most want to visit
+- `译` 我从未到过北京，但北京却是我最想去的地方。
+
+#### 三、where 引导定语从句，先行词可以是有地点意义的其他各种名词
+
+where 引导定语从句时的先行词**通常**时表示地点的名词。
+除了地点名词，还可以是其他表示“含有地点意义的名词”，这些名词往往是一些抽象名词，比如 dream,
+case, situation, point 等。
+
+`1` >>>>> progress
 
 ### 4.3 why 的用法
 
