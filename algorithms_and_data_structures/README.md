@@ -48,8 +48,8 @@
   - 11~20
   - [x] [链表：回文链表](https://programmercarl.com/0234.%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.html)
   - [x] [链表：重排链表](https://programmercarl.com/0143.%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8.html)
-  - [ ] [链表：环形链表](https://programmercarl.com/0141.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.html)
-  - [ ] 链表：相交链表
+  - [x] [链表：环形链表](https://programmercarl.com/0141.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.html)
+  - [ ] [链表：相交链表](https://programmercarl.com/0160.%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.html)
   - [ ] 哈希表：同构字符串
   - [ ] 哈希表：查找常用字符
   - [ ] 字符串：长按键入
@@ -74,7 +74,6 @@
   - [ ] 模拟：下一个排列
   - [ ] 模拟：岛屿的周长
   - [ ] 位运算：根据数字二进制下1的数目排序
-- [ ] 感悟
 
 ## LeetCode Top 100
 
