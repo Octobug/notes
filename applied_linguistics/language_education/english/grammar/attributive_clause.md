@@ -47,6 +47,7 @@
       - [一、引导定语从句时，先行词通常是表示地点的名词](#一引导定语从句时先行词通常是表示地点的名词)
       - [二、关系副词 where 在从句中必须作地点状语](#二关系副词-where-在从句中必须作地点状语)
       - [三、where 引导定语从句，先行词可以是有地点意义的其他各种名词](#三where-引导定语从句先行词可以是有地点意义的其他各种名词)
+      - [四、区分 where 引导的地点状语从句和定语从句](#四区分-where-引导的地点状语从句和定语从句)
     - [4.3 why 的用法](#43-why-的用法)
     - [思维训练 4. 关系副词的用法](#思维训练-4-关系副词的用法)
   - [5. 限制性与非限制性定语从句](#5-限制性与非限制性定语从句)
@@ -878,7 +879,116 @@ where 引导定语从句时的先行词**通常**时表示地点的名词。
 除了地点名词，还可以是其他表示“含有地点意义的名词”，这些名词往往是一些抽象名词，比如 dream,
 case, situation, point 等。
 
-`1` >>>>> progress
+`1`
+
+- Annie: You know that **dream** where you're walking down the street naked and
+  everyone is looking at you?
+- Becky: I love that dream.
+- Annie: That was nothing compared to this humiliation, nothing.
+  - 先行词 dream 是一个抽象的地点名词，因此后面接 where 引导的定语从句。
+    where 在从句中作地点状语。
+  - `译`
+    - Annie: 你知道这种梦吗？在梦里，你光着身子走在大街上，所有的人都在盯着你看。
+    - Becky: 我喜欢这种梦。
+    - Annie: 那真丢死人了，没有比这更丢人的了。
+
+`2` Cheating is most likely in situations where the vital interests are high and
+the chances of getting caught are low.
+
+- 先行词 situations 表示“情形，情况”，而不是一个常规的表示地点的名词，但这里依然用 where
+  引导定语从句。where 在从句中作地点状语。
+- `译` 如果利益重大而且被人发现的可能性又很小，在这种情况下，欺诈行为最有可能发生。
+
+`3` He has reached the point where a change is needed.
+
+- 先行词 point 表示“地步，某一程度”，并非常规意义上的地点名词。
+  这里依然用 where 引导定语从句，where 在从句中充当地点状语。
+- `译` 他已到了需要改弦易辙的地步。
+
+`4` Both the United States and China had reached a point in history where they
+shared an eagerness to start a new relationship, and where both were prepared to
+pay an ideological price for it.
+
+- 先行词 point 和关系副词被 in history 隔开。
+- `译` 美国和中国都到达了这样的历史时刻：双方都在渴望开始一种新的关系，并都准备为此付出意识形态上的代价。
+
+`5` Until such time as mankind has the sense to lower its population to the
+point where the planet can provide a comfortable support for all, people will
+have to accept more "unnatural food".
+
+- `译` 除非人类终于意识到要把人口减少到这样的程度——使地球能为所有人提供足够的饮食，否则人们将不得不接受更多的“人造食品”。
+
+`6` Now the tide appears to be turning. As personal injury claims continue as
+before, some courts are beginning to side with defendants, especially in cases
+where a warning label probably wouldn't have changed anything.
+
+- 先行词 cases 表示“案件”。
+- `译` 现在情况似乎正在发生变化。个人受伤害索赔的案件一如既往，但是法庭开始站在被告一边，特别是在有警告标签也不可能避免发生事故的案件中。
+
+从以上例子可以进一步归纳：
+如果一个定语从句不是缺少主语或宾语而是缺少状语，并且先行词是除了表示时间的名词（此时用
+when）和表示原因的名词（此时用 why）以外的其他任何名词，此时都要用 where 引导定语从句。
+
+`7` What he likes best about painting is its contrast to opera, where the
+challenge is to use one's talents to bring to life the works of others.
+
+- where 指代的是 opera，而不是 painting。先行词 opera 也不是一个常规的表示地点的名词。
+- `译` 他喜欢绘画的最主要原因是绘画与歌剧表演有一个不同之处：歌剧对他的挑战是用自己的演唱天赋来演绎别人的作品。
+
+`8` Speech has to be triggered and this depends on interaction between the
+mother and the child, ____ the mother recognizes the cues and signals in the
+child's crying, smiling, and responds to them.
+
+- A. when
+- B. which
+- C. why
+- D. where
+- `答案` D。这种有逗号隔开的只可能**非限定性定语从句**或**状语从句**。
+  - 这里先行词是 interaction，它不是一个常规的表示地点的名词。
+  - `译` 语言是需要培养的，而这又需要母亲和孩子之间的互动作用，在这种互动过程中（where
+    的翻译），母亲可以从孩子的哭笑中捕捉到一些信息和信号，并且给予它们反馈。
+  - 对于 when，前面的先行词不是时间名词，且此时 when 作为从句的的时间状语逻辑语义不通。
+  - 对于 which，从句中不缺少主语或宾语，因此 which 无法在从句总充当成分。
+  - 对于 why，其不能引导非限定性定语从句。
+
+`9` When the work is well done, a climate of accident -- free operations is
+established ____ time lost due to injuries is kept at a minimum.
+
+- A. where
+- B. how
+- C. what
+- D. unless
+- `答案` A。
+  - 主句：When the work is well done, a climate of accident -- free operations is
+    established.
+  - 先行词是 a climate of accident -- free operations，其与 where 引导的定语从句被
+    is established 分隔开。按照“为重原则”，定语从句被后移。
+  - `译` 当安全保障工作做得好的时候，无事故生产的工作风气就会形成，而在这种风气下，由于工伤事故而导致的时间损失就会降到最低。
+
+#### 四、区分 where 引导的地点状语从句和定语从句
+
+`1` 疟疾是由蚊子传播的，全球有大约 45% 的人口生活在疟疾肆虐的区域。
+
+- 45 percent of the world's population live where mosquitoes transmit malaria.
+  - where 引导地点状语从句，where 前面没有被修饰的表示地点的名词。
+- Approximately 45 percent of the world's population live in the climate zone
+  where mosquitoes transmit malaria.
+  - where 引导定语从句，在从句中充当状语。
+
+where 引导的这两种从句有如下两点不同：
+
+1. **结构上的不同**
+    - 引导定语从句时，where 的前面必然有表示地点的名词（不需要是地点名词），即先行词；
+    - 引导地点状语从句时，其前面往往没有表示地点的名词。
+2. **where 的作用不同**
+    - 引导定语从句时，指代表示地点的先行词在定语从句中作地点状语，修饰从句谓语；
+    - 引导地点状语从句时，不在从句中充当任何成分，只起连接主句和从句的作用。
+      需要注意的是，where 引导的地点状语从句修饰修饰主句的谓语，作主句谓语的地点状语。
+
+可以总结为：在 where 引导的定语从句中，作从句谓语的状语是 where 这个词，而在 where
+引导的地点状语从句中，作主句谓语的状语是整个 where 引导的从句，而不是 where 这个词。
+
+`2` >>>>> progress
 
 ### 4.3 why 的用法
 
