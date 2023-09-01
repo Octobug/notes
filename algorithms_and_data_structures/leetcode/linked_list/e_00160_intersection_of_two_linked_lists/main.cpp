@@ -35,16 +35,13 @@ public:
 
         int diff = lenA - lenB;
         while (diff--)
-        {
             pa = pa->next;
-        }
 
         while (pa)
         {
             if (pa == pb)
-            {
                 return pa;
-            }
+
             pa = pa->next;
             pb = pb->next;
         }
@@ -67,32 +64,28 @@ int main()
     vector<int> b3 = {1, 5};
     vector<int> c3 = {};
 
-    vector<vector<int>> aGroups = {a1, a2, a3};
-    vector<vector<int>> bGroups = {b1, b2, b3};
-    vector<vector<int>> cGroups = {c1, c2, c3};
+    vector<vector<int>> listAs = {a1, a2, a3};
+    vector<vector<int>> listBs = {b1, b2, b3};
+    vector<vector<int>> listCs = {c1, c2, c3};
 
     int group;
     cout << "Please input group: ";
     cin >> group;
+    group--;
 
-    ListNode *listA = array2list(aGroups[group - 1]);
-    ListNode *listB = array2list(bGroups[group - 1]);
-    ListNode *listC = array2list(cGroups[group - 1]);
+    ListNode *listA = array2list(listAs[group]);
+    ListNode *listB = array2list(listBs[group]);
+    ListNode *listC = array2list(listCs[group]);
 
     ListNode *pa = listA;
-
     while (pa->next)
-    {
         pa = pa->next;
-    }
-    pa->next = listC->next;
+    pa->next = listC;
 
     ListNode *pb = listB;
     while (pb->next)
-    {
         pb = pb->next;
-    }
-    pb->next = listC->next;
+    pb->next = listC;
 
     Solution s;
     ListNode *intersect = s.getIntersectionNode(listA, listB);

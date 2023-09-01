@@ -49,8 +49,8 @@
   - [x] [链表：回文链表](https://programmercarl.com/0234.%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.html)
   - [x] [链表：重排链表](https://programmercarl.com/0143.%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8.html)
   - [x] [链表：环形链表](https://programmercarl.com/0141.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.html)
-  - [ ] [链表：相交链表](https://programmercarl.com/0160.%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.html)
-  - [ ] 哈希表：同构字符串
+  - [x] [链表：相交链表](https://programmercarl.com/0160.%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.html)
+  - [ ] [哈希表：同构字符串](https://programmercarl.com/0205.%E5%90%8C%E6%9E%84%E5%AD%97%E7%AC%A6%E4%B8%B2.html)
   - [ ] 哈希表：查找常用字符
   - [ ] 字符串：长按键入
   - [ ] 字符串：比较含退格的字符串

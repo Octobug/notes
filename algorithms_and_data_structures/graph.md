@@ -5,9 +5,9 @@
 
 ## References
 
-- [ ] [图论](https://programmercarl.com/other/tulunshuoming.html)
+- [x] [图论](https://programmercarl.com/other/tulunshuoming.html)
   - 01~10
-  - [ ] 深度优先搜索理论基础
+  - [ ] [深度优先搜索理论基础](https://programmercarl.com/%E5%9B%BE%E8%AE%BA%E6%B7%B1%E6%90%9C%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html)
   - [ ] 所有可能的路径
   - [ ] 广度优先搜索理论基础.md
   - [ ] 岛屿数量.深搜版
