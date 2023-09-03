@@ -48,6 +48,8 @@
       - [二、关系副词 where 在从句中必须作地点状语](#二关系副词-where-在从句中必须作地点状语)
       - [三、where 引导定语从句，先行词可以是有地点意义的其他各种名词](#三where-引导定语从句先行词可以是有地点意义的其他各种名词)
       - [四、区分 where 引导的地点状语从句和定语从句](#四区分-where-引导的地点状语从句和定语从句)
+      - [五、where 的缩合关系词用法](#五where-的缩合关系词用法)
+      - [思维总结：4.2 where 的用法](#思维总结42-where-的用法)
     - [4.3 why 的用法](#43-why-的用法)
     - [思维训练 4. 关系副词的用法](#思维训练-4-关系副词的用法)
   - [5. 限制性与非限制性定语从句](#5-限制性与非限制性定语从句)
@@ -988,9 +990,47 @@ where 引导的这两种从句有如下两点不同：
 可以总结为：在 where 引导的定语从句中，作从句谓语的状语是 where 这个词，而在 where
 引导的地点状语从句中，作主句谓语的状语是整个 where 引导的从句，而不是 where 这个词。
 
-`2` >>>>> progress
+`2` 看书时，最好在有问题的地方做个标记。
+
+- When you read books, you had better make a mark at the spot where you have any
+  question.
+  - where 引导的定语从句修饰 spot。
+- When you read books, you had better make a mark where you have any question.
+  - where 引导的地点状语从句说明 make a mark 的地方，修饰主句谓语。
+
+`3` The attacks on amibition are many and come from various angles; its public
+defenders are few and unimpressive, where they are not extremely unattractive.
+
+- where 引导地点状语从句。
+- `译` 对雄心壮志的攻击为数众多，并且出于不同的角度；公开为它辩护的人极少，辩词也很平淡，尽管辩护者并非极不引人注意。
+
+`4` 请把书放回原处。
+
+- Would you please put the book where it belongs? ✅
+  - where 引导地点状语从句。
+- Would you please put the book to which it belongs? ❌
+  - which 无法指代任何先行词，所以错误。
+
+#### 五、where 的缩合关系词用法
+
+`5` We stopped for a minute to walk out to where we had seen George Mills work
+in the mud the night before.
+
+- 从结构上看，where 引导的从句作介词 to 的宾语，所以是一个宾语从句。
+- 但从 where 的意义上来看，这里的 where 相当于说 the place where，即 where
+  本身隐含了先行词 the place。所以这个从句可以改写为定语从句
+  the place where we had seen...
+- `译` 我们停留了片刻，出来走到我们曾经看到 George Mills 前一天晚上在泥里工作的地方。
+
+#### 思维总结：4.2 where 的用法
+
+如果一个定语从句不是缺少主语或宾语，而是缺少状语，并且先行词是除了表示时间的名词（如果是时间名词则用
+when）和表示原因的名词（若是原因名词则用 why）以外的任何其他名词，此时，都要用 where
+引导定语从句。
 
 ### 4.3 why 的用法
+
+>>>>> progress
 
 why 用来表示原因，只引导**限制性**定语从句，在从句中作原因状语，先行词是 reason
 等表示原因的名词。
