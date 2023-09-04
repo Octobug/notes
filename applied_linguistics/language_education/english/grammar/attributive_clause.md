@@ -52,6 +52,8 @@
       - [思维总结：4.2 where 的用法](#思维总结42-where-的用法)
     - [4.3 why 的用法](#43-why-的用法)
     - [思维训练 4. 关系副词的用法](#思维训练-4-关系副词的用法)
+      - [答案：思维训练 4. 关系副词的用法](#答案思维训练-4-关系副词的用法)
+  - [5. how 是不是关系副词](#5-how-是不是关系副词)
   - [5. 限制性与非限制性定语从句](#5-限制性与非限制性定语从句)
     - [5.1 限制性定语从句——不用逗号隔开](#51-限制性定语从句不用逗号隔开)
     - [5.2 非限制性定语从句——用逗号隔开](#52-非限制性定语从句用逗号隔开)
@@ -1030,28 +1032,85 @@ when）和表示原因的名词（若是原因名词则用 why）以外的任何
 
 ### 4.3 why 的用法
 
->>>>> progress
+why 的用法特点有：
 
-why 用来表示原因，只引导**限制性**定语从句，在从句中作原因状语，先行词是 reason
-等表示原因的名词。
+1. why 在定语从句中作原因状语，修饰从句的谓语动词；
+2. 其先行词必须是表示原因的名词，如 reason, cause 等；
+3. 只引导**限定性**定语从句。
 
-This is the reason why I didn't come here.
+`1` This is the reason why I didn't come here.
+
+- `译` 这就是我没来的原因。
+
+`2` Online shopping is becoming more and more popular in China. It either takes
+the form of B2C (business to customer) or C2C (customer to customer). This
+material may be protected by copyright. The two major reasons why growth is slow
+are first, concerns about security and reliability and second, Chinese
+customers are used to haggling over prices in stores, a process which does not
+transfer to the Internet.
+
+- `译` 在中国，网上购物日益流行。采取的方式通常为B2C（商家对顾客）或C2C（顾客对顾客）这两种。
+  其发展缓慢的原因主要有两个，首先，是安全与可靠性的问题；
+  其次，中国的顾客都喜欢讨价还价，但在网上却没有这个过程。
+
+表示原因的名词很少，所以 why 引导定语从句不太多见。
+此外，表示原因的先行词常常被省略，而只剩下 why 引导的从句。
+
+`3` This is why I didn't come here.
 
 ### 思维训练 4. 关系副词的用法
 
-**一、请将下列每一组中的两个简单句合并为一个定语从句，用第二个句子作定语。**
+**一、选择最佳答案填空。**
 
-*2. He arrived in Shanghai that day. On the same day I left.*
+*1. I know of a number of occasions ____ people died from water pollution.*
 
-答案: He arrived in Shanghai on the day when I left.
+- *A. which*
+- *B. when*
+- *C. where*
+- *D. while*
 
-*5. The city was beautiful. We spent our vacationn there.*
+*6. This is the shop ____ I often speak to you.*
 
-答案: The city where we spent our vacation was beautiful.
+- *A. where*
+- *B. which*
+- *C. of which*
+- *D. in which*
 
-*8. This is the house. They put their tools in it.*
+*9. He told us how he dealt with the self-interest of countries to bring them
+into a kind of international accord ____ everyone seemed to benefit.*
 
-答案: This is the house where they put their tools.
+- *A. where*
+- *B. which*
+- *C. that*
+- *D. what*
+
+**二、请将下列每一组中的两个简单句合并为一个定语从句，用第二个句子作定语。**
+
+*10. He arrived in Shanghai that day. On the same day I left.*
+
+*11. The city was beautiful. We spent our vacationn there.*
+
+*12. This is the house. They put their tools in it.*
+
+#### 答案：思维训练 4. 关系副词的用法
+
+*1. B。名词 occasions 是表示时间，因此用关系副词 when 来引导定语从句，在从句中作时间状语。
+
+*6. C。of which 来自于 speak of 搭配。
+
+*9. A。B, C, D 都是关系代词，在从句中应该充当主语或宾语，但从句并不缺少这些成分。
+因此应该选 where，在从句中作地点状语，这里先行词是 accord，不是常规的地点名词。
+where 相当于 from which，因为与动词的搭配是 benefit from (the accord)。
+
+*10. He arrived in Shanghai on the day when I left.
+
+*11. The city where we spent our vacation was beautiful.
+
+*12. This is the house where they put their tools.
+
+## 5. how 是不是关系副词
+
+>>>>> progress
 
 ## 5. 限制性与非限制性定语从句
 
