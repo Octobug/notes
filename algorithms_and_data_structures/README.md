@@ -51,8 +51,8 @@
   - [x] [链表：环形链表](https://programmercarl.com/0141.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.html)
   - [x] [链表：相交链表](https://programmercarl.com/0160.%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.html)
   - [x] [哈希表：同构字符串](https://programmercarl.com/0205.%E5%90%8C%E6%9E%84%E5%AD%97%E7%AC%A6%E4%B8%B2.html)
-  - [ ] [哈希表：查找常用字符](https://programmercarl.com/1002.%E6%9F%A5%E6%89%BE%E5%B8%B8%E7%94%A8%E5%AD%97%E7%AC%A6.html)
-  - [ ] 字符串：长按键入
+  - [x] [哈希表：查找常用字符](https://programmercarl.com/1002.%E6%9F%A5%E6%89%BE%E5%B8%B8%E7%94%A8%E5%AD%97%E7%AC%A6.html)
+  - [ ] [字符串：长按键入](https://programmercarl.com/0925.%E9%95%BF%E6%8C%89%E9%94%AE%E5%85%A5.html)
   - [ ] 字符串：比较含退格的字符串
   - [ ] 二叉树：求根到叶子节点数字之和
   - [ ] 二叉树：将二叉搜索树变平衡
