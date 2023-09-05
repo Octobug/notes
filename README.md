@@ -81,11 +81,12 @@ disciplines according to the
 
 ### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)
 
-1. [Business](https://en.wikipedia.org/wiki/Business)
-    1. [Finance](finance)
+1. [Business](https://en.wikipedia.org/wiki/Outline_of_business)
+    1. Finance
         1. Personal Finance
         2. Mathematical Finance
     2. Industrial and Labor Relations
+    3. Marketing
 2. [Journalism](https://en.wikipedia.org/wiki/Journalism),
    [Media Studies](https://en.wikipedia.org/wiki/Media_studies) and
    [Communication](https://en.wikipedia.org/wiki/Communication_studies)
