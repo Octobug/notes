@@ -66,6 +66,7 @@
     - [思维训练 4. 原因状语从句](#思维训练-4-原因状语从句)
   - [5. 目的状语从句](#5-目的状语从句)
     - [思维训练 5. 目的状语从句](#思维训练-5-目的状语从句)
+  - [3.7 结果状语从句](#37-结果状语从句)
   - [6. 结果状语从句](#6-结果状语从句)
     - [6.1 常见连词的用法](#61-常见连词的用法)
       - [一、连词 so...that 的用法](#一连词-sothat-的用法)
@@ -1724,6 +1725,10 @@ night's sleep.*
 *6. I put the milk in the refrigerator. I wanted to make sure it didn't spoil.*
 
 答案：I put the milk in the refrigerator so that it wouldn't spoil.
+
+## 3.7 结果状语从句
+
+>>>>> progress
 
 ## 6. 结果状语从句
 
