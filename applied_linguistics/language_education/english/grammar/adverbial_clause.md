@@ -62,8 +62,9 @@
       - [三、not that...but that](#三not-thatbut-that)
       - [四、inasmuch as, insomuch as, in as much as, in so much as](#四inasmuch-as-insomuch-as-in-as-much-as-in-so-much-as)
     - [4.4 because 的否定转移](#44-because-的否定转移)
-    - [思维训练 3.5：原因状语从句](#思维训练-35原因状语从句)
     - [思维训练 4. 原因状语从句](#思维训练-4-原因状语从句)
+      - [答案：思维训练 4. 原因状语从句](#答案思维训练-4-原因状语从句)
+  - [3.6 目的状语从句](#36-目的状语从句)
   - [5. 目的状语从句](#5-目的状语从句)
     - [思维训练 5. 目的状语从句](#思维训练-5-目的状语从句)
   - [3.7 结果状语从句](#37-结果状语从句)
@@ -1659,13 +1660,9 @@ the hand is worth two in the bush.
 综上，可以这样定义**否定转移**：是指形式上否定主句或句子的谓语，但在逻辑语义上是否定句子的其他部分。
 尤其是在与 because 引导的从句连用时，往往否定 because 引导的从句。
 
-### 思维训练 3.5：原因状语从句
-
->>>>> progress
-
 ### 思维训练 4. 原因状语从句
 
-**请选择最佳答案填空。**
+**一、请选择最佳答案填空。**
 
 *5. ____ he has had a reputation for being a careful driver, his accident came
 as quite a surprise.*
@@ -1675,7 +1672,89 @@ as quite a surprise.*
 - *C. Because*
 - *D. For*
 
-答案：A。这里 since 表示众所周知的原因。
+*10. Liquids are like solids ____ they have a definite volume.*
+
+- *A. in that*
+- *B. for that*
+- *C. with that*
+- *D. at that*
+
+**二、翻译下列句子。**
+
+*13. They were not about to change their tastes and habits just because of a
+change in the law.*
+
+*14. I didn't spend three hours repairing your vacuum so it could sit in the
+closet.*
+
+*15. It has long since been satisfactorily established that a high executive
+does not have a large vocabulary merely because of the opportunities of his
+position.*
+
+*16. Don't be afraid of others because they are bigger than you. The real size
+could be measured in the wisdom.*
+
+*17. Certainly I don't teach because teaching is easy for me. Teaching is the
+most difficult of the various ways I have attempted to earn my living. Nor do I
+teach because I think I know answers, or because I have knowledge I feel
+compelled to share.*
+
+*18. The conference's purpose is to demonstrate that we're all continuing to
+focus on the economy as the president promised to do when he came into office
+and that means not sitting around and patting yourself on the back because of
+the unemployment and inflation rates being low.*
+
+*19. In 1600 the earth was not the center of the universe because the majority
+then supposed it was; nor because she had more readers was Ella Wheeler Wilcox a
+better poet than Father Hopkins.*
+
+*20. Britain's press is unusual in that it is divided into two very different
+types of newspaper: the quality press and the popular press.*
+
+#### 答案：思维训练 4. 原因状语从句
+
+*5. A。这里 since 表示众所周知的原因。
+
+*10. A。连词 in that 表示原因。`译` 液体与固体一样，都有一定的体积。
+
+*13. `译` 他们不会因为法律的改变，而去改变自己的喜好与习惯。
+
+- 这是关于 because 的否定转移。
+
+*14. `译` 我花了 3 小时把吸尘器修理好并不是为了让你把它放在储藏室不用。
+
+- 这是关于 so 的否定转移。
+
+*15. `译` 一个身居高位的总经理并不只是因为他的职位而使得他句有丰富的词汇，这一点早已得到证实。
+
+- 这是关于 because 的否定转移。
+
+*16. `译` 不要因为别人比你身材魁梧就害怕他们。真正的强者在于智慧。
+
+- 这是关于 because 的否定转移。
+
+*17. `译` 我选择教书，并不是因为教书对我来说很容易，相反，在我尝试过的众多谋生方式当中，教书对我来说其实是最难的。
+也并不是因为我认为自己学识渊博因而急切地想去炫耀，而选择教书。
+
+- 这是关于 because 的否定转移。
+
+*18. `译` 此次会议的目的就是要证明我们正一直致力于发展经济，正如我们总统上台执政时所承诺的那样。
+我们政府并没有因为较低的失业率和通货膨胀率就无所事事，沾沾自喜。
+
+- 这是关于 because 的否定转移。
+
+*19. `译` 在 1600 年，地球并没有因为多数人认为它是宇宙的中心而成为宇宙的中心。
+同样，埃拉·惠勒并没有因为她有更多的读者就成为比霍普金斯神父更好的诗人。
+
+- 这是关于 because 的否定转移。
+
+*20. `译` 英国的报业与众不同，原因就在于它的报纸分为严肃报纸和通俗报纸两种截然不同的类型。
+
+- in that 表示原因
+
+## 3.6 目的状语从句
+
+>>>>> progress
 
 ## 5. 目的状语从句
 
