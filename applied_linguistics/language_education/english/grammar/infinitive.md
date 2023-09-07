@@ -88,7 +88,12 @@
       - [一、态度情感类谓语](#一态度情感类谓语)
       - [二、观点类谓语](#二观点类谓语)
       - [三、推断类谓语](#三推断类谓语)
-    - [4.11.2 表示“非真实的”过去](#4112-表示非真实的过去)
+    - [11.2 表示“非真实的”过去](#112-表示非真实的过去)
+    - [11.3 偶尔表示将来的动作](#113-偶尔表示将来的动作)
+    - [思维总结：11. 不定时的时态和语态（二）：完成式（to have done）](#思维总结11-不定时的时态和语态二完成式to-have-done)
+    - [思维训练：11. 不定时的时态和语态（二）：完成式（to have done）](#思维训练11-不定时的时态和语态二完成式to-have-done)
+      - [答案：思维训练：11. 不定时的时态和语态（二）：完成式（to have done）](#答案思维训练11-不定时的时态和语态二完成式to-have-done)
+  - [12. 不定式的时态和语态（三）：进行式 (to be doing)](#12-不定式的时态和语态三进行式-to-be-doing)
   - [4.13 不定式的时态和语态（四）：完成进行式 (to have been doing)](#413-不定式的时态和语态四完成进行式-to-have-been-doing)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
@@ -2626,9 +2631,237 @@ expert said on Monday.
 - 相当于一般过去时态：过去发生的某个动作
 - `=` I am sorry that I didn't come on Thursday.
 
-### 4.11.2 表示“非真实的”过去
+### 11.2 表示“非真实的”过去
 
->>>>> progress
+可以把不定式的完成式用在表示**打算**、**需要**或**计划**等动词的过去时后面，表示“过去本打算作但事实上没有实现的动作”。
+这些动词又：
+
+- hope
+- intend
+- mean
+- plan
+- propose
+- think
+- wish
+- ...
+
+`1` I meant to have telephoned, but I forgot.
+
+- `译` 我本来打算打电话的，但是我忘记了。
+
+`2` I planned to have visited you yesterday evening, but I was too busy.
+
+- `译` 我本来想昨晚去看你，但我太忙了。
+
+此外，还可以用上述动词的过去完成时态来表示虚拟，但此时的不定式不可用完成式的 to have
+done，而要用一般式的 to do。
+
+`3`
+
+- I had intended to see you, but I was busy. ✅
+- I had intended to have seen you, but I was busy. ❌
+
+还可以用下面这几种结构表达同样的意思：
+
+- was/were to have done
+- would like to have done
+- should like to have done
+
+`4` I was to have visited you yesterday evening.
+
+`5` I was to have telephoned, but I forgot.
+
+`6` The President was to have been here for this meeting, but he canceled his
+trip, because of the hostage-taking incident last week at a theater.
+
+- `译` 总统原计划要来参加此次会议，但他取消了这次行程，因为上周在一家剧院发生了一起劫持人质的事件。
+
+综上，表示“过去想做而实际未做成”的事，有三种表达方式：
+
+1. was/were to have done, would like to have done, should like to have done
+2. intended (meant 等动词过去式) + to have done
+3. had intended (meant 等动词过去完成式) + to do
+
+### 11.3 偶尔表示将来的动作
+
+在某些特殊的结构中，不定式的完成式还可以表示一个将来的活动，相当于一个将来完成时态。
+
+`1` She hopes to have finished the work by the time he comes back.
+
+- 这句话是由宾语从句转换而来的：She hopes that she will have finished the work by the
+  time he comes back.
+  - 句中的 by the time 对应的主句一般用**完成时态**，因此改成不定式也用完成式，表示一个将来要完成的动作。
+- `译` 她希望在他回来之前把这些工作都做完。
+
+不定式的完成式除了可以放在谓语后面与谓语动词一起构成复合谓语，还可以用在名词后面作定语，不过这种用法较为少见。
+
+`2` The Great Wall of China is the largest man-made momument ever to have benn
+built.
+
+- 不定式完成式 to have been built 放在名词 monument 后面作定语。
+  因为长城是在过去建造的，所以用了完成被动式。
+- `译` 中国的长城是人类迄今为止建造的最宏伟的历史遗迹。
+
+### 思维总结：11. 不定时的时态和语态（二）：完成式（to have done）
+
+不定式完成式的意义和用法，重点在于区分主句谓语动作和不定式动作时间上的先后：
+
+- 若不定式动作发生在先，不定式用完成式；
+- 若不定式动作发生在后，不定式用一般式。
+
+### 思维训练：11. 不定时的时态和语态（二）：完成式（to have done）
+
+**一、用括号中动词的适当形式填空。**
+
+*1. Nero, who was Emperor of Rome from 54 to 68 A.D., is believed to ____
+(murder) both his mother and his wife.*
+
+*3. We didn't expect you to ____ (wait) for us here.*
+
+*5. You look tired. You seem to ____ (work) too hard all day.*
+
+*9.*
+
+- *A: Do you believe that Charlie did best in the exam?*
+- *B: Yes. He is said ____ (word) very hard.*
+
+*10. It has been proved that some people's best ideas seem ____ (occur) when
+they were relaxing.*
+
+*11. It has been proved that some people's best ideas seem ____ (occur) when
+they are relaxing and daydreaming.*
+
+**二、选择最佳答案填空。**
+
+*12. He was to ____ to a foreign university but the war prevented.*
+
+- *A. have gone*
+- *B. go*
+- *C. be going*
+- *D. have been going*
+
+*13. The bank is reported ____ in the local newspaper in broad daylight
+yesterday.*
+
+- *A. to be robbed*
+- *B. robbed*
+- *C. to have been robbed*
+- *D. having been robbed*
+
+*14. The local health organization is reported ____ twenty-five years ago when
+Dr. Smith became its first president.*
+
+- *A. to be set up*
+- *B. being set up*
+- *C. to have been set up*
+- *D. having been set up*
+
+#### 答案：思维训练：11. 不定时的时态和语态（二）：完成式（to have done）
+
+*1. have murdered
+
+*3. be waiting ?
+
+*5. have been working
+
+*9. to have worked
+
+*10. to have occurred
+
+*11. to occur
+
+*12. A。从后面的 but the war prevented 可知前面是表示一个过去未完成的动作，所以用不定式完成式说成
+was to have gone。
+
+- `译` 他本来打算去国外求学，但后来战争爆发了，他没能去成。
+
+*13. C。is reported 这种被动结构后面要接不定式，且这里 robbed 发生在 reported 之前，所以不定式应该用完成式。
+
+- `译` 当地一家报纸上报道说，这家银行昨天在光天化日之下遭到抢劫。
+
+*14. C。is reported 这种被动结构后面要接不定式，且这里 set up 发生在 reported 之前，所以不定式应该用完成式。
+
+- `译` 据说，这家当地的卫生组织是在 25 年前成立的，当时 Smith 医生担任其首任主席一职。
+
+## 12. 不定式的时态和语态（三）：进行式 (to be doing)
+
+不定式的进行式即 to be doing，它的含义类似于一个进行时态，所以常常用来表示一个进行的动作。
+具体来说，不定式的进行式用于描写在谈论时（现在或过去）正在发生的动作，或者说与主句谓语动作同时发生的动作。
+
+`1` He pretended to be listening attentively when the teacher came by.
+
+- 不定式进行式 to be listening 相当于一个过去进行时态
+- `=` He pretended that he was listening attentively when the teacher came by.
+- `译` 当老师走过时，他假装正在专心听讲。
+
+`2` He pretended to be sleeping when she came in.
+
+- `=` He pretended that he was sleeping when she came in.
+- `译` 当她进来的时候，他假装在睡觉。
+
+`3` He happened to be singing in the room when I came in this morning.
+
+- `=` It happened that he was singing in the room when I came in this morning.
+- `译` 今天早晨我进来的时候，他碰巧正在唱歌。
+
+`4` I happened to be standing outside the bank, and I saw the robbery take
+place!
+
+- `=` It happened that I was standing outside the bank and I saw the robbery
+  take place.
+- `译` 我当时正好就在银行外面站着，亲眼看见了这次抢劫案！
+
+`5` He happened to be sitting with a beautiful young lady.
+
+- `=` It happened that he was sitting with a beautiful young lady.
+- `译` 他碰巧和一位年轻貌美的小姐坐在一起。
+
+上面的例子中，不定式的进行式都是用在过去时里，此时相当于一个过去进行时态。
+而用于现在时的句子里就相当于一个现在进行时态。
+
+`6`
+
+- A: Have you saved enough to buy that new printer for your computer yet?
+- B: You know money seems to be burning a hole in my pocket lately. Maybe next
+  month.
+  - to be burning 相当于一个现在进行时态
+  - `=` It seems that money is burning a hole in my pocket.
+  - `译` A: 为你的电脑买那台新打印机的钱你攒够了吗？B: 你知道，最近我有钱在口袋里就搁不住，就要花掉，所以也许要等下个月了。
+
+`7` The economy was in a slump, but now it seems to be bouncing back.
+
+- `=` It seems that the economy is bouncing back.
+- `译` 经济曾一度下滑，不过现在似乎正在反弹。
+
+此外，不定式的进行式 to be doing 还可以表示反复发生的一般性动作。
+因为进行时态可以表示一个最近一段时间内持续进行的一般性动作，同样地，不定式的进行式也可以表示一个反复发生的一般性动作，此时带有很强的感情色彩。
+
+`8` In the 1980s and early 1990s, athletes entering international sports
+competitions seemed to be getting younger and younger. Talented young athletes
+-- boys and girls -- were spotted early on in their school career, and were
+given special training.
+
+- 这里的不定式的进行式是在谈论跨越二十世纪八九十年代的事情，所以宜解释为一个一直在持续的一般性活动。
+- `译` 在 20 世纪 80 年代及 90 年代早期，参加国际大赛的运动员的年龄似乎越来越小。
+  那些有天赋的年轻男女运动苗子很早就会在学校被发现，然后接受专门的训练。
+
+综上，不定式的进行式往往用在一些特定的谓语动词后面，这些谓语动词包括 seem, happen 和
+pretend 等。当然，也可以放在其他一些谓语动词后面。
+
+`9` The worst way to miss someone **is** to be sitting right beside them knowing
+you can't have them.
+
+- 不定式的进行式直接放在 be 动词后面。
+- `译` 思念一个人最无助的情形是：你就在此人身边却无法拥有他。
+
+`10` Smile at your interviewer to show you are **glad** to be talking with him
+or her. When you first meet, look your interviwer in the eye.
+
+- 不定式的进行式放在形容词 glad 后面。
+- `译` 在面试的时候，要面带微笑，这样可以向面试官表明你非常乐意与他们交谈。
+  当你们初次见面时，你要看着他们的眼睛。
+
+⚠️ 不定式的进行式没有被动结构，只有主动结构。此外，它远没有不定式的完成式那么常用。
 
 ## 4.13 不定式的时态和语态（四）：完成进行式 (to have been doing)
 
