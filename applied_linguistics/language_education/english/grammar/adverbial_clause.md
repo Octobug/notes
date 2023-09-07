@@ -64,9 +64,15 @@
     - [4.4 because 的否定转移](#44-because-的否定转移)
     - [思维训练 4. 原因状语从句](#思维训练-4-原因状语从句)
       - [答案：思维训练 4. 原因状语从句](#答案思维训练-4-原因状语从句)
-  - [3.6 目的状语从句](#36-目的状语从句)
   - [5. 目的状语从句](#5-目的状语从句)
+    - [5.1 常见连词的用法](#51-常见连词的用法)
+    - [5.2 目的状语从句的简化](#52-目的状语从句的简化)
+      - [一、in order to/ so as to + do](#一in-order-to-so-as-to--do)
+      - [二、直接用动词不定式表示目的](#二直接用动词不定式表示目的)
+      - [三、in order for + sb. + to do sth](#三in-order-for--sb--to-do-sth)
+    - [5.3 其他连词的用法](#53-其他连词的用法)
     - [思维训练 5. 目的状语从句](#思维训练-5-目的状语从句)
+      - [答案：思维训练 5. 目的状语从句](#答案思维训练-5-目的状语从句)
   - [3.7 结果状语从句](#37-结果状语从句)
   - [6. 结果状语从句](#6-结果状语从句)
     - [6.1 常见连词的用法](#61-常见连词的用法)
@@ -1752,58 +1758,239 @@ types of newspaper: the quality press and the popular press.*
 
 - in that 表示原因
 
-## 3.6 目的状语从句
-
->>>>> progress
-
 ## 5. 目的状语从句
+
+### 5.1 常见连词的用法
 
 常用的引导目的状语从句的连词有：
 
-- so that：所以，以便
-- in order that
+- so that: 所以，以便
+- in order that: 以便
 - that
-- for fear that：以免
+- for fear that: 以免
 
 此外，在目的状语从句中常含有情态动词：
 
 - may/might
 - can/could
 
-例句：
+`1` I turned off the TV **in order that** my roommate could study in peace and
+quiet.
 
-- `例 1`：I turned off the TV **in order that** my roommate could study in
-  peace and quiet.
-- `例 2`：When I was a child, I would take a flashlight to bed with me
-  **so that** I could read comic books without my parent's knowing about it.
-- `例 4`：I spoke slowly and clearly **so that/in order that** the audience
-  could understand me.
-- `例 6`：We climbed high **(so) that** we might get a better view.
+- `译` 我关掉了电视，好让我的室友安静地学习。
+
+`2` When I was a child, I would take a flashlight to bed with me **so that** I
+could read comic books without my parent's knowing about it.
+
+- `译` 小的时候，我常常在睡觉时带着手电筒上床，这样我可以偷看连环画册而不被父母发觉。
+
+`3` Former Colorado governor Richard Lamm has been quoted as saying that the old
+and infirm "have a duty to die and get out of the way" so that younger,
+healthier people can realize their potential.
+
+- `译` 人们常引用前科罗拉多州州长 Richard Lamm 说过的话，老年人多病者“有义务死去和让位”，以便让更年轻、更健康的人发挥他们的潜能。
+
+`4` I spoke slowly and clearly **so that/in order that** the audience could
+understand me.
+
+- `译` 我讲得既慢又清晰，以便听众能听懂我的话。
+
+`5` They carved the words on the stone so that/in order that the future
+generation should remember what they had done.
+
+- `译` 他们在石头上刻字，以便后人记住他们做过的事情。
+
+`6` We climbed high **(so) that** we might get a better view.
+
+- `译` 我们爬到高处，以便能看得更清楚。
+
+`7` The teacher raised his voice in order that the students in the back could
+hear more clearly.
+
+- `译` 老师提高了声音，以便坐在后排的学生能听得更清楚。
 
 从上面例子可以看出，目的状语从句一般位于主句之后。但若要强调目的状语从句，可将 so that 或
 in order that 引导的目的状语从句置于句首。
 
-- `例 8`：**In order that** my roommate could study in peace and quiet, I turned
-  off the TV.
-- `例 9`：He pushed open the door gently and stole out of the room for fear that
-  he should awake her.
+`8` **In order that** my roommate could study in peace and quiet, I turned off
+the TV.
+
+- `译` 为了让我的室友安静地学习，我关掉了电视。
+
+### 5.2 目的状语从句的简化
+
+对于目的状语从句，可以用不定式将其结构简化。
+对于目的状语从句常用的连词，其对应的不定式结构分别是：
+
+- in order that: in order to do
+- so that: so as to do
+- that: to do
+
+#### 一、in order to/ so as to + do
+
+可以用 in order to 或 so as to + do 来表示目的。
+
+`1` All the key words in the article are printed in bold type so as to attract
+readers' attention.
+
+- 文章中的所有关键词都用粗体字来印刷，为了提醒读者注意。
+
+`2` When I was a child, I would take a flashlight to bed with me in order to
+read comic books without my parents' knowing about it.
+
+`3` I arrived at the cinema early so as not to miss the beginning of the film.
+
+- `译` 我早早到了电影院，这样我就不会错过影片的开头了。
+
+`4` We climbed high in order to get a better view.
+
+- `译` 我们爬到高处，以便看得更清楚。
+
+`5` We climbed high so as to get a better view.
+
+⚠️ in order to 可以放在主句句末，也可以放在主句句首，但 so as to 不能放在主句句首。
+
+`6`
+
+- In order to get a better view, we climbed high. ✅
+- So as to get a better view, we climbed high. ❌
+
+`7` ____ measure matter we msut have units of weight, volume and length.
+
+- A. In order
+- B. In order to
+- C. So as
+- D. So as to
+- `答案` B。
+- `译` 为了便于计量物质，我们得有各种度量单位，比如重量单位、容积单位和长度单位。
+
+#### 二、直接用动词不定式表示目的
+
+还可以直接用动词不定式 to do 表示目的。
+
+`8` To avoid criticism, do nothing, say nothing, be nothing.
+
+- `译` 要想不被批评，那就什么事也不做，什么话也不说，结果就是什么人也不是。
+
+`9` To acquire knowledge, one must study; but to acquire wisdom, one must
+observe.
+
+- `译` 要想获得知识，我们要学习；但要想获得智慧，我们得观察。
+
+`10` I'd climb the highest mountain, just to see you smile. I'd swim the ocean,
+just to hold your hand. I'd run a million miles, just to be with you forever.
+
+- `译` 我愿意翻越最高的山脉，就是为了目睹你的微笑；我愿意横渡海洋，就是为了与你牵手；我愿意跨越万里，只是为了与你共度此生。
+
+#### 三、in order for + sb. + to do sth
+
+如果要具体给出不定式的逻辑主语，就要用 in order for sb. to do sth. 来表示目的。
+此时往往是因为句子的主语和不定式的逻辑主语不一致。
+
+`11` I spoke slowly and clearly in order for the audience to understand.
+
+- `译` 我讲得既慢又清晰，以便听众能听懂我的话。
+
+`12` They carved the words on the stone in order for the future generation to
+remember what they had done.
+
+- `译` 他们在石头上刻字，以便后人记住他们做过的事情。
+
+`13` The teacher raised his voice in order for the students in the back to hear
+more clearly.
+
+- `译` 老师提高了声音，以便坐在后排的学生能听得更清楚。
+
+`14` I turned off the TV in order for my roommate to study in peace and quiet.
+
+### 5.3 其他连词的用法
+
+还有其他连词也可以引导目的状语从句，如：
+
+- lest: 以免、以防
+- for fear that: 生怕
+- in case: 万一
+
+此时从句的谓语动词一般用情态动词 should，但 should 常常被省略。
+
+`1` Take an umbrella with you lest it should rain.
+
+- `译` 随身带把伞，以防下雨。
+
+`2` People evacuated the building for fear that the wall should collapse.
+
+- `译` 人们从这栋楼房撤了，以防墙壁倒塌。
+
+`3` They (scientists) should be quick to respond to letters to the editor, lest
+animal rights misinformation go unchallenged and acquire a deceptive appearance
+of truth.
+
+- 这里从句谓语用动词原形 go，而主语是单数形式的 information，这是因为情态动词 should
+  被省略了。misinformation should go...
+- `译` 他们（科学家）应该及时回复编辑来信，以防止有关动物权利的错误言论不受质疑，甚至披上一层伪真理的外衣。
+
+`4` What has happened is that people cannot confess fully to their dreams, as
+easily and openly as once they could, lest they be thought pushing, acquisitive
+and vulgar.
+
+- 从句谓语用了动词原形 be，主语是 they，这是因为 should 被省略了。lest they should be thought...
+- `译` 实际的状况是，人们不能像从前那样轻易地、公开地将他们的梦想和盘托出，以免被人认为是出风头、贪婪、庸俗。
+
+此外，在某些句子中，for fear that 或 lest 有时具有否定意义，相当于 in order that...not。
+
+`5` She cleans the window with great care lest she might break the glass.
+
+- 这里 lest 相当于 in order that...not。
+- `=` She cleans the window with great care in order that she might not break
+  the glass.
+- `译` 塔如此小心翼翼地擦窗户，以免打破窗玻璃。
+
+`6` We had a meeting and talked the matter over face to face, for fear that
+there should be any misunderstanding.
+
+- 这里的 for fear that 相当于 in order that...not。
+- `=` We had a meeting and talked the matter over face to face, in order that
+  there should not be any misunderstanding.
+- `译` 我们开了个会，又当面谈了这件事，以免发生任何误会。
+
+`9` He pushed open the door gently and stole out of the room for fear that he
+should awake her.
+
+此外，还可以用 in the hope that, on purpose that, for the purpose that, to the end
+that 等来表示目的。
+
+`7` The teacher raised his voice on purpose that the students in the back could
+hear more clearly.
 
 ### 思维训练 5. 目的状语从句
 
-**请将下列简单句合并成目的状语从句，注意使用情态动词。**
+**一、选择最佳答案填空。**
 
-*1. I am going to leave the party early. I want to be able to get a good
+*1. Let's take the front seats ____ we may have a better view.*
+
+- *A. so as to*
+- *B. in order to*
+- *C. in order*
+- *D. that*
+
+**二、请将下列简单句合并成目的状语从句，注意使用情态动词。**
+
+*1. D。that 从句表示目的。
+
+*5. I am going to leave the party early. I want to be able to get a good
 night's sleep.*
 
-答案：I am going to leave the party early so that I can get a good night's sleep.
+*6. Harry brought his umbrella. He wanted to be sure he didn't get wet.*
 
-*2. Harry brought his umbrella. He wanted to be sure he didn't get wet.*
+*7. I put the milk in the refrigerator. I wanted to make sure it didn't spoil.*
 
-答案：Harry brought his umbrella so that he could not get wet.
+#### 答案：思维训练 5. 目的状语从句
 
-*6. I put the milk in the refrigerator. I wanted to make sure it didn't spoil.*
+*5. I am going to leave the party early so that I can get a good night's sleep.
 
-答案：I put the milk in the refrigerator so that it wouldn't spoil.
+*6. Harry brought his umbrella so that he could not get wet.
+
+*7. I put the milk in the refrigerator so that it wouldn't spoil.
 
 ## 3.7 结果状语从句
 

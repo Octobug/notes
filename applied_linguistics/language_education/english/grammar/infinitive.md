@@ -89,6 +89,7 @@
       - [二、观点类谓语](#二观点类谓语)
       - [三、推断类谓语](#三推断类谓语)
     - [4.11.2 表示“非真实的”过去](#4112-表示非真实的过去)
+  - [4.13 不定式的时态和语态（四）：完成进行式 (to have been doing)](#413-不定式的时态和语态四完成进行式-to-have-been-doing)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
 
@@ -2626,5 +2627,9 @@ expert said on Monday.
 - `=` I am sorry that I didn't come on Thursday.
 
 ### 4.11.2 表示“非真实的”过去
+
+>>>>> progress
+
+## 4.13 不定式的时态和语态（四）：完成进行式 (to have been doing)
 
 >>>>> progress
