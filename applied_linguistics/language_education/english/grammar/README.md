@@ -23,7 +23,7 @@
    4. [完成进行时态](perfect_continuous_tense.md)
 5. 非谓语动词
    1. [不定式](infinitive.md)
-   2. 动名词
+   2. [动名词](./gerund.md)
    3. 分词
    4. 从句与非谓语
 6. 虚拟语气、情态动词、倒装与强调
