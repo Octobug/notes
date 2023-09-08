@@ -90,7 +90,7 @@ TiDB-Server 节点的特点：
 ### 从进程角度看 TiDB-Server
 
 ```graph
-[client/Driver]
+[Client/Driver]
        ^
        |
  MySQL Protocol
@@ -107,21 +107,25 @@ TiDB-Server 节点的特点：
 
 ```graph
     [MySQL Protocol]
-    [TiDB SQL Layer]      (最核心的一层)
+-------------------------
+    [TiDB SQL Layer]  (最核心的一层)
+-------------------------
   [KV API][DistSQL API]
+-------------------------
        [TiClient]
+-------------------------
 [TiDB Server (Stateless)]
 ```
 
 ### 其他功能
 
 - 前台功能
-  - 管理连接和账号权限管理
-  - MySQL 协议编码解码
-  - 独立的 SQL 执行
-  - 库表元信息，以及系统变量
+  1. 管理连接和账号权限管理
+  2. MySQL 协议编码解码
+  3. 独立的 SQL 执行
+  4. 库表元信息，以及系统变量
 - 后台功能
-  - 垃圾回收
-  - 执行 DDL
-  - 统计信息管理
-  - SQL 优化器与执行器
+  1. 垃圾回收
+  2. 执行 DDL
+  3. 统计信息管理
+  4. SQL 优化器与执行器
