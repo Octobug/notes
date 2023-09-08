@@ -57,10 +57,10 @@
   - [x] [二叉树：求根到叶子节点数字之和](https://programmercarl.com/0129.%E6%B1%82%E6%A0%B9%E5%88%B0%E5%8F%B6%E5%AD%90%E8%8A%82%E7%82%B9%E6%95%B0%E5%AD%97%E4%B9%8B%E5%92%8C.html)
   - [x] [二叉树：将二叉搜索树变平衡](https://programmercarl.com/1382.%E5%B0%86%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E5%8F%98%E5%B9%B3%E8%A1%A1.html)
   - 21~30
-  - [ ] [二叉树：相同的树](https://programmercarl.com/0100.%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91.html)
-  - [ ] 二叉树：填充每个节点的下一个右侧节点指针
-  - [ ] 回溯算法：N皇后II
-  - [ ] 贪心：Dota2参议院
+  - [x] [二叉树：相同的树](https://programmercarl.com/0100.%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91.html)
+  - [x] [二叉树：填充每个节点的下一个右侧节点指针](https://programmercarl.com/0116.%E5%A1%AB%E5%85%85%E6%AF%8F%E4%B8%AA%E8%8A%82%E7%82%B9%E7%9A%84%E4%B8%8B%E4%B8%80%E4%B8%AA%E5%8F%B3%E4%BE%A7%E8%8A%82%E7%82%B9%E6%8C%87%E9%92%88.html)
+  - [x] [回溯算法：N皇后II](https://programmercarl.com/0052.N%E7%9A%87%E5%90%8EII.html)
+  - [ ] [贪心：Dota2参议院](https://programmercarl.com/0649.Dota2%E5%8F%82%E8%AE%AE%E9%99%A2.html)
   - [ ] 贪心：分割平衡字符串
   - [ ] 动态规划：最长回文子串
   - [ ] 动态规划：分割回文串II

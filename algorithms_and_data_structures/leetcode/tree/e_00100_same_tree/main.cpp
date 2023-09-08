@@ -26,13 +26,9 @@ public:
             que.pop();
 
             if (!pnode && !qnode)
-            {
                 continue;
-            }
             else if (!pnode || !qnode || (pnode->val != qnode->val))
-            {
                 return false;
-            }
 
             que.push(pnode->left);
             que.push(qnode->left);

@@ -88,7 +88,7 @@ Node *arr2treeLevelOrder(vector<int> arr)
 
     return root;
 }
-class Solution
+class SolutionLevel
 {
 public:
     Node *connect(Node *root)
@@ -96,9 +96,7 @@ public:
         queue<Node *> q;
 
         if (root == nullptr)
-        {
             return nullptr;
-        }
 
         q.push(root);
         while (!q.empty())
@@ -131,6 +129,31 @@ public:
     }
 };
 
+class Solution
+{
+public:
+    Node *next = nullptr;
+
+    Node *connect(Node *root)
+    {
+        if (!root)
+            return nullptr;
+
+        root->next = next;
+
+        next = root->right;
+        connect(root->left);
+
+        if (root->next)
+            next = root->next->left;
+        else
+            next = nullptr;
+        connect(root->right);
+
+        return root;
+    }
+};
+
 int main()
 {
     vector<vector<int>> groups = {
@@ -141,8 +164,9 @@ int main()
     int group;
     cout << "Please input group: ";
     cin >> group;
+    group--;
 
-    Node *root = arr2treeLevelOrder(groups[group - 1]);
+    Node *root = arr2treeLevelOrder(groups[group]);
 
     Solution s;
     Node *result = s.connect(root);
