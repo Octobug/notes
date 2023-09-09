@@ -1,9 +1,17 @@
 # os generated files
 .DS_Store
 
-# temporary files
+# root files
 /bin/
-node_modules/
-tmp/
-temp/
+/node_modules/
+/temp/
+/tmp/
+
+# specific names
+.ok_*
 *.pdf
+ok
+**/lab*/tests/
+
+## python
+*.pyc
