@@ -10,6 +10,8 @@
 
 ## 1.1 Getting Started
 
+> <https://www.composingprograms.com/pages/11-getting-started.html>
+
 ### 1.1.1 Programming in Python
 
 > A language isn't something you learn so much as something you join.
@@ -49,4 +51,19 @@ words = set(shakespeare.read().decode().split())
 
 ### 1.1.5 Errors
 
->>>>> progress
+> The fundamental equation of computers is:
+>
+> computer = powerful + stupid
+>
+> --Francisco Cai and Nick Parlante, Stanford CS101
+
+Some guiding principles of **debugging** are:
+
+1. **Test incrementally**: Every well-written program is composed of small,
+   modular components that can be tested individually.
+2. **Isolate errors**: An error in the output of a statement can typically be
+   attributed to a particular modular component.
+3. **Check your assumptions**: Interpreters do carry out your instructions to
+   the letter -- no more and no less.
+4. **Consult others**: A lot of valuable programming knowledge is shared in the
+   process of group problem solving.
