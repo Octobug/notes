@@ -1,6 +1,7 @@
 # Chapter 1: Building Abstractions with Functions
 
 - [Chapter 1: Building Abstractions with Functions](#chapter-1-building-abstractions-with-functions)
+  - [Lab 0: Getting Started](#lab-0-getting-started)
   - [1.1 Getting Started](#11-getting-started)
     - [1.1.1 Programming in Python](#111-programming-in-python)
     - [1.1.2 Installing Python 3](#112-installing-python-3)
@@ -14,7 +15,27 @@
     - [1.2.4 Names and the Environment](#124-names-and-the-environment)
     - [1.2.5 Evaluating Nested Expressions](#125-evaluating-nested-expressions)
     - [1.2.4 The Non-Pure Print Function](#124-the-non-pure-print-function)
+  - [Homework 1: Functions, Control](#homework-1-functions-control)
   - [1.3 Defining New Functions](#13-defining-new-functions)
+    - [1.3.1 Environments](#131-environments)
+    - [1.3.2 Calling User-Defined Functions](#132-calling-user-defined-functions)
+    - [1.3.3 Example: Calling a User-Defined Function](#133-example-calling-a-user-defined-function)
+    - [1.3.4 Local Names](#134-local-names)
+    - [1.3.5 Choosing Names](#135-choosing-names)
+    - [1.3.6 Functions as Abstraction](#136-functions-as-abstraction)
+    - [1.3.7 Operators](#137-operators)
+  - [1.4 Designing Functions](#14-designing-functions)
+    - [1.4.1 Documentation](#141-documentation)
+    - [1.4.2 Default Argument Values](#142-default-argument-values)
+  - [1.5 Control](#15-control)
+  - [Lab 1: Functions, Control](#lab-1-functions-control)
+  - [Discussion 1: Control, Environment Diagrams](#discussion-1-control-environment-diagrams)
+  - [1.6](#16)
+  - [Homework 2: Higher Order Functions and Lambdas](#homework-2-higher-order-functions-and-lambdas)
+
+## Lab 0: Getting Started
+
+> <https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab00/>
 
 ## 1.1 Getting Started
 
@@ -174,6 +195,157 @@ behavior over time. Imposing these restrictions yields substantial benefits.
 2. pure functions tend to be simpler to test.
 3. pure functions are essential for writing concurrent programs.
 
+## Homework 1: Functions, Control
+
+> <https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw01/>
+
 ## 1.3 Defining New Functions
 
 > <https://www.composingprograms.com/pages/13-defining-new-functions.html>
+
+Function definitions consist of a `def` **statement** that indicates a `<name>`
+and a comma-separated list of named `<formal parameters>`, then a `return`
+statement, called the function body, that specifies the `<return expression>`
+of the function, which is an expression to be evaluated whenever the function
+is applied:
+
+```py
+def <name>(<formal parameters>):
+    return <return expression>
+```
+
+### 1.3.1 Environments
+
+- **Function Signatures**: A description of the formal parameters of a function
+  is called the function's signature.
+
+### 1.3.2 Calling User-Defined Functions
+
+As with any call expression, the interpreter evaluates the operator and operand
+expressions, and then applies the named function to the resulting arguments.
+
+Applying a user-defined function introduces a second *local* frame, which is
+only accessible to that function. To apply a user-defined function to some
+arguments:
+
+1. Bind the arguments to the names of the function's formal parameters in a new
+   *local* frame.
+2. Execute the body of the function in the environment that starts with this
+   frame.
+
+The environment in which the body is evaluated consists of two frames:
+
+1. The local frame that contains formal parameter bindings.
+2. The global frame that contains everything else.
+
+Each instance of a function application has its own independent local frame.
+
+**Name Evaluation**. A name evaluates to the value bound to that name in the
+earliest frame of the current environment in which that name is found.
+
+### 1.3.3 Example: Calling a User-Defined Function
+
+### 1.3.4 Local Names
+
+The parameter names of a function must remain local to the body of the function.
+
+### 1.3.5 Choosing Names
+
+### 1.3.6 Functions as Abstraction
+
+- **Aspects of a functional abstraction**: It is often useful to consider its
+  three core attributes:
+  - The domain of a function is the set of arguments it can take.
+  - The range of a function is the set of values it can return.
+  - The intent of a function is the relationship it computes between inputs and
+    output (as well as any side effects it might generate).
+
+### 1.3.7 Operators
+
+Python expressions with infix operators each have their own evaluation
+procedures, but you can often think of them as short-hand for call expressions.
+
+When you see
+
+```py
+>>> 2 + 3
+5
+```
+
+simply consider it to be short-hand for
+
+```txt
+>>> add(2, 3)
+5
+```
+
+## 1.4 Designing Functions
+
+> <https://www.composingprograms.com/pages/14-designing-functions.html>
+
+Fundamentally, the qualities of good functions all reinforce the idea that
+functions are abstractions.
+
+- Each function should have exactly one job. That job should be identifiable
+  with a short name and characterizable in a single line of text.
+- Don't Repeat Yourself is a central tenet of software engineering. The
+  so-called DRY principle states that multiple fragments of code should not
+  describe redundant logic.
+- Functions should be defined generally. Squaring is not in the Python Library
+  precisely because it is a special case of the pow function, which raises
+  numbers to arbitrary powers.
+
+### 1.4.1 Documentation
+
+A function definition will often include documentation describing the function,
+called a `docstring`.
+
+```py
+def pressure(v, t, n):
+    """Compute the pressure in pascals of an ideal gas.
+    Applies the ideal gas law: http://en.wikipedia.org/wiki/Ideal_gas_law
+    v -- volume of gas, in cubic meters
+    t -- absolute temperature in degrees kelvin
+    n -- particles of gas
+    """
+    k = 1.38e-23  # Boltzmann's constant
+    return n * k * t / v
+```
+
+When you call help with the name of a function as an argument, you see its
+docstring (type q to quit Python help).
+
+```py
+>>> help(pressure)
+```
+
+### 1.4.2 Default Argument Values
+
+```py
+def pressure(v, t, n=6.022e23):
+    """Compute the pressure in pascals of an ideal gas.
+    v -- volume of gas, in cubic meters
+    t -- absolute temperature in degrees kelvin
+    n -- particles of gas (default: one mole)
+    """
+    k = 1.38e-23  # Boltzmann's constant
+    return n * k * t / v
+```
+
+## 1.5 Control
+
+> <https://www.composingprograms.com/pages/15-control.html>
+
+## Lab 1: Functions, Control
+
+> <https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab01/>
+
+## Discussion 1: Control, Environment Diagrams
+
+> <https://inst.eecs.berkeley.edu/~cs61a/sp23/disc/disc01/>
+
+## 1.6
+
+## Homework 2: Higher Order Functions and Lambdas
+
+> <https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw02/>
