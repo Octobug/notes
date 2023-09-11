@@ -28,9 +28,15 @@
     - [1.4.1 Documentation](#141-documentation)
     - [1.4.2 Default Argument Values](#142-default-argument-values)
   - [1.5 Control](#15-control)
+    - [1.5.1 Statements](#151-statements)
+    - [1.5.2 Compound Statements](#152-compound-statements)
+    - [1.5.3 Defining Functions II: Local Assignment](#153-defining-functions-ii-local-assignment)
+    - [1.5.4 Conditional Statements](#154-conditional-statements)
+    - [1.5.5 Iteration](#155-iteration)
+    - [1.5.6 Testing](#156-testing)
   - [Lab 1: Functions, Control](#lab-1-functions-control)
   - [Discussion 1: Control, Environment Diagrams](#discussion-1-control-environment-diagrams)
-  - [1.6](#16)
+  - [1.6 Higher-Order Functions](#16-higher-order-functions)
   - [Homework 2: Higher Order Functions and Lambdas](#homework-2-higher-order-functions-and-lambdas)
 
 ## Lab 0: Getting Started
@@ -336,6 +342,107 @@ def pressure(v, t, n=6.022e23):
 
 > <https://www.composingprograms.com/pages/15-control.html>
 
+**Statements** differ fundamentally from the expressions. They have no value.
+Instead of computing something, executing a control statement determines what
+the interpreter should do next.
+
+### 1.5.1 Statements
+
+Rather than being evaluated, statements are executed. Each statement describes
+some change to the interpreter state, and executing a statement applies that
+change.
+
+Expressions can also be executed as statements, in which case they are
+evaluated, but their value is discarded. Executing a pure function has no
+effect, but executing a non-pure function can cause effects as a consequence of
+function application.
+
+```py
+def square(x):
+    mul(x, x) # Watch out! This call doesn't return a value.
+```
+
+An expression by itself is a valid statement.
+
+Statements govern the relationship among different expressions in a program and
+what happens to their results.
+
+### 1.5.2 Compound Statements
+
+A compound statement is so called because it is composed of other statements
+(simple and compound). Compound statements typically span multiple lines and
+start with a one-line header ending in a colon, which identifies the type of
+statement. Together, a header and an indented suite of statements is called a
+**clause**. A compound statement consists of one or more clauses:
+
+```txt
+<header>:
+    <statement>
+    <statement>
+    ...
+<separating header>:
+    <statement>
+    <statement>
+    ...
+...
+```
+
+A `def` statement is a compound statement. The suite that follows the `def`
+header defines the function body.
+
+- To execute a sequence of statements, execute the first statement. If that
+  statement does not redirect control, then proceed to execute the rest of the
+  sequence of statements, if any remain.
+
+This definition exposes the essential structure of a recursively defined
+sequence: a sequence can be decomposed into its first element and the rest of
+its elements. The "rest" of a sequence of statements is itself a sequence of
+statements! Thus, we can recursively apply this execution rule.
+
+### 1.5.3 Defining Functions II: Local Assignment
+
+### 1.5.4 Conditional Statements
+
+**Boolean contexts**: The expressions inside the header statements of
+conditional blocks are said to be in boolean contexts: their truth values
+matter to control flow, but otherwise their values are not assigned or
+returned.
+
+### 1.5.5 Iteration
+
+### 1.5.6 Testing
+
+**Assertions**: Programmers use `assert` statements to verify expectations,
+such as the output of a function being tested. An `assert` statement has an
+expression in a boolean context, followed by a quoted line of text that will be
+displayed if the expression evaluates to a false value.
+
+```py
+assert fib(8) == 13, 'The 8th Fibonacci number should be 13'
+```
+
+**Doctests**: Python provides a convenient method for placing **simple** tests
+directly in the docstring of a function.
+
+```py
+def sum_naturals(n):
+    """Return the sum of the first n natural numbers.
+
+    >>> sum_naturals(10)
+    55
+    >>> sum_naturals(100)
+    5050
+    """
+    total, k = 0, 1
+    while k <= n:
+        total, k = total + k, k + 1
+    return total
+```
+
+```sh
+python3 -m doctest PYTHON_SOURCE_FILE
+```
+
 ## Lab 1: Functions, Control
 
 > <https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab01/>
@@ -344,7 +451,9 @@ def pressure(v, t, n=6.022e23):
 
 > <https://inst.eecs.berkeley.edu/~cs61a/sp23/disc/disc01/>
 
-## 1.6
+## 1.6 Higher-Order Functions
+
+> <https://www.composingprograms.com/pages/16-higher-order-functions.html>
 
 ## Homework 2: Higher Order Functions and Lambdas
 
