@@ -62,8 +62,8 @@
   - [x] [回溯算法：N皇后II](https://programmercarl.com/0052.N%E7%9A%87%E5%90%8EII.html)
   - [x] [贪心：Dota2参议院](https://programmercarl.com/0649.Dota2%E5%8F%82%E8%AE%AE%E9%99%A2.html)
   - [x] [贪心：分割平衡字符串](https://programmercarl.com/1221.%E5%88%86%E5%89%B2%E5%B9%B3%E8%A1%A1%E5%AD%97%E7%AC%A6%E4%B8%B2.html)
-  - [ ] [动态规划：最长回文子串](https://programmercarl.com/0005.%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.html)
-  - [ ] 动态规划：分割回文串II
+  - [x] [动态规划：最长回文子串](https://programmercarl.com/0005.%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.html)
+  - [ ] [动态规划：分割回文串II](https://programmercarl.com/0132.%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2II.html)
   - [ ] 动态规划：最长递增子序列的个数
   - [ ] 图论：钥匙和房间
   - [ ] 图论：单词接龙
