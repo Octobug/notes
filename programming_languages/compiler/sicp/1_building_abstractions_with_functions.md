@@ -41,7 +41,7 @@
 
 ## Lab 0: Getting Started
 
-> <https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab00/>
+- [x] [Lab 0: Getting Started](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab00/)
 
 ## 1.1 Getting Started
 
@@ -203,7 +203,7 @@ behavior over time. Imposing these restrictions yields substantial benefits.
 
 ## Homework 1: Functions, Control
 
-> <https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw01/>
+- [x] [Homework 1: Functions, Control](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw01/)
 
 ## 1.3 Defining New Functions
 
@@ -421,6 +421,9 @@ displayed if the expression evaluates to a false value.
 assert fib(8) == 13, 'The 8th Fibonacci number should be 13'
 ```
 
+💡 It is generally **good practice** to release code with assertion statements
+left in.
+
 **Doctests**: Python provides a convenient method for placing **simple** tests
 directly in the docstring of a function.
 
@@ -445,16 +448,18 @@ python3 -m doctest PYTHON_SOURCE_FILE
 
 ## Lab 1: Functions, Control
 
-> <https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab01/>
+- [x] [Lab 1: Functions, Control](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab01/)
 
 ## Discussion 1: Control, Environment Diagrams
 
-> <https://inst.eecs.berkeley.edu/~cs61a/sp23/disc/disc01/>
+- [Discussion 1: Control, Environment Diagrams](https://inst.eecs.berkeley.edu/~cs61a/sp23/disc/disc01/)
 
 ## 1.6 Higher-Order Functions
+
+>>>>> progress
 
 > <https://www.composingprograms.com/pages/16-higher-order-functions.html>
 
 ## Homework 2: Higher Order Functions and Lambdas
 
-> <https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw02/>
+- [ ] [Homework 2: Higher Order Functions and Lambdas](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw02/)
