@@ -74,16 +74,77 @@ public:
     }
 };
 
+class SolutionWrong
+{
+public:
+    int minCut(string s)
+    {
+        int len = s.size();
+        vector<vector<int>> dp(len + 1, vector<int>(len, -1));
+
+        for (int j = 0; j < len; j++)
+            dp[0][j] = 0;
+
+        for (int j = 0; j < len; j++)
+            dp[1][j] = 1;
+
+        for (int i = 2; i <= len; i++)
+            for (int j = 0; j <= len - i; j++)
+                if (s[j] == s[j + i - 1] && dp[i - 2][j + 1] >= 0)
+                    dp[i][j] = dp[i - 2][j + 1] + 2;
+
+        for (int j = 0; j < len; j++)
+        {
+            for (int i = 1; i <= len; i++)
+                dp[len][j] = max(dp[len][j], dp[i][j]);
+        }
+
+        output(dp[len]);
+
+        // 不能使用贪心的原因是：贪心分割会导致前面的串变成非回文串
+        int count = 0;
+        int rightest = dp[len][0] - 1, curRight;
+        int rightBorder;
+        int i = 0, j;
+        while (i < len)
+        {
+            count++;
+            if (rightest >= len - 1)
+                break;
+
+            j = i + 1;
+            curRight = 0;
+            while (j <= rightest + 1 && j < len)
+            {
+                rightBorder = j + dp[len][j] - 1;
+                if (rightBorder > curRight)
+                {
+                    curRight = rightBorder;
+                    i = j - 1;
+                }
+                j++;
+            }
+            rightest = curRight;
+            i++;
+        }
+
+        return count - 1;
+    }
+};
+
 int main()
 {
     vector<string> ss = {
-        "aab",          // 1
-        "a",            // 0
-        "ab",           // 1
-        "cabababcbc",   // 3
-        "ababbbabbaba", // 3
-        "bb",           // 0
-        "aabc",         // 2
+        "aab",                                                                                                  // 1
+        "a",                                                                                                    // 0
+        "ab",                                                                                                   // 1
+        "cabababcbc",                                                                                           // 3
+        "ababbbabbaba",                                                                                         // 3
+        "bb",                                                                                                   // 0
+        "aabc",                                                                                                 // 2
+        "aaabaa",                                                                                               // 1
+        "abcdef",                                                                                               // 5
+        "fifgbeajcacehiicccfecbfhhgfiiecdcjjffbghdidbhbdbfbfjccgbbdcjheccfbhafehieabbdfeigbiaggchaeghaijfbjhi", // 75
     };
 
     int group;
