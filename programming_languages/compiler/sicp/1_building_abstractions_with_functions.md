@@ -37,6 +37,10 @@
   - [Lab 1: Functions, Control](#lab-1-functions-control)
   - [Discussion 1: Control, Environment Diagrams](#discussion-1-control-environment-diagrams)
   - [1.6 Higher-Order Functions](#16-higher-order-functions)
+    - [1.6.1 Functions as Arguments](#161-functions-as-arguments)
+    - [1.6.2 Functions as General Methods](#162-functions-as-general-methods)
+    - [1.6.3 Defining Functions III: Nested Definitions](#163-defining-functions-iii-nested-definitions)
+    - [1.6.4 Functions as Returned Values](#164-functions-as-returned-values)
   - [Homework 2: Higher Order Functions and Lambdas](#homework-2-higher-order-functions-and-lambdas)
 
 ## Lab 0: Getting Started
@@ -456,10 +460,80 @@ python3 -m doctest PYTHON_SOURCE_FILE
 
 ## 1.6 Higher-Order Functions
 
->>>>> progress
-
 > <https://www.composingprograms.com/pages/16-higher-order-functions.html>
 
+To express certain general patterns as named concepts, we will need to
+construct functions that can accept other functions as arguments or return
+functions as values.
+
+Functions that manipulate functions are called **higher-order** functions.
+
+### 1.6.1 Functions as Arguments
+
+### 1.6.2 Functions as General Methods
+
+An iterative improvement algorithm begins with a `guess` of a solution to an
+equation. It repeatedly applies an `update` function to improve that guess, and
+applies a `close` comparison to check whether the current `guess` is "close
+enough" to be considered correct.
+
+```py
+def improve(update, close, guess=1):
+    while not close(guess):
+        guess = update(guess)
+    return guess
+```
+
+This `improve` function is a general expression of repetitive refinement. It
+doesn't specify what problem is being solved: those details are left to the
+`update` and `close` functions passed in as arguments.
+
+Two related big ideas in computer science:
+
+1. Naming and functions allow us to abstract away a vast amount of complexity.
+2. Second, it is only by virtue of the fact that we have an extremely general
+   evaluation procedure for the Python language that small components can be
+   composed into complex processes.
+
+### 1.6.3 Defining Functions III: Nested Definitions
+
+**Lexical scope**: Locally defined functions also have access to the name
+bindings in the scope in which they are defined. This discipline of sharing
+names among nested definitions is called **lexical scoping**. Critically, the
+inner functions have access to the names in the environment where they are
+defined (not where they are called).
+
+We require two extensions to our environment model to enable lexical scoping.
+
+1. Each user-defined function has a parent environment: the environment in
+   which it was defined.
+2. When a user-defined function is called, its local frame extends its parent
+   environment.
+
+The parent of a function value is the first frame of the environment in which
+that function was defined.
+
+**Extended Environments**: An environment can consist of an arbitrarily long
+chain of frames, which always concludes with the global frame. By calling
+functions that were defined within other functions, via nested `def`
+statements, we can create longer chains.
+
+Hence, we realize two key advantages of lexical scoping in Python.
+
+- The names of a local function do not interfere with names external to the
+  function in which it is defined, because the local function name will be
+  bound in the current local environment in which it was defined, rather than
+  the global environment.
+- A local function can access the environment of the enclosing function,
+  because the body of the local function is evaluated in an environment that
+  extends the evaluation environment in which it was defined.
+
+Because they "enclose" information in this way, locally defined functions are
+often called **closures**.
+
+### 1.6.4 Functions as Returned Values
+
+>>>>>
 ## Homework 2: Higher Order Functions and Lambdas
 
 - [ ] [Homework 2: Higher Order Functions and Lambdas](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw02/)
