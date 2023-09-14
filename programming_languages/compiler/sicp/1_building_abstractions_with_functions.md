@@ -43,6 +43,8 @@
     - [1.6.4 Functions as Returned Values](#164-functions-as-returned-values)
     - [1.6.5 Example: Newton's Method](#165-example-newtons-method)
     - [1.6.6 Currying](#166-currying)
+    - [1.6.7 Lambda Expressions](#167-lambda-expressions)
+    - [1.6.8 Abstractions and First-Class Functions](#168-abstractions-and-first-class-functions)
   - [Homework 2: Higher Order Functions and Lambdas](#homework-2-higher-order-functions-and-lambdas)
 
 ## Lab 0: Getting Started
@@ -579,6 +581,69 @@ def nth_root_of_a(n, a):
 ```
 
 ### 1.6.6 Currying
+
+We can use higher-order functions to convert a function that takes multiple
+arguments into a chain of functions that each take a single argument. More
+specifically, given a function `f(x, y)`, we can define a function `g` such
+that `g(x)(y)` is equivalent to `f(x, y)`. Here, `g` is a higher-order function
+that takes in a single argument `x` and returns another function that takes in
+a single argument `y`. This transformation is called ***currying***.
+
+A curried version of the `pow` function:
+
+```py
+def curried_pow(x):
+    def h(y):
+        return pow(x, y)
+    return h
+```
+
+Automate currying and the inverse uncurrying transformation:
+
+```py
+def curry2(f):
+    """Return a curried version of the given two-argument function."""
+    def g(x):
+        def h(y):
+            return f(x, y)
+        return h
+    return g
+
+def uncurry2(g):
+    """Return a two-argument version of the given curried function."""
+    def f(x, y):
+        return g(x)(y)
+    return f
+```
+
+### 1.6.7 Lambda Expressions
+
+A lambda expression evaluates to a function that has a single return expression
+as its body. Assignment and control statements are not allowed. And this
+function has no name.
+
+```py
+def compose1(f, g):
+    return lambda x: f(g(x))
+```
+
+We can understand the structure of a lambda expression by constructing a
+corresponding English sentence:
+
+```txt
+     lambda            x            :          f(g(x))
+"A function that    takes x    and returns     f(g(x))"
+```
+
+The result of a lambda expression is called a lambda function. It has no
+intrinsic name (and so Python prints `<lambda>` for the name), but otherwise it
+behaves like any other function.
+
+The term *lambda* is a historical accident resulting from the incompatibility
+of written mathematical notation and the constraints of early type-setting
+systems.
+
+### 1.6.8 Abstractions and First-Class Functions
 
 >>>>> progress
 
