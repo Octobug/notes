@@ -15,20 +15,14 @@ public:
         while (left <= right)
         {
             while (left <= right && val != nums[left])
-            {
                 left++;
-            }
             while (right >= left && val == nums[right])
-            {
                 right--;
-            }
 
             if (left < right)
-            {
-                nums[left] = nums[right];
-                nums[right] = val;
-            }
+                swap(nums[left], nums[right]);
         }
+
         return left;
     }
 };
@@ -37,21 +31,17 @@ int main()
 {
     Solution s;
 
-    vector<int> nums1 = {3, 2, 2, 3};
-    vector<int> nums2 = {0, 1, 2, 2, 3, 0, 4, 2};
-    vector<int> nums3 = {2};
+    vector<vector<int>> nums = {
+        {3, 2, 2, 3},             // 2
+        {0, 1, 2, 2, 3, 0, 4, 2}, // 5
+        {2},                      // 0
+    };
+    vector<int> vals = {3, 2, 2};
 
-    vector<vector<int>> groups = {nums1, nums2, nums3};
-
-    int val;
     int group;
-
     cout << "Please input group: ";
     cin >> group;
+    group--;
 
-    cout << "Please input val: ";
-    cin >> val;
-
-    int k = s.removeElement(groups[group - 1], val);
-    cout << "k: " << k << endl;
+    cout << s.removeElement(nums[group], vals[group]) << endl;
 }
