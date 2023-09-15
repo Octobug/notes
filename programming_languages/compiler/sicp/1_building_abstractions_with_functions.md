@@ -45,7 +45,13 @@
     - [1.6.6 Currying](#166-currying)
     - [1.6.7 Lambda Expressions](#167-lambda-expressions)
     - [1.6.8 Abstractions and First-Class Functions](#168-abstractions-and-first-class-functions)
+    - [1.6.9 Function Decorators](#169-function-decorators)
   - [Homework 2: Higher Order Functions and Lambdas](#homework-2-higher-order-functions-and-lambdas)
+  - [Lab 2: Higher-Order Functions, Lambda Expressions](#lab-2-higher-order-functions-lambda-expressions)
+  - [Project 1: The Game of Hog](#project-1-the-game-of-hog)
+  - [Discussion 2: Environment Diagrams, Higher-Order Functions](#discussion-2-environment-diagrams-higher-order-functions)
+  - [Lab 3: Midterm Review](#lab-3-midterm-review)
+  - [1.7 Recursive Functions](#17-recursive-functions)
 
 ## Lab 0: Getting Started
 
@@ -645,8 +651,67 @@ systems.
 
 ### 1.6.8 Abstractions and First-Class Functions
 
->>>>> progress
+In general, programming languages impose restrictions on the ways in which
+computational elements can be manipulated. Elements with the fewest
+restrictions are said to have first-class status. Some of the "rights and
+privileges" of first-class elements are:
+
+1. They may be bound to names.
+2. They may be passed as arguments to functions.
+3. They may be returned as the results of functions.
+4. They may be included in data structures.
+
+### 1.6.9 Function Decorators
+
+Python provides special syntax to apply higher-order functions as part of
+executing a `def` statement, called a **decorator**. Perhaps the most common
+example is a trace.
+
+```py
+def trace(fn):
+    def wrapped(x):
+        print('-> ', fn, '(', x, ')')
+        return fn(x)
+    return wrapped
+
+@trace
+def triple(x):
+    return 3 * x
+```
+
+The `def` statement for triple has an annotation, `@trace`, which affects the
+execution rule for def. As usual, the function `triple` is created. However,
+the name `triple` is not bound to this function. Instead, the name `triple` is
+bound to the returned function value of calling trace on the newly defined
+`triple` function. In code, this decorator is equivalent to:
+
+```py
+def triple(x):
+    return 3 * x
+
+triple = trace(triple)
+```
 
 ## Homework 2: Higher Order Functions and Lambdas
 
-- [ ] [Homework 2: Higher Order Functions and Lambdas](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw02/)
+- [x] [Homework 2: Higher Order Functions and Lambdas](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw02/)
+
+## Lab 2: Higher-Order Functions, Lambda Expressions
+
+- [x] [Lab 2: Higher-Order Functions, Lambda Expressions](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab02/)
+
+## Project 1: The Game of Hog
+
+- [ ] [Project 1: The Game of Hog](https://inst.eecs.berkeley.edu/~cs61a/sp23/proj/hog/)
+
+## Discussion 2: Environment Diagrams, Higher-Order Functions
+
+- [Discussion 2: Environment Diagrams, Higher-Order Functions](https://inst.eecs.berkeley.edu/~cs61a/sp23/disc/disc02/)
+
+## Lab 3: Midterm Review
+
+- [ ] [Lab 3: Midterm Review](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab03/)
+
+## 1.7 Recursive Functions
+
+> <https://www.composingprograms.com/pages/17-recursive-functions.html>
