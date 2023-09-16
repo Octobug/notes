@@ -52,6 +52,8 @@
   - [Discussion 2: Environment Diagrams, Higher-Order Functions](#discussion-2-environment-diagrams-higher-order-functions)
   - [Lab 3: Midterm Review](#lab-3-midterm-review)
   - [1.7 Recursive Functions](#17-recursive-functions)
+  - [Discussion 3: Recursion](#discussion-3-recursion)
+  - [Homework 3: Recursion, Tree Recursion](#homework-3-recursion-tree-recursion)
 
 ## Lab 0: Getting Started
 
@@ -702,7 +704,7 @@ triple = trace(triple)
 
 ## Project 1: The Game of Hog
 
-- [ ] [Project 1: The Game of Hog](https://inst.eecs.berkeley.edu/~cs61a/sp23/proj/hog/)
+- [x] [Project 1: The Game of Hog](https://inst.eecs.berkeley.edu/~cs61a/sp23/proj/hog/)
 
 ## Discussion 2: Environment Diagrams, Higher-Order Functions
 
@@ -715,3 +717,11 @@ triple = trace(triple)
 ## 1.7 Recursive Functions
 
 > <https://www.composingprograms.com/pages/17-recursive-functions.html>
+
+## Discussion 3: Recursion
+
+- [Discussion 3: Recursion](https://inst.eecs.berkeley.edu/~cs61a/sp23/disc/disc03/)
+
+## Homework 3: Recursion, Tree Recursion
+
+- [ ] [Homework 3: Recursion, Tree Recursion](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw03/)
