@@ -10,35 +10,25 @@ public:
     {
         int cur = 0;
         while (s[cur] == ' ')
-        {
             cur++;
-        }
         int start = cur;
 
         while (cur < s.size() && s[cur] != ' ')
-        {
             cur++;
-        }
 
         string result = s.substr(start, cur - start);
 
         while (cur < s.size())
         {
             while (cur < s.size() && s[cur] == ' ')
-            {
                 cur++;
-            }
             start = cur;
 
             while (cur < s.size() && s[cur] != ' ')
-            {
                 cur++;
-            }
 
             if (start < s.size())
-            {
                 result = s.substr(start, cur - start) + " " + result;
-            }
         }
 
         return result;
@@ -56,7 +46,6 @@ public:
         while (left < right)
         {
             swap(s[left], s[right]);
-
             left++;
             right--;
         }
@@ -71,32 +60,22 @@ public:
         while (cur < s.size())
         {
             while (cur < s.size() && s[cur] == ' ')
-            {
                 cur++;
-            }
             if (cur >= s.size())
-            {
                 break;
-            }
             begin = cur;
 
             while (cur < s.size() && s[cur] != ' ')
-            {
                 cur++;
-            }
             end = cur - 1;
             len = end - begin + 1;
             shift = begin - base;
 
             while (end >= begin)
-            {
                 swap(s[begin++], s[end--]);
-            }
 
             for (int i = 0; i < len; i++)
-            {
                 s[base + i] = s[base + i + shift];
-            }
             base += len;
             s[base++] = ' ';
         }
@@ -119,9 +98,10 @@ int main()
     int group;
     cout << "Please input group: ";
     cin >> group;
+    group--;
 
     Solution s;
-    cout << s.reverseWords(groups[group - 1]) << endl;
+    cout << s.reverseWords(groups[group]) << endl;
 
     return 0;
 }
