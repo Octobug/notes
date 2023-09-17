@@ -1,12 +1,16 @@
 from operator import add, mul
 
-square = lambda x: x * x
 
-identity = lambda x: x
+def square(x): return x * x
 
-triple = lambda x: 3 * x
 
-increment = lambda x: x + 1
+def identity(x): return x
+
+
+def triple(x): return 3 * x
+
+
+def increment(x): return x + 1
 
 
 def ordered_digits(x):
@@ -28,7 +32,13 @@ def ordered_digits(x):
     False
 
     """
-    "*** YOUR CODE HERE ***"
+    while x > 0:
+        remain = x % 10
+        x = x // 10
+        if remain < x % 10:
+            return False
+
+    return True
 
 
 def get_k_run_starter(n, k):
@@ -52,12 +62,12 @@ def get_k_run_starter(n, k):
     """
     i = 0
     final = None
-    while ____________________________:
-        while ____________________________:
-            ____________________________
-        final = ____________________________
-        i = ____________________________
-        n = ____________________________
+    while i <= k:
+        while n > 10 and n // 10 % 10 < n % 10:
+            n = n // 10
+        final = n % 10
+        i = i + 1
+        n = n // 10
     return final
 
 
@@ -76,7 +86,14 @@ def make_repeater(func, n):
     >>> make_repeater(square, 0)(5) # Yes, it makes sense to apply the function zero times!
     5
     """
-    "*** YOUR CODE HERE ***"
+    def repeater(x):
+        nonlocal n
+        while n > 0:
+            x = func(x)
+            n = n - 1
+        return x
+
+    return repeater
 
 
 def composer(func1, func2):
@@ -94,7 +111,7 @@ def apply_twice(func):
     >>> apply_twice(square)(2)
     16
     """
-    "*** YOUR CODE HERE ***"
+    return make_repeater(func, 2)
 
 
 def div_by_primes_under(n):
@@ -108,13 +125,15 @@ def div_by_primes_under(n):
     >>> div_by_primes_under(5)(1)
     False
     """
-    checker = lambda x: False
-    i = ____________________________
-    while ____________________________:
+    def checker(x): return False
+    i = n + 1
+    while i >= 2:
         if not checker(i):
-            checker = ____________________________
-        i = ____________________________
-    return ____________________________
+            checker = (
+                lambda f, i: lambda x: x % i == 0 or f(i - 1)
+            )(checker, i)
+        i = i - 1
+    return checker
 
 
 def div_by_primes_under_no_lambda(n):
@@ -130,13 +149,13 @@ def div_by_primes_under_no_lambda(n):
     """
     def checker(x):
         return False
-    i = ____________________________
-    while ____________________________:
+    i = n + 1
+    while i >= 2:
         if not checker(i):
-            def outer(____________________________):
-                def inner(____________________________):
-                    return ____________________________
-                return ____________________________
-            checker = ____________________________
-        i = ____________________________
-    return ____________________________
+            def outer(f, i):
+                def inner(x):
+                    return x % i == 0 or f(i - 1)
+                return inner
+            checker = outer(checker, i)
+        i = i - 1
+    return checker
