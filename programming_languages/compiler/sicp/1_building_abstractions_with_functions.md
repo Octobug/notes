@@ -52,6 +52,11 @@
   - [Discussion 2: Environment Diagrams, Higher-Order Functions](#discussion-2-environment-diagrams-higher-order-functions)
   - [Lab 3: Midterm Review](#lab-3-midterm-review)
   - [1.7 Recursive Functions](#17-recursive-functions)
+    - [1.7.1 The Anatomy of Recursive Functions](#171-the-anatomy-of-recursive-functions)
+    - [1.7.2 Mutual Recursion](#172-mutual-recursion)
+    - [1.7.3 Printing in Recursive Functions](#173-printing-in-recursive-functions)
+    - [1.7.4 Tree Recursion](#174-tree-recursion)
+    - [1.7.5 Example: Partitions](#175-example-partitions)
   - [Discussion 3: Recursion](#discussion-3-recursion)
   - [Homework 3: Recursion, Tree Recursion](#homework-3-recursion-tree-recursion)
 
@@ -712,11 +717,64 @@ triple = trace(triple)
 
 ## Lab 3: Midterm Review
 
-- [ ] [Lab 3: Midterm Review](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab03/)
+- [x] [Lab 3: Midterm Review](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab03/)
 
 ## 1.7 Recursive Functions
 
 > <https://www.composingprograms.com/pages/17-recursive-functions.html>
+
+### 1.7.1 The Anatomy of Recursive Functions
+
+Treating a recursive call as a functional abstraction has been called a
+***recursive leap of faith***.
+
+Mutual recursion is no more mysterious or powerful than simple recursion, and
+it provides a mechanism for maintaining abstraction within a complicated
+recursive program.
+
+### 1.7.2 Mutual Recursion
+
+When a recursive procedure is divided among two functions that call each other,
+the functions are said to be ***mutually recursive***.
+
+### 1.7.3 Printing in Recursive Functions
+
+### 1.7.4 Tree Recursion
+
+### 1.7.5 Example: Partitions
+
+The number of partitions of a positive integer `n`, using parts up to size `m`,
+is the number of ways in which `n` can be expressed as the sum of positive
+integer parts up to `m` in increasing order. For example, the number of
+partitions of 6 using parts up to 4 is 9.
+
+1. `6 = 2 + 4`
+2. `6 = 1 + 1 + 4`
+3. `6 = 3 + 3`
+4. `6 = 1 + 2 + 3`
+5. `6 = 1 + 1 + 1 + 3`
+6. `6 = 2 + 2 + 2`
+7. `6 = 1 + 1 + 2 + 2`
+8. `6 = 1 + 1 + 1 + 1 + 2`
+9. `6 = 1 + 1 + 1 + 1 + 1 + 1`
+
+The number of ways to partition `n` using integers up to `m` equals:
+
+1. the number of ways to partition `n-m` using integers up to `m`, and
+2. the number of ways to partition `n` using integers up to `m-1`.
+
+```py
+def count_partitions(n, m):
+    """Count the ways to partition n using parts up to m."""
+    if n == 0:
+        return 1
+    elif n < 0:
+        return 0
+    elif m == 0:
+        return 0
+    else:
+        return count_partitions(n-m, m) + count_partitions(n, m-1)
+```
 
 ## Discussion 3: Recursion
 
@@ -724,4 +782,4 @@ triple = trace(triple)
 
 ## Homework 3: Recursion, Tree Recursion
 
-- [ ] [Homework 3: Recursion, Tree Recursion](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw03/)
+- [x] [Homework 3: Recursion, Tree Recursion](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw03/)
