@@ -17,18 +17,13 @@ public:
         for (int i = 0; i < nums.size(); i++)
         {
             if (nums[i] > 0)
-            {
                 return result;
-            }
 
             if (i > 0 && nums[i] == nums[i - 1])
-            {
                 continue;
-            }
 
             int left = i + 1;
             int right = nums.size() - 1;
-
             while (left < right)
             {
                 if (nums[i] + nums[left] + nums[right] > 0)
@@ -49,7 +44,7 @@ public:
                     while (left < right && nums[right] == nums[right - 1])
                         right--;
 
-                    left--;
+                    left++;
                     right--;
                 }
             }
@@ -70,9 +65,10 @@ int main()
     int group;
     cout << "Please input group: ";
     cin >> group;
+    group--;
 
     Solution s;
-    vector<vector<int>> result = s.threeSum(groups[group - 1]);
+    vector<vector<int>> result = s.threeSum(groups[group]);
     output2d(result);
 
     return 0;
