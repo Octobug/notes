@@ -17,26 +17,18 @@ public:
         for (int i = 0; i < nums.size(); i++)
         {
             if (nums[i] > target && nums[i] >= 0)
-            {
                 break;
-            }
 
             if (i > 0 && nums[i] == nums[i - 1])
-            {
                 continue;
-            }
 
             for (int j = i + 1; j < nums.size(); j++)
             {
                 if (nums[i] + nums[j] > target && nums[j] >= 0)
-                {
                     break;
-                }
 
                 if (j > i + 1 && nums[j] == nums[j - 1])
-                {
                     continue;
-                }
 
                 int left = j + 1;
                 int right = nums.size() - 1;
@@ -53,7 +45,8 @@ public:
                     }
                     else
                     {
-                        result.push_back({nums[i], nums[j], nums[left], nums[right]});
+                        result.push_back({nums[i], nums[j],
+                                          nums[left], nums[right]});
 
                         while (left < right && nums[left] == nums[left + 1])
                             left++;
@@ -73,21 +66,19 @@ public:
 
 int main()
 {
-    vector<vector<int>> groups = {
+    vector<vector<int>> nums = {
         {1, 0, -1, 0, -2, 2},
         {2, 2, 2, 2, 2},
     };
+    vector<int> targets = {0, 8};
     int group;
-    int target;
 
     cout << "Please input group: ";
     cin >> group;
-
-    cout << "Please input target: ";
-    cin >> target;
+    group--;
 
     Solution s;
-    vector<vector<int>> result = s.fourSum(groups[group - 1], target);
+    vector<vector<int>> result = s.fourSum(nums[group], targets[group]);
     output2d(result);
 
     return 0;

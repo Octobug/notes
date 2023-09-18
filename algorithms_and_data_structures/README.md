@@ -25,7 +25,7 @@
 - [x] [链表](./linked_list.md)
 - [x] [哈希表](./hash_table.md)
 - [x] [字符串](./string.md)
-- [ ] [双指针法](./two_pointers.md)
+- [x] [双指针法](./two_pointers.md)
 - [x] [栈与队列](./stack_queue.md)
 - [x] [二叉树](./tree.md)
 - [x] [回溯算法](./backtracking.md)
