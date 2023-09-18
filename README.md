@@ -49,7 +49,8 @@ disciplines according to the
     3. [Computer Network](computer_network)
         1. [Internet Protocol Suite](computer_network/internet_protocol_suite)
         2. [Network Programming](computer_network/network_programming)
-    4. Computer Security
+    4. [Computer Security](./computer_security/)
+        1. [Cryptography](./computer_security/cryptography/)
     5. [Databases](databases)
         1. [Database Design](databases/database_design)
         2. [NoSQL](databases/nosql)
