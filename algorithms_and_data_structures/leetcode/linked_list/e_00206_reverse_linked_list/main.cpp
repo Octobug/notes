@@ -55,15 +55,15 @@ int main()
 
     vector<vector<int>> groups = {list1, list2, list3};
     int group;
-
     cout << "Please input group: ";
     cin >> group;
+    group--;
 
     Solution1 s1;
     Solution2 s2;
 
-    ListNode *head1 = array2list(groups[group - 1]);
-    ListNode *head2 = array2list(groups[group - 1]);
+    ListNode *head1 = array2list(groups[group]);
+    ListNode *head2 = array2list(groups[group]);
 
     ListNode *newHead1 = s1.reverseList(head1);
     ListNode *newHead2 = s2.reverseList(head2);

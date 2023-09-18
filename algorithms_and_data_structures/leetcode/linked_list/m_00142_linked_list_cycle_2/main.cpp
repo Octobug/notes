@@ -43,6 +43,7 @@ int main()
     int group;
     cout << "Please input group: ";
     cin >> group;
+    group--;
 
     ListNode *head = array2list(groups[group - 1]);
 

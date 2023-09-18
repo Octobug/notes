@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class Solution
+class SolutionSpace
 {
 public:
     ListNode *removeNthFromEnd(ListNode *head, int n)
@@ -27,25 +27,47 @@ public:
     }
 };
 
+class Solution
+{
+public:
+    ListNode *removeNthFromEnd(ListNode *head, int n)
+    {
+        ListNode *dummyHead = new ListNode(0);
+        dummyHead->next = head;
+        ListNode *slow = dummyHead;
+        ListNode *fast = dummyHead;
+        while (n-- && fast != nullptr)
+            fast = fast->next;
+
+        fast = fast->next;
+        while (fast != nullptr)
+        {
+            fast = fast->next;
+            slow = slow->next;
+        }
+        slow->next = slow->next->next;
+
+        return dummyHead->next;
+    }
+};
+
 int main()
 {
-    vector<int> list1 = {1, 2, 3, 4, 5};
-    vector<int> list2 = {1};
-    vector<int> list3 = {1, 2};
+    vector<int> list1 = {1, 2, 3, 4, 5}; // [1,2,3,5]
+    vector<int> list2 = {1};             // []
+    vector<int> list3 = {1, 2};          // [1]
     vector<vector<int>> groups = {list1, list2, list3};
+    vector<int> ns = {2, 1, 1};
 
     int group;
     cout << "Please input group: ";
     cin >> group;
+    group--;
 
-    int n;
-    cout << "Please input n: ";
-    cin >> n;
-
-    ListNode *head = array2list(groups[group - 1]);
+    ListNode *head = array2list(groups[group]);
 
     Solution s;
-    ListNode *result = s.removeNthFromEnd(head, n);
+    ListNode *result = s.removeNthFromEnd(head, ns[group]);
 
     output(result);
 
