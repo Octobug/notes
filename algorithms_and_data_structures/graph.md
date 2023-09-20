@@ -41,11 +41,11 @@ void dfs(参数) {
   - [x] [岛屿的最大面积](https://programmercarl.com/0695.%E5%B2%9B%E5%B1%BF%E7%9A%84%E6%9C%80%E5%A4%A7%E9%9D%A2%E7%A7%AF.html)
   - [x] [飞地的数量](https://programmercarl.com/1020.%E9%A3%9E%E5%9C%B0%E7%9A%84%E6%95%B0%E9%87%8F.html)
   - [x] [被围绕的区域](https://programmercarl.com/0130.%E8%A2%AB%E5%9B%B4%E7%BB%95%E7%9A%84%E5%8C%BA%E5%9F%9F.html)
-  - [ ] [太平洋大西洋水流问题](https://programmercarl.com/0417.%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%A4%A7%E8%A5%BF%E6%B4%8B%E6%B0%B4%E6%B5%81%E9%97%AE%E9%A2%98.html)
-  - [ ] 最大人工岛
+  - [x] [太平洋大西洋水流问题](https://programmercarl.com/0417.%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%A4%A7%E8%A5%BF%E6%B4%8B%E6%B0%B4%E6%B5%81%E9%97%AE%E9%A2%98.html)
+  - [x] [最大人工岛](https://programmercarl.com/0827.%E6%9C%80%E5%A4%A7%E4%BA%BA%E5%B7%A5%E5%B2%9B.html)
   - 11~20
-  - [ ] 单词接龙
-  - [ ] 钥匙和房间
+  - [x] [单词接龙](https://programmercarl.com/0127.%E5%8D%95%E8%AF%8D%E6%8E%A5%E9%BE%99.html)
+  - [ ] [钥匙和房间](https://programmercarl.com/0841.%E9%92%A5%E5%8C%99%E5%92%8C%E6%88%BF%E9%97%B4.html)
   - [ ] 岛屿的周长
   - [ ] 并查集理论基础
   - [ ] 寻找图中是否存在路径
