@@ -32,7 +32,7 @@
 - [x] [贪心算法](./greedy.md)
 - [x] [动态规划](./dynamic_programming.md)
 - [x] [单调栈](./monotone_stack.md)
-- [ ] [图论](./graph.md)
+- [x] [图论](./graph.md)
 - [x] [额外题目](https://programmercarl.com/other/ewaishuoming.html)
   - 01~10
   - [x] [数组：有多少小于当前数字的数字](https://programmercarl.com/1365.%E6%9C%89%E5%A4%9A%E5%B0%91%E5%B0%8F%E4%BA%8E%E5%BD%93%E5%89%8D%E6%95%B0%E5%AD%97%E7%9A%84%E6%95%B0%E5%AD%97.html)
@@ -65,15 +65,15 @@
   - [x] [动态规划：最长回文子串](https://programmercarl.com/0005.%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.html)
   - [x] [动态规划：分割回文串II](https://programmercarl.com/0132.%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2II.html)
   - [x] [动态规划：最长递增子序列的个数](https://programmercarl.com/0673.%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97%E7%9A%84%E4%B8%AA%E6%95%B0.html)
-  - [ ] [图论：钥匙和房间](https://programmercarl.com/0841.%E9%92%A5%E5%8C%99%E5%92%8C%E6%88%BF%E9%97%B4.html)
-  - [ ] 图论：单词接龙
+  - [x] [图论：钥匙和房间](https://programmercarl.com/0841.%E9%92%A5%E5%8C%99%E5%92%8C%E6%88%BF%E9%97%B4.html)
+  - [x] [图论：单词接龙](https://programmercarl.com/0127.%E5%8D%95%E8%AF%8D%E6%8E%A5%E9%BE%99.html)
   - 31~
-  - [ ] 并查集：冗余连接
-  - [ ] 并查集：冗余连接II
-  - [ ] 模拟：机器人能否返回原点
-  - [ ] 模拟：下一个排列
-  - [ ] 模拟：岛屿的周长
-  - [ ] 位运算：根据数字二进制下1的数目排序
+  - [x] [并查集：冗余连接](https://programmercarl.com/0684.%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5.html)
+  - [x] [并查集：冗余连接II](https://programmercarl.com/0685.%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5II.html)
+  - [ ] [模拟：机器人能否返回原点](https://programmercarl.com/0657.%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%83%BD%E5%90%A6%E8%BF%94%E5%9B%9E%E5%8E%9F%E7%82%B9.html)
+  - [ ] [模拟：下一个排列](https://programmercarl.com/0031.%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97.html)
+  - [x] [模拟：岛屿的周长](https://programmercarl.com/0463.%E5%B2%9B%E5%B1%BF%E7%9A%84%E5%91%A8%E9%95%BF.html)
+  - [ ] [位运算：根据数字二进制下1的数目排序](https://programmercarl.com/1356.%E6%A0%B9%E6%8D%AE%E6%95%B0%E5%AD%97%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8B1%E7%9A%84%E6%95%B0%E7%9B%AE%E6%8E%92%E5%BA%8F.html)
 
 ## LeetCode Top 100
 
