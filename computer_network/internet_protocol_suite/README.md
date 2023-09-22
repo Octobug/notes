@@ -9,8 +9,8 @@
 ### Table of Contents
 
 - [x] 0. Foreword and Prefaces
-- [ ] [1. Introduction](introduction)
-- [ ] [2. The Internet Address Architecture](address_architecture)
+- [x] [1. Introduction](./introduction.md)
+- [ ] [2. The Internet Address Architecture](./address_architecture.md)
 - [ ] 3. Link Layer
 - [ ] 4. ARP: Address Resolution Protocol
 - [ ] 5. The Internet Protocol (IP)
