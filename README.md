@@ -69,7 +69,7 @@ disciplines according to the
         2. Programming Paradigms
         3. [C](programming_languages/c)
         4. [Go](programming_languages/go)
-        5. [JavaScript](programming_languages/javascript)
+        5. [JavaScript](./programming_languages/javascript/)
         6. [Python](programming_languages/python)
     9. [Software Development](software_development)
         1. [Git](software_development/git)

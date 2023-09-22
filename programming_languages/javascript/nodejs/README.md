@@ -6,6 +6,8 @@
     - [`global` keyword](#global-keyword)
   - [npm](#npm)
     - [npx](#npx)
+    - [Creating Packages](#creating-packages)
+    - [npm workspaces](#npm-workspaces)
   - [Error Handling](#error-handling)
     - [Error types](#error-types)
       - [Javascript Errors](#javascript-errors)
@@ -13,6 +15,13 @@
       - [User Specified Errors](#user-specified-errors)
       - [Assertion Errors](#assertion-errors)
     - [Uncaught Exceptions](#uncaught-exceptions)
+    - [Handling Async Errors](#handling-async-errors)
+    - [Using debugger](#using-debugger)
+  - [Asynchronous Programming](#asynchronous-programming)
+    - [Promises](#promises)
+    - [Async/Await](#asyncawait)
+    - [Event Emitter](#event-emitter)
+    - [Event Loop](#event-loop)
   - [Working with Files](#working-with-files)
     - [`fs` module](#fs-module)
     - [`path` module](#path-module)
@@ -41,6 +50,9 @@
     - [Relational Databases](#relational-databases)
   - [Testing](#testing)
   - [Logging](#logging)
+  - [Keepling App Running](#keepling-app-running)
+  - [Threads](#threads)
+  - [Common Built-in Modules](#common-built-in-modules)
   - [Topics](#topics)
   - [References](#references)
 
@@ -67,16 +79,28 @@ In Node.js this is different. The top-level scope is not the `global` scope;
 
 ## npm
 
-npm is the standard package manager for Node.js.
+`npm` is the standard package manager for Node.js.
 
 - it is an online repository for the publishing of open-source Node.js projects;
-- it is a command-line utility for interacting with said repository that aids
-  in package installation, version management, and dependency management.
+- it is a command-line utility for interacting with repository that aids in
+  package installation, version management, and dependency management.
   
 ### npx
 
 `npx` lets you run code built with Node.js and published through the npm
 registry.
+
+### Creating Packages
+
+> - <https://www.freecodecamp.org/news/how-to-make-a-beautiful-tiny-npm-package-and-publish-it-2881d4307f78/>
+> - <https://snyk.io/blog/best-practices-create-modern-npm-package/>
+
+- Private Packages
+- Public Packages
+
+### npm workspaces
+
+> <https://docs.npmjs.com/cli/v10/using-npm/workspaces/>
 
 ## Error Handling
 
@@ -159,6 +183,54 @@ the process.
 It is not safe to resume normal operation after `uncaughtException` because
 system becomes corrupted. The best way is to let the application crash, log the
 error and then restart the process automatically using `nodemon` or `pm2`.
+
+### Handling Async Errors
+
+> <https://www.mariokandut.com/handling-errors-in-asynchronous-functions-node-js/>
+
+### Using debugger
+
+Start Node.js with the `inspect` argument to debug:
+
+```sh
+node inspect main.js
+```
+
+## Asynchronous Programming
+
+- `setTimeout`
+- `clearTimeout`
+- `setInterval`
+- `clearInterval`
+- `setImmediate`
+- `process.nextTick`
+- Callbacks
+
+### Promises
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise>
+
+### Async/Await
+
+> <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function>
+
+### Event Emitter
+
+> <https://www.digitalocean.com/community/tutorials/using-event-emitters-in-node-js>
+
+In Node.js, an event can be described simply as a string with a corresponding
+callback. An event can be “emitted” (or, in other words, the corresponding
+callback be called) multiple times or you can choose to only listen for the
+first time it is emitted.
+
+### Event Loop
+
+> <https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick#what-is-the-event-loop>
+
+Node.js event loop vs. v8 event loop:
+
+- <https://stackoverflow.com/a/61458912/7267801>
+- <https://gist.github.com/andreybolonin/2413da76f088e2c5ab04df53f07659ea>
 
 ## Working with Files
 
@@ -426,6 +498,47 @@ application’s runtime behaviour.
   persistent remote location (like a database), but all logs output to the
   console or a local file.
 
+## Keepling App Running
+
+- `pm2`: <https://pm2.keymetrics.io/>
+- `forever`: <https://github.com/foreversd/forever>
+- `nohup`: the `nohup` shell command, short for "no hang up"
+
+## Threads
+
+> <https://alvinlal.netlify.app/blog/single-thread-vs-child-process-vs-worker-threads-vs-cluster-in-nodejs/>
+
+Node.js is a single-threaded language and gives us ways to work parallelly to
+our main process. Taking note of nowadays multicore system single threading is
+very memory efficient.
+
+>>>>> progress
+
+## Common Built-in Modules
+
+- `assert`
+- `child_processes`
+- `cluster`
+- `console`
+- `crypto`
+- `events`
+- `fs`
+- `http`
+- `net`
+- `os`
+- `path`
+- `perf_hooks`
+- `process`
+- `querystring`
+- `readline`
+- `string_decoder`
+- `tls`
+- `url`
+- `util`
+- `Buffer`
+- `DNS`
+- `REPL`
+
 ## Topics
 
 - [Reusing HTTP connection lead to no destroy triggered](https://github.com/nodejs/node/issues/19859)
@@ -433,11 +546,3 @@ application’s runtime behaviour.
 ## References
 
 - [ ] [Node.js Developer](https://roadmap.sh/nodejs)
-- ORM
-  - [Prisma](https://www.prisma.io/)
-- Test
-  - [Jest](https://jestjs.io/)
-  - [Mocha](https://mochajs.org/)
-  - [Sinon.JS](https://sinonjs.org/)
-- Validator
-  - [Superstruct](https://docs.superstructjs.org/)
