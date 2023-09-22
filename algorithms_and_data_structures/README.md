@@ -70,10 +70,10 @@
   - 31~
   - [x] [并查集：冗余连接](https://programmercarl.com/0684.%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5.html)
   - [x] [并查集：冗余连接II](https://programmercarl.com/0685.%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5II.html)
-  - [ ] [模拟：机器人能否返回原点](https://programmercarl.com/0657.%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%83%BD%E5%90%A6%E8%BF%94%E5%9B%9E%E5%8E%9F%E7%82%B9.html)
-  - [ ] [模拟：下一个排列](https://programmercarl.com/0031.%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97.html)
+  - [x] [模拟：机器人能否返回原点](https://programmercarl.com/0657.%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%83%BD%E5%90%A6%E8%BF%94%E5%9B%9E%E5%8E%9F%E7%82%B9.html)
+  - [x] [模拟：下一个排列](https://programmercarl.com/0031.%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97.html)
   - [x] [模拟：岛屿的周长](https://programmercarl.com/0463.%E5%B2%9B%E5%B1%BF%E7%9A%84%E5%91%A8%E9%95%BF.html)
-  - [ ] [位运算：根据数字二进制下1的数目排序](https://programmercarl.com/1356.%E6%A0%B9%E6%8D%AE%E6%95%B0%E5%AD%97%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8B1%E7%9A%84%E6%95%B0%E7%9B%AE%E6%8E%92%E5%BA%8F.html)
+  - [x] [位运算：根据数字二进制下1的数目排序](https://programmercarl.com/1356.%E6%A0%B9%E6%8D%AE%E6%95%B0%E5%AD%97%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8B1%E7%9A%84%E6%95%B0%E7%9B%AE%E6%8E%92%E5%BA%8F.html)
 
 ## LeetCode Top 100
 
