@@ -8,6 +8,7 @@
     - [npx](#npx)
     - [Creating Packages](#creating-packages)
     - [npm workspaces](#npm-workspaces)
+    - [Others](#others)
   - [Error Handling](#error-handling)
     - [Error types](#error-types)
       - [Javascript Errors](#javascript-errors)
@@ -101,6 +102,11 @@ registry.
 ### npm workspaces
 
 > <https://docs.npmjs.com/cli/v10/using-npm/workspaces/>
+
+### Others
+
+- pnpm
+- yarn
 
 ## Error Handling
 
