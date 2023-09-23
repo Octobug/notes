@@ -53,6 +53,16 @@
   - [Logging](#logging)
   - [Keepling App Running](#keepling-app-running)
   - [Threads](#threads)
+    - [Child Process](#child-process)
+    - [Cluster](#cluster)
+    - [Worker Threads](#worker-threads)
+  - [Streams](#streams)
+  - [Advanced Debugging](#advanced-debugging)
+    - [Why not to use console.log() for debugging](#why-not-to-use-consolelog-for-debugging)
+    - [Memory Leaks](#memory-leaks)
+      - [Garbage Collection](#garbage-collection)
+    - [node --inspect](#node---inspect)
+    - [Using APM (Application Performance Monitoring)](#using-apm-application-performance-monitoring)
   - [Common Built-in Modules](#common-built-in-modules)
   - [Topics](#topics)
   - [References](#references)
@@ -518,7 +528,85 @@ Node.js is a single-threaded language and gives us ways to work parallelly to
 our main process. Taking note of nowadays multicore system single threading is
 very memory efficient.
 
->>>>> progress
+### Child Process
+
+The `child_process` module gives the node the ability to run the child process,
+established through IPC (inter-process communication) by accessing operating
+system commands.
+
+Three main methods inside this module are:
+
+- `child_process.spawn()`
+- `child_process.fork()`
+- `child_process.exec()`
+
+### Cluster
+
+The `cluster` module allows you to easily create child processes that each runs
+simultaneously on their own single thread, to handle workloads among their
+application threads.
+
+### Worker Threads
+
+Worker thread is a continuous parallel thread that runs and accepts messages
+until it is explicitly closed or terminated. With worker threads, we can
+achieve a much efficient application without creating a deadlock situation.
+
+## Streams
+
+Streams are a type of data handling methods and are used to read, write or
+transform chunks of data piece by piece **without keeping it in memory** all at
+once. There are four types of streams in Node.js:
+
+- **Readable**: streams from which data can be read.
+- **Writable**: streams to which we can write data.
+- **Duplex**: streams that are both Readable and Writable.
+- **Transform**: streams that can modify or transform the data as it is written
+  and read.
+
+Multiple streams can be chained together using `pipe()` method.
+
+## Advanced Debugging
+
+### Why not to use console.log() for debugging
+
+Using `console.log` to debug the code generally dives into an infinite loop of
+“stopping the app and adding a console.log, and start the app again”
+operations.
+
+Besides slowing down the development of the app, it also makes the writing
+dirty and creates unnecessary code.
+
+### Memory Leaks
+
+A Node.js memory leak is an orphan block of memory on the Heap that is no
+longer used by your app because it has not been released by the garbage
+collector. It’s a useless block of memory.
+
+#### Garbage Collection
+
+> - <https://javascript.info/garbage-collection>
+> - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management>
+
+Memory management in JavaScript is performed automatically.
+The main concept of memory management in JavaScript is reachability.
+
+### node --inspect
+
+> <https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27>
+
+### Using APM (Application Performance Monitoring)
+
+> <https://stackify.com/node-js-debugging-tips/>
+
+In production, one of your tools would be to login to your remote server to
+view the console logs, just as you would on local. But this can be a tedious
+approach. Luckily, there are tools out there that perform what is called
+**log aggregation**, such as **Stackify**.
+
+These tools send your logs from your running application into a single
+location. They often come with high-powered search and query utilities so that
+you can easily parse your logs and visualize them.
 
 ## Common Built-in Modules
 
@@ -551,4 +639,4 @@ very memory efficient.
 
 ## References
 
-- [ ] [Node.js Developer](https://roadmap.sh/nodejs)
+- [x] [Node.js Developer](https://roadmap.sh/nodejs)
