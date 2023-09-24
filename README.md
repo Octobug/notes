@@ -42,7 +42,7 @@ disciplines according to the
 
 ### Ⅳ. [Formal Science](https://en.wikipedia.org/wiki/Formal_science)
 
-1. [Computer Science](https://en.wikipedia.org/wiki/Computer_science)
+1. [Computer Science](https://en.wikipedia.org/wiki/Outline_of_computer_science)
     1. [Algorithms and Data Structures](algorithms_and_data_structures)
         1. [LeetCode](algorithms_and_data_structures/leetcode)
     2. Computer Graphics
@@ -61,7 +61,7 @@ disciplines according to the
         3. [Containers](devops/containers)
         4. NGINX
         5. Site Reliability Engineering
-    7. [Operating System](operating_system)
+    7. [Operating System](./operating_system)
         1. [Operating Systems](operating_system/operating_systems)
         2. Systems Programming
     8. [Programming Languages](programming_languages)
