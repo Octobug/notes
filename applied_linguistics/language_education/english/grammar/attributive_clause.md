@@ -127,8 +127,14 @@
       - [一、作主语的关系词 + 插入语 + 定语从句的谓语部分](#一作主语的关系词--插入语--定语从句的谓语部分)
       - [二、作宾语的关系词 + 插入语 + 定语从句的主谓部分](#二作宾语的关系词--插入语--定语从句的主谓部分)
       - [三、what 引导的从句中带一个主谓结构的插入语](#三what-引导的从句中带一个主谓结构的插入语)
-    - [2.16.2 定语从句的关系词后面插入一个其他成分](#2162-定语从句的关系词后面插入一个其他成分)
+    - [15.2 定语从句的关系词后面插入一个其他成分](#152-定语从句的关系词后面插入一个其他成分)
+    - [思维总结：15. 带有插入语的定语从句](#思维总结15-带有插入语的定语从句)
+    - [思维训练：15. 带有插入语的定语从句](#思维训练15-带有插入语的定语从句)
+      - [答案：思维训练：15. 带有插入语的定语从句](#答案思维训练15-带有插入语的定语从句)
+  - [16. 并列定语从句](#16-并列定语从句)
+    - [17. 双层定语从句](#17-双层定语从句)
   - [综合训练：定语从句](#综合训练定语从句)
+    - [答案：综合训练：定语从句](#答案综合训练定语从句)
 
 定语从句的两个重要概念: **先行词**和**关系词**。
 
@@ -3226,11 +3232,300 @@ recently giving what he thought was a reason for this American characteristic.
     - what 引导宾语从句，且 what 作从句的主语，he thought 是插入语。
 - `译` 我最近看过一本书，它是由一个英国人写的，我还记得书里有一句十分有趣的话，作者认为这句话说明了美国人为什么是这种性格。
 
-### 2.16.2 定语从句的关系词后面插入一个其他成分
+### 15.2 定语从句的关系词后面插入一个其他成分
 
->>>>> progress
+以上讨论的带插入语的定语从句，所插入的结构都是一个表示个人观点的“主谓结构”，但关系词后面还可以插入其他结构，尤其是各类从句。
+
+`1` Real friends are those who, when you've made a fool of yourself, don't feel
+that you've done a permanent job.
+
+- Real friends are those: 主句的主系表结构
+  - who: 定语从句的关系词 who 作主语
+    - when you've made a fool of yourself: 插入成分，是一个 when 引导的时间状语从句
+  - don't feel that you've done a permanent job: 定语从句的谓语部分
+- `译` 真正的朋友就是，即是你出了洋相，他们也不会认为你以后还会这样。
+
+`2` There was a fisherman who, every time he caught a big fish, would throw it
+back into the river, keeping only the smaller ones.
+
+- 这句的插入成分是一个 every time 引导的时间状语从句。
+- `译` 有个渔夫，每次捕到大鱼时都会把它丢回河里，而只把个头比较小的鱼留下。
+
+`3` The casino issued to him, as a good customer, a "Fun Card", which **when
+used in the casino** earns points for meals and drinks, and enables the casino
+to track the user's gambling activities.
+
+- 主句
+  - the casino issued: 主语 + 谓语
+  - to him, as a good customer: 间接宾语
+  - 直接宾语
+    - a "Fun Card": 宾语中心词，也是定语从句先行词
+    - which: 定语从句关系词，指代 Fun Card，作定语从句的主语
+      - when (it is) used in the casino: 插入成分，是一个时间状语从句，省略了 it is
+    - earns points for meals and drinks, and enables the casino to...:
+      定语从句的谓语部分
+- 如果把 when used in the casino 放在定语从句末尾，由于定语从句的谓语部分过长，会导致
+  when 引导的时间状语从句的意思和 Fun Card 有脱节之嫌，所以为了表意上的需要而将 when
+  从句提前。
+- `译` 赌场认为他是一个好顾客，就发给他一张“乐趣卡”，在赌场使用该卡可以为他赢得餐饮积分，但同时也可以使赌场追踪持卡者的赌博活动。
+
+插入语不一定是从句，还可以是其他结构：
+
+`4` When we honestly ask ourselves which person in our lives means the most to
+us, we often find that it is those who, **instead of giving much advice,
+solutions, or cures**, have chosen rather to share our pain and touch our wounds
+with a gentle and tender hand.
+
+- 这里定语从句的主语 who 和谓语 have chosen 之间插入了一个介词短语。
+- `译` 当我们坦率地问自己，哪种人在我们的生活中对我们最具有意义时，我们常常会发现，不是那些给我们很多劝告、答案或对策的人，而是那些选择分担我们的痛苦，用温柔而亲切的手抚慰我们创伤的人。
+
+### 思维总结：15. 带有插入语的定语从句
+
+1. 插入语的结构特点
+   1. 插入一个主谓结构
+   2. 插入其他各种成分
+      1. 从句
+      2. 介词短语
+      3. ...
+2. 插入语的位置特点：一般只能放在定语从句的**关系词后面**。
+
+### 思维训练：15. 带有插入语的定语从句
+
+**一、分析下列句子结构并译成汉语。**
+
+*1. Every December we choose ten trends that we think will be the most important
+influences in the business of technology in the coming year.*
+
+*2. Finally he had saved $50, which some Henning people living in Chicago, who
+were back home visiting, had assured him was enough to see him eat and sleep
+long enough to find himself a job that would put him on his feet.*
+
+*3. During the nineteenth century, she argues, the concept of the "useful" child
+who contributed to the family economy gave way gradually to the present-day
+notion of the "useless" child who, though producing no income for, and indeed
+extremely costly to, its parents, is yet considered emotionally "priceless".*
+
+#### 答案：思维训练：15. 带有插入语的定语从句
+
+*1. 定语从句 that we think will be... 带有插入语 we think。
+
+- `译` 在每年的十二月，我们要选出我们认为对来年的科技产业将会产生巨大影响的十大趋势。
+
+*2. 定语从句关系词 which 后面带有插入语 some Henning people living in Chicago, who
+were back home visiting, had assured him，分隔了 which 与定语从句的谓语部分。
+其中 which 充当定语从句的主语。插入语是一个独立的主谓结构。
+
+- `译` 他终于积蓄了 50 美元，据住在芝加哥回到 Henning 来探亲的人说，这笔钱足够他在芝加哥支付食宿，从容求职以求独立谋生。
+
+*3. 这里的插入成分是一个并列的分词短语和形容词短语 though producing no income for
+extremely costly to, its parents。在这个插入成分中，介词 for 和 to 后面都有逗号，表明二者共用一个宾语
+its parents。这个插入成分相当于状语从句的省略结构，还原后是:
+
+- though it produces no income for its parents and is indeed extremely costly
+  to its parents.
+- During the nineteenth century： 时间状语
+- she argues: 插入语
+- 句子主语
+  - the concept of the "useful" child: 主语中心词 child
+  - who contributed to the family economy: 定语从句，修饰 child
+- 句子谓语: gave away gradually to
+- 句子宾语
+  - the present-day notion of the "useless" child: 宾语中心词 child
+  - who: 关系词，指代 useless child
+    - though producing no income for, and indeed extremely costly to, its
+      parents: 插入成分，相当于一个状语从句的省略结构
+    - is yet considered emotionally "priceless": 定语从句谓语部分
+- `译` 她说，在 19 世纪，“孩子有用论”——即孩子对于家庭的经济能够起到贡献——逐渐地让位于现今的“孩子无用论”。
+  这种观念认为，孩子不仅不会为父母带来任何收入，而且实际上对于父母来说还是极其费钱的，但是这些孩子仍然被认为在感情上是“无价的”。
+
+## 16. 并列定语从句
+
+并列定语从句是指两个或两个以上的定语从句，通过 and, but, or 等并列连词连接共同修饰一个先行词。
+
+`1` The errors occuring in the exam often result from the things that you don't
+know or that you think you know.
+
+- 两个定语从句 that you don't know 和 that you think you know 由连词 or 连接，修饰同一个先行词
+  the things.
+- `译` 考试中所犯的错误，往往是因为某些知识点你不知道或者你认为自己知道（但实际上你不知道）。
+
+`2` I would much rather receive a gift that was unique **or** that I knew my
+friend had put some thought into rather than something that cost a lot of money
+**but** that I didn't need or want.
+
+- `译` 我倒希望收到的礼物是很别致的，或是我知道是朋友精心为我准备的，而不是花了很多钱却不是我所想要或需要的。
+
+`4` I’m talking about friends who care deeply about each other, who support
+each other, and who make life worth living.
+
+- 三个定语从句 who care deeply about each other, who support each other 和 who
+  make life worth living 并列修饰friends。
+- `译` 我说的是那种彼此之间能真正互相关心的朋友，能够互相支持的朋友，能够让你的人生更有意义的朋友。
+
+⚠️ 以下句子不是并列定语从句：
+
+`5` He found a dollar bill that he had forgotten in a suit that he was sending
+to the cleaner.
+
+- 两个定语从句分别修饰各自的先行词 a dollar bill 和 a suit。
+- `译` 他在那件正要送到洗衣店的西装里找到了他忘记的一美元。
+
+`6` The 20th century will not be remembered as the era when space was conquered,
+or the power of the atom harnessed, **but** that in which were made the first
+machines having intelligence.
+
+- 这里有两个定语从句：
+  - 第一个定语从句 when space was conquered, or the power of the atom harnessed
+    的先行词是 the era。
+  - 第二个定语从句 in which were made the first machines having intelligence
+    的先行词也是 the era，为了避免重复，用 that 指代了 the era。
+    - 它是一个全部倒装的句子，正常语序应是：in which the first machines having
+      intelligence were made，可还原成：The first machines having intelligence
+      were made in the era (which).
+  - 这两个定语从句由 but 连接，形成并列定语从句。
+- `译` 未来人们能记住 20 世纪，并不是因为在这个世纪人类征服了宇宙太空或是利用了原子能，而是因为人类首次制造了智能机器。
+
+### 17. 双层定语从句
+
+双层定语从句的特点是：
+
+1. 一个先行词首先被一个**限定性**定语从句所修饰，表示一个特定的意思。
+   然后，这个”先行词 + 限定性定语从句“再被另外一个限定性定语从句所修饰。
+2. 这两个限定性定语从句处在不同的层次上，和多个并列定语从句修饰同一个先行词不一样。
+
+`1` He is the only person that we know **who speaks so many foreign languages**.
+
+- 第一层定语从句 that we know 的先行词是 the only person
+- 第二层定语从句 who speaks so many foreign languages 的先行词为 the only person
+  that we know.
+- `译` 他是我们所认识的人当中唯一一位会说这么多外语的人。
+
+`2` Dr. Kissinger is the only person (that) we know **who can eat caviar with
+chopsticks**.
+
+- 第一层定语从句 (that) we know 的先行词是 the only person
+- 第二层定语从句 who can eat caviar with chopsticks 的先行词是 the only person
+  (that) we know.
+- `译` 基辛格博士是我们所认识的人当中唯一一位能够用筷子吃鱼子酱的人。
+
+`3` There is nothing you can do, achieve, or buy **that will outshine the peace,
+joy and happiness of being in communication with the partner you love**.
+
+- 第一层定语从句 (that) you can do, achieve, or buy 的先行词是 nothing；
+- 第二层定语从句 that will outshine the peace, joy and happiness of being in
+  communication with the partner you love 的先行词是 nothing you can do, achieve,
+  or buy。
+- `译` 当你和自己心爱的人进行交流时，你心中所产生的那种安宁、快乐和幸福感要胜过一切你能做到、得到或买到的东西。
+
+`4` What was it you started to tell me in the restaurant **that you didn't
+understand about me**?
+
+- 第一层定语从句 you started to tell me in the restaurant 的先行词是 what；
+- 第二层定语从句 that you didn't understand about me 的先行词是 what...you started
+  to tell me in the restaurant.
+- `译` 你刚才在餐馆里想要告诉我的，说你不了解我的是什么来着？
+
+`5` The only system I know which will help you to remember what you have heard
+at a lecture is that of keeping notes.
+
+- 第一层定语从句 (that) I know 的先行词是 system。
+- 第二从从句 which will help you to remember...的先行词是 system I know。
+- `译` 能够帮助你记住课上所听到的内容的唯一办法就是记笔记。
+
+`6` I would appreciate any ideas you might think of that would be especially
+pertinent to Chinese students.
+
+- 第一层定语从句是 you might think of, 先行词是 any ideas
+- 第二层定语从句是 that would be especially pertinent to Chinese students. 先行词是
+  any ideas you might think of.
+- `译` 如果你能够想出任何与中国学生尤其相关的主意，我将非常感激。
+
+`7` There are probably no questions we can think up that can't be answered,
+sooner or later, including even the matter of consciousness.
+
+- 第一层定语从句是 we can think up，先行词是 questions
+- 第二层定语从句是 that can't be answered, sooner or later，先行词是 questions we
+  can think up。
+- `译` 我们能够想得出来但却解决不了的问题，这样的问题迟早可能都不会存在的，即使像意识这样的问题。
+
+`8` It may be just a strange feeling the inspector has that makes him suspect a
+person of smuggling.
+
+- 第一层定语从句是 the inspector, 先行词是 a strange feeling。
+- 第二层定语从句是 that makes him suspect a person of smuggling, 它的先行词是
+  a strange feeling the inspector has.
+- `译` 线索可能是那些人走路的样子，也可能是说话的方式，或者只是凭直觉怀疑某人是在走私。
 
 ## 综合训练：定语从句
+
+**一、选择最佳答案填空。**
+
+*2. `____` shrewd people `____` he described in his novel are to be found
+everywhere.*
+
+- *A. Such/like*
+- *B. Such/as*
+- *C. So/like*
+- *D. So/as*
+
+*6. The quality of teaching should be measured by the degree `____` the
+students' potentiality is developed.*
+
+- *A. of which*
+- *B. with which*
+- *C. in which*
+- *D. to which*
+
+*7. Basic research provides the capital fund of scientific knowledge `____`
+which the applied researchers draw to give society a rich rate of interest.*
+
+- *A. on*
+- *B. out*
+- *C. up*
+- *D. back*
+
+*8. Hiram Revels, the first Black member of the United States Senate, served as
+senator from Mississippi, an office `____` he was elected in 1870.*
+
+- *A. which*
+- *B. to which*
+- *C. and which*
+- *D. at which*
+
+*9. They will move into the new house next Friday, ____ it will be completely
+furnished.*
+
+- *A. by the time*
+- *B. by which time*
+- *C. by that time*
+- *D. by this time*
+
+*10. The tall rectangular buildings may well give way to a more complex and
+exciting shape providing areas `____` which the individual can fully identify
+himself.*
+
+- *A. to*
+- *B. for*
+- *C. with*
+- *D. by*
+
+### 答案：综合训练：定语从句
+
+*2. B。这是关于 as 引导的限定性定语从句，as 在从句中充当 described 的宾语。
+
+*6. D。to which 来自于搭配 to the degree。
+
+*7. A。on which 来自搭配 draw on，表示“利用……”。
+
+*8. B。to which 来自搭配 elect...to...，表示“当选某个职位”。
+
+*9. B。by which time 来自于搭配 by the time。
+
+*10. C。with which 来自搭配 identify oneself with。
+
+- `译` 高大的矩形建筑很可能会被更复杂、更令人兴奋的形状所取代，从而提供个人可以充分认同自己的区域。
+
+>>>>> progress
 
 **一、请将下列中文翻译成英文。**
 
