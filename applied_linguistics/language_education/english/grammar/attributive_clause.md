@@ -3509,6 +3509,161 @@ himself.*
 - *C. with*
 - *D. by*
 
+*16. Anthony Jason, `____` Louis succeeded in the experiment, was a friend of
+mine.*
+
+- *A. with the help from whom*
+- *B. with whose help*
+- *C. with the help of his*
+- *D. with his help*
+
+*18. Watercolor provides a brilliant transparency and freshness, `____` it
+allows extraordinarily free brushwork.*
+
+- *A. that*
+- *B. during*
+- *C. which*
+- *D. and*
+
+*25. He showed me a book, `____` I could tell that it was pretty old.*
+
+- *A. which cover*
+- *B. of which cover*
+- *C. the cover which*
+- *D. from the cover of which*
+
+*27. "Did the audience participate in the party?" "Yes, the actors `____` to
+involve the audience were successful."*
+
+- *A. whom it was the function*
+- *B. of which the function was*
+- *C. whose function it was*
+- *D. whose were the function*
+
+*28. The doctors all blamed the irresponsible boy `____` to protect the little
+girl.*
+
+- *A. it was he that was*
+- *B. whose duty was it*
+- *C. it was whose duty*
+- *D. whose duty it was*
+
+*29. The project requires more labor than `____` because it is extremely
+difficult.*
+
+- *A. has been put in*
+- *B. have been put in*
+- *C. being put in*
+- *D. to be put in*
+
+*31. The costs of distribution and sales make up a large part of prices that
+`____`.*
+
+- *A. all products are paid for*
+- *B. are paid for all products*
+- *C. for all products paid*
+- *D. for which all products paid*
+
+*32. Without facts we can't form a worthwhile opinion for we need to have
+factual knowledge `____` our thinking.*
+
+- *A. upon which to base*
+- *B. which to base upon*
+- *C. which to be based on*
+- *D. to which to be based*
+
+*33. His great grandmother was among the last to settle in `____` is now the
+famous mountain resort.*
+
+- *A. that*
+- *B. where*
+- *C. which*
+- *D. what*
+
+*34. More middle-aged persons suffer from heart trouble than `____`.*
+
+- *A. it generally is realized*
+- *B. is generally realized*
+- *C. generally it is realized*
+- *D. generally is realized*
+
+*35. Poverty is also threatening the company's most valuable resource, its
+staff, `____`.*
+
+- *A. who are increasingly being lured*
+- *B. which is increasingly being lured*
+- *C. lured increasingly*
+- *D. to be increasingly lured*
+
+*36. So quickly are science and technology advancing `____` is a possibility
+today may be a reality tomorrow.*
+
+- *A. which*
+- *B. what*
+- *C. that which*
+- *D. that what*
+
+*39. He never sells such books `____` are considered harmful to the readers.*
+
+- *A. that*
+- *B. as*
+- *C. which*
+- *D. what*
+
+*40. Physics is the present-day equivalent of `____` used to be called natural
+philosophy, `____` which most of present-day science arose.*
+
+- *A. what...from*
+- *B. that...from*
+- *C. which...of*
+- *D. what...with*
+
+*46. The computer has brought about surprising technological changes `____` we
+organize and produce information.*
+
+- *A. in a way*
+- *B. in the way*
+- *C. in that way*
+- *D. in no way*
+
+*47. In the early twentieth century, the "Model T" automobile was mass-produced
+and sold at a price `____` could afford.*
+
+- *A. the average person who*
+- *B. that the average person who*
+- *C. and the average person*
+- *D. the average person*
+
+*48. There are many copper mines in the state of Arizona, `____` contributes
+significantly to the state's economy.*
+
+- *A. a fact*
+- *B. which fact*
+- *C. whose fact*
+- *D. that*
+
+**二、辨别改错。**
+
+*52. Traditionally, ethnographers and linguists ***have paid***`A` little
+attention to cultural interpretations ***given to***`B` silence, ***or to***`C`
+the types of social contexts ***in which tends***`D` to occur.*
+
+*54. Carson McCullers was ***only***`A` 23 when she ***published***`B` her first
+novel, The Heart Is a Lonely Hunter ***for what***`C` she received ***much***`D`
+acclaim.*
+
+*61. Doppler radar can be used to determine ***the direction***`A`
+***which***`B` the ***particles***`C` of a cloud ***are moving***`D`.
+
+*63. Eleanor Roosevelt ***set***`A` the standard ***which***`B` the wives of
+***all United States***`C` Presidents ***since***`D` have been evaluated.*
+
+*69. A frequent ***criticism***`A` of most online ***companies has***`B` been
+the snail's pace ***to which***`C` they ***deliver***`D` their products.*
+
+*71. The term "metabolism" ***refers to***`A` the chemical ***changes***`B`
+***which***`C` ***living***`D` things transform food into energy.*
+
 ### 答案：综合训练：定语从句
 
 *2. B。这是关于 as 引导的限定性定语从句，as 在从句中充当 described 的宾语。
@@ -3525,7 +3680,54 @@ himself.*
 
 - `译` 高大的矩形建筑很可能会被更复杂、更令人兴奋的形状所取代，从而提供个人可以充分认同自己的区域。
 
->>>>> progress
+*16. B。这里 with whose help 来自搭配 with one's help。
+
+*18. D。并列句，若去掉 it 则可以选 C。
+
+*25. D。根据句子意思选择介词，from the cover of which 表示“从书的封面（可以判断）”。
+
+*27. C。whose function it was 相当于说 it was the actors' function to involve...
+it 是形式主语，指代后面的不定式。
+
+*28. D。whose duty it was 相当于说 it was his duty to protect...
+
+*29. A。than 引导定语从句，than 在从句中充当主语，指代 labor，是单数，所以谓语用 has。
+
+*31. B。相当于 pay the prices for all products。
+
+*32. A。这是有关“介词 + which + to do”的结构，相当于 to base our thinking upon
+factual knowledge。
+
+*33. D。what 引导从句，充当 in 的宾语。
+
+*34. B。than 引导定语从句，than 在从句中充当主语。
+
+*35. B。先行词是 resource，指物。
+
+*36. D。这里是一个 so...that...句型，采用了倒装结构；what 引导从句在 that 从句中作主语。
+
+*39. B。as 引导限制性定语从句，as 在从句中作主语。
+
+*40. A。what 引导从句作主语；from which 来自搭配 arise from。
+
+*46. B。changes in the way...，表示“在某方面的变化”。
+
+*47. D。省去 that 的定语从句，(that) the average person could afford.
+
+*48. B。这里 which 的用法比较特殊，后面接有名词 fact，which fact 相当于说 a fact
+which...
+
+*52. D，改为 in which it tends。
+
+*54. C，改为 for which。
+
+*61. B，改为 in which，来自于搭配 in the direction，表示“在某个方向”。
+
+*63. B，改为 against which，相当于说 against the standard，表示“以此为标准”。
+
+*69. C，改为 at which。
+
+*71. C，改为 through which。
 
 **一、请将下列中文翻译成英文。**
 
