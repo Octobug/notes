@@ -73,12 +73,14 @@
     - [5.3 其他连词的用法](#53-其他连词的用法)
     - [思维训练 5. 目的状语从句](#思维训练-5-目的状语从句)
       - [答案：思维训练 5. 目的状语从句](#答案思维训练-5-目的状语从句)
-  - [3.7 结果状语从句](#37-结果状语从句)
   - [6. 结果状语从句](#6-结果状语从句)
     - [6.1 常见连词的用法](#61-常见连词的用法)
       - [一、连词 so...that 的用法](#一连词-sothat-的用法)
-      - [二、连词 such...that 的用法](#二连词-suchthat-的用法)
-    - [6.2 结果状语从句的倒装](#62-结果状语从句的倒装)
+      - [二、连词 so that 的用法](#二连词-so-that-的用法)
+      - [三、连词 such...that 的用法](#三连词-suchthat-的用法)
+      - [四、连词 such that 的用法](#四连词-such-that-的用法)
+    - [6.2 比较 so 与 such 的区别](#62-比较-so-与-such-的区别)
+    - [6.3 结果状语从句的倒装](#63-结果状语从句的倒装)
     - [思维训练 6. 结果状语从句](#思维训练-6-结果状语从句)
   - [7. 条件状语从句](#7-条件状语从句)
     - [7.1 常见连词的用法](#71-常见连词的用法)
@@ -1992,17 +1994,15 @@ night's sleep.*
 
 *7. I put the milk in the refrigerator so that it wouldn't spoil.
 
-## 3.7 结果状语从句
-
->>>>> progress
-
 ## 6. 结果状语从句
 
 ### 6.1 常见连词的用法
 
 常用的引导结果状语从句的连词有：
 
+- so that
 - so...that
+- such that
 - such...that
 
 ⚠️ 结果状语从句都要放在主句之后，而不能提到句首。
@@ -2011,42 +2011,113 @@ night's sleep.*
 
 #### 一、连词 so...that 的用法
 
-多数结果状语从句是由 so...that 引导的，so 后面接形容词或副词。
+多数结果状语从句是由 so...that 引导的，so 后面接形容词、副词和分词。
 
-1. so + **形容词/副词** + that...
-    - `例 2`：The moon is **so** large **that** several million people could
-      live there.
-    - `例 3`：The food in our school canteen is **so** bad **that** flies go
-      there to lose weight.
-    - `例 4`：He has put forward unquestioned claims **so** consistently
-      **that** he not only believes them himself, but has convinced industrial
-      and business management that they are true.
-      - 他一直不断地提出确定不疑的主张，以至于不仅他自己对他们深信不疑，
-        而且还使得工商管理界相信他们都是真的。
-2. so + **形容词** + **a/an** + **单数可数名词** + that...
+1. so + **形容词** + that...
+    - `2` The moon is **so** large **that** several million people could live
+      there.
+      - `译` 月球的大小足以容纳几百万人口在上面生活。
+    - `3` The food in our school canteen is **so** bad **that** flies go there
+      to lose weight.
+    - `4` And home appliances will also become so smart that controlling and
+      operating them will result in the breakout of a new psychological disorder
+      -- kitchen rage.
+      - `译` 家用电器也将会变得如此智能化，以至于控制和操作它们会引发一种新的心理疾病——厨房狂躁症。
+2. so + **副词** + that...
+    - `4` He has put forward unquestioned claims **so** consistently **that**
+      he not only believes them himself, but has convinced industrial and
+      business management that they are true.
+      - `译` 他一直不断地提出确定不疑的主张，以至于不仅他自己对他们深信不疑，而且还使得工商管理界相信它们都是真的。
+    - `6` The newly described languages were often so strikingly different from
+      the well studied languages of Europe and Southeast Asia that some scholars
+      even accused Boas and Sapir of fabricating their data.
+      - `译` 这些新近被描述的语言与已经得到充分研究的欧洲和东南亚地区的语言往往差别显著，以至于有些学者甚至指责 Boas 和 Sapir 伪造了数据。
+3. so + **分词** + that...
+    - `7` However, the world is so made that elegant systems are in principle
+      unable to deal with some of the world's more fascinating and delightful
+      aspects.
+      - `译` 然而世界就是如此，完美的理论体系一般而言是无法解决世上某些更加引人入胜的课题的。
+    - `8` We are so accustomed to adopting a mask before others that we end by
+      being unable to recognize ourselves.
+      - `译` 我们大家都如此习惯于在别人面前戴着面具，结果最终迷失了自己。
+4. so + **形容词** + **a/an** + **单数可数名词** + that...
     - He is **so** good a teacher **that** everyone likes him.
-3. so + **many/few** + **复数可数名词** + that...
+5. so + **many/few** + **复数可数名词** + that...
     - `补充`：He has so many books that I can't count them.
-4. so + **much/little** + **不可数名词** + that...
+6. so + **much/little** + **不可数名词** + that...
     - `补充`：There was so much food that we couldn't eat it all.
 
-#### 二、连词 such...that 的用法
+#### 二、连词 so that 的用法
+
+有时也用 so that 引导结果状语从句，这与 so that 引导目的状语从句不同。
+
+`9` As the dome grows, it develops seed fissures (cracks); in at least a few
+cases the continent may break entirely along some of these fissures, so that the
+hot spot initiates the formation of a new ocean.
+
+- `译` 随着这个穹隆地形的升高，它形成深深的裂缝；至少在一些情况下，大陆可能沿着一些裂缝完全断裂，以至于“热点”造成新的大洋的形成。
+
+`10` Native American languages are indeed different, so much so in fact that
+Navajo could be used by the US military as a code during World War II to send
+secret messages.
+
+- so that 引导结果状语从句，但中间插入了 in fact。
+- `译` 土著美洲语言的确有很大的不同，不同程度大到纳瓦霍语能够被美军在“二战”期间用来传递秘密情报。
+
+so that 引导目的状语从句和结果状语从句的区别主要有两点：
+
+1. 若 so that 引导结果状语从句，往往会有逗号将主句与从句隔开；
+2. 在结果状语从句中往往没有情态动词，而目的状语从句通常都含有情态动词。
+
+#### 三、连词 such...that 的用法
 
 such...that 引导结果状语从句时，such 后面要接名词（短语）。
 
 公式：such + `(限定词 a/an) + (形容词) + 名词` + that...
 
 1. such + **a/an** + (形容词) + **单数可数名词** + that...
-    - `例 6`：Diplomats and crabs are creatures who move in **such** a way
-      **that** it is impossible to tell whether they are coming or going.
-    - `例 7`：He is **such** a good teacher **that** everyone likes him.
+    - `11` Diplomats and crabs are creatures who move in **such** a way **that**
+      it is impossible to tell whether they are coming or going.
+    - `7` He is **such** a good teacher **that** everyone likes him.
 2. such + (形容词) + **复数可数名词** + that...
-    - `补充`：They are such interesting books that we all enjoy reading them.
+    - `补充` They are such interesting books that we all enjoy reading them.
 3. such + (形容词) + **不可数名词** + that...
-    - `补充`：He shut the window with such force that the glass broke.
-    - `补充`：We had such terrible weather that we decided to go back home.
+    - `补充` He shut the window with such force that the glass broke.
+    - `补充` We had such terrible weather that we decided to go back home.
 
-### 6.2 结果状语从句的倒装
+#### 四、连词 such that 的用法
+
+在 such that 引导的结果状语从句中，such 就相当于“so + 形容词”，具体用什么形容词需要根据上下文判断。
+
+`12` 他的怒气一下子爆发出来，以至于无法控制自己。
+
+- His anger was such that he lost control of himself.
+- His anger was so explosive that he lost control of himself.
+
+`13` 天气真热，我们只能待在有空调的地方。
+
+- The weather is such that we can only stay in air-conditioned places.
+- The weather is so hot that we can only stay in air-conditioned places.
+
+`14` 它的肌肉力量很弱，以至于不能让它哪怕在很短的距离内以每小时一公里的速度移动。
+
+- Its muscles are such that it is quite incapable of moving at a speed of over a
+  kilometer an hour even over the shortest distances.
+  - such that 可以替换为 so weak that。
+
+有时，such 可能含有的形容词意义很难判断：
+
+`15` The logic of scientific development is such that separate groups of men
+working on the same problem in far-scattered laboratories are likely to arrive
+at the same answer at the same time.
+
+- `译` 科学发展的逻辑就是如此，不同的研究人员分散在不同的实验室研究同样的问题，很可能同时得出完全一样的结论。
+
+### 6.2 比较 so 与 such 的区别
+
+>>>>> progress
+
+### 6.3 结果状语从句的倒装
 
 so/such...that 引导结果状语从句，为了强调，还可以将主句中的 so/such
 引导的部分置于句首从而构成倒装结构。
