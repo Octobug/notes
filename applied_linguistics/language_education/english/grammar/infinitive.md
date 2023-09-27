@@ -94,7 +94,15 @@
     - [思维训练：11. 不定时的时态和语态（二）：完成式（to have done）](#思维训练11-不定时的时态和语态二完成式to-have-done)
       - [答案：思维训练：11. 不定时的时态和语态（二）：完成式（to have done）](#答案思维训练11-不定时的时态和语态二完成式to-have-done)
   - [12. 不定式的时态和语态（三）：进行式 (to be doing)](#12-不定式的时态和语态三进行式-to-be-doing)
-  - [4.13 不定式的时态和语态（四）：完成进行式 (to have been doing)](#413-不定式的时态和语态四完成进行式-to-have-been-doing)
+  - [13. 不定式的时态和语态（四）：完成进行式 (to have been doing)](#13-不定式的时态和语态四完成进行式-to-have-been-doing)
+  - [14. 省略 to 的不定式](#14-省略-to-的不定式)
+    - [14.1 在某些动词的复合宾语中](#141-在某些动词的复合宾语中)
+    - [14.2 在特定的句型结构中](#142-在特定的句型结构中)
+      - [一、在一些短语结构中](#一在一些短语结构中)
+      - [二、在 more than, rather than, other than, than 后面加不带 to 的不定式](#二在-more-than-rather-than-other-than-than-后面加不带-to-的不定式)
+    - [三、在 do nothing/anything/everything but do 句型中](#三在-do-nothinganythingeverything-but-do-句型中)
+      - [四、在 why (not) + do 句子中](#四在-why-not--do-句子中)
+      - [五、在并列结构中，to 常被省略](#五在并列结构中to-常被省略)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
 
@@ -2863,6 +2871,250 @@ or her. When you first meet, look your interviwer in the eye.
 
 ⚠️ 不定式的进行式没有被动结构，只有主动结构。此外，它远没有不定式的完成式那么常用。
 
-## 4.13 不定式的时态和语态（四）：完成进行式 (to have been doing)
+## 13. 不定式的时态和语态（四）：完成进行式 (to have been doing)
+
+不定式的完成进行式 to have been doing 可以表示在谓语动作之前已经开始并且一直在持续进行的某一动作，其含义类似一个完成进行时态。
+
+💡 不定式的完成进行式用得非常少，且没有被动语态，只有主动语态。 
+
+`1` They are said to have been collecting folk songs in Yunnan.
+
+- It is said that they have been collecting folk songs in Yunnan.
+- `译` 据说他们一直在云南收集民歌。
+
+`2` He seems to have been sitting there all day.
+
+- `译` 他似乎整天都坐在那里。
+
+`3` I seem to have been learning English for over ten years.
+
+- `译` 我好像已经学了十几年英语了。
+
+`4` The little girl seems to have been watching TV all this evening.
+
+- `译` 这个小女孩今晚好像一直在看电视。
+
+## 14. 省略 to 的不定式
+
+不定式是由小品词 to 加一个动词构成的，即 to do。有些情况下 to 可以省略，甚至是必须省略。
+
+### 14.1 在某些动词的复合宾语中
+
+最常见的需要省略 to 的不定式是在某些动词的宾语补足语中。这样的动词包括两类：
+
+1. 感觉动词 (perceptional verb):
+    - feel
+    - hear
+    - notice
+    - observe
+    - see
+    - watch
+2. 使役动词 (causative verb):
+    - have
+    - let
+    - make
+
+`1` 这三个例子都省略了 to，因为它们都是用在感觉动词之后。
+
+- They love to hear celebrities talk about their personal lives before a
+  national audience.
+  - hear celebrities **talk**
+- And they love to watch people with different views get into heated debates.
+  - watch people with different views **get** into
+- And Americans enjoy watching this ordinary guy ask hard-hitting questions of
+  the world's most prominent people.
+  - watching this ordinary guy **ask**
+
+`2` The mother makes her son play the violin three hours a day.
+
+- `译` 这个母亲让儿子每天练习三个小时的小提琴。
+
+`3` The minister had his secretaries arrange a press conference.
+
+- `译` 部长让他的秘书安排一次新闻发布会。
+
+`4` The teacher let us write a composition every week.
+
+- `译` 老师让我们每周写一篇作文。
+
+`5` I heard him quarrel with his wife last night.
+
+- `译` 我听到他昨晚与妻子吵架。
+
+`6` I saw a man enter the shop.
+
+- `译` 我看到一个人进了商店。
+
+⚠️ 这些谓语动词如果转换为被动结构，后面的不定式需要加 to。
+
+A man was seen to enter the shop.
+
+另外，help, listen to, look at 后面可以用 to 也可以不用。
+
+`7` Would you like to listen to me (to) read the poem?
+
+- `译` 你想听我读这首诗吗？
+
+`8` The teacher will help you (to) study English well.
+
+- `译` 老师会帮你学好英语。
+
+### 14.2 在特定的句型结构中
+
+#### 一、在一些短语结构中
+
+这些结构包括：
+
+- had better
+- would rather
+- would sooner
+- would just as soon
+- might (just) as well
+- cannot but
+- cannot choose but
+- cannot help but
+
+`1` I cannot but admire his courage.
+
+- `译` 我不得不敬佩他的勇气。
+
+`2` We might as well put up here for tonight.
+
+- `译` 今晚我们不妨就在这里过夜。
+
+`3` It all started so innocently that warm June night, when I first met you, you
+looked so beautiful and lovely I couldn't help but fall in love with you, even
+though we both agreed our worlds were far apart, and could never be one.
+
+- `译` 在 6 月的那个温暖的晚上，当时我第一次见到你，一切就悄然发生了。
+  你看起来是那么美，那么可爱，我情不自禁地坠入情网，即使我们俩都知道，我们的世界完全不同，永远无法相交。
+
+#### 二、在 more than, rather than, other than, than 后面加不带 to 的不定式
+
+这些句型中的 than 后面一般不接 to do，而直接用动词原形。
+
+`4` Teachers do much more than impart knowledge. They are forces in young lives.
+
+- `译` 老师不只是授业解惑，他们还是年轻生命的力量源泉。
+
+`5` I would rather go naked than wear furs.
+
+- `译` 我宁愿裸体，也不愿穿动物毛皮。
+
+`6` Rather than wait anymore, I decided to go home by taxi.
+
+- `译` 我决定打车回家，而不想再等下去了。
+
+`7` Rather than go on with his work, he went home.
+
+- `译` 他回家了，不再继续工作。
+
+`8` No one could do other than admire it.
+
+- `译` 大家都很推崇它。
+
+`9` To my great surprise, she perferred to give herself up rather than hide
+herself.
+
+- `译` 她宁愿自首而不是躲起来，这令我大吃一惊。
+
+`10` In the course of a day students do far more than just attend classes.
+
+- `译` 一天当中，学生们除了上课还要做其他很多事情。
+
+### 三、在 do nothing/anything/everything but do 句型中
+
+> - <https://ell.stackexchange.com/a/88127/156299>
+> - <https://zhuanlan.zhihu.com/p/61881575>
+> - <https://www.usingenglish.com/forum/threads/but-do-or-but-to-do.67910/>
+
+“有 DO 无 TO, 无 DO 有 TO”。
+
+在这个句型里因为 but 前面有 do，所以 but 后面的不定式要省略 to，说成 but do，而不是 but
+to do。
+这里的 do 就是 "do" 本身，不是指动词原形，并且特指 but 前面紧跟的 do。
+
+`11` 我没办法，只好等。
+
+- I have nothing to do but wait.
+  - but 前面有 do，所以 wait 前面省略 to。
+- I have no choice but to wait.
+  - but 前面没有 do，所以 wait 前面保留 to。
+
+`12` He will do anything but give in.
+
+- `译` 他决不会屈服。
+
+`13` He needs nothing but to succeed.
+
+- `译` 他要的只是成功。
+
+`14` That was so serious a matter that I had no choice but to call in the
+police.
+
+- `译` 情况太严重了，我只有打电话报警。
+
+`15` Having missed that bus, Bob had no alternative but to take a taxi home
+though he did not like the idea.
+
+- `译` 由于错过了最后一班公共汽车，Bob 只好打车回家，虽然他并不愿意这样。
+
+此外，对于解释 do 的精确含义的主语从句或定语从句，在主语谓语 be 动词后直接加 do，而不是 to
+do。
+
+`16` Saddam Hussein has been executed. All his execution does is stir up a real
+vendetta.
+
+- all 作主语，后面是定语从句 his execution does, 此时 is 后面直接用 stir 而不是
+  to stir。这里 stir up a real vendetta 是解释前面 does 的含义的，相当于一个强调句型。
+  在后面作表语的不定式省略了 to。
+- `译` Saddam Hussein 已经被处决了。他被处死只能激起更深的仇恨。
+
+`17` All you do is sit and watch television and complain about how tired you
+are.
+
+- 在后面作表语的不定式都省略了 to，sit, watch 和 complain 前面都没有 to。
+- `译` 你就只是坐在那里看电视，还有抱怨自己有多累。
+
+`18` No mountain's too high for you to climb. All you have to do is have some
+climbing faith. No river's too wide for you to make it across. All you have to
+do is believe it when you pray.
+
+- do 后面作表语的不定式 to have 和 to believe 前面都省略了 to。
+- `译` 没有哪座山因为太高而令你无法翻越，只要你有攀登的信念；没有哪条河因为太宽而令你无法跨越，只要你相信当你祈祷时奇迹就会发生。
+
+`19` We can't make everyone love us. All we can do is let ourselves be loved.
+
+- 这里一共有三个 to 被省略：(to) love us, (to) let ourselves, (to) be loved。
+- `译` 虽然我们无法做到让所有人都爱我们，但我们要能做到让自己有人爱。
+
+#### 四、在 why (not) + do 句子中
+
+在特殊疑问词中，只有 why 后面要接省略 to 的不定式。
+其中，肯定形式的 why do sth. 表示“为什么要做某事呢？”，含有责怪的意思，通常表明做某事是无意义或愚蠢的，
+
+`20`
+
+- A: I really hate to write the essay Professor Smith assigned us.
+- B: Why bother then?
+- `译`
+  - A: Smith 教授布置的那篇论文我真不想写。
+  - B: 那干嘛还费劲去写呢？
+
+`21` Why pay to see that movie, since you can see it on TV for nothing?
+
+- `译` 既然你不花钱就可以在电视上看到那部电影，那为什么还要花钱去看呢？
+
+否定形式的 why not do sth. 则通常表示建议，在口语中非常常用。
+
+`22` Why not take a holiday?
+
+- `译` 为什么不休个假呢？
+
+#### 五、在并列结构中，to 常被省略
+
+具体来说，当两个动词由 and, or, but 等词连接时，为了避免重复而把连词后面的不定式的 to 省略。
+
+`23` I'd like to lie down and (to) go to sleep.
 
 >>>>> progress
