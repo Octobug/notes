@@ -80,7 +80,10 @@
       - [三、连词 such...that 的用法](#三连词-suchthat-的用法)
       - [四、连词 such that 的用法](#四连词-such-that-的用法)
     - [6.2 比较 so 与 such 的区别](#62-比较-so-与-such-的区别)
-    - [6.3 结果状语从句的倒装](#63-结果状语从句的倒装)
+      - [一、so 的用法](#一so-的用法)
+      - [二、such 的用法](#二such-的用法)
+    - [6.3 结果状语从句的简化](#63-结果状语从句的简化)
+    - [6.4 结果状语从句的倒装](#64-结果状语从句的倒装)
     - [思维训练 6. 结果状语从句](#思维训练-6-结果状语从句)
   - [7. 条件状语从句](#7-条件状语从句)
     - [7.1 常见连词的用法](#71-常见连词的用法)
@@ -2011,14 +2014,12 @@ night's sleep.*
 
 #### 一、连词 so...that 的用法
 
-多数结果状语从句是由 so...that 引导的，so 后面接形容词、副词和分词。
+多数结果状语从句是由 so...that 引导的，so 后面主要接形容词、副词，有时接分词。
 
 1. so + **形容词** + that...
     - `2` The moon is **so** large **that** several million people could live
       there.
       - `译` 月球的大小足以容纳几百万人口在上面生活。
-    - `3` The food in our school canteen is **so** bad **that** flies go there
-      to lose weight.
     - `4` And home appliances will also become so smart that controlling and
       operating them will result in the breakout of a new psychological disorder
       -- kitchen rage.
@@ -2040,12 +2041,6 @@ night's sleep.*
     - `8` We are so accustomed to adopting a mask before others that we end by
       being unable to recognize ourselves.
       - `译` 我们大家都如此习惯于在别人面前戴着面具，结果最终迷失了自己。
-4. so + **形容词** + **a/an** + **单数可数名词** + that...
-    - He is **so** good a teacher **that** everyone likes him.
-5. so + **many/few** + **复数可数名词** + that...
-    - `补充`：He has so many books that I can't count them.
-6. so + **much/little** + **不可数名词** + that...
-    - `补充`：There was so much food that we couldn't eat it all.
 
 #### 二、连词 so that 的用法
 
@@ -2115,9 +2110,114 @@ at the same answer at the same time.
 
 ### 6.2 比较 so 与 such 的区别
 
+so...that 与 such...that 在用法上的差异，来源于 so 和 such 在用法上的差异。
+
+#### 一、so 的用法
+
+so 本身是**副词**，其后面主要接形容词或副词，有时接分词。
+
+1. so + adj./adv. + that...
+    - `1` The food in our school canteen is **so** bad **that** flies go there
+      to lose weight.
+    - `2` The house is so expensive that I can't afford to buy it.
+2. so + adj. + a(n) + 单数可数名词 + that...
+    - `3` This is so expensive a house that I can't afford to buy it.
+    - `4` He is **so** patient a teacher **that** every one of us likes him.
+3. so + **many/few** + **复数可数名词** + that...
+    - `8` My husband steals so many snacks that the only way I could get him to
+      lose weight was to hire a night watchman at out refrigerator.
+    - `补充`：He has so many books that I can't count them.
+4. so + **much/little** + **不可数名词** + that...
+    - `5` The sloth pays so little attention to its personal hygiene that green
+      algae grow on its coarse hair.
+    - `6` The neighbors were making so much noise last night that I didn't sleep
+      a wink.
+    - `7` He's lost so much weight on his new diet that now he's nothing but
+      skin and bones.
+    - `补充`：There was so much food that we couldn't eat it all.
+
+#### 二、such 的用法
+
+such 是一个**限定词**，因此其后面要接名词。
+
+1. such + 名词（短语）+ that...
+    - 单数名词
+      - such a house
+      - such a day
+    - 复数名词
+      - such boys
+      - such shirts
+      - such cars
+    - 不可数名词
+      - such patience
+      - such weather
+      - such information
+    - `9` But these factors do not account for the interesting question of how
+      there came to be such a concentration of pregnant ichthyosaurs in a
+      particular place very close to their time of giving birth.
+      - `译` 但是这些因素并没有解答这个有趣的问题；怀孕的鱼龙临产时，是如何聚集在一个特定地点的。
+    - `10` Indeed, most great cities of the United States achieved such status
+      only by incorporating the communities along their borders.
+      - `译` 事实上，美国大多数大城市仅仅是通过吞并与其毗连的社区而达到现在的规模的。
+    - `11` Such a force would give France a three-to-two advantage over Britain.
+      - `译` 这个力量将使法国与英国的实力之比达到 3:2。
+    - `12` Such studies have suggested that the rudiments of mathematics are
+      mastered gradually, and with effort.
+      - `译` 这类研究发现，数学的基础部分要通过努力才能逐渐掌握。
+    - `13` A very small fraction of the sun's light and heat is emitted in such
+      directions that after passing unhindered through interplanetary space, it
+      hits the earth.
+      - `译` 太阳发出的光和热只有极少的一部分畅通无阻地穿越星际空间，然后到达地球。
+2. such + adj. + 名词 + that...
+    - 单数名词
+      - such an expensive house
+      - such a nice day
+    - 复数名词
+      - such nice boys
+      - such good shirts
+      - such expensive cars
+    - 不可数名词
+      - such great patience
+      - such nice weather
+      - such important information
+    - `14` Why should a state of such deep immobilization ever have evolved?
+      - `译` 为什么这种障碍要进化呢？
+    - `15` Blankets of snow and ice grains mounted layer upon layer and were of
+      such great thickness that the weight of the upper layers compressed the
+      lower ones.
+      - `译` 雪和冰混杂在一起，一层一层地堆积起来，变得很厚，以至于上面的几层挤压着下面的。
+3. 限定词 + such + 名词
+    - 虽然一般不会说 such many, such much 或 such few, 但可以说 many such dogs,
+      much such attention, few such cars。
+    - such 首先修饰名词，比如 such cars，然后再由表示数量的形容词修饰 such，比如 few such
+      cars。其他可以用在 such 前面的限定词有
+      - any
+      - no
+      - other
+      - some
+      - 数词 one, two...
+    - `16` These Ministers used "splendid", "magnificent" and other such
+      expressions to describe the King's new clothes.
+      - `译` 大臣们用“太棒了”“好极了”和其他类似的词来形容皇帝的新衣。
+    - `17` no such man
+      - no such a man ❌
+    - `18` one such man
+      - one such a man ❌
+      - such a man ✅
+    - `19` every such fool
+      - every such a fool ❌
+    - `20` three such men
+    - `21` all such men
+    - `22` five hundred such planes
+    - `23` Forget about your accent -- there is no such thing as correct English
+      accent or, for that matter, any "best" English accent.
+      - `译` 先别管你的口音问题，因为根本就没有正确的英语口音或者说“最好的”英语口音这档子事儿。
+
+### 6.3 结果状语从句的简化
+
 >>>>> progress
 
-### 6.3 结果状语从句的倒装
+### 6.4 结果状语从句的倒装
 
 so/such...that 引导结果状语从句，为了强调，还可以将主句中的 so/such
 引导的部分置于句首从而构成倒装结构。
