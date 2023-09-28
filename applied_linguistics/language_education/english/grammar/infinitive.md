@@ -103,6 +103,10 @@
     - [三、在 do nothing/anything/everything but do 句型中](#三在-do-nothinganythingeverything-but-do-句型中)
       - [四、在 why (not) + do 句子中](#四在-why-not--do-句子中)
       - [五、在并列结构中，to 常被省略](#五在并列结构中to-常被省略)
+      - [六、在一些固定的动词搭配中](#六在一些固定的动词搭配中)
+    - [思维训练：14. 省略 to 的不定式](#思维训练14-省略-to-的不定式)
+      - [答案：思维训练：14. 省略 to 的不定式](#答案思维训练14-省略-to-的不定式)
+  - [综合训练](#综合训练)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
 
@@ -2875,7 +2879,7 @@ or her. When you first meet, look your interviwer in the eye.
 
 不定式的完成进行式 to have been doing 可以表示在谓语动作之前已经开始并且一直在持续进行的某一动作，其含义类似一个完成进行时态。
 
-💡 不定式的完成进行式用得非常少，且没有被动语态，只有主动语态。 
+💡 不定式的完成进行式用得非常少，且没有被动语态，只有主动语态。
 
 `1` They are said to have been collecting folk songs in Yunnan.
 
@@ -3116,5 +3120,93 @@ do is believe it when you pray.
 具体来说，当两个动词由 and, or, but 等词连接时，为了避免重复而把连词后面的不定式的 to 省略。
 
 `23` I'd like to lie down and (to) go to sleep.
+
+`24` Do you want to have lunch now or (to) wait till later?
+
+`25` I haven't decided whether to go home or (to) stay at school during the
+coming summer vacation.
+
+⚠️ 需要注意的是，如果两个不定式动词之间有对比的含义，则都需要保留 to。
+
+`26` The need to love and to be loved seems universal. Maybe this is one trait
+that separates human beings from other animals.
+
+- to love 与 to be loved 之间有强调对比的含义，所以 and 后面的不定式保留了 to。
+- `译` 爱与被爱的需要似乎是人类普遍的特性，或许正是这一特性把人和动物区分开了。
+
+`27` It is the greatest happiness on earth to love and to be loved.
+
+`译` 爱与被爱是世界上最大的幸福。
+
+`28` I came not to praise, but to scold you.
+
+不只是在并列结构中，只要不定式有对比强调的含义，此时不定式的 to 都会保留。
+
+`29` To play fair is as important as to play well.
+
+- `译` 公平竞争与赛出水平同等重要。
+
+`30` He likes to be respected, not to respect others.
+
+- `译` 他喜欢被别人尊重，但就是不愿尊重别人。
+
+#### 六、在一些固定的动词搭配中
+
+这些搭配包括：
+
+- hear say: 听说
+- leave go of: 放走
+- let drop: 使……掉下来
+- let fall: 让……倒下
+- let fly: 放飞
+- let go of: 松开
+- let slip: 放走，错事机会
+- make believe: 假装
+- make do: 设法应付，对付
+
+`31` Let's make believe we are now on a deserted island.
+
+- `译` 现在让我们来假想自己是在一座孤岛上。
+
+`32` Hollywood is the land of make-believe. Actors pretend they're someone else,
+and when the movie's finished, the producers make believe it's good.
+
+- `译` 好莱坞就是这么一个“虚假的”地方：演员们假装自己是别的什么人，电影拍完后，制片人假想它很卖座。
+
+### 思维训练：14. 省略 to 的不定式
+
+**一、用括号中动词的适当形式填空。**
+
+*1. The boy was made `____` (sing) the song once again.*
+
+*2. Don't make children `____` (work) too hard.*
+
+*3. They would rather `____` (die) than `____` (surrender).*
+
+*4. He could not choose but `____` (love) her.*
+
+*5. She could do nothing but `____` (change) her name under the circumstances.*
+
+*6. There was nothing to do except `____` (escape).*
+
+*7. He has no alternative but `____` (go) and ask his sister for help.*
+
+*8. If he is not willing to be with you, why `____` (not, ask) somebody else?*
+
+*9. Since he is only a kid, why `____` (make) fun of him?*
+
+#### 答案：思维训练：14. 省略 to 的不定式
+
+*1. to sing。被动结构中不定式的 to 不能省略。
+*2. work。
+*3. die, surrender。would rather 结构中省略 to。
+*4. love。could not...but 中省略 to。
+*5. change。do nothing but do 句型，前面有 do，省略后面的 to。
+*6. escape。do nothing except do 句型，前面有 do，省略后面的 to。
+*7. to go。前面没有 do。
+*8. not ask
+*9. make
+
+## 综合训练
 
 >>>>> progress
