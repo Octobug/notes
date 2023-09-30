@@ -8,6 +8,7 @@
       - [以业务逻辑为单元](#以业务逻辑为单元)
     - [进程间通信 (IPC)](#进程间通信-ipc)
     - [使用线程](#使用线程)
+  - [References](#references)
 
 > <https://en.wikipedia.org/wiki/Software_architecture>
 
@@ -38,3 +39,7 @@
 ### 使用线程
 
 - 性能优于进程
+
+## References
+
+- [Designing Data-Intensive Applications](./ddia/)
