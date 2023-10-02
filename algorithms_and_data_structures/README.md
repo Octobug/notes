@@ -77,9 +77,9 @@
 
 ## LeetCode Top 100
 
->>>>> todo
+- [ ] [Top 100 Liked Questions](https://leetcode.com/problem-list/top-100-liked-questions/)
 
-## Learning Materials
+## References
 
 - [Algorithms by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/)
 - The Algorithm Design Manual by Steven S. Skiena
