@@ -4,7 +4,8 @@ The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
 
 > by Martin Kleppmann
 >
-> <https://dataintensive.net/>
+> - <https://dataintensive.net/>
+> - <https://github.com/ept/ddia-references>
 
 ## Table of Contents
 
