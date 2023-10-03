@@ -84,6 +84,7 @@
       - [二、such 的用法](#二such-的用法)
     - [6.3 结果状语从句的简化](#63-结果状语从句的简化)
     - [6.4 结果状语从句的倒装](#64-结果状语从句的倒装)
+    - [6.5 其他短语连接的结果状语从句](#65-其他短语连接的结果状语从句)
     - [思维训练 6. 结果状语从句](#思维训练-6-结果状语从句)
   - [7. 条件状语从句](#7-条件状语从句)
     - [7.1 常见连词的用法](#71-常见连词的用法)
@@ -93,6 +94,7 @@
     - [8.1 常见连词的用法](#81-常见连词的用法)
     - [8.2 表示让步转折关系的介词](#82-表示让步转折关系的介词)
     - [8.3 置于句首的 while 一般表示“尽管”](#83-置于句首的-while-一般表示尽管)
+    - [3.9.5 as 引导的倒装句表示让步](#395-as-引导的倒装句表示让步)
     - [8.4 as 引导的倒装句表示让步](#84-as-引导的倒装句表示让步)
       - [一、形容词提至句首](#一形容词提至句首)
       - [二、副词提至句首](#二副词提至句首)
@@ -2215,28 +2217,73 @@ such 是一个**限定词**，因此其后面要接名词。
 
 ### 6.3 结果状语从句的简化
 
->>>>> progress
+对于结果状语从句，可以用不定式将其结构简化。
+这三个可以引导结果从句的连词，分别对应三种不同的不定式结构：
+
+- so...that: **so...as to**
+- such...that: **such...as to**
+- such that: **such as to**
+
+`1` He was such a fool as to believe him.
+
+- `译` 他可真蠢，竟然相信他。
+
+`2` He was so foolish as to believe him.
+
+`3` Her voice was such as to make everyone stare.
+
+- 这里的 such 相当于“so + 形容词”。
+- `译` 她的嗓音让所有人都盯着她看。
+
+`4` His story is `____` to arouse our sympathy.
+
+- A. such as
+- B. so sad
+- C. too sad
+- D. such sad as
+- E. so sad as
+- `答案` A 或 E。
 
 ### 6.4 结果状语从句的倒装
 
-so/such...that 引导结果状语从句，为了强调，还可以将主句中的 so/such
-引导的部分置于句首从而构成倒装结构。
+so/such...that 引导结果状语从句，为了强调，还可以将主句中的 so/such 引导的部分置于句首从而构成倒装结构。
 
-- `例 1`：**So** fast does light travel **that** it is difficult for us to
-  imagine its speed.
-  - Light travels **so** fast **that** it is difficult for us to imagine its
-    speed.
-- `例 2`：**So** terrible was the storm **that** the roofs were all ripped off.
-  - The storm was **so** terrible **that** the roofs were all ripped off.
-- `例 3`：____ that the pilot couldn't fly through it.
-  - A. So the storm was severe
-  - B. So severe was the storm
-  - C. The storm so severe was
-  - D. Such was the storm severe
-  - 答案：B。
+`1` **So** fast does light travel **that** it is difficult for us to imagine its
+speed.
+
+- Light travels so fast that it is difficult for us to imagine its speed.
+- `译` 光的传播速度快到我们难以想象。
+
+`2` **So** terrible was the storm **that** the roofs were all ripped off.
+
+- The storm was so terrible that the roofs were all ripped off.
+- `译` 暴风雨如此猛烈，以至于把整个屋顶都掀翻了。
+
+> I'm glad that 句型的对比
+
+`3` `____` that the pilot couldn't fly through it.
+
+- A. So the storm was severe
+- B. So severe was the storm
+- C. The storm so severe was
+- D. Such was the storm severe
+- `答案` B。
   - The storm was so severe that the pilot couldn't fly through it.
-- `例 4`：**Such** a fool was he **that** he believed her.
-  - He was **such** a fool **that** he believed her.
+
+`4` **Such** a fool was he **that** he believed her.
+
+- He was **such** a fool **that** he believed her.
+
+`5` Such is human nature that a great many people are often willing to sacrifice
+higher pay for the privilege of becoming white-collar workers.
+
+- Human nature is such that a great many people are often willing to sacrifice
+  higher pay for the privilege of becoming white-collars workers.
+- `译` 人性就是如此，所以很多人往往宁愿放弃高薪（的蓝领工作）而要让自己成为白领。
+
+### 6.5 其他短语连接的结果状语从句
+
+>>>>> progress
 
 ### 思维训练 6. 结果状语从句
 
@@ -2463,6 +2510,10 @@ while 位于句首，一般意为“尽管”，引导让步状语从句。
   past.
   - 尽管历史学曾经崇尚它与文学和哲学的相似性，但新兴的社会科学似乎为人们开辟了更为广阔的天地，
     来提出新问题和提供了解过去的有效途径。
+
+### 3.9.5 as 引导的倒装句表示让步
+
+>>>>> progress
 
 ### 8.4 as 引导的倒装句表示让步
 
