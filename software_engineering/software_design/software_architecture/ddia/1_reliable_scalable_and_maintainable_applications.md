@@ -14,6 +14,7 @@
   - [Maintainability](#maintainability)
     - [Operability: Making Life Easy for Operations](#operability-making-life-easy-for-operations)
     - [Simplicity: Managing Complexity](#simplicity-managing-complexity)
+    - [Evolvability: Making Change Easy](#evolvability-making-change-easy)
 
 A data-intensive application provides commonly needed functionalities:
 
@@ -184,4 +185,14 @@ How to:
 
 ### Simplicity: Managing Complexity
 
+Possible symptoms of complexity:
 
+- explosion of the state space
+- tight coupling of modules
+- tangled dependencies
+- inconsistent naming and terminology
+- hacks aimed at solving performance problems
+- special-casing to work around issues
+- ...
+
+### Evolvability: Making Change Easy

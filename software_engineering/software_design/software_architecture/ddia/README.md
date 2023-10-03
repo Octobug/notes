@@ -11,8 +11,8 @@ The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
 
 - [x] [Preface](./0_preface.md)
 - Part I. Foundations of Data Systems
-  - [ ] [1. Reliable, Scalable, and Maintainable Applications](./1_reliable_scalable_and_maintainable_applications.md)
-  - 2. Data Models and Query Languages
+  - [x] [1. Reliable, Scalable, and Maintainable Applications](./1_reliable_scalable_and_maintainable_applications.md)
+  - [ ] [2. Data Models and Query Languages](./2_data_models_and_query_languages.md)
   - 3. Storage and Retrieval
   - 4. Encoding and Evolution
 - Part II. Distributed Data
