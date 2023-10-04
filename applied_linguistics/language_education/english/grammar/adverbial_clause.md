@@ -86,9 +86,11 @@
     - [6.4 结果状语从句的倒装](#64-结果状语从句的倒装)
     - [6.5 其他短语连接的结果状语从句](#65-其他短语连接的结果状语从句)
     - [思维训练 6. 结果状语从句](#思维训练-6-结果状语从句)
+      - [答案：思维训练 6. 结果状语从句](#答案思维训练-6-结果状语从句)
   - [7. 条件状语从句](#7-条件状语从句)
     - [7.1 常见连词的用法](#71-常见连词的用法)
-    - [7.2 其他条件状语从句的连词](#72-其他条件状语从句的连词)
+    - [7.2 only if 与 if only](#72-only-if-与-if-only)
+    - [7.3 其他条件状语从句的连词](#73-其他条件状语从句的连词)
     - [思维训练 7. 条件状语从句](#思维训练-7-条件状语从句)
   - [8. 让步状语从句](#8-让步状语从句)
     - [8.1 常见连词的用法](#81-常见连词的用法)
@@ -2283,9 +2285,83 @@ higher pay for the privilege of becoming white-collar workers.
 
 ### 6.5 其他短语连接的结果状语从句
 
->>>>> progress
+这些结构有：
+
+- to the degree (that)
+- to the extent (that)
+- to such a degree (that)
+- to such an extent (that)
+
+当它们位于句首表示强调时，主句需要倒装。
+
+`1` The bereaved mother was grieved to the degree that she couldn't eat anything
+for 3 days.
+
+- to the degree that 引导的从句表示一个结果。
+- `译` 这位痛失亲人的母亲是如此悲痛，以至于连着三天没吃东西。
+
+`2` "Large numbers of physicians seem unconcerned with the pain their patients
+are needlessly and predictably suffering," to the extent that it constitutes
+"systematic patient abuse".
+
+- to the extent that 引导的从句表示一个结果。
+- `译` 大批医生似乎对病人承受的不必要和可预见的痛苦漠不关心”，以至于到了“系统性虐待病人”的地步。
+
+`3` To such an extent did he go on with his empty speech that some of us began
+to doze.
+
+- He went on with his empty speech to such an extent that some of us began to
+  doze.
+- `译` 他一直不断地进行着自己空洞乏味的演讲，以至于我们当中都有人开始打瞌睡了。
+
+`4` To such an extent did his health deteriorate that he was forced to retire.
+
+- His health deteriorated to such an extent that he was forced to retire.
+- `译` 他的健康状况恶化到如此地步，最终被迫退休。
 
 ### 思维训练 6. 结果状语从句
+
+**一、选择最佳答案填空。**
+
+*2. Conversation becomes weaker in a society that spends so much time listening
+and being talked to `____` it has all but lost the will and the skill to speak
+for itself.*
+
+- *A. as*
+- *B. which*
+- *C. that*
+- *D. what*
+
+*4. So involved with their computers `____` that leaders at summer computer
+camps often have to force them to break for sports and games.*
+
+- *A. became the children*
+- *B. become the children*
+- *C. had the children*
+- *D. do the children become*
+
+*5. It is `____` weather that I would like to go to the beach.*
+
+**二、辨别改错。**
+
+*16. Recently in the automobile industry, multinational companies
+***have developed***`A` to the point where ***such few cars***`B` can be
+described as ***having been made***`C` ***entirely***`D` in one country.*
+
+#### 答案：思维训练 6. 结果状语从句
+
+*2. C。such that 引导从句表示结果。
+
+- `译` 在一个社会里，人们若是花费太多时间去倾听或是被动地与人交流，以至于几乎丧失了说话的意愿和说话的技能，那么在这样的社会里，人们之间的交流就越来越少。
+
+*4. D。结果状语的倒装结构。C 的时态不对，从句谓语是 have to，是一般现在时态，不能与过去完成时态搭配。
+
+- The children become so involved with their computers that leaders...
+- `译` 这些孩子们是如此迷恋于电脑，以至于计算机夏令营里的带队老师们常常要强迫他们停止玩电脑，以便参加体育活动和做游戏。
+
+*5. B。
+
+*16. B，改为 so few cars。
 
 **一、请用 so...that 和/或 such...that 合并句子。**
 
@@ -2349,37 +2425,55 @@ often have to force them to break for sports and games.*
 
 ## 7. 条件状语从句
 
+这里的条件句特指真实条件句，不包含非真实条件句（即虚拟语气）。
+
 ### 7.1 常见连词的用法
 
 最常见的条件状语从句的引导词是 **if** 和 **unless**。
 连词 if 表示“如果”，unless 表示“如果不”或“除非”。
 
-- `例 1`：If winter comes, can spring be far behind?
-- `例 3`：Today if a happy smile comes to you, a happy smile that perhaps you
-  can't explain...it is because at that moment, I am thinking of you, and
-  smiling, too.
-  - 假如今天你不经意间开心地微笑起来，连你都无法解释自己为什么会笑……
-    这是因为此时此刻我正在想你，我也在微笑。
-- `例 4`：In politics, if you want someone to make a speech, ask a man; if you
-  want something done, ask a woman.
-- `例 5`：Please do not post any private information unless you want it to be
-  available publicly and never assume that you are completely anonymous and
-  cannot be identified by you comments.
-- `例 6`：Discussions about "face" can be difficult if one is not familiar with
-  the significance and importance attached to it by many Asian people. It does
-  have different meanings to different people and, unless a teacher is
-  "comfortable" with broaching the subject, it is best left alone.
-  - 亚洲人非常看重“面子”问题，如果你对此不熟悉的话，讨论“面子”问题就会很困难。
-    对于不同的人，“面子”问题的意思是不同的，除非作为老师，你很善于把握这个话题，
-    否则还是不要涉及为好。
-- `例 7`：Read silently. Do not make a sound, move your tongue or lips. Reading
-  aloud slows you down and will not help pronunciation unless you have a mentor
-  who will correct your pronunciation.
-- `例 8`：Inside this book you will find a series of successful skills,
-  strategies and suggestions for improving your English, but these will be
-  useless unless you carry them out.
+`1` If winter comes, can spring be far behind?
 
-### 7.2 其他条件状语从句的连词
+`2` Giving someone all your love is never an assurance that they'll love you
+back. Don't expect love in return, just wait for it to grow in their heart; but
+if it doesn't, be glad it grew in yours.
+
+- `译` 为某人付出自己全部的爱，并不一定能够保证对方会同样爱你。
+  不要期望爱的回报，就让爱在对方心中慢慢滋长。即使没有，也不要失望，而要为自己心中曾经爱过而感到高兴。
+
+`3` Today if a happy smile comes to you, a happy smile that perhaps you can't
+explain...it is because at that moment, I am thinking of you, and smiling, too.
+
+- `译` 假如今天你不经意间开心地微笑起来，连你都无法解释自己为什么会笑……这是因为此时此刻我正在想你，我也在微笑。
+
+`4` In politics, if you want someone to make a speech, ask a man; if you want
+something done, ask a woman.
+
+`5` Please do not post any private information unless you want it to be
+available publicly and never assume that you are completely anonymous and cannot
+be identified by your comments.
+
+`6` Discussions about "face" can be difficult if one is not familiar with the
+significance and importance attached to it by many Asian people. It does have
+different meanings to different people and, unless a teacher is "comfortable"
+with broaching the subject, it is best left alone.
+
+- `译` 亚洲人非常看重“面子”问题，如果你对此不熟悉的话，讨论“面子”问题就会很困难。
+  对于不同的人，“面子”问题的意思是不同的，除非作为老师，你很善于把握这个话题，否则还是不要涉及为好。
+
+`7` Read silently. Do not make a sound, move your tongue or lips. Reading aloud
+slows you down and will not help pronunciation unless you have a mentor who
+will correct your pronunciation.
+
+`8` Inside this book you will find a series of successful skills, strategies
+and suggestions for improving your English, but these will be useless unless
+you carry them out.
+
+### 7.2 only if 与 if only
+
+>>>>> progress
+
+### 7.3 其他条件状语从句的连词
 
 其他引导条件状语从句的连词有：
 
