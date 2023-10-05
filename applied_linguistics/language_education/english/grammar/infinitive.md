@@ -107,6 +107,7 @@
     - [思维训练：14. 省略 to 的不定式](#思维训练14-省略-to-的不定式)
       - [答案：思维训练：14. 省略 to 的不定式](#答案思维训练14-省略-to-的不定式)
   - [综合训练](#综合训练)
+    - [答案：综合训练](#答案综合训练)
 
 英语中的动词变化形式，即**非谓语动词**形式一共有三种：
 
@@ -3209,4 +3210,120 @@ and when the movie's finished, the producers make believe it's good.
 
 ## 综合训练
 
+**一、选择最佳答案填空。**
+
+*6. She is having her car `____` this week.*
+
+- *A. to repair*
+- *B. repair*
+- *C. repaired*
+- *D. repairing*
+
+*7. The doctor had the patient `____` on at once.*
+
+- *A. operate*
+- *B. operated*
+- *C. to operate*
+- *D. operating*
+
+*8. My sister's professor had her `____` her paper many times before allowing
+her to present it to the committee.*
+
+- *A. rewritten*
+- *B. to rewrite*
+- *C. rewrite*
+- *D. rewriting*
+
+*9. The teacher had the students `____` their homework every day.*
+
+- *A. do*
+- *B. to do*
+- *C. done*
+- *D. doing*
+
+*15. "I was arguing with him about our plan just now." "Why `____` with him?
+He'll never change his mind."*
+
+- *A. arguing*
+- *B. argue*
+- *C. to argue*
+- *D. you argue*
+
+*17. The ancient Egyptians are supposed `____` rockets to the moon.*
+
+- *A. to send*
+- *B. to be sending*
+- *C. to have sent*
+- *D. to have been sending*
+
+*18. He prefers to stay here `____` go home.*
+
+- *A. than to*
+- *B. rather than*
+- *C. rather than to*
+- *D. than*
+
+*19. The use of well-chosen nonsense words makes `____` the testing of many
+basic hypotheses in the field of language learning.*
+
+- *A. it is possible*
+- *B. it possible*
+- *C. possible*
+- *D. them possible*
+
+*21. All too often, women complain that they're educated as equals, only to go
+out into the workforce `____` as inferiors.*
+
+- *A. to treat*
+- *B. to be treated*
+- *C. be treated*
+- *D. treat*
+
+*28. It is heartening to see millions who had nothing but a record of misery
+and hunger `____` to improve their life.*
+
+- *A. having had the chance*
+- *B. had the chance*
+- *C. to have the chance*
+- *D. have the chance*
+
+*30. I experienced having students `____` a thousand new words in a week.*
+
+- *A. considering less talented to remember*
+- *B. considered less talented remember*
+- *C. considering less talented remember*
+- *D. considered less talented to remember*
+
 >>>>> progress
+
+- *A.*
+- *B.*
+- *C.*
+- *D.*
+
+### 答案：综合训练
+
+*6. C。have sth. done
+
+*7. B。have sb. done
+
+*8. C。have sb. do
+
+*9. D. have sb. do
+
+*15. B。不定式省略 to。
+
+*17. C。考察不定式的时态。
+
+*18. B。不定式省略 to。
+
+*19. C。句子宾语是 the testing of many basic hypotheses in the field of language
+learning，因为宾语太长，所以将宾语补足语前置。
+
+*21. B。考察不定式的语态。
+
+- `译` 女性常常抱怨她们受到了平等的教育，但进入劳动力市场后却被视为低人一等。
+
+*28. D。不定式省略 to。see 是感官动词。
+
+*30. B。不定式省略 to。have sb. do
