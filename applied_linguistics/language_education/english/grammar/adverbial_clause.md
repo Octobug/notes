@@ -90,14 +90,20 @@
   - [7. 条件状语从句](#7-条件状语从句)
     - [7.1 常见连词的用法](#71-常见连词的用法)
     - [7.2 only if 与 if only](#72-only-if-与-if-only)
-    - [7.3 其他条件状语从句的连词](#73-其他条件状语从句的连词)
+    - [7.3 must/will have to do...if...be to do 结构](#73-mustwill-have-to-doifbe-to-do-结构)
+    - [7.4 其他条件状语从句的连词](#74-其他条件状语从句的连词)
+    - [7.5 其他表示条件意味的句型](#75-其他表示条件意味的句型)
+      - [一、祈使句/省略句 + and `=` if 从句 + 主句](#一祈使句省略句--and--if-从句--主句)
+      - [二、祈使句/省略句 + or/or else `=` unless 从句 + 从句](#二祈使句省略句--oror-else--unless-从句--从句)
     - [思维训练 7. 条件状语从句](#思维训练-7-条件状语从句)
+      - [答案：思维训练 7. 条件状语从句](#答案思维训练-7-条件状语从句)
   - [8. 让步状语从句](#8-让步状语从句)
     - [8.1 常见连词的用法](#81-常见连词的用法)
     - [8.2 表示让步转折关系的介词](#82-表示让步转折关系的介词)
     - [8.3 置于句首的 while 一般表示“尽管”](#83-置于句首的-while-一般表示尽管)
+    - [8.4 no matter wh-](#84-no-matter-wh-)
     - [3.9.5 as 引导的倒装句表示让步](#395-as-引导的倒装句表示让步)
-    - [8.4 as 引导的倒装句表示让步](#84-as-引导的倒装句表示让步)
+    - [8.5 as 引导的倒装句表示让步](#85-as-引导的倒装句表示让步)
       - [一、形容词提至句首](#一形容词提至句首)
       - [二、副词提至句首](#二副词提至句首)
       - [三、分词提至句首](#三分词提至句首)
@@ -2471,9 +2477,71 @@ you carry them out.
 
 ### 7.2 only if 与 if only
 
->>>>> progress
+- only if: 只有
+- if only: 只要
 
-### 7.3 其他条件状语从句的连词
+`1` The senior librarian at the circulation desk promised to get the book for me
+`____` she could remember who last borrowed it.
+
+- A. ever since
+- B. much as
+- C. even though
+- D. if only
+- `答案` D。
+  - `译` 借阅处的高级管理员答应帮我找到这本书，只要她能记得上次是谁借走的。
+
+`2` He can continue to support himself and his family `____` he produces a
+surplus.
+
+- A. only if
+- B. much as
+- C. long before
+- D. ever since
+- `答案` A。
+  - `译` 只有生产有了盈余，他才能够继续养活自己和家人。
+
+`3` On the whole such a conclusion can be drawn with a certain degree of
+confidence but only if the child can be assumed to have had the same attitude
+towards the test as the others with whom he is being compared, and only if he
+was not punished by lack of relevant information which they possessed.
+
+- 两个 only if 引导的从句表示得出此结论所必须具备的前提条件。
+- `译` 总的来说，得出这种结论是有一定把握的，但是必须具备两个条件：能够假定这个孩子对测试的态度和与他比较的另一个孩子的态度相同；他也没有因为缺乏别的孩子所具有的相关知识而被罚。
+
+### 7.3 must/will have to do...if...be to do 结构
+
+`much`/`will have to` do...if...be to do 这个固定搭配结构常被忽略，一般翻译成“如果……必须……，那么就不得不”。
+在这个结构里，be to do 表示比较强烈的感情色彩，有加强语气的一位，相当于情态动词 must 或
+should，可以翻译成“一定得”，所以与 be to do 呼应的主句往往会含有情态动词 must 或 will
+have to。
+
+`1` If ambition *is to be* well regarded, the rewards of ambition -- wealth,
+distinction, control over one's destiny -- must be deemed worthy of the
+sacrifices made on ambition's behalf. If the tradition of ambition *is to have*
+vitality, it must be widely shared; and it especially must be highly regarded
+by people who are themselves, admired, the educated not least among them.
+
+- 这里的两个 if 引导的从句里的谓语都采用了 be to do，对应的主句谓语都含有情态动词 must。
+- `译` 若真的能够正确看待雄心壮志，那么它的回报——财富、荣誉、对自己命运的掌控——定会被视为无愧于为之做出的牺牲。
+  如果雄心壮志的传统只是激发活力，那么人们就应该都拥有它；特别是它必须被那些本身受到尊敬的人士所高度重视，受过教育的人们是其中重要的一部分。
+
+`2` The first two must be equal for all who are being compared, if any
+comparison in terms of intelligence is to be made.
+
+- `译` 如果一定要从智力方面进行任何比较的话，那么对所有的被比较者来说，前两个因素必须是一样的。
+
+`3` But if robots are to reach the next stage of laborsaving utility, they will
+have to operate with less human supervision and be able to make at least a few
+decisions for themselves -- goals that pose a real challenge.
+
+- `译` 但是如果一定要机器人进一步节省劳力的话，它们必须能够在更少的人工监控下工作，并且至少能够独立地做一些决定 -- 这些目标向我们提出了真正的挑战。
+
+`4` If it doesn't rain within the next few weeks, the crops will have to be
+watered if they are to survive.
+
+- `译` 要是接下来的几个星期还不下雨，这些庄稼要想存活，就必须得浇水了。
+
+### 7.4 其他条件状语从句的连词
 
 其他引导条件状语从句的连词有：
 
@@ -2484,21 +2552,44 @@ you carry them out.
 - as long as
 - on condition that
 
-例子：
+`1` So long as you work hard enough, an iron rod can be ground into a needle.
 
-- `例 1`：So long as you work hard enough, an iron rod can be ground into a
-  needle.
-- `例 2`：A man is not old as long as he is seeking something. A man is not old
-  until regrets take the place of dreams.
-- `例 4`：Knowledge helps you to reach the destination provided you know what
-  the destination is.
-  - 如果你知道自己的目标是什么，知识就能帮助你达到这个目标。
+`2` A man is not old as long as he is seeking something. A man is not old until
+regrets take the place of dreams.
+
+- `译` 一个人只要还有追求，他就不算老。只有当心中不再有梦想，而只是满怀遗憾，这时他才真正老了。
+
+`4` Knowledge helps you to reach the destination provided you know what the
+destination is.
+
+- `译` 如果你知道自己的目标是什么，知识就能帮助你达到这个目标。
+
+### 7.5 其他表示条件意味的句型
+
+#### 一、祈使句/省略句 + and `=` if 从句 + 主句
+
+`1` Spare the rod and spoil the child.
+
+- `=` If you spare the rod, you'll spoil the child.
+- `译` 孩子不打不成器。
+
+`2` Give us 20 minutes and we will give you 10 years back! Let us help you
+realize your dreams!
+
+- `=` If you give us 20 minutes, we will give you 10 years back!
+
+#### 二、祈使句/省略句 + or/or else `=` unless 从句 + 从句
+
+`3` Give it back to me or (else) I'll tell your parents.
+
+- `=` Unless you give it back to me, I'll tell your parents.
+- `译` 把它还给我，不然我就告诉你父母。
 
 ### 思维训练 7. 条件状语从句
 
-**请选择最佳答案填空。**
+**一、请选择最佳答案填空。**
 
-*1. You can arrive in Beijing earlier for the meeting ____ you don't mind
+*1. You can arrive in Beijing earlier for the meeting `____` you don't mind
 taking the night train.*
 
 - *A. provided*
@@ -2506,33 +2597,54 @@ taking the night train.*
 - *C. though*
 - *D. until*
 
-答案：A。这里的逻辑关系是“鉴于……所以……”，而不是“……，除非……”。
+**二、辨别改错。**
+
+*7. ***If only***`A` the nature of the aging process ***is***`B` better
+understood, the possibility of ***discovering***`C` a medicine that can block
+the fundamental process of aging ***seems***`D` very remote.
+
+#### 答案：思维训练 7. 条件状语从句
+
+*1. A。这里的逻辑关系是“鉴于……所以……”，而不是“……，除非……”。
+
+- `译` 你可以早点去北京开会，只要你不介意坐夜班火车。
+
+*7. A，改为 Unless。后半句 the possibility seems very remote，和前面有对立的关系，所以
+不能用 if only，也不能用 only if。
+
+- `译` 除非我们对人类衰老过程能够有更好的了解，否则我们不太可能发明一种可以对抗衰老这一基本过程的药物。
 
 ## 8. 让步状语从句
 
 ### 8.1 常见连词的用法
 
-常见的引导让步状语从句的词有
+常见的引导让步状语从句的连词有：
 
-- though
 - although
-- even though
 - even if
+- even though
+- though
 
 此时，**主句前不可用 but，但可用 yet 或 still**。
 
-- `例 1`：Although he tried hard, (yet/still) he failed.
-- `例 2`：Although I didn't know anybody at the party, I had a very good time.
-- `例 3`：The family is the essential presence -- the thing that never leaves
-  you, even if you find you have to leave it.
-  - 对于每个人来说，家是不可或缺的，它永远为你守候，即使有一天你发现你不得不离开它。
-- `例 4`：Although Professor Green's lectures usually ran ***over***`A` the
-  fifty-minute period, ***but***`B` ***none***`C` of his students
-  ***even objected***`D` as they found his lectures both informative and
-  interesting.
-  - 答案：B。应该把 but 去掉。
-  - 尽管格林教授上课时间常超过 50 分钟，但是他的学生中没有一个人反对，
-    因为他们觉得他的课既有趣又有收获。
+`1` Although he tried hard, (yet/still) he failed.
+
+- `译` 尽管他努力了，但仍然失败了。
+
+`2` Although I didn't know anybody at the party, I had a very good time.
+
+`3` The family is the essential presence -- the thing that never leaves you,
+even if you find you have to leave it.
+
+- `译` 家是不可或缺的，它永远为你守候，即使有一天你发现你不得不离开它。
+
+`4` Although Professor Green's lectures usually ran ***over***`A` the
+fifty-minute period, ***but***`B` ***none***`C` of his students
+***even objected***`D` as they found his lectures both informative and
+interesting.
+
+- `答案` B。把 but 去掉。
+- `译` 尽管 Green 教授上课时间常超过 50 分钟，但是他的学生中没有一个人反对，因为他们觉得他的课既有趣又有收获。
 
 ### 8.2 表示让步转折关系的介词
 
@@ -2541,75 +2653,163 @@ taking the night train.*
 - despite
 - for all
 - in spite of
+- notwithstanding
 
 ⚠️ 像 although 和 though 这些是连词，后面只能接从句（有时是省略形式的从句），
 而介词后面只能接名词（短语），不能接从句（what 引导的名次从句除外）。
 
-- `例 1`
-  - **Though** he was inexperienced, he did a very good job.
-  - **In spite of** his inexperienced, he did a very good job.
-  - **In spite of** his being inexperienced, he did a very good job.
-- `例 2`
-  - Although it was dangerous, ...
-  - Despite the danger, ...
-- `例 3`
-  - Though the weather was bad, ...
-  - In spite of the bad weather, ...
+`1` 尽管他没有经验，但是他表现得很不错。
+
+- **Though** he was inexperienced, he did a very good job.
+- **In spite of** his inexperience, he did a very good job.
+- **In spite of** his being inexperienced, he did a very good job.
+
+`2`
+
+- Although it was dangerous, ...
+- Despite the danger, ...
+
+`3`
+
+- Though the weather was bad, ...
+- In spite of the bad weather, ...
 
 📝 介词后面除了接名词短语外，还可以接 what 引导的名词从句。
 
-- `例 4`：____ what he achieved in medicine, he remained modest.
-  - A. Despite
-  - B. Although
-  - C. If
-  - D. Whereas
-  - 答案：A。what 等同于 things that，引导的是一个名词性从句，本质相当于一个名词短语，
-    故此处仍需用介词。
-    如果要使用连词 though，可以改为：
-    - Though he achieved a lot in medicine, he remained modest.
-- `例 5`：____ tired, he wouldn't stop working.
-  - A. Despite
-  - B. For all
-  - C. Though
-  - D. Whereas
-  - 答案：C。这是一个省略的状语从句，原句相当于：
-    - Though he was tired, he wouldn't stop working.
+`2` `____` what he achieved in medicine, he remained modest.
 
-综上，可总结出规律：**介词后面可以接名词、名词短语、动名词或 what 引导的从句；
+- A. Despite
+- B. Although
+- C. If
+- D. Whereas
+- `答案` A。what 等同于 things that，引导的是一个名词性从句，本质相当于一个名词短语，故此处仍需用介词。
+  如果要使用连词 although/though，可以改为：
+  - Although/Though he achieved a lot in medicine, he remained modest.
+
+`3` `____` tired, he wouldn't stop working.
+
+- A. Despite
+- B. For all
+- C. Though
+- D. Whereas
+- `答案` C。这是一个省略的状语从句。
+  - `=` Though he was tired, he wouldn't stop working.
+
+综上：表示让步逻辑关系的**介词后面可以接名词、名词短语、动名词或 what 引导的从句；
 连词后面可以接完整的陈述句、形容词（从句的省略句）、分词（从句的省略句）**。
 
 ### 8.3 置于句首的 while 一般表示“尽管”
 
 while 位于句首，一般意为“尽管”，引导让步状语从句。
 
-- `例 2`：While the government pushed for a total breakup of the software maker,
-  Microsoft fought fiercely against any positions that would affect its ability
-  to compete in the marketplace.
-  - 尽管美国政府积极要求彻底拆分微软这个软件巨人，但是微软公司极力反对任何影响其市场竞争力的动议。
-- `例 3`：While even the modestly educated sought an elevated tone when they
-  put pen to paper before the 1960s, even the most well regarded writing since
-  then has sought to capture spoken English on the page.
-  - 在 20 世纪 60 年代之前，当人们伏案写作时，即使受教育不多的人也追求一种高雅的风格，
-    而从那以后，即使受令人景仰的文章作品也在追求一种口语风格。
-- `例 4`：While often praised by foreigners for its emphasis on the basics,
-  Japanese education tends to stress test taking and mechanical learning over
-  creativity and self-expression.
-  - While often praised by foreigners = While **it is** often praised by
-    foreigners
-  - 虽然日本的教育常常因为重视基础知识而受到外国人士的赞扬，
-    但是其教育往往强调应试和机械性的学习，而不是强调创造性及自我表现。
-- `例 5`：While history once revered its affinity to literature and philosophy,
-  the emerging social sciences seemed to afford greater opportunities for asking
-  new questions and providing rewarding approaches to an understanding of the
-  past.
-  - 尽管历史学曾经崇尚它与文学和哲学的相似性，但新兴的社会科学似乎为人们开辟了更为广阔的天地，
-    来提出新问题和提供了解过去的有效途径。
+`2` While the government pushed for a total breakup of the software maker,
+Microsoft fought fiercely against any positions that would affect its ability to
+compete in the marketplace.
+
+- `译` 尽管美国政府积极要求彻底拆分微软这个软件巨人，但是微软公司极力反对任何影响其市场竞争力的动议。
+
+`3` While even the modestly educated sought an elevated tone when they put pen
+to paper before the 1960s, even the most well regarded writing since then has
+sought to capture spoken English on the page.
+
+- `译` 在 20 世纪 60 年代之前，当人们伏案写作时，即使受教育不多的人也追求一种高雅的风格，而从那以后，即使受令人景仰的文章作品也在追求一种口语风格。
+
+`4` While often praised by foreigners for its emphasis on the basics, Japanese
+education tends to stress test taking and mechanical learning over creativity
+and self-expression.
+
+- While often praised by foreigners `=` While **it is** often praised by
+  foreigners
+- `译` 虽然日本的教育常常因为重视基础知识而受到外国人士的赞扬，但是其教育往往强调应试和机械性的学习，而不是强调创造性及自我表现。
+
+`5` While history once revered its affinity to literature and philosophy, the
+emerging social sciences seemed to afford greater opportunities for asking new
+questions and providing rewarding approaches to an understanding of the past.
+
+- `译` 尽管历史学曾经崇尚它与文学和哲学的相似性，但新兴的社会科学似乎为人们开辟了更为广阔的天地，来提出新问题和提供了解过去的有效途径。
+
+`2` While there are almost as many definitions of history as there are
+historians, modern practice most closely conforms to one that sees history as
+the attempt to recreate and explain the significant events of the past.
+
+- `译` 尽管几乎每个历史学家对史学都有自己的界定，但是现代史学家的实践最趋向于认为，历史学是试图重现过去的重大史实并对其做出解释。
+
+`3` I have excluded him because, while his accomplishments may contribute to the
+solution of moral problems, he has not been charged with the task of approaching
+any but the factual aspects of those problems.
+
+- `译` 我之所以把普通科学家排除在外，是因为尽管他的研究成果可能有助于解决道德问题，但他所承担的任务只不过是研究道德问题中的事实方面（而不是道德问题的本身）。
+
+### 8.4 no matter wh-
+
+在英文中，可以用以下这些词来引导让步状语从句，表示“无论”：
+
+- no matter +
+  - how
+  - what
+  - when
+  - where
+  - which
+  - who
+- however + adj./adv.
+- whatever
+- whenever
+- wherever
+- whichever
+- whoever
+
+`1` We have decided to do so, whatever happens.
+
+- `译` 我们已经决定这么做了，无论发生了什么。
+
+`2` Whoever may trouble you, I will help you to the last.
+
+`3` No matter what I did to the money, you still wanted it because it did not
+decrease in value.
+
+- `译` 无论我如何对待那张钞票，你们还是想要它，因为它并没有贬值。
+
+`4` But however amazed our descendants may be at how far from Utopia we were,
+they will look just like us.
+
+- `=` Our descendants may be amazed at how far from Utopia we were, they will
+  look just like us.
+- 因为有了 however 这个词，所以 amazed 和 however 一同提到了句首。
+- `译` 但是不管我们的后代对我们离乌托邦之遥远感到多么吃惊，他们的长相将和我们一样。
+
+`5` When a new movement in art attains a certain fashion, it is advisable to
+find out what its advocates are aiming at, ***for***, however farfetched and
+unreasonable their principles may seem today, it is possible that in years to
+come they may be regarded as normal.
+
+- 这里的 for 时表示原因的连词，引导原因状语从句。这个原因状语从句里又有一个 however
+  引导的让步状语从句，这个让步状语从句原本的结构是：
+  - `=` their principles may seem farfetched and unreasonable today.
+- `译` 当一个新的艺术运动达到某种程度的流行时，我们最好搞清楚这个运动的倡导者的目标是什么，因为不管他们的原则现在看来是如何牵强和不合理，很可能在将来它们会被视为正常规范。
+
+`6` The test of any democratic society lies not in how well it can control
+expression, but in whether it gives freedom of thought and expression the widest
+possible latitude, however disputable or irritating the results may sometimes
+be. We won't retreat in the face of any threats.
+
+- `=` The results may sometimes be disputable or irritating.
+- `译` 对任何民主社会的检验不在于它能多好地控制言论的自由表达，而在于它能否尽可能更宽松地赋予思想自由和表达自由，不管结果有时可能会是多么有争议和令人不悦。面对威胁，我们不会退缩。
+
+在这类让步状语从句中，从句谓语往往会有情态动词 may 或 might 用来加强让步语气，意思是“可能会多么地”。
+此外，有时甚至会省略 may 或 might，只剩下动词原形。
+
+`7` Try as he will, no man breaks wholly loose from his first love, no matter
+who she be...
+
+- 这里 no matter who she be `=` no matter who she might be 这种加强语气的形式。
+- try as he will 也是一个让步状语从句的结构。
+- `译` 不管怎么样，没有一个男人能够完完全全忘却自己的初恋，不管她是谁。
 
 ### 3.9.5 as 引导的倒装句表示让步
 
 >>>>> progress
 
-### 8.4 as 引导的倒装句表示让步
+### 8.5 as 引导的倒装句表示让步
 
 as 引导的倒装句可表示让步，这一结构为：
 
