@@ -439,7 +439,7 @@ out research accurately and efficiently.*
   - D. they expand and peel away
   - 答案：B。谓语动词 cause 要求接不定式作宾语补足语。
 
-能用于词结构中的动词有：advice, allow, ask, beg, believe, cause, command, challenge,
+能用于此结构中的动词有：advice, allow, ask, beg, believe, cause, command, challenge,
 compel, declare, encourage, expect, forbid, force, get, hate, have, help,
 instruct, intend, invite, judge, leave, let, like, mean, make, need, oblige,
 order, permit, persuade, prefer, press, recommend, request, remind, teach,
@@ -3294,12 +3294,70 @@ and hunger `____` to improve their life.*
 - *C. considering less talented remember*
 - *D. considered less talented to remember*
 
->>>>> progress
+*31. The party `____` at my house, but the central heating broke down, and we
+had to have it at John's place.*
 
-- *A.*
-- *B.*
-- *C.*
-- *D.*
+- *A. would be*
+- *B. have been*
+- *C. was to be*
+- *D. was to have been*
+
+*36. The child may be able to attain his immediate goal `____` that his method
+brings criticism from people who observe him.*
+
+- *A. only to find*
+- *B. only find*
+- *C. only finding*
+- *D. only have found*
+
+*40. Those naughty boys were caught `____` flowers in the garden again.*
+
+- *A. to steal*
+- *B. stealing*
+- *C. to have stolen*
+- *D. having stolen*
+
+*43. A Dream of the Red Chamber is said `____` into dozens of languages in the
+last decade.*
+
+- *A. to have been translated*
+- *B. to translate*
+- *C. to be translated*
+- *D. to have translated*
+
+*44. In 1938 Pearl S. Buck became the first American woman `____` the Nobel
+Prize for Literature.*
+
+- *A. receive*
+- *B. received*
+- *C. to receive*
+- *D. she received*
+
+*50. In order to `____` a passport, one must either present legal documents or
+call a witness to give evidence concerning one's identity.*
+
+- *A. be issued*
+- *B. issue*
+- *C. have issue*
+- *D. have been issued*
+
+*52. If we allow our imagination `____` by known research, our prophecies need
+not be sheer fantasy.*
+
+- *A. guided*
+- *B. be guided*
+- *C. to be guided*
+- *D. being guided*
+
+**二、辨别改错。**
+
+*56. ***Because of***`A` the recent accidents, our parents forbid me
+***from swimming***`B` in the river ***unless***`C` someone agrees
+***to watch over***`D` us.*
+
+*62. ***As secretary***`A` of transportation from 1975 to 1977, William Coleman
+worked ***to help***`B` the bankrupt railroads in the northeastern United States
+***solved***`C` their ***financial***`D` problems.*
 
 ### 答案：综合训练
 
@@ -3327,3 +3385,23 @@ learning，因为宾语太长，所以将宾语补足语前置。
 *28. D。不定式省略 to。see 是感官动词。
 
 *30. B。不定式省略 to。have sb. do
+
+*31. D。不定式的完成式表示“非真实的过去”。
+
+*36. A。不定式 only to do 表示结果状语。
+
+- `译` 孩子可能能够实现他的直接目标，却发现他的方法遭到了观察他的人的批评。
+
+*40. B。这里 catch sb. doing 是固定搭配。
+
+*43. A。不定式的完成被动结构。
+
+*44. C。不定式作定语。
+
+*50. A。不定式语态。完成时主要是用于表示一个发生在谓语动作之前的动作，或者表示过去虚拟。
+
+*52. C。不定式被动语态作补足语。
+
+*56. B，改为 to swim。这里是固定搭配 forbid sb. to do sth.
+
+*62. C，改为 solve。不定式省略 to。help sb. do sth.

@@ -24,8 +24,8 @@
 5. 非谓语动词
    1. [不定式](infinitive.md)
    2. [动名词](./gerund.md)
-   3. 分词
-   4. 从句与非谓语
+   3. [分词](./participles.md)
+   4. [从句与非谓语](./clauses_and_non-predicate.md)
 6. 虚拟语气、情态动词、倒装与强调
    1. [虚拟语气](subjunctive_mood.md)
    2. [情态动词](modal_auxiliary_verb.md)
@@ -73,7 +73,7 @@
 - [x] [1. 名词从句](nominal_clause.md)
 - [x] [2. 定语从句](attributive_clause.md)
 - [ ] [3. 状语从句](adverbial_clause.md)
-- [ ] [4. 不定式](infinitive.md)
+- [x] [4. 不定式](infinitive.md)
 - [ ] [5. 动名词](gerund.md)
 - [ ] [6. 分词](participles.md)
-- [ ] 7. 从句与非谓语
+- [ ] [7. 从句与非谓语](./clauses_and_non-predicate.md)
