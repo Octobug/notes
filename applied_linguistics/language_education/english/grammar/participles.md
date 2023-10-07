@@ -3,17 +3,21 @@
 > Participle
 
 - [分词](#分词)
-  - [6.1 分词的意义](#61-分词的意义)
-    - [6.1.1 引言：一个真实的故事](#611-引言一个真实的故事)
-    - [6.1.2 现在分词的意义](#612-现在分词的意义)
+  - [1. 分词的意义](#1-分词的意义)
+    - [1.1 引言：一个真实的故事](#11-引言一个真实的故事)
+    - [1.2 现在分词的意义](#12-现在分词的意义)
       - [一、主动的、正在进行的动作](#一主动的正在进行的动作)
       - [二、主动的、一般的动作](#二主动的一般的动作)
-    - [6.1.3 过去分词的意义](#613-过去分词的意义)
+    - [1.3 过去分词的意义](#13-过去分词的意义)
       - [一、被动一般或被动完成的动作](#一被动一般或被动完成的动作)
       - [二、主动完成的动作](#二主动完成的动作)
-    - [思维训练 6.1 分词的意义](#思维训练-61-分词的意义)
-  - [6.2 分词的作用（一）：状语](#62-分词的作用一状语)
-    - [6.2.5 分词作状语的意义](#625-分词作状语的意义)
+    - [思维训练 1. 分词的意义](#思维训练-1-分词的意义)
+  - [2. 分词的作用（一）：状语](#2-分词的作用一状语)
+    - [2.1 主语一致：单独的分词（短语）作状语](#21-主语一致单独的分词短语作状语)
+      - [一、常见错误：垂悬分词 (dangling particle)](#一常见错误垂悬分词-dangling-particle)
+      - [二、分词的逻辑主语与句子的主语须一致](#二分词的逻辑主语与句子的主语须一致)
+    - [2.2 独立分词结构（一）：“名词 + 分词”作状语](#22-独立分词结构一名词--分词作状语)
+    - [2.5 分词作状语的意义](#25-分词作状语的意义)
       - [一、“（名词 +）分词”作状语的意义](#一名词-分词作状语的意义)
 
 分词是一种重要的连词成句的手段。
@@ -24,7 +28,7 @@
 3. 动词的用法：即需要知道动词的**及物性或不及物性**。
    因为分词也是动词，而动词的意义和用法必然影响到分词的使用。
 
-## 6.1 分词的意义
+## 1. 分词的意义
 
 分词 (participle) 有现在分词 (present participle) 和过去分词 (past participle)
 之分，两者在意义上有差别。
@@ -32,7 +36,7 @@
 对比这两类分词意义的差别要在一定的“生态环境”下进行，这个“生态环境”往往由分词与其所修饰的名词构成。
 要全面了解两类分词的差别，必须是在剖析分词与其修饰名词之间的逻辑关系基础之上。
 
-### 6.1.1 引言：一个真实的故事
+### 1.1 引言：一个真实的故事
 
 到底是用现在分词作定语还是用过去分词作定语，主要取决于分词与其所修饰名词之间的逻辑语义关系。
 
@@ -46,7 +50,7 @@
       表示的是一个**主动的已经完成的动作**。
     - 已沉于水底的船
 
-### 6.1.2 现在分词的意义
+### 1.2 现在分词的意义
 
 可以从两个角度来考察现在分词的含义——**语态角度**和**时态角度**。
 
@@ -110,7 +114,7 @@
 
 💡 现在分词何时具有进行的意味，何时只是表示一般情况，这主要取决于上下文语境，而没有特别的规定。
 
-### 6.1.3 过去分词的意义
+### 1.3 过去分词的意义
 
 同样地，可以从**语态角度**和**时态角度**两个角度来考察过去分词的含义。
 
@@ -216,7 +220,7 @@ a hooded top **seen** **running** away from the scene.
 伦敦一名兼职警官在其位于伦敦西北部的家附近被一名男子刺死，警方目前正在搜捕这名男子。
 据称，该名男子作案时穿着带有兜帽的上衣，作案后有人看见他逃离了现场。
 
-### 思维训练 6.1 分词的意义
+### 思维训练 1. 分词的意义
 
 **用括号中动词的适当形式填空。**
 
@@ -232,11 +236,106 @@ a hooded top **seen** **running** away from the scene.
 
 答案：drowned
 
-## 6.2 分词的作用（一）：状语
+## 2. 分词的作用（一）：状语
+
+分词作状语是分词用法的核心内容之一，是分词用法最重要的部分。
+分词作状语的两个核心点是其结构与意义。
+
+### 2.1 主语一致：单独的分词（短语）作状语
+
+单独的分词（短语）作状语，即分词前面没有带名词，而是直接把分词短语放在句首、句中或句末作状语。
+此时分词短语的逻辑主语必须与句子的主语一致。也就是说，分词的动作应该是由句子的主语发出的。
+
+#### 一、常见错误：垂悬分词 (dangling particle)
+
+受汉语思维方式的影响，英语初学者容易造出中文通顺但不符合英文逻辑表达的句子，“垂悬分词”是其中常见的一种。
+垂悬分词是指分词在句子中找不到对应的逻辑主语。
+
+`1` 等车的时候，一块砖头砸到我头上了。
+
+- Waiting for a bus, a brick fell on my head. ❌
+  - 分词 waiting 需要一个逻辑主语，正常情况下是句子的主语。
+    但是此时句子主语是 brick，而一块砖不可能在等车。于是造成分词 waiting 找不到自己的逻辑主语。
+- When I was waiting for a bus, a brick fell on my head. ✅
+
+更多错误例句：
+
+- After doing my homework, the dog was fed. ❌
+  - After I did my homework, I fed the dog. ✅
+
+`2` 朝窗外看，发现街上有很多人。
+
+- Looking out of the window, there are lots of people in the street. ❌
+- Looking out of the window, I saw lots of people on the street. ✅
+  - `=` When I looked out of the window, I saw lots of people on the street.
+
+`3` 用电脑时，要记住密码。
+
+- When using the computer, the password must be remembered. ❌
+- When using the computer, you must remember the password. ✅
+  - `=` When you use the computer, you must remember the password.
+
+`4` 刚到家，发现门是锁着的。
+
+- Arriving home, the door was found locked. ❌
+- Arriving home, I found the door locked. ✅
+  - `=` When I arrived home, I found the door locked.
+
+`5` 作为一个流行乐迷，周杰伦是她最喜欢的歌手。
+
+- Being a pop fan, Jay Chou is her favorite. ❌
+- Being a pop fan, she likes Jay Chou most. ✅
+  - As she is a pop fan, she likes Jay Chou most.
+
+#### 二、分词的逻辑主语与句子的主语须一致
+
+`6` Opening the freezer, he took out some ice, placed it on the work surface and
+began smashing it with a tin of coffee.
+
+- `译` 他打开冰柜，取出一些冰块，把它们放在厨房的操作台上，然后开始用咖啡罐砸这些冰块。
+
+`7` Dressed up as Father Christmas and accompanied by a "guard of honor" of six
+pretty girls, he set off down the main street of the city riding a baby elephant
+called Jumbo.
+
+- 这里一共有三个分词短语作状语，它们的逻辑主语均与句子主语一致
+  - 句子主语 he 与动作 dress up 和 accompany 构成被动关系
+    - dressed up as Father Christmas 过去分词短语作方式状语
+    - accompanied by a "guard of honor" of six pretty girls 过去分词短语作方式状语
+  - 句子主语 he 与动作 ride 构成主动关系
+    - riding a baby elephant called Jumbo 现在分词短语作伴随状语，修饰谓语动词
+      set off，说明是如何“出发”的。
+- `译` 他打扮成圣诞老人，在由六个漂亮姑娘组成的“仪仗队”的陪同下，骑上一头名叫江伯的小象，沿着城里的主街出发了。
+
+`8` Good relationships are hard to find and once developed should be nurtured.
+
+- 过去分词短语 once developed 作状语
+  - `=` once good relationships are developed
+- `译` 知己难觅，一旦建立好关系，应当精心呵护。
+
+`9` I'm not afraid of dying from a spiritual point of view, but what I was
+afraid of was how I'd go, because I've watched people die in the hospital
+fighting for oxygen and clawing at their masks.
+
+- fighting 和 clawing 作伴随状语，修饰动词 die。
+- `译` 从精神的角度来说，我并不惧怕死亡。但我惧怕的是如何走向死亡这个过程，因为我看到过病人在医院里濒死之时因缺氧而挣扎并狠抓面罩的情形。
+
+`10` After jumping out of a boat, `____`.
+
+- A. the shark bites the man
+- B. the shark bit the man
+- C. the man was bitten by a shark
+- D. the man is bitten by a shark
+- `答案` C。
+- `译` 那名男子从船上跳出后，就被一条鲨鱼咬了。
+
+### 2.2 独立分词结构（一）：“名词 + 分词”作状语
 
 >>>>> progress
 
-### 6.2.5 分词作状语的意义
+### 2.5 分词作状语的意义
+
+>>>>> progress
 
 #### 一、“（名词 +）分词”作状语的意义
 
