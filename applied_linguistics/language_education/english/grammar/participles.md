@@ -17,6 +17,12 @@
       - [一、常见错误：垂悬分词 (dangling particle)](#一常见错误垂悬分词-dangling-particle)
       - [二、分词的逻辑主语与句子的主语须一致](#二分词的逻辑主语与句子的主语须一致)
     - [2.2 独立分词结构（一）：“名词 + 分词”作状语](#22-独立分词结构一名词--分词作状语)
+    - [2.3 独立分词结构（二）：“with + 名词 + 分词”作状语](#23-独立分词结构二with--名词--分词作状语)
+    - [2.4 固定结构](#24-固定结构)
+      - [一、副词 + speaking](#一副词--speaking)
+      - [二、分词 + 介词](#二分词--介词)
+      - [三、分词 + (that) 从句](#三分词--that-从句)
+      - [四、分词短语相当于一个非限定性定语从句](#四分词短语相当于一个非限定性定语从句)
     - [2.5 分词作状语的意义](#25-分词作状语的意义)
       - [一、“（名词 +）分词”作状语的意义](#一名词-分词作状语的意义)
 
@@ -331,7 +337,155 @@ fighting for oxygen and clawing at their masks.
 
 ### 2.2 独立分词结构（一）：“名词 + 分词”作状语
 
->>>>> progress
+“名词 + 分词”作状语时，分词的逻辑主语与句子的主语不一致，也就是分词动作的执行者和谓语动作的执行者不同，分词有自己独立的主语。
+这里的“名词”正是分词的逻辑主语，以区别句子的主语。这也是“独立主格结构”中的一种，叫做“独立分词结构”。
+这类似于动名词的复合结构（如 my doing） 和不定式的复合结构（如 for sb. to do）。
+
+`1` Weather permitting, we'll be going fishing tomorrow.
+
+- 分词短语 weather permitting 即被称为“独立分词结构”。
+  permitting 的逻辑主语是 weather，它和句子的主语 we 不一致。
+  这个分词短语相当于一个条件状语从句。
+  - `=` If weather permits, ...
+- `译` 如果天气允许的话，我们明天就去钓鱼。
+
+`2` All the money having been spent, we started looking for work.
+
+- all the money having been spent 相当于一个时间状语从句
+  - `=` after all the money had been spent
+- `译` 钱全花光后，我们就开始找工作。
+
+`3` Nobody having any more to say, the meeting was closed.
+
+- nobody having any more to say 相当于一个原因状语从句
+  - `=` since nobody had any more to say
+- `译` 谁都无话可说了，会议就结束了。
+
+`4` The Chinese word for crisis is divided into two characters, one meaning
+danger and the other meaning opportunity.
+
+- 这里有两个并列的分词短语，起补充说明前面句子的作用。
+  - one meaning danger
+  - the other meaning opportunity
+- `译` 中文中的“危机”分为两个字，一个意味着“危险”，另一个意味着“机会”
+
+`5` Most of his works today reflect his observations of Chinese people's lives
+in their different aspects, the emphasis being on the countryside lifestyles of
+the northen Shaanxi and Tibetans in Zhongdian, in southwest China's Yunnan
+Province.
+
+- `译` 他现在的大部分作品反映了他对中国人民生活方方面面的观察，尤其是对中国农村生活方式的观察，这包括陕西北部及位于中国西南部的云南中甸地区藏民的生活方式。
+
+`6` But, for a small group of students, professional training might be the way
+to go since well-developed skills, all other factors being equal, can be the
+difference between having a job and not.
+
+- all other factors being equal 这个分词短语作为条件状语
+- `译` 但是对于一小部分学生来说，职业培训也许是可取的道路，因为在其他因素同等的情况下，熟练的技术的确可以在求职方面起到很大的作用。
+
+`7` The Portuguese ***give***`A` a great deal of credit to one man for
+***having promoted***`B` sea travel, that man ***was***`C` Prince Henry the
+navigator, ***who lived***`D` in the 15th century.
+
+- `答案` C，应改为：being。
+- The Portuguese give a great deal of credit to one man for having promoted sea
+  travel 是一个独立的句子，由于后面用了逗号，所以不能再接句子，所以只能改为分词短语，把 was
+  改为 being 作为状语补充说明前面的句子。
+- `译` 葡萄牙人对一个人很是敬仰，这是因为他推动了航海事业，这个人就是15世纪的航海家亨利王子。
+
+### 2.3 独立分词结构（二）：“with + 名词 + 分词”作状语
+
+这个结构是在分词短语“名词 + 分词”的基础上变化而来，即多了一个介词 with。
+它作状语所表达的意义与“名词 + 分词”有很大的不同。
+
+`1` A car roared past, with smoke pouring from the exhaust.
+
+- `译` 一辆小汽车“呼”地开了过去，排气管冒出一团团黑烟。
+
+`2` The old man often takes a walk after supper with his dog following him.
+
+- `译` 这位老人经常在晚饭后出去散步，后面跟着他的宠物狗。
+
+### 2.4 固定结构
+
+以上讨论了三种分词作状语的结构：
+
+1. 单独的分词（短语）
+2. 名词 + 分词
+3. with + 名词 + 分词
+
+在后两种结构中，分词的逻辑主语是分词短语本身带的名词，和句子主语不一致；而第一种结构中分词的逻辑主语必须与句子主语一致。
+
+这里的“固定结构”是对“单独的分词（短语）作状语”的补充：在一些表示说话人态度的固定表达方式中，分词的逻辑主语和句子主语不一致。
+这些表达属于约定俗成的固定结构，所以不被认为是错误。
+
+#### 一、副词 + speaking
+
+如 generally speaking, strictly speaking, broadly speaking 等。
+
+`1` Generally speaking, men are stronger than women.
+
+- `=` If we are to speak generally, men are stronger than women.
+
+`2` Strictly speaking, this is not a right answer.
+
+#### 二、分词 + 介词
+
+如 judging from, talking of, allowing for 等等。
+
+`3` Judging from his expression, he is in a lousy mood.
+
+- `译` 从他的面部表情判断，他情绪不好。
+
+`4` Allowing for her inexperience, she has done a good job.
+
+- `译` 考虑到她缺乏经验，她能做成这样子已经是不错了。
+
+`5` Talking of English, she is the best speaker.
+
+- `译` 说到英语，她的口语最好。
+
+`6` Taking everything into consideration, they ought to win this game.
+
+- `译` 把所有的因素考虑在内，他们应该赢得这场比赛。
+
+#### 三、分词 + (that) 从句
+
+比如
+
+- allowing that...(考虑到)
+- considering that...(`=` since 既然)
+- granting that...(`=` though 尽管)
+- seeing that...(`=` since 既然)
+- supposing that (`=` if 假如)
+
+`7` Considering that she has no experience, she has done a good job.
+
+`8` Considering how far from perfect most human brains are, there isn't much
+threat from a computer.
+
+- `译` 既然人脑都还不够完美，那何惧电脑的威胁。
+
+`9` Supposing there was a war, what would you do?
+
+- `译` 假如发生了战争，你会怎么办？
+
+`10` Granting that he has made a mistake, he is not to blame, for he intended to
+help us.
+
+- `译` 他尽管犯了错误，也不应该受到责备，因为他本打算帮助我们。
+
+#### 四、分词短语相当于一个非限定性定语从句
+
+若分词短语相当于一个非限定性定语从句，此时分词的逻辑主语往往是前面的整个句子，而非句子的主语。
+
+`11` In recent years, railroads have been combining with each other and merging
+into supersystems, causing heightened concerns about monopoly.
+
+- causing heightened concerns about monopoly 用作状语，表示结果。
+  它相当于一个非限定性定语从句，修饰前面整个句子。也就是说，它的逻辑主语是前面整个句子。
+  - `=` which causes heightened concerns about monopoly
+- `译` 近些年来，铁路公司相互合并而成为超大型集团，这引起人们对垄断的日益关注。
 
 ### 2.5 分词作状语的意义
 
