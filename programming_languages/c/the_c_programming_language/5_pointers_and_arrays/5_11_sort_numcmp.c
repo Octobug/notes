@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 void qsort(void *v[], int left, int right,
            int (*comp)(void *, void *))
 {
-    int i, last;
+    int last;
     void swap(void *v[], int, int);
 
     if (left >= right) // do nothing if array contains fewer than two arguments
@@ -49,9 +49,8 @@ void qsort(void *v[], int left, int right,
     }
     swap(v, left, (left + right) / 2);
     last = left;
-    for (i = left + 1; i <= right; i++)
+    for (int i = left + 1; i <= right; i++)
     {
-
         if ((*comp)(v[i], v[left]) < 0)
         {
             swap(v, ++last, i);
