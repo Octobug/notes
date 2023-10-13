@@ -15,6 +15,11 @@
       - [Data locality for queries](#data-locality-for-queries)
       - [Convergence of document and relational databases](#convergence-of-document-and-relational-databases)
   - [Query Languages for Data](#query-languages-for-data)
+    - [Declarative Queries on the Web](#declarative-queries-on-the-web)
+    - [MapReduce Querying](#mapreduce-querying)
+  - [Graph-Like Data Models](#graph-like-data-models)
+    - [Property Graphs](#property-graphs)
+    - [The Cypher Query Language](#the-cypher-query-language)
 
 ## Relational Model Versus Document Model
 
@@ -144,5 +149,63 @@ It seems that relational and document databases are becoming more similar over
 time, and that is a good thing.
 
 ## Query Languages for Data
+
+SQL is a *declarative* query language, whereas IMS and CODASYL use *imperative*
+code to query.
+
+- Declarative languages often lend themselves to parallel execution.
+- Imperative code is very hard to paralize across multiple cores and multiple
+  machines, because it specifies instructions that must be performed in a
+  particular order.
+
+### Declarative Queries on the Web
+
+Declarative queries with CSS can lower the implementation details to the
+browser level.
+
+### MapReduce Querying
+
+***MapReduce*** is a programming model for processing large amounts of data in
+bulk across many machines.
+
+MapReduce is neither a declarative query language nor a fully imperative query
+API, but somewhere in between: the logic of the query is expressed with snippets
+of code, which are called repeatedly by the processing framework.
+
+The `map` and `reduce` functions which used in this process are restricted in
+what they are allowed to do. They must be *pure* functions.
+
+## Graph-Like Data Models
+
+As connections within data become more complex, it's more natural to model data
+as a graph.
+
+A graph consists of two kinds of objects:
+
+- vertices
+- edges
+
+### Property Graphs
+
+In the property graph model, each vertex consists of:
+
+- A unique identifier
+- A set of outgoing edges
+- A set of incoming edges
+- A collection of properties
+
+Each edge consists of:
+
+- A unique identifier
+- The vertex at which the edge starts (the *tail* vertex)
+- The vertex at which the edge ends (the *head* vertex)
+- A label to describe the kind of relationship between the two vertices
+- A collection of properties (key-value pairs)
+
+Graphs are good for evolvability, as features is added to the application, a
+graph can easily be extended to accommodate changes in the application's data
+structures.
+
+### The Cypher Query Language
 
 >>>>> progress
