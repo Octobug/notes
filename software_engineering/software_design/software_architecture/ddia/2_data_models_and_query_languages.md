@@ -20,6 +20,7 @@
   - [Graph-Like Data Models](#graph-like-data-models)
     - [Property Graphs](#property-graphs)
     - [The Cypher Query Language](#the-cypher-query-language)
+    - [Graph Queries in SQL](#graph-queries-in-sql)
 
 ## Relational Model Versus Document Model
 
@@ -208,4 +209,10 @@ structures.
 
 ### The Cypher Query Language
 
+***Cypher*** is a declarative query language for property graphs.
+
+### Graph Queries in SQL
+
 >>>>> progress
+
+In a relational database, which joins are needed are usually known in advance.
