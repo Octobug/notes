@@ -21,6 +21,12 @@
     - [Property Graphs](#property-graphs)
     - [The Cypher Query Language](#the-cypher-query-language)
     - [Graph Queries in SQL](#graph-queries-in-sql)
+    - [Triple-Stores and SPARQL](#triple-stores-and-sparql)
+      - [The semantic web](#the-semantic-web)
+      - [The RDF data model](#the-rdf-data-model)
+      - [The SPARQL query language](#the-sparql-query-language)
+    - [Graph Databases Compared to the Network Model](#graph-databases-compared-to-the-network-model)
+    - [The Foundation: Datalog](#the-foundation-datalog)
 
 ## Relational Model Versus Document Model
 
@@ -213,6 +219,61 @@ structures.
 
 ### Graph Queries in SQL
 
->>>>> progress
-
 In a relational database, which joins are needed are usually known in advance.
+
+### Triple-Stores and SPARQL
+
+The triple-store model is mostly equivalent to the property graph model, using
+different words to desctibe the same ideas.
+
+In a triple-store, all information is stored in the form of very simple
+three-part statements:
+
+- subject (eg. Jim) `=` a vertex in a graph
+- predicate (eg. likes) `=` 
+- object (eg. bananas) `=`
+  - a value in a primitive datatype:
+    - predicate `=` key of a property on the subject vertex
+    - object `=` value of a property on the subject vertex
+  - another vertex in the graph:
+    - subject `=` the tail vertex
+    - predicate `=` the edge
+    - object `=` the head vertex
+
+#### The semantic web
+
+The triple-store data model is completely independent of the semantic web.
+
+The ***Resource Description Framework (RDF)*** was intended as a mechanism for
+different websites to publish data in a consistent format, allowing data from
+different websites to be aumatically combined into a web format -- a kind of
+internet-wide "database of everything".
+
+#### The RDF data model
+
+#### The SPARQL query language
+
+*SPARQL*(SPARQL Procotol and RDF Query Language, pronounced "sparkle") is a
+query languagr for triple-stores using the RDF data model.
+
+### Graph Databases Compared to the Network Model
+
+They differ in several important ways:
+
+- In CODASYL, a database had a schema that specified which record type could be
+  nested within other record type. In a graph database, there is no such
+  restriction.
+- In CODASYL, the only way to reach a particular record was to traverse one of
+  the access paths to it. In a graph database, you can refer directly to any
+  vertex by its unique ID.
+- In CODASYL, the children of a record were an ordered set, so the database had
+  to maintain that ordering, and applications had to worry about the positions
+  of the new records in these sets. In a graph database, vertices and edges are
+  not ordered.
+- In CODASYL, all queries are imperative, easily broken by changes in the
+  schema. Most graph databases support high-level, declarative query languages.
+
+### The Foundation: Datalog
+
+Datalog provides the foundation that later query languages build upon.
+Cascalog is a Datalog implemantation for querying large datasets in Hadoop.
