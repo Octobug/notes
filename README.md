@@ -17,6 +17,7 @@ disciplines according to the
     1. [World Literature](world_literature)
         1. [British](./world_literature/british/)
         2. [Chinese](./world_literature/chinese/)
+        3. [German](./world_literature/german/)
 3. [Performing Arts](https://en.wikipedia.org/wiki/Performing_arts)
     1. [Music](music)
         1. Music Theory
