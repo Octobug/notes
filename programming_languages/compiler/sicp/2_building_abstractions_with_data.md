@@ -25,6 +25,7 @@
   - [Lab 4: Recursion, Tree Recursion, Python Lists](#lab-4-recursion-tree-recursion-python-lists)
   - [Discussion 4: Tree Recursion, Python Lists](#discussion-4-tree-recursion-python-lists)
   - [Project 2: CS 61A Autocorrected Typing Software](#project-2-cs-61a-autocorrected-typing-software)
+  - [Lab 5: Data Abstraction, Sequences](#lab-5-data-abstraction-sequences)
   - [2.4 Mutable Data](#24-mutable-data)
 
 ## 2.1 Introduction
@@ -408,6 +409,10 @@ def print_partitions(n, m):
 ## Project 2: CS 61A Autocorrected Typing Software
 
 - [ ] [Project 2: CS 61A Autocorrected Typing Software](https://inst.eecs.berkeley.edu/~cs61a/sp23/proj/cats/)
+
+## Lab 5: Data Abstraction, Sequences
+
+- [ ] [Lab 5: Data Abstraction, Sequences](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab05/)
 
 ## 2.4 Mutable Data
 
