@@ -208,7 +208,23 @@ def feline_fixes(typed, source, limit):
     5
     """
     # BEGIN PROBLEM 6
-    assert False, 'Remove this line'
+
+    if typed == source:
+        return 0
+
+    if limit < 0:
+        return 0
+
+    if len(typed) == 0:
+        return len(source)
+
+    if len(source) == 0:
+        return len(typed)
+
+    diff = 0 if typed[0] == source[0] else 1
+
+    return diff + feline_fixes(typed[1:], source[1:], limit - diff)
+
     # END PROBLEM 6
 
 
@@ -227,29 +243,37 @@ def minimum_mewtations(typed, source, limit):
     >>> minimum_mewtations("ckiteus", "kittens", big_limit) # ckiteus -> kiteus -> kitteus -> kittens
     3
     """
-    assert False, 'Remove this line'
-    if ___________:  # Base cases should go here, you may add more base cases as needed.
-        # BEGIN
-        "*** YOUR CODE HERE ***"
-        # END
+    if typed == source:
+        return 0
+
+    if limit < 0:
+        return 0
+
+    if len(typed) == 0:
+        return len(source)
+
+    if len(source) == 0:
+        return len(typed)
+
     # Recursive cases should go below here
-    if ___________:  # Feel free to remove or add additional cases
+    if typed[0] == source[0]:  # Feel free to remove or add additional cases
         # BEGIN
-        "*** YOUR CODE HERE ***"
+        return minimum_mewtations(typed[1:], source[1:], limit)
         # END
     else:
-        add = ...  # Fill in these lines
-        remove = ...
-        substitute = ...
+        add = 1 + minimum_mewtations(source[0] + typed, source, limit - 1)
+        remove = 1 + minimum_mewtations(typed[1:], source, limit - 1)
+        substitute = 1 + minimum_mewtations(typed[1:], source[1:], limit - 1)
         # BEGIN
-        "*** YOUR CODE HERE ***"
+        return min(add, remove, substitute)
         # END
 
 
 def final_diff(typed, source, limit):
     """A diff function that takes in a string TYPED, a string SOURCE, and a number LIMIT.
     If you implement this function, it will be used."""
-    assert False, 'Remove this line to use your final_diff function.'
+    # return minimum_mewtations(typed, source, limit)
+    return feline_fixes(typed, source, limit)
 
 
 FINAL_DIFF_LIMIT = 6  # REPLACE THIS WITH YOUR LIMIT
@@ -284,7 +308,15 @@ def report_progress(typed, prompt, user_id, upload):
     0.2
     """
     # BEGIN PROBLEM 8
-    "*** YOUR CODE HERE ***"
+    count = 0
+
+    while count < len(typed) and typed[count] == prompt[count]:
+        count += 1
+
+    progress = count / len(prompt)
+    upload({'id': user_id, 'progress': progress})
+
+    return progress
     # END PROBLEM 8
 
 
@@ -306,7 +338,17 @@ def time_per_word(words, times_per_player):
     [[6, 3, 6, 2], [10, 6, 1, 2]]
     """
     # BEGIN PROBLEM 9
-    "*** YOUR CODE HERE ***"
+    times = []
+    for tpp in times_per_player:
+        num = tpp[0]
+        diffs = []
+        for t in tpp[1:]:
+            diffs.append(t - num)
+            num = t
+
+        times.append(diffs)
+
+    return match(words, times)
     # END PROBLEM 9
 
 
@@ -330,7 +372,21 @@ def fastest_words(match):
     # contains an *index* for each word
     word_indices = range(len(get_all_words(match)))
     # BEGIN PROBLEM 10
-    "*** YOUR CODE HERE ***"
+    result = [[] for _ in player_indices]
+
+    for wi in word_indices:
+        fastest_player_time = time(match, 0, wi)
+        fastest_player_index = 0
+
+        for pi in player_indices:
+            t = time(match, pi, wi)
+            if t < fastest_player_time:
+                fastest_player_time = t
+                fastest_player_index = pi
+
+        result[fastest_player_index].append(get_word(match, wi))
+
+    return result
     # END PROBLEM 10
 
 

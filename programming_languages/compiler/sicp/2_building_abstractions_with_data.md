@@ -408,7 +408,7 @@ def print_partitions(n, m):
 
 ## Project 2: CS 61A Autocorrected Typing Software
 
-- [ ] [Project 2: CS 61A Autocorrected Typing Software](https://inst.eecs.berkeley.edu/~cs61a/sp23/proj/cats/)
+- [x] [Project 2: CS 61A Autocorrected Typing Software](https://inst.eecs.berkeley.edu/~cs61a/sp23/proj/cats/)
 
 ## Lab 5: Data Abstraction, Sequences
 
