@@ -102,19 +102,23 @@
     - [8.2 表示让步转折关系的介词](#82-表示让步转折关系的介词)
     - [8.3 置于句首的 while 一般表示“尽管”](#83-置于句首的-while-一般表示尽管)
     - [8.4 no matter wh-](#84-no-matter-wh-)
-    - [3.9.5 as 引导的倒装句表示让步](#395-as-引导的倒装句表示让步)
     - [8.5 as 引导的倒装句表示让步](#85-as-引导的倒装句表示让步)
       - [一、形容词提至句首](#一形容词提至句首)
       - [二、副词提至句首](#二副词提至句首)
       - [三、分词提至句首](#三分词提至句首)
       - [四、名词提至句首](#四名词提至句首)
+      - [五、动词原形提置句首](#五动词原形提置句首)
+    - [8.6 “as/so + 形容词 + as + 主谓”结构，放在句首表示让步](#86-asso--形容词--as--主谓结构放在句首表示让步)
+    - [8.7 句首用 be 的倒装句表示让步](#87-句首用-be-的倒装句表示让步)
     - [思维训练 8. 让步状语从句](#思维训练-8-让步状语从句)
+      - [答案：思维训练 8. 让步状语从句](#答案思维训练-8-让步状语从句)
   - [9. 比较状语从句](#9-比较状语从句)
     - [9.1 连词 as 的基本用法](#91-连词-as-的基本用法)
       - [一、结构1：as + 形容词或副词 + as](#一结构1as--形容词或副词--as)
       - [二、结构2：as + 形容词 + a(n) + 可数名词单数 + as](#二结构2as--形容词--an--可数名词单数--as)
       - [三、在否定句中第一个 as 可用 so 代替](#三在否定句中第一个-as-可用-so-代替)
       - [四、为了保持句子平衡，从句还可以用倒装结构](#四为了保持句子平衡从句还可以用倒装结构)
+    - [3.10.5 连词 than 的基本用法](#3105-连词-than-的基本用法)
     - [9.2 连词 than 的基本用法](#92-连词-than-的基本用法)
       - [一、可比性问题](#一可比性问题)
       - [二、比较形式问题](#二比较形式问题)
@@ -2805,10 +2809,6 @@ who she be...
 - try as he will 也是一个让步状语从句的结构。
 - `译` 不管怎么样，没有一个男人能够完完全全忘却自己的初恋，不管她是谁。
 
-### 3.9.5 as 引导的倒装句表示让步
-
->>>>> progress
-
 ### 8.5 as 引导的倒装句表示让步
 
 as 引导的倒装句可表示让步，这一结构为：
@@ -2817,71 +2817,218 @@ as 引导的倒装句可表示让步，这一结构为：
 
 #### 一、形容词提至句首
 
-- `1`：Young as he is, he is knowledgeable.
-  - 他虽然年轻，但知识渊博。
-- `2`：In addition, difficult as it is to believe, there are desert fish
-  which can survive through years of drought in the form of inactive eggs.
-- `3`：Oldest in our workshop as he is, he works hardest.
-  - 尽管他是我们车间最年长的一位，他工作起来最努力。
+`1` Young as he is, he is knowledgeable.
+
+- `译` 他虽然年轻，但知识渊博。
+
+`2` In addition, difficult as it is to believe, there are desert fish which can
+survive through years of drought in the form of inactive eggs.
+
+- “形容词 + as + 主谓” 结构，表示让步。
+- `译` 此外，尽管很难以置信，但确有一种沙漠鱼，能够以不活动的卵的形式来抵御干旱，可以存活好几年。
+
+`3` Oldest in our workshop as he is, he works hardest.
+
+- ⚠️ 最高级前面不加 the。
+- `译` 尽管他是我们车间最年长的一位，他工作起来最努力。
 
 #### 二、副词提至句首
 
-- `4`：Much as I respect him, I can not agree with him.
-  - 虽然我非常尊重他，但是我仍旧不同意他的意见。
-- `5`：Again as he failed in doing this experiment, he didn't lose his heart.
-  - 尽管他的试验再次失败了，但是他并不灰心。
+`3` Much as I respect him, I cannot agree with him.
+
+- `译` 虽然我非常尊重他，但是我仍旧不同意他的意见。
+
+`4` Again as he failed in doing this experiment, he didn't lose his heart.
+
+- `译` 尽管他的试验再次失败了，但是他并不灰心。
 
 #### 三、分词提至句首
 
-- `6`：Praised as he was, he remained modest.
-  - 尽管他受到了表扬，却仍旧很谦虚。
+`5` Praised as he was, he remained modest.
+
+- `译` 尽管他受到了表扬，却仍旧很谦虚。
 
 #### 四、名词提至句首
 
-- `7`：Child as he is, he is knowledgeable.
-  - ⚠️ 这句话的名词 child 前面不带冠词。
-  - 他虽然还是个孩子，却知识渊博。
-- `8`：Lazy a boy as he is, he is kind to help others.
-  - 他虽然很懒惰，却乐于助人。
+`6` Child as he is, he is knowledgeable.
+
+- ⚠️ 这句话的名词 child 前面不带冠词。
+- `译` 他虽然还是个孩子，却知识渊博。
+
+`7` Lazy a boy as he is, he is kind to help others.
+
+- `译` 他虽然很懒惰，却乐于助人。
+
+#### 五、动词原形提置句首
+
+`动词原形 + as + 主语 + 主动词 (may, might, will, would, can, could, do, does, did)`
+
+`8` Fail as I did, I would never stop trying.
+
+- 提前的动词是原形的原因：Failed as I ❌，因此只能提前动词原形，并通过主动词 did 来表明时态。
+- `译` 尽管我失败了，但我决不会停止尝试。
+
+`9` Try as he will, no man breaks wholly loose from his first love, no matter
+who she be...
+
+- `译` 不管怎么样，没有一个男人能够完完全全忘却自己的初恋，不管她是谁。
+
+💡 如果动词是及物动词，则其宾语也要随着动词提前。
+
+`10` Lose money as I did, I got a lot of experience.
+
+- 动词和其宾语一同提前到句首。
+- `译` 尽管我费了不少钱，但是获得了很多经验。
 
 💡 **这里的 as 可以替换成 that 或 though（although 则不行），不过很少这样使用**。
 
-- `9`：Odd though it sounds, cosmic inflation is a scientifically plausible
-  consequence of some respected ideas in elementary particle physics, and many
-  astrophysicists have been convinced for the better part of decade that it is
-  true.
-  - that it is true 是 have been convinced 的宾语从句。
-  - 宇宙膨胀理论虽然听似奇特，但它是基本粒子物理学中一些公认的理论在科学上看来可信的推论。
-    许多天体物理学家十几年来一直确信这一论说是正确的。
-- `10`：**Much although**`A` I have traveled, I have never seen anyone
-  **to equal**`B` her in thoroughness, **whatever**`C` **the job**`D`.
-  - 答案：A。应改为：Much as。
-  - 尽管我游历甚广，但我还从没有见过一个像她这样不论对什么工作都如此细致认真的人。
+`11` Odd though it sounds, cosmic inflation is a scientifically plausible
+consequence of some respected ideas in elementary particle physics, and many
+astrophysicists have been convinced for the better part of a decade that it is
+true.
+
+- that it is true 是 have been convinced 的宾语从句。
+- `译` 宇宙膨胀理论虽然听似离奇，但它是从基本粒子物理学中一些公认的理论推测得到的，从科学的角度看是合理的。
+  许多天体物理学家十来年来也一直确信这一论说是正确的。
+
+`12` ***Much although***`A` I have traveled, I have never seen anyone
+***to equal***`B` her in thoroughness, ***whatever***`C` ***the job***`D`.
+
+- `答案` A。应改为：Much as。
+- `译` 尽管我游历甚广，但我还从没有见过一个像她这样不论对什么工作都如此细致认真的人。
+
+### 8.6 “as/so + 形容词 + as + 主谓”结构，放在句首表示让步
+
+这个表示让步的结构比较少见。
+
+`1` As much as John hates to do it, he must stay at home and study tonight.
+
+- `译` 尽管 John 不愿意，但他今晚还是得待在家里学习。
+
+`2` As amusing and perceptive as graffiti may sometimes be, it has by no means
+won universal approval.
+
+- `译` 尽管涂鸦有时可以怡人情趣并发人深思，但它决不会赢得普遍的认同。
+
+`3` As important as your obligation as a doctor, a lawyer or a business leader
+will be, you are a human being first, and those human connections with spouses,
+with children, with friends are the most important investments you will ever
+make.
+
+- `译` 尽管你们将来或许要成为一名医生、一名律师或是一个商人而要肩负重任，但首先你是一个平凡的人。
+  因此，你与自己的配偶、孩子、朋友等之间的亲情或友情是最为重要的。
+
+`4` As important as qualifications are, and you won't get to an interview
+without the qualifications, the most important thing in fact is the character
+and how a person presents himself at interview.
+
+- `译` 在求职的过程中，资历固然重要，因为若没有很好的资历，你是得不到面试机会的。
+  但事实上，最重要的是你的个性以及在面试中你如何展示自己。
+
+### 8.7 句首用 be 的倒装句表示让步
+
+由 whether 或 however 引导的让步从句可以变成一个句首用 be 的倒装句，同样表示让步。
+
+`1` All substances, be they gaseous, liquid or solid, are made up of atoms.
+
+- `=` All substances, whether they may be gaseous, liquid or solid, are made up
+  of atoms.
+- 这里在将 whether 省略后，把 be 动词提到了句首。相当于 whether 引导的让步状语从句，译成“不论……还是”。
+- `译` 一切物质，不论是气态、液态还是固态，都是由原子构成的。
+
+`2` Be it ever so humble, there is no place like home.
+
+- `=` However humble it may be, there is no place like home.
+- 这里将 however 省略后，把 be 动词提到了句首。
+- `译` 金窝银窝，不如自己的草窝。
+
+综上，可以得出这样的规律：
+
+1. be 引导的倒装句如果表达的是两种或以上的情况，此时 be 引导的倒装句可改写成由 whether
+   引导的让步状语从句；
+2. be 引导的倒装句如果只表达一种情况，此时 be 引导的倒装句可改写成由 however 引导的让步状语从句。
+
+`3` As we grow up, we form our own identities because we are individuals, so it
+feels unfair to have our identities compared with others', be it our peers,
+siblings or parents.
+
+- `=` ...whether it may be our peers, siblings or parents.
+- `译` 在我们的成长过程中，我们每个人都在塑造自己的个性，因为我们是一个个体。
+  因此，当我们被拿来和别人做比较时就会感到不公平，不论这些比较的对象是我们的同龄人、兄弟姐妹还是父母。
+
+`4` Home is home, be it never so homely.
+
+- `=` Home is home, however homely it may be.
+- `译` 金窝银窝，不如自己的草窝。
+
+`5` `____`, I will marry him all the same.
+
+- A. Were he rich or poor
+- B. Whether rich or poor
+- C. Being rich or poor
+- D. Be he rich or poor
+- `答案` D。
+  - `=` Whether he may be rich or poor,...
+  - `译` 不论他是富有还是贫穷，我都会嫁给他。
 
 ### 思维训练 8. 让步状语从句
 
 **一、请选择最佳答案填空。**
 
-*3. Airsickness is produced by a disturbance of the inner car, ____ psychogenic
-factors, such as fear, also play a part.*
+*1. Getting enough vitamins is essential to life, although the body has no
+nutritional use for excess vitamins. Many people, `____`, believe in being on
+the "safe side" and thus take extra vitamins.*
+
+- *A. nevertheless*
+- *B. therefore*
+- *C. moreover*
+- *D. meanwhile*
+
+*7. Airsickness is produced by a disturbance of the inner car, `____`
+psychogenic factors, such as fear, also play a part.*
 
 - *A. in spite of*
 - *B. neither*
 - *C. nor*
 - *D. although*
 
-答案：D。"such as fear" 是插入语，实际上 "psychogenic factors also play a part."
-是一个句子，不能用 in spite of。
+*9. `____` all our kindness to help her, Sarah refused to listen to us.*
+
+- *A. At*
+- *B. For*
+- *C. In*
+- *D. On*
+
+*11. `____`, I still enjoy driving even after my accident.*
+
+- *A. It may seem strange though*
+- *B. Strange though it may seem*
+- *C. Though strange it may seem*
+- *D. Strange it may seem though*
 
 **二、辨别改错。**
 
-*13. **Despite**`A` fats and oils are **nutritionally**`B` important **as**`C`
+*20. **Despite**`A` fats and oils are **nutritionally**`B` important **as**`C`
 energy sources, medical research **indicates**`D` that saturated fats may
 contribute to hardening of the arteries.
 
-答案：A。应改为 Though 或 Although。
+#### 答案：思维训练 8. 让步状语从句
 
-译：尽管动物脂肪和植物油都是重要的能量来源，但是医学研究表明饱和脂肪可能会导致动脉硬化。
+*1. A。让步
+
+- `译` 摄入足够多的维生素，对于我们人类来说是很重要的，尽管过多的维生素对人体来说也没有什么营养价值。
+  不过，很多人还是坚持认为这很“安全”，因而仍然服用额外的维生素。
+
+*7. D。"such as fear" 是插入语，实际上 "psychogenic factors also play a part."
+是一个句子，不能用 in spite of。
+
+*9. B。for all 引导让步关系状语从句。
+
+*11. B。表示让步关系的倒装句型。
+
+*20. A。应改为 Though 或 Although。
+
+- `译` 尽管动物脂肪和植物油都是重要的能量来源，但是医学研究表明饱和脂肪可能会导致动脉硬化。
 
 ## 9. 比较状语从句
 
@@ -2892,12 +3039,31 @@ as 引导比较状语从句，其基本结构是 as...as...，其中前一个 as
 
 #### 一、结构1：as + 形容词或副词 + as
 
-- `例 1`：The work is not as difficult as **you think**.
-- `例 2`：Eyes are as eloquent as **lips (are)**.
-- `例 3`：An adult human must take eight steps to go as far as **a giraffe does
-  in one stride**.
+`1` The work is not as difficult as **you think**.
+
+`2` Eyes are as eloquent as **lips (are)**.
+
+- `译` 眼睛像嘴唇一样富于表现力。
+
+`3` An adult human must take eight steps to go as far as **a giraffe does in
+one stride**.
+
+- `译` 长劲鹿跨一步的距离相当于一个成年人走八步。
+
+`4` Do you enjoy listening to records? I find records are often `____`, if not
+better than, an actual performance.
+
+- A. as good as
+- B. as good
+- C. good
+- D. good as
+- `答案` A。
+  - if not better than `=` if they are not better than it
+  - `译` 你喜欢听唱片吗？我发现唱片的音响效果与现场演出的效果一样好，甚至更胜一筹。
 
 #### 二、结构2：as + 形容词 + a(n) + 可数名词单数 + as
+
+>>>>> progress
 
 这里前一个 as 作为副词来修饰一个形容词，而这个形容词同时又修饰一个名词。
 使用时要特别注意这里**形容词置于不定冠词之前**这一特点。
@@ -2927,6 +3093,10 @@ as 引导比较状语从句，其基本结构是 as...as...，其中前一个 as
 - `例 9`：The computer revolution may well change society **as fundamentally as
   did the Industrial Revolution**.
   - 计算机革命对于我们人类社会的改变之深刻，就如同当年的工业革命。
+
+### 3.10.5 连词 than 的基本用法
+
+>>>>> progress
 
 ### 9.2 连词 than 的基本用法
 
