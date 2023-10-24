@@ -118,12 +118,15 @@
       - [二、结构2：as + 形容词 + a(n) + 可数名词单数 + as](#二结构2as--形容词--an--可数名词单数--as)
       - [三、在否定句中第一个 as 可用 so 代替](#三在否定句中第一个-as-可用-so-代替)
       - [四、为了保持句子平衡，从句还可以用倒装结构](#四为了保持句子平衡从句还可以用倒装结构)
-    - [3.10.5 连词 than 的基本用法](#3105-连词-than-的基本用法)
-    - [9.2 连词 than 的基本用法](#92-连词-than-的基本用法)
+    - [9.2 as 句型一：as much as 结构](#92-as-句型一as-much-as-结构)
+    - [9.3 as 句型二：not...so much as 结构](#93-as-句型二notso-much-as-结构)
+    - [9.4 as 句型三：(just) as..., so 结构](#94-as-句型三just-as-so-结构)
+    - [9.5 连词 than 的基本用法](#95-连词-than-的基本用法)
       - [一、可比性问题](#一可比性问题)
       - [二、比较形式问题](#二比较形式问题)
       - [三、为了保持句子平衡，从句还可以用全部或部分倒装](#三为了保持句子平衡从句还可以用全部或部分倒装)
     - [9.3 表示倍数比较的三种句型](#93-表示倍数比较的三种句型)
+    - [3.10.8 the more...,the more 结构](#3108-the-morethe-more-结构)
     - [9.4 the more..., the more 句型](#94-the-more-the-more-句型)
     - [思维训练 9. 比较状语从句](#思维训练-9-比较状语从句)
       - [答案：思维训练 9. 比较状语从句](#答案思维训练-9-比较状语从句)
@@ -3063,42 +3066,257 @@ better than, an actual performance.
 
 #### 二、结构2：as + 形容词 + a(n) + 可数名词单数 + as
 
->>>>> progress
-
 这里前一个 as 作为副词来修饰一个形容词，而这个形容词同时又修饰一个名词。
 使用时要特别注意这里**形容词置于不定冠词之前**这一特点。
 
-- `例 4`：Rarely has a technological development had as great an impact on so
-  many aspects of social, economic, and cultural development as the growth of
-  electronics.
-  - 这个句子是一个倒装句，正常语序是：
+`5` Rarely has a technological development had as great an impact on so many
+aspects of social, economic, and cultural development as the growth of
+electronics.
+
+- ⚠️ 这里的 as...as 并不是引导一个比较状语**从句**。
+- 如果没有 as 修饰 great，原本的结构是 a great impact。
+  由于将其放在 as...as 结构中，所以要改成 as great an impact as。
+- 这个句子是一个倒装句，正常语序是：
   - A technological development has rarely had as great an impact on so...
-  - 很少有哪项科技的发展能像电子技术的发展那样，对我们的社会、经济以及文化等诸多方面产生如此重要的影响。
-- `例 5`：Americans tend to think from small to large. Let us take as simple an
-  example as the addressing of envelopes.
+- `译` 很少有哪项科技的发展能像电子技术的发展那样，对我们的社会、经济以及文化等诸多方面产生如此重要的影响。
+
+`6` Americans tend to think from small to large. Let us take as simple an
+example as the addressing of envelopes.
+
+- ⚠️ 这里的 as...as 并不是引导一个比较状语**从句**。
+- 如果没有 as 修饰 simple，原本的结构是 a simple example，但将其放置在 as...as 结构中，所以要改成
+  as simple an example as，译成“像这样的一个简单例子”。
+- `译` 美国人的思维喜欢由小到大。我们举一个写信封地址的简单例子吧。
+
+`7` His function is analogous to that of a judge, who must accept the obligation
+of revealing in as obvious a manner as possible the course of reasoning which
+led him to his decision.
+
+- ⚠️ 这里的 as...as 并不是引导一个比较状语**从句**。
+- revealing in as obvious a manner as possible the course of reasoning `=`
+  revealing the course of reasoning in an obvious manner...
+- in as obvious a manner as possible 由 in an obvious manner 和 as...as possible
+  两个结构组合而成。in an obvious manner 作为方式状语修饰动词 revealing，译成“很明了的方式”。
+- `译` 他的职责与法官相似，必须承担这样的责任：用尽可能明了的方式来展示自己做出的决定的推理过程。
+
+`8` While there are almost as many definitions of history as there are
+historians, modern practice most closely conforms to one that sees history as
+the attempt to recreate and explain the significant events of the past.
+
+- `译` 几乎每个历史学家对史学都有自己的界定，但现代史学家的实践最趋向于认为历史学是试图重现过去的重大事件并对其做出解释。
 
 #### 三、在否定句中第一个 as 可用 so 代替
 
-- `例 6`：This room is not so large as the one we saw yesterday.
-- `例 7`：No other modern nation devotes so small a portion of its wealth to
-  public health as the United States does.
+`6` This room is not so large as the one we saw yesterday.
+
+- 这里有否定词 not。
+- `译` 这个房间没有我们昨天看到的那个大。
+
+`9` No other modern nation devotes so small a portion of its wealth to public
+health as the United States does.
+
+- 这里有否定词 no。
+- `译` 没有一个现代国家像美国这样，只把很少一部分财力投入到公共卫生事业中去。
+
+`10` Television is one of the means by which these feelings are created and
+conveyed -- and perhaps never before has it served so much to connect different
+peoples and nations as in the recent events in Europe.
+
+- 这里有否定词 never。
+- `译` 电视是引发和传递这些感受的手段之一——在欧洲近来发生的事件中，它把不同的民族和国家连到一起，其作用之大，前所未有。
 
 #### 四、为了保持句子平衡，从句还可以用倒装结构
 
 此时的结构是“as...as + 助动词 + 主语”。
 
-- `例 8`：Small as it is, the ant is **as much a creature as are all other
-  animals on the earth**.
-  - 尽管蚂蚁很小，但是它同地球上的任何其他动物一样，也是一种动物。
-- `例 9`：The computer revolution may well change society **as fundamentally as
-  did the Industrial Revolution**.
-  - 计算机革命对于我们人类社会的改变之深刻，就如同当年的工业革命。
+`11` Small as it is, the ant is **as much a creature as are all other animals
+on the earth**.
 
-### 3.10.5 连词 than 的基本用法
+- 这里 as are all other animals on the earth 是一个倒装结构。
+- 此外，as much...as 表示“在同等程度上”，译为“和……一样”。
+- `译` 尽管蚂蚁很小，但是它同地球上的任何其他动物一样，也是一种动物。
+
+`12` The atmosphere is as much a part of the earth as `____` its soils and the
+water of its lakes, rivers and oceans.
+
+- A. are
+- B. do
+- C. is
+- D. has
+- `答案` A。
+  - `译` 地球周围的大气层，就如同地球上的泥土及湖泊、河流、海洋中的水一样，都是地球的组成部分。
+
+`13` The computer revolution may well change society **as fundamentally as did
+the Industrial Revolution**.
+
+- `译` 计算机革命对于我们人类社会的改变之深刻，就如同当年的工业革命。
+
+### 9.2 as 句型一：as much as 结构
+
+as much as 不能直接翻译为“和……一样多”，它往往是表示两个事物之间程度的比较，表示“在同等程度上”。
+
+`1` Small as it is, the ant is as much a creature as are all other animals on
+the earth.
+
+- as much...as 表示的是“在同等程度上”，可以译为“如同……一样”。
+
+`2` The atmosphere is as much a part of the earth as are its soil and the water
+of its lakes, rivers and oceans.
+
+`3` The "failed" experiments are as much a part of the process as the experiment
+that ultimately "works".
+
+- `译` 那些失败了的实验，与最终成功了的实验一样，都是整个实验过程的组成部分（二者同样重要）。
+
+`4` Television is one of the means by which these feelings are created and
+conveyed -- and perhaps never before has it served so much to connect different
+peoples and nations as in the recent events in Europe.
+
+- 这里的比较对象是时间，一个是 before，一个是 in the recent events in Europe。
+- `译` 电视是引发和传递这些感受的手段之一——在欧洲近来发生的事件中，它把不同的民族和国家连到一起，其作用之大，前所未有。
+
+`5` Scientists generally agree that the earth's climate will warm up over the
+next 50 to 100 years `____` it has warmed in the 20,000 years since the Ice Age.
+
+- A. as long as
+- B. as much as
+- C. as soon as
+- D. as well as
+- `答案` B。
+  - `译` 科学家一致认为，地球气候在未来50年至100年内变暖的幅度将达到其自冰河时期以来两万年间变暖幅度的总和。
+
+`6` The ideal listener stays both inside and outside the music at the moment it
+is played and enjoys it almost as much as the composer at the moment he
+composes. ❌
+
+- The ideal listener stays both inside and outside the music at the moment it is
+  played and enjoys it almost as much as the composer **does** at the moment he
+  composes. ✅
+- `译` 一个真正懂音乐的听众应该是在听音乐时，既置身于音乐其中，又可游离于音乐之外，他对音乐的欣赏程度几乎等同于作曲家本人在创作该曲子时的欣赏程度。
+
+### 9.3 as 句型二：not...so much as 结构
+
+这个句型的用法特点有：
+
+1. 从结构上看，not...so much as 可以有两种结构：
+    - not A so much as B
+    - not so much A as B
+2. 从意思上来看，该句型的基本含义是：“与其说 A 倒不如说 B”，或者“是 B，而不是 A”。
+3. A 和 B 是两个被比较的平行结构，如：同为介词短语、动词不定式、名词短语或其他平行结构。
+
+`1` Science moves forward, they say, not so much through the insights of great
+men of genius as because of more ordinary things like improved techniques and
+tools.
+
+- 这里的平行结构是两个作状语的介词短语，修饰谓语 moves forward
+  - through the insights of great men of genius
+  - because of more ordinary things like improved techniques and tools
+- `译` 他们说，科学的发展与其说源于天才伟人的真知灼见，不如说源于改进了的技术和工具等更为普通的东西。
+
+`2` It wasn't so much that I disliked her `____` that I just wasn't interested
+in the whole business.
+
+- A. rather
+- B. so
+- C. than
+- D. as
+- `答案` D。
+  - 这里的平行结构是两个 that 引导的从句，它们在这里作表语
+    - that I disliked her
+    - that I just wasn't interested in the whole business
+  - `译` 并不是因为我不喜欢她，而是因为我对整个事情根本就不感兴趣。
+
+`3` It was not so much the ***many blows***`A` he received ***for***`B` the lack
+of fighting spirit ***that led***`C` to ***his losing***`D` the game.
+
+- `答案` B，应该改为 as。
+- 这里的平行结构是两个名词短语，作为表语。
+  - the many blows he received
+  - the lack of fighting spirit
+- 句子的基本结构是 It was...that led to his losing the game. 是一个强调句型，被强调的部分表示原因。
+- `译` 导致他比赛失利的真正原因，不是他遭受到的打击，而是他缺乏斗志。
+
+`4` The conveniences that Americans desire reflect not so much a leisurely
+lifestyle as a busy lifestyle in which even minutes of time are too valuable to
+be wasted.
+
+- 平行结构是两个名词短语，作 reflect 的宾语。
+  - a leisurely lifestyle
+  - a busy lifestyle
+- `译` 美国人所渴望的种种便利设施，与其说是反映了一种休闲的生活方式，倒不如说是反映了一种忙碌的生活方式，正是因为忙碌，所以每分钟都很宝贵而不容浪费。
+
+`5` For the women of my generation who were urged to keep juggling through the
+'80s, downshifting in the mid-'90s is not so much a search for the mythical good
+life -- growing your own organic vegetables, and risking turning into one -- as
+a personal recognition of your limitations.
+
+- 平行结构是两个名词短语，作表语
+  - a search for the mythical good life -- growing your own organic vegetables,
+    and risking turning into one
+  - a personal recognition of your limitations
+- `译` 对于我们这一代在20世纪80年代被迫搏击生活的女性来说，在20世纪90年代中期过着节奏放慢的生活，与其说是对神话般美好生活的追求——自己种有机蔬菜、冒险进入神化般的生活——倒不如说是我们对自身局限性的体认。
+
+`6` The great use of a school education is not so much to teach you things as to
+teach you the art of learning.
+
+- 被用来比较的两个动词不定式短语
+  - to teach you things
+  - to teach you the art of learning
+- `译` 学校教育的伟大作用不在于教会你多少东西，而在于教会你学习的技巧。
+
+`7` The trumpet player was certainly loud, but I was not bothered by his
+loudness so much as by his lack of talent.
+
+- `译` 这个吹喇叭的人吹的声音够大，但是让我厌烦的不是他声音大，而是他根本就缺乏演奏天赋。
+
+`8` The great thing in this world is not so much where we stand as in what
+direction we are moving.
+
+- `译` 人生的意义不在于你目前身在何处，而在于你心向何方。
+
+`10` He does not respect learning and prefers "sport". The problem set for
+society is not the virtue of the type so much as its adequacy for its function.
+
+- `译` 他不重视学习，只喜欢“消遣”。社会要回答的问题并不是这类人物有无美德，而是他是否胜任其职务。
+
+### 9.4 as 句型三：(just) as..., so 结构
+
+这个句型表示类比，用法有两个注意点：
+
+1. 基本意思是“正如……，所以”；
+2. 第二句可用倒装结构。
+
+`1` Just as virtue is its own reward, so is vice its own punishment.
+
+- 正常语序是 so vice is its own punishment.
+- `译` 善有善报，恶有恶报。
+
+`2` Just as dark clouds cannot long hide the sun, so no lies can cover up the
+fact.
+
+- `译` 乌云遮不住太阳，谎言掩盖不了事实。
+
+`3` Just as food nourishes the body, so do books enrich the mind.
+
+- `译` 食物滋养身体，书本丰富心灵。
+
+`4` As you sow, so will you reap.
+
+- `译` 种瓜得瓜，种豆得豆。
+
+`5` As it is the mark of great minds to say many things in a few words, so it is
+the mark of little minds to use many words to say nothing.
+
+- `译` 大智者寥寥数语即能达意，寡智者口若悬河仍言之无物。
+
+`6` As land is improved by sowing it with various seeds, so is the mind by
+exercising it with different studies.
+
+- `译` 土壤因播种不同的种子而改良，智力用各科的学习来提高。
+
+### 9.5 连词 than 的基本用法
 
 >>>>> progress
-
-### 9.2 连词 than 的基本用法
 
 #### 一、可比性问题
 
@@ -3178,6 +3396,10 @@ better than, an actual performance.
   - C. twice protein as much
   - D. protein as twice much
   - 答案：A。“倍数 + as...as”。
+
+### 3.10.8 the more...,the more 结构
+
+>>>>> progress
 
 ### 9.4 the more..., the more 句型
 
