@@ -125,7 +125,8 @@
       - [一、可比性问题](#一可比性问题)
       - [二、比较形式问题](#二比较形式问题)
       - [三、为了保持句子平衡，从句还可以用全部或部分倒装](#三为了保持句子平衡从句还可以用全部或部分倒装)
-    - [9.3 表示倍数比较的三种句型](#93-表示倍数比较的三种句型)
+    - [9.6 no more...than 结构](#96-no-morethan-结构)
+    - [9.7 表示倍数比较的三种句型](#97-表示倍数比较的三种句型)
     - [3.10.8 the more...,the more 结构](#3108-the-morethe-more-结构)
     - [9.4 the more..., the more 句型](#94-the-more-the-more-句型)
     - [思维训练 9. 比较状语从句](#思维训练-9-比较状语从句)
@@ -3316,52 +3317,107 @@ exercising it with different studies.
 
 ### 9.5 连词 than 的基本用法
 
->>>>> progress
-
 #### 一、可比性问题
 
-可比性问题指两个**同类事物**才能比较。
+可比性问题是指两个**同类事物**才能比较。
 
-- `1`
-  - He is taller than I (am).
-  - ❌ The weather of the South is wetter than the North.
-  - ✅ The weather of the South is wetter than **that of** the North.
-- `2`: Young readers, more often than ***not***`A`, find the novels ***of***`B`
-  Dickens ***far more***`C` exciting than ***Thackeray***`D`.
-  - 答案：D。应改为：Thackeray's。
+`1` He is taller than I (am).
+
+`2` The weather of the South is wetter than the North. ❌
+
+- the weather of the South 和 the North 是两个不同的事物，无法进行比较。
+- The weather of the South is wetter than **that of** the North. ✅
+
+`2` Young readers, more often than ***not***`A`, find the novels ***of***`B`
+Dickens ***far more***`C` exciting than ***Thackeray***`D`.
+
+- `答案` D。应改为：Thackeray's。
+- `译` 年轻的读者多半觉得狄更斯的小说要比萨克雷的小说有趣得多。
 
 #### 二、比较形式问题
 
-指在有 than 的比较句子里，主句中必须有**比较级形式**出现。
+指在有 than 的比较句里，主句中必须有**比较级形式**出现。
 
-- `1`: There are few electronic applications ____ to raise fears regarding
-  future employment opportunities than robots.
-  - A. likely
-  - B. more likely
-  - C. most likely
-  - D. much likely
-  - 答案：B。
-- `2`: ***On the whole***`A`, ambitious students are ***much likely***`B` to
-  succeed in their studies than ***are those***`C` with ***little***`D`
-  ambition.
-  - 答案：D。应改为：more likely。
+`3` There are few electronic applications `____` to raise fears regarding future
+employment opportunities than robots.
+
+- A. likely
+- B. more likely
+- C. most likely
+- D. much likely
+- `答案` B。这里只有 more 与后面的 than 构成结构上的搭配。
+- `译` 很少有哪一项电子技术的应用能够像机器人这样，引起人们对未来就业机会的恐慌。
+
+`4` ***On the whole***`A`, ambitious students are ***much likely***`B` to
+succeed in their studies than ***are those***`C` with ***little***`D` ambition.
+
+- `答案` B。应改为：more likely。
+- `译` 总的来说，一个有远大抱负的学生比起那些胸无大志的学生，更可能取得学业上的成功。
+
+`5` ***In the long run***`A`, however, this ***hurry***`B` to shed full-time
+staff ***may be***`C` more harmful to industry ***as***`D` it is to the
+workforce.
+
+- `答案` D，应改为 than。
+- `译` 不过，从长远的角度来看，这样匆忙地辞退全职员工，对公司的打击比对员工本身的打击要大。
 
 #### 三、为了保持句子平衡，从句还可以用全部或部分倒装
 
-此时的结构是：than 助动词 + 主语。
+此时的结构是：than + 助动词 + 主语。
 
-- `1`: On the whole, ambitious students are more likely to succeed in their
-  studies than are those with little ambition.
-  - than are those with little ambition 是一个倒装结构，主语是 those with little
-    ambition。
-- `2`: Foreign-born Asians and Hispanics "have higher rates of intermarriage
-  than do U.S.-born whites and blacks".
-- `3`: In addition, far more Japanese workers expressed dissatisfaction with
-  their jobs than did their counterparts in the 10 other countries surveyed.
-- `4`: The surface conditions on the planet Mars are more like the Earth's than
-  are those of any other planet in the solar system.
+`6` On the whole, ambitious students are more likely to succeed in their studies
+than are those with little ambition.
 
-### 9.3 表示倍数比较的三种句型
+- than are those with little ambition 是一个倒装结构，主语是 those with little
+  ambition。
+
+`7` Foreign-born Asians and Hispanics "have higher rates of intermarriage than
+do U.S.-born whites and blacks".
+
+- `译` 在海外出生的亚洲人和西班牙人的“通婚率比出生在美国的白人和黑人的通婚率要高”。
+
+`8` In addition, far more Japanese workers expressed dissatisfaction with their
+jobs than did their counterparts in the 10 other countries surveyed.
+
+- `译` 另外，据调查，不满意自己工作的日本员工比另外受访的 10 个国家的员工人数要多得多。
+
+`9` The surface conditions on the planet Mars are more like the Earth's than
+are those of any other planet in the solar system.
+
+- `译` 与太阳系中的其他行星相比，火星表面的情况同地球表面的情况最为相似。
+
+`10` Ichthyosaurs had a higher chance of being preserved than did terrestrial
+creatures because, as marine animals, they tended to live in environments less
+subject to erosion.
+
+- `译` 与地球上的其他生物相比，鱼龙的尸骨更容易保存，因为作为海洋动物，它们的生活环境不易使生物的遗体腐烂。
+
+`11` With the growing prosperity brought on by the Second World War and the
+economic boom that followed it, young people married and established households
+earlier and began to raise larger families than did their predecessors during
+the Depression.
+
+- `译` 伴随着第二次世界大战以及其后的经济大发展带来的日益繁荣，年轻人结婚并组建家庭的时间比他们生活在大萧条时期的长辈更早，其家庭成员也更多。
+
+### 9.6 no more...than 结构
+
+1. 从结构上看，no more...than 有个变体形式 not...any more than；
+2. 从功能上看，这个句型表示的往往是两个事物之间的类比关系，是用 than 后面从句中的事物来作对比，以阐明 than 前面的主句所要表达的观点；
+3. 从意思上看，这个结构的基本意思是“同……一样不”。在翻译时，要把“类比”关系表达出来：
+    - 先译主句后译 than 引导的从句，即“……不能……，就如同 (than 从句)……不能……一样”；
+    - 先译 than 引导的从句后译主句，即“正如 (than 从句)……不能……，所以……同样不能……”；
+4. ⚠️ than 后面的句子为肯定形式，但要译成否定的意思。
+
+`1` But his primary task is not to think about the moral code, which governs his
+activity, any more than a businessman is expected to dedicate his energies to an
+exploration of rules of conduct in business.
+
+- 这里从句谓语 is expected 是肯定形式，但翻译时要译成否定的意思“不能指望”。
+- `译` 但是，他的首要任务并不是考虑支配自己行为的道德问题，就如同不能指望商人专注于探讨其行业规范一样。
+
+`2` >>>>> progress
+
+### 9.7 表示倍数比较的三种句型
 
 在英文中，除了用 than 和 as 来对两个事物进行比较外，还可以用 times 和 twice
 等词来说明两事物之间的倍数关系，可有以下三种句型：
