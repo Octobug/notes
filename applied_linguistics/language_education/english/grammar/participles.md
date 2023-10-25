@@ -25,6 +25,12 @@
       - [四、分词短语相当于一个非限定性定语从句](#四分词短语相当于一个非限定性定语从句)
     - [2.5 分词作状语的意义](#25-分词作状语的意义)
       - [一、“（名词 +）分词”作状语的意义](#一名词-分词作状语的意义)
+      - [1. **表示条件**](#1-表示条件)
+        - [2. **表示时间**](#2-表示时间)
+        - [3. **表示原因**](#3-表示原因)
+        - [4. **表示让步**](#4-表示让步)
+        - [5. **表示结果**](#5-表示结果)
+      - [二、“with + 名词短语 + 分词”作状语的意义](#二with--名词短语--分词作状语的意义)
 
 分词是一种重要的连词成句的手段。
 
@@ -489,26 +495,185 @@ into supersystems, causing heightened concerns about monopoly.
 
 ### 2.5 分词作状语的意义
 
->>>>> progress
+单独的分词作状语以及“名词 + 分词”这一独立分词结构作状语，二者所能表达的意义较多，可表示时间、原因、条件、让步、结果和伴随等等。
+
+而对于“with + 名词 + 分词”这种分词结构，它在句中表示的意义就没这么广泛，一般只表示两类：一是表示伴随状况、补充说明、具体举例等；二是表示原因。
 
 #### 一、“（名词 +）分词”作状语的意义
 
-1. **表示条件**
-2. **表示时间**
-3. **表示原因**
-4. **表示让步**
-5. **表示结果**
+#### 1. **表示条件**
 
-    `补充`：Millions of mothers have gone to work，transforming basic family
+`1` Therefore, jogging and dieting, carried to extremes, can be hazardous.
+
+- carried to extremes 表示条件状语，意思是“如果过度了”。
+  - `=` ..., if they are carried to extremes, ....
+- `译` 因此，慢跑和节食，若是太过度，就可能很危险。
+
+`2` In dealing with a challenge on such a scale, it is no exaggeration to say,
+"United we stand, divided we fall."
+
+- united 和 divided 均作为条件状语。
+- `译` 在应对如此规模的挑战时，可以毫不夸张地说：“联合，我们就生存；分裂，我们就灭亡。”
+
+`3` Given more time, I would be able to complete it.
+
+- `=` If I were given more time, I would be able to complete it.
+- `译` 如果再多给我一些时间，我就能把它做完。
+
+`4` Weather permitting, we'll go fishing.
+
+- `=` If weather permits, we'll go fishing.
+- `译` 如果天气允许，我们就去钓鱼。
+
+`5` If seen under a microscope, a fresh snowflake has a delicate six-pointed
+shape.
+
+- `译` 假如从显微镜下观察，新降的雪花有纤小的六瓣。
+
+`6` Added to steel, chromium increases the metal's hardness.
+
+- `译` 把铬加入钢中，就能增加钢的硬度。
+
+##### 2. **表示时间**
+
+`7` In May, Julie Nimmons, president of Schutt Sports in Illinois, successfully
+fought a lawsuit involving a football player who was paralyzed in a game while
+wearing a Schutt helmet.
+
+- 分词 wearing 作时间状语，修饰从句的谓语 was paralyzed。
+- `译` 今年5月，伊利诺伊州舒特体育用品商店的总经理茱丽·尼蒙斯赢了一场官司，这场官司涉及一名橄榄球员戴着舒特头盔在比赛中受伤瘫痪的事故。
+
+`8` Having watered the garden, he began to mow the lawn.
+
+- `=` After he had watered the garden, he began to mow the lawn.
+- `译` 他浇完花园后，开始修剪草坪。
+
+`9` Having noted down our names and addresses, the policeman dismissed us.
+
+- `译` 警察记下我们的名字和地址之后，让我们走了。
+
+`10` Reading the letter, she burst out crying.
+
+- `=` As she read the letter, she burst out crying.
+- `译` 她看着信，失声痛哭起来。
+
+`11` Locking the door, he went home.
+
+- `译` 他锁上门，回家去了。
+
+`12` Hearing the joke, we burst out laughing.
+
+- `译` 听了这个笑话，我们大笑起来。
+
+`13` Riging in the street during the rush hours, you must be careful.
+
+- `=` When you are riding in the street during the rush hours, you must be
+  careful.
+- `译` 你在高峰时段开车，务必要小心。
+
+##### 3. **表示原因**
+
+`14` That is why some people remain children their whole life long: never seeing
+anything but what is quite close to them, clinging to the present moment, taking
+appearance for reality, and preferring trifles to matters of the first
+importance.
+
+- seeing, clinging, taking, preferring 这四个分词都是解释第一句话的，所以作为原因状语。
+- `译` 那就是为什么有些人一生都像个孩子一样不成熟：从来都只是看见眼前的事情，都只抓住眼前的一切，都把表面当本质，都倾心于琐事而放弃最重要的事。
+
+`15` Being interested in the relationship of language and thought, Whorf
+developed the idea that the structure of language determines the structure of
+habitual thought in a society.
+
+- 在英语中，being done 结构往往表示原因，这里 being interested in 也是作原因状语。
+- `译` 由于沃夫对语言与思维的关系很感兴趣，这使他逐渐形成了这样的观点：在一个社会中，语言的结构决定习惯思维的结构。
+
+`16` Arguing from the view that humans are different from animals in every
+relevant respect, extremists of this kind think that animals lie outside the
+area of moral choice.
+
+- 这里 arguing 的逻辑主语是句子的主语 extremists，两者构成主动关系。
+- `译` 由于极端主义者认为人与动物在各相关方面都不同，因此，他们认为对待动物无需考虑道德问题。
+
+`17` It being so nice a day, let's go out for a walk.
+
+- `=` Since it is so nice a day, let's go out for a walk.
+
+`18` Not knowing what to do next, I want to ask for your advice.
+
+- `=` Because I don't know what to do next, I want to ask for your advice.
+- `译` 由于不知道下一步该怎么做，所以我想问问你的意见。
+
+`19` Clint, horrified at what he had done, could at first say nothing.
+
+- `译` Clint 被自己所做的事吓坏了，一开始都说不出话来。
+
+##### 4. **表示让步**
+
+`20` Having lived in Canada for three years, he still can't speak English well.
+
+- `=` Though he has lived in Canada for three years, ....
+- `译` 尽管他在加拿大生活了三年，但英文依然说不好。
+
+`21` Mocked at by everybody, he had my sympathy.
+
+- `=` Though he was mocked at by everybody, ...
+- `译` 尽管大家都嘲笑他，可我很同情他。
+
+`22` Though understanding no Japanese, Charles was able to communicate with
+them.
+
+- `译` 尽管 Charles 不懂日语，但他还是能够和他们交流。
+
+`23` Although usually living on or under rocks or on coral reefs, marine snails
+have been observed in a great variety of habitats.
+
+- `译` 尽管海生蜗牛通常生活在岩石上下或者珊瑚礁上，但在很多栖息地都能找到它们的踪影。
+
+`24` Although still running in a number of cities, the electric trolley has for
+the most part fallen into disuse.
+
+- `译` 尽管无轨电车在很多城市还在运营，但是在大多数地方都已经不用它了。
+
+##### 5. **表示结果**
+
+在这个用法中，“名词 + 分词”结构一般只放在句末，否则句子的意义会有不同。
+
+`25`
+
+- Finding the door locked, I went home.
+  - 作为时间状语
+  - `译` 发现门锁着，我就回家了。
+- I went home, finding the door locked.
+  - 作为结果状语
+  - `译` 我回到家，发现门锁着。
+
+`26` He fired, killing one of the bandits.
+
+- `译` 他开了枪，击毙了其中一名劫匪。
+
+`27` The film Gua Sha Treatment exposes profound cultural conflicts between the
+East and West, arousing concerns in Chinese audiences.
+
+- `译` 影片《刮痧》深刻地揭示了东西方文化的差异，引起了中国观众的强烈反响。
+
+`28` >>>>> progress
+
+`补充` Millions of mothers have gone to work，transforming basic family
+economics.
+
+- transform 的主语是主句 millions of mothers have gone to work 整句，其与
+  transform 是主动关系，所以这里是主动语态，即“母亲们去工作”改变了经济模式。
+  transforming basic family economics
+  是补充性状语分句，相当于伴随状语（或结果状语）。
+- 可将原句分别改成关系分句和并列分句：
+  - Millions of mothers have gone to work, **which** transforms basic family
     economics.
-    - transform 的主语是主句 millions of mothers have gone to work 整句，其与
-      transform 是主动关系，所以这里是主动语态，即“母亲们去工作”改变了经济模式。
-      transforming basic family economics
-      是补充性状语分句，相当于伴随状语（或结果状语）。
-    - 可将原句分别改成关系分句和并列分句：
-      - Millions of mothers have gone to work, **which** transforms basic family
-        economics.
-        - which 指代主句
-      - Millions of mothers have gone to work, and **that** transforms basic
-        family economics.
-        - that 指代主句
+    - which 指代主句
+  - Millions of mothers have gone to work, and **that** transforms basic
+    family economics.
+    - that 指代主句
+
+#### 二、“with + 名词短语 + 分词”作状语的意义
+
+>>>>> progress
