@@ -3415,43 +3415,114 @@ exploration of rules of conduct in business.
 - 这里从句谓语 is expected 是肯定形式，但翻译时要译成否定的意思“不能指望”。
 - `译` 但是，他的首要任务并不是考虑支配自己行为的道德问题，就如同不能指望商人专注于探讨其行业规范一样。
 
-`2` >>>>> progress
+`2` There is no reason they should limit how much vitamin you take, `____` they
+can limit how much water you drink.
+
+- A. much more than
+- B. no more than
+- C. no less than
+- D. any more than
+- `答案` D。这里考查 no more...than 的变体句型 not...any more than，这里否定词用了
+  no (reason)，相当于 not 的强调形式，所以这个句子的基本框架是 There is no...any more
+  than...。
+  - `译` 正如他们没有理由限制你每天喝多少水一样，他们也绝没有理由限制你维生素的摄入。
+
+`3` The heart is `____` intelligent than the stomach, for they are both
+controlled by the brain.
+
+- A. not so
+- B. not much
+- C. much more
+- D. no more
+- `答案` D。
+  - `译` 心脏和胃同样都不具有智慧，因为它们都受大脑控制。
+
+`4` Blaming the permissive 1960s is nothing new, but this is not yet another
+criticism against the decline in education. Mr. McWhorter's academic specialty
+is language history and change, and he sees the gradual disappearance of "whio",
+for example, to be natural and no more regrettable than the loss of the
+case-endings of Old English.
+
+- `译` 指责放纵的 20 世纪 60 年代并不是什么新鲜事，但是这还不仅仅是对教育质量下降的又一种批评。
+  McWhorter 先生的专业就是研究语言的历史与变迁，举例来说，他认为像“whom”一词的逐渐消失是很正常的，如同古英语中“格”的消失一样，我们不必为此感到遗憾。
+
+`5` As a jazz lover, I find it refreshing that many Chinese pop stars are
+beginning to be influenced by jazz, and are including jazzy rhythms and
+harmonies in their songs. However, incorporating jazz elements into pop music
+does not make it jazz, any more than putting chili pepper into a McDonald's
+hamburger turns it into Sichuan cuisine.
+
+- `译` 作为一个爵士乐迷, 我发现很多中国的流行歌星开始受到爵士乐的影响, 正在把爵士乐的节奏与和声运用到他们的歌曲当中, 这让我感到很新鲜。
+  然而, 把爵士乐的元素掺进流行音乐中，并不能将流行音乐变成爵士乐，这就好像把辣椒放进麦当劳的汉堡包，它也变不成川菜一样。
+
+`6` A fool can no more see his own folly than he can see his ears.
+
+- `译` 傻瓜看不到自己的愚蠢，就像他看不到自己的耳朵一样。
+
+`7` Unmerited praise is no more honor than deserved blame is.
+
+- `译` 不该得到的表扬和应该受到的批评一样不光彩。
 
 ### 9.7 表示倍数比较的三种句型
 
 在英文中，除了用 than 和 as 来对两个事物进行比较外，还可以用 times 和 twice
-等词来说明两事物之间的倍数关系，可有以下三种句型：
+等词来说明两事物之间的倍数关系，主要有以下三种句型：
 
 1. “倍数 + 比较级”结构：A is three times **bigger（或其他形容词的比较级）than** B
 2. “倍数 + as...as”结构：A is three times **as big（或其他形容词的原级）as** B
 3. “倍数 + 名词”结构：A is three times **the size（或其他形容词对应的名词形式）of** B
 
-- `1`: When the United States entered just such a glowing period after the end
-  of the Second World War, it had a market **eight times larger than** any
-  competitor, giving its industries unparalleled economies of scale.
-  - 美国在二战后进入这样辉煌的历史时期时，其市场规模比任何竞争对手的八倍都要大，
-    这使其工业经济规模无可匹敌。
-- `2`: There are about 105 males born for every 100 females, but this ratio
-  drops to near balance at the age of maturity, and among 70-year-olds there are
-  **twice as many** women **as** men.
-- `3`: There are only **half as many** fisheries **as** there were 15 years ago.
-- `4`: According to the Canadian Institute for Health Information, prescription
-  drug costs have risen since 1997 at **twice the rate of** overall health-care
-  spending.
-  - 加拿大医疗信息协会的资料表明，自 1997 年以来，处方药费用的增长速度是整个医疗费用增长速度的两倍。
-- `5`: Smoking is so harmful to personal health that it kills ____ people each
-  year than automobile accidents.
-  - A. seven more times
-  - B. seven times more
-  - C. over seven times
-  - D. seven times
-  - 答案：B。“倍数 + 比较级”。
-- `6`: Americans eat ____ as they actually need every day.
-  - A. twice as much protein
-  - B. twice protein as much twice
-  - C. twice protein as much
-  - D. protein as twice much
-  - 答案：A。“倍数 + as...as”。
+`1` When the United States entered just such a glowing period after the end of
+the Second World War, it had a market **eight times larger than** any
+competitor, giving its industries unparalleled economies of scale.
+
+- `译` 美国在二战后进入这样辉煌的历史时期时，其市场规模比任何竞争对手的八倍都要大，这使其工业经济规模无可匹敌。
+
+`2` There are about 105 males born for every 100 females, but this ratio drops
+to near balance at the age of maturity, and among 70-year-olds there are
+**twice as many** women **as** men.
+
+- `译` 每当有 100 名女婴出生，就会有 105 名男婴出生，但这个比例在他们成年时下降为基本平衡，在 70 岁的老人中女性是男性的两倍。
+
+`3` There are only **half as many** fisheries **as** there were 15 years ago.
+
+- `译` 现如今的渔场数量仅是 15 年前的一半。
+
+`4` According to the Canadian Institute for Health Information, prescription
+drug costs have risen since 1997 at **twice the rate of** overall health-care
+spending.
+
+- `译` 加拿大医疗信息协会的资料表明，自 1997 年以来，处方药费用的增长速度是整个医疗费用增长速度的两倍。
+
+`5` Smoking is so harmful to personal health that it kills `____` people each
+year than automobile accidents.
+
+- A. seven more times
+- B. seven times more
+- C. over seven times
+- D. seven times
+- `答案` B。“倍数 + 比较级”。
+
+`5` Americans eat `____` as they actually need every day.
+
+- A. twice as much protein
+- B. twice protein as much twice
+- C. twice protein as much
+- D. protein as twice much
+- `答案` A。“倍数 + as...as”。
+- `译` 美国人每天的蛋白质摄入量是他们实际所需要的两倍。
+
+`6` And since 1991, productivity has increased by about 2% a year, which is more
+than twice the 1978-1987 average.
+
+- “倍数 + 名词”结构，倍数前面加修饰语 more than。
+
+`7` As a result, California's growth rate dropped during the 1970s, to 18.5
+percent -- little more than two thirds the 1960s growth figure and considerably
+below that of other Western states.
+
+- “倍数 + 名词”。
+- `译` 结果，加利福尼亚州的人口增长率在 20 世纪 70 年代降到了 18.5%——只有 20 世纪 60 年代人口增长率的三分之二多一点，比西部其他州的增长率低得多。
 
 ### 3.10.8 the more...,the more 结构
 
