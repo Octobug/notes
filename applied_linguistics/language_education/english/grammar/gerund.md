@@ -31,6 +31,14 @@
       - [四、当动名词的逻辑主语是不定代词时，最好用普通格](#四当动名词的逻辑主语是不定代词时最好用普通格)
       - [五、当动名词的逻辑主语由较长的一组词构成时，最好用普通格](#五当动名词的逻辑主语由较长的一组词构成时最好用普通格)
     - [5.3 动名词复合结构的用法](#53-动名词复合结构的用法)
+      - [一、用作主语](#一用作主语)
+      - [二、用作动词的宾语](#二用作动词的宾语)
+      - [三、用作介词的宾语](#三用作介词的宾语)
+  - [6. 动名词的时态和语态（一）：被动式 (being done)](#6-动名词的时态和语态一被动式-being-done)
+    - [6.1 动名词的时态和语态概述](#61-动名词的时态和语态概述)
+    - [6.2 动名词的被动式](#62-动名词的被动式)
+    - [6.3 主动形式表示被动意思](#63-主动形式表示被动意思)
+  - [5.7 动名词的时态和语态（二）：完成式 (having done)](#57-动名词的时态和语态二完成式-having-done)
 
 动名词的构成即是在动词后面加 `-ing`，构成 doing 的形式。
 它在意义上相当于一个名词，但同时又保留动词的特征。
@@ -694,5 +702,152 @@ two to five commuters sharing a vehicle.
 - `译` 作为单人驾车之外的选择，拼车是指两到五个通勤者共乘一辆车。
 
 ### 5.3 动名词复合结构的用法
+
+这种结构常在句中作主语或宾语。
+
+#### 一、用作主语
+
+`1` Tom's coming home at last was a great consolation.
+
+`2` The young leading the young, is like the blind leading the blind; "They will
+both fall into the ditch." The only sure guide is he who has often gone the road
+which you want to go. Let me be that guide, who have gone all roads, and who can
+consequently point out to you the best.
+
+#### 二、用作动词的宾语
+
+`3` Do you mind my making a suggestion?
+
+`4` Would you mind Tom's telling us the whole story?
+
+`5` As an alternative to using a single-occupancy vehicle, carpooling involves
+two to five commuters sharing a vehicle. The more people in a carpool, the
+greater the savings. Depending on the arrangements made, one person can do all
+the driving and be reimbursed by the riders.
+
+`6` Can you imagine a European television station putting a Pakistani immigrant
+family on television and asking if they'd learned to use a knife and fork yet?
+
+#### 三、用作介词的宾语
+
+`7` Our discussion of earthquakes would be incomplete if we didn't raise the
+possibility of their being caused by external forces.
+
+`8` Clint insisted on my reading the letter.
+
+`9` What are the chances of a sleepwalker's committing a murder or doing
+something else extraordinary in his sleep?
+
+`10` When I was a child, I would take a flashlight to bed with me so that I
+could read comic books without my parents' knowing about it.
+
+## 6. 动名词的时态和语态（一）：被动式 (being done)
+
+### 6.1 动名词的时态和语态概述
+
+动名词作为一种动词的变化形式，具有动词的一版特征，即有时态和语态的变化。
+动作的完成程度分为四种，即有四种不同的体态 (aspect)：
+
+- 一般式
+- 行进式
+- 完成式
+- 完成进行式
+
+动名词没有这么多种，只有其中的两个种：**一般式**和**完成式**。
+此外，动名词同样还有语态方面的变化。以动词 write 为例总结如下：
+
+| 四种体态   | 主动           | 被动                |
+| ---------- | -------------- | ------------------- |
+| 一般式     | writing        | being written       |
+| 完成式     | having written | having been written |
+
+因此，动名词可能有四种不同的结构形态。
+
+### 6.2 动名词的被动式
+
+一般来说，当动名词所修饰的名词或代词在意义上是充当动名词动作的承受者，或者说是动名词的逻辑宾语时，动名词就要用被动形式。
+
+`1` He narrowly escaped being run over.
+
+- being run over 修饰主语 he，he 是动作的逻辑宾语。
+- `译` 他差一点就被车撞了。
+
+`2` There is only one thing in the world worse than being talked about, and that
+is not being talked about.
+
+- `译` 世界上比被人议论更糟糕的一件事情就是根本没有人去议论。
+
+`3`
+
+- I still remember being taken to the zoo for the first time.
+  - `译` 我还记得第一次被带到动物园去的情景。
+- I remember my parents' taking me to the zoo for the first time.
+  - `译` 我还记得父母第一次带我去动物园的情景。
+
+`4` I have not the least objection to the child being punished.
+
+- `译` 对这孩子进行惩罚我丝毫不反对。
+
+`5` The noise of the desks being opened and closed can be heard out in the
+street.
+
+- `译` 课桌打开和关上的声音在大街上都能听得到。
+
+`6` There is a necessity for this type of houses being built.
+
+- `译` 有必要修建这种类型的房屋。
+
+`7` Global warming is the hot topic around the world at this time but, there is
+also dissention about the evidence being presented to support the argument. The
+earth is known to go through cycles although; the past has never produced an age
+of so much industrialization causing the pollution currently being experienced.
+
+- `译` 目前，全球变暖成了一个世界性的热门话题。但是人们对于有关全球变暖的各项证据还有争议。
+  现已知道，地球的发展是经历周期变化的。但在以前的周期变化中，地球上还从未经历过现如今这样的时代，即高度发达的工业化造成了人们目前正在遭受的空气污染。
+
+### 6.3 主动形式表示被动意思
+
+在这些动词后面，动名词的主动形式表示被动的意思，所以不需要用被动形式：
+
+- demand
+- deserve
+- need
+- require
+- want
+
+在这些动词后面大多数也可以改为接动词不定式，但必须用动词不定式的被动形式。
+
+`1` The garden needs watering.
+
+- The garden needs being watered. ❌
+- The garden needs to be watered. ✅
+- `译` 花园需要浇水
+
+`2` He deserved praising.
+
+- He deserved being praised. ❌
+- He deserved to be praised. ✅
+- `译` 他应该受到表扬。
+
+`3` Your hair wants cutting. You'd better have it done tomorrow.
+
+- Your hair wants to be cut. You'd better have it done tomorrow. ✅
+- `译` 你的头发需要剪了，你最好明天就去理发。
+
+`4` The steak is raw. It needs cooking more before I can eat it.
+
+- The steak is raw. It needs to be cooked more before I can eat it. ✅
+- `译` 牛排还是生的，需要再煎一会儿才能吃。
+
+`9`
+
+- He deserves shooting first.
+  - deserve 后面主动形式表示被动，所以这里 shooting 是表示被动的意思。
+  - `=` He deserves to be shot first.
+  - `译` 他应该第一个被枪毙。
+- He deserves to shoot first.
+  - `译` 他应该第一个开始射击。
+
+## 5.7 动名词的时态和语态（二）：完成式 (having done)
 
 >>>>> progress
