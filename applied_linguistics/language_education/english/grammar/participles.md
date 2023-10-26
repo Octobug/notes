@@ -30,6 +30,8 @@
         - [3. **表示原因**](#3-表示原因)
         - [4. **表示让步**](#4-表示让步)
         - [5. **表示结果**](#5-表示结果)
+        - [6. **表示方式**](#6-表示方式)
+        - [7. **表示补充说明或伴随状况**](#7-表示补充说明或伴随状况)
       - [二、“with + 名词短语 + 分词”作状语的意义](#二with--名词短语--分词作状语的意义)
 
 分词是一种重要的连词成句的手段。
@@ -657,7 +659,30 @@ East and West, arousing concerns in Chinese audiences.
 
 - `译` 影片《刮痧》深刻地揭示了东西方文化的差异，引起了中国观众的强烈反响。
 
-`28` >>>>> progress
+`28` In recent years, railroads have been combining with each other and merging
+into supersystems, causing heightened concerns about monopoly.
+
+- causing heightened concerns about monopoly 表示结果，作为状语。
+- `译` 近些年来，铁路公司相互合并，而成为超大型集团，这引起人们对垄断的日益关注。
+
+`29` His wife died three years ago, leaving him with five children.
+
+- `译` 他的妻子三年前去世了，撇下他和五个孩子。
+
+`30` It rained for two weeks on end, completely ruining our holiday.
+
+- `译` 我们假期的最后两个星期都在下雨，把我们的假期全毁了。
+
+`31` The cold breath of autumn had blown away the leaves of the old ivy vine,
+leaving it almost bare.
+
+- `译` 秋天的冷风把常春藤的叶子全吹落了，只剩下光秃秃的藤蔓。
+
+`32` Furthermore, humans have the ability to modify the environment in which
+they live, thus subjecting all other life forms to their own peculiar ideas and
+fancies.
+
+- `译` 而且，人类还有能力改变自己的生存环境，从而让所有其他形式的生命服从于人类自己独特的想法和想象。
 
 `补充` Millions of mothers have gone to work，transforming basic family
 economics.
@@ -673,6 +698,92 @@ economics.
   - Millions of mothers have gone to work, and **that** transforms basic
     family economics.
     - that 指代主句
+
+##### 6. **表示方式**
+
+分词用作方式状语，往往修饰句子中的谓语动词，可以放在句首，也可以放在句末。
+
+`33` Smiling, he answered.
+
+- `译` 他笑着回答道。
+
+`34` I watched as he turned around and walked away. He had a very sad look on
+his face. He walked looking only at the ground. His shoulders slumped forward as
+if it were the end of the world.
+
+- looking only at the ground 修饰谓语动词 walked，表示走路的方式。
+- `译` 我看着他转过身离开了。他的神色看起来非常悲伤，走路时垂头丧气，只看着地面，肩膀无力地向前倾，仿佛世界末日来临了一般。
+
+`35` In Italian legends, mermaids come ashore, marry men, and bear them
+children. But in time these mermaid wives desert their husbands and take their
+children away to the depth of the ocean. The Chinese say the mermaids pass their
+time weaving. When they weep, their tears turn into pearls.
+
+- weaving 修饰谓语动词 pass，表示度过时光的方式是“织布”。
+- `译` 在意大利的传说中，美人鱼会上岸，与男子结婚，然后为他们生下儿女。
+  但是，这些美人鱼最终还是要抛弃她们的丈夫，然后带着自己的孩子回到深海里。
+  在中国关于美人鱼的传说里，她们是在纺纱织布中度过自己的岁月。
+  当她们感到孤独而落泪时，她们的泪珠就会变成珍珠。
+
+`36` Feeling threatened, companies responded by writing ever-longer warning
+labels, trying to anticipate every possible accident.
+
+- feeling 的逻辑主语是句子主语 companies，作原因状语。
+  trying 的逻辑主语也是 companies，作方式状语。
+- `译` 由于感到了威胁，公司的反应是努力预见所有可能的事故，写出无比冗长的警告标签。
+
+`37` She came running hurriedly into her husband's office one morning.
+
+- running hurriedly 作方式状语，修饰 came。
+- `译` 一天早上，她匆忙地跑进她丈夫的办公室。
+
+##### 7. **表示补充说明或伴随状况**
+
+这种用法与表示方式的用法比较相似，有时难以区分。
+
+`38` And that is where they were last seen, standing arm in arm on the deck,
+this devoted wife clinging courageously to her husband, this loving husband
+clinging protectively to his wife, as the ship sank. Together forever...
+
+- standing arm in arm, clinging courageously..., 和 clinging protectively...
+  都是补充说明 where they were last seen。
+- `译` 这就是人们最后见到他们时的场景：当船缓缓下沉的时候，他们手挽着手站在甲板上，这位忠贞的妻子勇敢地紧靠着她的丈夫，这位深情的丈夫也紧靠着他的妻子，保护着她。他们永远在一起……
+
+`39` The Chinese word for crisis is divided into two characters, one meaning
+danger and the other meaning opportunity.
+
+- one meaning danger 和 the other meaning opportunity 补充说明前面的 two
+  characters.
+- `译` 中文中的“危机”分为两个字，一个意味着危险，另一个意味着机会。
+
+`40` She had her hands full every minute, fetching water, building the fire and
+washing.
+
+- fetching water, building the fire 和 washing 补充说明 had her hands full.
+- `译` 她挑水、生炉子、洗洗涮涮，忙个不停。
+
+`41` I found that for many years he was a recluse, wandering the campus, talking
+to no one, drinking coffee, smoking cigarettes, paging through piles of
+newspapers and magazines.
+
+- wandering, talking to, drinking, smoking, paging through...这五个分词短语补充说明
+  关键词 recluse。
+- `译` 多年来，他一直形单影只，漫步在校园中，从不和旁人搭腔，一个人喝咖啡，一个人抽闷烟，日子在翻阅成堆的报章杂志中流逝。
+
+`42` Most recently, he's begun working for Pacific Ethnography, a private
+research firm. For one project he sat with migrant workers on pieces of
+cardboard, drinking Qingdao beer, smoking Double Happiness cigarettes and
+talking about cellphones.
+
+- drinking, smoking 和 talking 三个分词短语都是修饰谓语 sat，表示伴随的情况。
+- `译` 最近，他开始为一家名叫“太平洋人物志”的私人研究公司工作。在一个研究项目里，他和那些民工们一起坐在硬纸板上，喝着青岛啤酒，抽着双喜牌香烟，聊着手机。
+
+`46` I was talking on the radio, telling the guys to bring in resources,
+activating rapid mobilizations from around the city, calling in cops from every
+precinct.
+
+- telling, activating 和 calling 三个分词短语都是修饰谓语 was talking，表示伴随的状况，或者是补充说明我当时通过电台在具体干什么。
+- `译` 我当时正通过无线电台告诉大家带来各种东西，让整个城市动员起来，并召集各辖区的警察。
 
 #### 二、“with + 名词短语 + 分词”作状语的意义
 
