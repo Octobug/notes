@@ -16,6 +16,19 @@
     - [Other Indexing Structures](#other-indexing-structures)
       - [Storing values within the index](#storing-values-within-the-index)
       - [Multi-column indexes](#multi-column-indexes)
+      - [Full-text search and fuzzy indexes](#full-text-search-and-fuzzy-indexes)
+      - [Keeping everything in memory](#keeping-everything-in-memory)
+  - [Transaction Processing or Analytics](#transaction-processing-or-analytics)
+    - [Data Warehousing](#data-warehousing)
+      - [The divergence between OLTP databases and data warehouses](#the-divergence-between-oltp-databases-and-data-warehouses)
+    - [Stars and Snowflakes: Schemas for Analytics](#stars-and-snowflakes-schemas-for-analytics)
+  - [Column-Oriented Storage](#column-oriented-storage)
+    - [Column Compression](#column-compression)
+      - [Memory bandwidth and vectorized processing](#memory-bandwidth-and-vectorized-processing)
+    - [Sort Order in Column Storage](#sort-order-in-column-storage)
+      - [Several different sort orders](#several-different-sort-orders)
+    - [Writing to Column-Oriented Storage](#writing-to-column-oriented-storage)
+    - [Aggregation: Data Cubes and Materialized Views](#aggregation-data-cubes-and-materialized-views)
 
 There is a big difference between storage engines that are optimized for
 transactional workloads and those that are optimized for analytics.
@@ -85,6 +98,8 @@ SSTables have several big advantages over log segments with hash indexes:
    and compress it before writing it to disk.
 
 #### Constructing and maintaining SSTables
+
+> LSM-trees
 
 The storage engine works as follows:
 
@@ -303,11 +318,215 @@ alone.
 
 #### Multi-column indexes
 
->>>>> progress
-
-The most common type of multi-column index is called a *concatenated index*,
+The most common type of multi-column index is called a ***concatenated index***,
 which simply combines several fields into one key by appending one column to
 another.
 
 Multi-dimentional indexes are a more general way of querying several columns at
-once.
+once. Commonly, specialized indexes such as R-trees are used.
+
+#### Full-text search and fuzzy indexes
+
+- Lucene
+
+#### Keeping everything in memory
+
+Some in-memory-key-value stores are intended for caching use only, some others
+aim for durability, which can be achieved with special hardware, by writing a
+log of changes to disk, by writing periodic snapshots to disk, or by replicating
+the in-memory-state to other machines.
+
+When an in-memory database is restarted, it needs to reload its state, either
+from disk or over the network from a replica.
+
+Products:
+
+- relational:
+  - VoltDB
+  - MemSQL
+  - Oracle TimesTen
+- non-relational
+  - RAMCloud
+  - Redis
+  - Counchbase
+
+Counterintuitively, the performance advantage of in-memory databases is not due
+to the fact that they don't need to read from disk: the operating system caches
+recently used disk blocks in memory. They can be faster because they avoid the
+overheads of encoding in-memory data structures in a form that can be written to
+disk.
+
+Besides performance, it's easier to provide some data models that are difficult
+to implement with disk-based indexes with in-memory databases.
+
+To support datasets larger than the available memory, the so-called
+*anti-caching* approach works by evicting the least recently used data from
+memory to disk when there is not enough memory.
+
+## Transaction Processing or Analytics
+
+A transaction needn't necessarily have ACID (atomicity, consistency, isolation,
+and durability) properties. ***Transaction processing*** just means allowing
+clients to make low-latency reads and writes -- as opposed to
+***batch processing*** jobs, which only run periodically.
+
+***OLTP (OnLine Transaction Processing)*** typically exists in applications that
+are interactive.
+
+An analytic query in *data analytics* needs to scan over a huge numbers of
+records, only reading a few columns per record, and calculates aggregate
+statistics rather than returning the raw data to the user. This has been called
+***OLAP (OnLine Analytic Processing)*** to differentiate from transaction
+processing.
+
+**Comparing characteristics of transaction processing versus analytic systems**.
+
+| Property   | OLTP                              | OLAP                        |
+| ---------- | --------------------------------- | --------------------------- |
+| Read       | Small number, fetched by key      | Aggregate over many records |
+| Write      | Random-access, low latency writes | Bulk import or event stream |
+| Used by    | End user                          | Internal analyst            |
+| Represents | Latest state of data              | History of events           |
+| Data size  | Gigabytes to terabytes            | Terabytes to petabytes      |
+
+### Data Warehousing
+
+The data warehouse contains a read-only copy of the data in all the various OLTP
+systems in the company. Data is extracted ftom OLTP databases, transformed into
+an analysis-friendly schema, cleaned up, and then loaded into the data
+warehouse. This process of getting data into the warehouse is known as
+***Extract-Transform-Load (ETL)***.
+
+A big advantage of using a separate data warehouse, rather than querying OLTP
+systems directly for analytics, is that the data warehouse can be optimized for
+analytic access patterns. Indexing algorithms work well for OLTP, but are not
+very good at answering analytic queries.
+
+#### The divergence between OLTP databases and data warehouses
+
+The data model of a data warehouse is most commonly relational, because SQL is
+generally a good fit for analytic queries.
+
+A data warehouse and a relational OLTP database look similar on the surface, but
+in the internals they can look quite different, because they are optimized for
+very different query patterns.
+
+### Stars and Snowflakes: Schemas for Analytics
+
+Many data warehouses are used in a fairly formulaic style, known as a
+***star schema***, also known as *dimensional modeling*.
+
+At the center of a star schema is a so-called ***fact table***. Each row of the
+fact table represents an event that occurred at a particular time.
+
+Usually, facts are captured as individual events, because this allows maximum
+flexibitily of analysis later. However, this means that the fact table can
+become extremely large.
+
+Some of the columns in the fact table are attributes, other columns in the fact
+table are foreign key references to other tables, called *dimension tables*. As
+each row in the fact table represents an event, the dimensions represent the
+who, what, where, when, how, and why of the event.
+
+The name "star schema" comes from the fact that when the table relationships are
+visualized, the fact table is in the middle, surrounded by its dimension tables;
+the connections to these tables are like the rays of a star.
+
+A variation of this template is known as the *snowflake schema*, where
+dimensions are further broken down into subdimensions.
+
+Snowflake schemas are more normalized than star schemas, but star are often
+preferred because they are simpler for analysts to work with.
+
+Fact tables often have over 100 columns, sometimes several hundreds. Dimension
+tables can also be very wide.
+
+## Column-Oriented Storage
+
+In most OLTP databases, storage is laid out in a *row-oriented* fashion: all the
+values from one row of a table are stored next to each other. Document databases
+are similar: an entire documents is typically stored as one contiguous sequence
+of bytes.
+
+A row-oriented storage engine needs to load all of those rows with all of their
+columns from disk into memory, parse them, and filter out those that don't meet
+the required conditions.
+
+The idea behind *column-oriented storage* is simple: don't store all the values
+from one row together, but store all the values from each column together. If
+each column is stored in a separate file, a query only needs to read and parse
+those columns that are used in that query.
+
+The column-orientied storage layout relies on each column file containing the
+rows in the same order.
+
+### Column Compression
+
+Depending on the data in the column, different compression techniques can be
+used. One techique that is particularly effective in data warehouses is
+***bitmap encoding***.
+
+```bitmap
+Column values:
+product_sk:       69 69 69 69 74 31 31 31 31 29 30 30 31 31 31 68 69 69
+
+Bitmap for each possible value:
+product_sk = 29:  0  0  0  0  0  0  0  0  0  1
+product_sk = 30:  0  0  0  0  0  0  0  0  0  0  1  1
+product_sk = 31:  0  0  0  0  0  1  1  1  1  0  0  0  1  1  1
+product_sk = 68:  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1
+product_sk = 69:  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  1  1
+product_sk = 74:  0  0  0  0  1
+
+Run-length encoding:
+product_sk = 29:  9,1           (9 zeros, 1 one, rest zeros)
+product_sk = 30:  10,2
+product_sk = 31:  5,4,3,3       (5 zeros, 4 ones, 3 zeros, 3 ones, rest zeros)
+product_sk = 68:  15,1
+product_sk = 69:  0,4,12,2
+product_sk = 74:  4,1
+```
+
+A column with `n` distinct values can turn into `n` separate bitmaps: one
+bitmap for each distinct value, with one bit for each row.
+
+If `n` is very small, those bitmaps can be stored with one bit per row.
+
+But if `n` is bigger, there will be a lot of zeros in most of the bitmaps. In
+that case, the bitmaps can additionally be run-length encoded.
+
+#### Memory bandwidth and vectorized processing
+
+The bandwidth for getting data from disk into memory and the bandwidth from
+main memory into the CPU cache can both be the bottleneck.
+
+Column-oriented storage layouts reduce the volume of data that needs to be
+loaded from disk. Column compression and bitwise operations fit better in CPU
+executions.
+
+### Sort Order in Column Storage
+
+#### Several different sort orders
+
+Data can be stored redundantly in multiple machines sorted in different ways.
+
+### Writing to Column-Oriented Storage
+
+An update-in-place approach is not possible with compressed columns. If you
+wanted to insert a row in the middle of a sorted table, you would most likely
+have to rewrite all the column files.
+
+The solution used by LSM-trees is also good for column-oriented storage. Queries
+need to examine both the column data on disk and the recent writes in memory.
+
+### Aggregation: Data Cubes and Materialized Views
+
+Column-oriented storage can be significantly faster than row-oriented storage
+for ad hod analytical queries.
+
+A ***materialized view*** could be used to create a cache of aggregation
+queries. In a relational data model, it is often defined like a standard view.
+A materialized view is an actual copy of the query results, written to disk.
+
+Data updates make writes more expensive, which is why materialized view are not
+often used in OLTP databases.
