@@ -13,7 +13,9 @@
     - [Strictness](#strictness)
     - [`noImplicitAny`](#noimplicitany)
     - [`strictNullChecks`](#strictnullchecks)
-  - [Everyday Types](#everyday-types)
+  - [Running TypeScript](#running-typescript)
+    - [ts-node](#ts-node)
+    - [TS Playground](#ts-playground)
   - [References](#references)
 
 ## The Basics
@@ -119,11 +121,21 @@ and `undefined` is the cause of countless bugs in the world. The
 and spares us from worrying about whether we forgot to handle `null` and
 `undefined`.
 
-## Everyday Types
+## Running TypeScript
 
-> <https://www.typescriptlang.org/docs/handbook/2/everyday-types.html>
->
->>>>> progress
+```sh
+tsc app.ts
+node app.js
+```
+
+### ts-node
+
+`ts-node` is a TypeScript execution and REPL (Read-Eval–Print Loop) for
+node.js, with source map and native ESM support.
+
+### TS Playground
+
+> <https://www.typescriptlang.org/play>
 
 ## References
 

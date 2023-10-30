@@ -74,6 +74,7 @@ disciplines according to the
         4. [Go](programming_languages/go)
         5. [JavaScript](./programming_languages/javascript/)
         6. [Python](programming_languages/python)
+        7. [TypeScript](./programming_languages/typescript/)
     8. [Software Development](software_development)
         1. [Git](software_development/git)
         2. Open Source
