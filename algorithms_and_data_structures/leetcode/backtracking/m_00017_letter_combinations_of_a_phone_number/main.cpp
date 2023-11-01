@@ -65,7 +65,7 @@ int main()
 
     Solution s;
     vector<string> result = s.letterCombinations(inputs[group]);
-    output(result);
+    output<string>(result);
 
     return 0;
 }

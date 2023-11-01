@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include "array.h"
 
 using namespace std;
@@ -18,62 +17,6 @@ void output(int numbers[], int size)
     cout << ']' << endl;
 }
 
-void output(vector<int> &numbers)
-{
-    cout << '[';
-    for (int i = 0; i < numbers.size(); i++)
-    {
-        cout << numbers[i];
-        if (i != numbers.size() - 1)
-        {
-            cout << ',';
-        }
-    }
-    cout << ']' << endl;
-}
-
-void output(vector<double> &numbers)
-{
-    cout << '[';
-    for (int i = 0; i < numbers.size(); i++)
-    {
-        cout << numbers[i];
-        if (i != numbers.size() - 1)
-        {
-            cout << ',';
-        }
-    }
-    cout << ']' << endl;
-}
-
-void output(vector<char> &chars)
-{
-    cout << '[';
-    for (int i = 0; i < chars.size(); i++)
-    {
-        cout << chars[i];
-        if (i != chars.size() - 1)
-        {
-            cout << ',';
-        }
-    }
-    cout << ']' << endl;
-}
-
-void output(vector<string> &strs)
-{
-    cout << '[';
-    for (int i = 0; i < strs.size(); i++)
-    {
-        cout << strs[i];
-        if (i != strs.size() - 1)
-        {
-            cout << ',';
-        }
-    }
-    cout << ']' << endl;
-}
-
 void output2d(int *matrix, int m, int n)
 {
     for (int i = 0; i < m; i++)
@@ -82,29 +25,36 @@ void output2d(int *matrix, int m, int n)
     }
 }
 
-void output2d(vector<vector<int>> &matrix)
+template <typename T>
+void output(vector<T> &numbers)
 {
-    for (int i = 0; i < matrix.size(); i++)
+    cout << '[';
+    for (int i = 0; i < numbers.size(); i++)
     {
-        output(matrix[i]);
+        cout << numbers[i];
+        if (i != numbers.size() - 1)
+        {
+            cout << ',';
+        }
     }
+    cout << ']' << endl;
 }
+template void output(vector<bool> &numbers);
+template void output(vector<char> &numbers);
+template void output(vector<double> &numbers);
+template void output(vector<string> &numbers);
 
-void output2d(vector<vector<char>> &matrix)
+template <typename T>
+void output2d(vector<vector<T>> &matrix)
 {
     for (int i = 0; i < matrix.size(); i++)
     {
         output(matrix[i]);
     }
 }
-
-void output2d(vector<vector<string>> &matrix)
-{
-    for (int i = 0; i < matrix.size(); i++)
-    {
-        output(matrix[i]);
-    }
-}
+template void output2d(vector<vector<char>> &matrix);
+template void output2d(vector<vector<int>> &matrix);
+template void output2d(vector<vector<string>> &matrix);
 
 void swap(vector<int> &numbers, int index_l, int index_r)
 {
