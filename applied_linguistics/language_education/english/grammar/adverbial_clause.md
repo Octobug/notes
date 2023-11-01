@@ -127,8 +127,8 @@
       - [三、为了保持句子平衡，从句还可以用全部或部分倒装](#三为了保持句子平衡从句还可以用全部或部分倒装)
     - [9.6 no more...than 结构](#96-no-morethan-结构)
     - [9.7 表示倍数比较的三种句型](#97-表示倍数比较的三种句型)
-    - [3.10.8 the more...,the more 结构](#3108-the-morethe-more-结构)
-    - [9.4 the more..., the more 句型](#94-the-more-the-more-句型)
+    - [9.8 the more..., the more 句型](#98-the-more-the-more-句型)
+    - [9.9 A is to B what/as C is to D 结构](#99-a-is-to-b-whatas-c-is-to-d-结构)
     - [思维训练 9. 比较状语从句](#思维训练-9-比较状语从句)
       - [答案：思维训练 9. 比较状语从句](#答案思维训练-9-比较状语从句)
   - [10. 方式状语从句](#10-方式状语从句)
@@ -3524,53 +3524,87 @@ below that of other Western states.
 - “倍数 + 名词”。
 - `译` 结果，加利福尼亚州的人口增长率在 20 世纪 70 年代降到了 18.5%——只有 20 世纪 60 年代人口增长率的三分之二多一点，比西部其他州的增长率低得多。
 
-### 3.10.8 the more...,the more 结构
-
->>>>> progress
-
-### 9.4 the more..., the more 句型
+### 9.8 the more..., the more 句型
 
 “the more..., the more”结构的基本意思是“越……，越……”。
-这里的**比较级部分都必须在各自的分句中充当一定的成分**，
-相当于是**将分句中的某个成分变为比较级之后提到了各自的句首**。
+这里的**比较级部分都必须在各自的分句中充当一定的成分**，相当于是**将分句中的某个成分变为比较级之后提到了各自的句首**。
 
-- `1`：你用词越准确，人们就能越容易理解你的意思。
-  - ❌ The more exact you use your words, the easier people will understand you.
-    - the more exact 不能修饰 use，the easier 也不能修饰 understand，
-      即比较级部分无法充当后面分句的任何成分。
-  - The more exactly you use your words, the more easily people will understand
-    you.
-  - The more exact your words are, the easier it is for people to understand
-    you.
-  - The more exact words you use, the more easily people will understand you.
+`1` 你用词越准确，人们就能越容易理解你的意思。
 
-这个句型有三个用法要点：
+- ❌ The more exact you use your words, the easier people will understand you.
+  - the more exact 不能修饰 use，the easier 也不能修饰 understand，即比较级部分无法充当后面分句的任何成分。
+- The more exactly you use your words, the more easily people will understand
+  you.
+- The more exact your words are, the easier it is for people to understand you.
+- The more exact words you use, the more easily people will understand you.
+
+这个句型的用法有三个要点：
 
 1. 正确使用该句型的核心：**比较级部分都必须在各自引导的分句中充当一定的成分**。
-2. 从结构上来看，这个句型的前半部分是从句，后半部分是主句，即
-   “the + 比较级（从句），the + 比较级（主句）”，这就是为什么前半句常用**一般现在时态**，
-   而后半句常用**一般将来时态**，类似于其他状语从句的“主语用将来时，从句用一般现在时”的规则。
-3. 该结构翻译成汉语时，一般是按前后正常的语序来翻译，即先译从句，后译主句。
+2. 从结构上来看，这个句型的前半部分是从句，后半部分是主句，即“the + 比较级（从句），the + 比较级（主句）”。
+   这就是为什么前半句常用**一般现在时态**，而后半句常用**一般将来时态**，类似于其他状语从句的“主语用将来时，从句用一般现在时”的规则。
+3. 翻译成汉语时，一般是按前后正常的语序来翻译，即先译从句，后译主句。
 
 💡 在这个句型中，系动词常常被省略。
 
-- `2`: An archaeologist is the best husband a woman can have: the older she is,
-  the more interested he is in her.
-  - 考古学家可谓是一个女人的丈夫的最好人选：因为她越老，他对她就会越感兴趣。
-- `3`: Aging is a part of life, and it can be an exciting and rewarding part. It
-  has been said that aging is like climbing a mountain: the higher you get, the
-  more tired and breathless you become, but the view becomes much more
-  extensive.
-- `4`: The more we help others, the more we receive in return.
-- `5`: Friends are lights in winter: the older the friend, the brighter the
-  light.
-  - 这个句子的比较级部分是省略结构，完整的表达是：the older the friend is, the brighter
-    the light is. 即这里省去了系动词 is。
-- `6`: The more time you spend with native speakers, the more you will
-  understand how they think and the better you will be able to write in a way
-  that is similar to theirs.
-- `7`: Why study? The more we study, the more we know. The more we know, the
-  more we forget. The more we forget, the less we know. So, why study?
+`2` An archaeologist is the best husband a woman can have: the older she is, the
+more interested he is in her.
+
+- `译` 考古学家可谓是一个女人的丈夫的最好人选：因为她越老，他对她就会越感兴趣。
+
+`3` Aging is a part of life, and it can be an exciting and rewarding part. It
+has been said that aging is like climbing a mountain: the higher you get, the
+more tired and breathless you become, but the view becomes much more extensive.
+
+- `译` 衰老是生命的一个组成部分，而且可以说，它是生命中激动人心和有意义的一部分。
+  人们常说衰老就如同爬山，爬得越高，就会觉得越累和气喘吁吁，但是你看到的人生景致会更为丰富。
+
+`4` The more we help others, the more we receive in return.
+
+- `译` 帮助别人越多，我们获得的回报也越多。
+
+`5` Friends are lights in winter: the older the friend, the brighter the light.
+
+- 这个句子的比较级部分是省略结构，完整的表达是：the older the friend is, the brighter
+  the light is. 即这里省略了系动词 is。
+- `译` 朋友犹如冬日里的暖阳，越是老朋友，就越让你感觉温暖。
+
+`6` The more time you spend with native speakers, the more you will understand
+how they think and the better you will be able to write in a way that is
+similar to theirs.
+
+- 比较级 the more time 在分句 you spend with native speakers 中作 spend 的宾语，the
+  more 在分句 you will understand how they think 中作状语，修饰 understand，the
+  better 在分句 you will be able to write in a way that is similar to theirs
+  中作状语，修饰 able。
+- `译` 你越是多花时间和外国人“泡”在一起，你就越能够理解他们的思维方式，因而也就越能够以类似于他们的思维方式来进行英文写作。
+
+`7` Why study? The more we study, the more we know. The more we know, the more
+we forget. The more we forget, the less we know. So, why study?
+
+`8` In the case of public speaking "familarity breeds confidence", so the more
+familiar you become with what you want to say and the more you practice it, the
+more confidence you will acquire.
+
+- `译` “就在公共场合演说而言，“熟则信”，就是说你对自己的讲话内容越熟悉，你越是多练习，你就会越信心，不怯场。
+
+💡 这个句型有一个变体结构，不过不太常用。
+
+`10` An archaeologist is the best husband a woman can have: he is more
+interested in her, the older she is.
+
+- 主句变成 he is more interested in her，即比较级由句首回归到句中本来的表语位置，且没有冠词 the。
+
+`11` You never stop learning. All the time, everything becomes more interesting
+and beautiful the more you understand it.
+
+- `=` The more you understand it, the more interesting and beautiful everything
+  becomes.
+- `译` 学习永无止境，因为对于任何事物，你对它了解得越多，你越是能够发现它的美和趣味。
+
+### 9.9 A is to B what/as C is to D 结构
+
+>>>>> progress
 
 ### 思维训练 9. 比较状语从句
 
