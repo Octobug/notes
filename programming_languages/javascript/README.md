@@ -1554,6 +1554,17 @@ well.
 
 > <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator>
 
+```js
+var inorderTraversal = function* (arr) {
+  for (const elem of arr) {
+    if (typeof elem == 'number')
+      yield elem;
+    else
+      yield* inorderTraversal(elem);
+  }
+};
+```
+
 ## Javascript chrome dev tools
 
 A very useful feature in the Chrome dev tools is the Lighthouse (for checking
