@@ -132,6 +132,9 @@
     - [思维训练 9. 比较状语从句](#思维训练-9-比较状语从句)
       - [答案：思维训练 9. 比较状语从句](#答案思维训练-9-比较状语从句)
   - [10. 方式状语从句](#10-方式状语从句)
+    - [一、as 引导方式状语从句](#一as-引导方式状语从句)
+    - [二、as 引导方式状语从句可倒装](#二as-引导方式状语从句可倒装)
+    - [三、as 的特殊用法：用于否定结构](#三as-的特殊用法用于否定结构)
   - [11. 状语从句的省略](#11-状语从句的省略)
     - [11.1 时间状语从句的省略](#111-时间状语从句的省略)
     - [11.2 地点状语从句的省略](#112-地点状语从句的省略)
@@ -3604,21 +3607,70 @@ and beautiful the more you understand it.
 
 ### 9.9 A is to B what/as C is to D 结构
 
->>>>> progress
+这个句型用来表达事物之间的类比关系，即“A 与 B 之间的关系，就类似于 C 和 D 之间的关系”。
+
+`1` The people is to the people's army what water is to fish.
+
+- `译` 军民鱼水情。
+
+`2` Case study is to Harvard what the Leaning Tower is to Pisa.
+
+- `译` 案例教学之于哈佛大学，就如同比萨斜塔之于比萨一样著名。
+
+`3` Personality is to man what perfume is to a flower.
+
+- `译` 人的品格，犹如花的芳香。
+
+`4` These inner resources are to our souls what medicine is to our bodies.
+
+- `译` 这些秘密武器对我们心灵的作用，就如同药对于我们身体的作用一样。
+
+“A is to B what/as C is to D” 有一个变体结构，可以改写为：
+
+- “what/as C is to D, so is A to B” 或
+- “what/as C is to D, A is to B”
+
+`5` As water is to fish, so is the people to the people's army.
+
+- `=` As water is to fish, the people is to the people's army.
+
+`6` As blood vessel is to a man's body, railway is to transportation.
+
+- `=` As blood vessel is to a man's body, so is railway to transportation.
+- `译` 铁路网络对于整个交通系统来说，就如同人体的血管对于整个人体一样重要。
+
+`7` What Newton was to mechanics and Darwin to biology, Freud was to psychology.
+
+- `译` 弗洛伊德对于心理学的作用，就像牛顿之于力学、达尔文之于生物学一样。
 
 ### 思维训练 9. 比较状语从句
 
 **一、请选择最佳答案填空。**
 
-*1. I would have paid ____ -- for my car if the salesman had insisted, because
-I really wanted it.*
+*1. The number of registered participants in this year's marathon was half
+`____`.*
+
+- *A. of last year's*
+- *B. those of last year's*
+- *C. of those of last year*
+- *D. that of last year's*
+
+*6. Just as the soil is a part of the earth, `____` the atmosphere.*
+
+- *A. as it is*
+- *B. the same is*
+- *C. so is*
+- *D. and so is*
+
+*7. I would have paid `____` for my car if the salesman had insisted, because I
+really wanted it.*
 
 - *A. as much twice*
 - *B. much twice*
 - *C. twice as much*
 - *D. two times*
 
-*2. Any preexisting illness, even ____ the common cold, increases the chances of
+*8. Any preexisting illness, even ____ the common cold, increases the chances of
 contracting another disease.*
 
 - *A. as mild one as*
@@ -3626,45 +3678,167 @@ contracting another disease.*
 - *C. as a mild one as*
 - *D. as mild a one as*
 
-*3. In China the South generally receives much less snow than ____ the North.*
+*10. The greater population there is in a locality, `____` for water,
+transportation, and disposal of refuse.*
+
+- *A. the great need*
+- *B. the greater need there is*
+- *C. greater the need*
+- *D. the greater the need there is*
+
+*11. In China the South generally receives much less snow than `____` the
+North.*
 
 - *A. does*
 - *B. it does*
 - *C. does in*
 - *D. it does in*
 
-*4. The number of registered participants in this year's marathon was half ____.*
+*12. Robin `____` give up his scheme than the spider would give up his
+attempts.*
 
-- *A. of last year's*
-- *B. those of last year's*
-- *C. of those of last year*
-- *D. that of last year's*
+- *A. will no longer*
+- *B. can no more*
+- *C. would rather*
+- *D. would no more*
+
+**二、翻译下列句子，注意分析句型。**
+
+*14. Just as we nurture our bodies with the right vitamins and nutrients, so we
+need to nurture our minds with good thoughts.*
+
+*15. Science is built with facts just as a house is built with bricks, but a
+collection of facts cannot be called science any more than a pile of bricks can
+be called a house.*
+
+*16. A causeless event or thing, we cannot think of any more than we can of a
+stick with only one end.*
+
+*17. The greatness of a people is no more determined by their number than the
+greatness of a man is determined by his height.*
 
 #### 答案：思维训练 9. 比较状语从句
 
-1. C。“倍数 + as...as”结构。
-2. D。“as + 形容词 + a(n) + 可数名词单数 + as”
-3. A。这里比较对象是 South 和 North，does the North 是一个倒装结构，相当于 the North
-   receives.
-4. D。这里的句型结构是“倍数 + 名词”。比较对象是“今年的报名人数”和“去年的报名人数”。
-   这里的名词是 the number of registered participants，为了避免重复使用 that 来指代。
+*1. D。这里的句型结构是“倍数 + 名词”。比较对象是“今年的报名人数”和“去年的报名人数”。
+这里的名词是 the number of registered participants，为了避免重复使用 that 来指代。
+
+- `译` 今年报名参加马拉松比赛的人数是去年的一半。
+
+*6. C。just as..., so 句型。
+
+- `译` 正如土壤是地球的一个组成部分一样，大气层同样是地球的组成部分。
+
+*7. C。“倍数 + as...as”结构。
+
+*8. D。“as + 形容词 + a(n) + 可数名词单数 + as”
+
+*10. B。这句是“the more...the more”句型。
+
+*11. A。这里比较对象是 South 和 North，does the North 是一个倒装结构，相当于 the North
+receives.
+
+*12. D。这句是“no more...than”句型。
+
+*14. 正如我们需要维生素及营养物质来滋补我们的身体，我们需要好的思想来丰富我们的心灵。
+
+*15. 诚然，科学是建立在事实基础之上的，正如房屋是用砖块砌成的；但是简单的事实罗列不能称之为科学，就如同砖块的堆砌不能称为房屋一样。
+
+*16. 就像我们想象不出只有一端的棍子一样，我们也想象不出事情会无缘无故地发生。
+
+- 这句是 not...any more than... 句型，宾语 a causeless event or thing 被提到句首，本来应该位于
+  think of 后面。
+
+*17. 一个民族的伟大不能由其人口数量而定，正如一个人的伟大不能由其高矮决定一样。
 
 ## 10. 方式状语从句
 
 方式状语从句表示动作的方式，引导词有：as, as if, as though, like, the way 等。
 
-- `1`: When in Rome, do **as** the Romans do.
-  - When traveling, follow the customs of the local people.
-  - 入乡随俗。
-- `2`: Do it **the way** you were taught.
-  - 按照教给你的那样做。
-- `3`: He looks **as though/ as if** he is an actor.
-  - 他看上去像个演员。
-- `4`: Work **like** you don't need the money.
-  Love **like** you've never been hurt.
-  Dance **like** nobody's watching.
-  Sing **like** nobody's listening.
-  Live **like** it's heaven on earth.
+`1` When in Rome, do **as** the Romans do.
+
+- When traveling, follow the customs of the local people.
+- `译` 入乡随俗。
+
+`2` Do it **the way** you were taught.
+
+- `译` 按照教给你的那样做。
+
+`3` He looks **as though/ as if** he is an actor.
+
+- `译` 他看上去像个演员。
+
+`4` Work **like** you don't need the money. Love **like** you've never been
+hurt. Dance **like** nobody's watching. Sing **like** nobody's listening. Live
+**like** it's heaven on earth.
+
+在英语中，as 是最常用的方式状语从句的连词。
+
+### 一、as 引导方式状语从句
+
+as 引导的方式状语从句是用来修饰句子的谓语部分的。
+
+`6` Darwin had a phrase to describe those ignorant of evolution: they "look at
+an organic being as a savage looks at a ship, as at something wholly beyond his
+comprehension".
+
+- as a savage looks at a ship 作方式状语，修饰主句的谓语部分 look at an organic being。
+- 形容词短语 ignorant of evolution 是 those 的后置定语。
+- `译` 达尔文有句话描写那些不懂得进化论的人们：他们“看待一种生物就像野蛮人看着一艘船一样，把它视为他们完全不能理解的东西”。
+
+`7` As used in this context, the word "challenging" means "demanding". The
+author is fairly skilled at word diction.
+
+- as 引导一个省略形式的方式状语从句，完整结构是 As it is used in this context, ...
+- `译` challenging 一词用在这样的语境中，意思是 demanding。作者是很善于措辞的。
+
+`8` Church as we use the word refers to all religious institutions, be they
+Christian, Islamic, Buddhist, Jewish, and so on.
+
+- as we use the word 作为状语修饰主句的谓语部分 refers to all religious institutions.
+- `译` 我们所使用的“教会”一词指所有的宗教团体，不管他们是基督教、伊斯兰教、佛教还是犹太教等。
+
+### 二、as 引导方式状语从句可倒装
+
+as 引导方式状语从句可以采用倒装结构，此时的结构一般是“as + 助动词 + 主语”，as 往往是代替被省略的谓语部分。
+
+`9` Some Asian nations and regions reiterated their opposition to a war, as did
+many of their citizens who worry Bush has already given up on hopes for a
+peaceful resolution to the crisis.
+
+- as 引导的从句的主语是 many of their citizens。
+- `=` As many of their citizens who..., some Asian nations and regions
+  reiterated their opposition to a war.
+- `译` 一些亚洲国家和地区重申了他们反对战争的立场，他们的许多公民也持同样的立场，因为他们担心小布什已经放弃了和平解决这一危机的希望。
+
+`10` "We've found that if you're in sleep deficit, performance suffers," says
+Dr. David. "Short-term memory is weakened, as are abilities to make decision and
+to concentrate."
+
+- as 引导的从句的主语是 abilities，完整的结构是 as abilities to make decision and to
+  concentrate are weakened。
+- `译` 我们发现，如果睡眠不足，那么表现就会受到影响”，大卫博士说，“瞬间记忆力会下降，决策力和集中力同样也会减弱”。
+
+### 三、as 的特殊用法：用于否定结构
+
+as 用于否定结构中是比较特殊的用法，此时不译成“正如”，共有两种句式：
+
+- as 前面的句子是否定的，as 所在的句子本身是肯定的。
+- as 前面的句子是肯定的，as 所在的句子本身是否定的。
+
+`11` He is not arguing, as many do, that we can no longer think straight because
+we do not talk proper.
+
+- 主句用了否定的 is not arguing, 而 as 引导的从句用了肯定的 as many do，此时 as 要译成“不像”。
+- `译` 他并没有像许多人那样，认为因为我们说话不得体，就不会正确地思考了。
+
+`12` Far from advocating a withdrawal from American culture, as did some of his
+contemporaries, he recommended a cultural pluralism through which artists could
+enrich the culture of America.
+
+- 这句话里没有否定词，但是 far from 表示否定，从句用了肯定的 did。
+- `译` 他并没有像同时代的人那样提倡与美国文化完全分离，而是主张一种文化多元主义，艺术家们借此可以丰富美国文化。
+
+`13` >>>>> progress
 
 ## 11. 状语从句的省略
 
