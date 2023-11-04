@@ -140,10 +140,13 @@
     - [11.2 地点状语从句的省略](#112-地点状语从句的省略)
     - [11.3 条件状语从句的省略](#113-条件状语从句的省略)
     - [11.4 让步状语从句的省略](#114-让步状语从句的省略)
+  - [12. 从句独立性](#12-从句独立性)
   - [综合训练：状语从句](#综合训练状语从句)
     - [答案：综合训练：状语从句](#答案综合训练状语从句)
 
 ## 1.状语从句概述
+
+> 掌握引导九类状语从句的连词的用法特点和意义是学习状语从句的关键。
 
 ### 1.1 什么是状语（adverbial）？
 
@@ -2663,7 +2666,10 @@ interesting.
 
 - despite
 - for all
+- in case of: “万一……”
+  - in the case the of: “就……而言”，不是表示让步
 - in spite of
+- in the event of: 表示“万一……”
 - notwithstanding
 
 ⚠️ 像 although 和 though 这些是连词，后面只能接从句（有时是省略形式的从句），
@@ -3838,7 +3844,48 @@ enrich the culture of America.
 - 这句话里没有否定词，但是 far from 表示否定，从句用了肯定的 did。
 - `译` 他并没有像同时代的人那样提倡与美国文化完全分离，而是主张一种文化多元主义，艺术家们借此可以丰富美国文化。
 
-`13` >>>>> progress
+`13` But none of them rushed to the depot, waving to him and calling out his
+name as they would have normally greeted any other such recognized surprise
+arrivals, because they had all heard that he no longer cared to mix with home
+people.
+
+- 主句
+  - but none of them rushed to the depot: 主谓结构
+  - waving to him and calling out his name: 分词短语作状语，修饰 rushed
+- 从句
+  - as they would have normally greeted any other such recognized surprise
+    arrivals: as 引导的方式状语从句
+  - because they had all heard that he no longer cared to mix with home people:
+    because 引导的原因状语从句
+- `译` 但他们谁也没有冲向车站向他招手、喊他的名字，就像平常看到别的意外到来的熟人那样迎接他，因为他们早已听说他已不屑于和家乡人打交道了。
+
+`14` A sob rolled up in me. I flung up my hands and cried as I never had in my
+life.
+
+- 主句用了肯定的 cried, as 引导的从句用了否定的 never had。此时要译为”但，然而“。
+- `译` 此时我非常想哭，于是我就用双手捂住脸，大声哭起来，而我以前从未这么哭过。
+
+`15` She described the scene as no other people described it.
+
+- `译` 她这样描写这个场景，而没有其他人会这样描写。
+
+`16` He could love the child as he did not love Charles.
+
+- `译` 他可以爱这个孩子，然而他却不爱查尔斯。
+
+`17` John had taken to that young woman as he did to few people.
+
+- `译` John 深爱那个年轻女子，而他很少这么爱一个人。
+
+`18` Pure iron cannot be hardened by heating and cooling, as `____`, because
+iron lacks the necessary carbon.
+
+- A. steel it can
+- B. can steel
+- C. with steel can
+- D. so can steel
+- `答案` B。主句用了否定的 cannot，as 引导的从句要用肯定形式。这句是倒装结构。
+- `译` 纯铁无法通过交替受热和遇冷来被硬化，这点不像钢，因为铁缺乏必要的碳元素。
 
 ## 11. 状语从句的省略
 
@@ -3906,6 +3953,25 @@ of the government's economic policies.
   severe critic of the government's economic policies.
 - `译` 尽管 Smith 博士本人不是经济学家，但他一直以来对政府的经济政策提出尖锐的批评。
 
+## 12. 从句独立性
+
+名词从句和定语从句必须依附一个主句，它们是不能独立存在的。
+
+`1` The truth is that marriage, at the start, is an empty box.
+
+- 这里的表语从句 that marriage, at the start, is an empty box 不能脱离主句 the truth
+  is 而存在。
+
+`2` The beauty of a woman is not in the clothes she wears.
+
+- 定语从句 she wears 不能脱离主句 the beauty of a woman is not in the clothes。
+
+对于状语从句，主句与从句原本就是两个独立的句子，因为两个句子有特定的逻辑语义，所以添加相应的连词把它们连在一起。
+
+`3` I've brought my umbrella though it's not raining.
+
+- 从句可以是独立的句子。
+
 ## 综合训练：状语从句
 
 **一、请选择最佳答案填空。**
@@ -3925,7 +3991,29 @@ the skeleton to withstand considerable impact.*
 - *C. Although*
 - *D. Despite*
 
-*3. ____ native to Europe, the daisy has now spread throughout most of North
+*3. `____` dragon exists in the world. That's your illusion.*
+
+- *A. No such a thing as*
+- *B. No such thing as a*
+- *C. No such a thing as a*
+- *D. No such thing as*
+
+*4. `____`, many people still vote against the use of the death penalty.*
+
+- *A. However some crimes are inexcusable*
+- *B. However are some crimes inexcusable*
+- *C. However inexcusable some crimes are*
+- *D. Some crimes are however inexcusable*
+
+*5. He always did well at school `____` having to do part-time jobs every now
+and then.*
+
+- *A. in case of*
+- *B. in spite of*
+- *C. regardless of*
+- *D. on account of*
+
+*6. ____ native to Europe, the daisy has now spread throughout most of North
 America.*
 
 - *A. Although*
@@ -3933,68 +4021,319 @@ America.*
 - *C. If it were*
 - *D. That it is*
 
-*4. Not until I shouted at the top of my voice ____ his head.*
+*7. Not until I shouted at the top of my voice ____ his head.*
 
 - *A. that he turned*
 - *B. did he turn*
 - *C. he didn't turn*
 - *D. he had turned*
 
-*5. He wrote down the address ____ he should forget it.*
+*8. The trumpet player was certainly loud. But I wasn't bothered by his loudness
+`____` by his lack of talent.*
+
+- *A. than*
+- *B. more than*
+- *C. as*
+- *D. so much as*
+
+*9. He wrote down the address ____ he should forget it.*
 
 - *A. in case not*
 - *B. lest*
 - *C. in order that*
 - *D. of fear that*
 
-*6. This approach is superior to that one ____ it provides explicit accounts.*
+*10. `____` some flowers contain more nectar than others, how does a honeybee
+worker, faced with a patch of flowers containing variable amounts of nectar,
+decide when to stop collecting.*
+
+- *A. Given that*
+- *B. Giving that*
+- *C. To give*
+- *D. Being given*
+
+*11. This approach is superior to that one ____ it provides explicit accounts.*
 
 - *A. in which*
 - *B. in this way*
 - *C. in that*
 - *D. in order that*
 
-*7. ____, he remains stupid.*
+*12. Computers that once took up entire rooms are now `____` to put on desktops
+and into wristwatches.*
+
+- *A. smaller than*
+- *B. so small*
+- *C. as small as*
+- *D. so small as*
+
+*13. ____, he remains stupid.*
 
 - *A. Though his learning*
 - *B. Through all his learning*
 - *C. For all his learning*
 - *D. However his learning*
 
-*8. It was not until the eleventh century that ____.*
+*14. It was not until the eleventh century that ____.*
 
 - *A. the detective found out the truth*
 - *B. did the detective find out the truth*
 - *C. had the detective find out the truth*
 - *D. had the detective found out the truth*
 
-*9. The lower ____ in a room, the more slowly our eyes focus.*
+*15. The lower ____ in a room, the more slowly our eyes focus.*
 
 - *A. the level of lighting*
 - *B. light level*
 - *C. leveling of light*
 - *D. lighting is level*
 
+*17. According to psychologists, a person's attention is attracted `____` by the
+intensity of different signals as by their context, significance, and
+information content.*
+
+- *A. not much so*
+- *B. not so much*
+- *C. so much not*
+- *D. so not much*
+
+*18. `____` their differences, the couple were developing an obvious and genuine
+affection for each other.*
+
+- *A. But for*
+- *B. For all*
+- *C. Above all*
+- *D. Except for*
+
+*22. `____` she started to look for premises, she looked at the business
+property columns in the local paper.*
+
+- *A. Not sooner than*
+- *B. While*
+- *C. The moment*
+- *D. Hardly*
+
+*23. Angiosperms inhabit relatively diverse environments and may be found `____`
+higher plants can survive.*
+
+- *A. there*
+- *B. where*
+- *C. somewhere*
+- *D. then*
+
+*25. A man escaped from the prison last night. It was a long time `____` the
+guard discovered what had happened.*
+
+- *A. before*
+- *B. until*
+- *C. since*
+- *D. after*
+
+*27. `____` all his varied modes of writing and the multiplicity of characters
+in his novel, the novelist and his work are of a piece.*
+
+- *A. At*
+- *B. For*
+- *C. In*
+- *D. On*
+
+*30. The songs of Bob Dylan are very popular among people, who regard him `____`
+other musicians.*
+
+- *A. as more superior to*
+- *B. as superior than*
+- *C. as superior to*
+- *D. as more superior than*
+
+*32. The boy walked quietly into the room `____` awak his room mates.*
+
+- *A. in order to not*
+- *B. so as not to*
+- *C. for not to*
+- *D. so as to*
+
+*33. Let us hope that `____` a nuclear war, the human race might still survive.*
+
+- *A. in relation to*
+- *B. in support of*
+- *C. in the case of*
+- *D. in the event of*
+
+*38. Some companies have introduced flexible working time with less emphasis on
+pressure `____`.*
+
+- *A. than more on efficiency*
+- *B. and more efficiency*
+- *C. and more on efficiency*
+- *D. than efficiency*
+
+*40. The lower `____` in a room, the more slowly our eyes focus.
+
+- *A. the level of lighting*
+- *B. light level*
+- *C. leveling of light*
+- *D. lighting is level*
+
+*41. Just as the value of a telephone network increases with each new phone
+added to the system, `____` the value of a computer system increase with each
+program that turns out.
+
+- *A. so*
+- *B. so does*
+- *C. and it does*
+- *D. so does it*
+
+*43. The lenses in an optical microscope bend the light passing through a
+specimen to form an image of that specimen that is much larger `____` actually
+viewed.
+
+- *A. than it*
+- *B. than the one*
+- *C. one than*
+- *D. than one which*
+
+*45. `____` recurring fear is out of proportion to any real danger, it is called
+a phobia.*
+
+- *A. When*
+- *B. Whereas*
+- *C. Which*
+- *D. Whether*
+
+*53. `____` that they may eventually reduce the amount of labor needed on
+construction sites by 90 percent.*
+
+- *A. So clever are the construction robots*
+- *B. So clever the construction robots are*
+- *C. Such construction robots are clever*
+- *D. Such clever construction robots are*
+
+*57. Nails protect the ends of human fingers and toes `____` protect the toes of
+most other vertebrates.*
+
+- *A. claws*
+- *B. as claws*
+- *C. as claws to*
+- *D. so do claws*
+
 **二、辨别改错。**
 
-*10. The speaker claimed that ***no other***`A` modern nation devotes
+*67. The speaker claimed that ***no other***`A` modern nation devotes
 ***so small***`B` a portion of its wealth to public assistance and health
 ***than***`C` the United States ***does***`D`.*
 
-*11. Saturn is the ***second largest***`A` planet ***after***`B` Jupiter,
+*68. The moon has a mass that is nearly one hundred times ***less***`A` than
+***the earth***`B`; in consequence, the ***force***`C` of gravity at the moon's
+surface is only one-sixth ***of***`D` that at the earth's surface.*
+
+*69. Some ***insects***`A` hear ultrasonic ***sounds***`B` ***more than***`C`
+two octaves ***than higher***`D` human can.*
+
+*70. Saturn is the ***second largest***`A` planet ***after***`B` Jupiter,
 ***with***`C` a diameter nearly ten times ***those of***`D` Earth.*
+
+**三、把下列句子译成汉语。**
+
+*77. While the government pushed for a total breakup of the software maker,
+Microsoft fought fiercely against any positions that would affect its ability to
+compete in the marketplace.*
+
+*78. While often praised by foreigners for its emphasis on the basics, Japanese
+education tends to stress test taking and mechanical learning over creativity
+and self-expression.*
 
 ### 答案：综合训练：状语从句
 
-1. A。这里 that（though 也可以，although 不行）替换了 as，引导一个倒装句，表示让步。
-2. C。这里是形容词短语，相当于一个从句，所以只能用连词，而不能用介词。
-3. A。这里是形容词短语，相当于一个从句，所以只能用连词，而不能用介词。
-4. B。这里是 not until 的倒装结构。
-5. B。lest，“以免”。
-6. C。in that 表示原因。
-7. C。his learning 是一个名词短语，应该用介词 for all。
-8. A。it was not until...that...句型，表示时间。
-9. A。lighting，照明的意思。前半部分是省略 is 等结构：The lower the level of lighting
-    is in a room。
-10. C。改为 as。考查 not so...as 原级比较句型。
-11. D。改为 that of。指代单数名词 diameter 应该用 that。
+*1. A。这里 that（though 也可以，although 不行）替换了 as，引导一个倒装句，表示让步。
+
+*2. C。这里是形容词短语，相当于一个从句，所以只能用连词，而不能用介词。
+
+*3. B。no such 后面不加冠词。
+
+*4. C。however 引导让步状语从句时后面要接形容词或副词。
+
+*5. B。表示让步关系。
+
+*6. A。这里是形容词短语，相当于一个从句，所以只能用连词，而不能用介词。
+
+*7. B。这里是 not until 的倒装结构。
+
+*8. D。not...so much as...固定句型。
+
+*9. B。lest，“以免”。
+
+*10. A。given that 表示假设。
+
+*11. C。in that 表示原因。
+
+*12. D。不定式结构 so...as to 表示结果。
+
+*13. C。his learning 是一个名词短语，应该用介词 for all。
+
+*14. A。it was not until...that...句型，表示时间。
+
+*15. A。lighting，照明的意思。前半部分是省略 is 等结构：The lower the level of
+lighting is in a room。
+
+*17. B。not so much...as...比较句型。
+
+- `译` 根据心理学家的说法，一个人的注意力并不是被不同信号的强度所吸引，而是被它们的背景、重要性和信息内容所吸引。
+
+*18. B。for all 表示让步关系。
+
+*22. C。
+
+*23. B。somewhere 不是连词。
+
+*25. A。
+
+*27. B。for all 表示让步关系。
+
+- `译` 尽管他的写作方式多种多样，小说中的人物也多种多样，但这位小说家和他的作品是一体的。
+
+*30. C。这句是特殊的比较句型：superior to。这里 superior 没有比较级形式。
+
+*32. B。表示目的。in order to 的否定形式为 in order not to。
+
+*33. D。介词 in the event of 表示让步关系，意思是“万一……”。
+
+*38. C。这句是一个省略结构，and more (emphasis) on efficiency，它与前面 less emphasis
+on pressure 构成并列结构。如果采用比较级，应该说成 less emphasis on pressure than on
+efficiency。
+
+*40. A。前半部分是省略 is 的结构：The lower the level of lighting is in a room。
+
+*41. B。主语 the value 是单数，而 increase 不是第三人称单数形式，所以要用倒装结构。
+
+*43. B。填入 the one 相当于 than the one which is actually viewed.
+A. 错误是因为 it 是指 an image of a specimen 本身，*it(self) is much larger than
+it(itself)，不符合比较的语义。
+
+*45. A。分句之间的逻辑语义关系是表示时间。
+
+- `译` 当反复出现的恐惧与任何真正的危险不成比例时，就称为恐惧症。
+
+*53. A。so...that 结果从句的倒装结构。
+
+*57. B。as claws protect the toes of most vertebrates 作状语，表示方式，修饰主句谓语部分
+protect the ends of human fingers and toes。
+
+- `译` 手指甲和脚趾甲能够保护我们的手指和脚趾，同样脊椎动物的爪子可以保护它们的脚趾。
+
+**二、辨别改错。**
+
+*67. C。改为 as。考查 not so...as 原级比较句型。
+
+*68. B。改为 the earth's。比较对象必须是同类事物。
+
+*69. D。改为 Higer than。这里的 more than 不是表示比较级，而是表示“多于”。
+
+*70. D。改为 that of。指代单数名词 diameter 应该用 that。
+
+**三、把下列句子译成汉语。**
+
+*77. 尽管美国政府积极要求彻底拆分微软这个软件巨人，但是微软公司极力反对任何影响其市场竞争力的动议。
+
+*78. 虽然日本的教育常常因为重视基础知识而受到外国人士的赞扬，但是其教育往往强调应试和机械性的学习，而不是强调创造性及自我表现。
+
+- While often praised `=` While it is often praised
