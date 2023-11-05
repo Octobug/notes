@@ -33,6 +33,8 @@
         - [6. **表示方式**](#6-表示方式)
         - [7. **表示补充说明或伴随状况**](#7-表示补充说明或伴随状况)
       - [二、“with + 名词短语 + 分词”作状语的意义](#二with--名词短语--分词作状语的意义)
+        - [1. 表示补充说明等](#1-表示补充说明等)
+  - [3. 分词的作用（二）：定语](#3-分词的作用二定语)
 
 分词是一种重要的连词成句的手段。
 
@@ -786,5 +788,38 @@ precinct.
 - `译` 我当时正通过无线电台告诉大家带来各种东西，让整个城市动员起来，并召集各辖区的警察。
 
 #### 二、“with + 名词短语 + 分词”作状语的意义
+
+“with + 名词短语 + 分词”这一结构作状语，所表达的意义主要有两类：
+
+1. 表示伴随情况、补充说明、具体举例等；
+2. 表示原因。
+
+##### 1. 表示补充说明等
+
+`48` London was found to be the least punctual city, with 41 percent of
+respondents admitting that they were hardly ever on time, compared with the
+national average of 28 percent.
+
+- 用独立分词结构 with 41 percent of respondents admitting... 补充说明主句。
+- `译` 调查显示，伦敦是最不守时的城市，有 41% 的受访者承认他们历来很少准时，而在全英国，这样的人占 28%。
+
+`49` When asked, "Do you consider yourself an optimisitc or pessimistic person?"
+53 percent of the students replied "optimistic", with 21 percent choosing
+"pessimistic", and 26 percent "unsure".
+
+- 独立分词结构 with 21 percent choosing "pessimisitc", and 26 percent "unsure"
+  补充说明剩下的人的选择。
+- `译` 当被问到“你觉得自己是乐观的人还是悲观的人”时，53%的学生回答了“乐观”，而有21%的人选择了“悲观”，剩下26%的人则回答“不确定”。
+
+`50` Mobile phones have broken many social taboos, with people answering calls
+in the middle of a conversation or chatting away on the toilet.
+
+- 独立分词结构 with people answering... 补充说明主句 mobile phones have broken many
+  social taboos 的结论。
+- `译` 手机打破了很多社会禁忌，人们在交谈中接听手机，或者在如厕时大聊特聊。
+
+`51` >>>>> progress
+
+## 3. 分词的作用（二）：定语
 
 >>>>> progress
