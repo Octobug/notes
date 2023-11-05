@@ -38,7 +38,15 @@
     - [6.1 动名词的时态和语态概述](#61-动名词的时态和语态概述)
     - [6.2 动名词的被动式](#62-动名词的被动式)
     - [6.3 主动形式表示被动意思](#63-主动形式表示被动意思)
-  - [5.7 动名词的时态和语态（二）：完成式 (having done)](#57-动名词的时态和语态二完成式-having-done)
+  - [7. 动名词的时态和语态（二）：完成式 (having done)](#7-动名词的时态和语态二完成式-having-done)
+    - [7.1 动名词的完成主动式](#71-动名词的完成主动式)
+    - [7.2 动名词的完成被动式](#72-动名词的完成被动式)
+  - [思维训练：6-7](#思维训练6-7)
+    - [答案：思维训练：6-7](#答案思维训练6-7)
+  - [8. there be 的不定式与动名词形式](#8-there-be-的不定式与动名词形式)
+    - [8.1 there be 的动名词形式](#81-there-be-的动名词形式)
+    - [8.2 there be 的不定式形式](#82-there-be-的不定式形式)
+  - [综合训练：动名词](#综合训练动名词)
 
 动名词的构成即是在动词后面加 `-ing`，构成 doing 的形式。
 它在意义上相当于一个名词，但同时又保留动词的特征。
@@ -848,6 +856,179 @@ of so much industrialization causing the pollution currently being experienced.
 - He deserves to shoot first.
   - `译` 他应该第一个开始射击。
 
-## 5.7 动名词的时态和语态（二）：完成式 (having done)
+## 7. 动名词的时态和语态（二）：完成式 (having done)
+
+### 7.1 动名词的完成主动式
+
+一般来说，动名词的完成式表明动名词的动作发生在**谓语的动作之前**，尤其是当动名词的动作是在谓语之前的一段较长时间内持续的情况。
+
+`1` Research by Petplan, a British insurance company, found that 35 percent of
+its customers admitted to having taken time off work to look after pets or
+settle new animals.
+
+- 动名词完成式 having taken 类似于一个过去完成时态，相当于 its customers admiited that
+  they had taken time off work to look after pets...，表示一种过去的经历。这里动名词的动作是发生在谓语的动作之前。
+- `译` 一家英国保险公司 Petplan 的研究表明，它 35% 的客户都承认，自己曾经请假回家照看宠物或安置新动物。
+
+`2` He denied having been there.
+
+- `=` He denied that he had been there.
+- 动名词的动作在谓语动作之前，所以用完成式。
+- `译` 他否认去过那里。
+
+`3` He regretted not having gone to university.
+
+- `译` 他很后悔当初没有上大学。
+
+`4` I repented having shot the bird.
+
+- `译` 我后悔射杀了那只鸟。
+
+`5` I have always regretted not having studied harder at school.
+
+- `译` 我一直后悔上学时没有更加努力地学习。
+
+`6` The man in the corner confessed to having told a lie to the manager of the
+company.
+
+- `译` 墙脚处的那个人承认对这家公司的经历说了谎。
+
+### 7.2 动名词的完成被动式
+
+动名词的完成被动式的构成是 having been done，它兼具完成式和被动式的双重特点。
+
+`1` I knew it would take him many years to get over never having been loved.
+
+- never having been loved 用在 get over 后面作宾语，动名词的动作是在谓语动作之前，表示在过去一段较长时期内，他没有被人爱过。
+- `译` 我知道他将花上许多年的时间才能消除那种从来就没有被爱过的感觉。
+
+`2` I appreciate having been given the opportunity to study abroad two years
+ago.
+
+- `译` 我很感激两年钱得到一次出国留学的机会。
+
+`3` He prided himself on having never been beaten in chess.
+
+- `译` 他为自己在棋弈上从未被击败而自豪。
+
+`4`
+
+- Our modern civilization must not be thought of as `____` (create) in a short
+  period of time.
+  - `答案` having been created
+  - 句子主语 civilization 与 create 是被动关系；文明的创建是在谓语动作 be thought of as
+    之前很长时间发生的，所以要用完成被动式的动名词。
+  - `译` 决不能认为我们的现代文明是在一朝一夕之间建立起来的。
+- Mark often attempts to escape `____` (fine) whenever he breaks traffic
+  regulations.
+  - `答案` being fined
+  - 主语 Mark 与 fine 是被动关系；这里罚款是表示一般的情况，并不是指发生在谓语的动作之前，所以用一般被动式的动名词。
+  - `译` 马克每次违反了交通规则后常常试图逃避罚款。
+
+## 思维训练：6-7
+
+**一、用括号中动词的适当形式填空。**
+
+*1. The text needs `____` (explain) once again.*
+
+*5. Clint had a narrow escape. He was almost hit by a car. He barely avoided
+`____` (hit) by the speeding automobile.*
+
+*7. I'm angry at him for `____` (not, tell) me the truth.*
+
+*9. A: You know Clint, don't you? B: Clint? I don't think so. I don't recall
+ever `____` (meet) him.*
+
+**二、选择最佳答案填空。**
+
+*11. Your hair wants `____`. You'd better have it done tomorrow.*
+
+- *A. cut*
+- *B. to cut*
+- *C. cutting*
+- *D. being cut*
+
+### 答案：思维训练：6-7
+
+*1. explaining 或 to be explained
+
+*5. being hit
+
+*7. not having told
+
+*9. meeting 或 having met
+
+**二、选择最佳答案填空。**
+
+*11. C。在 want 后面，动名词的主动形式表示被动意义。
+
+## 8. there be 的不定式与动名词形式
+
+there be 的非限定形式是指 there being 和 there to be，主要用来做介词或动词的宾语、主语或状语。
+
+### 8.1 there be 的动名词形式
+
+there be 的动名词形式为 there being，依然表示“有”的意思，多用于介词后面。
+
+`1` He spoke of there being danger.
+
+- 因为有介词 of，所以用动名词形式？
+- `译` 他当时提到过有危险。
+- He spoke of being danger. ❌
+  - 原句子的意思是要表达“有危险”的意思，而不是“是危险”。
+
+`2` No one would have dreamed of there being such a good place.
+
+- `译` 谁也不会想到，会有这么一个好地方。
+
+`3` Do not bet on there being many marriages in China that began with love at
+first sight. Most Chinese marry for practical -- not romantic -- reasons.
+
+- `译` 别以为许多中国人的婚姻始于“一见钟情”。实际上，大多数中国人结婚是出于非常实际的一些原因，而并非因为浪漫的爱情。
+
+### 8.2 there be 的不定式形式
+
+there be 的不定式形式为 there to be，用在接不定式作宾语的动词后面或介词 for 后面。
+一般表示“打算”、“目的”。
+
+`1` I don't mean there to be any unpleasantness.
+
+- mean 后面要接不定式，表示“打算”。
+- `译` 我并没有任何冒犯之意。
+
+`2` I don't want there to be any misunderstandings on this point.
+
+- `译` 我不希望在这一点上有什么误解。
+
+`3` The students expected there to be more reviewing classes before the final
+exam.
+
+- expect 后面要接不定式。
+- `译` 同学们都希望在期末考试之前能够多上一些复习课。
+
+`4` For there to be life, there must be air and water.
+
+- `=` In order that there may be life, there must be air and water.
+- 这里的不定式表示目的，相当于一个目的状语从句 in order that there may be life
+- `译` 想要有生命，首先得要有空气和水。
+
+`5` For there to be successful communication, there must be attentiveness and
+involvement in the discussion itself by all present.
+
+- `=` In order that there may be successful communication, there must be
+  attentiveness and involvement in the discussion itself by all present.
+- `译` 为了达到成功的交流，就必须要求所有的参与者都专心听讲，并且积极参与讨论。
+
+`6` It was too late for there to be any buses.
+
+- 这里不定式用在 for 引导的逻辑主语结构中，放在形容词后面。
+- `译` 当时太晚了，一趟公交车都没了。
+
+`7` It isn't cold enough for there to be a frost tonight; so I can leave Jim's
+car out quite safely.
+
+- `译` 今晚外面不那么冷，不会有霜冻，因此我可以很安全地把 Jim 的汽车放在外面。
+
+## 综合训练：动名词
 
 >>>>> progress
