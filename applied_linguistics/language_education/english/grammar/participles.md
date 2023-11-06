@@ -34,6 +34,10 @@
         - [7. **表示补充说明或伴随状况**](#7-表示补充说明或伴随状况)
       - [二、“with + 名词短语 + 分词”作状语的意义](#二with--名词短语--分词作状语的意义)
         - [1. 表示补充说明等](#1-表示补充说明等)
+        - [2. 表示原因](#2-表示原因)
+      - [三、分词短语作状语时可以保留相应的连词](#三分词短语作状语时可以保留相应的连词)
+    - [思维训练：2. 分词的作用（一）：状语](#思维训练2-分词的作用一状语)
+      - [答案：思维训练：2. 分词的作用（一）：状语](#答案思维训练2-分词的作用一状语)
   - [3. 分词的作用（二）：定语](#3-分词的作用二定语)
 
 分词是一种重要的连词成句的手段。
@@ -796,6 +800,8 @@ precinct.
 
 ##### 1. 表示补充说明等
 
+从位置关系看，这种表示补充说明或具体举例的独立分词结构通常是放在句末，很少有放在句首的。
+
 `48` London was found to be the least punctual city, with 41 percent of
 respondents admitting that they were hardly ever on time, compared with the
 national average of 28 percent.
@@ -818,7 +824,161 @@ in the middle of a conversation or chatting away on the toilet.
   social taboos 的结论。
 - `译` 手机打破了很多社会禁忌，人们在交谈中接听手机，或者在如厕时大聊特聊。
 
-`51` >>>>> progress
+`51` Good news was sometimes released premuturely, with the British recapture of
+the port `____` half a day before the defenders actually surrendered.
+
+- A. to announce
+- B. announced
+- C. announcing
+- D. was announced
+- `答案` B。这句话的逻辑主语是 the British recapture of the port，与动词 announce
+  构成被动关系，所以用过去分词形式。
+- `译` 好消息有时会过早地被公布，比如有报道说英国已夺回了这个港口，而实际上半天之后敌军才真正投降。
+
+`52` With more than 3 million hardcover copies sold in its first two years of
+publication, Who Moved My Cheese? has become an amazing best-seller, topping the
+New York Times, Wall Street Journal, Business Week and U.S.A Today lists.
+
+- `译` 《谁动了我的奶酪？》一书的精装本在出版后的头两年里，共售出了三百多万本，成为了炙手可热的畅销书，雄踞《纽约时报》《华尔街日报》《商业周刊》以及《今日美国》的排行榜榜首。
+
+##### 2. 表示原因
+
+表示原因的分词结构可以置于主句前面，而表示补充说明的分词结构一般不可以。
+
+`53` Good timekeeping is becoming a forgotten social etiquette, with a new
+generation considering lateness the norm rather than a faux pas that should be
+avoided.
+
+- 主句部分 good timekeeping is becoming a forgotten social etiquette 是一个结果，独立分词结构
+  with a new generation considering lateness the norm rather than...表示得出这个结论的原因。
+- `译` 良好的守时习惯正在成为被遗忘的社交礼节，因为新的一代都认为迟到很正常，不是应该避免的失礼行为。
+
+`54` With war seeming inevitable, is there anything that the U.S. can do to
+reverse the erosion to its image?
+
+- with war seeming inevitable 位于主句前面，表示原因。
+- `译` 既然战争似乎一触即发，美国还能有什么办法来挽回自己形象的损失？
+
+`55` `____` the temperature falling so rapidly, we couldn't go on with the
+experiment.
+
+- A. With
+- B. For
+- C. As
+- D. Since
+- `答案` A。这里是一个“with + 名词短语 + 分词”的独立分词结构，不能填入连词。
+  with the temperature falling so rapidly 表示原因。
+- `译` 由于温度下降过快，我们不能继续进行实验了。
+
+#### 三、分词短语作状语时可以保留相应的连词
+
+分词短语作状语可与相应的连词连用。用在连词后面的分词短语作状语，相当于简化后的状语从句保留了连词。
+
+`56` Once deprived of oxygen, the brain dies.
+
+- `=` Once it is deprived of oxygen, the brain dies.
+- once 强调时间
+- `译` 一旦缺氧，大脑就会死亡。
+
+`57` Asked if she opposed immunizations, she wanted to know if vaccines come
+from animal research. When assured that they do, she replied, "Then I would have
+to say yes." Asked what will happen when epidemics return, she said, "Don't
+worry, scientists will find some way of using computers."
+
+- 三个分词 asked, assured 和 asked 的逻辑主语都是 she，构成被动关系，所以都用过去分词，作状语，表示时间。
+  可以在他们前面加上时间连词 when。
+- `译` 当问到她是否反对接种时，她问疫苗是否来自动物实验。当被告知的确如此时，她回答道：“那么我不得不说，是的，我反对接种。”当问到瘟疫再次爆发怎么办时，她说：“不用担心，科学家们将会用计算机找到一些解决问题的办法。
+
+`58` Be careful while crossing the road.
+
+- while 强调时间。
+- `译` 过马路时要小心。
+
+`59` After talking to you, I always feel much better.
+
+- `译` 和你谈过之后，我总是感觉好多了。
+
+`60` Although exhausted by the walk, he continued his journey.
+
+- although 强调让步。
+- `译` 虽然走得很累了，他还是继续旅行。
+
+`61` Though raised in San Francisco, Dave had always preferred to record the
+plain facts of small-town life.
+
+- though 强调让步。
+- 尽管 Dave 是在旧金山这样的大城市中长大的，但他总是喜欢记录小城镇生活中的点滴。
+
+`62` Although usually living on or under rocks or on coral reefs, marine snails
+have been observed in a great variety of habitats.
+
+- `译` 尽管海生蜗牛通常生活在岩石上下或者珊瑚礁上，在很多栖息地都能找到它们的踪影。
+
+`63` Although still running in a number of cities, the electric trolley has for
+the most part fallen into disuse.
+
+- `译` 无轨电车尽管在很多城市还在运营，但是在大多数地方都已经不用它了。
+
+`64` After having annoyed everybody, he went home.
+
+- `译` 他把所有的人都惹烦了之后就回家了。
+
+`65` If seen under a microscope, a fresh snowflake has a delicate six-pointed
+shape.
+
+- `译` 假如从显微镜下观察，新降的雪花有纤小的六瓣。
+
+### 思维训练：2. 分词的作用（一）：状语
+
+**选择最佳答案填空。**
+
+*3. Jumping into the water, `____`.*
+
+- *A. the drowning child was rescued*
+- *B. the drowned child was rescued*
+- *C. the lifeguard rescued the drowning child*
+- *D. the lifeguard rescued the drowned child*
+
+*4. After jumping out of a boat, `____`.*
+
+- *A. the shark bites the man*
+- *B. the shark bit the man*
+- *C. the man was bitten by a shark*
+- *D. the man is bitten by a shark*
+
+*6. `____`, we went swimming.*
+
+- *A. Being a hot day*
+- *B. Due to a hot day*
+- *C. It was a hot day*
+- *D. The day being hot*
+
+*12. Bob was lying on the beach, his hands `____` under his head.*
+
+- *A. were crossing*
+- *B. were crossed*
+- *C. crossing*
+- *D. crossed*
+
+*13. Many strange new means of transport have been developed in our century, the
+strangest of them `____` perhaps the hovercraft.*
+
+- *A. is*
+- *B. being*
+- *C. will be*
+- *D. has been*
+
+#### 答案：思维训练：2. 分词的作用（一）：状语
+
+*3. C。drowned 表示已经溺水身亡，与 rescue 矛盾。
+
+*4. C。jumping out of a boat 的是 the man，不是 the shark，所以排除 A 和 B。
+
+*6. D。C 应该加上时间连词。
+
+*12. D。逻辑主语 his hands 与分词是被动关系。
+
+*13. B。
 
 ## 3. 分词的作用（二）：定语
 
