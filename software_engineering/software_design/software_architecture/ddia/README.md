@@ -7,16 +7,23 @@ The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
 > - <https://dataintensive.net/>
 > - <https://github.com/ept/ddia-references>
 
+## Preface
+
+We call an applicatoin ***data-intensive** if data is its primary challenge.
+
+- the quantity of data
+- the complexity of data
+- or the speed at which it is changing
+
 ## Table of Contents
 
-- [x] [Preface](./00_preface.md)
-- Part I. Foundations of Data Systems
-  - [x] [1. Reliable, Scalable, and Maintainable Applications](./01_reliable_scalable_and_maintainable_applications.md)
-  - [x] [2. Data Models and Query Languages](./02_data_models_and_query_languages.md)
-  - [x] [3. Storage and Retrieval](./03_storage_and_retrieval.md)
-  - [ ] [4. Encoding and Evolution](./04_encoding_and_evolution.md)
-- Part II. Distributed Data
-  - 5. Replication
+- [Part I. Foundations of Data Systems](./part_1_foundations_of_data_systems/)
+  - [x] [1. Reliable, Scalable, and Maintainable Applications](./part_1_foundations_of_data_systems/01_reliable_scalable_and_maintainable_applications.md)
+  - [x] [2. Data Models and Query Languages](./part_1_foundations_of_data_systems/02_data_models_and_query_languages.md)
+  - [x] [3. Storage and Retrieval](./part_1_foundations_of_data_systems/03_storage_and_retrieval.md)
+  - [x] [4. Encoding and Evolution](./part_1_foundations_of_data_systems/04_encoding_and_evolution.md)
+- [Part II. Distributed Data](./part_2_distributed_data/README.md)
+  - [x] [5. Replication](./part_2_distributed_data/05_replication.md)
   - 6. Partioning
   - 7. Transactions
   - 8. The Trouble with Distributed Systems

@@ -20,6 +20,13 @@
       - [Different values written at different times](#different-values-written-at-different-times)
       - [Archival storage](#archival-storage)
     - [Dataflow Through Services: REST and RPC](#dataflow-through-services-rest-and-rpc)
+      - [Web services](#web-services)
+      - [The problems with remote procedure calls (RPCs)](#the-problems-with-remote-procedure-calls-rpcs)
+      - [Current directions for RPC](#current-directions-for-rpc)
+      - [Data encoding and evolution for RPC](#data-encoding-and-evolution-for-rpc)
+    - [Message-Passing Dataflow](#message-passing-dataflow)
+      - [Message brokers](#message-brokers)
+      - [Distributed actor frameworks](#distributed-actor-frameworks)
 
 In a large application, code changes often cannot happen instantaneously:
 
@@ -262,4 +269,120 @@ Avro object container files are a good fit.
 
 ### Dataflow Through Services: REST and RPC
 
->>>>> progress
+#### Web services
+
+There are two polular approaches to web services: *REST* and *SOAP*.
+
+- REST is not a protocol, but rather a design philosophy that builds upon the
+  principles of HTTP. It emphasizes:
+  - data formats
+  - using URLs for identifying resources and using HTTP features for
+    - cache control
+    - authentication
+    - content type negotiation
+- SOAP is an XML-based protocol for making network API requests. It aims to be
+  independent from HTTP and avoids using most HTTP features.
+  - The API of a SOAP web service is described using an XML-based language
+    called the Web Service Description Language, or WSDL. This enables code
+    generation.
+
+#### The problems with remote procedure calls (RPCs)
+
+A network request is very different from a local function call:
+
+- A network request is unpredictable: the request or resposne may be lost due to
+  a network problem, or the remote machine may be slow or unavailable.
+- A network request may return without a result, due to a timeout.
+- If you retry a failed network request, it could happen that the requests are
+  actually getting through, and only the responses are getting lost. This needs
+  a mechanism for deduplication (*idempotence*).
+- A network request is much slower than a function call, and its latency is also
+  wildly variable.
+- When you make a network request, all those parameters need to be encoded into
+  a sequence of bytes that can be sent over the network.
+- The RPC framework must translate datatypes from one language into another if
+  the client and the service are implemented in different languages.
+
+Part of the appeal of REST is that it doesn't try to hide the fact that it's a
+network protocol.
+
+#### Current directions for RPC
+
+- Various RPC frameworks have been built on top of encodings.
+- REST seems to be the predominant style for public APIs.
+- The main focus of RPC frameworks is on requests between services owned by the
+  same organizatoin.
+
+#### Data encoding and evolution for RPC
+
+It is reasonable to assume that all the servers will be updated first. Thus, you
+only need backward compatibility on requests (new servers read old requests),
+and forward compatibility on responses (old clients read new responses).
+
+The backward and forward compatibility of an RPC scheme are inherited from
+whatever encoding it uses:
+
+- Thrift, gRPC, and Avro RPC can be evolved according to the compatibility rules
+  of the respective encoding format.
+- In SOAP, requests and responses are specified with XML schemas. These can be
+  evolved (there are some pitfalls).
+- RESTful APIs mostly use JSON without a formally specified schema for
+  responses, and JSON or URI-encoded/form-encoded request parameters for
+  requests. Adding optinal request parameters and adding new fields to response
+  objects are usually considered changes that maintain compatibility.
+
+There is no agreement on how API versioning should work.
+
+- For RESTful APIs, common approaches are to use a version number in the URL or
+  in the HTTP `Accept` header.
+- For services that use API key to identify a particular client, another option
+  is to store a client's requested API version on the server and to allow this
+  version selection to be updated through a separate administrative interface.
+
+### Message-Passing Dataflow
+
+Using a message broker has several advantages compared to direct RPC:
+
+- It can act as a buffer if the recipient is unavailable or overloaded, and thus
+  improve system reliability.
+- It can automatically redeliver messages to a process that has crashed, and
+  thus prevent messages from being lost.
+- It avoids the sender needing to know the IP address and port number of the
+  recipient.
+- It allows one message to be sent to several recipients.
+- It logically decouples the sender from the recipient (the sender just
+  publishes messages and doesn't care who consumes them).
+
+A difference compared to RPC is that message-passing communication is usually
+one-way: a sender normally doesn't expect to receive a reply to its messages.
+
+It is possible for a process to send a response, but this would usually be done
+on a separate channel.
+
+This communication pattern is *asynchronous*: the sender doesn't wait for the
+message to be delivered.
+
+#### Message brokers
+
+In general, message brokers are used as follows: one process sends a message to
+a named *queue* or *topic*, and the broker ensures that the message is delivered
+to one or more *consumers* of or *subscribers* to that queue or topic.
+
+#### Distributed actor frameworks
+
+The ***actor model*** is a programming model for concurrency in a single
+process. Rather than dealing directly with threads, logic is encapsulated in
+*actors*. Each actor typically repreents one client or entity, it communicates
+with other actors by sending and receiving asynchronus messages. In certain
+error scenarios, messages will be lost.
+
+In *distributed actor frameworks*, this programming model is used to scale an
+application across multiple nodes.
+
+The actor model assumes that messages may be lost, even within a single process.
+
+Three popular distributed actor frameworks handle message coding as follows:
+
+- Akka
+- Orleans
+- Erlang OTP
