@@ -26,7 +26,9 @@
   - [Discussion 4: Tree Recursion, Python Lists](#discussion-4-tree-recursion-python-lists)
   - [Project 2: CS 61A Autocorrected Typing Software](#project-2-cs-61a-autocorrected-typing-software)
   - [Lab 5: Data Abstraction, Sequences](#lab-5-data-abstraction-sequences)
+  - [Discussion 5: Trees](#discussion-5-trees)
   - [2.4 Mutable Data](#24-mutable-data)
+  - [Homework 4: Trees, Data Abstraction](#homework-4-trees-data-abstraction)
 
 ## 2.1 Introduction
 
@@ -412,8 +414,20 @@ def print_partitions(n, m):
 
 ## Lab 5: Data Abstraction, Sequences
 
-- [ ] [Lab 5: Data Abstraction, Sequences](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab05/)
+A ***predicate function*** is a function that takes in an argument and returns
+either `True` or `False`.
+
+- [x] [Lab 5: Data Abstraction, Sequences](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab05/)
+
+## Discussion 5: Trees
+
+- [Discussion 5: Trees](https://inst.eecs.berkeley.edu/~cs61a/sp23/disc/disc05/)
 
 ## 2.4 Mutable Data
 
 > <https://www.composingprograms.com/pages/24-mutable-data.html>
+>>>>> progress
+
+## Homework 4: Trees, Data Abstraction
+
+- [ ] [Homework 4: Trees, Data Abstraction](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw04/)
