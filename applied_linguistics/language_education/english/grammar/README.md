@@ -74,6 +74,6 @@
 - [x] [2. 定语从句](attributive_clause.md)
 - [x] [3. 状语从句](adverbial_clause.md)
 - [x] [4. 不定式](infinitive.md)
-- [ ] [5. 动名词](gerund.md)
+- [x] [5. 动名词](gerund.md)
 - [ ] [6. 分词](participles.md)
 - [ ] [7. 从句与非谓语](./clauses_and_non-predicate.md)

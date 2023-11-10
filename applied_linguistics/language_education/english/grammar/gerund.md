@@ -47,6 +47,7 @@
     - [8.1 there be 的动名词形式](#81-there-be-的动名词形式)
     - [8.2 there be 的不定式形式](#82-there-be-的不定式形式)
   - [综合训练：动名词](#综合训练动名词)
+    - [答案：综合训练：动名词](#答案综合训练动名词)
 
 动名词的构成即是在动词后面加 `-ing`，构成 doing 的形式。
 它在意义上相当于一个名词，但同时又保留动词的特征。
@@ -1031,4 +1032,158 @@ car out quite safely.
 
 ## 综合训练：动名词
 
->>>>> progress
+**一、选择最佳答案填空。**
+
+*2. Although a teenager, Fred could resist `____` what to do and what not to
+do.*
+
+- *A. to be told*
+- *B. having been told*
+- *C. being told*
+- *D. to have been told*
+
+*4. I can't understand `____` a decision until it is too late.*
+
+- *A. him to postpone to make*
+- *B. his postpone making*
+- *C. his postponing to make*
+- *D. his postponing making*
+
+*14. Ann prefers `____` taking an examination.*
+
+- *A. writing a term paper than*
+- *B. writing a term paper to*
+- *C. to write a term paper and*
+- *D. to write a term paper than*
+
+*17. I don't think you will have any difficulty `____` a driving license.*
+
+- *A. for getting*
+- *B. to get*
+- *C. having got*
+- *D. getting*
+
+*18. The thief caught on the spot by the policeman denied `____` anything.*
+
+- *A. to do*
+- *B. to have done*
+- *C. do*
+- *D. doing*
+
+*22. In some countries people favor `____` together even though there is much
+more space.*
+
+- *A. to stay*
+- *B. stay*
+- *C. staying*
+- *D. of staying*
+
+*23. `____` can help but be fascinated by the world into which he is taken by
+the science fiction.*
+
+- *A. Everybody*
+- *B. Anybody*
+- *C. Somebody*
+- *D. Nobody*
+
+*26. Shortly after his retirement, the former president `____` gardening and
+hunting.*
+
+- *A. took to*
+- *B. took on*
+- *C. took in*
+- *D. took after*
+
+*30. The supervisor said the school board was considering not `____` the
+students' proposal for the strict administration.*
+
+- *A. to accept*
+- *B. accept*
+- *C. accepted*
+- *D. accepting*
+
+*31. Nearly every country in the world either claims to be democratic or to be
+on the way `____` democratic.*
+
+- *A. to becoming*
+- *B. to become*
+- *C. of becoming*
+- *D. in becoming*
+
+**二、辨别改错。**
+
+*38. Mr. Smith regretted ***to blame***`A` his secretary ***for***`B` the
+mistake, ***for***`C` he later ***discovered***`D` it was his own fault.*
+
+*40. When I consider how ***talented he is***`A` ***as a painter***`B`, I cannot
+help ***but believing***`C` that ***the public***`D` will appreciate his gift.*
+
+*42. Some bosses dislike ***to allow***`A` people ***to share***`B` their
+responsibilities; they keep ***all***`C` important matters ***tightly***`D` in
+their own hands.*
+
+**三、翻译下列短文（尽量使用动名词）。**
+
+*48.《论学英语》.*
+
+*学习英语就如同盖房子，打好基础（foundation）是第一步。
+而掌握语法对于学习英语来说，就像盖房子要有坚实的基础一样重要。
+还有人说，学英语就像学游泳，首先你得根据规则来学游泳，然后要忘记规则，自由地畅游。
+这都说明语法对于学好英语是必不可少（indispensable）的。
+掌握了一定的语法知识之后，你还需要每天练习说英文，俗话说熟能生巧，就说明练习的重要性。
+同时，你还需要多思考，以发掘（explore）语法规则背后的英文思维，正如中国有句古话（proverb）“学而不思则罔”。
+另外，记单词也很有帮助。不要说你没有语言天赋（aptitude），只要你尽力，就一定能实现自己的目标！*
+
+### 答案：综合训练：动名词
+
+**一、选择最佳答案填空。**
+
+*2. C。
+
+*4. D。
+
+*14. B。
+
+*17. D。have difficulty doing...
+
+*18. D。deny doing...
+
+*22. C。in favor of...才需要加介词 of。
+
+*23. D。
+
+*26. A。
+
+- take to: 开始养成（某种习惯）：指开始养成某种习惯或经常性的行为。
+- take on: 承担；接受；雇佣
+- take in: 吸收；欣赏；收留
+- take after: 与某人相似：在外貌、体格、性格或性情上与某人相似。
+
+*30. D。consider doing...
+
+*31. A。on the way to...
+
+**二、辨别改错。**
+
+*38. A，改为 blaming，或 having blamed。regret doing 表示“后悔做某事”。
+
+*40. C，改为 but believe，或 believing。cannot help doing 或 cannot help but do。
+
+*42. A，改为 allowing。dislike doing...
+
+**三、翻译下列短文（尽量使用动名词）。**
+
+*48. On Learning English
+
+Learning English is like building a house. Laying a strong foundation is the
+first step. A good knowledge of grammar is to learning English what a strong
+foundation is to building a house. There is another saying that learning
+English is like learning swimming. First you must learn swimming by the rules.
+Then you must forget the rules and swim freely. Therefore, grammar is
+indispensable to learning English. After mastering some knowledge of grammar,
+you must practice speaking English every day. A saying goes that practice makes
+perfect, indicating the importance of practice. In the meantime, you also need
+to do a lot of thinking, to explore the English thinking behind grammatical
+rules. As a Chinese proverb says, it is no use learning without thinking.
+Moreover, memorizing new words is also helpful. Don't say you have no aptitude
+for language. If you try your best, you'll succeed in reaching your goal.
