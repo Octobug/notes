@@ -39,6 +39,11 @@
     - [思维训练：2. 分词的作用（一）：状语](#思维训练2-分词的作用一状语)
       - [答案：思维训练：2. 分词的作用（一）：状语](#答案思维训练2-分词的作用一状语)
   - [3. 分词的作用（二）：定语](#3-分词的作用二定语)
+    - [3.1 单个分词作定语要前置](#31-单个分词作定语要前置)
+    - [3.2 分词短语作定语要后置](#32-分词短语作定语要后置)
+    - [3.3 后置定语的三种被动结构](#33-后置定语的三种被动结构)
+  - [4. 分词的作用（三）：补足语](#4-分词的作用三补足语)
+    - [4.1 分词在感觉动词后充当宾语补足语](#41-分词在感觉动词后充当宾语补足语)
 
 分词是一种重要的连词成句的手段。
 
@@ -982,4 +987,210 @@ strangest of them `____` perhaps the hovercraft.*
 
 ## 3. 分词的作用（二）：定语
 
->>>>> progress
+分词作定语与被修饰名词的位置关系有两种：置于其之前或之后：
+
+- 单个分词作定语，一般置于被修饰名词的前面；
+- 分词短语作定语，只能置于被修饰名词的后面。
+
+现在分词作定语，表示与所修饰的名词有主谓关系或者说主动关系；
+而过去分词作定语，表示与所修饰的名词有动宾关系或者说被动关系。
+
+### 3.1 单个分词作定语要前置
+
+`1` "When the Titanic began to sink, **panicked** women and children were the
+first ones loaded into lifeboats. Mr. and Mrs. Straus were calm and comforting
+the passengers, and helped many of them into the boats."
+
+- `译` 当‘泰坦尼克’号开始下沉的时候，惊恐的妇女和孩子们第一批上了救生艇。当时施特劳斯夫妇非常地镇定，并安慰乘客，帮助他们登上救生艇。
+
+`2` The **scorched** U.S. suffers the worst drought since the Great Depression.
+
+- 这里的 since 不是修饰句子的谓语 suffer （否则就该用现在完成时态 has suffered），而是修饰
+  worst drought，作后置定语。
+- `译` 炙热的美国正在遭受自“大萧条”以来最为严重的干旱。
+
+`3` Please enclose a stamped addressed envelope.
+
+- 这个句子有两个单独的过去分词 stamped 和 addressed 修饰名词 envelope。
+- `译` 请附上一个贴有邮票并写好回信地址的信封。
+
+### 3.2 分词短语作定语要后置
+
+`1` Police hunting the killer of a part-time police officer stabbed outside her
+home in northwest London are seeking a man wearing a hooded top seen running
+away from the scene.
+
+- 这里一共有四个分词短语作定语，因为都是短语作定语，所以都后置了。
+  - hunting the killer of a part-time police officer：分词 + 宾语
+  - stabbed outside her home in northwest London：分词 + 地点状语
+  - wearing a hooded top：分词 + 宾语
+  - seen running away from the scene： 分词 + 补足语
+- `译` 伦敦一名兼职警官在其位于伦敦西北的家附近被一名男子刺死，警方目前正在搜捕这名男子。据称，该名男子作案时穿着带有兜帽的上衣，作案后有人看见他逃离了现场。
+
+`2` There was a very interesting remark in a book by an Englishman that I read
+recently `____` what he thought was a reason for this American characteristic.
+
+- A. giving
+- B. gave
+- C. to give
+- D. given
+- `答案` A。
+  - 这里分词修饰名词 remark，作后置定语。remark 和 what he thought was... 是主动关系，
+    remark 是逻辑主语，所以用现在分词 giving。
+    - a remark...giving...表示“这句话给出...”
+- `译` 我最近看过一本书，它是由一个英国人写的，我还记得书里有一句十分有趣的话，作者认为这句话说明了美国人为什么是这种性格。
+
+`3` Additional social stresses may also occur because of the population
+explosion or problems arising from mass migration movements -- themselves made
+relatively easy nowadays by modern means of transport.
+
+- 现在分词 arising 修饰 problems 作后置定语，与 problems 构成主动关系。
+  过去分词 made 修饰 themselves，作后置定语，与 themselves 构成被动关系。
+  themselves 指代 mass migration movements。
+- `译` 由于人口的猛增或大量流动（现代的交通工具使这种流动变得相对容易）造成的种种问题也会对社会造成新的压力。
+
+`4` How many of us `____`, say, a meeting that is irrelevant to us would be
+interested in the discussion?
+
+- A. attended
+- B. attending
+- C. to attend
+- D. have attended
+- `答案` B。how many of us 与动词 attend 是主谓关系，所以要用现在分词 attending。
+  - 这里 say 不是谓语，而是口语中常见的一个口头词，作为插入语。
+- `译` 如果让我们参加一个，比如说，与我们毫不相干的会议，那么我们当中有多少人会对会议上的讨论感兴趣呢？
+
+`5` It's easy to blame the decline of conversation on the pace of modern life
+and on the vague changes `____` place in our ever-changing world.
+
+- A. taking
+- B. to take
+- C. take
+- D. taken
+- `答案` A。分词修饰名词 changes，changes 与动词短语 take place 构成主动关系。
+- `译` 我们很容易把人们之间交流的减少归咎于快节奏的现代生活和快速变化的外部世界。
+
+`6` After all, what is the one modern form of expression almost completely
+dedicated to depicting happiness?
+
+- 过去分词 dedicated 作定语，修饰 expression，构成被动关系。
+- `译` 几乎完全致力于描述快乐的当代表现形式究竟是什么？
+
+`7` The emphasis on data gathered first-hand, combined with a cross-cultural
+perspective brought to the analysis of cultures past and present, makes this
+study a unique and distinctly important social science.
+
+- 这里共有三个分词
+  - gathered: 修饰 data
+  - combined: 将emphasis 和 perspective 联系起来，构成逻辑上的并列关系，相当于 A,
+    combined with B。
+  - brought: 修饰 perspective
+- `译` 强调收集第一手资料，加上在分析过去和现在文化形态时采用跨文化视角，使得这一研究成为一门独特并且非常重要的社会科学。
+
+### 3.3 后置定语的三种被动结构
+
+1. to be done: 表示将来的动作，用不定式的被动式；
+2. being done: 表示进行的动作；
+3. done: 表示一般过去或完成的动作。
+
+done 和其后面的成分构成短语时要后置修饰名词，而单独存在的 done 则通常前置修饰名词。
+
+`1` For nay adhesive to make a really strong bond, the surfaces to be glued must
+be absolutely clean and free from moisture or grease.
+
+- 这里用了不定式的被动式。
+- `译` 对于任何黏合剂，要想粘得牢固的话，则被粘的表面必须绝对清洁且不能潮湿和有油渍。
+
+`2` More than 300 local college students attended the torch-relay to show their
+support for the 21st Universiade, to be held in Beijing between August 22 and
+September 1.
+
+- `译` 三百多名当地的大学生参加了火炬接力活动，以表达他们对即将于8月22日至9月1日在北京举行的第21届世界大学生运动会的支持。
+
+`3` Are you going to attend the meeting to be held next month?
+
+- `译` 你会参加将于下个月召开的会议吗？
+
+`4` The question being discussed is very important.
+
+- 这里用了 being done 结构表示进行的动作。
+- `译` 正在讨论的那个问题十分重要。
+
+`5` The house being built will be our library upon its completion.
+
+- `译` 正在建设的那座房子完工后将成为我们的图书馆。
+
+`6` Any whale being killed in the open ocean today is being killed for
+absolutely no good reason at all.
+
+- `译` 今天在外海捕杀的鲸都是在根本没有过硬理由的情况下被捕杀的。
+
+`8` Did you attend the meeting held last month in Shanghai?
+
+- held 与其后的时间状语 last month 合在一起构成分词短语 held last month，共同修饰
+  meeting。
+- `译` 你参加了上个月在上海举行的会议吗？
+
+`9` "Reports that say something hasn't happended are always interesting to me,
+because as we know, there are known knowns; there are things we know we know.
+We also know there are known unknowns; that is to say we know there are some
+things we do not know. But there are also unknown unknowns -- the ones we don't
+know we don't know."
+
+- 这里的 known 和 unknown 都是单独的分词作前置定语。
+- `译` “有报道说什么情况都不会发生——我对这样的报道很感兴趣。
+  因为我们都知道，有一些事情是‘知已知’，即我们知道自己知道；
+  我们还知道，有些事情则是‘知未知’，即我们知道自己不知道；
+  还有一些事情是‘未知未知’，即我们还不知道自己不知道。”
+
+## 4. 分词的作用（三）：补足语
+
+### 4.1 分词在感觉动词后充当宾语补足语
+
+分词充当句子的不足语一般仅限于用在感觉动词后。这样的感觉动词主要有
+
+- find
+- hear
+- notice
+- observe
+- smell
+- watch
+- ...
+
+`1`
+
+- A: Do you hear all those different birds singing in the park?
+  - 分词 singing 放在动词 hear 后面作宾语补足语
+- B: It's beautiful. It sounds like a symphony!
+- `译`
+  - A：公园里有各种鸟儿在歌唱，你听到了吗？
+  - B：真美妙，听上去就像是交响乐。
+
+`2` There are many times I look out of my window and smile at the sights. I hear
+the sound of flowers blooming and the heart-beat leaves growing.
+
+- 分词 growing 放在动词 hear 后面作宾语补足语。
+  blooming 不是宾语补足语，而是构成动名词的复合结构 flowers blooming，作 of 的宾语。
+- `译` 每每我看向窗外，总能会心地微笑，因为我听见了花开的声音，还有树叶的生长，生机勃发。
+
+`3` I heard him criticized many times.
+
+- `译` 我听见他多次受到批评。
+
+`4` We saw the sun rising from behind the trees.
+
+- `译` 我们看见太阳从树后面慢慢升起。
+
+`5` You can see the vapor rising from the wet clothes when they are hung on the
+fire.
+
+- `译` 当湿衣服晾在火炉边时，你能看见水蒸气从衣服上蒸发。
+
+`6`
+
+- Customer: Your dog seems very fond of watching you cutting hair.
+- Barber: It isn't that. Sometimes I snip off a bit of a customer's ear.
+
+如果句子的谓语使用了被动语态，则此时的分词是补充说明主语的，因此被称为主语补足语。
+
+`8` >>>>> progress
