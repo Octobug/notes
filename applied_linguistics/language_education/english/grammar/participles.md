@@ -44,6 +44,10 @@
     - [3.3 后置定语的三种被动结构](#33-后置定语的三种被动结构)
   - [4. 分词的作用（三）：补足语](#4-分词的作用三补足语)
     - [4.1 分词在感觉动词后充当宾语补足语](#41-分词在感觉动词后充当宾语补足语)
+    - [4.2 作宾语补足语的分词与不定式的区别](#42-作宾语补足语的分词与不定式的区别)
+    - [思维训练：4. 分词的作用（三）：补足语](#思维训练4-分词的作用三补足语)
+      - [答案：思维训练：4. 分词的作用（三）：补足语](#答案思维训练4-分词的作用三补足语)
+  - [5. 分词作成分要注意的问题](#5-分词作成分要注意的问题)
 
 分词是一种重要的连词成句的手段。
 
@@ -1147,7 +1151,7 @@ know we don't know."
 
 ### 4.1 分词在感觉动词后充当宾语补足语
 
-分词充当句子的不足语一般仅限于用在感觉动词后。这样的感觉动词主要有
+分词充当句子的补足语一般仅限于用在感觉动词后。这样的感觉动词主要有：
 
 - find
 - hear
@@ -1193,4 +1197,102 @@ fire.
 
 如果句子的谓语使用了被动语态，则此时的分词是补充说明主语的，因此被称为主语补足语。
 
-`8` >>>>> progress
+`8` On many public occasions, he has been seen making tie-free appearances.
+
+- 分词短语 making tie-free appearances 用在被动式的 has been seen 后面，补充说明主语
+  he。
+- `译` 在很多公开场合，人们看到他不打领带。
+
+`9` I saw passengers engulfed in fire.
+
+- 过去分词 engulfed 用在 saw 后面作宾语补足语。
+- `译` 我看到乘客被大火吞没。
+
+还可以用被动进行分词 being done 来作宾语补足语，相当于现在分词与过去分词的结合体，既有进行意味又有被动意味。
+
+`10` Face-swapping is a Chinese cultural asset that needs to be protected. In
+recent years we have seen cases of traditional Chinese brands being pirated or
+patented overseas. As the world focuses on intellectual property protection in
+China, we also need to protect our own assets.
+
+- being pirated or patented 作宾语补足语。
+- `译` “变脸”艺术是中国的文化财富，需要加以保护。
+  近些年来，我们常常看到中国的传统品牌正在海外被盗版或被申请专利这样的事件发生。
+  时下全世界都眼盯着中国的知识产权保护，我们也需要保护我们自己的文化资源。
+
+### 4.2 作宾语补足语的分词与不定式的区别
+
+在这些感觉动词之后，也可以用不带 to 的不定式作补足语。二者的区别是：
+
+- 用现在分词，强调动作正在进行；
+- 用不定式则表示**一般的动作**或**一个动作自始至终的全过程**。
+
+`1`
+
+- I watched them climb the tower.
+  - 不定式 climb（省略了 to）表示他们到达了塔顶，而“我”观看了他们爬上塔顶的过程。
+  - `译` 我观看他们一直爬到塔顶。
+- I watched them climbing the tower.
+  - 分词 climbing 意味着进行体所表示的潜在未完成性，即他们当时还没有到达塔顶。
+  - `译` 我看见他们正在往塔顶爬。
+
+`2` When I glanced out of the window I saw Mary crossing the road.
+
+- crossing 表示动作正在进行。
+- `译` 我往窗外一瞥，正好看见玛丽在过马路。
+
+`3` I watched him step off the pavement, cross the road, and disappear into the
+post office.
+
+- step, cross 和 disappear 都是不定式，表示全过程，所以不能用分词 crossing。
+- `译` 我看见他走下人行道，穿过马路，进了邮局，然后就不见了。
+
+`4` In the park you often see people do Tai chi.
+
+- 这里的不定式是表示一般的动作。
+- `译` 在公园，你经常能见到人们在打太极拳。
+
+`5` I saw him doing Tai chi when I came in.
+
+- `译` 我进来时，看见他正在打太极拳。
+
+除了感觉动词，分词也可以在 get 和 have 后面作宾语补足语。
+
+`6` When you are preparing for your college adventures abroad, it's easy enough
+to make sure you **get** all the right forms **filled** out, **have** your
+passport ready, your bags **packed**, and your textbooks **waiting** for you at
+the other end, but how do you prepare for the adjustment to a new place?
+Especially, how to survive culture shock?
+
+- filled out, packed, 和 waiting 都是作相应宾语的补足语。
+- `译` 当你准备踏上国外求学的冒险之旅时，填写各种表格、准备护照、打点行李，以及让学校那边为你准备好课本等等都相当容易，但是你如何准备去适应一个新的环境，特别是如何克服文化冲突呢？
+
+### 思维训练：4. 分词的作用（三）：补足语
+
+**选择最佳答案填空。**
+
+*6. Mrs. Douglas unknowingly left a package `____` on the shop counter.*
+
+- *A. laying*
+- *B. to lie*
+- *C. laid*
+- *D. lying*
+
+*10. "There is something wrong with the table.""Yes, I can `____`."*
+
+- *A. feel it that it's moving*
+- *B. feel it moves*
+- *C. feel it moving*
+- *D. feel it to move*
+
+#### 答案：思维训练：4. 分词的作用（三）：补足语
+
+**选择最佳答案填空。**
+
+*6. D。leave sth./sb. doing...
+
+*10. C。
+
+## 5. 分词作成分要注意的问题
+
+>>>>> progress
