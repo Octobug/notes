@@ -48,6 +48,14 @@
     - [思维训练：4. 分词的作用（三）：补足语](#思维训练4-分词的作用三补足语)
       - [答案：思维训练：4. 分词的作用（三）：补足语](#答案思维训练4-分词的作用三补足语)
   - [5. 分词作成分要注意的问题](#5-分词作成分要注意的问题)
+    - [5.1 定语还是状语](#51-定语还是状语)
+    - [5.2 不能用作定语的分词结构](#52-不能用作定语的分词结构)
+    - [5.3 不能用作状语的分词结构](#53-不能用作状语的分词结构)
+    - [思维训练：5. 分词作成分要注意的问题](#思维训练5-分词作成分要注意的问题)
+    - [答案：思维训练：5. 分词作成分要注意的问题](#答案思维训练5-分词作成分要注意的问题)
+  - [6. 分词的完成式](#6-分词的完成式)
+    - [6.1 一般式还是完成式](#61-一般式还是完成式)
+    - [6.2 何时该用完成式](#62-何时该用完成式)
 
 分词是一种重要的连词成句的手段。
 
@@ -1295,4 +1303,203 @@ Especially, how to survive culture shock?
 
 ## 5. 分词作成分要注意的问题
 
->>>>> progress
+分词在句中最常充当的成分是作为状语和定语。
+
+### 5.1 定语还是状语
+
+`1` The government is to ban payments to witnesses by newspapers seeking to buy
+up people involved in prominent cases such as the trial of Rosemary West.
+
+- the government is to ban payments: 中心词 payments
+  - to witnesses: 修饰 payments 的并列定语 1
+  - by newspapers: 修饰 payments 的并列定语 2
+    - seeking to buy up people: 分词短语，修饰 newspapers
+      - involved in prominent cases such as the trial of Rosemary West:
+        分词短语，修饰 people
+- `译` 政府禁止报界向重大案件（如对罗斯玛丽·维斯特的审判）的目击者付钱以收买他们。✅
+- `译` 政府为了笼络在诸如与罗斯玛丽·维斯特的审判这样的大案中的有关人士，将禁止报纸媒体向证人付费。❌
+  - 误认为分词短语 seeking to buy up people 是作为目的状语修饰 is to ban。
+  - ⚠️ 分词短语不能用作**目的**状语，目的状语是不定式 to do 的专属功能。
+
+`2` The maid told him that she had burnt everything thinking it was of no use.
+
+- thinking it was of no use 是原因状语，用来解释为什么 she had burnt everything.
+  thinking 的逻辑主语是句子主语 the maid。
+- `译` 女仆告诉他说，她认为那些东西都没有用，所以把它们全部烧掉了。
+- `=` The maid told him that she had burnt everything as she thought it was of
+  no use. ✅
+- The maid told him that she had burnt everything that she thought of no use. ❌
+  - 把 thinking it was of no use 理解为 everything 的定语。
+    - The maid told him that she had burnt everything thought of no use.
+    - 这样才可以理解为定语。`?`
+
+💡 分词作定语是分词修饰句中的某个名词，而分词作状语则是修饰句子谓语或句中的其他动词，比如表示动作的原因或方式等。
+
+### 5.2 不能用作定语的分词结构
+
+在英语中，大多数分词结构都可以作定语，但有两类特殊的分词结构需要注意：
+
+1. 分词的完成式 having (been) done 一般不能用在名词后面作后置定语（由于是短语，所以更不能作为前置定语），而只能作状语；
+2. 不及物动词的过去分词只能作前置定语，不能作后置定语。因为过去分词表被动，而不及物动词动作的执行者只能是其前面的名词，两者互相矛盾。
+   （以 grow 为例，作为及物动词时是“种植”的意思，作为不及物动词是“生长”的意思）
+
+`1`
+
+- The Chinese children having been raised in the U.S. can speak fluent English. ❌
+  - The Chinese children who have been raised in the U.S. can speak fluent
+    English. ✅
+  - `译` 这些在美国长大的中国孩子能说很流利的英语。
+- The Chinese children having been raised in the U.S., we find they have a
+  totally different value from that of those raised in China.
+  - 完成被动式的分词短语 having been raised 与其逻辑主语 the Chinese children
+    一起构成“名词 + 分词”的独立分词结构，用来作状语。
+  - `译` 由于这些孩子在美国长大，我们发现他们的价值观和中国孩子的完全不同。
+
+`2` The Chinese children grown in the U.S. can speak fluent English. ❌
+
+- 这里 grown (成长) 是不及物动词，不能用作后置定语。
+- The Chinese children who have grown in the U.S. can speak fluent English.
+
+`2` All the flowers grown here have developed from those `____` in the forest.
+
+- A. that once raised
+- B. that once grew
+- C. once raising
+- D. once grown
+- `答案` B。
+  - all the flowers grown here 中的 grown 是作为及物动词（种植）使用的，作后置定语。
+  - raise 只能作为及物动词，如果用 raise，这里只能表示被动关系，A（过去式，不是过去分词）和
+    C 都是主动语态。
+  - 如果使用 grew，这里是作为不及物动词（“生长”），不能作为后置定语，所以排除 D。
+- `译` 种植在这里的花，是利用森林中自然野生的花培养而来的。
+
+### 5.3 不能用作状语的分词结构
+
+在英语中，大多数分词结构都可以用作状语，但有一个例外，即**不及物动词**（如 grow up）
+的过去分词（如 grown up）不能作状语，但它的完成式（having grown up）可以作状语。
+
+Grown up in a small village, I developed a great interest in... ❌
+
+- 不及物动词 grown 不能用作状语。
+- Having grown up in a small village, I developed a great interest in...
+  - grow 的分词完成式可以作状语。
+
+`1` Though `____` in San Francisco, Dave had always preferred to record the
+plain facts of small-town life.
+
+- A. raised
+- B. grown up
+- C. developed
+- D. cultivated
+- `答案` A。grown up 表示“成长”，是不及物动词，不能用作状语。
+- `译` 尽管 Dave 是在旧金山这样的大城市中长大，但他总是喜欢记录小城镇生活中的点点滴滴。
+- `=` Having grown up in San Francisco, Dave had always preferred to record the
+  plain facts of small-town life.
+  - grow 的完成式 having grown up 可以做状语。
+- `=` Having been raised in San Francisco, Dave had always preferred to record
+  the plain facts of small-town life.
+  - raise 的分词完成被动式 having been raised 也可以做状语。
+
+综上：不及物动词（如 grow up）的过去分词（如 grown up）只能作前置定语（如 grown up
+children），而不能作后置定语（如 children grown up in China ❌），也不能充当状语（如
+Grown up in China, children...❌），而只有其完成式（如 Having grown up）才可以作状语。
+
+### 思维训练：5. 分词作成分要注意的问题
+
+**判断下面句子的正误，错误的解释原因并改正。**
+
+*1. These children having grown in the village have never seen so many high-rise
+buildings before.*
+
+*2. Grown up in the United States, I had never seen the street crowded with so
+many bicycles.*
+
+*3. Won its war for independence in 1783, the United States then struggled to
+establish its own economic and financial system.*
+
+### 答案：思维训练：5. 分词作成分要注意的问题
+
+*1. 错误。分词完成式一般不能充当后置定语。
+
+- These children raised in the village have never seen so many high-rise
+  buildings before.
+
+*2. 错误。不及物动词的过去分词 grown 只能作前置定语，不能作状语。
+
+- Having grown up in the United States, I had never seen the street crowded with
+  so many bicycles.
+
+*3. 错误。won 改为 having won。
+
+## 6. 分词的完成式
+
+分词的完成式分为主动完成式（having done）和被动完成式（having been done）。
+它们一般不能用在名词后面作后置定语，由于是短语，就更不能作前置定语，而只能作状语。
+所以这里主要讨论作状语的情况。
+
+### 6.1 一般式还是完成式
+
+分词采用一般式还是完成式，主要取决于分词所表示的动作或状态与句子谓语动词之间的关系。
+
+- 一般式：当分词所表示的动作或状态与谓语动词所表示的动作或状态**同时发生**或在谓语动作或状态**之后发生**，则要用分词的一般式；
+- 完成式：当分词所表示的动作或状态在谓语动词所表示的动作或状态**之前发生**，则要用分词的完成式。
+
+`1`
+
+- Having sung a song, he sat down.
+  - 用分词完成式，将分词动作 sing 和谓语动作 sit 两者前后分隔开，先 sing 后 sit。
+  - `译` 他唱完一首歌后，就坐了下来。
+  - `=` After singing a song, he sat down.
+    - 一般式加上明确的时间连词也可以强调两个动作是先后发生的。
+- Singing a song, he sat down.
+  - 用分词一般式 singing，往往表示分词动作 sing 和谓语动作 sit 两者同时发生。
+  - `译` 唱着歌的同时，他就坐了下来。
+
+`2`
+
+- Having eaten a hearty breakfast, we prepared for our long journey.
+  - 先 eat 后 prepare。
+  - `译` 吃完一顿丰盛的早饭之后，我们就开始准备行装。
+- Eating a hearty breakfast, we prepared for our long journey.
+  - 边 eat 边 prepare。
+  - `译` 吃着丰盛的早饭的同时，我们就开始准备行装了。
+
+`3`
+
+- Having eaten his supper, he went out.
+  - 先 eat 后 go
+  - `译` 他吃完晚饭后出门了。
+- Eating his supper, he went out.
+  - eat 着就 go 了。
+  - `译` 他边吃着晚饭，边走了出去。
+
+### 6.2 何时该用完成式
+
+分词动作先于谓语动作时，分词要用完成式。具体有两种表现：
+
+1. 如果分词是短暂动词，则分词的完成式所表示的动作往往是在谓语动作之前**多次**发生过，即表现为重复性的特点。
+2. 如果分词是延续动词，则分词的完成式所表示的动作往往是在谓语动作之前发生并且**持续**了一段时间，即表现为持续性的特点。
+
+`1` **Having been** an English teacher for more than ten years, and **having
+been** constantly **exposed** to American culture through American friends and
+the American mass media, I did not experience the so-called "culture shock"
+when I came to Harvard University. However, it still took me some time to learn
+"to do as the Americans do when in America".
+
+- having been 和 having been exposed 都是表示动作在谓语动作 experience 之前发生并且持续了一段时间。
+- `译` 因为我以前做过十多年的英语老师，并且一直通过美国朋友和美国媒体接触美国文化，所以在来到哈佛大学时，我并没有经历过所谓的“文化震撼”现象。不过，在美国真正做到“入乡随俗”，我还是花了一段时间。
+
+`2` For "good", the Chinese worked out a combination of "woman" and "child".
+Once this combination process had started, there was no limit to it. The Chinese
+still use the system today, **having developed** it to the point of producing
+some forty thousand combined characters out of a few hundred original pictures
+of concrete objects.
+
+- having developed 是在谓语动作 use 之前发生并持续的动作。
+- `译` 对于“好”这个字，中国人创造出“女”和“子”的组合来表示。自从开创了这种组合造字法后，中国人就一直延用至今，现在他们用几百个象形文字，已创造出多达四万个组合汉字。
+
+`3` Having been bitten twice, the postman refused to deliver our letters unless
+we chained our dog up.
+
+- having been bitten 在谓语动作 refused 之前重复发生了两次，即分词完成式用于短暂动作时会体现出重复性的特点。
+- `译` 邮递员被狗咬了两次之后要我们把狗拴起来，不然就不给我们送信了。
