@@ -57,7 +57,19 @@
     - [6.1 一般式还是完成式](#61-一般式还是完成式)
     - [6.2 何时该用完成式](#62-何时该用完成式)
     - [思维总结：6. 分词的完成式](#思维总结6-分词的完成式)
-    - [思维训练：6. 分词的完成式](#思维训练6-分词的完成式)
+  - [7. 分词的用法总结](#7-分词的用法总结)
+    - [7.1 各种分词形式总结](#71-各种分词形式总结)
+      - [一、主动的一般动作：doing](#一主动的一般动作doing)
+      - [二、主动的进行动作：doing](#二主动的进行动作doing)
+      - [三、主动的完成动作：having done](#三主动的完成动作having-done)
+      - [四、被动的一般动作：done（及物动词）](#四被动的一般动作done及物动词)
+      - [五、被动的进行动作：being done（及物动词）](#五被动的进行动作being-done及物动词)
+      - [六、被动的完成动作：having been done（及物动词）](#六被动的完成动作having-been-done及物动词)
+      - [七、不及物动词的过去分词用法比较复杂](#七不及物动词的过去分词用法比较复杂)
+        - [1. 作定语](#1-作定语)
+        - [2. 作状语](#2-作状语)
+    - [7.2 如何正确使用分词](#72-如何正确使用分词)
+  - [8. 分词构成的复合形容词](#8-分词构成的复合形容词)
 
 分词是一种重要的连词成句的手段。
 
@@ -1560,6 +1572,164 @@ his vessel finally reached port.
 
 分词的动作与谓语动作之间有很长的时间间隔，或者是因为分词的动作本身经历了很长时间的延续，此时分词都需要用完成式。
 
-### 思维训练：6. 分词的完成式
+## 7. 分词的用法总结
+
+### 7.1 各种分词形式总结
+
+| 形式     | 主动        | 被动             |
+| -------- | ----------- | ---------------- |
+| 一般动作 | doing       | done             |
+| 进行动作 | doing       | being done       |
+| 完成动作 | having done | having been done |
+
+#### 一、主动的一般动作：doing
+
+这种分词形式可以作**定语**和**状语**。
+
+`1` Unidentified Flying Objects: 不明飞行物
+
+`2` Locking the door, he went home.
+
+- `译` 他锁上门，回家去了。
+
+`3` Smiling, he answered.
+
+- `译` 他笑着回答道。
+
+#### 二、主动的进行动作：doing
+
+这种分词形式**主要作定语**。
+
+`4` the sinking ship: 正在下沉的船
+
+#### 三、主动的完成动作：having done
+
+这种分词形式**只能作状语**，不能作定语。
+
+`5` Having failed twice, he decided to give up.
+
+- `译` 他已经失败了两次，于是决定放弃。
+
+`6` Having locked all the doors, he went home.
+
+- `译` 他把所有的门都锁好后才回家。
+
+#### 四、被动的一般动作：done（及物动词）
+
+这种分词形式比较常见，可以作**定语**和**状语**。
+
+`7` a respected writer: 一位受人尊敬的作家
+
+`8` Asked what he wanted to do in future, he answered...
+
+- `译` 被问到将来想做什么时，他回答道……
+
+#### 五、被动的进行动作：being done（及物动词）
+
+这种形式比较少见，主要用作后置定语。
+
+`9` The question being discussed is very important.
+
+- `译` 正在讨论的那个问题十分重要。
+
+被动进行的动作很少用来作状语，即使作状语，一般也仅用来表示原因，兼含有时间的意味。
+
+`10` Being protected by a thick wall, they felt they were quite safe.
+
+- `译` 由于被一面厚厚的墙保护着，他们感到非常安全。
+
+`11` Being asked to give a performance, she couldn't very well refuse.
+
+- `译` 她受邀表演，不好拒绝。
+
+`12` Being asked where he was going, the boy said he was just taking a walk.
+
+- `译` 当被问到要去哪里时，这个男孩说他只是随便走走。
+
+`13` He wasn't asked to take on the chairmanship of the society, being
+considered insufficiently popular with all members.
+
+- `译` 没有让他当这个社团的主席，因为觉得他并非受所有成员的欢迎。
+
+#### 六、被动的完成动作：having been done（及物动词）
+
+这种分词形式只能作状语，不能作定语。
+
+`14` All flights having been canceled, they had to take the train.
+
+- `译` 由于所有的航班都被取消了，他们只好坐火车。
+
+#### 七、不及物动词的过去分词用法比较复杂
+
+##### 1. 作定语
+
+不及物动词的过去分词可以作定语，且必须作前置定语。
+
+`15` grown-up children: 长大的孩子
+
+`16` sunken ships: 已沉于水底的船只
+
+`17` fallen leaves: 落叶
+
+- children grown in this family ❌
+- ships sunken in the sea ❌
+- leaves fallen on the ground ❌
+
+##### 2. 作状语
+
+一般式 grown 不能作状语。
+
+`18`
+
+- Grown up in the United States, I had never seen a university surrounded by
+  high, cement walls. ❌
+- Having grown up in the United States, I had never seen a university surrounded
+  by high, cement walls. ✅
+  - 完成式 having grown 才能作状语。
+  - `译` 我是在美国长大的，在我成长的过程中，我从来没有看到过哪所大学是被高高的水泥墙围起来的。
+
+综上，不及物动词的过去分词**只能作前置定语**，**不能作后置定语**，也**不能作状语**。
+
+如果要表示将来的被动动作，要用不定式 to be done。
+
+### 7.2 如何正确使用分词
+
+要正确使用分词，需要注意三个方面：
+
+1. 分词的意义：即现在分词和过去分词的意义；
+2. 分词的作用：即分词在句中充当的语法功能，主要是作状语和定语；
+3. 分词的用法：即动词的及物性和不及物性。
+
+`1` NASA's Mars program was set back when two spacecraft failed up reaching
+Mars, one `____` up in the planet's atmosphere and the other `____` after a
+software failure.
+
+- A. burned, disappeared
+- B. burned, disappearing
+- C. burning, disappearing
+- D. burning, disappeared
+- `答案` C。逗号后面是一个独立分词结构，作为状语补充说明主句。
+- 若选 A，
+  - 且把动词当成过去式，则句子变成 and 引导的三个并列句，但是这三个句子在意思上并不是并列关系，而是由逗号后面的内容来补充说面前面完整的句子。
+  - 若把两个词看成过去分词，这里两个词都是作为不及物动词，不及物动词的过去分词形式不能作状语。
+- `译` 由于两艘宇宙飞船都未能到达火星，其中一艘飞船在火星的大气层中起火燃烧了，而另一艘飞船在软件系统出现故障之后失踪了，这使得美国宇航局的火星探测计划遭遇挫折。
+
+`2` A remote-controlled bomb exploded outside a hotel near the town sqaure
+yesterday, `____` at least 12 people.
+
+- A. having been injured
+- B. having injured
+- C. injured
+- D. injuring
+- `答案` D。
+  - 这里分词作结果状语。
+  - 这里 exploded 先发生，injure 后发生，只有在 exploded 之后发生的事才可能用完成式，所以
+    injure 不能用完成式，排除 A 和 B。
+  - 由于 at least 12 people 是充当分词的宾语，所以应该用现在分词 injuring，选 D。
+  - 若选过去分词，则应该改写为：A remote-controlled bomb exploded outside a hotel
+    near the town square yesterday, with at least 12 people injured.
+- `译` 昨天，一颗遥控炸弹在市镇中心广场附近的一家酒店外面爆炸，造成至少12人受伤。
+
+## 8. 分词构成的复合形容词
 
 >>>>> progress
