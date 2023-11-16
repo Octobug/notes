@@ -77,6 +77,13 @@
       - [三、名词 + 不及物动词的现在分词](#三名词--不及物动词的现在分词)
       - [四、名词 + 系动词的现在分词](#四名词--系动词的现在分词)
       - [五、形容词 + 系动词的现在分词](#五形容词--系动词的现在分词)
+      - [六、副词 + 不及物动词的现在分词](#六副词--不及物动词的现在分词)
+    - [8.3 过去分词构成的复合形容词](#83-过去分词构成的复合形容词)
+      - [一、过去分词构成的复合形容词的共同特点](#一过去分词构成的复合形容词的共同特点)
+      - [二、名词 + 及物动词的过去分词](#二名词--及物动词的过去分词)
+      - [三、形容词 + 及物动词的过去分词](#三形容词--及物动词的过去分词)
+      - [四、副词 + 及物动词的过去分词](#四副词--及物动词的过去分词)
+    - [8.4 其他构成的复合形容词](#84-其他构成的复合形容词)
 
 分词是一种重要的连词成句的手段。
 
@@ -1776,6 +1783,8 @@ countries speak English。
 由于是用表示主动关系的现在分词构成，这类复合形容词必然具有共同的外部关系：
 被修饰的名词与现在分词存在逻辑上的主谓关系，或者说被修饰的名词可以作现在分词的逻辑主语。
 
+既然外部关系是一样的，那么内部关系就是这类复合形容词的关键特点。
+
 #### 二、名词 + 及物动词的现在分词
 
 这是一类使用频率非常高的复合形容词。
@@ -1877,4 +1886,177 @@ of life elsewhere.
 - 内部关系：现在分词与构成复合形容词的形容词存在逻辑上的系表表现，即复合形容词内的形容词在逻辑上作分词的表语。
   形容词 good 可以作系动词 look 的标语。
 
-`17` >>>>> progress
+`17` lame-sounding stories: 听起来很勉强的借口
+
+- `=` stores sounds lame
+
+`18` a funny-looking clown: 样子看起来很滑稽的小丑
+
+- `=` a clown looks funny
+
+`19` an easy-going person: 性格随和的人
+
+- `=` a person goes easy
+
+`20` the nice-sounding music: 好听的音乐
+
+- `=` the music sounds nice
+
+#### 六、副词 + 不及物动词的现在分词
+
+`21` the handsome fast-talking and habitual liar attorney: 这位相貌英俊、讲话速度快，并且习惯撒谎的律师
+
+- `=` An attorney talks fast.
+- 外部关系：被修饰的名词与现在分词存在逻辑上的主谓关系，即被修饰的名词可以作现在分词的逻辑主语。
+  attorney 可以作 talk 的主语。
+- 内部关系：现在分词与构成复合形容词的副词存在逻辑上的动状关系，即复合形容词中的副词在逻辑上是作分词的状语。
+  副词 fast 可以作动词 talk 的状语。
+
+此外，构成复合形容词的副词还可以是最高级形式。
+
+`22` I know that some universities have a policy of expelling the worst
+performing students in order to keep their standards high.
+
+- worst performing 就是一个复合形容词，修饰 students。
+- `译` 我知道有些大学制定了政策，对学生实行末位淘汰制，以保持他们的高水平。
+
+`23` far-reaching events: 有深远影响的事件
+
+- `=` events reach far
+
+`24` hard-working people: 勤劳的民族
+
+- `=` people work hard
+
+`25` a far-seeing politician: 一位远见卓识的政治家
+
+- `=` a politician sees far
+
+`26` naturally-occurring substances: 自然界中存在的物质
+
+- `=` substances occur naturally
+
+### 8.3 过去分词构成的复合形容词
+
+#### 一、过去分词构成的复合形容词的共同特点
+
+由于是用表示被动关系的过去分词构成复合形容词，这类复合形容词必然具有共同的外部关系：
+即被修饰的名词与过去分词存在逻辑上的动宾关系，或者说被修饰的名词可以作过去分词的逻辑宾语。
+既然外部关系是一样的，那么内部关系就是这类复合形容词的关键特点。
+
+#### 二、名词 + 及物动词的过去分词
+
+`1` U.S.-led coalition: 以美国为首的盟军
+
+`4` U.S.-proposed resolution: 美国提出的决议
+
+- 外部关系：被修饰的名词与过去分词存在逻辑上的动宾关系，即被修饰的名词可以作过去分词的逻辑宾语。
+  - `=` The U.S. proposes the resolution.
+    - resolution 作 propose 的宾语。
+- 内部关系：过去分词与构成复合形容词的名词存在逻辑上的动状关系，即复合形容词内的名词在逻辑上是作分词的状语
+  - `=` The resolution is proposed by the U.S.
+    - by the U.S. 作状语修饰 led。
+
+`5` "Lenovo-organized Olympic torchbearer nominee selection among foreigners
+living in China" is in full swing.
+
+- `译` 由联想集团组织的“海外奥运火炬手提名选拔活动”已全面展开，这次活动面向居住在中国的外籍人士。
+
+`6` The frequency of extreme weather events such as floods and storms has
+increased steadily over the past century. Many experts believe the extreme
+weather conditions are to a large extent the result of human-induced climate
+change.
+
+- `译` 一个世纪以来，诸如洪水和暴风雨等极端天气事件发生得越来越频繁。许多专家认为，人类活动引发的气候变化在很大程度上导致了极端天气情况的出现。
+
+`7` password-protected files: 受密码保护的文件
+
+- `=` files protected by a password
+
+`8` man-made fibers: 人造纤维
+
+- `=` fibers made by man
+
+`9` hand-made gloves: 手工缝制的手套
+
+- `=` gloves made by hand
+
+`10` water-covered lands: 被水覆盖的陆地
+
+- `=` lands covered with water
+
+`11` state-owned enterprises: 国有企业
+
+- `=` enterprises owned by the state
+
+`12` helium-filled balloons: 充满氦气的气球
+
+- `=` balloons filled with helium
+
+从以上例子可以看出内部的动状关系，即内部的名词表示过去分词动作的行为方式或状态。
+
+#### 三、形容词 + 及物动词的过去分词
+
+`13` a green-painted house: 一个粉刷成绿色的房屋
+
+- `=` painted a house green
+
+`14` a red-dyed cloth: 一块染红的布
+
+- `=` dyed a cloth red
+
+`15` a ready-made dress: 一件成衣
+
+- `=` made a dress ready
+
+`16` a clean-shaven man: 一位脸刮得很干净的男子
+
+- `=` a man shave himself clean
+
+从以上例子可以总结出这类复合形容词具有如下特点：
+
+- 外部关系：被修饰的名词与过去分词存在逻辑上的动宾关系，即被修饰的名词可以作过去分词的逻辑宾语。
+- 内部关系：过去分词与构成复合形容词的形容词存在逻辑上的动补关系，即动词与补足语的关系，也就是说复合形容词内的形容词在逻辑上是作分词动作的补足语。
+
+#### 四、副词 + 及物动词的过去分词
+
+- 外部关系：被修饰的名词与过去分词存在逻辑上的动宾关系，即被修饰的名词可以作过去分词的逻辑宾语。
+- 内部关系：过去分词与构成复合形容词的副词存在逻辑上的动状关系，即动作与状语的关系，也就是说复合形容词中的副词在逻辑上是作分词动作的状语。
+
+`17` Obama the **newly elected president** since the Great Depression, are
+finding the most serious financial crisis, while the U.S. economy is also
+facing a decline in long-term risks.
+
+- newly elected president `=` (People) elected the President newly.
+- President 作 elect 的宾语，newly 作状语修饰 elected。
+- `译` 新当选总统奥巴马正碰上自大萧条以来最严重的一场金融危机，而美国经济也面临着陷入长期下滑的风险。
+
+`18` a democratically-elected prime minister: 一位民选总理
+
+- `=` a prime minister elected democratically
+
+`19` a newly-built library: 一座新建的图书馆
+
+- `=` a library built newly
+
+`20` the above-mentioned items: 上面提到的各项内容
+
+- `=` the items mentioned above
+
+`21` a tightly-packed box: 一个包装严密的盒子
+
+- `=` a box packed tightly
+
+`22` a well-bred young man: 一个温文尔雅的年轻人
+
+- `=` a young man bred well
+
+另外，这里的副词还可以有比较级或最高级形式。
+
+`23` a best-loved book: 最受喜爱的一本书
+
+- `=` a book loved best
+
+### 8.4 其他构成的复合形容词
+
+>>>>> progress
