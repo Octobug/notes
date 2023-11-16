@@ -70,6 +70,13 @@
         - [2. 作状语](#2-作状语)
     - [7.2 如何正确使用分词](#72-如何正确使用分词)
   - [8. 分词构成的复合形容词](#8-分词构成的复合形容词)
+    - [8.1 外部关系与内部关系](#81-外部关系与内部关系)
+    - [8.2 现在分词构成的复合形容词](#82-现在分词构成的复合形容词)
+      - [一、现在分词构成的复合形容词的共同特点](#一现在分词构成的复合形容词的共同特点)
+      - [二、名词 + 及物动词的现在分词](#二名词--及物动词的现在分词)
+      - [三、名词 + 不及物动词的现在分词](#三名词--不及物动词的现在分词)
+      - [四、名词 + 系动词的现在分词](#四名词--系动词的现在分词)
+      - [五、形容词 + 系动词的现在分词](#五形容词--系动词的现在分词)
 
 分词是一种重要的连词成句的手段。
 
@@ -1732,4 +1739,142 @@ yesterday, `____` at least 12 people.
 
 ## 8. 分词构成的复合形容词
 
->>>>> progress
+在英语中，分词构成复合形容词是非常常见的，可以用现在分词和过去分词分别与名词、形容词和副词构成复合形容词。
+
+要判断何时用现在分词何时用过去分词来构成，需要界定“外部”和“内部”两方面的关系。
+
+### 8.1 外部关系与内部关系
+
+`1` English-speaking countries: 说英语的国家
+
+**外部关系**：指**现在分词**或**过去分词**与它所修饰的**名词**之间的关系。
+比如在 English-speaking countries 这个短语中，外部关系是指现在分词 speaking
+和它所修饰的名词 countries 之间的关系。
+所以，外部关系有两种，**主动关系**和**被动关系**。
+比如 countries 和 speak 之间是主动关系，相当于 people in these coutries speak，所以用能够表示主动关系的现在分词来构成复合形容词。
+
+**内部关系**：指构成复合形容词的两个词之间的关系，也就是**现在分词**或**过去分词**与能构成复合形容词的**其他词（名词、形容词或副词）**之间的关系。
+比如在 English-speaking countries 这个短语中，内部关系是指现在分词 speaking 和名词
+English 之间的关系。其中 speak 与 English 在逻辑上构成动宾关系，相当于 people in these
+countries speak English。
+内部关系是构成复合形容词的难点。
+
+外部关系决定了是用现在分词还是用过去分词来构成复合形容词，而内部关系决定了是用名词、形容词还是副词来构成复合形容词。
+
+- English-spoken countries ❌
+- water-covering land ❌
+- a newly-building library ❌
+- naturally-occurred substances ❌
+- ready-making clothes ❌
+- nice-looked person ❌
+- good-done jobs ❌
+
+### 8.2 现在分词构成的复合形容词
+
+#### 一、现在分词构成的复合形容词的共同特点
+
+由于是用表示主动关系的现在分词构成，这类复合形容词必然具有共同的外部关系：
+被修饰的名词与现在分词存在逻辑上的主谓关系，或者说被修饰的名词可以作现在分词的逻辑主语。
+
+#### 二、名词 + 及物动词的现在分词
+
+这是一类使用频率非常高的复合形容词。
+
+`1` ice-thawing visit: 融冰之旅
+
+- 相当于 The visit can thaw the ice.
+- 外部关系：被修饰名词 visit 与现在分词 thawing 存在逻辑上的主谓关系，即被修饰名词作现在分词的逻辑主语。
+- 内部关系：现在分词 thawing 与名词 ice 存在逻辑上的动宾关系，即复合形容词中的名词作分词的逻辑宾语。
+
+`2` face-swapping skill: 川剧变脸
+
+- 这里 face-swapping 作为形容词修饰名词 skill。
+
+`4` Have no more than five or six caffeine-containing drinks each day. Or, you
+can replace caffein-rich, sweet drinks with chamomile tea: It helps to reduce
+stress.
+
+- caffeine-containing drinks 相当于 The drinks contain caffeine
+- 外部关系：drinks 作及物动词 contain 的主语
+- 内部关系：caffeine 作为 contain 的宾语
+- `译` 每天喝含咖啡因的饮料不要超过五到六杯。或者将富含咖啡因的甜饮料替换为甘菊茶，这有助于减压。
+
+`5` hostage-taking incident: 人质事件
+
+`6` peace-keeping force: 维和部队
+
+- `=` force keeps peace
+
+`7` freedom-loving people: 热爱自由的民族
+
+- `=` people love freedom
+
+`8` a man-eating beast: 食人兽
+
+- `=` a beast eats a man
+
+`9` You don't show up and I have to see that heart-breaking look on his face.
+
+- `译` 如果你不到场，那我只好要看他脸上的那种伤心的表情了。
+
+#### 三、名词 + 不及物动词的现在分词
+
+`10` You may not be able to travel through the skies on your own. But you can be
+flying high in minutes with a sky-wakling kite.
+
+- `=` The kite walks in the sky.
+- 外部关系：被修饰的名词与现在分词存在逻辑上的主谓关系，即被修饰的名词可以作现在分词的逻辑主语。
+  kite 作 walk 的主语。
+- 内部关系：现在分词与构成复合形容词的名词存在逻辑上的动状关系，即动作与状语的关系。
+  复合形容词内的名词可与特定的介词连用构成介词短语，然后来修饰现在分词所表示的动作。
+  比如 sky 可以与介词 in 搭配构成介词短语 in the sky，然后修饰分词的动作 walk。
+- `译` 你独自一人很可能无法完成空中旅行，但是借助于在高空飞翔的风筝，你就可以在空中飞行几分钟。
+
+在“名词 + 及物动词的现在分词”中，存在动宾关系，而在“名词 + 不及物动词的现在分词”中，只存在动状关系，因为此时的分词是不及物动词，所以不能带有宾语。
+
+`11` a night-walking animal: 夜行动物
+
+- `=` an animal walks at night
+
+`12` a winter-blooming plant: 冬季开花的植物
+
+- `=` a plant blooms in winter
+
+`13` a sky flying kite: 在空中飞行的风筝
+
+- `=` a kite flies in the sky
+
+`14` a desert-dwelling tribe: 生活在沙漠中的部落
+
+- `=` a tribe dwells in the desert
+
+#### 四、名词 + 系动词的现在分词
+
+这类复合形容词比较少见，它来自于“系动词 + 名词（作表语）”这一句型。
+
+`15` In recent years, the debate over whether fossil-appearing objects from Mars
+were, in fact, indicators of past or present life on that planet has promoted
+many to ask whether people are ready, psychologically, to accept the possibility
+of life elsewhere.
+
+- fossil-appearing objects 相当于 The objects appear to be fossils.
+- 外部关系：被修饰的名词与现在分词存在逻辑上的主谓关系，即被修饰的名词可以作现在分词的逻辑主语。
+  名词 objects 可以作 appear 的主语。
+- 内部关系：现在分词与构成复合形容词的名词存在逻辑上的系表关系，即复合形容词内的名词在逻辑上是作分词的表语。
+  名词 fossil 可以作系动词 appear 的表语。
+- `译` 近年来，在火星上发现有类似于化石的物体，这是否就意味着现在或过去在火星上曾经有生命存在，人们对此存有争议。
+  这个争议本身促使许多人不禁要问：现在大家是否已经在心理上准备好接受有外星生命存在的可能。
+
+这类形容词类似于“形容词 + 系动词的现在分词”。
+
+#### 五、形容词 + 系动词的现在分词
+
+`16` a good-looking man: 外表英俊的男子
+
+- `=` A man looks good.
+- 外部关系：被修饰的名词与现在分词存在逻辑上的主谓关系，即被修饰名词可以用作现在分词的逻辑主语。
+  man 可以作 look 的主语。
+- 内部关系：现在分词与构成复合形容词的形容词存在逻辑上的系表表现，即复合形容词内的形容词在逻辑上作分词的表语。
+  形容词 good 可以作系动词 look 的标语。
+
+`17` >>>>> progress
