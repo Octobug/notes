@@ -84,6 +84,23 @@
       - [三、形容词 + 及物动词的过去分词](#三形容词--及物动词的过去分词)
       - [四、副词 + 及物动词的过去分词](#四副词--及物动词的过去分词)
     - [8.4 其他构成的复合形容词](#84-其他构成的复合形容词)
+      - [一、形容词 + 名词 + ed](#一形容词--名词--ed)
+      - [二、数词 + 名词 + ed](#二数词--名词--ed)
+    - [思维总结：8. 分词构成的复合形容词](#思维总结8-分词构成的复合形容词)
+      - [一、现在分词构成的复合形容词](#一现在分词构成的复合形容词)
+        - [1. 名词 + 及物动词的现在分词](#1-名词--及物动词的现在分词)
+        - [2. 名词 + 不及物动词的现在分词](#2-名词--不及物动词的现在分词)
+        - [3. 名词 + 系动词的现在分词](#3-名词--系动词的现在分词)
+        - [4. 形容词 + 系动词的现在分词](#4-形容词--系动词的现在分词)
+        - [5. 副词 + 不及物动词的现在分词](#5-副词--不及物动词的现在分词)
+      - [二、过去分词构成的复合形容词](#二过去分词构成的复合形容词)
+        - [6. 名词 + 及物动词的过去分词](#6-名词--及物动词的过去分词)
+        - [7. 形容词 + 及物动词的过去分词](#7-形容词--及物动词的过去分词)
+        - [8. 副词 + 及物动词的过去分词](#8-副词--及物动词的过去分词)
+        - [9. 形容词 + 名词 + ed](#9-形容词--名词--ed)
+        - [10. 数词 + 名词 + ed](#10-数词--名词--ed)
+  - [综合训练](#综合训练)
+    - [答案：综合训练](#答案综合训练)
 
 分词是一种重要的连词成句的手段。
 
@@ -2059,4 +2076,179 @@ facing a decline in long-term risks.
 
 ### 8.4 其他构成的复合形容词
 
+除了由现在分词和过去分词构成的复合形容词外，还有其他结构的复合形容词。
+这类复合形容词的逻辑关系比分词构成的复合形容词要简单。
+
+#### 一、形容词 + 名词 + ed
+
+`1` Studying spoken English really can be easy, even in a fast-paced and
+demanding world.
+
+- `译` 学习英语口语其实很简单，即使在这个快节奏、竞争激烈的社会里也是这样。
+
+`2` bad-tempered people: 坏脾气的人
+
+`3` warm-hearted people: 热心肠的人
+
+`4` cold-blooded animals: 冷血动物
+
+`5` narrow-minded people: 心胸狭窄的人
+
+`6` a blue-eyed man: 一个蓝眼睛的男子
+
+`7` near-sighted people: 近视眼的人
+
+`8` a long-haired girl: 一个长发姑娘
+
+`9` middle-aged people: 中年人
+
+`10` ill-humored people: 没有幽默感的人
+
+`11` lighter-skinned people: 肤色较浅的人
+
+#### 二、数词 + 名词 + ed
+
+`12` a one-eyed camel: 一只眼的骆驼
+
+`13` a two-faced person: 两面三刀的人
+
+`14` a three-legged table: 三条腿的桌子
+
+`15` a ten-storyed building: 十层楼高的建筑物
+
+### 思维总结：8. 分词构成的复合形容词
+
+#### 一、现在分词构成的复合形容词
+
+由现在分词构成的复合形容词，被修饰的名词与现在分词存在逻辑上的**主谓关系**。
+
+##### 1. 名词 + 及物动词的现在分词
+
+内部关系：现在分词与构成复合形容词的名词存在逻辑上的**动宾关系**，即复合形容词内的名词在逻辑上是作分词的宾语。
+
+an ice-thawing visit: 一次融冰之旅
+
+- `=` A visit thaws ice.
+
+##### 2. 名词 + 不及物动词的现在分词
+
+内部关系：现在分词与构成复合形容词的名词存在逻辑上的**动状关系**，即动作与状语的关系。
+具体来说，复合形容词内的名词可与特定的介词连用构成介词短语，然后修饰现在分词所表示的动作。
+
+a night-walking animal: 一种夜行性动物
+
+- `=` An animal walks at night.
+
+##### 3. 名词 + 系动词的现在分词
+
+内部关系：现在分词与构成复合形容词的名词存在逻辑上的**系表关系**，即复合形容词内的名词在逻辑上是作分词的表语。
+
+fossil-appearing objects: 外观像化石的物体
+
+- `=` The objects appear to be a fossil.
+
+##### 4. 形容词 + 系动词的现在分词
+
+内部关系：现在分词与构成复合形容词的形容词存在逻辑上的**系表关系**，即复合形容词内的形容词在逻辑上是作分词的表语。
+
+a good-looking man: 一个相貌英俊的男人
+
+- `=` A man looks good.
+
+##### 5. 副词 + 不及物动词的现在分词
+
+内部关系：现在分词与构成复合形容词的副词存在逻辑上的**动状关系**，即复合形容词内的副词在逻辑上是作分词的状语。
+
+hard-working people: 勤劳的民族
+
+- `=` people work hard
+
+#### 二、过去分词构成的复合形容词
+
+由过去分词构成的复合形容词，被修饰的名词与过去分词存在逻辑上的**动宾关系**。
+
+##### 6. 名词 + 及物动词的过去分词
+
+内部关系：过去分词与构成复合形容词的名词存在逻辑上的**动状关系**，即复合形容词内的名词在逻辑上是作分词的状语。
+
+man-made fibers: 人造纤维
+
+- `=` fibers made by man
+
+##### 7. 形容词 + 及物动词的过去分词
+
+内部关系：过去分词与构成复合形容词的形容词存在逻辑上的**动补关系**，即动词与补足语的关系，也就是说复合形容词内的形容词在逻辑上是作分词动作的补足语。
+
+a green-painted house: 一个粉刷成绿色的房子
+
+- `=` painted a house green
+
+##### 8. 副词 + 及物动词的过去分词
+
+内部关系：过去分词与构成复合形容词的副词存在逻辑上的**动状关系**，即动作与状语的关系，也就是说复合形容词内的副词在逻辑上是作分词动作的状语。
+
+a newly-built library: 一座新建的图书馆
+
+- `=` a library built newly
+
+##### 9. 形容词 + 名词 + ed
+
+a blue-eyed man: 一个蓝眼睛的男子
+
+##### 10. 数词 + 名词 + ed
+
+a one eyed camel: 一只眼的骆驼
+
+## 综合训练
+
+**一、选择正确答案填空。**
+
+*12. No matter how frequently `____`, the works of Beethoven always attract
+large audiences.*
+
+- *A. performing*
+- *B. performed*
+- *C. to be performed*
+- *D. being performed*
+
+*13. `____` with the picture, Mary tore it to pieces.*
+
+- *A. Dissatisfying thoroughly*
+- *B. To dissatisfy thoroughly*
+- *C. Being thoroughly dissatisfied*
+- *D. To be thoroughly dissatisfied*
+
+*14. `____` with the size of the whole earth, the highest mountain does not seem
+high at all.*
+
+- *A. When compared*
+- *B. Compare*
+- *C. While comparing*
+- *D. Comparing*
+
+*16. `____` nothing to talk about, the head said good-bye and went out of the
+room.*
+
+- *A. There was*
+- *B. Being*
+- *C. As there being*
+- *D. There being*
+
 >>>>> progress
+
+- *A.*
+- *B.*
+- *C.*
+- *D.*
+
+### 答案：综合训练
+
+**一、选择正确答案填空。**
+
+*12. B。相当于一个状语从句的省略结构：No matter how frequently (they are) performed...
+
+*13. C。这里的分词 being done 结构表示原因。
+
+*14. A。compare A with B。
+
+*16. D。独立分词结构作状语。
