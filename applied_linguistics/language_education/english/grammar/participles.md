@@ -2234,12 +2234,89 @@ room.*
 - *C. As there being*
 - *D. There being*
 
->>>>> progress
+*22. `____` left before the deadline, I am afraid I can't finish the experiment
+on time.*
 
-- *A.*
-- *B.*
-- *C.*
-- *D.*
+- *A. Although such a short time*
+- *B. It is such a short time*
+- *C. With so short time*
+- *D. With such a short time*
+
+*27. `____` you should have no trouble with the difficult work.*
+
+- *A. Knowing this*
+- *B. If you are knowing this*
+- *C. From knowing this*
+- *D. If you had known this*
+
+*28. One should never lose one's heart when `____` temporary difficulties.*
+
+- *A. confronted with*
+- *B. confront with*
+- *C. confronting with*
+- *D. confronted*
+
+*29. The difference between a winner and loser is, when `____` immense
+difficulties, the former never loses heart.*
+
+- *A. confronted with*
+- *B. confronting with*
+- *C. it is confronted with*
+- *D. confront with*
+
+*34. `____` from general worker-protection laws, women workers are also
+satisfied with special laws designed to protect them.*
+
+- *A. Being benefited*
+- *B. Benefiting*
+- *C. Benefited*
+- *D. Been benefited*
+
+*40. Everything `____` into consideration, Bob is more suitable for the job.*
+
+- *A. taking*
+- *B. being taken*
+- *C. to be taken*
+- *D. taken*
+
+*47. Anna was reading a piece of science fiction, completely `____` to the
+outside world.*
+
+- *A. being lost*
+- *B. having lost*
+- *C. losing*
+- *D. lost*
+
+*56. With all the work `____`, I don't know if I'll have time to go out.*
+
+- *A. done*
+- *B. to be done*
+- *C. to do*
+- *D. doing*
+
+*68. All eels spawn in the sea, the eggs hatching into transparent, ribbon-like
+larvae `____`, feeding until they metamorphose into small eels.*
+
+- *A. that drift about*
+- *B. drift about*
+- *C. about drifting*
+- *D. drift about them*
+
+**二、辨别改错。**
+
+*76. The conveniences that Americans desire ***reflecting***`A` not so much a
+***leisurely***`B` lifestyle as a busy lifestyle in which even minutes of time
+***are***`C` too valuable to ***be wasted***`D`.
+
+*77. The universe works in a way so far ***removing***`A` from what common sense
+***would***`B` allow ***that***`C` words of any kind must necessarily be
+inadequate to explain ***it***`D`.*
+
+*78. The Committee adopted a resolution ***requireing***`A` the seven
+auto-makers ***selling***`B` the most cars in the state ***making***`C` 2
+percent of those vehicles ***emissions-free***`D` by 1998.*
+
+*81.* >>>>> progress
 
 ### 答案：综合训练
 
@@ -2252,3 +2329,35 @@ room.*
 *14. A。compare A with B。
 
 *16. D。独立分词结构作状语。
+
+*22. D。独立分词结构作状语。
+
+*27. A。B 错误，因为 know 不能用于进行时态。
+
+*28. A。be confronted with
+
+*29. A。be confronted with
+
+*34. B。逻辑主语与句子主语须一致，women workers 与 benefit 是主动关系。
+benefit from 有受益的意思。
+
+*40. D。逻辑主语 everything 与分词是被动关系，所以用过去分词 taken。
+
+*47. D。固定搭配 be lost to。
+
+*56. C。这里是由“with + 名词 + 不定式”构成的独立主格结构。
+I 同时充当 to do 的逻辑主语，所以这里的不定式不需要用被动形式 to be done，而要用主动形式 to do。
+
+*68. A。spawn 是谓语。其后都是分词或从句，定语从句 that drift about 修饰 larvae。
+
+**二、辨别改错。**
+
+*76. A，改为 reflect。
+
+*77. A，改为 removing。
+
+- `=` The universe works in a way, so far removing from what common sense would
+  allow, that words of any kind must necessarily be inadequate to explain it.
+- `译` 宇宙的运作方式远远超出了常识所允许的范围，任何类型的词语都必然不足以解释它。
+
+*78. C，改为 make。？
