@@ -76,4 +76,4 @@
 - [x] [4. 不定式](infinitive.md)
 - [x] [5. 动名词](gerund.md)
 - [x] [6. 分词](participles.md)
-- [ ] [7. 从句与非谓语](./clauses_and_non-predicate.md)
+- [x] [7. 从句与非谓语](./clauses_and_non-predicate.md)

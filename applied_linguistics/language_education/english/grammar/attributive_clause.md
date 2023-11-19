@@ -667,6 +667,16 @@ nerves.
 
 ### 4.1 when 的用法
 
+> <https://www.englishgrammar.org/that-instead-of-when-and-where/>
+
+After common nouns referring to time, we often replace when with that. In some
+cases, the relative pronoun/adverb is dropped.
+
+You may come any time when you are free. OR You may come any time that you are free.
+
+I will never forget the day when I first met Jane. OR I will never forget the
+day that I first met Jane.
+
 #### 一、引导定语从句时，先行词必须是表示时间的名词
 
 when 作为关系副词时的用法特点有：
