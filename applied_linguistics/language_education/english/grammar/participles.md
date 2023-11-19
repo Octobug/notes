@@ -2316,7 +2316,23 @@ inadequate to explain ***it***`D`.*
 auto-makers ***selling***`B` the most cars in the state ***making***`C` 2
 percent of those vehicles ***emissions-free***`D` by 1998.*
 
-*81.* >>>>> progress
+*83. Carrie Chapman was ***instrumental***`A` ***in passing***`B` the Nineteenth
+Amendment to the United States Constitution ***gives***`C` women the right to
+***vote***`D`.*
+
+*84. Carrie Chapman ***organized***`A` the League of Women Voters ***after***`B`
+successfully ***campaign***`C` for the constitutional amendment
+***that gave***`D` women the right to vote.*
+
+*88. Bacteria ***lived***`A` in the soil ***play***`B` a vital role
+***in recycling***`C` the carbon and nitrogen ***needed***`D` by plants.*
+
+*94. ***After***`A` a heavy rain, a rainbow may spread all the way
+***across***`B` the sky, its two ends ***seem***`C` to ***rest on***`D` the
+Earth.*
+
+*99. ***A great many***`A` teachers ***firmly***`B` believe that English is one
+of the ***poorest-taught***`C` subjects in high schools ***at present***`D`*.
 
 ### 答案：综合训练
 
@@ -2361,3 +2377,13 @@ I 同时充当 to do 的逻辑主语，所以这里的不定式不需要用被�
 - `译` 宇宙的运作方式远远超出了常识所允许的范围，任何类型的词语都必然不足以解释它。
 
 *78. C，改为 make。？
+
+*83. C，改为 giving。
+
+*84. C，改为 campaigning。
+
+*88. A，改为 living。
+
+*94. C，改为 seeming。seem 本身就是“看起来……样”的意思，不需要用被动形式。
+
+*99. C，改为 most poorly-taught。“副词最高级 + 过去分词”构成形容词。
