@@ -27,6 +27,13 @@
     - [思维训练：2. 定语从句的简化](#思维训练2-定语从句的简化)
       - [答案：思维训练：2. 定语从句的简化](#答案思维训练2-定语从句的简化)
   - [3. 状语从句的简化](#3-状语从句的简化)
+    - [3.1 状语从句与分词](#31-状语从句与分词)
+    - [3.2 状语从句与不定式](#32-状语从句与不定式)
+    - [思维训练：3. 状语从句的简化](#思维训练3-状语从句的简化)
+    - [答案：思维训练：3. 状语从句的简化](#答案思维训练3-状语从句的简化)
+  - [思维总结](#思维总结)
+  - [综合训练](#综合训练)
+    - [答案：综合训练](#答案综合训练)
 
 从句的简化是指把结构复杂的从句简化为精炼的非谓语形式。
 
@@ -457,4 +464,130 @@ Do you know the fire `____` yesterday?
 
 ## 3. 状语从句的简化
 
->>>>> progress
+一般来说，只有当状语从句主语和主句主语相同时，才能把状语从句换成短语。否则会引起句义的改变。
+
+While the teacher was lecturing to the class, I fell asleep.
+
+- While lecturing to the class, I fell asleep. ❌
+  - 主句主语是 I，从句主语是 the teacher，两者不一致，因此状语从句不能简化成短语。
+- `译` 在老师上课的时候，我睡着了。
+
+在三大非谓语当中，只有**不定式**和**分词**才可能作状语，因而状语从句也只能简化成这两种非谓语形式。
+
+### 3.1 状语从句与分词
+
+由于分词具有副词的功能，可以在句中作状语，所以状语从句往往可以简化成分词短语。
+具体的简化操作：如果状语从句中含有 be 动词，只需要把从句主语和 be 动词省略，即简化成短语。
+
+`1` 零，只有和实数用在一起才有意义；思想，只有付诸行动才能发出光芒。
+
+- A zero can have its meaning only when it is used with real numbers; thoughts
+  can give off brilliant light only when they are put into actions.
+  - 主从主语一致，从 when 引导的状语从句中省略了 it is
+- A zero can have its meaning only when used with real numbers; thoughts can
+  give off brilliant light only when put into actions.
+  - 主从主语一致，从 when 引导的状语从句中省略了 they are
+
+`2` 老虎只有在年幼时抓来才能被驯服。
+
+- A tiger can't be tamed unless it is caught very young.
+- A tiger can't be tamed unless caught very young.
+
+如果状语从句中没有 be 动词，则可以把从句的主语省略并且把动词变成现在分词形式。
+这种状语从句的简化就相当于分词作状语。
+
+`3` 来到北京之后我交了很多新朋友。
+
+- Since I came to Beijing, I have made many new friends.
+- Since coming to Beijing, I have made many new friends.
+
+`4` 做完作业，我就喂狗了。
+
+- After I finished my homework, I fed the dog.
+- After finishing my homework, I fed the dog.
+
+`5` 那名男子从船上跳出后，就被一条鲨鱼咬了。
+
+- After he jumped out of a boat, the man was bitten by a shark.
+- After jumping out of a boat, the man was bitten by a shark.
+
+### 3.2 状语从句与不定式
+
+能够简化为不定式的状语从句一般只有**目的状语**从句，因为在英语中，作目的状语几乎是不定式的专属功能。
+
+`1` 我关掉了电视，好让我的室友安静地学习。
+
+- I turned off the TV in order that my roommate could study in peace and quiet.
+- I turned off the TV in order for my roommate to study in peace and quiet.
+
+`2` 我讲得既慢又清晰，以便观众能听懂我的话。
+
+- I spoke slowly and clearly so that/in order that the audience could understand
+  me.
+- I spoke slowly and clearly in order for the audience to understand me.
+
+`3` 他们在石头上刻字，以便后人记住他们做过的事情。
+
+- They carved the words on the stone so that/in order that the future generation
+  should remember what they had done.
+- They carved the words on the stone in order for the future generation to
+  remember what they had done.
+
+`4` 老师提高了声音，以便坐在后排的学生能听得更清楚。
+
+- The teacher raised his voice in order that the students in the back could hear
+  more clearly.
+- The teacher raised his voice in order for the students in the back to hear
+  more clearly.
+
+### 思维训练：3. 状语从句的简化
+
+**把下列能够简化的状语从句简化为短语，对于不能简化的，请说明原因。**
+
+*7. After he had finished breakfast, he left the house and went to his office.*
+
+*8. After she had completed her shopping, she went home.*
+
+### 答案：思维训练：3. 状语从句的简化
+
+**把下列能够简化的状语从句简化为短语，对于不能简化的，请说明原因。**
+
+*7. After having finished breakfast, he left the house and went to his office.
+
+*8. After having completed her shopping, she went home.
+
+## 思维总结
+
+从句与非谓语的相关性：
+
+1. 名词从句一般仅与**动名词**和**不定式**有关，其中与动名词的关系更密切。
+2. 定语从句一般仅与**分词**和**不定式**有关，其中与分词的关系更密切。
+3. 状语从句一般仅与**分词**和**不定式**有关，其中与分词的关系更密切。
+
+从非谓语的角度看：
+
+1. 不定式与三大从句都有联系，但联系都不是很密切。这也是其“不定 (indefinite)”的体现。
+2. 动名词只与名词从句有联系，而且联系很密切，二者可以互换。
+3. 分词则与定语从句和状语从句均有密切的关系，由此可见分词的重要性。
+
+从难度看：
+
+1. 名词从句和动名词最简单：结构简单，内容较少，容易掌握；
+2. 定语从句和分词最难：结构复杂，内容多且有不少内容难以理解和使用；
+3. 状语从句和不定式最繁杂：虽然不是很难理解，但是内容多而杂乱。
+
+## 综合训练
+
+**选择最佳答案填空。**
+
+*21. Nearly all trees contain a mix of polymers that can burn like petroleum
+`____` properly extracted.*
+
+- *A. after*
+- *B. if*
+- *C. when it*
+- *D. is*
+
+### 答案：综合训练
+
+*21. B。
