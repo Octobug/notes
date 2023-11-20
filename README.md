@@ -1,7 +1,5 @@
 # Notes
 
-[![The Purpose of Life](.assets/the_purpose_of_life.jpg)](https://www.imdb.com/title/tt0359950/)
-
 ## Categories
 
 These notes are categorized into directories named in academic
