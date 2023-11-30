@@ -8,6 +8,15 @@
       - [Follower failure: Catch-up recovery](#follower-failure-catch-up-recovery)
       - [Leader failure: Failover](#leader-failure-failover)
     - [Implementation of Replication Logs](#implementation-of-replication-logs)
+      - [Statement-based replication](#statement-based-replication)
+      - [Write-ahead log (WAL) shipping](#write-ahead-log-wal-shipping)
+      - [Logical (row-based) log replicatoin](#logical-row-based-log-replicatoin)
+      - [Trigger-based replication](#trigger-based-replication)
+  - [Problems with Replication Lag](#problems-with-replication-lag)
+    - [Reading Your Own Writes](#reading-your-own-writes)
+    - [Monotonic Reads](#monotonic-reads)
+    - [Consistent Prefix Reads](#consistent-prefix-reads)
+    - [Solutions for Replication Lag](#solutions-for-replication-lag)
 
 > The major difference between a thing that might go wrong and a thing that
 > cannot possibly go wrong is that when a thing that cannot possibly go wrong
@@ -185,4 +194,161 @@ For the difficulties above, some operation teams prefer to perform failovers
 
 ### Implementation of Replication Logs
 
->>>>> progress
+#### Statement-based replication
+
+In the simplest case, the leader logs every write request and sends that
+statement log to its followers. For a relational database, this means that
+every `INSERT`, `UPDATE`, or `DELETE` statement is forwarded to followers, and
+each follower executes that SQL statement.
+
+There are various ways in which this approach to replication can break down:
+
+- Any statement that calls a nondeterministic function, such as `NOW()` to get
+  the current date and time or `RAND()` to get a random number, is likely to
+  generate a different value on each replica.
+- If statements use an autoincrementing column, or if they depend on the
+  existing data, they must be executed in exactly the same order on each
+  replica. This can be limiting when there are multiple concurrently executing
+  transactions.
+- Nondeterministic side effects made by statements may be different on each
+  replica.
+
+By default MySQL (since version 5.1) uses row-based replication if there is any
+nondeterminism in a statement.
+
+#### Write-ahead log (WAL) shipping
+
+Every write is appended to a log:
+
+- For a log-structured storage engine, this log is the main place for storage.
+  Log segments are compacted and garbage-collected in the background.
+- In the case of a B-tree, every modification is first written to a write-ahead
+  log so that the index can be restored to a consistent state after a crash.
+
+In either case, the log is an append-only sequence of bytes containing all
+writes to the database. Besides writing this log to disk, the leader also sends
+it across the network to its followers.
+
+The main disadvantage is that the log describes the data on a very low level: a
+WAL contains details of which bytes were changed in which disk blocks. This
+makes replication closely coupled to the storage engine: it is difficult to
+perform a zero-downtime upgrade of the database software if the replication
+protocol does not allow a version mismatch between the leader and the followers.
+
+#### Logical (row-based) log replicatoin
+
+> Seems this one is preferred.
+
+An alternative is to use different log formats for replication and for the
+storage engine. This kind of replication log is called a ***logical log***, to
+distinguish it from the storage engine's (*physical*) data representation.
+
+A logical log for a relational database is usually a sequence of records
+describing writes to database tables at the granularity of a row:
+
+- For a inserted row, the log contains the new values of all columns.
+- For a deleted row, the log contains enough information (typically the primary
+  key) to uniquely identify the row that was deleted. If there is no primary key
+  on the table, the old values of all columns need to be logged.
+- For an updated row, the log contains enough information to uniquely indentify
+  the updated row, and the new values of all columns.
+- A transaction that modifies several rows needs an extra record indicating that
+  the transaction was committed.
+
+MySQL's binlog uses this approach when configured to use row-based replication.
+
+#### Trigger-based replication
+
+In some cases, you may need to move replication up to the application layer:
+
+- You want to replicate a subset of the data
+- You want to replicate from one kind of database to another
+- You need conflit resolution logic
+
+There are tools (e.g. Oracle GoldenGate) that can make data changes available
+to an application by reading the database log.
+
+An alternative is to use features that are available in many relational
+databases: *triggers* and *stored procedures*.
+
+- A trigger lets you register custom application code that is automatically
+  executed when a data change occurs in a database.
+  - So that you could log this change into a separate table, from which it can
+    be read by the application.
+- Trigger-based replicaction typically has greater overheads, and is more prone
+  to bugs and limitations than other replication methods.
+
+## Problems with Replication Lag
+
+***Read-scaling*** architecture: leader-based replication with many followers.
+This approach only works with asynchronous (or semi-synchronous) replication.
+
+***Inconsistency***: if an application reads from an *asynchronous* follower,
+it may see outdated information. But if you stop writing and wait a while, the
+followers will eventually catch up and become consistent with the leader. This
+effect is called ***eventual consistency***.
+
+### Reading Your Own Writes
+
+With asynchronous replication: the new data may not yet have reached the
+replica from which the user reads the data created shortly before. To the user,
+it looks as though the data they submitted was lost.
+
+In this situation, ***read-after-write consistency*** (also known as
+***read-your-writes*** consistency) is needed. It makes no promises about other
+users.
+
+How to:
+
+- When reading something that the user may have modified, read it from the
+  leader.
+  - This requires that you know whether something might have been modified
+    without actually querying it.
+  - e.g. always read the user's own profile from the leader.
+- If most things in the application are potentially editable by the user, most
+  things would have to be read from the leader.
+  - Use other criteria to decide whether to read from the leader.
+  - e.g. track the last update time and, for `1` minute after the last update,
+    make all reads from the leader.
+- The client can remember the timestamp of its most recent write, then the
+  system can ensure that the replica serving any reads for that user reflects
+  updates at least until that timestamp. The timestamp could be *logical*
+  (e.g. the log sequence number).
+
+Another complication arises when the same user is accessing your service from
+multiple devices. In this case you may want to provide *cross-device*
+read-after-write consistency:
+
+- The timestamp approach needs to make the timestamp info centralized.
+- Requests from all of a user's devices need to be routed to the same
+  datacenter.
+
+### Monotonic Reads
+
+It's possible for a user to see things *moving backward in time* when reading
+from asynchronous followers.
+
+***Monotonic reads*** is a guarantee that this kind of anomaly does not happen.
+It's a lesser guarantee than strong consistency, but a stronger guarantee than
+eventual consistency.
+
+- When you read data, you may see an old value;
+- monotonic reads only means that if one user makes several reads in sequence,
+  they will not see time go backward.
+
+How to: make sure that each user always makes their reads from the same replica.
+
+### Consistent Prefix Reads
+
+If some partitions are replicated slower than others, an observer may see the
+answer before they see the question.
+
+***Consistent prefix reads*** is used to prevent this kind of anomaly. This
+guarantee says that if a sequence of writes happens in a certain order, then
+anyone reading those writes will see them appear in the same order.
+
+How to: make sure that any writes that are causally related to each other are
+written to the same partition - but in some applications that cannot be done
+efficiently.
+
+### Solutions for Replication Lag
