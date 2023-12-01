@@ -17,6 +17,12 @@
     - [Monotonic Reads](#monotonic-reads)
     - [Consistent Prefix Reads](#consistent-prefix-reads)
     - [Solutions for Replication Lag](#solutions-for-replication-lag)
+  - [Multi-Leader Replication](#multi-leader-replication)
+    - [Use Cases for Multi-Leader Replication](#use-cases-for-multi-leader-replication)
+      - [Multi-datacenter operation](#multi-datacenter-operation)
+      - [Clients with offline operation](#clients-with-offline-operation)
+      - [Collaborative editing](#collaborative-editing)
+    - [Handling Write Conflicts](#handling-write-conflicts)
 
 > The major difference between a thing that might go wrong and a thing that
 > cannot possibly go wrong is that when a thing that cannot possibly go wrong
@@ -352,3 +358,87 @@ written to the same partition - but in some applications that cannot be done
 efficiently.
 
 ### Solutions for Replication Lag
+
+Performing certain kinds of reads on the leader (e.g. read-after-write) can
+provide a stronger gurantee. However, dealing with these issues in application
+level is complex and easy to get wrong.
+
+***transactions*** are a way for a database to provide stronger guarantees so
+that the application can be simpler.
+
+## Multi-Leader Replication
+
+Leader-based replication has one major downdside: all writes must go through the
+single leader.
+
+***Multi-leader replication***: allow more than one node to accept writes, each
+node that processes a write must forward that data change to all the other
+nodes (also known as *master-master* or *active/active* replication).
+
+### Use Cases for Multi-Leader Replication
+
+It rarely makes sense to use a multi-leader setup within a single datacenter.
+However, there are some situations in which this configuration is reasonable.
+
+#### Multi-datacenter operation
+
+Within each datacenter, regular leader-follower replication is used; between
+datacenters, each datacenter's leader replicates its changes to the leaders in
+other datacenters.
+
+**single-leader vs. multi-leader**:
+
+- Performance
+  - Single: every write must go over the internet to the leader.
+  - Multi: every write can be processed in the local datacenter and is
+    replicated asynchronously to the other datacenters. Thus, the
+    inter-datacenter network delay is hidden from users.
+- Tolerance of datacenter outages
+  - Single: if the datacenter with the leader fails, failover can promote a
+    follower in another datacenter to be leader.
+  - Multi: each datacenter can continue operating independently of the others,
+    and replication catches up when the failed datacenter comes back online.
+- Tolerance of network problems
+  - Single: is very sensitive to problems in the inter-datacenter link.
+  - Multi: with asynchronous replication, it can usually tolerate network
+    problems better.
+
+How-to:
+
+- MySQL: Tungsten Replicator
+- PostgreSQL: BDR
+- Oracle: GoldenGate
+
+Big downside: the same data may be concurrently modified in two different
+datacenters, and those write conflicts must be resolved.
+
+Autoincrementing keys, triggers, and integrity constraints are often problematic
+with multi-leader replication. For this reason, it is often considered dangerous
+and should be avoided if possible.
+
+#### Clients with offline operation
+
+Multi-leader is appropriate if you have an application that needs to continue to
+work while it is offline.
+
+In the calendar apps on mobile phones, every device has a local database that
+acts as a leader (it accepts write requests), and there is an asynchronous
+multi-leader replication process (sync calendar data) between the replicas of
+your calendar on all of your devices. Each device is a "datacenter".
+
+CouchDB is designed for multi-leader replication.
+
+#### Collaborative editing
+
+Collaborative editing has a lot in common with the offline editing use case.
+
+No editing conflicts model: the application obtains a lock on the document
+before a user can edit it. Only after the user editing the document has
+committed their changes and released the lock, other users can edit it.
+
+- This model is equivalent to single-leader replication with transaction on the
+leader.
+
+### Handling Write Conflicts
+
+>>>>> progress
