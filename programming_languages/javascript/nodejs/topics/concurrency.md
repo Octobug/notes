@@ -1,5 +1,35 @@
 # Concurrency Control
 
+## promise based
+
+```js
+class Scheduler {
+  constructor(maxNum) {
+    this.maxNum = maxNum
+    this.taskList = []
+    this.count = 0
+  }
+
+  async add(fn) {
+    if (this.count >= this.maxNum) {
+      // 设置阻塞
+      await new Promise(resolve => {
+        this.taskList.push(resolve)
+      })
+    }
+    this.count++;
+    const result = await fn(); // 正常执行
+    this.count--
+    if (this.taskList.length > 0) {
+      // 放行阻塞
+      this.taskList.shift()();
+    }
+  }
+}
+```
+
+## event based
+
 ```js
 const events = require('events');
 const { NamedError } = require('./errors');
