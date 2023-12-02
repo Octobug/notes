@@ -23,6 +23,12 @@
       - [Clients with offline operation](#clients-with-offline-operation)
       - [Collaborative editing](#collaborative-editing)
     - [Handling Write Conflicts](#handling-write-conflicts)
+      - [Synchronous versus asynchronous conflict detection](#synchronous-versus-asynchronous-conflict-detection)
+      - [Conflict avoidance](#conflict-avoidance)
+      - [Converging toward a consistent state](#converging-toward-a-consistent-state)
+      - [Custom conflict resolution logic](#custom-conflict-resolution-logic)
+      - [Automatic Conflict Resolution](#automatic-conflict-resolution)
+    - [Multi-Leader Replication Topologies](#multi-leader-replication-topologies)
 
 > The major difference between a thing that might go wrong and a thing that
 > cannot possibly go wrong is that when a thing that cannot possibly go wrong
@@ -440,5 +446,91 @@ committed their changes and released the lock, other users can edit it.
 leader.
 
 ### Handling Write Conflicts
+
+- User 1 `update` data A to B on Leader 1
+- User 2 `update` data A to C on Leader 2
+
+#### Synchronous versus asynchronous conflict detection
+
+- In a single-leader database, the second write will either block or abort,
+  forcing the user to retry the write.
+- In a multi-leader setup, both writes are successful, and the conflict will be
+  detected asynchronously at some later point in time (it may be too late to ask
+  the user to resolve the conflict).
+
+Conflict detection can be made synchronous, but by this way you would lose the
+main advantage of multi-leader replication.
+
+#### Conflict avoidance
+
+The simplest strategy for dealing with conflicts is to avoid them: if the
+application can ensure that all writes for a particular record go through the
+same leader, then conflicts cannot occcur. (recommended approach ✅)
+
+e.g. You can ensure that requests from a particular user are always routed to
+the same datacenter and use the leader for reading and writing. From any one
+user's point of view the configuration is essentially single-leader.
+
+#### Converging toward a consistent state
+
+In a multi-leader configuration, there is no defined ordering of writes, so it's
+not clear what the final value should be.
+
+If each replica simply applied writes in the order that it saw the writes, the
+database would end up in an inconsistent state. That is not acceptable -- every
+replication scheme must ensure that the data is eventually the same in all
+replicas.
+
+The database must resolve the conflict in a ***convergent*** way, which means
+that all replicas must arrive at the same final value when all changes have been
+replicated.
+
+Solutions:
+
+- Give each write a unique ID, pick the write with the highest ID as the
+  *winner*, and throw away the others.
+  - If a timestamp is used, this technique is known as ***last write wins***
+    (LWW). But it is dangerously prone to data loss.
+- Give each replica a unique ID, and let writes that originated at a
+  higher-numbered replica always take precedence over writes that originated at
+  a lower-numbered replica. (also implies data loss). 👎
+- Merge (e.g. concatenate strings) the values together. 👎
+- Record the conflict in an explicit data structure that preserves all
+  information, and write application code that resolves the conflict at some
+  later time.
+
+#### Custom conflict resolution logic
+
+The most appropriate way of resolving a conflict may depend on the applicatoin
+is to let application developers write their own conflict resolution logic.
+
+Most multi-leader replicatoin tools do so. The custom code may be executed on
+write or on read:
+
+- On write: as soon as the database detects a conflict in the log of replicated
+  changes, it calls the conflict handler.
+- On read: When a conflict is detected, all the conflicting writes are stored.
+  The next time the data is read, these multiple versions of the data are
+  returned to the application. The application can prompt the user or
+  automatically resolve the conflict. (CouchDB works this way.)
+
+Conflict resolution usually applies at the level of an individual row or
+document, not for an entire transaction. Thus, if you have a transaction that
+atomically makes several different writes, each write is still considered
+separately for the purpose of conflict resolution.
+
+#### Automatic Conflict Resolution
+
+These algorithms are often implemented in databases.
+
+- *Conflict-free replicated datatypes* (CRDTs) are a family of data structures
+  for set, maps, ordered lists, counters, etc. that can be concurrently edited
+  by multiple users, and which automatically resolve conflicts in sensible ways.
+- *Mergeable persistent data structures* track history explicitly, similarly to
+  the Git version control system, and use a three-way merge function.
+- ***Operational transformation*** is the conflict resolution algorithm behind
+  collaborative editiing applications.
+
+### Multi-Leader Replication Topologies
 
 >>>>> progress
