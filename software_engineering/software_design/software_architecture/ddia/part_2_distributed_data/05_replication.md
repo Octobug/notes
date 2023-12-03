@@ -19,7 +19,7 @@
     - [Solutions for Replication Lag](#solutions-for-replication-lag)
   - [Multi-Leader Replication](#multi-leader-replication)
     - [Use Cases for Multi-Leader Replication](#use-cases-for-multi-leader-replication)
-      - [Multi-datacenter operation](#multi-datacenter-operation)
+      - [Multi-datacenter operation - 1](#multi-datacenter-operation---1)
       - [Clients with offline operation](#clients-with-offline-operation)
       - [Collaborative editing](#collaborative-editing)
     - [Handling Write Conflicts](#handling-write-conflicts)
@@ -29,6 +29,21 @@
       - [Custom conflict resolution logic](#custom-conflict-resolution-logic)
       - [Automatic Conflict Resolution](#automatic-conflict-resolution)
     - [Multi-Leader Replication Topologies](#multi-leader-replication-topologies)
+  - [Leaderless Replication](#leaderless-replication)
+    - [Writing to the Database When a Node Is Down](#writing-to-the-database-when-a-node-is-down)
+      - [Read repair and anti-entropy](#read-repair-and-anti-entropy)
+      - [Quorums for reading and writing](#quorums-for-reading-and-writing)
+    - [Limitations of Quorum Consistency](#limitations-of-quorum-consistency)
+      - [Monitoring staleness](#monitoring-staleness)
+    - [Sloppy Quorums and Hinted Handoff](#sloppy-quorums-and-hinted-handoff)
+      - [Multi-datacenter operation - 2](#multi-datacenter-operation---2)
+    - [Detecting Concurrent Writes](#detecting-concurrent-writes)
+      - [Last write wins (discarding concurrent writes)](#last-write-wins-discarding-concurrent-writes)
+      - [The "happens-before" relationship and concurrency](#the-happens-before-relationship-and-concurrency)
+      - [Concurrenty, Time, and Relativity](#concurrenty-time-and-relativity)
+      - [Capturing the happens-before relationship](#capturing-the-happens-before-relationship)
+      - [Merging concurrently written values](#merging-concurrently-written-values)
+      - [Version vectors](#version-vectors)
 
 > The major difference between a thing that might go wrong and a thing that
 > cannot possibly go wrong is that when a thing that cannot possibly go wrong
@@ -386,7 +401,7 @@ nodes (also known as *master-master* or *active/active* replication).
 It rarely makes sense to use a multi-leader setup within a single datacenter.
 However, there are some situations in which this configuration is reasonable.
 
-#### Multi-datacenter operation
+#### Multi-datacenter operation - 1
 
 Within each datacenter, regular leader-follower replication is used; between
 datacenters, each datacenter's leader replicates its changes to the leaders in
@@ -533,4 +548,189 @@ These algorithms are often implemented in databases.
 
 ### Multi-Leader Replication Topologies
 
+Examples:
+
+- All-to-all topology (most used)
+  - The most general topology is ***all-to-all***, in which every leader sends
+    its writes to every other leader.
+- Circular topology
+  - MySQL by default supports only a ***circular topology***, in which each node
+    receives writes from one node and forwards those writes to one other node.
+- Star topology
+  - One designated root node forwards writes to all of the other nodes.
+
+In circular and star topologies, nodes need to forward data changes they receive
+from other nodes. To prevent infinite replicatoin loops, each node is given a
+unique identifier, and in the replication log, each write is tagged with the
+identifiers of all the nodes it has passed through. When a node receives a data
+change that is tagged with its own identifier, that data change is ignored.
+
+- If one node fails, it can interrupt the flow of replication messages between
+  other nodes.
+- In most deplyments, such failure needs to be reconfigured manually.
+
+On the other hand, all-to-all topologies may have the "overtake" problem: writes
+may arrive in the wrong order at some replicas.
+
+e.g.
+
+- Leader 1 makes an `insert` write.
+- Leader 2 receives the write, and makes an `update` write on the previous
+  inserted row.
+- Leader 3 receives the write made by Leader 2 first, then the write made by
+  Leader 1 comes to Leader 3.
+
+Simply attaching a timestamp to every write is not sufficient, because clocks
+cannot be trusted.
+
+To order these events correctly, a technique called ***version vectors*** can be
+used.
+
+## Leaderless Replication
+
+Dynamo, Riak, Cassandra, and Voldemort use leaderless replication models.
+
+In some leaderless implementations, the client directly sends its writes to
+several replicas, while in others, a coordinator node does this on behalf of the
+client. Unlike a leader database, the coordinator doesn't enforce a particular
+ordering of writes.
+
+### Writing to the Database When a Node Is Down
+
+In a leaderless configuration, failover does not exist.
+
+Two available replicas accepting the write with one node down is sufficient for
+two out of three replicas to acknowledge the write.
+
+When a client reads from the database, it doesn't just send its request to one
+replica: read requests are also sent to several nodes in parallel.
+
+Version numbers are used to determine which value is newer.
+
+#### Read repair and anti-entropy
+
+Two mechanisms are often used in Dynamo-style datastores when a node needs to
+catch up on the writes that it missed.
+
+- ***Read repair***: When a client makes a read from several nodes in parallel,
+  it can detect any stale responses. At that time, it writes the newer values
+  back to the replica.
+- ***Anti-entropy process***: Some datastores have a background process that
+  consistently looks for differences in the data between replicas and copies any
+  missing data from one replica to another. In this way it doesn't copy writes
+  in any particular order.
+
+Without an anti-entropy process, values that are rarely read may be missing from
+some replicas and thus have reduced durability.
+
+#### Quorums for reading and writing
+
+It there are `n` replicas, every write must be confirmed by `w` nodes to be
+considered successful, and we must query at least `r` nodes for each read.
+
+As long as `w + r > n`, we expect to get an up-to-date value when reading,
+because at least one of the `r` nodes we're reading from must be up-to-date.
+With version numbers, the client can tell whether a value is up-to-date or not.
+
+Reads and writes that obey these `r` and `w` values are called (strict)
+*quorum* reads and writes. In Dynamo-style databases, the parameters are
+typically configurable. e.g. make `n` an odd number, and set
+`w = r = (n + 1) / 2`.
+
+A workload with few writes and many reads may benifit from setting `w = n` and
+`r = 1`, but just one failed node causes all database writes to fail.
+
+Normall, reads and writes are always sent to all `n` replicas in parallel. The
+parameters `w` and `r` determine how many nodes we wait for.
+
+### Limitations of Quorum Consistency
+
+Often, `r` and `w` are chosen to be a majority (more than n/2) of nodes, that
+ensures `w + r > n` while still tolerating up to `n/2` node failues.
+
+Even with `w + r > n`, there are likely to be edge cases where stale values are
+returned:
+
+- If a sloppy quorum is used, the `w` writes may end up on different nodes than
+  the `r` reads, so there is no longer a guaranteed overlap.
+- If two writes occur concurrently, the only safe solution is to merge the
+  concurrent writes.
+- If a write happens concurrently with a read, it's undetermined whether the
+  read returns the old or the new value.
+- If a write succeeded only on some replicas that fewer than `w`, it is not
+  rolled back on the replicas. This means that if a write was reported as
+  failed, subsequent reads may or may not return the value from that write.
+
+#### Monitoring staleness
+
+For leader-based replication, the database typically exposes metrics for the
+replication lag, which you can feed into a monitoring system. This is possible
+because each node has a position in the replication log (the number of writes it
+has applied locally). By subtracting a follower's current position from the
+leader's, you can measure the amount of replication lag.
+
+In systems with leaderless replication, there is no fixed order in which writes
+are applied, which makes monitoring more difficult.
+
+### Sloppy Quorums and Hinted Handoff
+
+In a large cluster it's likely that the client can connect to some of the
+database nodes during the network interruption, just not to the nodes that it
+needs to assemble a quorum for a particular value. In that case, database
+designers face a trade-off:
+
+- Is it better to return errors to all requests for which we cannot reach a
+  quorum of `w` or `r` nodes?
+- ***Sloppy quorum**: writes and reads still require `w` and `r` successful
+  responses, but those may include nodes that are not among the designated `n`
+  "home" nodes for a value.
+  - ***Hinted handoff***: once the fault got fixed, any writes that one node
+    temporarily accepted on behalf of another node are sent to the appropriate
+    "home" nodes.
+  - A sloppy quorum is only an assurance of durability, namely that the data is
+    stored on `w` nodes somewhere. There is no guarantee that a read of `r`
+    nodes will see it.
+
+#### Multi-datacenter operation - 2
+
+Cassandra and Voldemort implement their multi-datacenter support within the
+normal leaderless model: the number of replicas `n` includes nodes in all
+datacenters, and in the configuration you can specify how many of the `n`
+replicas you want to have in each datacenter.
+
+- Each write is sent to all replicas, regardless of datacenter, but the client
+  usually only waits for acknowledgment from a quorum of nodes within its local
+  datacenter.
+
+Riak keeps all communication between clients and database nodes local to one
+datacenter, so `n` describes the number of replicas within one datacenter.
+
+- Cross-datacenter replication between database clusters happens asynchronously
+  in the background.
+
+### Detecting Concurrent Writes
+
+Dynamo-style databases allow several clients to concurrently write to the same
+key, which means that conflicts will occur even if strict quorums are used.
+
+If each node simply overwrites the value for a key whenever it received a write
+request from a client, the nodes would become permanently inconsistent.
+
+In order to become eventually consistent, the replicas should converge toward
+the same value. Unfortunately most database implementations are poor: if you
+want to avoid losing data, you need to know a lot about the internals of your
+database's conflict handling.
+
+#### Last write wins (discarding concurrent writes)
+
 >>>>> progress
+
+#### The "happens-before" relationship and concurrency
+
+#### Concurrenty, Time, and Relativity
+
+#### Capturing the happens-before relationship
+
+#### Merging concurrently written values
+
+#### Version vectors
