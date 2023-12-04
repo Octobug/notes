@@ -23,8 +23,8 @@ We call an applicatoin ***data-intensive** if data is its primary challenge.
   - [x] [3. Storage and Retrieval](./part_1_foundations_of_data_systems/03_storage_and_retrieval.md)
   - [x] [4. Encoding and Evolution](./part_1_foundations_of_data_systems/04_encoding_and_evolution.md)
 - [Part II. Distributed Data](./part_2_distributed_data/README.md)
-  - [ ] [5. Replication](./part_2_distributed_data/05_replication.md)
-  - 6. Partioning
+  - [x] [5. Replication](./part_2_distributed_data/05_replication.md)
+  - [ ] [6. Partioning](./part_2_distributed_data/06_partitioning.md)
   - 7. Transactions
   - 8. The Trouble with Distributed Systems
   - 9. Consistency and Consensus

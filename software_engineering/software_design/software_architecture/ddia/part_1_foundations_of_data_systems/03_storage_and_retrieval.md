@@ -51,7 +51,8 @@ Some of the issues that are important in a real implementation for a key-value
 storage engine with hash indexs:
 
 - File format: CSV-like vs. others such as a binary format
-- Deleting records: append a special deletion record to the data file
+- Deleting records: append a special deletion record (***tombstone***) to the
+  data file
 - Crash recovery: Bitcask speeds up recovery by storing a snapshot of each
   segment's hash map on disk, which can be loaded into memory more quickly.
 - Partially written records: Bitcask files include checksums, allowing such

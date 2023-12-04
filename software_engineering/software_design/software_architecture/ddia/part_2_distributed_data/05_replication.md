@@ -44,10 +44,13 @@
       - [Capturing the happens-before relationship](#capturing-the-happens-before-relationship)
       - [Merging concurrently written values](#merging-concurrently-written-values)
       - [Version vectors](#version-vectors)
+  - [Summary](#summary)
 
 > The major difference between a thing that might go wrong and a thing that
 > cannot possibly go wrong is that when a thing that cannot possibly go wrong
 > gose wrong it usually turns out to be impossible to get at or repair.
+>
+> Douglas Adams, Mostly Harmless (1992)
 
 ***Replication*** means keeping a copy of the same data on multiple machines
 that are connected via a network. Why people want to replicate data:
@@ -723,14 +726,129 @@ database's conflict handling.
 
 #### Last write wins (discarding concurrent writes)
 
->>>>> progress
+One approach for achieving eventual convergence is to declare that each replica
+needs only store the most "recent" value and allow "older" values to be
+overwritten and discarded.
+
+- It needs to determine which write is more "recent"
+  - e.g. ***LWW (last write wins)***: attaching a timestamp to each write
+    - If losing data is not acceptable, LWW is a poor choice.
+    - The only safe way of using a database with LWW is to ensure that a key is
+      only written once and thereafter treated as immutable.
+      - e.g. A recommended way of using Cassandra is to use a UUID as the key,
+        thus giving each write operation a unique key.
+- Every write needs to be copied to every replica
 
 #### The "happens-before" relationship and concurrency
 
+An operation A ***happens before*** another operation B if B knows about A, or
+depends on A, or builds upon A in some way.
+
+- e.g. A is an `insert`, B is an `update` on A
+
+Two operations are ***concurrent*** if neither `happens before` the other.
+
+Three possibilities;
+
+- A happened before B
+- B happened before A
+- A and B are concurrent
+
+If they aren't concurrent, the later one should overwrite the earlier one,
+otherwise there is a conflict to be resolved.
+
 #### Concurrenty, Time, and Relativity
+
+Because of problems with clocks in distributed systems, it is actually quite
+difficult to tell whether two things happened at exactly the same time.
+
+For defining concurrency, exact time doesn't matter: we simply call two
+operations concurrent if they are both unaware of each other.
 
 #### Capturing the happens-before relationship
 
+The server can determine whether two operations are concurrent by looking at the
+version numbers -- it does not need to interpret the value itself. The algorithm
+works as follows:
+
+- The server maintains a version number for every key, increments the version
+  number every time that key is written, and stores the new version number along
+  with the value written.
+- When a client reads a key, the server returns all values that have not been
+  overwritten, as well as the latest version number. A client must read a key
+  before writing.
+- When a client writes a key, it must include the version number from the prior
+  read, and it must merge together all values that it received in the prior
+  read. (The response from a write request can be like a read.)
+- When the server receives a write with a particular version number, it can
+  overwrite all values with that version number or below, but it must keep all
+  values with a higher version number.
+
+When a write includes the version number from a prior read, that tells us which
+previous state the write is based on.
+
+- If you make a write without including a version number, it is concurrent with
+  all other writes, so it will not overwrite anything -- it will just be
+  returned as one of the values on subsequent reads.
+
 #### Merging concurrently written values
 
+The above algorithm ensures that no data is silently dropped, but it requires
+that the clients do some extra work: if several operations happen concurrently,
+clients have to clean up afterward by merging the conccurrently written values.
+Riak calls these values ***siblings***.
+
+Merging sibling values is essentially the same problem as conflict resolution in
+multi-leader replication.
+
+- A simple approach is to just pick one of the values based on a version number
+  or timestamp (LWW), but that implies losing data.
+- In some cases it is reasonable to take the union (`set`) of the siblings.
+  - This may not work when removing something.
+  - The system must leave a marker (***tombstone***) with an appropriate
+    version number to indicate that the item has been removed when merging
+    siblings.
+
 #### Version vectors
+
+When there are multiple replicas, we need to use a version number per replica as
+well as per key.
+
+- Each replica increments its own version number when processing a write, and
+  also keeps track of the version numbers it has seen from each of the other
+  replicas. This information indicates which values to overwrite and which
+  values to keep as siblings.
+- The collection of version numbers from all the replicas is called a
+  ***version vector***.
+  - Version vectors are sent from the replicas to clients when values are read.
+    - Riak encodes the version vector as a string that it calls *causal context*
+
+A ***version vector*** is sometimes also called a ***vector clock***, even
+though they are not quite the same. When comparing the state of replicas,
+version vectors are the right data structure to use.
+
+## Summary
+
+Replication can serve several purposes:
+
+- High availability
+- Disconnected operation: allowing an application to continue working when there
+  is a network interruption
+- Latency
+- Scalability: mostly improving the reads
+
+Three main approaches to replication:
+
+- Single-leader replication
+- Multi-leader replication
+- Leaderless replication
+
+Single-leader is popular because it's straightforward. Multi-leader and
+leaderless replciation can be more robust in the presence of faults. But they
+are harder to reason about and providing weak consistency guarantees.
+
+Dealing with replication lag;
+
+- Read-after-write consistency
+- Monotonic reads
+- Consistent prefix reads
