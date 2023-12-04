@@ -10,6 +10,38 @@ class Solution
 public:
     int numSubmatrixSumTarget(vector<vector<int>> &matrix, int target)
     {
+        int m = matrix.size(), n = matrix[0].size();
+
+        // calculate prefix sum for m
+        for (int i = 0; i < m; i++)
+        {
+            for (int j = 1; j < n; j++)
+                matrix[i][j] = matrix[i][j] + matrix[i][j - 1];
+        }
+
+        int count = 0, sum;
+        unordered_map<int, int> counter;
+        for (int colstart = 0; colstart < n; colstart++)
+        {
+            for (int col = colstart; col < n; col++)
+            {
+                counter.clear();
+                counter[0] = 1;
+                sum = 0;
+                for (int row = 0; row < m; row++)
+                {
+                    sum += matrix[row][col];
+                    if (colstart > 0)
+                        sum -= matrix[row][colstart - 1];
+
+                    if (counter.find(sum - target) != counter.end())
+                        count += counter[sum - target];
+
+                    counter[sum]++;
+                }
+            }
+        }
+        return count;
     }
 };
 
