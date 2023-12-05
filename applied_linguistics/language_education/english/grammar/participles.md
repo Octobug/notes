@@ -1354,6 +1354,7 @@ Especially, how to survive culture shock?
 
 `1` The government is to ban payments to witnesses by newspapers seeking to buy
 up people involved in prominent cases such as the trial of Rosemary West.
+(英一 2001 完形填空)
 
 - the government is to ban payments: 中心词 payments
   - to witnesses: 修饰 payments 的并列定语 1

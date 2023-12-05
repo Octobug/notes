@@ -1070,7 +1070,7 @@ with the doctor.
 
 `25` As was discussed before, it was not ____ the 19th century that the
 newspaper became the dominant pre-electronic medium, following in the wake of
-the pamphlet and the book and in the company of the periodical.
+the pamphlet and the book and in the company of the periodical. (英一 2002 完形填空)
 
 - A. after
 - B. by
