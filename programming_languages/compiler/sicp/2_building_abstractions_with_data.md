@@ -28,6 +28,10 @@
   - [Lab 5: Data Abstraction, Sequences](#lab-5-data-abstraction-sequences)
   - [Discussion 5: Trees](#discussion-5-trees)
   - [2.4 Mutable Data](#24-mutable-data)
+    - [2.4.1 The Object Metaphor](#241-the-object-metaphor)
+    - [2.4.2 Sequence Objects](#242-sequence-objects)
+    - [2.4.3 Dictionaries](#243-dictionaries)
+    - [2.4.4 Local State](#244-local-state)
   - [Homework 4: Trees, Data Abstraction](#homework-4-trees-data-abstraction)
 
 ## 2.1 Introduction
@@ -426,6 +430,69 @@ either `True` or `False`.
 ## 2.4 Mutable Data
 
 > <https://www.composingprograms.com/pages/24-mutable-data.html>
+
+### 2.4.1 The Object Metaphor
+
+***Objects*** combine data values with behavior.
+
+Numbers, strings, lists, and ranges are all objects, in fact, all values in
+Python are objects. All values have behavior and attributes.
+
+### 2.4.2 Sequence Objects
+
+Instances of primitive built-in values such as numbers are *immutable*.
+Some other values such as lists are *mutable*.
+
+With mutable data, methods caled on one name can affect another name at the same
+time.
+
+Lists can be copied using the `list` constructor function.
+
+```py
+>>> nest = list(suits)  # Bind "nest" to a second list with the same elements
+```
+
+Python includes two comparison operators, called `is` and `is not`, that test
+whether two expressions in fact evaluate to the identical object. Identity is
+a stronger condition than equality.
+
+```py
+>>> suits = ['heart', 'diamond', 'spade', 'club']
+>>> nest = ['heart', 'diamond', 'spade', 'club']
+>>> nest[0] = suits
+>>> suits is nest[0]
+True
+>>> suits is ['heart', 'diamond', 'spade', 'club']
+False
+>>> suits == ['heart', 'diamond', 'spade', 'club']
+True
+```
+
+A list comprehension always creates a new list.
+
+A tuple is an immutable sequence. Tuples are used implicitly in multiple
+assignment. An assignment of two values to two names creates a two-element tuple
+and then unpacks it.
+
+### 2.4.3 Dictionaries
+
+Dictionaries are ***unordered collections*** of key-value pairs. They have some
+restrictions:
+
+- A key of a dictionary cannot be or contain a mutable value. (tied to the
+  underlying implementation in Python)
+- There can be at most one value for a given key.
+
+Tuples are commonly used for keys in dictionaries because lists cannot be used.
+
+`get(KEY, default)` returns either the value for a key or a default value.
+
+```py
+{x: x*x for x in range(3,6)}
+```
+
+### 2.4.4 Local State
+
 >>>>> progress
 
 ## Homework 4: Trees, Data Abstraction
