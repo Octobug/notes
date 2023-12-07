@@ -32,6 +32,11 @@
     - [2.4.2 Sequence Objects](#242-sequence-objects)
     - [2.4.3 Dictionaries](#243-dictionaries)
     - [2.4.4 Local State](#244-local-state)
+    - [2.4.5 The Benefits of Non-Local Assignment](#245-the-benefits-of-non-local-assignment)
+    - [2.4.6 The Cost of Non-Local Assignment](#246-the-cost-of-non-local-assignment)
+    - [2.4.7 Implementing Lists and Dictionaries](#247-implementing-lists-and-dictionaries)
+    - [2.4.8 Dispatch Dictionaries](#248-dispatch-dictionaries)
+    - [2.4.9 Propagating Constraints](#249-propagating-constraints)
   - [Homework 4: Trees, Data Abstraction](#homework-4-trees-data-abstraction)
 
 ## 2.1 Introduction
@@ -493,7 +498,256 @@ Tuples are commonly used for keys in dictionaries because lists cannot be used.
 
 ### 2.4.4 Local State
 
->>>>> progress
+Lists and dictionaries have *local state*: they are changing values that have
+some particular contents at any point in the execution of a program.
+
+```py
+def make_withdraw(balance):
+  """Return a withdraw function that draws down balance with each call."""
+  def withdraw(amount):
+    nonlocal balance                 # Declare the name "balance" nonlocal
+    if amount > balance:
+      return 'Insufficient funds'
+    balance = balance - amount       # Re-bind the existing balance name
+    return balance
+  return withdraw
+```
+
+The `nonlocal` statement declares that whenever we change the binding of the
+name `balance`, the binding is changed in the first frame in which `balance` is
+already bound.
+
+After executing `nonlocal balance`, any assignment statement with `balance` on
+the left-hand side of `=` will not bind `balance` in the first frame of the
+current environment. Instead, it will find the first frame in which `balance`
+was already defined and re-bind the name in that frame. If `balance` has not
+previously been bound to a value, then the `nonlocal` statement will give an
+error.
+
+No `nonlocal` statement is required to *access* a non-local name. By contrast,
+only after a `nonlocal` statement can a function *change* the binding of names
+in these frames.
+
+Most other languages do not require a `nonlocal` statement at all. Instead,
+non-local assignment is often the default behavior of assignment statements.
+
+⚠️ Python also has an unusual restriction regarding the lookup of names: within
+the body of a function, all instances of a name must refer to the same frame.
+As a result, Python cannot look up the value of a name in a non-local frame,
+then bind that same name in the local frame, because the same name would be
+accessed in two different frames in the same function. This restriction allows
+Python to pre-compute which frame contains each name before executing the body
+of a function. When this restriction is violated, a confusing error message
+results.
+
+```py
+def make_withdraw(balance):
+  def withdraw(amount):
+    if amount > balance:        # causes an UnboundLocalError
+      return 'Insufficient funds'
+    balance = balance - amount  # becasue of this
+    return balance
+  return withdraw
+
+wd = make_withdraw(20)
+wd(5)
+
+# This error occurs before line 5 is ever executed, implying that Python has
+#   considered line 5 in some way before executing line 3.
+```
+
+### 2.4.5 The Benefits of Non-Local Assignment
+
+### 2.4.6 The Cost of Non-Local Assignment
+
+The key to correctly analyzing code with non-local assignment is to remember
+that **only function calls can introduce new frames**. Assignment statements
+always change bindings in existing frames.
+
+An expression that contains only pure function calls is
+***referentially transparent*** (引用透明).
+
+### 2.4.7 Implementing Lists and Dictionaries
+
+```py
+def mutable_link():
+  """Return a functional implementation of a mutable linked list."""
+  contents = empty
+  def dispatch(message, value=None):
+    nonlocal contents
+    if message == 'len':
+      return len_link(contents)
+    elif message == 'getitem':
+      return getitem_link(contents, value)
+    elif message == 'push_first':
+      contents = link(value, contents)
+    elif message == 'pop_first':
+      f = first(contents)
+      contents = rest(contents)
+      return f
+    elif message == 'str':
+      return join_link(contents, ", ")
+  return dispatch
+
+def to_mutable_link(source):
+  """Return a functional list with the same contents as source."""
+  s = mutable_link()
+  for element in reversed(source):
+    s('push_first', element)
+  return s
+```
+
+This approach encapsulates the logic for all operations on a data value within
+one function that responds to different messages, is a discipline called
+***message passing***.
+
+```py
+def dictionary():
+  """Return a functional implementation of a dictionary."""
+  records = []
+  def getitem(key):
+    matches = [r for r in records if r[0] == key]
+    if len(matches) == 1:
+      key, value = matches[0]
+      return value
+  def setitem(key, value):
+    nonlocal records
+    non_matches = [r for r in records if r[0] != key]
+    records = non_matches + [[key, value]]
+  def dispatch(message, key=None, value=None):
+    if message == 'getitem':
+      return getitem(key)
+    elif message == 'setitem':
+      setitem(key, value)
+  return dispatch
+```
+
+### 2.4.8 Dispatch Dictionaries
+
+```py
+def account(initial_balance):
+  def deposit(amount):
+    dispatch['balance'] += amount
+    return dispatch['balance']
+  def withdraw(amount):
+    if amount > dispatch['balance']:
+      return 'Insufficient funds'
+    dispatch['balance'] -= amount
+    return dispatch['balance']
+  dispatch = {'deposit':   deposit,
+              'withdraw':  withdraw,
+              'balance':   initial_balance}
+  return dispatch
+
+def withdraw(account, amount):
+  return account['withdraw'](amount)
+def deposit(account, amount):
+  return account['deposit'](amount)
+def check_balance(account):
+  return account['balance']
+
+a = account(20)
+deposit(a, 5)
+withdraw(a, 17)
+check_balance(a)
+```
+
+By storing the balance in the dispatch dictionary rather than in the `account`
+frame directly, we avoid the need for `nonlocal` statements in `deposit` and
+`withdraw`.
+
+### 2.4.9 Propagating Constraints
+
+Expressing programs as constraints is a type of ***declarative programming***,
+in which a programmer declares the structure of a problem to be solved, but
+abstracts away the details of exactly how the solution to the problem is
+computed.
+
+```py
+from operator import add, sub, mul, truediv
+
+def inform_all_except(source, message, constraints):
+  """Inform all constraints of the message, except source."""
+  for c in constraints:
+    if c != source:
+      c[message]()
+
+def connector(name=None):
+  """A connector between constraints."""
+  informant = None
+  constraints = []
+  def set_value(source, value):
+    nonlocal informant
+    val = connector['val']
+    if val is None:
+      informant, connector['val'] = source, value
+      if name is not None:
+        print(name, '=', value)
+      inform_all_except(source, 'new_val', constraints)
+    else:
+      if val != value:
+        print('Contradiction detected:', val, 'vs', value)
+  def forget_value(source):
+    nonlocal informant
+    if informant == source:
+      informant, connector['val'] = None, None
+      if name is not None:
+        print(name, 'is forgotten')
+      inform_all_except(source, 'forget', constraints)
+
+  connector = {'val': None,
+              'set_val': set_value,
+              'forget': forget_value,
+              'has_val': lambda: connector['val'] is not None,
+              'connect': lambda source: constraints.append(source)}
+  return connector
+
+def make_ternary_constraint(a, b, c, ab, ca, cb):
+  """The constraint that ab(a,b)=c and ca(c,a)=b and cb(c,b) = a."""
+  def new_value():
+    av, bv, cv = [connector['has_val']() for connector in (a, b, c)]
+    if av and bv:
+      c['set_val'](constraint, ab(a['val'], b['val']))
+    elif av and cv:
+      b['set_val'](constraint, ca(c['val'], a['val']))
+    elif bv and cv:
+      a['set_val'](constraint, cb(c['val'], b['val']))
+  def forget_value():
+    for connector in (a, b, c):
+      connector['forget'](constraint)
+  constraint = {'new_val': new_value, 'forget': forget_value}
+  for connector in (a, b, c):
+    connector['connect'](constraint)
+  return constraint
+
+def adder(a, b, c):
+  """The constraint that a + b = c."""
+  return make_ternary_constraint(a, b, c, add, sub, sub)
+
+def multiplier(a, b, c):
+        """The constraint that a * b = c."""
+        return make_ternary_constraint(a, b, c, mul, truediv, truediv)
+
+def constant(connector, value):
+  """The constraint that connector = value."""
+  constraint = {}
+  connector['set_val'](constraint, value)
+  return constraint
+
+def converter(c, f):
+  """Connect c to f with constraints to convert from Celsius to Fahrenheit."""
+  u, v, w, x, y = [connector() for _ in range(5)]
+  multiplier(c, w, u)
+  multiplier(v, x, u)
+  adder(v, y, f)
+  constant(w, 9)
+  constant(x, 5)
+  constant(y, 32)
+
+celsius = connector('Celsius')
+fahrenheit = connector('Fahrenheit')
+converter(celsius, fahrenheit)
+```
 
 ## Homework 4: Trees, Data Abstraction
 
