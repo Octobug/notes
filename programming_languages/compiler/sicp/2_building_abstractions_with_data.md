@@ -751,4 +751,4 @@ converter(celsius, fahrenheit)
 
 ## Homework 4: Trees, Data Abstraction
 
-- [ ] [Homework 4: Trees, Data Abstraction](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw04/)
+- [x] [Homework 4: Trees, Data Abstraction](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw04/)
