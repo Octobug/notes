@@ -24,6 +24,8 @@ multiple machines:
 
 > also called ***horizontal scaling*** or ***scaling out***
 
+Any coordination between nodes is done at the software level.
+
 Shared-nothing architecture requires the most caution from the application
 developers. It incurs additional complexity for applications and limits the
 expressiveness of the data models.
