@@ -16,6 +16,9 @@
       - [Fixed number of partitions](#fixed-number-of-partitions)
       - [Dynamic partitioning](#dynamic-partitioning)
       - [Partitioning proportionally to nodes](#partitioning-proportionally-to-nodes)
+    - [Operations: Automatic or Manual Rebalancing](#operations-automatic-or-manual-rebalancing)
+  - [Request Routing](#request-routing)
+    - [Parallel Query Execution](#parallel-query-execution)
 
 A ***partition***, also known as a ***shard*** (in MongoDB, Elasticsearch, and
 SolrCloud), a ***region*** (in HBase), a ***tablet*** (in Bigtable), a
@@ -283,4 +286,92 @@ MongoDB supports both key-range and hash partitioning.
 
 #### Partitioning proportionally to nodes
 
->>>>> progress
+In both fixed number partitioning and dynamic partitioning, the number of
+partitions is independent of the number of nodes.
+
+A third option, used by Cassandra and Ketama, is to make the number of
+partitions proportional to the number of nodes -- in other words, to have a
+fixed number of partitions **per node**.
+
+- When a new node joins the cluster, it randomly chooses a fixed number of
+  existing partitions to split, and then takes ownership of one half of each of
+  those split partitions while leaving the other half of each partition in
+  place.
+
+In Cassandra, the default number is 256 partitions per node.
+
+### Operations: Automatic or Manual Rebalancing
+
+There is a gradient between fully automatic rebalancing and fully manual.
+Couchbase, Riak, and Voldemort generate a suggested partition assignment
+automatically, but require an administrator to commit it before it takes effect.
+
+Fully automated rebalancing can be unpredictable. It requires rerouting requests
+and moving a large amount of data from one node to another.
+
+Such automation can be dangerours in combination with automatic failure
+detection. For example, one node is overloaded and is temporarily slow to
+respond to requests. The other nodes conclude that the overloaded node is dead,
+and automatically rebalance the cluster. This puts additional load on the
+overloaded node, other nodes, and the network, making the situation worse.
+
+For that reason, it can be a **good** thing to have ahuman in the loop for
+rebalancing.
+
+## Request Routing
+
+As partitions are rebalanced, the assignment of partitions to nodes changes.
+How does a client know which node to connect to? This is an instance of a more
+general problem called ***service discovery***.
+
+There are a few different approaches to this problem:
+
+1. Allow clients to contact any node. If that node coincidentally owns the
+   partition to which the request applies, it can handle the request directly;
+   otherwise, it forwards the request to the appropriate node, receives the
+   reply, and passes the reply along to the client. (doesn't seem like a good
+   solution)
+2. Send all requests from clients to a routing tier first, which determines the
+   node that should handle each request and forwards it accordingly. This
+   routing tier does not itself handle any requests; it only acts as a
+   partition-aware load balancer.
+3. Require that clients be aware of the partitioning and the assignment of
+   partitions to nodes. In this case, a client can connect directly to the
+   appropriate node, without any intermediary.
+
+In all cases, the key problem is: how does the component making the routing
+decision learn about changes in the assignment of partitions to nodes?
+
+Many distributed data systems rely on a separate coordination service such as
+ZooKeeper to keep track of this cluster metadata.
+
+- Each node registers itself in ZooKeeper, and ZooKeeper maintains the
+  authoritative mapping of partitions to nodes.
+- The routing tier or the paritioning-aware client, can subscribe to this
+  information in ZooKeeper.
+- Whenever a partition changes ownership, or a node is added or removed,
+  ZooKeeper notifies those partitioning-aware components.
+
+Espreso uses Helix (relies on ZooKeeper) for cluster management, implementing a
+routing tier. HBase, SolrCloud, and Kafka also use ZooKeeper to track partition
+assignment. MongoDB has a similar architecture, but it relies on its own
+*config server* implementation and *mongos* daemons as the routing tier.
+
+Cassandra and Riak take a different approach: they use a ***gossip protocol***
+among the nodes to disseminate any changes in cluster state. (approach 1)
+
+Couchbase does not rebalance automatically. Normally it is configured with a
+routing tier called *moxi*, which learns about routing changes from the cluster
+nodes.
+
+### Parallel Query Execution
+
+***MPP (massively parallel processing)*** relational database products, often
+used for analytics, are much more sophisticated in the types of queries they
+support.
+
+- A typical data warehouse query contains several join, filtering, grouping, and
+  aggregation operation.
+- The MPP query optimizer breaks this complex query into a number of execution
+  stages and partitions, many of wich can be executed in parallel on different
+  nodes of the database cluster.
