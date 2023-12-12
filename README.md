@@ -1,10 +1,10 @@
 # Notes
 
-## Categories
-
 These notes are categorized into directories named in academic
 disciplines according to the
 [Outline of academic disciplines, Wikipedia](https://en.wikipedia.org/wiki/Outline_of_academic_disciplines).
+
+## Categories
 
 ### Ⅰ. [Humanities](https://en.wikipedia.org/wiki/Humanities)
 
@@ -100,8 +100,3 @@ disciplines according to the
         1. Health Administration
 4. [Military Sciences](https://en.wikipedia.org/wiki/Military_science)
     1. Military Organization
-
-## Miscellaneous
-
-- [Blogs](blogs) that I've been reading.
-- [Thoughts](thoughts) on everything.
