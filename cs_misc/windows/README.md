@@ -1,8 +1,15 @@
 # Windows
 
 - [Windows](#windows)
+  - [Network](#network)
   - [CA 证书管理](#ca-证书管理)
   - [Microsoft](#microsoft)
+
+## Network
+
+```bat
+netsh winsock reset
+```
 
 ## CA 证书管理
 
