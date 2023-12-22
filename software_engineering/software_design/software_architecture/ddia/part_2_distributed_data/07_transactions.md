@@ -22,6 +22,13 @@
       - [Visibility rules for observing a consistent snapshot](#visibility-rules-for-observing-a-consistent-snapshot)
       - [Indexes and snapshot isolation](#indexes-and-snapshot-isolation)
       - [Repeatable read and naming confusion](#repeatable-read-and-naming-confusion)
+    - [Preventing Lost Updates](#preventing-lost-updates)
+      - [Atomic write operations](#atomic-write-operations)
+      - [Explicit locking](#explicit-locking)
+      - [Automatically detecting lost updates](#automatically-detecting-lost-updates)
+      - [Compare-and-set](#compare-and-set)
+      - [Conflict resolution and replication](#conflict-resolution-and-replication)
+    - [Write Skew and Phantoms](#write-skew-and-phantoms)
 
 A ***transaction*** is a way for an application to group several reads and
 writes together into a logical unit. All the reads and writes in a transaction
@@ -432,7 +439,12 @@ when it was created.
 
 #### Repeatable read and naming confusion
 
->>>>> progress
+Snapshot isolation is useful especially for read-only transactions. Many
+databases call it by different names. In Oracle it is called *serializable*, and
+in PostgreSQL and MySQL it is called *repeatable read*.
+
+System R's 1975 defined *repeatable read*, which looks superficially similar to
+snapshot isolation.
 
 | Database        | Default         | Maximum            |
 | --------------- | --------------- | ------------------ |
@@ -450,3 +462,131 @@ Isolation levels:
 - `S`: Serializability
 - `CS`: Cursor Stability
 - `CR`: Consistent Read
+
+### Preventing Lost Updates
+
+The lost update problem can occur if an application reads some value from the
+database, modifies it, and writes back the modified value
+(a *read-modify-write style*). It occurs in various different scenarios:
+
+- Incrementing a counter or updating an account balance (requires reading the
+  current value, calculating the new value, and writing back the updated value)
+- Making a local change to a complex value (requires parsing the document,
+  making the change, and writing back the modified document)
+- Two users editing a wiki page at the same time, where each user saves their
+  changes by sending the entire page contents to the server, overwriting
+  whatever is currently in the database
+
+#### Atomic write operations
+
+Many databases provide atomic update operations, which remove the need to
+implement *read-modify-write* cycles in application code. The following
+instruction is concurrency-safe in most relational databases:
+
+```sql
+UPDATE counters SET value = value + 1 WHERE key = 'foo';
+```
+
+Document databases such as MongoDB provide atomic operations for making local
+modifications to a part of a JSON document, and Redis provides atomic operations
+for modifying data structures such as priority queues.
+
+Atomic operations are usually implemented by
+
+- ***cursor stability***: taking an exclusive lock on the object when it is
+  read so that that no other transaction can read it until the update has been
+  applied.
+- another option is to simply force all atomic operations to be executed on a
+  single thread.
+
+⚠️ Object-relational mapping frameworks make it easy to accidentally write code
+that performs unsafe read-modify-write cycles instead of using atomic operations
+provided by the database.
+
+#### Explicit locking
+
+The application can explicitly lock objects that are going to be updated to
+prevent lost updates. Then the application can perform a read-modify-write
+cycle, any other transaction trying to read the same object is forced to wait
+until the lock is freed.
+
+For some cases that need to do some checks on data returned by a query in the
+same transaction, an atomic operation is not sufficient:
+
+```sql
+BEGIN TRANSACTION;
+
+SELECT * FROM figures
+  WHERE name = 'robot' AND game_id = 222
+  FOR UPDATE; -- This FOR UPDATE clause indicates that the database should take
+              --  a lock on all rows returned by this query.
+
+-- Check whether move is valid, then update the position of the piece that was
+--  returned by the previous SELECT.
+
+UPDATE figures SET position = 'c4' WHERE id = 1234;
+
+COMMIT;
+```
+
+#### Automatically detecting lost updates
+
+An alternative is to allow *read-modify-write* cycles to execute in parallel
+and, if the transaction manager detects a lost update, abort the transaction and
+force it to retry.
+
+An advantage of this approach is that databases can perform this check
+efficiently in conjunction with snapshot isolation.
+
+- PostgreSQL's repeatable read, Oracle's serializable, and SQL Server's snapshot
+  isolation levels automatically detect when a lost update has occurred and
+  abort the offending transaction.
+- MySQL InnoDB's repeatable read does not detect lost updates.
+
+#### Compare-and-set
+
+In databases that don't provide transaction, there is an atomic
+*compare-and-set* operation. It avoids lost updates by allowing an update to
+happen only if the value has not changed since you last read it. If the current
+value does not match what was previously read, the update has not effect, and
+the read-modify-write cycle must be retried. e.g.
+
+```sql
+-- This may or may not be safe, depending on the database implementation
+UPDATE wiki_pages SET content = 'new content'
+  WHERE id = 1234 AND content = 'old content';
+```
+
+You need to check whether the update took effect and retry if necessary.
+
+- ⚠️ If the database allows the `WHERE` clause to read from an old snapshot,
+  this statement may not prevent lost updates, because the condition may be true
+  even though another concurrent write is occurring.
+
+#### Conflict resolution and replication
+
+In replicated databases, they have copies of the data on multiple nodes, and the
+data can potentially be modified concurrently on different nodes, some
+additional steps need to be taken to prevent lost updates.
+
+Locks and compare-and-set operations assume that there is a single up-to-date
+copy of the data. However, Databases with multi-leader or leaderless usually
+allow several writes to happen concurrently and replicate them asynchronously,
+so they cannot guarantee that there is a single up-to-date copy of the data.
+Thus, techniques based on locks or compare-and-set do not apply in this context.
+
+A common approach in such replicated databases is to allow concurrent writes to
+create several conflicting versions of a value (know as *siblings*), and to use
+application code or special data structures to resolve and merge these versions
+after the fact.
+
+Atomic operations can work well in a replicated context, especially if they are
+commutative in order (e.g. incrementing a counter).
+
+- When a value is concurrently updated by different clients, Riak automatically
+  merges together the updates in such a way that no updates are lost.
+
+⚠️ The *last write wins* conflict resolution method is prone to lost updates.
+But unfortunately, it is the default in many replicated databases.
+
+### Write Skew and Phantoms
