@@ -29,6 +29,8 @@
       - [Compare-and-set](#compare-and-set)
       - [Conflict resolution and replication](#conflict-resolution-and-replication)
     - [Write Skew and Phantoms](#write-skew-and-phantoms)
+      - [Characterizing write skew](#characterizing-write-skew)
+      - [More examples of write skew](#more-examples-of-write-skew)
 
 A ***transaction*** is a way for an application to group several reads and
 writes together into a logical unit. All the reads and writes in a transaction
@@ -590,3 +592,96 @@ commutative in order (e.g. incrementing a counter).
 But unfortunately, it is the default in many replicated databases.
 
 ### Write Skew and Phantoms
+
+e.g. Imagine that Alice and Bob are two on-call doctors for a shift. Both are
+feeling unwell, so they both decide to request leave. They happen to click the
+button to go off call at the same time. What happens next?
+
+Alice:
+
+```sql
+begin transacton;
+
+currently_on_call = (
+  select count(*) from doctors
+  where on_call = true
+  and shift_id = 1234
+); -- Now current_on_call = 2
+
+if (currently_on_call >= 2) (
+  update doctors
+  set on_call = false
+  where name = 'Alice'
+  and shift_id = 1234
+);
+
+commit transaction;
+```
+
+Bob:
+
+```sql
+begin transacton;
+
+currently_on_call = (
+  select count(*) from doctors
+  where on_call = true
+  and shift_id = 1234
+); -- Now current_on_call = 2
+
+if (currently_on_call >= 2) (
+  update doctors
+  set on_call = false
+  where name = 'Bob'
+  and shift_id = 1234
+);
+
+commit transaction;
+```
+
+Now it ends up unexpectedly that no doctor is on call.
+
+This is called ***write skew***. It is neither a dirty write nor a lost update,
+because the two transactions are updating two different objects. But it's
+definitely a race condition: if the two transaction had run one after another,
+the second doctor would have been prevented from going off call.
+
+#### Characterizing write skew
+
+Write skew can be treated as a generalization of the lost update problem. Write
+skew can occur if two transactions read the same objects, and then update some
+of those objects.
+
+- In the special case where different transactions update the same object, you
+  get a dirty write or lost update.
+
+With write skew:
+
+- Atomic single-object operations don't help, as multiple objects are involved.
+- The automatic detection of lost updates in snapshot isolation doesn't help
+  either: Automatically preventing write skew requires true serializable
+  isolation.
+- Most databases do not have built-in support for a constraint that involves
+  multiple objects. You may have to implement them with triggers or materialized
+  views.
+- If you can't use a serializable isolation level, the second-best option in
+  this case is probably to explicitly lock the rows that the transaction depends
+  on:
+
+  ```sql
+  BEGIN TRANSACTION;
+  
+  SELECT * FROM doctors
+    WHERE on_call = true
+    AND shift_id = 1234 FOR UPDATE;
+    -- FOR UPDATE tells the database to lock all rows returned by this query.
+
+  UPDATE doctors
+    SET on_call = false
+    WHERE name = 'Alice'
+    AND shift_id = 1234;
+
+  COMMIT;
+  ```
+
+#### More examples of write skew
