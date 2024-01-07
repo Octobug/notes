@@ -19,6 +19,9 @@
       - [Time-of-day clocks](#time-of-day-clocks)
       - [Monotonic clocks](#monotonic-clocks)
     - [Clock Synchronization and Accuracy](#clock-synchronization-and-accuracy)
+    - [Relying on Synchronized Clocks](#relying-on-synchronized-clocks)
+      - [Timestamps for ordering events](#timestamps-for-ordering-events)
+      - [Clock readings have a confidence interval](#clock-readings-have-a-confidence-interval)
 
 ## Faults and Partial Failures
 
@@ -220,3 +223,55 @@ usually fine, because it doesn't assume any synchronization between different
 nodes' clocks and is not sensitive to slight inaccuracies of measurement.
 
 ### Clock Synchronization and Accuracy
+
+Good accuracy can be achieved using
+
+- GPS receivers
+- Precision Time Protocol (PTP)
+- careful deployment and monitoring
+
+However, it requires significant effort and expertise.
+
+### Relying on Synchronized Clocks
+
+If you use software that requires synchronized clocks, it is essential that you
+also carefully monitor the clock offsets between all the machines. Any node
+whose clock drifts too far from the others should be declared dead and removed
+from the cluster.
+
+#### Timestamps for ordering events
+
+If two clients write to a distributed database, which write is the more recent
+one?
+
+- Client A writes `x = 1` on node 1; the write is replicated to node 3;
+- Client B increments `x` on node 3; now `x = 2`; (but assuming that B has an
+  earlier timestamp than A has)
+- both writes are replicated to node 2
+  
+When a write is replicated to other nodes, it is tagged with a timestamp
+according the time-of-day clock on the node where the write originated. The
+timestamps in the case above fail to order the events correctly:
+
+- `x = 1` has a timestamp of `42.004` seconds
+- `x = 2` has a timestamp of `42.003` seconds, which occurred later
+
+When node 2 receives these two events, it will incorrectly conclude that `x = 1`
+is the more recent value and drop the write `x = 2`.
+
+This conflict resolution is called ***last write wins*** (LWW). Some
+implementations generate timestamps on the client rather than the server, but
+this doesn't change the fundamental problems with LWW:
+
+- Database writes can be silently dropped without any error being reported.
+- LWW cannot distinguish between writes that occurred sequentially in quick
+  succession and writes that were truly concurrent.
+- It is possible for two nodes to independently generate writes with the same
+  timestamp. An additional tiebreaker value (often a large random number) is
+  required to resolve such conflicts, but this approach can also lead to
+  violations od causality.
+
+So-called *logical clocks*, which are based on incrementing counters rather than
+an oscillating quartz crystal, are a safer alternative for ordering events.
+
+#### Clock readings have a confidence interval
