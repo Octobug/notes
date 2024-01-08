@@ -24,6 +24,7 @@
       - [Clock readings have a confidence interval](#clock-readings-have-a-confidence-interval)
       - [Synchronized clocks for global snapshots](#synchronized-clocks-for-global-snapshots)
     - [Process Pauses](#process-pauses)
+      - [Response time guarantees](#response-time-guarantees)
 
 ## Faults and Partial Failures
 
@@ -323,3 +324,74 @@ not overlap.
   receiver or atomic clock in each datacenter.
 
 ### Process Pauses
+
+How does a node know that it is still leader in a database with a single leader
+per partition?
+
+- One option is for the leader to obtain a *lease* from the other nodes, which
+  is similar to a lock with timeout. Only one node can hold the lease at any one
+  time.
+  - When a node obtains a lease, it knows that it is the leader for some amount
+    of time, until the lease expires.
+  - In order to remain leader, the node must periodically renew the lease before
+    it expires.
+  - If the node fails, it stops renewing the lease, so another node can take
+    over when it expires.
+
+  ```c
+  while (true) {
+    request = getIncomingRequest();
+
+    // Ensure that the lease always has at least 10 seconds remaining
+    if (lease.expiryTimeMillis - System.currentTimeMillis() < 10000) {
+      lease = lease.renew();
+    }
+
+    if (lease.isValid()) {
+      process(request);
+    } 
+  }
+
+  // there's something wrong with this code
+  ```
+
+  1. This code is relying on synchronized clocks: the expiry time on the lease
+    is set by a different machine, and it's compared to the local system clock.
+    If the clocks are out of sync, this code might start doing strange things.
+  2. Even we change the protocol to use the local monotonic clock, there is
+    another problem: the code assumes that very little time passes between the
+    point `System.currentTimeMillis()` and the time when `process(request)`.
+    What if the thread stops for 15 seconds around the line `lease.isValid()`?
+    This code may do something unsafe by processing the request.
+
+Threads can possibly be paused for this long:
+
+- GC
+- A VM can be suspended and resumed (sometimes used for VM *live migration*)
+- laptops
+- OS context switches to another thread
+- I/O waits
+- OS memory swapping
+- receive the `SIGSTOP` signal
+
+The problem is similar to making multi-threaded code on a single machine
+thread-safe: you can't assume anything about timing.
+
+When writing multi-threaded code on a single machine, there are fairly good
+tools for making it thread-safe:
+
+- mutexes
+- semaphores
+- atomic counters
+- lock-free data structures
+- blocking queues
+- ...
+
+These tools don't directly translate to distributed systems, because a
+distributed system has no shared memory -- only messages sent over an unreliable
+network.
+
+A node in a distributed system must assume that its execution can be paused for
+a significant length of time at any point.
+
+#### Response time guarantees
