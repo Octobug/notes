@@ -22,6 +22,8 @@
     - [Relying on Synchronized Clocks](#relying-on-synchronized-clocks)
       - [Timestamps for ordering events](#timestamps-for-ordering-events)
       - [Clock readings have a confidence interval](#clock-readings-have-a-confidence-interval)
+      - [Synchronized clocks for global snapshots](#synchronized-clocks-for-global-snapshots)
+    - [Process Pauses](#process-pauses)
 
 ## Faults and Partial Failures
 
@@ -275,3 +277,49 @@ So-called *logical clocks*, which are based on incrementing counters rather than
 an oscillating quartz crystal, are a safer alternative for ordering events.
 
 #### Clock readings have a confidence interval
+
+> 置信区间
+
+If you're getting the time from a server, the uncertainty is based on the
+expected quartz drift since your last sync with the server, plus the NTP
+server's uncertainty, plus the network round-trip time to the server.
+
+#### Synchronized clocks for global snapshots
+
+The most common implementation of snapshot isolation requires a monotonically
+increasing transaction ID. If a write happend later than the snapshot, that
+write is invisible to the snapshot transaction.
+
+- On a single-node database, a simple counter is sufficient for generating
+  transaction IDs.
+- When a database is distributed across many machines, a global, monotonically
+  increasing transaction ID is difficult to generate. The transaction ID must
+  reflect causality:
+  - if transaction B reads a value that was written by transaction A, then B
+    must have a higher transaction ID than A -- otherwise, the snapshot would
+    not be consistent.
+  - with lots of small, rapid transactions, creating transaction IDs in a
+    distributed system becomes an untenable bottleneck.
+
+Spanner implements snapshot isolation across datacenters using the timestamps
+from synchronized time-of-day clocks as transaction IDs.
+
+It uses the clock's confidence interval as reported by the TrueTime API based on
+the this observation:
+
+- if you have two confidence intervals, each consisting of an earliest and
+  latest possible timestamp ($A = [A_{earliest}, A_{latest}]$ and
+  $B = [B_{earliest}, B_{latest}]$), and they don't overlap ($A_{earliest} <
+  A_{latest} < B_{earliest} < B_{latest}$).
+- then B definitely happened after A.
+
+In order to ensure that transaction timestamps reflect causality, Spanner
+deliberately waits for the length of the confidence interval before committing
+a read-write transaction. By doing so, it ensures that any transaction that may
+read the data is at a sufficiently later time, so their confidence intervals do
+not overlap.
+
+- In order to keep the wait time as short as possible, Google deploys a GPS
+  receiver or atomic clock in each datacenter.
+
+### Process Pauses
