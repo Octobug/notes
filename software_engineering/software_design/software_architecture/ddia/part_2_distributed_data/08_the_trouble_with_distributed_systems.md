@@ -25,6 +25,10 @@
       - [Synchronized clocks for global snapshots](#synchronized-clocks-for-global-snapshots)
     - [Process Pauses](#process-pauses)
       - [Response time guarantees](#response-time-guarantees)
+        - [Is real-time really real?](#is-real-time-really-real)
+      - [Limiting the impact of garbage collection](#limiting-the-impact-of-garbage-collection)
+  - [Knowledge, Truth, and Lies](#knowledge-truth-and-lies)
+    - [The Truth Is Defined by the Majority](#the-truth-is-defined-by-the-majority)
 
 ## Faults and Partial Failures
 
@@ -395,3 +399,40 @@ A node in a distributed system must assume that its execution can be paused for
 a significant length of time at any point.
 
 #### Response time guarantees
+
+In some environments, some software should respond within a specified time.
+Providing real-time guarantees in a system requires support from all levels of
+the software stack:
+
+- a real-time operating system (RTOS) that allows processes to be scheduled with
+  a guaranteed allocation of CPU time in specifed intervals
+- library functions must document their worst-case execution times
+- dynamic memory allocation may be restricted or disallowed entirely
+- an enormous amount of testing and measurement must be done
+
+##### Is real-time really real?
+
+#### Limiting the impact of garbage collection
+
+Language runtime have some flexibility around when they schedule garbage
+collections, because they can track the rate of object allocation and the
+remaining free memory over time.
+
+An emerging idea is to treat GC pauses like brief planned outages of a node, and
+to let other nodes handle requests from clients while one node is doing GC.
+
+A variant of this idea is to use the garbage collector only for short-lived
+objects, which are fast to collect, and to restart processes periodically,
+before they accumulate enough long-lived objects to require a full GC.
+
+## Knowledge, Truth, and Lies
+
+If a remote node doesn't respond, there is no way of knowing what state it is
+in, because problems in the network cannot reliably be distinguished from
+problems at a node.
+
+In a distributed system, we can state the assumptions we are making about the
+behavior (the *system model*) and design the actual system in such a way that
+it meets those assumptions.
+
+### The Truth Is Defined by the Majority
