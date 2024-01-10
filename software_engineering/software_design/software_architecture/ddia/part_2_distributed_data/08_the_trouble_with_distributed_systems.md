@@ -29,6 +29,9 @@
       - [Limiting the impact of garbage collection](#limiting-the-impact-of-garbage-collection)
   - [Knowledge, Truth, and Lies](#knowledge-truth-and-lies)
     - [The Truth Is Defined by the Majority](#the-truth-is-defined-by-the-majority)
+      - [The leader and the lock](#the-leader-and-the-lock)
+      - [Fencing tokens](#fencing-tokens)
+    - [Byzantine Faults](#byzantine-faults)
 
 ## Faults and Partial Failures
 
@@ -436,3 +439,64 @@ behavior (the *system model*) and design the actual system in such a way that
 it meets those assumptions.
 
 ### The Truth Is Defined by the Majority
+
+If a node is able to receive all messages sent to it, but any outgoing messages
+from that node are dropped or delayed, the other nodes will declare it dead.
+
+A node cannot necessarily trust its own judgment of a situation. A distributed
+system cannot exclusively rely on a single node, because a node may fail at any
+time, potentially leaving the system stuck and unable to recover.
+
+Instead, many distributed algorithms rely on a *quorum*, that is, voting among
+the nodes: decisions require some minimum number of votes from several nodes in
+order to reduce the dependence on any one particular node.
+
+If a quorum of nodes declares another node dead, then it must be considered
+dead. The individual node must abide by the quorum decision and step down.
+
+Most commonly, the quorum is an absolute majority of more than half the nodes.
+A majority quorum allows the system to continue working if individual nodes have
+failed.
+
+#### The leader and the lock
+
+Frequently, a system requires there to be only one of some thing:
+
+- Only one node is allowed to be the leader for a database partition, to avoid
+  split brain.
+- Only one transaction or client is allowed to hold the lock for a particular
+  resource or object, to prevent concurrently writing to it and corrupting it.
+- ...
+
+Implementing this in a distributed system requires care: even if a node believes
+that it is the chosen one, that doesn't necessarily mean a quorum of nodes
+agrees.
+
+If a node continues acting as the chosen one, even though the majority of nodes
+have declared it dead, it could cause problems in a system that is not carefully
+designed. Such a node could send messages to other nodes in its self-appointed
+capacity.
+
+![incorrect lock](../images/8_04_incorrect_distributed_lock.png)
+
+Incorrect implementation of a distributed lock: `client 1` believes that it
+still has a valid lease, even though it has expired, and thus corrupts a file
+in storage.
+
+#### Fencing tokens
+
+When using a lock or lease to protect access to some resource, we need to ensure
+that a node that is under a false belief of being the chosen one cannot disrupt
+the rest of the system.
+
+A fairly simple technique that that achieves this goal is called ***fencing***.
+
+![Fencing](../images/8_05_fencing.png)
+
+Making access to storage safe by allowing writes only in the order of increasing
+fencing tokens.
+
+e.g. If ZooKeeper is used as lock service, the transaction ID `zxid` or the node
+version `cversion` can be used as fencing token.
+
+### Byzantine Faults
