@@ -32,6 +32,7 @@
       - [The leader and the lock](#the-leader-and-the-lock)
       - [Fencing tokens](#fencing-tokens)
     - [Byzantine Faults](#byzantine-faults)
+      - [The Byzantine Generals Problem](#the-byzantine-generals-problem)
 
 ## Faults and Partial Failures
 
@@ -500,3 +501,18 @@ e.g. If ZooKeeper is used as lock service, the transaction ID `zxid` or the node
 version `cversion` can be used as fencing token.
 
 ### Byzantine Faults
+
+⚠️ If a node deliberately wanted to subvert the system's guarantees, it could
+easily do so by sending messages with a fake fencing token.
+
+Distributed systems problems become much harder if there is a risk that nodes
+may "lie". Such behavior is known as a *Byzantine fault*, and the problem of
+reaching consensus in this untrusting environment is known as the
+*Byzantine Generals Problem*.
+
+#### The Byzantine Generals Problem
+
+The Byzantine Generals Problem is a generalization of the so-called
+*Two Generals Problem*, which imagines a situation in which two army generals
+need to agree on a battle plan. They can only communicate by messenger, and the
+messengers sometimes get delayed or lost.
