@@ -34,6 +34,7 @@ disciplines according to the
     1. Political Philosophy
 4. [Psychology](https://en.wikipedia.org/wiki/Psychology)
     1. [Cognitive Psychology](./cognitive_psychology/)
+    2. [Miscellaneous](./psych_misc/)
 5. [Sociology](https://en.wikipedia.org/wiki/Outline_of_sociology)
     1. Sociocultural Evolution
 
@@ -82,7 +83,7 @@ disciplines according to the
         1. [Software Design](software_engineering/software_design)
         2. Software Maintenance
         3. [Software Testing](software_engineering/software_testing)
-    10. [Miscellaneous](cs_misc)
+    10. [Miscellaneous](./cs_misc)
 
 ### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)
 
