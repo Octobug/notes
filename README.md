@@ -52,6 +52,7 @@ disciplines according to the
         2. [Network Programming](computer_network/network_programming)
     3. [Computer Security](./computer_security/)
         1. [Cryptography](./computer_security/cryptography/)
+        2. [Identity Management](./computer_security/identity_management/)
     4. [Databases](databases)
         1. [Database Design](databases/database_design)
         2. [NoSQL](databases/nosql)
