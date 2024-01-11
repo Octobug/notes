@@ -33,6 +33,8 @@
       - [Fencing tokens](#fencing-tokens)
     - [Byzantine Faults](#byzantine-faults)
       - [The Byzantine Generals Problem](#the-byzantine-generals-problem)
+      - [Weak forms of lying](#weak-forms-of-lying)
+    - [System Model and Reality](#system-model-and-reality)
 
 ## Faults and Partial Failures
 
@@ -510,9 +512,44 @@ may "lie". Such behavior is known as a *Byzantine fault*, and the problem of
 reaching consensus in this untrusting environment is known as the
 *Byzantine Generals Problem*.
 
+A system is *Byzantine fault-tolerant* if it continues to operate correctly even
+if some of the nodes are malfunctioning and not obeying the protocol, of if
+malicious attackers are interfering with the network.
+
+Protocols for making systems Byzantine fault-tolerant are complicated, and
+fault-tolerant embedded systems rely on support from the hardware level. In most
+server-side data systems, the cost of deploying Byzantine fault-tolerant
+solutions makes them impractical.
+
+In peer-to-peer networks, where there is no central authority, Byzantine fault
+tolerance is more relevant.
+
+Most Byzantine fault-tolerant algorithms require a supermajority of more than
+two-thirds of the nodes to be functioning correctly.
+
+In most systems, if an attacker can compromise one node, they can probably
+compromise all of them, because they are probably running the same software.
+Thus, traditional mechanisms (authentication, access control, encryption,
+firewalls, and so on) continue to be the main protection against attackers.
+
 #### The Byzantine Generals Problem
 
 The Byzantine Generals Problem is a generalization of the so-called
 *Two Generals Problem*, which imagines a situation in which two army generals
 need to agree on a battle plan. They can only communicate by messenger, and the
 messengers sometimes get delayed or lost.
+
+#### Weak forms of lying
+
+Preventing weak forms of "lying" is worth doing because it is simple and
+pragmatic steps toward better reliability:
+
+- Usually, corrupted packets are caught by the checksums built into TCP and UDP,
+  but sometimes they evade detection. Simple measures are usually sufficient
+  protection against such corruption, such as checksums in the application-level
+  protocol.
+- Basic sanity-checking of input values is necessary.
+- NTP clients can be configured with multiple server addresses.
+- ...
+
+### System Model and Reality
