@@ -35,6 +35,10 @@
       - [The Byzantine Generals Problem](#the-byzantine-generals-problem)
       - [Weak forms of lying](#weak-forms-of-lying)
     - [System Model and Reality](#system-model-and-reality)
+      - [Correctness of an algorithm](#correctness-of-an-algorithm)
+      - [Safety and liveness](#safety-and-liveness)
+      - [Mapping system models to the real world](#mapping-system-models-to-the-real-world)
+  - [Summary](#summary)
 
 ## Faults and Partial Failures
 
@@ -553,3 +557,119 @@ pragmatic steps toward better reliability:
 - ...
 
 ### System Model and Reality
+
+A ***system model*** is an abstraction that describes what things an algorithm
+may assume. With regard to timing assumptions, three system models are in common
+use:
+
+- ***Synchronous model***: It assumes bounded network delay, bounded process
+  pauses, and bounded clock error. It is not a realistic model of most practical
+  systems, because unbounded delays and pauses do occur.
+- ***Partially synchronous model***: It means that a system behaves like a
+  synchronous system most of the time, but it sometimes exceeds the bounds for
+  network delay, process pauses, and clock drift. **This is a realistic model**
+  of many systems: most of the time, networks and processes are quite well
+  behaved, but we have to reckon with the fact that any timing assumptions may
+  be shattered occasionally.
+- ***Asynchronous model***: In this model, an algorithm is not allowed to make
+  any timing assumptions. It does not even have a clock, so it cannot use
+  timeouts. Some algorithms can be designed for the asynchronous model, but it
+  is very restrictive.
+
+Besides timing issues, node failures are also have to be considered. The three
+most common system models for nodes are:
+
+- ***Crash-stop faults***: In this model, an algorithm may assume that a node
+  can fail in only one way, namely by crashing. This means that the node may
+  suddenly stop responding at any moment and is gone forever.
+- ***Crash-recovery faults***: In this model, we assume that nodes may crash at
+  any moment, and perhaps start responding again after some unknown time. Nodes
+  are assumed to have stable storage that is preserved across crashes, while the
+  in-memory state is assumed to be lost.
+- ***Byzantin (arbitrary) faults***: Nodes may do absolutely anthing, including
+  trying to trick and deceive other nodes.
+
+For modeling real systems, the `partially synchronous model` with
+`crash-recovery faults` is generally the most useful model.
+
+#### Correctness of an algorithm
+
+We can describe an algorithm's ***properties*** to define what it means to be
+***correct***. For example, if we are generating fencing tokens for a lock, we
+may require the algorithm to have the following properties:
+
+- *Uniqueness*
+- *Monotonic sequence*
+- *Availability*: a node that requests a fencing token and does not crash
+  eventually receives a response.
+
+#### Safety and liveness
+
+It is worth distinguishing between two different kinds of properties:
+
+- *safety*: If it's violated, we can point at a particular point in time at
+  which it was broken. After a safety property has been violated, the violation
+  cannot be undone.
+  - (nothing bad happens)
+  - e.g. `uniqueness` and `monotonic sequence`
+- *liveness*: It may not hold at some point in time, but there is always hope
+  that it may be satisfied in the future.
+  - (something good eventually happens)
+  - e.g. `availability`
+
+What distinguishes the two kinds of properties? Liveness properties often
+include the word "eventually" in their definition. e.g. *eventual consistency*.
+
+For distributed algorithms, it is common to require that safety properties
+always hold, in all possible situations of a system model. The algorithm must
+ensure that it never returns a wrong result.
+
+However, with liveness properties we are allowed to make caveats: for example,
+we could say that a request needs to receive a response only if a majority of
+nodes have not crashed, and only if the network eventually recovers from an
+outage.
+
+`Partially synchronous` model requires that eventually the system returns to a
+synchronous state: any period of network interruption lasts only for a finite
+duration and is then repaired.
+
+#### Mapping system models to the real world
+
+⚠️ The system models mentioned above are simplified abstraction of reality. e.g.
+
+- Algorithms in the `crash-recovery` model generally assume that data in stable
+  storage survives crashes. However, data on disk could be corrupted very
+  possibly.
+- In quorum algorithms, if a node may suffer from amnesia and forget previously
+  stored data, that breaks the quorum condition, and thus breaks the correctness
+  of the algorithm.
+
+A real implementation may still have to include code to handle the case where
+something happens that was assumed to be impossible.
+
+This is not to say that theoretical, abstract system models are worthless. They
+are incredibly helpful for distilling down the complexity of real systems to a
+manageable set of faults that we can reason about, so that we can understand the
+problem and try to solve it systematically.
+
+## Summary
+
+- To tolerate faults, the first step is to *detect* them. But most systems don't
+  have an accurate mechanism of detecting whether a node has failed, so most
+  distributed algorithms rely on timeouts to determine whether a remote node is
+  still available.
+  - but timeouts can't distinguish between network and node failures
+- Making a system tolerate a detected fault is not easy: there is no global
+  variable, no shared memory, no common knowledge or any other kind of shared
+  state between the machines.
+  - The only way information can flow from one node to another is by sending it
+    over the unreliable network.
+- If you can simply keep things on a single machine, it is generally worth doing
+  so.
+- Scalability is not the only reason for wanting to use a distributed system.
+  Fault tolerance and low latency are equally important goals.
+- It is possible to give hard real-time response guarantees and bounded delays
+  in networks, but doing so is very expensive and results in lower utilization
+  of hardware resources.
+  - Most non-safety-critical systems choose cheap and unreliable over expensive
+    and reliable.

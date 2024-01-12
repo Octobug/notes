@@ -26,8 +26,8 @@ We call an applicatoin ***data-intensive** if data is its primary challenge.
   - [x] [5. Replication](./part_2_distributed_data/05_replication.md)
   - [x] [6. Partioning](./part_2_distributed_data/06_partitioning.md)
   - [x] [7. Transactions](./part_2_distributed_data/07_transactions.md)
-  - [ ] [8. The Trouble with Distributed Systems](./part_2_distributed_data/08_the_trouble_with_distributed_systems.md)
-  - 9. Consistency and Consensus
+  - [x] [8. The Trouble with Distributed Systems](./part_2_distributed_data/08_the_trouble_with_distributed_systems.md)
+  - [ ] [9. Consistency and Consensus](./part_2_distributed_data/09_consistency_and_consensus.md)
 - Part III. Derived Data
   - 10. Batch Processing
   - 11. Stream Processing
