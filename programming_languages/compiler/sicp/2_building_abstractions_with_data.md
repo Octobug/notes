@@ -38,6 +38,8 @@
     - [2.4.8 Dispatch Dictionaries](#248-dispatch-dictionaries)
     - [2.4.9 Propagating Constraints](#249-propagating-constraints)
   - [Homework 4: Trees, Data Abstraction](#homework-4-trees-data-abstraction)
+  - [2.5 Object-Oriented Programming](#25-object-oriented-programming)
+  - [Homework 5: Generators](#homework-5-generators)
 
 ## 2.1 Introduction
 
@@ -752,3 +754,12 @@ converter(celsius, fahrenheit)
 ## Homework 4: Trees, Data Abstraction
 
 - [x] [Homework 4: Trees, Data Abstraction](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw04/)
+
+## 2.5 Object-Oriented Programming
+
+> <https://www.composingprograms.com/pages/25-object-oriented-programming.html>
+>>>>> progress
+
+## Homework 5: Generators
+
+- [ ] [Homework 5: Generators](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw05/)
