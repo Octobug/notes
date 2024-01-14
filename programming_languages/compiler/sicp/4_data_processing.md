@@ -713,9 +713,7 @@ that implements lazy evaluation through the use of higher-order functions.
 
 ## Lab 6: Mutability, Iterators
 
-- [ ] [Lab 6: Mutability, Iterators](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab06/)
-
->>>>> progress
+- [x] [Lab 6: Mutability, Iterators](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab06/)
 
 ## Discussion 6: Mutability, Iterators, Generators
 
