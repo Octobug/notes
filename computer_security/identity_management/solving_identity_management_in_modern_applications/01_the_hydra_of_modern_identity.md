@@ -1,5 +1,10 @@
 # Chapter 1: The Hydra of Modern Identity
 
+> Wisdom is not a product of schooling but of the lifelong attempt to acquire
+> it.
+>
+> —Albert Einstein, theoretical physicist, from a letter dated March 24, 1954
+
 - [Chapter 1: The Hydra of Modern Identity](#chapter-1-the-hydra-of-modern-identity)
   - [Identity Challenges](#identity-challenges)
     - [Who Are Your Users? And Will They Authenticate?](#who-are-your-users-and-will-they-authenticate)
