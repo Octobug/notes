@@ -7,4 +7,5 @@
 
 ## Table of Contents
 
-- [ ] [Chapter 1: The Hydra of Modern Identity](./01_the_hydra_of_modern_identity.md)
+- [x] [Chapter 1: The Hydra of Modern Identity](./01_the_hydra_of_modern_identity.md)
+- [ ] [Chapter 2: The Life of an Identity](./02_the_life_of_an_identity.md)
