@@ -25,13 +25,15 @@ disciplines according to the
 
 1. [Economics](https://en.wikipedia.org/wiki/Economics)
     1. Microeconomics
+    2. Political Economy
 2. [Linguistics](https://en.wikipedia.org/wiki/Linguistics)
     1. [Applied Linguistics](./applied_linguistics/)
         1. [Language Education](./applied_linguistics/language_education/)
     2. [Historical Linguistics](./historical_linguistics/)
         1. [Comparative Linguistics](./historical_linguistics/comparative_linguistics/)
 3. [Political Science](https://en.wikipedia.org/wiki/Political_science)
-    1. Political Philosophy
+    1. Political Economy
+    2. Political Philosophy
 4. [Psychology](https://en.wikipedia.org/wiki/Psychology)
     1. [Cognitive Psychology](./cognitive_psychology/)
     2. [Miscellaneous](./psych_misc/)
