@@ -29,7 +29,15 @@ def insert_items(lst, entry, elem):
     ...       ['List', 'ListComp', 'Slice'])
     True
     """
-    "*** YOUR CODE HERE ***"
+    limit = len(lst)
+    i = 0
+    while i < limit:
+        if lst[i] == entry:
+            lst.insert(i + 1, elem)
+            limit += 1
+            i += 1
+        i += 1
+    return lst
 
 
 def count_occurrences(t, n, x):
