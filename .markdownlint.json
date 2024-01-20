@@ -7,9 +7,7 @@
   "MD004": {
     "style": "dash"
   },
-  "MD013": {
-    "headings": false
-  },
+  "MD013": false,
   "MD026": false,
   "MD033": false
 }

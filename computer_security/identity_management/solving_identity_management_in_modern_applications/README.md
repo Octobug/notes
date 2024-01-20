@@ -11,4 +11,5 @@
 - [x] [Chapter 2: The Life of an Identity](./02_the_life_of_an_identity.md)
 - [x] [Chapter 3: Evolution of Identity](./03_evolution_of_identity.md)
 - [x] [Chapter 4: Identity Provisioning](./04_identity_provisioning.md)
-- [ ] [Chapter 5: OAuth 2 and API Authorization](./05_oauth2_and_api_authorization.md)
+- [x] [Chapter 5: OAuth 2 and API Authorization](./05_oauth2_and_api_authorization.md)
+- [ ] [Chapter 6: OpenId Connect](./06_openid_connect.md)

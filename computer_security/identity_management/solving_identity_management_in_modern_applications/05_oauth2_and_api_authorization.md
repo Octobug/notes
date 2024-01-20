@@ -24,6 +24,21 @@
     - [Implicit Grant (Removed in OAuth 2.1)](#implicit-grant-removed-in-oauth-21)
     - [Resource Owner Password Credentials Grant (Removed from OAuth 2.1)](#resource-owner-password-credentials-grant-removed-from-oauth-21)
     - [Device Authorization Grant](#device-authorization-grant)
+      - [Device Authorization Grant: The Authorization Request](#device-authorization-grant-the-authorization-request)
+      - [Authorization Response](#authorization-response)
+      - [Polling the Authorization Server](#polling-the-authorization-server)
+    - [Calling an API](#calling-an-api)
+    - [Refresh Tokens](#refresh-tokens)
+  - [Token Usage Guidance](#token-usage-guidance)
+    - [Access Tokens](#access-tokens)
+    - [Token Usage Guidance: Refresh Tokens](#token-usage-guidance-refresh-tokens)
+    - [Confidentiality and Integrity](#confidentiality-and-integrity)
+    - [Token Revocation](#token-revocation)
+  - [Further Learning](#further-learning)
+    - [Advanced Use Cases](#advanced-use-cases)
+  - [Summary](#summary)
+    - [Key Points](#key-points)
+  - [Notes](#notes)
 
 If an application wants to call an API on a user’s behalf to access resources
 owned by the user, it needs the user’s consent. In the past, a user often had
@@ -741,4 +756,501 @@ risk from credentials exposed to client applications.
 
 ### Device Authorization Grant
 
->>>>> progress
+As with applications, the functionality of IoT devices can be greatly enhanced
+by calling APIs. The OAuth 2 `authorization code grant` requires user
+interaction on the client device for authentication and authorization, yet a
+digital picture frame and many IoT devices have very limited facilities for
+user interaction.
+
+The OAuth 2.0 Device Authorization Grant provides a mechanism for the user
+interaction to occur on another device. With this grant, the user triggers an
+action on the `primary device` (an IoT device) that requires an API call. In
+response to the action, the `primary device` initiates an authorization request
+to the `authorization server` for the API. The `authorization server` responds
+with a URL and code that the `primary device` displays to the user, along with
+instructions.
+
+The user follows the instructions and accesses the URL on a secondary device,
+such as a mobile phone. The user interacts with the `authorization server` on
+the secondary device to authenticate, input their code, and provide their
+authorization for the requested action. While the user is doing this, the
+primary device polls the `authorization server`. Once the user has completed
+the interaction on the secondary device, the `primary device`’s next polling
+request will result in a successful response with an `access token` and,
+optionally, a `refresh token`. The `primary device` can then use the
+`access token` to make an API call on the user’s behalf.
+
+```mermaid
+sequenceDiagram
+  participant User
+  participant Browser on Secondary Device
+  participant Primary Client Device
+  participant Authorization Server
+  participant Resource Server
+
+  User->>Primary Client Device: 1. to
+
+  Primary Client Device->>Authorization Server: 2. with [Client ID] to
+  Note over Authorization Server: /device_authorization
+
+  Authorization Server->>Primary Client Device: 3. with [End User Code][Device Code][Verification URI] to
+
+  Primary Client Device->>User: 4. with [End User Code][Verification URI] to
+
+  User->Browser on Secondary Device: on
+  Browser on Secondary Device->>Authorization Server: to
+  Note over Authorization Server: /verification URI
+
+  Authorization Server->>Browser on Secondary Device: 6. to
+
+  User->Browser on Secondary Device: with [Login credentials] on
+  Browser on Secondary Device->>Authorization Server: 7. to
+
+  Authorization Server->>Browser on Secondary Device: 8. to
+
+  User->Browser on Secondary Device: with [End User Code] to
+  Browser on Secondary Device->>Authorization Server: 9. to
+
+  Primary Client Device->>Authorization Server: 10. with [Device Code][Client ID] to
+  Note over Authorization Server: /token
+
+  Authorization Server->>Primary Client Device: 11. with [Access token][Refresh token]
+
+  Primary Client Device->>Resource Server: 12. with [Access token] to
+  Note over Resource Server: /api endpoint
+```
+
+1. The user (`resource owner`) accesses the `primary device`.
+2. The `primary device` sends an `authorization request` to the
+   `authorization server` for the API. This request includes the device’s
+   `client ID`.
+3. The `authorization server` responds with a `device code`, `end-user code`,
+   and a user `verification URI`.
+4. The `primary device` displays or communicates to the user the `URI` and
+   `end-user code`.
+5. The user accesses the `verification URI` on a `secondary device` such as a
+   phone.
+6. The `authorization server` interacts with the user on the `secondary device`
+   to authenticate them.
+7. The user supplies their `login credentials` to the `authorization server`.
+8. The `authorization server` prompts the user for their `end-user code` and for
+   authorization of the API call.
+9. The user supplies their `end-user code` and approves the authorization
+    request.
+10. The `primary device` continually polls the `authorization server`.
+11. When the user approves the request, the `authorization server` responds to
+    the next polling request with an `access token` and optionally a
+    `refresh token`.
+12. The `primary device` can then use the `access token` to call the API on the
+    user’s behalf.
+
+#### Device Authorization Grant: The Authorization Request
+
+It would be directed via `HTTP-POST` to an `authorization server`’s
+`device_authorization` endpoint.
+
+```http
+POST /device_authorization HTTP/1.1
+Host: authorizationserver.com
+Content-Type: application/x-www-form-urlencoded
+client_id=<client id>
+& resource=<API identifier>
+& scope=<scope>
+```
+
+- `client_id`: Identifier for the `primary device`, assigned when it registered
+  with the `authorization server`.
+- `scope`: The scope of access privileges for which authorization is requested.
+  For example: `“get:photos”`.
+- `resource`: Identifier for a specific API registered at the
+  `authorization server` and for which the `access token` is requested. Some
+  implementations may use other names, such as `“audience”`. Primarily used in
+  deployments with custom APIs. This parameter isn’t needed unless there are
+  multiple possible APIs.
+
+An `authorization server` may support a parameter to indicate a specific API
+for an authorization request as defined in the `Resource Indicators` for OAuth
+2.0 extension. This parameter may be called the `“resource”` or `“audience”`.
+
+#### Authorization Response
+
+The `authorization server` responds to the `primary device`’s
+`authorization request` with a `device code`, a `user code`, and a
+`verification URI`, as well as an `expiration` and `polling interval`.
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Cache-Control: no-store
+Pragma: no-cache
+{
+  "device_code": <code issued for device>,
+  "user_code": <code issued for end user>,
+  "verification_uri": "https://authorizationserver.com/device",
+  "expires_in": 600,
+  "interval": 5
+}
+```
+
+- `device_code`: A code generated by the `authorization server` for the
+  `primary device`, to be used by the `device` when it makes the subsequent
+  token request.
+- `user_code`: A code generated by the `authorization server` for a particular
+  end user’s device authorization session, to be used when the user
+  subsequently interacts with the `authorization server` on a `secondary device`
+  to authorize the `primary device`’s request.
+- `verification_uri`: A URI to be displayed or communicated to the user by the
+  `primary device`, along with instructions for the user to access that URI
+  from a `secondary device` to consent to the `authorization request`.
+- `expires_in`: Validity period for the `device_code` and `user_code`.
+  Specified in `seconds`.
+- `interval`: Minimum time, specified in seconds, that the `primary device`
+  should wait between polling requests.
+
+The primary device communicates the `verification URI` and `user code` to the
+user ***in any format*** suitable for the device and which facilitates the
+user’s interaction. For example, the primary device could display a text URL or
+a QR code. The `primary device` also provides instructions for the user to
+navigate to the `verification URI` on a `secondary device` and enter the
+`user code` when prompted.
+
+#### Polling the Authorization Server
+
+The `primary device` polls the `authorization server` by repeatedly posting an
+`access token` request to the `authorization server`’s `token endpoint`.
+
+The precise mechanism by which the `primary device` authenticates itself for
+the request may vary by `authorization server` and configuration settings
+chosen when the `primary device` registers at the `authorization server`.
+
+The `interval` between polling requests should be governed by the `“interval”`
+parameter returned by the `authorization server`.
+
+```http
+POST /token HTTP/1.1
+Host: authorizationserver.com
+Content-Type: application/x-www-form-urlencoded grant_type=urn:ietf:params:oauth:grant-type:device_code
+& device_code=<device code>
+& client_id=<client id>
+```
+
+- `grant_type`: Indicates the type of grant requested. For this scenario, it
+  must be set to `“urn:ietf:params:oauth:grant-type:device_code”`.
+- `device_code`: A code generated by the `authorization server` for the
+  `primary device` and used by the device when it makes the token request.
+- `client_id`: Identifier for the `primary device`, assigned when it registered
+  with the `authorization server`.
+
+The `client ID` and `device code` are used by the `authorization server` to
+associate the polling request with the `primary device`’s initial
+`authorization request`. The `primary device` should make polling requests no
+more frequently than the number of seconds specified in the `interval`
+parameter from the `authorization server` response. The `primary device`
+continues polling while the user interacts with the `authorization server`.
+
+- If the user has not yet completed the interaction, the `primary device` will
+  receive either an `“authorization_pending”` status or a `“slow_down”` status.
+  - The `slow_down` status indicates the `primary device` should send subsequent
+    polling requests less frequently.
+- If the user does not approve the request, a status of `“access_denied”` will
+  be returned.
+- If too much time passes, a status of `“expired_token”` may be returned,
+  indicating the `device code` is no longer valid.
+  
+These error codes are in addition to the general OAuth 2 error responses for
+conditions such as `invalid requests`, `client IDs`, `grants`, `grant_types`,
+and `scopes` or `unauthorized requests`.
+
+### Calling an API
+
+Once an application receives an `access token` via one of the grant types, it
+can call the `resource server`, sending the `access token` with its request.
+
+OAuth 2.1 specifies that an `access token` must be sent in either the
+`HTTP Authorization request header` or `HTTP request payload`. OAuth 2.1
+specifically prohibits the `access token` from being sent in a URI query
+parameter.
+
+A common approach has been to send the `access token` as a `bearer token`,
+using the `HTTP “Authorization” request header` field with an authentication
+token type of `“Bearer”` followed by the `access token` as shown in the
+following snippet:
+
+```http
+GET /api-endpoint HTTP/1.1
+Host: api-server.com
+Authorization: Bearer <access_token>
+```
+
+A drawback with a `bearer token` is that it can be used by anyone that
+possesses the token. If an `access token` is stolen, an unauthorized party
+could use it to make a request to the API for which the token was issued.
+
+OAuth 2.1 recommends several measures, including short-lived `access tokens`,
+to mitigate the risk of `access tokens` being captured and used in an
+unauthorized manner.
+
+### Refresh Tokens
+
+When an `access token` expires, an `application` could make a new
+`authorization request`, but with short-lived `access tokens`, this could
+result in frequent consent requests for users which would be cumbersome. OAuth
+2 defines an alternative approach called a `refresh token`.
+`Authorization servers` may, at their discretion, return a `refresh token`
+along with an `access token`. If an `application` receives a `refresh token`
+from an `authorization server`, it can use it to obtain a new `access token`
+when a previous `access token` expires.
+
+The use of a `refresh token` to obtain a new `access token` does not require
+user interaction, so an `application` can use a `refresh token` to obtain a new
+`access token` when the user is offline.
+
+OAuth 2 does not include a mechanism for `applications` to request
+`refresh tokens`, leaving the issuance up to `authorization servers`. The
+handling of `refresh tokens` may therefore vary across individual
+`authorization servers`. Some issue `refresh tokens` automatically, and others
+expect an `application` to explicitly request a `refresh token` via a
+proprietary mechanism. (The OIDC specification includes a mechanism for an
+`application` to request a `refresh token` for one specific use case.) The
+documentation of the `authorization server` should explain the
+implementation-specific details for `refresh tokens`.
+
+A sample call with a refresh token to an `authorization server`’s token
+endpoint to request a new `access token` is shown in the following sample. The
+client must authenticate itself for the request.
+
+```http
+POST /token HTTP/1.1
+Host: authorizationserver.com
+Authorization: Basic <encoded application credentials>
+Content-Type: application/x-www-form-urlencoded
+grant_type=refresh_token
+& refresh_token=<refresh_token>
+```
+
+The `access token` will be returned in a response similar to that described in
+"Calling the Token Endpoint". The `scope` parameter is optional and, if used,
+must be equal to, or lesser than, the `scope` in the original authorization
+request, and the `client credentials` passed must be those of the
+`application` which made the original authorization request.
+
+The use of `refresh tokens` applies primarily to authorization flows where a
+user is the `resource owner`. There is no need for a `refresh token` with the
+`client credentials grant` because an `application` can simply request an
+`access token` programmatically at any time, without a need for user
+interaction.
+
+## Token Usage Guidance
+
+### Access Tokens
+
+An `access token` is intended to be consumed by a `resource server` API. An
+`application` should not depend on using data in the `access token` (in the
+absence of proprietary extensions). Depending on the `authorization server`
+implementation, the format of an `access token` may be an opaque token or a
+`JSON Web Token (JWT)`.
+
+- In the case of an opaque token, a `resource server` calls the
+  `authorization server`’s token introspection endpoint to obtain the relevant
+  information associated with the token.
+- In the case of a `JWT`, the token is self-contained and a `resource server`
+  can view the JWT attributes in the token.
+  
+In either case, a `resource server` that receives an `access token` must
+validate it before processing the request it accompanies. The process for
+validating a token may vary by `authorization server` implementation.
+
+`Access tokens` have an expiration time, it is recommended that `access token`
+duration be short-lived and a new `access token` obtained only when needed.
+
+- In keeping with the principle of least privilege, it is better to only
+  refresh an `access token` when it is needed, rather than always keeping a
+  current `access token` on hand.
+- The `access token` `expiration` should be determined based on the sensitivity
+  of the resources to be accessed.
+
+`Access tokens` can be cached, for a period of time less than or equal to their
+`expiration`, as a performance optimization. Caching `access tokens` can also
+reduce the risk of hitting rate limits via excessive calls to an
+`authorization server`.
+
+An `access token` must have been granted the appropriate scope of privileges
+for an `application`’s API calls.
+
+Scopes should typically be used to model the coarse-grained privileges that an
+`application` can request of an API on a user’s behalf, such as “get:documents”
+rather than granular privileges involving specific resources.
+
+- Baking specific resources into scopes can cause the number of scopes to
+  become unwieldy to administer as the number of resources grows.
+- In an enterprise scenario, baking user profile attributes or organization
+  attributes used for access control into scopes will result in rework when the
+  inevitable reorganizations occur.
+- In addition, when the scope parameter is sent via URL, it can hit a length
+  limitation.
+
+Where possible, applications should request `access tokens` restricted to a
+particular `resource server` via a `“resource”` or `“audience”` parameter. This
+can prevent an `access token` issued for one `resource server` from being used
+at another `resource server`.
+
+### Token Usage Guidance: Refresh Tokens
+
+`Refresh tokens` facilitates the use of `access tokens` with a short duration,
+which minimizes risk if an `access token` is compromised.
+
+However, the use of `refresh tokens` introduces a different risk, namely, the
+risk of a stolen `refresh token`. Secure storage for single-page applications
+executing in browsers is limited. This means that use of static, long-lived
+`refresh tokens` is problematic, especially for public clients that lack
+mechanisms for securely storing sensitive tokens.
+
+There are solutions to reduce the risk of compromised `refresh tokens`.
+
+The OAuth 2.0 Threat Model and Security Considerations document proposed the
+notion of `refresh token rotation` to detect if a `refresh token` has been
+stolen and is being used by two or more clients.
+
+- This scheme has the `authorization server` return a new, single-use
+  `refresh token` with each `access token` renewal request.
+- If a `refresh token` is stolen and used twice, once by the legitimate client
+  and again by a second, malicious client, the `authorization server` is
+  supposed to detect it as an anomalous situation and invalidate the
+  `refresh token`.
+
+Another approach is the use of sender-constrained tokens, which can be used
+with both `access tokens` and `refresh tokens`.
+
+- With this approach, the `authorization server` binds a token it issues to the
+  authorized client `application` which requested it.
+- If an unauthorized client `application` steals a token and attempts to use
+  it, the `authorization server` or API will detect that the client attempting
+  to use the token is not the client to which the token was issued.
+  
+Several approaches for sender-constrained tokens have been defined.
+
+- One approach for sender-constrained tokens leverages Mutual-TLS. For this
+  scheme, a client `application` authenticates to an `authorization server`
+  using Mutual-TLS authentication, so that the `authorization server` can bind
+  an `access token` or `refresh token` to the client certificate used in the
+  Mutual-TLS authentication. When the client wants to use the token, it must
+  authenticate to the `resource server`, again using Mutual-TLS, proving that
+  it possesses the private key associated with the certificate bound with the
+  token.
+  - This scheme is defined in the OAuth 2.0 `Mutual-TLS Client Authentication`
+    and `Certificate-Bound Access Tokens` specification.
+  - This specification has moved out of draft status but may result in a
+    confusing user experience in some cases, if users are prompted to select an
+    appropriate certificate to use.
+- Another scheme for sender-constrained tokens is defined in the draft OAuth
+  2.0 `Demonstrating Proof-of-Possession` at the `Application Layer` (DPoP)
+  specification. With `DPoP`, when a client `application` sends an
+  `authorization grant` or `refresh token` to get an `access token`, it creates
+  and cryptographically signs a JSON Web Token (JWT). This token, called a
+  `DPoP proof JWT`, includes the public key that corresponds to the private key
+  used to sign the JWT.
+  - The client `application` includes the `DPoP proof JWT` in its request to
+    the `authorization server`.
+  - The `authorization server` responds with an `access token` that includes a
+    hash of the public key from the request. This binds the token to the public
+    key.
+  - When the client `application` makes a request to the `resource server`, it
+    sends the token, bound to the public key, and also sends another
+    `DPoP proof JWT` demonstrating that it has possession of the original
+    signing material.
+  - `DPoP` is currently being actively developed and it may be adopted in the
+    future.
+
+OAuth 2.1 specifies that `authorization servers` must use either
+`refresh token rotation` or `sender-constrained refresh tokens` (bound to a
+particular client) with `public clients` to mitigate the risk of compromised
+`refresh tokens`.
+
+### Confidentiality and Integrity
+
+The protocol interactions assume the use of a suitably up-to-date version of
+Transport Layer Security (TLS) between the `application` and the OAuth 2
+`authorization server`, between the `application` and the `resource server`,
+and for interaction between the `resource server` and `authorization server`,
+if any. The OAuth 2 specifications state that `authorization servers` must
+require the use of `TLS` for requests to the `authorization` and
+`token endpoints` and that `applications` should enforce the use of `TLS` for
+the application callback. Further security implementation guidance can be found
+in the `Security Considerations` section of the OAuth 2.1 Authorization
+Framework document.
+
+### Token Revocation
+
+Applications should revoke `refresh tokens` and `access tokens` if possible,
+when they are no longer needed. The OAuth 2.0 `Token Revocation` specification
+defines a mechanism for clients to request the revocation of `access tokens`
+and `refresh tokens`.
+
+The ability to revoke `access tokens` is not a mandatory feature, so some
+authorization servers may not support it.
+
+## Further Learning
+
+### Advanced Use Cases
+
+There are additional, more complex use cases for which additional parameters
+and extensions to the core protocol have been advanced, such as the “OAuth 2.0
+Token Exchange” specification.
+
+## Summary
+
+### Key Points
+
+- OAuth 2 enables `applications` to request authorization and obtain an
+  `access token` to call `resource server` APIs.
+- With OAuth 2, a `user` has control over API authorizations for applications.
+- Scopes can be used to control the access an `application` has when calling an
+  API.
+- The original OAuth 2.0 specification defined four authorization grant types
+  but two of these were removed in OAuth 2.1.
+- The OAuth 2.1 specification removes the `implicit authorization grant type`
+  as it is no longer needed and can expose an `access token` to potential
+  compromise. The `authorization code grant type` with `PKCE` should be used
+  instead.
+- The OAuth 2.1 specification removes the
+  `resource owner password credentials authorization grant type` as it exposes
+  user credentials to client applications.
+- The `authorization code grant type` with `PKCE` can be used by traditional
+  web applications, public applications, as well as native applications.
+- The `client credentials grant type` is for API calls where the application
+  owns the requested resource.
+- The `Device Authorization Grant type` is an extension defined to enable flows
+  involving client devices that lack the capability needed for user interaction
+  to authenticate and authorize requests.
+- A `refresh token` is used to obtain a new `access token` when a previous
+  `access token` has expired.
+- `Refresh tokens` should be `sender-constrained` or employ a
+  `refresh token rotation` scheme.
+- Applications must take measures to secure `access tokens` and
+  `refresh tokens`. Applications must use a suitably up-to-date version of
+  Transport Layer Security (TLS) for communications with an OAuth 2
+  `authorization server`.
+
+## Notes
+
+- <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-06>
+- <https://tools.ietf.org/html/rfc6749>
+- <https://www.rfc-editor.org/rfc/rfc7636>
+- <https://www.rfc-editor.org/rfc/rfc7636#section-4.2>
+- <https://datatracker.ietf.org/doc/html/rfc8707>
+- <https://www.rfc-editor.org/rfc/rfc7636>
+- <https://datatracker.ietf.org/doc/html/rfc7662>
+- <https://datatracker.ietf.org/doc/html/rfc9068>
+- <https://www.w3.org/wiki/CORS>
+- <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-21#section-2.1.2>
+- <https://tools.ietf.org/html/rfc8252>
+- <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-21#section-2.4>
+- <https://datatracker.ietf.org/doc/html/rfc8628>
+- <https://datatracker.ietf.org/doc/html/rfc8707>
+- <https://datatracker.ietf.org/doc/html/rfc9068>
+- <https://datatracker.ietf.org/doc/html/rfc6819>
+- <https://datatracker.ietf.org/doc/html/rfc8705>
+- <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-dpop>
+- <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-06#section-7>
+- <https://datatracker.ietf.org/doc/html/rfc7009>
+- <https://datatracker.ietf.org/doc/html/rfc8693>
