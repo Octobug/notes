@@ -29,7 +29,6 @@
     - [Attribute Usage](#attribute-usage)
     - [Validating Critical Attributes](#validating-critical-attributes)
   - [Consent Management](#consent-management)
-  - [Notes](#notes)
 
 Provisioning is the act of establishing identities and accounts for your
 application. An identity includes at least one identifier and various
@@ -274,7 +273,7 @@ or synchronizing identity information across domains may still be needed if
 
 When needed, the provisioning of accounts and identity information across
 domains is still commonly done using proprietary solutions, but an industry
-standard protocol, ***SCIM 2.0 (System for Cross-domain Identity Management)***,
+standard protocol, [SCIM 2.0 (System for Cross-domain Identity Management)](https://tools.ietf.org/html/rfc7644),
 was defined in 2015 to provide a more standard approach to sending and updating
 identity information from one domain to another.
 
@@ -572,7 +571,3 @@ as zero-party data, first-party data, and third-party data.
   submits.
 - Third-party data is that collected or purchased from third parties, to
   augment data collected by an application.
-
-## Notes
-
-- <https://tools.ietf.org/html/rfc7644>

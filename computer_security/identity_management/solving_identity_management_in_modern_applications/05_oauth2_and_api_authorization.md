@@ -38,7 +38,6 @@
     - [Advanced Use Cases](#advanced-use-cases)
   - [Summary](#summary)
     - [Key Points](#key-points)
-  - [Notes](#notes)
 
 If an application wants to call an API on a user’s behalf to access resources
 owned by the user, it needs the user’s consent. In the past, a user often had
@@ -206,7 +205,7 @@ The following authorization grant types are defined:
 - `Client credentials`
 - `Refresh token`
 
-In OAuth 2.0, there were two additional authorization grant types that were
+In [OAuth 2.0](https://tools.ietf.org/html/rfc6749), there were two additional authorization grant types that were
 removed in OAuth 2.1. These obsolete grant types are
 
 - `Implicit` (removed)
@@ -312,7 +311,7 @@ The `authorization code grant` type was originally optimized for
 ### Authorization Code Grant Type + PKCE
 
 The `authorization code` grant type diagram shows the use of
-`Proof Key for Code Exchange (PKCE)`. PKCE is a mechanism that can be used with
+[`Proof Key for Code Exchange (PKCE)`](https://www.rfc-editor.org/rfc/rfc7636). PKCE is a mechanism that can be used with
 authorization and token requests to prevent a malicious process, especially on
 mobile devices and with `public clients`, from intercepting an
 `authorization code` and using it to get an `access token`.
@@ -404,6 +403,7 @@ Host: authorizationserver.com
 - `code_challenge`: `PKCE` `code challenge` derived from the `PKCE`
   `code verifier` using the `code challenge method` specified in the
   `code_challenge_method` parameter.
+  - <https://www.rfc-editor.org/rfc/rfc7636#section-4.2>
 - `code_challenge_method`: `“S256”` or `“plain”`. Applications capable of using
   `S256` must use it.
 
@@ -416,7 +416,7 @@ The `resource` parameter was not in the original OAuth 2.0 specification. Since
 that time, `authorization servers` have been written to handle requests for
 multiple APIs and, in such cases, may support an additional parameter to
 indicate a specific API for an authorization request. This parameter is defined
-in the `Resource Indicators` for OAuth 2.0 extension. This parameter may be
+in the [`Resource Indicators` for OAuth 2.0 extension](https://datatracker.ietf.org/doc/html/rfc8707). This parameter may be
 called the `“resource”` or `“audience”` depending on the `authorization server`
 implementation.
 
@@ -466,6 +466,7 @@ grant_type=authorization_code
   `code challenge` was derived. It should be an unguessable, cryptographically
   random string between `43` and `128` characters in length, inclusive, using
   the characters A–Z, a–z, 0–9, “-”, “.”, “_”, and “~”.
+  - <https://www.rfc-editor.org/rfc/rfc7636>
 - `redirect_uri`: The callback URI for the `authorization server`’s response.
   Should match the `redirect_uri` value passed in the authorization request to
   the authorize endpoint.
@@ -511,7 +512,7 @@ information about the token, such as
 - whether the token has been revoked
 - the scopes included in the token
 
-The OAuth 2.0 Token Introspection specification defines the token introspection
+[The OAuth 2.0 Token Introspection specification](https://datatracker.ietf.org/doc/html/rfc7662) defines the token introspection
 endpoint and how `resource servers` can use it to obtain information about
 opaque tokens issued by `authorization servers`.
 
@@ -526,8 +527,8 @@ about the token such as
 
 With self-contained tokens, a `resource server` can obtain the claims directly
 from the token without having to call a token endpoint at an
-`authorization server`. The JSON Web Token (JWT) Profile for OAuth 2.0 Access
-Tokens defines this type of token along with a set of mandatory and optional
+`authorization server`. [The JSON Web Token (JWT) Profile for OAuth 2.0 Access
+Tokens](https://datatracker.ietf.org/doc/html/rfc9068) defines this type of token along with a set of mandatory and optional
 claims.
 
 The documentation for your authorization server should indicate the type of
@@ -602,7 +603,7 @@ the token endpoint with an `access token`.
 OAuth 2.0 defined an `implicit grant` type which was optimized for use with
 `public clients` such as single-page applications. The use of this grant type
 returned an `access token` to an `application` in one request. It was designed
-at a time when the **CORS (Cross-Origin Resource Sharing)** standard was not
+at a time when the [CORS (Cross-Origin Resource Sharing)](https://www.w3.org/wiki/CORS) standard was not
 widely supported in browsers so that web pages could only “phone home.” In
 other words, they could only make calls to the domain from which the page was
 loaded which meant they couldn’t call an `authorization server`’s token
@@ -653,8 +654,8 @@ Since the OAuth 2.0 specification was originally published, CORS has become
 supported by most browsers. Consequently, the `implicit grant` type isn’t
 needed anymore for its original purpose. Furthermore, returning an
 `access token` in a URL hash fragment exposes the `access token` to potential
-leakage via browser history or referer headers. The OAuth 2.0 `implicit grant`
-type has therefore been removed from OAuth 2.1. The `authorization code` grant
+leakage via browser history or referer headers. [The OAuth 2.0 `implicit grant`
+type has therefore been removed from OAuth 2.1](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-21#section-2.1.2). The `authorization code` grant
 type with `PKCE` should be used instead.
 
 New applications should avoid the use of the `implicit grant` type. Existing
@@ -720,7 +721,7 @@ calling first-party APIs. This was often done because login flows that
 redirected via browsers on mobile devices were originally perceived as
 cumbersome.
 
-OAuth 2.1 has incorporated the guidance of RFC 8252, OAuth 2.0 for Native Apps
+OAuth 2.1 has incorporated the guidance of [RFC 8252, OAuth 2.0 for Native Apps](https://tools.ietf.org/html/rfc8252)
 to use the `authorization code grant`, combined with `PKCE`, for native
 applications using the system browser.
 
@@ -746,9 +747,7 @@ To mitigate some of the risk associated with this grant type, the client was
 supposed to throw away the user credentials as soon as it had obtained the
 `access token`, to reduce the possibility of compromised credentials. This
 guidance, however, only addresses one aspect of the risk associated with this
-grant type. With other risks remaining, the
-`resource owner password credentials grant type` has been removed from
-OAuth 2.1.
+grant type. With other risks remaining, [the `resource owner password credentials grant type` has been removed from OAuth 2.1](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-21#section-2.4).
 
 New applications should avoid the use of this grant type. Existing applications
 should migrate to the `authorization code grant type` with `PKCE` to reduce the
@@ -762,7 +761,7 @@ interaction on the client device for authentication and authorization, yet a
 digital picture frame and many IoT devices have very limited facilities for
 user interaction.
 
-The OAuth 2.0 Device Authorization Grant provides a mechanism for the user
+[The OAuth 2.0 Device Authorization Grant](https://datatracker.ietf.org/doc/html/rfc8628) provides a mechanism for the user
 interaction to occur on another device. With this grant, the user triggers an
 action on the `primary device` (an IoT device) that requires an API call. In
 response to the action, the `primary device` initiates an authorization request
@@ -869,8 +868,8 @@ client_id=<client id>
   multiple possible APIs.
 
 An `authorization server` may support a parameter to indicate a specific API
-for an authorization request as defined in the `Resource Indicators` for OAuth
-2.0 extension. This parameter may be called the `“resource”` or `“audience”`.
+for an authorization request as defined in the [Resource Indicators for OAuth
+2.0 extension](https://datatracker.ietf.org/doc/html/rfc8707). This parameter may be called the `“resource”` or `“audience”`.
 
 #### Authorization Response
 
@@ -1047,8 +1046,8 @@ interaction.
 An `access token` is intended to be consumed by a `resource server` API. An
 `application` should not depend on using data in the `access token` (in the
 absence of proprietary extensions). Depending on the `authorization server`
-implementation, the format of an `access token` may be an opaque token or a
-`JSON Web Token (JWT)`.
+implementation, the format of an [`access token` may be an opaque token or a
+`JSON Web Token (JWT)`](https://datatracker.ietf.org/doc/html/rfc9068).
 
 - In the case of an opaque token, a `resource server` calls the
   `authorization server`’s token introspection endpoint to obtain the relevant
@@ -1107,7 +1106,7 @@ mechanisms for securely storing sensitive tokens.
 
 There are solutions to reduce the risk of compromised `refresh tokens`.
 
-The OAuth 2.0 Threat Model and Security Considerations document proposed the
+[The OAuth 2.0 Threat Model and Security Considerations](https://datatracker.ietf.org/doc/html/rfc6819) document proposed the
 notion of `refresh token rotation` to detect if a `refresh token` has been
 stolen and is being used by two or more clients.
 
@@ -1137,13 +1136,13 @@ Several approaches for sender-constrained tokens have been defined.
   authenticate to the `resource server`, again using Mutual-TLS, proving that
   it possesses the private key associated with the certificate bound with the
   token.
-  - This scheme is defined in the OAuth 2.0 `Mutual-TLS Client Authentication`
-    and `Certificate-Bound Access Tokens` specification.
+  - This scheme is defined in the [OAuth 2.0 Mutual-TLS Client Authentication
+    and Certificate-Bound Access Tokens](https://datatracker.ietf.org/doc/html/rfc8705) specification.
   - This specification has moved out of draft status but may result in a
     confusing user experience in some cases, if users are prompted to select an
     appropriate certificate to use.
-- Another scheme for sender-constrained tokens is defined in the draft OAuth
-  2.0 `Demonstrating Proof-of-Possession` at the `Application Layer` (DPoP)
+- Another scheme for sender-constrained tokens is defined in the draft [OAuth
+  2.0 Demonstrating Proof-of-Possession at the Application Layer (DPoP)](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-dpop)
   specification. With `DPoP`, when a client `application` sends an
   `authorization grant` or `refresh token` to get an `access token`, it creates
   and cryptographically signs a JSON Web Token (JWT). This token, called a
@@ -1176,13 +1175,13 @@ if any. The OAuth 2 specifications state that `authorization servers` must
 require the use of `TLS` for requests to the `authorization` and
 `token endpoints` and that `applications` should enforce the use of `TLS` for
 the application callback. Further security implementation guidance can be found
-in the `Security Considerations` section of the OAuth 2.1 Authorization
-Framework document.
+in the [Security Considerations section of the OAuth 2.1 Authorization
+Framework](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-06#section-7) document.
 
 ### Token Revocation
 
 Applications should revoke `refresh tokens` and `access tokens` if possible,
-when they are no longer needed. The OAuth 2.0 `Token Revocation` specification
+when they are no longer needed. [The OAuth 2.0 Token Revocation](https://datatracker.ietf.org/doc/html/rfc7009) specification
 defines a mechanism for clients to request the revocation of `access tokens`
 and `refresh tokens`.
 
@@ -1194,8 +1193,8 @@ authorization servers may not support it.
 ### Advanced Use Cases
 
 There are additional, more complex use cases for which additional parameters
-and extensions to the core protocol have been advanced, such as the “OAuth 2.0
-Token Exchange” specification.
+and extensions to the core protocol have been advanced, such as the [OAuth 2.0
+Token Exchange](https://datatracker.ietf.org/doc/html/rfc8693) specification.
 
 ## Summary
 
@@ -1230,27 +1229,3 @@ Token Exchange” specification.
   `refresh tokens`. Applications must use a suitably up-to-date version of
   Transport Layer Security (TLS) for communications with an OAuth 2
   `authorization server`.
-
-## Notes
-
-- <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-06>
-- <https://tools.ietf.org/html/rfc6749>
-- <https://www.rfc-editor.org/rfc/rfc7636>
-- <https://www.rfc-editor.org/rfc/rfc7636#section-4.2>
-- <https://datatracker.ietf.org/doc/html/rfc8707>
-- <https://www.rfc-editor.org/rfc/rfc7636>
-- <https://datatracker.ietf.org/doc/html/rfc7662>
-- <https://datatracker.ietf.org/doc/html/rfc9068>
-- <https://www.w3.org/wiki/CORS>
-- <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-21#section-2.1.2>
-- <https://tools.ietf.org/html/rfc8252>
-- <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-21#section-2.4>
-- <https://datatracker.ietf.org/doc/html/rfc8628>
-- <https://datatracker.ietf.org/doc/html/rfc8707>
-- <https://datatracker.ietf.org/doc/html/rfc9068>
-- <https://datatracker.ietf.org/doc/html/rfc6819>
-- <https://datatracker.ietf.org/doc/html/rfc8705>
-- <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-dpop>
-- <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-06#section-7>
-- <https://datatracker.ietf.org/doc/html/rfc7009>
-- <https://datatracker.ietf.org/doc/html/rfc8693>

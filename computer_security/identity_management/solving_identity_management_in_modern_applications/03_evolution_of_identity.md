@@ -19,7 +19,6 @@
   - [Standard Protocols](#standard-protocols)
   - [Summary](#summary)
     - [Key Points](#key-points)
-  - [Notes](#notes)
 
 ## Identity Management Approaches
 
@@ -122,7 +121,7 @@ password for every application. The single sign-on they enjoyed across internal
 applications didn’t extend to external SaaS applications in other domains.
 
 Fortunately, a new industry standard,
-***SAML 2 (Security Assertion Markup Language)***, had been published in 2005.
+[SAML 2 (Security Assertion Markup Language)](http://saml.xml.org/saml-specifications), had been published in 2005.
 It provided a solution for web single sign-on *across domains* and federated
 identity.
 
@@ -159,10 +158,10 @@ Despite being widely adopted, however, SAML 2 was no silver bullet:
 
 The ***Web Services Federation Language (WS-Fed)*** federation framework was
 created by an industry coalition as part of a larger set of protocols known as
-the `WS-∗` specifications. The WS-Fed 1.2 specification was published as an
-OASIS standard in 2009 and provided mechanisms whereby “authorized access to
-resources managed in one realm can be provided to security principals whose
-identities are managed in other realms.”
+the `WS-∗` specifications. [The WS-Fed 1.2 specification was published as an
+OASIS standard in 2009](http://docs.oasis-open.org/wsfed/federation/v1.2/os/ws-federation-1.2-spec-os.html) and provided mechanisms whereby
+[“authorized access to resources managed in one realm can be provided to
+security principals whose identities are managed in other realms”](http://docs.oasis-open.org/wsfed/federation/v1.2/os/ws-federation-1.2-spec-os.html).
 
 It was taken up in many enterprise environments and, like SAML 2, is still in
 use today in many corporate settings.
@@ -172,7 +171,7 @@ use today in many corporate settings.
 With SAML 2 only adopted in employee-facing scenarios`?`, consumer users were
 still forced to register anew at each consumer-facing website. A new industry
 group formed to create a solution for what it termed “user-centric” identity,
-and this gave rise to a protocol called OpenID.
+and this gave rise to a protocol called [OpenID](https://openid.net/specs/openid-authentication-1_1.html).
 
 In addition to organization-controlled identity providers commonly used with
 SAML 2 and WS-Fed, OpenID included the idea of user-controlled identity for the
@@ -196,8 +195,8 @@ A solution was needed that would allow a user to authorize an application at
 one website to retrieve their content from another website’s API, without the
 user having to expose their credentials to the first site.
 
-The ***OAuth*** protocol provided a solution for this use case. The OAuth 2.0
-version of the specification allows a user to authorize one application, known
+The ***OAuth*** protocol provided a solution for this use case. [The OAuth 2.0
+version of the specification](https://tools.ietf.org/html/rfc6749) allows a user to authorize one application, known
 as a client, to send a request to an API, known as a **resource server**, on
 the user’s behalf to retrieve data at the resource server owned by the user.
 
@@ -236,9 +235,9 @@ authenticating users, the framework did not provide a standard way to securely
 convey the identity of an authenticated user to an application. OIDC provided a
 solution for this need.
 
-OIDC was devised as a layer on top of the OAuth 2 protocol to provide
+[OIDC was devised as a layer on top of the OAuth 2 protocol to provide
 information in a standard format to applications about the identity of an
-authenticated user.
+authenticated user](https://openid.net/specs/openid-connect-core-1_0.html).
 
 This provided a solution for applications for user authentication as well as
 API authorization. The implementation of OIDC by widely used social
@@ -260,7 +259,7 @@ well as the API authorization capabilities needed by modern applications.
 
 ### OAuth 2.1
 
-A new draft OAuth 2.1 authorization framework specification document has been
+A new draft [OAuth 2.1 authorization framework specification](https://oauth.net/2.1/) document has been
 published to consolidate, reconcile, and merge several earlier OAuth 2–related
 specifications and best practice recommendation documents. The OAuth 2.1
 specification document is meant to replace the OAuth 2.0 specification
@@ -311,13 +310,3 @@ Why use an industry standard protocol?
 - OAuth 2.1, currently in draft form, consolidates several OAuth 2-related
   specifications and best practice documents released after the publication of
   the original OAuth 2.0 authorization framework specification.
-
-## Notes
-
-1. <http://saml.xml.org/saml-specifications>
-2. <http://docs.oasis-open.org/wsfed/federation/v1.2/os/ws-federation-1.2-spec-os.html>
-3. <http://docs.oasis-open.org/wsfed/federation/v1.2/os/ws-federation-1.2-spec-os.html>
-4. <https://openid.net/specs/openid-authentication-1_1.html>
-5. <https://tools.ietf.org/html/rfc6749>
-6. <https://openid.net/specs/openid-connect-core-1_0.html>
-7. <https://oauth.net/2.1/>
