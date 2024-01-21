@@ -298,7 +298,7 @@ The `authorization code grant` type was originally optimized for
 - The second request (`6.`) could be made by the application’s back end
   directly to the `authorization server`’s token endpoint.
   - This enables an `application` back end, which is assumed to be capable of
-    securely managing an authentication secret, to authenticate itself to the
+    securely managing an `authentication secret`, to authenticate itself to the
     `authorization server` when exchanging the `authorization code` for the
     `access token`.
   - It also means that the response with the `access token` can be delivered to
@@ -307,6 +307,9 @@ The `authorization code grant` type was originally optimized for
     back-channel response.
   - However, while originally optimized for `confidential clients`, the
     addition of PKCE enables other client types to use this grant type as well.
+
+> - [Why is there an "Authorization Code" flow in OAuth2 when "Implicit" flow works so well?](https://stackoverflow.com/questions/13387698/why-is-there-an-authorization-code-flow-in-oauth2-when-implicit-flow-works-s)
+> - [Authorization Code Grant](https://www.oauth.com/oauth2-servers/server-side-apps/authorization-code/)
 
 ### Authorization Code Grant Type + PKCE
 
