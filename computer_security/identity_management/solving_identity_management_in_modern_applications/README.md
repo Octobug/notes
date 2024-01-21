@@ -12,4 +12,6 @@
 - [x] [Chapter 3: Evolution of Identity](./03_evolution_of_identity.md)
 - [x] [Chapter 4: Identity Provisioning](./04_identity_provisioning.md)
 - [x] [Chapter 5: OAuth 2 and API Authorization](./05_oauth2_and_api_authorization.md)
-- [ ] [Chapter 6: OpenId Connect](./06_openid_connect.md)
+- [x] [Chapter 6: OpenId Connect](./06_openid_connect.md)
+- [x] [Chapter 7: SAML 2](./07_saml2.md)
+- [ ] [Chapter 8: Authorization and Policy Enforcement](./08_authorization_and_policy_enforcement.md)
