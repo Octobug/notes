@@ -15,4 +15,5 @@
 - [x] [Chapter 6: OpenId Connect](./06_openid_connect.md)
 - [x] [Chapter 7: SAML 2](./07_saml2.md)
 - [x] [Chapter 8: Authorization and Policy Enforcement](./08_authorization_and_policy_enforcement.md)
-- [ ] [Chapter 9: Sessions](./09_sessions.md)
+- [x] [Chapter 9: Sessions](./09_sessions.md)
+- [ ] [Chapter 10: Using Modern Identity to Build Applications](./10_using_modern_identity_to_build_applications.md)
