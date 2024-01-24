@@ -32,7 +32,16 @@
     - [Closing Note](#closing-note)
   - [Implementation: Back-End API](#implementation-back-end-api)
     - [.getUserId()](#getuserid)
-  - [Notes](#notes)
+    - [.canPerform()](#canperform)
+      - [Using OAuth 2 Scopes - for API Authorization](#using-oauth-2-scopes---for-api-authorization)
+    - [Linking Accounts](#linking-accounts)
+    - [Anonymous Access](#anonymous-access)
+    - [Granting Access Based on Domains](#granting-access-based-on-domains)
+  - [Other Applications](#other-applications)
+  - [Additional Note on Sessions](#additional-note-on-sessions)
+  - [Browsers, Trackers, and OAuth 2](#browsers-trackers-and-oauth-2)
+  - [Summary](#summary)
+    - [Key Points](#key-points)
 
 ## Sample Application: Collaborative Text Editor
 
@@ -445,9 +454,294 @@ can convert these into methods:
 
 ### .getUserId()
 
->>>>> progress
+The claim `sub` in a JSON Web Token is often used to represent the user.
+As recommended, we use an internal, application-specific identifier for a user
+in all application and API logic and use separate identifier attributes for
+display and notification. This enables a user to change the value of attributes
+such as their display name or notification email address without impacting
+articles tied to their identity.
 
-## Notes
+The things to look for in the identity SDK for `getUserId` are
 
-xi. https://openid.net/specs/openid-connect-session-1_0.html
-xii. https://openid.net/specs/openid-connect-session-1_0.html
+- How will it perform JWT validation?
+- What contents are returned?
+
+### .canPerform()
+
+This method is an abstraction of `authorization`. The attributes needed to
+answer the authorization question need to be available either in the incoming
+request to the API or via some form of secondary storage that is referenced by
+information in the incoming request.
+
+In our implementation, permissions for a document are stored on the document
+itself. Each document is stored on disk with an additional field that
+encapsulates who has access to the document. As a result, we elected to handle
+access control enforcement within our API. This meant the API needed to receive
+information about the user in each request for a document. The `canPerform`
+method therefore accesses a document resource’s metadata and then returns `true`
+or `false` depending on whether the resource is accessible by the user.
+
+To model permissioning, the metadata for document resources is an array of
+access control which represents the following:
+
+- The type of access granted, whether based on a user or a domain
+- The benefactor of this access
+- A list of the permissions that the benefactor has (`owner`, `editor`,
+  `reader`)
+
+A simple implementation of `canPerform`, which ignores the domain-based access
+is:
+
+```js
+/**
+ * Simple implementation of canPerform
+ */
+canPerform(token, resource, action){
+  const userId = getUserId(token);
+  if (resource.type !== "Document")
+  {
+    return false;
+  }
+  const { acl } = Documents.read(resource.id);
+  return acl.some(access => access.userId === userId
+    && access.permission.includes(action)
+  );
+}
+```
+
+#### Using OAuth 2 Scopes - for API Authorization
+
+OAuth 2 defines scopes as a means for an application to indicate the specific
+privileges it requests for an API call. We defined access scopes for the
+applications around the API endpoints and functions the applications would
+perform. This resulted in the following scopes that the applications can
+request:
+
+- `get:article`
+- `post:article`
+- `patch:article`
+- `patch:profile`
+- `get:author`
+
+Note that these are the privileges that the front-end applications will use
+with the API, and not privileges that will be granted for individual users. The
+advantage here is that we could now expose our API to third-party applications,
+or even other first-party applications, and customize the access granted to
+each one, based on the defined scopes, without having to modify our API
+implementation. To reiterate, the scopes are used to grant application clients
+the ability to make various requests to our API.
+
+If we had a different application with a significantly more complex access
+policy, we would have considered using a `Rich Authorization Request (RAR)`. At
+the time of writing, this is still a draft specification, so timing and support
+from identity providers would be factors to keep in mind against the
+capabilities this specification offers.
+
+### Linking Accounts
+
+The benefit of having abstracted the identity aspects of our application is
+that we can handle challenges like user duplication, where a user may
+inadvertently create more than one account, by using a different way to
+authenticate than the one they initially used.
+
+One option is to avoid the issue by simply enforcing a constraint that they
+must register first with a username/password account. However, such an approach
+proves to reduce the efficiency offered by using a social provider. In our
+case, we used an extension feature in the `identity provider` to add an
+additional constraint in the login procedure. When a user is authenticating, if
+we determine that the email address is already registered, we prompt the user
+to link their existing identity.
+
+- It is important that we verify the original identity and that the current
+  user has access to the original identity before linking the accounts.
+- Otherwise, we would open up a vulnerability whereby a compromised social
+  account could propagate into potential account takeovers, even if the user
+  had never used the social provider to log in to our app.
+
+In the case of our identity provider, adding additional logic during the login
+process can be done by running additional javascript code, post login. An
+extension is provided to accomplish this task. Most `identity providers` have
+some means of accomplishing this type of linking. As a last resort, you might
+be able to query the user record on the first login, bring it into your
+application, and handle this linking challenge in your application instead.
+
+### Anonymous Access
+
+In our API, the core of the data model is a document on which CRUD (`Create`,
+`Read`, `Update`, `Delete`) operations are performed. We modeled those as HTTP
+verbs that map to `POST`, `GET`, `PATCH`, and `DELETE` functions.
+
+Applications may choose to offer anonymous access or require mandatory user
+authentication from the start.
+
+To make this work with our JWT validation strategy, the application sends the
+Bearer value of `anonym`. This is a special value that means the user is
+untrusted. The `.canPerform` method can then be adapted to grant `create only`
+access to all documents, with anonymous identifiers.
+
+### Granting Access Based on Domains
+
+One of the features that we find really convenient today is being able to grant
+access to an entire domain. This is a simple version of the feature to share a
+document with an entire team on Google Workspace. Solving this is outside the
+domain of OAuth 2 and OIDC. However, this allows us to highlight how easily
+solutions can be built on top of these standards.
+
+In practice, we store permissions in the document metadata, similar to how
+files have permissions associated with them in Unix-like operating systems.
+
+Files can be shared using the full email address `user@domain.com` or using
+`@domain.com` identifiers which must start with the `@` symbol. A file
+permission of `@domain.com` provides a simple way to grant access to a team and
+allows all users with an `@domain.com` email to access the file. The creator of
+a file has full access to the file, and to keep things simple, only the creator
+of a file is able to grant `share` privilege to others.
+
+To implement this, each file has an array in metadata with the following shape:
+
+```obj
+{
+  Type: "DOMAIN"|"INDIVIDUAL"
+  identifier: String,
+  permission: Permission[],
+}
+```
+
+The `identifier` attribute is either an email address or a domain name, while
+`permission` is one or more of the following, `read`, `write`, `share`, and
+`owner`. In the current permission model, a complete email will be matched in
+its entirety with the user’s email. In the interest of privacy, instead of
+sharing the full email, only a salted hash of the information is stored.
+
+This brings us to another problem. So far, our application has no means of
+fetching the user’s hashed email or their hashed email domain in the
+`access token`. To work around this, we add custom claims in the
+`JWT access token` issued by the `identity provider`. To convey information
+about the authenticated user to an API, it is very useful to have an
+`identity provider` that offers some means of adding custom claims to the
+`access tokens` it issues.
+
+A nonstandard claim, such as `https://dev.doc/team`, is used to indicate a
+team’s email domain, and `https://dev.doc/email` is used to indicate the salted
+email address of an individual user. An extensibility feature in our chosen
+`identity provider` allows us to use custom code logic to augment the claims in
+the `access token`. We used a snippet of code like the following to add a claim:
+
+```js
+export async function (user, context, callback) {
+  user.app_metadata = user.app_metadata || {};
+  user.app_metadata.teamId = user.app_metadata.teamId
+    || async hash(getDomain(user.email));
+  context.accessToken["https://dev.doc/team"] = user.app_metadata.teamId;
+  callback(null, user, context);
+}
+```
+
+We have found that access policies vary quite a bit, and it is very common for
+applications to have unique access requirements. For this reason, we recommend
+checking for extensibility features when selecting your `identity provider`, as
+well as carefully evaluating a provider’s support for your application’s access
+control requirements. If your `identity provider` doesn’t support either your
+requirements or such extensibility, you’ll need to handle more logic on your
+application back end or add this in the provisioning step.
+
+The same need for extensibility applies to front-end customization as well, as
+most applications will want to customize consent screens and need tailored
+consent management or approval logic.
+
+## Other Applications
+
+The Discourse application is registered separately with the `identity provider`
+and uses the `Authorization Code Flow` to authenticate users. The instructions
+about this are documented at the Discourse Documentation. One of the advantages
+of using an industry standard protocol like OIDC, OAuth 2, or SAML 2 is the
+benefit of support for single sign-on with third-party services like this one.
+
+If you have an application that has a native application counterpart, the
+native application should also be registered at the `identity provider` as a
+second application.
+
+## Additional Note on Sessions
+
+In the modern identity world, a session for a user may be in turn a series of
+sessions, interconnected. There may be additional sessions. When a user’s
+account in one `identity provider` is federated to an account in a remote
+`identity provider`. Sessions A, B, and C are independent sessions, managed by
+each application.
+
+The single-page app relies on the `identity provider` session for a user and,
+as such, does not store data locally, beyond storing the tokens it receives in
+the in-memory cache. This simplifies the application but comes with the
+disadvantage that every time the application is started in the browser, it has
+to check with the `identity provider` for the status of the user’s session.
+
+```diagram
+[Google](Authenticated user session A)
+  --> [Your Identity Provider](Authenticated user session B)
+  --> [Your Application](Authenticated user session C)
+```
+
+Luckily, it is very simple to make this transparent and perform this activity
+in the background. However, it can be achieved simply by storing some
+information about the user, like name and picture URL, rendering the UI
+optimistically, and performing the authentication in the background. This can
+be done by redirecting to the `identity provider` and fetching the response
+from the `identity provider` in an iframe, at least for first-party
+applications. The ability to run the authentication in the background is
+subject to being supported by your `identity provider`, but has usually been
+made available via `web_message` response mode or via the
+[OpenID Connect Session Management specification](https://openid.net/specs/openid-connect-session-1_0.html).
+
+In a typical SSO deployment, a user may have multiple sessions including an
+application session, identity provider session, and an additional session in
+each of any other applications they’ve authenticated to via the same
+`identity provider`. It is desirable in some cases to have a binding between
+the session at an `identity provider` and all the relying party applications it
+serves, so that a given application can be aware of changes to the user’s
+session in the `identity provider` and vice versa. At the time of writing,
+there is no reliable, standard way of achieving this with OIDC.
+
+## Browsers, Trackers, and OAuth 2
+
+In the past few years, in order to protect the user from being tracked by third
+parties, many modern browsers now remove cookies placed by third parties and
+limit access to cookies in iframes. Some browsers even go so far as to remove
+any cookies placed by websites that use CNAMES to refer to other domains (e.g.,
+a CDN Service) after seven days. All of this has had a cascading effect that
+limits the background detection of session status as described in the
+[OpenID Connect Session Management specification](https://openid.net/specs/openid-connect-session-1_0.html).
+
+In response to the additional security added by browsers to thwart third-party
+trackers, the OAuth 2 specification now recommends the use of
+`refresh token rotation` in browsers. This involves using a short-lived
+`refresh token`. Each consumption of the `refresh token` results in a new
+`refresh token` being issued, such that each `refresh token` is only used once.
+The utility here is that since this `refresh token` is short-lived, the risk of
+exposure is limited, and it makes the programming model almost the same as for
+native applications. Additionally, OAuth 2 recommends adding token reuse
+detection and revoking sessions in case of a token reuse being detected, to
+further improve the user’s security.
+
+## Summary
+
+### Key Points
+
+- OIDC is used to authenticate users and obtain an `ID Token` with claims about
+  the authenticated user.
+- OAuth 2 is used to obtain an `access token` to authorize the application to
+  call our custom API.
+- To obtain `access tokens` for our custom API, we need to obtain and configure
+  our own `identity provider` to protect it.
+- We used customization features from the `identity provider` to add custom
+  claims to the `access token` to provide additional information to the API
+  about the user. The custom claims enable the API to enforce user-level access
+  policy. Customization features vary by `identity provider`.
+- Both applications use the OIDC `authorization code flow` with PKCE for a
+  user’s initial authentication.
+- Our application uses a library that uses the `web_message` response mode for
+  renewing `access tokens` for a better user experience.
+- The native application uses a `refresh token` to obtain a new `access token`
+  if the previous access token has expired.
+- Registering the single-page and native versions of our application separately
+  at the `identity provider` allows us to distinguish between the two
+  application versions for access control, branding, and logging.
