@@ -17,4 +17,5 @@
 - [x] [Chapter 8: Authorization and Policy Enforcement](./08_authorization_and_policy_enforcement.md)
 - [x] [Chapter 9: Sessions](./09_sessions.md)
 - [x] [Chapter 10: Using Modern Identity to Build Applications](./10_using_modern_identity_to_build_applications.md)
-- [ ] [Chapter 11: Single Sign-On](./11_single_sign_on.md)
+- [x] [Chapter 11: Single Sign-On](./11_single_sign_on.md)
+- [ ] [Chapter 12: Stronger Authentication](./12_stronger_authentication.md)
