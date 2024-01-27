@@ -19,4 +19,5 @@
 - [x] [Chapter 10: Using Modern Identity to Build Applications](./10_using_modern_identity_to_build_applications.md)
 - [x] [Chapter 11: Single Sign-On](./11_single_sign_on.md)
 - [x] [Chapter 12: Stronger Authentication](./12_stronger_authentication.md)
-- [ ] [Chapter 13: Logout](./13_logout.md)
+- [x] [Chapter 13: Logout](./13_logout.md)
+- [ ] [Chapter 14: Account Management](./14_account_management.md)

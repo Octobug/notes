@@ -11,7 +11,13 @@
   - [Logout Options](#logout-options)
   - [Application Logout](#application-logout)
   - [OAuth 2](#oauth-2)
-  - [Notes](#notes)
+  - [OIDC](#oidc)
+  - [SAML 2](#saml-2)
+  - [Session Termination](#session-termination)
+  - [Logout and Multilevel Authentication](#logout-and-multilevel-authentication)
+  - [Redirect After Logout](#redirect-after-logout)
+  - [Summary](#summary)
+    - [Key Points](#key-points)
 
 Implementing logout can be more complex to design and test in some cases than
 login.
@@ -215,14 +221,272 @@ messages to such other components when local application logout is triggered.
 
 ## OAuth 2
 
->>>>> progress
+OAuth 2 does not contain a logout endpoint because it is designed for
+authorizing an API call, not authenticating users. Nevertheless, upon the
+termination of a user’s session, an application should clean up security tokens
+related to the user if possible. An `application` may have obtained
+`access tokens` for APIs and possibly `refresh tokens` as well. The OAuth 2
+specification indicates that `authorization servers` ***SHOULD*** provide a
+mechanism to revoke `access tokens`, and the [OAuth 2.0 Token Revocation](https://tools.ietf.org/html/rfc7009)
+specification defines a standard for this. Providing an `access token`
+revocation mechanism is not mandatory, however, so some `authorization server`
+implementations may not support it.
 
-## Notes
+If an `authorization server` supports `access token` revocation, an application
+should use its revocation endpoint to revoke `access tokens` authorized by a
+user for that application when the user logs out or their session is terminated
+for other reasons. If an `access token` cannot be revoked, an application that
+has `refresh token(s)` for renewing expired `access tokens` should revoke the
+`refresh tokens`. (Authorization servers must support `refresh token`
+revocation.) Without a `refresh token`, when a previously issued `access token`
+expires, the application will not be able to obtain a new `access token`.
 
-i. https://tools.ietf.org/html/rfc7009
-ii. https://openid.net/specs/openid-connect-
-         rpinitiated-1_0.html
-iii. https://openid.net/specs/openid-connect-session-1_0.html
-iv. https://openid.net/specs/openid-connect- frontchannel-1_0.html
-v. https://openid.net/specs/openid-connect- backchannel-1_0.html
-vi. https://cwe.mitre.org/data/definitions/601.html
+Applications that cannot revoke `access tokens` must rely on the `access token`
+expiration to terminate the application’s ability to call an API. This
+underscores a benefit of `access tokens` with short expirations.
+
+## OIDC
+
+The original OIDC specification does not define an explicit logout mechanism
+for an `application` to request termination of a user’s session at an
+`OpenID Provider` or a way for an `OpenID Provider` to notify a relying party
+when the `OpenID Provider`’s session has terminated. There are several recently
+finalized specifications related to OIDC logout which bear consideration. You
+should keep in mind that it may take time for providers to implement support
+for newly approved specifications.
+
+The [OpenID Connect RP-Initiated Logout](https://openid.net/specs/openid-connect-rpinitiated-1_0.html)
+specification describes a logout flow whereby a relying party can request an
+`OIDC Provider` to log a user out. The relying party does this by redirecting
+the user’s browser to a logout endpoint at the `OIDC Provider`. The
+`OIDC Provider` then asks the user to confirm they wish to log out and, if so,
+terminates its session for the user. The relying party can optionally specify a
+URL to which the user is redirected after logout at the `OIDC Provider`.
+
+The [OpenID Connect Session Management](https://openid.net/specs/openid-connect-session-1_0.html)
+specification offers a solution for a relying party application to detect when
+an `OpenID Provider` session has terminated. It is designed to use a hidden
+`iframe` loaded from an `OpenID Provider` and which has access to browser state
+from the `OpenID Provider`. This `iframe` is polled from another hidden `iframe`
+loaded from the relying party application and will receive back a status of
+`changed` if the user’s session at the `OpenID Provider` has changed. If this
+occurs, the relying party application can redirect the user to the
+`OpenID Provider` with a new authentication request using `prompt=none`, and if
+this request receives an error response, it indicates the user session at the
+`OpenID Provider` is no longer valid. The application can terminate its session
+for the user, if appropriate, or perhaps ask the user if they’d like to renew
+their session. If so, the `application` can redirect them back to the
+`OpenID Provider` to authenticate and renew the session. However, recent
+browser features for tracking prevention may prevent this scheme from reliably
+working as designed. It is not yet clear if a fix or workaround will be
+developed.
+
+The [OpenID Connect Front-Channel Logout facility](https://openid.net/specs/openid-connect-frontchannel-1_0.html)
+provides a solution for an `OpenID Provider` to send logout requests to
+`relying party applications` when the `OpenID Provider` session for a user has
+been terminated. Front-Channel Logout relies on an `OpenID Provider` rendering
+an `iframe` that contains the `relying party`’s logout URL. The logout URL must
+have been previously registered with the `OpenID Provider`. This mechanism can
+enable a global logout capability but suffers from some disadvantages. This
+specification is also impacted by recent browser features for tracking
+prevention. This can prevent a `relying party application` from being able to
+process the logout. In addition, if a user has navigated away from an
+`application` in their browser, a Front-Channel Logout request to the
+`application` may fail, with the user’s session in the application only logged
+out if the user returns to it using the browser’s back button.
+
+The [OpenID Connect Back-Channel Logout](https://openid.net/specs/openid-connect-backchannel-1_0.html)
+specification provides a solution for an `OpenID Provider` to send logout
+requests to a `relying party` via back-channel communication directly between
+servers rather than via front-channel browser actions. This may provide a more
+reliable logout option than Front-Channel Logout when there are many
+`relying parties`. For this solution, `relying parties` register a back-channel
+logout URI with an `OpenID Provider`. The `OpenID Provider` remembers all
+`relying parties` to which a user has logged in via their `OpenID Provider`
+session. When the `OpenID Provider` session for the user is terminated, the
+`OpenID Provider` sends a logout request, formatted as a `JWT` and called a
+`Logout Token`, to each of the `relying parties` the user visited during the
+session.
+
+The `Logout Token` is sent via back-channel communication (server to server)
+using an `HTTP-POST` to the `relying party`’s back-channel logout URI
+previously registered with the `OpenID Provider`. Upon receiving and validating
+a `Logout Token`, a `relying party` removes its session for the user and
+returns a status response to the `OpenID Provider`. This solution requires
+direct connectivity between the `OpenID Provider` and a `relying party`’s
+back-channel logout URI. This may be problematic for applications residing in
+on-premise enterprise environments behind firewalls unless the `OpenID Provider`
+is also in the same internal environment behind the firewalls.
+
+It is also possible for a `relying party` application to detect the termination
+of a user’s session at an `OpenID Provider` by periodically polling the
+`OpenID Provider` by redirecting a user’s browser to the `OpenID Provider` with
+the `prompt` parameter in the authentication request set to `none`. If the user
+does not have a valid session at the `OpenID Provider`, an error status
+response will be returned, and the application can terminate the user’s session
+in the `application` or redirect the user again to reauthenticate and renew
+their session. This approach results in network traffic from the polling and
+has the drawback that the redirect may interrupt the user experience. Doing the
+redirect in a hidden `iframe` to mitigate user experience issues has been
+negatively impacted by recent browser features for tracking prevention and may
+not be a viable solution for some scenarios. Repeatedly polling an
+`OpenID Provider` may also run the risk of hitting rate limits.
+
+A common concern is the ability to quickly terminate a user’s access to an
+`application`. This may be needed in corporate situations if an employee has
+been terminated against their will. If the `OpenID Provider` for an environment
+supports a capability to notify `relying parties` when a user’s
+`OpenID Provider` session has terminated, this can be used. If the user’s
+account in the `OpenID Provider` has been disabled, the `application` will not
+receive the successful response needed to renew the session. This should
+effectively terminate the user’s ability to use the application, at least with
+a tolerance period equal to the application’s polling frequency.
+
+## SAML 2
+
+With SAML 2, a `service provider` application can terminate a user’s session at
+an `identity provider` by issuing a logout request message to the
+`identity provider`. Upon receipt of the logout request message, the
+`identity provider` terminates the session it holds for the user, identified by
+a subject identifier in the request and possibly a session identifier for the
+session. The `identity provider` may also update or remove its session cookie
+in the user’s browser. The `identity provider` then responds to the
+`application` with a logout response message.
+
+SAML 2 also provides a way for the `identity provider` to notify other
+`relying parties` if a user’s session is terminated at the `identity provider`.
+Upon termination of the `identity provider` session or receipt of a logout
+request message from a `service provider`, the `identity provider` can send a
+logout request message to each of the other `relying parties` with an active
+session for the user. The `relying parties` are supposed to terminate their
+session and respond with a logout response message to the `identity provider`.
+If the global logout was initiated by one `service provider`, the
+`identity provider` returns a logout response message to the `relying party`
+that initiated the logout.
+
+```mermaid
+sequenceDiagram
+  participant User
+  participant Browser
+  participant Application 1
+  participant Application 2
+  participant Identity Provider
+
+  User->>Application 1: 1. to
+
+  Application 1->Browser: 2. with [Subject][SAML Logout Request]
+  Activate Browser
+  Browser->>Identity Provider: redirects to
+  Deactivate Browser
+  Note over Identity Provider: /Logout URL
+
+  Identity Provider->Browser: 3. with [SAML Logout Request][Session Index]
+  Activate Browser
+  Browser->>Application 2: redirects to
+  Deactivate Browser
+
+  Application 2->Browser: 4. with [SAML Logout Response]
+  Activate Browser
+  Browser->>Identity Provider: redirects to
+  Deactivate Browser
+
+  Identity Provider->Browser: 5. with [SAML Logout Response]
+  Activate Browser
+  Browser->>Application 1: redirects to
+  Deactivate Browser
+  Note over Application 1: /LogoutResponse endpoint
+
+  Application 1->>Browser: 6. to
+```
+
+1. The user initiates the logout at `Application 1` (a relying party).
+2. `Application 1` redirects the user’s browser to the `Identity Provider` with
+   a SAML Logout Request message.
+3. The `Identity Provider` sends a SAML Logout Request message to other
+   `relying parties`, such as `Application 2`.
+4. `Application 2` sends a SAML Logout Response message after processing the
+   logout.
+5. The `Identity Provider` sends a SAML Logout Response message back to the
+   `relying party` that sent the original Logout Request.
+6. `Application 1` acknowledges the logout.
+
+Steps `3` and `4` in the preceding sequence are commonly sent via the user’s
+browser, using front-channel interaction. Many SAML 2 `identity providers`
+reside behind corporate firewalls, and using a front-channel implementation
+avoids issues with firewalls. In a complicated logout scenario, however, with
+several `relying parties`, the sequence may fail before it completes, leaving
+some sessions intact. The SAML 2 specification includes a back-channel logout
+mechanism which may be more reliable if logout messages need to be sent to
+multiple parties. However, back-channel logout may not be implemented in all
+SAML 2 implementations, and back-channel logout messages require direct
+connectivity between the `identity provider` and the `relying parties`, which
+may be challenging for components behind corporate firewalls.
+
+## Session Termination
+
+There may be a need at times to quickly terminate a user’s SSO session as well
+as `application` sessions. In corporate settings, this is often a requirement
+for situations where an employee is terminated against their will. In the
+absence of single logout, a user’s account can be disabled at an
+`identity provider`, but they may be able to remain active in `applications`
+with open sessions until the applications next communicate with the
+`identity provider`. In the case of OIDC or OAuth 2, this may be when the
+`application` session and/or `access token` expires. In the case of SAML 2, it
+will be when the `application` session expires. When this occurs, the
+`application` sends a new authentication request to the `identity provider`,
+which will fail if the user’s account is disabled. If user termination risk is
+a concern, `application` session duration and `access token` expiration should
+be set considering the sensitivity of `applications` involved and the
+availability of means to quickly terminate a user’s sessions.
+
+## Logout and Multilevel Authentication
+
+If step-up or multi-factor authentication is implemented such that it is
+possible for a user’s session to be at different authentication assurance
+levels, based on the strength of authentication mechanisms used, it should be
+clear what happens when a user logs out.
+
+A common solution is for logout to completely terminate the user’s session,
+regardless of the authentication level it was at. Whatever logout behavior is
+chosen, it is important that its behavior and effect be clear to users.
+
+## Redirect After Logout
+
+A final aspect of designing logout is deciding where to send the user after
+logout. If you send the user to an `application` home page which redirects the
+user to an `identity provider` where the user still has a valid session, the
+user will be returned right back into the `application` with a new session
+created for them. This effectively breaks the logout process and can waste your
+helpdesk’s time with complaints that logout doesn’t work. For a better user
+experience, you can redirect to a logout confirmation page or a home page that
+doesn’t automatically redirect a user to an `identity provider`. In addition to
+carefully selecting where to send a user after logout, you should ensure that
+redirection is only done to a list of allow-listed URLs to avoid
+[vulnerabilities stemming from open redirects](https://cwe.mitre.org/data/definitions/601.html).
+Planning appropriate redirect URLs for logout and including them in an
+allow-list will provide a good user experience and avoid open redirect
+vulnerabilities.
+
+## Summary
+
+Implementing logout can be more complex to design and test than login. There
+may be multiple authentication sessions for a user, and you need to decide
+which to terminate when any user session is terminated or times out. In
+addition to the logout behavior, designs should specify where to send a user
+after logout has occurred.
+
+### Key Points
+
+- Solution designs should specify which authentication sessions should be
+  terminated when a user logs out.
+- The effect of a logout action should be made clear to users so they know
+  which sessions have been terminated and which have not.
+- Designs should specify where to redirect the user after logout.
+- Single logout can be used to send a logout message to `relying party` sessions
+  associated with a user’s `identity provider` session.
+- There are several recently finalized specifications related to logout with
+  OIDC.
+- SAML 2 `relying parties` can send a logout request to terminate a user’s
+  session at an `identity provider`.
+- SAML 2 supports single logout.
+- The effect and scope of any logout should be clear to users.
