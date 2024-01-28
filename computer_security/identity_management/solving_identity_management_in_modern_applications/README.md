@@ -20,4 +20,5 @@
 - [x] [Chapter 11: Single Sign-On](./11_single_sign_on.md)
 - [x] [Chapter 12: Stronger Authentication](./12_stronger_authentication.md)
 - [x] [Chapter 13: Logout](./13_logout.md)
-- [ ] [Chapter 14: Account Management](./14_account_management.md)
+- [x] [Chapter 14: Account Management](./14_account_management.md)
+- [ ] [Chapter 15: Deprovisioning](./15_deprovisioning.md)
