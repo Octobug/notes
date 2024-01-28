@@ -21,4 +21,5 @@
 - [x] [Chapter 12: Stronger Authentication](./12_stronger_authentication.md)
 - [x] [Chapter 13: Logout](./13_logout.md)
 - [x] [Chapter 14: Account Management](./14_account_management.md)
-- [ ] [Chapter 15: Deprovisioning](./15_deprovisioning.md)
+- [x] [Chapter 15: Deprovisioning](./15_deprovisioning.md)
+- [ ] [Chapter 16: Troubleshooting](./16_troubleshooting.md)
