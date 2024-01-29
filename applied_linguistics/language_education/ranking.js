@@ -36,6 +36,7 @@ const LANG = {
   VIETNAMESE: 'Vietnamese',
 };
 
+// https://www.reddit.com/r/languagelearning/comments/11xt73g/world_languages_by_gdp_2023_edition/
 const rankByLangGDP = [
   // 01-10
   LANG.ENGLISH,
@@ -72,6 +73,7 @@ const rankByLangGDP = [
   LANG.FINNISH,
 ];
 
+// https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)
 const rankByNationGDP = [
   // 01-10
   LANG.ENGLISH, // United States
@@ -135,24 +137,26 @@ function setScore(lang, score) {
   }
 }
 
-rankByLangGDP.slice(0).reverse().forEach((lang, index) => {
-  const score = (index + 1) * 2;
+const NORMALIZATION = 10;
+
+rankByLangGDP.slice().reverse().forEach((lang, index) => {
+  const score = (index + 1) * NORMALIZATION / rankByLangGDP.length;
+  setScore(lang, score * 5);
+});
+
+rankByDuolingoTop10.slice().reverse().forEach((lang, index) => {
+  const score = (index + 1) * NORMALIZATION / rankByDuolingoTop10.length;
   setScore(lang, score);
 });
 
-rankByDuolingoTop10.slice(0).reverse().forEach((lang, index) => {
-  const score = index + 1;
-  setScore(lang, score);
-});
-
-rankByNationGDP.slice(0).reverse().forEach((langs, index) => {
+rankByNationGDP.slice().reverse().forEach((langs, index) => {
   if (!(langs instanceof Array)) {
     langs = [langs];
   }
 
-  const score = (index + 1) / langs.length;
+  const score = (index + 1) * NORMALIZATION / rankByNationGDP.length;
   for (const lang of langs) {
-    setScore(lang, score);
+    setScore(lang, score / langs.length);
   }
 });
 
