@@ -24,4 +24,5 @@
 - [x] [Chapter 15: Deprovisioning](./15_deprovisioning.md)
 - [x] [Chapter 16: Troubleshooting](./16_troubleshooting.md)
 - [x] [Chapter 17: Exceptions](./17_exceptions.md)
-- [ ] [Chapter 18: Less Common Requirements](./18_less_common_requirements.md)
+- [x] [Chapter 18: Less Common Requirements](./18_less_common_requirements.md)
+- [ ] [Chapter 19: Failures](./19_failures.md)
