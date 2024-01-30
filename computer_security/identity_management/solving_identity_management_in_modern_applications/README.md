@@ -23,4 +23,5 @@
 - [x] [Chapter 14: Account Management](./14_account_management.md)
 - [x] [Chapter 15: Deprovisioning](./15_deprovisioning.md)
 - [x] [Chapter 16: Troubleshooting](./16_troubleshooting.md)
-- [ ] [Chapter 17: Exceptions](./17_exceptions.md)
+- [x] [Chapter 17: Exceptions](./17_exceptions.md)
+- [ ] [Chapter 18: Less Common Requirements](./18_less_common_requirements.md)

@@ -19,6 +19,15 @@
     - [Brute Force Attacks](#brute-force-attacks)
     - [Breached Passwords](#breached-passwords)
   - [System Outages](#system-outages)
+    - [Authentication System Outage](#authentication-system-outage)
+    - [Admin Access](#admin-access)
+    - [Provisioning Systems](#provisioning-systems)
+  - [Cybersecurity Threats](#cybersecurity-threats)
+    - [Compromised Personal Data](#compromised-personal-data)
+    - [Compromised Credentials](#compromised-credentials)
+    - [Compromised Secrets](#compromised-secrets)
+  - [Summary](#summary)
+    - [Key Points](#key-points)
 
 ## Accounts
 
@@ -165,4 +174,146 @@ when users log in to detect if a password has been compromised after being set.
 
 ## System Outages
 
->>>>> progress
+### Authentication System Outage
+
+It may be desirable to use the same authentication service for your primary
+website and a support site, so users have single sign-on (SSO) across the
+sites. However, if the authentication service is unavailable, users will be
+locked out of both sites. If you have this scenario, you should plan for how to
+handle support in the event of an outage to your authentication system.
+
+- One approach is to rely on proactive outbound communication during an outage.
+- Some mechanisms to consider include a support phone number with a recorded
+  message to acknowledge the issue and provide updated information or a public
+  community support forum or status page where outage updates can be posted.
+- In designing processes for business continuity during an outage of an
+  authentication system, you’ll want to ensure that alternate processes do not
+  rely on the primary authentication system.
+
+### Admin Access
+
+If single sign-on is used as a primary access mechanism for administrative
+access, such access could be blocked during a failure of the SSO system. You
+may need alternate authentication mechanisms to access critical administrative
+functions during an outage. This includes
+
+- administrative access to your service
+- monitoring and alerting infrastructure
+- the ability to post outage updates to your customers
+
+### Provisioning Systems
+
+Provisioning processes and systems may be less critical during an outage than
+authentication systems, but if you have time-critical account provisioning or
+deprovisioning processes, it may be necessary to define alternate processes for
+use during an outage of a provisioning system. Once service is restored, it may
+be necessary to validate that all in-flight transactions at the time of the
+outage were completed, especially account removal or privilege removal
+transactions. A routine check after an outage for incomplete deprovisioning
+transactions can help prevent incorrect access privileges.
+
+## Cybersecurity Threats
+
+Your application could experience any of a wide variety of cybersecurity
+threats
+
+- denial-of-service (DoS)
+- ransomware attacks
+- data breach
+- suddenly being notified of a vulnerability in a code library leveraged by
+  your application’s code
+
+An incident response plan should minimally include
+
+- The owner accountable for leading the response
+- The response team and responsibilities of each member
+- Clear priorities and required timeframes for the response effort
+- The steps to take, including preventing further damage, preserving required
+  evidence, assessing the damage, documenting all findings and decisions, and
+  identifying and fixing the root cause as well as related damage
+- Reporting and notification requirements
+- Follow-up actions to prevent the incident from happening again
+
+In addition, there may be aggressive timeframes within which you must notify
+regulators, law enforcement, or users if a breach occurs, so it is imperative
+to have a thorough response plan defined in advance that includes such
+responsibilities.
+
+### Compromised Personal Data
+
+In addition to a general incident response plan, your plan for responding to a
+breach of personal data should additionally define
+
+- When and how to engage law enforcement, if appropriate
+- When and how to engage insurers
+- The process to follow for user and regulatory notification
+- The process to follow for public relations communications
+
+If personal data is compromised, many privacy regulations require notification
+to regulatory agencies within a certain time period. For organizations subject
+to the General Data Protection Regulation (GDPR), Article 33 specifies that
+notification should be made within 72 hours of becoming aware of a breach.
+Notification may be required to multiple government organizations, law
+enforcement, and users.
+
+### Compromised Credentials
+
+Relying on users calling a support center is costly and difficult to scale and
+requires a secret the legitimate user and the support staff know that the thief
+won’t know. Sending a password reset link to the user’s registered email
+address or phone number may not work if significant time has passed between the
+breach and its discovery because the thief may have altered authentication
+credentials and user profile information, including notification attributes
+such as a user’s email address and phone number. You need a secure and scalable
+account recovery process worked out in advance so that you can act in a timely
+manner if this happens.
+
+### Compromised Secrets
+
+A related scenario is the compromise of other “secrets” such as OAuth 2.0
+client secrets or private keys used in the signing or decryption of security
+tokens. This can happen as a result of human error, so it is wise to prepare
+for this possibility. An inventory should be maintained of all such secrets
+used in your operations, how each is used, and recovery steps needed if any are
+compromised.
+
+Your application can facilitate recovery by dynamically retrieving the public
+keys used to validate security tokens. This makes it easier to rotate them but
+may create issues for caching. If your application caches dynamically retrieved
+public keys for performance reasons, and invalidates the cache anytime a
+signature validation fails, this could enable a denial-of-service (DoS) attack
+by someone sending counterfeit security tokens with fake signatures. If caching
+is needed, it may be possible to reduce this risk using a periodic refresh and
+by having applications only invalidate their cache upon a validation failure
+once per a certain time period, rather than for each failure, and triggering an
+alert for human intervention if a lot of invalid tokens are received.
+
+If your solution includes the use of SAML 2 with other organizations and a
+private key used to sign or decrypt SAML 2 messages is compromised, you need to
+update configurations with new keys. If there is no dynamic mechanism to update
+federation metadata, you may need to synchronize updates with another
+organization. You should work out recovery processes in advance for the secrets
+in your environment so you can execute quickly if needed.
+
+## Summary
+
+### Key Points
+
+- It’s essential to plan for what can go wrong in an environment.
+- You may need a process for restoring accidentally deleted data.
+- You need a process for customers who wish to decommission their account.
+- You should have a process to handle an orphaned account.
+- Users may forget or lose credentials and need an account recovery mechanism.
+- You need a process to check for and fix accounts whose password has been
+  compromised.
+- You need a process to identify the legitimate account owner if account
+  takeover has occurred.
+- If your support system or administrative access depends on a single sign-on
+  system, you should plan for how to handle an outage to the single sign-on
+  system.
+- You should have an incident response plan in place for responding to
+  cybersecurity threats, including compromised personal data, user credentials,
+  or private keys.
+- In planning how to handle exceptional events, be sure to consider logging
+  data that could facilitate your response or records to keep of your response
+  actions to demonstrate proper handling of an event.
