@@ -26,4 +26,5 @@
 - [x] [Chapter 17: Exceptions](./17_exceptions.md)
 - [x] [Chapter 18: Less Common Requirements](./18_less_common_requirements.md)
 - [x] [Chapter 19: Failures](./19_failures.md)
-- [ ] [Chapter 20: Compliance](./20_compliance.md)
+- [x] [Chapter 20: Compliance](./20_compliance.md)
+- [ ] [Chapter 21: Looking into the Crystal Ball](./21_looking_into_the_crystal_ball.md)
