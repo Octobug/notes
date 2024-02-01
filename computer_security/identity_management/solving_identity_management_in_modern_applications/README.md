@@ -28,4 +28,5 @@
 - [x] [Chapter 19: Failures](./19_failures.md)
 - [x] [Chapter 20: Compliance](./20_compliance.md)
 - [x] [Chapter 21: Looking into the Crystal Ball](./21_looking_into_the_crystal_ball.md)
-- [ ] [Chapter 22: Conclusion](./22_conclusion.md)
+- [x] [Chapter 22: Conclusion](./22_conclusion.md)
+- [x] [Appendixes](./appendixes.md)
