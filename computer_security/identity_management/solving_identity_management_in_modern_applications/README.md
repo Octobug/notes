@@ -27,4 +27,5 @@
 - [x] [Chapter 18: Less Common Requirements](./18_less_common_requirements.md)
 - [x] [Chapter 19: Failures](./19_failures.md)
 - [x] [Chapter 20: Compliance](./20_compliance.md)
-- [ ] [Chapter 21: Looking into the Crystal Ball](./21_looking_into_the_crystal_ball.md)
+- [x] [Chapter 21: Looking into the Crystal Ball](./21_looking_into_the_crystal_ball.md)
+- [ ] [Chapter 22: Conclusion](./22_conclusion.md)
