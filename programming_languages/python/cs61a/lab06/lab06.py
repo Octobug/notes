@@ -60,7 +60,11 @@ def count_occurrences(t, n, x):
     >>> count_occurrences(s2, 6, 6)
     2
     """
-    "*** YOUR CODE HERE ***"
+    result = 0
+    for i in range(n):
+        if next(t) == x:
+            result += 1
+    return result
 
 
 def repeated(t, k):
@@ -85,7 +89,17 @@ def repeated(t, k):
     2
     """
     assert k > 1
-    "*** YOUR CODE HERE ***"
+
+    pre = next(t)
+    count = 1
+    for i in t:
+        if i == pre:
+            count += 1
+            if count == k:
+                return i
+        else:
+            pre = i
+            count = 1
 
 
 def partial_reverse(lst, start):
@@ -100,7 +114,11 @@ def partial_reverse(lst, start):
     >>> a
     [1, 2, 7, 6, 5, 3, 4]
     """
-    "*** YOUR CODE HERE ***"
+    end = len(lst) - 1
+    while start < end:
+        lst[start], lst[end] = lst[end], lst[start]
+        start += 1
+        end -= 1
 
 
 def index_largest(seq):
@@ -112,7 +130,16 @@ def index_largest(seq):
     2
     """
     assert len(seq) > 0
-    "*** YOUR CODE HERE ***"
+
+    maxindex = 0
+    limit = len(seq)
+    index = 1
+    while index < limit:
+        if seq[index] > seq[maxindex]:
+            maxindex = index
+        index += 1
+
+    return maxindex
 
 
 def pizza_sort(lst):
@@ -124,11 +151,11 @@ def pizza_sort(lst):
     >>> a
     [9, 8, 7, 5, 3, 2, 1]
     """
-    pizza_sort_helper(________, ________)
+    pizza_sort_helper(lst, 0)
 
 
 def pizza_sort_helper(lst, start):
-    if _______________:
-        partial_reverse(________, ________)
-        partial_reverse(________, ________)
-        _______________(________, ________)
+    if start < len(lst) - 1:
+        partial_reverse(lst, start + index_largest(lst[start:]))
+        partial_reverse(lst, start)
+        pizza_sort_helper(lst, start + 1)
