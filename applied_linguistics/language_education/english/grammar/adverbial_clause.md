@@ -2724,6 +2724,9 @@ interesting.
 
 while 位于句首，一般意为“尽管”，引导让步状语从句。
 
+`1` While still catching up to men in some spheres of modern life, women appear
+to be way ahead in at least one undesirable category. [2008 年阅读 text 1]
+
 `2` While the government pushed for a total breakup of the software maker,
 Microsoft fought fiercely against any positions that would affect its ability to
 compete in the marketplace.

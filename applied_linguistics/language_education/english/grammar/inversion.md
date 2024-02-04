@@ -166,6 +166,11 @@ life.
 associated with the rights and responsibilities of the individual: he advocated
 freedom of thought and of personal expression.
 
+`4` Adding to a woman's increased dose of stress chemicals, are her increased
+"opportunities" for stress. [2008 年阅读 text 1]
+
+- `译` 给女性增加更多压力化学物质剂量的是：她们有更多面临压力的机会。
+
 #### 1.2.2 可作形容词的过去/现在分词的倒装
 
 `1` Seated on the ground is a group of rabbits.
