@@ -85,6 +85,7 @@ disciplines according to the
         1. [Software Design](software_engineering/software_design)
         2. Software Maintenance
         3. [Software Testing](software_engineering/software_testing)
+        4. [System Design](./software_engineering/system_design)
     10. [Miscellaneous](./cs_misc)
 
 ### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)

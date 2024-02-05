@@ -395,7 +395,7 @@ How to implement MVCC-based snapshot isolation (PostgreSQL):
 - Whenever a transaction writes anything to the database, the data it writes is
   tagged with the transaction ID of the writer.
 
-![Snapshot Isolation](../images/7_07_snapshot_isolation_mvcc.jpg)
+![Snapshot Isolation](../images/07_07_snapshot_isolation_mvcc.jpg)
 
 - A garbage collection process in the database removes any rows marked for
   deletion and frees their space.
@@ -1155,7 +1155,7 @@ cases to consider:
 
 #### Detecting stale MVCC reads
 
-![7-10](../images/7_10_detecting_reads_on_outdated_values_from_an_mvcc.png)
+![7-10](../images/07_10_detecting_reads_on_outdated_values_from_an_mvcc.png)
 
 In order to prevent this anomaly, the database needs to track when a transaction
 ignores another transaction's writes due to MVCC visibility rules.
@@ -1178,7 +1178,7 @@ long-running reads from a consistent snapshot.
 
 #### Detecting writes that affect prior reads
 
-![7-11](../images/7_11_detecting_modification_on_reads.png)
+![7-11](../images/07_11_detecting_modification_on_reads.png)
 
 SSI locks access to all row matching some search query like two-phase locking,
 except that it doesn't block other transactions.

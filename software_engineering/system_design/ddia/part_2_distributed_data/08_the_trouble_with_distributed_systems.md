@@ -484,7 +484,7 @@ have declared it dead, it could cause problems in a system that is not carefully
 designed. Such a node could send messages to other nodes in its self-appointed
 capacity.
 
-![incorrect lock](../images/8_04_incorrect_distributed_lock.png)
+![incorrect lock](../images/08_04_incorrect_distributed_lock.png)
 
 Incorrect implementation of a distributed lock: `client 1` believes that it
 still has a valid lease, even though it has expired, and thus corrupts a file
@@ -498,7 +498,7 @@ the rest of the system.
 
 A fairly simple technique that that achieves this goal is called ***fencing***.
 
-![Fencing](../images/8_05_fencing.png)
+![Fencing](../images/08_05_fencing.png)
 
 Making access to storage safe by allowing writes only in the order of increasing
 fencing tokens.
