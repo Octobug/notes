@@ -1,5 +1,13 @@
 # 7. Transactions
 
+> Some authors have claimed that general two-phase commit is too expensive to
+> support, because of the performance or availability problems that it brings.
+> We believe it is better to have application programmers deal with performance
+> problems due to overuse of transactions as bottlenecks arise, rather than
+> always coding around the lack of transactions.
+>
+> —James Corbett et al., Spanner: Google’s Globally-Distributed Database (2012)
+
 - [7. Transactions](#7-transactions)
   - [The Slippery Concept of a Transaction](#the-slippery-concept-of-a-transaction)
     - [The Meaning of ACID](#the-meaning-of-acid)
@@ -121,15 +129,7 @@ consistency. The letter C doesn't really belong in ACID.
 
 #### Isolation
 
-```graph
-            get counter: 42 + 1 = 43, set counter = 43
-[User 1]    \    ^ 42                 \    ^
-             \  /                      \  / ok
-[Database]    --     --                 --    --
-                    /  \                     /  \ ok
-[User 2]           /    v 42                /    v
-                  get counter: 42 + 1 = 43, set counter = 43
-```
+![07_01_race_inc_a_counter](../images/07_01_race_inc_a_counter.png)
 
 ***Isolation*** means that concurrently executing transactions are isolated from
 each other.
@@ -139,10 +139,10 @@ which means that each transaction can pretend that it is the only transaction
 running on the entire database. The database ensures that when the transactions
 have commited, the result is the same as if they had run *serially*.
 
-However, in practice, serializable isolation is rarely used, because it carries
-a performance penalty. In Oracle there is an isolation level called
-"serializable", but it actually implements something called
-***snapshot isolation***, which is a weaker guarantee than serializability.
+实际上 `serializable isolation` 很少被使用，因为它会带来比较大的性能开销。In Oracle
+there is an isolation level called "serializable", but it actually implements
+something called ***snapshot isolation***, which is a weaker guarantee than
+serializability.
 
 #### Durability
 
@@ -253,8 +253,7 @@ bugs.
 
 ### Read Committed
 
-The most basic level of transaction isolation is ***read committed***. It makes
-two guarantees:
+最基本的事务隔离是 ***read committed***. It makes two guarantees:
 
 1. When reading from the database, you will only see data that has been
    committed (no ***dirty reads***)
@@ -282,6 +281,8 @@ We normally assume that a later write overwrites an earlier write.
 ***Dirty write***: if the earlier write is part of a transaction that has not
 yet committed, and the later write overwrites an uncommitted value.
 
+![07_05_dirty_writes](../images/07_05_dirty_writes.png)
+
 Transactions running at the read committed isolation level must prevent dirty
 writes, usually by delaying the second write until the first write's transaction
 has committed or aborted.
@@ -290,11 +291,9 @@ Why prevent dirty writes:
 
 - Conflicting writes on different objects from different transactions can be
   mixed up.
-
-However, read committed does not prevent the race condition between two counter
-increments. In this case, the second write happens after the first transaction
-has committed, so it's not a dirty write. But it's still incorrect for a
-different reason.
+  - 不同事务中多个写结果出现混杂，比如 [B1 + A2]，而正确的结果应该是 [A1 + A2] 或 [B1 + B2]
+- `read committed` 不能避免 `lost update`（如自增操作），它和 `dirty write` 不一样。
+  在 `lost update` 中，`事务1` 已经提交，而 `事务2` 读取并使用了 `事物1` 提交前的旧值。
 
 #### Implementing read committed
 
@@ -325,7 +324,7 @@ isolation are IBM DB2 and Microsoft SQL Server in the
 
 ### Snapshot Isolation and Repeatable Read
 
-Read committed isolation is not enough:
+`Read committed isolation` is not enough:
 
 - Alice's Account 1: `balance = 500`
 - Alice's Account 2: `balance = 500`
@@ -491,9 +490,9 @@ Isolation levels:
 
 ### Preventing Lost Updates
 
-The lost update problem can occur if an application reads some value from the
+The `lost update` problem can occur if an application reads some value from the
 database, modifies it, and writes back the modified value
-(a *read-modify-write style*). It occurs in various different scenarios:
+(a `read-modify-write` style). It occurs in various different scenarios:
 
 - Incrementing a counter or updating an account balance (requires reading the
   current value, calculating the new value, and writing back the updated value)
@@ -506,7 +505,7 @@ database, modifies it, and writes back the modified value
 #### Atomic write operations
 
 Many databases provide atomic update operations, which remove the need to
-implement *read-modify-write* cycles in application code. The following
+implement `read-modify-write` cycles in application code. The following
 instruction is concurrency-safe in most relational databases:
 
 ```sql
@@ -532,7 +531,7 @@ provided by the database.
 #### Explicit locking
 
 The application can explicitly lock objects that are going to be updated to
-prevent lost updates. Then the application can perform a read-modify-write
+prevent lost updates. Then the application can perform a `read-modify-write`
 cycle, any other transaction trying to read the same object is forced to wait
 until the lock is freed.
 
@@ -572,10 +571,10 @@ efficiently in conjunction with snapshot isolation.
 #### Compare-and-set
 
 In databases that don't provide transaction, there is an atomic
-*compare-and-set* operation. It avoids lost updates by allowing an update to
+`compare-and-set` operation. It avoids lost updates by allowing an update to
 happen only if the value has not changed since you last read it. If the current
 value does not match what was previously read, the update has not effect, and
-the read-modify-write cycle must be retried. e.g.
+the `read-modify-write` cycle must be retried. e.g.
 
 ```sql
 -- This may or may not be safe, depending on the database implementation
@@ -617,8 +616,7 @@ But unfortunately, it is the default in many replicated databases.
 
 ### Write Skew and Phantoms
 
-e.g. Imagine that Alice and Bob are two on-call doctors for a shift. Both are
-feeling unwell, so they both decide to request leave. They happen to click the
+e.g. Alice and Bob are two on-call doctors for a shift. They happen to click the
 button to go off call at the same time. What happens next?
 
 Alice:
@@ -665,10 +663,10 @@ commit transaction;
 
 Now it ends up unexpectedly that no doctor is on call.
 
-This is called ***write skew***. It is neither a dirty write nor a lost update,
-because the two transactions are updating two different objects. But it's
-definitely a race condition: if the two transaction had run one after another,
-the second doctor would have been prevented from going off call.
+This is called ***write skew***. It is neither a `dirty write` nor a
+`lost update`, because the two transactions are updating two different objects.
+But it's definitely a race condition: if the two transaction had run one after
+another, the second doctor would have been prevented from going off call.
 
 #### Characterizing write skew
 
@@ -745,7 +743,7 @@ With write skew:
 
 #### Phantoms causing write skew
 
-> 幻读是原因，写入偏差是结果。
+幻读是原因，写入偏差是结果。
 
 The examples above follow a similar pattern:
 
@@ -791,8 +789,8 @@ in most cases.
 
 - Isolation levels are hard to understand, and inconsistently implemented in
   different databases.
-- It difficult to tell whether the application code is safe to run concurrently
-  at a particular isolation level.
+- It's difficult to tell whether the application code is safe to run
+  concurrently at a particular isolation level.
 - There are no good tools to help with detecting race conditions. Static
   analysis may help but research techniques have not yet found their way into
   practical use. And testing for concurrency issues is hard.
@@ -800,9 +798,13 @@ in most cases.
 All along, the answer from researchers has been simple: use
 ***serializable isolation***!
 
-Serializable isolation is usually regarded as the strongest isolation level. It
-guarantees that even though transactions may execute in parallel, the end result
-is the same as if they had executed serially one at a time.
+`Serializable isolation` is usually regarded as the strongest isolation level.
+It guarantees that even though transactions may execute in parallel, the end
+result is the same as if they had executed one at a time, serially, without any
+concurrency. Thus, the database guarantees that if the transactions behave
+correctly when run individually, they continue to be correct when run
+concurrently — in other words, the database prevents ***all*** possible race
+conditions.
 
 Most databases that provide serializability today use one of these three
 techniques:
@@ -940,12 +942,13 @@ Two-phase locking makes the lock requirements much stronger.
 - Several transactions are allowed to concurrently read the same object as long
   as nobody is writing to it.
 - But as soon as anyone wants to write an object, exclusive access is required:
-  - If transaction A has read an object and transaction B wants to write to that
-    object, B must wait until A commits or aborts before it can continue. (This
-    ensures that B can't change the object unexpectedly behind A's back.)
-  - If transaction A has written an object and transaction B wants to read that
-    object, B must wait until A commits or aborts before it can continue.
-    (Reading an old version of the object is not acceptable in 2PL.)
+  - If `transaction A` has read an object and `transaction B` wants to write to
+    that object, `B` must wait until `A` commits or aborts before it can
+    continue. (This ensures that `B` can't change the object unexpectedly
+    behind `A`'s back.)
+  - If `transaction A` has written an object and `transaction B` wants to read
+    that object, `B` must wait until `A` commits or aborts before it can
+    continue. (Reading an old version of the object is not acceptable in 2PL.)
 
 In 2PL, writers don't just block other writers; they also block readers and vice
 versa.
