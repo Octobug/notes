@@ -98,7 +98,7 @@ function rankByLangGDP() {
     LANG.FINNISH,
   ];
 
-  reversalScore(langs, 2);
+  reversalScore(langs, 3);
 }
 
 function rankByNationGDP() {
@@ -148,8 +148,9 @@ function rankByNationGDP() {
     }
 
     const score = (index + 1) * NORMALIZATION / langs.length;
+    const weight = 2;
     for (const lang of langItems) {
-      updateScore(lang, score / langItems.length);
+      updateScore(lang, score / langItems.length * weight);
     }
   });
 }
