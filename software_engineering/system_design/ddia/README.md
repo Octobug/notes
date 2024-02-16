@@ -9,7 +9,7 @@ The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
 
 ## Preface
 
-We call an applicatoin ***data-intensive** if data is its primary challenge.
+We call an applicatoin ***data-intensive*** if data is its primary challenge.
 
 - the quantity of data
 - the complexity of data
