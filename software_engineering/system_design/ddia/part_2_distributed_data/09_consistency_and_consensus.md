@@ -22,6 +22,8 @@
   - [Ordering Guarantees](#ordering-guarantees)
     - [Ordering and Causality](#ordering-and-causality)
       - [The causal order is not a total order](#the-causal-order-is-not-a-total-order)
+      - [Linearizability is stronger than causal consistency](#linearizability-is-stronger-than-causal-consistency)
+      - [Capturing causal dependencies](#capturing-causal-dependencies)
 
 The simplest way of handling faults is to simply let the entire service fail,
 and show the user an error message. If that solution is unacceptable, we need
@@ -581,17 +583,126 @@ and consensus.
 
 ### Ordering and Causality
 
->>>>> progress
+There are several reasons why ordering keeps coming up, and one of the reasons
+is that it helps preserve causality:
 
-There are several reasons why ordering keeps coming up, and one of the reasons is that it helps preserve causality. We have already seen several examples over the course of this book where causality has been important:
-• In “Consistent Prefix Reads” on page 165 (Figure 5-5) we saw an example where the observer of a conversation saw first the answer to a question, and then the question being answered. This is confusing because it violates our intuition of cause and effect: if a question is answered, then clearly the question had to be there first, because the person giving the answer must have seen the question (assuming they are not psychic and cannot see into the future). We say that there is a causal dependency between the question and the answer.
-A similar pattern appeared in Figure 5-9, where we looked at the replication between three leaders and noticed that some writes could “overtake” others due to network delays. From the perspective of one of the replicas it would look as though there was an update to a row that did not exist. Causality here means that a row must first be created before it can be updated.
-• In “Detecting Concurrent Writes” on page 184 we observed that if you have two operations A and B, there are three possibilities: either A happened before B, or B happened before A, or A and B are concurrent. This happened before relationship is another expression of causality: if A happened before B, that means B might have known about A, or built upon A, or depended on A. If A and B are concur‐ rent, there is no causal link between them; in other words, we are sure that nei‐ ther knew about the other.
-• In the context of snapshot isolation for transactions (“Snapshot Isolation and Repeatable Read” on page 237), we said that a transaction reads from a consistent snapshot. But what does “consistent” mean in this context? It means consistent with causality: if the snapshot contains an answer, it must also contain the ques‐ tion being answered [48]. Observing the entire database at a single point in time makes it consistent with causality: the effects of all operations that happened cau‐ sally before that point in time are visible, but no operations that happened cau‐ sally afterward can be seen. Read skew (non-repeatable reads, as illustrated in Figure 7-6) means reading data in a state that violates causality.
-• Our examples of write skew between transactions (see “Write Skew and Phan‐ toms” on page 246) also demonstrated causal dependencies: in Figure 7-8, Alice was allowed to go off call because the transaction thought that Bob was still on call, and vice versa. In this case, the action of going off call is causally dependent on the observation of who is currently on call. Serializable snapshot isolation (see “Serializable Snapshot Isolation (SSI)” on page 261) detects write skew by track‐ ing the causal dependencies between transactions.
-• In the example of Alice and Bob watching football (Figure 9-1), the fact that Bob got a stale result from the server after hearing Alice exclaim the result is a causal‐ ity violation: Alice’s exclamation is causally dependent on the announcement of the score, so Bob should also be able to see the score after hearing Alice. The same pattern appeared again in “Cross-channel timing dependencies” on page 331 in the guise of an image resizing service.
-Causality imposes an ordering on events: cause comes before effect; a message is sent before that message is received; the question comes before the answer. And, like in real life, one thing leads to another: one node reads some data and then writes some‐ thing as a result, another node reads the thing that was written and writes something else in turn, and so on. These chains of causally dependent operations define the causal order in the system—i.e., what happened before what.
+- If a question is answered, then clearly the question had to be there first,
+  because the person giving the answer must have seen the question. We say that
+  there is a causal dependency between the question and the answer.
+- In the replication between three leaders, some writes could “overtake” others
+  due to network delays. From the perspective of one of the replicas it would
+  look as though there was an update to a row that did not exist. Causality
+  here means that a row must first be created before it can be updated.
+- If you have two operations A and B, there are three possibilities: either A
+  happened before B, or B happened before A, or A and B are concurrent. This
+  happened before relationship is another expression of causality:
+  - if A happened before B, that means B might have known about A, or built
+    upon A, or depended on A.
+  - If A and B are concurrent, there is no causal link between them; in other
+    words, we are sure that neither knew about the other.
+- In the context of snapshot isolation for transactions, a transaction reads
+  from a consistent snapshot. But what does “consistent” mean in this context?
+  It means consistent with causality: if the snapshot contains an answer, it
+  must also contain the question being answered. Observing the entire database
+  at a single point in time makes it consistent with causality: the effects of
+  all operations that happened causally before that point in time are visible,
+  but no operations that happened causally afterward can be seen.
+  - Read skew (non-repeatable reads) means reading data in a state that
+    violates causality.
+- Write skew between transactions also demonstrated causal dependencies: Alice
+  was allowed to go off call because the transaction thought that Bob was still
+  on call, and vice versa. In this case, the action of going off call is
+  causally dependent on the observation of who is currently on call.
+  Serializable snapshot isolation detects write skew by tracking the causal
+  dependencies between transactions.
+- In the example of Alice and Bob watching football, the fact that Bob got a
+  stale result from the server after hearing Alice exclaim the result is a
+  causality violation: Alice’s exclamation is causally dependent on the
+  announcement of the score, so Bob should also be able to see the score after
+  hearing Alice.
 
-If a system obeys the ordering imposed by causality, we say that it is causally consis‐ tent. For example, snapshot isolation provides causal consistency: when you read from the database, and you see some piece of data, then you must also be able to see any data that causally precedes it (assuming it has not been deleted in the meantime).
+Causality imposes an ordering on events:
+
+- cause comes before effect;
+- a message is sent before that message is received;
+- the question comes before the answer.
+
+If a system obeys the ordering imposed by causality, we say that it is
+***causally consistent***. For example, `snapshot isolation` provides
+`causal consistency`: when you read from the database, and you see some piece
+of data, then you must also be able to see any data that causally precedes it.
 
 #### The causal order is not a total order
+
+A ***total order*** allows any two elements to be compared, so if you have two
+elements, you can always say which one is greater and which one is smaller. For
+example, natural numbers are totally ordered: you can tell that 13 is greater
+than 5.
+
+However, mathematical sets are not totally ordered: is `{a, b}` greater than
+`{b, c}`? Well, you can’t really compare them, because neither is a subset of
+the other. We say they are incomparable, and therefore mathematical sets are
+***partially ordered***: in some cases one set is greater than another (if one
+set contains all the elements of another), but in other cases they are
+incomparable.
+
+The difference between a `total order` and a `partial order` is reflected in
+different database consistency models:
+
+- **Linearizability**
+  - In a linearizable system, we have a `total order` of operations: if the
+    system behaves as if there is only a single copy of the data, and every
+    operation is atomic, this means that for any two operations we can always
+    say which one happened first.
+- **Causality**
+  - We said that two operations are concurrent if neither happened before the
+    other. Put another way, two events are ordered if they are causally related
+    (one happened before the other), but they are incomparable if they are
+    concurrent. This means that causality defines a `partial order`, not a
+    `total order`: some operations are ordered with respect to each other, but
+    some are incomparable.
+
+Therefore, according to this definition, there are no concurrent operations in
+a linearizable datastore: there must be a single timeline along which all
+operations are totally ordered. There might be several requests waiting to be
+handled, but the datastore ensures that every request is handled atomically at
+a single point in time, acting on a single copy of the data, along a single
+timeline, without any concurrency.
+
+Concurrency would mean that the timeline branches and merges again — and in
+this case, operations on different branches are incomparable.
+
+Git's version histories are very much like the graph of causal dependencies.
+Often one commit happens after another, in a straight line, but sometimes you
+get branches, and merges are created when those concurrently created commits
+are combined.
+
+#### Linearizability is stronger than causal consistency
+
+What is the relationship between the causal order and linearizability?
+
+Linearizability **implies** causality: any system that is linearizable will
+preserve causality correctly. In particular, if there are multiple
+communication channels in a system, linearizability ensures that causality is
+automatically preserved without the system having to do anything special.
+
+The fact that linearizability ensures causality is what makes linearizable
+systems simple to understand and appealing. However, making a system
+linearizable can harm its performance and availability, especially if the
+system has significant network delays. For this reason, some distributed data
+systems have abandoned linearizability, which allows them to achieve better
+performance but can make them difficult to work with.
+
+The good news is that a middle ground is possible. Linearizability is not the
+only way of preserving causality. A system can be causally consistent without
+incurring the performance hit of making it linearizable. In fact, ***causal
+consistency is the strongest possible consistency model that does not slow
+down*** due to network delays, and remains available in the face of network
+failures.
+
+In many cases, systems that appear to require linearizability in fact only
+really require `causal consistency`, which can be implemented more efficiently.
+
+#### Capturing causal dependencies
+
+>>>>> progress
