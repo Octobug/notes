@@ -12,7 +12,16 @@
 
 ### 2008.04
 
-- 2008.04.
+- 2008.04.30 - [Awesome Git Internals PDF](https://github.blog/2008-04-30-awesome-git-internals-pdf/)
+- 2008.04.29 - [GitHub Services IPO](https://github.blog/2008-04-29-github-services-ipo/)
+- 2008.04.26 - [It’s a mirror](https://github.blog/2008-04-26-it-s-a-mirror/)
+- 2008.04.25 - [GitHub’s RubyGem Server](https://github.blog/2008-04-25-github-s-rubygem-server/)
+- 2008.04.24 - [One Million Events](https://github.blog/2008-04-24-one-million-events/)
+- 2008.04.24 - [The GitHub Podcast…](https://github.blog/2008-04-24-the-github-podcast/)
+- 2008.04.23 - [Who are you following?](https://github.blog/2008-04-23-who-are-you-following/)
+- 2008.04.22 - [New Fluid Icon](https://github.blog/2008-04-22-new-fluid-icon/)
+- 2008.04.21 - [More Fluid Tastiness](https://github.blog/2008-04-21-more-fluid-tastiness/)
+- 2008.04.17 - [Limits are coming…](https://github.blog/2008-04-17-limits-are-coming/)
 - 2008.04.17 - [Repository Admin Tab](https://github.blog/2008-04-17-repository-admin-tab/)
 - 2008.04.12 - [When limits are enforced…](https://github.blog/2008-04-12-when-limits-are-enforced/)
 - 2008.04.10 - [Commit Comments](https://github.blog/2008-04-10-commit-comments/)
