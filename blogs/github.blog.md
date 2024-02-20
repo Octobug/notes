@@ -4,10 +4,30 @@
 
 - [The GitHub Blog](#the-github-blog)
   - [2008](#2008)
+    - [2008.04](#200804)
     - [2008.03](#200803)
     - [2008.02](#200802)
 
 ## 2008
+
+### 2008.04
+
+- 2008.04.
+- 2008.04.17 - [Repository Admin Tab](https://github.blog/2008-04-17-repository-admin-tab/)
+- 2008.04.12 - [When limits are enforced…](https://github.blog/2008-04-12-when-limits-are-enforced/)
+- 2008.04.10 - [Commit Comments](https://github.blog/2008-04-10-commit-comments/)
+- 2008.04.10 - [Service Integration](https://github.blog/2008-04-10-service-integration/)
+- 2008.04.10 - [We Launched](https://github.blog/2008-04-10-we-launched/)
+- 2008.04.10 - [Say hello to the Network Graph Visualizer](https://github.blog/2008-04-10-say-hello-to-the-network-graph-visualizer/)
+- 2008.04.09 - [GitHub on Fluid](https://github.blog/2008-04-09-github-on-fluid/)
+- 2008.04.09 - [Git Tricks](https://github.blog/2008-04-09-git-tricks/)
+- 2008.04.07 - [Comparing Git to Mercurial](https://github.blog/2008-04-07-comparing-git-to-mercurial/)
+- 2008.04.06 - [Pushing and Pulling](https://github.blog/2008-04-06-pushing-and-pulling/)
+- 2008.04.04 - [Get Some Shoes](https://github.blog/2008-04-04-get-some-shoes/)
+- 2008.04.04 - [New to Git? Cheat!](https://github.blog/2008-04-04-new-to-git-cheat/)
+- 2008.04.03 - [Rails Moving to Git](https://github.blog/2008-04-03-rails-moving-to-git/)
+- 2008.04.01 - [Back to Subversion](https://github.blog/2008-04-01-back-to-subversion/)
+- 2008.04.01 - [Easily Install the FF GitHub Search](https://github.blog/2008-04-01-easily-install-the-ff-github-search/)
 
 ### 2008.03
 
