@@ -11,3 +11,5 @@ use -- [Podman](https://podman.io).
 
 - [Docker Curriculum](docker_curriculum)
 - [Docker Guides](official_guides)
+- [The Docker Book](./the_docker_book/)
+- [Docker Roadmap](https://roadmap.sh/docker)

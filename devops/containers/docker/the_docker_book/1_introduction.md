@@ -12,6 +12,7 @@
     - [Registries](#registries)
     - [Containers](#containers)
     - [Compose, Swarm and Kubernetes](#compose-swarm-and-kubernetes)
+  - [What can you use Docker for?](#what-can-you-use-docker-for)
   - [Docker with configuration management](#docker-with-configuration-management)
   - [Docker's technical components](#dockers-technical-components)
   - [What's in the book?](#whats-in-the-book)
@@ -25,7 +26,7 @@ hypervisor virtualization.
 
 Conntainers could be used as process isolation environments. A container is a
 chroot jail, which creates an isolated directory environment for running
-processes. If attackers breach the running progress in the jail, then find
+processes. If attackers breach the running process in the jail, then find
 themselves trapped in this ennvironment and unable to further compromise a host.
 
 Docker has modern Linux kernel features, such as control groups and namespaces.
@@ -104,6 +105,8 @@ A Docker container is:
 - Kubernetes: Docker provides the primary underlying compute layer in the
   orchestration tool Kubernetes.
 
+## What can you use Docker for?
+
 ## Docker with configuration management
 
 Compared to traditional image models, Docker is a lot more lightweight: images
@@ -139,15 +142,3 @@ Docker can be run on any x64 host running a modern Linux kernel. It includes:
   provide an interactive shell to your container.
 
 ## What's in the book?
-
-- Install Docker.
-- Take your first steps with a Docker container.
-- Build Docker images.
-- Manage and share Docker images.
-- Run and manage more complex Docker containers and stacks of Docker containers.
-- Deploy Docker containers as part of your testing pipeline.
-- Build multi-container applications and environments.
-- Introduce the basics of Docker orchestration with `Docker Compose`, `Consul`,
-  and `Swarm`.
-- Explore the Docker API.
-- Getting Help and Extending Docker.
