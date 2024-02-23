@@ -1,6 +1,7 @@
 # Chapter 3 Getting Started with Docker
 
 - [Chapter 3 Getting Started with Docker](#chapter-3-getting-started-with-docker)
+  - [Ensuring Docker is ready](#ensuring-docker-is-ready)
   - [Running our first container](#running-our-first-container)
   - [Working with our first container](#working-with-our-first-container)
   - [Container naming](#container-naming)
@@ -16,6 +17,8 @@
   - [Automatic container restarts](#automatic-container-restarts)
   - [Finding out more about our container](#finding-out-more-about-our-container)
   - [Deleting a container](#deleting-a-container)
+
+## Ensuring Docker is ready
 
 ## Running our first container
 
@@ -132,13 +135,16 @@ docker logs -ft daemon_dave
 ## Docker log drivers
 
 ```sh
-# Enabling Syslog at the container level
+# Enabling syslog at the container level
 # - json-file (default)
 # - syslog
 # - none
 docker run --log-driver="syslog" --name daemon_dwayne -d \
   ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
 ```
+
+💡 Docker 1.8 introduced support for Graylog's GELF protocol, Fluentd and a log
+rotation driver.
 
 ## Inspecting the container's processes
 
@@ -164,10 +170,14 @@ docker exec -d daemon_dave touch /etc/new_config_file
 docker exec -it daemon_dave /bin/bash
 ```
 
+💡 Since Docker 1.7 you can use the `-u` flag to specify a new process owner for
+`docker exec` launched processes.
+
 ## Stopping a daemonized container
 
 ```sh
 docker stop daemon_dave
+docker ps -n N
 ```
 
 📝 The `docker stop` command sends a `SIGTERM` signal to the Docker container's
@@ -187,7 +197,7 @@ Values of `--restart`:
 - `always`: no matter what exit code it returned
 - `on-failure`: if it exits with a non-zero exit code, it also accepts an
   optional restart count
-  - `on-failure:5`
+  - `on-failure:5`: 5 is an optional restart count
 
 ## Finding out more about our container
 
