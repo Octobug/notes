@@ -1,24 +1,34 @@
 # Chapter 2 Installing Docker
 
 - [Chapter 2 Installing Docker](#chapter-2-installing-docker)
+  - [Requirements](#requirements)
   - [Installing on Ubuntu and Debian](#installing-on-ubuntu-and-debian)
     - [Checking for prerequisites (Ubuntu)](#checking-for-prerequisites-ubuntu)
       - [Kernel (Ubuntu)](#kernel-ubuntu)
     - [Installing Docker (Ubuntu)](#installing-docker-ubuntu)
     - [Docker and UFW](#docker-and-ufw)
   - [Installing on Red Hat and family](#installing-on-red-hat-and-family)
+    - [Checking for prerequisite](#checking-for-prerequisite)
+      - [Kernel](#kernel)
     - [Installing Docker (Red Hat)](#installing-docker-red-hat)
       - [Installing on Red Hat Enterprise Linux 6 and CentOS 6](#installing-on-red-hat-enterprise-linux-6-and-centos-6)
       - [Installing on Red Hat Enterprise Linux 7](#installing-on-red-hat-enterprise-linux-7)
       - [Installing on Fedora](#installing-on-fedora)
     - [Starting the Docker daemon on the Red Hat family](#starting-the-docker-daemon-on-the-red-hat-family)
   - [Docker for Mac](#docker-for-mac)
+    - [Installing Docker for Mac](#installing-docker-for-mac)
+    - [Testing Docker for Mac](#testing-docker-for-mac)
   - [Docker for Windows installtion](#docker-for-windows-installtion)
+    - [Installing Docker for Windows](#installing-docker-for-windows)
+    - [Testing Docker for Windows](#testing-docker-for-windows)
   - [Using Docker on OSX and Windows with this book](#using-docker-on-osx-and-windows-with-this-book)
   - [Docker installation script](#docker-installation-script)
+  - [Binary installation](#binary-installation)
   - [The Docker daemon](#the-docker-daemon)
     - [Configuring the Docker daemon](#configuring-the-docker-daemon)
     - [Checking that the Docker daemon is running](#checking-that-the-docker-daemon-is-running)
+  - [Upgrading Docker](#upgrading-docker)
+  - [Docker user interfaces](#docker-user-interfaces)
 
 💡 Tips: Docker for Mac and Docker for Windows are a collection of components.
 It includes a tiny **virtual machine** shipped with a **wrapper script** to
@@ -29,6 +39,8 @@ in the virtual machine.
 
 💡 Tips: Using `Puppet` and `Chef` to install Docker are recommended rather than
 using a manual process.
+
+## Requirements
 
 ## Installing on Ubuntu and Debian
 
@@ -113,6 +125,10 @@ sudo ufw reload
 
 ## Installing on Red Hat and family
 
+### Checking for prerequisite
+
+#### Kernel
+
 ### Installing Docker (Red Hat)
 
 #### Installing on Red Hat Enterprise Linux 6 and CentOS 6
@@ -177,6 +193,10 @@ Docker for Mac ships with a variety of components:
 - Kitematic - is a GUI that helps you run Docker locally and interact with the
   Docker Hub.
 
+### Installing Docker for Mac
+
+### Testing Docker for Mac
+
 ## Docker for Windows installtion
 
 Docker for Windows ships with a variety of components:
@@ -189,6 +209,10 @@ Docker for Windows ships with a variety of components:
 
 Docker for Windows requires Microsoft Hyper-V.
 
+### Installing Docker for Windows
+
+### Testing Docker for Windows
+
 ## Using Docker on OSX and Windows with this book
 
 📢 On Windows: You can't mount a local directory on host into the Docker host
@@ -199,6 +223,8 @@ running in the Docker virtual machine because they don't share a file system.
 ```sh
 curl https://get.docker.com/ | sudo sh
 ```
+
+## Binary installation
 
 ## The Docker daemon
 
@@ -263,3 +289,7 @@ sudo start docker
 sudo service docker stop
 sudo service docker start
 ```
+
+## Upgrading Docker
+
+## Docker user interfaces
