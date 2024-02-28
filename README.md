@@ -20,7 +20,9 @@ disciplines according to the
     1. [Music](music)
         1. Music Theory
         2. [Organology](music/organology)
-4. [Visual Arts](https://en.wikipedia.org/wiki/Outline_of_the_visual_arts)
+4. [Philosophy](https://en.wikipedia.org/wiki/Philosophy)
+    1. Logic
+5. [Visual Arts](https://en.wikipedia.org/wiki/Outline_of_the_visual_arts)
     1. [Fine Arts](./fine_arts/)
         1. [Graphic Arts](./fine_arts/graphic_arts/)
 
