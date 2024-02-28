@@ -24,6 +24,22 @@
       - [USER](#user)
       - [VOLUME](#volume)
       - [ADD](#add)
+      - [COPY](#copy)
+      - [LABEL](#label)
+      - [STOPSIGNAL](#stopsignal)
+      - [ARG](#arg)
+      - [SHELL](#shell)
+      - [HEALTHCHECK](#healthcheck)
+      - [ONBUILD](#onbuild)
+  - [Pushing images to the Docker Hub](#pushing-images-to-the-docker-hub)
+    - [Automated Builds](#automated-builds)
+  - [Deleting an image](#deleting-an-image)
+  - [Running your own Docker registry](#running-your-own-docker-registry)
+    - [Running a registry from a container](#running-a-registry-from-a-container)
+    - [Testing the new registry](#testing-the-new-registry)
+  - [Alternative Indexes](#alternative-indexes)
+    - [Quay](#quay)
+  - [Summary](#summary)
 
 ## What is a Docker image?
 
@@ -567,3 +583,231 @@ created from the image.
 💡 The `docker cp` command allows you to copy files to and from your containers.
 
 #### ADD
+
+It can add files and directories from the build environment into the image.
+
+```dockerfile
+ADD software.lic /opt/application/software.lic
+```
+
+The source of the file can be a URL, filename, or directory as long as it is
+inside the build context or environment. You ***cannot*** `ADD` files from
+outside the build directory or context.
+
+If the **destination** ends in a `/`, then it considers the source a directory.
+If it doesn't, it considers the source a file.
+
+```dockerfile
+ADD http://wordpress.org/latest.zip /root/wordpress.zip
+```
+
+The `ADD` instruction has some special magic for taking care of local `tar`
+archives (`gzip`, `bzip2`, `xz`). If a source file is a `tar`, Docker will
+automatically unpack it.
+
+```dockerfile
+ADD latest.tar.gz /var/www/wordpress/
+```
+
+The archive is unpacked with the same behavior as running `tar` with the `-x`
+option: the ouput is the union of whatever exists in the destination plus the
+contents of the archive.
+
+If the destination doesn't exist, Docker will create the full path. New files
+and directories will be created with a mode of 0755 and a UID and GID of 0.
+
+📝 If the file or directories added by an `ADD` change then this will invalidate
+the cache for all follwing instructions in the `Dockerfile`.
+
+#### COPY
+
+The key difference between `ADD` and `COPY` is that the `COPY` is purely focused
+on copying local files from the build context and does not have any extraction
+or decompression capabilities.
+
+```dockerfile
+COPY conf.d/ /etc/apache2/
+```
+
+This will copy files from `conf.d` directory to the `/etc/apache2/` directory.
+
+The source of the files must be the path to a file or directory relative to the
+build context. You **cannot** copy anthing that is outside of the build context
+directory. Because the build context is uploaded to the Docker daemon, and the
+copy takes place there. The destination should be an absolute path inside the
+container.
+
+Any files and directories created by the copy will have a UID and GID of 0.
+
+If the source is a directory, the entire directory is copied. Everything is
+copied including their filesystem metadata.
+
+#### LABEL
+
+It adds metadata to a Docker image. It is in the form of key/value pairs.
+
+```dockerfile
+LABEL version="1.0"
+LABEL location="New York" type="Data Center" role="Web Server"
+```
+
+It is recommended combining all the metadata in a single `LABEL` instruction to
+save creating multiple layers with each piece of metadata.
+
+#### STOPSIGNAL
+
+It sets the system call signal that will be sent to the container when you tell
+it to stop. This signal can be a valid number or a signal name.
+
+#### ARG
+
+It defines variables that can be passed at build-time via the `docker build`
+command. This is done using the `--build-arg` flag. You can only specify
+build-time arguments that have been defined in the `Dockerfile`.
+
+```dockerfile
+ARG build
+ARG webapp_user=user
+```
+
+If no value is specified for the argument at build-time using `--build-arg`,
+then the default is used.
+
+```sh
+docker build --build-arg build=1234 -t octobug/webapp .
+```
+
+⚠️ This isn't safe for passing credentials. They will be exposed during the
+build process and in the build history of the image.
+
+Docker has a set of predefined `ARG` variables that you can use:
+
+- `HTTP_PROXY`
+- `http_proxy`
+- `HTTPS_PROXY`
+- `https_proxy`
+- `FTP_PROXY`
+- `ftp_proxy`
+- `NO_PROXY`
+- `no_proxy`
+
+#### SHELL
+
+It overrides the default shell. The defailt shells are
+
+- Linux: `["/bin/sh", "-c"]`
+- Windows: `["cmd", "/S", "/C"]`
+
+The `SHELL` instruction can be used multiple times. Each new `SHELL` instruction
+overrides all previous `SHELL` instructions.
+
+#### HEALTHCHECK
+
+It tells Docker how to test a container to check that it is still working
+correctly. This allows you to check things like a web site being served or an
+API endpoint responding with the correct data.
+
+When a container has a health check specified, it has a health status in
+addition to its normal status.
+
+```Dockerfile
+HEALTHCHECK --interval=10s --timeout=1m --retries=5 CMD curl http://localhost || exit 1
+```
+
+The command after the `"CMD"` keyword can be either a shell command or an exec
+array. The command should exit with `0` to indicate health or `1` an unhealthy
+state.
+
+We can see the state of the health check using the `docker inspect` command.
+
+```sh
+docker inspect --format '{{.State.Health.Status}}' static_web
+docker inspect --format '{{range .State.Health.Log}} {{.ExitCode}} {{.Output}} {{end}}' static_web
+```
+
+You can also disable any health checks specified in any base images:
+
+```dockerfile
+HEALTHCHECK NONE
+```
+
+#### ONBUILD
+
+It adds triggers to images. A trigger is executed when the image is used as the
+basis of another image. e.g.
+
+- if you have an image that needs source code added from a specific location
+  that might not yet be available.
+- if you need to execute a build script that is specific to some environments
+- ...
+
+The trigger inserts a new instruction in the build process, as if it were
+specified right after the `FROM` instruction. It can be any build instruction.
+
+```dockerfile
+ONBUILD ADD . /app/src
+ONBUILD RUN cd /app/src; make
+```
+
+This would add an `ONBUILD` trigger to the image being created. With it, we can
+always add the local source and specify some configuration or build information
+for **each application**.
+
+The `ONBUILD` triggers are executed in the order specified in the parent image
+and are only inherited once, it cannot be inherited by grandchildren.
+
+📝 There are several instructions which can't be used on `ONBUILD`:
+
+- `FROM`
+- `MAINTAINER`
+- `ONBUILD`
+
+## Pushing images to the Docker Hub
+
+```sh
+docker push octobug/static_web
+```
+
+Images without a user prefix are pushed to the root repository. Root
+repositories are managed only by the Docker.
+
+### Automated Builds
+
+We can realize Automated Builds by connecting a GitHub or BitBucket repository
+containing a `Dockerfile` to the Docker Hub. When we push to the repository,
+an image build will be triggered.
+
+📝 You can't push to an Automated Build using `docker push`.
+
+## Deleting an image
+
+```sh
+docker rmi octobug/static_web
+```
+
+## Running your own Docker registry
+
+> <https://docs.docker.com/registry/>
+
+### Running a registry from a container
+
+```sh
+docker run -d -p 5000:5000 --name registry registry:2
+```
+
+### Testing the new registry
+
+```sh
+docker tag 1105669f17ab localhost:5001/octobug/static_web
+docker push localhost:5001/octobug/static_web
+
+docker run -it localhost:5001/octobug/static_web /bin/bash
+```
+
+## Alternative Indexes
+
+### Quay
+
+> <https://quay.io/>
+
+## Summary
