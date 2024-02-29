@@ -4,11 +4,34 @@
 
 - [The GitHub Blog](#the-github-blog)
   - [2008](#2008)
+    - [2008.05](#200805)
     - [2008.04](#200804)
     - [2008.03](#200803)
     - [2008.02](#200802)
 
 ## 2008
+
+### 2008.05
+
+- 2008.05.
+- 2008.05.
+- 2008.05.
+- 2008.05.
+- 2008.05.
+- 2008.05.
+- 2008.05.
+- 2008.05.
+- 2008.05.
+- 2008.05.
+- 2008.05.
+- 2008.05.11 - [Our Open Source](https://github.blog/2008-05-11-our-open-source/)
+- 2008.05.11 - [Tasty Tidbits](https://github.blog/2008-05-11-tasty-tidbits/)
+- 2008.05.11 - [The Fabulous Scriptaculous Wiki](https://github.blog/2008-05-11-the-fabulous-scriptaculous-wiki/)
+- 2008.05.08 - [Happy Birthday!](https://github.blog/2008-05-08-happy-birthday/)
+- 2008.05.07 - [Rolling with Engine Yard](https://github.blog/2008-05-07-rolling-with-engine-yard/)
+- 2008.05.05 - [Getting Paid the Open Source Way](https://github.blog/2008-05-05-getting-paid-the-open-source-way/)
+- 2008.05.03 - [GitHub Badges!](https://github.blog/2008-05-03-github-badges/)
+- 2008.05.02 - [Deploying Without Deploy Keys](https://github.blog/2008-05-02-deploying-without-deploy-keys/)
 
 ### 2008.04
 
