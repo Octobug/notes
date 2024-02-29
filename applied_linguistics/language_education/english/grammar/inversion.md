@@ -81,11 +81,11 @@ So long as men can breathe, or eyes can see,
 
 这类地点副词有 here, there 等。
 
-`1`: Here is your coffee.
+`1` Here is your coffee.
 
 - Your coffee is here.
 
-`2`: Here comes the bus.
+`2` Here comes the bus.
 
 - The bus comes here.
 
@@ -117,17 +117,17 @@ So long as men can breathe, or eyes can see,
 
 #### 1.1.2 介词短语在句首的倒装
 
-`1`: In the classroom are sitting many students.
+`1` In the classroom are sitting many students.
 
 - Many students are sitting in the classroom.
 
-`2`: On top of the mountain stands a tall pine.
+`2` On top of the mountain stands a tall pine.
 
 - A tall pine stands on top of the mountain.
 
-`3`: At the table sat a rabbit.
+`3` At the table sat a rabbit.
 
-`4`: Along with the many folks looking to make a permanent home in the United
+`4` Along with the many folks looking to make a permanent home in the United
 States **came** those who had no intention to stay, and who would make some
 money and then go home.
 
@@ -135,7 +135,7 @@ money and then go home.
   home **came** along with the many folks looking to make a permanent home in
   the United States.
 
-`5`: Among the commission's 51 members **are** top-tier-university presidents,
+`5` Among the commission's 51 members **are** top-tier-university presidents,
 scholars, lawyers, judges, and business executives, as well as prominent
 figures from diplomacy, filmmaking, music, and journalism.
 
@@ -169,7 +169,12 @@ freedom of thought and of personal expression.
 `4` Adding to a woman's increased dose of stress chemicals, are her increased
 "opportunities" for stress. [2008 年阅读 text 1]
 
-- `译` 给女性增加更多压力化学物质剂量的是：她们有更多面临压力的机会。
+- `译` 给女性增加更多压力化学物质剂量的是：她s们有更多面临压力的机会。
+
+`5` Less well known is the advantage that Adam Abbott has in life over Zoë
+Zysman. (英一 2004 Text 2)
+
+- 主语的定语从句较长，倒装以适应“尾重原则”。
 
 #### 1.2.2 可作形容词的过去/现在分词的倒装
 
