@@ -82,16 +82,15 @@ disciplines according to the
         5. [JavaScript](./programming_languages/javascript/)
         6. [Python](programming_languages/python)
         7. [TypeScript](./programming_languages/typescript/)
-    8. [Software Development](software_development)
-        1. [Git](software_development/git)
+    8. [Software Engineering](software_engineering)
+        1. [Git](./software_engineering/git/)
         2. Open Source
-        3. [Software Versioning](software_development/software_versioning)
-    9. [Software Engineering](software_engineering)
-        1. [Software Design](software_engineering/software_design)
-        2. Software Maintenance
-        3. [Software Testing](software_engineering/software_testing)
-        4. [System Design](./software_engineering/system_design)
-    10. [Miscellaneous](./cs_misc)
+        3. [Software Design](software_engineering/software_design)
+        4. Software Maintenance
+        5. [Software Testing](software_engineering/software_testing)
+        6. [Software Versioning](software_development/software_versioning)
+        7. [System Design](./software_engineering/system_design)
+    9. [Miscellaneous](./cs_misc)
 
 ### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)
 
