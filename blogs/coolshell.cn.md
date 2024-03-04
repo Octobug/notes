@@ -23,12 +23,12 @@
 
 ### 2009.03
 
-- [ ] 2009.03.29 - [OSGI和JAVA企业级运算的未来方向](https://coolshell.org/articles/294.html)
-- [ ] 2009.03.27 - [雷人的程序注释](https://coolshell.org/articles/290.html)
-- [ ] 2009.03.26 - [深入浅出单实例SINGLETON设计模式](https://coolshell.org/articles/265.html)
+- 2009.03.29 - [OSGI和JAVA企业级运算的未来方向](https://coolshell.org/articles/294.html)
+- 2009.03.27 - [雷人的程序注释](https://coolshell.org/articles/290.html)
+- 2009.03.26 - [深入浅出单实例SINGLETON设计模式](https://coolshell.org/articles/265.html) ⭕️
 - 2009.03.26 - [基于JVM的语言正在开始流行](https://coolshell.org/articles/247.html)
 - 2009.03.25 - [全球IP地址数据库](https://coolshell.org/articles/244.html)
-- 2009.03.25 - [非常不错的编程技术教程](https://coolshell.org/articles/240.html) ⭕️
+- 2009.03.25 - [非常不错的编程技术教程](https://coolshell.org/articles/240.html)
 - 2009.03.22 - [C++和JAVA传统中积极的一面](https://coolshell.org/articles/209.html)
 - 2009.03.22 - [优秀程序员的十个习惯](https://coolshell.org/articles/222.html/)
 - 2009.03.21 - [一位离开GOOGLE的设计师离职感言的读后感](https://coolshell.org/articles/208.html)
