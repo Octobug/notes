@@ -12,6 +12,9 @@
     - [Simple Log Analysis](#simple-log-analysis)
       - [Chain of commands versus custom program](#chain-of-commands-versus-custom-program)
       - [Sorting versus in-memory aggregation](#sorting-versus-in-memory-aggregation)
+    - [The Unix Philosophy](#the-unix-philosophy)
+      - [A uniform interface](#a-uniform-interface)
+      - [Separation of logic and wiring](#separation-of-logic-and-wiring)
 
 Three different types of systems:
 
@@ -109,20 +112,87 @@ suit your needs.
 
 #### Chain of commands versus custom program
 
-Instead of the chain of Unix commands, you could write a simple program to do the same thing. For example, in Ruby, it might look something like this:
+You could write a simple program to do the same thing. For example, in Ruby, it
+might look something like this:
 
-counts = Hash.new(0)
-File.open('/var/log/nginx/access.log') do |file| file.each do |line|
-        url = line.split[6]
-counts[url] += 1 end
+```rb
+counts = Hash.new(0) # 1.
+File.open('/var/log/nginx/access.log') do |file|
+  file.each do |line|
+    url = line.split[6] # 2.
+    counts[url] += 1 # 3.
+  end
 end
-    top5 = counts.map{|url, count| [count, url] }.sort.reverse[0...5]
-    top5.each{|count, url| puts "#{count} #{url}" }
-counts is a hash table that keeps a counter for the number of times we’ve seen each URL. A counter is zero by default.
-From each line of the log, we take the URL to be the seventh whitespace- separated field (the array index here is 6 because Ruby’s arrays are zero-indexed).
-Increment the counter for the URL in the current line of the log.
-Sort the hash table contents by counter value (descending), and take the top five entries.
-Print out those top five entries.
-This program is not as concise as the chain of Unix pipes, but it’s fairly readable, and which of the two you prefer is partly a matter of taste. However, besides the superfi‐ cial syntactic differences between the two, there is a big difference in the execution flow, which becomes apparent if you run this analysis on a large file.
+
+top5 = counts.map{|url, count| [count, url] }.sort.reverse[0...5] # 4.
+top5.each{|count, url| puts "#{count} #{url}" } # 5.
+```
+
+This program is not as concise as the chain of Unix pipes, but it’s fairly
+readable, and which of the two you prefer is partly a matter of taste. However,
+besides the superficial syntactic differences between the two, there is a big
+difference in the execution flow, which becomes apparent if you run this
+analysis on a large file.
 
 #### Sorting versus in-memory aggregation
+
+The Ruby script keeps an in-memory hash table of URLs. The Unix pipeline
+example does not have such a hash table, but instead relies on sorting a list
+of URLs in which multiple occurrences of the same URL are simply repeated.
+
+Which approach is better depends on how many different URLs you have.
+
+If the job’s working set is larger than the available memory, the sorting
+approach has the advantage that it can make efficient use of disks. The
+principle: chunks of data can be sorted in memory and written out to disk as
+segment files, and then multiple sorted segments can be merged into a larger
+sorted file. **Mergesort** has sequential access patterns that perform well on
+disks.
+
+The `sort` utility in GNU Coreutils (Linux) automatically handles
+larger-than-memory datasets by spilling to disk, and automatically parallelizes
+sorting across multiple CPU cores. This means that the simple chain of Unix
+commands easily scales to large datasets, without running out of memory. The
+bottleneck is likely to be the rate at which the input file can be read from
+disk.
+
+### The Unix Philosophy
+
+Using a chain of commands to do something complex was one of the key design
+ideas of Unix, and it remains astonishingly relevant today.
+
+Doug McIlroy, the inventor of Unix pipes, first described them like this: “We
+should have some ways of connecting programs like [a] garden hose — screw in
+another segment when it becomes necessary to massage data in another way. This
+is the way of I/O also.” The idea of connecting pro grams with pipes became
+part of what is now known as the Unix philosophy — a set of design principles:
+
+1. Make each program do one thing well. To do a new job, build afresh rather
+   than complicate old programs by adding new “features”.
+2. Expect the output of every program to become the input to another, as yet
+   unknown, program. Don’t clutter output with extraneous information. Avoid
+   stringently columnar or binary input formats. Don’t insist on interactive
+   input.
+3. Design and build software, even operating systems, to be tried early,
+   ideally within weeks. Don’t hesitate to throw away the clumsy parts and
+   rebuild them.
+4. Use tools in preference to unskilled help to lighten a programming task,
+   even if you have to detour to build the tools and expect to throw some of
+   them out after you’ve finished using them.
+
+This approach — automation, rapid prototyping, incremental iteration, being
+friendly to experimentation, and breaking down large projects into manageable
+chunks — sounds remarkably like the Agile and DevOps movements of today.
+
+#### A uniform interface
+
+If you expect the output of one program to become the input to another program, that means those programs must use the same data format—in other words, a com‐ patible interface. If you want to be able to connect any program’s output to any pro‐ gram’s input, that means that all programs must use the same input/output interface.
+In Unix, that interface is a file (or, more precisely, a file descriptor). A file is just an ordered sequence of bytes. Because that is such a simple interface, many different things can be represented using the same interface: an actual file on the filesystem, a communication channel to another process (Unix socket, stdin, stdout), a device driver (say /dev/audio or /dev/lp0), a socket representing a TCP connection, and so on. It’s easy to take this for granted, but it’s actually quite remarkable that these very different things can share a uniform interface, so they can easily be plugged together.ii
+By convention, many (but not all) Unix programs treat this sequence of bytes as ASCII text. Our log analysis example used this fact: awk, sort, uniq, and head all treat their input file as a list of records separated by the \n (newline, ASCII 0x0A) charac‐ ter. The choice of \n is arbitrary—arguably, the ASCII record separator 0x1E would have been a better choice, since it’s intended for this purpose [14]—but in any case, the fact that all these programs have standardized on using the same record separator allows them to interoperate.
+
+The parsing of each record (i.e., a line of input) is more vague. Unix tools commonly split a line into fields by whitespace or tab characters, but CSV (comma-separated), pipe-separated, and other encodings are also used. Even a fairly simple tool like xargs has half a dozen command-line options for specifying how its input should be parsed.
+The uniform interface of ASCII text mostly works, but it’s not exactly beautiful: our log analysis example used {print $7} to extract the URL, which is not very readable. In an ideal world this could have perhaps been {print $request_url} or something of that sort. We will return to this idea later.
+Although it’s not perfect, even decades later, the uniform interface of Unix is still something remarkable. Not many pieces of software interoperate and compose as well as Unix tools do: you can’t easily pipe the contents of your email account and your online shopping history through a custom analysis tool into a spreadsheet and post the results to a social network or a wiki. Today it’s an exception, not the norm, to have programs that work together as smoothly as Unix tools do.
+Even databases with the same data model often don’t make it easy to get data out of one and into the other. This lack of integration leads to Balkanization of data.
+
+#### Separation of logic and wiring
