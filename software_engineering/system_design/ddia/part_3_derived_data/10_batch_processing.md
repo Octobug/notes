@@ -15,6 +15,9 @@
     - [The Unix Philosophy](#the-unix-philosophy)
       - [A uniform interface](#a-uniform-interface)
       - [Separation of logic and wiring](#separation-of-logic-and-wiring)
+      - [Transparency and experimentation](#transparency-and-experimentation)
+  - [MapReduce and Distributed Filesystems](#mapreduce-and-distributed-filesystems)
+    - [MapReduce Job Execution](#mapreduce-job-execution)
 
 Three different types of systems:
 
@@ -186,13 +189,76 @@ chunks — sounds remarkably like the Agile and DevOps movements of today.
 
 #### A uniform interface
 
-If you expect the output of one program to become the input to another program, that means those programs must use the same data format—in other words, a com‐ patible interface. If you want to be able to connect any program’s output to any pro‐ gram’s input, that means that all programs must use the same input/output interface.
-In Unix, that interface is a file (or, more precisely, a file descriptor). A file is just an ordered sequence of bytes. Because that is such a simple interface, many different things can be represented using the same interface: an actual file on the filesystem, a communication channel to another process (Unix socket, stdin, stdout), a device driver (say /dev/audio or /dev/lp0), a socket representing a TCP connection, and so on. It’s easy to take this for granted, but it’s actually quite remarkable that these very different things can share a uniform interface, so they can easily be plugged together.ii
-By convention, many (but not all) Unix programs treat this sequence of bytes as ASCII text. Our log analysis example used this fact: awk, sort, uniq, and head all treat their input file as a list of records separated by the \n (newline, ASCII 0x0A) charac‐ ter. The choice of \n is arbitrary—arguably, the ASCII record separator 0x1E would have been a better choice, since it’s intended for this purpose [14]—but in any case, the fact that all these programs have standardized on using the same record separator allows them to interoperate.
+If you want to be able to connect any program’s output to any program’s input,
+that means that all programs must use the same input/output interface.
 
-The parsing of each record (i.e., a line of input) is more vague. Unix tools commonly split a line into fields by whitespace or tab characters, but CSV (comma-separated), pipe-separated, and other encodings are also used. Even a fairly simple tool like xargs has half a dozen command-line options for specifying how its input should be parsed.
-The uniform interface of ASCII text mostly works, but it’s not exactly beautiful: our log analysis example used {print $7} to extract the URL, which is not very readable. In an ideal world this could have perhaps been {print $request_url} or something of that sort. We will return to this idea later.
-Although it’s not perfect, even decades later, the uniform interface of Unix is still something remarkable. Not many pieces of software interoperate and compose as well as Unix tools do: you can’t easily pipe the contents of your email account and your online shopping history through a custom analysis tool into a spreadsheet and post the results to a social network or a wiki. Today it’s an exception, not the norm, to have programs that work together as smoothly as Unix tools do.
-Even databases with the same data model often don’t make it easy to get data out of one and into the other. This lack of integration leads to Balkanization of data.
+In Unix, that interface is a file (more precisely, a file descriptor). A file
+is just an ordered sequence of bytes. Because that is such a simple interface,
+many different things can be represented using the same interface: an actual
+file on the filesystem, a communication channel to another process (Unix
+`socket`, `stdin`, `stdout`), a device driver (say `/dev/audio` or `/dev/lp0`),
+a socket representing a TCP connection, and so on.
+
+By convention, many Unix programs treat this sequence of bytes as ASCII text.
+
+The parsing of each record is more vague. Unix tools commonly split a line into
+fields by whitespace or tab characters, but CSV (comma-separated),
+pipe-separated, and other encodings are also used.
+
+The uniform interface of ASCII text mostly works, but it’s not exactly
+beautiful.
+
+Even databases with the same data model often don’t make it easy to get data
+out of one and into the other. This lack of integration leads to Balkanization
+of data.
 
 #### Separation of logic and wiring
+
+Another characteristic feature of Unix tools is their use of standard input
+(`stdin`) and standard output (`stdout`). If you run a program and don’t
+specify anything else, `stdin` comes from the keyboard and `stdout` goes to the
+screen.
+
+Separating the input/output wiring from the program logic makes it easier to
+compose small tools into bigger systems.
+
+However, there are limits to what you can do with `stdin` and `stdout`.
+Programs that need multiple inputs or outputs are possible but tricky. You
+can’t pipe a program’s output into a network connection.
+
+- Except by using a separate tool, such as `netcat` or `curl`. Unix started out
+  trying to represent everything as files, but the BSD sockets API deviated
+  from that convention. The research operating systems Plan 9 and Inferno are
+  more consistent in their use of files: they represent a TCP connection as a
+  file in `/net/tcp`.
+
+#### Transparency and experimentation
+
+Part of what makes Unix tools so successful is that they make it quite easy to
+see what is going on:
+
+- The input files to Unix commands are normally treated as immutable. You can
+  run the commands as often as you want, trying various command-line options,
+  without damaging the input files.
+- You can end the pipeline at any point, pipe the output into `less`, and look
+  at it to see if it has the expected form.
+- You can write the output of one pipeline stage to a file and use that file as
+  input to the next stage. This allows you to restart the later stage without
+  rerunning the entire pipeline.
+
+However, the biggest limitation of Unix tools is that they run only on a single
+machine — and that’s where tools like Hadoop come in.
+
+## MapReduce and Distributed Filesystems
+
+MapReduce is a bit like Unix tools, but distributed across potentially thousands of machines. Like Unix tools, it is a fairly blunt, brute-force, but surprisingly effective tool. A single MapReduce job is comparable to a single Unix process: it takes one or more inputs and produces one or more outputs.
+As with most Unix tools, running a MapReduce job normally does not modify the input and does not have any side effects other than producing the output. The output files are written once, in a sequential fashion (not modifying any existing part of a file once it has been written).
+While Unix tools use stdin and stdout as input and output, MapReduce jobs read and write files on a distributed filesystem. In Hadoop’s implementation of Map‐ Reduce, that filesystem is called HDFS (Hadoop Distributed File System), an open source reimplementation of the Google File System (GFS) [19].
+Various other distributed filesystems besides HDFS exist, such as GlusterFS and the Quantcast File System (QFS) [20]. Object storage services such as Amazon S3, Azure Blob Storage, and OpenStack Swift [21] are similar in many ways.iv In this chapter we will mostly use HDFS as a running example, but the principles apply to any dis‐ tributed filesystem.
+HDFS is based on the shared-nothing principle (see the introduction to Part II), in contrast to the shared-disk approach of Network Attached Storage (NAS) and Storage Area Network (SAN) architectures. Shared-disk storage is implemented by a central‐ ized storage appliance, often using custom hardware and special network infrastruc‐ ture such as Fibre Channel. On the other hand, the shared-nothing approach requires no special hardware, only computers connected by a conventional datacenter net‐ work.
+HDFS consists of a daemon process running on each machine, exposing a network service that allows other nodes to access files stored on that machine (assuming that every general-purpose machine in a datacenter has some disks attached to it). A cen‐ tral server called the NameNode keeps track of which file blocks are stored on which machine. Thus, HDFS conceptually creates one big filesystem that can use the space on the disks of all machines running the daemon.
+In order to tolerate machine and disk failures, file blocks are replicated on multiple machines. Replication may mean simply several copies of the same data on multiple machines, as in Chapter 5, or an erasure coding scheme such as Reed–Solomon codes, which allows lost data to be recovered with lower storage overhead than full replica‐ tion [20, 22]. The techniques are similar to RAID, which provides redundancy across several disks attached to the same machine; the difference is that in a distributed file‐ system, file access and replication are done over a conventional datacenter network without special hardware.
+
+HDFS has scaled well: at the time of writing, the biggest HDFS deployments run on tens of thousands of machines, with combined storage capacity of hundreds of peta‐ bytes [23]. Such large scale has become viable because the cost of data storage and access on HDFS, using commodity hardware and open source software, is much lower than that of the equivalent capacity on a dedicated storage appliance [24].
+
+### MapReduce Job Execution
