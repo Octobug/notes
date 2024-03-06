@@ -8,6 +8,7 @@
 - [Wild World: Photographing Iconic Wildlife](#wild-world-photographing-iconic-wildlife)
   - [Tiger](#tiger)
     - [Unearthly Hour](#unearthly-hour)
+    - [I saw a tiger!](#i-saw-a-tiger)
 
 ## Tiger
 
@@ -21,5 +22,16 @@
     - Myanmar (Burma) 缅甸
 
 ### Unearthly Hour
+
+- Ranthambore Tiger Reserve, Rajasthan, India
+- Bandhavgarh Tiger Reserve, Madhya Pradesh, India
+
+💡 Photographic tip: Communicate!
+
+- The necessary manoeuvring of the vehicle for tiger photography requires
+  excellent communication between you and the guide and driver.
+- To photograph tigers, it's not always good as close as possible.
+
+### I saw a tiger!
 
 >>>>> progress
