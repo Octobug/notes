@@ -22,6 +22,12 @@
       - [MapReduce workflows](#mapreduce-workflows)
     - [Reduce-Side Joins and Grouping](#reduce-side-joins-and-grouping)
       - [Example: analysis of user activity events](#example-analysis-of-user-activity-events)
+      - [Sort-merge joins](#sort-merge-joins)
+      - [Bringing related data together in the same place](#bringing-related-data-together-in-the-same-place)
+      - [GROUP BY](#group-by)
+      - [Handling skew](#handling-skew)
+    - [Map-Side Joins](#map-side-joins)
+      - [Broadcast hash joins](#broadcast-hash-joins)
 
 Three different types of systems:
 
@@ -448,11 +454,207 @@ automatically wired together appropriately.
 
 ### Reduce-Side Joins and Grouping
 
-We discussed joins in Chapter 2 in the context of data models and query languages, but we have not delved into how joins are actually implemented. It is time that we pick up that thread again.
-In many datasets it is common for one record to have an association with another record: a foreign key in a relational model, a document reference in a document model, or an edge in a graph model. A join is necessary whenever you have some code that needs to access records on both sides of that association (both the record that holds the reference and the record being referenced). As discussed in Chapter 2, denormalization can reduce the need for joins but generally not remove it entirely.v
-In a database, if you execute a query that involves only a small number of records, the database will typically use an index to quickly locate the records of interest (see Chap‐ ter 3). If the query involves joins, it may require multiple index lookups. However, MapReduce has no concept of indexes—at least not in the usual sense.
-When a MapReduce job is given a set of files as input, it reads the entire content of all of those files; a database would call this operation a full table scan. If you only want to read a small number of records, a full table scan is outrageously expensive compared to an index lookup. However, in analytic queries (see “Transaction Processing or Analytics?” on page 90) it is common to want to calculate aggregates over a large number of records. In this case, scanning the entire input might be quite a reasonable thing to do, especially if you can parallelize the processing across multiple machines.
+In many datasets it is common for one record to have an association with
+another record: a ***foreign key*** in a relational model, a
+***document reference*** in a document model, or an ***edge*** in a graph
+model. A join is necessary whenever you have some code that needs to access
+records on both sides of that association. Denormalization can reduce the need
+for joins but generally not remove it entirely.
 
-When we talk about joins in the context of batch processing, we mean resolving all occurrences of some association within a dataset. For example, we assume that a job is processing the data for all users simultaneously, not merely looking up the data for one particular user (which would be done far more efficiently with an index).
+- Some databases support more general types of joins, for example using a
+  less-than operator instead of an equality operator.
+
+In a database, if you execute a query that involves only a small number of
+records, the database will typically use an index to quickly locate the records
+of interest. If the query involves joins, it may require multiple index
+lookups. However, MapReduce has no concept of indexes — at least not in the
+usual sense.
+
+When a MapReduce job is given a set of files as input, it reads the entire
+content of all of those files; a database would call this operation a full
+table scan. If you only want to read a small number of records, a full table
+scan is outrageously expensive compared to an index lookup. However, in
+analytic queries it is common to want to calculate aggregates over a large
+number of records. In this case, scanning the entire input might be quite a
+reasonable thing to do, especially if you can parallelize the processing across
+multiple machines.
+
+When we talk about joins in the context of batch processing, we mean resolving
+all occurrences of some association within a dataset. For example, we assume
+that a job is processing the data for all users simultaneously, not merely
+looking up the data for one particular user.
 
 #### Example: analysis of user activity events
+
+You can think of this example as being part of a ***star schema***: the log of
+events is the fact table, and the user database is one of the dimensions.
+
+![10_02_a_join_between_activity_log_and_profile](../images/10_02_a_join_between_activity_log_and_profile.png)
+
+An analytics task may need to correlate user activity with user profile
+information: for example, if the profile contains the user’s age or date of
+birth, the system could determine which pages are most popular with which age
+groups. However, the activity events contain only the user ID, not the full
+user profile information. Therefore, the activity events need to be joined with
+the user profile database.
+
+The simplest implementation of this join would go over the activity events one
+by one and query the user database for every user ID it encounters. This is
+possible, but it would most likely suffer from very poor performance: the
+processing throughput would be limited by the round-trip time to the database
+server, the effectiveness of a local cache would depend very much on the
+distribution of data, and running a large number of queries in parallel could
+easily overwhelm the database.
+
+In order to achieve good throughput in a batch process, the computation must be
+local to one machine. Making random-access requests over the network for every
+record you want to process is too slow. Moreover, querying a remote database
+would mean that the batch job becomes nondeterministic, because the data in the
+remote database might change.
+
+Thus, a better approach would be to take a copy of the user database (for
+example, extracted from a database backup using an ETL process) and to put it
+in the same distributed filesystem. You would then have the user database in
+one set of files in HDFS and the user activity records in another set of files,
+and could use MapReduce to bring together all of the relevant records in the
+same place and process them efficiently.
+
+#### Sort-merge joins
+
+In the case of Figure 10-2, the key extracted by the mapper would be the user
+ID: one set of mappers would go over the activity events, while another set of
+mappers would go over the user database (extracting the user ID as the key and
+the user’s date of birth as the value).
+
+![10_03_a_reduce_side_sort_merge_join](../images/10_03_a_reduce_side_sort_merge_join.png)
+
+When the MapReduce framework partitions the mapper output by key and then sorts
+the key-value pairs, the effect is that all the activity events and the user
+record with the same user ID become adjacent to each other in the reducer
+input. The MapReduce job can even arrange the records to be sorted such that
+the reducer always sees the record from the user database first, followed by
+the activity events in timestamp order — this technique is known as a
+***secondary sort***.
+
+The reducer can then perform the actual join logic easily: the reducer function
+is called once for every user ID, and thanks to the secondary sort, the first
+value is expected to be the date-of-birth record from the user database. The
+reducer stores the date of birth in a local variable and then iterates over the
+activity events with the same user ID, outputting pairs of viewed-url and
+viewer-age-in-years. Subsequent MapReduce jobs could then calculate the
+distribution of viewer ages for each URL, and cluster by age group.
+
+Since the reducer processes all of the records for a particular user ID in one
+go, it only needs to keep one user record in memory at any one time, and it
+never needs to make any requests over the network. This algorithm is known as a
+***sort-merge join***, since mapper output is sorted by key, and the reducers
+then merge together the sorted lists of records from both sides of the join.
+
+#### Bringing related data together in the same place
+
+In a sort-merge join, the mappers and the sorting process make sure that all
+the necessary data to perform the join operation for a particular user ID is
+brought together in the same place: a single call to the reducer. Having lined
+up all the required data in advance, the reducer can be a fairly simple,
+single-threaded piece of code that can churn through records with high
+throughput and low memory overhead.
+
+One way of looking at this architecture is that mappers “send messages” to the
+reducers. When a mapper emits a key-value pair, the key acts like the
+destination address to which the value should be delivered. Even though the key
+is just an arbitrary string, it behaves like an address: all key-value pairs
+with the same key will be delivered to the same destination (a call to the
+reducer).
+
+Using the MapReduce programming model has separated the physical network
+communication aspects of the computation from the application logic (processing
+the data once you have it). This separation contrasts with the typical use of
+databases, where a request to fetch data from a database often occurs somewhere
+deep inside a piece of application code. Since MapReduce handles all network
+communication, it also shields the application code from having to worry about
+partial failures, such as the crash of another node: MapReduce transparently
+retries failed tasks without affecting the application logic.
+
+#### GROUP BY
+
+Besides joins, another common use of the “bringing related data to the same
+place” pattern is grouping records by some key. All records with the same key
+form a group, and the next step is often to perform some kind of aggregation
+within each group — for example:
+
+- Counting the number of records in each group (`COUNT(*)` in SQL)
+- Adding up the values in one particular field (`SUM(fieldname)`) in SQL
+- Picking the top `k` records according to some ranking function
+
+The simplest way of implementing such a grouping operation with MapReduce is to
+set up the mappers so that the key-value pairs they produce use the desired
+grouping key. The partitioning and sorting process then brings together all the
+records with the same key in the same reducer. Thus, grouping and joining look
+quite similar when implemented on top of MapReduce.
+
+Another common use for grouping is collating all the activity events for a
+particular user session, in order to find out the sequence of actions that the
+user took — a process called ***sessionization***. For example, such analysis
+could be used to work out whether users who were shown a new version of your
+website are more likely to make a purchase than those who were shown the old
+version (A/B testing), or to calculate whether some marketing activity is
+worthwhile.
+
+If you have multiple web servers handling user requests, the activity events
+for a particular user are most likely scattered across various different
+servers’ log files. You can implement sessionization by using a session cookie,
+user ID, or similar identifier as the grouping key and bringing all the
+activity events for a particular user together in one place, while distributing
+different users’ events across different partitions.
+
+#### Handling skew
+
+The pattern of “bringing all records with the same key to the same place”
+breaks down if there is a very large amount of data related to a single key.
+For example, in a social network, most users might be connected to a few
+hundred people, but a small number of celebrities may have many millions of
+followers. Such disproportionately active database records are known as
+***linchpin objects*** or ***hot keys***.
+
+Collecting all activity related to a celebrity in a single reducer can lead to
+significant skew — that is, one reducer that must process significantly more
+records than the others. Since a MapReduce job is only complete when all of its
+mappers and reducers have completed, any subsequent jobs must wait for the
+slowest reducer to complete before they can start.
+
+If a join input has hot keys, there are a few algorithms you can use to
+compensate. For example, the ***skewed join*** method in Pig first runs a
+sampling job to determine which keys are hot. When performing the actual join,
+the mappers send any records relating to a hot key to one of several reducers,
+chosen at random (in contrast to conventional MapReduce, which chooses a
+reducer deterministically based on a hash of the key). For the other input to
+the join, records relating to the hot key need to be replicated to all reducers
+handling that key.
+
+This technique spreads the work of handling the hot key over several reducers,
+which allows it to be parallelized better, at the cost of having to replicate
+the other join input to multiple reducers. The ***sharded*** join method in
+Crunch is similar, but requires the hot keys to be specified explicitly rather
+than using a sampling job. This technique is also very similar to “Skewed
+Workloads and Relieving Hot Spots”, using randomization to alleviate hot spots
+in a partitioned database.
+
+Hive’s skewed join optimization takes an alternative approach. It requires hot
+keys to be specified explicitly in the table metadata, and it stores records
+related to those keys in separate files from the rest. When performing a join
+on that table, it uses a map-side join for the hot keys.
+
+When grouping records by a hot key and aggregating them, you can perform the
+grouping in two stages. The first MapReduce stage sends records to a random
+reducer, so that each reducer performs the grouping on a subset of records for
+the hot key and outputs a more compact aggregated value per key. The second
+MapReduce job then combines the values from all of the first-stage reducers
+into a single value per key.
+
+### Map-Side Joins
+
+The join algorithms described in the last section perform the actual join logic in the reducers, and are hence known as reduce-side joins. The mappers take the role of pre‐ paring the input data: extracting the key and value from each input record, assigning the key-value pairs to a reducer partition, and sorting by key.
+The reduce-side approach has the advantage that you do not need to make any assumptions about the input data: whatever its properties and structure, the mappers can prepare the data to be ready for joining. However, the downside is that all that sorting, copying to reducers, and merging of reducer inputs can be quite expensive. Depending on the available memory buffers, data may be written to disk several times as it passes through the stages of MapReduce [37].
+On the other hand, if you can make certain assumptions about your input data, it is possible to make joins faster by using a so-called map-side join. This approach uses a cut-down MapReduce job in which there are no reducers and no sorting. Instead, each mapper simply reads one input file block from the distributed filesystem and writes one output file to the filesystem—that is all.
+
+#### Broadcast hash joins
