@@ -28,6 +28,15 @@
       - [Handling skew](#handling-skew)
     - [Map-Side Joins](#map-side-joins)
       - [Broadcast hash joins](#broadcast-hash-joins)
+      - [Partitioned hash joins](#partitioned-hash-joins)
+      - [Map-side merge joins](#map-side-merge-joins)
+      - [MapReduce workflows with map-side joins](#mapreduce-workflows-with-map-side-joins)
+    - [The Output of Batch Workflows](#the-output-of-batch-workflows)
+      - [Building search indexes](#building-search-indexes)
+      - [Key-value stores as batch process output](#key-value-stores-as-batch-process-output)
+      - [Philosophy of batch process outputs](#philosophy-of-batch-process-outputs)
+    - [Comparing Hadoop to Distributed Databases](#comparing-hadoop-to-distributed-databases)
+      - [Diversity of storage](#diversity-of-storage)
 
 Three different types of systems:
 
@@ -653,8 +662,289 @@ into a single value per key.
 
 ### Map-Side Joins
 
-The join algorithms described in the last section perform the actual join logic in the reducers, and are hence known as reduce-side joins. The mappers take the role of pre‐ paring the input data: extracting the key and value from each input record, assigning the key-value pairs to a reducer partition, and sorting by key.
-The reduce-side approach has the advantage that you do not need to make any assumptions about the input data: whatever its properties and structure, the mappers can prepare the data to be ready for joining. However, the downside is that all that sorting, copying to reducers, and merging of reducer inputs can be quite expensive. Depending on the available memory buffers, data may be written to disk several times as it passes through the stages of MapReduce [37].
-On the other hand, if you can make certain assumptions about your input data, it is possible to make joins faster by using a so-called map-side join. This approach uses a cut-down MapReduce job in which there are no reducers and no sorting. Instead, each mapper simply reads one input file block from the distributed filesystem and writes one output file to the filesystem—that is all.
+The join algorithms described in the last section perform the actual join logic
+in the reducers, and are hence known as ***reduce-side joins***. The mappers
+take the role of preparing the input data: extracting the key and value from
+each input record, assigning the key-value pairs to a reducer partition, and
+sorting by key.
+
+The reduce-side approach has the advantage that you do not need to make any
+assumptions about the input data: whatever its properties and structure, the
+mappers can prepare the data to be ready for joining. However, the downside is
+that all that sorting, copying to reducers, and merging of reducer inputs can
+be quite expensive. Depending on the available memory buffers, data may be
+written to disk several times as it passes through the stages of MapReduce.
+
+On the other hand, if you can make certain assumptions about your input data,
+it is possible to make joins faster by using a so-called ***map-side join***.
+This approach uses a cut-down MapReduce job in which there are no reducers and
+no sorting. Instead, each mapper simply reads one input file block from the
+distributed filesystem and writes one output file to the filesystem — that is
+all.
 
 #### Broadcast hash joins
+
+The simplest way of performing a map-side join applies in the case where a
+large dataset is joined with a small dataset. In particular, the small dataset
+needs to be small enough that it can be loaded entirely into memory in each of
+the mappers.
+
+For example, imagine in the case of Figure 10-2 that the user database is small
+enough to fit in memory. In this case, when a mapper starts up, it can first
+read the user database from the distributed filesystem into an in-memory hash
+table. Once this is done, the mapper can scan over the user activity events and
+simply look up the user ID for each event in the hash table.
+
+- This example assumes that there is exactly one entry for each key in the hash
+  table, which is probably true with a user database. In general, the hash
+  table may need to contain several entries with the same key, and the join
+  operator will output all matches for a key.
+
+There can still be several map tasks: one for each file block of the large
+input to the join (in the example of Figure 10-2, the activity events are the
+large input). Each of these mappers loads the small input entirely into memory.
+
+This simple but effective algorithm is called a ***broadcast hash join***: the
+word ***broadcast*** reflects the fact that each mapper for a partition of the
+large input reads the entirety of the small input (so the small input is
+effectively “broadcast” to all partitions of the large input), and the word
+***hash*** reflects its use of a hash table. This join method is supported by
+Pig (***replicated join***), Hive (***MapJoin***), Cascading, and Crunch. It is
+also used in data warehouse query engines such as Impala.
+
+Instead of loading the small join input into an in-memory hash table, an
+alternative is to store the small join input in a read-only index on the local
+disk. The frequently used parts of this index will remain in the operating
+system’s page cache, so this approach can provide random-access lookups almost
+as fast as an in-memory hash table, but without actually requiring the dataset
+to fit in memory.
+
+#### Partitioned hash joins
+
+If the inputs to the map-side join are partitioned in the same way, then the
+hash join approach can be applied to each partition independently. In the case
+of Figure 10-2, you might arrange for the activity events and the user database
+to each be partitioned based on the last decimal digit of the user ID (so there
+are 10 partitions on either side). For example, mapper 3 first loads all users
+with an ID ending in 3 into a hash table, and then scans over all the activity
+events for each user whose ID ends in 3.
+
+If the partitioning is done correctly, you can be sure that all the records you
+might want to join are located in the same numbered partition, and so it is
+sufficient for each mapper to only read one partition from each of the input
+datasets. This has the advantage that each mapper can load a smaller amount of
+data into its hash table.
+
+This approach only works if both of the join’s inputs have the same number of
+partitions, with records assigned to partitions based on the same key and the
+same hash function. If the inputs are generated by prior MapReduce jobs that
+already perform this grouping, then this can be a reasonable assumption to make.
+
+Partitioned hash joins are known as ***bucketed map joins*** in Hive.
+
+#### Map-side merge joins
+
+Another variant of a map-side join applies if the input datasets are not only
+partitioned in the same way, but also ***sorted*** based on the same key. In
+this case, it does not matter whether the inputs are small enough to fit in
+memory, because a mapper can perform the same merging operation that would
+normally be done by a reducer: reading both input files incrementally, in order
+of ascending key, and matching records with the same key.
+
+If a map-side merge join is possible, it probably means that prior MapReduce
+jobs brought the input datasets into this partitioned and sorted form in the
+first place. In principle, this join could have been performed in the reduce
+stage of the prior job. However, it may still be appropriate to perform the
+merge join in a separate map-only job, for example if the partitioned and
+sorted datasets are also needed for other purposes besides this particular join.
+
+#### MapReduce workflows with map-side joins
+
+When the output of a MapReduce join is consumed by downstream jobs, the choice
+of map-side or reduce-side join affects the structure of the output. The output
+of a reduce-side join is partitioned and sorted by the join key, whereas the
+output of a map-side join is partitioned and sorted in the same way as the
+large input (since one map task is started for each file block of the join’s
+large input, regardless of whether a partitioned or broadcast join is used).
+
+map-side joins also make more assumptions about the size, sorting, and
+partitioning of their input datasets. Knowing about the physical layout of
+datasets in the distributed filesystem becomes important when optimizing join
+strategies: it is not sufficient to just know the encoding format and the name
+of the directory in which the data is stored; you must also know the number of
+partitions and the keys by which the data is partitioned and sorted.
+
+In the Hadoop ecosystem, this kind of metadata about the partitioning of
+datasets is often maintained in HCatalog and the Hive metastore.
+
+### The Output of Batch Workflows
+
+An important question: what is the result of all of that processing, once it is
+done? Why are we running all these jobs in the first place?
+
+In the case of database queries, we distinguished transaction processing (OLTP)
+purposes from analytic purposes. We saw that OLTP queries generally look up a
+small number of records by key, using indexes, in order to present them to a
+user. On the other hand, analytic queries often scan over a large number of
+records, performing groupings and aggregations, and the output often has the
+form of a report.
+
+Where does batch processing fit in? It is not transaction processing, nor is it
+analytics. It is closer to analytics, in that a batch process typically scans
+over large portions of an input dataset. However, a workflow of MapReduce jobs
+is not the same as a SQL query used for analytic purposes. The output of a
+batch process is often not a report, but some other kind of structure.
+
+#### Building search indexes
+
+Google’s original use of MapReduce was to build indexes for its search engine,
+which was implemented as a workflow of 5 to 10 MapReduce jobs. Although Google
+later moved away from using MapReduce for this purpose, it helps to understand
+MapReduce if you look at it through the lens of building a search index. (Even
+today, Hadoop MapReduce remains a good way of building indexes for Lucene/Solr.)
+
+How a full-text search index works: it is a file (the term dictionary) in which
+you can efficiently look up a particular keyword and find the list of all the
+document IDs containing that keyword. This is a very simplified view of a
+search index — in reality it requires various additional data, in order to rank
+search results by relevance, correct misspellings, resolve synonyms, and so
+on — but the principle holds.
+
+If you need to perform a full-text search over a fixed set of documents, then a
+batch process is a very effective way of building the indexes: the mappers
+partition the set of documents as needed, each reducer builds the index for its
+partition, and the index files are written to the distributed filesystem.
+Building such document-partitioned indexes parallelizes very well. Since
+querying a search index by keyword is a read-only operation, these index files
+are immutable once they have been created.
+
+If the indexed set of documents changes, one option is to periodically rerun
+the entire indexing workflow for the entire set of documents, and replace the
+previous index files wholesale with the new index files when it is done. This
+approach can be computationally expensive if only a small number of documents
+have changed, but it has the advantage that the indexing process is very easy
+to reason about: documents in, indexes out.
+
+Alternatively, it is possible to build indexes incrementally. If you want to
+add, remove, or update documents in an index, Lucene writes out new segment
+files and asynchronously merges and compacts segment files in the background.
+
+#### Key-value stores as batch process output
+
+Another common use for batch processing is to build machine learning systems
+such as classifiers (e.g., spam filters, anomaly detection, image recognition)
+and recommendation systems (e.g., people you may know, products you may be
+interested in, or related searches).
+
+The output of those batch jobs is often some kind of database: for example, a
+database that can be queried by user ID to obtain suggested friends for that
+user, or a database that can be queried by product ID to get a list of related
+products.
+
+These databases need to be queried from the web application that handles user
+requests, which is usually separate from the Hadoop infrastructure. So how does
+the output from the batch process get back into a database where the web
+application can query it?
+
+The most obvious choice might be to use the client library for your favorite
+database directly within a mapper or reducer, and to write from the batch job
+directly to the database server, one record at a time. This will work, but it
+is a bad idea for several reasons:
+
+- As discussed previously in the context of joins, making a network request for
+  every single record is orders of magnitude slower than the normal throughput
+  of a batch task. Even if the client library supports batching, performance is
+  likely to be poor.
+- MapReduce jobs often run many tasks in parallel. If all the mappers or
+  reducers concurrently write to the same output database, with a rate expected
+  of a batch process, that database can easily be overwhelmed, and its
+  performance for queries is likely to suffer. This can in turn cause
+  operational problems in other parts of the system.
+- Normally, MapReduce provides a clean all-or-nothing guarantee for job output:
+  if a job succeeds, the result is the output of running every task exactly
+  once, even if some tasks failed and had to be retried along the way; if the
+  entire job fails, no output is produced. However, writing to an external
+  system from inside a job produces externally visible side effects that cannot
+  be hidden in this way. Thus, you have to worry about the results from
+  partially completed jobs being visible to other systems, and the complexities
+  of Hadoop task attempts and speculative execution.
+
+A much better solution is to build a brand-new database ***inside*** the batch
+job and write it as files to the job’s output directory in the distributed
+filesystem, just like the search indexes in the last section. Those data files
+are then immutable once written, and can be loaded in bulk into servers that
+handle read-only queries. Various key-value stores support building database
+files in MapReduce jobs, including Voldemort, Terrapin, ElephantDB, and HBase
+bulk loading.
+
+Building these database files is a good use of MapReduce: using a mapper to
+extract a key and then sorting by that key is already a lot of the work
+required to build an index. Since most of these key-value stores are read-only
+(the files can only be written once by a batch job and are then immutable), the
+data structures are quite simple. For example, they do not require a WAL.
+
+When loading data into Voldemort, the server continues serving requests to the
+old data files while the new data files are copied from the distributed
+filesystem to the server’s local disk. Once the copying is complete, the server
+atomically switches over to querying the new files. If anything goes wrong in
+this process, it can easily switch back to the old files again, since they are
+still there and immutable.
+
+#### Philosophy of batch process outputs
+
+The Unix philosophy encourages experimentation by being very explicit about
+dataflow: a program reads its input and writes its output. In the process, the
+input is left unchanged, any previous output is completely replaced with the
+new output, and there are no other side effects. This means that you can rerun
+a command as often as you like, tweaking or debugging it, without messing up
+the state of your system.
+
+The handling of output from MapReduce jobs follows the same philosophy. By
+treating inputs as immutable and avoiding side effects (such as writing to
+external databases), batch jobs not only achieve good performance but also
+become much easier to maintain:
+
+- If you introduce a bug into the code and the output is wrong or corrupted,
+  you can simply roll back to a previous version of the code and rerun the job,
+  and the output will be correct again. Or, even simpler, you can keep the old
+  output in a different directory and simply switch back to it. Databases with
+  read-write transactions do not have this property: if you deploy buggy code
+  that writes bad data to the database, then rolling back the code will do
+  nothing to fix the data in the database. (The idea of being able to recover
+  from buggy code has been called ***human fault tolerance***.)
+- As a consequence of this ease of rolling back, feature development can
+  proceed more quickly than in an environment where mistakes could mean
+  irreversible damage. This principle of minimizing irreversibility is
+  beneficial for Agile software development.
+- If a map or reduce task fails, the MapReduce framework automatically
+  reschedules it and runs it again on the same input. If the failure is due to
+  a bug in the code, it will keep crashing and eventually cause the job to fail
+  after a few attempts; but if the failure is due to a transient issue, the
+  fault is tolerated. This automatic retry is only safe because inputs are
+  immutable and outputs from failed tasks are discarded by the MapReduce
+  framework.
+- The same set of files can be used as input for various different jobs,
+  including monitoring jobs that calculate metrics and evaluate whether a job’s
+  output has the expected characteristics (for example, by comparing it to the
+  output from the previous run and measuring discrepancies).
+- Like Unix tools, MapReduce jobs separate logic from wiring (configuring the
+  input and output directories), which provides a separation of concerns and
+  enables potential reuse of code: one team can focus on implementing a job
+  that does one thing well, while other teams can decide where and when to run
+  that job.
+
+In these areas, the design principles that worked well for Unix also seem to be
+working well for Hadoop — but Unix and Hadoop also differ in some ways. For
+example, because most Unix tools assume untyped text files, they have to do a
+lot of input parsing. On Hadoop, some of those low-value syntactic conversions
+are eliminated by using more structured file formats: Avro and Parquet are
+often used, as they provide efficient schema-based encoding and allow evolution
+of their schemas over time.
+
+### Comparing Hadoop to Distributed Databases
+
+As we have seen, Hadoop is somewhat like a distributed version of Unix, where HDFS is the filesystem and MapReduce is a quirky implementation of a Unix process (which happens to always run the sort utility between the map phase and the reduce phase). We saw how you can implement various join and grouping operations on top of these primitives.
+When the MapReduce paper [1] was published, it was—in some sense—not at all new. All of the processing and parallel join algorithms that we discussed in the last few sections had already been implemented in so-called massively parallel processing (MPP) databases more than a decade previously [3, 40]. For example, the Gamma database machine, Teradata, and Tandem NonStop SQL were pioneers in this area [52].
+The biggest difference is that MPP databases focus on parallel execution of analytic SQL queries on a cluster of machines, while the combination of MapReduce and a distributed filesystem [19] provides something much more like a general-purpose operating system that can run arbitrary programs.
+
+#### Diversity of storage
