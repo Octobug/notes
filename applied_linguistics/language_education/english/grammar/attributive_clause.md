@@ -49,6 +49,7 @@
       - [三、where 引导定语从句，先行词可以是有地点意义的其他各种名词](#三where-引导定语从句先行词可以是有地点意义的其他各种名词)
       - [四、区分 where 引导的地点状语从句和定语从句](#四区分-where-引导的地点状语从句和定语从句)
       - [五、where 的缩合关系词用法](#五where-的缩合关系词用法)
+      - [补充：whereby](#补充whereby)
       - [思维总结：4.2 where 的用法](#思维总结42-where-的用法)
     - [4.3 why 的用法](#43-why-的用法)
     - [4.4 表示方式的句型](#44-表示方式的句型)
@@ -1044,6 +1045,14 @@ in the mud the night before.
   本身隐含了先行词 the place。所以这个从句可以改写为定语从句
   the place where we had seen...
 - `译` 我们停留了片刻，出来走到我们曾经看到 George Mills 前一天晚上在泥里工作的地方。
+
+#### 补充：whereby
+
+`6` Straitford's briefs don't sound like the usual Washington back-and-forthing,
+whereby agencies avoid dramatic declarations on the chance they might be wrong.
+(2003 英一 Text 1)
+
+- whereby 在从句中作为方式状语。
 
 #### 思维总结：4.2 where 的用法
 
