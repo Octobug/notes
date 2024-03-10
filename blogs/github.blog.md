@@ -4,12 +4,31 @@
 
 - [The GitHub Blog](#the-github-blog)
   - [2008](#2008)
+    - [2008.06](#200806)
     - [2008.05](#200805)
     - [2008.04](#200804)
     - [2008.03](#200803)
     - [2008.02](#200802)
 
 ## 2008
+
+### 2008.06
+
+- 2008.06.18 - [Not Just Code](https://github.blog/2008-06-18-not-just-code/)
+- 2008.06.17 - [The Status Blog](https://github.blog/2008-06-17-the-status-blog/)
+- 2008.06.16 - [Moved to GitHub](https://github.blog/2008-06-16-moved-to-github/)
+- 2008.06.16 - [We’re Web 2.0](https://github.blog/2008-06-16-we-re-web-2-0/)
+- 2008.06.12 - [Cleaning House](https://github.blog/2008-06-12-cleaning-house/)
+- 2008.06.11 - [Improved Pledgie Profiles](https://github.blog/2008-06-11-improved-pledgie-profiles/)
+- 2008.06.11 - [GitHub Support](https://github.blog/2008-06-11-github-support/)
+- 2008.06.10 - [MooHub](https://github.blog/2008-06-10-moohub/)
+- 2008.06.09 - [Gem Builder Feedback](https://github.blog/2008-06-09-gem-builder-feedback/)
+- 2008.06.06 - [Rails 2.1 Book Translation](https://github.blog/2008-06-06-rails-2-1-book-translation/)
+- 2008.06.05 - [Ready for Lift Off](https://github.blog/2008-06-05-ready-for-lift-off/)
+- 2008.06.04 - [GitHub Shirts](https://github.blog/2008-06-04-github-shirts/)
+- 2008.06.03 - [An Open Source Renaissance](https://github.blog/2008-06-03-an-open-source-renaissance/)
+- 2008.06.02 - [GitHub is Hiring](https://github.blog/2008-06-02-github-is-hiring/)
+- 2008.06.01 - [Profitable Programmer: The Encore](https://github.blog/2008-06-01-profitable-programmer-the-encore/)
 
 ### 2008.05
 
