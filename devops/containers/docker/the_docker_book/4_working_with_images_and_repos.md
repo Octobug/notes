@@ -174,7 +174,7 @@ docker run -it ubuntu /bin/bash
 Inside the container:
 
 ```sh
-apt-get -yqq update
+apt-get -y update
 apt-get -y install apache2
 
 exit
