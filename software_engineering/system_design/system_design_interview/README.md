@@ -1,0 +1,12 @@
+# System Design Interview
+
+> System Design Interview – An insider's guide
+>
+> <https://www.goodreads.com/book/show/54109255-system-design-interview-an-insider-s-guide>
+>
+> by Alex Xu
+
+## Table of Contents
+
+- [x] [CHAPTER 1: SCALE FROM ZERO TO MILLIONS OF USERS](./01_scale_from_zero_to_millions_of_users.md)
+- [ ] [CHAPTER 2: BACK-OF-THE-ENVELOPE ESTIMATION](./02_back_of_the_envelope_estimation.md)
