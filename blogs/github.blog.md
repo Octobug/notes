@@ -14,6 +14,16 @@
 
 ### 2008.06
 
+- 2008.06.29 - [Services Galore](https://github.blog/2008-06-29-services-galore/)
+- 2008.06.27 - [Visual Cheat Sheet](https://github.blog/2008-06-27-visual-cheat-sheet/)
+- 2008.06.25 - [Commit Comment Preview](https://github.blog/2008-06-25-commit-comment-preview/)
+- 2008.06.25 - [RubyGem Info](https://github.blog/2008-06-25-rubygem-info/)
+- 2008.06.24 - [Popular Languages](https://github.blog/2008-06-24-popular-languages/)
+- 2008.06.23 - [git-remote-branch](https://github.blog/2008-06-23-git-remote-branch/)
+- 2008.06.22 - [GitHub Loves RubyGems 1.2](https://github.blog/2008-06-22-github-loves-rubygems-1-2/)
+- 2008.06.20 - [Cheat + Git = Chit](https://github.blog/2008-06-20-cheat-git-chit/)
+- 2008.06.20 - [Fork Sighting](https://github.blog/2008-06-20-fork-sighting/)
+- 2008.06.19 - [HTTP Cloning](https://github.blog/2008-06-19-http-cloning/)
 - 2008.06.18 - [Not Just Code](https://github.blog/2008-06-18-not-just-code/)
 - 2008.06.17 - [The Status Blog](https://github.blog/2008-06-17-the-status-blog/)
 - 2008.06.16 - [Moved to GitHub](https://github.blog/2008-06-16-moved-to-github/)
