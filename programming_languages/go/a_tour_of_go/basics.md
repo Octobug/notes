@@ -6,6 +6,7 @@
     - [Imports](#imports)
     - [Exported names](#exported-names)
     - [Functions](#functions)
+    - [Functions continued](#functions-continued)
     - [Multiple results](#multiple-results)
     - [Named return values](#named-return-values)
     - [Variables](#variables)
@@ -69,6 +70,8 @@ A function can take zero or more arguments.
 ```go
 func add(x int, y int) int {}
 ```
+
+### Functions continued
 
 The type can be omitted from all but the last as:
 
