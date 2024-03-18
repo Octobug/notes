@@ -5,9 +5,9 @@
 有学问的人往往很笨，没有学问的人反而很聪明。
 这是因为假如学问会给人带来好处，聪明人就不会不要它，或者有了学问也不让你知道。
 
-- [x] [大学四年级](collection/senior_year.md)
-- [x] [黑铁时代](collection/iron_age.md)
-- [ ] [黑铁公寓](collection/iron_tenement.md)
+- [x] [大学四年级](collection/da_xue_si_nian_ji.md)
+- [x] [黑铁时代](collection/hei_tie_shi_dai.md)
+- [ ] [黑铁公寓](collection/hei_tie_gong_yu.md)
 - [ ] 最灿烂的阳光
 - [ ] 王仙客寻无双记
 - [ ] 白银时代
