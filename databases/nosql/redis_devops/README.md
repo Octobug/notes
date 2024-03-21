@@ -6,4 +6,6 @@
 
 ## 目录
 
-- [ ] [第1章 初识Redis](./01_intro_redis.md)
+- [x] [第1章 初识Redis](./01_intro_redis.md)
+- [x] [第2章 API的理解和使用](./02_api_usage.md)
+- [ ] [第3章 小功能大用处](./03_features_and_usage.md)
