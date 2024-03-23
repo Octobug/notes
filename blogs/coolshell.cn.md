@@ -24,6 +24,9 @@
 
 ### 2009.04
 
+- 2009.04.06 - [20本最好的LINUX免费书籍](https://coolshell.org/articles/355.html)
+- 2009.04.06 - [程序员的八个级别](https://coolshell.org/articles/343.html)
+- 2009.04.06 - [惹恼程序员的十件事](https://coolshell.org/articles/340.html)
 - 2009.04.02 - [超过100本的LINUX免费书籍](https://coolshell.org/articles/336.html)
 - 2009.04.01 - [2009年脚本语言排名](https://coolshell.org/articles/325.html)
 - 2009.04.01 - [LINUX的“宕机”图片](https://coolshell.org/articles/313.html)
