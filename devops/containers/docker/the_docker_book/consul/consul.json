@@ -1,0 +1,9 @@
+{
+    "client_addr": "0.0.0.0",
+    "ports": {
+        "dns": 53
+    },
+    "ui_config": {
+        "enabled": true
+    }
+}

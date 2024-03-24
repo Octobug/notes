@@ -12,6 +12,6 @@
 - [x] [Chapter 4 Working with Docker images and repositories](./4_working_with_images_and_repos.md)
 - [x] [Chapter 5 Testing with Docker](./5_testing_with_docker.md)
 - [x] [Chapter 6 Building services with Docker](./6_building_services.md)
-- [ ] [Chapter 7 Docker Orchestration and Service Discovery](./7_orchestration_and_service_discovery.md)
-- [ ] [Chapter 8 Using the Docker API](.)
+- [x] [Chapter 7 Docker Orchestration and Service Discovery](./7_orchestration_and_service_discovery.md)
+- [ ] [Chapter 8 Using the Docker API](./8_using_the_docker_api.md)
 - [ ] [Chapter 9 Getting help and extending Docker](.)
