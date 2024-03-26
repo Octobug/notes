@@ -30,6 +30,20 @@
       - [API support for change streams](#api-support-for-change-streams)
     - [Event Sourcing](#event-sourcing)
       - [Deriving current state from the event log](#deriving-current-state-from-the-event-log)
+      - [Commands and events](#commands-and-events)
+    - [State, Streams, and Immutability](#state-streams-and-immutability)
+      - [Advantages of immutable events](#advantages-of-immutable-events)
+      - [Deriving several views from the same event log](#deriving-several-views-from-the-same-event-log)
+      - [Concurrency control](#concurrency-control)
+      - [Limitations of immutability](#limitations-of-immutability)
+  - [Processing Streams](#processing-streams)
+    - [Uses of Stream Processing](#uses-of-stream-processing)
+      - [Complex event processing](#complex-event-processing)
+      - [Stream analytics](#stream-analytics)
+      - [Maintaining materialized views](#maintaining-materialized-views)
+      - [Search on streams](#search-on-streams)
+      - [Message passing and RPC](#message-passing-and-rpc)
+    - [Reasoning About Time](#reasoning-about-time)
 
 Batch processing—techniques read a set of files as input and produce a new set
 of output files. The output is a form of ***derived data***; that is, a dataset
@@ -759,4 +773,417 @@ can also be used to build applications in this style.
 
 #### Deriving current state from the event log
 
->>>>> progress
+An event log by itself is not very useful, because users generally expect to
+see the current state of a system, not the history of modifications. For
+example, on a shopping website, users expect to be able to see the current
+contents of their cart, not an append-only list of all the changes they have
+ever made to their cart.
+
+Thus, applications that use event sourcing need to take the log of events and
+transform it into application state that is suitable for showing to a user.
+This transformation can use arbitrary logic, but it should be deterministic so
+that you can run it again and derive the same application state from the event
+log.
+
+Like with change data capture, replaying the event log allows you to
+reconstruct the current state of the system. However, log compaction needs to
+be handled differently:
+
+- A CDC event for the update of a record typically contains the entire new
+  version of the record, so the current value for a primary key is entirely
+  determined by the most recent event for that primary key, and log compaction
+  can discard previous events for the same key.
+- On the other hand, with event sourcing, events are modeled at a higher level:
+  an event typically expresses the intent of a user action, not the mechanics
+  of the state update that occurred as a result of the action. In this case,
+  later events typically do not override prior events, and so you need the full
+  history of events to reconstruct the final state. Log compaction is not
+  possible in the same way.
+
+Applications that use event sourcing typically have some mechanism for storing
+snapshots of the current state that is derived from the log of events, so they
+don’t need to repeatedly reprocess the full log. However, this is only a
+performance optimization to speed up reads and recovery from crashes; the
+intention is that the system is able to store all raw events forever and
+reprocess the full event log whenever required.
+
+#### Commands and events
+
+The event sourcing philosophy is careful to distinguish between events and
+commands. When a request from a user first arrives, it is initially a command:
+at this point it may still fail, for example because some integrity condition
+is violated. The application must first validate that it can execute the
+command. If the validation is successful and the command is accepted, it
+becomes an event, which is durable and immutable.
+
+For example, if a user tries to register a particular username, or reserve a
+seat on an airplane or in a theater, then the application needs to check that
+the username or seat is not already taken. When that check has succeeded, the
+application can generate an event to indicate that a particular username was
+registered by a particular user ID, or that a particular seat has been reserved
+for a particular customer.
+
+At the point when the event is generated, it becomes a fact. Even if the
+customer later decides to change or cancel the reservation, the fact remains
+true that they formerly held a reservation for a particular seat, and the
+change or cancellation is a separate event that is added later.
+
+A consumer of the event stream is not allowed to reject an event: by the time
+the consumer sees the event, it is already an immutable part of the log, and it
+may have already been seen by other consumers. Thus, any validation of a
+command needs to happen synchronously, before it becomes an event — for
+example, by using a serializable transaction that atomically validates the
+command and publishes the event.
+
+Alternatively, the user request to reserve a seat could be split into two
+events: first a tentative reservation, and then a separate confirmation event
+once the reservation has been validated. This split allows the validation to
+take place in an asynchronous process.
+
+### State, Streams, and Immutability
+
+Whenever you have state that changes, that state is the result of the events
+that mutated it over time.
+
+The key idea is that mutable state and an append-only log of immutable events
+do not contradict each other: they are two sides of the same coin. The log of
+all changes, the changelog, represents the evolution of state over time.
+
+The application state is what you get when you integrate an event stream over
+time, and a change stream is what you get when you differentiate the state by
+time.
+
+If you store the changelog durably, that simply has the effect of making the
+state reproducible. If you consider the log of events to be your system of
+record, and any mutable state as being derived from it, it becomes easier to
+reason about the flow of data through a system. As Pat Helland puts it:
+
+> Transaction logs record all the changes made to the database. High-speed
+> appends are the only way to change the log. From this perspective, the
+> contents of the database hold a caching of the latest record values in the
+> logs. The truth is the log. The database is a cache of a subset of the log.
+> That cached subset happens to be the latest value of each record and index
+> value from the log.
+
+Log compaction is one way of bridging the distinction between log and database
+state: it retains only the latest version of each record, and discards
+overwritten versions.
+
+#### Advantages of immutable events
+
+Immutability in databases is an old idea. For example, accountants have been
+using immutability for centuries in financial bookkeeping. When a transaction
+occurs, it is recorded in an append-only ledger, which is essentially a log of
+events describing money, goods, or services that have changed hands.
+
+If a mistake is made, accountants don’t erase or change the incorrect
+transaction in the ledger — instead, they add another transaction that
+compensates for the mistake. The incorrect transaction still remains in the
+ledger forever, because it might be important for auditing reasons. If
+incorrect figures, derived from the incorrect ledger, have already been
+published, then the figures for the next accounting period include a
+correction. This process is entirely normal in accounting.
+
+Although such auditability is particularly important in financial systems, it
+is also beneficial for many other systems that are not subject to such strict
+regulation. If you accidentally deploy buggy code that writes bad data to a
+database, recovery is much harder if the code is able to destructively
+overwrite data. With an append-only log of immutable events, it is much easier
+to diagnose what happened and recover from the problem.
+
+Immutable events also capture more information than just the current state. For
+example, on a shopping website, a customer may add an item to their cart and
+then remove it again. Although the second event cancels out the first event
+from the point of view of order fulfillment, it may be useful to know for
+analytics purposes that the customer was considering a particular item but then
+decided against it. Perhaps they will choose to buy it in the future, or
+perhaps they found a substitute. This information is recorded in an event log,
+but would be lost in a database that deletes items when they are removed from
+the cart.
+
+#### Deriving several views from the same event log
+
+Moreover, by separating mutable state from the immutable event log, you can
+derive several different read-oriented representations from the same log of
+events. This works just like having multiple consumers of a stream: for
+example, the analytic database Druid ingests directly from Kafka using this
+approach, Pistachio is a distributed key-value store that uses Kafka as a
+commit log, and Kafka Connect sinks can export data from Kafka to various
+different databases and indexes. It would make sense for many other storage and
+indexing systems, such as search servers, to similarly take their input from a
+distributed log.
+
+Having an explicit translation step from an event log to a database makes it
+easier to evolve your application over time: if you want to introduce a new
+feature that presents your existing data in some new way, you can use the event
+log to build a separate read-optimized view for the new feature, and run it
+alongside the existing systems without having to modify them. Running old and
+new systems side by side is often easier than performing a complicated schema
+migration in an existing system. Once the old system is no longer needed, you
+can simply shut it down and reclaim its resources.
+
+Storing data is normally quite straightforward if you don’t have to worry about
+how it is going to be queried and accessed; many of the complexities of schema
+design, indexing, and storage engines are the result of wanting to support
+certain query and access patterns. For this reason, you gain a lot of
+flexibility by separating the form in which data is written from the form it is
+read, and by allowing several different read views. This idea is sometimes
+known as ***command query responsibility segregation (CQRS)***.
+
+The traditional approach to database and schema design is based on the fallacy
+that data must be written in the same form as it will be queried. Debates about
+normalization and denormalization become largely irrelevant if you can
+translate data from a write-optimized event log to read-optimized application
+state: it is entirely reasonable to denormalize data in the read-optimized
+views, as the translation process gives you a mechanism for keeping it
+consistent with the event log.
+
+For Twitter’s home timelines, a cache of recently written tweets by the people
+a particular user is following, is another example of read-optimized state:
+home timelines are highly denormalized, since your tweets are duplicated in all
+of the timelines of the people following you. However, the fan-out service
+keeps this duplicated state in sync with new tweets and new following
+relationships, which keeps the duplication manageable.
+
+#### Concurrency control
+
+The biggest downside of event sourcing and change data capture is that the
+consumers of the event log are usually asynchronous, so there is a possibility
+that a user may make a write to the log, then read from a log-derived view and
+find that their write has not yet been reflected in the read view.
+
+One solution would be to perform the updates of the read view synchronously
+with appending the event to the log. This requires a transaction to combine the
+writes into an atomic unit, so either you need to keep the event log and the
+read view in the same storage system, or you need a distributed transaction
+across the different systems. Alternatively, you could use the approach
+discussed in “Implementing linearizable storage using total order broadcast”.
+
+On the other hand, deriving the current state from an event log also simplifies
+some aspects of concurrency control. Much of the need for multi-object
+transactions stems from a single user action requiring data to be changed in
+several different places. With event sourcing, you can design an event such
+that it is a self-contained description of a user action. The user action then
+requires only a single write in one place — namely appending the events to the
+log — which is easy to make atomic.
+
+If the event log and the application state are partitioned in the same way (for
+example, processing an event for a customer in partition 3 only requires
+updating partition 3 of the application state), then a straightforward
+single-threaded log consumer needs no concurrency control for writes — by
+construction, it only processes a single event at a time. The log removes the
+non‐determinism of concurrency by defining a serial order of events in a
+partition. If an event touches multiple state partitions, a bit more work is
+required.
+
+#### Limitations of immutability
+
+Many systems that don’t use an event-sourced model nevertheless rely on
+immutability: various databases internally use immutable data structures or
+multi-version data to support point-in-time snapshots. Version control systems
+such as Git, Mercurial, and Fossil also rely on immutable data to preserve
+version history of files.
+
+To what extent is it feasible to keep an immutable history of all changes
+forever? The answer depends on the amount of churn in the dataset. Some
+workloads mostly add data and rarely update or delete; they are easy to make
+immutable. Other workloads have a high rate of updates and deletes on a
+comparatively small dataset; in these cases, the immutable history may grow
+prohibitively large, fragmentation may become an issue, and the performance of
+compaction and garbage collection becomes crucial for operational robustness.
+
+Besides the performance reasons, there may also be circumstances in which you
+need data to be deleted for administrative reasons, in spite of all
+immutability.
+
+In these circumstances, it’s not sufficient to just append another event to the
+log to indicate that the prior data should be considered deleted — you actually
+want to rewrite history and pretend that the data was never written in the
+first place. For example, Datomic calls this feature excision, and the Fossil
+version control system has a similar concept called shunning.
+
+Truly deleting data is surprisingly hard, since copies can live in many places:
+for example, storage engines, filesystems, and SSDs often write to a new
+location rather than overwriting in place, and backups are often deliberately
+immutable to prevent accidental deletion or corruption. Deletion is more a
+matter of “making it harder to retrieve the data” than actually “making it
+impossible to retrieve the data.”
+
+## Processing Streams
+
+Broadly, there are three options:
+
+1. You can take the data in the events and write it to a database, cache,
+   search index, or similar storage system, from where it can then be queried
+   by other clients. This is a good way of keeping a database in sync with
+   changes happening in other parts of the system — especially if the stream
+   consumer is the only client writing to the database. Writing to a storage
+   system is the streaming equivalent of “The Output of Batch Workflows”.
+2. You can push the events to users in some way, for example by sending email
+   alerts or push notifications, or by streaming the events to a real-time
+   dashboard where they are visualized.
+3. You can process one or more input streams to produce one or more output
+   streams. Streams may go through a pipeline consisting of several such
+   processing stages before they eventually end up at an output.
+
+A piece of code that processes streams like this is known as an ***operator***
+or a ***job***. It is closely related to the Unix processes and MapReduce jobs,
+and the pattern of dataflow is similar: a stream processor consumes input
+streams in a read-only fashion and writes its output to a different location in
+an append-only fashion.
+
+The patterns for partitioning and parallelization in stream processors are also
+very similar to those in MapReduce and the dataflow engines. Basic mapping
+operations such as transforming and filtering records also work the same.
+
+The one crucial difference to batch jobs is that a stream never ends. This
+difference has many implications: sorting does not make sense with an unbounded
+dataset, and so sort-merge joins cannot be used. Fault-tolerance mechanisms
+must also change: with a batch job that has been running for a few minutes, a
+failed task can simply be restarted from the beginning, but with a stream job
+that has been running for several years, restarting from the beginning after a
+crash may not be a viable option.
+
+### Uses of Stream Processing
+
+Stream processing has long been used for monitoring purposes, where an
+organization wants to be alerted if certain things happen.
+
+#### Complex event processing
+
+***Complex event processing (CEP)*** is an approach developed in the 1990s for
+analyzing event streams, especially geared toward the kind of application that
+requires searching for certain event patterns. Similarly to the way that a
+regular expression allows you to search for certain patterns of characters in a
+string, CEP allows you to specify rules to search for certain patterns of
+events in a stream.
+
+CEP systems often use a high-level declarative query language like SQL, or a
+graphical user interface, to describe the patterns of events that should be
+detected. These queries are submitted to a processing engine that consumes the
+input streams and internally maintains a state machine that performs the
+required matching. When a match is found, the engine emits a complex event
+(hence the name) with the details of the event pattern that was detected.
+
+In these systems, the relationship between queries and data is reversed
+compared to normal databases. Usually, a database stores data persistently and
+treats queries as transient: when a query comes in, the database searches for
+data matching the query, and then forgets about the query when it has finished.
+CEP engines reverse these roles: queries are stored long-term, and events from
+the input streams continuously flow past them in search of a query that matches
+an event pattern.
+
+Implementations of CEP include Esper, IBM InfoSphere Streams, Apama, TIBCO
+StreamBase, and SQLstream. Distributed stream processors like Samza are also
+gaining SQL support for declarative queries on streams.
+
+#### Stream analytics
+
+Another area in which stream processing is used is for ***analytics*** on
+streams. The boundary between CEP and stream analytics is blurry, but as a
+general rule, analytics tends to be less interested in finding specific event
+sequences and is more oriented toward aggregations and statistical metrics over
+a large number of events:
+
+- Measuring the rate of some type of event (how often it occurs per time
+  interval)
+- Calculating the rolling average of a value over some time period
+- Comparing current statistics to previous time intervals (e.g., to detect
+  trends or to alert on metrics that are unusually high or low compared to the
+  same time last week)
+
+Such statistics are usually computed over fixed time intervals. Averaging over
+a few minutes smoothes out irrelevant fluctuations from one second to the next,
+while still giving you a timely picture of any changes in traffic pattern. The
+time interval over which you aggregate is known as a ***window***.
+
+Stream analytics systems sometimes use probabilistic algorithms, such as Bloom
+filters for set membership, HyperLogLog for cardinality estimation, and various
+percentile estimation algorithms. Probabilistic algorithms produce approximate
+results, but have the advantage of requiring significantly less memory in the
+stream processor than exact algorithms. This use of approximation algorithms
+sometimes leads people to believe that stream processing systems are always
+lossy and inexact, but that is wrong: there is nothing inherently approximate
+about stream processing, and probabilistic algorithms are merely an
+optimization.
+
+Many open source distributed stream processing frameworks are designed with
+analytics in mind: for example, Apache Storm, Spark Streaming, Flink, Concord,
+Samza, and Kafka Streams. Hosted services include Google Cloud Dataflow and
+Azure Stream Analytics.
+
+#### Maintaining materialized views
+
+A stream of changes to a database can be used to keep derived data systems,
+such as caches, search indexes, and data warehouses, up to date with a source
+database. We can regard these examples as specific cases of maintaining
+***materialized views***: deriving an alternative view onto some dataset so
+that you can query it efficiently, and updating that view whenever the
+underlying data changes.
+
+Similarly, in event sourcing, application state is maintained by applying a log
+of events; here the application state is also a kind of materialized view.
+Unlike stream analytics scenarios, it is usually not sufficient to consider
+only events within some time window: building the materialized view potentially
+requires all events over an arbitrary time period, apart from any obsolete
+events that may be discarded by log compaction. In effect, you need a window
+that stretches all the way back to the beginning of time.
+
+In principle, any stream processor could be used for materialized view
+maintenance, although the need to maintain events forever runs counter to the
+assumptions of some analytics-oriented frameworks that mostly operate on
+windows of a limited duration. Samza and Kafka Streams support this kind of
+usage, building upon Kafka’s support for log compaction.
+
+#### Search on streams
+
+Besides CEP, which allows searching for patterns consisting of multiple events,
+there is also sometimes a need to search for individual events based on complex
+criteria, such as full-text search queries.
+
+For example, media monitoring services subscribe to feeds of news articles and
+broadcasts from media outlets, and search for any news mentioning companies,
+products, or topics of interest. This is done by formulating a search query in
+advance, and then continually matching the stream of news items against this
+query. Similar features exist on some websites: for example, users of real
+estate websites can ask to be notified when a new property matching their
+search criteria appears on the market. The percolator feature of Elasticsearch
+is one option for implementing this kind of stream search.
+
+Conventional search engines first index the documents and then run queries over
+the index. By contrast, searching a stream turns the processing on its head:
+the queries are stored, and the documents run past the queries, like in CEP. In
+the simplest case, you can test every document against every query, although
+this can get slow if you have a large number of queries. To optimize the
+process, it is possible to index the queries as well as the documents, and thus
+narrow down the set of queries that may match.
+
+#### Message passing and RPC
+
+In “Message-Passing Dataflow” we discussed message-passing systems as an
+alternative to RPC — i.e., as a mechanism for services to communicate, as used
+for example in the actor model. Although these systems are also based on
+messages and events, we normally don’t think of them as stream processors:
+
+- Actor frameworks are primarily a mechanism for managing concurrency and
+  distributed execution of communicating modules, whereas stream processing is
+  primarily a data management technique.
+- Communication between actors is often ephemeral and one-to-one, whereas event
+  logs are durable and multi-subscriber.
+- Actors can communicate in arbitrary ways (including cyclic request/response
+  patterns), but stream processors are usually set up in acyclic pipelines
+  where every stream is the output of one particular job, and derived from a
+  well-defined set of input streams.
+
+That said, there is some crossover area between RPC-like systems and stream
+processing. For example, Apache Storm has a feature called distributed RPC,
+which allows user queries to be farmed out to a set of nodes that also process
+event streams; these queries are then interleaved with events from the input
+streams, and results can be aggregated and sent back to the user.
+
+It is also possible to process streams using actor frameworks. However, many
+such frameworks do not guarantee message delivery in the case of crashes, so
+the processing is not fault-tolerant unless you implement additional retry
+logic.
+
+### Reasoning About Time
