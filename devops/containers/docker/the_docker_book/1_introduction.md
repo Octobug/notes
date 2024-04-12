@@ -42,7 +42,7 @@ system's normal system call interface.
 
 ### An easy and lightweight way to model reality
 
-Docker relies on a copy-on-write model so that making changes to your
+Docker relies on a **copy-on-write** model so that making changes to your
 application is also incredibly fast: **only what you want to change gets
 changed**.
 

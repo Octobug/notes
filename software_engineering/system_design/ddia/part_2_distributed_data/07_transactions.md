@@ -363,27 +363,27 @@ and analytics.
 
 #### Implementing snapshot isolation
 
-Implementations of snapshot isolation typically use write locks to prevent dirty
-writes, which means that a transaction that makes a write can block the progress
+Implementations of snapshot isolation typically use **write locks** to prevent
+**dirty writes**, which means that a transaction that makes a write can block the progress
 of another transaction that writes to the same object.
 
 However, reads do not require any locks.
 
-A key principle of snapshot isolation is *readers never block writers*, and
-*writers never block readers*.
+A key principle of snapshot isolation is ***readers never block writers***, and
+***writers never block readers***.
 
 To implement snapshot isolation, databases use a generalization of the mechanism
-for preventing dirty reads. The database must potentially keep several different
+for preventing ***dirty reads***. The database must potentially keep several different
 committed versions of an object, because various in-progress transactions may
 need to see the state of the database at different points in time.
 
 - Because it maintains several versions of an object side by side, this
   technique is known as ***multi-version concurrency control (MVCC)***.
 
-For read committed isolation, it would be sufficient to keep two versions of an
-object: the committed version and the overwritten-but-not-yet-committed version.
+For ***read committed isolation***, it would be sufficient to keep two versions of an
+object: **the committed version** and **the overwritten-but-not-yet-committed version**.
 
-- 💡 However, storage engines that support snapshot isolation typically use MVCC
+- 💡 However, storage engines that support **snapshot isolation** typically use MVCC
   for their read committed isolation level as well.
 - A typical approach is that
   - read committed uses a separate snapshot for each query, while

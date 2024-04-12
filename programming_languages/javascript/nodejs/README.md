@@ -1,6 +1,8 @@
 # Node.js
 
 - [Node.js](#nodejs)
+  - [Data Types](#data-types)
+    - [Primitive Types](#primitive-types)
   - [Modules](#modules)
     - [CommonJS vs ESM](#commonjs-vs-esm)
     - [`global` keyword](#global-keyword)
@@ -66,6 +68,18 @@
   - [Common Built-in Modules](#common-built-in-modules)
   - [Topics](#topics)
   - [References](#references)
+
+## Data Types
+
+### Primitive Types
+
+- `string`
+- `number`
+- `bigint`
+- `boolean`
+- `undefined`
+- `null`
+- [`Symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 
 ## Modules
 
