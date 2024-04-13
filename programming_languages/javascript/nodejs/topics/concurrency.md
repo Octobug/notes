@@ -22,7 +22,8 @@ class Scheduler {
     this.count--
     if (this.taskList.length > 0) {
       // 放行阻塞
-      this.taskList.shift()();
+      const resolve = this.taskList.shift();
+      resolve();
     }
   }
 }
