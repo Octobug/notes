@@ -1448,10 +1448,28 @@ fashion. We use `async` keyword to declare a async function that return a
 
 ### Event Loop
 
-> <https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick#what-is-the-event-loop>
+> - <https://www.jsv9000.app/>
+> - <https://www.youtube.com/watch?v=8aGhZQkoFbQ>
 
 The Event Loop explains how Node.js can be asynchronous and have non-blocking
 I/O, it explains the “killer feature” of Node.js, which made it this successful.
+
+```js
+// pseudocode
+while (EventLoop.waitForTask()) {
+  const taskQueue = EventLoop.selectTaskQueue();
+  if (taskQueue.hasNextTask()) {
+    taskQueue.processNextTask();
+  }
+
+  const microtaskQueue = EventLoop.microTaskQueue;
+  while (microtaskQueue.hasNextMicrotask()) {
+    microtaskQueue.processNextMicrotask();
+  }
+
+  rerender();
+}
+```
 
 ## Working with APIs
 
@@ -1478,10 +1496,9 @@ are not shared with ES5 class-like semantics.
 
 ## Modules
 
-Modules encapsulate all sorts of code like functions and variables and expose
-all this to other files. Generally, we use it to break our code into separate
-files to make it more maintainable. They were introduced into JavaScript with
-ECMAScript 6.
+> [深入浅出 ESM 模块 和 CommonJS 模块](https://segmentfault.com/a/1190000041396029)
+
+They were introduced into JavaScript with ECMAScript 6.
 
 ### CommonJS
 

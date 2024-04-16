@@ -13,3 +13,8 @@ use -- [Podman](https://podman.io).
 - [Docker Guides](official_guides)
 - [The Docker Book](./the_docker_book/)
 - [Docker Roadmap](https://roadmap.sh/docker)
+
+## Zero Downtime
+
+- <https://medium.com/@limone.eth/deploy-docker-containers-with-zero-downtime-ed06b0a0966d>
+- <https://github.com/limone-eth/docker-zero-downtime-deployments>

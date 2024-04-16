@@ -255,7 +255,8 @@ first time it is emitted.
 
 ### Event Loop
 
-> <https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick#what-is-the-event-loop>
+> - <https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick#what-is-the-event-loop>
+> - <https://juejin.cn/post/7209698674905382973>
 
 Node.js event loop vs. v8 event loop:
 
