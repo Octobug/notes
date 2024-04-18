@@ -14,4 +14,4 @@
 - [x] [Chapter 6 Building services with Docker](./6_building_services.md)
 - [x] [Chapter 7 Docker Orchestration and Service Discovery](./7_orchestration_and_service_discovery.md)
 - [x] [Chapter 8 Using the Docker API](./8_using_the_docker_api.md)
-- [ ] [Chapter 9 Getting help and extending Docker](./9_getting_help_and_extending_docker.md)
+- [x] [Chapter 9 Getting help and extending Docker](./9_getting_help_and_extending_docker.md)
