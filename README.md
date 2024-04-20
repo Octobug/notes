@@ -85,11 +85,10 @@ disciplines according to the
     8. [Software Engineering](software_engineering)
         1. [Git](./software_engineering/git/)
         2. Open Source
-        3. [Software Design](software_engineering/software_design)
-        4. Software Maintenance
-        5. [Software Testing](software_engineering/software_testing)
-        6. [Software Versioning](software_development/software_versioning)
-        7. [System Design](./software_engineering/system_design)
+        3. [Software Design](./software_engineering/software_design)
+        4. [Software Testing](software_engineering/software_testing)
+        5. [Software Versioning](software_development/software_versioning)
+        6. [System Design](./software_engineering/system_design)
     9. [Miscellaneous](./cs_misc)
 
 ### Ⅴ. [Applied Science](https://en.wikipedia.org/wiki/Applied_science#)
