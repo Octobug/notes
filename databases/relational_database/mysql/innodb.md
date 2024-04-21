@@ -9,7 +9,11 @@
   - [查找方式](#查找方式)
   - [联合索引](#联合索引)
   - [Buffer Pool](#buffer-pool)
+  - [Redo log](#redo-log)
+  - [Binlog](#binlog)
+  - [Undo log](#undo-log)
   - [事务](#事务)
+    - [MVCC (多版本并发控制)](#mvcc-多版本并发控制)
 
 ## B+ Tree
 
@@ -76,6 +80,7 @@ select b, c, d, a from t1 where b > 1;
 
 ## Buffer Pool
 
+- 属于 InnoDB
 - 默认大小 128 MB，每个页大小也是 16 KB
 - 位于内存
 - 数据页会暂存于其中
@@ -98,10 +103,56 @@ select b, c, d, a from t1 where b > 1;
     - 当冷数据再次被访问，且时间间隔超过 1 秒，则把冷数据控制块转移到热数据区域中
     - 由于全表扫描访问同个数据页的时间极短，因此就只会影响冷数据区域。
 
+## Redo log
+
+1. Buffer Pool 出现脏页
+2. 生成 redo log
+3. redo log 持久化
+4. 修改成功
+5. 假如此时 MySQL crash 重启，它会读取磁盘数据，并结合 redo log 将数据恢复到 crash 前的状态。
+
+这里 2 & 3 可以替换成“直接修改磁盘中的页数据”，但这样性能非常差：更新一行数据却要持久化整页。
+
+- 记录页数据修改的物理数据，如哪一页
+- redo log 持久化更好的原因是，它是顺序写，效率比 B+ 树的持久化高。
+- InnoDB 启动时预分配 n 个 size 大小的 `ib_logfileN` 文件
+  - n: `show global variables like '%innodb_log_files_in_group%'`
+  - size: `show global variables like '%innodb_log_file_size%'`
+- InnoDB 会循环使用这些 redo log 文件
+  - write pos: 当前记录的位置
+  - checkpoint: 当前要擦除的位置
+  - 当 write pos 追上 checkpoint 时，就会触发脏页持久化
+- 持久化之前的 redo log 数据存储于 Log buffer 中。
+- `innodb_flush_log_at_trx_commit`
+  - `0`: 事务提交时，不立即持久化，靠后台线程触发
+  - `1`: 事务提交时，立即持久化（默认值）
+  - `2`: 事务提交时，写到操作系统的缓冲区，由操作系统定期持久化
+
+## Binlog
+
+- 属于 MySQL Server 层
+- 记录执行的 SQL
+- Binlog 重放效率没有 redo log 高
+
+## Undo log
+
+- 修改数据时，修改的是 Buffer Pool 里的数据
+- 假如需要 rollback，就需要把 Buffer Pool 的数据还原
+- undo log 记录对应数据的原值
+  - 以 sql 语句的形式，如
+    - `update table set v=origin where ...`
+    - `delete from table where ...`
+
 ## 事务
+
+💡 MyISAM 不支持事务
 
 ```sql
 begin
 
 commit -- or rollback
 ```
+
+### MVCC (多版本并发控制)
+
+- 基于 undo log 实现

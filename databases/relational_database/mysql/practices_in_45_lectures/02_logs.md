@@ -1,5 +1,7 @@
 # 02 | 日志系统：一条SQL更新语句是如何执行的？
 
+> <https://time.geekbang.org/column/article/68633>
+
 - [02 | 日志系统：一条SQL更新语句是如何执行的？](#02--日志系统一条sql更新语句是如何执行的)
   - [WAL (Write Ahead Logging)](#wal-write-ahead-logging)
   - [Redo log](#redo-log)
