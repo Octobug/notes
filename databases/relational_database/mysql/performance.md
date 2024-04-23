@@ -1,6 +1,7 @@
 # Performance
 
 - [Performance](#performance)
+  - [Indexes 索引](#indexes-索引)
   - [Best practices for MySQL performance optimization and MySQL use indexes](#best-practices-for-mysql-performance-optimization-and-mysql-use-indexes)
   - [读写分离 Read-Write Separation](#读写分离-read-write-separation)
   - [Partition Maintenance in MySQL](#partition-maintenance-in-mysql)
@@ -8,6 +9,10 @@
     - [垂直](#垂直)
     - [水平](#水平)
     - [常用中间件](#常用中间件)
+
+## Indexes 索引
+
+- 红黑树不适合存储大量数据，因为树的高度会过高。
 
 ## Best practices for MySQL performance optimization and MySQL use indexes
 
