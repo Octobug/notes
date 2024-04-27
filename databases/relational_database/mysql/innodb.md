@@ -8,6 +8,7 @@
     - [主键索引](#主键索引)
     - [查找方式](#查找方式)
     - [联合索引](#联合索引)
+      - [联合索引存储结构](#联合索引存储结构)
   - [Hash](#hash)
   - [Buffer Pool](#buffer-pool)
   - [Redo log](#redo-log)
@@ -90,6 +91,10 @@ select b, c, d from t1 where b > 1;
 select b, c, d, a from t1 where b > 1;
 -- 索引树上有 select 需要的数据，因为 a 是主键，所以不需要回表
 ```
+
+#### 联合索引存储结构
+
+![Multi-Column index](./images/multi-cols-index.png)
 
 ## Hash
 
