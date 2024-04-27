@@ -539,6 +539,8 @@ separately for the purpose of conflict resolution.
 
 #### Automatic Conflict Resolution
 
+> 自动解决冲突
+
 These algorithms are often implemented in databases.
 
 - *Conflict-free replicated datatypes* (CRDTs) are a family of data structures

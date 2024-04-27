@@ -1446,7 +1446,7 @@ then the processing step can safely be retried as if nothing had happened.
 #### XA transactions
 
 ***X/Open XA (short for eXtended Architecture)*** is a standard for
-implementing two-phase commit across heterogeneous technologies. XA is
+implementing **two-phase commit** across heterogeneous technologies. **XA** is
 supported by many traditional relational databases (including PostgreSQL,
 MySQL, DB2, SQL Server, and Oracle) and message brokers (including ActiveMQ,
 HornetQ, MSMQ, and IBM MQ).
