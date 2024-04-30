@@ -1,5 +1,11 @@
 # 1. Reliable, Scalable, and Maintainable Applications
 
+> The Internet was done so well that most people think of it as a natural
+> resource like the Pacific Ocean, rather than something that was man-made.
+> When was the last time a technology with a scale like that was so error-free?
+>
+> —Alan Kay, in interview with Dr Dobb’s Journal (2012)
+
 - [1. Reliable, Scalable, and Maintainable Applications](#1-reliable-scalable-and-maintainable-applications)
   - [Thinking About Data Systems](#thinking-about-data-systems)
   - [Reliability](#reliability)
@@ -18,12 +24,12 @@
 
 A data-intensive application provides commonly needed functionalities:
 
-- Store data (databases)
-- Remember the result of an expensive operation to speed up reads (caches)
-- Allow users to search data by keyword (search indexes)
-- Send a message to another process, to be handled asynchronously (stream
-  processing)
-- Periodically crunch a large amount of data (batch processing)
+- Databases: Store data
+- Caches: Remember the result of an expensive operation to speed up reads
+- Search Indexes: Allow users to search data by keyword
+- Stream Processing: Send a message to another process, to be handled
+  asynchronously
+- Batch Processing: Periodically crunch a large amount of data
 
 ## Thinking About Data Systems
 
@@ -47,10 +53,10 @@ flowchart TD
 
 Three important concerns in most software systems:
 
-- Reliability: The system should continue to work correctly.
-- Scalability: As the system grows, there should be reasonable ways of dealing
-  with that growth.
-- Maintainability: Different people should be able to work on the system,
+- **Reliability**: The system should continue to work correctly.
+- **Scalability**: As the system grows, there should be reasonable ways of
+  dealing with that growth.
+- **Maintainability**: Different people should be able to work on the system,
 
 ## Reliability
 

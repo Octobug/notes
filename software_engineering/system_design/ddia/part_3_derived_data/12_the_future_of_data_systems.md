@@ -22,6 +22,16 @@
       - [The lambda architecture](#the-lambda-architecture)
       - [Unifying batch and stream processing](#unifying-batch-and-stream-processing)
   - [Unbundling Databases](#unbundling-databases)
+    - [Composing Data Storage Technologies](#composing-data-storage-technologies)
+      - [Creating an index](#creating-an-index)
+      - [The meta-database of everything](#the-meta-database-of-everything)
+      - [Making unbundling work](#making-unbundling-work)
+      - [Unbundled versus integrated systems](#unbundled-versus-integrated-systems)
+      - [What’s missing?](#whats-missing)
+    - [Designing Applications Around Dataflow](#designing-applications-around-dataflow)
+      - [Application code as a derivation function](#application-code-as-a-derivation-function)
+      - [Separation of application code and state](#separation-of-application-code-and-state)
+      - [Dataflow: Interplay between state changes and application code](#dataflow-interplay-between-state-changes-and-application-code)
 
 ## Data Integration
 
@@ -285,3 +295,261 @@ features, which are becoming increasingly widely available:
   using Apache Flink or Google Cloud Dataflow.
 
 ## Unbundling Databases
+
+### Composing Data Storage Technologies
+
+- Secondary indexes, which allow you to efficiently search for records based on
+  the value of a field
+- Materialized views, which are a kind of precomputed cache of query results
+- Replication logs, which keep copies of the data on other nodes up to date
+- Full-text search indexes, which allow keyword search in text and which are
+  built into some relational databases
+
+#### Creating an index
+
+When you run `CREATE INDEX` to create a new index in a relational database, the
+database has to scan over a consistent snapshot of a table, pick out all of the
+field values being indexed, sort them, and write out the index. Then it must
+process the backlog of writes that have been made since the consistent
+snapshot was taken (assuming the table was not locked while creating the index,
+so writes could continue). Once that is done, the database must continue to
+keep the index up to date whenever a transaction writes to the table.
+
+This process is remarkably similar to setting up a new follower replica, and
+also very similar to bootstrapping change data capture in a streaming system.
+
+Whenever you run `CREATE INDEX`, the database essentially reprocesses the
+existing dataset and derives the index as a new view onto the existing data.
+The existing data may be a snapshot of the state rather than a log of all
+changes that ever happened, but the two are closely related.
+
+#### The meta-database of everything
+
+Whenever a batch, stream, or ETL process transports data from one place and
+form to another place and form, it is acting like the database subsystem that
+keeps indexes or materialized views up to date.
+
+Viewed like this, batch and stream processors are like elaborate
+implementations of triggers, stored procedures, and materialized view
+maintenance routines. The derived data systems they maintain are like different
+index types. For example, a relational database may support B-tree indexes,
+hash indexes, spatial indexes, and other types of indexes. In the emerging
+architecture of derived data systems, instead of implementing those facilities
+as features of a single integrated database product, they are provided by
+various different pieces of software, running on different machines,
+administered by different teams.
+
+If we start from the premise that there is no single data model or storage
+format that is suitable for all access patterns, I speculate that there are two
+avenues by which different storage and processing tools can nevertheless be
+composed into a cohesive system:
+
+- ***Federated databases: unifying reads***: It is possible to provide a
+  unified query interface to a wide variety of underlying storage engines and
+  processing methods — an approach known as a ***federated database*** or
+  ***polystore***. For example, PostgreSQL’s ***foreign data wrapper*** feature
+  fits this pattern. Applications that need a specialized data model or query
+  interface can still access the underlying storage engines directly, while
+  users who want to combine data from disparate places can do so easily through
+  the federated interface.
+  - A federated query interface follows the relational tradition of a single
+    integrated system with a high-level query language and elegant semantics,
+    but a complicated implementation.
+- ***Unbundled databases: unifying writes***: While federation addresses
+  read-only querying across several different systems, it does not have a good
+  answer to synchronizing writes across those systems. We said that within a
+  single database, creating a consistent index is a built-in feature. When we
+  compose several storage systems, we similarly need to ensure that all data
+  changes end up in all the right places, even in the face of faults. Making it
+  easier to reliably plug together storage systems (e.g., through change data
+  capture and event logs) is like unbundling a database’s index-maintenance
+  features in a way that can synchronize writes across disparate technologies.
+  - The unbundled approach follows the Unix tradition of small tools that do
+    one thing well, that communicate through a uniform low-level API (pipes),
+    and that can be composed using a higher-level language (the shell).
+
+#### Making unbundling work
+
+Federation and unbundling are two sides of the same coin: composing a reliable,
+scalable, and maintainable system out of diverse components. Federated
+read-only querying requires mapping one data model into another, which takes
+some thought but is ultimately quite a manageable problem. Keeping the writes
+to several storage systems in sync is the harder engineering problem, and so I
+will focus on it.
+
+The traditional approach to synchronizing writes requires distributed
+transactions across heterogeneous storage systems, which I think is the
+**wrong** solution. Transactions within a single storage or stream processing
+system are feasible, but when data crosses the boundary between different
+technologies, I believe that an asynchronous event log with idempotent writes
+is a much more robust and practical approach.
+
+For example, distributed transactions are used within some stream processors to
+achieve exactly-once semantics, and this can work quite well. However, when a
+transaction would need to involve systems written by different groups of people
+(e.g., when data is written from a stream processor to a distributed key-value
+store or search index), the lack of a standardized transaction protocol makes
+integration much harder. An ordered log of events with idempotent consumers
+is a much simpler abstraction, and thus much more feasible to implement across
+heterogeneous systems.
+
+The big advantage of log-based integration is ***loose*** coupling between the
+various components, which manifests itself in two ways:
+
+1. At a system level, asynchronous event streams make the system as a whole
+   more robust to outages or performance degradation of individual components.
+   If a consumer runs slow or fails, the event log can buffer messages,
+   allowing the producer and any other consumers to continue running
+   unaffected. The faulty consumer can catch up when it is fixed, so it doesn’t
+   miss any data, and the fault is contained. By contrast, the synchronous
+   interaction of distributed transactions tends to escalate local faults into
+   large-scale failures.
+2. At a human level, unbundling data systems allows different software
+   components and services to be developed, improved, and maintained
+   independently from each other by different teams. Specialization allows each
+   team to focus on doing one thing well, with well-defined interfaces to other
+   teams’ systems. Event logs provide an interface that is powerful enough to
+   capture fairly strong consistency properties (due to durability and ordering
+   of events), but also general enough to be applicable to almost any kind of
+   data.
+
+#### Unbundled versus integrated systems
+
+If unbundling does indeed become the way of the future, it will not replace
+databases in their current form — they will still be needed as much as ever.
+Databases are still required for maintaining state in stream processors, and in
+order to serve queries for the output of batch and stream processors.
+Specialized query engines will continue to be important for particular
+workloads: for example, query engines in MPP data warehouses are optimized for
+exploratory analytic queries and handle this kind of workload very well.
+
+The complexity of running several different pieces of infrastructure can be a
+problem: each piece of software has a learning curve, configuration issues, and
+operational quirks, and so it is worth deploying as few moving parts as
+possible. A single integrated software product may also be able to achieve
+better and more predictable performance on the kinds of workloads for which it
+is designed, compared to a system consisting of several tools that you have
+composed with application code.
+
+The goal of unbundling is not to compete with individual databases on
+performance for particular workloads; the goal is to allow you to combine
+several different databases in order to achieve good performance for a much
+wider range of workloads than is possible with a single piece of software. It’s
+about breadth, not depth — in the same vein as the diversity of storage and
+processing models.
+
+The advantages of unbundling and composition only come into the picture when
+there is no single piece of software that satisfies all your requirements.
+
+#### What’s missing?
+
+We don’t yet have the unbundled-database equivalent of the Unix shell (i.e., a
+high-level language for composing storage and processing systems in a simple
+and declarative way).
+
+For example, I would love it if we could simply declare `mysql | elasticsearch`,
+by analogy to Unix pipes, which would be the unbundled equivalent of
+`CREATE INDEX`: it would take all the documents in a MySQL database and index
+them in an Elasticsearch cluster. It would then continually capture all the
+changes made to the database and automatically apply them to the search index,
+without us having to write custom application code. This kind of integration
+should be possible with almost any kind of storage or indexing system.
+
+Similarly, it would be great to be able to precompute and update caches more
+easily. Recall that a materialized view is essentially a precomputed cache, so
+you could imagine creating a cache by declaratively specifying materialized
+views for complex queries, including recursive queries on graphs and
+application logic. There is interesting early-stage research in this area, such as ***differential dataflow***.
+
+- <http://cidrdb.org/cidr2013/Papers/CIDR13_Paper111.pdf>
+- <https://sigops.org/s/conferences/sosp/2013/papers/p439-murray.pdf>
+
+### Designing Applications Around Dataflow
+
+The approach of unbundling databases by composing specialized storage and
+processing systems with application code is also becoming known as the
+“database inside-out” approach. However, calling it a “new architecture” is too
+grandiose. I see it more as a design pattern.
+
+In particular, there is a lot of overlap with ***dataflow*** languages such as
+Oz and Juttle, ***functional reactive programming*** (FRP) languages such as
+Elm, and ***logic programming*** languages such as Bloom. The term
+***unbundling*** in this context was proposed by Jay Kreps.
+
+Even spreadsheets have dataflow programming capabilities that are miles ahead
+of most mainstream programming languages. In a spreadsheet, you can put a
+formula in one cell (for example, the sum of cells in another column), and
+whenever any input to the formula changes, the result of the formula is
+automatically recalculated. This is exactly what we want at a data system
+level: when a record in a database changes, we want any index for that record
+to be automatically updated, and any cached views or aggregations that depend
+on the record to be automatically refreshed. You should not have to worry about
+the technical details of how this refresh happens, but be able to simply trust
+that it works correctly.
+
+The difference from spreadsheets is that today’s data systems need to be
+fault-tolerant, scalable, and store data durably. They also need to be able to
+integrate disparate technologies written by different groups of people over
+time, and reuse existing libraries and services.
+
+#### Application code as a derivation function
+
+When one dataset is derived from another, it goes through some kind of
+transformation function. For example:
+
+- A secondary index is a kind of derived dataset with a straightforward
+  transformation function: for each row or document in the base table, it picks
+  out the values in the columns or fields being indexed, and sorts by those
+  values.
+- A full-text search index is created by applying various natural language
+  processing functions such as language detection, word segmentation, stemming
+  or lemmatization, spelling correction, and synonym identification, followed
+  by building a data structure for efficient lookups (such as an inverted
+  index).
+- In a machine learning system, we can consider the model as being derived from
+  the training data by applying various feature extraction and statistical
+  analysis functions. When the model is applied to new input data, the output
+  of the model is derived from the input and the model (and hence, indirectly,
+  from the training data).
+- A cache often contains an aggregation of data in the form in which it is
+  going to be displayed in a user interface (UI). Populating the cache thus
+  requires knowledge of what fields are referenced in the UI; changes in the UI
+  may require updating the definition of how the cache is populated and
+  rebuilding the cache.
+
+Although relational databases commonly support triggers, stored procedures, and
+user-defined functions, which can be used to execute application code within
+the database, they have been somewhat of an afterthought in database design.
+
+#### Separation of application code and state
+
+In theory, databases could be deployment environments for arbitrary application
+code, like an operating system. However, in practice they have turned out to be
+poorly suited for this purpose. They do not fit well with the requirements of
+modern application development, such as dependency and package management,
+version control, rolling upgrades, evolvability, monitoring, metrics, calls to
+network services, and integration with external systems.
+
+On the other hand, deployment and cluster management tools such as Mesos, YARN,
+Docker, Kubernetes, and others are designed specifically for the purpose of
+running application code. By focusing on doing one thing well, they are able to
+do it much better than a database that provides execution of user-defined
+functions as one of its many features.
+
+The trend has been to keep stateless application logic separate from state
+management (databases): not putting application logic in the database and not
+putting persistent state in the application.
+
+However, in most programming languages you cannot subscribe to changes in a
+mutable variable — you can only read it periodically. Unlike in a spreadsheet,
+readers of the variable don’t get notified if the value of the variable
+changes. (You can implement such notifications in your own code — this is known
+as the ***observer pattern*** — but most languages do not have this pattern as a
+built-in feature.)
+
+Databases have inherited this passive approach to mutable data: if you want to
+find out whether the content of the database has changed, often your only
+option is to poll. Subscribing to changes is only just beginning to emerge as a
+feature.
+
+#### Dataflow: Interplay between state changes and application code

@@ -393,7 +393,7 @@ processing.
 ### Data Warehousing
 
 The data warehouse contains a read-only copy of the data in all the various OLTP
-systems in the company. Data is extracted ftom OLTP databases, transformed into
+systems in the company. Data is extracted from OLTP databases, transformed into
 an analysis-friendly schema, cleaned up, and then loaded into the data
 warehouse. This process of getting data into the warehouse is known as
 ***Extract-Transform-Load (ETL)***.
