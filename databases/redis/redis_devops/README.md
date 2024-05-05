@@ -10,4 +10,5 @@
 - [x] [第2章 API的理解和使用](./02_api_usage.md)
 - [x] [第3章 小功能大用处](./03_features_and_usages.md)
 - [x] [第4章 客户端](./04_client.md)
-- [ ] [第5章 持久化](./05_persistence.md)
+- [x] [第5章 持久化](./05_persistence.md)
+- [ ] [第6章 复制](./06_replication.md)
