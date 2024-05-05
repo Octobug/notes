@@ -1496,7 +1496,8 @@ are not shared with ES5 class-like semantics.
 
 ## Modules
 
-> [深入浅出 ESM 模块 和 CommonJS 模块](https://segmentfault.com/a/1190000041396029)
+> - [深入浅出 ESM 模块 和 CommonJS 模块](https://segmentfault.com/a/1190000041396029)
+> - [深入Node.js的模块加载机制，手写require函数](https://segmentfault.com/a/1190000023828613)
 
 They were introduced into JavaScript with ECMAScript 6.
 
