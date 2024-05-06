@@ -1,5 +1,9 @@
 # 2. Data Models and Query Languages
 
+> The limits of my language mean the limits of my world.
+>
+> —Ludwig Wittgenstein, Tractatus Logico-Philosophicus (1922)
+
 - [2. Data Models and Query Languages](#2-data-models-and-query-languages)
   - [Relational Model Versus Document Model](#relational-model-versus-document-model)
     - [The Birth of NoSQL](#the-birth-of-nosql)

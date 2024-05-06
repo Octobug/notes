@@ -24,7 +24,6 @@
     - [Promises](#promises)
     - [Async/Await](#asyncawait)
     - [Event Emitter](#event-emitter)
-    - [Event Loop](#event-loop)
   - [Working with Files](#working-with-files)
     - [`fs` module](#fs-module)
     - [`path` module](#path-module)
@@ -252,16 +251,6 @@ In Node.js, an event can be described simply as a string with a corresponding
 callback. An event can be “emitted” (or, in other words, the corresponding
 callback be called) multiple times or you can choose to only listen for the
 first time it is emitted.
-
-### Event Loop
-
-> - <https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick#what-is-the-event-loop>
-> - <https://juejin.cn/post/7209698674905382973>
-
-Node.js event loop vs. v8 event loop:
-
-- <https://stackoverflow.com/a/61458912/7267801>
-- <https://gist.github.com/andreybolonin/2413da76f088e2c5ab04df53f07659ea>
 
 ## Working with Files
 
