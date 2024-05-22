@@ -12,7 +12,7 @@ help() {
     echo "Usage: $0 [-n]"
     echo "    -h display this help and exit"
     echo "    -n run npm install"
-    exit 1
+    exit 0
 }
 
 run_npm=false

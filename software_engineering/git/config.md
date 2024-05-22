@@ -22,6 +22,7 @@ For example, for the user profile case:
   name = YourUsername
   email = YourUsername@email.com
 
+  # Keep these lines at the bottom of the file
   [includeIf "gitdir:~/company/"]
   path = ~/company/.gitconfig
   ```

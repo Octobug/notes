@@ -1,7 +1,7 @@
 {
-  "readme": {
-    "cli": "https://github.com/igorshubovych/markdownlint-cli",
+  "README": {
     "rules": "https://github.com/DavidAnson/markdownlint",
+    "cli": "https://github.com/DavidAnson/markdownlint-cli2",
     "vscode": "https://github.com/DavidAnson/vscode-markdownlint"
   },
   "MD004": {

@@ -3,6 +3,7 @@
 - [Basic](#basic)
   - [日期与时间设置](#日期与时间设置)
   - [语系设置](#语系设置)
+  - [Compressing](#compressing)
 
 ## 日期与时间设置
 
@@ -17,3 +18,8 @@
 ## 语系设置
 
 - localectl
+
+## Compressing
+
+- zip
+  - with pass: `zip -P password -r target.zip source_dir`
