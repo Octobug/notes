@@ -4,4 +4,5 @@
 
 ## Table of Contents
 
-- [ ] [7. Git Tools](07_git_tools)
+- [ ] [2. Git Basics](./02_git_basics.md)
+- [ ] [7. Git Tools](./07_git_tools.md)

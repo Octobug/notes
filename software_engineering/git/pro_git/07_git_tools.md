@@ -1,6 +1,17 @@
 # 7. Git Tools
 
-> <https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection>
+- [7. Git Tools](#7-git-tools)
+  - [7.6 Git Tools - Rewriting History](#76-git-tools---rewriting-history)
+    - [Changing the Last Commit](#changing-the-last-commit)
+    - [Changing Multiple Commit Messages](#changing-multiple-commit-messages)
+    - [Reordering Commits](#reordering-commits)
+    - [Squashing Commits](#squashing-commits)
+    - [Splitting a Commit](#splitting-a-commit)
+    - [Deleting a commit](#deleting-a-commit)
+    - [The Nuclear Option: filter-branch](#the-nuclear-option-filter-branch)
+      - [Removing a File from Every Commit](#removing-a-file-from-every-commit)
+      - [Making a Subdirectory the New Root](#making-a-subdirectory-the-new-root)
+      - [Changing Email Addresses Globally](#changing-email-addresses-globally)
 
 ## 7.6 Git Tools - Rewriting History
 
