@@ -15,3 +15,11 @@
 #### Multi-stage builds
 
 - <https://docs.docker.com/build/building/multi-stage/#use-multi-stage-builds>
+
+## Docker Networks
+
+在 Docker Compose 文件中，如果没有显式指定网络名称，Docker Compose 会自动创建一个默认网络。
+这个默认网络的名称格式通常为：`<项目名>_default`
+
+- 其中 `<项目名>` 默认为 Compose 文件所在目录的名称
+- 或者可以指定项目名（`-p`）
