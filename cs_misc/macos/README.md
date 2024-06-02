@@ -2,6 +2,13 @@
 
 > <https://en.wikipedia.org/wiki/MacOS>
 
+## Apps
+
+### WeChat
+
+- `~/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/<code>/<hash>/Message/MessageTemp`
+  - `du -d 1 -h | sort -h`
+
 ## Develop Tools
 
 ### Xcode
