@@ -1,6 +1,7 @@
 # Conventional Commits 1.0.0
 
-> <https://www.conventionalcommits.org/en/v1.0.0/>
+> - <https://www.conventionalcommits.org/en/v1.0.0/>
+> - <https://github.com/angular/angular/blob/main/CONTRIBUTING.md>
 
 A specification for adding human and machine readable meaning to commit messages
 
