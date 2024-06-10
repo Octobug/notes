@@ -4,8 +4,8 @@
 
 ## Table of Contents
 
-- [ ] Preface
-- Chapter 1. Getting to Know TypeScript
+- [x] [Preface](./0_preface.md)
+- [ ] [Chapter 1. Getting to Know TypeScript](./1_getting_to_know_typescript.md)
 - Chapter 2. TypeScript's Type System
 - Chapter 3. Type Inference
 - Chapter 4. Type Design

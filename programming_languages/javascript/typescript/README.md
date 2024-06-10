@@ -1,5 +1,9 @@
 # TypeScript
 
+> - [typescriptlang.org](https://www.typescriptlang.org/)
+> - [roadmap.sh - TypeScript](https://roadmap.sh/typescript)
+> - [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+
 - [TypeScript](#typescript)
   - [The Basics](#the-basics)
     - [Static type-checking](#static-type-checking)
@@ -16,7 +20,6 @@
   - [Running TypeScript](#running-typescript)
     - [ts-node](#ts-node)
     - [TS Playground](#ts-playground)
-  - [References](#references)
 
 ## The Basics
 
@@ -136,9 +139,3 @@ node.js, with source map and native ESM support.
 ### TS Playground
 
 > <https://www.typescriptlang.org/play>
-
-## References
-
-- [typescriptlang.org](https://www.typescriptlang.org/)
-- [ ] [roadmap.sh](https://roadmap.sh/typescript)
-- [x] [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
