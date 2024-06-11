@@ -66,11 +66,10 @@ disciplines according to the
         2. [MySQL](./databases/mysql/)
         3. [Redis](./databases/redis/)
     5. [DevOps](devops)
-        1. [Ansible](devops/ansible)
-        2. [CI/CD/CD](devops/ci_cd_cd)
-        3. [Containers](devops/containers)
-        4. NGINX
-        5. Site Reliability Engineering
+        1. [Ansible](./devops/ansible)
+        2. [CI/CD/CD](./devops/ci_cd)
+        3. [Containers](./devops/containers)
+        4. Site Reliability Engineering
     6. [Operating System](./operating_system)
         1. [Operating Systems](operating_system/operating_systems)
         2. Systems Programming

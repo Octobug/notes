@@ -388,7 +388,7 @@ CMD ["/bin/true"]
 CMD ["/bin/bash", "-l", ...]
 ```
 
-⚠️ The command is contained in an array. This tells Docker to run tje command
+⚠️ The command is contained in an array. This tells Docker to run the command
 as-is. You can also specify the `CMD` instruction without an array, in which
 case Docker will prepend `/bin/sh -c` to the command. This may result in
 unexpected behavior when the command is executed. It is recommended that you
