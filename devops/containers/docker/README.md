@@ -23,3 +23,10 @@
 
 - 其中 `<项目名>` 默认为 Compose 文件所在目录的名称
 - 或者可以指定项目名（`-p`）
+
+## Docker Registry
+
+```sh
+docker tag IMAGE_HASH REGISTRY.domain/IMAGE_NAME:TAG
+docker push REGISTRY.domain/IMAGE_NAME:TAG
+```
