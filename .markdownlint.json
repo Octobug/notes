@@ -4,10 +4,10 @@
     "cli": "https://github.com/DavidAnson/markdownlint-cli2",
     "vscode": "https://github.com/DavidAnson/vscode-markdownlint"
   },
-  "MD004": {
+  "line-length": false,
+  "no-inline-html": false,
+  "no-trailing-punctuation": false,
+  "ul-style": {
     "style": "dash"
-  },
-  "MD013": false,
-  "MD026": false,
-  "MD033": false
+  }
 }
