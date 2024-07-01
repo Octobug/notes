@@ -21,5 +21,7 @@
 
 ## Compressing
 
+- tar
+  - Only keep relative dir: `cd $SOURCE_PATH && tar -C $SOURCE_PATH -zcvf $TGZ_FILE .`
 - zip
   - with pass: `zip -P password -r target.zip source_dir`
