@@ -17,6 +17,11 @@
       - [Definite Assignment](#definite-assignment)
       - [Index Signatures](#index-signatures)
     - [Intermission: Type Aliases, Unions, and Intersections](#intermission-type-aliases-unions-and-intersections)
+      - [Type aliases](#type-aliases)
+      - [Union and intersection types](#union-and-intersection-types)
+    - [Arrays](#arrays)
+    - [Tuples](#tuples)
+      - [Read-only arrays and tuples](#read-only-arrays-and-tuples)
 
 ***Type***: A set of values and the things you can do with them. e.g.
 
@@ -505,4 +510,254 @@ Is the value a valid object?
 
 ### Intermission: Type Aliases, Unions, and Intersections
 
->>>>> progress
+💡 If you have a type, you can perform some operations on it too.
+
+#### Type aliases
+
+You can declare a type alias that points to a type. It looks like this:
+
+```ts
+type Age = number
+
+type Person = {
+  name: string
+  age: Age
+}
+```
+
+💡 Aliases are never inferred by TypeScript, so you have to type them
+explicitly:
+
+```ts
+let age: Age = 55
+
+let driver: Person = {
+  name: 'James May'
+  age: age
+}
+```
+
+Because `Age` is just an alias for `number`, that means it’s also assignable to
+`number`, so we can rewrite this as:
+
+```ts
+let age = 55
+
+let driver: Person = {
+  name: 'James May'
+  age: age
+}
+```
+
+You can’t declare a type twice:
+
+```ts
+type Color = 'red'
+type Color = 'blue' // Error TS2300: Duplicate identifier 'Color'.
+```
+
+And like `let` and `const`, type aliases are block-scoped:
+
+```ts
+type Color = 'red'
+
+let x = Math.random() < .5
+
+if (x) {
+  type Color = 'blue'     // This shadows the Color declared above.
+  let b: Color = 'blue'
+} else {
+  let c: Color = 'red'
+}
+```
+
+💡 Type aliases are useful for DRYing up repeated complex types, and for making
+it clear what a variable is used for. When deciding whether or not to alias a
+type, use the same judgment as when deciding whether or not to pull a value out
+into its own variable.
+
+- The acronym DRY stands for “Don’t Repeat Yourself”.
+
+#### Union and intersection types
+
+- `|` for union and
+- `&` for intersection
+
+Since types are a lot like sets, we can think of them in the same way:
+
+```ts
+type Cat = {name: string, purrs: boolean}
+type Dog = {name: string, barks: boolean, wags: boolean}
+type CatOrDogOrBoth = Cat | Dog
+type CatAndDog = Cat & Dog
+```
+
+```ts
+// Cat
+let a: CatOrDogOrBoth = {
+  name: 'Bonkers',
+  purrs: true
+}
+
+// Dog
+a = {
+  name: 'Domino',
+  barks: true,
+  wags: true
+}
+
+// Both
+a = {
+  name: 'Donkers',
+  barks: true,
+  purrs: true,
+  wags: true
+}
+```
+
+```ts
+let b: CatAndDog = {
+  name: 'Domino',
+  barks: true,
+  purrs: true,
+  wags: true
+}
+```
+
+Unions come up naturally a lot more often than intersections do:
+
+```ts
+function trueOrNull(isTrue: boolean) {
+  if (isTrue) {
+    return 'true'
+  }
+  return null
+}
+```
+
+We can express its return type as:
+
+```ts
+type Returns = string | null
+```
+
+```ts
+function (a: string, b: number) {
+  return a || b
+}
+```
+
+The last place where unions come up naturally is in arrays (specifically the
+heterogeneous kind).
+
+### Arrays
+
+```ts
+let a = [1, 2, 3]         // number[]
+var b = ['a', 'b']        // string[]
+let c: string[] = ['a']   // string[]
+let d = [1, 'a']          // (string | number)[]
+const e = [2, 'b']        // (string | number)[]
+
+let f = ['red']
+f.push('blue')
+f.push(true)              // Error TS2345: Argument of type 'true' is not
+                          // assignable to parameter of type 'string'.
+
+let g = []                // any[]
+g.push(1)                 // number[]
+g.push('red')             // (string | number)[]
+
+let h: number[] = []      // number[]
+h.push(1)                 // number[]
+h.push('red')             // Error TS2345: Argument of type '"red"' is not
+                          // assignable to parameter of type 'number'.
+```
+
+TypeScript supports two syntaxes for arrays:
+
+- `T[]`
+- `Array<T>`
+
+They are identical both in meaning and in performance.
+
+💡 The general rule of thumb is to keep arrays homogeneous. Or you need to do
+something like this:
+
+```ts
+let d = [1, 'a']
+
+d.map(_ => {
+  if (typeof _ === 'number') {
+    return _ * 3
+  }
+  return _.toUpperCase()
+})
+```
+
+⚠️ Like with objects, creating arrays with `const` won’t hint to TypeScript to
+infer their types more narrowly. That’s why TypeScript inferred both `d` and `e`
+to be arrays of `number | string`.
+
+`g` is the special case: As you manipulate the array and add elements to it,
+TypeScript starts to piece together your array’s type. Once your array leaves
+the scope it was defined in (for example, if you declared it in a function,
+then returned it), TypeScript will assign it a final type that can’t be
+expanded anymore:
+
+```ts
+function buildArray() {
+  let a = []                // any[]
+  a.push(1)                 // number[]
+  a.push('x')               // (string | number)[]
+  return a
+}
+
+let myArray = buildArray()  // (string | number)[]
+myArray.push(true)          // Error 2345: Argument of type 'true' is not
+                            // assignable to parameter of type
+                            // 'string | number'.
+```
+
+### Tuples
+
+Tuples are subtypes of `array` that have fixed lengths, where the values at
+each index have specific, known types.
+
+Unlike most other types, tuples have to be explicitly typed when you declare
+them.
+
+```ts
+let a: [number] = [1]
+
+// A tuple of [first name, last name, birth year]
+let b: [string, string, number] = ['malcolm', 'gladwell', 1963]
+
+b = ['queen', 'elizabeth', 'ii', 1926]  // Error TS2322: Type 'string' is not
+                                        // assignable to type 'number'.
+
+// An array of train fares, which sometimes vary depending on direction
+let trainFares: [number, number?][] = [
+  [3.75],
+  [8.25, 7.70],
+  [10.50]
+]
+
+// Equivalently:
+let moreTrainFares: ([number] | [number, number])[] = [
+  // ...
+]
+```
+
+💡 Tuples also support rest elements, which you can use to type tuples with
+minimum lengths:
+
+```ts
+// A list of strings with at least 1 element
+let friends: [string, ...string[]] = ['Sara', 'Tali', 'Chloe', 'Claire']
+
+// A heterogeneous list
+let list: [number, boolean, ...string[]] = [1, false, 'a', 'b', 'c']
+```
+
+#### Read-only arrays and tuples
