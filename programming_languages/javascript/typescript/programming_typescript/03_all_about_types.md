@@ -22,6 +22,11 @@
     - [Arrays](#arrays)
     - [Tuples](#tuples)
       - [Read-only arrays and tuples](#read-only-arrays-and-tuples)
+    - [null, undefined, void, and never](#null-undefined-void-and-never)
+      - [Strict null Checking](#strict-null-checking)
+    - [Enums](#enums)
+      - [TSC Flag: preserveConstEnums](#tsc-flag-preserveconstenums)
+  - [Summary](#summary)
 
 ***Type***: A set of values and the things you can do with them. e.g.
 
@@ -761,3 +766,311 @@ let list: [number, boolean, ...string[]] = [1, false, 'a', 'b', 'c']
 ```
 
 #### Read-only arrays and tuples
+
+To create a read-only array, use an explicit type annotation; to update a
+read-only array, use nonmutating methods like `.concat` and `.slice` instead of
+mutating ones like `.push` and `.splice`:
+
+```ts
+let as: readonly number[] = [1, 2, 3]     // readonly number[]
+let bs: readonly number[] = as.concat(4)  // readonly number[]
+let three = bs[2]                         // number
+as[4] = 5                 // Error TS2542: Index signature in type
+                          // 'readonly number[]' only permits reading.
+as.push(6)                // Error TS2339: Property 'push' does not
+                          // exist on type 'readonly number[]'.
+```
+
+Or with longer-form ways to declare read-only arrays and tuples:
+
+```ts
+type A = readonly string[]          // readonly string[]
+type B = ReadonlyArray<string>      // readonly string[]
+type C = Readonly<string[]>         // readonly string[]
+
+type D = readonly [number, string]  // readonly [number, string]
+type E = Readonly<[number, string]> // readonly [number, string]
+```
+
+⚠️ Note that while read-only arrays can make your code easier to reason about in
+some cases by avoiding mutability, they are backed by regular JavaScript arrays.
+
+- That means even small updates to an array result in having to copy the
+  original array first, which can hurt your application’s runtime performance
+  if you’re not careful.
+- For small arrays this overhead is rarely noticeable, but for bigger arrays,
+  the overhead can become significant.
+- If you plan to make heavy use of immutable arrays, consider reaching for a
+  more efficient implementation, like Lee Byron’s excellent `immutable`.
+
+### null, undefined, void, and never
+
+The types of value `null` and `undefined` are called `null` and `undefined` too.
+In TypeScript the only thing of type `undefined` is the value `undefined`, and
+the only thing of type `null` is the value `null`.
+
+TypeScript also has `void` and `never`.
+
+- `void` is the return type of a function that doesn’t explicitly return
+  anything (for example, `console.log`)
+- `never` is the type of a function that never returns at all (like a function
+  that throws an exception, or one that runs forever):
+
+```ts
+// (a) A function that returns a number or null
+function a(x: number) {
+  if (x < 10) {
+    return x
+  }
+  return null
+}
+
+// (b) A function that returns undefined
+function b() {
+  return undefined
+}
+
+// (c) A function that returns void
+function c() {
+  let a = 2 + 2
+  let b = a * a
+}
+
+// (d) A function that returns never
+function d() {
+  throw TypeError('I always error')
+}
+
+// (e) Another function that returns never
+function e() {
+  while (true) {
+    doSomething()
+  }
+}
+```
+
+If `unknown` is the supertype of every other type, then `never` is the subtype
+of every other type. We call it a ***bottom type***. That means it’s assignable
+to every other type, and a value of type `never` can be used anywhere safely.
+
+| Type        | Meaning                                         |
+| ----------- | ----------------------------------------------- |
+| `null`      | Absence of a value                              |
+| `undefined` | Variable that has not been assigned a value yet |
+| `void`      | Function that doesn’t have a return statement   |
+| `never`     | Function that never returns                     |
+
+#### Strict null Checking
+
+In older versions of TypeScript (or with TSC’s `strictNullChecks` option set to
+`false`), `null` behaves a little differently: it is a subtype of all types,
+except `never`. That means every type is nullable, and you can never really
+trust the type of anything without first checking if it’s `null` or not. For
+example, if someone passes the variable `pizza` to your function and you want
+to call the method `.addAnchovies` on it, you first have to check if your
+`pizza` is `null` before you can add delicious tiny fish to it.
+
+```ts
+function addDeliciousFish(pizza: Pizza) {
+  return pizza.addAnchovies()   // Uncaught TypeError: Cannot read
+}                               // property 'addAnchovies' of null
+
+// TypeScript lets this fly with strictNullChecks = false
+addDeliciousFish(null)
+```
+
+### Enums
+
+There are two kinds of enums:
+
+- enums that map from strings to strings
+- enums that map from strings to numbers
+
+```ts
+enum Language {
+  English,
+  Spanish,
+  Russian
+}
+```
+
+💡 By convention, enum names are uppercase and singular. Their keys are also
+uppercase.
+
+TypeScript will automatically infer a number as the value for each member of
+your enum, but you can also set values explicitly:
+
+```ts
+enum Language {
+  English = 0,
+  Spanish = 1,
+  Russian = 2
+}
+
+let myFirstLanguage = Language.Russian      // Language
+let mySecondLanguage = Language['English']  // Language
+```
+
+You can split your enum across multiple declarations, and TypeScript will
+automatically merge them. But TypeScript can only infer values for one of those
+declarations, so it’s good practice to explicitly assign a value to each enum
+member:
+
+```ts
+enum Language {
+  English = 0,
+  Spanish = 1
+}
+
+enum Language {
+  Russian = 2
+}
+```
+
+```ts
+enum Language {
+  English = 100,
+  Spanish = 200 + 300,
+  Russian                 // TypeScript infers 501 (the next number after 500)
+}
+
+enum Color {
+  Red = '#c10000',
+  Blue = '#007ac1',
+  Pink = 0xc10050,        // A hexadecimal literal
+  White = 255             // A decimal literal
+}
+
+let red = Color.Red       // Color
+let pink = Color.Pink     // Color
+```
+
+TypeScript lets you access enums both by value and by key for convenience, but
+this can get unsafe quickly:
+
+```ts
+let a = Color.Red         // Color
+let b = Color.Green       // Error TS2339: Property 'Green' does not exist
+                          // on type 'typeof Color'.
+let c = Color[0]          // string
+let d = Color[6]          // string (!!!)
+```
+
+You shouldn’t be able to get Color[6], but TypeScript doesn’t stop you! We can
+ask TypeScript to prevent this kind of unsafe access by opting into a safer
+subset of enum behavior with `const enum` instead:
+
+```ts
+const enum Language {
+  English,
+  Spanish,
+  Russian
+}
+
+// Accessing a valid enum key
+let a = Language.English  // Language
+
+// Accessing an invalid enum key
+let b = Language.Tagalog  // Error TS2339: Property 'Tagalog' does not exist
+                          // on type 'typeof Language'.
+
+// Accessing a valid enum value
+let c = Language[0]       // Error TS2476: A const enum member can only be
+                          // accessed using a string literal.
+
+// Accessing an invalid enum value
+let d = Language[6]       // Error TS2476: A const enum member can only be
+                          // accessed using a string literal.
+```
+
+A `const enum` doesn’t generate any JavaScript code by default, and instead
+inlines the enum member’s value wherever it’s used.
+
+#### TSC Flag: preserveConstEnums
+
+`const enum` inlining can lead to safety issues when you import a `const enum`
+from someone else’s TypeScript code: if the enum author updates their
+`const enum` after you’ve compiled your TypeScript code, then your version of
+the enum and their version might point to different values at runtime, and
+TypeScript will be none the wiser.
+
+If you use `const enums`, be careful to avoid inlining them and to only use
+them in TypeScript programs that you control: avoid using them in programs that
+you’re planning to publish to NPM, or to make available for others to use as a
+library.
+
+To enable runtime code generation for `const enums`, switch the
+`preserveConstEnums` TSC setting to `true` in your `tsconfig.json`:
+
+```json
+{
+  "compilerOptions": {
+    "preserveConstEnums": true
+  }
+}
+```
+
+How we use `const enums`:
+
+```ts
+const enum Flippable {
+  Burger,
+  Chair,
+  Cup,
+  Skateboard,
+  Table
+}
+
+function flip(f: Flippable) {
+  return 'flipped it'
+}
+
+flip(Flippable.Chair)   // 'flipped it'
+flip(Flippable.Cup)     // 'flipped it'
+flip(12)                // 'flipped it' (!!!)
+```
+
+All numbers are also assignable to enums! You have to be extra careful to
+***only use string-valued enums***:
+
+```ts
+const enum Flippable {
+  Burger = 'Burger',
+  Chair = 'Chair',
+  Cup = 'Cup',
+  Skateboard = 'Skateboard',
+  Table = 'Table'
+}
+
+function flip(f: Flippable) {
+  return 'flipped it'
+}
+
+flip(Flippable.Chair)   // 'flipped it'
+flip(Flippable.Cup)     // 'flipped it'
+flip(12)                // Error TS2345: Argument of type '12' is not
+                        // assignable to parameter of type 'Flippable'.
+flip('Hat')             // Error TS2345: Argument of type '"Hat"' is not
+                        // assignable to parameter of type 'Flippable'.
+```
+
+Because of all the pitfalls that come with using enums safely, I recommend you
+stay away from them.
+
+## Summary
+
+`const` will infer more specific types, `let` and `var` more general ones.
+
+Most types have general and more specific counterparts, the latter subtypes of
+the former.
+
+| Type    | Subtype         |
+| ------- | --------------- |
+| boolean | Boolean literal |
+| bigint  | BigInt literal  |
+| number  | Number literal  |
+| string  | String literal  |
+| symbol  | unique symbol   |
+| object  | Object literal  |
+| Array   | Tuple           |
+| enum    | const enum      |
