@@ -25,7 +25,7 @@ def a_plus_abs_b_syntax_check():
 
     >>> # You aren't expected to understand the code of this test.
     >>> import inspect, re
-    >>> re.findall(r'^\s*(return .*)', inspect.getsource(a_plus_abs_b), re.M)
+    >>> re.findall(r'^\\s*(return .*)', inspect.getsource(a_plus_abs_b), re.M)
     ['return f(a, b)']
     """
     # You don't need to edit this function. It's just here to check your work.
@@ -73,7 +73,7 @@ def largest_factor(n):
     while (i * i) <= n:
         if n % i == 0:
             factor = i
-            factor = max(factor,  n // i)
+            factor = max(factor, n // i)
             break
         i += 1
 
@@ -100,15 +100,15 @@ def hailstone(n):
     1
     """
     steps = 0
-    while (True):
+    while True:
         print(n)
 
         steps += 1
 
-        if (n == 1):
+        if n == 1:
             break
 
-        if (n % 2 == 0):
+        if n % 2 == 0:
             n //= 2
         else:
             n = n * 3 + 1
