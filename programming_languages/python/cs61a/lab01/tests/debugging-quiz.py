@@ -130,19 +130,6 @@ test = {
           'question': 'What is the best way to open an interactive terminal to investigate a failing test for question sum_digits in assignment lab01?'
         },
         {
-          'answer': 'python3 ok -q sum_digits --trace',
-          'choices': [
-            'python3 ok -q sum_digits -i',
-            'python3 ok -q sum_digits --trace',
-            'python3 ok -q sum_digits',
-            'python3 -i lab01.py'
-          ],
-          'hidden': False,
-          'locked': False,
-          'multiline': False,
-          'question': 'What is the best way to look at an environment diagram to investigate a failing test for question sum_digits in assignment lab01?'
-        },
-        {
           'answer': 'Code that returns a wrong answer instead of crashing is generally better as it at least works fine',
           'choices': [
             'Code that returns a wrong answer instead of crashing is generally better as it at least works fine',
