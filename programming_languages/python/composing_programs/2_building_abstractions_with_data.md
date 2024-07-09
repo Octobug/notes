@@ -22,10 +22,10 @@
       - [Partition trees](#partition-trees)
     - [2.3.7 Linked Lists](#237-linked-lists)
       - [Recursive Construction](#recursive-construction)
-  - [Lab 4: Recursion, Tree Recursion, Python Lists](#lab-4-recursion-tree-recursion-python-lists)
+  - [Lab 3: Recursion, Tree Recursion, Python Lists](#lab-3-recursion-tree-recursion-python-lists)
   - [Discussion 4: Tree Recursion, Python Lists](#discussion-4-tree-recursion-python-lists)
   - [Project 2: CS 61A Autocorrected Typing Software](#project-2-cs-61a-autocorrected-typing-software)
-  - [Lab 5: Data Abstraction, Sequences](#lab-5-data-abstraction-sequences)
+  - [Lab 4: Tree Recursion, Data Abstraction](#lab-4-tree-recursion-data-abstraction)
   - [Discussion 5: Trees](#discussion-5-trees)
   - [2.4 Mutable Data](#24-mutable-data)
     - [2.4.1 The Object Metaphor](#241-the-object-metaphor)
@@ -411,9 +411,9 @@ def print_partitions(n, m):
 1 + 1 + 1 + 1 + 1 + 1
 ```
 
-## Lab 4: Recursion, Tree Recursion, Python Lists
+## Lab 3: Recursion, Tree Recursion, Python Lists
 
-- [x] [Lab 4: Recursion, Tree Recursion, Python Lists](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab04/)
+- [x] [Lab 3: Recursion, Tree Recursion, Python Lists](https://www.learncs.site/docs/curriculum-resource/cs61a/lab/lab03)
 
 ## Discussion 4: Tree Recursion, Python Lists
 
@@ -423,12 +423,12 @@ def print_partitions(n, m):
 
 - [x] [Project 2: CS 61A Autocorrected Typing Software](https://inst.eecs.berkeley.edu/~cs61a/sp23/proj/cats/)
 
-## Lab 5: Data Abstraction, Sequences
+## Lab 4: Tree Recursion, Data Abstraction
 
 A ***predicate function*** is a function that takes in an argument and returns
 either `True` or `False`.
 
-- [x] [Lab 5: Data Abstraction, Sequences](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab05/)
+- [x] [Lab 4: Tree Recursion, Data Abstraction](https://www.learncs.site/docs/curriculum-resource/cs61a/lab/lab04)
 
 ## Discussion 5: Trees
 
@@ -762,4 +762,4 @@ converter(celsius, fahrenheit)
 
 ## Homework 5: Generators
 
-- [ ] [Homework 5: Generators](https://inst.eecs.berkeley.edu/~cs61a/sp23/hw/hw05/)
+- [ ] [Homework 5: Generators](https://www.learncs.site/docs/curriculum-resource/cs61a/homework/hw05)

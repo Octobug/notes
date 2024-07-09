@@ -13,7 +13,7 @@
     - [4.2.8 Iterator Interface](#428-iterator-interface)
     - [4.2.9 Streams](#429-streams)
     - [4.2.10 Python Streams](#4210-python-streams)
-  - [Lab 6: Mutability, Iterators](#lab-6-mutability-iterators)
+  - [Lab 5: Mutability, Iterators](#lab-5-mutability-iterators)
   - [Discussion 6: Mutability, Iterators, Generators](#discussion-6-mutability-iterators-generators)
   - [4.3 Declarative Programming](#43-declarative-programming)
 
@@ -711,9 +711,9 @@ Just as linked lists provide a simple implementation of the sequence
 abstraction, streams provide a simple, functional, recursive data structure
 that implements lazy evaluation through the use of higher-order functions.
 
-## Lab 6: Mutability, Iterators
+## Lab 5: Mutability, Iterators
 
-- [x] [Lab 6: Mutability, Iterators](https://inst.eecs.berkeley.edu/~cs61a/sp23/lab/lab06/)
+- [x] [Lab 5: Mutability, Iterators](https://www.learncs.site/docs/curriculum-resource/cs61a/lab/lab05)
 
 ## Discussion 6: Mutability, Iterators, Generators
 
