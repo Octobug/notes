@@ -39,7 +39,19 @@
     - [2.4.9 Propagating Constraints](#249-propagating-constraints)
   - [Homework 4: Trees, Data Abstraction](#homework-4-trees-data-abstraction)
   - [2.5 Object-Oriented Programming](#25-object-oriented-programming)
+    - [2.5.1 Objects and Classes](#251-objects-and-classes)
+    - [2.5.2 Defining Classes](#252-defining-classes)
+    - [2.5.3 Message Passing and Dot Expressions](#253-message-passing-and-dot-expressions)
+    - [2.5.4 Class Attributes](#254-class-attributes)
+    - [2.5.5 Inheritance](#255-inheritance)
+    - [2.5.6 Using Inheritance](#256-using-inheritance)
+    - [2.5.7 Multiple Inheritance](#257-multiple-inheritance)
+    - [2.5.8 The Role of Objects](#258-the-role-of-objects)
   - [Homework 5: Generators](#homework-5-generators)
+  - [Lab 6: OOP](#lab-6-oop)
+  - [Project 3: Ants Vs. SomeBees](#project-3-ants-vs-somebees)
+  - [Discussion 7: OOP](#discussion-7-oop)
+  - [2.6 Implementing Classes and Objects](#26-implementing-classes-and-objects)
 
 ## 2.1 Introduction
 
@@ -758,8 +770,402 @@ converter(celsius, fahrenheit)
 ## 2.5 Object-Oriented Programming
 
 > <https://www.composingprograms.com/pages/25-object-oriented-programming.html>
->>>>> progress
+
+### 2.5.1 Objects and Classes
+
+### 2.5.2 Defining Classes
+
+```py
+class <name>:
+    <suite>
+```
+
+When a class statement is executed, a new class is created and bound to `<name>`
+in the first frame of the current environment. The suite is then executed. Any
+names bound within the `<suite>` of a class statement, through `def` or
+assignment statements, create or modify attributes of the class.
+
+```py
+>>> class Account:
+        def __init__(self, account_holder):
+            self.balance = 0
+            self.holder = account_holder
+
+>>> a = Account('Kirk')
+```
+
+***By convention***, we use the parameter name `self` for the first argument of
+a constructor, because it is bound to the object being instantiated. This
+convention is adopted in virtually all Python code.
+
+```py
+>>> a.balance
+0
+>>> a.holder
+'Kirk'
+
+>>> b = Account('Spock')
+>>> b.balance = 200
+>>> [acc.balance for acc in (a, b)]
+[0, 200]
+```
+
+To enforce this separation, every object that is an instance of a user-defined
+class has a unique identity. Object identity is compared using the `is` and
+`is not` operators.
+
+```py
+>>> a is a
+True
+>>> a is not b
+True
+
+>>> c = a
+>>> c is a
+True
+```
+
+```py
+>>> class Account:
+        def __init__(self, account_holder):
+            self.balance = 0
+            self.holder = account_holder
+        def deposit(self, amount):
+            self.balance = self.balance + amount
+            return self.balance
+        def withdraw(self, amount):
+            if amount > self.balance:
+                return 'Insufficient funds'
+            self.balance = self.balance - amount
+            return self.balance
+```
+
+```py
+>>> spock_account = Account('Spock')
+>>> spock_account.deposit(100)
+100
+>>> spock_account.withdraw(90)
+10
+>>> spock_account.withdraw(90)
+'Insufficient funds'
+>>> spock_account.holder
+'Spock'
+```
+
+### 2.5.3 Message Passing and Dot Expressions
+
+A **dot expression** consists of an expression, a dot, and a name:
+
+```py
+<expression> . <name>
+```
+
+The built-in function `getattr` also returns an attribute for an object by name.
+It is the function equivalent of dot notation. Using `getattr`, we can look up
+an attribute using a string, just as we did with a dispatch dictionary.
+
+```py
+>>> getattr(spock_account, 'balance')
+10
+```
+
+We can also test whether an object has a named attribute with `hasattr`.
+
+```py
+>>> hasattr(spock_account, 'deposit')
+True
+```
+
+Methods are attributes of the class that require special handling.
+
+**Methods and functions**.
+
+To achieve automatic `self` binding, Python distinguishes between functions,
+and ***bound methods***, which couple together a function and the object on
+which that method will be invoked. A bound method value is already associated
+with its first argument, the instance on which it was invoked, which will be
+named `self` when the method is called.
+
+As an attribute of a ***class***, a method is just a function, but as an
+attribute of an ***instance***, it is a bound method:
+
+```py
+>>> type(Account.deposit)
+<class 'function'>
+>>> type(spock_account.deposit)
+<class 'method'>
+```
+
+These two results differ only in the fact that the first is a standard
+two-argument function with parameters `self` and `amount`. The second is a
+one-argument method, where the name `self` will be bound to the object named
+`spock_account` automatically when the method is called, while the parameter
+`amount` will be bound to the argument passed to the method.
+
+We can call `deposit` in two ways: as a function and as a bound method. In the
+former case, we must supply an argument for the `self` parameter explicitly.
+In the latter case, the `self` parameter is bound automatically.
+
+```py
+# The deposit function takes 2 arguments
+>>> Account.deposit(spock_account, 1001)
+1011
+
+# The deposit method takes 1 argument
+>>> spock_account.deposit(1000)
+2011
+```
+
+The function `getattr` behaves exactly like dot notation: if its first argument
+is an object but the name is a method defined in the class, then `getattr`
+returns a bound method value. On the other hand, if the first argument is a
+class, then `getattr` returns the attribute value directly, which is a plain
+function.
+
+### 2.5.4 Class Attributes
+
+***Class attributes*** may also be called ***class variables*** or
+***static variables***.
+
+```py
+>>> class Account:
+        interest = 0.02            # A class attribute
+        def __init__(self, account_holder):
+            self.balance = 0
+            self.holder = account_holder
+        # Additional methods would be defined here
+
+>>> spock_account = Account('Spock')
+>>> kirk_account = Account('Kirk')
+>>> spock_account.interest
+0.02
+>>> kirk_account.interest
+0.02
+```
+
+However, a single assignment statement to a class attribute changes the value
+of the attribute for all instances of the class.
+
+```py
+>>> Account.interest = 0.04
+>>> spock_account.interest
+0.04
+>>> kirk_account.interest
+0.04
+```
+
+**Attribute names**.
+
+```py
+<expression> . <name>
+```
+
+To evaluate a dot expression:
+
+1. Evaluate the `<expression>` to the left of the dot, which yields the object
+   of the dot expression.
+2. `<name>` is matched against the instance attributes of that object; if an
+   attribute with that name exists, its value is returned.
+3. If `<name>` does not appear among instance attributes, then `<name>` is
+   looked up in the class, which yields a class attribute value.
+4. That value is returned unless it is a function, in which case a bound method
+   is returned instead.
+
+**Attribute assignment**.
+
+```py
+>>> kirk_account.interest = 0.08
+>>> kirk_account.interest
+0.08
+
+>>> spock_account.interest
+0.04
+```
+
+```py
+# changing the class attribute
+>>> Account.interest = 0.05
+
+# changes instances without like-named instance attributes
+>>> spock_account.interest
+0.05
+
+# but the existing instance attribute is unaffected
+>>> kirk_account.interest
+0.08
+```
+
+### 2.5.5 Inheritance
+
+```py
+>>> ch = CheckingAccount('Spock')
+>>> ch.interest     # Lower interest rate for checking accounts
+0.01
+>>> ch.deposit(20)  # Deposits are the same
+20
+>>> ch.withdraw(5)  # withdrawals decrease balance by an extra charge
+14
+```
+
+### 2.5.6 Using Inheritance
+
+```py
+class Account:
+    """A bank account that has a non-negative balance."""
+    interest = 0.02
+    def __init__(self, account_holder):
+        self.balance = 0
+        self.holder = account_holder
+    def deposit(self, amount):
+        """Increase the account balance by amount and return the new balance."""
+        self.balance = self.balance + amount
+        return self.balance
+    def withdraw(self, amount):
+        """Decrease the account balance by amount and return the new balance."""
+        if amount > self.balance:
+            return 'Insufficient funds'
+        self.balance = self.balance - amount
+        return self.balance
+
+class CheckingAccount(Account):
+    """A bank account that charges for withdrawals."""
+    withdraw_charge = 1
+    interest = 0.01
+    def withdraw(self, amount):
+        return Account.withdraw(self, amount + self.withdraw_charge)
+```
+
+```py
+>>> checking = CheckingAccount('Sam')
+>>> checking.deposit(10)
+10
+>>> checking.withdraw(5)
+4
+>>> checking.interest
+0.01
+```
+
+When Python resolves a name in a dot expression that is not an attribute of the
+instance, it looks up the name in the class. In fact, the act of "looking up" a
+name in a class tries to find that name in every base class in the inheritance
+chain for the original object's class. We can define this procedure recursively.
+To look up a name in a class.
+
+1. If it names an attribute in the class, return the attribute value.
+2. Otherwise, look up the name in the base class, if there is one.
+
+**Calling ancestors**.
+
+**Interfaces**. It is extremely common in object-oriented programs that
+different types of objects will share the same attribute names. An object
+***interface*** is a collection of attributes and conditions on those
+attributes. For example, all accounts must have `deposit` and `withdraw`
+methods that take numerical arguments, as well as a `balance` attribute. The
+classes `Account` and `CheckingAccount` both implement this interface.
+Inheritance specifically promotes name sharing in this way.
+
+💡 The parts of your program that use objects (rather than implementing them)
+are most robust to future changes if they do not make assumptions about object
+types, but instead only about their attribute names. That is, they use the
+object abstraction, rather than assuming anything about its implementation.
+
+```py
+>>> def deposit_all(winners, amount=5):
+        for account in winners:
+            account.deposit(amount)
+```
+
+The following implementation will not necessarily work with new kinds of
+accounts:
+
+```py
+>>> def deposit_all(winners, amount=5):
+        for account in winners:
+            Account.deposit(account, amount)
+```
+
+### 2.5.7 Multiple Inheritance
+
+```py
+>>> class SavingsAccount(Account):
+        deposit_charge = 2
+        def deposit(self, amount):
+            return Account.deposit(self, amount - self.deposit_charge)
+```
+
+Then, a clever executive conceives of an `AsSeenOnTVAccount` account with the
+best features of both `CheckingAccount` and `SavingsAccount`: withdrawal fees,
+deposit fees, and a low interest rate.
+
+```py
+>>> class AsSeenOnTVAccount(CheckingAccount, SavingsAccount):
+        def __init__(self, account_holder):
+            self.holder = account_holder
+            self.balance = 1           # A free dollar!
+
+>>> such_a_deal = AsSeenOnTVAccount("John")
+>>> such_a_deal.balance
+1
+>>> such_a_deal.deposit(20)            # $2 fee from SavingsAccount.deposit
+19
+>>> such_a_deal.withdraw(5)            # $1 fee from CheckingAccount.withdraw
+13
+```
+
+Non-ambiguous references are resolved correctly as expected:
+
+```py
+>>> such_a_deal.deposit_charge
+2
+>>> such_a_deal.withdraw_charge
+1
+```
+
+But what about when the reference is ambiguous, such as the reference to the
+`withdraw` method that is defined in both `Account` and `CheckingAccount`?
+
+Python resolves names from left to right, then upwards. In this example, Python
+checks for an attribute name in the following classes, in order, until an
+attribute with that name is found:
+
+`AsSeenOnTVAccount, CheckingAccount, SavingsAccount, Account, object`
+
+Any programming language that supports ***multiple inheritance*** must select
+some ordering in a consistent way, so that users of the language can predict
+the behavior of their programs.
+
+Python resolves this name using a recursive algorithm called the C3 Method
+Resolution Ordering. The method resolution order of any class can be queried
+using the `mro` method on all classes.
+
+```py
+>>> [c.__name__ for c in AsSeenOnTVAccount.mro()]
+['AsSeenOnTVAccount', 'CheckingAccount', 'SavingsAccount', 'Account', 'object']
+```
+
+### 2.5.8 The Role of Objects
+
+💡 Functional abstractions provide a more natural metaphor for representing
+relationships between inputs and outputs.
 
 ## Homework 5: Generators
 
-- [ ] [Homework 5: Generators](https://www.learncs.site/docs/curriculum-resource/cs61a/homework/hw05)
+- [x] [Homework 5: Generators](https://www.learncs.site/docs/curriculum-resource/cs61a/homework/hw05)
+
+## Lab 6: OOP
+
+>>>>> progress
+
+- [ ] [Lab 6: OOP](https://www.learncs.site/docs/curriculum-resource/cs61a/lab/lab06)
+
+## Project 3: Ants Vs. SomeBees
+
+- [ ] [Project 3: Ants Vs. SomeBees](https://www.learncs.site/docs/curriculum-resource/cs61a/project/ants)
+
+## Discussion 7: OOP
+
+- [Discussion 7: OOP](https://www.learncs.site/docs/curriculum-resource/cs61a/dis/disc07)
+
+## 2.6 Implementing Classes and Objects
+
+> <https://www.composingprograms.com/pages/26-implementing-classes-and-objects.html>
