@@ -9,6 +9,11 @@
     - [Typing this](#typing-this)
       - [TSC Flag: `noImplicitThis`](#tsc-flag-noimplicitthis)
     - [Generator Functions](#generator-functions)
+    - [Iterators](#iterators)
+      - [TSC Flag: downlevelIteration](#tsc-flag-downleveliteration)
+    - [Call Signatures](#call-signatures)
+      - [Type Level and Value Level Code](#type-level-and-value-level-code)
+    - [Contextual Typing](#contextual-typing)
 
 ## Declaring and Invoking Functions
 
@@ -289,5 +294,187 @@ Note that `noImplicitThis` doesn’t enforce `this`-annotations for classes, or
 for functions on objects.
 
 ### Generator Functions
+
+Generators are lazy — that is, they only compute the next value when a consumer
+asks for it — they can do things that can be hard to do otherwise, like
+generate infinite lists.
+
+```ts
+function* createFibonacciGenerator() {
+  let a = 0
+  let b = 1
+  while (true) {
+    yield a;
+    [a, b] = [b, a + b]
+  }
+}
+
+let fibonacciGenerator = createFibonacciGenerator() // IterableIterator<number>
+fibonacciGenerator.next()               // evaluates to {value: 0, done: false}
+fibonacciGenerator.next()               // evaluates to {value: 1, done: false}
+fibonacciGenerator.next()               // evaluates to {value: 1, done: false}
+fibonacciGenerator.next()               // evaluates to {value: 2, done: false}
+fibonacciGenerator.next()               // evaluates to {value: 3, done: false}
+fibonacciGenerator.next()               // evaluates to {value: 5, done: false}
+```
+
+Calling a generator returns an iterable iterator.
+
+TypeScript is able to infer the type of our iterator from the type of the value
+we yielded.
+
+You can also explicitly annotate a generator, wrapping the type it yields in an
+`IterableIterator`:
+
+```ts
+function* createNumbers(): IterableIterator<number> {
+  let n = 0
+  while (1) {
+    yield n++
+  }
+}
+
+let numbers = createNumbers()
+numbers.next()                  // evaluates to {value: 0, done: false}
+numbers.next()                  // evaluates to {value: 1, done: false}
+numbers.next()                  // evaluates to {value: 2, done: false}
+```
+
+### Iterators
+
+- **Generators** are a way to produce a stream of values while **iterators**
+  are a way to consume those values.
+- **Iterable**: Any object that contains a property called `Symbol.iterator`,
+  whose value is a function that returns an **iterator**.
+- **Iterator**: Any object that defines a method called `next`, which returns
+  an object with the properties `value` and `done`.
+
+An iterable iterator defines both a `Symbol.iterator` property and a `next`
+method. You can manually define an iterator or an iterable by creating an
+object (or a class) that implements `Symbol.iterator` or `next`.
+
+```ts
+let numbers = {
+  *[Symbol.iterator]() {
+    for (let n = 1; n <= 10; n++) {
+      yield n
+    }
+  }
+}
+```
+
+In other words, `numbers` is an iterable, and calling the generator function
+`numbers[Symbol.iterator]()` returns an iterable iterator.
+
+```ts
+// Iterate over an iterator with for-of
+for (let a of numbers) {
+  // 1, 2, 3, etc.
+}
+
+// Spread an iterator
+let allNumbers = [...numbers] // number[]
+
+// Destructure an iterator
+let [one, two, ...rest] = numbers // [number, number, number[]]
+```
+
+#### TSC Flag: downlevelIteration
+
+If you’re compiling your TypeScript to a JavaScript version older than ES2015,
+you can enable custom iterators with the `downlevelIteration` flag in your
+`tsconfig.json`.
+
+You may want to keep `downlevelIteration` disabled if your application is
+especially sensitive to bundle size: it takes a lot of code to get custom
+iterators working in older environments.
+
+### Call Signatures
+
+```ts
+function sum(a: number, b: number): number {
+  return a + b
+}
+```
+
+Its type is: `Function`
+
+But the `Function` type is not what you want to use most of the time.
+`Function` is a catchall type for all functions, and doesn’t tell you anything
+about the specific function that it types.
+
+In TypeScript we can express its type as:
+
+```ts
+(a: number, b: number) => number
+```
+
+This is TypeScript’s syntax for a function’s type, or ***call signature***
+(also called a ***type signature***). It looks remarkably similar to an arrow
+function — this is intentional! When you pass functions around as arguments, or
+return them from other functions, this is the syntax you’ll use to type them.
+
+The parameter names `a` and `b` just serve as documentation, and don’t affect
+the assignability of a function with that type.
+
+Function ***call signatures*** only contain ***type-level*** code — that is,
+types only, no values. That means function call signatures can express
+parameter types, `this` types, return types, rest types, and optional types,
+and they cannot express default values. And because they have no body for
+TypeScript to infer from, call signatures require explicit return type
+annotations.
+
+#### Type Level and Value Level Code
+
+- ***type-level code***: code that consists exclusively of types and type
+  operators.
+- ***value-level code***: which is everything else.
+
+A rule of thumb is: if it’s valid JavaScript code, then it’s value-level;
+if it’s valid TypeScript but not valid JavaScript, then it’s type-level.
+
+- The exceptions to this rule of thumb are `enums`, `classes`, and `namespaces`.
+  Enums and classes each generate both a type and a value, and namespaces exist
+  just at the value level.
+
+```ts
+// function greet(name: string)
+type Greet = (name: string) => string
+
+// function log(message: string, userId?: string)
+type Log = (message: string, userId?: string) => void
+
+// function sumVariadicSafe(...numbers: number[]): number
+type SumVariadicSafe = (...numbers: number[]) => number
+```
+
+How can you declare a function that implements a call signature? You simply
+combine the call signature with a function expression that implements it.
+
+Rewrite `Log` to use its shiny new signature:
+
+```ts
+type Log = (message: string, userId?: string) => void
+
+let log: Log = (
+  message,
+  userId = 'Not signed in'
+) => {
+  let time = new Date().toISOString()
+  console.log(time, message, userId)
+}
+```
+
+1. We declare a function expression `log`, and explicitly type it as type `Log`.
+2. We don’t need to annotate our parameters twice, since message is already
+   annotated as a string as part of the definition for `Log`. Instead, we let
+   TypeScript infer it for us from Log.
+3. We add a default value for `userId`, since we captured `userId`’s type in
+   our signature for `Log`, but we couldn’t capture the default value as part
+   of `Log` because `Log` is a type and can’t contain values.
+4. We don’t need to annotate our return type again, since we already declared
+   it as `void` in our `Log` type.
+
+### Contextual Typing
 
 >>>>> progress
