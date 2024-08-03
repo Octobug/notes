@@ -17,11 +17,12 @@ export type LogItem = {
   label: string,
   level: string,
   message: string,
-  extra: unknown
+  stack: string,
+  extra: unknown,
 };
 
 function parseLogItem(line: Logform.TransformableInfo): LogItem {
-  const { timestamp, label, level, message } = line;
+  const { timestamp, label, level, message, stack } = line;
   const splat: Logform.Format[] = line[Symbol.for('splat')] || [];
   if (splat.length > 1) {
     throw new Error('logger only accepts 1 extra object but provided: '
@@ -32,7 +33,7 @@ function parseLogItem(line: Logform.TransformableInfo): LogItem {
     throw new Error('`extra` cannot have `message` property, '
       + 'use other name instead');
   }
-  return { timestamp, label, level, message, extra };
+  return { timestamp, label, level, message, stack, extra };
 }
 
 function toString(message: unknown) {
@@ -49,10 +50,13 @@ function toString(message: unknown) {
 
 function formatPrintf(): Logform.Format {
   return format.printf(line => {
-    const { timestamp, label, level, message, extra } = parseLogItem(line);
-    const jsonMessage = toString(message);
-    const jsonExtra = extra ? `: ${toString(extra)}` : '';
-    return `${timestamp} [${label}] ${level} - ${jsonMessage}${jsonExtra}`;
+    const {
+      timestamp, label, level, message, stack, extra
+    } = parseLogItem(line);
+    const msgStr = toString(message);
+    const extraStr = extra ? `: ${toString(extra)}` : '';
+    const stackStr = stack ? `\n${toString(stack)}` : '';
+    return `${timestamp} [${label}] ${level} - ${msgStr}${extraStr}${stackStr}`;
   });
 }
 
@@ -66,6 +70,7 @@ function getLogFormat(label: string) {
   const combineProd = [
     format.label({ label }),
     format.timestamp(),
+    format.errors({ stack: true }),
     format.json(),
     formatJSON(),
   ];
@@ -73,6 +78,7 @@ function getLogFormat(label: string) {
   const combineDev = [
     format.label({ label }),
     format.timestamp(),
+    format.errors({ stack: true }),
     formatPrintf(),
     format.colorize({ all: true }),
   ];
