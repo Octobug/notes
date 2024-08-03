@@ -24,10 +24,14 @@ function parseLogItem(line: Logform.TransformableInfo): LogItem {
   const { timestamp, label, level, message } = line;
   const splat: Logform.Format[] = line[Symbol.for('splat')] || [];
   if (splat.length > 1) {
-    throw new Error('logger only accepts 1 extra object, '
-      + `provided: ${splat.length}`);
+    throw new Error('logger only accepts 1 extra object but provided: '
+      + `${splat.length}, please wrap them in the same object`);
   }
   const extra = splat[0];
+  if (extra?.hasOwnProperty('message')) {
+    throw new Error('`extra` cannot have `message` property, '
+      + 'use other name instead');
+  }
   return { timestamp, label, level, message, extra };
 }
 
@@ -37,14 +41,15 @@ function toString(message: unknown) {
   } else if (typeof message === 'string') {
     return message;
   } else {
-    return JSON.stringify(message);
+    return env.isDevelopment
+      ? JSON.stringify(message, null, 2)
+      : JSON.stringify(message);
   }
 }
 
 function formatPrintf(): Logform.Format {
   return format.printf(line => {
     const { timestamp, label, level, message, extra } = parseLogItem(line);
-
     const jsonMessage = toString(message);
     const jsonExtra = extra ? `: ${toString(extra)}` : '';
     return `${timestamp} [${label}] ${level} - ${jsonMessage}${jsonExtra}`;
