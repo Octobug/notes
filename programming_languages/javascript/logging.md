@@ -41,8 +41,6 @@ function jsonReplacer(_: string, value: unknown) {
     return '';
   } else if (value instanceof Error) {
     return value.stack;
-  } else if (typeof value !== 'object') {
-    return value.toString();
   } else {
     return value;
   }
@@ -91,7 +89,6 @@ function getLogFormat(label: string) {
   const combineProd = [
     format.label({ label }),
     format.timestamp(),
-    format.errors({ stack: true }),
     format.json(),
     formatJSON(),
   ];
@@ -125,7 +122,6 @@ function createLogger(label: string): Logger {
   const options = getOptions(label);
   return winston.createLogger(options);
 }
-
 
 export default createLogger;
 ```
