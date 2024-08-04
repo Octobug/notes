@@ -22,29 +22,45 @@ export type LogItem = {
 };
 
 function parseLogItem(line: Logform.TransformableInfo): LogItem {
-  const { timestamp, label, level, message, stack } = line;
-  const splat: Logform.Format[] = line[Symbol.for('splat')] || [];
+  const { timestamp, label, level, stack } = line;
+  let { message } = line;
+  const splat = line[Symbol.for('splat')] || [];
   if (splat.length > 1) {
     throw new Error('logger only accepts 1 extra object but provided: '
       + `${splat.length}, please wrap them in the same object`);
   }
   const extra = splat[0];
   if (extra?.hasOwnProperty('message')) {
-    throw new Error('`extra` cannot have `message` property, '
-      + 'use other name instead');
+    message = message.replace(' ' + extra.message, '');
   }
   return { timestamp, label, level, message, stack, extra };
 }
 
-function toString(message: unknown) {
-  if (!message) {
+function jsonReplacer(_: string, value: unknown) {
+  if (!value) {
     return '';
-  } else if (typeof message === 'string') {
-    return message;
+  } else if (value instanceof Error) {
+    return value.stack;
+  } else if (typeof value !== 'object') {
+    return value.toString();
   } else {
-    return env.isDevelopment
-      ? JSON.stringify(message, null, 2)
-      : JSON.stringify(message);
+    return value;
+  }
+}
+
+interface MessageObject {
+  message?: string;
+}
+
+function toString(obj: MessageObject | string) {
+  if (typeof obj === 'string') {
+    return obj;
+  } else if (obj.hasOwnProperty('message')) {
+    return obj.message;
+  } else if (env.isDevelopment) {
+    return JSON.stringify(obj, jsonReplacer, 2);
+  } else {
+    return JSON.stringify(obj, jsonReplacer);
   }
 }
 
@@ -62,7 +78,12 @@ function formatPrintf(): Logform.Format {
 
 function formatJSON(): Logform.Format {
   return format.printf(line => {
-    return JSON.stringify(parseLogItem(line));
+    const logItem = parseLogItem(line);
+    // Prevent duplicated output of error
+    if (logItem.extra instanceof Error) {
+      delete logItem.extra;
+    }
+    return JSON.stringify(logItem, jsonReplacer);
   });
 }
 
