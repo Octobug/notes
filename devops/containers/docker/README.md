@@ -29,4 +29,11 @@
 ```sh
 docker tag IMAGE_HASH REGISTRY.domain/IMAGE_NAME:TAG
 docker push REGISTRY.domain/IMAGE_NAME:TAG
+docker image pull IMAGE_NAME:TAG@sha256:DIGEST
+```
+
+## Checksums
+
+```sh
+docker images --digests
 ```

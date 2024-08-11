@@ -14,6 +14,9 @@
     - [Call Signatures](#call-signatures)
       - [Type Level and Value Level Code](#type-level-and-value-level-code)
     - [Contextual Typing](#contextual-typing)
+    - [Overloaded Function Types](#overloaded-function-types)
+      - [Keeping Overload Signatures Specific](#keeping-overload-signatures-specific)
+  - [Polymorphism](#polymorphism)
 
 ## Declaring and Invoking Functions
 
@@ -476,5 +479,290 @@ let log: Log = (
    it as `void` in our `Log` type.
 
 ### Contextual Typing
+
+The last example didn’t have to explicitly annotate function parameter types.
+Because we already declared that `log` is of type `Log`, TypeScript is able to
+infer from context that `message` has to be of type `string`. This is called
+***contextual typing***.
+
+```ts
+function times(
+  f: (index: number) => void,
+  n: number
+) {
+  for (let i = 0; i < n; i++) {
+    f(i)
+  }
+}
+```
+
+When you call `times`, you don’t have to explicitly annotate the function you
+pass to `times` if you declare that function inline:
+
+```ts
+times(n => console.log(n), 4)
+```
+
+TypeScript infers from context that `n` is a `number` — we declared that `f`’s
+argument `index` is a `number` in times’s signature, and TypeScript infers that
+`n` is that argument, so it must be a `number`.
+
+⚠️ If we didn’t declare `f` inline, TypeScript wouldn’t have been able to infer
+its type:
+
+```ts
+function f(n) { // Error TS7006: Parameter 'n' implicitly has an 'any' type.
+  console.log(n)
+}
+
+times(f, 4)
+```
+
+### Overloaded Function Types
+
+`type Fn = (...) => ...` is a ***shorthand call signature***.
+
+```ts
+// Shorthand call signature
+type Log = (message: string, userId?: string) => void
+
+// Full call signature
+type Log = {
+  (message: string, userId?: string): void
+}
+```
+
+The two are completely equivalent in every way, and differ only in syntax.
+
+For more complicated functions, there are a few good use cases for full
+signatures.
+
+The first of these is ***overloading*** a function type.
+
+- ***Overloaded function***: A function with multiple call signatures
+
+It’s a common pattern in JavaScript for there to be multiple ways to call a
+given function; not only that, but sometimes the output type will actually
+depend on the input type for an argument!
+
+TypeScript models this dynamism — overloaded function declarations, and a
+function’s output type depending on its input type — with its static type
+system.
+
+```ts
+type Reserve = {
+  (from: Date, to: Date, destination: string): Reservation
+}
+
+let reserve: Reserve = (from, to, destination) => {
+  // ...
+}
+```
+
+We might repurpose our API to support one-way trips too:
+
+```ts
+type Reserve = {
+  (from: Date, to: Date, destination: string): Reservation
+  (from: Date, destination: string): Reservation
+}
+
+// [ts] Type '(from: any, to: any, destination: any) => void' is not assignable
+// to type 'Reserve'
+let reserve: Reserve = (from, to, destination) => {
+  // ...
+}
+```
+
+If you declare a set of overload signatures for a function `f`, from a caller’s
+point of view `f`’s type is the union of those overload signatures. But from
+`f`’s ***implementation’s*** point of view, there needs to be a single,
+combined type that can actually be implemented. You need to manually declare
+this combined call signature when implementing `f` — it won’t be inferred for
+you.
+
+```ts
+type Reserve = {
+  (from: Date, to: Date, destination: string): Reservation
+  (from: Date, destination: string): Reservation
+}
+
+let reserve: Reserve = (
+  from: Date,
+  toOrDestination: Date | string,
+  destination?: string
+) => {
+  // ...
+}
+```
+
+Note that the combined signature isn’t visible to functions that call
+`reserve`; from a consumer’s point of view, `Reserve`’s signature is:
+
+```ts
+type Reserve = {
+  (from: Date, to: Date, destination: string): Reservation
+  (from: Date, destination: string): Reservation
+}
+```
+
+Notably, this doesn’t include the combined signature we created:
+
+```ts
+// Wrong!
+type Reserve = {
+  (from: Date, to: Date, destination: string): Reservation
+  (from: Date, destination: string): Reservation
+  (from: Date, toOrDestination: Date | string,
+    destination?: string): Reservation
+}
+```
+
+Since `reserve` might be called in either of two ways, when you implement
+`reserve` you have to prove to TypeScript that you checked how it was called:
+
+```ts
+let reserve: Reserve = (
+  from: Date,
+  toOrDestination: Date | string,
+  destination?: string
+) => {
+  if (toOrDestination instanceof Date && destination !== undefined) {
+    // Book a round trip
+    } else if (typeof toOrDestination === 'string') {
+    // Book a one-way trip
+  }
+}
+```
+
+#### Keeping Overload Signatures Specific
+
+In general, each overload signature has to be assignable to the
+implementation’s signature when declaring an overloaded function type. That
+means you can be overly general when declaring the implementation’s signature,
+so long as all of your overloads are assignable to it.
+
+```ts
+let reserve: Reserve = (
+  from: any,
+  toOrDestination: any,
+  destination?: any
+) => {
+  // ...
+}
+```
+
+💡 When using overloads, try to keep your implementation’s signature as specific
+as possible to make it easier to implement the function. That means preferring
+`Date` over `any`, and a union of `Date | string` over `any`.
+
+❓ Why does keeping types narrow make it easier to implement a function with a
+given signature?
+
+If you type a parameter as `any` and want to use it as a `Date`, you have to
+prove to TypeScript that it’s actually a date to use it safely, and to get the
+benefit of autocomplete:
+
+```ts
+function getMonth(date: any): number | undefined {
+  if (date instanceof Date) {
+    return date.getMonth()
+  }
+}
+```
+
+But if you typed the parameter as a `Date` upfront, you don’t need to do extra
+work in the implementation:
+
+```ts
+function getMonth(date: Date): number {
+  return date.getMonth()
+}
+```
+
+Overloads come up naturally in browser DOM APIs. The `createElement` DOM API is
+used to create a new HTML element. It takes a `string` corresponding to an HTML
+tag and returns a new HTML element of that tag’s type. TypeScript comes with
+built-in types for each HTML element. These include:
+
+- `HTMLAnchorElement` for `<a`> elements
+- `HTMLCanvasElement` for `<canvas>` elements
+- `HTMLTableElement` for `<table>` elements
+
+Overloaded call signatures are a natural way to model how `createElement` works.
+
+```ts
+type CreateElement = {
+  (tag: 'a'): HTMLAnchorElement       // 1.
+  (tag: 'canvas'): HTMLCanvasElement
+  (tag: 'table'): HTMLTableElement
+  (tag: string): HTMLElement          // 2.
+}
+
+let createElement: CreateElement = (tag: string): HTMLElement => {  // 3.
+  // ...
+}
+```
+
+1. We overload on the parameter’s type, matching on it with string literal
+   types.
+2. We add a catchall case: if the user passed a custom tag name, or a
+   cutting-edge experimental tag name that hasn’t made its way into
+   TypeScript’s built-in type declarations yet, we return a generic
+   `HTMLElement`.
+    - Since TypeScript resolves overloads in the order they were declared, when
+      you call `createElement` with a string that doesn’t have a specific
+      overload defined, TypeScript will fall back to `HTMLElement`.
+      - Mostly — TypeScript hoists literal overloads above nonliteral ones,
+        before resolving them in order.
+      - 💡 You might not want to depend on this feature, though, since it can
+        make your overloads hard to understand for other engineers who aren’t
+        familiar with this behavior.
+3. To type the implementation’s parameter, we combine all the types that
+   parameter might have in `createElement`’s overload signatures, resulting in
+   `'a' | 'canvas' | 'table' | string`. Since the three string literal types
+   are all subtypes of `string`, the type reduces to just `string`.
+
+What if we want to overload a function declaration? You can use an equivalent
+syntax for function declarations.
+
+```ts
+function createElement(tag: 'a'): HTMLAnchorElement
+function createElement(tag: 'canvas'): HTMLCanvasElement
+function createElement(tag: 'table'): HTMLTableElement
+function createElement(tag: string): HTMLElement {
+  // ...
+}
+```
+
+Which syntax you use is up to you, and depends on what kind of function you’re
+overloading (function expression or function declarations).
+
+You can also use them to model properties on functions. Since JavaScript
+functions are just callable objects, you can assign properties to them to do
+things like:
+
+```ts
+function warnUser(warning) {
+  if (warnUser.wasCalled) {
+    return
+  }
+  warnUser.wasCalled = true
+  alert(warning)
+}
+
+warnUser.wasCalled = false
+```
+
+Use TypeScript to type warnUser’s full signature:
+
+```ts
+type WarnUser = {
+  (warning: string): void
+  wasCalled: boolean
+}
+```
+
+## Polymorphism
 
 >>>>> progress
