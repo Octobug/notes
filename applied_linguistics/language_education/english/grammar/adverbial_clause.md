@@ -2661,6 +2661,12 @@ interesting.
 - `答案` B。把 but 去掉。
 - `译` 尽管 Green 教授上课时间常超过 50 分钟，但是他的学生中没有一个人反对，因为他们觉得他的课既有趣又有收获。
 
+`5` And if scientists have yet to create the mechanical version of science
+fiction, they have begun to come close. (2002 Text 2)
+
+- 这里 if 相当于 even if，表示虽然、尽管的意思
+- `译` 尽管科学家还未创造出科幻小说的机器版本，但是他们已经快要实现这个目标了。
+
 ### 8.2 表示让步转折关系的介词
 
 在英语中，还可以用**介词**来表示让步转折关系，意思是尽管、虽然、不管等。这些介词主要有：
