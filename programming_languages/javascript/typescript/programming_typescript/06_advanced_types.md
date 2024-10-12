@@ -13,6 +13,17 @@
     - [Type Widening](#type-widening)
       - [The const type](#the-const-type)
       - [Excess property checking](#excess-property-checking)
+    - [Refinement](#refinement)
+      - [Discriminated union types](#discriminated-union-types)
+  - [Totality](#totality)
+    - [TSC Flag: noImplicitReturns](#tsc-flag-noimplicitreturns)
+  - [Advanced Object Types](#advanced-object-types)
+    - [Type Operators for Object Types](#type-operators-for-object-types)
+      - [The keying-in operator](#the-keying-in-operator)
+      - [The keyof operator](#the-keyof-operator)
+        - [TSC Flag: keyofStringsOnly](#tsc-flag-keyofstringsonly)
+    - [The Record Type](#the-record-type)
+    - [Mapped Types](#mapped-types)
 
 ## Relationships Between Types
 
@@ -422,4 +433,568 @@ possible.
 
 #### Excess property checking
 
->>>>> progress
+```ts
+type Options = {
+  baseURL: string
+  cacheSize?: number
+  tier?: 'prod' | 'dev'
+}
+
+class API {
+  constructor(private options: Options) {}
+}
+
+new API({
+  baseURL: 'https://api.mysite.com',
+  tier: 'prod'
+})
+
+new API({
+  baseURL: 'https://api.mysite.com',
+  tierr: 'prod'   // Error TS2345: Argument of type '{tierr: string}'
+})                // is not assignable to parameter of type 'Options'.
+                  // Object literal may only specify known properties,
+                  // but 'tierr' does not exist in type 'Options'.
+                  // Did you mean to write 'tier'?
+```
+
+TypeScript was able to catch this due to its ***excess property checking***,
+which works like this: when you try to assign a fresh object literal type `T`
+to another type `U`, and `T` has properties that aren’t present in `U`,
+TypeScript reports an error.
+
+A ***fresh object literal type*** is the type TypeScript infers from an object
+literal. If that object literal either uses a type assertion or is assigned to
+a variable, then the fresh object literal type is widened to a regular object
+type, and its freshness disappears.
+
+```ts
+type Options = {
+  baseURL: string
+  cacheSize?: number
+  tier?: 'prod' | 'dev'
+}
+
+class API {
+  constructor(private options: Options) {}
+}
+
+new API({ // 1.
+  baseURL: 'https://api.mysite.com',
+  tier: 'prod'
+})
+
+new API({ // 2.
+  baseURL: 'https://api.mysite.com',
+  badTier: 'prod' // Error TS2345: Argument of type '{baseURL: string; badTier:
+})                // string}' is not assignable to parameter of type 'Options'.
+
+new API({ // 3.
+  baseURL: 'https://api.mysite.com',
+  badTier: 'prod'
+} as Options)
+
+let badOptions = {  // 4.
+  baseURL: 'https://api.mysite.com',
+  badTier: 'prod'
+}
+new API(badOptions)
+
+let options: Options = {  // 5.
+  baseURL: 'https://api.mysite.com',
+  badTier: 'prod'   // Error TS2322: Type '{baseURL: string; badTier: string}'
+}                   // is not assignable to type 'Options'.
+new API(options)
+```
+
+1. We instantiate `API` with a `baseURL` and one of our two optional properties,
+   `tier`. This works as expected.
+2. Here, we misspell `tier` as `badTier`. The options object we pass to
+   `new API` is fresh (because its type is inferred, it isn’t assigned to a
+   variable, and we don’t make a type assertion about its type), so TypeScript
+   runs an excess property check on it, revealing the excess `badTier` property.
+3. We assert that our invalid options object is of type `Options`. TypeScript
+   no longer considers it fresh, and bails out of excess property checking: no
+   error.
+4. We assign our options object to a variable, `badOptions`. TypeScript no
+   longer considers it to be fresh, and bails out of excess property checking:
+   no error.
+5. When we explicitly type `options` as `Options`, the object we assign to
+   `options` is fresh, so TypeScript performs excess property checking,
+   catching our bug. Note that in this case the excess property check doesn’t
+   happen when we pass options to `new API`; rather, it happens when we try to
+   assign our options object to the variable `options`.
+
+### Refinement
+
+TypeScript performs ***flow-based*** type inference, which is a kind of
+symbolic execution where the typechecker uses control flow statements like
+`if`, `?`, `||`, and `switch`, as well as type queries like `typeof`,
+`instanceof`, and `in`, to refine types as it goes, just like a programmer
+reading through the code would. It’s an incredibly convenient feature for a typechecker to have, but is another one of those things that remarkably few lan‐ guages support.2
+
+1. ***Symbolic execution*** is a form of program analysis where you use a
+   special program called a ***symbolic evaluator*** to run your program the
+   same way a runtime would, but without assigning definite values to variables;
+   instead, each variable is modelled as a symbol whose value gets constrained
+   as the program runs. Symbolic execution lets you say things like “this
+   variable is never used,” or “this function never returns,” or “in the
+   positive branch of the `if` statement on line 102, variable `x` is
+   guaranteed not to be `null`.”
+2. ***Flow-based type inference*** is supported by a handful of languages,
+   including TypeScript, Flow, Kotlin, and Ceylon. It’s a way to refine types
+   within a block of code, and is an alternative to C/Java-style explicit type
+   annotations and Haskell/OCaml/Scala-style pattern matching. The idea is to
+   take a symbolic execution engine and embed it right in the typechecker, in
+   order to give feedback to the typechecker and reason through a program in a
+   way that is closer to how a human programmer might do it.
+
+```ts
+// We use a union of string literals to describe
+// the possible values a CSS unit can have
+type Unit = 'cm' | 'px' | '%'
+
+// Enumerate the units
+let units: Unit[] = ['cm', 'px', '%']
+
+// Check each unit, and return null if there is no match
+function parseUnit(value: string): Unit | null {
+  for (let i = 0; i < units.length; i++) {
+    if (value.endsWith(units[i])) {
+      return units[i]
+    }
+  }
+  return null
+}
+```
+
+We take advantage of type refinement a few times in this example:
+
+```ts
+type Width = {
+  unit: Unit,
+  value: number
+}
+
+function parseWidth(width: number | string | null | undefined): Width | null {
+  // If width is null or undefined, return early
+  if (width == null) {  // 1.
+    return null
+  }
+
+  // If width is a number, default to pixels
+  if (typeof width === 'number') {  // 2.
+    return {unit: 'px', value: width}
+  }
+
+  // Try to parse a unit from width
+  let unit = parseUnit(width)
+  if (unit) {
+    return {unit, value: parseFloat(width)}
+  }
+
+  // Otherwise, return null
+  return null   // 4.
+}
+```
+
+1. TypeScript is smart enough to know that doing a loose equality check against
+   `null` will return `true` for both `null` and `undefined` in JavaScript. It
+   knows that if this check passes then we will return, and if we didn’t return
+   that means the check didn’t pass, so from then on `width`’s type is
+   `number | string` (it can’t be `null` or `undefined` anymore). We say that
+   the type was refined from `number | string | null | undefined` to
+   `number | string`.
+2. A `typeof` check queries a value at runtime to see what its type is.
+   TypeScript takes advantage of `typeof` at compile time too: in the `if`
+   branch where the check passes, TypeScript knows that `width` is a `number`;
+   otherwise (since that branch returns) `width` must be a `string` — it’s the
+   only type left.
+3. Because calling `parseUnit` might return `null`, we check if it did by
+   testing whether its result is truthy. TypeScript knows that if `unit` is
+   truthy then it must be of type `Unit` in the if branch — otherwise, unit
+   must be falsy, meaning it must be of type `null` (refined from
+   `Unit | null`).
+4. Finally, we return `null`. This can only happen if the user passed a `string`
+   for `width`, but that string contained a unit that we don’t support.
+
+#### Discriminated union types
+
+```ts
+type UserTextEvent = {value: string}
+type UserMouseEvent = {value: [number, number]}
+
+type UserEvent = UserTextEvent | UserMouseEvent
+
+function handle(event: UserEvent) {
+  if (typeof event.value === 'string') {
+    event.value   // string
+    // ...
+    return
+  }
+  event.value     // [number, number]
+}
+```
+
+```ts
+type UserTextEvent = {value: string, target: HTMLInputElement}
+type UserMouseEvent = {value: [number, number], target: HTMLElement}
+
+type UserEvent = UserTextEvent | UserMouseEvent
+
+function handle(event: UserEvent) {
+  if (typeof event.value === 'string') {
+    event.value   // string
+    event.target  // HTMLInputElement | HTMLElement (!!!)
+    // ...
+    return
+  }
+  event.value     // [number, number]
+  event.target    // HTMLInputElement | HTMLElement (!!!)
+}
+```
+
+While the refinement worked for `event.value`, it didn’t carry over to
+`event.target`. Why? When `handle` takes a parameter of type `UserEvent`, that
+doesn’t mean we have to pass a `UserTextEvent` or `UserMouseEvent` — in fact,
+we could pass an argument of type `UserMouseEvent | UserTextEvent`. And since
+members of a union might overlap, TypeScript needs a more reliable way to know
+when we’re in one case of a union type versus another case.
+
+The way to do this is to use a literal type to tag each case of your union type.
+A good tag is:
+
+- On the same place in each case of your union type. That means the same object
+  field if it’s a union of object types, or the same index if it’s a union of
+  tuple types. In practice, tagged unions usually use object types.
+- Typed as a literal type (a literal string, number, boolean, etc.). You can
+  mix and match different types of literals, but it’s good practice to stick to
+  a single type; typically, that’s a string literal type.
+- Not generic. Tags should not take any generic type arguments.
+- Mutually exclusive (i.e., unique within the union type).
+
+With that in mind, let’s update our event types again:
+
+```ts
+type UserTextEvent = {
+  type: 'TextEvent',
+  value: string,
+  target: HTMLInputElement
+}
+type UserMouseEvent = {
+  type: 'MouseEvent',
+  value: [number, number],
+  target: HTMLElement
+}
+
+type UserEvent = UserTextEvent | UserMouseEvent
+
+function handle(event: UserEvent) {
+  if (event.type === 'TextEvent') {
+    event.value   // string
+    event.target  // HTMLInputElement
+    // ...
+    return
+  }
+  event.value     // [number, number]
+  event.target    // HTMLElement
+}
+```
+
+Now when we refine event based on the value of its tagged field (`event.type`),
+TypeScript knows that in the `if` branch event has to be a `UserTextEvent`, and
+after the `if` branch it has to be a `UserMouseEvent`. Since the tag is unique
+per union type, TypeScript knows that the two are mutually exclusive.
+
+Use tagged unions when writing a function that has to handle the different
+cases of a union type.
+
+## Totality
+
+***Totality***, also called ***exhaustiveness checking***, is what allows the
+typechecker to make sure you’ve covered all your cases.
+
+```ts
+type Weekday = 'Mon' | 'Tue'| 'Wed' | 'Thu' | 'Fri'
+type Day = Weekday | 'Sat' | 'Sun'
+
+function getNextDay(w: Weekday): Day {
+  switch (w) {
+    case 'Mon': return 'Tue'
+  }
+}
+```
+
+TypeScript comes to the rescue:
+
+```txt
+Error TS2366: Function lacks ending return statement and
+return type does not include 'undefined'.
+```
+
+Because we annotated `getNextDay`’s return type, and not all branches are
+guaranteed to return a value of that type, TypeScript warns us.
+
+```ts
+function isBig(n: number) {
+  if (n >= 100) {
+    return true
+  }
+}   // Error TS7030: Not all code paths return a value.
+```
+
+### TSC Flag: noImplicitReturns
+
+To ask TypeScript to check that all of your functions’ code paths return a
+value (and throw the preceding warning if you missed a spot), enable the
+`noImplicitReturns` flag in `tsconfig.json`.
+
+## Advanced Object Types
+
+Objects are central to JavaScript, and TypeScript gives you a whole bunch of
+ways to express and manipulate them safely.
+
+### Type Operators for Object Types
+
+#### The keying-in operator
+
+Say you have a complex nested type to model the GraphQL API response you got
+back from your social media API of choice:
+
+```ts
+type APIResponse = {
+  user: {
+    userId: string
+    friendList: {
+      count: number
+      friends: {
+        firstName: string
+        lastName: string
+      }[]
+    }
+  }
+}
+
+function getAPIResponse(): Promise<APIResponse> {
+  // ...
+}
+
+function renderFriendList(friendList: unknown) {
+  // ...
+}
+
+let response = await getAPIResponse()
+renderFriendList(response.user.friendList)
+```
+
+What should the type of `friendList` be? (It’s stubbed out as `unknown` for
+now.) You could type it out and reimplement your top-level `APIResponse` type
+in terms of it:
+
+```ts
+type FriendList = {
+  count: number
+  friends: {
+    firstName: string
+    lastName: string
+  }[]
+}
+
+type APIResponse = {
+  user: {
+    userId: string
+    friendList: FriendList
+  }
+}
+
+function renderFriendList(friendList: FriendList) {
+  // ...
+}
+```
+
+But then you’d have to come up with names for each of your top-level types,
+which you don’t always want (e.g., if you used a build tool to generate
+TypeScript types from your GraphQL schema). Instead, you can ***key in*** to
+your type:
+
+```ts
+type APIResponse = {
+  user: {
+    userId: string
+    friendList: {
+      count: number
+      friends: {
+        firstName: string
+        lastName: string
+      }[]
+    }
+  }
+}
+
+type FriendList = APIResponse['user']['friendList']
+
+function renderFriendList(friendList: FriendList) {
+  // ...
+}
+```
+
+You can key in to any shape (object, class constructor, or class instance), and
+any array. For example, to get the type of an individual friend:
+
+```ts
+type Friend = FriendList['friends'][number]
+```
+
+`number` is a way to key in to an array type; for tuples, use `0`, `1`, or
+another number literal type to represent the index you want to key in to.
+
+⚠️ Note that you have to use bracket notation, not dot notation, to look up
+property types when keying in.
+
+#### The keyof operator
+
+Use `keyof` to get all of an object’s keys as a union of `string` literal types.
+
+```ts
+type ResponseKeys = keyof APIResponse     // 'user'
+type UserKeys = keyof APIResponse['user'] // 'userId' | 'friendList'
+type FriendListKeys =
+  keyof APIResponse['user']['friendList'] // 'count' | 'friends'
+```
+
+Combining the keying-in and `keyof` operators, you can implement a typesafe
+`getter` function that looks up the value at the given key in an object:
+
+```ts
+function get< // 1.
+  O extends object,
+  K extends keyof O // 2.
+>(
+  o: O,
+  k: K
+): O[K] { // 3.
+  return o[k]
+}
+```
+
+1. `get` is a function that takes an object `o` and a key `k`.
+2. `keyof O` is a union of string literal types, representing all of `o`’s keys.
+   The generic type `K` extends — and is a subtype of — that union. For example,
+   if `o` has the type `{a: number, b: string, c: boolean}`, then `keyof o` is
+   the type `'a' | 'b' | 'c'`, and `K` could be the type `'a'`,
+   `'b'`, `'a' | 'c'`, or any other subtype of `keyof o`.
+3. `O[K]` is the type you get when you look up `K` in `O`. If `K` is `'a'`,
+   then we know at compile time that `get` returns a `number`. Or, if `K` is
+   `'b' | 'c'`, then we know `get` returns `string | boolean`.
+
+What’s cool about these type operators is how precisely and safely they let you
+describe shape types:
+
+```ts
+type ActivityLog = {
+  lastEvent: Date
+  events: {
+    id: string
+    timestamp: Date
+    type: 'Read' | 'Write'
+  }[]
+}
+
+let activityLog: ActivityLog = // ...
+let lastEvent = get(activityLog, 'lastEvent') // Date
+```
+
+Let’s overload `get` to accept up to three keys:
+
+```ts
+type Get = {  // 1.
+  <
+    O extends object,
+    K1 extends keyof O
+  >(o: O, k1: K1): O[K1]  // 2.
+  <
+    O extends object,
+    K1 extends keyof O,
+    K2 extends keyof O[K1]  // 3.
+  >(o: O, k1: K1, k2: K2): O[K1][K2]  // 4.
+  <
+    O extends object,
+    K1 extends keyof O,
+    K2 extends keyof O[K1],
+    K3 extends keyof O[K1][K2]
+  >(o: O, k1: K1, k2: K2, k3: K3): O[K1][K2][K3]  // 5.
+}
+
+let get: Get = (object: any, ...keys: string[]) => {
+  let result = object
+  keys.forEach(k => result = result[k])
+  return result
+}
+
+get(activityLog, 'events', 0, 'type') // 'Read' | 'Write'
+get(activityLog, 'bad')     // Error TS2345: Argument of type '"bad"'
+                            // is not assignable to parameter of type
+                            // '"lastEvent" | "events"'.
+```
+
+1. We declare an overloaded function signature for `get` with three cases for
+   when we call `get` with one key, two keys, and three keys.
+2. This one-key case is the same as the last example: `O` is a subtype of
+   object, `K1` is a subtype of that object’s keys, and the return type is
+   whatever specific type you get when you key in to `O` with `K1`.
+3. The two-key case is like the one-key case, but we declare one more generic
+   type, `K2`, to model the possible keys on the nested object that results
+   from keying into `O` with `K1`.
+4. We build on by keying in twice — we first get the type of `O[K1]`, then get
+   the type of `[K2]` on the result.
+
+##### TSC Flag: keyofStringsOnly
+
+In JavaScript, objects and arrays can have both string and symbol keys. And by
+convention, we usually use number keys for arrays, which are coerced to strings
+at runtime.
+
+Because of this, `keyof` in TypeScript returns a value of type
+`number | string | symbol` by default (though if you call it on a more specific
+shape, TypeScript can infer a more specific subtype of that union).
+
+This behavior is correct, but can make working with `keyof` wordy, as you may
+have to prove to TypeScript that the particular key you’re manipulating is a
+`string`, and not a `number` or a `symbol`.
+
+To opt into TypeScript’s legacy behavior—where keys must be strings — enable
+the `keyofStringsOnly` `tsconfig.json` flag.
+
+### The Record Type
+
+TypeScript’s built-in `Record` type is a way to describe an object as a map
+from something to something.
+
+With `Record`, you can put some constraints on the keys and values in `nextDay`:
+
+```ts
+type Weekday = 'Mon' | 'Tue'| 'Wed' | 'Thu' | 'Fri'
+type Day = Weekday | 'Sat' | 'Sun'
+
+let nextDay: Record<Weekday, Day> = {
+  Mon: 'Tue'
+}
+```
+
+Now, you get a nice, helpful error message right away:
+
+```txt
+Error TS2739: Type '{Mon: "Tue"}' is missing the following properties
+from type 'Record<Weekday, Day>': Tue, Wed, Thu, Fri.
+```
+
+Adding the missing `Weekdays` to your object, of course, makes the error go
+away.
+
+`Record` gives you one extra degree of freedom compared to regular object index
+signatures: with a regular index signature you can constrain the types of an
+object’s values, but the key can only be a regular `string`, `number`, or
+`symbol`; with `Record`, you can also constrain the types of an object’s keys
+to subtypes of `string` and `number`.
+
+### Mapped Types
