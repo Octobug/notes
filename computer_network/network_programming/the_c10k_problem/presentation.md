@@ -76,14 +76,6 @@ Dan Kegel (`/dæn 'keɡəl/`) 于 1999 年在其 [个人站点](http://www.kegel
 
 ---
 
-<!-- class: lead invert -->
-
-### S0 服务
-
-![height:480px](images/s0.jpg)
-
----
-
 <!-- class: invert -->
 
 > 早期的腾讯QQ也同样面临 C10K 问题，只不过他们是用了 UDP 这种原始的包交换协议来实现的，绕开了这个难题，当然过程肯定是痛苦的。
