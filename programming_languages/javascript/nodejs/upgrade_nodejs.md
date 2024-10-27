@@ -39,9 +39,11 @@
   - There should not be any difference of the code base between different
     environments.
 - For huge project, conservatively upgrade to a consecutive LTS version.
+  - Pick the latest minor version because it has the most non-breaking-change features and fixes.
+  - e.g, You're ugrading from `16.16` to `18`, and there are `18.15.9` and `18.16.3`, you should pick `18.16.3`
 - For small project with good test coverage, try to upgrade to the active LTS
   if you're confident with it.
-  A consecutive LTS version is OK as well.
+  - A consecutive LTS version is OK as well.
 - Environments:
   - `Development`:
     1. Switch to the desired Node.js version.
@@ -54,6 +56,8 @@
   - `Production`:
     1. Switch to the desired Node.js version.
     2. `npm ci --production`
+  - Run all unit tests.
+  - Do smoke testing for important features.
 
 ## How to upgrade Node.js and dependencies. Results.
 

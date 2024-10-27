@@ -24,6 +24,11 @@
         - [TSC Flag: keyofStringsOnly](#tsc-flag-keyofstringsonly)
     - [The Record Type](#the-record-type)
     - [Mapped Types](#mapped-types)
+      - [Built-in mapped types](#built-in-mapped-types)
+    - [Companion Object Pattern](#companion-object-pattern)
+  - [Advanced Function Types](#advanced-function-types)
+    - [Improving Type Inference for Tuples](#improving-type-inference-for-tuples)
+    - [User-Defined Type Guards](#user-defined-type-guards)
 
 ## Relationships Between Types
 
@@ -998,3 +1003,196 @@ object’s values, but the key can only be a regular `string`, `number`, or
 to subtypes of `string` and `number`.
 
 ### Mapped Types
+
+TypeScript gives us a second, more powerful way to declare a safer `nextDay`
+type: mapped types.
+
+```ts
+let nextDay: {[K in Weekday]: Day} = {
+  Mon: 'Tue'
+}
+```
+
+This is another way to get a helpful hint for how to fix what you missed:
+
+```txt
+Error TS2739: Type '{Mon: "Tue"}' is missing the following properties
+from type '{Mon: Weekday; Tue: Weekday; Wed: Weekday; Thu: Weekday;
+Fri: Weekday}': Tue, Wed, Thu, Fri.
+```
+
+Like index signatures, you can have at most one mapped type per object:
+
+```ts
+type MyMappedType = {
+  [Key in UnionType]: ValueType
+}
+```
+
+As the name implies, it’s a way to map over an object’s key and value types. In
+fact, TypeScript uses mapped types to implement its built-in `Record` type:
+
+```ts
+type Record<K extends keyof any, T> = {
+  [P in K]: T
+}
+```
+
+Mapped types give you more power than a mere `Record` because in addition to
+letting you give types to an object’s keys and values, when you combine them
+with keyed-in types, they let you put constraints on which value type
+corresponds to which key name.
+
+```ts
+type Account = {
+  id: number
+  isEmployee: boolean
+  notes: string[]
+}
+
+// Make all fields optional
+type OptionalAccount = {
+  [K in keyof Account]?: Account[K]   // 1.
+}
+
+// Make all fields nullable
+type NullableAccount = {
+  [K in keyof Account]: Account[K] | null   // 2.
+}
+
+// Make all fields read-only
+type ReadonlyAccount = {
+  readonly [K in keyof Account]: Account[K]   // 3.
+}
+
+// Make all fields writable again (equivalent to Account)
+type Account2 = {
+  -readonly [K in keyof ReadonlyAccount]: Account[K]  // 4.
+}
+
+// Make all fields required again (equivalent to Account)
+type Account3 = {
+  [K in keyof OptionalAccount]-?: Account[K]  // 5.
+}
+```
+
+1. We create a new object type `OptionalAccount` by mapping over `Account`,
+   marking each field as optional along the way.
+2. We create a new object type `NullableAccount` by mapping over `Account`,
+   adding `null` as a possible value for each field along the way.
+3. We create a new object type `ReadonlyAccount` by taking `Account` and making
+   each of its fields read-only.
+4. We can mark fields as optional (`?`) or `readonly`, and we can also unmark
+   them. With the minus (`–`) operator — a special type operator only available
+   with mapped types — we can undo `?` and `readonly`, making fields required
+   and writable again, respectively. Here we create a new object type
+   `Account2`, equivalent to our `Account` type, by mapping over
+   `ReadonlyAccount` and removing the `readonly` modifier with the minus (`–`)
+   operator.
+5. We create a new object type `Account3`, equivalent to our original `Account`
+   type, by mapping over `OptionalAccount` and removing the optional (`?`)
+   operator with the minus (`–`) operator.
+
+💡 Minus (`–`) has a corresponding plus (`+`) type operator. You will probably
+never use this operator directly, because it’s implied: within a mapped type,
+`readonly` is equivalent to `+readonly`, and `?` is equivalent to `+?`. `+` is
+just there for completeness.
+
+#### Built-in mapped types
+
+- `Record<Keys, Values>`: An object with keys of type `Keys` and values of type
+  `Values`
+- `Partial<Object>`: Marks every field in `Object` as optional
+- `Required<Object>`: Marks every field in `Object` as nonoptional
+- `Readonly<Object>`: Marks every field in `Object` as read-only
+- `Pick<Object, Keys>`: Returns a subtype of `Object`, with just the given
+  `Keys`
+
+### Companion Object Pattern
+
+We can use companion object pattern to pair together a type and an object.
+
+```ts
+type Currency = {
+  unit: 'EUR' | 'GBP' | 'JPY' | 'USD'
+  value: number
+}
+
+let Currency = {
+  DEFAULT: 'USD',
+  from(value: number, unit = Currency.DEFAULT): Currency {
+    return {unit, value}
+  }
+}
+```
+
+In TypeScript, types and values live in separate namespaces. That means in the
+same scope, you can have the same name (in this example, `Currency`) bound to
+both a type and a value. With the companion object pattern, we exploit this
+separate namespacing to declare a name twice: first as a type, then as a value.
+
+This pattern lets you group type and value information that’s semantically part
+of a single name (like `Currency`) together. It also lets consumers import both
+at once:
+
+```ts
+import {Currency} from './Currency'
+
+let amountDue: Currency = { // 1.
+  unit: 'JPY',
+  value: 83733.10
+}
+
+let otherAmountDue = Currency.from(330, 'EUR')  // 2.
+```
+
+1. Using `Currency` as a type
+2. Using `Currency` as a value
+
+Use the companion object pattern when a type and an object are semantically
+related, with the object providing utility methods that operate on the type.
+
+## Advanced Function Types
+
+### Improving Type Inference for Tuples
+
+```ts
+let a = [1, true] // (number | boolean)[]
+```
+
+You could use a type assertion to cast your tuple to a tuple type. Or, you
+could use an `as const` assertion to infer the tuple’s type as narrowly as
+possible, marking it as read-only.
+
+What if you want to type your tuple as a tuple, but avoid a type assertion, and
+avoid the narrow inference and read-only modifier that `as const` gives you? To
+do that, you can take advantage of the way TypeScript infers types for rest
+parameters:
+
+```ts
+function tuple<   // 1.
+  T extends unknown[]   // 2.
+>(
+  ...ts: T  // 3.
+): T {  // 4.
+ return ts  // 5
+}
+
+let a = tuple(1, true) // [number, boolean]
+```
+
+1. We declare a tuple function that we’ll use to construct tuple types.
+2. We declare a single type parameter `T` that’s a subtype of `unknown[]`
+   (meaning `T` is an array of any kind of type).
+3. `tuple` takes a variable number of parameters, `ts`. Because `T` describes a
+   rest parameter, TypeScript will infer a tuple type for it.
+4. `tuple` returns a value of the same tuple type that it inferred `ts` as.
+5. Our function returns the same argument that we passed it. The magic is all
+   in the types.
+
+Take advantage of this technique in order to avoid type assertions when your code
+uses lots of tuple types.
+
+### User-Defined Type Guards
+
+>>>>> progress
