@@ -29,6 +29,8 @@
   - [Advanced Function Types](#advanced-function-types)
     - [Improving Type Inference for Tuples](#improving-type-inference-for-tuples)
     - [User-Defined Type Guards](#user-defined-type-guards)
+  - [Conditional Types](#conditional-types)
+    - [Distributive Conditionals](#distributive-conditionals)
 
 ## Relationships Between Types
 
@@ -1195,4 +1197,95 @@ uses lots of tuple types.
 
 ### User-Defined Type Guards
 
->>>>> progress
+For some kinds of boolean-returning functions, simply saying that your function
+returns a boolean may not be enough.
+
+```ts
+function isString(a: unknown): boolean {
+ return typeof a === 'string'
+}
+isString('a') // evaluates to true
+isString([7]) // evaluates to false
+
+function parseInput(input: string | number) {
+ let formattedInput: string
+ if (isString(input)) {
+  formattedInput = input.toUpperCase()  // Error TS2339: Property 'toUpperCase'
+ }                                      // does not exist on type 'number'.
+}
+```
+
+`typeof` works for regular type refinement, why doesn’t it work here?
+
+The thing about ***type refinement*** is it’s only powerful enough to refine
+the type of a variable in the scope you’re in. As soon as you leave that scope,
+the refinement doesn’t carry over to whatever new scope you’re in.
+
+We refined the input parameter’s type to `string` using `typeof`, but all
+TypeScript knows is that `isString` returned a `boolean`.
+
+What we can do is tell the typechecker that not only does `isString` return a
+`boolean`, but whenever that `boolean` is `true`, the argument we passed to
+`isString` is a `string`.
+
+To do that, we use something called a user-defined type guard:
+
+```ts
+function isString(a: unknown): a is string {
+ return typeof a === 'string'
+}
+```
+
+Type guards are a built-in TypeScript feature, and are what lets you refine
+types with `typeof` and `instanceof`. But sometimes, you need the ability to
+declare type guards yourself — that’s what the `is` operator is for. When you
+have a function that refines its parameters’ types and returns a `boolean`, you
+can use a user-defined type guard to make sure that refinement is flowed
+whenever you use that function.
+
+User-defined type guards are limited to a single parameter, but they aren’t
+limited to simple types:
+
+```ts
+type LegacyDialog = // ...
+type Dialog = // ...
+
+function isLegacyDialog(
+  dialog: LegacyDialog | Dialog
+): dialog is LegacyDialog {
+  // ...
+}
+```
+
+You won’t use user-defined type guards often, but when you do, they’re awesome
+for writing clean, reusable code. Without them, you’d have to inline all your
+`typeof` and `instanceof` type guards instead of building functions like
+`isLegacyDialog` and `isString` to perform those same checks in a
+better-encapsulated, more readable way.
+
+## Conditional Types
+
+At a high level, conditional types let you say, “Declare a type `T` that depends
+on types `U` and `V`; if `U <: V`, then assign `T` to `A`, and otherwise, assign
+`T` to `B`.”
+
+```ts
+type IsString<T> = T extends string // 1.
+  ? true  // 2.
+  : false // 3.
+
+type A = IsString<string> // true
+type B = IsString<number> // false
+```
+
+1. We declare a new conditional type `IsString` that takes a generic type `T`.
+   The “condition” part of this conditional type is `T extends string`; that is,
+   “Is `T` a subtype of `string`?”
+2. If `T` is a subtype of `string`, we resolve to the type `true`.
+3. Otherwise, we resolve to the type `false`.
+
+Conditional types aren’t limited to type aliases. You can use them almost
+anywhere you can use a type: in type aliases, interfaces, classes, parameter
+types, and generic defaults in functions and methods.
+
+### Distributive Conditionals
