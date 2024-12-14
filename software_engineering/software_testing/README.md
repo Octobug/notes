@@ -1,9 +1,3 @@
 # Software Testing
 
-> <https://en.wikipedia.org/wiki/Software_testing>
-
-## JavaScript Libs
-
-- Jest.js
-- Mocha.js
-- Sinon.JS
+- [The different types of software testing](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing)
