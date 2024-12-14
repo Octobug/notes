@@ -6,8 +6,8 @@
 
 ## Table of Contents
 
-- [ ] [1. Just Enough Microservices](./1_just_enough_microservices.md)
-- [ ] 2. Planning a Migration
+- [x] [1. Just Enough Microservices](./1_just_enough_microservices.md)
+- [ ] [2. Planning a Migration](./2_planning_a_migration.md)
 - [ ] 3. Splitting the Monolith
 - [ ] 4. Decomposing the Database
 - [ ] 5. Growing Pains
