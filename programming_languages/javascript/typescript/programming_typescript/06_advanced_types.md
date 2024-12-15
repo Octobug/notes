@@ -31,6 +31,9 @@
     - [User-Defined Type Guards](#user-defined-type-guards)
   - [Conditional Types](#conditional-types)
     - [Distributive Conditionals](#distributive-conditionals)
+    - [The infer Keyword](#the-infer-keyword)
+    - [Built-in Conditional Types](#built-in-conditional-types)
+  - [Escape Hatches](#escape-hatches)
 
 ## Relationships Between Types
 
@@ -1289,3 +1292,192 @@ anywhere you can use a type: in type aliases, interfaces, classes, parameter
 types, and generic defaults in functions and methods.
 
 ### Distributive Conditionals
+
+If you have a conditional type, then the expressions on the right are equivalent
+to those on the left: *Distributing conditional types*
+
+- `string extends T ? A : B` <==> `string extends T ? A : B`
+- `(string | number) extends T ? A:B` <==> `(string extends T ? A : B) | (number extends T ? A : B)`
+- `(string | number | boolean) extends T ? A : B` <==> `(string extends T ? A : B) | (number extends T ? A : B) | (boolean extends T ? A : B)`
+
+Let’s say we have a function that takes some variable of type `T`, and lifts it
+to an array of type `T[]`. What happens if we pass in a union type for `T`?
+
+```ts
+type ToArray<T> = T[]
+type A = ToArray<number>          // number[]
+type B = ToArray<number | string> // (number | string)[]
+```
+
+Now what happens if we add a conditional type? (Note that the conditional
+doesn’t actually do anything here because both its branches resolve to the same
+type `T[]`; it’s just here to tell TypeScript to distribute `T` over the tuple
+type.)
+
+```ts
+type ToArray2<T> = T extends unknown ? T[] : T[]
+type A = ToArray2<number>           // number[]
+type B = ToArray2<number | string>  // number[] | string[]
+```
+
+When you use a conditional type, TypeScript will distribute union types over the
+conditional’s branches. It’s like taking the conditional type and mapping it
+over each element in the union.
+
+Why does any of this matter? Well, it lets you safely express a bunch of common
+operations.
+
+For example, TypeScript comes with `&` for computing what two types have in
+common and `|` for taking a union of two types. Let’s build `Without<T, U>`,
+which computes the types that are in `T` but not in `U`.
+
+```ts
+type Without<T, U> = T extends U ? never : T
+```
+
+You use `Without` like so:
+
+```ts
+type A = Without<
+  boolean | number | string,
+  boolean
+> // number | string
+```
+
+1. Start with the inputs:
+
+    ```ts
+    type A = Without<boolean | number | string, boolean>
+    ```
+
+2. Distribute the condition over the union:
+
+    ```ts
+    type A = Without<boolean, boolean>
+            | Without<number, boolean>
+            | Without<string, boolean>
+    ```
+
+3. Substitute in `Without`’s definition and apply `T` and `U`:
+
+    ```ts
+    type A = (boolean extends boolean ? never : boolean)
+            | (number extends boolean ? never : number)
+            | (string extends boolean ? never : string)
+    ```
+
+4. Evaluate the conditions:
+
+    ```ts
+    type A = never
+            | number
+            | string
+    ```
+
+5. Simplify:
+
+    ```ts
+    type A = number | string
+    ```
+
+If it wasn’t for the distributive property of conditional types, we would have
+ended up with `never`.
+
+### The infer Keyword
+
+Conditional types have their own syntax for declaring generic types inline: the
+`infer` keyword.
+
+Let’s declare a conditional type `ElementType`, which gets the type of an
+array’s elements:
+
+```ts
+type ElementType<T> = T extends unknown[] ? T[number] : T
+type A = ElementType<number[]> // number
+```
+
+Now, let’s rewrite it using infer:
+
+```ts
+type ElementType2<T> = T extends (infer U)[] ? U : T
+type B = ElementType2<number[]> // number
+```
+
+In this simple example `ElementType` is equivalent to `ElementType2`. Notice how
+the `infer` clause declares a new type variable, `U` — TypeScript will infer the
+type of `U` from context, based on what `T` you passed to `ElementType2`.
+
+Also notice why we declared `U` inline instead of declaring it up front,
+alongside `T`. What would have happened if we did declare it up front?
+
+```ts
+type ElementUgly<T, U> = T extends U[] ? U : T
+type C = ElementUgly<number[]>  // Error TS2314: Generic type 'ElementUgly'
+                                // requires 2 type argument(s).
+```
+
+Because `ElementUgly` defines two generic types, `T` and `U`, we have to pass
+both of them in when instantiating `ElementUgly`. But if we do that, that
+defeats the point of having an `ElementUgly` type in the first place; it puts
+the burden of computing `U` on the caller, when we wanted `ElementUgly` to
+compute the type itself.
+
+This example can also be done by the keying-in operator (`[]`) to look up the
+type of an array’s elements. What about a more complicated example?
+
+```ts
+type SecondArg<F> = F extends (a: any, b: infer B) => any ? B : never
+
+// Get the type of Array.slice
+type F = typeof Array['prototype']['slice']
+type A = SecondArg<F> // number | undefined
+```
+
+So, `[].slice`’s second argument is a `number | undefined`.
+
+### Built-in Conditional Types
+
+`Exclude<T, U>`: Like our `Without` type from before, computes those types in
+`T` that are not in `U`:
+
+```ts
+type A = number | string
+type B = string
+type C = Exclude<A, B> // number
+```
+
+`Extract<T, U>`: Computes the types in `T` that you can assign to `U`:
+
+```ts
+type A = number | string
+type B = string
+type C = Extract<A, B> // string
+```
+
+`NonNullable<T>`: Computes a version of `T` that excludes `null` and
+`undefined`:
+
+```ts
+type A = {a?: number | null}
+type B = NonNullable<A['a']> // number
+```
+
+`ReturnType<F>`: Computes a function’s return type (note that this doesn’t work
+as you’d expect for generic and overloaded functions):
+
+```ts
+type F = (a: number) => string
+type R = ReturnType<F> // string
+```
+
+`InstanceType<C>`: Computes the instance type of a class constructor:
+
+```ts
+type A = {new(): B}
+type B = {b: number}
+type I = InstanceType<A> // {b: number}
+```
+
+## Escape Hatches
+
+>>>>> progress
