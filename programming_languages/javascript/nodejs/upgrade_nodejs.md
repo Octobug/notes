@@ -31,17 +31,17 @@
 ## Check List
 
 - Only adopt LTS versions.
+  - **Important** ‼️ Always pick the latest minor version because it has the most non-breaking-change features and fixes.
+  - e.g, You're ugrading from `16.16.0` to `18`, and the newest v18 is `18.18.1`, then you should pick `18.18.1`.
 - Do NOT change any version of any dependencies during upgrading, unless any
   dependencies require that.
 - Different environments should use exactly the same version of Node.js
   - When upgrading, adopt the new version in this order:
     `development` -> `staging` -> `production`
-  - There should not be any difference of the code base between different
-    environments.
-- For huge project, conservatively upgrade to a consecutive LTS version.
-  - Pick the latest minor version because it has the most non-breaking-change features and fixes.
-  - e.g, You're ugrading from `16.16` to `18`, and there are `18.15.9` and `18.16.3`, you should pick `18.16.3`
-- For small project with good test coverage, try to upgrade to the active LTS
+  - Ideally, there should not be any difference of the code base between different
+    environmentss.
+- For big projects, conservatively upgrade to a consecutive LTS version.
+- For small projects with good test coverage, try to upgrade to the latest LTS
   if you're confident with it.
   - A consecutive LTS version is OK as well.
 - Environments:
@@ -52,11 +52,10 @@
   - `Staging`:
     1. Switch to the desired Node.js version.
     2. `npm ci --production`
-    3. Make sure that all features work fine.
   - `Production`:
     1. Switch to the desired Node.js version.
     2. `npm ci --production`
-  - Run all unit tests.
+  - Run all automated tests.
   - Do smoke testing for important features.
 
 ## How to upgrade Node.js and dependencies. Results.
