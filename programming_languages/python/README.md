@@ -2,6 +2,8 @@
 
 > <https://www.python.org/>
 
+- Pyenv on Apple Chips: <https://sixty-north.com/blog/pyenv-apple-silicon.html>
+
 ## References
 
 - [Python Developer](https://roadmap.sh/python)
