@@ -11,6 +11,17 @@
     - [I saw a tiger!](#i-saw-a-tiger)
     - [Eye contact with a tiger](#eye-contact-with-a-tiger)
     - [Optimism prevailed](#optimism-prevailed)
+    - [Planning your ultimate tiger safari](#planning-your-ultimate-tiger-safari)
+      - [Where to go?](#where-to-go)
+      - [Does the reserve have a route system?](#does-the-reserve-have-a-route-system)
+      - [Does the reserve have a zone system?](#does-the-reserve-have-a-zone-system)
+      - [What are the entry and exit times to the reserve?](#what-are-the-entry-and-exit-times-to-the-reserve)
+      - [How many vehicles are there likely to be at a sighting?](#how-many-vehicles-are-there-likely-to-be-at-a-sighting)
+      - [What type of vehicles are available, and how many passengers will be in each?](#what-type-of-vehicles-are-available-and-how-many-passengers-will-be-in-each)
+      - [When to visit?](#when-to-visit)
+      - [Recommendation summary](#recommendation-summary)
+      - [What else might I see?](#what-else-might-i-see)
+  - [Elephant](#elephant)
 
 ## Tiger
 
@@ -51,5 +62,72 @@
   eye contact with the subject.
 
 ### Optimism prevailed
+
+### Planning your ultimate tiger safari
+
+#### Where to go?
+
+- Tiger reserves in India are small.
+- Nothing promised.
+
+#### Does the reserve have a route system?
+
+It depends. You can find tigers by following alarm calls from prey animals.
+
+#### Does the reserve have a zone system?
+
+Most reserves do.
+
+#### What are the entry and exit times to the reserve?
+
+It it not essential.
+
+⚠️ The light may be harsh in the middle of the day.
+
+#### How many vehicles are there likely to be at a sighting?
+
+Quite a lot.
+
+#### What type of vehicles are available, and how many passengers will be in each?
+
+A low vehicle, like a Jeep, is best for photography.
+
+#### When to visit?
+
+- Oct./Nov.
+  - Tiger spotting: `difficult`
+  - Comfort: `high`
+- Dec./Jan.
+  - Tiger spotting: `difficult`
+  - Comfort: `high`
+- Feb./Mar.
+  - Tiger spotting: `moderate`
+  - Comfort: `moderate`
+- Apr./June
+  - Tiger spotting: `easiest`
+  - Comfort: `uncomfortable`
+
+#### Recommendation summary
+
+- **Reserve**: Ranthambore Tiger Reserve, Rajasthan, India.
+- **Best time to visit**: April and May.
+- **Getting there**: Fly to Delhi. It is five hours by train from Delhi to the
+  Reserve.
+- **Access**: Full day all-zone permits.
+- **Duration**: Obviously the longer the better, but a minimum of six days.
+- **Accommodation**: There are many lodges in the area, choose one that is
+  reasonably near to the Reserve and suits your budget.
+- **How to book**: Use a specialist wildlife travel agency with an established
+  track record in India.
+
+#### What else might I see?
+
+- birds
+- spotted deers
+- Hanuman langurs
+- leopards
+- sloth bears
+
+## Elephant
 
 >>>>> progress

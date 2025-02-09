@@ -40,6 +40,13 @@
     - [Event Storming](#event-storming)
     - [Using a Domain Model for Prioritization](#using-a-domain-model-for-prioritization)
   - [A Combined Model](#a-combined-model)
+  - [Reorganizing Teams](#reorganizing-teams)
+    - [Shifting Structures](#shifting-structures)
+    - [It’s Not One Size Fits All](#its-not-one-size-fits-all)
+      - [DevOps Doesn’t Mean NoOps!](#devops-doesnt-mean-noops)
+    - [Making a Change](#making-a-change)
+    - [Changing Skills](#changing-skills)
+  - [How Will You Know if the Transition Is Working?](#how-will-you-know-if-the-transition-is-working)
 
 ## Understanding the Goal
 
@@ -449,3 +456,109 @@ view of what is easy and what is hard, together with our view of what benefits
 microservice decomposition will bring.
 
 ## A Combined Model
+
+For each candidate service to be extracted, you place it along the two axes
+displayed. The x-axis represents the value that you think the decomposition
+will bring. Along the y-axis, you order things based on their difficulty.
+
+```mermaid
+quadrantChart
+    title A simpe two-axis model for prioritizing service decomposition
+    x-axis Low benefit of decomposition --> High benefit of decomposition
+    y-axis Low ease of decomposition --> High ease of decomposition
+    Dispatch: [0.25, 0.3]
+    Stock Management: [0.25, 0.7]
+    Loyalty: [0.7, 0.65]
+    Invocing: [0.8, 0.85]
+    Order Management: [0.65, 0.4]
+    Notification: [0.9, 0.15]
+```
+
+It’s important to revisit this prioritization exercise and replan as you learn
+more.
+
+## Reorganizing Teams
+
+### Shifting Structures
+
+Layered architectures could require multiple services to need to be changed when
+rolling out simple changes. The same applies with organizational silos: the more
+teams that need to be involved in creating or changing a piece of software, the
+longer it can take.
+
+### It’s Not One Size Fits All
+
+Take inspiration from what other organizations have done, absolutely, but don’t
+assume that what worked for someone else will work in your context. As Jessica
+Kerr once put it, in relation to the Spotify model, “Copy the questions, not the
+answers”.
+
+#### DevOps Doesn’t Mean NoOps!
+
+There is widespread confusion around DevOps, with some people assuming that it
+means that developers do all the operations, and that operations people are not
+needed. This is far from the case. Fundamentally, DevOps is a cultural movement
+based on the concept of breaking down barriers between development and
+operations. You may still want specialists in these roles, or you might not, but
+whatever you want to do, you want to promote common alignment and understanding
+across the people involved in delivering your software, no matter what their
+specific responsibilities are.
+
+### Making a Change
+
+*Showing a subset of the delivery-related responsibilities, and how they map to
+existing teams*.
+
+```mermaid
+block-beta
+  columns 1
+
+  block:group1:1
+    columns 2
+    block:group11:1
+      columns 1
+      fe["Frontend delivery"]
+    end
+    block:group12:1
+      columns 1
+      gp["GUI prototyping"]
+      fd["Frontend development"]
+    end
+  end
+
+  block:group2:1
+    columns 2
+    block:group21:1
+      columns 1
+      be["Backend delivery"]
+    end
+    block:group22:1
+      columns 1
+      bd["Backend development"]
+      fat["Functional automated testing"]
+      pte["Provisioning test environments"]
+    end
+  end
+
+  block:group3:1
+    columns 2
+    block:group31:1
+      columns 1
+      ops["Operations"]
+    end
+    block:group32:1
+      columns 1
+      lt["Load testing"]
+      im["24/7 incident management"]
+      pd["Production deployment"]
+    end
+  end
+```
+
+- 💡 Six months to a year is probably as far forward as you’ll want to explore
+  in detail.
+- 💡 We may also want teams to be able to provision their own test environments.
+
+### Changing Skills
+
+## How Will You Know if the Transition Is Working?
