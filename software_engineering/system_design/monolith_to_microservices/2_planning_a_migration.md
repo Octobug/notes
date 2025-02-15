@@ -47,6 +47,12 @@
     - [Making a Change](#making-a-change)
     - [Changing Skills](#changing-skills)
   - [How Will You Know if the Transition Is Working?](#how-will-you-know-if-the-transition-is-working)
+    - [Having Regular Checkpoints](#having-regular-checkpoints)
+    - [Quantitative Measures](#quantitative-measures)
+    - [Qualitative Measures](#qualitative-measures)
+    - [Avoiding the Sunk Cost Fallacy](#avoiding-the-sunk-cost-fallacy)
+    - [Being Open to New Approaches](#being-open-to-new-approaches)
+  - [Summary](#summary)
 
 ## Understanding the Goal
 
@@ -562,3 +568,72 @@ block-beta
 ### Changing Skills
 
 ## How Will You Know if the Transition Is Working?
+
+### Having Regular Checkpoints
+
+Make sure you cover the following things:
+
+1. Restate what you are expecting the transition to microservices to achieve. If
+   the business has changed direction such that the direction you’re going in
+   no longer makes sense, then stop!
+2. Review any quantitative measures you have in place to see whether you’re
+   making progress.
+3. Ask for qualitative feedback — do people think things are still working out?
+4. Decide what, if anything, you’re going to change going forward.
+
+### Quantitative Measures
+
+- If you’re focused on improving time to market, for example, measuring cycle
+  time, number of deployments, and failure rates make sense.
+- If you’re trying to scale the application to handle more load, reporting back
+  on the latest performance tests would be sensible.
+- It’s worth noting that metrics can be dangerous because of that old adage
+  “You get what you measure.” Metrics can be gamed — inadvertently, or on
+  purpose.
+
+### Qualitative Measures
+
+- Are they enjoying the process?
+- Do they feel empowered?
+- Or do they feel overwhelmed?
+- Are they getting the support they need to take on new responsibilities or
+  master new skills?
+
+### Avoiding the Sunk Cost Fallacy
+
+You don’t need to pull out or change course at the first sign of trouble, but
+ignoring evidence you are gathering regarding the success (or otherwise) of the
+change you’re trying to bring about is arguably more foolish than not gathering
+any evidence in the first place.
+
+### Being Open to New Approaches
+
+The one certainty is that not everything will go smoothly, and you will need to
+be open to reverting changes you make, trying new things, or sometimes just
+letting things settle for a moment to let you see what impact it is having.
+
+If you try to embrace a culture of constant improvement, to always have
+something new you’re trying, then it becomes much more natural to change
+direction when needed. If you ghettoize the concept of change or process
+improvements into discrete streams of work, rather than building it into
+everything you do, then you run the risk of seeing change as one-off
+transactional activities.
+
+That way of thinking is how you’ll find yourself in another few years way
+behind all your competitors and with another mountain to climb.
+
+## Summary
+
+- why you might want to adopt a microservice architecture, and how that
+  decision-making may impact how you prioritize your time.
+- We considered the key questions teams must ask themselves when deciding
+  whether microservices are right for them, and these questions bear repeating:
+  - What are you hoping to achieve?
+  - Have you considered alternatives to using microservices?
+  - How will you know if the transition is working?
+- In addition, the importance of adopting an incremental approach to extracting
+  microservices cannot be overstated. Mistakes are inevitable, you should aim
+  to make small mistakes rather than big ones.
+- The goal should be incremental creation of new microservices, and getting
+  them deployed as part of your production solution so that you start learning
+  from the experience and getting the benefits as soon as possible.
