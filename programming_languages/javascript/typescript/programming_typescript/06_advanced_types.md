@@ -34,6 +34,10 @@
     - [The infer Keyword](#the-infer-keyword)
     - [Built-in Conditional Types](#built-in-conditional-types)
   - [Escape Hatches](#escape-hatches)
+    - [Type Assertions](#type-assertions)
+    - [Nonnull Assertions](#nonnull-assertions)
+    - [Definite Assignment Assertions](#definite-assignment-assertions)
+  - [Simulating Nominal Types](#simulating-nominal-types)
 
 ## Relationships Between Types
 
@@ -1479,5 +1483,226 @@ type I = InstanceType<A> // {b: number}
 ```
 
 ## Escape Hatches
+
+Sometimes you don’t have time to type something perfectly, and you just want
+TypeScript to trust that what you’re doing is safe.
+
+⚠️ In case it’s not obvious, you should use the following TypeScript features as
+little as possible. If you find yourself relying on them, you might be doing
+something wrong.
+
+### Type Assertions
+
+If you have a type `B` and `A <: B <: C`, then you can assert to the
+typechecker that `B` is actually an `A` or a `C`. Notably, you can only assert
+that a type is a supertype or a subtype of itself — you can’t assert that a
+`number` is a `string`, because those types aren’t related.
+
+TypeScript gives us two syntaxes for type assertions:
+
+```ts
+function formatInput(input: string) {
+  // ...
+}
+
+function getUserInput(): string | number {
+  // ...
+}
+
+let input = getUserInput()
+
+// Assert that input is a string
+formatInput(input as string)  // 1.
+
+// This is equivalent to
+formatInput(<string>input)  // 2
+```
+
+1. We use a type assertion (`as`) to tell TypeScript that `input` is a `string`,
+   not a `string | number` as the types would have us believe. You might do
+   this if you want to quickly test out your `formatInput` function and you
+   know for sure that `getUserInput` returns a `string` for your test.
+2. The legacy syntax for type assertions uses angle brackets. The two syntaxes
+   are functionally equivalent.
+
+💡 Prefer `as` syntax for type assertions over angle bracket (`<>`) syntax. The
+former is unambiguous, but the latter can clash with TSX syntax. Use TSLint’s
+`no-angle-bracket-type-assertion` rule to automatically enforce this for your
+codebase.
+
+Sometimes, two types might not be sufficiently related, so you can’t assert
+that one is the other. To get around this, simply assert as `any`:
+
+```ts
+function addToList(list: string[], item: string) {
+// ...
+}
+addToList('this is really,' as any, 'really unsafe')
+```
+
+Clearly, type assertions are unsafe, and you should avoid using them when
+possible.
+
+### Nonnull Assertions
+
+For the special case of nullable types — that is, a type that’s
+`T | null or T | null | undefined` — TypeScript has special syntax for
+asserting that a value of that type is a `T`, and not `null` or `undefined`.
+
+```ts
+type Dialog = {
+  id?: string
+}
+
+function closeDialog(dialog: Dialog) {
+  if (!dialog.id) { // 1.
+    return
+  }
+  setTimeout(() =>  // 2.
+    removeFromDOM(
+      dialog,
+      document.getElementById(dialog.id)  // Error TS2345: Argument of type
+                                          // 'string | undefined' is not
+                                          // assignable to parameter of type
+                                          // 'string'.  // 3.
+    )
+  )
+}
+
+function removeFromDOM(dialog: Dialog, element: Element) {
+  element.parentNode.removeChild(element) // Error TS2531: Object is possibly
+                                          // 'null'.
+  delete dialog.id
+}
+```
+
+1. If the `dialog` is already deleted (so it has no id), we return early.
+2. We remove the `dialog` from the DOM on the next turn of the event loop, so
+   that any other code that depends on `dialog` has a chance to finish running.
+3. Because we’re inside the arrow function, we’re now in a new scope. TypeScript
+   doesn’t know if some code mutated `dialog` between `1.` and `3.`, so it
+   invalidates the refinement we made in `1.`. On top of that, while we know
+   that if `dialog.id` is defined then an element with that ID definitely
+   exists in the DOM, all TypeScript knows is that calling
+   `document.getElementById` returns an `HTMLElement | null`. We know it’ll
+   always be a nonnullable `HTMLElement`, but TypeScript doesn’t know that — it
+   only knows about the types we gave it.
+4. Similarly, while we know that the `dialog` is definitely in the DOM and it
+   definitely has a parent DOM node, all TypeScript knows is that the type of
+   `element.parentNode` is `Node | null`.
+
+One way to fix this is to add a bunch of `if (_ === null)` checks everywhere.
+While that’s the right way to do it if you’re unsure if something is `null` or
+not, TypeScript comes with special syntax for when you’re sure it’s not
+`null | undefined`:
+
+```ts
+type Dialog = {
+  id?: string
+}
+
+function closeDialog(dialog: Dialog) {
+  if (!dialog.id) {
+    return
+  }
+  setTimeout(() =>
+    removeFromDOM(
+      dialog,
+      document.getElementById(dialog.id!)!
+    )
+  )
+}
+
+function removeFromDOM(dialog: Dialog, element: Element) {
+  element.parentNode!.removeChild(element)
+  delete dialog.id
+}
+```
+
+Notice the sprinkling of nonnull assertion operators (`!`) that tell TypeScript
+that we’re sure `dialog.id`, the result of our `document.getElementById` call,
+and `element.parentNode` are defined. When a nonnull assertion follows a type
+that might be `null` or `undefined`, TypeScript will assume that the type is
+defined: `T | null | undefined` becomes a `T`, `number | string | null` becomes
+`number | string`, and so on.
+
+When you find yourself using `nonnull` assertions a lot, it’s often a sign that
+you should refactor your code. For example, we could get rid of an assertion by
+splitting `Dialog` into a union of two types:
+
+```ts
+type VisibleDialog = {id: string}
+type DestroyedDialog = {}
+type Dialog = VisibleDialog | DestroyedDialog
+```
+
+We can then update `closeDialog` to take advantage of the union:
+
+```ts
+function closeDialog(dialog: Dialog) {
+  if (!('id' in dialog)) {
+    return
+  }
+
+  setTimeout(() =>
+    removeFromDOM(
+      dialog,
+      document.getElementById(dialog.id)!
+    )
+  )
+}
+
+function removeFromDOM(dialog: VisibleDialog, element: Element) {
+  element.parentNode!.removeChild(element)
+  delete dialog.id
+}
+```
+
+After we check that dialog has an `id` property defined — implying that it’s a
+`VisibleDialog` — even inside the arrow function TypeScript knows that the
+reference to `dialog` hasn’t changed: the dialog inside the arrow function is
+the same `dialog` outside the function, so the refinement carries over.
+
+### Definite Assignment Assertions
+
+```ts
+let userId: string
+userId.toUpperCase()  // Error TS2454: Variable 'userId' is used
+                      // before being assigned.
+```
+
+But, what if our code looks more like this?
+
+```ts
+let userId: string
+fetchUser()
+
+userId.toUpperCase()  // Error TS2454: Variable 'userId' is used
+                      // before being assigned.
+
+function fetchUser() {
+  userId = globalCache.get('userId')
+}
+```
+
+We can use a definite assignment assertion to tell TypeScript that `userId`
+will definitely be assigned by the time we read it (notice the exclamation
+mark):
+
+```ts
+let userId!: string
+fetchUser()
+
+userId.toUpperCase() // OK
+
+function fetchUser() {
+  userId = globalCache.get('userId')
+}
+```
+
+As with type assertions and nonnull assertions, if you find yourself using
+definite assignment assertions often, you might be doing something wrong.
+
+## Simulating Nominal Types
 
 >>>>> progress
