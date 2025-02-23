@@ -22,6 +22,7 @@
       - [Recommendation summary](#recommendation-summary)
       - [What else might I see?](#what-else-might-i-see)
   - [Elephant](#elephant)
+    - [Lying on the ground with elephants towering above me](#lying-on-the-ground-with-elephants-towering-above-me)
 
 ## Tiger
 
@@ -62,6 +63,10 @@
   eye contact with the subject.
 
 ### Optimism prevailed
+
+- 📍 Ranthambore Tiger Reserve, Rajasthan, India
+- Stay close to to fresh kill, tigers will come back.
+- Hot, dry season is recommended because prey and predators congregate at water.
 
 ### Planning your ultimate tiger safari
 
@@ -130,4 +135,14 @@ A low vehicle, like a Jeep, is best for photography.
 
 ## Elephant
 
->>>>> progress
+### Lying on the ground with elephants towering above me
+
+- 📍 Kitirua Conservancy, Amboseli, Kenya
+- 💡 Low-level camera angles are good for producing much more engaging shots of
+  the elephants -- a technique that's particularly effective with calves.
+- 📍 Mara North Conservancy, Greater Masai Mara, Kenya
+
+💡 Photographic tip: Framing the calf
+
+The calf often stays close to its mother, either to one side or or under its
+mother's legs. Use these legs to frame to calf.
