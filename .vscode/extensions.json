@@ -1,7 +1,7 @@
 {
     "recommendations": [
         "davidanson.vscode-markdownlint",
+        "eamodio.gitlens",
         "yzhang.markdown-all-in-one",
-        "eamodio.gitlens"
     ]
 }
