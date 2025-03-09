@@ -6,8 +6,8 @@
 
 ## Table of Contents
 
-- [ ] [第1章 容器与开发语言](./1_container_and_language.md)
-- [ ] 第2章 基础技术
+- [x] [第1章 容器与开发语言](./1_container_and_golang.md)
+- [ ] [第2章 基础技术](./2_basic_technologies.md)
 - [ ] 第3章 构造容器
 - [ ] 第4章 构造镜像
 - [ ] 第5章 构建容器进阶
