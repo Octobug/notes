@@ -8,7 +8,7 @@
 
 - [x] [1. Just Enough Microservices](./1_just_enough_microservices.md)
 - [x] [2. Planning a Migration](./2_planning_a_migration.md)
-- [ ] [3. Splitting the Monolith](./3_splitting_the_monolith.md)
-- [ ] 4. Decomposing the Database
+- [x] [3. Splitting the Monolith](./3_splitting_the_monolith.md)
+- [ ] [4. Decomposing the Database](./4_decomposing_the_database.md)
 - [ ] 5. Growing Pains
 - [ ] 6. Closing Words
