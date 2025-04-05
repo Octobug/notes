@@ -40,6 +40,13 @@
   - [Splitting Apart the Database](#splitting-apart-the-database)
     - [Physical Versus Logical Database Separation](#physical-versus-logical-database-separation)
   - [Splitting the Database First, or the Code?](#splitting-the-database-first-or-the-code)
+    - [Split the Database First](#split-the-database-first)
+      - [A Note on Tooling](#a-note-on-tooling)
+      - [Pattern: Repository per bounded context](#pattern-repository-per-bounded-context)
+      - [Pattern: Database per bounded context](#pattern-database-per-bounded-context)
+    - [Split the Code First](#split-the-code-first)
+      - [Pattern: Monolith as data access layer](#pattern-monolith-as-data-access-layer)
+      - [Pattern: Multischema storage](#pattern-multischema-storage)
 
 Microservices work best when we practice information hiding, which in turn
 typically leads us toward microservices totally encapsulating their own data
@@ -795,3 +802,105 @@ source database and the schemas hosting the views may need to be located on the
 same database engine.
 
 ## Splitting the Database First, or the Code?
+
+Extracting a microservice isn’t “done” until the application code is running in
+its own service, and the data it controls is extracted into its own logically
+isolated database. We have a few options:
+
+- Split the database first, then the code.
+- Split the code first, then the database.
+- Split them both at once.
+
+### Split the Database First
+
+With a separate schema, we’ll be potentially increasing the number of database
+calls to perform a single action. Whereas before we might have been able to
+have all the data we wanted in a single `SELECT` statement, now we may need to
+pull the data back from two locations and join in memory. Also, we end up
+breaking transactional integrity when we move to two schemas, which could have
+significant impact on our applications. By splitting the schemas out but
+keeping the application code together, we give ourselves the ability to revert
+our changes or continue to tweak things without impacting any consumers of our
+service if we realize we’re heading down the wrong path. Once we are satisfied
+that the DB separation makes sense, we could then think about splitting out the
+application code into two services.
+
+The flip side is that this approach is unlikely to yield much short-term
+benefit. We still have a monolithic code deployment. Arguably, the pain of a
+shared database is something you feel over time, so we’re spending time and
+effort now to give us return in the long run, without getting enough of the
+short-term benefit. For this reason, You would likely go this route only if
+concerne about the potential performance or data consistency issues.
+
+#### A Note on Tooling
+
+#### Pattern: Repository per bounded context
+
+A common practice is to have a repository layer, backed by some sort of
+framework like Hibernate (ORM), to bind your code to the database, making it
+easy to map objects or data structures to and from the database. Rather than
+having a single repository layer for all data access concerns, there is value
+in breaking down these repositories along the lines of bounded contexts.
+
+Having the database mapping code colocated inside the code for a given context
+can help us understand what parts of the database are used by what bits of
+code. This can help us greatly understand what tables need to move as part of
+any future decomposition.
+
+A great place to start is to use a tool like the freely available SchemaSpy,
+which can generate graphical representations of the relationships between
+tables.
+
+#### Pattern: Database per bounded context
+
+Each bounded context had its own, totally separate databases. The idea was that
+if there was a need to separate them into microservices later, this would be
+much easier.
+
+Keep schema separation where you think you may have service separation in the
+future. That way, you get some of the benefits of decoupling these ideas, while
+reducing the complexity of the system.
+
+### Split the Code First
+
+By splitting out the application tier, it becomes much easier to understand
+what data is needed by the new service. You also get the benefit of having an
+independently deployable code artifact earlier. The concerns with this approach
+is that teams may get this far and then stop, leaving a shared database in play
+on an ongoing basis. If this is the direction you take, you have to understand
+that you’re storing up trouble for the future if you don’t complete the
+separation into the data tier. The other potential challenge here is that you
+may be delaying finding out nasty surprises caused by pushing join operations
+up into the application tier.
+
+If this is the direction you take, be honest with yourself: are you confident
+that you will be able to make sure that any data owned by the microservice gets
+split out as part of the next step?
+
+#### Pattern: Monolith as data access layer
+
+Rather than accessing the data from the monolith directly, we can just move to
+a model in which we create an API in the monolith itself. Part of the reason
+this isn’t used more widely is likely because people sort of have in their
+minds the idea that the monolith is dead, and of no use. But the upsides here
+are obvious: we don’t have to tackle data decomposition (yet) but get to hide
+information, making it easier to keep our new service isolated from the
+monolith.
+
+It’s not too hard to see this pattern as a way of identifying other candidate
+services. Extending this idea, we could see the Employee API splitting out from
+the monolith to become a microservice in its own right.
+
+This pattern works best when the code managing this data is still in the
+monolith. As we talked about previously, one way to think of a microservice
+when it comes to data is the encapsulation of the state and the code that
+manages the transitions of that state. So if the state transitions of this data
+are still provided in the monolith, it follows that the microservice that wants
+to access (or change) that state needs to go via the state transitions in the
+monolith.
+
+If the data you’re trying to access in the monolith’s database should really be
+“owned” by the microservice instead, I’m more inclined to suggest skipping this
+pattern and instead looking to split the data out.
+
+#### Pattern: Multischema storage
