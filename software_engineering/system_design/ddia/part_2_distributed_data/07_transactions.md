@@ -123,9 +123,9 @@ This idea of consistency depends on the application's notion of invariants, and
 it's the application's responsibility to define its transactions correctly.
 
 ***Atomicity***, ***isolation***, and ***durability*** are properties of the
-database, whereas consistency is a property of the application. The application
-may rely on the database's atomicity and isolation properties to achieve
-consistency. The letter C doesn't really belong in ACID.
+database, whereas ***consistency*** is a property of the application. The
+application may rely on the database's atomicity and isolation properties to
+achieve consistency. The letter C doesn't really belong in ACID.
 
 #### Isolation
 

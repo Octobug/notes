@@ -47,6 +47,44 @@
     - [Split the Code First](#split-the-code-first)
       - [Pattern: Monolith as data access layer](#pattern-monolith-as-data-access-layer)
       - [Pattern: Multischema storage](#pattern-multischema-storage)
+    - [Split Database and Code Together](#split-database-and-code-together)
+    - [So, Which Should I Split First?](#so-which-should-i-split-first)
+  - [Schema Separation Examples](#schema-separation-examples)
+    - [Relational Databases Versus NoSQL](#relational-databases-versus-nosql)
+  - [Pattern: Split Table](#pattern-split-table)
+    - [Pattern: Split Table - Where to Use It](#pattern-split-table---where-to-use-it)
+  - [Pattern: Move Foreign-Key Relationship to Code](#pattern-move-foreign-key-relationship-to-code)
+    - [Moving the Join](#moving-the-join)
+    - [Data Consistency](#data-consistency)
+      - [Check before deletion](#check-before-deletion)
+      - [Handle deletion gracefully](#handle-deletion-gracefully)
+      - [Don’t allow deletion](#dont-allow-deletion)
+      - [So how should we handle deletion?](#so-how-should-we-handle-deletion)
+    - [Pattern: Move Foreign-Key Relationship to Code - Where to Use It](#pattern-move-foreign-key-relationship-to-code---where-to-use-it)
+    - [Example: Shared Static Data](#example-shared-static-data)
+      - [Pattern: duplicate static reference data](#pattern-duplicate-static-reference-data)
+      - [Pattern: Dedicated reference data schema](#pattern-dedicated-reference-data-schema)
+      - [Pattern: Static reference data library](#pattern-static-reference-data-library)
+      - [Pattern: Static reference data service](#pattern-static-reference-data-service)
+      - [What would I do?](#what-would-i-do)
+  - [Transactions](#transactions)
+    - [ACID Transactions](#acid-transactions)
+    - [Still ACID, but Lacking Atomicity?](#still-acid-but-lacking-atomicity)
+    - [Two-Phase Commits](#two-phase-commits)
+    - [Distributed Transactions—Just Say No](#distributed-transactionsjust-say-no)
+  - [Sagas](#sagas)
+    - [Saga Failure Modes](#saga-failure-modes)
+      - [Saga rollbacks](#saga-rollbacks)
+      - [Reordering steps to reduce rollbacks](#reordering-steps-to-reduce-rollbacks)
+      - [Mixing fail-backward and fail-forward situations](#mixing-fail-backward-and-fail-forward-situations)
+    - [Implementing Sagas](#implementing-sagas)
+      - [Orchestrated sagas](#orchestrated-sagas)
+        - [BPM Tools?](#bpm-tools)
+      - [Choreographed sagas](#choreographed-sagas)
+      - [Mixing styles](#mixing-styles)
+      - [Should I use choreography or orchestration?](#should-i-use-choreography-or-orchestration)
+    - [Sagas Versus Distributed Transactions](#sagas-versus-distributed-transactions)
+  - [Summary](#summary)
 
 Microservices work best when we practice information hiding, which in turn
 typically leads us toward microservices totally encapsulating their own data
@@ -904,3 +942,934 @@ If the data you’re trying to access in the monolith’s database should really
 pattern and instead looking to split the data out.
 
 #### Pattern: Multischema storage
+
+If you are still making direct use of the data in a database, it doesn’t mean
+that new data stored by a microservice should go in there too.
+
+We have to consider what happens when a foreign-key relationship effectively
+spans a schema boundary.
+
+As you manage to drag clear the rest of the data from the monolith, you can
+migrate it a table at a time into your new schema.
+
+This pattern works well when adding brand-new functionality to your
+microservice that requires the storage of new data. It’s clearly not data the
+monolith needs (the functionality isn’t there), so keep it separate from the
+beginning. This pattern also makes sense as you start moving data out of the
+monolith into your own schema — a process that may take some time.
+
+If the data you are accessing in the monolith’s schema is data that you never
+planned to move into your schema, I strongly recommend use of the monolith as
+data access layer pattern in conjunction with this pattern.
+
+### Split Database and Code Together
+
+The concern here is that this is a much bigger step to take, and it will be
+longer before you can assess the impact of your decision as a result. Avoid
+this approach, and instead splitting either the schema or application tier
+first.
+
+### So, Which Should I Split First?
+
+- If I’m able to change the monolith, and if I am concerned about the potential
+  impact to performance or data consistency, I’ll look to split the schema apart
+  first.
+- Otherwise, I’ll split the code out, and use that to help understand how that
+  impacts data ownership.
+- But it’s important that you also think for yourself and take into account any
+  factors that might impact the decision-making process in your particular
+  situation.
+
+## Schema Separation Examples
+
+### Relational Databases Versus NoSQL
+
+The nature of relational schemas of databases create additional challenges in
+terms of pulling schemas apart. Many of you may well be using alternative types
+of nonrelational databases. However, many of the following patterns may still
+apply. You may have fewer constraints in how the changes can be made.
+
+## Pattern: Split Table
+
+In the spirit of incremental migration, it may make sense to split the tables
+apart in the existing schema, before separating the schemas. However, because
+we plan to move these tables ultimately into separate databases, we may not
+gain much from this as we won’t have a single database enforcing the data
+consistency.
+
+It was easy to separate ownership of data on a column-by-column basis. But what
+happens when multiple pieces of code update the same column?
+
+Remember, we want, where possible, to keep the state machines for our domain
+entities inside a single service boundary, and updating a Status certainly
+feels like part of the state machine.
+
+A big problem with splitting tables like this is that we lose the safety given
+to us by database transactions.
+
+### Pattern: Split Table - Where to Use It
+
+When the table is owned by two or more bounded contexts in your current
+monolith, you need to split the table along those lines. If you find specific
+columns in that table that seem to be updated by multiple parts of your
+codebase, you need to make a judgment call as to who should “own” that data. Is
+it an existing domain concept you have in scope? That will help determine where
+this data should go.
+
+## Pattern: Move Foreign-Key Relationship to Code
+
+These foreign-key relationships let the database engine carry out performance
+optimizations to ensure that the join operation is as fast as possible.
+
+### Moving the Join
+
+```mermaid
+erDiagram
+  Albums {
+    int SKU PK
+    number RRP
+    string AlbumName
+  }
+
+  Ledger {
+    int CatalogID FK
+    int Price
+    date Date
+  }
+```
+
+When generating the report, the `Finance` service first queries the `Ledger`
+table, extracting the list of best-selling SKUs for the last month. At this
+point, all we have is a list of SKUs, and the number of copies sold for each.
+
+Next, we need to call the `Catalog` service, requesting information on each of
+these SKUs. This request in turn would cause the `Catalog` service to make its
+own local `SELECT` on its own database.
+
+Logically, the join operation is still happening, but it is now happening
+inside the `Finance` service, rather than in the database. Unfortunately, it
+isn’t going to be anywhere near as efficient. We’ve gone from a world where we
+have a single `SELECT` statement, to a new world where we have a `SELECT` query
+against the `Ledger` table, followed by a service call to the `Catalog`
+service, which in turn triggers a `SELECT` statement against the `Albums`
+table.
+
+This may not be a significant problem in this particular case, as this report
+is generated monthly, and could therefore be aggressively cached. But if this
+is a frequent operation, that could be more problematic. We can mitigate the
+likely impact of this increase in latency by allowing for SKUs to be looked up
+in the `Catalog` service in bulk, or perhaps even by caching the required album
+information locally.
+
+Ultimately, whether or not this increase in latency is a problem is something
+only you can decide. You need to have an understanding of acceptable latency
+for key operations, and be able to measure what the latency currently is.
+Distributed systems like Jaeger can really help here, as they provide the
+ability to get accurate timing of operations that span multiple services.
+Making an operation slower may be acceptable if it is still fast enough,
+especially if as a trade-off you gain some other benefits.
+
+### Data Consistency
+
+#### Check before deletion
+
+Our first option might be to ensure that when removing a record from the
+`Albums` table, we check with the `Finance` service to ensure that it doesn’t
+already have a reference to the record. The problem here is that guaranteeing
+we can do this correctly is difficult. Say we want to delete SKU 683. We send a
+call to Finance saying, “Are you using 683?” It responds that this record is
+not used. We then delete the record, but while we are doing it, a new reference
+to 683 gets created in the Finance system. To stop this from happening, we’d
+need to stop new references being created on record 683 until the deletion has
+happened — something that would likely require locks, and all the challenges
+that implies in a distributed system.
+
+Another issue with checking if the record is already in use is that creates a
+de facto reverse dependency from the `Catalog` service. Now we’d need to check
+with any other service that uses our records. This is bad enough if we have
+only one other service using our information, but becomes significantly worse
+as we have more consumers.
+
+I strongly urge you ***not to consider this option***, because of the
+difficulty in ensuring that this operation is implemented correctly as well as
+the high degree of service coupling that this introduces.
+
+#### Handle deletion gracefully
+
+A better option is just to have the `Finance` service handle the fact that the
+`Catalog` service may not have information on the `Album` in a graceful way.
+This could be as simple as having our report show “Album Information Not
+Available” if we can’t look up a given SKU.
+
+In this situation, the `Catalog` service could tell us when we request a SKU
+that used to exist. This would be the good use of a `410 GONE` response code if
+using HTTP, for example. A `410` response code differs from the commonly used
+`404`. A `404` denotes that the requested resource is not found, whereas a
+`410` means that the requested resource was available but isn’t any longer. The
+distinction can be important, especially when tracking down data inconsistency
+issues! Even if not using an HTTP-based protocol, consider whether or not you’d
+benefit from supporting this sort of response.
+
+If we wanted to get really advanced, we could ensure that our `Finance` service
+is informed when a `Catalog` item is removed, perhaps by subscribing to events.
+When we pick up a `Catalog` deletion event, we could decide to copy the now
+deleted `Album` information into our local database. This feels like overkill
+in this particular situation, but could be useful in other scenarios,
+especially if you wanted to implement a distributed state machine to perform
+something like a cascading deletion across service boundaries.
+
+#### Don’t allow deletion
+
+One way to ensure that we don’t introduce too much inconsistency into the
+system could be to simply not allow records in the `Catalog` service to be
+deleted. If in the existing system deleting an item was akin to ensuring it
+wasn’t available for sale or something similar, we could just implement a soft
+delete capability. We could do this by using a status column to mark that row
+as being unavailable, or perhaps even moving the row into a dedicated
+“graveyard” table. The album’s record could still be requested by the `Finance`
+service in this situation.
+
+- Maintaining historical data in a relational database like this can get
+  complicated, especially if you need to programmatically reconstitute old
+  versions of your entities. If you have heavy requirements in this space,
+  exploring ***event sourcing*** as an alternative way of maintaining state
+  would be worthwhile.
+
+#### So how should we handle deletion?
+
+In looking at ways to solve this, we must consider the needs of our users, as
+different solutions could impact our users in different ways. Choosing the
+right solution therefore requires an understanding of your specific context.
+
+- by not allowing deletion of album information in the Catalog
+- and by ensuring that the Finance service can handle a missing record.
+
+You could argue that if a record can’t be removed from the `Catalog` service,
+the lookup from `Finance` could never fail. However, there is a possibility
+that, as a result of corruption, the `Catalog` service may be recovered to an
+earlier state, meaning the record we are looking for no longer exists.
+
+### Pattern: Move Foreign-Key Relationship to Code - Where to Use It
+
+When you start considering effectively breaking foreign-key relationships, one
+of the first things you need to ensure is that you aren’t breaking apart two
+things that really want to be one. If you’re worried that you are breaking
+apart an aggregate, pause and reconsider. Consider a different case: an `Order`
+table, and lots of associated rows in an `Order Line` table containing details
+of the items we have ordered. If we split out order lines into a separate
+service, we’d have data integrity issues to consider. Really, the lines of an
+order are part of the order itself. We should therefore see them as a unit, and
+if we wanted to move them out of the monolith, they should be moved together.
+
+Sometimes, by taking a bigger bite out of the monolithic schema, you may be
+able to move both sides of a foreign-key relationship with you, making your
+life much easier!
+
+### Example: Shared Static Data
+
+***Static reference data*** (which changes infrequently, yet is typically
+critical) can create some interesting challenges.
+
+Why small amounts of infrequently changing data like country codes need to
+exist in databases?
+
+#### Pattern: duplicate static reference data
+
+Why not just have each service have its own copy of the data? It’s less crazy
+than you’d think.
+
+Concerns around duplication of data tend to come down to two things.
+
+- First, each time I need to change the data, I have to do so in multiple
+  places. But in this situation, how often does the data change?
+- The bigger worry is, what happens if the data is inconsistent? For example,
+  the `Finance` service knows that South Sudan is a country, but inexplicably,
+  the ·Warehouse· service is living in the past and knows nothing about it.
+  - Whether or not inconsistency is an issue comes down to how the data is
+    used.
+  - When the data is used only locally within each service, the inconsistency
+    is not a problem.
+  - If, on the other hand, the data is part of the communication between these
+    services, then we have different concerns. If both `Warehouse` and
+    `Finance` need the same view of country information, duplication of this
+    nature is not a good idea.
+
+We worry about the extra cost of managing duplicate copies of information, and
+are even more concerned if this data diverges. But accepting some duplication
+in data may be a sensible trade-off if it means we avoid introducing coupling.
+
+***This pattern should be used only rarely***. It is sometimes useful for large
+volumes of data, when it’s not essential for all services to see the exact same
+set of data.
+
+#### Pattern: Dedicated reference data schema
+
+If you really want one source of truth for your country codes, you could
+relocate this data to a dedicated schema, perhaps one set aside for all static
+reference data.
+
+It changes infrequently, and is simply structured, and therefore we could more
+easily consider this Reference Data schema to be a ***defined interface***.
+Making breaking changes to this schema is likely to be painful.
+
+This option has a lot of merits. We avoid the concerns around duplication, and
+the format of the data is highly unlikely to change, so some of our coupling
+concerns are mitigated. For large volumes of data, or when you want the option
+of cross-schema joins, it’s a valid approach. But any changes to the schema
+format will likely cause significant impact across multiple services.
+
+#### Pattern: Static reference data library
+
+Obviously, if we have a mix of technology stacks, we may not be able to share a
+single shared library. Also, we need to ensure that our microservices are
+independently deployable. If we needed to update our country codes library, and
+have all services pick up the new data immediately, we’d need to redeploy all
+services at the moment the new library is available. This is a classic
+lock-step release, and exactly what we’re trying to avoid with microservice
+architectures.
+
+If your microservices use shared libraries, remember that you have to accept
+that you might have different versions of the library deployed in production!
+
+In a simple variation of this pattern, the data in question is held in a
+configuration file, perhaps a standard properties file or, if required, in a
+more structured JSON format.
+
+For small volumes of data, where you can be relaxed about different services
+seeing different versions of this data, this is an excellent but often
+overlooked option. The visibility regarding which service has what version of
+data is especially useful.
+
+#### Pattern: Static reference data service
+
+Even better, a Country Code service would be a great fit for something like a
+Function-as-a-Service platform like Azure Cloud Functions or AWS Lambda. The
+lower operations cost for functions is attractive, and they’re a great fit for
+simple services like the Country Code service.
+
+Another concern cited is that by adding a service for country codes, we’d be
+adding yet another networked dependency that could impact latency.
+
+- this approach is no worse, and may be faster, than having a dedicated
+  database for this information. Why? There are only 249 entries in this
+  dataset. Our Country Code service could easily hold this in memory and serve
+  it up directly.
+
+This data can also be aggressively cached at the client side. We could also
+consider using events to let consumers know when this data has changed. When
+the data changes, interested consumers can be alerted via events and use this
+to update their local caches. A traditional TTL-based client cache is likely to
+be good enough in this scenario, given the low change frequency.
+
+**Where to use it**. I’d reach for this option if I was managing the life cycle
+of this data itself in code. This also makes sense if you want to emit events
+when this data changes, or just where you want to provide a more convenient
+contact against which to stub for testing purposes.
+
+The major issue here always seems to come down to the cost of creating yet
+another microservice. Does it add enough to justify the work, or would one of
+these other approaches be a more sensible option?
+
+#### What would I do?
+
+- For small amounts of data, go with the static reference data library option.
+- For more complex reference data or for larger volumes, put this into the
+  local database for each service.
+- If the data needs to be consistent between services, create a dedicated
+  service (or perhaps serve up this data as part of a larger-scoped static
+  reference service).
+- The last resort is using a dedicated schema for this sort of data, only if it
+  was difficult to justify the work to create a new service.
+
+## Transactions
+
+When we split data across databases, we lose the benefit of using a database
+transaction to apply changes in state in an atomic fashion.
+
+### ACID Transactions
+
+ACID is an acronym outlining the key properties of database transactions that
+lead to a system we can rely on to ensure the durability and consistency of
+our data storage. ***ACID*** stands for ***atomicity***, ***consistency***,
+***isolation***, and ***durability***:
+
+- ***Atomicity***: Ensures that all operations completed within the transaction
+  either all complete or all fail.
+- ***Consistency***: When changes are made to our database, we ensure it is
+  left in a valid, consistent state.
+- ***Isolation***: Allows multiple transactions to operate at the same time
+  without interfering. This is achieved by ensuring that any interim state
+  changes made during one transaction are invisible to other transactions.
+- ***Durability***: Makes sure that once a transaction has been completed, we
+  are confident the data won’t get lost in the event of some system failure.
+
+### Still ACID, but Lacking Atomicity?
+
+e.g. We are keeping track of the process involved in onboarding a new customer
+to our system. We’ve reached the end of the process, which involves changing
+the `Status` of the customer from `PENDING` to `VERIFIED`. As the enrollment is
+now complete, we also want to remove the matching row from the
+`PendingEnrollments` table. With a single database, this is done in the scope
+of a single ACID database transaction — either both the new rows are written,
+or neither are written.
+
+Compare this with microservices. We’re making exactly the same change, but now
+each change is made in a different database. This means there are two
+transactions to consider, each of which could work or fail independently of the
+other.
+
+We could decide to sequence these two transactions, of course, removing a row
+from the `PendingEnrollments` table only if we were able to change the row in
+the `Customer` table. But we’d still have to reason about what to do if the
+deletion from the `PendingEnrollments` table then failed — all logic that we’d
+need to implement ourselves. Being able to reorder steps to make handling these
+use cases can be a really useful idea, though. But fundamentally by decomposing
+this operation into two separate database transactions, we have to accept that
+we’ve lost guaranteed atomicity of the operation as a whole.
+
+This lack of atomicity can start to cause significant problems, especially if
+we are migrating systems that previously relied on this property. Normally, the
+first option that people start considering is distributed transactions.
+
+### Two-Phase Commits
+
+The ***two-phase commit*** algorithm (2PC) is frequently used to attempt to
+give us the ability to make transactional changes in a distributed system,
+where multiple separate processes may need to be updated as part of the overall
+operation. But 2PCs have limitations. Distributed transactions, and two-phased
+commits more specifically, are frequently raised by teams moving to
+microservice architectures as a way of solving challenges they face. But they
+may not solve your problems, and may bring even more confusion to your system.
+
+The algorithm is broken into two phases: a ***voting phase*** and a
+***commit phase***. During the voting phase, a central coordinator contacts all
+the workers who are going to be part of the transaction, and asks for
+confirmation as to whether or not some state change can be made.
+
+e.g.
+
+1. One to change a customer status to VERIFIED
+2. another to remove a row from our `PendingEnrollments` table.
+
+If all the workers agree that the state change they are asked for can take
+place, the algorithm proceeds to the next phase. If any workers say the change
+cannot take place, perhaps because the requested state change violates some
+local condition, the entire operation aborts.
+
+It’s important to highlight that the change does not take effect immediately
+after a worker indicates that it can make the change. Instead, the worker is
+guaranteeing that it will be able to make that change at some point in the
+future.
+
+How would the worker make such a guarantee?
+
+For example, `Worker A` has said it will be able to change the state of the row
+in the `Customer` table to update that specific customer’s status to be
+`VERIFIED`. What if a different operation at some later point deletes the
+row, or makes another smaller change that nonetheless means that a change to
+`VERIFIED` later is invalid? To guarantee that this change can be made later,
+`Worker A` will likely have to lock that record to ensure that such a change
+cannot take place.
+
+If any workers didn’t vote in factor of the commit, a rollback message needs to
+be sent to all parties, to ensure that they can clean up locally, which allows
+the workers to release any locks they may be holding. If all workers agreed to
+make the change, we move to the commit phase. Here, the changes are actually
+made, and associated locks are released.
+
+It’s important to note that ***in such a system, we cannot in any way
+guarantee*** that these commits will occur at exactly the same time. The
+coordinator needs to send the commit request to all participants, and that
+message could arrive at and be processed at different times. This means it’s
+possible that we could see the change made to `Worker A`, but not yet see the
+change to `Worker B`, if we allow for you to view the states of these workers
+outside the transaction coordinator. The more latency there is between the
+coordinator, and the slower it is for the workers to process the response, the
+wider this window of inconsistency might be. Coming back to the definition of
+ACID, ***isolation*** ensures that we don’t see intermediate states during a
+transaction. But with this two-phase commit, we’ve lost that.
+
+When two-phase commits work, at their heart they are very often just
+***coordinating distributed locks***. The workers need to lock local resources
+to ensure that the commit can take place during the second phase. Managing
+locks, and avoiding deadlocks in a single-process system.
+
+There are a host of failure modes associated with two-phase commits. Consider
+the problem of a worker voting to proceed with the transaction, but then not
+responding when asked to commit. Some of these failure modes can be handled
+automatically, but some can leave the system in such a state that things need
+to be manually unpicked.
+
+The more participants you have, and the more latency you have in the system,
+the more issues a two-phase commit will have. They can be a quick way to inject
+huge amounts of latency into your system, especially if the scope of locking is
+large, or the duration of the transaction is large. It’s for this reason
+two-phase commits are typically used only for very short-lived operations. The
+longer the operation takes, the longer you’ve got resources locked for!
+
+### Distributed Transactions—Just Say No
+
+Avoid the use of distributed transactions like the two-phase commit to
+coordinate changes in state across your microservices.
+
+The first option could be to just not split the data apart in the first place.
+If you have pieces of state that you want to manage in a truly atomic and
+consistent way, and you cannot work out how to sensibly get these
+characteristics without an ACID-style transaction, then leave that state in a
+single database, and leave the functionality that manages that state in a
+single service (or in your monolith). If you’re in the process of working out
+where to split your monolith, and working out what decompositions might be easy
+(or hard), then you could well decide that splitting apart data that is
+currently managed in a transaction is just too hard to handle right now. Work
+on some other area of the system, and come back to this later.
+
+## Sagas
+
+Unlike a two-phase commit, a ***saga*** is by design an algorithm that can
+coordinate multiple changes in state, but avoids the need for locking resources
+for long periods of time. We do this by modeling the steps involved as discrete
+activities that can be executed independently. It comes with the added benefit
+of forcing us to explicitly model our business processes.
+
+The core idea reflected on the challenges of how best to handle operations of
+what they referred to as long lived transactions (LLTs). These transactions
+might take a long time (minutes, hours, or perhaps even days), and as part of
+that process require changes to be made to a database.
+
+If you directly mapped an LLT to a normal database transaction, a single
+database transaction would span the entire life cycle of the LLT. This could
+result in multiple rows or even full tables being locked for long periods of
+time while the LLT is taking place, causing significant issues if other
+processes are trying to read or modify these locked resources.
+
+Instead, we can break down these LLTs into a sequence of transactions, each of
+which can be handled independently. The idea is that the duration of each of
+these “sub” transactions will be shorter lived, and will modify only part of
+the data affected by the entire LLT. As a result, there will be far less
+contention in the underlying database as the scope and duration of locks is
+greatly reduced.
+
+While sagas were originally envisaged as a mechanism to help with LLTs acting
+against a single database, the model works just as well for coordinating change
+across multiple services. We can break a single business process into a set of
+calls that will be made to collaborating services as part of a single saga.
+
+⚠️ You need to understand that a saga does not give us atomicity in ACID terms
+we are used to with a normal database transaction. As we break the LLT into
+individual transactions, we don’t have atomicity at the level of the saga
+itself. We do have atomicity for each subtransaction inside the LLT, as each
+one of them can relate to an ACID transactional change if needed. What a saga
+gives us is enough information to reason about which state it’s in; it’s up to
+us to handle the implications of this.
+
+```mermaid
+flowchart TD
+
+fullfilment(Order Fulfillment)
+
+fullfilment --> check[Check item in stock and
+reserve for order]
+
+check --> charge[Take money
+from customer]
+
+charge --> award[Award points to
+the customer]
+
+award --> send[Package and
+send order]
+
+send --> completed(Fulfillment completed)
+
+check -."Handled by".-> a{{Warehouse}}
+charge -.-> b{{Payment Gateway}}
+award -.-> c{{Loyalty}}
+send -.-> d{{Warehouse}}
+```
+
+Here, the order fulfillment process is represented as a single saga, with each
+step in this flow representing an operation that can be carried out by a
+different service. Within each service, any state change can be handled within
+a local ACID transaction.
+
+### Saga Failure Modes
+
+How to recover when a failure happens?
+
+The original saga paper describes two types of recovery: backward recovery and
+forward recovery.
+
+***Backward recovery*** involves reverting the failure, and cleaning up
+afterwards — a rollback. For this to work, we need to define compensating
+actions that allow us to undo previously committed transactions.
+
+***Forward recovery*** allows us to pick up from the point where the failure
+occurred, and keep processing. For that to work, we need to be able to retry
+transactions, which in turn implies that our system is persisting enough
+information to allow this retry to take place.
+
+Depending on the nature of the business process being modeled, you may consider
+that any failure mode triggers a backward recovery, a forward recovery, or
+perhaps a mix of the two.
+
+#### Saga rollbacks
+
+With our saga, we have multiple transactions involved, and some of those may
+have already committed before we decide to roll back the entire operation. So
+how can we roll back transactions after they have already been committed?
+
+```mermaid
+flowchart TD
+
+fullfilment(Order Fulfillment)
+
+fullfilment --> check[Check item in stock and
+reserve for order
+✅]
+
+check --> charge[Take money
+from customer
+✅]
+
+charge --> award[Award points to
+the customer
+✅]
+
+award --> send[Package and
+send order
+❌ *Can't find the item
+on the shelves!*]
+
+send --> completed(Fulfillment completed)
+
+check -."Handled by".-> a{{Warehouse}}
+charge -.-> b{{Payment Gateway}}
+award -.-> c{{Loyalty}}
+send -.-> d{{Warehouse}}
+```
+
+Let’s assume we decide we want to just roll back the entire order, rather than
+giving the customer the option for the item to be placed on back order. The
+problem is that we’ve already taken payment and awarded loyalty points for the
+order.
+
+There is no simple “rollback” for the entire operation. Instead, if you want to
+implement a rollback, you need to implement a ***compensating transaction***. A
+compensating transaction is an operation that undoes a previously committed
+transaction. To roll back our order fulfillment process, we would trigger the
+compensating transaction for each step in our saga that has already been
+committed.
+
+```mermaid
+flowchart TD
+
+fullfilment(Order Fulfillment)
+fullfilment --> check[Check item in stock and
+reserve for order
+✅]
+
+check --> charge[Take money
+from customer
+✅]
+
+charge --> award[Award points to
+the customer
+✅]
+
+award --> send[Package and
+send order
+❌ *Can't find the item
+on the shelves!*]
+
+send --> completed(Fulfillment completed)
+
+check -."Handled by".-> a{{Warehouse}}
+charge -.-> b{{Payment Gateway}}
+award -.-> c{{Loyalty}}
+send -.-> d{{Warehouse}}
+
+fullfilment_back(Order Fulfillment
+rolled back)
+fullfilment_back --> check_back[Remove stock
+reservation]
+check_back --> charge_back[Give money back
+to customer]
+charge_back --> award_back[Take points away
+from customer]
+
+check_back -.-> a
+charge_back -.-> b
+award_back -.-> c
+```
+
+These compensating transactions can’t have exactly the same behavior as that of
+a normal database rollback. A database rollback happens before the commit; and
+after the rollback, it is as though the transaction never happened. We are
+creating a new transaction that reverts the changes made by the original
+transaction.
+
+Because we cannot always cleanly revert a transaction, we say that these
+compensating transactions are semantic rollbacks. We cannot always clean up
+everything, but we do enough for the context of our saga. As an example, one of
+our steps may have involved sending an email to a customer to tell them their
+order was on the way. If we decide to roll that back, you can’t unsend an
+email! Instead, your compensating transaction could cause a second email to be
+sent to the customer, informing them that there had been a problem with the
+order and it had been canceled.
+
+It is totally ***appropriate*** for information related to the rollback saga to
+persist in the system.
+
+#### Reordering steps to reduce rollbacks
+
+A simple change would be to award points only when the order was actually
+dispatched. This way, we’d avoid having to worry about that stage being rolled
+back if we had a problem while trying to package and send the order. Sometimes
+you can simplify your rollback operations just by tweaking how the process is
+carried out. By pulling forward those steps that are most likely to fail and
+failing the process earlier, you avoid having to trigger later compensating
+transactions as those steps weren’t even triggered in the first place.
+
+This can be especially important if implementing a compensating transaction is
+difficult.
+
+#### Mixing fail-backward and fail-forward situations
+
+It is totally appropriate to have a mix of failure recovery modes. Some
+failures may require a rollback; others may be fail forward. For the order
+processing, for example, once we’ve taken money from the customer, and the item
+has been packaged, the only step left is to dispatch the package. If for
+whatever reason we can’t dispatch the package, it seems very odd to roll the
+whole order back. Instead, we’d probably just retry the dispatch, and if that
+fails, require human intervention to resolve the situation.
+
+### Implementing Sagas
+
+***Orchestrated sagas*** more closely follow the original solution space and
+rely primarily on centralized coordination and tracking. These can be compared
+to ***choreographed sagas***, which avoid the need for centralized coordination
+in favor of a more loosely coupled model, but which can make tracking the
+progress of a saga more complicated.
+
+#### Orchestrated sagas
+
+Orchestrated sagas use a central coordinator (orchestrator) to define the order
+of execution and to trigger any required compensating action. You can think of
+orchestrated sagas as a command-and-control approach: the central orchestrator
+controls what happens and when, and with that comes a good degree of visibility
+as to what is happening with any given saga.
+
+```mermaid
+flowchart LR
+
+processor{{"Order Processor<br>(orchestrator)"}}
+payment{{"Payment<br>Gateway"}}
+loyalty{{"Loyalty"}}
+warehouse{{"Warehouse"}}
+
+processor --"1.Reserve stock"--> warehouse
+processor --"2.Take payment"--> payment
+processor --"3.Award points"--> loyalty
+processor --"4.Package and send"--> warehouse
+```
+
+Here, the central `Order Processor`, playing the role of the orchestrator,
+coordinates the fulfillment process. It knows what services are needed to carry
+out the operation, and it decides when to make calls to those services. If the
+calls fail, it can decide what to do as a result. These orchestrated processors
+tend to make heavy use of request/response calls between services: the
+`Order Processor` sends a request to services, and expects a response letting
+it know if the request was successful and providing the results of the request.
+
+Having the business process explicitly modeled inside the `Order Processor` is
+extremely beneficial. It allows us to look at one place in the system and
+understand how this process is supposed to work. That can make onboarding of
+new people easier, and help impart a better understanding of the core parts of
+the system.
+
+There are a few downsides to consider, though.
+
+1. This is a somewhat coupled approach. The `Order Processor` needs to know
+   about all the associated services, resulting in a higher degree of domain
+   coupling. While not inherently bad, we’d still like to keep domain coupling
+   to a minimum if possible. Here, the `Order Processor` needs to know about
+   and control so many things that this form of coupling is hard to avoid.
+2. The other issue, which is more subtle, is that logic that should otherwise
+   be pushed into the services can start to instead become absorbed in the
+   orchestrator. If this starts happening, you may find your services becoming
+   anemic, with little behavior of their own, just taking orders from
+   orchestrators.
+
+It’s important you still consider the services that make up these orchestrated
+flows as entities that have their own local state and behavior. They are in
+charge of their own local state machines.
+
+⚠️ If logic has a place where it can be centralized, it will become centralized!
+
+One of the ways to avoid too much centralization with orchestrated flows can be
+to ensure you have different services playing the role of the orchestrator for
+different flows. You might have an `Order Processor` service that handles
+placing an order, a `Returns` service to handle the return and refund process,
+a `Goods Receiving` service that handles new stock arriving at the warehouse
+and being put on the shelves, and so on. Something like the `Warehouse` service
+may be used by all those orchestrators; such a model makes it easier for you to
+keep functionality in the `Warehouse` service itself to allow you to reuse
+functionality across all those flows.
+
+##### BPM Tools?
+
+By and large, ***Business process modeling*** (BPM) tools are designed to allow
+nondevelopers to define business process flows, often using visual
+drag-and-drop tools. The idea is developers would create the building blocks of
+these processes, and then nondevelopers would wire these building blocks
+together into the larger process flows. The use of such tools seems to line up
+really nicely as a way of implementing orchestrated sagas, and indeed process
+orchestration is pretty much the main use case for BPM tools (or, in reverse,
+the use of BPM tools results in you having to adopt orchestration).
+
+But, BPM tools may not be your option. The main reason is that the central
+conceit — that nondevelopers will define the business process — almost never
+been true. The tooling aimed at nondevelopers ends up getting used by
+developers, and they can have a host of issues.
+
+If your developers are going to be implementing your business processes, let
+them use tooling that they know and understand and is fit for their workflows.
+If you need visibility as to how a business process has been implemented, or
+how it is operating, then it is far easier to project a visual representation
+of a workflow from code than it is to use a visual representation of your
+workflow to describe how your code should work.
+
+- Camunda
+- Zeebe
+
+#### Choreographed sagas
+
+Choreographed sagas aim to distribute responsibility for the operation of the
+saga among multiple collaborating services. If orchestration is
+command-and-control, choreographed sagas represent a trust-but-verify
+architecture. Choreographed sagas will often make heavy use of events for
+collaboration between services.
+
+First, these services are reacting to events being received. Conceptually,
+events are broadcast in the system, and interested parties are able to receive
+them. You don’t send events to a service; you just fire them out, and the
+services that are interested in these events are able to receive them and act
+accordingly. In our example, when the `Warehouse` service receives that first
+`Order Placed` event, it knows its job to reserve the appropriate stock and
+fire an event once that is done. If the stock couldn’t be received, the
+`Warehouse` would need to raise an appropriate event (an `Insufficient Stock`
+event perhaps), which might lead to the order being aborted.
+
+```mermaid
+flowchart LR
+
+start((0.Start)) -.-> placed("Order placed
+(event)")
+
+warehouse{{Warehouse}} -."1.Received".-> placed
+warehouse -."2.Event broadcast".-> reserved("Stock reserved
+(event)")
+
+gateway{{Payment<br>Gateway}} -."3.Received".-> reserved
+gateway -."4.Event broadcast".-> taken("Payment taken
+(event)")
+
+loyalty{{Loyalty}} -."5.Received".-> taken
+loyalty -."6.Event broadcast".-> awarded("Points awarded
+(event)")
+
+warehouse -."7.Received".-> awarded
+```
+
+Typically, you’d use some sort of message broker to manage the reliable
+broadcast and delivery of events. It’s possible that multiple services may
+react to the same event, and that is where you would use a topic. Parties
+interested in a certain type of event would subscribe to a specific topic
+without having to worry about where these events came from, and the broker
+ensures the durability of the topic and that the events on it are successfully
+delivered to subscribers. As an example, we might have a `Recommendation`
+service that also listens to `Order Placed` events and uses that to construct a
+database of music choices you might like.
+
+In the preceding architecture, no one service knows about any other service.
+They only need to know what to do when a certain event is received. Inherently,
+this makes for a much less coupled architecture. As the implementation of the
+process is decomposed and distributed among the four services here, we also
+avoid the concerns about centralization of logic.
+
+💡 If you don’t have a place where logic can be centralized, then it won’t be
+centralized!
+
+The flip side of this is that it can now be harder to work out what is going
+on. With orchestration, the process was explicitly modeled in our orchestrator.
+Now, with this architecture as it is presented, how would you build up a mental
+model of what the process is supposed to be? You’d have to look at the behavior
+of each service in isolation and reconstitute this picture in your own head —
+far from a straightforward process even with a simple business process like
+this one.
+
+The lack of an explicit representation of the business process is bad enough,
+but we also lack a way of knowing what state a saga is in, which can also deny
+us the chance to attach compensating actions when required. We can push some
+responsibility to the individual services for carrying out compensating
+actions, but fundamentally we need a way of knowing what state a saga is in for
+some kinds of recovery. The lack of a central place to interrogate around the
+status of a saga is a big problem.
+
+One of the easiest ways of doing this is to project a view regarding the state
+of a saga from the existing system by consuming the events being emitted. If we
+generate a unique ID for the saga, we can put this into all of the events that
+are emitted as part of this saga - this is what is known as a
+***correlation ID***. We could then have a service whose job is to just vacuum
+up all these events and present a view of what state each order is in, and
+perhaps programmatically carry out actions to resolve issues as part of the
+fulfillment process if the other services couldn’t do it themselves.
+
+#### Mixing styles
+
+You may have some business processes in your system that more naturally fit one
+model or another. You may also have a single saga that has a mix of styles. In
+the order fulfillment use case, for example, inside the boundary of the
+`Warehouse` service, when managing the packaging and dispatch of a package, we
+may use an orchestrated flow even if the original request was made as part of a
+larger choreographed saga.
+
+If you do decide to mix styles, it’s important that you still have a clear way
+to understand what has happened as part of the saga. Without this,
+understanding failure modes becomes complex, and recovery from failure
+difficult.
+
+#### Should I use choreography or orchestration?
+
+Implementing choreographed sagas can bring with it ideas that may be unfamiliar
+to you and your team. They typically assume heavy use of event-driven
+collaboration, which isn’t widely understood. However, the extra complexity
+associated with tracking the progress of a saga is almost always outweighed by
+the benefits associated with having a more loosely coupled architecture.
+
+In such a situation, the more inherently coupled architecture is much easier to
+manage within the team boundary. If you have multiple teams involved, the more
+decomposed choreographed saga is more preferred as it is easier to distribute
+responsibility for implementing the saga to the teams, with the more loosely
+coupled architecture allowing these teams to work more in isolation.
+
+### Sagas Versus Distributed Transactions
+
+> In most distributed transaction systems, the failure of a single node causes
+> transaction commit to stall. This in turn causes the application to get
+> wedged. In such systems, the larger it gets, the more likely the system is
+> going to be down. When flying an airplane that needs all of its engines to
+> work, adding an engine reduces the availability of the airplane.
+>
+> —Pat Helland, Life Beyond Distributed Transactions
+
+Explicitly modeling business processes as a saga avoids many of the challenges
+of distributed transactions, while at the same time has the added benefit of
+making what might otherwise be implicitly modeled processes much more explicit
+and obvious to your developers. Making the core business processes of your
+system a first-class concept will have a host of benefits.
+
+## Summary
+
+We decompose our system by finding seams along which service boundaries can
+emerge, and this can be an incremental approach.
