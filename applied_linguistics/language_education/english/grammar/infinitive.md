@@ -1479,7 +1479,7 @@ take a look at why attitudes to marriage have changed.
 
 - `=` It is kind of him to help us.
 - `=` He is so kind as to help us.
-- `=` How kind of hime (it is) to help us!
+- `=` How kind of him (it is) to help us!
 
 这些句式变换对“主语关系（二）”均不适用。
 
@@ -2955,6 +2955,9 @@ or her. When you first meet, look your interviwer in the eye.
 A man was seen to enter the shop.
 
 另外，help, listen to, look at 后面可以用 to 也可以不用。
+
+- bare infinitive
+- to-infinitive
 
 `7` Would you like to listen to me (to) read the poem?
 
