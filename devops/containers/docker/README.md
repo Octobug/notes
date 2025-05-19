@@ -3,6 +3,11 @@
 > - <https://www.docker.com/>
 > - [Docker Roadmap](https://roadmap.sh/docker)
 
+## Docker Proxies
+
+- <https://docs.docker.com/engine/daemon/proxy/>
+- `HTTPS_PROXY=http://...` local proxy should use `http://` instead of `https://`
+
 ## Zero Downtime
 
 - <https://medium.com/@limone.eth/deploy-docker-containers-with-zero-downtime-ed06b0a0966d>

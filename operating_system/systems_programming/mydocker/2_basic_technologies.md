@@ -15,6 +15,10 @@
       - [三个组件相互的关系](#三个组件相互的关系)
       - [Kernel 接口](#kernel-接口)
     - [2.2.2 Docker 是如何使用 Cgroups 的](#222-docker-是如何使用-cgroups-的)
+    - [2.2.3 用 Go 语言实现通过 cgroup 限制容器的资源](#223-用-go-语言实现通过-cgroup-限制容器的资源)
+  - [2.3 Union File System](#23-union-file-system)
+    - [2.3.1 什么是 Union File System](#231-什么是-union-file-system)
+    - [2.3.2 AUFS](#232-aufs)
 
 ## 2.1 Linux Namespace 介绍
 
@@ -72,7 +76,7 @@ $ hostname -b bird
 
 ### 2.1.3 IPC Namespace
 
-IPC (Inter-process Communication) Namespace 用于隔离
+IPC (Inter-process Communication) Namespace 用于隔离：
 
 - System V IPC
 - POSIX message queues
@@ -236,11 +240,11 @@ Linux Cgroups (Control Groups) 可以限制、记录和隔离进程组使用的�
   - `memory` 设置进程的内存使用限制
   - `net_cls` 分类网络包，以便 Linux 的 tc (traffic controller) 根据 cgroup 分类做限流或监控
   - `net_prio` 设置进程的网络流量优先级
-  - `ns` 使 cgroup 中的进程在新的 Namespace 中 fork 新进程 (NEWNS) 时，创建出一个新的 cgroup，这个 cgroup 包含新的 Namespace 中的进程
+  - `ns` 使 cgroup 中的进程在新的 Namespace 中 fork 新进程 (`NEWNS`) 时，创建出一个新的 cgroup，这个 cgroup 包含新的 Namespace 中的进程
 - ***hierarchy*** 把一组 cgroup 串成一个树状结构，一棵树就是一个 hierarchy。
   - 通过这样的树状结构，cgroups 可以实现继承。
     - 通过 cgroup1 限制定时任务的 CPU 使用率
-    - 继承 cgroup 1，并通过 cgroup2 限制其中一个定时任务的磁盘 IO
+    - 继承 cgroup1，并通过 cgroup2 限制其中一个定时任务的磁盘 IO
 
 可以用 `cgroup` 的命令行工具查看 Kernel 支持哪些 subsystem。
 
@@ -387,10 +391,6 @@ memory.zswap.writeback
 使用 memory subsystem 限制进程内存示例：
 
 ```sh
-# 启动一个占用内存的 stress 进程
-$ stress --vm-bytes 200m --vm-keep -m 1
-stress: info: [1392] dispatching hogs: 0 cpu, 0 io, 1 vm, 0 hdd
-
 # 创建一个 cgroup
 $ cd /sys/fs/cgroup/user.slice
 $ sudo mkdir test-limit-memory && cd test-limit-memory
@@ -409,3 +409,116 @@ user.slice/test-limit-memory            3   14.3    99.8M        -        -
 ```
 
 ### 2.2.2 Docker 是如何使用 Cgroups 的
+
+```sh
+# 限制内存
+$ docker run --rm -itd -m 128m ubuntu:24.04
+1d65cc4a718cf6420e55f7a39573b57c183b6f21a5b49ba2eb3a6634da0faa32
+
+$ cd /sys/fs/cgroup/system.slice/docker-1d65cc4a718cf6420e55f7a39573b57c183b6f21a5b49ba2eb3a6634da0faa32.scope
+
+# 查看 cgroup 内存限制
+$ cat memory.max | numfmt --to=iec
+128M
+
+# 查看 cgroup 中进程使用的内存大小
+$ cat memory.current | numfmt --to=iec
+848K
+```
+
+### 2.2.3 用 Go 语言实现通过 cgroup 限制容器的资源
+
+```go
+package main
+
+import (
+  "fmt"
+  "os"
+  "os/exec"
+  "os/signal"
+  "path"
+  "strconv"
+  "syscall"
+)
+
+const cgroupV2MemoryHierarchy = "/sys/fs/cgroup/user.slice"
+const linuxSelfProc = "/proc/self/exe"
+
+func main() {
+  if os.Args[0] == linuxSelfProc {
+    // make sure the sub process is created after the pid of parent process
+    // is added into the cgroup.procs
+    sigs := make(chan os.Signal, 1)
+    signal.Notify(sigs, syscall.SIGUSR1)
+    // wait for the signal
+    <-sigs
+    // container process
+    fmt.Printf("current pid: %d", syscall.Getpid())
+    fmt.Println()
+    cmd := exec.Command("sh", "-c", `stress --vm-bytes 200m --vm-keep -m 1`)
+    cmd.SysProcAttr = &syscall.SysProcAttr{}
+    cmd.Stdin = os.Stdin
+    cmd.Stdout = os.Stdout
+    cmd.Stderr = os.Stderr
+    if err := cmd.Run(); err != nil {
+      fmt.Println(err)
+      os.Exit(1)
+    }
+  }
+
+  // cmd := exec.Command("sh")
+  cmd := exec.Command(linuxSelfProc)
+  cmd.SysProcAttr = &syscall.SysProcAttr{
+    Cloneflags: syscall.CLONE_NEWUTS |
+      syscall.CLONE_NEWIPC |
+      syscall.CLONE_NEWPID |
+      syscall.CLONE_NEWNS |
+      syscall.CLONE_NEWUSER |
+      syscall.CLONE_NEWNET,
+  }
+  // cmd.SysProcAttr.Credential = &syscall.Credential{Uid: uint32(1), Gid: uint32(1)}
+  cmd.Stdin = os.Stdin
+  cmd.Stdout = os.Stdout
+  cmd.Stderr = os.Stderr
+
+  // if err := cmd.Run(); err != nil {
+  //   log.Fatal(err)
+  // }
+  // os.Exit(-1)
+  if err := cmd.Start(); err != nil {
+    fmt.Println("ERROR", err)
+    os.Exit(1)
+  } else {
+    // get the pid of the forked process mapped in the outer namespace
+    fmt.Printf("outer pid: %v", cmd.Process.Pid)
+    fmt.Println()
+
+    const memSubsystem = "testmemorylimit"
+    // create a cgroup for the process on the default Hierarchy, which is
+    // created by the OS
+    os.Mkdir(path.Join(cgroupV2MemoryHierarchy, memSubsystem), 0755)
+    // join the container to the cgroup
+    os.WriteFile(path.Join(cgroupV2MemoryHierarchy, memSubsystem, "cgroup.procs"), []byte(strconv.Itoa(cmd.Process.Pid)), 0644)
+    // limit the cgroup process memory usage
+    os.WriteFile((path.Join(cgroupV2MemoryHierarchy, memSubsystem, "memory.max")), []byte("100m"), 0644)
+
+    if err := cmd.Process.Signal(syscall.SIGUSR1); err != nil {
+      fmt.Println("failed to send the signal: ", err)
+      return
+    }
+  }
+  cmd.Process.Wait()
+}
+```
+
+## 2.3 Union File System
+
+### 2.3.1 什么是 Union File System
+
+简称 UnionFS，是一种为 Linux, FreeBSD 和 NetBSD 设计的，把其他文件系统联合到一个联合挂载点的文件系统服务。它使用 branch 把不同文件系统的文件和目录“透明地”覆盖，形成一个单一一致的文件系统。
+
+这些 branch 可以是 read-only，也可以是 read-write。当对这个虚拟后的联合文件系统进行写操作时，系统实际上是写到了一个新的文件中。看起来这个虚拟后的联合文件系统可以对任何文件进行操作，但是它并没有改变原来的文件。这是因为 UnionFS 使用写时复制。
+
+***写时复制*** (copy-on-write) 也叫***隐式共享***，是一种对可修改资源实现高效复制的资源管理技术。它的思想是，如果⼀个资源是重复的，但没有任何修改，这时并不需要⽴即创建⼀个新的资源，这个资源可以被新旧实例共享。创建新资源发⽣在第⼀次写操作，也就是对资源进⾏修改的时候。通过这种资源共享的⽅式，可以显著地减少未修改资源复制带来的消耗，但是也会在进⾏资源修改时增加⼩部分的开销。
+
+### 2.3.2 AUFS
