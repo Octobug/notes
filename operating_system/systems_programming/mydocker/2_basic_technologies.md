@@ -19,6 +19,8 @@
   - [2.3 Union File System](#23-union-file-system)
     - [2.3.1 什么是 Union File System](#231-什么是-union-file-system)
     - [2.3.2 AUFS](#232-aufs)
+    - [2.3.3 Docker 是如何使用 AUFS 的](#233-docker-是如何使用-aufs-的)
+      - [image layer 和 AUFS](#image-layer-和-aufs)
 
 ## 2.1 Linux Namespace 介绍
 
@@ -522,3 +524,12 @@ func main() {
 ***写时复制*** (copy-on-write) 也叫***隐式共享***，是一种对可修改资源实现高效复制的资源管理技术。它的思想是，如果⼀个资源是重复的，但没有任何修改，这时并不需要⽴即创建⼀个新的资源，这个资源可以被新旧实例共享。创建新资源发⽣在第⼀次写操作，也就是对资源进⾏修改的时候。通过这种资源共享的⽅式，可以显著地减少未修改资源复制带来的消耗，但是也会在进⾏资源修改时增加⼩部分的开销。
 
 ### 2.3.2 AUFS
+
+AUFS (Advanced Multi-Layered Unification Filesystem) 完全重写了早期的 UnionFS 1.x。
+具有快速启动容器、高效利用存储和内存的优点。
+
+### 2.3.3 Docker 是如何使用 AUFS 的
+
+AUFS 是 Docker 选用的第一种存储驱动。
+
+#### image layer 和 AUFS

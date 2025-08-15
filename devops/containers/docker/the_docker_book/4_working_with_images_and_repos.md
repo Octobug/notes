@@ -452,7 +452,7 @@ ENTRYPOINT ["/usr/sbin/nginx"]
 CMD ["-h"]
 ```
 
-In this case, if we don't specify anyhing to pass to the container, then the
+In this case, if we don't specify anything to pass to the container, then the
 `-h` is passed by the `CMD`, it becomes `/usr/sbin/nginx -h`. This allows us to
 build in a default command to execute when the container is run combined with
 overridable options and flags on the `docker run` command line.
