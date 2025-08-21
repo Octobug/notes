@@ -6,15 +6,15 @@
 
 ## Table of contents
 
-1. Go: Simple to learn but hard to master
-2. Code and project organization
-3. Data types
-4. Control structures
-5. Strings
-6. Functions and methods
-7. Error management
-8. Concurrency: Foundations
-9. Concurrency: Practice
-10. The standard library
-11. Testing
-12. Optimizations
+- [ ] [1. Go: Simple to learn but hard to master](./1_simple_but_hard.md)
+- [ ] [2. Code and project organization]
+- [ ] [3. Data types]
+- [ ] [4. Control structures]
+- [ ] [5. Strings]
+- [ ] [6. Functions and methods]
+- [ ] [7. Error management](./7_error_management.md)
+- [ ] [8. Concurrency: Foundations]
+- [ ] [9. Concurrency: Practice]
+- [ ] [10. The standard library]
+- [ ] [11. Testing]
+- [ ] [12. Optimizations]
