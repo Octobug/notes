@@ -12,7 +12,7 @@
 - [ ] [4. Control structures]
 - [ ] [5. Strings]
 - [ ] [6. Functions and methods]
-- [ ] [7. Error management](./07_error_management.md)
+- [x] [7. Error management](./07_error_management.md)
 - [ ] [8. Concurrency: Foundations]
 - [ ] [9. Concurrency: Practice]
 - [ ] [10. The standard library]
