@@ -64,3 +64,10 @@ refuse to let themselves be squandered away in “small driblets that are no tim
 - “The question is: how to be useful!”
 
 ## Preface
+
+- The subject of this book is managing oneself for effectiveness.
+- Executives who do not know how to make themselves effective in their own job and work set the wrong example.
+- To be effective does not require special gifts, special aptitude, or special training.
+- Effectiveness is what executives are being paid for, whether they work as managers who are responsible for the performance of others as well as their own, or as individual professional contributors responsible for their own performance only.
+
+## Introduction
