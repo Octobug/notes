@@ -70,4 +70,34 @@ refuse to let themselves be squandered away in “small driblets that are no tim
 - To be effective does not require special gifts, special aptitude, or special training.
 - Effectiveness is what executives are being paid for, whether they work as managers who are responsible for the performance of others as well as their own, or as individual professional contributors responsible for their own performance only.
 
-## Introduction
+## Introduction - What Makes an Effective Executive?
+
+Eight key practices:
+
+The first two practices gave them the knowledge they needed.
+
+- They asked, “What needs to be done?”
+- They asked, “What is right for the enterprise?”
+
+The next four helped them convert this knowledge into effective
+action.
+
+- They developed action plans.
+- They took responsibility for decisions.
+- They took responsibility for communicating.
+- They were focused on opportunities rather than problems.
+
+The last two ensured that the whole organization felt
+responsible and accountable.
+
+- They ran productive meetings.
+- They thought and said “we” rather than “I.”
+
+### Get the Knowledge You Need
+
+- The first practice is to ask what needs to be done.
+- I have never encountered an executive who remains effective while tackling more than two tasks at a time. Hence, after asking what needs to be done, the effective executive sets priorities and sticks to them.
+- After completing the original top-priority task, the executive resets priorities rather than moving on to number two from the original list.
+- Effective executives’ second practice — fully as important as the first — is to ask, “Is this the right thing for the enterprise?”
+
+### Write an Action Plan
