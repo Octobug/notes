@@ -3,6 +3,7 @@ const LANG = {
   BENGALI: 'Bengali',
   BULGARIAN: 'Bulgarian',
   CHINESE: 'Chinese',
+  CROATIAN: 'Croatian',
   CZECH: 'Czech',
   DANISH: 'Danish',
   DUTCH: 'Dutch',
@@ -109,37 +110,37 @@ function rankByNationGDP() {
     LANG.CHINESE, // PRC
     LANG.GERMAN, // Germany
     LANG.JAPANESE, // Japan
-    [LANG.HINDI, LANG.ENGLISH], // India
     LANG.ENGLISH, // United Kingdom
+    [LANG.HINDI, LANG.ENGLISH], // India
     LANG.FRENCH, // France
     LANG.ITALIAN, // Italy
-    LANG.PORTUGUESE, // Brazil
-    [LANG.ENGLISH, LANG.FRENCH], // Canada
-    // 11-20
     LANG.RUSSIAN, // Russia
-    LANG.SPANISH, // Mexico
-    LANG.KOREAN, // South Korea
+    LANG.PORTUGUESE, // Brazil
+    // 11-20
+    [LANG.ENGLISH, LANG.FRENCH], // Canada
     LANG.ENGLISH, // Australia
+    LANG.SPANISH, // Mexico
     LANG.SPANISH, // Spain
-    LANG.MALAY_INDONESIAN, // Indonesia
+    LANG.KOREAN, // South Korea
     LANG.TURKISH, // Turkey
+    LANG.MALAY_INDONESIAN, // Indonesia
     LANG.DUTCH, // Netherlands
     LANG.ARABIC, // Saudi Arabia
     [LANG.GERMAN, LANG.FRENCH, LANG.ITALIAN, LANG.ROMANSH], // Switzerland
     // 21-30
     LANG.POLISH, // Poland
     LANG.CHINESE, // ROC
-    [LANG.DUTCH, LANG.FRENCH, LANG.GERMAN], // Belgium
-    LANG.SPANISH, // Argentina
-    LANG.SWEDISH, // Sweden
     [LANG.IRISH, LANG.ENGLISH], // Ireland
-    [LANG.NORWEGIAN, LANG.SAMI], // Norway
-    LANG.GERMAN, // Austria
+    [LANG.DUTCH, LANG.FRENCH, LANG.GERMAN], // Belgium
+    LANG.SWEDISH, // Sweden
     LANG.HEBREW, // Israel
-    LANG.THAI, // Thailand
-    // 31-
-    LANG.ARABIC, // United Arab Emirates
+    LANG.SPANISH, // Argentina
     [LANG.ENGLISH, LANG.MALAY_INDONESIAN, LANG.CHINESE, LANG.TAMIL], // Singapore
+    LANG.GERMAN, // Austria
+    LANG.ARABIC, // United Arab Emirates
+    // 31-
+    [LANG.NORWEGIAN, LANG.SAMI], // Norway
+    LANG.THAI, // Thailand
   ];
 
   langs.slice().reverse().forEach((langItems, index) => {
@@ -156,21 +157,21 @@ function rankByNationGDP() {
 }
 
 function rankByDuolingoTop10() {
-  // https://blog.duolingo.com/2023-duolingo-language-report/
+  // https://blog.duolingo.com/2025-duolingo-language-report/
   const langs = [
     LANG.ENGLISH,
     LANG.SPANISH,
     LANG.FRENCH,
-    LANG.GERMAN,
     LANG.JAPANESE,
+    LANG.GERMAN,
     LANG.KOREAN,
     LANG.ITALIAN,
-    LANG.HINDI,
     LANG.CHINESE,
     LANG.PORTUGUESE,
+    LANG.HINDI,
   ];
 
-  reversalScore(langs);
+  reversalScore(langs, 2);
 }
 
 function rankByInternetLanguages() {
@@ -180,37 +181,38 @@ function rankByInternetLanguages() {
     LANG.ENGLISH,
     LANG.SPANISH,
     LANG.GERMAN,
-    LANG.RUSSIAN,
     LANG.JAPANESE,
     LANG.FRENCH,
     LANG.PORTUGUESE,
+    LANG.RUSSIAN,
     LANG.ITALIAN,
-    LANG.TURKISH,
     LANG.DUTCH,
-    // 11-20
     LANG.POLISH,
-    LANG.PERSIAN,
+    // 11-20
+    LANG.TURKISH,
     LANG.CHINESE,
+    LANG.PERSIAN,
     LANG.VIETNAMESE,
-    LANG.MALAY_INDONESIAN,
     LANG.CZECH,
+    LANG.MALAY_INDONESIAN,
     LANG.KOREAN,
-    LANG.ARABIC,
     LANG.UKRAINIAN,
-    LANG.GREEK,
+    LANG.ARABIC,
+    LANG.HUNGARIAN,
     // 21-30
-    LANG.HEBREW,
     LANG.SWEDISH,
     LANG.ROMANIAN,
-    LANG.THAI,
+    LANG.GREEK,
     LANG.DANISH,
-    LANG.SLOVAK,
     LANG.FINNISH,
+    LANG.HEBREW,
+    LANG.SLOVAK,
+    LANG.THAI,
     LANG.BULGARIAN,
-    LANG.SERBIAN,
+    LANG.CROATIAN,
   ];
 
-  reversalScore(langs);
+  reversalScore(langs, 1);
 }
 
 function main() {
